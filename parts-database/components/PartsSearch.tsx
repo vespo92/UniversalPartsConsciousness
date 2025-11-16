@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { supabase, type Part } from '@/lib/supabase'
+import ModelViewer from '@/components/ModelViewer'
 
 export default function PartsSearch() {
   const [searchQuery, setSearchQuery] = useState('')
@@ -9,6 +10,26 @@ export default function PartsSearch() {
   const [results, setResults] = useState<Part[]>([])
   const [loading, setLoading] = useState(false)
   const [selectedPart, setSelectedPart] = useState<Part | null>(null)
+  const [cadData, setCadData] = useState<any>(null)
+
+  const fetchCadData = async (partId: string) => {
+    try {
+      const { data, error } = await supabase
+        .from('part_cad_files')
+        .select('*')
+        .eq('part_id', partId)
+        .single()
+
+      if (!error && data) {
+        setCadData(data)
+      } else {
+        setCadData(null)
+      }
+    } catch (error) {
+      console.error('Error fetching CAD data:', error)
+      setCadData(null)
+    }
+  }
 
   const searchParts = async () => {
     setLoading(true)
@@ -94,7 +115,15 @@ export default function PartsSearch() {
             {results.map((part) => (
               <div
                 key={part.part_id}
-                onClick={() => setSelectedPart(selectedPart?.part_id === part.part_id ? null : part)}
+                onClick={() => {
+                  const newPart = selectedPart?.part_id === part.part_id ? null : part
+                  setSelectedPart(newPart)
+                  if (newPart) {
+                    fetchCadData(newPart.part_id)
+                  } else {
+                    setCadData(null)
+                  }
+                }}
                 className="border border-slate-200 rounded-lg p-4 hover:border-blue-500 hover:shadow-md transition-all cursor-pointer bg-white"
               >
                 <div className="flex justify-between items-start">
@@ -134,7 +163,19 @@ export default function PartsSearch() {
                 </div>
 
                 {selectedPart?.part_id === part.part_id && (
-                  <div className="mt-4 pt-4 border-t border-slate-200 space-y-2">
+                  <div className="mt-4 pt-4 border-t border-slate-200 space-y-4">
+                    {/* 3D Model Viewer */}
+                    {cadData && (cadData.stl_url || cadData.step_url) && (
+                      <div>
+                        <h5 className="font-medium text-slate-900 mb-3">3D Model</h5>
+                        <ModelViewer
+                          modelUrl={cadData.stl_url || cadData.step_url}
+                          modelType={cadData.stl_url ? 'stl' : 'step'}
+                          partName={part.part_number || part.part_id}
+                        />
+                      </div>
+                    )}
+
                     <h5 className="font-medium text-slate-900">Specifications</h5>
                     <div className="grid grid-cols-2 gap-3 text-sm">
                       {part.tensile_strength && (
