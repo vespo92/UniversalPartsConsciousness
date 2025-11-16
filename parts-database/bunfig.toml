@@ -1,0 +1,13 @@
+# Bun configuration for Universal Parts Database
+
+[install]
+# Use exact versions for reproducibility
+exact = false
+
+[install.cache]
+# Cache packages for faster installs
+disable = false
+
+[test]
+# Test configuration (for future use)
+preload = []
