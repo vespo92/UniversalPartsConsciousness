@@ -22,12 +22,26 @@ export default function Home() {
                 Find parts, check compatibility, never lose a screw again
               </p>
             </div>
-            <Link
-              href="/contribute"
-              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Add Part
-            </Link>
+            <div className="flex space-x-3">
+              <Link
+                href="/leaderboard"
+                className="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-colors font-medium flex items-center"
+              >
+                <span className="mr-1">🏆</span> Leaderboard
+              </Link>
+              <Link
+                href="/import"
+                className="px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-colors font-medium"
+              >
+                Bulk Import
+              </Link>
+              <Link
+                href="/contribute"
+                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              >
+                Add Part
+              </Link>
+            </div>
           </div>
         </div>
       </header>
