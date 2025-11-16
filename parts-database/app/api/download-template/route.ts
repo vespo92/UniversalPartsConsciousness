@@ -1,0 +1,17 @@
+import { NextResponse } from 'next/server'
+
+export async function GET() {
+  const csv = `manufacturer,part_number,category,subcategory,thread_id,length,material_grade,tensile_strength,yield_strength,notes
+DIN,912-M3x12,fastener,socket_head_cap_screw,M3x0.5,12,A2-70,700,450,Socket head cap screw
+DIN,912-M4x16,fastener,socket_head_cap_screw,M4x0.7,16,A2-70,700,450,Socket head cap screw
+DIN,912-M5x20,fastener,socket_head_cap_screw,M5x0.8,20,8.8,800,640,High strength steel
+ISO,4762-M6x25,fastener,socket_head_cap_screw,M6x1.0,25,10.9,1040,940,High strength
+McMaster,91292A115,fastener,button_head_screw,M3x0.5,10,18-8_SS,500,205,Stainless steel`
+
+  return new NextResponse(csv, {
+    headers: {
+      'Content-Type': 'text/csv',
+      'Content-Disposition': 'attachment; filename="parts-template.csv"',
+    },
+  })
+}
