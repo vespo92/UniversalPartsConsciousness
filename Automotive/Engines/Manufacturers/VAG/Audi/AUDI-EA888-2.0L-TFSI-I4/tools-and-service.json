@@ -1,0 +1,611 @@
+{
+  "engine_id": "VAG-EA888-2.0L-TFSI-I4",
+  "service_version": "1.0.0",
+  "tool_inventory": {
+    "essential_tools": {
+      "metric_sockets_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+      "metric_wrenches_mm": [8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21],
+      "torx": ["T20", "T25", "T27", "T30", "T40", "T45", "T50", "T55", "T60"],
+      "triple_square": ["M6", "M8", "M10", "M12"],
+      "allen_hex_mm": [4, 5, 6, 8, 10, 12],
+      "screwdrivers": ["Phillips #2", "Flathead medium", "Flathead small"]
+    },
+    "specialty_tools": {
+      "vag_tools": {
+        "T10340": {
+          "description": "Camshaft alignment/locking tool",
+          "use": "Locks camshafts during timing work",
+          "cost_usd": 85,
+          "essential_for": "Timing chain service"
+        },
+        "T10492": {
+          "description": "Crankshaft TDC lock pin",
+          "use": "Locks crank at TDC",
+          "cost_usd": 35
+        },
+        "T10530": {
+          "description": "HPFP removal tool",
+          "use": "High pressure fuel pump service",
+          "cost_usd": 65
+        },
+        "VAS6340": {
+          "description": "Injector removal tool",
+          "use": "Removes seized direct injectors",
+          "cost_usd": 120
+        },
+        "T40070": {
+          "description": "Timing chain tensioner reset tool",
+          "use": "Compresses timing chain tensioner",
+          "cost_usd": 55
+        },
+        "T40011": {
+          "description": "Camshaft sprocket holder",
+          "use": "Holds sprocket while removing bolt",
+          "cost_usd": 45
+        },
+        "T40001": {
+          "description": "Valve spring compressor",
+          "use": "Head work - valve spring replacement",
+          "cost_usd": 150
+        }
+      },
+      "turbo_tools": {
+        "turbo_oil_line_socket": {
+          "description": "14mm deep socket (thin wall)",
+          "use": "Turbo oil feed line banjo bolt"
+        },
+        "intercooler_hose_pliers": {
+          "description": "Spring clamp pliers",
+          "use": "IC hose clamp removal"
+        }
+      },
+      "torque_tools": {
+        "torque_wrench_small": {
+          "description": "1/4\" drive torque wrench",
+          "range": "4-25 Nm",
+          "use": "Sensors, small fasteners"
+        },
+        "torque_wrench_medium": {
+          "description": "3/8\" drive torque wrench",
+          "range": "10-100 Nm",
+          "use": "General engine work"
+        },
+        "torque_wrench_large": {
+          "description": "1/2\" drive torque wrench",
+          "range": "40-250 Nm",
+          "use": "Head bolts, axle nuts"
+        },
+        "angle_gauge": {
+          "description": "Torque angle gauge",
+          "use": "TTY bolts - required for head bolts, rod bolts"
+        }
+      }
+    },
+    "diagnostic_equipment": {
+      "vcds_vagcom": {
+        "description": "VCDS (VAG-COM) by Ross-Tech",
+        "cost_usd": 349,
+        "capabilities": [
+          "Full system diagnostics",
+          "Adaptation channels",
+          "Long coding",
+          "Basic settings",
+          "Output tests",
+          "Measuring blocks",
+          "Advanced data logging"
+        ],
+        "notes": "Industry standard - essential for serious VAG work"
+      },
+      "obdeleven": {
+        "description": "OBDeleven diagnostic tool",
+        "cost_usd": 80,
+        "capabilities": ["Basic diagnostics", "Coding", "One-click apps"],
+        "notes": "Good budget option for DIYers"
+      },
+      "cobb_accessport": {
+        "description": "Cobb Accessport (for tuned cars)",
+        "cost_usd": 650,
+        "capabilities": ["Tune flashing", "Data logging", "Gauges", "Fault reading"],
+        "notes": "Required for EQT/Stratified tunes"
+      },
+      "fuel_pressure_gauge": {
+        "description": "High pressure fuel gauge",
+        "range": "0-300 bar",
+        "use": "Diagnose HPFP and fuel system issues"
+      },
+      "boost_gauge": {
+        "description": "Boost pressure gauge",
+        "range": "-30 inHg to 30+ PSI",
+        "use": "Monitor boost levels"
+      },
+      "compression_tester": {
+        "description": "Compression test kit",
+        "adapter": "M10x1.0 adapter",
+        "use": "Engine health check"
+      },
+      "leak_down_tester": {
+        "description": "Cylinder leak-down tester",
+        "use": "Diagnose valve/ring seal"
+      },
+      "smoke_machine": {
+        "description": "EVAP/boost leak smoke tester",
+        "use": "Find boost leaks and vacuum leaks"
+      }
+    }
+  },
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 10000,
+        "interval_km": 15000,
+        "track_use_interval_miles": 5000,
+        "oil_specification": {
+          "gen1_gen2": "VW 502.00 or 504/507",
+          "gen3_plus": "VW 504/507 or 508/509"
+        },
+        "oil_viscosity": {
+          "gen1_gen2": "5W-40 or 5W-30",
+          "gen3_plus": "5W-30 or 0W-20"
+        },
+        "capacity_liters": {
+          "gen1_gen2": 5.0,
+          "gen3_plus": 5.8
+        },
+        "filter_part": {
+          "gen1_gen2": "06H115561",
+          "gen3": "06K115562"
+        },
+        "drain_plug_torque_nm": 30,
+        "filter_housing_torque_nm": 25,
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Remove undertray (T25/T30 Torx)",
+          "Position drain pan under oil pan",
+          "Remove drain plug (19mm or hex)",
+          "Allow complete drain (10+ minutes)",
+          "Remove oil filter cap (32mm socket)",
+          "Replace filter element",
+          "Inspect and replace drain plug washer",
+          "Install drain plug - torque 30 Nm",
+          "Install filter cap - torque 25 Nm",
+          "Add approximately 5L oil initially",
+          "Start engine, check for leaks",
+          "Check level, add remaining as needed",
+          "Reset service interval via VCDS"
+        ],
+        "estimated_time_minutes": 30,
+        "difficulty": "Easy"
+      },
+      "spark_plug_replacement": {
+        "interval_miles": 40000,
+        "interval_km": 60000,
+        "tuned_interval_miles": 20000,
+        "spark_plug_part": {
+          "gen1_gen2": "NGK PFR7S8EG",
+          "gen3_is20": "06K905601B or NGK ILKAR8Q7G",
+          "gen3_is38": "06K905601D (1 step colder)"
+        },
+        "gap_mm": {
+          "stock": 0.7,
+          "tuned": 0.6
+        },
+        "torque_nm": 25,
+        "procedure": [
+          "Remove engine cover",
+          "Disconnect coil pack connectors (4)",
+          "Remove coil packs (T30 bolts)",
+          "Blow out spark plug wells with compressed air",
+          "Remove spark plugs (16mm thin-wall socket)",
+          "Check gap on new plugs (0.7mm stock, 0.6mm tuned)",
+          "Install new plugs - hand tight, then torque 25 Nm",
+          "Reinstall coil packs - torque 10 Nm",
+          "Reconnect connectors",
+          "Replace engine cover"
+        ],
+        "estimated_time_minutes": 45,
+        "difficulty": "Easy"
+      },
+      "dsg_service": {
+        "interval_miles": 40000,
+        "interval_km": 60000,
+        "fluid_spec": {
+          "DQ250": "VW G 052 182 A2",
+          "DQ381": "VW G 055 529 A2"
+        },
+        "capacity_liters": {
+          "DQ250": 5.7,
+          "DQ381": 6.8
+        },
+        "filter_part": {
+          "DQ250": "02E305051C",
+          "DQ381": "0GC325443"
+        },
+        "procedure": [
+          "Warm transmission to operating temp",
+          "Position drain pan under DSG",
+          "Remove drain plug",
+          "Remove filter/mechatronic cover",
+          "Replace filter",
+          "Reinstall cover with new gasket",
+          "Install drain plug",
+          "Fill through fill plug hole",
+          "With engine running, add fluid until overflow",
+          "Install fill plug at exactly 35°C fluid temp"
+        ],
+        "estimated_time_hours": 1.5,
+        "difficulty": "Intermediate",
+        "notes": "Critical to fill at correct temperature - use VCDS to monitor"
+      },
+      "timing_chain_service_gen1": {
+        "interval": "As needed - check for rattle",
+        "critical_for": "Gen1 EA888 (2008-2013)",
+        "kit_parts": {
+          "chain": "06K109158AD",
+          "tensioner": "06K109467K (REVISED)",
+          "guides": "06K109469A, 06K109509A",
+          "sprockets": "06K109077 (crank), 06K109083 (cam)"
+        },
+        "special_tools_required": ["T10340", "T10492", "T40070", "T40011"],
+        "procedure_summary": [
+          "Remove front accessories and covers",
+          "Set engine to TDC cylinder 1",
+          "Lock crankshaft with T10492",
+          "Lock camshafts with T10340",
+          "Remove timing cover",
+          "Release and remove old tensioner",
+          "Remove chain, guides, sprockets",
+          "Inspect for wear/stretch",
+          "Install new components",
+          "Reset tensioner with T40070",
+          "Verify timing marks",
+          "Rotate engine by hand to verify",
+          "Reassemble in reverse order"
+        ],
+        "estimated_time_hours": 6,
+        "difficulty": "Advanced",
+        "notes": "ALWAYS use revised tensioner (06K109467K) on Gen1"
+      },
+      "coolant_flush": {
+        "interval_miles": 60000,
+        "interval_km": 90000,
+        "coolant_spec": "G13 or G12++",
+        "capacity_liters": 7.0,
+        "procedure": [
+          "Ensure engine is cold",
+          "Open coolant reservoir cap",
+          "Open drain at bottom of radiator",
+          "Drain system completely",
+          "Close drain",
+          "Fill with 50/50 G13 mix",
+          "Start engine with heater on max",
+          "Run until thermostat opens (check temp)",
+          "Top off as air purges",
+          "Install cap, drive, recheck when cold"
+        ],
+        "estimated_time_minutes": 45,
+        "difficulty": "Easy"
+      },
+      "water_pump_replacement": {
+        "symptoms": ["Coolant leak", "Overheating", "Coolant warning"],
+        "part_numbers": {
+          "gen1_gen2": "06H121026DD",
+          "gen3": "06L121111J"
+        },
+        "procedure": [
+          "Drain coolant",
+          "Remove intake tract for access",
+          "Remove thermostat housing bolts",
+          "Disconnect hoses and sensor",
+          "Remove water pump assembly",
+          "Clean mating surfaces",
+          "Install new pump with new o-rings",
+          "Torque bolts to spec",
+          "Refill and bleed coolant",
+          "Test for leaks"
+        ],
+        "estimated_time_hours": 2,
+        "difficulty": "Intermediate"
+      }
+    },
+    "common_repairs": {
+      "diverter_valve_replacement": {
+        "symptoms": ["Boost leak", "Lag", "Whooshing sound", "Limp mode"],
+        "part_number": "06H145710G",
+        "procedure": [
+          "Locate DV on turbo compressor housing",
+          "Disconnect electrical connector",
+          "Remove mounting bolts or release clip",
+          "Pull off old DV",
+          "Install new DV with new o-ring",
+          "Secure and reconnect electrical"
+        ],
+        "estimated_time_minutes": 30,
+        "difficulty": "Easy"
+      },
+      "pcv_valve_replacement_gen1_gen2": {
+        "symptoms": ["Rough idle", "Oil in intake", "Boost leaks", "Whistle"],
+        "part_number": "06H103495AK",
+        "procedure": [
+          "Remove intake manifold (several bolts and hoses)",
+          "Access PCV valve on rear of engine",
+          "Remove and replace PCV assembly",
+          "Reinstall intake manifold",
+          "Clear adaptation values in VCDS"
+        ],
+        "estimated_time_hours": 2,
+        "difficulty": "Intermediate",
+        "notes": "Very common failure on Gen1/Gen2 - use OEM replacement"
+      },
+      "carbon_cleaning_walnut_blast": {
+        "affected": "Gen1/Gen2 primarily (Gen3+ has port injection)",
+        "symptoms": ["Rough idle", "Hesitation", "Misfires", "Power loss"],
+        "interval_miles": 50000,
+        "procedure": [
+          "Remove intake manifold",
+          "Seal cylinders to prevent media entry",
+          "Use media blaster with walnut shells",
+          "Clean all intake valves thoroughly",
+          "Vacuum all media from ports",
+          "Reinstall intake manifold",
+          "Clear adaptations"
+        ],
+        "shop_cost_usd": "400-600",
+        "estimated_time_hours": 4,
+        "difficulty": "Advanced",
+        "notes": "Gen3+ dual injection significantly reduces buildup"
+      },
+      "turbo_replacement": {
+        "symptoms": ["Excessive smoke", "Oil consumption", "No boost", "Shaft play", "Turbo noise"],
+        "part_numbers": {
+          "is20": "06K145874L",
+          "is38": "06K145874F"
+        },
+        "special_notes": "Use new oil feed/return lines recommended",
+        "procedure": [
+          "Disconnect battery",
+          "Remove engine cover and intake tract",
+          "Disconnect boost pipes and intercooler hoses",
+          "Disconnect oil feed line (banjo bolt)",
+          "Disconnect oil return line",
+          "Disconnect coolant lines (Gen3)",
+          "Disconnect wastegate actuator connector",
+          "Remove exhaust downpipe flange bolts",
+          "Remove turbo mounting hardware",
+          "Carefully remove turbocharger",
+          "Clean all mating surfaces",
+          "Install new gaskets",
+          "Install new turbo with new hardware",
+          "Torque all bolts to spec",
+          "Use new crush washers on oil lines",
+          "Reconnect all lines and connectors",
+          "Prime with oil before starting",
+          "Start and idle for 5 minutes",
+          "Check for leaks before boosting"
+        ],
+        "estimated_time_hours": 4,
+        "difficulty": "Intermediate"
+      },
+      "is38_swap_on_is20_car": {
+        "description": "Golf R turbo swap onto GTI platform",
+        "parts_required": [
+          "IS38 turbocharger",
+          "Turbo gasket (06K253039B)",
+          "New oil feed/return line crush washers",
+          "ECU tune for IS38"
+        ],
+        "recommended_supporting_mods": [
+          "Upgraded HPFP (Autotech)",
+          "Upgraded intercooler",
+          "Downpipe",
+          "Cold air intake"
+        ],
+        "procedure": [
+          "Follow turbo replacement procedure above",
+          "IS38 is direct bolt-on to IS20 location",
+          "No physical modifications required",
+          "Flash IS38 tune before first drive"
+        ],
+        "estimated_time_hours": 5,
+        "difficulty": "Intermediate",
+        "expected_output": "370-400 hp with tune"
+      }
+    }
+  },
+  "diagnostic_procedures": {
+    "fault_code_groups": {
+      "misfires": {
+        "codes": ["P0300", "P0301", "P0302", "P0303", "P0304"],
+        "common_causes": [
+          "Worn/fouled spark plugs",
+          "Failed ignition coil",
+          "Carbon buildup (Gen1/Gen2)",
+          "Fuel injector failure",
+          "Low compression",
+          "Vacuum leak"
+        ],
+        "diagnostic_steps": [
+          "Read freeze frame data",
+          "Inspect spark plugs",
+          "Swap coils between cylinders",
+          "Check fuel injector balance (VCDS)",
+          "Compression test if persistent",
+          "Carbon inspection via borescope"
+        ]
+      },
+      "boost_pressure": {
+        "codes": ["P0299", "P0234", "P0236", "P2261"],
+        "common_causes": [
+          "Boost/charge pipe leak",
+          "Diverter valve failure",
+          "Wastegate actuator fault",
+          "Turbo failure",
+          "Intercooler leak",
+          "N75 solenoid failure"
+        ],
+        "diagnostic_steps": [
+          "Smoke test boost system",
+          "Check DV operation",
+          "Test wastegate with VCDS output test",
+          "Log boost actual vs requested",
+          "Inspect turbo for shaft play",
+          "Check intercooler for cracks/leaks"
+        ]
+      },
+      "timing_chain": {
+        "codes": ["P0016", "P0017", "P0018", "P0019"],
+        "common_causes": [
+          "Stretched timing chain (Gen1)",
+          "Failed tensioner (Gen1)",
+          "VVT solenoid failure",
+          "Oil contamination"
+        ],
+        "diagnostic_steps": [
+          "Check oil level and condition",
+          "Listen for startup rattle",
+          "Log cam timing adaptations (VCDS)",
+          "Check VVT solenoid operation",
+          "Measure chain stretch if accessible"
+        ],
+        "critical_note": "Gen1 timing chain issues are CRITICAL - do not ignore"
+      },
+      "fuel_system": {
+        "codes": ["P0087", "P0088", "P0089", "P0191", "P2293"],
+        "common_causes": [
+          "Failing HPFP",
+          "Weak LPFP",
+          "Fuel pressure sensor fault",
+          "Clogged fuel filter",
+          "Failing injector"
+        ],
+        "diagnostic_steps": [
+          "Log fuel pressure actual vs requested",
+          "Check LPFP voltage under load",
+          "Test HPFP output with gauge",
+          "Injector balance test",
+          "Check fuel filter (if equipped)"
+        ]
+      }
+    },
+    "vcds_measuring_blocks": {
+      "engine_basics": {
+        "group_001": "RPM, coolant temp, intake air temp, voltage",
+        "group_002": "Engine load, throttle position"
+      },
+      "boost_system": {
+        "group_115": "Boost pressure actual vs specified",
+        "group_116": "Wastegate duty cycle"
+      },
+      "fuel_system": {
+        "group_140": "Fuel pressure actual vs specified",
+        "group_141": "Injector timing, injection quantity"
+      },
+      "timing": {
+        "group_093": "Intake cam timing actual vs target",
+        "group_094": "Exhaust cam timing actual vs target"
+      },
+      "knock": {
+        "group_020": "Knock sensor readings by cylinder"
+      }
+    },
+    "adaptation_values": {
+      "throttle_adaptation": {
+        "location": "Engine > Basic Settings > Throttle Adaptation",
+        "when_to_reset": "After throttle body cleaning or replacement"
+      },
+      "fuel_trims": {
+        "location": "Engine > Measuring Blocks > Groups 32-34",
+        "ideal_range": "+/- 5%",
+        "investigate_if": "Exceeds +/- 10%"
+      }
+    }
+  },
+  "torque_specifications": {
+    "cylinder_head": {
+      "head_bolts": {
+        "type": "Torque-to-yield (TTY) - single use",
+        "sequence": "Spiral from center outward",
+        "steps": [
+          "Step 1: 30 Nm",
+          "Step 2: 90 degrees",
+          "Step 3: 90 degrees",
+          "Step 4 (after 10 min): 90 degrees"
+        ]
+      },
+      "valve_cover": {"torque_nm": 10},
+      "camshaft_bearing_caps": {"torque_nm": 10, "notes": "Even, gradual tightening"}
+    },
+    "rotating_assembly": {
+      "main_cap_bolts": {"torque_nm": 20, "plus_degrees": 90, "type": "TTY"},
+      "connecting_rod_bolts": {"torque_nm": 20, "plus_degrees": 90, "type": "TTY"},
+      "flywheel_bolts": {"torque_nm": 60, "plus_degrees": 90}
+    },
+    "turbo_system": {
+      "turbo_mounting_nuts": {"torque_nm": 23},
+      "downpipe_to_turbo": {"torque_nm": 25},
+      "oil_feed_banjo": {"torque_nm": 25},
+      "oil_return_bolts": {"torque_nm": 10}
+    },
+    "accessories": {
+      "spark_plugs": {"torque_nm": 25},
+      "ignition_coils": {"torque_nm": 10},
+      "oil_drain_plug": {"torque_nm": 30},
+      "oil_filter_housing": {"torque_nm": 25},
+      "fuel_rail": {"torque_nm": 10},
+      "throttle_body": {"torque_nm": 8}
+    },
+    "sensors": {
+      "coolant_temp_sensor": {"torque_nm": 15},
+      "oil_pressure_sensor": {"torque_nm": 25},
+      "knock_sensor": {"torque_nm": 20},
+      "crank_position_sensor": {"torque_nm": 8},
+      "cam_position_sensor": {"torque_nm": 8}
+    }
+  },
+  "fluid_specifications": {
+    "engine_oil": {
+      "gen1_gen2": {
+        "primary_spec": "VW 502.00",
+        "alternate_spec": "VW 504.00/507.00",
+        "viscosity": "5W-40 or 5W-30",
+        "capacity_liters": 5.0
+      },
+      "gen3_plus": {
+        "primary_spec": "VW 504.00/507.00",
+        "alternate_spec": "VW 508.00/509.00",
+        "viscosity": "5W-30 or 0W-20",
+        "capacity_liters": 5.8
+      },
+      "approved_oils": [
+        "Castrol EDGE Professional LL III 5W-30",
+        "Castrol EDGE Professional LL IV 0W-20",
+        "Liqui Moly Top Tec 4200 5W-30",
+        "Mobil 1 ESP 5W-30",
+        "Mobil 1 ESP 0W-20",
+        "Pentosin Pento High Performance 5W-30"
+      ]
+    },
+    "coolant": {
+      "specification": "G13 (pink/violet)",
+      "alternate": "G12++ (pink)",
+      "mixture": "50/50 with distilled water",
+      "capacity_liters": 7.0,
+      "notes": "Never mix with green/blue coolant"
+    },
+    "transmission": {
+      "manual_MQ350": {
+        "specification": "VW G 052 171 A2",
+        "capacity_liters": 2.3
+      },
+      "dsg_DQ250": {
+        "specification": "VW G 052 182 A2",
+        "capacity_liters": 5.7,
+        "interval_miles": 40000
+      },
+      "dsg_DQ381": {
+        "specification": "VW G 055 529 A2",
+        "capacity_liters": 6.8,
+        "interval_miles": 40000
+      }
+    }
+  }
+}

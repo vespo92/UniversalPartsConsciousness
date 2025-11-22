@@ -1,0 +1,466 @@
+{
+  "engine_id": "VAG-EA211-1.4L-TFSI-I4",
+  "ecosystem_version": "1.0.0",
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {
+        "url": "https://www.fcpeuro.com",
+        "specialty": "OEM and OE-equivalent European parts",
+        "notes": "Lifetime replacement guarantee",
+        "shipping": "Free over $49"
+      },
+      "ecs_tuning": {
+        "url": "https://www.ecstuning.com",
+        "specialty": "OEM, OE, and performance parts",
+        "notes": "Large VAG inventory"
+      },
+      "deutsche_auto_parts": {
+        "url": "https://www.deutscheautoparts.com",
+        "specialty": "OEM and genuine VAG parts",
+        "notes": "Audi/VW specialist"
+      },
+      "idparts": {
+        "url": "https://www.idparts.com",
+        "specialty": "OEM parts at discount prices",
+        "notes": "Good for maintenance items"
+      }
+    },
+    "performance_parts": {
+      "integrated_engineering": {
+        "url": "https://performancebyie.com",
+        "specialty": "Performance hardware and software",
+        "products": ["Intakes", "Exhaust", "Internals", "ECU tunes"],
+        "notes": "Popular choice for VAG enthusiasts"
+      },
+      "034_motorsport": {
+        "url": "https://store.034motorsport.com",
+        "specialty": "Performance and OEM+ parts",
+        "products": ["Mounts", "Intake", "Suspension", "Drivetrain"]
+      },
+      "cts_turbo": {
+        "url": "https://www.ctsturbo.com",
+        "specialty": "Turbo and intake systems",
+        "products": ["Intakes", "Downpipes", "Intercoolers", "Turbo kits"]
+      },
+      "apr": {
+        "url": "https://www.goapr.com",
+        "specialty": "ECU tuning and performance hardware",
+        "products": ["ECU tunes", "TCU tunes", "Intake", "Exhaust"]
+      },
+      "unitronic": {
+        "url": "https://www.getunitronic.com",
+        "specialty": "ECU/TCU tuning",
+        "products": ["Stage 1-3 tunes", "DSG tunes", "Hardware"]
+      },
+      "burger_motorsports": {
+        "url": "https://www.burgertuning.com",
+        "specialty": "JB4 piggyback tuning",
+        "products": ["JB4 tuner", "Intake", "Downpipe"]
+      }
+    },
+    "tuning_software": {
+      "apr": {
+        "description": "Market leader in VAG tuning",
+        "platforms": ["Windows (dealer flash)"],
+        "cost_stage_1": "$599-799",
+        "features": ["Dyno-proven tunes", "OEM-level refinement", "Valet mode"],
+        "warranty": "APR Plus with limited powertrain coverage available"
+      },
+      "unitronic": {
+        "description": "Direct-to-consumer VAG tuning",
+        "platforms": ["Windows (dealer flash)", "UniConnect"],
+        "cost_stage_1": "$499-699",
+        "features": ["Multiple fuel maps", "Self-flashing available"]
+      },
+      "integrated_engineering": {
+        "description": "Performance-focused tunes",
+        "platforms": ["Windows (dealer flash)"],
+        "cost_stage_1": "$549-749",
+        "features": ["Aggressive tunes", "E85 support"]
+      },
+      "revo": {
+        "description": "UK-based VAG tuner",
+        "platforms": ["Windows (dealer flash)"],
+        "cost_stage_1": "$499-699",
+        "features": ["Switchable maps", "Performance monitor app"]
+      },
+      "jb4": {
+        "description": "Piggyback tuning solution",
+        "platforms": ["Plug-and-play hardware"],
+        "cost": "$429",
+        "features": ["No ECU flash needed", "Easy removal", "Stackable with flash tunes"],
+        "notes": "Good option for leased vehicles"
+      },
+      "eurodyne": {
+        "description": "Maestro flash tuning",
+        "platforms": ["Windows"],
+        "cost_stage_1": "$499",
+        "features": ["User-adjustable parameters", "Data logging"]
+      }
+    },
+    "diagnostic_tools": {
+      "vcds_ross_tech": {
+        "url": "https://www.ross-tech.com",
+        "product": "VCDS (VAG-COM)",
+        "cost": "$349 (HEX-V2)",
+        "notes": "Industry standard for VAG diagnostics"
+      },
+      "obdeleven": {
+        "url": "https://obdeleven.com",
+        "product": "OBDeleven Pro",
+        "cost": "$79.99",
+        "notes": "Budget-friendly mobile-based tool"
+      },
+      "carista": {
+        "url": "https://caristaapp.com",
+        "product": "Carista OBD2 Adapter",
+        "cost": "$19.99 + subscription",
+        "notes": "Basic diagnostics and coding"
+      }
+    }
+  },
+  "aftermarket_parts": {
+    "intake_systems": {
+      "cts_turbo_intake": {
+        "brand": "CTS Turbo",
+        "part_number": "CTS-IT-270",
+        "description": "Cold air intake system",
+        "price_usd": 299,
+        "power_gain": "5-10 hp (with tune)",
+        "material": "Aluminum pipe with cotton filter",
+        "notes": "Requires tune for best results"
+      },
+      "integrated_engineering_intake": {
+        "brand": "Integrated Engineering",
+        "part_number": "IEINCC2",
+        "description": "Cold air intake",
+        "price_usd": 399,
+        "power_gain": "5-15 hp (with tune)",
+        "material": "Carbon fiber",
+        "notes": "High-quality construction"
+      },
+      "034_motorsport_intake": {
+        "brand": "034 Motorsport",
+        "part_number": "034-108-1017",
+        "description": "P34 cold air intake",
+        "price_usd": 349,
+        "power_gain": "5-10 hp",
+        "notes": "Good airflow design"
+      },
+      "k_and_n_drop_in": {
+        "brand": "K&N",
+        "part_number": "33-3005",
+        "description": "Drop-in replacement filter",
+        "price_usd": 65,
+        "power_gain": "Minimal",
+        "notes": "Easy install, reusable"
+      }
+    },
+    "turbo_upgrades": {
+      "is20_turbo_swap": {
+        "brand": "OEM Upgrade",
+        "part_number": "06K145874L",
+        "description": "Golf GTI IS20 turbo - direct bolt-on upgrade",
+        "price_usd": 800,
+        "price_new_usd": 1200,
+        "power_potential": "250-280 hp",
+        "notes": "Most popular upgrade path - bolt-on from Golf GTI/GTD"
+      },
+      "cts_turbo_is20_kit": {
+        "brand": "CTS Turbo",
+        "part_number": "CTS-IS20-KIT",
+        "description": "IS20 turbo kit with supporting mods",
+        "price_usd": 1499,
+        "includes": ["IS20 turbo", "Oil lines", "Gaskets"],
+        "power_potential": "270-290 hp"
+      },
+      "tomioka_racing_td04": {
+        "brand": "Tomioka Racing",
+        "part_number": "TR-TKO4L",
+        "description": "TD04L turbo upgrade",
+        "price_usd": 899,
+        "power_potential": "230-260 hp",
+        "notes": "Alternative to IS20"
+      }
+    },
+    "intercooler_upgrades": {
+      "cts_turbo_fmic": {
+        "brand": "CTS Turbo",
+        "part_number": "CTS-MK7-FMICKIT",
+        "description": "Front mount intercooler kit",
+        "price_usd": 599,
+        "core_size": "21x9x3.5 inches",
+        "cooling_efficiency": "60% improvement",
+        "notes": "Essential for IS20 builds"
+      },
+      "apr_intercooler": {
+        "brand": "APR",
+        "part_number": "IC100023",
+        "description": "Front mount intercooler system",
+        "price_usd": 849,
+        "cooling_efficiency": "70% improvement",
+        "notes": "OEM+ fitment"
+      },
+      "wagner_tuning_evo1": {
+        "brand": "Wagner Tuning",
+        "part_number": "200001048",
+        "description": "Competition intercooler",
+        "price_usd": 749,
+        "cooling_efficiency": "85% improvement",
+        "notes": "German engineering"
+      }
+    },
+    "exhaust_systems": {
+      "downpipe": {
+        "cts_turbo_downpipe": {
+          "brand": "CTS Turbo",
+          "part_number": "CTS-EXH-DP-0001",
+          "description": "3\" catted downpipe",
+          "price_usd": 399,
+          "power_gain": "10-20 hp (with tune)",
+          "catalyst": "200 cell high-flow cat",
+          "notes": "Required for Stage 2"
+        },
+        "integrated_engineering_downpipe": {
+          "brand": "IE",
+          "part_number": "IEEXCK1",
+          "description": "Cast downpipe with flex section",
+          "price_usd": 449,
+          "power_gain": "10-25 hp",
+          "notes": "High quality construction"
+        },
+        "unitronic_downpipe": {
+          "brand": "Unitronic",
+          "part_number": "UH034-EXA",
+          "description": "3\" downpipe",
+          "price_usd": 379,
+          "notes": "Good value option"
+        }
+      },
+      "cat_back": {
+        "apr_catback": {
+          "brand": "APR",
+          "part_number": "CBK0005",
+          "description": "RSC catback exhaust",
+          "price_usd": 1399,
+          "material": "T304 stainless",
+          "sound": "Refined sporty"
+        },
+        "remus_catback": {
+          "brand": "Remus",
+          "part_number": "Vehicle specific",
+          "description": "Sport exhaust system",
+          "price_usd": 1299,
+          "sound": "European sport"
+        }
+      }
+    },
+    "fueling_upgrades": {
+      "high_flow_fuel_pump": {
+        "autotech_hpfp": {
+          "brand": "Autotech",
+          "part_number": "10-127-1020k2",
+          "description": "High-volume HPFP internals",
+          "price_usd": 549,
+          "flow_increase": "50%",
+          "notes": "Required for IS20+ power levels"
+        },
+        "integrated_engineering_hpfp": {
+          "brand": "IE",
+          "part_number": "IEFUVC3",
+          "description": "High-pressure fuel pump upgrade",
+          "price_usd": 599,
+          "notes": "Complete assembly"
+        }
+      },
+      "upgraded_injectors": {
+        "rs3_injectors": {
+          "description": "Audi RS3 injectors (600cc)",
+          "oem_part": "06F906036F",
+          "price_usd": 120,
+          "notes": "For big turbo builds, requires tune"
+        }
+      }
+    },
+    "engine_internals": {
+      "connecting_rods": {
+        "ie_rods": {
+          "brand": "Integrated Engineering",
+          "part_number": "IECRVA2",
+          "description": "Forged H-beam connecting rods",
+          "price_usd": 849,
+          "power_rating": "400+ hp",
+          "material": "4340 forged steel"
+        },
+        "supertech_rods": {
+          "brand": "Supertech",
+          "part_number": "CR-VAG14-144-19",
+          "description": "Forged connecting rods",
+          "price_usd": 799,
+          "power_rating": "500+ hp"
+        }
+      },
+      "pistons": {
+        "je_pistons": {
+          "brand": "JE Pistons",
+          "part_number": "361403",
+          "description": "Forged pistons 9.5:1 CR",
+          "price_usd": 699,
+          "power_rating": "400+ hp"
+        },
+        "mahle_pistons": {
+          "brand": "Mahle Motorsport",
+          "description": "Forged pistons custom order",
+          "price_usd": 899,
+          "power_rating": "500+ hp"
+        }
+      },
+      "head_studs": {
+        "arp_head_studs": {
+          "brand": "ARP",
+          "part_number": "Vehicle specific",
+          "description": "Head stud kit",
+          "price_usd": 349,
+          "notes": "Required for big boost applications"
+        }
+      }
+    },
+    "diverter_valve_upgrades": {
+      "gfb_dv": {
+        "brand": "Go Fast Bits",
+        "part_number": "T9351",
+        "description": "DV+ diverter valve",
+        "price_usd": 149,
+        "type": "Recirculating",
+        "notes": "Improved response over stock"
+      },
+      "forge_dv": {
+        "brand": "Forge Motorsport",
+        "part_number": "FMDVMK7A",
+        "description": "Replacement diverter valve",
+        "price_usd": 189,
+        "type": "Recirculating",
+        "notes": "High quality replacement"
+      }
+    },
+    "engine_mounts": {
+      "034_motorsport_mounts": {
+        "brand": "034 Motorsport",
+        "part_number": "034-509-0050",
+        "description": "Density line engine mount set",
+        "price_usd": 399,
+        "durometer": "70A",
+        "notes": "Reduces wheel hop, increases NVH slightly"
+      },
+      "integrated_engineering_mounts": {
+        "brand": "IE",
+        "part_number": "IEBAVB2",
+        "description": "Stage 2 mount set",
+        "price_usd": 449,
+        "notes": "Track-focused"
+      }
+    },
+    "catch_cans_pcv": {
+      "ie_catch_can": {
+        "brand": "Integrated Engineering",
+        "part_number": "IEBACC4",
+        "description": "Baffled oil catch can kit",
+        "price_usd": 279,
+        "notes": "Helps prevent carbon buildup"
+      },
+      "034_catch_can": {
+        "brand": "034 Motorsport",
+        "part_number": "034-101-1015",
+        "description": "Catch can kit",
+        "price_usd": 249,
+        "notes": "Clean install"
+      }
+    }
+  },
+  "tuning_packages": {
+    "stage_1_daily": {
+      "description": "Daily driver Stage 1 package",
+      "power_output": "180-190 hp / 290-300 Nm",
+      "components": [
+        {"item": "APR/Unitronic/IE Stage 1 tune", "price_usd": 599},
+        {"item": "K&N drop-in filter", "price_usd": 65}
+      ],
+      "total_cost_usd": 664,
+      "notes": "No hardware changes required, maintains reliability"
+    },
+    "stage_2_enthusiast": {
+      "description": "Enthusiast Stage 2 package",
+      "power_output": "200-220 hp / 320-350 Nm",
+      "components": [
+        {"item": "Stage 2 ECU tune", "price_usd": 699},
+        {"item": "Cold air intake", "price_usd": 349},
+        {"item": "High-flow downpipe (catted)", "price_usd": 399},
+        {"item": "Upgraded diverter valve", "price_usd": 149},
+        {"item": "Upgraded intercooler", "price_usd": 599}
+      ],
+      "total_cost_usd": 2195,
+      "notes": "Great balance of power and reliability"
+    },
+    "is20_conversion": {
+      "description": "IS20 turbo swap package",
+      "power_output": "250-280 hp / 380-420 Nm",
+      "components": [
+        {"item": "IS20 turbocharger (used)", "price_usd": 800},
+        {"item": "IS20 ECU tune", "price_usd": 799},
+        {"item": "Upgraded intercooler", "price_usd": 599},
+        {"item": "Cold air intake", "price_usd": 349},
+        {"item": "High-flow downpipe", "price_usd": 399},
+        {"item": "Upgraded HPFP", "price_usd": 549},
+        {"item": "Upgraded diverter valve", "price_usd": 149}
+      ],
+      "total_cost_usd": 3644,
+      "notes": "GTI-level power from 1.4T - popular conversion"
+    },
+    "big_turbo_build": {
+      "description": "Forged internals big turbo build",
+      "power_output": "350-400 hp",
+      "components": [
+        {"item": "Forged rods (IE)", "price_usd": 849},
+        {"item": "Forged pistons", "price_usd": 699},
+        {"item": "ARP head studs", "price_usd": 349},
+        {"item": "IS38 turbo with adapter", "price_usd": 1500},
+        {"item": "Large intercooler", "price_usd": 749},
+        {"item": "Upgraded HPFP", "price_usd": 549},
+        {"item": "RS3 injectors", "price_usd": 480},
+        {"item": "Custom tune", "price_usd": 1000},
+        {"item": "Supporting mods", "price_usd": 1500}
+      ],
+      "total_cost_usd": 7675,
+      "notes": "Full build - requires machine work and experienced tuner"
+    }
+  },
+  "community_resources": {
+    "forums": {
+      "audizine": {
+        "url": "https://www.audizine.com/forum",
+        "description": "Audi enthusiast community",
+        "relevant_sections": ["A3/S3/RS3 (8V)", "A3/S3/RS3 (8Y)"]
+      },
+      "vwvortex": {
+        "url": "https://www.vwvortex.com",
+        "description": "VW/Audi enthusiast community",
+        "relevant_sections": ["MK7 Golf/GTI/R", "MQB Platform"]
+      },
+      "golfmk7": {
+        "url": "https://www.golfmk7.com",
+        "description": "Golf MK7/MK8 specific forum",
+        "relevant_sections": ["1.4 TSI Engine"]
+      }
+    },
+    "facebook_groups": {
+      "vag_14_tsi_owners": "VAG 1.4 TSI/TFSI Owners",
+      "mk7_golf_owners": "MK7 Golf Owners",
+      "8v_a3_s3_owners": "8V A3/S3 Owners Club"
+    },
+    "youtube_channels": {
+      "humble_mechanic": "HumbleMechanic - VAG service tutorials",
+      "deutsche_auto_parts": "DAP - DIY repair guides",
+      "shopdap": "ShopDAP - How-to videos"
+    }
+  }
+}

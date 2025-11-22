@@ -1,0 +1,266 @@
+{
+  "component_id": "VAG-TURBO-IS38",
+  "description": "IHI IS38 Turbocharger - VAG High-Performance 2.0T applications",
+  "manufacturer": "IHI Corporation",
+  "version": "1.0.0",
+  "specifications": {
+    "type": "Single turbocharger",
+    "wastegate": "Internal electronic",
+    "bearing_type": "Journal bearing",
+    "compressor_wheel": {
+      "inducer_mm": 46,
+      "exducer_mm": 58,
+      "trim": 63
+    },
+    "turbine_wheel": {
+      "inducer_mm": 54,
+      "exducer_mm": 49,
+      "trim": 82
+    },
+    "a_r_ratio": {
+      "compressor": 0.55,
+      "turbine": 0.86
+    },
+    "max_rpm": 200000,
+    "max_boost_bar": 1.8,
+    "oil_flow_lpm": 1.4,
+    "coolant_cooled": true,
+    "comparison_to_is20": {
+      "compressor_inducer_increase": "15%",
+      "compressor_exducer_increase": "14%",
+      "airflow_increase": "30-40%",
+      "spool_penalty": "200-300 RPM later"
+    }
+  },
+  "oem_part_numbers": {
+    "golf_r_mk7_early": "06K145874F",
+    "golf_r_mk7_late": "06K145874G",
+    "s3_8v": "06K145874G",
+    "tts_8s": "06K145874H",
+    "cupra_300": "06K145874G",
+    "golf_r_mk7_5": "06K145874H",
+    "notes": "Minor revisions between variants - all interchangeable"
+  },
+  "vehicle_applications": {
+    "volkswagen": {
+      "golf_r_mk7": {
+        "years": "2014-2020",
+        "power_hp": "310",
+        "torque_nm": "400",
+        "engine_code": "CJXG"
+      },
+      "golf_r_mk7_5": {
+        "years": "2018-2020",
+        "power_hp": "310",
+        "engine_code": "CJXG/DNUA"
+      }
+    },
+    "audi": {
+      "s3_8v": {
+        "years": "2014-2020",
+        "power_hp": "310",
+        "torque_nm": "400",
+        "engine_code": "CJXC/CJXG"
+      },
+      "tts_8s": {
+        "years": "2015-present",
+        "power_hp": "310",
+        "torque_nm": "400"
+      },
+      "s3_8y_pre_facelift": {
+        "years": "2020-2021",
+        "power_hp": "310",
+        "notes": "Before Gen4 twin-scroll turbo"
+      }
+    },
+    "seat": {
+      "leon_cupra_290": {
+        "years": "2015-2017",
+        "power_hp": "290"
+      },
+      "leon_cupra_300": {
+        "years": "2017-2020",
+        "power_hp": "300"
+      },
+      "cupra_ateca": {
+        "years": "2018-present",
+        "power_hp": "300"
+      }
+    },
+    "skoda": {
+      "octavia_rs_300": {
+        "years": "2020-present",
+        "power_hp": "245",
+        "notes": "Detuned IS38"
+      }
+    }
+  },
+  "stock_performance": {
+    "golf_r_s3_tune": {
+      "power_hp": "310",
+      "torque_nm": "400",
+      "spool_rpm": 2800,
+      "peak_boost_psi": 22
+    },
+    "full_boost_available": "3500-6500 RPM"
+  },
+  "tuning_potential": {
+    "stage_1": {
+      "description": "ECU tune only",
+      "power_hp": "370-400",
+      "torque_nm": "500-520",
+      "spool_rpm": 2800,
+      "peak_boost_psi": 28,
+      "supporting_mods": "None required",
+      "notes": "Significant gains from tune alone"
+    },
+    "stage_2": {
+      "description": "ECU tune + downpipe + intake",
+      "power_hp": "420-450",
+      "torque_nm": "540-570",
+      "peak_boost_psi": 30,
+      "supporting_mods": ["Catted downpipe", "Cold air intake", "Upgraded intercooler"]
+    },
+    "stage_2_plus": {
+      "description": "Full bolt-ons + fueling",
+      "power_hp": "450-480",
+      "torque_nm": "570-600",
+      "peak_boost_psi": 32,
+      "supporting_mods": ["Downpipe", "Intake", "Large intercooler", "Upgraded HPFP", "Upgraded LPFP"],
+      "notes": "Approaching IS38 limits"
+    },
+    "e85_stage_2": {
+      "description": "Stage 2 with E85 fuel",
+      "power_hp": "470-500",
+      "torque_nm": "600-630",
+      "supporting_mods": ["Full bolt-ons", "Upgraded HPFP", "Port injection recommended"],
+      "notes": "E85 significantly increases power ceiling"
+    },
+    "max_reliable_output": {
+      "power_hp": 500,
+      "torque_nm": 620,
+      "notes": "Beyond this, consider hybrid turbo upgrade"
+    }
+  },
+  "upgrade_paths": {
+    "hybrid_tte475": {
+      "description": "TTE475 hybrid turbo",
+      "vendor": "TTE Performance",
+      "power_potential_hp": "475-500",
+      "cost_usd": 2499,
+      "compressor": "Upgraded billet wheel",
+      "turbine": "Upgraded wheel with clipped blades",
+      "advantages": ["Bolt-on IS38 replacement", "Excellent spool", "Big power increase"],
+      "notes": "Most popular IS38 upgrade"
+    },
+    "hybrid_tte525": {
+      "description": "TTE525 larger hybrid",
+      "vendor": "TTE Performance",
+      "power_potential_hp": "525-550",
+      "cost_usd": 2799,
+      "notes": "Larger wheels - stock internals limit"
+    },
+    "hybrid_tte590": {
+      "description": "TTE590 large frame hybrid",
+      "vendor": "TTE Performance",
+      "power_potential_hp": "590-650",
+      "cost_usd": 3499,
+      "requirements": ["Forged internals recommended", "Full fuel system upgrade"],
+      "notes": "Exceeds stock engine capability"
+    },
+    "vargas_gc_turbos": {
+      "description": "Vargas GC series hybrids",
+      "vendor": "Vargas Turbo Technologies",
+      "variants": {
+        "GC475": {"power_hp": "475", "cost_usd": 2400},
+        "GC550": {"power_hp": "550", "cost_usd": 2900}
+      }
+    },
+    "big_turbo": {
+      "description": "External frame turbo kit",
+      "vendors": ["Precision Turbo", "Garrett", "BorgWarner EFR"],
+      "power_potential_hp": "700-1000+",
+      "cost_range_usd": "4000-8000",
+      "requirements": [
+        "Custom turbo manifold",
+        "Forged engine internals",
+        "Complete fuel system upgrade",
+        "Custom ECU tune"
+      ],
+      "notes": "Full race build territory"
+    }
+  },
+  "is38_swap_on_is20_car": {
+    "description": "Popular upgrade path - putting IS38 on GTI/A3",
+    "source_vehicles": ["Golf R MK7", "S3 8V", "TTS 8S", "Cupra 300"],
+    "target_vehicles": ["Golf GTI MK7/8", "A3 8V 2.0 TFSI", "TT 8S 2.0T", "Leon FR/Cupra 280"],
+    "compatibility": "Direct bolt-on replacement for IS20",
+    "required_parts": [
+      {"part": "IS38 turbocharger", "cost_usd": "800-1400"},
+      {"part": "Turbo gasket (06K253039B)", "cost_usd": 15},
+      {"part": "Oil line crush washers", "cost_usd": 10}
+    ],
+    "required_tune": "IS38-specific ECU calibration",
+    "recommended_supporting_mods": [
+      {"mod": "Upgraded HPFP", "reason": "Flow limitation at 400+ hp"},
+      {"mod": "Upgraded intercooler", "reason": "IS38 moves more air"},
+      {"mod": "Downpipe", "reason": "Maximize turbo efficiency"},
+      {"mod": "Cold air intake", "reason": "Feed the larger compressor"}
+    ],
+    "expected_results": {
+      "with_tune_only": {
+        "power_hp": "370-390",
+        "torque_nm": "500-520"
+      },
+      "with_full_supporting_mods": {
+        "power_hp": "420-450",
+        "torque_nm": "550-580"
+      }
+    },
+    "installation_notes": [
+      "IS38 uses same mounting points as IS20",
+      "Oil and coolant lines are compatible",
+      "Wastegate actuator plugs directly in",
+      "Must flash IS38 tune before driving"
+    ],
+    "total_cost_estimate": {
+      "budget_build": "$1500-2000 (used turbo + tune)",
+      "full_build": "$3500-4500 (turbo + tune + supporting mods)"
+    }
+  },
+  "common_failures": {
+    "wastegate_rattle": {
+      "symptoms": ["Rattle at idle", "Rattle under light load"],
+      "cause": "Wastegate flapper play",
+      "solution": "Often normal - severe cases replace actuator",
+      "part_number": "06K145725C"
+    },
+    "shaft_play": {
+      "symptoms": ["Oil consumption", "Blue smoke", "Whine"],
+      "cause": "High-mileage bearing wear",
+      "solution": "Replace turbocharger",
+      "typical_mileage": "100k+ miles with proper maintenance"
+    },
+    "boost_creep": {
+      "symptoms": ["Boost overshoots target"],
+      "cause": "Wastegate can't flow enough at high power",
+      "solution": "Normal on high-power tunes - tune should compensate"
+    }
+  },
+  "service_notes": {
+    "oil_requirements": "VW 504/507 or 508/509 specification",
+    "oil_change_interval_tuned": "5000 miles recommended for Stage 2+",
+    "cool_down_period": "60-90 seconds idle after spirited driving",
+    "inspection_interval": "Check shaft play annually or at 50k miles",
+    "pre_start_oil_prime": "Allow oil pressure to build before revving"
+  },
+  "cross_references": {
+    "smaller_turbo": {
+      "is20": "Standard GTI/A3 turbo - IS38 is direct upgrade"
+    },
+    "larger_turbos": {
+      "tte475": "Hybrid upgrade in IS38 housing",
+      "tte525": "Larger hybrid - more power, similar spool"
+    }
+  }
+}

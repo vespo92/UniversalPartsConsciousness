@@ -1,0 +1,474 @@
+{
+  "engine_id": "VAG-EA888-2.0L-TFSI-I4",
+  "engine_family": "EA888",
+  "matrix_version": "1.0.0",
+  "vag_platform_sharing": {
+    "description": "EA888 is VAG's most versatile engine, shared across 6 brands and dozens of vehicles",
+    "shared_platforms": {
+      "PQ35": {
+        "description": "A-platform transverse",
+        "years": "2008-2013",
+        "generation": "Gen1/Gen2",
+        "vehicles": ["VW Golf 6 GTI", "Audi A3 8P", "VW Tiguan 1", "Audi TT 8J"]
+      },
+      "MQB": {
+        "description": "Modular Transverse Matrix",
+        "years": "2013-present",
+        "generation": "Gen3/Gen3B/Gen4",
+        "vehicles": [
+          "VW Golf 7/8 GTI/R",
+          "Audi A3/S3 8V/8Y",
+          "Audi TT/TTS 8S",
+          "Audi Q3 F3",
+          "SEAT Leon Cupra",
+          "Skoda Octavia RS"
+        ]
+      },
+      "MLB": {
+        "description": "Modular Longitudinal Matrix",
+        "years": "2016-present",
+        "vehicles": ["Audi A4 B9", "Audi A5 B9", "Audi Q5 FY"],
+        "notes": "Longitudinal mounting, some unique parts"
+      }
+    }
+  },
+  "generation_compatibility": {
+    "gen1_to_gen2": {
+      "interchangeable": [
+        "Most sensors",
+        "Oil filter",
+        "Some fuel system components",
+        "Ignition coils"
+      ],
+      "not_interchangeable": [
+        "Timing chain/tensioner (use updated parts)",
+        "PCV system",
+        "Water pump"
+      ],
+      "upgrade_path": "Update Gen1 timing and PCV to Gen2 revised parts"
+    },
+    "gen2_to_gen3": {
+      "interchangeable": [
+        "Basic sensors",
+        "Some accessory parts"
+      ],
+      "not_interchangeable": [
+        "Engine block (cast iron vs aluminum)",
+        "Cylinder head (different design)",
+        "Turbo system (different turbos)",
+        "Fuel system (single DI vs dual injection)",
+        "Intake manifold (different IC integration)"
+      ],
+      "notes": "Major redesign - limited parts compatibility"
+    },
+    "gen3_is20_to_is38": {
+      "interchangeable": [
+        "Engine block",
+        "Most internal components",
+        "Sensors",
+        "Fuel system (with mods)",
+        "Many accessories"
+      ],
+      "differences": {
+        "turbo": "IS20 vs IS38 - direct swap possible",
+        "pistons": "Different compression ratio",
+        "ecu": "Different calibration",
+        "injectors_di": "IS38 has higher flow",
+        "hpfp": "IS38 version has higher flow"
+      },
+      "upgrade_path": "IS38 swap on IS20 car is popular and well documented"
+    },
+    "gen3_to_gen4": {
+      "interchangeable": [
+        "Many sensors",
+        "Basic accessories",
+        "Some fuel components"
+      ],
+      "differences": {
+        "block": "Open-deck vs closed-deck",
+        "turbo": "Single vs twin-scroll",
+        "ecu": "Different generation"
+      }
+    }
+  },
+  "turbo_interchange_matrix": {
+    "k03_gen1": {
+      "part_numbers": ["06F145701D", "06F145701H"],
+      "power_range_hp": "200-260 (tuned)",
+      "compatible_with": "Gen1 EA888",
+      "upgrade_to": "K04 direct bolt-on"
+    },
+    "k04_upgrade": {
+      "part_numbers": ["06F145702C"],
+      "source": "Audi S3 8P, Golf 6 R, TTS",
+      "power_range_hp": "320-380",
+      "notes": "Direct swap on Gen1/Gen2"
+    },
+    "is20_gen3": {
+      "part_numbers": ["06K145874L", "06K145874M", "06K145874N"],
+      "applications": ["Golf 7 GTI", "A3 8V 2.0 TFSI", "TT 8S"],
+      "power_range_hp": "220-350 (tuned)",
+      "upgrade_options": {
+        "is38_swap": {
+          "description": "Golf R/S3 turbo - direct bolt-on",
+          "power_potential": "370-450 hp",
+          "requirements": ["Tune", "Upgraded HPFP recommended"]
+        },
+        "hybrid_is20": {
+          "vendors": ["TTE", "Frankenturbo"],
+          "description": "Upgraded internals in IS20 housing",
+          "power_potential": "350-400 hp"
+        }
+      }
+    },
+    "is38_gen3": {
+      "part_numbers": ["06K145874F", "06K145874G", "06K145874H"],
+      "applications": ["Golf 7/8 R", "S3 8V/8Y", "TTS 8S", "Cupra 290/300"],
+      "power_range_hp": "310-500 (tuned)",
+      "upgrade_options": {
+        "hybrid_is38": {
+          "vendors": ["TTE475", "TTE525", "Vargas"],
+          "description": "Upgraded internals in IS38 housing",
+          "power_potential": "475-550 hp"
+        },
+        "big_turbo": {
+          "vendors": ["Precision", "Garrett GTX", "Borg Warner EFR"],
+          "description": "External turbo - requires manifold",
+          "power_potential": "600-1000+ hp"
+        }
+      }
+    },
+    "is38_on_is20_car": {
+      "description": "Popular turbo swap - Golf R turbo on GTI",
+      "source_part": "06K145874F (Golf R turbo)",
+      "target_vehicles": ["Golf GTI MK7", "A3 2.0 TFSI 8V"],
+      "required_parts": [
+        "IS38 turbocharger",
+        "Turbo gasket (06K253039B)",
+        "New wastegate actuator (optional)",
+        "ECU tune for IS38"
+      ],
+      "recommended_supporting_mods": [
+        "Upgraded HPFP (Autotech)",
+        "Upgraded intercooler",
+        "Cold air intake",
+        "Downpipe"
+      ],
+      "expected_output": {
+        "stock_is38_tune": "370-400 hp",
+        "stage_2_is38": "420-450 hp"
+      },
+      "cost_estimate_usd": {
+        "used_turbo": 800,
+        "new_turbo": 1400,
+        "tune": 700,
+        "supporting_mods": 1500,
+        "total_range": "2500-4000"
+      }
+    }
+  },
+  "internal_parts_interchange": {
+    "rod_upgrades": {
+      "oem_gen3_rods": {
+        "description": "OEM Gen3 rods stronger than Gen1/Gen2",
+        "power_limit_hp": 450
+      },
+      "aftermarket_options": [
+        {
+          "brand": "Integrated Engineering",
+          "part_number": "IECRVA3",
+          "type": "Forged H-beam",
+          "power_rating_hp": 700,
+          "price_usd": 949
+        },
+        {
+          "brand": "Supertech",
+          "part_number": "CR-VAG20T-144",
+          "type": "Forged I-beam",
+          "power_rating_hp": 800,
+          "price_usd": 899
+        },
+        {
+          "brand": "Carrillo",
+          "part_number": "Custom order",
+          "type": "Pro-H",
+          "power_rating_hp": 1000,
+          "price_usd": 1200
+        },
+        {
+          "brand": "Manley",
+          "part_number": "14028-4",
+          "type": "Turbo Tuff I-beam",
+          "power_rating_hp": 900,
+          "price_usd": 800
+        }
+      ]
+    },
+    "piston_upgrades": {
+      "aftermarket_options": [
+        {
+          "brand": "JE Pistons",
+          "part_number": "361402",
+          "compression_ratio": "9.0:1",
+          "power_rating_hp": 700,
+          "price_usd": 750
+        },
+        {
+          "brand": "Mahle Motorsport",
+          "part_number": "Custom",
+          "compression_ratio": "9.0:1 - 9.5:1",
+          "power_rating_hp": 800,
+          "price_usd": 900
+        },
+        {
+          "brand": "CP Pistons",
+          "part_number": "SC7683",
+          "compression_ratio": "9.5:1",
+          "power_rating_hp": 800,
+          "price_usd": 850
+        },
+        {
+          "brand": "Wiseco",
+          "part_number": "K683M825",
+          "compression_ratio": "9.2:1",
+          "power_rating_hp": 750,
+          "price_usd": 700
+        }
+      ]
+    },
+    "bearing_upgrades": {
+      "aftermarket_options": [
+        {
+          "brand": "ACL Race",
+          "main_bearings": "5M2152H-STD",
+          "rod_bearings": "4B2152H-STD",
+          "price_set_usd": 200
+        },
+        {
+          "brand": "King Racing",
+          "main_bearings": "MB5568AM",
+          "rod_bearings": "CR4624AM",
+          "price_set_usd": 180
+        },
+        {
+          "brand": "Clevite",
+          "main_bearings": "MS2152H",
+          "rod_bearings": "CB663HN",
+          "price_set_usd": 170
+        }
+      ]
+    }
+  },
+  "ecu_tuning_compatibility": {
+    "gen1_gen2": {
+      "ecu_types": ["Bosch MED17.5.2", "Siemens Simos 8"],
+      "tuning_platforms": {
+        "apr": {"support": "Full", "method": "Dealer flash"},
+        "unitronic": {"support": "Full", "method": "Dealer flash"},
+        "revo": {"support": "Full", "method": "Dealer flash"},
+        "eurodyne": {"support": "Full", "method": "Self flash"}
+      }
+    },
+    "gen3_is20": {
+      "ecu_types": ["Bosch MG1CS011", "Siemens Simos 18.1"],
+      "tuning_platforms": {
+        "apr": {"stages": ["1", "2", "2+"], "method": "Dealer flash"},
+        "unitronic": {"stages": ["1", "1+", "2", "2+"], "method": "Dealer flash / Uniconnect"},
+        "integrated_engineering": {"stages": ["1", "2"], "method": "Dealer flash"},
+        "eqt": {"stages": ["1", "2", "E85"], "method": "Cobb Accessport"},
+        "stratified": {"stages": ["1", "2", "E85"], "method": "Cobb Accessport"}
+      }
+    },
+    "gen3_is38": {
+      "ecu_types": ["Bosch MG1CS011", "Siemens Simos 18.1", "Simos 18.10"],
+      "tuning_platforms": {
+        "apr": {"stages": ["1", "2", "2+"], "power_stage_1": "380hp", "method": "Dealer flash"},
+        "unitronic": {"stages": ["1", "1+", "2", "2+"], "power_stage_1": "380hp"},
+        "integrated_engineering": {"stages": ["1", "2"], "power_stage_1": "375hp"},
+        "eqt": {"stages": ["1", "2", "E85"], "power_stage_2_e85": "450hp"},
+        "hpa": {"stages": ["1", "2", "Big turbo"], "specialty": "R-specific tunes"}
+      }
+    },
+    "is38_on_is20_tune": {
+      "description": "Running IS38 turbo on former IS20 car",
+      "tuning_requirements": "IS38 specific calibration required",
+      "available_from": ["APR", "Unitronic", "IE", "EQT", "Stratified"],
+      "typical_output": "370-400 hp stage 1, 420-450 hp stage 2"
+    }
+  },
+  "transmission_compatibility": {
+    "manual": {
+      "MQ350_6MT": {
+        "torque_rating_nm": 350,
+        "applications": ["Golf GTI", "A3 TFSI"],
+        "notes": "Stock gearbox, handles Stage 1-2 well"
+      },
+      "MQ500_6MT": {
+        "torque_rating_nm": 500,
+        "applications": ["Some Golf R models"],
+        "notes": "Stronger manual option"
+      }
+    },
+    "dsg": {
+      "DQ250_6DSG": {
+        "torque_rating_nm": 400,
+        "applications": ["Gen1/Gen2 GTI/R", "8P S3"],
+        "notes": "Older DSG, handles ~450nm with TCU tune"
+      },
+      "DQ381_7DSG": {
+        "torque_rating_nm": 500,
+        "applications": ["MK7+ Golf R", "8V S3"],
+        "notes": "Stronger wet-clutch DSG, handles 550nm+ with TCU tune"
+      },
+      "DQ500_7DSG": {
+        "torque_rating_nm": 600,
+        "applications": ["Transverse Haldex 4WD", "Some RS models"],
+        "notes": "Strongest MQB DSG - handles 700nm+"
+      }
+    },
+    "dsg_tcu_tuning": {
+      "available_from": ["DSG Tuning", "TVS", "HPA", "IE"],
+      "benefits": [
+        "Increased torque capacity",
+        "Faster shifts",
+        "Launch control improvements",
+        "Higher rev limiter"
+      ]
+    }
+  },
+  "cross_platform_swaps": {
+    "is38_into_gti": {
+      "difficulty": "Moderate",
+      "time_hours": 4,
+      "description": "Golf R IS38 turbo into Golf GTI",
+      "parts_needed": [
+        "IS38 turbocharger",
+        "Turbo gasket",
+        "ECU tune"
+      ],
+      "recommended": [
+        "Upgraded HPFP",
+        "Upgraded intercooler",
+        "Downpipe"
+      ]
+    },
+    "gen3_into_gen1_car": {
+      "difficulty": "Expert",
+      "description": "Gen3 EA888 into Gen1/Gen2 chassis",
+      "considerations": [
+        "Different wiring harness",
+        "Different ECU",
+        "Different accessories mounting",
+        "Cooling system differences"
+      ],
+      "notes": "Possible but extensive - most swap entire subframe"
+    },
+    "mqb_engine_into_pq35": {
+      "difficulty": "Expert",
+      "description": "MQB Gen3 engine into PQ35 car",
+      "required": [
+        "Custom wiring harness",
+        "ECU conversion",
+        "Accessory modifications",
+        "Custom tune"
+      ],
+      "notes": "Done but not for beginners"
+    }
+  },
+  "common_upgrade_packages": {
+    "gti_stage_1": {
+      "description": "Golf GTI Stage 1 daily driver",
+      "base_vehicle": "Golf 7/8 GTI with IS20",
+      "components": [
+        {"item": "APR/Unitronic/IE Stage 1 ECU tune", "price_usd": 599},
+        {"item": "Drop-in performance filter", "price_usd": 65}
+      ],
+      "expected_output": "280-300 hp / 400-420 Nm",
+      "total_cost_usd": 664
+    },
+    "gti_stage_2": {
+      "description": "GTI Stage 2 enthusiast build",
+      "components": [
+        {"item": "Stage 2 ECU tune", "price_usd": 699},
+        {"item": "Cold air intake", "price_usd": 349},
+        {"item": "Catted downpipe", "price_usd": 449},
+        {"item": "Upgraded intercooler", "price_usd": 649}
+      ],
+      "expected_output": "320-340 hp / 460-480 Nm",
+      "total_cost_usd": 2146
+    },
+    "gti_is38_swap": {
+      "description": "GTI with Golf R turbo",
+      "components": [
+        {"item": "IS38 turbo (used)", "price_usd": 800},
+        {"item": "IS38 ECU tune", "price_usd": 799},
+        {"item": "Upgraded HPFP", "price_usd": 549},
+        {"item": "Upgraded intercooler", "price_usd": 649},
+        {"item": "Downpipe", "price_usd": 449},
+        {"item": "Intake", "price_usd": 349}
+      ],
+      "expected_output": "370-420 hp / 500-550 Nm",
+      "total_cost_usd": 3595
+    },
+    "golf_r_stage_1": {
+      "description": "Golf R Stage 1",
+      "base_vehicle": "Golf 7/8 R with IS38",
+      "components": [
+        {"item": "Stage 1 ECU tune", "price_usd": 699}
+      ],
+      "expected_output": "370-400 hp / 500-520 Nm",
+      "total_cost_usd": 699
+    },
+    "golf_r_stage_2": {
+      "description": "Golf R full bolt-on",
+      "components": [
+        {"item": "Stage 2 ECU tune", "price_usd": 799},
+        {"item": "DSG/TCU tune", "price_usd": 599},
+        {"item": "Downpipe", "price_usd": 499},
+        {"item": "Upgraded intercooler", "price_usd": 799},
+        {"item": "Upgraded HPFP", "price_usd": 549},
+        {"item": "Intake", "price_usd": 399}
+      ],
+      "expected_output": "420-450 hp / 550-580 Nm",
+      "total_cost_usd": 3644
+    },
+    "golf_r_hybrid_turbo": {
+      "description": "Golf R hybrid turbo build",
+      "components": [
+        {"item": "TTE475/TTE525 hybrid turbo", "price_usd": 2499},
+        {"item": "Custom tune", "price_usd": 899},
+        {"item": "Upgraded HPFP", "price_usd": 549},
+        {"item": "Port injection kit", "price_usd": 1299},
+        {"item": "DSG tune", "price_usd": 599},
+        {"item": "Upgraded intercooler", "price_usd": 799},
+        {"item": "Downpipe", "price_usd": 499}
+      ],
+      "expected_output": "475-550 hp",
+      "total_cost_usd": 7143,
+      "notes": "May need forged internals above 550hp"
+    }
+  },
+  "oem_part_cross_reference": {
+    "description": "Same parts with different part numbers across brands/models",
+    "examples": {
+      "is38_turbo": {
+        "golf_r_mk7": "06K145874F",
+        "s3_8v": "06K145874G",
+        "cupra_290": "06K145874G",
+        "tt_s_8s": "06K145874H",
+        "notes": "All IS38 - interchangeable with appropriate tune"
+      },
+      "is20_turbo": {
+        "golf_gti_mk7": "06K145874L",
+        "a3_8v_2.0": "06K145874M",
+        "tt_8s_2.0": "06K145874N",
+        "notes": "All IS20 - fully interchangeable"
+      },
+      "spark_plugs": {
+        "is20_variant": "06K905601B",
+        "is38_variant": "06K905601D",
+        "notes": "IS38 plugs 1 step colder - can use on IS20 for tuned cars"
+      }
+    }
+  }
+}

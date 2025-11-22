@@ -1,0 +1,737 @@
+{
+  "engine_id": "VAG-EA211-1.4L-TFSI-I4",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "systems": {
+    "short_block": {
+      "description": "Engine block, rotating assembly, and bottom end components",
+      "components": {
+        "engine_block": {
+          "part_id": "EA211-BLOCK",
+          "description": "Aluminum block with cast iron cylinder liners",
+          "oem_part_numbers": {
+            "CZEA": "04E103011AK",
+            "CZTA": "04E103011AM",
+            "CZDA": "04E103011AP"
+          },
+          "specifications": {
+            "bore_mm": 74.5,
+            "deck_height_mm": 220,
+            "material": "Die-cast aluminum with iron liners",
+            "weight_kg": 28
+          },
+          "notes": "Lightweight design, 22kg lighter than EA111"
+        },
+        "crankshaft": {
+          "part_id": "EA211-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": {
+            "standard": "04E105101H",
+            "ACT": "04E105101L"
+          },
+          "specifications": {
+            "stroke_mm": 80.0,
+            "main_journal_mm": 48,
+            "rod_journal_mm": 42,
+            "material": "Forged steel",
+            "counterweights": 8
+          }
+        },
+        "connecting_rods": {
+          "part_id": "EA211-ROD",
+          "description": "Forged steel connecting rods",
+          "oem_part_numbers": {
+            "standard": "04E198401B",
+            "ACT": "04E198401D"
+          },
+          "specifications": {
+            "length_mm": 144,
+            "wrist_pin_mm": 19,
+            "material": "Forged steel",
+            "weight_grams": 425
+          },
+          "quantity": 4
+        },
+        "pistons": {
+          "part_id": "EA211-PISTON",
+          "description": "Forged aluminum pistons with low-friction coating",
+          "oem_part_numbers": {
+            "standard_125hp": "04E107065AT",
+            "standard_150hp": "04E107065BB",
+            "ACT": "04E107065BF"
+          },
+          "specifications": {
+            "diameter_mm": 74.5,
+            "compression_height_mm": 26.6,
+            "pin_offset_mm": 0.5,
+            "coating": "Grafal anti-friction",
+            "rings": 3
+          },
+          "quantity": 4
+        },
+        "piston_rings": {
+          "part_id": "EA211-RINGS",
+          "description": "Three-ring piston ring set",
+          "oem_part_numbers": {
+            "standard": "04E198151A"
+          },
+          "specifications": {
+            "top_ring_mm": 1.0,
+            "second_ring_mm": 1.2,
+            "oil_ring_mm": 2.0
+          },
+          "quantity": 4
+        },
+        "main_bearings": {
+          "part_id": "EA211-MAIN-BEARING",
+          "description": "Main crankshaft bearings",
+          "oem_part_numbers": {
+            "standard": "04E105591B",
+            "thrust": "04E105621A"
+          },
+          "specifications": {
+            "material": "Tri-metal with polymer coating",
+            "clearance_mm": "0.020-0.050"
+          },
+          "quantity": 5
+        },
+        "rod_bearings": {
+          "part_id": "EA211-ROD-BEARING",
+          "description": "Connecting rod bearings",
+          "oem_part_numbers": {
+            "standard": "04E105701D"
+          },
+          "specifications": {
+            "material": "Tri-metal",
+            "clearance_mm": "0.020-0.045"
+          },
+          "quantity": 4
+        }
+      }
+    },
+    "cylinder_head": {
+      "description": "Cylinder head, camshafts, and valvetrain components",
+      "components": {
+        "cylinder_head": {
+          "part_id": "EA211-HEAD",
+          "description": "Aluminum cylinder head with integrated exhaust manifold",
+          "oem_part_numbers": {
+            "CZEA": "04E103063P",
+            "CZTA": "04E103063R",
+            "CZDA": "04E103063S"
+          },
+          "specifications": {
+            "material": "Aluminum alloy",
+            "valves_per_cylinder": 4,
+            "integrated_exhaust_manifold": true,
+            "combustion_chamber_cc": 43
+          },
+          "notes": "Integrated exhaust manifold for faster catalyst warmup"
+        },
+        "head_gasket": {
+          "part_id": "EA211-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": {
+            "standard": "04E103383AC"
+          },
+          "specifications": {
+            "material": "Multi-layer steel (MLS)",
+            "thickness_mm": 0.65,
+            "layers": 3
+          }
+        },
+        "intake_camshaft": {
+          "part_id": "EA211-CAM-INTAKE",
+          "description": "Intake camshaft with VVT",
+          "oem_part_numbers": {
+            "standard": "04E109021M",
+            "ACT": "04E109021P"
+          },
+          "specifications": {
+            "duration_degrees": 228,
+            "lift_mm": 9.9,
+            "vvt_range_degrees": 50
+          }
+        },
+        "exhaust_camshaft": {
+          "part_id": "EA211-CAM-EXHAUST",
+          "description": "Exhaust camshaft",
+          "oem_part_numbers": {
+            "standard": "04E109022K",
+            "ACT": "04E109022N"
+          },
+          "specifications": {
+            "duration_degrees": 224,
+            "lift_mm": 9.9
+          }
+        },
+        "intake_valves": {
+          "part_id": "EA211-VALVE-INTAKE",
+          "description": "Intake valves",
+          "oem_part_numbers": {
+            "standard": "04E109601D"
+          },
+          "specifications": {
+            "head_diameter_mm": 29.5,
+            "stem_diameter_mm": 5.5,
+            "material": "Stainless steel"
+          },
+          "quantity": 8
+        },
+        "exhaust_valves": {
+          "part_id": "EA211-VALVE-EXHAUST",
+          "description": "Sodium-filled exhaust valves",
+          "oem_part_numbers": {
+            "standard": "04E109611D"
+          },
+          "specifications": {
+            "head_diameter_mm": 24.3,
+            "stem_diameter_mm": 5.5,
+            "material": "Sodium-filled stainless steel"
+          },
+          "quantity": 8
+        },
+        "valve_springs": {
+          "part_id": "EA211-VALVE-SPRING",
+          "description": "Valve springs",
+          "oem_part_numbers": {
+            "standard": "04E109623B"
+          },
+          "specifications": {
+            "free_length_mm": 38,
+            "installed_height_mm": 32,
+            "spring_rate_n_mm": 45
+          },
+          "quantity": 16
+        },
+        "hydraulic_lifters": {
+          "part_id": "EA211-LIFTER",
+          "description": "Hydraulic valve lifters",
+          "oem_part_numbers": {
+            "standard": "04E109521K",
+            "ACT": "04E109521P"
+          },
+          "specifications": {
+            "type": "Hydraulic roller",
+            "diameter_mm": 30
+          },
+          "quantity": 16,
+          "notes": "ACT version has switchable lifters for cylinder deactivation"
+        },
+        "timing_belt": {
+          "part_id": "EA211-TIMING-BELT",
+          "description": "Oil-bath timing belt",
+          "oem_part_numbers": {
+            "standard": "04E109119K"
+          },
+          "specifications": {
+            "type": "Oil-bath (wet) timing belt",
+            "teeth": 135,
+            "width_mm": 22
+          },
+          "notes": "Runs in oil bath - unique EA211 design, inspect for contamination"
+        },
+        "timing_belt_tensioner": {
+          "part_id": "EA211-TENSIONER",
+          "description": "Automatic timing belt tensioner",
+          "oem_part_numbers": {
+            "standard": "04E109479H"
+          },
+          "specifications": {
+            "type": "Hydraulic automatic"
+          }
+        },
+        "vvt_solenoid": {
+          "part_id": "EA211-VVT-SOLENOID",
+          "description": "Variable valve timing solenoid",
+          "oem_part_numbers": {
+            "intake": "04E906455C"
+          },
+          "specifications": {
+            "type": "Oil control valve",
+            "adjustment_range_degrees": 50
+          }
+        }
+      }
+    },
+    "turbo_system": {
+      "description": "Turbocharger and boost control components",
+      "components": {
+        "turbocharger": {
+          "part_id": "EA211-TURBO",
+          "description": "IHI IS12 or BorgWarner turbocharger",
+          "oem_part_numbers": {
+            "IS12_125hp": "04E145721R",
+            "IS12_150hp": "04E145721T",
+            "IS20_upgrade": "06K145874L"
+          },
+          "specifications": {
+            "compressor_wheel_mm": 46,
+            "turbine_wheel_mm": 41,
+            "max_boost_bar": 1.2,
+            "wastegate": "Internal electronic"
+          },
+          "notes": "IS20 from Golf GTI is direct bolt-on upgrade"
+        },
+        "wastegate_actuator": {
+          "part_id": "EA211-WASTEGATE",
+          "description": "Electronic wastegate actuator",
+          "oem_part_numbers": {
+            "standard": "04E145725F"
+          },
+          "specifications": {
+            "type": "Electronic",
+            "control": "ECU controlled"
+          }
+        },
+        "intercooler": {
+          "part_id": "EA211-INTERCOOLER",
+          "description": "Front-mount air-to-air intercooler",
+          "oem_part_numbers": {
+            "A3_8V": "5Q0145803T",
+            "Golf_7": "5Q0145803N"
+          },
+          "specifications": {
+            "type": "Air-to-air",
+            "core_dimensions_mm": "580x150x65"
+          }
+        },
+        "charge_pipe": {
+          "part_id": "EA211-CHARGE-PIPE",
+          "description": "Turbo to intercooler charge pipe",
+          "oem_part_numbers": {
+            "standard": "04E145673A"
+          },
+          "specifications": {
+            "material": "Plastic",
+            "diameter_mm": 50
+          }
+        },
+        "diverter_valve": {
+          "part_id": "EA211-DV",
+          "description": "Electronic diverter valve (bypass)",
+          "oem_part_numbers": {
+            "early": "04E145710C",
+            "revised": "06H145710G"
+          },
+          "specifications": {
+            "type": "Electronic solenoid",
+            "recirculating": true
+          },
+          "notes": "Common failure point - upgrade to revised version"
+        }
+      }
+    },
+    "fuel_system": {
+      "description": "Fuel delivery and injection components",
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "EA211-HPFP",
+          "description": "High-pressure fuel pump (cam-driven)",
+          "oem_part_numbers": {
+            "standard": "04E127025N"
+          },
+          "specifications": {
+            "max_pressure_bar": 200,
+            "drive": "Intake camshaft driven",
+            "manufacturer": "Hitachi"
+          }
+        },
+        "fuel_rail": {
+          "part_id": "EA211-FUEL-RAIL",
+          "description": "High-pressure fuel rail",
+          "oem_part_numbers": {
+            "standard": "04E133320B"
+          },
+          "specifications": {
+            "material": "Stainless steel",
+            "pressure_bar": 200
+          }
+        },
+        "fuel_injectors": {
+          "part_id": "EA211-INJECTOR",
+          "description": "High-pressure piezo fuel injectors",
+          "oem_part_numbers": {
+            "125hp": "04E906036AM",
+            "150hp": "04E906036AT"
+          },
+          "specifications": {
+            "type": "Piezo direct injection",
+            "spray_pattern": "6-hole",
+            "flow_cc_min": 380
+          },
+          "quantity": 4
+        },
+        "fuel_pressure_sensor": {
+          "part_id": "EA211-FPS",
+          "description": "Fuel rail pressure sensor",
+          "oem_part_numbers": {
+            "standard": "04E906051A"
+          },
+          "specifications": {
+            "range_bar": "0-250"
+          }
+        },
+        "low_pressure_fuel_pump": {
+          "part_id": "EA211-LPFP",
+          "description": "In-tank low-pressure fuel pump",
+          "oem_part_numbers": {
+            "A3_8V": "5Q0919051AS",
+            "Golf_7": "5Q0919051B"
+          },
+          "specifications": {
+            "pressure_bar": 4,
+            "flow_lph": 180
+          }
+        }
+      }
+    },
+    "intake_system": {
+      "description": "Air intake and throttle components",
+      "components": {
+        "air_filter_housing": {
+          "part_id": "EA211-AIRBOX",
+          "description": "Air filter housing/airbox",
+          "oem_part_numbers": {
+            "A3_8V": "5Q0129607AB",
+            "Golf_7": "5Q0129607AJ"
+          }
+        },
+        "air_filter": {
+          "part_id": "EA211-FILTER",
+          "description": "Engine air filter",
+          "oem_part_numbers": {
+            "standard": "04E129620A"
+          },
+          "specifications": {
+            "type": "Panel filter",
+            "material": "Paper/cotton blend"
+          },
+          "aftermarket": {
+            "K&N": "33-3005",
+            "BMC": "FB756/20"
+          }
+        },
+        "throttle_body": {
+          "part_id": "EA211-THROTTLE",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": {
+            "standard": "04E133062B"
+          },
+          "specifications": {
+            "bore_mm": 56,
+            "type": "Drive-by-wire"
+          }
+        },
+        "intake_manifold": {
+          "part_id": "EA211-INTAKE",
+          "description": "Plastic intake manifold with integrated intercooler",
+          "oem_part_numbers": {
+            "standard": "04E129712K",
+            "ACT": "04E129712N"
+          },
+          "specifications": {
+            "material": "Glass-reinforced plastic",
+            "runners": 4
+          }
+        },
+        "map_sensor": {
+          "part_id": "EA211-MAP",
+          "description": "Manifold absolute pressure sensor",
+          "oem_part_numbers": {
+            "standard": "03C906051J"
+          },
+          "specifications": {
+            "range_bar": "0-3"
+          }
+        }
+      }
+    },
+    "exhaust_system": {
+      "description": "Exhaust and emissions components",
+      "components": {
+        "turbo_downpipe": {
+          "part_id": "EA211-DOWNPIPE",
+          "description": "Turbo downpipe with catalytic converter",
+          "oem_part_numbers": {
+            "A3_8V": "5Q0253059EX",
+            "Golf_7": "5Q0254500PX"
+          },
+          "specifications": {
+            "diameter_mm": 60,
+            "catalyst": "Close-coupled TWC"
+          }
+        },
+        "front_oxygen_sensor": {
+          "part_id": "EA211-O2-FRONT",
+          "description": "Pre-catalyst oxygen sensor (wideband)",
+          "oem_part_numbers": {
+            "standard": "04E906262BJ"
+          },
+          "specifications": {
+            "type": "Wideband (5-wire)"
+          }
+        },
+        "rear_oxygen_sensor": {
+          "part_id": "EA211-O2-REAR",
+          "description": "Post-catalyst oxygen sensor (narrowband)",
+          "oem_part_numbers": {
+            "standard": "04E906262BA"
+          },
+          "specifications": {
+            "type": "Narrowband (4-wire)"
+          }
+        },
+        "exhaust_manifold": {
+          "part_id": "EA211-EXHAUST-MANIFOLD",
+          "description": "Integrated into cylinder head",
+          "oem_part_numbers": {
+            "note": "Part of cylinder head assembly"
+          },
+          "notes": "Exhaust manifold is cast into cylinder head for thermal efficiency"
+        }
+      }
+    },
+    "cooling_system": {
+      "description": "Engine cooling components",
+      "components": {
+        "water_pump": {
+          "part_id": "EA211-WATER-PUMP",
+          "description": "Mechanical water pump",
+          "oem_part_numbers": {
+            "early": "04E121600BD",
+            "revised": "04E121600CM"
+          },
+          "specifications": {
+            "drive": "Timing belt driven",
+            "type": "Mechanical"
+          },
+          "notes": "Common failure - use revised part number"
+        },
+        "thermostat": {
+          "part_id": "EA211-THERMOSTAT",
+          "description": "Thermostat with housing",
+          "oem_part_numbers": {
+            "standard": "04E121121L"
+          },
+          "specifications": {
+            "opening_temp_c": 87,
+            "full_open_c": 102
+          }
+        },
+        "coolant_temp_sensor": {
+          "part_id": "EA211-CTS",
+          "description": "Coolant temperature sensor",
+          "oem_part_numbers": {
+            "standard": "06A919501A"
+          }
+        },
+        "radiator": {
+          "part_id": "EA211-RADIATOR",
+          "description": "Engine radiator",
+          "oem_part_numbers": {
+            "A3_8V_manual": "5Q0121251EQ",
+            "A3_8V_auto": "5Q0121251GK"
+          }
+        }
+      }
+    },
+    "ignition_system": {
+      "description": "Ignition and spark components",
+      "components": {
+        "ignition_coils": {
+          "part_id": "EA211-COIL",
+          "description": "Coil-on-plug ignition coils",
+          "oem_part_numbers": {
+            "standard": "04E905110K",
+            "upgraded": "06H905110Q"
+          },
+          "specifications": {
+            "type": "Coil-on-plug",
+            "output_kv": 42
+          },
+          "quantity": 4,
+          "notes": "Upgraded coil from EA888 recommended for tuned applications"
+        },
+        "spark_plugs": {
+          "part_id": "EA211-SPARK",
+          "description": "Iridium spark plugs",
+          "oem_part_numbers": {
+            "standard": "04E905612C",
+            "NGK": "PFR7S8EG",
+            "Bosch": "FR6NI332S"
+          },
+          "specifications": {
+            "gap_mm": 0.7,
+            "heat_range": 7,
+            "electrode": "Iridium/Platinum"
+          },
+          "quantity": 4,
+          "notes": "Gap to 0.6mm for tuned applications"
+        }
+      }
+    },
+    "lubrication_system": {
+      "description": "Oil system components",
+      "components": {
+        "oil_pump": {
+          "part_id": "EA211-OIL-PUMP",
+          "description": "Variable displacement oil pump",
+          "oem_part_numbers": {
+            "standard": "04E115103AJ"
+          },
+          "specifications": {
+            "type": "Variable displacement vane",
+            "drive": "Crankshaft driven"
+          }
+        },
+        "oil_filter_housing": {
+          "part_id": "EA211-OIL-FILTER-HOUSING",
+          "description": "Oil filter housing with cooler",
+          "oem_part_numbers": {
+            "standard": "04E115405Q"
+          },
+          "specifications": {
+            "integrated_cooler": true
+          }
+        },
+        "oil_filter": {
+          "part_id": "EA211-OIL-FILTER",
+          "description": "Oil filter element",
+          "oem_part_numbers": {
+            "standard": "04E115561H"
+          },
+          "aftermarket": {
+            "Mann": "HU6002Z",
+            "Mahle": "OX409D"
+          }
+        },
+        "oil_pan": {
+          "part_id": "EA211-OIL-PAN",
+          "description": "Aluminum oil pan",
+          "oem_part_numbers": {
+            "standard": "04E103603K"
+          },
+          "specifications": {
+            "material": "Cast aluminum",
+            "capacity_liters": 4.0
+          }
+        },
+        "oil_drain_plug": {
+          "part_id": "EA211-DRAIN-PLUG",
+          "description": "Oil drain plug",
+          "oem_part_numbers": {
+            "standard": "N90813202"
+          },
+          "specifications": {
+            "thread": "M14x1.5",
+            "torque_nm": 30
+          }
+        },
+        "oil_pressure_switch": {
+          "part_id": "EA211-OPS",
+          "description": "Oil pressure switch",
+          "oem_part_numbers": {
+            "standard": "06A919081J"
+          }
+        }
+      }
+    },
+    "sensors_and_electronics": {
+      "description": "Engine sensors and electronic components",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "EA211-CPS",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": {
+            "standard": "04E906433A"
+          },
+          "specifications": {
+            "type": "Hall effect"
+          }
+        },
+        "camshaft_position_sensor": {
+          "part_id": "EA211-CAMSHAFT-SENSOR",
+          "description": "Camshaft position sensor",
+          "oem_part_numbers": {
+            "standard": "04E905161B"
+          },
+          "specifications": {
+            "type": "Hall effect"
+          }
+        },
+        "knock_sensors": {
+          "part_id": "EA211-KNOCK",
+          "description": "Knock sensor",
+          "oem_part_numbers": {
+            "standard": "04E905377A"
+          },
+          "quantity": 1
+        },
+        "boost_pressure_sensor": {
+          "part_id": "EA211-BOOST",
+          "description": "Boost pressure sensor",
+          "oem_part_numbers": {
+            "standard": "03C906051J"
+          },
+          "specifications": {
+            "range_bar": "0-3"
+          }
+        },
+        "ecu": {
+          "part_id": "EA211-ECU",
+          "description": "Engine control unit",
+          "oem_part_numbers": {
+            "Bosch_MED17.5.25": "Vehicle specific"
+          },
+          "specifications": {
+            "manufacturer": "Bosch",
+            "type": "MED17.5.25"
+          },
+          "notes": "Tunable via OBD - APR, Unitronic, Revo, IE compatible"
+        }
+      }
+    },
+    "gaskets_and_seals": {
+      "description": "Gaskets, seals, and o-rings",
+      "components": {
+        "valve_cover_gasket": {
+          "part_id": "EA211-VC-GASKET",
+          "description": "Valve cover gasket",
+          "oem_part_numbers": {
+            "standard": "04E103483R"
+          }
+        },
+        "intake_manifold_gasket": {
+          "part_id": "EA211-INTAKE-GASKET",
+          "description": "Intake manifold gasket",
+          "oem_part_numbers": {
+            "standard": "04E129717B"
+          }
+        },
+        "front_crank_seal": {
+          "part_id": "EA211-FRONT-SEAL",
+          "description": "Front crankshaft oil seal",
+          "oem_part_numbers": {
+            "standard": "04E103085M"
+          }
+        },
+        "rear_main_seal": {
+          "part_id": "EA211-RMS",
+          "description": "Rear main seal",
+          "oem_part_numbers": {
+            "standard": "04E103171A"
+          }
+        },
+        "turbo_oil_line_seals": {
+          "part_id": "EA211-TURBO-SEALS",
+          "description": "Turbo oil feed/return line seals",
+          "oem_part_numbers": {
+            "feed": "N90924501",
+            "return": "N0282611"
+          }
+        }
+      }
+    }
+  }
+}

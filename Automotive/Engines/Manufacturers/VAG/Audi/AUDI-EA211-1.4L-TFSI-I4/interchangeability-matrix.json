@@ -1,0 +1,319 @@
+{
+  "engine_id": "VAG-EA211-1.4L-TFSI-I4",
+  "engine_family": "EA211",
+  "matrix_version": "1.0.0",
+  "vag_platform_sharing": {
+    "description": "EA211 is a VAG-wide engine shared across Audi, Volkswagen, SEAT, and Skoda brands",
+    "shared_platforms": {
+      "MQB": {
+        "description": "Modular Transverse Matrix (Modularer Querbaukasten)",
+        "years": "2012-present",
+        "vehicles": [
+          "Audi A3/S3 (8V/8Y)",
+          "Audi Q2/Q3",
+          "VW Golf 7/8",
+          "VW Passat B8",
+          "VW Tiguan",
+          "SEAT Leon/Ateca",
+          "Skoda Octavia/Superb"
+        ]
+      }
+    }
+  },
+  "engine_code_variants": {
+    "CZEA": {
+      "power_hp": 125,
+      "torque_nm": 200,
+      "features": ["Standard"],
+      "vehicles": ["A3 8V base", "Golf 7 1.4 TSI"]
+    },
+    "CZTA": {
+      "power_hp": 150,
+      "torque_nm": 250,
+      "features": ["Higher boost"],
+      "vehicles": ["A3 8V 1.4 TFSI", "Golf 7 1.4 TSI Highline"]
+    },
+    "CZDA": {
+      "power_hp": 150,
+      "torque_nm": 250,
+      "features": ["ACT Cylinder Deactivation"],
+      "vehicles": ["A3 8V COD", "Golf 7 ACT", "Passat B8 ACT"]
+    },
+    "CXSA": {
+      "power_hp": 140,
+      "torque_nm": 250,
+      "features": ["Early variant"],
+      "vehicles": ["A1 8X", "Polo 6C GTI"]
+    },
+    "DPCA": {
+      "power_hp": 150,
+      "torque_nm": 250,
+      "features": ["48V MHEV", "eTSI"],
+      "vehicles": ["A3 8Y 35 TFSI", "Golf 8 1.4 eTSI"]
+    },
+    "DJJA": {
+      "power_hp": 150,
+      "torque_nm": 250,
+      "features": ["Miller cycle", "Improved efficiency"],
+      "vehicles": ["A3 8Y", "Golf 8"]
+    }
+  },
+  "cross_brand_compatibility": {
+    "fully_interchangeable": {
+      "description": "Parts that are 100% interchangeable across all VAG brands using EA211",
+      "components": [
+        "Engine block",
+        "Crankshaft",
+        "Connecting rods",
+        "Pistons",
+        "Camshafts",
+        "Valves and valvetrain",
+        "Timing belt kit",
+        "High pressure fuel pump",
+        "Fuel injectors",
+        "Turbocharger (IS12)",
+        "Ignition coils",
+        "Spark plugs",
+        "Oil pump",
+        "Thermostat",
+        "Most sensors"
+      ]
+    },
+    "vehicle_specific": {
+      "description": "Parts that vary by vehicle application",
+      "components": [
+        "Air filter housing (vehicle packaging)",
+        "Intercooler (vehicle mounting)",
+        "Downpipe/exhaust (vehicle specific)",
+        "Engine mounts (vehicle specific)",
+        "Intake pipe routing",
+        "Coolant hoses",
+        "Oil pan (some variations)"
+      ]
+    }
+  },
+  "turbo_interchange": {
+    "IS12_stock": {
+      "oem_part_numbers": ["04E145721R", "04E145721T"],
+      "output_hp": "125-150",
+      "compatible_with": "All EA211 1.4 TFSI applications",
+      "notes": "Stock turbo, direct interchange between variants"
+    },
+    "IS20_upgrade": {
+      "oem_part_numbers": ["06K145874L", "06K145874M"],
+      "output_hp": "220-280",
+      "source_engines": ["EA888 Gen3 Golf GTI", "EA888 Gen3 Golf GTD"],
+      "compatibility": "Direct bolt-on to EA211",
+      "modifications_required": [
+        "ECU tune for larger turbo",
+        "Upgraded intercooler recommended",
+        "Upgraded diverter valve recommended"
+      ],
+      "notes": "Popular upgrade - GTI turbo on 1.4 TSI platform"
+    },
+    "IS38_advanced_upgrade": {
+      "oem_part_numbers": ["06K145874F"],
+      "output_hp": "350-400",
+      "source_engines": ["EA888 Gen3 Golf R", "S3 8V"],
+      "compatibility": "Requires custom manifold or adapter",
+      "modifications_required": [
+        "Custom turbo manifold/adapter",
+        "Upgraded fuel system",
+        "Forged internals recommended",
+        "Custom ECU tune"
+      ],
+      "notes": "Advanced build - exceeds stock internals capability"
+    }
+  },
+  "internal_upgrades_interchange": {
+    "rod_upgrades": {
+      "aftermarket_options": [
+        {
+          "brand": "Integrated Engineering",
+          "part_number": "IECRVA2",
+          "type": "Forged H-beam",
+          "power_rating_hp": 400
+        },
+        {
+          "brand": "Supertech",
+          "part_number": "CR-VAG14-144-19",
+          "type": "Forged I-beam",
+          "power_rating_hp": 500
+        }
+      ]
+    },
+    "piston_upgrades": {
+      "aftermarket_options": [
+        {
+          "brand": "JE Pistons",
+          "part_number": "361403",
+          "compression_ratio": "9.5:1",
+          "power_rating_hp": 400
+        },
+        {
+          "brand": "Mahle Motorsport",
+          "part_number": "Custom order",
+          "compression_ratio": "9.0:1",
+          "power_rating_hp": 500
+        }
+      ]
+    }
+  },
+  "ecu_interchange": {
+    "stock_ecus": {
+      "bosch_med17_5_25": {
+        "applications": ["All EA211 TFSI variants"],
+        "tuning_support": ["APR", "Unitronic", "Revo", "IE", "EQT"],
+        "flash_method": "OBD2"
+      }
+    },
+    "tuning_platforms": {
+      "apr": {
+        "stage_1": {"hp": 184, "torque_nm": 295},
+        "stage_2": {"hp": 204, "torque_nm": 324},
+        "is20_stage_1": {"hp": 270, "torque_nm": 386}
+      },
+      "unitronic": {
+        "stage_1": {"hp": 180, "torque_nm": 290},
+        "stage_2": {"hp": 200, "torque_nm": 318},
+        "is20": {"hp": 268, "torque_nm": 380}
+      },
+      "integrated_engineering": {
+        "stage_1": {"hp": 186, "torque_nm": 298},
+        "stage_2": {"hp": 205, "torque_nm": 325},
+        "is20": {"hp": 275, "torque_nm": 390}
+      }
+    }
+  },
+  "transmission_compatibility": {
+    "manual": {
+      "MQ250_6MT": {
+        "torque_rating_nm": 250,
+        "applications": ["A3 8V manual", "Golf 7 manual"],
+        "notes": "Stock gearbox, adequate for Stage 1"
+      },
+      "MQ350_6MT": {
+        "torque_rating_nm": 350,
+        "applications": ["Some markets"],
+        "notes": "Stronger gearbox option"
+      }
+    },
+    "dsg": {
+      "DQ200_7DSG": {
+        "torque_rating_nm": 250,
+        "applications": ["A3 8V S tronic", "Golf 7 DSG"],
+        "notes": "Dry clutch DSG - limit for tuning",
+        "tuning_limit": "Stage 1 only recommended"
+      },
+      "DQ381_7DSG": {
+        "torque_rating_nm": 420,
+        "applications": ["A3 8Y S tronic", "Golf 8 DSG"],
+        "notes": "Wet clutch DSG - handles more power",
+        "tuning_limit": "IS20 upgrade capable"
+      }
+    }
+  },
+  "oem_part_cross_reference": {
+    "description": "Same parts with different part numbers across brands",
+    "examples": {
+      "oil_filter": {
+        "audi": "04E115561H",
+        "vw": "04E115561H",
+        "seat": "04E115561H",
+        "skoda": "04E115561H",
+        "notes": "Same part number across all brands"
+      },
+      "timing_belt_kit": {
+        "audi": "04E198119F",
+        "vw": "04E198119F",
+        "notes": "Universal VAG part"
+      },
+      "water_pump": {
+        "all_brands": "04E121600CM",
+        "notes": "Same revised part number for all"
+      },
+      "turbocharger_is12": {
+        "125hp_all": "04E145721R",
+        "150hp_all": "04E145721T",
+        "notes": "Shared across all VAG 1.4 TFSI applications"
+      }
+    }
+  },
+  "ea211_to_ea888_comparison": {
+    "description": "Comparing EA211 1.4T to its bigger brother EA888 2.0T",
+    "shared_design_philosophy": [
+      "Same MQB mounting points",
+      "Similar turbo mounting flange (IS-series turbos)",
+      "Same ECU platform (Bosch MED17)",
+      "Similar fuel system design",
+      "Same DSG transmission options"
+    ],
+    "upgrade_path": {
+      "is20_swap": "GTI turbo direct bolt-on",
+      "is38_swap": "Golf R turbo with adapter",
+      "ea888_swap": "Complete engine swap follows same MQB pattern"
+    }
+  },
+  "common_upgrade_packages": {
+    "stage_1_daily": {
+      "description": "Daily driver tune package",
+      "components": [
+        "ECU tune (APR/Unitronic/IE Stage 1)",
+        "Drop-in performance air filter"
+      ],
+      "expected_output": {
+        "hp": "180-190",
+        "torque_nm": "290-300"
+      },
+      "cost_estimate_usd": 500
+    },
+    "stage_2_enthusiast": {
+      "description": "Enthusiast bolt-on package",
+      "components": [
+        "ECU Stage 2 tune",
+        "Cold air intake",
+        "High-flow downpipe (catted)",
+        "Upgraded diverter valve"
+      ],
+      "expected_output": {
+        "hp": "200-220",
+        "torque_nm": "320-350"
+      },
+      "cost_estimate_usd": 2000
+    },
+    "is20_conversion": {
+      "description": "GTI turbo swap package",
+      "components": [
+        "IS20 turbocharger (new or used GTI)",
+        "Upgraded intercooler",
+        "Upgraded intake",
+        "High-flow downpipe",
+        "IS20 ECU tune"
+      ],
+      "expected_output": {
+        "hp": "250-280",
+        "torque_nm": "380-420"
+      },
+      "cost_estimate_usd": 4000
+    }
+  },
+  "regional_variants": {
+    "europe": {
+      "common_codes": ["CZEA", "CZTA", "CZDA", "DPCA"],
+      "emissions": "EU6",
+      "fuel_quality": "RON 95-98"
+    },
+    "north_america": {
+      "common_codes": ["CZTA", "DJJA"],
+      "emissions": "ULEV/SULEV",
+      "fuel_quality": "91-93 AKI",
+      "notes": "1.4T less common in US market - 2.0T preferred"
+    },
+    "china": {
+      "common_codes": ["CZTA", "DJS"],
+      "emissions": "China 6",
+      "fuel_quality": "RON 92-95",
+      "notes": "High volume market for 1.4T"
+    }
+  }
+}

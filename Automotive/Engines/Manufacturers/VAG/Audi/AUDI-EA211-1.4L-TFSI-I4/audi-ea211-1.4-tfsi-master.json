@@ -1,0 +1,314 @@
+{
+  "engine_id": "VAG-EA211-1.4L-TFSI-I4",
+  "common_names": [
+    "EA211",
+    "1.4 TFSI",
+    "1.4 TSI",
+    "CZEA",
+    "CZTA",
+    "CXSA",
+    "CHPA"
+  ],
+  "engine_family": "EA211",
+  "manufacturer": "Volkswagen AG",
+  "brand_applications": ["Audi", "Volkswagen", "SEAT", "Skoda"],
+  "production_years": "2012-present",
+  "engine_type": "Inline-4 Turbocharged Petrol",
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {
+      "liters": 1.395,
+      "cc": 1395,
+      "cubic_inches": 85.1
+    },
+    "bore": {
+      "mm": 74.5,
+      "inches": 2.933
+    },
+    "stroke": {
+      "mm": 80.0,
+      "inches": 3.150
+    },
+    "compression_ratio": "10.0:1 - 10.5:1",
+    "block_material": "Aluminum with cast iron cylinder liners",
+    "head_material": "Aluminum",
+    "valvetrain": {
+      "configuration": "DOHC",
+      "valves_per_cylinder": 4,
+      "total_valves": 16,
+      "variable_timing": "Intake VVT",
+      "timing_drive": "Belt-driven"
+    },
+    "forced_induction": {
+      "type": "Single Turbocharger",
+      "manufacturer": "IHI/BorgWarner",
+      "model": "IS12/IS20",
+      "boost_pressure_bar": 1.2,
+      "intercooler": "Air-to-air"
+    },
+    "fuel_system": {
+      "type": "Direct Injection (FSI/TSI)",
+      "fuel_pressure_bar": 200,
+      "injector_type": "High-pressure piezo",
+      "injector_count": 4
+    },
+    "ignition_system": {
+      "type": "Coil-on-plug",
+      "spark_plugs": "NGK PFR7S8EG or equivalent",
+      "spark_plug_gap_mm": 0.7
+    }
+  },
+  "power_output_by_variant": {
+    "CZEA_125hp": {
+      "code": "CZEA",
+      "power_hp": 125,
+      "power_kw": 92,
+      "torque_nm": 200,
+      "torque_lb_ft": 147,
+      "redline_rpm": 6500,
+      "production_years": "2014-2018",
+      "applications": ["Audi A3 8V", "VW Golf 7"]
+    },
+    "CZTA_150hp": {
+      "code": "CZTA",
+      "power_hp": 150,
+      "power_kw": 110,
+      "torque_nm": 250,
+      "torque_lb_ft": 184,
+      "redline_rpm": 6500,
+      "production_years": "2014-present",
+      "applications": ["Audi A3 8V", "VW Golf 7/8", "Audi Q3"]
+    },
+    "CXSA_140hp": {
+      "code": "CXSA",
+      "power_hp": 140,
+      "power_kw": 103,
+      "torque_nm": 250,
+      "torque_lb_ft": 184,
+      "redline_rpm": 6200,
+      "production_years": "2012-2016",
+      "applications": ["Audi A1", "VW Polo GTI"]
+    },
+    "CZDA_150hp_ACT": {
+      "code": "CZDA",
+      "power_hp": 150,
+      "power_kw": 110,
+      "torque_nm": 250,
+      "torque_lb_ft": 184,
+      "redline_rpm": 6500,
+      "production_years": "2014-present",
+      "applications": ["Audi A3 g-tron", "VW Golf"],
+      "notes": "Active Cylinder Technology (ACT) - deactivates cylinders 2 and 3"
+    },
+    "DPCA_150hp_MHEV": {
+      "code": "DPCA",
+      "power_hp": 150,
+      "power_kw": 110,
+      "torque_nm": 250,
+      "torque_lb_ft": 184,
+      "redline_rpm": 6500,
+      "production_years": "2020-present",
+      "applications": ["Audi A3 8Y", "VW Golf 8"],
+      "notes": "48V Mild Hybrid with belt-starter-generator"
+    }
+  },
+  "vehicle_applications": {
+    "audi": {
+      "A1_8X": {
+        "years": "2014-2018",
+        "variants": ["1.4 TFSI 125hp", "1.4 TFSI 150hp"],
+        "transmission_options": ["6-speed manual", "7-speed S tronic DSG"]
+      },
+      "A3_8V": {
+        "years": "2012-2020",
+        "variants": ["1.4 TFSI 125hp", "1.4 TFSI 150hp COD"],
+        "transmission_options": ["6-speed manual", "7-speed S tronic DSG"],
+        "notes": "COD = Cylinder On Demand (ACT)"
+      },
+      "A3_8Y": {
+        "years": "2020-present",
+        "variants": ["35 TFSI 150hp", "35 TFSI MHEV"],
+        "transmission_options": ["6-speed manual", "7-speed S tronic DSG"]
+      },
+      "Q2_GA": {
+        "years": "2016-present",
+        "variants": ["35 TFSI 150hp"],
+        "transmission_options": ["6-speed manual", "7-speed S tronic DSG"]
+      },
+      "Q3_8U": {
+        "years": "2015-2018",
+        "variants": ["1.4 TFSI 150hp"],
+        "transmission_options": ["6-speed manual", "6-speed S tronic DSG"]
+      }
+    },
+    "volkswagen": {
+      "Golf_7": {
+        "years": "2012-2019",
+        "variants": ["1.4 TSI 125hp", "1.4 TSI 150hp ACT"],
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Golf_8": {
+        "years": "2019-present",
+        "variants": ["1.4 TSI 150hp", "1.4 TSI eTSI MHEV"],
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Passat_B8": {
+        "years": "2015-present",
+        "variants": ["1.4 TSI 150hp ACT"],
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Tiguan_AD1": {
+        "years": "2016-present",
+        "variants": ["1.4 TSI 150hp"],
+        "transmission_options": ["6-speed manual", "6-speed DSG"]
+      }
+    },
+    "seat": {
+      "Leon_5F": {
+        "years": "2012-2020",
+        "variants": ["1.4 TSI 125hp", "1.4 TSI 150hp"],
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Ateca": {
+        "years": "2016-present",
+        "variants": ["1.4 TSI 150hp"],
+        "transmission_options": ["6-speed manual", "6-speed DSG"]
+      }
+    },
+    "skoda": {
+      "Octavia_5E": {
+        "years": "2013-2020",
+        "variants": ["1.4 TSI 150hp"],
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Superb_3V": {
+        "years": "2015-present",
+        "variants": ["1.4 TSI 150hp ACT"],
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      }
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.0,
+      "capacity_with_filter_liters": 4.3,
+      "specification": "VW 508.00/509.00 or VW 504.00/507.00",
+      "viscosity": "0W-20 or 5W-30",
+      "recommended_brands": ["Castrol EDGE Professional", "Liqui Moly Top Tec 6200", "Mobil 1 ESP"]
+    },
+    "coolant": {
+      "capacity_liters": 5.5,
+      "specification": "G13 or G12++",
+      "mixture": "50/50 with distilled water"
+    }
+  },
+  "service_intervals": {
+    "oil_change": {
+      "interval_miles": 10000,
+      "interval_km": 15000,
+      "time_months": 12,
+      "notes": "Longlife service or fixed interval depending on market"
+    },
+    "spark_plugs": {
+      "interval_miles": 40000,
+      "interval_km": 60000
+    },
+    "timing_belt": {
+      "interval_miles": 80000,
+      "interval_km": 130000,
+      "notes": "Wet timing belt design - inspect for oil contamination"
+    },
+    "coolant": {
+      "interval_miles": 60000,
+      "interval_km": 90000
+    }
+  },
+  "known_issues": {
+    "timing_chain_tensioner": {
+      "severity": "Low",
+      "affected_years": "2012-2014",
+      "symptoms": ["Rattling on cold start"],
+      "solution": "Updated tensioner design, replaced under warranty extension",
+      "notes": "Much improved from EA111 predecessor"
+    },
+    "water_pump_failure": {
+      "severity": "Medium",
+      "affected_years": "2012-2016",
+      "symptoms": ["Coolant leak", "Overheating", "Coolant warning light"],
+      "solution": "Replace water pump assembly",
+      "part_number": "04E121600BD"
+    },
+    "carbon_buildup_intake_valves": {
+      "severity": "Medium",
+      "affected_years": "All years",
+      "symptoms": ["Rough idle", "Reduced power", "Misfires"],
+      "solution": "Walnut blasting or chemical cleaning every 60,000 miles",
+      "notes": "Common to all direct injection engines"
+    },
+    "diverter_valve_failure": {
+      "severity": "Low",
+      "affected_years": "2012-2016",
+      "symptoms": ["Boost leak", "Whooshing sound", "Reduced power"],
+      "solution": "Replace diverter valve with revised version",
+      "part_number": "06H145710G"
+    }
+  },
+  "design_features": {
+    "modular_design": "Part of MQB platform modular engine family",
+    "exhaust_manifold": "Integrated into cylinder head for faster warmup",
+    "lightweight": "Engine weighs only 99kg (218 lbs) - 22kg lighter than EA111",
+    "active_cylinder_technology": "ACT variants deactivate cylinders 2 and 3 for fuel economy",
+    "miller_cycle": "Some variants use Miller cycle with extended intake valve timing"
+  },
+  "tuning_potential": {
+    "stage_1": {
+      "description": "ECU tune only",
+      "power_hp": "180-190",
+      "torque_nm": "300-320",
+      "requirements": ["ECU tune"],
+      "estimated_cost_usd": 400
+    },
+    "stage_2": {
+      "description": "ECU tune + intake + downpipe",
+      "power_hp": "200-220",
+      "torque_nm": "340-360",
+      "requirements": ["ECU tune", "Cold air intake", "High-flow downpipe"],
+      "estimated_cost_usd": 1500
+    },
+    "stage_3_is20": {
+      "description": "IS20 turbo swap (from Golf GTI)",
+      "power_hp": "250-280",
+      "torque_nm": "400-420",
+      "requirements": ["IS20 turbo", "Upgraded fuel pump", "Intercooler", "ECU tune"],
+      "estimated_cost_usd": 3500,
+      "notes": "IS20 is direct bolt-on from Golf 7 GTI/GTD"
+    }
+  },
+  "cross_references": {
+    "shared_with_vw": "../../../VAG/Shared-Components/EA211-family.json",
+    "shared_turbo_is12": "../../../VAG/Shared-Components/turbo-is12.json",
+    "shared_turbo_is20": "../../../VAG/Shared-Components/turbo-is20.json"
+  },
+  "notes": {
+    "heritage": "Successor to EA111, designed for MQB platform from scratch",
+    "improvements_over_ea111": [
+      "Chain tensioner issues largely resolved",
+      "22kg lighter block",
+      "Integrated exhaust manifold",
+      "More efficient turbo packaging",
+      "Available with ACT cylinder deactivation"
+    ],
+    "strengths": [
+      "Excellent fuel economy (40+ mpg achievable)",
+      "Smooth and refined power delivery",
+      "Strong tuning potential for displacement",
+      "Very reliable when maintained",
+      "Lighter than competitors"
+    ],
+    "weaknesses": [
+      "Direct injection carbon buildup on intake valves",
+      "Water pump can fail early",
+      "Not as tuneable as larger EA888"
+    ]
+  }
+}
