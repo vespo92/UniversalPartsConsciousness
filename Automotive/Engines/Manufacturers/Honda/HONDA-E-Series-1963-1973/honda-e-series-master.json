@@ -1,0 +1,116 @@
+{
+  "engine_family_id": "HONDA-E-SERIES",
+  "common_names": ["E-Series", "SOHC Honda", "Early Honda Engines", "Chain-driven SOHC"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1963-1973",
+  "historical_significance": "Honda's first automotive engines - established the company as a car manufacturer",
+
+  "variants": {
+    "e_as250": {
+      "engine_code": "AS250E",
+      "displacement_cc": 356,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 4 valves per cylinder",
+      "power_hp": 30,
+      "torque_nm": 27,
+      "production_years": "1963-1964",
+      "applications": ["T360 Truck", "T500 Truck"],
+      "notes": "Honda's first production automobile engine - 4-carb mini truck engine"
+    },
+    "e_as500": {
+      "engine_code": "AS500E",
+      "displacement_cc": 531,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC, 4 valves per cylinder",
+      "power_hp": 44,
+      "rpm_redline": 8000,
+      "torque_nm": 44,
+      "production_years": "1963-1965",
+      "applications": ["S500 Sports Car"],
+      "notes": "Chain-driven DOHC - revolutionary for its time. Derived from racing motorcycle technology"
+    },
+    "e_as600": {
+      "engine_code": "AS600E",
+      "displacement_cc": 606,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC, 4 valves per cylinder",
+      "power_hp": 57,
+      "rpm_redline": 8500,
+      "torque_nm": 54,
+      "production_years": "1965-1966",
+      "applications": ["S600 Sports Car", "S600 Coupe"],
+      "notes": "4 Keihin carburetors, roller bearing crankshaft from motorcycle heritage"
+    },
+    "e_as800": {
+      "engine_code": "AS800E",
+      "displacement_cc": 791,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC, 4 valves per cylinder",
+      "power_hp": 70,
+      "rpm_redline": 8000,
+      "torque_nm": 67,
+      "production_years": "1966-1970",
+      "applications": ["S800 Sports Car", "S800 Coupe", "S800M"],
+      "notes": "Final evolution of S-series sports car engines. Export model had 9500 rpm redline"
+    },
+    "e_n360": {
+      "engine_code": "N360E",
+      "displacement_cc": 354,
+      "configuration": "Inline 2-cylinder",
+      "valvetrain": "SOHC, 2 valves per cylinder",
+      "power_hp": 31,
+      "rpm_redline": 9000,
+      "torque_nm": 28,
+      "production_years": "1967-1972",
+      "applications": ["N360", "N600", "Z600"],
+      "notes": "Air-cooled engine derived from motorcycle. Extremely high-revving for its displacement"
+    },
+    "e_n600": {
+      "engine_code": "N600E",
+      "displacement_cc": 598,
+      "configuration": "Inline 2-cylinder",
+      "valvetrain": "SOHC, 2 valves per cylinder",
+      "power_hp": 36,
+      "rpm_redline": 9000,
+      "torque_nm": 50,
+      "production_years": "1970-1973",
+      "applications": ["N600", "Z600", "AZ600"],
+      "notes": "Air-cooled twin. Honda's first car sold in the USA (1970)"
+    },
+    "e_eb1": {
+      "engine_code": "EB1",
+      "displacement_cc": 1169,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 8 valves",
+      "power_hp": 50,
+      "torque_nm": 85,
+      "production_years": "1972-1973",
+      "applications": ["Honda 145", "First Generation Civic"],
+      "notes": "Water-cooled engine that would evolve into the famous EB series"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy (most variants)",
+    "head_material": "Aluminum alloy",
+    "cooling": "Varies by model (air-cooled for N-series, water-cooled for S/EB series)",
+    "fuel_system": "Carburetor (Keihin)",
+    "ignition": "Points/Condenser"
+  },
+
+  "notes": {
+    "heritage": "Honda's motorcycle racing expertise directly influenced these engines. High-revving, lightweight designs.",
+    "innovations": [
+      "First Japanese car with DOHC engine (S500)",
+      "Roller bearing crankshafts from motorcycle technology",
+      "4 valves per cylinder before it was common",
+      "Extremely high specific output for the era"
+    ],
+    "common_issues": [
+      "Valve adjustment needed frequently",
+      "Carburetor synchronization critical for multi-carb setups",
+      "Parts extremely rare today"
+    ],
+    "collectors_notes": "S500/S600/S800 engines are highly prized by collectors. Complete rebuilds require specialist knowledge."
+  }
+}

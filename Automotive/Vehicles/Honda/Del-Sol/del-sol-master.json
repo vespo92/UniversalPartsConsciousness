@@ -1,0 +1,130 @@
+{
+  "vehicle_id": "HONDA-DEL-SOL",
+  "full_name": "Honda Civic del Sol / CR-X del Sol",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1992-1998",
+  "body_styles": ["2-door targa"],
+  "historical_significance": "Spiritual successor to CRX with removable targa roof. Unique TransTop automatic roof mechanism on VTEC models.",
+
+  "chassis_codes": ["EG1", "EG2", "EH6"],
+
+  "engines": {
+    "d15b7": {"displacement": "1.5L", "power_hp": 102, "notes": "S model"},
+    "d16z6": {"displacement": "1.6L", "power_hp": 125, "notes": "Si VTEC"},
+    "b16a3": {"displacement": "1.6L", "power_hp": 160, "notes": "VTEC USDM"},
+    "b16a2": {"displacement": "1.6L", "power_hp": 170, "notes": "VTEC JDM SiR"}
+  },
+
+  "transmission": {
+    "manual": "5-speed",
+    "automatic": "4-speed (S and Si only)"
+  },
+
+  "specifications": {
+    "wheelbase_mm": 2370,
+    "length_mm": 4005,
+    "width_mm": 1695,
+    "height_mm": 1255,
+    "weight_kg": {
+      "s": 1040,
+      "si": 1090,
+      "vtec": 1130
+    },
+    "suspension": {
+      "front": "MacPherson strut with lower A-arm",
+      "rear": "Independent double wishbone"
+    }
+  },
+
+  "variants": {
+    "del_sol_s": {
+      "chassis_code": "EG1",
+      "engine": "D15B7",
+      "power_hp": 102,
+      "features": ["Manual roof", "Basic equipment"],
+      "weight_kg": 1040,
+      "notes": "Base model, lightest"
+    },
+    "del_sol_si": {
+      "chassis_code": "EG1",
+      "engine": "D16Z6 VTEC",
+      "power_hp": 125,
+      "features": ["VTEC", "Manual roof", "Better interior"],
+      "weight_kg": 1090,
+      "notes": "Good balance of performance and weight"
+    },
+    "del_sol_vtec": {
+      "chassis_code": "EG2",
+      "engine": "B16A3",
+      "power_hp": 160,
+      "redline": 8000,
+      "features": [
+        "B16A3 DOHC VTEC",
+        "TransTop automatic roof (optional)",
+        "Sport suspension",
+        "Rear disc brakes"
+      ],
+      "weight_kg": 1130,
+      "notes": "Top USDM model"
+    },
+    "del_sol_sir_jdm": {
+      "chassis_code": "EG2",
+      "engine": "B16A2",
+      "power_hp": 170,
+      "redline": 8200,
+      "features": ["JDM B16A2", "LSD available"],
+      "notes": "JDM spec with higher output"
+    },
+    "del_sol_vgi_jdm": {
+      "engine": "D15B with VGI",
+      "notes": "Variable Geometry Intake system"
+    }
+  },
+
+  "transtop_system": {
+    "description": "Automatic retractable hardtop system",
+    "operation": "Electric motors fold roof into trunk",
+    "availability": "Optional on VTEC model",
+    "common_issues": [
+      "Motor failures",
+      "Seal leaks",
+      "Control module issues",
+      "Weight penalty"
+    ],
+    "notes": "Unique feature but adds complexity and weight"
+  },
+
+  "comparison_to_crx": {
+    "similarities": ["2-seater", "Based on Civic platform", "B16 available"],
+    "differences": {
+      "body": "Targa vs. coupe",
+      "weight": "Del Sol heavier",
+      "rigidity": "Del Sol less rigid due to targa",
+      "styling": "More rounded vs. angular CRX"
+    },
+    "reputation": "Less popular than CRX among purists due to weight and flex"
+  },
+
+  "aftermarket": {
+    "engine_swaps": {
+      "b16_upgrade": "Already equipped on VTEC - improve with bolt-ons",
+      "b18c_swap": "Common upgrade - same difficulty as EG Civic",
+      "k_series": "Possible with mounts from Hasport"
+    },
+    "suspension": {
+      "coilovers": ["BC Racing", "Tein", "KW"],
+      "notes": "Shares most parts with EG Civic"
+    },
+    "chassis_stiffening": {
+      "importance": "Critical for targa body",
+      "options": ["Strut bars", "Subframe braces", "Seam welding", "Roll bar"]
+    }
+  },
+
+  "collectibility": {
+    "vtec_values": "Rising - $8,000-15,000 for clean",
+    "si_values": "More affordable - $5,000-10,000",
+    "factors": ["Rust", "TransTop condition", "Hard to find clean examples"],
+    "notes": "Often overlooked compared to CRX but unique in its own right"
+  }
+}

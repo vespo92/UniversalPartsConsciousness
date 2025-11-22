@@ -1,0 +1,179 @@
+{
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "company_history": {
+    "founded": "1948",
+    "founder": "Soichiro Honda",
+    "headquarters": "Minato, Tokyo, Japan",
+    "first_automobile": "1963 (T360 truck)",
+    "first_passenger_car": "1963 (S500)",
+    "philosophy": "The Power of Dreams"
+  },
+
+  "engine_family_timeline": {
+    "1963-1973": {
+      "family": "E-Series",
+      "description": "Honda's first automotive engines",
+      "key_innovations": ["DOHC from motorcycles", "High-revving designs", "4 valves per cylinder"],
+      "notable_engines": ["S500 DOHC", "S800 DOHC", "N600 twin"]
+    },
+    "1975-1987": {
+      "family": "CVCC",
+      "description": "Revolutionary stratified-charge clean engine",
+      "key_innovations": ["CVCC stratified charge", "Met emissions without catalyst", "PGM-FI introduction"],
+      "notable_engines": ["ED1 (first CVCC)", "ES1 (first PGM-FI)"]
+    },
+    "1984-2006": {
+      "family": "D-Series",
+      "description": "Economy Civic engine family",
+      "key_innovations": ["SOHC VTEC", "VTEC-E economy system"],
+      "notable_engines": ["D16Z6 VTEC", "D16Y8 VTEC", "D15B VTEC"]
+    },
+    "1989-2001": {
+      "family": "B-Series",
+      "description": "Legendary high-performance DOHC VTEC engines",
+      "key_innovations": ["First production VTEC", "100+ hp/liter N/A", "Type R specifications"],
+      "notable_engines": ["B16A (first VTEC)", "B18C5 Type R", "B16B (EK9 Type R)"]
+    },
+    "1990-2002": {
+      "family": "F-Series",
+      "description": "Mid-size Accord/Prelude engines",
+      "key_innovations": ["SOHC VTEC for mainstream", "PGM-FI standardization"],
+      "notable_engines": ["F20B DOHC VTEC", "F22B1 SOHC VTEC", "F23A1"]
+    },
+    "1991-2001": {
+      "family": "H-Series",
+      "description": "Flagship performance 4-cylinder",
+      "key_innovations": ["FRM cylinder sleeves", "Highest output 4-cyl of era"],
+      "notable_engines": ["H22A (Prelude VTEC)", "H22A Euro R", "H23A"]
+    },
+    "1996-present": {
+      "family": "J-Series V6",
+      "description": "Honda's first modern V6 family",
+      "key_innovations": ["60-degree V6", "VCM cylinder deactivation", "Earth Dreams DI"],
+      "notable_engines": ["J35A (Odyssey/Pilot)", "J37A (MDX/TL)", "J35Y (current)"]
+    },
+    "2001-present": {
+      "family": "K-Series",
+      "description": "B-series successor, modern performance standard",
+      "key_innovations": ["i-VTEC with VTC", "Chain timing", "VTEC Turbo"],
+      "notable_engines": ["K20A Type R", "K24A2 TSX", "K20C1 Type R Turbo"]
+    },
+    "2001-2015": {
+      "family": "L-Series",
+      "description": "Compact economy engines for Fit/Jazz",
+      "key_innovations": ["Ultra-compact packaging", "Best-in-class efficiency"],
+      "notable_engines": ["L15A VTEC", "L15B DI"]
+    },
+    "2006-2015": {
+      "family": "R-Series",
+      "description": "D-series replacement for Civic economy",
+      "key_innovations": ["Chain-driven SOHC", "Modern i-VTEC economy"],
+      "notable_engines": ["R18A1", "R20A"]
+    },
+    "2013-present": {
+      "family": "Earth Dreams Turbo",
+      "description": "Honda's turbocharged era",
+      "key_innovations": ["VTEC Turbo", "Dual injection (2.0T)", "High compression turbo"],
+      "notable_engines": ["L15B Turbo (1.5T)", "K20C2 (2.0T)", "K20C1 (Type R)"]
+    }
+  },
+
+  "vtec_technology_evolution": {
+    "1989": {
+      "name": "VTEC (Original)",
+      "description": "Variable Valve Timing and Lift Electronic Control",
+      "first_application": "B16A in Integra XSi",
+      "operation": "Two-stage cam profile switching"
+    },
+    "1992": {
+      "name": "VTEC-E",
+      "description": "Economy-focused VTEC",
+      "first_application": "D15Z1 in Civic VX",
+      "operation": "Valve deactivation at low RPM for lean burn"
+    },
+    "2001": {
+      "name": "i-VTEC",
+      "description": "Intelligent VTEC with Variable Timing Control",
+      "first_application": "K20A in Integra Type R",
+      "operation": "VTEC + continuous intake cam phasing"
+    },
+    "2008": {
+      "name": "i-VTEC with VCM",
+      "description": "Variable Cylinder Management",
+      "first_application": "J35A6 in Odyssey",
+      "operation": "Cylinder deactivation for V6 engines"
+    },
+    "2017": {
+      "name": "VTEC Turbo",
+      "description": "VTEC combined with turbocharging",
+      "first_application": "K20C1 in Civic Type R",
+      "operation": "VTEC for exhaust scavenging + turbo boost"
+    }
+  },
+
+  "legendary_engines": {
+    "b16a": {
+      "years": "1989-1991",
+      "significance": "First production VTEC engine",
+      "achievement": "100+ hp/liter naturally aspirated"
+    },
+    "b16b": {
+      "years": "1997-2000",
+      "significance": "EK9 Civic Type R engine",
+      "achievement": "185hp from 1.6L - highest output B16"
+    },
+    "b18c_spec_r": {
+      "years": "1995-2001",
+      "significance": "JDM Integra Type R engine",
+      "achievement": "200hp from 1.8L - the definitive VTEC"
+    },
+    "f20c": {
+      "years": "1999-2009",
+      "significance": "S2000 engine",
+      "achievement": "240hp from 2.0L - highest specific output production car"
+    },
+    "k20a": {
+      "years": "2001-2006",
+      "significance": "DC5 Integra Type R / EP3 Civic Type R",
+      "achievement": "220hp from 2.0L with modern reliability"
+    },
+    "k20c1": {
+      "years": "2017-present",
+      "significance": "First turbocharged Type R",
+      "achievement": "306-315hp - Nurburgring FWD lap record holder"
+    }
+  },
+
+  "transmission_compatibility": {
+    "cable_transmissions": {
+      "description": "Pre-2001 Honda transmissions with cable-actuated clutch",
+      "applications": ["B-series", "D-series", "H-series (some)", "F-series (some)"],
+      "swap_notes": "Cable trans are preferred for engine swaps into older chassis"
+    },
+    "hydraulic_transmissions": {
+      "description": "2002+ Honda transmissions with hydraulic clutch",
+      "applications": ["K-series", "L-series", "R-series"],
+      "swap_notes": "Require master/slave cylinder conversion for older chassis"
+    },
+    "cross_compatibility": {
+      "b_series_trans": "B16/B18 transmissions interchange. B20 uses same trans",
+      "h_series_trans": "H22/H23 transmissions work with F-series with adapter",
+      "k_series_trans": "K20/K24 transmissions interchange. RSX Type S trans preferred for swaps"
+    }
+  },
+
+  "engine_swap_guide": {
+    "into_eg_civic": ["B16", "B18", "K20", "K24"],
+    "into_ek_civic": ["B16", "B18", "K20", "K24"],
+    "into_ef_civic_crx": ["B16", "B18", "D16", "K20 (with mods)"],
+    "into_dc_integra": ["B18", "K20", "K24"],
+    "into_accord": ["H22", "F20B", "J32", "K24"],
+    "mount_manufacturers": ["Hasport", "Innovative Mounts", "Hybrid Racing", "PLM"]
+  },
+
+  "notes": {
+    "honda_philosophy": "Honda has always prioritized high-revving, naturally aspirated engines with exceptional efficiency. The move to turbocharging was delayed compared to competitors but executed well",
+    "engine_reliability": "Honda engines are legendary for reliability. 200,000+ mile engines are common with basic maintenance",
+    "enthusiast_community": "Honda has one of the largest and most active automotive enthusiast communities. Parts availability and knowledge base are excellent"
+  }
+}

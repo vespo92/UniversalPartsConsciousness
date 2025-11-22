@@ -1,0 +1,224 @@
+{
+  "engine_family_id": "HONDA-EARTH-DREAMS-TURBO",
+  "common_names": ["Earth Dreams", "VTEC Turbo", "Civic Turbo Engine", "Accord Turbo Engine", "1.5T", "2.0T"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "2013-present",
+  "historical_significance": "Honda's first widespread use of turbocharging. Marks the end of purely naturally aspirated performance Hondas.",
+
+  "earth_dreams_technology": {
+    "description": "Honda's umbrella term for their advanced powertrain technologies",
+    "components": [
+      "Direct fuel injection",
+      "VTEC with variable valve timing",
+      "Turbocharging (select models)",
+      "High compression ratios",
+      "Continuously Variable Transmission (CVT) optimization",
+      "Electric motor assist (hybrid models)"
+    ],
+    "goals": [
+      "Improved fuel economy",
+      "Reduced emissions",
+      "Maintained or improved performance"
+    ]
+  },
+
+  "variants": {
+    "l15b7_1_5t": {
+      "engine_code": "L15B7",
+      "common_name": "1.5T",
+      "displacement_cc": 1498,
+      "bore_mm": 73.0,
+      "stroke_mm": 89.4,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "model": "MHI TD03",
+        "boost_psi": 16.5
+      },
+      "fuel_system": "Direct Injection",
+      "power_hp": 174,
+      "rpm_at_peak_power": 6000,
+      "torque_nm": 220,
+      "rpm_at_peak_torque": 1700,
+      "redline_rpm": 6500,
+      "compression_ratio": "10.6:1",
+      "production_years": "2016-2021",
+      "applications": ["Civic (10th gen)", "CR-V (5th gen)", "Accord (10th gen base)"],
+      "notes": "Most common Earth Dreams turbo. Oil dilution TSB in cold climates"
+    },
+    "l15ca_1_5t_si": {
+      "engine_code": "L15CA (Si)",
+      "common_name": "1.5T Si",
+      "displacement_cc": 1498,
+      "bore_mm": 73.0,
+      "stroke_mm": 89.4,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "model": "MHI TD03",
+        "boost_psi": 20.3
+      },
+      "fuel_system": "Direct Injection",
+      "power_hp": 205,
+      "rpm_at_peak_power": 5700,
+      "torque_nm": 260,
+      "rpm_at_peak_torque": 2100,
+      "redline_rpm": 6500,
+      "compression_ratio": "10.3:1",
+      "production_years": "2017-2021",
+      "applications": ["Civic Si (FC1/FC3)"],
+      "notes": "Higher output 1.5T for Civic Si. Manual transmission only"
+    },
+    "l15b_1_5t_gen11": {
+      "engine_code": "L15B (11th Gen)",
+      "common_name": "1.5T 11th Gen",
+      "displacement_cc": 1498,
+      "bore_mm": 73.0,
+      "stroke_mm": 89.4,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "boost_psi": 18.0
+      },
+      "fuel_system": "Direct Injection",
+      "power_hp": 180,
+      "rpm_at_peak_power": 6000,
+      "torque_nm": 240,
+      "rpm_at_peak_torque": 1700,
+      "redline_rpm": 6500,
+      "compression_ratio": "10.6:1",
+      "production_years": "2022-present",
+      "applications": ["Civic (11th gen)", "CR-V (6th gen)", "HR-V (3rd gen)"],
+      "notes": "Updated 1.5T with revised calibration and improved oil management"
+    },
+    "k20c2_2_0t": {
+      "engine_code": "K20C2",
+      "common_name": "2.0T",
+      "displacement_cc": 1996,
+      "bore_mm": 86.0,
+      "stroke_mm": 85.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "model": "MHI TD04HL",
+        "boost_psi": 16.5
+      },
+      "fuel_system": "Direct Injection + Port Injection (Dual)",
+      "power_hp": 252,
+      "rpm_at_peak_power": 6500,
+      "torque_nm": 370,
+      "rpm_at_peak_torque": 1500,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.8:1",
+      "production_years": "2018-present",
+      "applications": ["Accord 2.0T", "Acura RDX (3rd gen)"],
+      "notes": "Dual injection eliminates carbon buildup. Very strong platform"
+    },
+    "k20c4_2_0t": {
+      "engine_code": "K20C4",
+      "common_name": "2.0T Integra",
+      "displacement_cc": 1996,
+      "bore_mm": 86.0,
+      "stroke_mm": 85.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "model": "MHI TD04HL",
+        "boost_psi": 18.0
+      },
+      "fuel_system": "Direct Injection + Port Injection (Dual)",
+      "power_hp": 200,
+      "rpm_at_peak_power": 6000,
+      "torque_nm": 310,
+      "rpm_at_peak_torque": 1800,
+      "redline_rpm": 6500,
+      "compression_ratio": "10.8:1",
+      "production_years": "2023-present",
+      "applications": ["Acura Integra (DE1)"],
+      "notes": "Detuned 2.0T for base Integra"
+    },
+    "k20c1_type_r": {
+      "engine_code": "K20C1",
+      "common_name": "Type R 2.0T",
+      "displacement_cc": 1996,
+      "bore_mm": 86.0,
+      "stroke_mm": 85.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "model": "MHI TD04 (FK8) / Improved (FL5)",
+        "boost_psi": 22.8
+      },
+      "fuel_system": "Direct Injection + Port Injection (Dual)",
+      "power_hp": {"fk8": 306, "fl5": 315},
+      "rpm_at_peak_power": 6500,
+      "torque_nm": {"fk8": 400, "fl5": 420},
+      "rpm_at_peak_torque": 2500,
+      "redline_rpm": 7000,
+      "compression_ratio": "9.8:1",
+      "production_years": "2017-present",
+      "applications": ["Civic Type R (FK8)", "Civic Type R (FL5)", "Acura Integra Type S"],
+      "notes": "The most powerful production Honda 4-cylinder. Manual only. Nurburgring FWD lap record holder"
+    },
+    "lfa_hybrid_2_0": {
+      "engine_code": "LFA (Hybrid)",
+      "common_name": "2.0L e:HEV",
+      "displacement_cc": 1993,
+      "bore_mm": 81.0,
+      "stroke_mm": 96.7,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "fuel_system": "Direct Injection",
+      "combined_system_hp": 204,
+      "combined_system_torque_nm": 315,
+      "compression_ratio": "13.9:1",
+      "production_years": "2018-present",
+      "applications": ["Accord Hybrid", "CR-V Hybrid", "Civic Hybrid (11th gen)"],
+      "notes": "Atkinson cycle engine with electric motor assist. Not truly turbocharged but part of Earth Dreams"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy",
+    "head_material": "Aluminum alloy",
+    "timing_system": "Chain-driven",
+    "fuel_injection": {
+      "1.5T": "Direct Injection only",
+      "2.0T": "Dual - Direct + Port Injection"
+    }
+  },
+
+  "notes": {
+    "heritage": "Earth Dreams represents Honda's shift from pure naturally aspirated engines to modern turbocharged and hybrid powertrains",
+    "reputation": "Mixed reception from enthusiasts. Performance is good but turbo lag and lack of N/A character disappointed some. Reliability has been mostly good with some concerns",
+    "oil_dilution_issue": {
+      "description": "1.5T engines can experience fuel diluting engine oil in cold climate short trips",
+      "affected": "L15B7 (2016-2018 primarily)",
+      "symptoms": ["Rising oil level", "Fuel smell in oil", "Illuminated oil indicator"],
+      "solution": "Honda issued TSB with software update. Longer trips help burn off fuel. Some owners install catch cans",
+      "status": "Largely resolved in 2019+ models with improved calibration"
+    },
+    "type_r_evolution": {
+      "fk8": "First turbocharged Type R. 306hp. Nurburgring record",
+      "fl5": "Updated Type R. 315hp. Improved cooling and aerodynamics"
+    },
+    "tuning_notes": {
+      "1_5t": "Stock turbo flows to about 250hp. Common mods: hondata, downpipe, intercooler. 300hp+ with bolt-ons",
+      "2_0t": "Stock turbo flows to about 300hp. With tune and bolt-ons: 350-400hp possible. Upgraded turbo builds exceeding 500hp",
+      "type_r": "Stock turbo flows to about 400hp with supporting mods. Big turbo builds exceeding 600hp",
+      "notes": "Dual injection on 2.0T prevents carbon buildup. 1.5T may need walnut blasting at high mileage"
+    },
+    "maintenance_intervals": {
+      "timing_chain": "Lifetime",
+      "spark_plugs_km": 100000,
+      "transmission_fluid_km": 48000,
+      "turbo_cooldown": "Let turbo cool before shutting off after hard driving"
+    }
+  }
+}

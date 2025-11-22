@@ -1,0 +1,92 @@
+{
+  "component_type": "VTEC Solenoid Assembly",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "description": "Oil pressure control solenoid for VTEC system engagement",
+
+  "variants": {
+    "dohc_vtec_b_series": {
+      "application": "B-series DOHC VTEC",
+      "oem_part_numbers": {
+        "b16a": "36172-P30-000",
+        "b18c": "36172-P72-A01",
+        "b18c5": "36172-P73-A01"
+      },
+      "location": "Rear of cylinder head",
+      "gasket_pn": "36172-P30-004",
+      "filter_screen_pn": "15825-P0A-005",
+      "notes": "Replace gasket and filter screen during replacement"
+    },
+    "sohc_vtec_d_series": {
+      "application": "D-series SOHC VTEC",
+      "oem_part_numbers": {
+        "d15b_vtec": "36172-P28-A01",
+        "d16z6": "36172-P28-A01",
+        "d16y8": "36172-P2J-A01"
+      },
+      "location": "Back of cylinder head near distributor",
+      "gasket_pn": "36172-P28-004",
+      "filter_screen_pn": "15825-P0A-005"
+    },
+    "h_series_vtec": {
+      "application": "H22/H23 VTEC",
+      "oem_part_numbers": {
+        "h22a": "36172-P13-A01"
+      },
+      "location": "Rear of cylinder head",
+      "gasket_pn": "36172-P13-004",
+      "filter_screen_pn": "15825-P0A-005"
+    },
+    "i_vtec_k_series": {
+      "application": "K-series i-VTEC",
+      "oem_part_numbers": {
+        "k20a2": "36172-PRB-A01",
+        "k20z3": "36172-RRB-A01",
+        "k24a2": "36172-RAA-A01"
+      },
+      "location": "Front of cylinder head",
+      "gasket_pn": "36172-PRB-004",
+      "notes": "K-series uses VTC actuator in addition to VTEC solenoid"
+    },
+    "vtc_actuator": {
+      "application": "K-series Variable Timing Control",
+      "description": "Intake cam phaser actuator",
+      "oem_part_numbers": {
+        "k20": "14310-PRB-A01",
+        "k24": "14310-RAA-A01"
+      },
+      "notes": "Cold start rattle often caused by VTC actuator. Common wear item"
+    }
+  },
+
+  "common_issues": {
+    "gasket_leak": {
+      "symptom": "Oil leak from VTEC solenoid area",
+      "solution": "Replace gasket - common maintenance item",
+      "difficulty": "Easy - 15 minute job"
+    },
+    "clogged_screen": {
+      "symptom": "VTEC not engaging or delayed engagement",
+      "solution": "Clean or replace filter screen",
+      "prevention": "Regular oil changes with quality oil"
+    },
+    "solenoid_failure": {
+      "symptom": "No VTEC engagement, CEL with VTEC codes",
+      "diagnosis": "Check resistance (14-30 ohms typical), check oil pressure",
+      "solution": "Replace solenoid if failed"
+    }
+  },
+
+  "maintenance_notes": {
+    "inspection_interval": "Every 80,000 km or with timing belt service",
+    "gasket_replacement": "Replace whenever solenoid is removed",
+    "oil_quality": "Critical for VTEC operation - use Honda or equivalent spec oil"
+  },
+
+  "aftermarket": {
+    "vtec_controllers": {
+      "description": "Devices to adjust VTEC engagement point",
+      "brands": ["Hondata", "Buddy Club", "HKS"],
+      "notes": "Allows custom VTEC engagement RPM"
+    }
+  }
+}

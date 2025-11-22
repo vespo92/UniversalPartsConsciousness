@@ -1,0 +1,170 @@
+{
+  "vehicle_id": "HONDA-CRX",
+  "full_name": "Honda Civic CRX / CR-X",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1983-1991",
+  "body_styles": ["2-door coupe/targa"],
+  "historical_significance": "Lightweight, fuel-efficient sports car. Defined the 'hot hatch' segment and remains popular for racing and modding.",
+
+  "generations": {
+    "first_gen_af_at": {
+      "chassis_codes": ["AF", "AT"],
+      "years": "1983-1987",
+      "nickname": "First Gen CRX",
+      "engines": {
+        "d15a2": {"displacement": "1.5L", "power_hp": 76, "notes": "CRX 1.5"},
+        "d15a3": {"displacement": "1.5L", "power_hp": 91, "notes": "CRX Si (FI)"},
+        "ew1": {"displacement": "1.3L", "power_hp": 60, "notes": "CRX HF (lean burn)"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2200,
+      "weight_kg": {"1.5": 838, "si": 879, "hf": 800},
+      "suspension": {
+        "front": "MacPherson strut",
+        "rear": "Trailing arm with Panhard rod"
+      },
+      "variants": {
+        "crx_1_3": {
+          "engine": "EW1 1.3L",
+          "power_hp": 60,
+          "notes": "Base model, carbureted"
+        },
+        "crx_1_5": {
+          "engine": "D15A2",
+          "power_hp": 76,
+          "notes": "Standard model"
+        },
+        "crx_hf": {
+          "engine": "EW1 lean burn",
+          "power_hp": 58,
+          "mpg": "50+ city/highway",
+          "notes": "High Fuel efficiency model. Exceptional mileage"
+        },
+        "crx_si": {
+          "engine": "D15A3",
+          "power_hp": 91,
+          "features": ["Fuel injection", "Rear disc brakes", "Sport suspension"],
+          "notes": "Performance model"
+        }
+      },
+      "notes": "Extremely lightweight. 800kg models achieve incredible power-to-weight with swaps"
+    },
+    "second_gen_ef7_ef8": {
+      "chassis_codes": ["EF6", "EF7", "EF8"],
+      "years": "1988-1991",
+      "nickname": "EF CRX",
+      "engines": {
+        "d15b1": {"displacement": "1.5L", "power_hp": 62, "notes": "DX"},
+        "d15b2": {"displacement": "1.5L", "power_hp": 92, "notes": "Standard"},
+        "d16a6": {"displacement": "1.6L", "power_hp": 105, "notes": "Si (USDM)"},
+        "zc": {"displacement": "1.6L", "power_hp": 130, "notes": "JDM SiR (non-VTEC)"},
+        "b16a": {"displacement": "1.6L", "power_hp": 158, "notes": "JDM SiR VTEC"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2300,
+      "weight_kg": {"hf": 876, "dx": 920, "si": 964, "sir": 960},
+      "suspension": {
+        "front": "MacPherson strut with lower wishbone",
+        "rear": "Independent double wishbone"
+      },
+      "variants": {
+        "crx_hf": {
+          "chassis_code": "EF6",
+          "engine": "D15B6 lean burn",
+          "power_hp": 62,
+          "mpg": "50+",
+          "weight_kg": 876,
+          "notes": "Ultra-light economy model"
+        },
+        "crx_dx": {
+          "chassis_code": "EF6",
+          "engine": "D15B1",
+          "power_hp": 70,
+          "notes": "Base model"
+        },
+        "crx_si": {
+          "chassis_code": "EF8",
+          "engine": "D16A6",
+          "power_hp": 105,
+          "features": ["PGM-FI", "Rear disc brakes", "Sport suspension"],
+          "weight_kg": 964,
+          "notes": "USDM Si - very popular platform"
+        },
+        "crx_sir_jdm": {
+          "chassis_code": "EF8",
+          "engine": "B16A VTEC",
+          "power_hp": 158,
+          "redline": 8200,
+          "weight_kg": 960,
+          "features": ["First VTEC CRX", "LSD available", "Rear disc"],
+          "notes": "JDM only. One of the greatest driver's cars ever made"
+        }
+      },
+      "glass_roof": {
+        "description": "Optional glass moonroof on Si models",
+        "notes": "Some track-focused owners delete for weight savings"
+      },
+      "aftermarket_focus": "Massive aftermarket. Perfect B-series or K-series swap platform. Still heavily raced"
+    },
+    "third_gen_eg2_del_sol": {
+      "note": "CRX was replaced by Del Sol in 1992 - see Del Sol documentation"
+    }
+  },
+
+  "swap_guide": {
+    "bolt_in_b_series": {
+      "description": "B16/B18 direct swap into EF CRX",
+      "mounts": "Use EF8 SiR mounts or Hasport",
+      "transmission": "B-series trans bolt-in",
+      "axles": "Integra axles fit",
+      "wiring": "Rywire or HA Motorsports harness"
+    },
+    "k_series_swap": {
+      "description": "K20/K24 swap",
+      "mounts": ["Hasport EFK", "Innovative K-series"],
+      "transmission": "K-series trans with adapter",
+      "notes": "Requires more fabrication than B-series"
+    },
+    "power_to_weight": {
+      "hf_with_b18c5": {
+        "weight_kg": 900,
+        "power_hp": 195,
+        "lb_per_hp": "~10.3 lb/hp"
+      },
+      "hf_with_k20a": {
+        "weight_kg": 920,
+        "power_hp": 220,
+        "lb_per_hp": "~9.2 lb/hp"
+      }
+    }
+  },
+
+  "racing_heritage": {
+    "series": ["SCCA ITA/ITB", "Chump Car", "24 Hours of Lemons", "Honda Challenge"],
+    "strengths": ["Light weight", "Excellent handling", "Cheap parts", "Strong engine swaps"],
+    "competitive_classes": {
+      "scca_ita": "B16A legal in ITA",
+      "spec_crx": "Spec racing series exists in some regions"
+    }
+  },
+
+  "aftermarket_suspension": {
+    "coilovers": {
+      "budget": ["BC Racing BR", "Tein Street Basis"],
+      "mid": ["Koni Yellow + Ground Control", "Progress CS2"],
+      "high_end": ["KW V3", "Ohlins DFV", "Fortune Auto"]
+    },
+    "sway_bars": {
+      "front": ["Progress 28mm", "ST 28mm"],
+      "rear": ["Progress 22mm", "ST 22mm"]
+    }
+  },
+
+  "collectibility": {
+    "ef8_sir_jdm": "Extremely collectible - $25,000+ for clean examples",
+    "ef8_si_usdm": "Rising in value - $10,000-20,000 for clean",
+    "concerns": ["Rust (especially quarters)", "Theft (B16 cars)", "Parts availability for trim"]
+  }
+}

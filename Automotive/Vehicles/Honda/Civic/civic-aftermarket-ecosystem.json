@@ -1,0 +1,499 @@
+{
+  "vehicle_id": "HONDA-CIVIC",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "generation_specific_parts": {
+    "ef_civic_1988_1991": {
+      "chassis_codes": ["EF"],
+      "suspension": {
+        "coilovers": {
+          "brands": ["Tein", "KW", "Progress", "Ground Control"],
+          "popular_kits": {
+            "tein_flex_z": "Budget-friendly, good street setup",
+            "kw_v3": "Premium option with separate rebound/compression",
+            "progress_cs2": "Proven track setup"
+          }
+        },
+        "lowering_springs": {
+          "brands": ["Eibach", "H&R", "Tein S-Tech", "Skunk2"],
+          "drop_range": "1.5-2.5 inches"
+        },
+        "sway_bars": {
+          "front": ["Progress 28mm", "Suspension Techniques 28mm"],
+          "rear": ["Progress 22mm", "ST 22mm"],
+          "notes": "Rear sway bar essential for handling balance"
+        },
+        "control_arms": {
+          "front_upper": "Skunk2 / Hardrace adjustable",
+          "rear_lower": "Skunk2 Pro Series / Megan Racing",
+          "front_lower": "Energy Suspension bushings or spherical"
+        },
+        "subframe_braces": {
+          "front": "ASR / Function7",
+          "rear": "ASR / Skunk2 rear LCA bar"
+        }
+      },
+      "brakes": {
+        "stock_upgrade": "EG/DC2 Integra brake swap - larger rotors",
+        "big_brake_kits": {
+          "wilwood": "Dynapro 4-piston front",
+          "stoptech": "ST-40 kit"
+        },
+        "pads": {
+          "street": "Hawk HPS",
+          "track": "Hawk HP+, Carbotech XP10"
+        },
+        "rotors": {
+          "stock_replacement": "Centric Premium",
+          "upgraded": "StopTech slotted"
+        }
+      },
+      "wheels_tires": {
+        "popular_sizes": ["15x7 +40", "15x8 +25"],
+        "tire_sizes": ["195/50R15", "205/50R15"],
+        "popular_wheels": ["Enkei RPF1", "Konig Hypergram", "Rays Volk TE37"],
+        "notes": "4x100 bolt pattern. Keep it lightweight"
+      },
+      "exterior": {
+        "body_kits": {
+          "jdm_oem": "SiR front lip, Mugen rear lip",
+          "aftermarket": ["Chargespeed", "Vis Racing"]
+        },
+        "hoods": {
+          "carbon_fiber": ["Seibon", "Vis Racing"],
+          "vented": "J's Racing style"
+        },
+        "wings": {
+          "oem_style": "EF9 SiR wing",
+          "aftermarket": "APR GTC-200, Voltex Type 1"
+        }
+      },
+      "interior": {
+        "seats": {
+          "bucket": ["Bride", "Sparco", "NRG Prisma"],
+          "oem_upgrade": "EG6 SiR seats, DC2 Type R seats"
+        },
+        "steering_wheels": {
+          "brands": ["Momo", "Nardi", "Personal"],
+          "hub": "Works Bell or NRG quick release"
+        },
+        "gauge_pods": ["GlowShift pillar pods", "Defi gauges"]
+      },
+      "engine_swaps": {
+        "popular": ["B16A", "B18C", "B18C5", "K20A"],
+        "difficulty": "Moderate - requires mounts, axles, wiring",
+        "mount_manufacturers": ["Hasport", "Innovative"]
+      }
+    },
+    "eg_civic_1992_1995": {
+      "chassis_codes": ["EG"],
+      "suspension": {
+        "coilovers": {
+          "budget": ["Tein Street Basis Z", "BC Racing BR"],
+          "mid": ["Tein Flex Z", "KW V1"],
+          "high_end": ["KW V3", "Ohlins Road & Track", "JRZ RS One"],
+          "track": ["AST 5100", "MCS 2-way"]
+        },
+        "lowering_springs": {
+          "brands": ["Eibach Pro-Kit", "H&R Sport", "Skunk2"],
+          "drop_mm": "35-50mm"
+        },
+        "sway_bars": {
+          "front": ["Progress 28mm", "ST 28mm", "Whiteline"],
+          "rear": ["Progress 22mm", "ST 22mm"],
+          "notes": "Must add rear sway bar - huge improvement"
+        },
+        "bushings": {
+          "polyurethane": ["Energy Suspension", "Prothane"],
+          "spherical": ["Hardrace", "Innovative"]
+        },
+        "camber_kits": {
+          "front": ["Skunk2 Pro Series", "Ingalls"],
+          "rear": ["Skunk2", "SPC"]
+        }
+      },
+      "brakes": {
+        "oem_upgrades": {
+          "front": "Integra GSR rotors (262mm)",
+          "rear": "EX rear disc conversion"
+        },
+        "big_brake_kits": {
+          "entry": "Wilwood Dynalite",
+          "mid": "StopTech ST-40",
+          "high_end": "AP Racing CP8350"
+        },
+        "master_cylinder": {
+          "upgrade": "1\" bore from 15/16\" stock",
+          "options": ["Wilwood", "Tilton"]
+        }
+      },
+      "wheels_tires": {
+        "bolt_pattern": "4x100",
+        "popular_sizes": {
+          "street": "15x7 +40 to 15x8 +25",
+          "track": "15x8 +25 to 15x9 0"
+        },
+        "tire_recommendations": {
+          "street": "200TW - RE71R, RT660",
+          "track": "R-compound - Hoosier A7, Toyo RR",
+          "daily": "Pilot Sport 4S, PS AS4"
+        },
+        "iconic_wheels": ["TE37", "RPF1", "Mugen MF10", "Spoon SW388"]
+      },
+      "aero": {
+        "front_lip": {
+          "oem": "EG6 SiR lip",
+          "aftermarket": ["Mugen style", "Type R style", "Spoon style"]
+        },
+        "rear_lip": ["Mugen", "Type R style"],
+        "wings": {
+          "hatchback": ["Mugen Twin Loop", "EK9 Type R wing", "APR GTC-200"],
+          "coupe": ["Ferio lip spoiler"]
+        },
+        "diffusers": "Spoon rear diffuser"
+      },
+      "interior": {
+        "seats": {
+          "oem_upgrade": ["EG6 SiR seats", "DC2 Type R Recaros"],
+          "aftermarket": ["Bride ZETA III", "Sparco Sprint", "Corbeau FX1"]
+        },
+        "harness_bar": ["ASR", "NRG", "Cusco"],
+        "roll_cage": ["Autopower", "Matter", "Custom chromoly"],
+        "steering": {
+          "wheels": ["Momo Monte Carlo", "Nardi Deep Corn", "Personal Neo Grinta"],
+          "hub": "Works Bell rapfix II, NRG SRK-100H"
+        },
+        "short_shifter": ["Hybrid Racing", "Skunk2", "K-Tuned"]
+      },
+      "engine_swaps": {
+        "bolt_in": {
+          "b16a": "JDM VTEC - direct swap with EG6 parts",
+          "b18c1": "Integra GSR - common swap",
+          "b18c5": "Integra Type R - premium swap"
+        },
+        "with_mounts": {
+          "k20_k24": {
+            "mounts": ["Hasport EGK2", "Innovative K-series"],
+            "requirements": ["K-series trans", "Rywire harness", "Custom axles"]
+          },
+          "h22": {
+            "notes": "Possible but heavy. Requires custom work"
+          }
+        }
+      }
+    },
+    "ek_civic_1996_2000": {
+      "chassis_codes": ["EK", "EM1"],
+      "suspension": {
+        "coilovers": {
+          "budget": ["BC Racing BR", "Tein Street Basis"],
+          "mid": ["Tein Flex Z", "KW V1"],
+          "high_end": ["KW V3", "Ohlins DFV", "Fortune Auto 500"],
+          "track": ["JRZ RS Pro", "MCS 2-way", "Penske"]
+        },
+        "oem_plus": {
+          "shocks": "Koni Yellow with Ground Control springs",
+          "notes": "Classic reliable setup"
+        },
+        "sway_bars": {
+          "front": ["Progress 28mm", "Whiteline 27mm"],
+          "rear": ["Progress 22mm", "Whiteline 22mm"],
+          "type_r_oem": "26mm front / 21mm rear"
+        },
+        "braces": {
+          "front_strut_bar": ["DC Sports", "Cusco", "Spoon"],
+          "rear_strut_bar": ["ASR", "Password JDM"],
+          "lower_tie_bar": ["Skunk2", "ASR"],
+          "fender_braces": "Password JDM style"
+        }
+      },
+      "brakes": {
+        "oem_upgrades": {
+          "em1_si": "Comes with 4-wheel disc",
+          "type_r_swap": "EK9 brakes - 282mm front"
+        },
+        "bbk": {
+          "wilwood": "DPHA or Dynapro",
+          "spoon": "Monoblock calipers",
+          "project_mu": "4-piston kit"
+        }
+      },
+      "exterior": {
+        "conversion": {
+          "type_r_front": "EK9 front end conversion",
+          "components": ["Bumper", "Fenders", "Hood", "Headlights"]
+        },
+        "lips_spoilers": {
+          "front_lip": ["Type R OEM", "Mugen", "Spoon"],
+          "rear_lip": "Type R or Mugen",
+          "wing": ["Type R OEM", "Mugen", "APR", "Voltex"]
+        },
+        "widebody": ["Pandem/Rocket Bunny", "J's Racing Wide"]
+      },
+      "type_r_specific_parts": {
+        "oem_parts": {
+          "recaro_seats": "Red EK9 Recaros - highly collectible",
+          "steering_wheel": "Momo with red stitching",
+          "shift_knob": "Titanium Type R knob",
+          "floor_mats": "Type R branded"
+        },
+        "aftermarket": {
+          "intake": "Spoon Carbon intake",
+          "exhaust": ["Spoon N1", "J's Racing FX-PRO", "Mugen Twin Loop"],
+          "header": ["Toda Racing", "Spoon 4-2-1"]
+        }
+      }
+    },
+    "ep3_civic_si_2002_2005": {
+      "chassis_codes": ["EP3"],
+      "suspension": {
+        "coilovers": {
+          "budget": ["BC Racing BR", "Tein Street Basis Z"],
+          "mid": ["Tein Flex A", "KW V2"],
+          "high_end": ["KW V3", "Ohlins DFV"]
+        },
+        "sway_bars": {
+          "front": "Progress 28mm",
+          "rear": "Progress 24mm"
+        },
+        "rear_end": {
+          "notes": "Double wishbone rear - handles well stock"
+        }
+      },
+      "engine_k20a3": {
+        "bolt_ons": {
+          "intake": ["Injen CAI", "AEM V2"],
+          "header": ["DC Sports", "Skunk2 Alpha"],
+          "exhaust": ["Greddy SP2", "Invidia Q300"]
+        },
+        "head_swap": {
+          "k20a2_head": "RSX Type S head bolt-on upgrade",
+          "gains": "+20-30hp with proper tune"
+        },
+        "ecu": {
+          "reflash": ["Hondata FlashPro", "KTuner"]
+        }
+      },
+      "type_r_conversion": {
+        "description": "Convert EP3 Si to Type R spec",
+        "components": [
+          "K20A2 engine",
+          "6-speed transmission",
+          "Type R ECU",
+          "LSD",
+          "Brembo brakes"
+        ],
+        "notes": "Popular conversion in UK/Europe where EP3 Type R was sold"
+      }
+    },
+    "fa_fg_civic_si_2006_2011": {
+      "chassis_codes": ["FA5", "FG2"],
+      "suspension": {
+        "coilovers": {
+          "budget": ["BC Racing BR", "Tein Street Advance Z"],
+          "mid": ["Progress CS2", "KW V2"],
+          "high_end": ["KW V3", "Ohlins DFV", "Fortune Auto 500"]
+        },
+        "sway_bars": {
+          "front": ["Progress 28mm", "Whiteline"],
+          "rear": ["Progress 22mm", "Whiteline"]
+        }
+      },
+      "engine_k20z3": {
+        "intake": {
+          "cold_air": ["AEM V2", "Injen SP", "K&N Typhoon"],
+          "short_ram": ["Skunk2", "DC Sports"]
+        },
+        "exhaust": {
+          "header": ["PLM", "Skunk2 Alpha", "DC Sports"],
+          "cat_back": ["Invidia Q300", "Skunk2", "Greddy"]
+        },
+        "engine_internals": {
+          "head_work": {
+            "cams": ["Skunk2 Stage 2", "Buddy Club"],
+            "valvetrain": ["Supertech", "BC"]
+          },
+          "intake_manifold": {
+            "rbc_swap": "2005-06 RSX Type S manifold",
+            "aftermarket": ["Skunk2 Ultra Street", "Blox"]
+          }
+        },
+        "forced_induction": {
+          "supercharger": {
+            "brands": ["CT Engineering", "Kraftwerks"],
+            "power": "280-320hp"
+          },
+          "turbo": {
+            "kits": ["Full-Race", "SiriMoto", "Rev9"],
+            "power": "350-450hp on stock internals"
+          }
+        },
+        "ecu": {
+          "hondata_flashpro": "Required for proper tuning",
+          "ktuner": "Budget alternative"
+        }
+      },
+      "brakes": {
+        "oem_plus": ["StopTech Street kit", "EBC rotors + pads"],
+        "bbk": {
+          "stoptech": "ST-40 328mm front",
+          "wilwood": "AERO6 kit"
+        }
+      },
+      "wheels": {
+        "bolt_pattern": "5x114.3",
+        "oem_size": "17x7",
+        "popular_upgrades": ["17x9 +45", "18x8.5 +38"],
+        "recommended": ["Enkei RPF1", "Rays 57DR", "Titan7 TS5"]
+      }
+    },
+    "fk8_civic_type_r_2017_2021": {
+      "chassis_codes": ["FK8"],
+      "suspension": {
+        "coilovers": {
+          "street": ["KW V3", "Ohlins Road & Track", "Fortune Auto 510"],
+          "track": ["MCS 2-way", "JRZ RS Pro", "Ohlins TTX"],
+          "notes": "Stock dampers are very good - focus on springs first"
+        },
+        "lowering_springs": {
+          "brands": ["Swift Spec-R", "H&R Sport", "Eibach Pro-Kit"],
+          "drop": "15-25mm",
+          "notes": "Popular option to retain OEM damper quality"
+        },
+        "sway_bars": {
+          "upgrades": ["Whiteline", "Progress", "Hardrace"],
+          "notes": "Stock is well balanced - tune for preference"
+        },
+        "alignment": {
+          "aggressive_street": "Front: -2.5° camber, Rear: -2.0° camber",
+          "track": "Front: -3.5° camber, Rear: -2.5° camber"
+        }
+      },
+      "engine_k20c1": {
+        "intake": {
+          "oem_upgrade": "Stock airbox flows well",
+          "aftermarket": ["PRL Cobra", "27WON", "AEM"]
+        },
+        "intercooler": {
+          "stock": "Good to 350hp",
+          "upgraded": ["PRL", "Full-Race", "27WON", "Mishimoto"],
+          "gains": "Consistent power in heat"
+        },
+        "exhaust": {
+          "downpipe": ["PRL", "27WON", "Full-Race"],
+          "cat_back": ["Remus", "Tomei", "Invidia", "AWE"],
+          "j_pipe": "Required for big power"
+        },
+        "turbo_upgrade": {
+          "stock_turbo_max": "~400hp with supporting mods",
+          "upgraded_turbos": {
+            "bolt_on": ["PRL P600", "Garrett G25-550"],
+            "big_turbo": ["Precision 6266", "BorgWarner EFR"]
+          }
+        },
+        "fuel_system": {
+          "stock_limit": "~450hp",
+          "upgrades": {
+            "injectors": ["ID1050X", "FIC 1100cc"],
+            "fuel_pump": ["AEM 340", "DW400"],
+            "ethanol": "E85 flex fuel popular"
+          }
+        },
+        "ecu": {
+          "hondata_flashpro": "Primary choice for FK8 tuning",
+          "ktuner": "Alternative option"
+        },
+        "power_levels": {
+          "stage_1": {"mods": "Intake, downpipe, tune", "power": "340-360hp"},
+          "stage_2": {"mods": "+ Intercooler, exhaust", "power": "380-400hp"},
+          "stage_3": {"mods": "+ Turbo upgrade", "power": "450-550hp"},
+          "built": {"mods": "+ Built engine", "power": "600-800hp"}
+        }
+      },
+      "brakes": {
+        "stock": "Brembo 4-piston front - very capable",
+        "pads": {
+          "street": ["Hawk HPS 5.0", "EBC Yellowstuff"],
+          "track": ["Carbotech XP10", "Ferodo DS2500", "Hawk DTC-60"]
+        },
+        "fluid": "Motul RBF600, Castrol SRF",
+        "bbk": {
+          "options": ["AP Racing", "Brembo GT"],
+          "notes": "Stock brakes are adequate for most - upgrade pads/fluid first"
+        }
+      },
+      "wheels_tires": {
+        "bolt_pattern": "5x120",
+        "oem_size": "20x8.5 +60",
+        "popular_sizes": {
+          "street": "19x9.5 +38 or 18x9.5 +38",
+          "track": "18x10 +35"
+        },
+        "recommended_wheels": ["Titan7 TS5", "Enkei RS05RR", "Rays ZE40", "Apex EC-7"],
+        "tires": {
+          "street": ["Pilot Sport 4S", "PS Cup 2"],
+          "track": ["RE71R", "RT660", "A052"]
+        },
+        "notes": "Going to 18\" improves ride and tire selection"
+      },
+      "aero": {
+        "front_lip": ["Seibon carbon", "Varis", "Spoon"],
+        "side_skirts": ["Varis", "Adro"],
+        "rear_wing": {
+          "stock": "Very effective - generates real downforce",
+          "upgrade": ["Voltex Type 7", "APR GTC-300", "Varis"]
+        },
+        "splitter": ["Downforce Solutions", "Verus Engineering"],
+        "diffuser": ["J's Racing", "Varis", "Verus"]
+      }
+    },
+    "fl5_civic_type_r_2023_present": {
+      "chassis_codes": ["FL5"],
+      "notes": "Parts development ongoing - many FK8 parts compatible",
+      "suspension": {
+        "coilovers": {
+          "available": ["KW V3", "Ohlins", "Fortune Auto"]
+        },
+        "lowering_springs": ["Swift", "H&R", "Eibach"]
+      },
+      "engine_k20c1": {
+        "notes": "Same K20C1 as FK8 - most engine mods compatible",
+        "intake": ["PRL", "27WON"],
+        "intercooler": ["PRL", "Mishimoto"],
+        "exhaust": ["Remus", "AWE", "Tomei"],
+        "ecu": "Hondata FlashPro compatible"
+      },
+      "brakes": {
+        "stock": "Brembo 4-piston - excellent",
+        "notes": "Different mounting than FK8"
+      },
+      "wheels": {
+        "bolt_pattern": "5x120",
+        "oem_size": "19x8.5"
+      }
+    }
+  },
+
+  "common_mods_all_generations": {
+    "short_shifter": {
+      "brands": ["Hybrid Racing", "K-Tuned", "Skunk2", "Acuity"],
+      "benefits": "Reduced throw, better feel"
+    },
+    "shift_knob": {
+      "weighted": ["Blox 490g", "Skunk2 weighted"],
+      "notes": "Heavier knob improves shift feel"
+    },
+    "bushings": {
+      "shifter_bushings": ["Hybrid Racing", "Energy Suspension"],
+      "motor_mounts": ["Hasport", "Innovative", "Prothane"]
+    }
+  },
+
+  "trusted_vendors": {
+    "general": ["Evasive Motorsports", "King Motorsports", "Jhpusa", "Inline Pro"],
+    "suspension": ["Suspension.com", "Tire Rack"],
+    "type_r_specific": ["27WON", "PRL Motorsports", "Hondata"],
+    "jdm_parts": ["Nengun", "RHDJapan", "ICB Motorsport"]
+  }
+}

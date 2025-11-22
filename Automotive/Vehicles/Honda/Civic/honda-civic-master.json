@@ -1,0 +1,446 @@
+{
+  "vehicle_id": "HONDA-CIVIC",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1972-present",
+  "body_styles": ["Sedan", "Coupe", "Hatchback", "Wagon"],
+  "historical_significance": "One of the best-selling cars in history. Defined the compact car segment and sport compact culture.",
+
+  "generations": {
+    "first_gen_sb1": {
+      "chassis_codes": ["SB1", "SG", "SE"],
+      "years": "1972-1979",
+      "engines": ["EB1 1.2L", "ED1 CVCC 1.2L", "ED3 CVCC 1.3L", "ED4 CVCC 1.5L"],
+      "body_styles": ["2-door hatchback", "4-door sedan", "5-door wagon (CVCC)"],
+      "transmission": ["4-speed manual", "Hondamatic 2-speed semi-auto"],
+      "notes": "First Civic. Introduced CVCC technology that met emissions without catalytic converter",
+      "collectibility": "High - original Civics are rare survivors"
+    },
+    "second_gen_ss_st_wd": {
+      "chassis_codes": ["SS", "ST", "WD"],
+      "years": "1979-1983",
+      "engines": ["EJ 1.3L CVCC", "EK 1.5L CVCC"],
+      "body_styles": ["3-door hatchback", "4-door sedan", "5-door wagon", "Country wagon"],
+      "transmission": ["4-speed manual", "5-speed manual", "Hondamatic"],
+      "notes": "Larger than first gen. Introduced 5-speed manual",
+      "variants": {
+        "civic_1500gl": "Top trim with 1.5L",
+        "civic_s": "Sport model with upgraded suspension"
+      }
+    },
+    "third_gen_ah_ag_at": {
+      "chassis_codes": ["AH", "AG", "AT", "AF"],
+      "years": "1983-1987",
+      "engines": ["D15A2 1.5L", "D15A3 1.5L FI"],
+      "body_styles": ["3-door hatchback", "4-door sedan", "5-door shuttle/wagovan"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2380,
+      "notes": "First front MacPherson strut / rear trailing arm suspension. Much more refined",
+      "variants": {
+        "civic_si": {
+          "engine": "D15A3 with fuel injection",
+          "power_hp": 91,
+          "features": ["Sport suspension", "Front disc brakes"]
+        },
+        "crx": "Separate model - see CRX documentation"
+      }
+    },
+    "fourth_gen_ef": {
+      "chassis_codes": ["EF1", "EF2", "EF3", "EF4", "EF5", "EF6", "EF7", "EF8", "EF9"],
+      "years": "1987-1991",
+      "nickname": "EF Civic",
+      "engines": {
+        "d15b1": {"displacement": "1.5L", "power_hp": 70, "notes": "Base SOHC"},
+        "d15b2": {"displacement": "1.5L", "power_hp": 92, "notes": "SOHC 16v"},
+        "d16a6": {"displacement": "1.6L", "power_hp": 108, "notes": "Si engine (USDM)"},
+        "b16a": {"displacement": "1.6L", "power_hp": 158, "notes": "VTEC - JDM SiR only"}
+      },
+      "body_styles": ["3-door hatchback", "4-door sedan"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2500,
+      "suspension": {
+        "front": "MacPherson strut with lower wishbone",
+        "rear": "Independent double wishbone"
+      },
+      "weight_kg": {"hatchback": 890, "sedan": 940},
+      "variants": {
+        "civic_dx": "Base model - D15B1",
+        "civic_lx": "Mid-level - D15B2",
+        "civic_si": {
+          "engine": "D16A6",
+          "power_hp": 108,
+          "features": ["Sport suspension", "4-wheel disc brakes", "Rear sway bar"]
+        },
+        "civic_sir_jdm": {
+          "chassis_code": "EF8 (hatch) / EF9 (sedan)",
+          "engine": "B16A DOHC VTEC",
+          "power_hp": 158,
+          "redline": 8200,
+          "notes": "First VTEC Civic - legendary status"
+        }
+      },
+      "aftermarket_focus": "Extremely popular for swaps. B16/B18 swaps are bolt-in"
+    },
+    "fifth_gen_eg": {
+      "chassis_codes": ["EG3", "EG4", "EG5", "EG6", "EG8", "EG9"],
+      "years": "1992-1995",
+      "nickname": "EG Civic",
+      "engines": {
+        "d15b7": {"displacement": "1.5L", "power_hp": 70, "notes": "Base"},
+        "d15b8": {"displacement": "1.5L", "power_hp": 102, "notes": "SOHC VTEC-E"},
+        "d16z6": {"displacement": "1.6L", "power_hp": 125, "notes": "SOHC VTEC (Si)"},
+        "b16a2_jdm": {"displacement": "1.6L", "power_hp": 170, "notes": "JDM SiR DOHC VTEC"},
+        "b16a3": {"displacement": "1.6L", "power_hp": 160, "notes": "Del Sol VTEC (USDM)"}
+      },
+      "body_styles": ["2-door coupe", "3-door hatchback", "4-door sedan"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2570,
+      "suspension": {
+        "front": "MacPherson strut with lower A-arm",
+        "rear": "Independent double wishbone"
+      },
+      "weight_kg": {"hatchback": 970, "coupe": 1020, "sedan": 1050},
+      "variants": {
+        "civic_cx": {
+          "engine": "D15B8 VTEC-E",
+          "notes": "50+ MPG capable with lean burn"
+        },
+        "civic_dx": "Base D15B7",
+        "civic_ex": {
+          "engine": "D16Z6 VTEC",
+          "power_hp": 125,
+          "features": ["Power windows/locks", "A/C"]
+        },
+        "civic_si": {
+          "usdm_coupe": {
+            "engine": "D16Z6",
+            "power_hp": 125,
+            "notes": "USDM Si - same as EX mechanically"
+          },
+          "usdm_hatch": {
+            "engine": "D16Z6",
+            "power_hp": 125
+          }
+        },
+        "civic_sir_jdm": {
+          "chassis_code": "EG6 (hatch) / EG9 (sedan)",
+          "engine": "B16A2 DOHC VTEC",
+          "power_hp": 170,
+          "features": ["LSD available", "Sport suspension"]
+        },
+        "civic_vti_edm": {
+          "engine": "B16A2",
+          "power_hp": 160,
+          "notes": "European market VTEC"
+        },
+        "civic_ferio_sir": {
+          "chassis_code": "EG9",
+          "engine": "B16A",
+          "notes": "JDM sedan with VTEC"
+        }
+      },
+      "aftermarket_focus": "Peak of lightweight Civic. Most popular platform for B-series swaps. Massive aftermarket"
+    },
+    "sixth_gen_ek": {
+      "chassis_codes": ["EK1", "EK2", "EK3", "EK4", "EK9", "EJ6", "EJ7", "EJ8", "EM1"],
+      "years": "1996-2000",
+      "nickname": "EK Civic",
+      "engines": {
+        "d16y7": {"displacement": "1.6L", "power_hp": 106, "notes": "Base non-VTEC"},
+        "d16y8": {"displacement": "1.6L", "power_hp": 127, "notes": "SOHC VTEC"},
+        "b16a2": {"displacement": "1.6L", "power_hp": 160, "notes": "DOHC VTEC (EM1 Si)"},
+        "b16b": {"displacement": "1.6L", "power_hp": 185, "notes": "Type R - hand-ported"}
+      },
+      "body_styles": ["2-door coupe", "3-door hatchback", "4-door sedan"],
+      "transmission": ["5-speed manual", "4-speed automatic", "CVT (HX)"],
+      "wheelbase_mm": 2620,
+      "suspension": {
+        "front": "MacPherson strut",
+        "rear": "Independent double wishbone"
+      },
+      "weight_kg": {"hatchback": 1010, "coupe": 1080, "type_r": 1040},
+      "variants": {
+        "civic_cx_hx": {
+          "engines": ["D16Y5 lean burn", "D16Y7"],
+          "notes": "Economy models - HX had CVT option"
+        },
+        "civic_dx_lx": {
+          "engine": "D16Y7",
+          "power_hp": 106
+        },
+        "civic_ex": {
+          "engine": "D16Y8 VTEC",
+          "power_hp": 127,
+          "features": ["Moonroof available", "4-wheel disc"]
+        },
+        "civic_si_em1": {
+          "chassis_code": "EM1",
+          "engine": "B16A2 DOHC VTEC",
+          "power_hp": 160,
+          "years": "1999-2000",
+          "features": ["Sport suspension", "LSD", "Rear disc brakes"],
+          "notes": "Only 2 years. Highly collectible"
+        },
+        "civic_sir_jdm": {
+          "chassis_code": "EK4",
+          "engine": "B16A",
+          "power_hp": 170
+        },
+        "civic_type_r_ek9": {
+          "chassis_code": "EK9",
+          "engine": "B16B",
+          "power_hp": 185,
+          "redline": 8800,
+          "weight_kg": 1040,
+          "features": [
+            "Hand-ported intake manifold",
+            "Close ratio gearbox",
+            "Helical LSD",
+            "Red Recaro seats",
+            "Seam-welded chassis",
+            "4-point front strut brace"
+          ],
+          "notes": "The legendary EK9 Type R. JDM only. One of the greatest FWD cars ever made"
+        }
+      },
+      "aftermarket_focus": "Last of the lightweight Civics. Type R parts highly sought after"
+    },
+    "seventh_gen_em_es_ep": {
+      "chassis_codes": ["EM2", "ES1", "ES2", "EP1", "EP2", "EP3", "EU1"],
+      "years": "2001-2005",
+      "nickname": "EP/EM Civic",
+      "engines": {
+        "d17a1": {"displacement": "1.7L", "power_hp": 115, "notes": "Base"},
+        "d17a2": {"displacement": "1.7L", "power_hp": 127, "notes": "VTEC"},
+        "k20a3": {"displacement": "2.0L", "power_hp": 160, "notes": "EP3 Si (USDM)"},
+        "k20a2": {"displacement": "2.0L", "power_hp": 200, "notes": "EP3 Type R (JDM/EDM)"}
+      },
+      "body_styles": ["2-door coupe", "3-door hatchback (Si/Type R)", "4-door sedan", "Hybrid"],
+      "transmission": ["5-speed manual", "4-speed automatic", "CVT (Hybrid)"],
+      "wheelbase_mm": 2620,
+      "suspension": {
+        "front": "MacPherson strut",
+        "rear": "Semi-trailing arm (sedan/coupe) / Double wishbone (EP3)"
+      },
+      "weight_kg": {"coupe": 1130, "ep3_si": 1200, "type_r": 1180},
+      "variants": {
+        "civic_dx_lx_ex": {
+          "engines": ["D17A1", "D17A2"],
+          "notes": "Sedan/Coupe - larger than before"
+        },
+        "civic_si_ep3": {
+          "chassis_code": "EP3",
+          "engine": "K20A3",
+          "power_hp": 160,
+          "body": "3-door hatchback only",
+          "suspension": "Double wishbone rear",
+          "notes": "First K-series Civic. Controversial styling but good platform"
+        },
+        "civic_type_r_ep3": {
+          "chassis_code": "EP3",
+          "engine": "K20A2",
+          "power_hp": 200,
+          "redline": 8100,
+          "features": ["LSD", "Brembo brakes (later)", "Recaro seats"],
+          "markets": ["JDM", "EDM"],
+          "notes": "EP3 Type R - K20A with 200hp. Not sold in US"
+        },
+        "civic_hybrid": {
+          "engine": "IMA system with 1.3L",
+          "notes": "First Civic Hybrid. 50+ MPG"
+        }
+      },
+      "aftermarket_focus": "EP3 Si/Type R are K-series donor cars. Sedan/coupe less popular for modding"
+    },
+    "eighth_gen_fa_fg_fd_fn": {
+      "chassis_codes": ["FA1", "FA5", "FG1", "FG2", "FD1", "FD2", "FK", "FN"],
+      "years": "2006-2011",
+      "nickname": "FA/FG/FD Civic",
+      "engines": {
+        "r18a1": {"displacement": "1.8L", "power_hp": 140, "notes": "SOHC i-VTEC"},
+        "k20z3": {"displacement": "2.0L", "power_hp": 197, "notes": "Si DOHC i-VTEC"},
+        "k20a": {"displacement": "2.0L", "power_hp": 225, "notes": "Type R (FD2)"}
+      },
+      "body_styles": ["2-door coupe", "4-door sedan", "3-door hatchback (EU/JDM)"],
+      "transmission": ["5-speed manual", "6-speed manual (Si)", "5-speed automatic"],
+      "wheelbase_mm": 2700,
+      "suspension": {
+        "front": "MacPherson strut",
+        "rear": "Multi-link (Si) / Torsion beam (base)"
+      },
+      "weight_kg": {"sedan": 1240, "si_coupe": 1290, "type_r": 1270},
+      "variants": {
+        "civic_dx_lx_ex": {
+          "engine": "R18A1",
+          "power_hp": 140,
+          "notes": "Competent economy car. Torsion beam rear"
+        },
+        "civic_si_fa5_fg2": {
+          "chassis_code": "FA5 (sedan) / FG2 (coupe)",
+          "engine": "K20Z3",
+          "power_hp": 197,
+          "redline": 8000,
+          "features": ["6-speed manual", "LSD", "4-wheel disc", "Multi-link rear"],
+          "notes": "First 4-door Si sedan in US. Very popular"
+        },
+        "civic_type_r_fd2": {
+          "chassis_code": "FD2",
+          "engine": "K20A",
+          "power_hp": 225,
+          "redline": 8400,
+          "features": ["LSD", "Brembo brakes", "Recaro seats", "6-speed"],
+          "markets": "JDM only",
+          "weight_kg": 1270,
+          "notes": "4-door Type R. Highly sought after for import"
+        },
+        "civic_type_r_fn2": {
+          "chassis_code": "FN2",
+          "engine": "K20Z4",
+          "power_hp": 198,
+          "markets": "EDM only",
+          "notes": "European 3-door Type R"
+        },
+        "civic_mugen_rr": {
+          "chassis_code": "FD2",
+          "engine": "K20A (modified)",
+          "power_hp": 240,
+          "production": "300 units",
+          "features": ["Carbon fiber body panels", "Titanium exhaust", "Mugen suspension"],
+          "notes": "Factory Mugen tuned. Extremely rare and valuable"
+        }
+      },
+      "aftermarket_focus": "Si models very popular. K20Z3 responds well to mods"
+    },
+    "ninth_gen_fb_fg": {
+      "chassis_codes": ["FB2", "FB6", "FG3", "FG4"],
+      "years": "2012-2015",
+      "nickname": "FB Civic",
+      "engines": {
+        "r18z1": {"displacement": "1.8L", "power_hp": 143, "notes": "i-VTEC"},
+        "k24z7": {"displacement": "2.4L", "power_hp": 201, "notes": "Si DOHC i-VTEC"}
+      },
+      "body_styles": ["2-door coupe", "4-door sedan"],
+      "transmission": ["5-speed manual", "6-speed manual (Si)", "5-speed automatic", "CVT"],
+      "wheelbase_mm": 2670,
+      "weight_kg": {"sedan": 1250, "si_sedan": 1320},
+      "variants": {
+        "civic_lx_ex": {
+          "engine": "R18Z1",
+          "power_hp": 143,
+          "notes": "Refreshed 2013+ addressed initial criticism"
+        },
+        "civic_si_fb6_fg4": {
+          "chassis_code": "FB6 (sedan) / FG4 (coupe)",
+          "engine": "K24Z7",
+          "power_hp": 201,
+          "torque_lb_ft": 170,
+          "redline": 7000,
+          "features": ["6-speed manual only", "LSD", "Adaptive dampers (2014+)"],
+          "notes": "First 2.4L Civic Si. More torque than K20"
+        }
+      },
+      "aftermarket_focus": "K24 Si has good modding potential. Flashpro/KTuner support"
+    },
+    "tenth_gen_fc_fk": {
+      "chassis_codes": ["FC1", "FC2", "FC3", "FK4", "FK7", "FK8"],
+      "years": "2016-2021",
+      "nickname": "FC/FK Civic",
+      "engines": {
+        "l15b7": {"displacement": "1.5L Turbo", "power_hp": 174, "notes": "Base turbo"},
+        "l15b7_si": {"displacement": "1.5L Turbo", "power_hp": 205, "notes": "Si tune"},
+        "k20c1": {"displacement": "2.0L Turbo", "power_hp": 306, "notes": "Type R"}
+      },
+      "body_styles": ["2-door coupe", "4-door sedan", "5-door hatchback"],
+      "transmission": ["6-speed manual", "CVT"],
+      "wheelbase_mm": 2700,
+      "weight_kg": {"sedan_turbo": 1280, "si": 1290, "type_r": 1400},
+      "platform": "Honda Global Small Car platform",
+      "variants": {
+        "civic_lx_ex_touring": {
+          "engine": "L15B7 1.5T",
+          "power_hp": 174,
+          "torque_lb_ft": 162,
+          "transmission": ["6-speed manual (Sport)", "CVT"],
+          "notes": "First turbocharged mainstream Civic"
+        },
+        "civic_sport": {
+          "engine": "2.0L N/A or 1.5T",
+          "features": ["Sport styling", "Center exhaust", "6-speed manual available"]
+        },
+        "civic_si_fc1_fc3": {
+          "chassis_code": "FC1 (sedan) / FC3 (coupe)",
+          "engine": "L15B7 tuned",
+          "power_hp": 205,
+          "torque_lb_ft": 192,
+          "boost_psi": 20.3,
+          "features": ["6-speed manual only", "LSD", "Adaptive dampers", "Active exhaust"],
+          "notes": "First turbocharged Si. 6-speed only"
+        },
+        "civic_type_r_fk8": {
+          "chassis_code": "FK8",
+          "engine": "K20C1 VTEC Turbo",
+          "power_hp": 306,
+          "torque_lb_ft": 295,
+          "redline": 7000,
+          "weight_kg": 1400,
+          "features": [
+            "6-speed manual only",
+            "Helical LSD",
+            "Brembo brakes",
+            "Adaptive dampers",
+            "Triple exhaust",
+            "+R mode"
+          ],
+          "nurburgring_time": "7:43.8 (FWD record at launch)",
+          "notes": "First Type R sold in USA. Nurburgring FWD record holder"
+        }
+      },
+      "aftermarket_focus": "Huge aftermarket for FK8 Type R. 1.5T and Si respond well to tuning. 400+ HP FK8 builds common"
+    },
+    "eleventh_gen_fe_fl": {
+      "chassis_codes": ["FE1", "FE2", "FL1", "FL5"],
+      "years": "2022-present",
+      "nickname": "FE/FL Civic",
+      "engines": {
+        "l15b": {"displacement": "1.5L Turbo", "power_hp": 180, "notes": "Updated 1.5T"},
+        "l15ca": {"displacement": "1.5L Turbo", "power_hp": 200, "notes": "Si"},
+        "k20c1": {"displacement": "2.0L Turbo", "power_hp": 315, "notes": "Type R"}
+      },
+      "body_styles": ["4-door sedan", "5-door hatchback"],
+      "transmission": ["6-speed manual", "CVT"],
+      "wheelbase_mm": 2735,
+      "weight_kg": {"sedan": 1340, "si": 1360, "type_r": 1430},
+      "variants": {
+        "civic_sport_ex_touring": {
+          "engine": "L15B 1.5T",
+          "power_hp": 180,
+          "notes": "Refined design. No coupe offered"
+        },
+        "civic_si_fe1_fl1": {
+          "engine": "L15CA",
+          "power_hp": 200,
+          "torque_lb_ft": 192,
+          "features": ["6-speed manual only", "LSD", "Rev-match", "Mode selector"],
+          "notes": "Slightly detuned from 10th gen Si but improved chassis"
+        },
+        "civic_type_r_fl5": {
+          "chassis_code": "FL5",
+          "engine": "K20C1 (updated)",
+          "power_hp": 315,
+          "torque_lb_ft": 310,
+          "redline": 7000,
+          "weight_kg": 1430,
+          "features": [
+            "6-speed manual with rev-match",
+            "Helical LSD",
+            "Brembo 4-piston front brakes",
+            "Dual-axis front strut",
+            "Improved cooling"
+          ],
+          "nurburgring_time": "7:44.881 (2022)",
+          "notes": "Current Type R. Refined over FK8. More daily-drivable"
+        }
+      },
+      "aftermarket_focus": "Growing aftermarket for FL5. Same K20C1 platform as FK8"
+    }
+  }
+}

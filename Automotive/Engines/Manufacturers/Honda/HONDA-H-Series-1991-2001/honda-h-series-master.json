@@ -1,0 +1,179 @@
+{
+  "engine_family_id": "HONDA-H-SERIES",
+  "common_names": ["H-Series", "H22", "H23", "Prelude VTEC", "H22A"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1991-2001",
+  "historical_significance": "Honda's most powerful naturally aspirated 4-cylinder family of its era. The H22A was the benchmark for performance sedans.",
+
+  "variants": {
+    "h22a1": {
+      "engine_code": "H22A1",
+      "displacement_cc": 2157,
+      "bore_mm": 87.0,
+      "stroke_mm": 90.7,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC, 16 valves",
+      "power_hp": 190,
+      "rpm_at_peak_power": 6800,
+      "torque_nm": 214,
+      "rpm_at_peak_torque": 5500,
+      "redline_rpm": 7200,
+      "compression_ratio": "10.6:1",
+      "vtec_engagement_rpm": 5200,
+      "production_years": "1993-1996",
+      "applications": ["Prelude VTEC (BB1/BB4 USDM)"],
+      "notes": "USDM Prelude VTEC engine - most powerful Honda 4-cylinder of its era in North America"
+    },
+    "h22a4": {
+      "engine_code": "H22A4",
+      "displacement_cc": 2157,
+      "bore_mm": 87.0,
+      "stroke_mm": 90.7,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC, 16 valves",
+      "power_hp": 200,
+      "rpm_at_peak_power": 7000,
+      "torque_nm": 219,
+      "rpm_at_peak_torque": 5250,
+      "redline_rpm": 7400,
+      "compression_ratio": "10.6:1",
+      "vtec_engagement_rpm": 5400,
+      "production_years": "1997-2001",
+      "applications": ["Prelude Type SH (BB6)", "Prelude Base (BB6)"],
+      "atts": true,
+      "notes": "Available with ATTS (Active Torque Transfer System) - mechanical limited slip for FWD"
+    },
+    "h22a_jdm": {
+      "engine_code": "H22A (JDM)",
+      "displacement_cc": 2157,
+      "bore_mm": 87.0,
+      "stroke_mm": 90.7,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC, 16 valves",
+      "power_hp": 220,
+      "rpm_at_peak_power": 7200,
+      "torque_nm": 221,
+      "rpm_at_peak_torque": 6500,
+      "redline_rpm": 7800,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5500,
+      "production_years": "1992-1996",
+      "applications": ["Prelude Si VTEC (BB1/BB4 JDM)"],
+      "notes": "JDM spec with higher compression and more aggressive cams. Highly sought after for swaps"
+    },
+    "h22a_euro_r": {
+      "engine_code": "H22A Euro R",
+      "displacement_cc": 2157,
+      "bore_mm": 87.0,
+      "stroke_mm": 90.7,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC, 16 valves",
+      "power_hp": 220,
+      "rpm_at_peak_power": 7200,
+      "torque_nm": 221,
+      "rpm_at_peak_torque": 6500,
+      "redline_rpm": 8000,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5600,
+      "production_years": "1996-2001",
+      "applications": ["Prelude Type S (JDM BB6)", "Accord Euro R (CL1 - some markets)"],
+      "hand_ported_intake": true,
+      "notes": "Most powerful H22 variant. Hand-ported intake manifold. Red valve cover"
+    },
+    "h23a1": {
+      "engine_code": "H23A1",
+      "displacement_cc": 2259,
+      "bore_mm": 87.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC, 16 valves (Non-VTEC)",
+      "power_hp": 160,
+      "rpm_at_peak_power": 5800,
+      "torque_nm": 214,
+      "rpm_at_peak_torque": 5000,
+      "redline_rpm": 6500,
+      "compression_ratio": "9.8:1",
+      "production_years": "1992-1996",
+      "applications": ["Prelude Si (BB2 USDM)"],
+      "notes": "Larger displacement non-VTEC variant. Good torque for daily driving"
+    },
+    "h23a_vtec": {
+      "engine_code": "H23A VTEC",
+      "displacement_cc": 2259,
+      "bore_mm": 87.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC, 16 valves",
+      "power_hp": 200,
+      "rpm_at_peak_power": 6800,
+      "torque_nm": 226,
+      "rpm_at_peak_torque": 5500,
+      "redline_rpm": 7200,
+      "compression_ratio": "10.6:1",
+      "vtec_engagement_rpm": 5200,
+      "production_years": "1997-2001",
+      "applications": ["Accord SiR (JDM CF4)", "Accord Wagon SiR (JDM)"],
+      "notes": "JDM only. VTEC version of H23 - rare and desirable"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy with FRM (Fiber Reinforced Metal) cylinder sleeves",
+    "head_material": "Aluminum alloy",
+    "bore_spacing_mm": 92.0,
+    "firing_order": "1-3-4-2",
+    "oil_capacity_liters": 4.5,
+    "coolant_capacity_liters": 8.0,
+    "timing_system": "Belt-driven",
+    "balance_shaft": "Single balance shaft"
+  },
+
+  "frm_technology": {
+    "description": "Fiber Reinforced Metal cylinder sleeves",
+    "composition": "Aluminum matrix with ceramic fiber reinforcement",
+    "benefits": [
+      "Lighter than cast iron sleeves",
+      "Better heat dissipation",
+      "Reduced friction",
+      "Increased durability"
+    ],
+    "notes": "Cannot be bored - oversized pistons not available. Sleeves can be replaced"
+  },
+
+  "notes": {
+    "heritage": "The H-series was Honda's flagship performance 4-cylinder. The H22A in the Prelude was the most powerful Honda 4-cylinder available in North America through the 1990s",
+    "reputation": "Benchmark engine for sport compact enthusiasts. Known for VTEC engagement feel and high-RPM power",
+    "h22_swap": {
+      "description": "H22 swap into Accords, Civic/CRX (with mods)",
+      "popularity": "One of the most popular Honda swaps",
+      "considerations": [
+        "Requires H-series transmission (H/F trans)",
+        "Custom axles for some applications",
+        "ECU and wiring modifications",
+        "Motor mount adapters available"
+      ]
+    },
+    "h22_vs_h23": {
+      "h22": "Shorter stroke, higher revving, VTEC",
+      "h23": "Longer stroke, more low-end torque, non-VTEC (most variants)",
+      "recommendation": "H22 for performance, H23 for daily torque"
+    },
+    "common_issues": [
+      "Oil consumption (especially high-mile examples)",
+      "VTEC solenoid leaks",
+      "Timing belt tensioner failures",
+      "Starter motor issues",
+      "Pre-cat failure contaminating cylinders"
+    ],
+    "maintenance_intervals": {
+      "timing_belt_km": 152000,
+      "valve_adjustment_km": 48000,
+      "spark_plugs_km": 48000
+    },
+    "tuning_notes": {
+      "naturally_aspirated": "Intake, header, exhaust add 15-20hp. Cams can add 10-15hp more. 250hp N/A is achievable",
+      "forced_induction": "H-series handles boost well. 400-500hp achievable with proper build. FRM sleeves are strong",
+      "notes": "Larger displacement and FRM technology make H-series a strong turbo platform"
+    }
+  }
+}

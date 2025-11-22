@@ -1,0 +1,218 @@
+{
+  "engine_family_id": "HONDA-K-SERIES",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "performance_tiers": {
+    "tier_1_bolt_ons": {
+      "name": "Street Performance",
+      "power_target_hp": "220-250",
+      "description": "Basic bolt-on modifications",
+      "components": {
+        "intake": {
+          "options": ["Short ram intake", "Cold air intake"],
+          "brands": ["Injen", "AEM", "K&N", "Skunk2"],
+          "expected_gain_hp": "5-10"
+        },
+        "exhaust": {
+          "header": {
+            "brands": ["Skunk2 Alpha", "PLM", "DC Sports"],
+            "expected_gain_hp": "8-15"
+          },
+          "cat_back": {
+            "brands": ["Skunk2", "Invidia", "Greddy"],
+            "expected_gain_hp": "5-8"
+          }
+        },
+        "intake_manifold": {
+          "options": ["RBC swap", "Skunk2 Ultra Street"],
+          "expected_gain_hp": "5-15"
+        },
+        "tune": {
+          "options": ["KTuner", "Hondata FlashPro"],
+          "expected_gain_hp": "10-20"
+        }
+      },
+      "total_expected_hp": "230-260"
+    },
+    "tier_2_head_work": {
+      "name": "All-Motor Build",
+      "power_target_hp": "250-280",
+      "description": "Head work and valvetrain upgrades",
+      "components": {
+        "jdm_k20a_head": {
+          "description": "Swap JDM Type R cylinder head",
+          "benefits": ["Higher compression", "Better cams", "Improved ports"],
+          "expected_gain_hp": "20-30"
+        },
+        "camshafts": {
+          "stage_1": "Skunk2 Stage 1 / Toda A",
+          "stage_2": "Skunk2 Stage 2 / Toda B",
+          "expected_gain_hp": "15-25"
+        },
+        "valvetrain": {
+          "springs": "Skunk2 Alpha or Supertech dual springs",
+          "retainers": "Titanium retainers",
+          "rocker_arms": "Upgraded ratio rockers available"
+        },
+        "port_work": {
+          "cnc_porting": "Full CNC head porting",
+          "expected_gain_hp": "10-20"
+        },
+        "throttle_body": {
+          "size": "70-74mm",
+          "brands": ["Skunk2", "Blox", "S90"]
+        }
+      },
+      "total_expected_hp": "270-300"
+    },
+    "tier_3_k20_k24_hybrid": {
+      "name": "Frankenstein Build",
+      "power_target_hp": "280-320",
+      "description": "K20A head on K24 block for best of both worlds",
+      "components": {
+        "block": {
+          "options": ["K24A2 (TSX)", "K24Z3 (Accord)"],
+          "displacement": "2354cc"
+        },
+        "head": {
+          "options": ["K20A (JDM Type R)", "K20A2 (ported)"],
+          "benefits": "High-RPM power with K24 displacement"
+        },
+        "pistons": {
+          "description": "Custom compression ratio pistons",
+          "brands": ["Wiseco", "JE", "CP"],
+          "compression": "12.0-12.5:1"
+        },
+        "required_parts": [
+          "K24 block",
+          "K20A/A2 head",
+          "K24 intake cam gear (or adjustable)",
+          "K20 or K24 oil pump",
+          "Custom pistons recommended"
+        ]
+      },
+      "total_expected_hp": "280-320 N/A"
+    },
+    "tier_4_forced_induction": {
+      "name": "Turbo Build",
+      "power_target_hp": "400-600+",
+      "description": "Turbocharged K-series for serious power",
+      "components": {
+        "turbo_kit": {
+          "entry_level": ["Rev9", "CXRacing"],
+          "quality": ["Full-Race", "Kraftwerks", "Garrett kits"],
+          "turbo_size": {
+            "street_400hp": "GT2860RS / GTX2867R",
+            "street_550hp": "GTX3071R / GTX3076R",
+            "track_700hp": "GTX3582R / EFR 7670"
+          }
+        },
+        "bottom_end": {
+          "stock_limit": "~400hp on stock internals",
+          "built_bottom": {
+            "rods": "Eagle, Manley, Brian Crower",
+            "pistons": "Low compression (9.0-9.5:1)",
+            "bearings": "ACL Race, King Racing"
+          }
+        },
+        "fuel_system": {
+          "injectors": "1000cc+ (ID, FIC)",
+          "fuel_pump": "Walbro 450 / AEM 400",
+          "fuel_rail": "Skunk2 / AEM"
+        },
+        "engine_management": {
+          "reflash": "KTuner, Hondata",
+          "standalone": "AEM Infinity, Haltech, Link"
+        }
+      },
+      "notes": "K-series handles boost extremely well. Stock rods are the weak point above 400hp"
+    }
+  },
+
+  "k_swap_guide": {
+    "description": "K-series engine swap into older Honda chassis",
+    "popularity": "Most popular modern Honda swap",
+    "mount_kits": {
+      "hasport": {
+        "part_numbers": {
+          "eg_civic": "EGK1",
+          "ek_civic": "EKK1",
+          "dc_integra": "DCK1"
+        },
+        "quality": "OEM+ quality, most popular"
+      },
+      "innovative_mounts": {
+        "description": "Billet aluminum mounts",
+        "quality": "Race-grade"
+      },
+      "hybrid_racing": {
+        "description": "Complete swap kits with accessories"
+      }
+    },
+    "additional_requirements": [
+      "K-series transmission (EP3, RSX, TSX)",
+      "Shifter cables and bracket",
+      "Wiring harness (Rywire, HA Motorsports)",
+      "Fuel line modifications",
+      "Axles (Raxles, The Driveshaft Shop)",
+      "Radiator hoses",
+      "ECU (Hondata/KTuner required for optimal tuning)"
+    ],
+    "estimated_cost": {
+      "budget": "$5000-8000 (used engine, basic parts)",
+      "mid_range": "$8000-12000 (quality components, new parts)",
+      "high_end": "$15000+ (built engine, premium parts)"
+    }
+  },
+
+  "ecu_tuning": {
+    "obd2_options": {
+      "hondata_flashpro": {
+        "description": "Best plug-and-play solution for 8th-10th gen Civic",
+        "features": ["Real-time tuning", "Datalogging", "VTEC control", "Boost by gear"]
+      },
+      "ktuner": {
+        "description": "Alternative to Hondata, good value",
+        "features": ["User-switchable maps", "Datalogging", "Boost control"]
+      }
+    },
+    "obd1_conversions": {
+      "description": "Convert K-series to OBD1 for swaps",
+      "solutions": ["Hondata K-Pro", "Neptune RTP"],
+      "benefits": "Easier integration with older chassis"
+    },
+    "standalone": {
+      "aem_infinity": "Full standalone, excellent for high HP builds",
+      "haltech": "Professional-grade standalone",
+      "link": "Cost-effective standalone option"
+    }
+  },
+
+  "trusted_builders": {
+    "national": [
+      {"name": "Inline Pro", "specialty": "Full K-series builds, turbo setups"},
+      {"name": "Drag Cartel", "specialty": "Head work, high-output N/A"},
+      {"name": "4Piston Racing", "specialty": "Race engines, sleeving"},
+      {"name": "Portflow Design", "specialty": "Head porting, flow bench testing"}
+    ]
+  },
+
+  "parts_sources": {
+    "new_parts": ["King Motorsports", "Hybrid Racing", "Inline Pro", "Jhpusa"],
+    "jdm_parts": ["JDM Engine Depot", "HMotorsOnline", "Osaka JDM"]
+  },
+
+  "notes": {
+    "k20_vs_k24": {
+      "k20": "Higher revving, more responsive, lower torque",
+      "k24": "More torque, better for boost, slightly heavier",
+      "recommendation": "K24 for turbo builds, K20 for high-RPM N/A"
+    },
+    "transmission_notes": {
+      "rsx_type_s_6spd": "Preferred for performance - close ratios, LSD available",
+      "ep3_5spd": "Good for budget builds",
+      "tsx_6spd": "Longer ratios, good for highway"
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "vehicle_id": "HONDA-ACCORD-PERFORMANCE",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1976-present",
+  "focus": "Performance variants and tuning potential",
+  "historical_significance": "Honda's mid-size sedan flagship. Performance variants include Euro R and Type R specifications.",
+
+  "performance_variants": {
+    "cb7_accord_1990_1993": {
+      "chassis_code": "CB7",
+      "engines": {
+        "f22a1": {"displacement": "2.2L", "power_hp": 125},
+        "f22a4": {"displacement": "2.2L", "power_hp": 140},
+        "f22a6": {"displacement": "2.2L", "power_hp": 145},
+        "h23a_jdm": {"displacement": "2.3L", "power_hp": 160, "notes": "JDM SiR wagon"}
+      },
+      "performance_notes": {
+        "h22_swap": "Very popular H22A swap platform",
+        "difficulty": "Near bolt-in with Hasport mounts"
+      }
+    },
+    "cd5_cd6_accord_1994_1997": {
+      "chassis_code": ["CD5", "CD6"],
+      "engines": {
+        "f22b1": {"displacement": "2.2L", "power_hp": 130},
+        "f22b2_vtec": {"displacement": "2.2L VTEC", "power_hp": 145},
+        "h22a_sir_jdm": {"displacement": "2.2L", "power_hp": 190, "notes": "JDM Accord SiR"}
+      },
+      "performance_variant": {
+        "accord_sir_jdm": {
+          "engine": "H22A",
+          "power_hp": 190,
+          "features": ["Sport suspension", "Manual trans only"],
+          "notes": "JDM only - highly sought for swap"
+        }
+      }
+    },
+    "cg_accord_1998_2002": {
+      "chassis_code": ["CG1", "CG2", "CG3", "CG5", "CG6"],
+      "engines": {
+        "f23a1": {"displacement": "2.3L", "power_hp": 150},
+        "f23a4": {"displacement": "2.3L", "power_hp": 135},
+        "j30a1": {"displacement": "3.0L V6", "power_hp": 200}
+      },
+      "performance_variant": {
+        "accord_type_r_jdm": {
+          "chassis_code": "CL1",
+          "engine": "H22A",
+          "power_hp": 220,
+          "redline": 7800,
+          "years": "2000-2002",
+          "features": [
+            "Hand-ported intake",
+            "Close-ratio 5-speed",
+            "Helical LSD",
+            "Sport suspension",
+            "Recaro seats"
+          ],
+          "notes": "JDM Accord Euro R - the 4-door Type R"
+        }
+      }
+    },
+    "cl7_cl9_accord_euro_r_2002_2008": {
+      "chassis_code": ["CL7", "CL9"],
+      "engines": {
+        "k20a_euro_r": {"displacement": "2.0L", "power_hp": 220, "notes": "CL7"},
+        "k24a2": {"displacement": "2.4L", "power_hp": 205, "notes": "TSX/CL9"}
+      },
+      "performance_variants": {
+        "accord_euro_r_cl7": {
+          "chassis_code": "CL7",
+          "engine": "K20A (Type R spec)",
+          "power_hp": 220,
+          "redline": 8400,
+          "years": "2002-2008",
+          "markets": "JDM only",
+          "features": [
+            "K20A red top engine",
+            "6-speed close-ratio",
+            "Helical LSD",
+            "Brembo brakes",
+            "Recaro seats"
+          ],
+          "notes": "4-door sedan with K20A Type R engine. The ultimate sleeper"
+        },
+        "acura_tsx": {
+          "chassis_code": "CL9",
+          "engine": "K24A2",
+          "power_hp": 205,
+          "redline": 7200,
+          "years": "2004-2008",
+          "markets": "USDM",
+          "notes": "US market Accord Euro - K24A2 very popular swap engine"
+        }
+      }
+    },
+    "cp_accord_2008_2012": {
+      "chassis_code": ["CP1", "CP2", "CP3"],
+      "engines": {
+        "k24z2": {"displacement": "2.4L", "power_hp": 177},
+        "k24z3": {"displacement": "2.4L", "power_hp": 190},
+        "j35z2": {"displacement": "3.5L V6", "power_hp": 268}
+      },
+      "tuning_potential": {
+        "k24": {
+          "bolt_ons": "200-220hp with intake, header, exhaust, tune",
+          "forced_induction": "350-450hp with turbo"
+        },
+        "v6": {
+          "bolt_ons": "290-310hp",
+          "supercharger": "350-400hp"
+        }
+      }
+    },
+    "cv_accord_2013_2017": {
+      "chassis_code": ["CR2", "CR3", "CR6"],
+      "engines": {
+        "k24w": {"displacement": "2.4L DI", "power_hp": 185},
+        "j35y4": {"displacement": "3.5L V6", "power_hp": 278}
+      },
+      "notes": "Earth Dreams direct injection. Last N/A Accord"
+    },
+    "cv_accord_2018_present": {
+      "chassis_code": ["CV1", "CV2", "CV3"],
+      "engines": {
+        "l15b7": {"displacement": "1.5L Turbo", "power_hp": 192},
+        "k20c4": {"displacement": "2.0L Turbo", "power_hp": 252}
+      },
+      "performance_notes": {
+        "2_0t": {
+          "engine": "K20C4 (detuned K20C1)",
+          "potential": "300+ hp with tune and bolt-ons",
+          "platform": "Same turbo platform as Type R"
+        },
+        "1_5t": {
+          "potential": "250hp with tune and bolt-ons"
+        }
+      },
+      "tuning": {
+        "options": ["KTuner", "Hondata"],
+        "notes": "Growing aftermarket support"
+      }
+    }
+  },
+
+  "swap_guide": {
+    "h22_into_accord": {
+      "compatible_chassis": ["CB7", "CD5", "CD6"],
+      "mounts": "Hasport H-series mounts",
+      "transmission": "H22 trans or F-series with adapter",
+      "difficulty": "Moderate - well documented"
+    },
+    "k_swap_into_older_accord": {
+      "compatible_chassis": ["CB7", "CD5"],
+      "mounts": "Hasport K-series mounts",
+      "difficulty": "Moderate to difficult"
+    }
+  },
+
+  "aftermarket_focus": {
+    "best_platforms": {
+      "euro_r_cl7": "JDM import - K20A makes it a 4-door Type R",
+      "tsx_cl9": "K24A2 is excellent swap engine",
+      "2018_2_0t": "K20C4 shares platform with Type R"
+    },
+    "tuning_support": {
+      "k_series": ["Hondata", "KTuner"],
+      "h_series": ["Hondata S300 (OBD1)", "Neptune"]
+    }
+  }
+}

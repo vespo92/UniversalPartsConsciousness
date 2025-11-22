@@ -1,0 +1,196 @@
+{
+  "engine_family_id": "HONDA-F-SERIES",
+  "common_names": ["F-Series", "F20", "F22", "F23", "Accord Engine", "Prelude Engine"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1990-2002",
+  "historical_significance": "Honda's mid-size sedan workhorse engine family. Introduced VTEC to larger displacement engines.",
+
+  "variants": {
+    "f20a": {
+      "engine_code": "F20A",
+      "displacement_cc": 1997,
+      "bore_mm": 85.0,
+      "stroke_mm": 88.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 135,
+      "rpm_at_peak_power": 5800,
+      "torque_nm": 178,
+      "redline_rpm": 6500,
+      "compression_ratio": "9.0:1",
+      "production_years": "1990-1993",
+      "applications": ["Accord (CB7)", "Prelude (BA4/BA5)"],
+      "notes": "Base F-series engine"
+    },
+    "f20b": {
+      "engine_code": "F20B",
+      "displacement_cc": 1997,
+      "bore_mm": 85.0,
+      "stroke_mm": 88.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC, 16 valves",
+      "power_hp": 200,
+      "rpm_at_peak_power": 7200,
+      "torque_nm": 196,
+      "rpm_at_peak_torque": 6500,
+      "redline_rpm": 7800,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5500,
+      "production_years": "1997-2002",
+      "applications": ["Accord Euro R (CL1)", "Accord SiR (JDM)"],
+      "notes": "Red top F-series. JDM only. Highly sought after for Prelude/Accord swaps"
+    },
+    "f22a1": {
+      "engine_code": "F22A1",
+      "displacement_cc": 2156,
+      "bore_mm": 85.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 125,
+      "rpm_at_peak_power": 5200,
+      "torque_nm": 185,
+      "redline_rpm": 6000,
+      "compression_ratio": "8.8:1",
+      "production_years": "1990-1993",
+      "applications": ["Accord DX/LX (CB7)"],
+      "notes": "Economy-focused Accord engine"
+    },
+    "f22a4": {
+      "engine_code": "F22A4",
+      "displacement_cc": 2156,
+      "bore_mm": 85.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 140,
+      "rpm_at_peak_power": 5600,
+      "torque_nm": 193,
+      "redline_rpm": 6200,
+      "compression_ratio": "9.1:1",
+      "production_years": "1992-1993",
+      "applications": ["Accord EX (CB7)"],
+      "notes": "Higher output SOHC variant"
+    },
+    "f22a6": {
+      "engine_code": "F22A6",
+      "displacement_cc": 2156,
+      "bore_mm": 85.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 145,
+      "rpm_at_peak_power": 5500,
+      "torque_nm": 196,
+      "redline_rpm": 6200,
+      "compression_ratio": "9.3:1",
+      "production_years": "1992-1993",
+      "applications": ["Prelude S (BA8/BA9)"],
+      "notes": "Prelude S base engine"
+    },
+    "f22b1": {
+      "engine_code": "F22B1",
+      "displacement_cc": 2156,
+      "bore_mm": 85.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC, 16 valves",
+      "power_hp": 145,
+      "rpm_at_peak_power": 5500,
+      "torque_nm": 199,
+      "redline_rpm": 6300,
+      "compression_ratio": "9.3:1",
+      "vtec_engagement_rpm": 4800,
+      "production_years": "1994-1997",
+      "applications": ["Accord EX (CD5/CD6)"],
+      "notes": "First SOHC VTEC F-series for USDM"
+    },
+    "f22b2": {
+      "engine_code": "F22B2",
+      "displacement_cc": 2156,
+      "bore_mm": 85.0,
+      "stroke_mm": 95.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves (Non-VTEC)",
+      "power_hp": 130,
+      "rpm_at_peak_power": 5200,
+      "torque_nm": 185,
+      "redline_rpm": 6000,
+      "compression_ratio": "8.8:1",
+      "production_years": "1994-1997",
+      "applications": ["Accord DX/LX (CD5)", "Odyssey First Gen"],
+      "notes": "Economy version without VTEC"
+    },
+    "f23a1": {
+      "engine_code": "F23A1",
+      "displacement_cc": 2254,
+      "bore_mm": 86.0,
+      "stroke_mm": 97.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC, 16 valves",
+      "power_hp": 150,
+      "rpm_at_peak_power": 5700,
+      "torque_nm": 205,
+      "redline_rpm": 6400,
+      "compression_ratio": "9.3:1",
+      "vtec_engagement_rpm": 4800,
+      "production_years": "1998-2002",
+      "applications": ["Accord EX (CG5/CG6)"],
+      "notes": "Final evolution of F-series for Accord"
+    },
+    "f23a4": {
+      "engine_code": "F23A4",
+      "displacement_cc": 2254,
+      "bore_mm": 86.0,
+      "stroke_mm": 97.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves (Non-VTEC)",
+      "power_hp": 135,
+      "rpm_at_peak_power": 5500,
+      "torque_nm": 199,
+      "redline_rpm": 6200,
+      "compression_ratio": "9.1:1",
+      "production_years": "1998-2002",
+      "applications": ["Accord LX (CG5)"],
+      "notes": "Base engine for 6th gen Accord"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy with cast iron sleeves",
+    "head_material": "Aluminum alloy",
+    "bore_spacing_mm": 90.0,
+    "firing_order": "1-3-4-2",
+    "oil_capacity_liters": 4.3,
+    "coolant_capacity_liters": 7.5,
+    "timing_system": "Belt-driven",
+    "belt_tensioner": "Automatic hydraulic"
+  },
+
+  "notes": {
+    "heritage": "The F-series was developed for Honda's growing Accord and mid-size vehicle lineup. It prioritized torque and drivability over high-RPM power",
+    "reputation": "Very reliable workhorse engines. Not as exciting as B-series but extremely durable",
+    "f20b_swap": {
+      "description": "JDM F20B DOHC VTEC is popular swap for Accords and Preludes",
+      "benefits": [
+        "200hp from factory",
+        "DOHC VTEC excitement",
+        "Bolt-in for most applications"
+      ],
+      "notes": "Red valve cover distinguishes it from SOHC variants"
+    },
+    "common_issues": [
+      "Distributor O-ring leaks",
+      "EGR valve clogging",
+      "Upper intake manifold gasket leaks",
+      "Starter motor failures",
+      "Idle Air Control Valve (IACV) issues"
+    ],
+    "maintenance_intervals": {
+      "timing_belt_km": 160000,
+      "valve_adjustment_km": 48000,
+      "spark_plugs_km": 48000
+    },
+    "tuning_notes": "F-series responds well to basic bolt-ons. F20B is the preferred starting point for any serious power. Turbo F-series builds can make 400+ HP with proper supporting mods."
+  }
+}
