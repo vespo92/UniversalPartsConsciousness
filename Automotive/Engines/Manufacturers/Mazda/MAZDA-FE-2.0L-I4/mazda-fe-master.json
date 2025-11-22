@@ -1,0 +1,78 @@
+{
+  "engine_id": "MAZDA-FE-2.0L-I4",
+  "common_names": ["FE", "FE-DE", "FE-DOHC", "F2", "626 Engine", "MX-6 Engine"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda F-Series",
+  "production_years": "1983-2002",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {"liters": 1.998, "cc": 1998},
+    "bore": {"mm": 86.0},
+    "stroke": {"mm": 86.0},
+    "compression_ratio": "8.6:1 to 10.0:1",
+    "firing_order": "1-3-4-2",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "SOHC 12-valve or DOHC 16-valve variants",
+    "fuel_system": {
+      "type": "Multi-point fuel injection (later) / Carburetor (early)"
+    },
+    "redline_rpm": 6500,
+    "peak_power_rpm": 6000
+  },
+
+  "power_output_by_variant": {
+    "fe_sohc_carb": {"hp": 93, "torque_lb_ft": 110, "notes": "1983-1987 carbureted"},
+    "fe_sohc_efi": {"hp": 110, "torque_lb_ft": 120, "notes": "SOHC fuel-injected"},
+    "fe_dohc": {"hp": 125, "torque_lb_ft": 127, "notes": "Naturally aspirated DOHC"},
+    "fe_de_probe": {"hp": 145, "torque_lb_ft": 133, "notes": "Ford Probe GT application"},
+    "f2_turbo": {"hp": 145, "torque_lb_ft": 190, "notes": "Turbocharged MX-6/626 Turbo"},
+    "f2t_mazda_turbo": {"hp": 150, "torque_lb_ft": 200, "notes": "Later turbo versions"}
+  },
+
+  "vehicle_applications": {
+    "mazda_626_gc": {"years": "1983-1987", "notes": "Second-gen 626"},
+    "mazda_626_gd": {"years": "1987-1992", "notes": "Third-gen 626"},
+    "mazda_626_ge": {"years": "1993-1997", "notes": "Fourth-gen 626"},
+    "mazda_mx6": {"years": "1988-1997", "notes": "Sport coupe"},
+    "ford_probe": {"years": "1989-1997", "notes": "Mazda-based Ford"},
+    "mazda_b2200_truck": {"years": "1987-1993", "notes": "Compact truck"},
+    "mazda_mpv": {"years": "1989-1999", "notes": "Minivan application"},
+    "kia_sportage": {"years": "1995-2002", "notes": "Licensed by Kia"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 4.0, "viscosity": ["5W-30", "10W-30", "10W-40"], "spec": "API SG or higher"},
+    "coolant": {"liters": 7.0}
+  },
+
+  "notes": {
+    "heritage": "The F-series was Mazda's mainstream inline-4 for mid-size vehicles through the 1980s and 1990s.",
+    "reputation": "Reliable workhorse engine. The turbocharged variants were popular in the sport-compact scene.",
+    "key_features": [
+      "Iron block durability",
+      "Multiple configurations (SOHC, DOHC, Turbo)",
+      "Shared with Ford products",
+      "Parts widely available"
+    ],
+    "common_issues": [
+      "Valve cover gasket leaks",
+      "Distributor O-ring leaks",
+      "EGR system issues",
+      "Timing belt service critical"
+    ],
+    "maintenance_critical": [
+      "Timing belt every 60,000 miles",
+      "Regular valve adjustments (SOHC)",
+      "Cooling system maintenance"
+    ],
+    "strengths": [
+      "Very reliable",
+      "Parts readily available",
+      "Easy to work on",
+      "Turbocharged versions have good power"
+    ],
+    "tuning_notes": "F2 Turbo platform can handle 200+ HP with supporting mods. DOHC head swaps popular."
+  }
+}

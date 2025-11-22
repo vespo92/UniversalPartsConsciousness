@@ -1,0 +1,244 @@
+{
+  "engine_id": "MAZDA-BP-1.8L-I4",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2002, "make": "Mazda", "model": "MX-5 Miata", "engine": "BP-4W"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "BP-BLOCK",
+          "description": "Cast iron cylinder block",
+          "oem_part_numbers": ["BP05-10-300"],
+          "specifications": {"bore_mm": 83.0, "deck_height_mm": 219.0}
+        },
+        "crankshaft": {
+          "part_id": "BP-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["BP05-11-301"],
+          "specifications": {"stroke_mm": 85.0},
+          "aftermarket": {"manley": "190050B", "eagle": "BP-CRANK-EAGLE"}
+        },
+        "connecting_rods": {
+          "part_id": "BP-CONROD",
+          "description": "Connecting rods (set of 4)",
+          "oem_part_numbers": ["BP05-11-210"],
+          "aftermarket": {"manley": "14024-4", "eagle": "CRS5394M3D"},
+          "specifications": {"length_mm": 133.0}
+        },
+        "pistons": {
+          "part_id": "BP-PISTON",
+          "description": "Pistons (set of 4)",
+          "oem_part_numbers": ["BP05-11-SA0"],
+          "aftermarket": {"wiseco": "K623M83", "je": "182059"}
+        },
+        "main_bearings": {
+          "part_id": "BP-MAIN-BRG",
+          "description": "Main bearing set",
+          "oem_part_numbers": ["BP05-11-SE0"],
+          "aftermarket": {"acl": "5M1695H"}
+        },
+        "rod_bearings": {
+          "part_id": "BP-ROD-BRG",
+          "description": "Rod bearing set",
+          "oem_part_numbers": ["BP05-11-SH0"],
+          "aftermarket": {"acl": "4B1925H"}
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "BP-HEAD",
+          "description": "DOHC aluminum cylinder head",
+          "oem_part_numbers": ["BP05-10-090"],
+          "specifications": {"valves": 16, "intake_valve_mm": 31.5, "exhaust_valve_mm": 26.5}
+        },
+        "camshafts": {
+          "part_id": "BP-CAMSHAFT-SET",
+          "description": "Camshaft set (intake and exhaust)",
+          "oem_part_numbers": {"intake": "BP05-12-440", "exhaust": "BP05-12-420"},
+          "aftermarket": {"kelford": "183-A", "bc_brian_crower": "BC0321"}
+        },
+        "valve_springs": {
+          "part_id": "BP-VALVE-SPRINGS",
+          "description": "Valve spring set (16)",
+          "oem_part_numbers": ["BP05-12-111"],
+          "aftermarket": {"supertech": "SPR-M1015D", "bc_brian_crower": "BC1300"}
+        },
+        "head_gasket": {
+          "part_id": "BP-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": ["BP05-10-271"],
+          "aftermarket": {"cometic": "C4122-051", "supertech": "HG-M001"}
+        },
+        "vvt_gear": {
+          "part_id": "BP-VVT-GEAR",
+          "description": "Variable valve timing gear (NB only)",
+          "oem_part_numbers": ["BP4W-12-4X0"],
+          "notes": "NB S-VT system"
+        }
+      }
+    },
+    "timing_system": {
+      "components": {
+        "timing_belt": {
+          "part_id": "BP-TIMING-BELT",
+          "description": "Timing belt",
+          "oem_part_numbers": ["B660-12-205"],
+          "aftermarket": {"gates": "T227", "continental": "TB227"},
+          "interval_miles": 60000
+        },
+        "timing_belt_tensioner": {
+          "part_id": "BP-TB-TENS",
+          "description": "Timing belt tensioner",
+          "oem_part_numbers": ["B660-12-700"],
+          "aftermarket": {"gates": "T41042"}
+        },
+        "timing_belt_idler": {
+          "part_id": "BP-TB-IDLER",
+          "description": "Timing belt idler pulley",
+          "oem_part_numbers": ["KL01-12-730"]
+        },
+        "water_pump": {
+          "part_id": "BP-WPUMP",
+          "description": "Water pump (timing belt driven)",
+          "oem_part_numbers": ["B660-15-010"],
+          "aftermarket": {"gates": "41042", "gmb": "150-1390"}
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "fuel_injectors": {
+          "part_id": "BP-INJECTORS",
+          "description": "Fuel injectors (set of 4)",
+          "oem_part_numbers": ["BP05-13-250"],
+          "specifications": {"flow_cc": 265},
+          "aftermarket": {"rc_engineering": "RC-440", "id": "ID1000"}
+        },
+        "fuel_pump": {
+          "part_id": "BP-FPUMP",
+          "description": "In-tank fuel pump",
+          "oem_part_numbers": ["BP4W-13-350"],
+          "aftermarket": {"walbro": "GSS342", "aem": "50-1000"}
+        },
+        "fuel_pressure_regulator": {
+          "part_id": "BP-FPR",
+          "description": "Fuel pressure regulator",
+          "oem_part_numbers": ["BP05-13-280"],
+          "specifications": {"pressure_psi": 43}
+        },
+        "throttle_body": {
+          "part_id": "BP-TB",
+          "description": "Throttle body assembly",
+          "oem_part_numbers": ["BP05-13-640"],
+          "aftermarket": {"skunk2": "309-10-0200"}
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "BP-IM",
+          "description": "Intake manifold",
+          "oem_part_numbers": ["BP4W-13-100"],
+          "aftermarket": {"skunk2": "307-10-0200", "racing_beat": "RB-53104"}
+        },
+        "air_filter": {
+          "part_id": "BP-AIRFILTER",
+          "description": "Air filter",
+          "oem_part_numbers": ["BP4W-13-Z40"],
+          "aftermarket": {"k&n": "33-2279"}
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "BP-EXMAN",
+          "description": "Exhaust manifold (header)",
+          "oem_part_numbers": ["BP4W-13-450"],
+          "aftermarket": {"racing_beat": "RB-53108", "flyin_miata": "FM-HEADER"}
+        },
+        "catalytic_converter": {
+          "part_id": "BP-CAT",
+          "description": "Catalytic converter",
+          "oem_part_numbers": ["BP4W-40-305"]
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "BP-COILS",
+          "description": "Ignition coil pack",
+          "oem_part_numbers": ["BP4W-18-100"]
+        },
+        "spark_plugs": {
+          "part_id": "BP-SPARK-PLUGS",
+          "description": "Spark plugs (set of 4)",
+          "oem_part_numbers": ["ZZC0-18-110"],
+          "aftermarket": {"ngk": "BKR6E-11", "denso": "K20PR-U11"},
+          "quantity": 4,
+          "gap_mm": 1.1
+        },
+        "spark_plug_wires": {
+          "part_id": "BP-PLUG-WIRES",
+          "description": "Spark plug wire set",
+          "oem_part_numbers": ["BP4W-18-140"],
+          "aftermarket": {"magnecor": "40140"}
+        },
+        "crank_position_sensor": {
+          "part_id": "BP-CPS",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": ["ZL01-18-221"],
+          "notes": "Common failure item"
+        },
+        "cam_angle_sensor": {
+          "part_id": "BP-CAS",
+          "description": "Cam angle sensor",
+          "oem_part_numbers": ["BP4W-18-230"]
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "BP-OPUMP",
+          "description": "Oil pump",
+          "oem_part_numbers": ["BP05-14-100"],
+          "aftermarket": {"boundary": "BOUNDARY-BP"}
+        },
+        "oil_filter": {
+          "part_id": "BP-OFILTER",
+          "description": "Oil filter",
+          "oem_part_numbers": ["B6Y1-14-302"],
+          "aftermarket": {"k&n": "HP-1008", "wix": "51394"}
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "radiator": {
+          "part_id": "BP-RAD",
+          "description": "Aluminum radiator",
+          "oem_part_numbers": ["BP4W-15-200"],
+          "aftermarket": {"koyo": "HH060644", "mishimoto": "MMRAD-MIA-99"}
+        },
+        "thermostat": {
+          "part_id": "BP-TSTAT",
+          "description": "Thermostat",
+          "oem_part_numbers": ["B660-15-171"],
+          "specifications": {"opens_celsius": 82}
+        },
+        "fan_clutch_electric_fan": {
+          "part_id": "BP-FAN",
+          "description": "Electric cooling fan",
+          "oem_part_numbers": ["BP4W-15-025"]
+        }
+      }
+    }
+  }
+}

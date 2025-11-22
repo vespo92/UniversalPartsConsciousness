@@ -1,0 +1,84 @@
+{
+  "engine_id": "MAZDA-BP-1.8L-I4",
+  "common_names": ["BP", "BP-ZE", "BP-4W", "Miata Engine", "MX-5 1.8"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda B-Series",
+  "production_years": "1989-2005",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {"liters": 1.839, "cc": 1839},
+    "bore": {"mm": 83.0},
+    "stroke": {"mm": 85.0},
+    "compression_ratio": "9.0:1 to 10.0:1",
+    "firing_order": "1-3-4-2",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves, Hydraulic lifters",
+    "fuel_system": {
+      "type": "Multi-point fuel injection",
+      "throttle": "Cable-operated"
+    },
+    "variable_valve_timing": "BP-VE/4W models have S-VT on intake cam",
+    "redline_rpm": 7000,
+    "peak_power_rpm": 6500
+  },
+
+  "power_output_by_variant": {
+    "bp_na6_1990": {"hp": 116, "torque_lb_ft": 100, "notes": "Early 1.6L B6-ZE variant"},
+    "bp_na8_1994": {"hp": 128, "torque_lb_ft": 110, "notes": "1994-1997 NA (1.8L)"},
+    "bp_nb1_1999": {"hp": 140, "torque_lb_ft": 119, "notes": "1999-2000 NB (1.8L VVT)"},
+    "bp_nb2_2001": {"hp": 142, "torque_lb_ft": 125, "notes": "2001-2005 NB (revised VVT)"},
+    "bp_ze_high_comp": {"hp": 155, "torque_lb_ft": 128, "notes": "JDM BP-ZE with 10.0:1 CR"},
+    "bp_turbo_mazdaspeed": {"hp": 178, "torque_lb_ft": 166, "notes": "Mazdaspeed Miata (turbocharged)"}
+  },
+
+  "vehicle_applications": {
+    "miata_na_1990_1997": {"years": "1990-1997", "notes": "First-gen MX-5/Miata"},
+    "miata_nb_1999_2005": {"years": "1999-2005", "notes": "Second-gen MX-5 Miata"},
+    "mazda_323_familia": {"years": "1989-2003", "notes": "Familia GT, GTX"},
+    "mazda_protege": {"years": "1990-2003", "notes": "Protege LX, ES"},
+    "mazdaspeed_miata": {"years": "2004-2005", "notes": "Factory turbocharged"},
+    "ford_escort_gt": {"years": "1991-1996", "notes": "Mazda-based Ford (BP engine)"},
+    "kia_sephia": {"years": "1994-2001", "notes": "Licensed Mazda powerplant"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 3.7, "viscosity": ["5W-30", "10W-30", "10W-40"], "spec": "API SJ or higher"},
+    "coolant": {"liters": 6.5}
+  },
+
+  "notes": {
+    "heritage": "The BP engine powered the iconic Mazda MX-5 Miata from 1994 onwards. Evolution of the B6 1.6L used in early Miatas.",
+    "reputation": "Beloved by enthusiasts for its rev-happy character, reliability, and excellent aftermarket support. Perfect for lightweight sports cars.",
+    "design_philosophy": "High-revving, naturally aspirated power with emphasis on driver engagement over outright power.",
+    "key_features": [
+      "Iron block for durability",
+      "DOHC aluminum head with good flow potential",
+      "Square bore/stroke ratio favors revving",
+      "Strong aftermarket support",
+      "Easy to turbocharge"
+    ],
+    "common_issues": [
+      "Crankshaft position sensor (CPS) failure",
+      "Short-nose crank issues (early 1.6L only)",
+      "Cam angle sensor failure",
+      "Throttle position sensor wear",
+      "Valve cover gasket leaks"
+    ],
+    "maintenance_critical": [
+      "Timing belt every 60,000 miles",
+      "Regular oil changes (5000 miles)",
+      "Coolant system maintenance",
+      "Valve adjustment (early models)"
+    ],
+    "strengths": [
+      "Extremely reliable",
+      "Loves to rev",
+      "Lightweight",
+      "Responds well to modifications",
+      "Parts availability excellent"
+    ],
+    "tuning_notes": "NA builds to 170HP achievable with intake/header/exhaust/tune. Turbo builds commonly achieve 200-300HP on stock internals."
+  }
+}

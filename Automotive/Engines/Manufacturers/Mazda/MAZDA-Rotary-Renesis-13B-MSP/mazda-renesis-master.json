@@ -1,0 +1,93 @@
+{
+  "engine_id": "MAZDA-RENESIS-13B-MSP",
+  "common_names": ["Renesis", "13B-MSP", "RX-8 Engine", "High-Port 13B"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Wankel Rotary - Renesis",
+  "production_years": "2003-2012",
+
+  "base_specifications": {
+    "configuration": "Twin-Rotor Wankel",
+    "displacement": {"liters": 1.308, "cc": 1308, "equivalent_displacement_cc": 2616},
+    "rotor_dimensions": {
+      "rotor_width_mm": 80,
+      "rotor_radius_mm": 105,
+      "eccentricity_mm": 15,
+      "trochoid_housing_major_mm": 240,
+      "trochoid_housing_minor_mm": 210
+    },
+    "compression_ratio": "10.0:1",
+    "firing_order": "Front rotor leads rear by 270°",
+    "housing_material": "Aluminum with side exhaust ports",
+    "rotor_material": "Cast iron with specialized coating",
+    "exhaust_port_type": "Side-port (unique to Renesis)",
+    "fuel_system": {
+      "type": "Sequential fuel injection",
+      "injectors": "6 injectors (3 per rotor)"
+    },
+    "ignition_system": {
+      "type": "Distributorless ignition",
+      "coils_per_rotor": 2
+    },
+    "redline_rpm": 9000,
+    "peak_power_rpm": 8200
+  },
+
+  "power_output_by_variant": {
+    "renesis_6_speed_high_power": {"hp": 238, "torque_lb_ft": 159, "notes": "6-speed manual, 9000 RPM redline"},
+    "renesis_5_speed_standard": {"hp": 212, "torque_lb_ft": 162, "notes": "5-speed manual, 8200 RPM redline"},
+    "renesis_4_speed_auto": {"hp": 197, "torque_lb_ft": 164, "notes": "4-speed automatic"},
+    "renesis_6_speed_auto": {"hp": 212, "torque_lb_ft": 159, "notes": "Later 6-speed auto"},
+    "renesis_hydrogen": {"hp": 110, "torque_lb_ft": 103, "notes": "Hydrogen rotary variant (RX-8 HRE)"}
+  },
+
+  "vehicle_applications": {
+    "rx8_se3p_series_1": {"years": "2003-2008", "notes": "First generation RX-8"},
+    "rx8_se3p_series_2": {"years": "2009-2012", "notes": "Revised with improved ignition"},
+    "rx8_spirit_r": {"years": "2012", "notes": "Final special edition"},
+    "rx8_hydrogen_re": {"years": "2004-2006", "notes": "Hydrogen dual-fuel prototype"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 4.7, "viscosity": ["5W-20", "5W-30"], "spec": "API SL or higher, ACEA A5"},
+    "premix_ratio": "Mazda officially discourages premix, but 1:150 commonly used",
+    "coolant": {"liters": 8.0}
+  },
+
+  "notes": {
+    "heritage": "The Renesis (Rotary Engine Genesis) was Mazda's effort to clean up emissions while maintaining rotary character. Won 2003 International Engine of the Year.",
+    "design_philosophy": "Side exhaust ports instead of peripheral ports improved emissions but changed character from earlier rotaries.",
+    "key_features": [
+      "Side exhaust ports for reduced overlap (cleaner emissions)",
+      "9000 RPM redline (highest production rotary)",
+      "Three-stage variable intake system",
+      "Meets strict emissions without catalytic reactor"
+    ],
+    "common_issues": [
+      "Flooding when not warmed up properly",
+      "Coil failure (especially Series 1)",
+      "Low compression due to carbon buildup",
+      "Coolant seal failure",
+      "Cat converter clogging"
+    ],
+    "maintenance_critical": [
+      "NEVER shut off when cold - minimum 10 minute warmup",
+      "Weekly high-RPM runs essential",
+      "Change oil every 3000 miles with 5W-20/30",
+      "Compression tests every 20,000 miles",
+      "Replace coils preventatively"
+    ],
+    "strengths": [
+      "Highest revving production rotary",
+      "Smooth, linear power delivery",
+      "Excellent weight distribution in RX-8",
+      "Met modern emissions standards"
+    ],
+    "known_weaknesses": [
+      "Lower overall power than 13B-REW",
+      "More prone to flooding than peripheral port",
+      "Side ports seal differently - unique failure modes",
+      "Expensive to rebuild"
+    ],
+    "tuning_notes": "Limited turbo potential due to side exhaust port design. Headers and intake work well. 280HP achievable with full NA build."
+  }
+}

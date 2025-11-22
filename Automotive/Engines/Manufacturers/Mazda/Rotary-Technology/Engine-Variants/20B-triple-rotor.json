@@ -1,0 +1,167 @@
+{
+  "engine_id": "MAZDA-20B-3-ROTOR",
+  "common_names": ["20B", "20B-REW", "Three-Rotor", "Triple Rotor", "Cosmo Engine"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Wankel Rotary - Multi-Rotor",
+  "production_years": "1990-1996",
+  "rarity": "EXTREMELY RARE - Only production 3-rotor engine ever made",
+
+  "base_specifications": {
+    "configuration": "Three-Rotor Wankel",
+    "displacement": {"liters": 1.962, "cc": 1962, "equivalent_displacement_cc": 3924},
+    "rotor_dimensions": {
+      "rotor_width_mm": 80,
+      "rotor_radius_mm": 105,
+      "eccentricity_mm": 15
+    },
+    "compression_ratio": "9.0:1",
+    "firing_order": "Sequential - 9 power pulses per 2 e-shaft revolutions",
+    "housing_material": "Aluminum with chrome-molybdenum plating",
+    "rotor_material": "Cast iron",
+    "forced_induction": {
+      "type": "Sequential Twin-Turbocharger",
+      "primary_turbo": "Hitachi HT-15",
+      "secondary_turbo": "Hitachi HT-15",
+      "boost_psi": {"stock": 10, "max_safe": 15}
+    },
+    "fuel_system": {
+      "type": "Multi-point fuel injection",
+      "injectors": "9 injectors (3 per rotor)"
+    },
+    "redline_rpm": 8000,
+    "peak_power_rpm": 6500
+  },
+
+  "power_output": {
+    "stock_jdm": {"hp": 280, "torque_lb_ft": 296, "notes": "Gentleman's agreement limit"},
+    "actual_output": {"hp": 300, "torque_lb_ft": 310, "notes": "Real dyno figures"},
+    "modified_mild": {"hp": 400, "torque_lb_ft": 380, "notes": "Bolt-ons and tune"},
+    "modified_aggressive": {"hp": 600, "torque_lb_ft": 500, "notes": "Full single turbo build"},
+    "competition": {"hp": 900, "torque_lb_ft": 600, "notes": "All-out race build"}
+  },
+
+  "vehicle_applications": {
+    "eunos_cosmo": {
+      "chassis_code": "JC",
+      "years": "1990-1996",
+      "transmission": "4-speed automatic ONLY",
+      "notes": "Only production application",
+      "features": [
+        "First production car with GPS navigation",
+        "CRT touch-screen display",
+        "Twin-turbo 3-rotor powerplant",
+        "Luxury grand tourer positioning"
+      ],
+      "production_total": "Approximately 8,875 units",
+      "markets": "Japan only (some grey imports worldwide)"
+    }
+  },
+
+  "why_only_automatic": {
+    "reason": "Torque converter masks rotary's low-end torque weakness",
+    "engineering": "Manual would require constant shifting in traffic",
+    "character": "Grand tourer positioning emphasized smooth cruising"
+  },
+
+  "rarity_and_collectibility": {
+    "production_numbers": "~8,875 total Cosmo JC units",
+    "surviving_units": "Estimated 2,000-3,000 worldwide",
+    "engine_availability": "Extremely difficult to source",
+    "pricing": {
+      "complete_engine_jdm": "$5,000-15,000+",
+      "running_cosmo_jc": "$15,000-50,000+",
+      "pristine_example": "$50,000+"
+    },
+    "swap_popularity": "Highly sought for FD RX-7, FC RX-7, and other chassis swaps"
+  },
+
+  "engine_swap_potential": {
+    "into_fd_rx7": {
+      "difficulty": "Complex but documented",
+      "challenges": [
+        "Longer engine requires custom oil pan or front extension",
+        "Transmission adaptation needed",
+        "Cooling system upgrade required",
+        "Wiring harness integration",
+        "ECU conversion or standalone"
+      ],
+      "result": "Massive power potential in lightweight chassis"
+    },
+    "into_fc_rx7": {
+      "difficulty": "Very complex",
+      "notes": "Even longer relative to engine bay"
+    },
+    "into_other_chassis": {
+      "examples": ["RX-8", "Miata (extreme)", "Custom builds"],
+      "notes": "Extreme fabrication required"
+    }
+  },
+
+  "aftermarket_support": {
+    "turbo_upgrades": {
+      "single_turbo_conversion": {
+        "popularity": "Common modification",
+        "turbos": ["T04Z", "GT35R", "GT42R", "BorgWarner S300-S400 series"],
+        "power_potential": "600-1000hp"
+      },
+      "twin_upgrade": {
+        "options": ["Larger matched twins", "Compound setup"],
+        "power_potential": "500-700hp"
+      }
+    },
+    "supporting_modifications": {
+      "fuel_system": "Upgraded injectors (1200cc+), fuel pump, rails",
+      "ignition": "Standalone ECU required for serious builds",
+      "cooling": "Upgraded radiator, oil coolers essential",
+      "internals": "Quality apex seals, bearings for high power"
+    },
+    "specialists": {
+      "pineapple_racing": "Maryland, USA - 3-rotor expertise",
+      "pac_performance": "Australia - World record builds",
+      "rotary_works": "Japan - OEM+ rebuilds"
+    }
+  },
+
+  "comparison_to_13b": {
+    "displacement": "+50% (1962cc vs 1308cc)",
+    "power": "+15-20% in stock form",
+    "torque": "+25% (better low-end)",
+    "weight": "+40kg approximately",
+    "length": "+90mm approximately",
+    "complexity": "Significantly more (extra rotor, housing, seals)",
+    "parts_cost": "2-3x higher",
+    "rebuild_cost": "2-3x higher"
+  },
+
+  "technical_notes": {
+    "center_rotor_cooling": {
+      "challenge": "Middle rotor doesn't have external exposure",
+      "solution": "Oil-spray cooling of center rotor interior",
+      "vulnerability": "Center rotor most prone to thermal issues"
+    },
+    "eccentric_shaft": {
+      "length": "Longer than twin-rotor",
+      "lobes": "Three lobes at 120° spacing",
+      "balance": "More complex counterweighting"
+    },
+    "port_configuration": {
+      "intake": "Peripheral ports",
+      "exhaust": "Peripheral ports",
+      "characteristic": "Same high-flow design as 13B-REW"
+    }
+  },
+
+  "legend_status": {
+    "cultural_impact": [
+      "Represents peak of Mazda rotary ambition",
+      "Only 3-rotor production engine ever",
+      "Holy grail for rotary enthusiasts",
+      "Commands premium in collector market"
+    ],
+    "in_media": [
+      "Featured in various car culture documentaries",
+      "Sought after by YouTubers and builders",
+      "Symbol of Japanese Bubble Era engineering excess"
+    ]
+  }
+}

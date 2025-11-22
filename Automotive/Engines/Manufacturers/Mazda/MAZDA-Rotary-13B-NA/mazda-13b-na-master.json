@@ -1,0 +1,87 @@
+{
+  "engine_id": "MAZDA-13B-NA-ROTARY",
+  "common_names": ["13B", "13B-DEI", "13B NA", "RX-7 FC Engine", "Naturally Aspirated 13B"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Wankel Rotary",
+  "production_years": "1973-2002",
+
+  "base_specifications": {
+    "configuration": "Twin-Rotor Wankel",
+    "displacement": {"liters": 1.308, "cc": 1308, "equivalent_displacement_cc": 2616},
+    "rotor_dimensions": {
+      "rotor_width_mm": 80,
+      "rotor_radius_mm": 105,
+      "eccentricity_mm": 15,
+      "trochoid_housing_major_mm": 240,
+      "trochoid_housing_minor_mm": 210
+    },
+    "compression_ratio": "9.4:1 to 9.7:1",
+    "firing_order": "Front rotor leads rear by 270°",
+    "housing_material": "Aluminum with chrome plating",
+    "rotor_material": "Cast iron with hard-anodized surface",
+    "fuel_system": {
+      "type": "Multi-point fuel injection",
+      "injectors": "2 primary"
+    },
+    "ignition_system": {
+      "type": "Distributorless (later) / Distributor (early)",
+      "coils_per_rotor": 2
+    },
+    "redline_rpm": 7500,
+    "peak_power_rpm": 6500
+  },
+
+  "power_output_by_variant": {
+    "13b_rx7_s3_1984": {"hp": 135, "torque_lb_ft": 133, "notes": "Early FC NA"},
+    "13b_rx7_s4_1987": {"hp": 146, "torque_lb_ft": 138, "notes": "Series 4 NA"},
+    "13b_rx7_s5_1989": {"hp": 160, "torque_lb_ft": 140, "notes": "Series 5 NA"},
+    "13b_cosmo_1990": {"hp": 160, "torque_lb_ft": 145, "notes": "Eunos Cosmo NA"},
+    "13b_dei_jdm": {"hp": 180, "torque_lb_ft": 150, "notes": "JDM high-port version"}
+  },
+
+  "vehicle_applications": {
+    "cosmo_929": {"years": "1973-1981", "notes": "Early 13B applications"},
+    "rx7_fc_s3": {"years": "1983-1985", "notes": "Early FC3S"},
+    "rx7_fc_s4": {"years": "1986-1988", "notes": "Series 4 FC3S"},
+    "rx7_fc_s5": {"years": "1989-1991", "notes": "Series 5 FC3S (final)"},
+    "eunos_cosmo": {"years": "1990-1995", "notes": "Luxury GT coupe"},
+    "rx7_fc_convertible": {"years": "1988-1992", "notes": "Drop-top FC"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 4.5, "viscosity": ["5W-30", "10W-30", "10W-40"], "spec": "API SG or higher"},
+    "premix_ratio": "1:125 recommended",
+    "coolant": {"liters": 8.5}
+  },
+
+  "notes": {
+    "heritage": "The 13B is the most successful and widely-produced rotary engine ever. 10mm wider rotors than 12A for more displacement.",
+    "reputation": "Excellent reliability when maintained. Strong platform for both NA and turbo applications.",
+    "key_features": [
+      "Larger displacement than 12A",
+      "Improved port design for better breathing",
+      "More robust housings",
+      "Excellent balance of power and reliability"
+    ],
+    "common_issues": [
+      "Apex seal wear (maintenance item)",
+      "Coolant O-ring deterioration",
+      "Carbon buildup on ports",
+      "Eccentric shaft bearing wear at high mileage"
+    ],
+    "maintenance_critical": [
+      "Regular oil changes every 3000 miles",
+      "Use recommended premix",
+      "Let engine warm up before spirited driving",
+      "Weekly high-RPM runs to clear carbon"
+    ],
+    "strengths": [
+      "Smooth power delivery",
+      "Compact and lightweight",
+      "Strong aftermarket support",
+      "Can be turbocharged easily",
+      "Parts availability better than 12A"
+    ],
+    "tuning_notes": "NA 13B responds well to porting and intake/exhaust work. 200+ HP achievable naturally aspirated with proper mods."
+  }
+}

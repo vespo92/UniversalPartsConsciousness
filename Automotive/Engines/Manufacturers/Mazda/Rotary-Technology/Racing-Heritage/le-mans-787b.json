@@ -1,0 +1,210 @@
+{
+  "document_type": "Le Mans Racing Heritage",
+  "event": "1991 24 Hours of Le Mans",
+  "result": "OVERALL VICTORY",
+  "significance": "Only rotary engine to ever win Le Mans - regulations changed afterward",
+  "last_updated": "2024-11-22",
+
+  "the_victory": {
+    "date": "June 22-23, 1991",
+    "circuit": "Circuit de la Sarthe, Le Mans, France",
+    "distance_km": 4923.2,
+    "laps_completed": 362,
+    "winning_car": "Mazda 787B",
+    "car_number": 55,
+    "class": "Group C",
+    "finish_margin": "Two laps ahead of second place (Jaguar XJR-12)"
+  },
+
+  "winning_crew": {
+    "drivers": [
+      {
+        "name": "Johnny Herbert",
+        "nationality": "British",
+        "stints": "Multiple",
+        "note": "Would later become F1 race winner"
+      },
+      {
+        "name": "Volker Weidler",
+        "nationality": "German",
+        "stints": "Multiple"
+      },
+      {
+        "name": "Bertrand Gachot",
+        "nationality": "Belgian-French",
+        "stints": "Multiple",
+        "note": "Would be jailed later that year (unrelated incident)"
+      }
+    ],
+    "team_principal": "Takaharu Kobayakawa",
+    "chief_engineer": "Nigel Stroud"
+  },
+
+  "the_r26b_engine": {
+    "type": "Four-rotor Wankel",
+    "displacement_cc": 2622,
+    "displacement_equivalent": "5.2L (using 2x factor)",
+    "configuration": "4-rotor peripheral port",
+    "power_hp": 700,
+    "power_kw": 522,
+    "torque_nm": 608,
+    "torque_lb_ft": 448,
+    "redline_rpm": 10500,
+    "race_rpm": "9000-10000",
+    "weight_kg": 180,
+    "weight_lb": 397,
+    "specific_output": "267 HP per liter (nominal), 134 HP per liter (equivalent)",
+    "fuel_consumption": "High - typical rotary characteristic",
+    "fuel_type": "Racing gasoline",
+    "aspiration": "Naturally aspirated (peripheral port)",
+    "induction": "Four individual throttle bodies",
+    "ignition": "8 spark plugs (2 per rotor)",
+    "lubrication": "Dry sump with metered injection"
+  },
+
+  "787b_chassis": {
+    "constructor": "Mazda",
+    "chassis": "Carbon fiber monocoque",
+    "class": "Group C",
+    "weight_kg": 830,
+    "length_mm": 4782,
+    "width_mm": 1994,
+    "height_mm": 1020,
+    "wheelbase_mm": 2670,
+    "transmission": "5-speed sequential manual",
+    "top_speed_kph": 360,
+    "livery": "Renown green and orange (iconic)"
+  },
+
+  "race_narrative": {
+    "qualifying": {
+      "position": 12,
+      "note": "Not expected to challenge for victory"
+    },
+    "strategy": "Reliability over outright speed",
+    "key_moments": [
+      {
+        "hour": "Early",
+        "event": "Faster cars set pace, Mazda runs consistent",
+        "note": "787B not fastest but uses less fuel, fewer stops"
+      },
+      {
+        "hour": "12",
+        "event": "Attrition begins affecting leaders",
+        "note": "Mechanical failures claim frontrunners"
+      },
+      {
+        "hour": "18",
+        "event": "787B moves into podium contention",
+        "note": "Rotary reliability proving advantageous"
+      },
+      {
+        "hour": "22",
+        "event": "787B takes lead",
+        "note": "Sauber-Mercedes and Jaguar fall back with issues"
+      },
+      {
+        "hour": "24",
+        "event": "VICTORY",
+        "note": "Two lap margin over Jaguar XJR-12"
+      }
+    ],
+    "total_pit_stops": 29,
+    "reliability": "Engine ran flawlessly for 24 hours"
+  },
+
+  "historical_significance": {
+    "firsts": [
+      "First (and only) rotary victory at Le Mans",
+      "First Japanese manufacturer overall win at Le Mans",
+      "Only non-piston engine to win Le Mans in modern era"
+    ],
+    "aftermath": {
+      "regulation_change": "1992 regulations effectively banned rotary engines",
+      "3.5L_rule": "New rules favored 3.5L piston engines (F1 derived)",
+      "multiplier_removed": "Rotary equivalency formula no longer applied",
+      "conspiracy_theory": "Many believe rule change targeted Mazda specifically",
+      "mazda_response": "Withdrew from prototype racing"
+    },
+    "legacy": [
+      "Vindicated decades of rotary development",
+      "Proved unconventional engineering could succeed at highest level",
+      "Became symbol of Mazda's engineering philosophy",
+      "787B is now displayed at Mazda Museum, Hiroshima"
+    ]
+  },
+
+  "the_sound": {
+    "description": "Distinctive high-pitched scream unlike any piston engine",
+    "comparison": "Often described as turbine-like or F1-like",
+    "reason": "Rapid-fire exhaust pulses from four-rotor configuration",
+    "rpm_at_full_song": "9000-10000 RPM",
+    "decibels": "Reportedly louder than V12 competitors",
+    "fan_reaction": "Spectators could identify 787B by sound alone"
+  },
+
+  "surviving_787b_cars": {
+    "chassis_55": {
+      "status": "Preserved",
+      "location": "Mazda Museum, Hiroshima, Japan",
+      "condition": "Running condition",
+      "appearances": "Occasional demonstration runs at Goodwood, etc."
+    },
+    "other_chassis": {
+      "787b_201": "Mazda heritage collection",
+      "787b_202": "Private collection",
+      "787_001": "Predecessor model, also preserved"
+    },
+    "running_demonstrations": {
+      "events": ["Goodwood Festival of Speed", "Le Mans Classic", "Japanese events"],
+      "note": "When it runs, crowds gather just to hear it"
+    }
+  },
+
+  "r26b_specifications": {
+    "bore_mm": 80,
+    "rotor_width_mm": 80,
+    "eccentricity_mm": 15,
+    "compression_ratio": "10.0:1",
+    "intake_ports": "Peripheral (racing configuration)",
+    "exhaust_ports": "Peripheral",
+    "ignition": {
+      "type": "CDI (Capacitor Discharge Ignition)",
+      "timing": "Electronically controlled",
+      "plugs_per_rotor": 2,
+      "total_plugs": 8
+    },
+    "lubrication": {
+      "type": "Dry sump",
+      "oil_capacity_l": 12,
+      "oil_injection": "Metered to apex seals"
+    },
+    "cooling": {
+      "type": "Water with oil cooling",
+      "radiator": "Front-mounted racing unit"
+    }
+  },
+
+  "quotes": {
+    "johnny_herbert": "The sound was unbelievable. When you had your foot buried, it was like nothing else on the track.",
+    "team_statement": "This victory represents 20 years of rotary development. Every engineer who worked on this technology contributed to today.",
+    "race_commentator": "The Mazda is still running! The rotary engine, which everyone said couldn't last 24 hours, is about to win Le Mans!"
+  },
+
+  "before_787b": {
+    "mazda_le_mans_attempts": [
+      {"year": 1970, "car": "Cosmo Sport", "result": "Did not qualify"},
+      {"year": 1974, "car": "Savanna RX-3", "result": "DNF"},
+      {"year": 1979, "car": "RX-7 254i", "result": "Class win (not overall)"},
+      {"year": 1981, "car": "RX-7 253i", "result": "Class win"},
+      {"year": 1982, "car": "RX-7 253i", "result": "Class win"},
+      {"year": 1983, "car": "717C", "result": "DNF"},
+      {"year": 1984, "car": "727C", "result": "10th overall"},
+      {"year": 1987, "car": "757", "result": "7th overall"},
+      {"year": 1988, "car": "767", "result": "17th, 19th"},
+      {"year": 1989, "car": "767B", "result": "7th, 9th, 12th"},
+      {"year": 1990, "car": "787", "result": "20th overall"}
+    ],
+    "pattern": "Steady improvement over two decades of effort"
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "manufacturer": "Mazda Motor Corporation",
+  "last_updated": "2024-11-22",
+  "version": "1.0.0",
+
+  "engine_families": {
+    "rotary_engines": {
+      "description": "Mazda's iconic Wankel rotary engines - unique in the automotive world",
+      "engine_codes": {
+        "10A": {
+          "displacement_cc": 982,
+          "production": "1967-1973",
+          "configuration": "Twin-rotor Wankel",
+          "applications": ["Cosmo Sport 110S", "Familia Rotary R100"],
+          "notes": "First production Mazda rotary"
+        },
+        "12A": {
+          "displacement_cc": 1146,
+          "production": "1970-1985",
+          "configuration": "Twin-rotor Wankel",
+          "rotor_width_mm": 70,
+          "applications": ["RX-3", "RX-4", "RX-7 FB (SA22C)", "Cosmo AP"],
+          "notes": "Workhorse rotary for first-gen RX-7"
+        },
+        "13B": {
+          "displacement_cc": 1308,
+          "production": "1973-2012",
+          "configuration": "Twin-rotor Wankel",
+          "rotor_width_mm": 80,
+          "variants": {
+            "13B-NA": "Naturally aspirated",
+            "13B-T": "Single turbo (FC3S)",
+            "13B-REW": "Sequential twin-turbo (FD3S)",
+            "13B-DEI": "High-port NA",
+            "Renesis": "Side-port exhaust (RX-8)"
+          },
+          "applications": ["RX-7 (FC, FD)", "RX-8", "Cosmo", "Eunos Cosmo"],
+          "notes": "Most successful and widely-used rotary design"
+        },
+        "20B": {
+          "displacement_cc": 1962,
+          "production": "1990-1995",
+          "configuration": "Triple-rotor Wankel",
+          "applications": ["Eunos Cosmo (JDM only)"],
+          "notes": "Only production 3-rotor engine"
+        },
+        "R26B": {
+          "displacement_cc": 2622,
+          "production": "1991",
+          "configuration": "Four-rotor Wankel",
+          "applications": ["787B Le Mans prototype"],
+          "power_hp": 700,
+          "notes": "Le Mans-winning race engine"
+        },
+        "8C": {
+          "displacement_cc": 830,
+          "production": "2021-present",
+          "configuration": "Single-rotor Wankel",
+          "applications": ["MX-30 R-EV range extender"],
+          "notes": "Modern rotary returns as generator"
+        }
+      }
+    },
+
+    "b_series": {
+      "description": "DOHC engines for Miata/MX-5 and compact vehicles",
+      "engine_codes": {
+        "B3": {
+          "displacement_cc": 1323,
+          "production": "1987-2003",
+          "configuration": "Inline-4, SOHC/DOHC",
+          "applications": ["121", "323", "Demio"],
+          "notes": "Small displacement economy engine"
+        },
+        "B5": {
+          "displacement_cc": 1498,
+          "production": "1985-2001",
+          "configuration": "Inline-4, SOHC/DOHC",
+          "applications": ["323", "MX-3"],
+          "notes": "Compact car powerplant"
+        },
+        "B6": {
+          "displacement_cc": 1597,
+          "production": "1985-1998",
+          "configuration": "Inline-4, DOHC 16v",
+          "applications": ["Miata NA (1989-1993)", "323 GTX", "Familia"],
+          "variants": {"B6-ZE": "Miata", "B6-DETI": "Turbo GTX"},
+          "notes": "Original Miata engine - short nose crank issue on 1990-91"
+        },
+        "BP": {
+          "displacement_cc": 1839,
+          "production": "1989-2005",
+          "configuration": "Inline-4, DOHC 16v",
+          "applications": ["Miata NA/NB", "Protege", "323"],
+          "variants": {"BP-ZE": "NA", "BP-4W": "VVT", "BP-T": "Turbo (Mazdaspeed)"},
+          "notes": "Legendary Miata engine - iron block, aluminum head"
+        }
+      }
+    },
+
+    "f_series": {
+      "description": "Mid-size inline-4 engines for 626, MX-6, and trucks",
+      "engine_codes": {
+        "F2": {
+          "displacement_cc": 2184,
+          "production": "1983-1997",
+          "configuration": "Inline-4, SOHC/DOHC",
+          "applications": ["626", "MX-6", "B2200 truck"],
+          "variants": {"F2-T": "Turbocharged"},
+          "notes": "Turbocharged versions popular in sport-compact scene"
+        },
+        "FE": {
+          "displacement_cc": 1998,
+          "production": "1983-2002",
+          "configuration": "Inline-4, SOHC/DOHC",
+          "applications": ["626", "MX-6", "Ford Probe", "MPV"],
+          "variants": {"FE-DE": "DOHC", "FE-DOHC": "High-performance"},
+          "notes": "Shared platform with Ford products"
+        },
+        "FS": {
+          "displacement_cc": 1991,
+          "production": "1993-2002",
+          "configuration": "Inline-4, DOHC 16v",
+          "applications": ["626", "MX-6", "Premacy"],
+          "notes": "Evolution of F-series"
+        }
+      }
+    },
+
+    "l_series_mzr": {
+      "description": "Modern inline-4 engines developed with Ford (Duratec platform)",
+      "engine_codes": {
+        "L8": {
+          "displacement_cc": 1798,
+          "production": "2001-2013",
+          "configuration": "Inline-4, DOHC 16v, Chain",
+          "applications": ["323", "Premacy", "Mazda5"],
+          "notes": "MZR 1.8 - timing chain for reduced maintenance"
+        },
+        "LF": {
+          "displacement_cc": 1999,
+          "production": "2001-2018",
+          "configuration": "Inline-4, DOHC 16v, Chain",
+          "applications": ["Mazda3", "Mazda6", "MX-5 NC"],
+          "variants": {"LF-DE": "Base", "LF-VE": "VVT"},
+          "notes": "MZR 2.0 - backbone of Mazda lineup for over a decade"
+        },
+        "L3": {
+          "displacement_cc": 2261,
+          "production": "2003-2013",
+          "configuration": "Inline-4, DOHC 16v, Chain",
+          "applications": ["Mazda3", "Mazda6", "CX-7"],
+          "variants": {"L3-VDT": "DISI Turbo (Mazdaspeed)"},
+          "notes": "MZR 2.3 Turbo - 263HP Mazdaspeed engine"
+        },
+        "L5": {
+          "displacement_cc": 2488,
+          "production": "2007-2015",
+          "configuration": "Inline-4, DOHC 16v, Chain",
+          "applications": ["Mazda6", "CX-7"],
+          "notes": "MZR 2.5 - largest MZR displacement"
+        }
+      }
+    },
+
+    "skyactiv_g": {
+      "description": "Ultra-high compression naturally aspirated and turbocharged gasoline engines",
+      "engine_codes": {
+        "P3-VPS": {
+          "displacement_cc": 1496,
+          "production": "2014-present",
+          "configuration": "Inline-4, DOHC 16v, Chain, 14:1 CR",
+          "applications": ["Mazda2", "CX-3"],
+          "notes": "Skyactiv-G 1.5"
+        },
+        "PE-VPS": {
+          "displacement_cc": 1998,
+          "production": "2011-present",
+          "configuration": "Inline-4, DOHC 16v, Chain, 13:1 CR",
+          "applications": ["Mazda3", "CX-30", "MX-5 ND"],
+          "notes": "Skyactiv-G 2.0 - world's highest compression for production gasoline"
+        },
+        "PY-VPS": {
+          "displacement_cc": 2488,
+          "production": "2012-present",
+          "configuration": "Inline-4, DOHC 16v, Chain, 13:1 CR",
+          "applications": ["Mazda3", "Mazda6", "CX-5", "CX-50"],
+          "notes": "Skyactiv-G 2.5 - workhorse for larger vehicles"
+        },
+        "PY-VPTS": {
+          "displacement_cc": 2488,
+          "production": "2016-present",
+          "configuration": "Inline-4, DOHC 16v, Chain, Turbocharged",
+          "applications": ["CX-5", "CX-9", "Mazda6 Turbo", "Mazda3 Turbo"],
+          "power_hp": "227-256",
+          "notes": "Skyactiv-G 2.5T - Dynamic Pressure Turbo"
+        }
+      }
+    },
+
+    "skyactiv_x": {
+      "description": "Revolutionary spark-controlled compression ignition gasoline engines",
+      "engine_codes": {
+        "HF-VPH": {
+          "displacement_cc": 1998,
+          "production": "2019-present",
+          "configuration": "Inline-4, DOHC 16v, SPCCI, Supercharged, Mild Hybrid",
+          "compression_ratio": "16.3:1",
+          "applications": ["Mazda3", "CX-30"],
+          "notes": "World's first production SPCCI engine - compression ignition gasoline"
+        }
+      }
+    },
+
+    "skyactiv_d": {
+      "description": "Ultra-low compression diesel engines",
+      "engine_codes": {
+        "S5-DPTS": {
+          "displacement_cc": 1496,
+          "production": "2014-present",
+          "configuration": "Inline-4, DOHC 16v, Turbodiesel",
+          "applications": ["Mazda2", "CX-3"],
+          "notes": "Skyactiv-D 1.5"
+        },
+        "SH-VPTS": {
+          "displacement_cc": 2191,
+          "production": "2012-present",
+          "configuration": "Inline-4, DOHC 16v, Twin-stage Turbo",
+          "compression_ratio": "14.0:1",
+          "applications": ["Mazda6", "CX-5", "CX-8"],
+          "notes": "Skyactiv-D 2.2 - world's lowest compression diesel"
+        }
+      }
+    },
+
+    "skyactiv_inline_6": {
+      "description": "New large displacement inline-6 platform",
+      "engine_codes": {
+        "CX-INLINE6": {
+          "displacement_cc": 3283,
+          "production": "2022-present",
+          "configuration": "Inline-6, DOHC 24v, Turbodiesel/Turbo Gas",
+          "applications": ["CX-60", "CX-70", "CX-80", "CX-90"],
+          "variants": {"Diesel": "280HP/450lb-ft", "Gasoline": "340HP/369lb-ft"},
+          "notes": "Return to inline-6 for premium vehicles"
+        }
+      }
+    }
+  }
+}

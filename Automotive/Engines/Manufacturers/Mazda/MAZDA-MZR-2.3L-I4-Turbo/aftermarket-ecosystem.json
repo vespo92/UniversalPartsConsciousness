@@ -1,0 +1,160 @@
+{
+  "engine_id": "MAZDA-MZR-2.3L-I4-TURBO",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "mazda_dealership": {"url": "https://www.mazdausa.com", "specialty": "Genuine Mazda parts"},
+      "mazda_swap_shop": {"url": "https://www.mazdaSwapShop.com", "specialty": "Used MS3/MS6 parts"}
+    },
+    "performance_parts": {
+      "corksport": {"name": "CorkSport", "url": "https://www.corksport.com", "specialty": "Premier Mazda performance since 1998"},
+      "cobb": {"name": "COBB Tuning", "url": "https://www.cobbtuning.com", "specialty": "Tuning, intakes, exhausts"},
+      "atp_turbo": {"name": "ATP Turbo", "url": "https://www.atpturbo.com", "specialty": "Turbo kits, manifolds"},
+      "cp_e": {"name": "CP-E", "url": "https://www.cp-e.com", "specialty": "Intakes, exhausts, turbo parts"},
+      "autotech": {"name": "Autotech", "url": "https://www.autotech.com", "specialty": "HPFP internals"},
+      "james_barone_racing": {"name": "JBR", "url": "https://www.jamesbaroneracing.com", "specialty": "Turbo kits, parts"}
+    },
+    "tuning_software": {
+      "cobb_accessport": {"name": "COBB Accessport", "url": "https://www.cobbtuning.com", "specialty": "Flash tuning", "cost": "$650"},
+      "versatune": {"name": "VersaTuner", "url": "https://www.versatuner.com", "specialty": "Open source tuning", "cost": "$150-300"},
+      "freektune": {"name": "Freektune", "url": "https://www.freektune.com", "specialty": "Pro tunes via Accessport", "cost": "$150-400"}
+    },
+    "engine_builders": {
+      "corksport": {"location": "Vancouver, WA", "specialty": "Complete MZR builds"},
+      "turbomazdas": {"location": "Various", "specialty": "Community-recommended shops"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "turbo_upgrades": {
+      "corksport_st2": {"part_number": "CS-5-901", "type": "Stage 2 Turbo Kit", "price_usd": 1999, "power_target": "350-400hp"},
+      "atp_gtx2867r": {"part_number": "ATP-VAG-015", "type": "GTX2867R Kit", "price_usd": 2800, "power_target": "400-450hp"},
+      "bnr_s4": {"vendor": "BNR", "type": "S4 Twin Scroll Turbo", "price_usd": 2499, "power_target": "400-500hp"},
+      "efr_7163": {"vendor": "BorgWarner", "type": "EFR 7163 Kit", "price_usd": 3500, "power_target": "450-550hp"}
+    },
+    "intake_systems": {
+      "corksport_sri": {"part_number": "CS-5-310", "type": "Short Ram Intake", "price_usd": 199, "power_gain": "8-12hp"},
+      "cobb_sf_intake": {"part_number": "7M1100", "type": "SF Intake System", "price_usd": 350, "power_gain": "10-15hp"},
+      "cp_e_intake": {"part_number": "MZSX00001B", "type": "Intake System", "price_usd": 289}
+    },
+    "intercoolers": {
+      "corksport_tmic": {"part_number": "CS-5-500", "type": "Top Mount Intercooler", "price_usd": 549, "cooling_improvement": "30%"},
+      "cobb_tmic": {"part_number": "7M1100TMIC", "type": "TMIC", "price_usd": 599, "cooling_improvement": "35%"},
+      "cp_e_fmic": {"part_number": "MZICDE00001B", "type": "Front Mount Intercooler", "price_usd": 1099, "cooling_improvement": "50%"},
+      "corksport_fmic": {"part_number": "CS-5-510", "type": "FMIC Kit", "price_usd": 1199, "cooling_improvement": "50%"}
+    },
+    "downpipes": {
+      "corksport_dp": {"part_number": "CS-5-602", "type": "Catted Downpipe", "price_usd": 499, "power_gain": "15-25hp"},
+      "cobb_dp": {"part_number": "5D1100", "type": "Catted Downpipe", "price_usd": 599, "power_gain": "15-25hp"},
+      "cp_e_dp": {"part_number": "MZDPDE00001B", "type": "Downpipe", "price_usd": 449}
+    },
+    "exhaust_systems": {
+      "corksport_catback": {"part_number": "CS-5-625", "type": "Power Series Cat-Back", "price_usd": 799},
+      "cobb_catback": {"part_number": "5C1100", "type": "Cat-Back Exhaust", "price_usd": 899},
+      "cp_e_catback": {"part_number": "MZCBDE00001B", "type": "Austenite Cat-Back", "price_usd": 849}
+    },
+    "fueling_upgrades": {
+      "autotech_hpfp": {"part_number": "AT-HPFP-M3", "type": "HPFP Internals", "price_usd": 399, "notes": "Required for 300+HP"},
+      "corksport_hpfp": {"part_number": "CS-5-900", "type": "HPFP Upgrade", "price_usd": 449},
+      "dw_hpfp": {"vendor": "DeatschWerks", "type": "HPFP Internals", "price_usd": 425}
+    },
+    "engine_mounts": {
+      "corksport_rmm": {"part_number": "CS-5-203", "type": "Rear Motor Mount", "price_usd": 189, "notes": "Reduces wheel hop, increases NVH"},
+      "jbr_rmm": {"vendor": "JBR", "type": "RMM Insert", "price_usd": 49, "notes": "Budget option"}
+    },
+    "cooling_upgrades": {
+      "mishimoto_radiator": {"part_number": "MMRAD-MS3-07", "type": "Aluminum Radiator", "price_usd": 399},
+      "koyo_radiator": {"part_number": "VH091680", "type": "Racing Radiator", "price_usd": 499},
+      "corksport_oil_cooler": {"part_number": "CS-5-800", "type": "Oil Cooler Kit", "price_usd": 599}
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Bolt-Ons + Tune",
+      "power_target": "290-310hp",
+      "parts": [
+        {"part": "COBB Accessport + Stage 1 OTS Map", "price_usd": 650},
+        {"part": "CorkSport SRI", "price_usd": 199},
+        {"part": "High-flow air filter", "price_usd": 50}
+      ],
+      "total_cost_usd": "900-1000"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full Bolt-Ons",
+      "power_target": "320-350hp",
+      "parts": [
+        {"part": "COBB Accessport + Pro Tune", "price_usd": 800},
+        {"part": "CorkSport SRI", "price_usd": 199},
+        {"part": "Catted Downpipe", "price_usd": 499},
+        {"part": "HPFP Internals", "price_usd": 399},
+        {"part": "Upgraded TMIC", "price_usd": 549}
+      ],
+      "total_cost_usd": "2500-3000"
+    },
+    "stage_3": {
+      "name": "Stage 3 - Stock Turbo Max",
+      "power_target": "350-370hp",
+      "parts": [
+        {"part": "Stage 2 parts", "price_usd": 2500},
+        {"part": "Cat-Back Exhaust", "price_usd": 799},
+        {"part": "FMIC Conversion", "price_usd": 1099},
+        {"part": "3\" Turbo Inlet", "price_usd": 199},
+        {"part": "Pro Tune", "price_usd": 400}
+      ],
+      "total_cost_usd": "5000-6000",
+      "notes": "Maxing stock K04 turbo"
+    },
+    "stage_4": {
+      "name": "Stage 4 - Big Turbo",
+      "power_target": "400-500hp",
+      "parts": [
+        {"part": "GTX2867R or BNR S4 Turbo Kit", "price_usd": 2800},
+        {"part": "FMIC", "price_usd": 1099},
+        {"part": "3\" Downpipe + Exhaust", "price_usd": 1200},
+        {"part": "Port Injection Kit", "price_usd": 1500},
+        {"part": "Upgraded Clutch", "price_usd": 800},
+        {"part": "Pro Tune", "price_usd": 600}
+      ],
+      "total_cost_usd": "8000-12000"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["6L 5W-30 Full Synthetic", "OEM or K&N Filter", "Drain plug gasket"],
+      "price_usd": 60,
+      "interval_miles": 5000,
+      "notes": "Synthetic oil required - turbo engines need frequent changes"
+    },
+    "spark_plug_kit": {
+      "parts": ["4x NGK LTR7IX-11 (one step colder for tuned)"],
+      "price_usd": 60,
+      "interval_miles": 30000,
+      "notes": "Tighten gap to 0.026\" for boosted applications"
+    }
+  },
+
+  "known_issues_and_fixes": {
+    "vvt_actuator_rattle": {
+      "symptom": "Rattle at cold startup for 1-2 seconds",
+      "cause": "VVT actuator wear",
+      "fix": "Replace VVT actuator",
+      "cost_usd": 400
+    },
+    "spark_plug_blowout": {
+      "symptom": "Spark plug threads strip out of head",
+      "cause": "Design flaw in Gen1 heads (2007-2009)",
+      "fix": "Time-Sert repair or head replacement",
+      "cost_usd": "200-2000"
+    },
+    "motor_mount_failure": {
+      "symptom": "Excessive vibration, wheel hop",
+      "cause": "Rear motor mount tears",
+      "fix": "Replace with OEM or upgraded mount",
+      "cost_usd": 150
+    }
+  }
+}

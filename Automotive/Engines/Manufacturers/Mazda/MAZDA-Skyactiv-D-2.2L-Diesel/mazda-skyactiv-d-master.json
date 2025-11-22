@@ -1,0 +1,101 @@
+{
+  "engine_id": "MAZDA-SKYACTIV-D-2.2L-DIESEL",
+  "common_names": ["Skyactiv-D 2.2", "SH-VPTS", "Skyactiv Diesel", "Low-Compression Diesel"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Skyactiv-D",
+  "production_years": "2012-present",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder Turbodiesel",
+    "displacement": {"liters": 2.191, "cc": 2191},
+    "bore": {"mm": 86.0},
+    "stroke": {"mm": 94.3},
+    "compression_ratio": "14.0:1 (lowest production diesel)",
+    "firing_order": "1-3-4-2",
+    "block_material": "Aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves, Chain-driven",
+    "forced_induction": {
+      "type": "Twin-stage turbocharger (sequential)",
+      "small_turbo": "Low-speed response",
+      "large_turbo": "High-speed power"
+    },
+    "fuel_system": {
+      "type": "Common-rail direct injection",
+      "pressure_bar": 2000,
+      "injector_type": "Piezoelectric"
+    },
+    "emissions_equipment": {
+      "dpf": "Diesel Particulate Filter",
+      "nox_trap": "NOx Storage Catalyst (NSC)",
+      "egr": "Cooled EGR"
+    },
+    "redline_rpm": 5200,
+    "peak_power_rpm": 4500
+  },
+
+  "power_output_by_variant": {
+    "sh_vpts_175": {"hp": 173, "torque_lb_ft": 310, "notes": "Standard tune"},
+    "sh_vpts_190": {"hp": 188, "torque_lb_ft": 332, "notes": "High-output tune"},
+    "sh_vpts_150": {"hp": 148, "torque_lb_ft": 280, "notes": "Economy tune (some markets)"}
+  },
+
+  "vehicle_applications": {
+    "mazda6_diesel_europe": {"years": "2012-2021", "notes": "European market"},
+    "mazda6_diesel_japan": {"years": "2012-2021", "notes": "JDM market"},
+    "cx5_diesel": {"years": "2013-present", "notes": "CX-5 diesel in select markets"},
+    "mazda3_diesel": {"years": "2014-2019", "notes": "Mazda3 diesel (Europe/Japan)"},
+    "cx8_diesel": {"years": "2017-present", "notes": "CX-8 (JDM market)"},
+    "mazda6_usa": {"years": "2019-2021", "notes": "Brief US availability"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 5.1, "viscosity": ["0W-30", "5W-30"], "spec": "ACEA C3, Mazda Original Oil DPF"},
+    "coolant": {"liters": 7.5},
+    "def_adblue": "Not required - uses NSC instead of SCR"
+  },
+
+  "notes": {
+    "heritage": "Skyactiv-D revolutionized diesel design with ultra-low compression ratio, eliminating need for expensive NOx aftertreatment.",
+    "reputation": "Quieter and smoother than traditional diesels. Excellent fuel economy with strong torque.",
+    "design_philosophy": "Low compression (14:1 vs typical 16-18:1) reduces combustion temperature, lowering NOx formation naturally.",
+    "key_features": [
+      "World's lowest compression ratio for production diesel",
+      "No DEF/AdBlue required (most variants)",
+      "Sequential twin-turbo for broad powerband",
+      "Ultra-quiet operation for a diesel",
+      "2000 bar common rail injection"
+    ],
+    "low_compression_benefits": [
+      "Lower combustion temperature = less NOx",
+      "No expensive SCR system needed",
+      "Lighter construction possible",
+      "Smoother, quieter operation"
+    ],
+    "common_issues": [
+      "DPF regeneration cycles (short trip driving)",
+      "EGR system carbon buildup",
+      "Fuel injector issues (rare)",
+      "Turbo actuator wear"
+    ],
+    "maintenance_critical": [
+      "DPF-compatible oil only (ACEA C3)",
+      "Regular highway driving for DPF health",
+      "Oil changes per schedule",
+      "Fuel system cleaner periodically"
+    ],
+    "strengths": [
+      "Excellent fuel economy (40+ MPG)",
+      "Strong low-end torque",
+      "No DEF required",
+      "Quieter than competitors",
+      "Reliable modern diesel"
+    ],
+    "market_availability": {
+      "widely_available": ["Europe", "Japan", "Australia", "UK"],
+      "limited": ["USA (2019-2021 only)"],
+      "reason": "US diesel fuel quality concerns, emissions regulations"
+    },
+    "tuning_notes": "ECU tuning available in diesel-friendly markets. 220HP+ achievable with tune. Delete options not recommended for emissions."
+  }
+}

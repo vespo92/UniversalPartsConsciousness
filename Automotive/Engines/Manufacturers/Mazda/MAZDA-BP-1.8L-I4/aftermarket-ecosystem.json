@@ -1,0 +1,154 @@
+{
+  "engine_id": "MAZDA-BP-1.8L-I4",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "mazda_dealership": {"url": "https://www.mazdausa.com", "specialty": "Genuine Mazda parts"},
+      "rockauto": {"url": "https://www.rockauto.com", "specialty": "OEM and aftermarket parts"},
+      "moss_miata": {"url": "https://www.mossmiata.com", "specialty": "Miata specialist since 1989"}
+    },
+    "performance_parts": {
+      "flyin_miata": {"name": "Flyin' Miata", "url": "https://www.flyinmiata.com", "specialty": "Premier Miata performance since 1994"},
+      "racing_beat": {"name": "Racing Beat", "url": "https://www.racingbeat.com", "specialty": "Exhaust, intake, suspension"},
+      "good_win_racing": {"name": "Good-Win Racing", "url": "https://www.good-win-racing.com", "specialty": "Performance parts specialist"},
+      "supermiata": {"name": "SuperMiata", "url": "https://www.supermiata.com", "specialty": "Track-focused upgrades"},
+      "5x_racing": {"name": "5X Racing", "url": "https://www.5xracing.com", "specialty": "Competition parts"}
+    },
+    "turbo_specialists": {
+      "flyin_miata": {"specialty": "Turbo kits, complete systems"},
+      "greddy": {"specialty": "Turbo kits for Miata"},
+      "cx_racing": {"specialty": "Budget turbo kits"},
+      "trackspeed_engineering": {"specialty": "Custom turbo builds"}
+    },
+    "tuning": {
+      "versatuner": {"url": "https://www.versatuner.com", "specialty": "Stock ECU tuning for NB", "cost": "$150-400"},
+      "megasquirt": {"url": "https://www.megasquirt.info", "specialty": "DIY standalone ECU", "cost": "$400-800"},
+      "haltech": {"url": "https://www.haltech.com", "specialty": "Elite series standalone", "cost": "$2000-3500"},
+      "aem": {"url": "https://www.aemelectronics.com", "specialty": "Infinity standalone", "cost": "$2000+"}
+    },
+    "engine_builders": {
+      "flyin_miata": {"location": "Colorado", "specialty": "Complete engines and builds"},
+      "trackspeed_engineering": {"location": "California", "specialty": "High-power builds"},
+      "moss_miata": {"location": "Virginia", "specialty": "Restoration and performance"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "racing_beat_intake": {"part_number": "RB-53101", "type": "Cold Air Intake", "price_usd": 299, "power_gain": "5-8hp"},
+      "k&n_typhoon": {"part_number": "69-6030TS", "type": "Cold Air Intake", "price_usd": 289, "power_gain": "5-8hp"},
+      "flyin_miata_intake": {"part_number": "FM-CAI-NB", "type": "V8 Roadster Intake", "price_usd": 179}
+    },
+    "exhaust_headers": {
+      "racing_beat_header": {"part_number": "RB-53108", "type": "4-2-1 Header", "price_usd": 449, "power_gain": "8-12hp"},
+      "flyin_miata_header": {"part_number": "FM-HEADER-NB", "type": "4-1 Header", "price_usd": 399, "power_gain": "10-15hp"},
+      "isr_performance": {"part_number": "ISR-BP-HEADER", "type": "4-2-1 Header", "price_usd": 299}
+    },
+    "exhaust_systems": {
+      "racing_beat_exhaust": {"part_number": "RB-53115", "type": "Dual Tip Cat-Back", "price_usd": 599},
+      "flyin_miata_exhaust": {"part_number": "FM-EXH-NB", "type": "Cat-Back", "price_usd": 499},
+      "cobalt_exhaust": {"part_number": "COBALT-NB", "type": "Catback", "price_usd": 449},
+      "goodwin_racing_exhaust": {"part_number": "GWR-EXH", "type": "Race Exhaust", "price_usd": 599}
+    },
+    "turbo_kits": {
+      "flyin_miata_vvt_turbo": {"part_number": "FM-TURBO-NB", "type": "Complete Turbo Kit", "price_usd": 4999, "power_target": "200-250hp"},
+      "greddy_turbo_kit": {"part_number": "11530026", "type": "TD04H Turbo Kit", "price_usd": 3999, "power_target": "180-220hp"},
+      "cx_racing_t3_kit": {"part_number": "TRB-KIT-MZD-MIATA-T3", "type": "T3 Turbo Kit", "price_usd": 999, "power_target": "180-250hp", "notes": "Budget option"}
+    },
+    "supercharger_kits": {
+      "jackson_racing": {"part_number": "JR-SC-NB", "type": "M45 Supercharger", "price_usd": 3999, "power_target": "180-200hp", "notes": "OEM-like drivability"},
+      "kraftwerks": {"part_number": "KW-150-10-1000", "type": "C30-94 Supercharger", "price_usd": 4299, "power_target": "200-220hp"}
+    },
+    "engine_internals": {
+      "wiseco_pistons": {"part_number": "K623M83", "type": "Forged Pistons", "price_usd": 499, "compression": "8.5:1 turbo"},
+      "eagle_rods": {"part_number": "CRS5394M3D", "type": "H-Beam Rods", "price_usd": 449},
+      "arp_head_studs": {"part_number": "218-4701", "type": "Head Stud Kit", "price_usd": 189},
+      "supertech_valves": {"part_number": "MIVN-1015D", "type": "Stainless Valves", "price_usd": 359},
+      "bc_camshafts": {"part_number": "BC0321", "type": "Stage 2 Cams", "price_usd": 699, "specs": "264/264 duration"}
+    },
+    "fueling_upgrades": {
+      "id1000_injectors": {"part_number": "1000.18.04.48.14.4", "type": "1000cc Injectors", "price_usd": 899},
+      "walbro_fuel_pump": {"part_number": "GSS342", "type": "255 LPH Pump", "price_usd": 99},
+      "aem_fuel_pump": {"part_number": "50-1000", "type": "320 LPH Pump", "price_usd": 149},
+      "fuel_rail": {"vendor": "Flyin' Miata", "type": "Billet Fuel Rail", "price_usd": 199}
+    },
+    "cooling_upgrades": {
+      "koyo_radiator": {"part_number": "HH060644", "type": "Aluminum Radiator", "price_usd": 449},
+      "mishimoto_radiator": {"part_number": "MMRAD-MIA-99", "type": "Aluminum Radiator", "price_usd": 349},
+      "flyin_miata_oil_cooler": {"part_number": "FM-OILCOOL-NB", "type": "Oil Cooler Kit", "price_usd": 599}
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Bolt-Ons",
+      "power_target": "145-155hp",
+      "parts": [
+        {"part": "Racing Beat Intake", "price_usd": 299},
+        {"part": "Racing Beat Header", "price_usd": 449},
+        {"part": "Racing Beat Exhaust", "price_usd": 599}
+      ],
+      "total_cost_usd": "1300-1500"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full NA Build",
+      "power_target": "160-175hp",
+      "parts": [
+        {"part": "Stage 1 parts", "price_usd": 1350},
+        {"part": "Aftermarket cams", "price_usd": 699},
+        {"part": "Valve springs", "price_usd": 299},
+        {"part": "ECU tune", "price_usd": 400}
+      ],
+      "total_cost_usd": "2700-3000"
+    },
+    "stage_3": {
+      "name": "Stage 3 - Turbo Build",
+      "power_target": "200-250hp",
+      "parts": [
+        {"part": "Turbo kit (Flyin' Miata)", "price_usd": 4999},
+        {"part": "Upgraded fuel pump", "price_usd": 149},
+        {"part": "Larger injectors", "price_usd": 500},
+        {"part": "Intercooler piping", "price_usd": 300},
+        {"part": "ECU tune", "price_usd": 600}
+      ],
+      "total_cost_usd": "6500-8000"
+    },
+    "stage_4": {
+      "name": "Stage 4 - Built Motor Turbo",
+      "power_target": "300-350hp",
+      "parts": [
+        {"part": "Forged pistons", "price_usd": 499},
+        {"part": "Forged rods", "price_usd": 449},
+        {"part": "ARP head studs", "price_usd": 189},
+        {"part": "MLS head gasket", "price_usd": 150},
+        {"part": "Larger turbo", "price_usd": 1500},
+        {"part": "ID1000 injectors", "price_usd": 899},
+        {"part": "Standalone ECU", "price_usd": 2000},
+        {"part": "Full exhaust", "price_usd": 800},
+        {"part": "Labor/machining", "price_usd": 2500}
+      ],
+      "total_cost_usd": "10000-15000"
+    }
+  },
+
+  "maintenance_kits": {
+    "timing_belt_kit": {
+      "parts": ["Gates timing belt", "Tensioner", "Idler", "Water pump", "Seals"],
+      "price_usd": 250,
+      "interval_miles": 60000,
+      "source": "Flyin' Miata, Moss Miata"
+    },
+    "oil_change_kit": {
+      "parts": ["4L 10W-30", "K&N or OEM filter", "Drain plug gasket"],
+      "price_usd": 40,
+      "interval_miles": 5000
+    },
+    "tune_up_kit": {
+      "parts": ["Spark plugs", "Plug wires", "Air filter", "Fuel filter"],
+      "price_usd": 120,
+      "interval_miles": 30000
+    }
+  }
+}

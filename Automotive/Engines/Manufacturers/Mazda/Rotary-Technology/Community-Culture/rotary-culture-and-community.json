@@ -1,0 +1,255 @@
+{
+  "document_type": "Rotary Culture and Community",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "the_rotary_tribe": {
+    "description": "Rotary owners form one of the most dedicated and knowledgeable automotive communities worldwide",
+    "characteristics": [
+      "Deep technical knowledge about their engines",
+      "Willingness to accept quirks others find unacceptable",
+      "Strong community bonds and mutual support",
+      "Evangelical about rotary superiority",
+      "Often own multiple rotary vehicles"
+    ],
+    "unwritten_rules": [
+      "Never talk badly about someone's apex seals",
+      "Always wave to other RX-7/RX-8 drivers",
+      "Share knowledge freely with newcomers",
+      "Premix is not optional, it's essential",
+      "Rev it before you shut it off"
+    ]
+  },
+
+  "rituals_and_practices": {
+    "the_warmup": {
+      "practice": "Never shut off a cold rotary engine",
+      "minimum_time": "10 minutes in summer, 20+ in winter",
+      "reason": "Prevents flooding and ensures proper oil distribution"
+    },
+    "the_cooldown": {
+      "practice": "Idle for 30+ seconds before shutdown",
+      "reason": "Allows turbo oil drain, prevents hot spots",
+      "turbo_specific": "Even more critical on turbo rotaries"
+    },
+    "the_redline_ritual": {
+      "practice": "Rev to redline at least once per week",
+      "reason": "Clears carbon deposits from ports and apex seals",
+      "technique": "Full throttle pulls when engine is warm"
+    },
+    "premixing": {
+      "practice": "Adding 2-stroke oil to fuel",
+      "ratio": "1:100 to 1:200",
+      "products": ["Idemitsu Premix", "Motul 800", "Redline 2-Stroke Racing"],
+      "belief": "Supplements MOP for apex seal longevity"
+    },
+    "the_dipstick_check": {
+      "practice": "Check oil at every fuel stop",
+      "reason": "Rotaries consume oil by design",
+      "expectation": "1 qt per 3000 miles is normal"
+    }
+  },
+
+  "terminology": {
+    "apex_seals": "The equivalent of piston rings - critical sealing element",
+    "brap": "Onomatopoeia for rotary exhaust note",
+    "dorito": "Slang for the triangular rotor (Reuleaux triangle shape)",
+    "bridge_port": "Porting modification connecting intake ports",
+    "e_shaft": "Eccentric shaft - rotary equivalent of crankshaft",
+    "flooding": "When engine won't start due to excess fuel (common when cold)",
+    "housing": "Rotor housing (trochoid) where rotor operates",
+    "rew": "Rotary Engine Wankel - specific to twin-turbo 13B",
+    "renesis": "Rotary Engine Genesis - RX-8's side-port 13B",
+    "peripheral_port": "Ports in rotor housing (not side housing)",
+    "side_port": "Ports in side housing (Renesis design)",
+    "street_port": "Mild port enlargement for power gains",
+    "MOP": "Metering Oil Pump - injects oil to apex seals",
+    "chatter_marks": "Irregular wear patterns on housings (the problem Mazda solved)"
+  },
+
+  "common_myths_debunked": {
+    "myth_1": {
+      "myth": "Rotaries always blow apex seals",
+      "truth": "Properly maintained rotaries can last 150,000+ miles",
+      "caveat": "Neglect and abuse cause premature failure"
+    },
+    "myth_2": {
+      "myth": "Rotaries get terrible fuel economy",
+      "truth": "15-22 MPG typical - not great, but not catastrophic",
+      "context": "Power-to-weight ratio justifies consumption"
+    },
+    "myth_3": {
+      "myth": "Rotaries are unreliable",
+      "truth": "Different maintenance requirements, not unreliable",
+      "context": "Owners who maintain properly have excellent reliability"
+    },
+    "myth_4": {
+      "myth": "You can't daily drive a rotary",
+      "truth": "Many owners daily drive RX-7s and RX-8s",
+      "requirement": "Proper warmup/cooldown, regular maintenance"
+    },
+    "myth_5": {
+      "myth": "All rotaries flood easily",
+      "truth": "Renesis more prone; REW and earlier less so",
+      "prevention": "Proper warmup before shutdown"
+    }
+  },
+
+  "online_communities": {
+    "forums": [
+      {"name": "RX7Club.com", "focus": "All RX-7 generations", "members": "Largest RX-7 community"},
+      {"name": "RX8Club.com", "focus": "RX-8 specific", "members": "Dedicated RX-8 community"},
+      {"name": "RotaryCarClub.com", "focus": "All rotary vehicles", "members": "General rotary"},
+      {"name": "FD3S.net", "focus": "FD RX-7 specific", "members": "FD specialists"},
+      {"name": "TurboForums.com", "focus": "Turbocharged rotaries", "members": "Performance focus"}
+    ],
+    "social_media": [
+      {"platform": "Facebook", "groups": "Multiple large RX-7/RX-8 groups"},
+      {"platform": "Instagram", "hashtags": ["#rotary", "#rx7", "#rx8", "#13b", "#wankel", "#brap"]},
+      {"platform": "Reddit", "subreddits": ["r/RX7", "r/RX8", "r/RotaryEngines"]},
+      {"platform": "YouTube", "notable_channels": ["Rob Dahm", "Kyle Mohan Racing", "Speed Academy"]}
+    ],
+    "notable_youtube_builds": [
+      {
+        "builder": "Rob Dahm",
+        "project": "4-Rotor AWD RX-7",
+        "significance": "Most documented high-power rotary build",
+        "power": "1000+ HP"
+      },
+      {
+        "builder": "Gingium",
+        "project": "Rotary-swapped Miata",
+        "significance": "Accessible documentation of swap process"
+      },
+      {
+        "builder": "Hoonigan",
+        "project": "Various rotary features",
+        "significance": "Mainstream exposure for rotary culture"
+      }
+    ]
+  },
+
+  "iconic_tuners": {
+    "japan": [
+      {
+        "name": "RE Amemiya",
+        "location": "Chiba, Japan",
+        "specialty": "Complete RX-7 tuning, iconic aero",
+        "reputation": "Most famous rotary tuner worldwide"
+      },
+      {
+        "name": "Trust/GReddy",
+        "location": "Tokyo, Japan",
+        "specialty": "Turbo kits, complete engine packages",
+        "reputation": "Mainstream performance"
+      },
+      {
+        "name": "Mazdaspeed",
+        "location": "Hiroshima, Japan",
+        "specialty": "Factory tuning division",
+        "reputation": "OEM+ performance parts"
+      },
+      {
+        "name": "Knightsports",
+        "location": "Osaka, Japan",
+        "specialty": "Aero and performance",
+        "reputation": "Aggressive styling"
+      },
+      {
+        "name": "Feed",
+        "location": "Saitama, Japan",
+        "specialty": "Time attack, racing",
+        "reputation": "Competition focus"
+      }
+    ],
+    "usa": [
+      {
+        "name": "Racing Beat",
+        "location": "California",
+        "specialty": "Intake, exhaust, engine",
+        "reputation": "Longest-running rotary specialist (since 1971)"
+      },
+      {
+        "name": "Pettit Racing",
+        "location": "Florida",
+        "specialty": "Engine building, racing",
+        "reputation": "High-power builds"
+      },
+      {
+        "name": "Pineapple Racing",
+        "location": "Maryland",
+        "specialty": "Race engines, porting",
+        "reputation": "Competition specialists"
+      }
+    ],
+    "australia": [
+      {
+        "name": "PAC Performance",
+        "location": "Sydney",
+        "specialty": "Drag racing, extreme builds",
+        "reputation": "World's quickest rotary records"
+      }
+    ]
+  },
+
+  "events_and_gatherings": {
+    "sevenstock": {
+      "location": "Southern California, USA",
+      "frequency": "Annual",
+      "description": "Largest RX-7 gathering in the world",
+      "activities": "Car show, vendor row, track day, dyno competition",
+      "attendance": "500+ rotary vehicles"
+    },
+    "rx7_nationals": {
+      "location": "Rotating locations, USA",
+      "frequency": "Annual",
+      "description": "National RX-7 club meet"
+    },
+    "japan_rotary_events": {
+      "description": "Multiple events throughout Japan",
+      "significance": "Homeland of rotary culture"
+    },
+    "local_meets": {
+      "description": "Regional rotary meetups worldwide",
+      "finding": "Search Facebook groups, forums for local events"
+    }
+  },
+
+  "the_emotional_bond": {
+    "why_rotary_owners_are_different": [
+      "The engine demands attention - owners must understand it",
+      "Unique driving experience creates visceral connection",
+      "Being different from mainstream is part of identity",
+      "Successfully maintaining a rotary brings pride",
+      "The sound is unlike anything else on the road",
+      "Shared struggle creates community bonds"
+    ],
+    "common_sentiments": [
+      "Once you go rotary, you never go back",
+      "It's not just a car, it's a lifestyle",
+      "The extra maintenance is worth it for the experience",
+      "Non-rotary people just don't understand"
+    ]
+  },
+
+  "future_of_the_community": {
+    "challenges": [
+      "Parts availability decreasing",
+      "Fewer mechanics with rotary knowledge",
+      "Emissions regulations eliminating rotary-powered cars",
+      "Rising values pricing out newcomers"
+    ],
+    "opportunities": [
+      "8C range extender introduces rotary to new generation",
+      "3D printing enabling parts reproduction",
+      "Knowledge preservation through online documentation",
+      "Collector market keeping cars preserved"
+    ],
+    "community_response": [
+      "Extensive parts hoarding and sharing networks",
+      "Training programs for new rotary mechanics",
+      "Documentation projects preserving knowledge",
+      "Strong buy/sell communities"
+    ]
+  }
+}

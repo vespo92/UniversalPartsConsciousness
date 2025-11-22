@@ -1,0 +1,208 @@
+{
+  "engine_id": "MAZDA-13B-REW-TWIN-TURBO",
+  "service_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "special_tools": {
+    "rotary_compression_tester": {
+      "tool_id": "MAZDA-49-G030-101",
+      "description": "Rotary engine compression tester - NOT a standard piston tester",
+      "required_for": ["Compression testing"],
+      "alternatives": ["OTC 5606", "Atkins Rotary Tester"],
+      "notes": "Standard piston testers will give inaccurate readings due to rotary chamber design"
+    },
+    "apex_seal_installer": {
+      "tool_id": "MAZDA-49-S106-165",
+      "description": "Apex seal installation tool",
+      "required_for": ["Apex seal replacement"],
+      "alternatives": ["Atkins Rotary ASI-001"],
+      "notes": "Prevents apex seal damage during installation"
+    },
+    "eccentric_shaft_holder": {
+      "tool_id": "MAZDA-49-G030-102",
+      "description": "E-shaft flywheel holder",
+      "required_for": ["Flywheel removal", "Front pulley removal"],
+      "alternatives": ["Lockout bar fabricated from steel"]
+    },
+    "rotor_holding_tool": {
+      "tool_id": "MAZDA-49-H118-860",
+      "description": "Rotor holding and positioning tool",
+      "required_for": ["Engine assembly"],
+      "notes": "Keeps rotors in proper position during housing installation"
+    },
+    "tension_bolt_wrench": {
+      "tool_id": "Generic 12mm 12-point",
+      "description": "12mm 12-point socket or wrench",
+      "required_for": ["Housing tension bolts"],
+      "torque_spec": {"ft_lb": 25, "nm": 34}
+    },
+    "housing_alignment_pins": {
+      "tool_id": "MAZDA-49-0839-305",
+      "description": "Housing alignment dowel set",
+      "required_for": ["Engine assembly"],
+      "notes": "Prevents damage to internal seals during assembly"
+    },
+    "oil_seal_installer": {
+      "tool_id": "MAZDA-49-0107-600",
+      "description": "Side seal installation tool",
+      "required_for": ["Side seal replacement"],
+      "alternatives": ["Plastic or wooden dowel - carefully"]
+    },
+    "boost_leak_tester": {
+      "tool_id": "Generic",
+      "description": "Boost leak testing kit",
+      "required_for": ["Diagnosing boost leaks in turbo system"],
+      "notes": "Critical for twin-turbo system diagnosis"
+    }
+  },
+
+  "torque_specifications": {
+    "tension_bolts": {"ft_lb": 25, "nm": 34, "notes": "Star pattern from center outward"},
+    "flywheel_bolts": {"ft_lb": 65, "nm": 88},
+    "front_pulley_bolt": {"ft_lb": 120, "nm": 163},
+    "intake_manifold": {"ft_lb": 17, "nm": 23},
+    "exhaust_manifold": {"ft_lb": 38, "nm": 52},
+    "turbo_to_manifold": {"ft_lb": 38, "nm": 52},
+    "spark_plugs": {"ft_lb": 12, "nm": 16},
+    "oil_drain_plug": {"ft_lb": 29, "nm": 39},
+    "water_pump": {"ft_lb": 17, "nm": 23},
+    "stationary_gear_bolts": {"ft_lb": 12, "nm": 16}
+  },
+
+  "critical_measurements": {
+    "apex_seal_height": {"spec_mm": "8.6 minimum", "service_limit_mm": 8.4},
+    "side_seal_clearance": {"spec_mm": "0.03-0.08", "service_limit_mm": 0.12},
+    "rotor_housing_clearance": {"spec_mm": "0.06-0.09", "service_limit_mm": 0.12},
+    "eccentric_shaft_endplay": {"spec_mm": "0.04-0.10", "service_limit_mm": 0.15},
+    "apex_seal_spring_tension": {"spec_n": "2.5-3.5N per spring"},
+    "compression_psi": {"healthy": "100-130", "minimum": 85, "max_variation_percent": 10}
+  },
+
+  "diagnostic_procedures": {
+    "compression_test": {
+      "procedure": [
+        "Warm engine to operating temperature",
+        "Disable fuel and ignition systems",
+        "Remove all 4 spark plugs",
+        "Install rotary compression tester in leading plug hole",
+        "Crank engine 8-10 revolutions",
+        "Record reading for each face (3 per rotor, 6 total)",
+        "Compare readings - max 10% variation"
+      ],
+      "interpretation": {
+        "100-130_psi": "Healthy",
+        "85-100_psi": "Worn but serviceable",
+        "below_85_psi": "Rebuild required",
+        "uneven_faces": "Possible apex seal failure on specific face"
+      }
+    },
+    "boost_leak_test": {
+      "procedure": [
+        "Remove intake piping at turbo inlet",
+        "Install boost leak tester",
+        "Pressurize to 15 PSI",
+        "Listen/spray for leaks in intercooler piping, couplers, BOV, actuators",
+        "Check vacuum lines and solenoids"
+      ]
+    },
+    "sequential_turbo_diagnosis": {
+      "symptoms": {
+        "no_secondary_engagement": ["Check solenoids", "Check vacuum lines", "Check transition valve", "Check ECU"],
+        "harsh_transition": ["Worn transition valve", "Boost leak", "Solenoid issue"],
+        "surge": ["Transition timing off", "Intake leak"]
+      }
+    }
+  },
+
+  "service_procedures": {
+    "oil_change": {
+      "interval_miles": 3000,
+      "procedure": [
+        "Warm engine to operating temperature",
+        "Remove drain plug (14mm)",
+        "Drain oil completely",
+        "Remove oil filter",
+        "Install new filter (hand tight + 3/4 turn)",
+        "Install drain plug with new gasket",
+        "Fill with 4.7L of 10W-30 or 10W-40",
+        "Check level after running 30 seconds"
+      ],
+      "notes": "Rotaries consume oil by design - 1qt per 3000mi is normal"
+    },
+    "spark_plug_replacement": {
+      "interval_miles": 15000,
+      "procedure": [
+        "Remove engine cover",
+        "Disconnect ignition coil connectors",
+        "Remove coil packs",
+        "Remove spark plugs with 5/8\" socket",
+        "Gap new plugs: Leading 0.8mm, Trailing 1.1mm",
+        "Install plugs at 12 ft-lb",
+        "Reinstall coils and cover"
+      ]
+    },
+    "coolant_flush": {
+      "interval_miles": 30000,
+      "capacity_liters": 9.0,
+      "procedure": [
+        "Allow engine to cool",
+        "Remove radiator cap",
+        "Open radiator drain",
+        "Open engine block drain",
+        "Flush with distilled water",
+        "Close drains",
+        "Fill with 50/50 coolant mix",
+        "Bleed air by running engine with cap off until thermostat opens"
+      ]
+    }
+  },
+
+  "common_failure_modes": {
+    "apex_seal_failure": {
+      "symptoms": ["Low compression", "Loss of power", "Hard starting when hot", "Excessive smoking"],
+      "causes": ["Poor lubrication", "Detonation", "High mileage", "Overheating"],
+      "diagnosis": "Compression test - affected face will show low reading",
+      "repair": "Engine rebuild with new apex seals"
+    },
+    "coolant_seal_leak": {
+      "symptoms": ["Coolant loss", "White smoke at startup", "Coolant smell", "Overheating"],
+      "causes": ["O-ring deterioration", "Overheating damage", "Age"],
+      "diagnosis": "Pressure test cooling system, check for coolant in oil",
+      "repair": "Engine rebuild with new coolant seals"
+    },
+    "turbo_failure": {
+      "symptoms": ["Oil smoke", "Whining noise", "Loss of boost", "Shaft play"],
+      "causes": ["Oil starvation", "Foreign object damage", "High mileage"],
+      "diagnosis": "Check shaft play, inspect for oil in intercooler",
+      "repair": "Turbo rebuild or replacement"
+    },
+    "sequential_system_failure": {
+      "symptoms": ["No power above 4000 RPM", "Boost spike at transition", "Check engine light"],
+      "causes": ["Failed solenoids", "Vacuum line deterioration", "Transition valve wear"],
+      "diagnosis": "Scan for codes, test solenoid operation, check vacuum",
+      "repair": "Replace failed solenoids/valves, repair vacuum lines"
+    }
+  },
+
+  "rebuild_notes": {
+    "expected_cost": {
+      "basic_rebuild": "$3000-4500",
+      "streetport_rebuild": "$4500-6000",
+      "bridgeport_rebuild": "$6000-8000",
+      "full_race_build": "$10000+"
+    },
+    "rebuild_shops": {
+      "atkins_rotary": {"location": "Ohio", "specialty": "All levels of builds"},
+      "pineapple_racing": {"location": "Maryland", "specialty": "Race engines"},
+      "rotary_performance": {"location": "Florida", "specialty": "Street/track"},
+      "defined_autoworks": {"location": "Washington", "specialty": "Comprehensive builds"}
+    },
+    "break_in_procedure": [
+      "Use conventional oil for first 500 miles",
+      "Vary RPM - avoid constant speeds",
+      "Avoid full throttle for first 500 miles",
+      "Change oil at 500 miles",
+      "Full synthetic after break-in complete"
+    ]
+  }
+}

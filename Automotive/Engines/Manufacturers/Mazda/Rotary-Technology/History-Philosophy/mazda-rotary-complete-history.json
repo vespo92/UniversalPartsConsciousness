@@ -1,0 +1,240 @@
+{
+  "document_type": "Complete Rotary Engine History",
+  "manufacturer": "Mazda Motor Corporation",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "the_anomaly": {
+    "summary": "When every major automaker abandoned the Wankel rotary engine, Mazda alone persisted and succeeded",
+    "companies_that_abandoned": [
+      {"company": "NSU/Audi", "years_active": "1964-1977", "reason": "Reliability issues, merger priorities"},
+      {"company": "General Motors", "years_active": "1970-1974", "reason": "Emissions concerns, fuel crisis"},
+      {"company": "Ford", "years_active": "1972-1974", "reason": "Development costs, fuel crisis"},
+      {"company": "Mercedes-Benz", "years_active": "1969-1972", "reason": "C111 prototype only, no production"},
+      {"company": "Citroën", "years_active": "1969-1975", "reason": "Financial difficulties, emissions"},
+      {"company": "Toyota", "years_active": "1971-1976", "reason": "Emissions, fuel economy concerns"},
+      {"company": "Nissan", "years_active": "1972-1974", "reason": "Shifted focus to piston engines"},
+      {"company": "Suzuki", "years_active": "1974-1976", "reason": "RE5 motorcycle discontinued"},
+      {"company": "Rolls-Royce", "years_active": "1965-1971", "reason": "Diesel rotary for military only"},
+      {"company": "Curtiss-Wright", "years_active": "1958-1985", "reason": "Industrial/aviation only"}
+    ],
+    "mazda_perseverance": "Mazda is the only company to successfully mass-produce rotary engines for over 50 years"
+  },
+
+  "origins": {
+    "wankel_invention": {
+      "inventor": "Felix Wankel",
+      "country": "Germany",
+      "year": 1954,
+      "first_working_prototype": 1957,
+      "original_licensee": "NSU Motorenwerke"
+    },
+    "mazda_acquisition": {
+      "year": 1961,
+      "agreement": "Technical licensing agreement with NSU",
+      "cost": "Approximately $10 million equivalent",
+      "champion": "Tsuneji Matsuda (Mazda President)",
+      "lead_engineer": "Kenichi Yamamoto"
+    }
+  },
+
+  "the_47_ronin": {
+    "description": "Elite team of 47 engineers dedicated exclusively to solving rotary problems",
+    "name_origin": "Named after legendary 47 samurai who avenged their master against impossible odds",
+    "formed": 1963,
+    "leader": "Kenichi Yamamoto",
+    "primary_challenge": "Chatter marks - irregular wear patterns on rotor housings",
+    "breakthrough": "Carbon-aluminum composite apex seals on chrome-molybdenum plated housings",
+    "testing": "Over 300 material combinations tested",
+    "success_date": 1967,
+    "legacy": "Established rotary engineering expertise that competitors could never match"
+  },
+
+  "timeline": {
+    "1961": {
+      "event": "Mazda signs licensing agreement with NSU for Wankel technology",
+      "significance": "Beginning of 60+ year rotary commitment"
+    },
+    "1963": {
+      "event": "Formation of the '47 Ronin' engineering team",
+      "significance": "Dedicated resources to solve rotary challenges"
+    },
+    "1967": {
+      "event": "Cosmo Sport 110S production begins",
+      "significance": "World's first production twin-rotor vehicle",
+      "engine": "10A (982cc)",
+      "power_hp": 110,
+      "production_total": 1176
+    },
+    "1968": {
+      "event": "Familia Rotary (R100) launched",
+      "significance": "First mass-market rotary vehicle",
+      "engine": "10A",
+      "note": "Proved rotary could be affordable"
+    },
+    "1970": {
+      "event": "12A engine introduced",
+      "significance": "Larger displacement for more power",
+      "displacement_cc": 1146
+    },
+    "1971": {
+      "event": "Savanna RX-3 launched",
+      "significance": "Beginning of RX-3's dominant racing career",
+      "racing_wins": "Over 100 touring car victories in Japan"
+    },
+    "1973": {
+      "event": "13B engine introduced",
+      "significance": "The defining rotary - still in production concepts today",
+      "displacement_cc": 1308
+    },
+    "1974": {
+      "event": "OPEC oil crisis threatens rotary program",
+      "significance": "Mazda nearly abandons rotary due to fuel economy concerns",
+      "outcome": "President Matsuda commits to continue development"
+    },
+    "1978": {
+      "event": "RX-7 (SA22C/FB) launched",
+      "significance": "Establishes rotary sports car icon status",
+      "engine": "12A",
+      "weight_kg": 1050,
+      "sales": "Over 470,000 first-gen units"
+    },
+    "1983": {
+      "event": "13B-T turbocharged engine introduced",
+      "significance": "Forced induction rotary production begins"
+    },
+    "1985": {
+      "event": "RX-7 FC3S launched",
+      "significance": "Second-generation icon, turbo option",
+      "engine": "13B-T (turbo), 13B-DEI (NA)"
+    },
+    "1989": {
+      "event": "Eunos Cosmo with 20B triple-rotor",
+      "significance": "Only production 3-rotor engine ever made",
+      "displacement_cc": 1962,
+      "power_hp": 280
+    },
+    "1991": {
+      "event": "787B WINS LE MANS 24 HOURS",
+      "significance": "Only rotary victory at Le Mans - regulations changed to ban rotary afterward",
+      "engine": "R26B (4-rotor)",
+      "displacement_cc": 2622,
+      "power_hp": 700,
+      "drivers": ["Johnny Herbert", "Volker Weidler", "Bertrand Gachot"],
+      "margin": "Two laps ahead of second place"
+    },
+    "1992": {
+      "event": "RX-7 FD3S launched with 13B-REW",
+      "significance": "Sequential twin-turbo - pinnacle of rotary performance",
+      "engine": "13B-REW",
+      "power_hp": 280,
+      "weight_kg": 1260
+    },
+    "2002": {
+      "event": "RX-7 production ends",
+      "significance": "End of pure rotary sports car era (temporarily)",
+      "total_rx7_production": "Over 811,000 units across all generations"
+    },
+    "2003": {
+      "event": "RX-8 with Renesis engine launched",
+      "significance": "New rotary generation, 9000 RPM capability",
+      "engine": "13B-MSP Renesis",
+      "power_hp": 238,
+      "award": "2003 International Engine of the Year"
+    },
+    "2012": {
+      "event": "RX-8 production ends",
+      "significance": "Last pure rotary production car (to date)",
+      "total_rx8_production": "Over 192,000 units"
+    },
+    "2015": {
+      "event": "Mazda announces rotary development continues",
+      "significance": "Despite no production car, rotary R&D never stopped"
+    },
+    "2021": {
+      "event": "8C rotary range extender in MX-30 R-EV",
+      "significance": "Rotary returns in electrified application",
+      "engine": "8C single-rotor",
+      "displacement_cc": 830,
+      "purpose": "Generator for extended range EV"
+    },
+    "2023": {
+      "event": "MX-30 R-EV production begins",
+      "significance": "Rotary enters new era as EV range extender",
+      "markets": "Europe, Japan, Australia"
+    }
+  },
+
+  "production_statistics": {
+    "total_rotary_vehicles_sold": "Over 2,000,000",
+    "total_rotary_engines_produced": "Over 2,500,000",
+    "rx7_all_generations": 811634,
+    "rx8_total": 192094,
+    "cosmo_all_generations": 79tried,
+    "other_rotary_models": "R100, RX-2, RX-3, RX-4, RX-5, Luce, Roadpacer"
+  },
+
+  "why_mazda_succeeded": {
+    "reasons": [
+      {
+        "factor": "Dedicated engineering team",
+        "explanation": "The 47 Ronin gave rotary development singular focus"
+      },
+      {
+        "factor": "Material science breakthroughs",
+        "explanation": "Apex seal and housing coating innovations others couldn't match"
+      },
+      {
+        "factor": "Corporate commitment",
+        "explanation": "Leadership refused to abandon rotary despite pressure"
+      },
+      {
+        "factor": "Continuous improvement",
+        "explanation": "Each generation addressed previous weaknesses"
+      },
+      {
+        "factor": "Sports car focus",
+        "explanation": "Rotary's strengths matched sports car requirements perfectly"
+      },
+      {
+        "factor": "Brand identity",
+        "explanation": "Rotary became Mazda's differentiator in crowded market"
+      }
+    ]
+  },
+
+  "why_others_failed": {
+    "reasons": [
+      {
+        "factor": "Insufficient R&D investment",
+        "explanation": "Competitors treated rotary as side project"
+      },
+      {
+        "factor": "Corporate priorities",
+        "explanation": "Mergers, financial troubles diverted resources"
+      },
+      {
+        "factor": "Emissions regulations",
+        "explanation": "Early rotaries couldn't meet tightening standards"
+      },
+      {
+        "factor": "Fuel crisis timing",
+        "explanation": "1973 oil embargo hit during critical development phase"
+      },
+      {
+        "factor": "Material science challenges",
+        "explanation": "Apex seal durability couldn't be solved quickly"
+      },
+      {
+        "factor": "Lack of commitment",
+        "explanation": "When problems arose, easier to retreat to pistons"
+      }
+    ]
+  },
+
+  "legacy_quotes": {
+    "kenichi_yamamoto": "The rotary engine is simple in structure but complex in dynamics. We understood that mastering it would give us something no competitor could easily replicate.",
+    "takahiro_saiki": "When everyone told us the rotary was dead, we heard opportunity.",
+    "motorsport_journalist": "The 787B didn't just win Le Mans. It proved that unconventional thinking, pursued with absolute commitment, can triumph over established wisdom."
+  }
+}

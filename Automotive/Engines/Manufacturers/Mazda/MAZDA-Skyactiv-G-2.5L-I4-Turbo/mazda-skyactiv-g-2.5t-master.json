@@ -1,0 +1,83 @@
+{
+  "engine_id": "MAZDA-SKYACTIV-G-2.5L-I4-TURBO",
+  "common_names": ["Skyactiv-G 2.5 Turbo", "PY-VPTS", "Skyactiv 2.5T", "CX-9 Turbo Engine"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Skyactiv-G Turbo",
+  "production_years": "2016-present",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder Turbocharged",
+    "displacement": {"liters": 2.488, "cc": 2488},
+    "bore": {"mm": 89.0},
+    "stroke": {"mm": 100.0},
+    "compression_ratio": "10.5:1",
+    "firing_order": "1-3-4-2",
+    "block_material": "Aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves, Chain-driven, Dual S-VT",
+    "forced_induction": {
+      "type": "Single turbocharger with Dynamic Pressure Turbo",
+      "boost_psi": {"stock": 10, "max": 17}
+    },
+    "fuel_system": {
+      "type": "High-pressure direct injection",
+      "pressure_bar": 200
+    },
+    "redline_rpm": 5500,
+    "peak_power_rpm": 5000
+  },
+
+  "power_output_by_variant": {
+    "py_vpts_premium": {"hp": 250, "torque_lb_ft": 320, "notes": "93 octane premium fuel"},
+    "py_vpts_regular": {"hp": 227, "torque_lb_ft": 310, "notes": "87 octane regular fuel"},
+    "py_vpts_mazda3_turbo": {"hp": 250, "torque_lb_ft": 320, "notes": "Mazda3 Turbo 2021+"},
+    "py_vpts_cx5_signature": {"hp": 256, "torque_lb_ft": 320, "notes": "CX-5 Signature trim"}
+  },
+
+  "vehicle_applications": {
+    "cx9": {"years": "2016-2023", "notes": "All turbo CX-9 models"},
+    "cx5_turbo": {"years": "2019-present", "notes": "CX-5 Turbo and Signature trims"},
+    "mazda6_turbo": {"years": "2018-2021", "notes": "Mazda6 Turbo and Signature"},
+    "mazda3_turbo": {"years": "2021-present", "notes": "Mazda3 2.5 Turbo"},
+    "cx50_turbo": {"years": "2023-present", "notes": "CX-50 Turbo trim"},
+    "cx70_cx90": {"years": "2024-present", "notes": "New inline-6 platform vehicles"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 5.0, "viscosity": ["0W-20"], "spec": "API SN Plus, ILSAC GF-5/6"},
+    "coolant": {"liters": 8.0}
+  },
+
+  "notes": {
+    "heritage": "The Skyactiv-G 2.5T brings forced induction back to Mazda's lineup after the Mazdaspeed era, with focus on torque and refinement.",
+    "reputation": "Smooth, powerful, and refined. Emphasis on torque for comfortable cruising rather than peak power.",
+    "design_philosophy": "Dynamic Pressure Turbo provides quick response and minimal lag. Lower compression than NA Skyactiv for boost compatibility.",
+    "key_features": [
+      "Dynamic Pressure Turbo for quick spool",
+      "Dual-fuel calibration (87/93 octane)",
+      "Cooled EGR for efficiency",
+      "Integrated exhaust manifold in head",
+      "High-pressure direct injection"
+    ],
+    "common_issues": [
+      "Carbon buildup on intake valves",
+      "PCV system issues (condensation in cold climates)",
+      "Some reports of turbo actuator issues",
+      "Oil consumption monitoring recommended"
+    ],
+    "maintenance_critical": [
+      "0W-20 synthetic oil only",
+      "Oil changes every 5000-7500 miles",
+      "Premium fuel (93 octane) for full power",
+      "Allow turbo to cool before shutdown (idle 30 sec)"
+    ],
+    "strengths": [
+      "Massive low-end torque (320 lb-ft at 2000 RPM)",
+      "Smooth power delivery",
+      "Refined and quiet",
+      "Good fuel economy for output",
+      "Reliable modern turbo design"
+    ],
+    "tuning_notes": "Growing aftermarket. JB4 piggyback available. 280-300HP achievable with bolt-ons and tune."
+  }
+}

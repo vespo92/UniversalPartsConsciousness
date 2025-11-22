@@ -1,0 +1,227 @@
+{
+  "engine_id": "MAZDA-MZR-2.3L-I4-TURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2010, "make": "Mazda", "model": "Mazdaspeed 3", "engine": "L3-VDT DISI Turbo"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "MZR-23T-BLOCK",
+          "description": "Aluminum block with iron liners",
+          "oem_part_numbers": ["L3K9-10-300"],
+          "specifications": {"bore_mm": 87.5, "stroke_mm": 94.0}
+        },
+        "crankshaft": {
+          "part_id": "MZR-23T-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["L3K9-11-301"],
+          "specifications": {"stroke_mm": 94.0, "material": "Forged steel"}
+        },
+        "connecting_rods": {
+          "part_id": "MZR-23T-CONROD",
+          "description": "Connecting rods (set of 4)",
+          "oem_part_numbers": ["L3K9-11-210"],
+          "aftermarket": {"manley": "14433-4", "eagle": "CRS5472M3D"}
+        },
+        "pistons": {
+          "part_id": "MZR-23T-PISTON",
+          "description": "Oil-cooled pistons (set of 4)",
+          "oem_part_numbers": ["L3K9-11-SA0"],
+          "aftermarket": {"je": "317549", "wiseco": "K638M875"}
+        },
+        "main_bearings": {
+          "part_id": "MZR-23T-MAIN-BRG",
+          "description": "Main bearing set",
+          "oem_part_numbers": ["L3K9-11-SE0"],
+          "aftermarket": {"acl": "5M2963H"}
+        },
+        "rod_bearings": {
+          "part_id": "MZR-23T-ROD-BRG",
+          "description": "Rod bearing set",
+          "oem_part_numbers": ["L3K9-11-SH0"],
+          "aftermarket": {"acl": "4B2960H"}
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "MZR-23T-HEAD",
+          "description": "DOHC aluminum cylinder head",
+          "oem_part_numbers": ["L3K9-10-090"],
+          "notes": "Gen1 has spark plug blowout issue - check recall"
+        },
+        "camshafts": {
+          "part_id": "MZR-23T-CAMSHAFT-SET",
+          "description": "Camshaft set (intake and exhaust)",
+          "oem_part_numbers": {"intake": "L3K9-12-440", "exhaust": "L3K9-12-420"},
+          "aftermarket": {"kelford": "217-B", "bc_brian_crower": "BC0372"}
+        },
+        "vvt_actuator": {
+          "part_id": "MZR-23T-VVT",
+          "description": "Variable valve timing actuator",
+          "oem_part_numbers": ["L3K9-12-4X0"],
+          "notes": "Common failure - listen for startup rattle"
+        },
+        "valve_springs": {
+          "part_id": "MZR-23T-VALVE-SPRINGS",
+          "description": "Valve spring set",
+          "oem_part_numbers": ["L3K9-12-111"],
+          "aftermarket": {"supertech": "SPR-MZR23D"}
+        },
+        "head_gasket": {
+          "part_id": "MZR-23T-HEAD-GASKET",
+          "description": "MLS head gasket",
+          "oem_part_numbers": ["L3K9-10-271"],
+          "aftermarket": {"cometic": "C4568-030"}
+        }
+      }
+    },
+    "turbo_system": {
+      "components": {
+        "turbocharger": {
+          "part_id": "MZR-23T-TURBO",
+          "description": "Borg Warner K04 Turbocharger",
+          "oem_part_numbers": ["L3K9-13-700"],
+          "aftermarket": {"borgwarner_efr": "BW-EFR-7670", "garrett": "GTX2867R"},
+          "specifications": {"max_hp": 350, "boost_psi_max": 25}
+        },
+        "wastegate_actuator": {
+          "part_id": "MZR-23T-WGA",
+          "description": "Internal wastegate actuator",
+          "oem_part_numbers": ["L3K9-13-726"],
+          "aftermarket": {"corksport": "CS-IWG-23T"}
+        },
+        "intercooler": {
+          "part_id": "MZR-23T-IC",
+          "description": "Top-mount intercooler",
+          "oem_part_numbers": ["L3K9-13-565"],
+          "aftermarket": {"corksport": "CS-TMIC-23T", "cobb": "COBB-TMIC-MS3"}
+        },
+        "downpipe": {
+          "part_id": "MZR-23T-DP",
+          "description": "Turbo downpipe",
+          "oem_part_numbers": ["L3K9-40-500"],
+          "aftermarket": {"corksport": "CS-DP-23T", "cobb": "COBB-DP-MS3"}
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "MZR-23T-HPFP",
+          "description": "Direct injection high pressure fuel pump",
+          "oem_part_numbers": ["L3K9-13-800"],
+          "aftermarket": {"autotech": "AT-HPFP-MS3", "corksport": "CS-HPFP-23T"},
+          "notes": "Critical upgrade for 300+HP builds"
+        },
+        "fuel_injectors": {
+          "part_id": "MZR-23T-INJECTORS",
+          "description": "Direct injectors (set of 4)",
+          "oem_part_numbers": ["L3K9-13-250"],
+          "specifications": {"type": "High-pressure DI", "pressure_bar": 120}
+        },
+        "fuel_pressure_regulator": {
+          "part_id": "MZR-23T-FPR",
+          "description": "High pressure fuel regulator",
+          "oem_part_numbers": ["L3K9-13-280"]
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "MZR-23T-IM",
+          "description": "Intake manifold",
+          "oem_part_numbers": ["L3K9-13-100"]
+        },
+        "throttle_body": {
+          "part_id": "MZR-23T-TB",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": ["L3K9-13-640"]
+        },
+        "short_ram_intake": {
+          "part_id": "MZR-23T-SRI",
+          "description": "Factory air intake",
+          "oem_part_numbers": ["L3K9-13-320"],
+          "aftermarket": {"corksport": "CS-SRI-23T", "cobb": "COBB-CAI-MS3"}
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "MZR-23T-EXMAN",
+          "description": "Exhaust manifold (integrated turbo outlet)",
+          "oem_part_numbers": ["L3K9-13-450"]
+        },
+        "catalytic_converter": {
+          "part_id": "MZR-23T-CAT",
+          "description": "High-flow catalytic converter",
+          "oem_part_numbers": ["L3K9-40-305"]
+        },
+        "catback_exhaust": {
+          "part_id": "MZR-23T-CB",
+          "description": "Cat-back exhaust",
+          "oem_part_numbers": ["L3K9-40-600"],
+          "aftermarket": {"corksport": "CS-CB-23T", "cobb": "COBB-CB-MS3"}
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "MZR-23T-COILS",
+          "description": "Coil-on-plug ignition coils (set of 4)",
+          "oem_part_numbers": ["L3K9-18-100"]
+        },
+        "spark_plugs": {
+          "part_id": "MZR-23T-SPARK-PLUGS",
+          "description": "Spark plugs (set of 4)",
+          "oem_part_numbers": ["L3K9-18-110"],
+          "aftermarket": {"ngk": "LTR7IX-11", "denso": "IKH24"},
+          "quantity": 4,
+          "gap_mm": 0.7,
+          "notes": "Gap tighter when tuned/higher boost"
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "MZR-23T-WPUMP",
+          "description": "Water pump",
+          "oem_part_numbers": ["L3K9-15-010"]
+        },
+        "thermostat": {
+          "part_id": "MZR-23T-TSTAT",
+          "description": "Thermostat",
+          "oem_part_numbers": ["L3K9-15-171"]
+        },
+        "radiator": {
+          "part_id": "MZR-23T-RAD",
+          "description": "Aluminum radiator",
+          "oem_part_numbers": ["L3K9-15-200"],
+          "aftermarket": {"mishimoto": "MMRAD-MS3-07", "koyo": "VH091680"}
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "MZR-23T-OPUMP",
+          "description": "Oil pump assembly",
+          "oem_part_numbers": ["L3K9-14-100"]
+        },
+        "oil_filter": {
+          "part_id": "MZR-23T-OFILTER",
+          "description": "Oil filter",
+          "oem_part_numbers": ["L321-14-302"],
+          "aftermarket": {"k&n": "HP-1010", "wix": "57356"}
+        }
+      }
+    }
+  }
+}

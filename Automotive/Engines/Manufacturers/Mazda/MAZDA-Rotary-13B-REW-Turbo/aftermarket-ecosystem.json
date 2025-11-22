@@ -1,0 +1,203 @@
+{
+  "engine_id": "MAZDA-13B-REW-TWIN-TURBO",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "mazda_dealership": {"url": "https://www.mazdausa.com", "specialty": "Genuine Mazda parts", "notes": "Many rotary parts discontinued"},
+      "mazda_parts_webstore": {"url": "https://www.mazdapartswebstore.com", "specialty": "Genuine Mazda parts online"},
+      "atkins_rotary": {"url": "https://www.atkinsrotary.com", "specialty": "Rotary parts specialist - new, used, rebuilt"},
+      "rotary_resurrection": {"url": "https://www.rotaryresurrection.com", "specialty": "Used and rebuilt rotary parts"}
+    },
+    "performance_parts": {
+      "racing_beat": {"name": "Racing Beat", "url": "https://www.racingbeat.com", "specialty": "Premier rotary performance since 1971"},
+      "mazdatrix": {"name": "Mazdatrix", "url": "https://www.mazdatrix.com", "specialty": "Complete rotary performance parts"},
+      "greddy_trust": {"name": "GReddy/Trust", "url": "https://www.greddy.com", "specialty": "Turbo kits, exhausts, tuning"},
+      "hks": {"name": "HKS", "url": "https://www.hks-power.com", "specialty": "Turbo systems, engine components"},
+      "apexi": {"name": "A'PEXi", "url": "https://www.apexi.com", "specialty": "Intakes, exhaust, electronics"},
+      "boundary_performance": {"name": "Boundary", "url": "https://www.boundarypumps.com", "specialty": "High-flow oil pumps"},
+      "goopy_performance": {"name": "Goopy Performance", "url": "https://www.goopyperformance.com", "specialty": "Apex seals, rotating assemblies"}
+    },
+    "tuning_software": {
+      "adaptronic": {"name": "Adaptronic", "url": "https://www.adaptronic.com.au", "specialty": "Modular ECU for rotary", "cost": "$1200-2500"},
+      "haltech": {"name": "Haltech", "url": "https://www.haltech.com", "specialty": "Elite series ECU", "cost": "$2000-3500"},
+      "link_ecu": {"name": "Link ECU", "url": "https://www.linkecu.com", "specialty": "G4X series", "cost": "$1500-2500"},
+      "aem_ems": {"name": "AEM EMS", "url": "https://www.aemelectronics.com", "specialty": "Infinity series", "cost": "$2000-3000"},
+      "mazdaedit": {"name": "MazdaEdit", "url": "N/A", "specialty": "Stock ECU reflash", "cost": "$200-400", "notes": "Limited tuning capability"}
+    },
+    "engine_builders": {
+      "atkins_rotary": {"location": "Ohio, USA", "specialty": "Complete engine builds, street to race"},
+      "rotary_performance": {"location": "Florida, USA", "specialty": "High-performance builds"},
+      "pineapple_racing": {"location": "Maryland, USA", "specialty": "Race engines, porting"},
+      "race_rotary_development": {"location": "California, USA", "specialty": "Pro-level builds"},
+      "defined_autoworks": {"location": "Washington, USA", "specialty": "Street/track builds"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "single_turbo_conversions": {
+      "pineapple_racing_t4": {"part_number": "PAR-STK-T4", "type": "T4 Single Turbo Kit", "price_usd": 4500, "power_potential": "500-700hp"},
+      "greddy_td06": {"part_number": "11510058", "type": "TD06-25G Single Turbo", "price_usd": 3800, "power_potential": "450-550hp"},
+      "racing_beat_single": {"part_number": "RB-16300", "type": "Single Turbo Manifold Kit", "price_usd": 1200, "notes": "Manifold only"},
+      "efini_single_turbo": {"part_number": "EFINI-STK", "type": "Big Single Turbo Kit", "price_usd": 5500, "power_potential": "600-800hp"},
+      "garrett_gtx3582r_kit": {"vendor": "Various", "type": "GTX3582R Based Kit", "price_usd": 5000, "power_potential": "550-700hp"}
+    },
+    "intake_systems": {
+      "racing_beat_intake": {"part_number": "16137", "type": "REV Intake", "price_usd": 299, "power_gain": "8-12hp"},
+      "apexi_power_intake": {"part_number": "508-Z001", "type": "Power Intake Filter", "price_usd": 149},
+      "hks_racing_suction": {"part_number": "70020-AZ006", "type": "Racing Suction Kit", "price_usd": 399}
+    },
+    "intercoolers": {
+      "v_mount_kit": {"part_number": "TRUST-VMOUNT", "type": "V-Mount Intercooler Kit", "price_usd": 1899, "notes": "Replaces radiator with split design"},
+      "hks_fmic": {"part_number": "13001-AZ006", "type": "Front Mount Intercooler", "price_usd": 1499},
+      "arc_fmic": {"part_number": "ARC-FMIC-FD", "type": "Front Mount Intercooler", "price_usd": 1299},
+      "cx_racing_fmic": {"part_number": "KIT-IC-FD-FM", "type": "Budget FMIC", "price_usd": 499}
+    },
+    "exhaust_systems": {
+      "racing_beat_cat_back": {"part_number": "16412", "type": "Power Pulse Dual Exhaust", "price_usd": 1199},
+      "hks_hi_power": {"part_number": "32003-BZ002", "type": "Hi-Power Cat-Back", "price_usd": 899},
+      "greddy_racing_ti": {"part_number": "10157951", "type": "Titanium Cat-Back", "price_usd": 1899},
+      "apexi_n1": {"part_number": "162-ZZ01", "type": "N1 Evolution", "price_usd": 799},
+      "fujitsubo_legalis": {"part_number": "760-45053", "type": "Legalis R", "price_usd": 1299}
+    },
+    "downpipes": {
+      "racing_beat_dp": {"part_number": "16130", "type": "Downpipe", "price_usd": 599},
+      "hks_stainless_dp": {"part_number": "33005-AZ001", "type": "Stainless Downpipe", "price_usd": 499}
+    },
+    "fuel_upgrades": {
+      "id2000_injectors": {"part_number": "2000.60.14.14.6", "type": "2000cc Injectors (6)", "price_usd": 1800, "notes": "For 500+hp builds"},
+      "id1700_injectors": {"part_number": "1700.60.14.14.6", "type": "1700cc Injectors (6)", "price_usd": 1500},
+      "rc_1200_injectors": {"part_number": "RC-1200-6", "type": "1200cc Injectors (6)", "price_usd": 900},
+      "walbro_485_pump": {"part_number": "GSS485", "type": "485 LPH Fuel Pump", "price_usd": 199},
+      "aem_340lph": {"part_number": "50-1000", "type": "340 LPH Fuel Pump", "price_usd": 159},
+      "aeromotive_a1000": {"part_number": "11101", "type": "A1000 External Pump", "price_usd": 549}
+    },
+    "apex_seals_and_internals": {
+      "oem_apex_seals": {"part_number": "N3A1-10-A07", "type": "OEM 2mm Apex Seals (6)", "price_usd": 350},
+      "goopy_2mm_street": {"part_number": "GP-APEX-2MM", "type": "Street Apex Seals (6)", "price_usd": 400},
+      "goopy_3mm_race": {"part_number": "GP-APEX-3MM", "type": "Race Apex Seals (6)", "price_usd": 500, "notes": "Requires housing modification"},
+      "atkins_complete_seal_kit": {"part_number": "ATK-SEAL-KIT", "type": "Complete Seal Kit (all seals)", "price_usd": 750},
+      "pineapple_ceramic_apex": {"part_number": "PAR-CERAMIC", "type": "Ceramic Apex Seals", "price_usd": 1200, "notes": "Race only"}
+    },
+    "porting": {
+      "street_port": {"price_usd": 800, "power_gain": "15-25hp", "notes": "Opens up intake/exhaust ports"},
+      "bridge_port": {"price_usd": 1200, "power_gain": "30-50hp", "notes": "Increased flow, rougher idle"},
+      "peripheral_port": {"price_usd": 2000, "power_gain": "50-80hp", "notes": "Race only, requires carbs/ITBs"}
+    },
+    "cooling_upgrades": {
+      "koyo_aluminum_rad": {"part_number": "VH060644", "type": "Aluminum Radiator", "price_usd": 599},
+      "csf_race_rad": {"part_number": "CSF-RX7-RAD", "type": "Triple-Pass Radiator", "price_usd": 799},
+      "setrab_oil_cooler": {"part_number": "50-913-7612", "type": "25-Row Oil Cooler", "price_usd": 499}
+    },
+    "ignition_upgrades": {
+      "msd_ignition": {"part_number": "6530", "type": "MSD 6AL-2 Ignition", "price_usd": 399},
+      "ngk_racing_plugs": {"part_number": "BUR9EQP", "type": "Racing Spark Plugs (4)", "price_usd": 80},
+      "splitfire_coils": {"part_number": "SF-DIS-FD", "type": "High-Output Coil Pack", "price_usd": 299}
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Basic Bolt-Ons",
+      "power_target": "280-320hp",
+      "parts": [
+        {"part": "Racing Beat Intake", "price_usd": 299},
+        {"part": "Racing Beat Downpipe", "price_usd": 599},
+        {"part": "HKS Cat-Back Exhaust", "price_usd": 899},
+        {"part": "Boost Controller", "price_usd": 199},
+        {"part": "Pre-cat Delete", "price_usd": 50}
+      ],
+      "total_cost_usd": "2000-2500",
+      "notes": "Keeps sequential turbos, increased boost"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Single Turbo Conversion",
+      "power_target": "400-500hp",
+      "parts": [
+        {"part": "Single Turbo Kit (T04E/T04R based)", "price_usd": 3500},
+        {"part": "Front Mount Intercooler", "price_usd": 1200},
+        {"part": "1200cc Injectors", "price_usd": 900},
+        {"part": "Walbro 485 Fuel Pump", "price_usd": 199},
+        {"part": "Standalone ECU (Adaptronic)", "price_usd": 1500},
+        {"part": "3\" Exhaust", "price_usd": 800}
+      ],
+      "total_cost_usd": "8000-10000",
+      "notes": "Complete single turbo swap with supporting mods"
+    },
+    "stage_3": {
+      "name": "Stage 3 - High Power Street",
+      "power_target": "500-600hp",
+      "parts": [
+        {"part": "Large Single Turbo (GT3582R/GTX3576R)", "price_usd": 2500},
+        {"part": "Race Manifold", "price_usd": 1500},
+        {"part": "V-Mount Cooling", "price_usd": 2000},
+        {"part": "ID1700 Injectors", "price_usd": 1500},
+        {"part": "Aeromotive Fuel System", "price_usd": 1000},
+        {"part": "Haltech ECU", "price_usd": 2500},
+        {"part": "Street Port", "price_usd": 800},
+        {"part": "Upgraded Oil System", "price_usd": 600}
+      ],
+      "total_cost_usd": "15000-20000",
+      "notes": "Serious street car with reliable high power"
+    },
+    "stage_4": {
+      "name": "Stage 4 - Race Build",
+      "power_target": "700-1000+hp",
+      "parts": [
+        {"part": "Custom Big Turbo (GT42/45)", "price_usd": 4000},
+        {"part": "Bridge/Peripheral Port", "price_usd": 2000},
+        {"part": "Built Rotating Assembly", "price_usd": 4000},
+        {"part": "3mm Apex Seals", "price_usd": 500},
+        {"part": "ID2000 Injectors", "price_usd": 1800},
+        {"part": "E85 Fuel System", "price_usd": 2000},
+        {"part": "Link/Haltech Pro ECU", "price_usd": 3500},
+        {"part": "Competition Exhaust", "price_usd": 1500},
+        {"part": "Complete Cooling Package", "price_usd": 3000}
+      ],
+      "total_cost_usd": "30000-50000",
+      "notes": "Full race build - requires engine rebuild specialists"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["5L 10W-30 or 10W-40 Synthetic", "OEM or WIX 51394 Oil Filter", "Drain Plug Gasket"],
+      "price_usd": 60,
+      "interval_miles": 3000,
+      "notes": "Rotaries need frequent oil changes due to oil injection"
+    },
+    "spark_plug_kit": {
+      "parts": ["4x NGK BUR9EQP (leading), 4x NGK BUR7EQP (trailing)"],
+      "price_usd": 80,
+      "interval_miles": 15000
+    },
+    "ignition_coil_kit": {
+      "parts": ["4x Ignition Coils (2 leading, 2 trailing)"],
+      "price_usd": 300
+    },
+    "30k_service": {
+      "parts": ["Oil Change", "Spark Plugs", "Air Filter", "Fuel Filter", "Inspect Apex Seals", "Check Compression"],
+      "price_usd": 500,
+      "interval_miles": 30000
+    }
+  },
+
+  "rotary_specific_maintenance": {
+    "apex_seal_life": {
+      "expected_miles": "75000-150000",
+      "factors": ["Oil quality", "Rev frequency", "Boost levels", "Premix usage"],
+      "notes": "Let engine warm up before hard driving, always let idle before shutoff"
+    },
+    "compression_test": {
+      "healthy_psi": "100-130 psi per face",
+      "rebuild_threshold": "Below 85 psi or >10% variation between faces",
+      "test_notes": "Use rotary-specific compression tester - NOT standard piston tester"
+    },
+    "premix_recommendation": {
+      "ratio": "1:100 to 1:150",
+      "oils": ["Idemitsu Premix", "Motul 800", "Redline Two-Stroke"],
+      "notes": "Supplements MOP system for increased apex seal life"
+    }
+  }
+}

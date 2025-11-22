@@ -1,0 +1,228 @@
+{
+  "engine_id": "MAZDA-12A-ROTARY",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 1983, "make": "Mazda", "model": "RX-7 GSL-SE", "engine": "12A EFI"},
+
+  "systems": {
+    "rotating_assembly": {
+      "components": {
+        "front_rotor": {
+          "part_id": "12A-ROTOR-FRONT",
+          "description": "Front rotor assembly",
+          "oem_part_numbers": ["8871-10-S20"],
+          "specifications": {"width_mm": 70, "material": "Cast iron"},
+          "notes": "70mm width differentiates from 80mm 13B rotors"
+        },
+        "rear_rotor": {
+          "part_id": "12A-ROTOR-REAR",
+          "description": "Rear rotor assembly",
+          "oem_part_numbers": ["8871-10-S30"]
+        },
+        "eccentric_shaft": {
+          "part_id": "12A-ESHAFT",
+          "description": "Eccentric shaft",
+          "oem_part_numbers": ["8871-11-301"],
+          "specifications": {"eccentricity_mm": 15}
+        },
+        "apex_seals": {
+          "part_id": "12A-APEX-SEAL-SET",
+          "description": "3-piece apex seal set (6 per engine)",
+          "oem_part_numbers": ["8871-10-A07"],
+          "aftermarket": {"atkins_rotary": "ATK-12A-APEX", "racing_beat": "RB-12A-APEX"},
+          "specifications": {"width_mm": 2.0}
+        },
+        "side_seals": {
+          "part_id": "12A-SIDE-SEAL-SET",
+          "description": "Side seals (set of 12)",
+          "oem_part_numbers": ["8871-10-A40"]
+        },
+        "corner_seals": {
+          "part_id": "12A-CORNER-SEAL-SET",
+          "description": "Corner seals (set of 6)",
+          "oem_part_numbers": ["8871-10-A50"]
+        },
+        "rotor_bearings": {
+          "part_id": "12A-ROTOR-BRG",
+          "description": "Rotor bearings",
+          "oem_part_numbers": ["8871-11-C20"]
+        }
+      }
+    },
+    "housings": {
+      "components": {
+        "front_side_housing": {
+          "part_id": "12A-FSH",
+          "description": "Front side housing",
+          "oem_part_numbers": ["8871-10-D00"]
+        },
+        "front_rotor_housing": {
+          "part_id": "12A-FRH",
+          "description": "Front rotor housing (trochoid)",
+          "oem_part_numbers": ["8871-10-C10"]
+        },
+        "intermediate_housing": {
+          "part_id": "12A-INTER",
+          "description": "Intermediate housing",
+          "oem_part_numbers": ["8871-10-C20"]
+        },
+        "rear_rotor_housing": {
+          "part_id": "12A-RRH",
+          "description": "Rear rotor housing",
+          "oem_part_numbers": ["8871-10-C30"]
+        },
+        "rear_side_housing": {
+          "part_id": "12A-RSH",
+          "description": "Rear side housing",
+          "oem_part_numbers": ["8871-10-D10"]
+        },
+        "tension_bolts": {
+          "part_id": "12A-TENSION-BOLTS",
+          "description": "Tension bolt set (19 bolts)",
+          "oem_part_numbers": ["8871-10-127"]
+        }
+      }
+    },
+    "fuel_system_carburetor": {
+      "components": {
+        "carburetor_nikki": {
+          "part_id": "12A-CARB-NIKKI",
+          "description": "Nikki 4-barrel carburetor",
+          "oem_part_numbers": ["8871-13-600"],
+          "notes": "Factory equipment on most carb models"
+        },
+        "weber_dcoe_kit": {
+          "part_id": "12A-WEBER-KIT",
+          "description": "Weber 48 DCOE sidedraft kit",
+          "aftermarket": {"racing_beat": "RB-16430"},
+          "notes": "Popular racing conversion"
+        },
+        "fuel_pump_mechanical": {
+          "part_id": "12A-FPUMP-MECH",
+          "description": "Mechanical fuel pump",
+          "oem_part_numbers": ["8871-13-350"]
+        }
+      }
+    },
+    "fuel_system_efi": {
+      "components": {
+        "throttle_body": {
+          "part_id": "12A-TB-EFI",
+          "description": "EFI throttle body (GSL-SE)",
+          "oem_part_numbers": ["FA55-13-640"]
+        },
+        "fuel_injectors": {
+          "part_id": "12A-INJ-EFI",
+          "description": "Fuel injectors (set of 2)",
+          "oem_part_numbers": ["FA55-13-250"]
+        },
+        "fuel_pump_electric": {
+          "part_id": "12A-FPUMP-ELEC",
+          "description": "Electric fuel pump",
+          "oem_part_numbers": ["FA55-13-350"]
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "distributor": {
+          "part_id": "12A-DIST",
+          "description": "Distributor assembly",
+          "oem_part_numbers": ["8871-18-200"]
+        },
+        "ignition_coil": {
+          "part_id": "12A-COIL",
+          "description": "Ignition coil",
+          "oem_part_numbers": ["8871-18-100"]
+        },
+        "spark_plugs_leading": {
+          "part_id": "12A-PLUG-L",
+          "description": "Leading spark plugs",
+          "oem_part_numbers": ["8871-18-110"],
+          "aftermarket": {"ngk": "BR8EQ", "champion": "RC12YC"},
+          "quantity": 2
+        },
+        "spark_plugs_trailing": {
+          "part_id": "12A-PLUG-T",
+          "description": "Trailing spark plugs",
+          "oem_part_numbers": ["8871-18-110A"],
+          "aftermarket": {"ngk": "BR7EQ"},
+          "quantity": 2
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "12A-WPUMP",
+          "description": "Water pump",
+          "oem_part_numbers": ["8871-15-100"]
+        },
+        "thermostat": {
+          "part_id": "12A-TSTAT",
+          "description": "Thermostat",
+          "oem_part_numbers": ["8871-15-171"]
+        },
+        "radiator": {
+          "part_id": "12A-RAD",
+          "description": "Radiator",
+          "oem_part_numbers": ["FA55-15-200"]
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "12A-OPUMP",
+          "description": "Oil pump",
+          "oem_part_numbers": ["8871-14-100"]
+        },
+        "metering_oil_pump": {
+          "part_id": "12A-MOP",
+          "description": "Metering oil pump",
+          "oem_part_numbers": ["8871-14-600"]
+        },
+        "oil_filter": {
+          "part_id": "12A-OFILT",
+          "description": "Oil filter",
+          "aftermarket": {"wix": "51394", "k&n": "HP-1010"}
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold_carb": {
+          "part_id": "12A-IM-CARB",
+          "description": "Intake manifold (carburetor)",
+          "oem_part_numbers": ["8871-13-100"]
+        },
+        "intake_manifold_efi": {
+          "part_id": "12A-IM-EFI",
+          "description": "Intake manifold (EFI)",
+          "oem_part_numbers": ["FA55-13-100"]
+        },
+        "air_cleaner": {
+          "part_id": "12A-AIRCLEANER",
+          "description": "Air cleaner assembly",
+          "oem_part_numbers": ["FA55-13-300"]
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "12A-EXMAN",
+          "description": "Exhaust manifold (header)",
+          "oem_part_numbers": ["8871-13-450"],
+          "aftermarket": {"racing_beat": "RB-16110"}
+        },
+        "thermal_reactor": {
+          "part_id": "12A-REACTOR",
+          "description": "Thermal reactor (emissions)",
+          "oem_part_numbers": ["FA55-13-500"],
+          "notes": "Often removed for performance - replaced with header"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "engine_id": "MAZDA-SKYACTIV-X-2.0L-I4",
+  "common_names": ["Skyactiv-X", "e-Skyactiv X", "SPCCI Engine", "Spark-Controlled Compression Ignition"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Skyactiv-X",
+  "production_years": "2019-present",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder with SPCCI",
+    "displacement": {"liters": 1.998, "cc": 1998},
+    "bore": {"mm": 83.5},
+    "stroke": {"mm": 91.2},
+    "compression_ratio": "16.3:1 (highest for production gasoline)",
+    "firing_order": "1-3-4-2",
+    "block_material": "Aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves, Chain-driven, Dual VVT",
+    "combustion_system": {
+      "type": "Spark Controlled Compression Ignition (SPCCI)",
+      "description": "Lean-burn compression ignition with spark plug control",
+      "air_fuel_ratio": "Up to 36.8:1 (ultra-lean)"
+    },
+    "forced_induction": {
+      "type": "Supercharger (Roots-type)",
+      "purpose": "Enables compression ignition at all loads",
+      "boost_psi": 0.5
+    },
+    "mild_hybrid": {
+      "system": "24V M Hybrid",
+      "motor_output_kw": 4.8,
+      "function": "ISG (Integrated Starter Generator)"
+    },
+    "redline_rpm": 6500,
+    "peak_power_rpm": 6000
+  },
+
+  "power_output_by_variant": {
+    "skyactiv_x_europe": {"hp": 178, "torque_lb_ft": 165, "notes": "European market"},
+    "skyactiv_x_japan": {"hp": 180, "torque_lb_ft": 165, "notes": "JDM specification"},
+    "e_skyactiv_x_2021": {"hp": 186, "torque_lb_ft": 177, "notes": "2021+ enhanced version"},
+    "skyactiv_x_mild_hybrid": {"hp": 186, "torque_lb_ft": 177, "notes": "With 24V hybrid system"}
+  },
+
+  "vehicle_applications": {
+    "mazda3_bp_skyactiv_x": {"years": "2019-present", "notes": "Mazda3 with Skyactiv-X (Europe/Japan)"},
+    "cx30_skyactiv_x": {"years": "2020-present", "notes": "CX-30 with Skyactiv-X"},
+    "mx30_skyactiv_x": {"years": "2022-present", "notes": "MX-30 e-Skyactiv X PHEV"},
+    "note": "Not available in North America as of 2024"
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 4.5, "viscosity": ["0W-20"], "spec": "API SP, Mazda Original Oil 0W-20 GF-6A"},
+    "coolant": {"liters": 6.5}
+  },
+
+  "notes": {
+    "heritage": "Skyactiv-X is Mazda's groundbreaking compression-ignition gasoline engine - the first of its kind in production.",
+    "reputation": "Revolutionary technology that bridges gasoline and diesel efficiency. Complex but impressive engineering achievement.",
+    "design_philosophy": "SPCCI (Spark Controlled Compression Ignition) enables lean-burn compression ignition for diesel-like efficiency with gasoline fuel.",
+    "key_features": [
+      "World's first production SPCCI engine",
+      "16.3:1 compression ratio (highest production gasoline)",
+      "Roots-type supercharger for consistent combustion",
+      "24V mild hybrid system",
+      "Ultra-lean combustion (36.8:1 AFR possible)",
+      "Diesel-like efficiency with gasoline convenience"
+    ],
+    "how_spcci_works": {
+      "step_1": "Ultra-lean air/fuel mixture compressed to near-ignition point",
+      "step_2": "Spark plug creates small ignition kernel",
+      "step_3": "Expanding flame ball compresses remaining mixture",
+      "step_4": "Compression ignition occurs throughout chamber",
+      "result": "Higher thermal efficiency than conventional spark ignition"
+    },
+    "common_issues": [
+      "Complex system requires dealer service",
+      "Higher NOx than conventional engines",
+      "Requires premium fuel in most markets",
+      "Cold-start behavior differs from conventional engines"
+    ],
+    "maintenance_critical": [
+      "Dealer service recommended",
+      "Use only specified 0W-20 oil",
+      "Premium fuel required",
+      "Follow Mazda maintenance schedule precisely"
+    ],
+    "strengths": [
+      "Diesel-like fuel economy (30-40% improvement)",
+      "Excellent low-load efficiency",
+      "Unique driving character",
+      "Meets strict emissions without aftertreatment"
+    ],
+    "market_availability": {
+      "available": ["Europe", "Japan", "Australia", "UK"],
+      "not_available": ["USA", "Canada"],
+      "reason": "Emissions certification complexity and market focus"
+    },
+    "tuning_notes": "Not recommended. SPCCI system is extremely sensitive to modifications. No aftermarket support."
+  }
+}

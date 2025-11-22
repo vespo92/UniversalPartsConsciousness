@@ -1,0 +1,76 @@
+{
+  "engine_id": "MAZDA-B6-1.6L-I4",
+  "common_names": ["B6", "B6-ZE", "B6D", "B6-DETI", "Miata 1.6", "MX-5 1.6"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda B-Series",
+  "production_years": "1985-1998",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {"liters": 1.597, "cc": 1597},
+    "bore": {"mm": 78.0},
+    "stroke": {"mm": 83.6},
+    "compression_ratio": "9.1:1 to 9.4:1",
+    "firing_order": "1-3-4-2",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves (B6-ZE), SOHC 8/12 valves (B6D)",
+    "fuel_system": {
+      "type": "Multi-point fuel injection"
+    },
+    "redline_rpm": 7200,
+    "peak_power_rpm": 6500
+  },
+
+  "power_output_by_variant": {
+    "b6_sohc_8v": {"hp": 82, "torque_lb_ft": 92, "notes": "Base economy variant"},
+    "b6_dohc_1989": {"hp": 116, "torque_lb_ft": 100, "notes": "1989-1993 NA Miata"},
+    "b6_ze_1994": {"hp": 128, "torque_lb_ft": 105, "notes": "1994+ NA Miata, revised ports"},
+    "b6_deti_turbo": {"hp": 150, "torque_lb_ft": 145, "notes": "JDM turbocharged Familia GTX"},
+    "b6d_323_1986": {"hp": 88, "torque_lb_ft": 95, "notes": "323/Familia applications"}
+  },
+
+  "vehicle_applications": {
+    "miata_na_1989_1993": {"years": "1989-1993", "notes": "Original MX-5 Miata (1.6L)"},
+    "miata_na_1994_1997": {"years": "1994-1997", "notes": "1.6L available in some markets"},
+    "mazda_323_familia": {"years": "1985-1998", "notes": "Familia/323 GTX, GT"},
+    "mazda_323f": {"years": "1989-1994", "notes": "323 hatchback"},
+    "ford_laser": {"years": "1985-1994", "notes": "Mazda-based Ford"},
+    "ford_escort_gt_1991": {"years": "1991-1996", "notes": "US Ford with Mazda B6"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 3.5, "viscosity": ["5W-30", "10W-30", "10W-40"], "spec": "API SG or higher"},
+    "coolant": {"liters": 6.0}
+  },
+
+  "notes": {
+    "heritage": "The B6 powered the original Mazda MX-5 Miata and defined the lightweight sports car formula. Preceded the larger BP engine.",
+    "reputation": "Loved for its high-revving nature and responsiveness. Light and compact - perfect match for the Miata chassis.",
+    "design_philosophy": "High-revving, naturally aspirated design prioritizing driver engagement over outright power.",
+    "key_features": [
+      "Lightweight design",
+      "High-revving capability (7200 RPM)",
+      "Strong DOHC head design",
+      "Good aftermarket support"
+    ],
+    "common_issues": [
+      "Short-nose crank (1990-1991 only) - can shear woodruff key",
+      "CAS (Crank Angle Sensor) O-ring leak",
+      "Timing belt tensioner spring wear",
+      "Valve cover gasket leaks"
+    ],
+    "short_nose_crank_warning": {
+      "affected_years": "1990-1991",
+      "problem": "Crank pulley can spin on crank, shearing key and causing valve timing issues",
+      "solution": "Loctite and torque properly, or swap to later 1992+ long-nose crank"
+    },
+    "strengths": [
+      "Extremely rev-happy",
+      "Reliable when maintained",
+      "Lightweight",
+      "Parts still available"
+    ],
+    "tuning_notes": "Similar tuning path to BP. Turbo conversions popular with BP turbo manifolds. 200HP achievable with turbo."
+  }
+}

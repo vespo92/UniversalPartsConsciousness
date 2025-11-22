@@ -1,0 +1,104 @@
+{
+  "engine_id": "MAZDA-SKYACTIV-G-2.0L-I4",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": "ND MX-5 Miata",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "mazda_dealership": {"url": "https://www.mazdausa.com", "specialty": "Genuine Mazda parts"},
+      "moss_miata": {"url": "https://www.mossmiata.com", "specialty": "Miata specialist"}
+    },
+    "performance_parts": {
+      "flyin_miata": {"name": "Flyin' Miata", "url": "https://www.flyinmiata.com", "specialty": "ND Miata turbo and performance"},
+      "good_win_racing": {"name": "Good-Win Racing", "url": "https://www.good-win-racing.com", "specialty": "ND performance parts"},
+      "racing_beat": {"name": "Racing Beat", "url": "https://www.racingbeat.com", "specialty": "Exhaust and intake"},
+      "carbahn": {"name": "Carbahn Autoworks", "url": "https://www.carbahn.us", "specialty": "ECU tuning"},
+      "kraftwerks": {"name": "Kraftwerks", "url": "https://www.kraftwerks.com", "specialty": "Supercharger kits"}
+    },
+    "tuning_software": {
+      "orangevirus": {"name": "OrangeVirus", "url": "https://www.orangevirus.com", "specialty": "ECU tuning", "cost": "$400-600"},
+      "versatuner": {"name": "VersaTuner", "url": "https://www.versatuner.com", "specialty": "DIY tuning", "cost": "$150-300"},
+      "derwin_performance": {"name": "Derwin Performance", "url": "https://www.derwinperformance.com", "specialty": "Remote tunes", "cost": "$400-600"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "k&n_typhoon": {"part_number": "69-6033TS", "type": "Cold Air Intake", "price_usd": 349, "power_gain": "3-5hp"},
+      "racing_beat_intake": {"part_number": "RB-54100", "type": "Cold Air Intake", "price_usd": 329},
+      "gwr_roadstersport_intake": {"part_number": "GWR-ND-INTAKE", "type": "Short Ram", "price_usd": 279}
+    },
+    "exhaust_headers": {
+      "racing_beat_header": {"part_number": "RB-54108", "type": "4-2-1 Header", "price_usd": 599, "power_gain": "5-8hp"},
+      "gwr_roadstersport_header": {"part_number": "GWR-ND-HDR", "type": "Header", "price_usd": 549},
+      "flyin_miata_header": {"part_number": "FM-ND-HDR", "type": "Header", "price_usd": 599}
+    },
+    "exhaust_systems": {
+      "racing_beat_exhaust": {"part_number": "RB-54115", "type": "Cat-Back", "price_usd": 749},
+      "gwr_roadstersport3": {"part_number": "GWR-RS3-ND", "type": "Cat-Back", "price_usd": 599},
+      "cobalt_exhaust": {"part_number": "COBALT-ND", "type": "Single Exit", "price_usd": 499}
+    },
+    "forced_induction": {
+      "flyin_miata_turbo": {"part_number": "FM-ND-TURBO", "type": "Complete Turbo Kit", "price_usd": 5495, "power_target": "220-250whp"},
+      "kraftwerks_supercharger": {"part_number": "150-09-1000", "type": "Supercharger Kit", "price_usd": 5295, "power_target": "200-220whp"},
+      "gwr_turbo_kit": {"part_number": "GWR-ND-TURBO", "type": "Turbo Kit", "price_usd": 5200, "power_target": "220-250whp"}
+    },
+    "ecu_tuning": {
+      "orangevirus_stage1": {"type": "ECU Flash", "price_usd": 400, "power_gain": "8-12hp", "notes": "Requires tune for any bolt-ons"},
+      "derwin_stage1": {"type": "ECU Flash", "price_usd": 450, "power_gain": "8-12hp"},
+      "versatuner_license": {"type": "DIY Tuning", "price_usd": 300, "notes": "Requires laptop and OBD cable"}
+    },
+    "cooling_upgrades": {
+      "flyin_miata_radiator": {"part_number": "FM-ND-RAD", "type": "Aluminum Radiator", "price_usd": 549},
+      "csf_radiator": {"part_number": "CSF-ND-RAD", "type": "Racing Radiator", "price_usd": 599},
+      "flyin_miata_oil_cooler": {"part_number": "FM-ND-OC", "type": "Oil Cooler Kit", "price_usd": 699}
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - NA Bolt-Ons",
+      "power_target": "175-185hp",
+      "parts": [
+        {"part": "Cold Air Intake", "price_usd": 329},
+        {"part": "4-2-1 Header", "price_usd": 599},
+        {"part": "Cat-Back Exhaust", "price_usd": 599},
+        {"part": "ECU Tune", "price_usd": 400}
+      ],
+      "total_cost_usd": "1900-2100",
+      "notes": "Best bang-for-buck NA build"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Turbo Build",
+      "power_target": "220-250whp",
+      "parts": [
+        {"part": "Flyin' Miata Turbo Kit", "price_usd": 5495},
+        {"part": "Upgraded Clutch", "price_usd": 600},
+        {"part": "Oil Cooler", "price_usd": 699},
+        {"part": "Pro Tune", "price_usd": 500}
+      ],
+      "total_cost_usd": "7500-8500",
+      "notes": "Stock internals can handle 250whp"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["4.5L 0W-20 Full Synthetic", "OEM or K&N Filter"],
+      "price_usd": 50,
+      "interval_miles": 7500
+    },
+    "spark_plug_kit": {
+      "parts": ["4x NGK DILKAR7G11HS"],
+      "price_usd": 60,
+      "interval_miles": 60000
+    }
+  },
+
+  "high_compression_considerations": {
+    "fuel_requirements": "91+ octane recommended for peak performance",
+    "tuning_notes": "High compression limits boost potential. 8-10 PSI max recommended on stock internals.",
+    "carbon_buildup": "Direct injection can cause intake valve carbon buildup over time. Consider walnut blasting at 60k+ miles."
+  }
+}
