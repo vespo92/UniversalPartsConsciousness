@@ -1,0 +1,59 @@
+{
+  "engine_id": "CADILLAC-500-8.2L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Limited but dedicated aftermarket for Cadillac 472/500",
+    "challenge": "Smaller community than other GM V8s",
+    "strength": "Growing collector interest"
+  },
+
+  "specialists": {
+    "kanter_auto": {
+      "specialty": "Cadillac restoration parts"
+    },
+    "cadillac_parts_online": {
+      "specialty": "NOS and reproduction parts"
+    },
+    "mondello_performance": {
+      "specialty": "Limited Cadillac work (primarily Olds)"
+    }
+  },
+
+  "parts_availability": {
+    "rebuild_parts": {
+      "pistons": "Available from Keith Black, Sealed Power",
+      "rings": "Available",
+      "bearings": "Available",
+      "gaskets": "Fel-Pro gasket sets"
+    },
+    "performance_parts": {
+      "very_limited": true,
+      "camshafts": "Some aftermarket grinds available",
+      "intake": "Offy dual-quad (rare)",
+      "headers": "Custom fabrication usually required"
+    }
+  },
+
+  "popular_applications": {
+    "restoration": "Primary use for these engines",
+    "hot_rod": "Occasionally used in large cars and boats",
+    "marine": "Good torque characteristics for boats"
+  },
+
+  "community": {
+    "forums": {
+      "cadillac_forums": "CadillacForums.com",
+      "eldorado_forum": "Cadillac Eldorado specific"
+    },
+    "clubs": {
+      "cla": "Cadillac-LaSalle Club"
+    }
+  },
+
+  "value_notes": {
+    "complete_engine": "$2000-5000 depending on condition",
+    "rebuilt_engine": "$8000-15000",
+    "notes": "Growing collector interest increasing values"
+  }
+}

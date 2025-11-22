@@ -1,0 +1,152 @@
+{
+  "engine_id": "BUICK-TURBO-V6-3.8L-LC2",
+  "common_names": ["Buick Turbo V6", "LC2", "3.8L Turbo", "Grand National Engine", "GNX Engine"],
+  "manufacturer": "General Motors - Buick Division",
+  "engine_family": "Buick 3800 V6",
+  "production_years": "1978-1987 (turbo variants)",
+
+  "historical_significance": {
+    "summary": "The turbocharged V6 that beat V8s and revived muscle car performance",
+    "achievements": [
+      "1987 GNX ran 0-60 in 4.7 seconds - faster than any production car of its era",
+      "Proved turbocharged V6 could outperform V8s",
+      "Revived performance market in emissions era",
+      "276hp factory, 300hp+ in GNX - exceptional for 1987",
+      "Quarter mile in low 13s stock, high 10s modified"
+    ],
+    "cultural_impact": "Created the modern turbo muscle car genre"
+  },
+
+  "base_specifications": {
+    "configuration": "V6 90-degree, ODD-FIRE (1978-1984), EVEN-FIRE (1985-1987)",
+    "displacement": {
+      "cubic_inches": 231,
+      "liters": 3.785,
+      "cc": 3785
+    },
+    "bore": { "inches": 3.800, "mm": 96.5 },
+    "stroke": { "inches": 3.400, "mm": 86.4 },
+    "compression_ratio": "8.0:1",
+    "firing_order_even_fire": "1-6-5-4-3-2",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic lifters",
+    "turbocharger": {
+      "1984_1985": "Garrett TB03",
+      "1986_1987": "Garrett T3 (larger)"
+    },
+    "intercooler": "Air-to-air front-mount (1986-1987)",
+    "fuel_system": "Sequential Electronic Fuel Injection (SFI)"
+  },
+
+  "power_output_by_year": {
+    "1984_hot_air": {
+      "horsepower": 200,
+      "torque_lb_ft": 300,
+      "notes": "No intercooler (hot air)"
+    },
+    "1986_intercooled": {
+      "horsepower": 235,
+      "torque_lb_ft": 330,
+      "notes": "Added intercooler"
+    },
+    "1987_grand_national": {
+      "horsepower": 245,
+      "torque_lb_ft": 355,
+      "notes": "Final year production GN"
+    },
+    "1987_gnx": {
+      "horsepower": 276,
+      "torque_lb_ft": 360,
+      "boost_psi": 15,
+      "notes": "ASC/McLaren modified, only 547 built"
+    }
+  },
+
+  "vehicle_applications": {
+    "grand_national": {
+      "years": "1984-1987",
+      "production": "Approximately 29,000 total",
+      "notes": "Black-only starting 1985"
+    },
+    "gnx": {
+      "years": "1987",
+      "production": 547,
+      "notes": "ASC/McLaren modifications",
+      "value": "Highly collectible, $100,000+"
+    },
+    "t_type": {
+      "years": "1984-1987",
+      "notes": "Non-GN turbo variant"
+    },
+    "regal_turbo": {
+      "years": "1978-1987",
+      "notes": "Various turbo models"
+    }
+  },
+
+  "unique_features": {
+    "turbocharger_progression": {
+      "1978_1983": "Draw-through carburetor turbo",
+      "1984_1985": "Hot air (no intercooler) SFI",
+      "1986_1987": "Intercooled SFI"
+    },
+    "ecm_tuning": {
+      "chip": "Stock ECM easily chipped for more power",
+      "popular_chips": ["Turbo Tweak", "Red Armstrong", "Eric's Performance"]
+    },
+    "gnx_upgrades": {
+      "turbo": "Larger Garrett turbo",
+      "intercooler": "Larger intercooler",
+      "exhaust": "Less restrictive",
+      "chip": "Modified ECM calibration"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 4.5,
+      "recommended": "10W-30 or synthetic"
+    },
+    "coolant": {
+      "capacity_gallons": 3
+    }
+  },
+
+  "performance_potential": {
+    "stock": "245-276hp",
+    "chip_boost_increase": {
+      "power_hp": "300-340",
+      "mods": ["Performance chip", "Boost increase", "Exhaust"]
+    },
+    "stage_2_turbo": {
+      "power_hp": "400-500",
+      "mods": ["Larger turbo", "Fuel system upgrade", "Intercooler"]
+    },
+    "built_engine": {
+      "power_hp": "600-1000+",
+      "mods": ["Forged internals", "Billet turbo", "E85 fuel"]
+    }
+  },
+
+  "common_issues": {
+    "head_gasket": {
+      "cause": "High boost on iron heads",
+      "solution": "Multi-layer steel gasket, head studs"
+    },
+    "cracked_pistons": {
+      "cause": "High boost on stock pistons",
+      "solution": "Forged pistons for high power"
+    },
+    "turbo_failure": {
+      "cause": "Age, oil starvation",
+      "solution": "Upgraded turbo rebuild or replacement"
+    }
+  },
+
+  "notes": {
+    "heritage": "Based on Buick 3800 V6 series",
+    "legacy": "Created turbo muscle car segment",
+    "cult_status": "One of most collectible 1980s cars"
+  }
+}

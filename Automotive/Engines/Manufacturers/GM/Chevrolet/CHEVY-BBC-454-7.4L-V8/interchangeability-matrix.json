@@ -1,0 +1,75 @@
+{
+  "engine_id": "CHEVY-BBC-454-7.4L-V8",
+  "matrix_version": "1.0.0",
+
+  "bbc_family_overview": {
+    "description": "Big Block Chevy family interchangeability",
+    "production_span": "1965-1996 (2009 as crate)",
+    "displacements_ci": [396, 402, 427, 454, 502],
+    "architecture": "Mark IV design, all share external dimensions"
+  },
+
+  "block_interchangeability": {
+    "universal_dimensions": {
+      "bellhousing_pattern": "Same as Small Block Chevy",
+      "motor_mount_pattern": "Same as Small Block Chevy",
+      "bore_spacing_inches": 4.840,
+      "deck_height_standard_inches": 9.800,
+      "deck_height_tall_inches": 10.200
+    },
+    "bore_sizes": {
+      "396_402": { "bore_inches": 4.094, "notes": "Can be bored to 427" },
+      "427_454": { "bore_inches": 4.251, "notes": "Share bore size" }
+    }
+  },
+
+  "crankshaft_interchange": {
+    "stroke_options": {
+      "396_402_stroke": { "inches": 3.760, "creates": "396/402ci" },
+      "427_stroke": { "inches": 3.760, "bore": 4.251, "creates": "427ci" },
+      "454_stroke": { "inches": 4.000, "creates": "454ci" }
+    },
+    "stroker_combinations": {
+      "489ci": { "stroke": 4.250, "bore": 4.280 },
+      "496ci": { "stroke": 4.250, "bore": 4.310 },
+      "502ci": { "stroke": 4.000, "bore": 4.466 },
+      "540ci": { "stroke": 4.500, "bore": 4.500, "requires": "Aftermarket block" },
+      "572ci": { "stroke": 4.750, "bore": 4.560, "requires": "Tall deck block" }
+    }
+  },
+
+  "cylinder_head_interchange": {
+    "port_styles": {
+      "oval_port": {
+        "description": "Best for street, under 500hp",
+        "intake_runner_cc_range": "260-290",
+        "flow_cfm_typical": "280-320"
+      },
+      "rectangular_port": {
+        "description": "Race heads, over 500hp builds",
+        "intake_runner_cc_range": "320-400",
+        "flow_cfm_typical": "350-450"
+      }
+    },
+    "intake_manifold_match": {
+      "notes": "Oval port heads require oval port intake, rectangular require rectangular"
+    }
+  },
+
+  "sbc_vs_bbc_compatibility": {
+    "shared": ["Bellhousing pattern", "Transmission", "Motor mounts (with minor modification)"],
+    "not_shared": ["Cylinder heads", "Intake manifolds", "Exhaust", "Accessories"]
+  },
+
+  "transmission_compatibility": {
+    "compatible_transmissions": [
+      "Muncie M20/M21/M22",
+      "TH400",
+      "TH350",
+      "4L80E",
+      "T56 (with adapter)",
+      "TR6060 (with adapter)"
+    ],
+    "flywheel_balance": "Externally balanced - requires BBC-specific flywheel"
+  }
+}

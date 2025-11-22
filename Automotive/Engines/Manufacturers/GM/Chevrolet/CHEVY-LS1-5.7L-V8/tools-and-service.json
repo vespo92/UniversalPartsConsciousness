@@ -1,0 +1,126 @@
+{
+  "engine_id": "CHEVY-LS1-5.7L-V8",
+  "service_version": "1.0.0",
+
+  "tool_inventory": {
+    "specialty_tools": {
+      "harmonic_balancer_puller": {
+        "type": "3-jaw puller or LS-specific",
+        "notes": "Center bolt is 24mm"
+      },
+      "cam_retaining_tool": {
+        "description": "Holds cam while removing timing gear",
+        "part_number": "GM J-44221"
+      },
+      "oil_pressure_sender_socket": {
+        "size": "1-1/16 inch or 27mm deep"
+      },
+      "valve_spring_compressor": {
+        "description": "LS-specific tool",
+        "options": ["Comp Cams 4758", "LSX Innovations"]
+      },
+      "rocker_arm_trunnion_tool": {
+        "description": "For trunnion upgrade installation",
+        "notes": "Required for LS7 rocker upgrade"
+      },
+      "tuning_equipment": {
+        "scanner": ["HP Tuners", "EFI Live", "Tech2 (OEM)"],
+        "wideband_o2": ["AEM", "Innovate", "PLX"]
+      }
+    },
+    "common_socket_sizes": {
+      "head_bolts": "15mm (12-point preferred)",
+      "main_cap_bolts": "15mm inner, 11mm outer",
+      "oil_pan_bolts": "8mm",
+      "valve_cover_bolts": "8mm",
+      "spark_plugs": "5/8-inch",
+      "crank_bolt": "24mm"
+    }
+  },
+
+  "torque_specifications": {
+    "cylinder_head_bolts": {
+      "sequence": "Center outward, specific pattern",
+      "procedure": {
+        "step_1": "22 lb-ft",
+        "step_2": "Additional 90 degrees",
+        "step_3": "Additional 90 degrees (total 180 degrees)"
+      },
+      "notes": "TTY (Torque-To-Yield) - replace bolts each use"
+    },
+    "main_cap_bolts": {
+      "inner_bolts": {
+        "step_1": "15 lb-ft",
+        "step_2": "Additional 80 degrees"
+      },
+      "outer_bolts": { "torque_lb_ft": 18 }
+    },
+    "connecting_rod_bolts": {
+      "step_1": "15 lb-ft",
+      "step_2": "Additional 75 degrees",
+      "notes": "TTY bolts"
+    },
+    "intake_manifold_bolts": { "torque_lb_ft": 44, "sequence": "Two steps" },
+    "exhaust_manifold_bolts": { "torque_lb_ft": 18 },
+    "valve_cover_bolts": { "torque_lb_ft": 106, "unit": "inch-lbs" },
+    "spark_plugs": { "torque_lb_ft": 11 },
+    "oil_pan_bolts": { "torque_lb_ft": 18 },
+    "harmonic_balancer_bolt": { "procedure": "240 lb-ft, then additional 120 degrees" }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "interval_miles": 7500,
+      "synthetic_recommended": true,
+      "oil_capacity_quarts": 6.0,
+      "filter": "AC Delco PF44, Wix 57060",
+      "drain_plug_torque_lb_ft": 18,
+      "procedure": [
+        "Warm engine",
+        "Remove drain plug and filter",
+        "Replace filter and plug",
+        "Add 5.5 quarts, check level",
+        "Top off as needed"
+      ]
+    },
+    "spark_plug_replacement": {
+      "interval_miles": 100000,
+      "difficulty": "Intermediate",
+      "tools": ["5/8 spark plug socket", "Extensions", "Swivel"],
+      "notes": "Rear plugs on passenger side can be challenging"
+    },
+    "cam_swap": {
+      "difficulty": "Advanced",
+      "time_hours": 8,
+      "requires_removal": ["Timing cover", "Intake manifold", "Valve covers"],
+      "typical_parts": ["Cam", "Valve springs", "Pushrods (length check)", "Timing chain"],
+      "critical_notes": [
+        "Three-bolt cam gear for adjustable timing",
+        "Degree cam properly",
+        "Check piston-to-valve clearance",
+        "Tune required after installation"
+      ]
+    }
+  },
+
+  "diagnostic_procedures": {
+    "no_start_diagnosis": {
+      "common_causes": [
+        "Crank sensor failure (24X reluctor)",
+        "Fuel pump failure",
+        "PCM/ignition issue",
+        "Security (VATS) lockout"
+      ],
+      "scanner_required": true
+    },
+    "misfire_diagnosis": {
+      "common_causes": [
+        "Coil pack failure",
+        "Spark plug fouling",
+        "Fuel injector issue",
+        "Vacuum leak"
+      ],
+      "check_codes": "P0300 series"
+    }
+  }
+}

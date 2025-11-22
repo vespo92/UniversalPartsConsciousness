@@ -1,0 +1,51 @@
+{
+  "engine_id": "CADILLAC-500-8.2L-V8",
+  "matrix_version": "1.0.0",
+
+  "cadillac_v8_family": {
+    "production_span": "1949-present",
+    "ohv_era": {
+      "331": "1949-1955",
+      "365": "1956-1958",
+      "390": "1959-1963",
+      "429": "1964-1967",
+      "472": "1968-1974",
+      "500": "1970-1976",
+      "425": "1977-1979",
+      "368": "1980-1984"
+    }
+  },
+
+  "472_500_interchange": {
+    "fully_compatible": [
+      "Cylinder heads",
+      "Intake manifold",
+      "Valve covers",
+      "Accessories",
+      "Oil pan"
+    ],
+    "unique_components": {
+      "crankshaft": "Different stroke",
+      "connecting_rods": "May differ in length",
+      "pistons": "Different compression height"
+    }
+  },
+
+  "block_compatibility": {
+    "all_cadillac_ohv": "472/500/425/368 share some characteristics",
+    "unique_to_cadillac": "Not interchangeable with other GM divisions"
+  },
+
+  "transmission_compatibility": {
+    "standard": "THM400 (Turbo-Hydramatic 400)",
+    "eldorado_fwd": "Special transaxle unit",
+    "notes": "Cadillac-specific bellhousing pattern"
+  },
+
+  "not_compatible": {
+    "chevrolet": "No interchange",
+    "pontiac": "No interchange",
+    "oldsmobile": "No interchange",
+    "buick": "No interchange"
+  }
+}

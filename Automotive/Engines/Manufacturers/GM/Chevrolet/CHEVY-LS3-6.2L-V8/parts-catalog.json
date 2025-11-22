@@ -1,0 +1,122 @@
+{
+  "engine_id": "CHEVY-LS3-6.2L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "LS3-BLOCK",
+          "description": "Aluminum deep-skirt block",
+          "oem_part_number": "12623967",
+          "specifications": {
+            "bore_inches": 4.065,
+            "deck_height_inches": 9.240
+          },
+          "aftermarket": {
+            "dart_shp": "Dart SHP LS Next",
+            "gm_lsa": "Supercharged LSA block"
+          }
+        },
+        "crankshaft": {
+          "part_id": "LS3-CRANK",
+          "description": "Nodular iron 58X crankshaft",
+          "oem_part_number": "12641691",
+          "specifications": {
+            "stroke_inches": 3.622,
+            "reluctor": "58X"
+          },
+          "aftermarket": {
+            "callies": "Callies Compstar",
+            "k1": "K1 Technologies"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "LS3-CONROD",
+          "description": "Powdered metal rods",
+          "oem_part_number": "12649190",
+          "length_inches": 6.098
+        },
+        "pistons": {
+          "part_id": "LS3-PISTON",
+          "description": "Flat-top hypereutectic",
+          "bore_inches": 4.065,
+          "aftermarket": {
+            "mahle": "Mahle PowerPak",
+            "je": "JE forged"
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "ls3_heads": {
+          "part_id": "LS3-HEAD",
+          "description": "Rectangle port aluminum heads (243/799)",
+          "oem_part_numbers": {
+            "243_casting": "12578449",
+            "799_casting": "12629063"
+          },
+          "specifications": {
+            "intake_valve": 2.165,
+            "exhaust_valve": 1.59,
+            "intake_runner_cc": 260,
+            "chamber_cc": 68
+          },
+          "aftermarket": {
+            "afr_260": "AFR 260cc",
+            "mast": "MAST Motorsports ported",
+            "trick_flow_255": "Trick Flow GenX 255"
+          }
+        },
+        "valve_springs": {
+          "part_id": "LS3-VSPRINGS",
+          "oem_seat_lbs": 130,
+          "upgrades": {
+            "comp_26918": "Comp Cams beehive",
+            "pac_1219": "PAC 1219 dual springs"
+          }
+        }
+      }
+    },
+
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "LS3-INTAKE",
+          "description": "Composite rectangle port intake",
+          "oem_part_number": "12605017",
+          "aftermarket": {
+            "fast_lsxr_102": "FAST LSXR 102mm",
+            "holley_hi_ram": "Holley Hi-Ram EFI"
+          }
+        },
+        "throttle_body": {
+          "part_id": "LS3-TB",
+          "oem_size_mm": 90,
+          "upgrades": ["102mm", "105mm"]
+        },
+        "fuel_injectors": {
+          "part_id": "LS3-INJ",
+          "oem_flow_lbhr": 42,
+          "connector": "EV6"
+        }
+      }
+    },
+
+    "ignition_system": {
+      "components": {
+        "coil_packs": {
+          "part_id": "LS3-COILS",
+          "oem_part_number": "12611424"
+        },
+        "spark_plugs": {
+          "part_id": "LS3-PLUGS",
+          "oem": "AC Delco 41-110",
+          "gap_inches": 0.040
+        }
+      }
+    }
+  }
+}

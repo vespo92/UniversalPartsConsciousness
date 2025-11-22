@@ -1,0 +1,41 @@
+{
+  "engine_id": "CHEVY-LT6-5.5L-V8-FLAT-PLANE-CRANK",
+  "matrix_version": "1.0.0",
+
+  "lt6_unique_nature": {
+    "summary": "LT6 is a unique engine with almost no parts interchange",
+    "shared_with_other_lt": "Very limited - different architecture entirely"
+  },
+
+  "no_interchange_list": {
+    "crankshaft": "Flat-plane, unique to LT6",
+    "cylinder_heads": "DOHC, completely different from OHV LT engines",
+    "camshafts": "Four DOHC cams, not compatible with anything else",
+    "intake": "Individual throttle body design, unique",
+    "valvetrain": "Finger followers vs pushrods"
+  },
+
+  "possible_shared_components": {
+    "sensors": "Some sensors may be shared with LT family",
+    "accessories": "Some accessory components may be similar",
+    "ecu_architecture": "Based on LT platform but unique calibration"
+  },
+
+  "swap_feasibility": {
+    "lt6_into_other_cars": {
+      "feasibility": "Extremely difficult",
+      "reasons": [
+        "Mid-engine design specific",
+        "Dry sump required",
+        "Complex DOHC packaging",
+        "Unique ECU and wiring",
+        "Very expensive"
+      ]
+    }
+  },
+
+  "aftermarket_status": {
+    "current": "Very limited due to complexity and newness",
+    "future": "May develop as more units enter market"
+  }
+}

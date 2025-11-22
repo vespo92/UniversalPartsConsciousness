@@ -1,0 +1,431 @@
+{
+  "engine_id": "CHEVY-SBC-350-5.7L-V8",
+  "service_version": "1.0.0",
+  "last_updated": "2025-01-15",
+
+  "tool_inventory": {
+    "hand_tools": {
+      "wrenches_standard": {
+        "sizes_inches": ["3/8", "7/16", "1/2", "9/16", "5/8", "11/16", "3/4", "13/16", "7/8", "15/16", "1"],
+        "sizes_metric": [10, 12, 13, 14, 15, 17, 19],
+        "priority": "essential"
+      },
+      "sockets_standard": {
+        "sizes_inches": ["3/8", "7/16", "1/2", "9/16", "5/8", "11/16", "3/4", "13/16", "7/8", "15/16", "1", "1-1/8", "1-1/4"],
+        "priority": "essential"
+      },
+      "specialty_sockets": {
+        "spark_plug_socket": "5/8-inch or 13/16-inch depending on plug",
+        "deep_sockets": "For valve cover bolts, intake manifold",
+        "priority": "essential"
+      },
+      "screwdrivers": {
+        "flat_blade": ["1/4-inch", "5/16-inch", "3/8-inch"],
+        "phillips": ["#2", "#3"],
+        "priority": "essential"
+      }
+    },
+
+    "specialty_tools": {
+      "harmonic_balancer_puller": {
+        "description": "Puller for removing crankshaft damper",
+        "part_numbers": ["OTC 4530", "Lisle 38350"],
+        "priority": "essential_for_timing"
+      },
+      "harmonic_balancer_installer": {
+        "description": "Threaded installer tool",
+        "notes": "Prevents damper damage during installation",
+        "priority": "essential_for_timing"
+      },
+      "timing_tab": {
+        "description": "Timing pointer for setting ignition timing",
+        "notes": "Can be adjustable or fixed",
+        "priority": "essential_for_tuning"
+      },
+      "timing_light": {
+        "description": "Inductive timing light",
+        "recommended": ["Innova 5568", "Snap-on MT2261A"],
+        "priority": "essential"
+      },
+      "distributor_wrench": {
+        "description": "Offset wrench for distributor hold-down bolt",
+        "size_inches": "9/16 or 1/2 depending on clamp",
+        "priority": "essential"
+      },
+      "valve_spring_compressor": {
+        "description": "Compressor for valve spring removal",
+        "types": {
+          "on_head": "COMP Cams 4754",
+          "off_head": "Standard C-clamp style"
+        },
+        "priority": "essential_for_valvetrain"
+      },
+      "rocker_arm_stud_puller": {
+        "description": "For removing pressed-in rocker studs",
+        "part_numbers": ["Powerbuilt 648651"],
+        "priority": "essential_for_head_work"
+      },
+      "degree_wheel": {
+        "description": "For degreeing camshaft",
+        "recommended": "COMP Cams 4796",
+        "priority": "essential_for_cam_install"
+      },
+      "dial_indicator_setup": {
+        "description": "Magnetic base and dial indicator",
+        "uses": ["Cam timing", "Deck height", "Runout checks"],
+        "priority": "essential_for_precision_builds"
+      },
+      "ring_compressor": {
+        "description": "For compressing piston rings during assembly",
+        "sizes_inches": ["4.00", "4.030", "4.060"],
+        "priority": "essential_for_assembly"
+      },
+      "rod_bolt_stretch_gauge": {
+        "description": "For proper rod bolt torque verification",
+        "priority": "recommended_for_assembly"
+      },
+      "plastigage": {
+        "description": "For checking bearing clearances",
+        "colors": {
+          "green": "0.001-0.003 inch",
+          "red": "0.002-0.006 inch"
+        },
+        "priority": "essential_for_assembly"
+      }
+    },
+
+    "diagnostic_equipment": {
+      "compression_tester": {
+        "description": "For testing cylinder compression",
+        "expected_readings_psi": {
+          "healthy": "150-180",
+          "acceptable_variance": "10%"
+        },
+        "priority": "essential"
+      },
+      "leak_down_tester": {
+        "description": "For pinpointing compression leaks",
+        "healthy_reading_percent": "Less than 10% leakage",
+        "priority": "recommended"
+      },
+      "vacuum_gauge": {
+        "description": "For diagnosing engine condition",
+        "healthy_reading_inhg": "17-21",
+        "priority": "essential"
+      },
+      "oil_pressure_gauge": {
+        "description": "Mechanical gauge for accurate readings",
+        "healthy_pressure_psi": {
+          "idle_warm": "20-40",
+          "at_rpm": "40-60"
+        },
+        "priority": "recommended"
+      },
+      "dwell_meter": {
+        "description": "For points ignition adjustment",
+        "spec_degrees": 30,
+        "priority": "essential_for_points"
+      }
+    },
+
+    "lifting_equipment": {
+      "engine_hoist": {
+        "description": "Cherry picker for engine removal",
+        "capacity_lbs": "1000-2000",
+        "priority": "essential_for_removal"
+      },
+      "engine_leveler": {
+        "description": "For balancing engine during removal/install",
+        "priority": "recommended"
+      },
+      "engine_stand": {
+        "description": "Rotating stand for engine work",
+        "capacity_lbs": "750-1500",
+        "priority": "essential_for_rebuild"
+      }
+    }
+  },
+
+  "torque_specifications": {
+    "critical_fasteners": {
+      "main_cap_bolts": {
+        "2_bolt": {
+          "torque_lb_ft": 77,
+          "notes": "Clean, lightly oiled threads"
+        },
+        "4_bolt_inner": {
+          "torque_lb_ft": 77,
+          "notes": "Inner bolts same as 2-bolt"
+        },
+        "4_bolt_outer": {
+          "torque_lb_ft": 65,
+          "notes": "Outer bolts slightly less"
+        }
+      },
+      "connecting_rod_bolts": {
+        "standard_3_8": {
+          "torque_lb_ft": 45,
+          "notes": "With ARP assembly lube use stretch method"
+        },
+        "arp_bolts": {
+          "torque_lb_ft": 50,
+          "notes": "With ARP Ultra-Torque"
+        }
+      },
+      "cylinder_head_bolts": {
+        "standard_sequence": {
+          "torque_lb_ft": 65,
+          "sequence": "From center outward, alternating pattern",
+          "notes": "In 3 steps: 25, 45, 65 lb-ft"
+        },
+        "arp_head_studs": {
+          "torque_lb_ft": 70,
+          "notes": "With ARP moly lube"
+        }
+      },
+      "rocker_arm_nuts": {
+        "hydraulic_lifters": {
+          "procedure": "Turn nut down until zero lash, then 1 additional turn",
+          "notes": "Adjust on base circle of cam lobe"
+        },
+        "solid_lifters": {
+          "procedure": "Set to specified lash per cam card",
+          "typical_lash_inches": {
+            "intake": 0.024,
+            "exhaust": 0.028
+          }
+        }
+      },
+      "intake_manifold_bolts": {
+        "torque_lb_ft": 30,
+        "sequence": "From center outward",
+        "notes": "Re-torque after heat cycle"
+      },
+      "exhaust_manifold_bolts": {
+        "torque_lb_ft": 20,
+        "notes": "Anti-seize recommended"
+      },
+      "valve_cover_bolts": {
+        "torque_lb_ft": 3,
+        "notes": "Very light - just snug"
+      },
+      "oil_pan_bolts": {
+        "torque_lb_ft": 12,
+        "notes": "Use thread sealant on corner bolts"
+      },
+      "water_pump_bolts": {
+        "torque_lb_ft": 30,
+        "notes": "Thread sealant on through-bolts"
+      },
+      "harmonic_balancer_bolt": {
+        "torque_lb_ft": 60,
+        "notes": "Use thread locker"
+      },
+      "flywheel_bolts": {
+        "manual_transmission": {
+          "torque_lb_ft": 60,
+          "notes": "Use thread locker, replace if reused"
+        },
+        "flexplate": {
+          "torque_lb_ft": 60
+        }
+      },
+      "spark_plugs": {
+        "cast_iron_head": {
+          "torque_lb_ft": 15,
+          "notes": "Dry threads"
+        },
+        "aluminum_head": {
+          "torque_lb_ft": 11,
+          "notes": "Anti-seize on threads"
+        }
+      }
+    }
+  },
+
+  "service_operations": {
+    "routine_maintenance": {
+      "oil_change": {
+        "interval_miles": 3000,
+        "modern_synthetic_interval": 5000,
+        "difficulty": "beginner",
+        "time_minutes": 30,
+        "tools": ["15mm or 9/16 socket", "Oil filter wrench", "Drain pan"],
+        "parts": {
+          "oil_quarts": 5,
+          "filter": "PF35, Wix 51061, or equivalent"
+        },
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Remove drain plug, drain oil completely",
+          "Replace oil filter",
+          "Install drain plug with new washer",
+          "Add 4.5 quarts, check level, add as needed",
+          "Run engine, check for leaks, recheck level"
+        ]
+      },
+      "spark_plug_replacement": {
+        "interval_miles": 30000,
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools": ["5/8-inch or 13/16-inch spark plug socket", "Ratchet extension", "Gap gauge"],
+        "parts": {
+          "spark_plugs": "8x AC Delco R45TS or equivalent",
+          "gap_inches": 0.035
+        },
+        "procedure": [
+          "Remove spark plug wires (mark locations)",
+          "Remove old plugs",
+          "Check gap on new plugs",
+          "Apply anti-seize to threads (aluminum heads)",
+          "Install hand-tight, then torque",
+          "Reinstall wires in correct order"
+        ]
+      },
+      "ignition_timing_adjustment": {
+        "interval": "As needed or after modifications",
+        "difficulty": "intermediate",
+        "time_minutes": 30,
+        "tools": ["Timing light", "9/16-inch distributor wrench", "Vacuum hose plugs"],
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Disconnect and plug vacuum advance hose",
+          "Connect timing light to #1 cylinder",
+          "Loosen distributor hold-down bolt",
+          "Rotate distributor to set timing (typically 8-12° BTDC)",
+          "Tighten hold-down, reconnect vacuum advance",
+          "Verify timing at idle and cruise"
+        ]
+      },
+      "valve_adjustment_solid_cam": {
+        "interval_miles": 3000,
+        "difficulty": "intermediate",
+        "time_minutes": 60,
+        "tools": ["Valve cover gaskets", "Feeler gauges", "Box wrenches"],
+        "procedure": [
+          "Remove valve covers",
+          "Rotate engine to TDC #1 cylinder",
+          "Adjust intake and exhaust on cylinders 1,2,5,7 (EO-IC rule)",
+          "Rotate engine 360 degrees",
+          "Adjust remaining valves 3,4,6,8",
+          "Reinstall valve covers"
+        ],
+        "typical_specs": {
+          "intake_inches": 0.024,
+          "exhaust_inches": 0.028
+        }
+      }
+    },
+
+    "common_repairs": {
+      "intake_manifold_gasket_replacement": {
+        "symptoms": ["Coolant loss", "Rough idle", "Vacuum leak"],
+        "difficulty": "intermediate",
+        "time_hours": 3,
+        "tools": ["Socket set", "Scraper", "RTV sealant"],
+        "parts": ["Intake gasket set", "Thermostat (optional)", "Coolant"],
+        "torque_sequence": "From center outward, 30 lb-ft"
+      },
+      "water_pump_replacement": {
+        "symptoms": ["Coolant leak at pump", "Bearing noise", "Overheating"],
+        "difficulty": "intermediate",
+        "time_hours": 2,
+        "tools": ["Socket set", "Pulley puller (if needed)"],
+        "parts": ["Water pump", "Gasket", "Coolant"]
+      },
+      "timing_chain_replacement": {
+        "symptoms": ["Timing chain slap", "Hard starting", "Poor performance"],
+        "difficulty": "advanced",
+        "time_hours": 4,
+        "tools": ["Harmonic balancer puller/installer", "Timing cover gasket"],
+        "parts": ["Timing set", "Cover gasket", "Oil seal"],
+        "recommendation": "Always use double-roller chain set"
+      },
+      "rear_main_seal_replacement": {
+        "symptoms": ["Oil leak at rear of engine"],
+        "difficulty": "advanced",
+        "time_hours": 6,
+        "notes": "Transmission removal required in vehicle",
+        "procedure": [
+          "Remove transmission",
+          "Remove flywheel/flexplate",
+          "Remove old seal (2-piece rope or 1-piece lip)",
+          "Install new seal",
+          "Consider converting 2-piece to 1-piece",
+          "Reinstall flywheel and transmission"
+        ]
+      },
+      "head_gasket_replacement": {
+        "symptoms": ["Coolant consumption", "White smoke", "Overheating", "Coolant in oil"],
+        "difficulty": "advanced",
+        "time_hours": 8,
+        "tools": ["Torque wrench", "Gasket scraper", "Head bolt cleaning kit"],
+        "parts": ["Head gasket set", "Head bolts or studs", "Coolant", "Oil"],
+        "critical_steps": [
+          "Check head for warpage (max 0.003 inch)",
+          "Clean all mating surfaces thoroughly",
+          "Use proper torque sequence",
+          "Re-torque after 500 miles"
+        ]
+      }
+    },
+
+    "performance_modifications": {
+      "cam_swap": {
+        "difficulty": "advanced",
+        "time_hours": 8,
+        "required_with_cam": ["Valve springs (if needed)", "Timing set", "Lifters"],
+        "procedure_overview": [
+          "Remove intake manifold, valve covers, timing cover",
+          "Remove lifters, pushrods (keep in order)",
+          "Remove timing gear and camshaft",
+          "Install new cam (lubricate lobes heavily)",
+          "Install new timing set, degree cam",
+          "Install new lifters, reassemble"
+        ],
+        "critical_notes": [
+          "Break-in procedure: 2500 RPM for 20 minutes",
+          "Use zinc-additive oil for flat tappet cams",
+          "Verify piston-to-valve clearance with clay"
+        ]
+      },
+      "cylinder_head_swap": {
+        "difficulty": "advanced",
+        "time_hours": 10,
+        "considerations": [
+          "Combustion chamber volume affects compression",
+          "Intake manifold compatibility (Vortec vs standard)",
+          "Pushrod length may change",
+          "Exhaust header fitment"
+        ]
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "compression_test": {
+      "procedure": [
+        "Remove all spark plugs",
+        "Disable ignition and fuel",
+        "Hold throttle wide open",
+        "Crank engine 4-6 compression strokes per cylinder",
+        "Record each reading"
+      ],
+      "interpretation": {
+        "healthy_psi": "150-180",
+        "acceptable_variance": "10% between cylinders",
+        "low_reading_causes": ["Worn rings", "Valve problems", "Head gasket"]
+      }
+    },
+    "oil_pressure_diagnosis": {
+      "low_pressure_causes": [
+        "Worn main or rod bearings",
+        "Weak oil pump",
+        "Oil pickup blockage",
+        "Wrong oil viscosity",
+        "Faulty pressure gauge/sender"
+      ],
+      "verification": "Use mechanical gauge at port to verify"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "engine_id": "CHEVY-LT4-6.2L-V8-SUPERCHARGED",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Extensive aftermarket for boosted LT4 engines",
+    "primary_markets": ["Corvette Z06", "Camaro ZL1", "CTS-V/CT5-V Blackwing"]
+  },
+
+  "crate_engine": {
+    "gm_performance_lt4": {
+      "horsepower": 650,
+      "torque": 650,
+      "price_usd": 17000,
+      "includes": "Complete supercharged engine"
+    }
+  },
+
+  "popular_upgrades": {
+    "pulley_kits": {
+      "description": "Smaller supercharger pulley for more boost",
+      "brands": ["Lingenfelter", "Vengeance Racing", "East Coast Supercharging"],
+      "power_gain": "50-100hp",
+      "price_usd": "300-600"
+    },
+    "heat_exchanger": {
+      "description": "Larger intercooler heat exchanger",
+      "brands": ["Concept One", "Weapon X", "VMP"],
+      "benefit": "Reduces heat soak"
+    },
+    "headers": {
+      "kooks": "Long tube headers",
+      "american_racing": "ARH LT4 headers",
+      "stainless_works": "C7 Z06 specific"
+    },
+    "ported_supercharger": {
+      "vendors": ["East Coast Supercharging", "Lingenfelter"],
+      "power_potential": "800-1000hp",
+      "price_usd": "2500-4000"
+    }
+  },
+
+  "tuning": {
+    "hp_tuners": "Industry standard",
+    "efi_live": "Professional tuning",
+    "custom_tuners": ["Lingenfelter", "Vengeance Racing", "Late Model Racecraft"]
+  },
+
+  "specialists": {
+    "lingenfelter": "LT4 specialists, complete packages",
+    "vengeance_racing": "ZL1/Z06 builds",
+    "late_model_racecraft": "High-HP builds",
+    "weapon_x": "Supercharger upgrades"
+  }
+}

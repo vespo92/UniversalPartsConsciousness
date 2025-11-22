@@ -1,0 +1,128 @@
+{
+  "engine_id": "CHEVY-LS7-7.0L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "LS7-BLOCK",
+          "description": "Siamesed bore aluminum block",
+          "oem_part_number": "19166454",
+          "specifications": {
+            "bore_inches": 4.125,
+            "deck_height_inches": 9.260,
+            "siamesed_bores": true
+          },
+          "notes": "Tall deck block, specific to LS7"
+        },
+        "crankshaft": {
+          "part_id": "LS7-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_number": "12586472",
+          "specifications": {
+            "stroke_inches": 4.000,
+            "forged": true,
+            "reluctor": "58X"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "LS7-CONROD",
+          "description": "Titanium connecting rods",
+          "oem_part_number": "12586474",
+          "specifications": {
+            "length_inches": 6.067,
+            "material": "Titanium",
+            "weight_grams": 464
+          },
+          "aftermarket": {
+            "carrillo": "Carrillo titanium",
+            "oliver": "Oliver billet titanium"
+          }
+        },
+        "pistons": {
+          "part_id": "LS7-PISTON",
+          "description": "Forged aluminum flat-top pistons",
+          "oem_part_number": "19166100",
+          "specifications": {
+            "bore_inches": 4.125,
+            "compression_height_inches": 1.060
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "ls7_heads": {
+          "part_id": "LS7-HEAD",
+          "description": "CNC-ported aluminum heads",
+          "oem_part_number": "12578450",
+          "specifications": {
+            "intake_valve": "2.200 titanium",
+            "exhaust_valve": "1.610 sodium-filled",
+            "intake_port_cc": 270,
+            "flow_intake_cfm": 375,
+            "flow_exhaust_cfm": 275
+          }
+        },
+        "valve_springs": {
+          "part_id": "LS7-VSPRINGS",
+          "description": "High-rate valve springs",
+          "oem_seat_lbs": 155,
+          "oem_open_lbs": 400
+        },
+        "rocker_arms": {
+          "part_id": "LS7-ROCKERS",
+          "description": "1.8:1 ratio roller rockers",
+          "oem_part_number": "12569167",
+          "known_issue": "Trunnion bearing failure",
+          "upgrade": "Trunnion upgrade kit (12569167-U)"
+        }
+      }
+    },
+
+    "dry_sump_system": {
+      "components": {
+        "oil_tank": {
+          "part_id": "LS7-OIL-TANK",
+          "capacity_quarts": 10.5,
+          "location": "Driver side rear"
+        },
+        "scavenge_pump": {
+          "part_id": "LS7-SCAV-PUMP",
+          "stages": 4,
+          "description": "Belt-driven scavenge pump"
+        },
+        "pressure_pump": {
+          "part_id": "LS7-PRESS-PUMP",
+          "description": "Internal gear-driven pressure pump"
+        }
+      }
+    },
+
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "LS7-INTAKE",
+          "description": "Composite rectangle port intake",
+          "oem_part_number": "12602477"
+        },
+        "throttle_body": {
+          "part_id": "LS7-TB",
+          "oem_size_mm": 90
+        }
+      }
+    },
+
+    "camshaft": {
+      "part_id": "LS7-CAM",
+      "description": "Hydraulic roller camshaft",
+      "oem_specs": {
+        "duration_at_050": "211/230",
+        "lift_inches": "0.591/0.591",
+        "lobe_separation": 121
+      }
+    }
+  }
+}

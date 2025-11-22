@@ -1,0 +1,140 @@
+{
+  "engine_id": "PONTIAC-455-SD-7.5L-V8",
+  "common_names": ["455 Super Duty", "455 SD", "Pontiac 455 SD", "SD-455"],
+  "manufacturer": "General Motors - Pontiac Division",
+  "engine_family": "Pontiac V8",
+  "production_years": "1973-1974",
+
+  "historical_significance": {
+    "summary": "The last great factory muscle car engine of the original era",
+    "achievements": [
+      "310 net hp in emissions era (underrated - actual ~370hp)",
+      "Last high-performance factory engine before emissions killed muscle cars",
+      "Featured forged rotating assembly from factory",
+      "Round port heads with superior flow",
+      "Dominated NHRA Pro Stock in its era"
+    ],
+    "cultural_impact": "Pontiac's final statement as the performance division"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 455,
+      "liters": 7.456,
+      "cc": 7456
+    },
+    "bore": { "inches": 4.151, "mm": 105.4 },
+    "stroke": { "inches": 4.210, "mm": 106.9 },
+    "compression_ratio": "8.4:1",
+    "firing_order": "1-8-4-3-6-5-7-2",
+    "cylinder_numbering": "Driver side 1-3-5-7, Passenger side 2-4-6-8",
+    "block_material": "Cast Iron (reinforced)",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic lifters",
+    "carburetor": "Rochester Quadrajet 800 CFM"
+  },
+
+  "power_output": {
+    "advertised_net_hp": 310,
+    "actual_net_hp": "370+ (widely believed)",
+    "hp_rpm": 4000,
+    "torque_lb_ft": 390,
+    "torque_rpm": 3200,
+    "notes": "Factory underrated to lower insurance costs"
+  },
+
+  "vehicle_applications": {
+    "trans_am": {
+      "years": "1973-1974",
+      "production_1973": 252,
+      "production_1974": 943,
+      "notes": "Most desirable application"
+    },
+    "formula_firebird": {
+      "years": "1973-1974",
+      "notes": "Also available"
+    },
+    "gto": {
+      "years": "1973-1974",
+      "notes": "Available but rare"
+    },
+    "grand_am": {
+      "years": "1973-1974",
+      "notes": "Luxury muscle"
+    }
+  },
+
+  "unique_features": {
+    "forged_internals": {
+      "crankshaft": "Forged steel",
+      "connecting_rods": "Forged steel, pink rods",
+      "pistons": "Forged aluminum"
+    },
+    "round_port_heads": {
+      "description": "Round exhaust ports for superior flow",
+      "casting_number": "7K3",
+      "intake_valve_inches": 2.11,
+      "exhaust_valve_inches": 1.77,
+      "flow_intake_cfm": 290,
+      "flow_exhaust_cfm": 215
+    },
+    "cam_specs": {
+      "duration_at_050": "212/230",
+      "lift_inches": "0.470/0.481"
+    },
+    "dry_deck_block": {
+      "description": "Special thick-wall casting",
+      "bore_spacing": "4.620 inches"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5,
+      "with_filter_quarts": 6,
+      "recommended": "10W-30 or 10W-40"
+    },
+    "coolant": {
+      "capacity_gallons": 5
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_inches": 10.240,
+    "bore_spacing_inches": 4.620,
+    "main_journal_diameter_inches": 3.250,
+    "rod_journal_diameter_inches": 2.250,
+    "rod_length_inches": 6.625
+  },
+
+  "vs_regular_455": {
+    "sd_improvements": [
+      "Forged crank vs cast",
+      "Forged rods vs powdered metal",
+      "Forged pistons vs cast",
+      "Round port heads vs D-port",
+      "Improved oiling system",
+      "4-bolt mains",
+      "Higher-lift cam"
+    ]
+  },
+
+  "rarity": {
+    "total_production": "Approximately 1,300 units",
+    "survival_rate": "Very rare today",
+    "value": "Highly collectible, $50,000+ for original engine"
+  },
+
+  "common_issues": {
+    "availability": "Parts extremely rare",
+    "heads": "Round port heads command premium",
+    "documentation": "Many clones exist - verify authenticity"
+  },
+
+  "notes": {
+    "heritage": "Evolution of Pontiac 421 Super Duty tradition",
+    "legacy": "Last true factory muscle car engine",
+    "identification": "SD-455 casting on block, specific part numbers"
+  }
+}

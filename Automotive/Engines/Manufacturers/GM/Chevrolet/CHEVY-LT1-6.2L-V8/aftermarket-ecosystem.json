@@ -1,0 +1,83 @@
+{
+  "engine_id": "CHEVY-LT1-6.2L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Growing aftermarket for Gen V LT engines",
+    "primary_applications": ["C7/C8 Corvette", "6th Gen Camaro", "Engine swaps"]
+  },
+
+  "crate_engines": {
+    "gm_performance": {
+      "lt1_crate": {
+        "part_number": "19417105",
+        "horsepower": 455,
+        "torque": 460,
+        "price_usd": 10000
+      },
+      "e_rod_lt1": {
+        "description": "Emissions-legal crate package",
+        "includes": ["Engine", "Controls", "Wiring"]
+      }
+    }
+  },
+
+  "performance_upgrades": {
+    "supercharger_kits": {
+      "magnuson_tvs2650": {
+        "power_hp": "650+",
+        "price_usd": 8000
+      },
+      "procharger": {
+        "power_hp": "625-800",
+        "price_usd": 7500
+      },
+      "whipple_w185rf": {
+        "power_hp": "700+",
+        "price_usd": 8500
+      },
+      "edelbrock_e_force": {
+        "power_hp": "600+",
+        "price_usd": 7000
+      }
+    },
+    "camshaft_packages": {
+      "notes": "Must be VVT compatible, DOD delete recommended",
+      "texas_speed": "DOD delete cam packages",
+      "btrcam": "Gen V specific cams",
+      "livernois": "Performance cam packages"
+    },
+    "headers": {
+      "kooks": "Long tube headers",
+      "american_racing": "ARH LT headers",
+      "stainless_works": "C7/C8 specific"
+    }
+  },
+
+  "tuning": {
+    "hp_tuners": {
+      "description": "Full LT1 tuning capability",
+      "features": ["AFM disable", "VVT tuning", "Boost tuning"]
+    },
+    "efi_live": {
+      "description": "Professional LT tuning"
+    }
+  },
+
+  "dod_afm_delete": {
+    "description": "Popular modification to prevent lifter failures",
+    "kits": {
+      "texas_speed": "DOD delete package",
+      "btrcam": "Non-DOD cam kit",
+      "comp_cams": "AFM delete lifters and cam"
+    },
+    "price_range": "$1500-3000"
+  },
+
+  "vendors": {
+    "texas_speed": "LT packages and components",
+    "late_model_racecraft": "Corvette/Camaro specialist",
+    "weapon_x_motorsports": "Supercharger installs",
+    "scoggin_dickey": "GM Performance dealer"
+  }
+}

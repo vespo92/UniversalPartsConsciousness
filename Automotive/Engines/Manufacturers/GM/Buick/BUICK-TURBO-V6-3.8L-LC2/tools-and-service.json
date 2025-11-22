@@ -1,0 +1,53 @@
+{
+  "engine_id": "BUICK-TURBO-V6-3.8L-LC2",
+  "service_version": "1.0.0",
+
+  "specialty_tools": {
+    "scanmaster": {
+      "description": "Real-time ECM monitoring",
+      "measures": ["Boost", "O2", "Timing", "Knock retard"],
+      "essential": true
+    },
+    "boost_gauge": {
+      "description": "Mechanical or electronic boost gauge",
+      "essential": true
+    },
+    "chip_burner": {
+      "description": "For custom ECM chip programming",
+      "software": ["TunerPro RT", "Turbo Link"]
+    }
+  },
+
+  "torque_specifications": {
+    "cylinder_head_bolts": { "torque_lb_ft": 100, "notes": "Stage tightening" },
+    "main_cap_bolts": { "torque_lb_ft": 100 },
+    "rod_bolts": { "torque_lb_ft": 40 },
+    "intake_manifold": { "torque_lb_ft": 32 },
+    "turbo_mounting": { "torque_lb_ft": 20 }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 4.5,
+      "interval_miles": 3000,
+      "recommended": "Full synthetic",
+      "notes": "Turbo requires fresh oil"
+    },
+    "boost_check": {
+      "stock_1987_psi": 14,
+      "procedure": "Monitor via Scanmaster or boost gauge"
+    }
+  },
+
+  "common_repairs": {
+    "chip_upgrade": {
+      "difficulty": "Beginner",
+      "benefit": "20-50hp gain",
+      "procedure": "Remove ECM, swap chip"
+    },
+    "turbo_upgrade": {
+      "difficulty": "Intermediate",
+      "time_hours": 8
+    }
+  }
+}

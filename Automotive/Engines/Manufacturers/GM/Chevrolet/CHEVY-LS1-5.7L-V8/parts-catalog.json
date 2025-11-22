@@ -1,0 +1,245 @@
+{
+  "engine_id": "CHEVY-LS1-5.7L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "LS1-BLOCK",
+          "description": "Aluminum deep-skirt LS1 block",
+          "oem_part_numbers": {
+            "1997_1998": "12561168",
+            "1999_2004": "12561166"
+          },
+          "specifications": {
+            "bore_inches": 3.898,
+            "deck_height_inches": 9.240,
+            "main_caps": "6-bolt cross-bolted"
+          },
+          "aftermarket": {
+            "gm_lsa_block": "Factory supercharged block",
+            "dart_shp_ls": "Dart SHP LS block",
+            "world_warhawk": "World Products Warhawk"
+          }
+        },
+        "crankshaft": {
+          "part_id": "LS1-CRANK",
+          "description": "Nodular iron crankshaft",
+          "oem_part_number": "12552216",
+          "specifications": {
+            "stroke_inches": 3.622,
+            "main_journal_inches": 2.559,
+            "rod_journal_inches": 2.100,
+            "reluctor_wheel": "24X"
+          },
+          "aftermarket": {
+            "callies": "Callies Compstar forged",
+            "k1": "K1 Technologies 4340",
+            "lunati": "Lunati Voodoo"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "LS1-CONROD",
+          "description": "Powdered metal connecting rods",
+          "oem_part_number": "12571595",
+          "specifications": {
+            "length_inches": 6.098,
+            "bolt_size": "7/16-inch"
+          },
+          "aftermarket": {
+            "texas_speed": "Texas Speed forged",
+            "manley": "Manley 4340 H-beam",
+            "brian_crower": "BC H-beam"
+          }
+        },
+        "pistons": {
+          "part_id": "LS1-PISTON",
+          "description": "Hypereutectic pistons",
+          "specifications": {
+            "bore_inches": 3.898,
+            "compression_height_inches": 1.345
+          },
+          "aftermarket": {
+            "mahle": "Mahle PowerPak forged",
+            "je": "JE forged",
+            "wiseco": "Wiseco forged"
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "ls1_heads": {
+          "part_id": "LS1-HEAD",
+          "description": "Cathedral port aluminum heads",
+          "oem_castings": {
+            "241": "1997-2000 Corvette (66cc chambers)",
+            "853": "1999+ Corvette (67cc chambers)",
+            "806": "1998-2002 F-body"
+          },
+          "specifications": {
+            "intake_valve_inches": 2.00,
+            "exhaust_valve_inches": 1.55,
+            "intake_port_cc": 200,
+            "combustion_chamber_cc": "66-67"
+          },
+          "aftermarket_cathedral": {
+            "trick_flow_230": "Trick Flow GenX 230",
+            "afr_225": "AFR 225cc LS1",
+            "texas_speed_prc": "PRC 227cc"
+          },
+          "upgrade_to_rectangle": {
+            "ls3_heads": "GM LS3 heads (243/799 casting)",
+            "afr_260": "AFR 260cc rectangle port",
+            "note": "Requires intake manifold swap"
+          }
+        },
+        "valve_springs": {
+          "part_id": "LS1-VSPRINGS",
+          "oem_seat_pressure_lbs": 105,
+          "upgrade_options": {
+            "comp_26918": "Comp Cams beehive",
+            "pac_1218": "PAC Racing springs"
+          }
+        },
+        "rockers": {
+          "part_id": "LS1-ROCKERS",
+          "oem_ratio": "1.7:1",
+          "material": "Stamped steel, roller tip",
+          "aftermarket": {
+            "comp_trunnion": "Comp Cams trunnion upgrade",
+            "yella_terra": "Yella Terra roller rockers"
+          }
+        }
+      }
+    },
+
+    "camshaft_valvetrain": {
+      "components": {
+        "camshaft": {
+          "part_id": "LS1-CAM",
+          "description": "Hydraulic roller camshaft",
+          "oem_specs": {
+            "duration_at_050": "196/207",
+            "lift_inches": "0.480/0.480",
+            "lobe_separation": 116
+          },
+          "popular_aftermarket": {
+            "texas_speed_stage_2": { "duration": "218/228", "lift": "0.553/0.553" },
+            "comp_xer_228": { "duration": "228/232", "lift": "0.581/0.586" },
+            "btrcam_stage_3": { "duration": "231/238", "lift": "0.595/0.595" }
+          }
+        },
+        "lifters": {
+          "part_id": "LS1-LIFTERS",
+          "description": "Hydraulic roller lifters",
+          "oem_part_number": "12499225",
+          "notes": "Non-AFM/DOD lifters",
+          "aftermarket": {
+            "johnson_2110r": "Johnson Lifters drop-in",
+            "comp_cams": "Comp Cams hydraulic roller"
+          }
+        },
+        "timing_chain": {
+          "part_id": "LS1-TIMING",
+          "description": "Single-row timing chain",
+          "aftermarket": {
+            "comp_cams_3158": "3-bolt cam sprocket kit",
+            "melling": "Melling double row"
+          }
+        }
+      }
+    },
+
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "LS1-INTAKE",
+          "description": "Composite intake manifold",
+          "oem_part_number": "12561184",
+          "aftermarket": {
+            "fast_102": "FAST LSXR 102mm",
+            "msd_airforce": "MSD Atomic AirForce",
+            "holley_mid_rise": "Holley Hi-Ram"
+          }
+        },
+        "throttle_body": {
+          "part_id": "LS1-TB",
+          "oem_size_mm": 78,
+          "upgrades": {
+            "90mm": "Various brands",
+            "102mm": "Fast/Wilson/Nick Williams"
+          }
+        },
+        "fuel_injectors": {
+          "part_id": "LS1-INJ",
+          "oem_flow_lbhr": 28,
+          "connector": "EV1",
+          "upgrade_options": ["36 lb", "42 lb", "60 lb"],
+          "brands": ["Delphi", "Bosch", "FIC"]
+        }
+      }
+    },
+
+    "ignition_system": {
+      "components": {
+        "coil_packs": {
+          "part_id": "LS1-COILS",
+          "description": "Coil-near-plug ignition coils",
+          "oem_part_number": "12558948",
+          "aftermarket": {
+            "msd": "MSD Blaster coils",
+            "fast": "FAST coils"
+          }
+        },
+        "spark_plugs": {
+          "part_id": "LS1-PLUGS",
+          "oem": "AC Delco 41-985",
+          "gap_inches": 0.060,
+          "alternatives": ["NGK TR55", "Denso IK20"]
+        }
+      }
+    },
+
+    "exhaust": {
+      "components": {
+        "headers": {
+          "part_id": "LS1-HEADERS",
+          "popular_options": {
+            "kooks": "Kooks long tube",
+            "american_racing": "ARH",
+            "texas_speed": "TSP 1-7/8"
+          },
+          "recommended_size": {
+            "street": "1-3/4 inch primary",
+            "race": "1-7/8 to 2 inch primary"
+          }
+        }
+      }
+    },
+
+    "oiling_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "LS1-OIL-PUMP",
+          "oem_part_number": "12556436",
+          "aftermarket": {
+            "melling_10295": "Standard replacement",
+            "melling_10296": "High-volume"
+          }
+        },
+        "oil_pan": {
+          "part_id": "LS1-OIL-PAN",
+          "corvette_pan": "Rear sump",
+          "f_body_pan": "Front sump",
+          "swap_pans": {
+            "holley": "Holley LS swap pan",
+            "moroso": "Moroso road race pan"
+          }
+        }
+      }
+    }
+  }
+}

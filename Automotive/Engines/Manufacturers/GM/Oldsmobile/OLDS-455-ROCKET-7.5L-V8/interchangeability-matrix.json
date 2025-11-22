@@ -1,0 +1,35 @@
+{
+  "engine_id": "OLDS-455-ROCKET-7.5L-V8",
+  "matrix_version": "1.0.0",
+
+  "oldsmobile_v8_family": {
+    "production_span": "1949-1990",
+    "displacements_ci": [303, 324, 371, 394, 400, 425, 455],
+    "architecture": "Tall deck, unique to Oldsmobile"
+  },
+
+  "olds_455_compatibility": {
+    "within_olds_family": {
+      "blocks": "330, 350, 403, 455 share external dimensions",
+      "heads": "All Olds V8 heads interchange",
+      "bellhousing": "Oldsmobile-specific (BOP pattern)"
+    }
+  },
+
+  "bop_interchange": {
+    "description": "Buick-Olds-Pontiac shared bellhousing pattern",
+    "notes": "Can swap transmissions within BOP family",
+    "not_chevy": "Chevrolet uses different pattern"
+  },
+
+  "stroker_options": {
+    "455_in_350_block": "Not recommended - bore too close",
+    "400_block": "Can accept 455 crank with modifications"
+  },
+
+  "transmission_compatibility": {
+    "manual": ["Muncie with BOP bellhousing", "T10"],
+    "automatic": ["TH350", "TH400", "200-4R"],
+    "notes": "BOP bellhousing pattern required"
+  }
+}

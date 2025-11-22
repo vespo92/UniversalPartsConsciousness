@@ -1,0 +1,196 @@
+{
+  "engine_id": "CHEVY-LS1-5.7L-V8",
+  "common_names": ["LS1", "Gen III Small Block", "5.7L V8", "Corvette V8"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "LS/Gen III Small Block",
+  "production_years": "1997-2004",
+
+  "historical_significance": {
+    "summary": "Revolutionary aluminum V8 that redefined American performance",
+    "achievements": [
+      "First all-aluminum mass-production V8 from GM",
+      "Modern cathedral port architecture",
+      "Deep-skirt block design for strength",
+      "Established LS swap culture",
+      "Lighter than iron SBC with more power"
+    ],
+    "cultural_impact": "Made the LS swap a universal solution for engine upgrades"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 346,
+      "liters": 5.665,
+      "cc": 5665
+    },
+    "bore": {
+      "inches": 3.898,
+      "mm": 99.0
+    },
+    "stroke": {
+      "inches": 3.622,
+      "mm": 92.0
+    },
+    "compression_ratio": "10.25:1",
+    "firing_order": "1-8-7-2-6-5-4-3",
+    "cylinder_numbering": "Driver side 1-3-5-7, Passenger side 2-4-6-8",
+    "rotation": "Clockwise viewed from front",
+    "block_material": "Deep-skirt aluminum with iron cylinder liners",
+    "head_material": "Aluminum",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic roller lifters",
+    "cam_drive": "Single-row timing chain with cam phaser provision",
+    "fuel_system": "Sequential multi-port fuel injection",
+    "ignition_system": "Coil-near-plug (individual coils)",
+    "engine_management": "GM PCM (Powertrain Control Module)"
+  },
+
+  "power_output_by_application": {
+    "c5_corvette_1997_2000": {
+      "horsepower": 345,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 350,
+      "torque_rpm": 4400,
+      "notes": "First LS1 application"
+    },
+    "c5_corvette_2001_2004": {
+      "horsepower": 350,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 365,
+      "torque_rpm": 4400,
+      "notes": "Revised intake and exhaust"
+    },
+    "f_body_1998_2002": {
+      "horsepower": 305,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 335,
+      "torque_rpm": 4000,
+      "notes": "Camaro SS and Trans Am (detuned for packaging)"
+    },
+    "f_body_2001_2002_le": {
+      "horsepower": 325,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 350,
+      "torque_rpm": 4000,
+      "notes": "SS with LS1 heads and exhaust"
+    },
+    "gto_2004": {
+      "horsepower": 350,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 365,
+      "torque_rpm": 4000,
+      "notes": "Australian-built Holden Monaro"
+    },
+    "cts_v_2004": {
+      "horsepower": 400,
+      "hp_rpm": 6000,
+      "notes": "High-output variant"
+    }
+  },
+
+  "vehicle_applications": {
+    "corvette": {
+      "years": "1997-2004",
+      "models": ["C5 Coupe", "C5 Convertible", "C5 Hardtop"],
+      "notes": "Signature LS1 application"
+    },
+    "camaro": {
+      "years": "1998-2002",
+      "models": ["Z28", "SS"],
+      "notes": "Fourth-gen F-body"
+    },
+    "firebird_trans_am": {
+      "years": "1998-2002",
+      "models": ["Formula", "Trans Am", "WS6"],
+      "notes": "Fourth-gen F-body"
+    },
+    "gto": {
+      "years": "2004",
+      "notes": "Pontiac GTO revival"
+    },
+    "cts_v": {
+      "years": "2004",
+      "notes": "First performance Cadillac with LS power"
+    },
+    "holden_hsv": {
+      "years": "1999-2006",
+      "models": ["Commodore VT-VZ", "GTS", "Maloo"],
+      "notes": "Australian market"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_with_filter_quarts": 6.0,
+      "capacity_liters": 5.7,
+      "recommended_viscosity": ["5W-30"],
+      "filter": "AC Delco PF44 or equivalent"
+    },
+    "coolant": {
+      "capacity_gallons": 3.5,
+      "type": "Dex-Cool"
+    }
+  },
+
+  "critical_dimensions": {
+    "bore_spacing_inches": 4.400,
+    "deck_height_inches": 9.240,
+    "main_journal_diameter_inches": 2.559,
+    "rod_journal_diameter_inches": 2.100,
+    "connecting_rod_length_inches": 6.098,
+    "piston_compression_height_inches": 1.345
+  },
+
+  "key_features": {
+    "deep_skirt_block": "Block extends below crankshaft centerline for rigidity",
+    "6_bolt_main_caps": "Cross-bolted for strength",
+    "cathedral_port_heads": "High-flow intake port design",
+    "coil_near_plug": "Individual coils for precise ignition",
+    "58x_reluctor_wheel": "58-tooth crank sensor wheel",
+    "drive_by_cable": "Traditional throttle cable (not DBW)"
+  },
+
+  "common_issues_and_solutions": {
+    "oil_consumption": {
+      "cause": "Piston ring design, especially on early builds",
+      "solution": "LS2/LS3 piston upgrade, proper break-in"
+    },
+    "optispark_failure": {
+      "notes": "LS1 does NOT have Optispark (LT1 issue only)"
+    },
+    "knock_sensor_failure": {
+      "cause": "Heat and vibration",
+      "solution": "Replace with updated harness"
+    },
+    "fuel_injector_failure": {
+      "cause": "Heat cycling, age",
+      "solution": "Replace with Delphi or upgraded injectors"
+    }
+  },
+
+  "performance_potential": {
+    "stock": "345-400hp depending on application",
+    "bolt_ons": {
+      "power_range_hp": "380-420",
+      "modifications": ["Cold air intake", "Headers", "Exhaust", "Tune"]
+    },
+    "cam_only": {
+      "power_range_hp": "420-480",
+      "modifications": ["Camshaft", "Valve springs", "Tune"]
+    },
+    "heads_cam": {
+      "power_range_hp": "480-550",
+      "modifications": ["Ported heads or LS3 heads", "Aggressive cam", "Intake"]
+    },
+    "forced_induction": {
+      "power_range_hp": "600-1000+",
+      "notes": "Block good to 800hp, forged internals for more"
+    }
+  },
+
+  "notes": {
+    "heritage": "Clean-sheet design, not evolution of Gen I SBC",
+    "legacy": "Created the LS swap phenomenon",
+    "identification": "RPO code on engine ID sticker and VIN"
+  }
+}

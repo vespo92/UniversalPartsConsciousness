@@ -1,0 +1,138 @@
+{
+  "engine_id": "CHEVY-LT6-5.5L-V8-FLAT-PLANE-CRANK",
+  "common_names": ["LT6", "C8 Z06 Engine", "5.5L Flat-Plane V8"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "LT/Gen V - Unique Architecture",
+  "production_years": "2023-present",
+
+  "historical_significance": {
+    "summary": "The most powerful naturally aspirated V8 in any production car",
+    "achievements": [
+      "670hp naturally aspirated - highest ever for production NA V8",
+      "8,600 RPM redline - highest of any production pushrod engine",
+      "121.8 hp/liter - Ferrari/McLaren territory",
+      "Flat-plane crankshaft - first in American production V8",
+      "DOHC 32-valve - departure from traditional OHV"
+    ],
+    "cultural_impact": "Proved American engineering can match European exotics"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree, FLAT-PLANE CRANK",
+    "displacement": {
+      "cubic_inches": 336,
+      "liters": 5.497,
+      "cc": 5497
+    },
+    "bore": { "inches": 4.104, "mm": 104.25 },
+    "stroke": { "inches": 3.150, "mm": 80.0 },
+    "compression_ratio": "12.5:1",
+    "firing_order": "1-4-3-2-5-8-7-6 (flat-plane)",
+    "block_material": "Aluminum",
+    "head_material": "Aluminum DOHC",
+    "valvetrain": {
+      "type": "DOHC 32-valve (4 valves per cylinder)",
+      "camshafts": 4,
+      "finger_followers": true,
+      "variable_timing": "Dual VVT (intake and exhaust)"
+    },
+    "fuel_system": "Direct Injection",
+    "redline_rpm": 8600,
+    "rev_limiter_rpm": 8650
+  },
+
+  "power_output": {
+    "horsepower": 670,
+    "hp_rpm": 8400,
+    "torque_lb_ft": 460,
+    "torque_rpm": 6300,
+    "specific_output_hp_per_liter": 121.8,
+    "notes": "Most powerful NA production V8 ever"
+  },
+
+  "vehicle_applications": {
+    "corvette_z06": {
+      "years": "2023-present",
+      "model": "C8 Z06",
+      "notes": "Mid-engine supercar"
+    }
+  },
+
+  "unique_features": {
+    "flat_plane_crankshaft": {
+      "description": "180-degree crank pin spacing vs 90-degree cross-plane",
+      "benefits": [
+        "Higher RPM capability",
+        "More even exhaust pulses per bank",
+        "Exotic sound character"
+      ],
+      "trade_offs": [
+        "Increased NVH (noise/vibration/harshness)",
+        "Different sound character than traditional V8"
+      ]
+    },
+    "dohc_heads": {
+      "description": "Dual overhead cam, 32 valves",
+      "departure": "First non-OHV production Corvette engine since LT5",
+      "valves": {
+        "intake_count": 16,
+        "exhaust_count": 16,
+        "intake_diameter_mm": 38,
+        "exhaust_diameter_mm": 30
+      }
+    },
+    "dry_sump": {
+      "type": "Standard dry sump oiling",
+      "stages": 4,
+      "capacity_quarts": 10.5
+    },
+    "hand_built": {
+      "location": "Bowling Green Performance Build Center",
+      "signature": "Each engine signed by builder"
+    }
+  },
+
+  "cylinder_head_specifications": {
+    "type": "DOHC 4-valve per cylinder",
+    "intake_valve_mm": 38.0,
+    "exhaust_valve_mm": 30.0,
+    "intake_cam_duration": "280 degrees",
+    "exhaust_cam_duration": "274 degrees",
+    "valve_lift_mm": 12.5,
+    "port_flow_cfm_at_600": "Exceeds 400"
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 10.5,
+      "type": "0W-40 synthetic",
+      "dry_sump": true
+    }
+  },
+
+  "comparison_to_exotic_engines": {
+    "ferrari_458_4_5l": {
+      "hp": 562,
+      "rpm": 9000,
+      "hp_per_liter": 125
+    },
+    "porsche_992_gt3_4_0l": {
+      "hp": 502,
+      "rpm": 9000,
+      "hp_per_liter": 125
+    },
+    "lt6_5_5l": {
+      "hp": 670,
+      "rpm": 8600,
+      "hp_per_liter": 121.8,
+      "notes": "More total power, lower specific output but from pushrod-style dimensions"
+    }
+  },
+
+  "notes": {
+    "heritage": "Spiritual successor to 1990 LT5 DOHC in C4 ZR-1",
+    "legacy": "Proved American V8 can be high-revving exotic killer",
+    "sound": "Distinctive flat-plane wail unlike any other American V8",
+    "aftermarket": "Limited aftermarket due to exotic nature and complexity"
+  }
+}

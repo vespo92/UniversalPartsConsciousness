@@ -1,0 +1,177 @@
+{
+  "engine_id": "CHEVY-LT1-6.2L-V8",
+  "common_names": ["LT1 Gen V", "6.2L Direct Injection V8", "Corvette LT1"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "LT/Gen V Small Block",
+  "production_years": "2014-present",
+
+  "historical_significance": {
+    "summary": "The first Gen V small block, combining direct injection with OHV simplicity",
+    "achievements": [
+      "First production GM V8 with direct fuel injection",
+      "Active Fuel Management (AFM) / Dynamic Fuel Management (DFM)",
+      "Continuously Variable Valve Timing (VVT)",
+      "455hp from 6.2L naturally aspirated",
+      "Powers C7 Corvette and 6th Gen Camaro SS"
+    ]
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 376,
+      "liters": 6.162,
+      "cc": 6162
+    },
+    "bore": {
+      "inches": 4.065,
+      "mm": 103.25
+    },
+    "stroke": {
+      "inches": 3.622,
+      "mm": 92.0
+    },
+    "compression_ratio": "11.5:1",
+    "firing_order": "1-8-7-2-6-5-4-3",
+    "block_material": "Aluminum with steel cylinder liners",
+    "head_material": "Aluminum",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic roller, VVT",
+    "fuel_system": "Direct Injection (DI)",
+    "fuel_pressure_psi": 2175,
+    "ignition_system": "Coil-near-plug",
+    "variable_valve_timing": "Intake cam phaser (65 degrees range)"
+  },
+
+  "power_output_by_application": {
+    "c7_corvette": {
+      "horsepower": 455,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 460,
+      "torque_rpm": 4600,
+      "notes": "Stingray standard"
+    },
+    "c7_corvette_performance_exhaust": {
+      "horsepower": 460,
+      "notes": "With NPP exhaust option"
+    },
+    "camaro_ss_2016_plus": {
+      "horsepower": 455,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 455,
+      "torque_rpm": 4400,
+      "notes": "6th Gen Camaro SS"
+    },
+    "c8_corvette": {
+      "horsepower": 490,
+      "torque_lb_ft": 465,
+      "notes": "Mid-engine configuration with performance exhaust"
+    }
+  },
+
+  "vehicle_applications": {
+    "corvette_c7": {
+      "years": "2014-2019",
+      "models": ["Stingray"],
+      "notes": "Front-engine sports car"
+    },
+    "corvette_c8": {
+      "years": "2020-present",
+      "models": ["Stingray"],
+      "notes": "Mid-engine sports car, first ever mid-engine Corvette"
+    },
+    "camaro": {
+      "years": "2016-present",
+      "models": ["SS"],
+      "notes": "6th Gen Camaro"
+    },
+    "ct5_v": {
+      "years": "2020-present",
+      "notes": "Cadillac performance sedan"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_with_filter_quarts": 8.0,
+      "recommended_viscosity": ["0W-40 (Corvette)", "5W-30 (Camaro)"],
+      "filter": "AC Delco PF64"
+    },
+    "coolant": {
+      "type": "Dex-Cool"
+    }
+  },
+
+  "key_features": {
+    "direct_injection": {
+      "description": "High-pressure fuel injected directly into cylinder",
+      "pressure_psi": 2175,
+      "benefits": ["Improved efficiency", "Higher compression", "Cleaner combustion"]
+    },
+    "active_fuel_management": {
+      "description": "Cylinder deactivation for fuel economy",
+      "mode": "V8 to V4 operation",
+      "notes": "Can be disabled with tune"
+    },
+    "variable_valve_timing": {
+      "description": "Intake cam phaser",
+      "range_degrees": 65,
+      "benefits": ["Better idle", "More torque", "Improved emissions"]
+    },
+    "dry_sump_option": {
+      "corvette": "Available with Z51 package"
+    }
+  },
+
+  "cylinder_head_specifications": {
+    "intake_valve_inches": 2.13,
+    "exhaust_valve_inches": 1.59,
+    "intake_port_cc": 270,
+    "combustion_chamber_cc": 56.0,
+    "notes": "Revised rectangle port design from LS3"
+  },
+
+  "common_issues": {
+    "carbon_buildup": {
+      "cause": "Direct injection - no fuel washing intake valves",
+      "solution": "Walnut blasting every 50-75k miles",
+      "prevention": "Quality oil, occasional Italian tune-up"
+    },
+    "lifter_failure_afm": {
+      "cause": "AFM lifter collapse",
+      "affected": "AFM-equipped engines",
+      "solution": "AFM delete kit"
+    }
+  },
+
+  "performance_potential": {
+    "stock": "455-495hp depending on application",
+    "bolt_ons": {
+      "power_hp": "480-520",
+      "mods": ["CAI", "Headers", "Exhaust", "Tune"]
+    },
+    "cam_only": {
+      "power_hp": "530-580",
+      "notes": "Requires VVT-compatible cam, DOD delete recommended"
+    },
+    "supercharged": {
+      "power_hp": "650-800+",
+      "notes": "Many kits available, stock internals good to 700hp"
+    }
+  },
+
+  "vs_ls3_comparison": {
+    "improvements": [
+      "Direct injection (efficiency)",
+      "Variable valve timing",
+      "Higher compression (11.5:1 vs 10.7:1)",
+      "More power (455hp vs 430hp)",
+      "Better fuel economy"
+    ],
+    "differences": [
+      "Different fuel system architecture",
+      "VVT cam timing",
+      "Different PCM/tuning approach",
+      "Not directly interchangeable heads/intake"
+    ]
+  }
+}

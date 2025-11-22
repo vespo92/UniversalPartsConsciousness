@@ -1,0 +1,285 @@
+{
+  "engine_id": "CHEVY-SBC-350-5.7L-V8",
+  "matrix_version": "1.0.0",
+  "last_updated": "2025-01-15",
+
+  "sbc_family_overview": {
+    "description": "Small Block Chevy family interchangeability guide",
+    "production_span": "1955-2003",
+    "total_displacements_ci": [262, 265, 267, 283, 302, 305, 307, 327, 350, 400],
+    "core_architecture": "All Gen I SBC share same external dimensions and bolt patterns"
+  },
+
+  "block_interchangeability": {
+    "universal_dimensions": {
+      "bore_spacing_inches": 4.400,
+      "bellhousing_pattern": "Chevrolet small/big block universal",
+      "motor_mount_pattern": "Universal across all SBC",
+      "oil_filter_location": "Same across all SBC"
+    },
+    "deck_height_groups": {
+      "standard_deck": {
+        "height_inches": 9.025,
+        "displacements": [262, 265, 267, 283, 302, 305, 307, 327, 350]
+      },
+      "tall_deck": {
+        "height_inches": 9.125,
+        "displacements": [400],
+        "notes": "400 uses taller deck and larger main journals"
+      }
+    },
+    "main_journal_sizes": {
+      "small_journal": {
+        "diameter_inches": 2.300,
+        "years": "1955-1967",
+        "displacements": [265, 283, 327]
+      },
+      "large_journal": {
+        "diameter_inches": 2.448,
+        "years": "1968-2003",
+        "displacements": [302, 305, 307, 327, 350, 400]
+      }
+    },
+    "main_cap_options": {
+      "2_bolt": {
+        "applications": "Standard production",
+        "hp_limit": "400-450hp recommended"
+      },
+      "4_bolt": {
+        "applications": "Performance and truck",
+        "hp_limit": "600+hp capable"
+      }
+    }
+  },
+
+  "crankshaft_interchange": {
+    "350_crank_compatibility": {
+      "stroke_inches": 3.480,
+      "journal_diameter_inches": 2.448,
+      "fits_blocks": ["350", "305", "307", "302"],
+      "creates_displacement": {
+        "in_350_block": "350ci (4.00 bore)",
+        "in_305_block": "338ci (3.736 bore) - not recommended",
+        "stroker_383": "383ci with 4.030 bore and 400 crank"
+      }
+    },
+    "400_crank_swap": {
+      "stroke_inches": 3.750,
+      "journal_diameter_inches": 2.650,
+      "requires": "400 main bearings or 350 main spacer bearings",
+      "creates_383_stroker": {
+        "bore_inches": 4.030,
+        "displacement_ci": 383,
+        "notes": "Most popular SBC stroker combination"
+      }
+    },
+    "stroker_options": {
+      "377ci": { "crank_stroke": 3.500, "bore": 4.155, "notes": "Mild stroker" },
+      "383ci": { "crank_stroke": 3.750, "bore": 4.030, "notes": "Legendary combo" },
+      "396ci": { "crank_stroke": 3.875, "bore": 4.030, "notes": "Requires notched block" },
+      "406ci": { "crank_stroke": 3.875, "bore": 4.155, "notes": "Max SBC displacement" },
+      "427ci": { "crank_stroke": 4.000, "bore": 4.125, "notes": "Aftermarket block required" }
+    }
+  },
+
+  "cylinder_head_interchange": {
+    "all_sbc_compatible": {
+      "bolt_pattern": "All Gen I SBC heads interchange on all Gen I blocks",
+      "head_bolt_size": "1/2-inch",
+      "intake_port_spacing": "Common across all years"
+    },
+    "combustion_chamber_considerations": {
+      "small_chamber_64cc": {
+        "compression_with_flat_top": "10.5:1 (350)",
+        "best_for": "Performance builds"
+      },
+      "large_chamber_76cc": {
+        "compression_with_flat_top": "9.0:1 (350)",
+        "best_for": "Low compression pump gas"
+      }
+    },
+    "valve_size_groups": {
+      "small_valve": {
+        "intake_inches": 1.94,
+        "exhaust_inches": 1.50,
+        "castings": ["882", "292", "487"]
+      },
+      "large_valve": {
+        "intake_inches": 2.02,
+        "exhaust_inches": 1.60,
+        "castings": ["041", "462", "186", "492"]
+      },
+      "vortec": {
+        "intake_inches": 1.94,
+        "exhaust_inches": 1.50,
+        "intake_bolts": "Different pattern - requires Vortec intake",
+        "castings": ["12558062", "10239906"]
+      }
+    },
+    "vortec_compatibility": {
+      "notes": "Vortec heads have different intake manifold bolt pattern",
+      "solutions": [
+        "Use Vortec-specific intake manifold",
+        "Use adapter gaskets for older intakes",
+        "Edelbrock and others make Vortec-compatible intakes"
+      ]
+    }
+  },
+
+  "intake_manifold_interchange": {
+    "standard_sbc_pattern": {
+      "description": "Pre-Vortec intake manifold bolt pattern",
+      "years": "1955-1995",
+      "compatible_heads": ["All non-Vortec SBC heads"]
+    },
+    "vortec_pattern": {
+      "description": "Vortec cylinder head intake pattern",
+      "years": "1996-2002",
+      "notes": "Different bolt angle and location"
+    },
+    "cross_compatibility": {
+      "standard_intake_on_vortec": "Requires adapter gaskets",
+      "vortec_intake_on_standard": "Not directly compatible"
+    }
+  },
+
+  "connecting_rod_interchange": {
+    "rod_journal_size": {
+      "description": "All SBC except 400 use 2.100-inch rod journal",
+      "400_journal_inches": 2.100,
+      "all_others_inches": 2.100,
+      "notes": "400 rods are 5.565 inches long vs 5.700 for 350"
+    },
+    "rod_length_options": {
+      "standard_5700": {
+        "length_inches": 5.700,
+        "applications": ["265", "283", "305", "307", "327", "350"]
+      },
+      "400_rod_5565": {
+        "length_inches": 5.565,
+        "applications": ["400"],
+        "notes": "Shorter due to taller deck height and longer stroke"
+      }
+    },
+    "stroker_rod_options": {
+      "5700_with_400_crank": "Traditional 383 stroker combo",
+      "6000_aftermarket": "Improved rod ratio for strokers"
+    }
+  },
+
+  "distributor_interchange": {
+    "all_sbc_compatible": {
+      "gear_pitch": "0.491-inch diameter, standard SBC/BBC pitch",
+      "shaft_diameter": "0.500-inch",
+      "notes": "All SBC distributors physically interchange"
+    },
+    "timing_considerations": {
+      "points_to_hei": "HEI requires larger cap clearance",
+      "roller_cam_warning": "Roller cams require bronze/composite gear"
+    }
+  },
+
+  "accessory_interchange": {
+    "water_pump": {
+      "short_pump": {
+        "years": "1969-2002",
+        "description": "Short water pump with close-mounted accessories"
+      },
+      "long_pump": {
+        "years": "1955-1968",
+        "description": "Long water pump configuration"
+      },
+      "notes": "Mixing long/short requires complete accessory change"
+    },
+    "alternator_mounting": {
+      "early_generator_style": "1955-1962",
+      "alternator": "1963+",
+      "notes": "Bracket differences, easily adapted"
+    },
+    "starter": {
+      "universal": "All SBC starters interchange",
+      "mini_starter": "Works on all SBC applications"
+    }
+  },
+
+  "transmission_compatibility": {
+    "bellhousing_pattern": {
+      "description": "Chevrolet bell housing pattern",
+      "compatible_transmissions": [
+        "Muncie M20/M21/M22",
+        "Saginaw 4-speed",
+        "T5",
+        "T56",
+        "TR6060",
+        "TH350",
+        "TH400",
+        "700R4",
+        "4L60E",
+        "4L80E"
+      ]
+    },
+    "flywheel_balance": {
+      "external_balance": {
+        "applications": ["400ci"],
+        "notes": "Requires externally balanced flywheel/flexplate"
+      },
+      "internal_balance": {
+        "applications": ["All others (262-350ci)"],
+        "notes": "Uses neutral balance flywheel"
+      }
+    }
+  },
+
+  "common_swaps": {
+    "350_into_earlier_cars": {
+      "compatibility": "Direct bolt-in to any SBC-equipped vehicle",
+      "considerations": ["Motor mounts", "Accessories", "Exhaust routing"]
+    },
+    "350_into_ls_cars": {
+      "notes": "Not directly compatible - different architecture",
+      "solution": "Requires complete swap kit with mounts, wiring, etc."
+    },
+    "tpi_onto_carb_block": {
+      "feasible": true,
+      "requirements": ["ECM", "Wiring harness", "Sensors", "Fuel pump upgrade"],
+      "kits_available": "Howell, Street & Performance, Painless"
+    }
+  },
+
+  "year_group_compatibility": {
+    "first_gen_1955_1957": {
+      "unique_features": "265ci only, different oil fill location",
+      "compatibility": "Heads, intake manifold backward compatible"
+    },
+    "second_gen_1958_1967": {
+      "features": "283, 327, small journal crank",
+      "compatibility": "Full interchange within group"
+    },
+    "third_gen_1968_1986": {
+      "features": "Large journal, 2-piece rear main seal",
+      "compatibility": "Most common interchange era"
+    },
+    "fourth_gen_1987_2002": {
+      "features": "1-piece rear main seal, roller cam blocks",
+      "compatibility": "Preferred for roller cam conversions"
+    }
+  },
+
+  "known_compatibility_issues": {
+    "400_block_special": {
+      "issue": "400 uses steam holes in block deck",
+      "impact": "Requires 400-specific head gaskets or steam hole drilling",
+      "solution": "Use Fel-Pro 1014 gaskets designed for 400"
+    },
+    "vortec_intake_bolt": {
+      "issue": "Vortec heads have different intake bolt pattern",
+      "impact": "Cannot use pre-1996 intake manifolds without adapters",
+      "solution": "Vortec-specific intakes or adapter gaskets"
+    },
+    "roller_cam_block": {
+      "issue": "1987+ blocks have provisions for roller lifter guides",
+      "impact": "Earlier blocks need retrofit kit for roller cam",
+      "solution": "Use COMP Cams retrofit roller lifter kit"
+    }
+  }
+}

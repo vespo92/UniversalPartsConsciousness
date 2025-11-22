@@ -1,0 +1,523 @@
+{
+  "engine_id": "CHEVY-SBC-350-5.7L-V8",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2025-01-15",
+
+  "market_overview": {
+    "description": "The Small Block Chevy 350 has the largest aftermarket support of any engine in automotive history",
+    "estimated_annual_market_usd": "Billions",
+    "key_factors": [
+      "100+ million engines produced",
+      "50+ years of continuous production",
+      "Universal hot rod platform",
+      "Racing success across all disciplines"
+    ]
+  },
+
+  "vendors_and_retailers": {
+    "major_retailers": {
+      "summit_racing": {
+        "name": "Summit Racing Equipment",
+        "url": "https://www.summitracing.com",
+        "specialty": "Complete performance parts catalog",
+        "notes": "Largest SBC parts selection"
+      },
+      "jegs": {
+        "name": "JEGS High Performance",
+        "url": "https://www.jegs.com",
+        "specialty": "Complete performance parts",
+        "notes": "Family-owned, excellent service"
+      },
+      "speedway_motors": {
+        "name": "Speedway Motors",
+        "url": "https://www.speedwaymotors.com",
+        "specialty": "Hot rod and racing parts",
+        "notes": "Street rod specialist"
+      },
+      "rockauto": {
+        "name": "RockAuto",
+        "url": "https://www.rockauto.com",
+        "specialty": "OEM replacement parts",
+        "notes": "Best prices on replacement parts"
+      },
+      "amazon": {
+        "name": "Amazon Automotive",
+        "url": "https://www.amazon.com/automotive",
+        "specialty": "General availability",
+        "notes": "Verify seller reputation"
+      }
+    },
+
+    "specialty_vendors": {
+      "scoggin_dickey": {
+        "name": "Scoggin-Dickey Parts Center",
+        "url": "https://www.sdpc-raceshop.com",
+        "specialty": "GM Performance Parts, LS/LT engines",
+        "notes": "Largest GM Performance dealer"
+      },
+      "pace_performance": {
+        "name": "Pace Performance",
+        "url": "https://www.paceperformance.com",
+        "specialty": "Crate engines, LS swaps",
+        "notes": "Turn-key engine packages"
+      },
+      "blueprintengines": {
+        "name": "Blueprint Engines",
+        "url": "https://www.blueprintengines.com",
+        "specialty": "Complete crate engines",
+        "notes": "Ready-to-run SBC engines"
+      },
+      "engine_factory": {
+        "name": "Engine Factory",
+        "url": "https://www.enginefactory.com",
+        "specialty": "Remanufactured engines",
+        "notes": "Budget-friendly rebuilds"
+      }
+    }
+  },
+
+  "performance_parts_manufacturers": {
+    "cylinder_heads": {
+      "afr": {
+        "name": "Air Flow Research (AFR)",
+        "specialty": "High-flow aluminum heads",
+        "popular_products": {
+          "afr_195": { "flow_cfm": 260, "price_usd": 1800 },
+          "afr_210": { "flow_cfm": 280, "price_usd": 2000 },
+          "afr_220": { "flow_cfm": 300, "price_usd": 2200 }
+        },
+        "reputation": "Industry standard for flow"
+      },
+      "edelbrock": {
+        "name": "Edelbrock",
+        "specialty": "Street performance aluminum heads",
+        "popular_products": {
+          "performer": { "flow_cfm": 185, "price_usd": 1400 },
+          "performer_rpm": { "flow_cfm": 220, "price_usd": 1700 },
+          "e_cnc": { "flow_cfm": 260, "price_usd": 2400 }
+        },
+        "reputation": "Great value, excellent street performance"
+      },
+      "dart": {
+        "name": "Dart Machinery",
+        "specialty": "Race-quality heads and blocks",
+        "popular_products": {
+          "iron_eagle": "Iron race heads",
+          "pro_1": "Aluminum race heads",
+          "shp_block": "Performance blocks"
+        },
+        "reputation": "Professional-grade quality"
+      },
+      "brodix": {
+        "name": "Brodix",
+        "specialty": "Race cylinder heads",
+        "popular_products": {
+          "track_1": "Street/strip heads",
+          "race_rite": "Full race heads"
+        },
+        "reputation": "Race-proven designs"
+      },
+      "trick_flow": {
+        "name": "Trick Flow Specialties",
+        "specialty": "Street/strip heads",
+        "popular_products": {
+          "super_23": { "flow_cfm": 225, "price_usd": 1600 },
+          "dhc": "SBC to LS port design"
+        },
+        "reputation": "Innovation leader"
+      }
+    },
+
+    "intake_manifolds": {
+      "edelbrock": {
+        "popular_products": {
+          "performer_2101": { "type": "Dual-plane", "price_usd": 250 },
+          "performer_rpm_7101": { "type": "Single-plane", "price_usd": 300 },
+          "super_victor": { "type": "Race single-plane", "price_usd": 450 }
+        }
+      },
+      "holley": {
+        "popular_products": {
+          "stealth_ram": { "type": "EFI tunnel ram", "price_usd": 800 },
+          "mid_rise": { "type": "EFI intake", "price_usd": 600 }
+        }
+      },
+      "weiand": {
+        "popular_products": {
+          "stealth": { "type": "Dual-plane", "price_usd": 280 },
+          "team_g": { "type": "Dual-plane", "price_usd": 260 }
+        }
+      },
+      "professional_products": {
+        "popular_products": {
+          "cyclone": { "type": "Carb single-plane", "price_usd": 200 },
+          "hurricane": { "type": "EFI intake", "price_usd": 350 }
+        }
+      }
+    },
+
+    "camshafts": {
+      "comp_cams": {
+        "name": "COMP Cams",
+        "specialty": "Complete valvetrain solutions",
+        "popular_grinds": {
+          "xe268h": { "duration_050": "224/230", "lift": "0.477/0.480", "application": "Mild street" },
+          "xe274h": { "duration_050": "230/236", "lift": "0.490/0.495", "application": "Street/strip" },
+          "xe284h": { "duration_050": "240/246", "lift": "0.507/0.510", "application": "Performance" },
+          "xtreme_energy_roller": { "type": "Hydraulic roller", "application": "Best of both worlds" }
+        },
+        "reputation": "Industry leader, best tech support"
+      },
+      "crane_cams": {
+        "name": "Crane Cams",
+        "specialty": "Performance camshafts",
+        "popular_grinds": {
+          "h284_2": "Street/strip hydraulic",
+          "solid_roller": "Race applications"
+        }
+      },
+      "lunati": {
+        "name": "Lunati",
+        "specialty": "Value performance cams",
+        "popular_products": {
+          "voodoo": "Street performance line"
+        }
+      },
+      "isky": {
+        "name": "Iskenderian Racing Cams",
+        "specialty": "Race camshafts since 1948",
+        "reputation": "Original performance cam company"
+      },
+      "crower": {
+        "name": "Crower Cams",
+        "specialty": "High-end race cams",
+        "reputation": "Top-tier racing applications"
+      }
+    },
+
+    "rotating_assembly": {
+      "scat": {
+        "name": "SCAT Enterprises",
+        "specialty": "Crankshafts and stroker kits",
+        "popular_products": {
+          "cast_crank": "Budget rotating assembly",
+          "forged_4340": "Performance forged",
+          "383_stroker_kit": { "price_usd": 1200, "includes": "Crank, rods, pistons, bearings, rings" }
+        }
+      },
+      "eagle": {
+        "name": "Eagle Specialty Products",
+        "specialty": "Rotating assemblies",
+        "popular_products": {
+          "sir_rods": "H-beam connecting rods",
+          "383_kit": "Complete stroker kits"
+        }
+      },
+      "callies": {
+        "name": "Callies Performance Products",
+        "specialty": "Premium crankshafts",
+        "popular_products": {
+          "compstar": "Mid-range forged",
+          "dragonslayer": "Top-tier race crank"
+        }
+      },
+      "lunati": {
+        "name": "Lunati",
+        "specialty": "Value rotating assemblies",
+        "popular_products": {
+          "voodoo_kit": "Complete stroker kits"
+        }
+      },
+      "manley": {
+        "name": "Manley Performance",
+        "specialty": "Connecting rods and pistons",
+        "reputation": "Race-proven components"
+      },
+      "je_pistons": {
+        "name": "JE Pistons",
+        "specialty": "Forged pistons",
+        "reputation": "Industry standard forged pistons"
+      },
+      "wiseco": {
+        "name": "Wiseco",
+        "specialty": "Forged pistons",
+        "reputation": "Racing heritage"
+      }
+    },
+
+    "headers_exhaust": {
+      "hooker": {
+        "name": "Hooker Headers",
+        "specialty": "Performance headers",
+        "applications": "Most SBC vehicles covered"
+      },
+      "hedman": {
+        "name": "Hedman Hedders",
+        "specialty": "Street headers",
+        "notes": "Value-oriented"
+      },
+      "flowmaster": {
+        "name": "Flowmaster",
+        "specialty": "Mufflers and exhaust",
+        "popular_products": {
+          "super_44": "Aggressive sound",
+          "super_40": "Moderate tone"
+        }
+      },
+      "american_racing": {
+        "name": "American Racing Headers",
+        "specialty": "Long-tube headers",
+        "reputation": "Premium quality"
+      },
+      "dynatech": {
+        "name": "DynaTeH",
+        "specialty": "Race headers",
+        "reputation": "Top-tier NASCAR-style"
+      }
+    },
+
+    "ignition_systems": {
+      "msd": {
+        "name": "MSD Ignition",
+        "specialty": "Complete ignition systems",
+        "popular_products": {
+          "6al": { "description": "Ignition box", "price_usd": 280 },
+          "pro_billet": { "description": "Distributor", "price_usd": 350 },
+          "blaster_coil": { "description": "High-output coil", "price_usd": 50 }
+        }
+      },
+      "accel": {
+        "name": "ACCEL",
+        "specialty": "Ignition and fuel injection",
+        "popular_products": {
+          "super_stock": "HEI replacement",
+          "dfi": "EFI systems"
+        }
+      },
+      "pertronix": {
+        "name": "PerTronix",
+        "specialty": "Electronic ignition conversions",
+        "popular_products": {
+          "ignitor": "Points replacement module",
+          "flamethrower": "Complete distributor"
+        }
+      },
+      "performance_distributors": {
+        "name": "Performance Distributors",
+        "specialty": "DUI (Davis Unified Ignition)",
+        "notes": "Complete HEI replacement"
+      }
+    },
+
+    "fuel_injection": {
+      "holley": {
+        "name": "Holley Performance",
+        "specialty": "EFI and carburetors",
+        "efi_products": {
+          "sniper": { "description": "Self-tuning TBI", "price_usd": 1200 },
+          "terminator_x": { "description": "Multi-port EFI", "price_usd": 1000 },
+          "dominator": { "description": "Advanced EFI", "price_usd": 2000 }
+        }
+      },
+      "fitech": {
+        "name": "FiTech Fuel Injection",
+        "specialty": "Self-learning EFI",
+        "popular_products": {
+          "go_efi": { "cfm_options": [400, 600, 800], "price_usd_range": "1100-1400" },
+          "go_street": { "description": "Budget EFI", "price_usd": 900 }
+        }
+      },
+      "fast": {
+        "name": "FAST (Fuel Air Spark Technology)",
+        "specialty": "Performance EFI",
+        "popular_products": {
+          "ez_efi": "Self-tuning EFI",
+          "xfi": "Race EFI"
+        }
+      },
+      "edelbrock": {
+        "name": "Edelbrock",
+        "specialty": "Pro-Flo EFI",
+        "popular_products": {
+          "pro_flo_4": "Multi-port EFI with timing control"
+        }
+      }
+    },
+
+    "superchargers_turbos": {
+      "vortech": {
+        "name": "Vortech Superchargers",
+        "specialty": "Centrifugal superchargers",
+        "power_adder_hp": "100-200+",
+        "price_range_usd": "3000-5000"
+      },
+      "procharger": {
+        "name": "ProCharger",
+        "specialty": "Centrifugal superchargers",
+        "power_adder_hp": "100-300+",
+        "price_range_usd": "3500-6000"
+      },
+      "weiand": {
+        "name": "Weiand (Holley)",
+        "specialty": "Roots-type superchargers (6-71, 8-71)",
+        "notes": "Classic blower look",
+        "price_range_usd": "2500-4000"
+      },
+      "paxton": {
+        "name": "Paxton",
+        "specialty": "Centrifugal superchargers",
+        "notes": "Sister company to Vortech"
+      },
+      "turbo_kits": {
+        "cts_turbo": "Universal turbo kits",
+        "on3_performance": "Budget turbo kits",
+        "precision_turbo": "Premium turbochargers"
+      }
+    },
+
+    "nitrous_oxide": {
+      "nitrous_oxide_systems": {
+        "name": "Nitrous Oxide Systems (NOS)",
+        "specialty": "Nitrous kits",
+        "popular_products": {
+          "cheater": "Plate system",
+          "fogger": "Direct port"
+        }
+      },
+      "nitrous_express": {
+        "name": "Nitrous Express",
+        "specialty": "Nitrous systems",
+        "popular_products": {
+          "shark": "Self-contained system",
+          "piranha": "Complete kit"
+        }
+      },
+      "zex": {
+        "name": "ZEX",
+        "specialty": "Wet nitrous systems",
+        "notes": "Good entry-level kits"
+      }
+    }
+  },
+
+  "crate_engines": {
+    "gm_performance": {
+      "zz4": {
+        "displacement": "350ci",
+        "horsepower": 355,
+        "torque": 405,
+        "price_usd": 7500,
+        "features": ["Aluminum heads", "Roller cam", "4-bolt main"],
+        "notes": "The benchmark crate 350"
+      },
+      "zz6": {
+        "displacement": "350ci",
+        "horsepower": 405,
+        "torque": 406,
+        "price_usd": 8500,
+        "features": ["Fast Burn heads", "Hydraulic roller"],
+        "notes": "Updated ZZ4 design"
+      },
+      "zz383": {
+        "displacement": "383ci",
+        "horsepower": 450,
+        "torque": 450,
+        "price_usd": 9500,
+        "features": ["Stroker", "Aluminum heads"],
+        "notes": "Factory stroker motor"
+      }
+    },
+    "blueprint_engines": {
+      "bp3503ct1": {
+        "displacement": "350ci",
+        "horsepower": 373,
+        "price_usd": 4500,
+        "notes": "Budget performance crate"
+      },
+      "bp3834ct1": {
+        "displacement": "383ci stroker",
+        "horsepower": 430,
+        "price_usd": 5500,
+        "notes": "Popular stroker option"
+      }
+    },
+    "atk_engines": {
+      "hp32": {
+        "displacement": "350ci",
+        "horsepower": 350,
+        "price_usd": 3500,
+        "notes": "Budget crate engine"
+      }
+    }
+  },
+
+  "popular_build_combinations": {
+    "budget_350_rebuild": {
+      "target_hp": 300,
+      "estimated_cost": "$2500-3500",
+      "components": [
+        "Cleaned and machined block",
+        "Stock crank with new bearings",
+        "Stock rods reconditioned",
+        "Hypereutectic pistons",
+        "Stock or mild cam",
+        "Rebuilt heads with valve job"
+      ]
+    },
+    "street_performance_350": {
+      "target_hp": 400,
+      "estimated_cost": "$5000-7000",
+      "components": [
+        "Edelbrock Performer RPM heads",
+        "COMP XE268 cam",
+        "Edelbrock Performer intake",
+        "Holley 600 or Edelbrock 1406 carb",
+        "Headers",
+        "HEI or MSD ignition"
+      ]
+    },
+    "383_stroker_street_strip": {
+      "target_hp": 450,
+      "estimated_cost": "$8000-12000",
+      "components": [
+        "383 stroker kit (SCAT or Eagle)",
+        "AFR 195 or equivalent heads",
+        "Solid or hydraulic roller cam",
+        "Single-plane intake",
+        "750 CFM carburetor",
+        "Long-tube headers"
+      ]
+    },
+    "full_race_383_406": {
+      "target_hp": "550-650",
+      "estimated_cost": "$15000-25000",
+      "components": [
+        "Dart or aftermarket block",
+        "Custom stroker rotating assembly",
+        "CNC-ported heads",
+        "Solid roller cam",
+        "Race intake manifold",
+        "Custom headers",
+        "Dry sump oiling (optional)"
+      ]
+    }
+  },
+
+  "community_resources": {
+    "forums": {
+      "corvetteforum": "Corvette-specific discussion",
+      "camaros_net": "Camaro/Firebird focus",
+      "hotrodders": "General hot rod discussion",
+      "sbc_forums": "Dedicated SBC community"
+    },
+    "technical_resources": {
+      "small_block_chevy_performance": "David Vizard book",
+      "how_to_rebuild": "Tom Monroe SA Design series",
+      "engine_building_technology": "COMP Cams tech videos"
+    },
+    "dyno_testing": {
+      "westech": "Industry-leading engine testing",
+      "school_of_automotive_machinists": "Educational dyno testing"
+    }
+  }
+}

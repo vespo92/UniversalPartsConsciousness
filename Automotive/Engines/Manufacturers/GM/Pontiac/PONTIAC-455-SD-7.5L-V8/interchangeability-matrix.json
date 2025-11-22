@@ -1,0 +1,69 @@
+{
+  "engine_id": "PONTIAC-455-SD-7.5L-V8",
+  "matrix_version": "1.0.0",
+
+  "pontiac_v8_family": {
+    "production_span": "1955-1981",
+    "displacements_ci": [287, 316, 326, 347, 370, 389, 400, 421, 428, 455],
+    "all_pontiac_v8_share": {
+      "bellhousing_pattern": "Pontiac-specific (not Chevy)",
+      "bore_spacing_inches": 4.620,
+      "notes": "All Pontiac V8s interchange components within family"
+    }
+  },
+
+  "sd_specific_components": {
+    "unique_to_sd": [
+      "Round port heads (7K3)",
+      "Forged crankshaft",
+      "Forged connecting rods",
+      "Forged pistons",
+      "SD camshaft",
+      "Reinforced block"
+    ],
+    "shared_with_regular_455": [
+      "External dimensions",
+      "Bellhousing pattern",
+      "Accessory mounting",
+      "Water pump"
+    ]
+  },
+
+  "block_interchange": {
+    "bore_sizes": {
+      "389": 4.0625,
+      "400": 4.121,
+      "421_428": 4.094,
+      "455": 4.151
+    },
+    "all_blocks_accept": "Any Pontiac V8 crank, rods, heads"
+  },
+
+  "cylinder_head_interchange": {
+    "all_pontiac_heads_fit_all_blocks": true,
+    "head_types": {
+      "d_port": "Standard production heads",
+      "round_port": "SD and Ram Air IV heads, superior flow"
+    }
+  },
+
+  "transmission_compatibility": {
+    "bellhousing": "Pontiac-specific",
+    "manual": ["Muncie M20/M21/M22 with Pontiac bell", "BOP-specific adapters"],
+    "automatic": ["TH350", "TH400"],
+    "notes": "Pontiac bellhousing different from Chevrolet"
+  },
+
+  "chevy_vs_pontiac": {
+    "not_interchangeable": [
+      "Cylinder heads",
+      "Intake manifolds",
+      "Bellhousing pattern",
+      "Starter location"
+    ],
+    "can_share": [
+      "Transmission (with proper bellhousing)",
+      "Some accessories"
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "engine_id": "CHEVY-BBC-454-7.4L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": {
+        "engine_block": {
+          "part_id": "BBC454-BLOCK",
+          "description": "Cast iron 454 engine block",
+          "oem_part_numbers": {
+            "2_bolt_main": ["10069286", "361959"],
+            "4_bolt_main": ["10069288", "366245", "10114182"]
+          },
+          "specifications": {
+            "bore_diameter_std_inches": 4.251,
+            "max_overbore_inches": 4.310,
+            "deck_height_inches": 9.800,
+            "main_bearing_bores": 5
+          },
+          "aftermarket_options": {
+            "dart_big_m": "Dart Big M block (to 4.600 bore)",
+            "gm_bowtie": "GM Bowtie race block",
+            "world_merlin": "World Products Merlin block"
+          }
+        },
+        "crankshaft": {
+          "part_id": "BBC454-CRANK",
+          "description": "454 crankshaft, 4.00-inch stroke",
+          "oem_part_numbers": {
+            "nodular_iron": ["14088536"],
+            "forged_steel": ["3963523 (LS6)"]
+          },
+          "specifications": {
+            "stroke_inches": 4.000,
+            "main_journal_inches": 2.7485,
+            "rod_journal_inches": 2.200
+          },
+          "aftermarket_options": {
+            "scat": "SCAT 4340 forged",
+            "eagle": "Eagle 4340 forged",
+            "callies": "Callies Magnum forged",
+            "stroker_options": ["4.250 stroke", "4.375 stroke", "4.500 stroke"]
+          }
+        },
+        "connecting_rods": {
+          "part_id": "BBC454-CONROD",
+          "description": "454 connecting rods",
+          "oem_part_numbers": ["3963530"],
+          "specifications": {
+            "length_inches": 6.135,
+            "big_end_diameter_inches": 2.325,
+            "bolt_size": "7/16-inch"
+          },
+          "aftermarket_options": {
+            "scat": "SCAT H-beam 4340",
+            "eagle": "Eagle H-beam",
+            "oliver": "Oliver billet",
+            "grs": "GRS aluminum"
+          }
+        },
+        "pistons": {
+          "part_id": "BBC454-PISTON",
+          "description": "454 pistons",
+          "oem_specs": {
+            "bore_std_inches": 4.251,
+            "compression_height_inches": 1.645
+          },
+          "aftermarket_options": {
+            "je": "JE forged",
+            "wiseco": "Wiseco forged",
+            "mahle": "Mahle PowerPak",
+            "ross": "Ross Racing forged"
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "description": "Cylinder heads and valvetrain",
+      "components": {
+        "oval_port_heads": {
+          "part_id": "BBC454-HEAD-OVAL",
+          "description": "Oval port iron heads",
+          "oem_castings": ["346236", "049"],
+          "specifications": {
+            "intake_runner_cc": 280,
+            "exhaust_runner_cc": 100,
+            "combustion_chamber_cc": 110
+          },
+          "aftermarket_options": {
+            "edelbrock_oval": "Edelbrock Performer RPM",
+            "afr_oval": "AFR Magnum oval port"
+          }
+        },
+        "rectangular_port_heads": {
+          "part_id": "BBC454-HEAD-RECT",
+          "description": "Rectangular port performance heads",
+          "oem_castings": ["LS6", "LS7", "781", "049"],
+          "aftermarket_options": {
+            "brodix_race_rite": "Brodix Race Rite BB-2 Plus",
+            "afr_385": "AFR 385cc rectangle port",
+            "dart_pro_1": "Dart Pro 1 BBC",
+            "trick_flow_powerport": "Trick Flow PowerPort 320"
+          }
+        }
+      }
+    },
+
+    "intake_manifolds": {
+      "description": "Intake systems",
+      "components": {
+        "carb_intake_oval": {
+          "part_id": "BBC454-INTAKE-OVAL",
+          "popular_options": {
+            "edelbrock_performer": { "part_number": "2161", "type": "Dual-plane" },
+            "edelbrock_rpm": { "part_number": "7161", "type": "Single-plane" },
+            "holley_strip_dominator": { "type": "Tunnel ram" }
+          }
+        },
+        "carb_intake_rect": {
+          "part_id": "BBC454-INTAKE-RECT",
+          "popular_options": {
+            "edelbrock_victor": { "type": "Race single-plane" },
+            "weiand_tunnel_ram": { "type": "Dual-quad tunnel ram" }
+          }
+        }
+      }
+    },
+
+    "exhaust": {
+      "components": {
+        "headers": {
+          "part_id": "BBC454-HEADERS",
+          "recommended_sizes": {
+            "street": "2-inch primary, 3.5-inch collector",
+            "race": "2.25-inch primary, 4-inch collector"
+          },
+          "popular_brands": ["Hooker", "Hedman", "Doug's", "TTI"]
+        }
+      }
+    },
+
+    "ignition_system": {
+      "components": {
+        "distributor": {
+          "part_id": "BBC454-DIST",
+          "types": ["Points", "HEI", "MSD Pro-Billet"],
+          "notes": "BBC uses same distributor as SBC"
+        },
+        "spark_plugs": {
+          "part_id": "BBC454-PLUGS",
+          "oem_heat_range": "AC R44T or R45TS",
+          "gap_inches": 0.035
+        }
+      }
+    },
+
+    "oiling_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "BBC454-OIL-PUMP",
+          "oem_type": "Standard volume",
+          "aftermarket_options": ["Melling high-volume", "Moroso", "Milodon"]
+        },
+        "oil_pan": {
+          "part_id": "BBC454-OIL-PAN",
+          "capacities": {
+            "stock": "5 quarts",
+            "deep_sump": "7-8 quarts",
+            "race_dry_sump": "External tank"
+          }
+        }
+      }
+    }
+  }
+}

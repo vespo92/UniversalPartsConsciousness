@@ -1,0 +1,41 @@
+{
+  "engine_id": "CHEVY-LT6-5.5L-V8-FLAT-PLANE-CRANK",
+  "service_version": "1.0.0",
+
+  "service_notes": {
+    "dealer_service": "Most service requires dealer-level tools and training",
+    "complexity": "DOHC architecture significantly more complex than OHV"
+  },
+
+  "specialty_tools": {
+    "dohc_cam_tools": "Specialized tools for DOHC timing",
+    "dry_sump_service": "Dry sump system service equipment",
+    "itb_calibration": "Individual throttle body balancing"
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 10.5,
+      "type": "0W-40 synthetic",
+      "interval_miles": 5000,
+      "notes": "Dry sump system, drain all stages"
+    },
+    "spark_plug_replacement": {
+      "access": "More challenging due to DOHC",
+      "interval_miles": 60000
+    }
+  },
+
+  "maintenance_schedule": {
+    "oil_change": "5,000 miles or oil life monitor",
+    "spark_plugs": "60,000 miles",
+    "valve_adjustment": "Not typically required (hydraulic)"
+  },
+
+  "common_concerns": {
+    "flat_plane_vibration": {
+      "normal": "Some additional vibration is inherent to flat-plane design",
+      "notes": "Not a defect, characteristic of the engine"
+    }
+  }
+}

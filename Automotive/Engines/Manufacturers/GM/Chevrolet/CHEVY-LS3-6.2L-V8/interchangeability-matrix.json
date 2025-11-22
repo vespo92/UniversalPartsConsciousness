@@ -1,0 +1,39 @@
+{
+  "engine_id": "CHEVY-LS3-6.2L-V8",
+  "matrix_version": "1.0.0",
+
+  "ls3_specific_notes": {
+    "head_compatibility": "LS3 heads (243/799) are rectangle port - requires rectangle port intake",
+    "throttle_body": "90mm stock, 102mm popular upgrade"
+  },
+
+  "direct_replacements": {
+    "l92_heads": "Same as LS3 (L92 casting)",
+    "l76_block": "Same block with AFM provisions",
+    "l99_engine": "LS3 with AFM/VVT"
+  },
+
+  "upgrade_from_ls1": {
+    "heads": "LS3 heads on LS1 block popular upgrade",
+    "intake": "Must use rectangle port intake with LS3 heads",
+    "cam": "LS3 cam works in LS1"
+  },
+
+  "crate_engine_packages": {
+    "e_rod_ls3": {
+      "description": "Emissions-compliant crate package",
+      "includes": ["Engine", "ECU", "Harness", "Catalysts"],
+      "legal": "50-state CARB legal"
+    },
+    "connect_cruise": {
+      "description": "Engine + transmission package",
+      "transmission_options": ["4L65E", "T56 Magnum", "6L80E"]
+    }
+  },
+
+  "transmission_compatibility": {
+    "bellhousing": "LS pattern",
+    "manual": ["T56", "TR6060", "Tremec Magnum"],
+    "automatic": ["4L60E", "4L65E", "6L80E", "4L80E"]
+  }
+}

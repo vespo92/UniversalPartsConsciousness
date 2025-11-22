@@ -1,0 +1,131 @@
+{
+  "engine_id": "BUICK-TURBO-V6-3.8L-LC2",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "BUICKTV6-BLOCK",
+          "description": "Cast iron turbo block",
+          "specifications": {
+            "bore_inches": 3.800,
+            "deck_height_inches": 9.520
+          }
+        },
+        "crankshaft": {
+          "part_id": "BUICKTV6-CRANK",
+          "description": "Cast nodular iron crank",
+          "stroke_inches": 3.400,
+          "aftermarket": {
+            "forged": "Champion Heads forged crank"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "BUICKTV6-CONROD",
+          "description": "Powdered metal rods",
+          "aftermarket": {
+            "oliver": "Oliver billet rods",
+            "carrillo": "Carrillo forged"
+          }
+        },
+        "pistons": {
+          "part_id": "BUICKTV6-PISTON",
+          "description": "Hypereutectic pistons",
+          "aftermarket": {
+            "je": "JE forged",
+            "wiseco": "Wiseco forged"
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "stock_heads": {
+          "part_id": "BUICKTV6-HEAD-STD",
+          "description": "Cast iron heads",
+          "specifications": {
+            "intake_valve_inches": 1.96,
+            "exhaust_valve_inches": 1.60
+          }
+        },
+        "aftermarket_heads": {
+          "champion_iron": "Champion Heads Stage 1/2 iron",
+          "champion_aluminum": "Champion Heads aluminum"
+        }
+      }
+    },
+
+    "turbo_system": {
+      "components": {
+        "turbocharger": {
+          "part_id": "BUICKTV6-TURBO",
+          "oem_1984_1985": "Garrett TB03",
+          "oem_1986_1987": "Garrett T3",
+          "upgrades": {
+            "te44": "TE44 turbo upgrade",
+            "te60": "TE60 larger turbo",
+            "precision_62": "Precision 62mm",
+            "gt35r": "Garrett GT35R"
+          }
+        },
+        "intercooler": {
+          "part_id": "BUICKTV6-IC",
+          "oem": "Air-to-air front mount",
+          "upgrades": ["Larger core", "Custom setups"]
+        },
+        "wastegate": {
+          "part_id": "BUICKTV6-WG",
+          "oem": "Internal wastegate",
+          "upgrades": {
+            "turbo_tweak": "Adjustable wastegate actuator",
+            "external": "External wastegate conversion"
+          }
+        }
+      }
+    },
+
+    "fuel_system": {
+      "components": {
+        "injectors": {
+          "part_id": "BUICKTV6-INJ",
+          "oem_flow_lbhr": 30,
+          "upgrades": ["42 lb", "55 lb", "72 lb", "120 lb"],
+          "popular": "Siemens 55 lb (blue tops)"
+        },
+        "fuel_pump": {
+          "part_id": "BUICKTV6-FP",
+          "oem": "In-tank pump",
+          "upgrades": {
+            "walbro_340": "Walbro 340 lph",
+            "walbro_255": "Walbro 255 lph"
+          }
+        },
+        "chip": {
+          "part_id": "BUICKTV6-CHIP",
+          "description": "ECM performance chip",
+          "popular": {
+            "turbo_tweak": "Turbo Tweak custom chips",
+            "red_armstrong": "Red Armstrong chips",
+            "erics": "Eric's Performance"
+          }
+        }
+      }
+    },
+
+    "ignition_system": {
+      "components": {
+        "coil_pack": {
+          "part_id": "BUICKTV6-COIL",
+          "description": "Waste-spark ignition",
+          "notes": "First GM application of distributorless ignition"
+        },
+        "cam_sensor": {
+          "part_id": "BUICKTV6-CAMSENSOR",
+          "description": "Cam position sensor"
+        }
+      }
+    }
+  }
+}
