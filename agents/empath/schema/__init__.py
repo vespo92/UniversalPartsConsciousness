@@ -20,6 +20,7 @@ from .qualia_models import (
     PerformanceEmotion,
     CorrosionLevel,
     ContaminationLevel,
+    ThermalExpansionState,
     FitQuality,
     RelationshipType,
     EventSeverity
@@ -71,6 +72,7 @@ __all__ = [
     'PerformanceEmotion',
     'CorrosionLevel',
     'ContaminationLevel',
+    'ThermalExpansionState',
     'FitQuality',
     'RelationshipType',
     'EventSeverity',
