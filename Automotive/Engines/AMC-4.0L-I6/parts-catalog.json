@@ -1,0 +1,1351 @@
+{
+  "engine_id": "AMC-4.0L-I6-POWERTECH",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {
+    "year": 1998,
+    "make": "Jeep",
+    "model": "Wrangler TJ",
+    "engine": "4.0L I6"
+  },
+
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": {
+        "engine_block": {
+          "part_id": "AMC-40-BLOCK",
+          "description": "Cast iron engine block",
+          "oem_part_numbers": ["53020568", "4798178"],
+          "casting_numbers": {
+            "1987-1990": "4637128",
+            "1991-1999": "4666662",
+            "2000-2006": "Various"
+          },
+          "material": "Cast Iron",
+          "weight_lbs": 165,
+          "dimensions": {
+            "length_inches": 26.5,
+            "width_inches": 18.5,
+            "height_inches": 12.0
+          },
+          "specifications": {
+            "deck_height_inches": 9.231,
+            "bore_diameter_inches": 3.875,
+            "main_bearing_bores": 7,
+            "main_cap_bolts": "4-bolt on #1, 2-bolt on #2-7",
+            "cylinder_bore_spacing_inches": 4.375
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "All 4.0L blocks interchange. Later blocks have minor casting differences but are functionally identical."
+          },
+          "wear_classification": "long_life",
+          "typical_lifespan_miles": 300000
+        },
+
+        "crankshaft": {
+          "part_id": "AMC-40-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["53020674", "4798036"],
+          "material": "Forged 1045 Steel",
+          "weight_lbs": 54,
+          "specifications": {
+            "stroke_inches": 3.414,
+            "main_journal_diameter_inches": 2.4996,
+            "main_journal_width_inches": 1.055,
+            "rod_journal_diameter_inches": 2.0934,
+            "rod_journal_width_inches": 1.060,
+            "counterweight_count": 6,
+            "reluctor_wheel_teeth": {
+              "1987-1999": "None (distributor)",
+              "2000-2006": 60
+            }
+          },
+          "clearances": {
+            "main_bearing_clearance_inches": {
+              "min": 0.001,
+              "max": 0.0025
+            },
+            "rod_bearing_clearance_inches": {
+              "min": 0.001,
+              "max": 0.0025
+            },
+            "end_play_inches": {
+              "min": 0.0015,
+              "max": 0.0065
+            }
+          },
+          "interchangeability": {
+            "1987-1999": "All interchange",
+            "2000-2006": "Requires 60-tooth reluctor wheel for CKP sensor"
+          },
+          "wear_classification": "rebuild_item",
+          "inspection_items": ["journal_diameter", "runout", "surface_finish"],
+          "max_grind_undersize_inches": 0.020
+        },
+
+        "connecting_rods": {
+          "part_id": "AMC-40-CONROD",
+          "description": "Forged steel connecting rods (set of 6)",
+          "oem_part_numbers": ["53007562", "4798086"],
+          "material": "Forged Steel",
+          "weight_lbs_each": 1.45,
+          "quantity_per_engine": 6,
+          "specifications": {
+            "center_to_center_inches": 6.123,
+            "big_end_bore_inches": 2.2084,
+            "small_end_bore_inches": 0.9496,
+            "rod_bolt_thread": "3/8-24",
+            "rod_bolt_torque_lb_ft": 33
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "All AMC 4.0L connecting rods interchange"
+          },
+          "wear_classification": "rebuild_item",
+          "inspection_items": ["rod_bore_roundness", "rod_twist", "bolt_stretch"]
+        },
+
+        "pistons": {
+          "part_id": "AMC-40-PISTON",
+          "description": "Cast aluminum pistons (set of 6)",
+          "oem_part_numbers": ["4798347", "53007563"],
+          "aftermarket_options": {
+            "sealed_power": "H273CP",
+            "federal_mogul": "4798347",
+            "mahle": "224-3355"
+          },
+          "material": "Hypereutectic Aluminum",
+          "weight_grams_each": 485,
+          "quantity_per_engine": 6,
+          "specifications": {
+            "diameter_inches": 3.8740,
+            "compression_height_inches": 1.671,
+            "pin_bore_diameter_inches": 0.9496,
+            "pin_offset_inches": 0.060,
+            "ring_groove_count": 3,
+            "dome_volume_cc": -5.2
+          },
+          "ring_grooves": {
+            "top_compression": {
+              "width_inches": 0.0780,
+              "depth_inches": 0.140
+            },
+            "second_compression": {
+              "width_inches": 0.0780,
+              "depth_inches": 0.140
+            },
+            "oil_control": {
+              "width_inches": 0.1880,
+              "depth_inches": 0.130
+            }
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Standard bore pistons interchange. Check deck clearance when mixing years."
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "piston_rings": {
+          "part_id": "AMC-40-RINGS",
+          "description": "Piston ring set (all 6 cylinders)",
+          "oem_part_numbers": ["4798087"],
+          "aftermarket_options": {
+            "sealed_power": "E251K",
+            "hastings": "2M4692",
+            "mahle": "41539"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bore_size_inches": 3.875,
+            "top_ring": {
+              "type": "Barrel Face Chrome",
+              "thickness_inches": 0.0625,
+              "gap_inches": {
+                "min": 0.010,
+                "max": 0.020
+              }
+            },
+            "second_ring": {
+              "type": "Taper Face Cast Iron",
+              "thickness_inches": 0.0625,
+              "gap_inches": {
+                "min": 0.010,
+                "max": 0.020
+              }
+            },
+            "oil_ring": {
+              "type": "3-Piece Steel Rails",
+              "assembly_height_inches": 0.1875,
+              "rail_gap_inches": {
+                "min": 0.010,
+                "max": 0.050
+              }
+            }
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Standard bore rings for all years. Available in +0.020, +0.030, +0.040 oversizes"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "main_bearings": {
+          "part_id": "AMC-40-MAIN-BRG",
+          "description": "Main bearing set (7 pairs)",
+          "oem_part_numbers": ["J8126691"],
+          "aftermarket_options": {
+            "clevite": "MS-1432P",
+            "sealed_power": "4663M",
+            "king": "MB557SI"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 7,
+            "journal_diameter_inches": 2.4996,
+            "bearing_width_inches": 1.055,
+            "wall_thickness_inches": 0.0781,
+            "thrust_bearing_location": "#7 (rear)",
+            "oil_clearance_inches": {
+              "min": 0.001,
+              "max": 0.0025
+            }
+          },
+          "sizes_available": ["STD", "-0.001", "-0.010", "-0.020"],
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "All AMC 4.0L main bearings interchange"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "rod_bearings": {
+          "part_id": "AMC-40-ROD-BRG",
+          "description": "Connecting rod bearing set (6 pairs)",
+          "oem_part_numbers": ["J8126695"],
+          "aftermarket_options": {
+            "clevite": "CB-1228P",
+            "sealed_power": "4663A",
+            "king": "CR557SI"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 6,
+            "journal_diameter_inches": 2.0934,
+            "bearing_width_inches": 0.843,
+            "wall_thickness_inches": 0.0594,
+            "oil_clearance_inches": {
+              "min": 0.001,
+              "max": 0.0025
+            }
+          },
+          "sizes_available": ["STD", "-0.001", "-0.010", "-0.020"],
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "camshaft_bearings": {
+          "part_id": "AMC-40-CAM-BRG",
+          "description": "Camshaft bearing set",
+          "oem_part_numbers": ["J3172695"],
+          "aftermarket_options": {
+            "clevite": "SH-817S",
+            "sealed_power": "1426M",
+            "melling": "MPE-117BR"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 4,
+            "journal_diameters_inches": [2.029, 2.019, 2.009, 1.999],
+            "progressive_size": true
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "rebuild_item"
+        }
+      }
+    },
+
+    "cylinder_head": {
+      "description": "Cylinder head and valvetrain components",
+      "components": {
+        "cylinder_head": {
+          "part_id": "AMC-40-HEAD",
+          "description": "Cast iron cylinder head",
+          "oem_part_numbers": {
+            "1987-1990": "53006645 (Renix)",
+            "1991-1998": "53007071 (HO)",
+            "1999": "53020183 (0331 - AVOID)",
+            "2000-2001": "53020183 (0331 - AVOID)",
+            "2002-2006": "53021616 (Revised)"
+          },
+          "casting_numbers": {
+            "good_castings": ["7120", "0630", "0700"],
+            "problematic_castings": ["0331 (cracks between #3-#4)"]
+          },
+          "material": "Cast Iron",
+          "weight_lbs": 65,
+          "specifications": {
+            "combustion_chamber_volume_cc": {
+              "1987-1990": 58.86,
+              "1991-2006": 59.02
+            },
+            "valve_count": 12,
+            "valves_per_cylinder": 2,
+            "intake_valve_diameter_inches": 1.895,
+            "exhaust_valve_diameter_inches": 1.505,
+            "valve_stem_diameter_inches": 0.3115,
+            "valve_guide_bore_inches": 0.3145,
+            "valve_seat_angle_degrees": 45,
+            "installed_spring_height_inches": 1.640
+          },
+          "head_bolt_torque": {
+            "sequence": "center-out pattern",
+            "torque_lb_ft": 110,
+            "bolt_thread": "7/16-14 x 4.0 inch"
+          },
+          "interchangeability": {
+            "1987-1990": "Interchange within group (Renix)",
+            "1991-2006": "Interchange within group",
+            "warnings": ["AVOID 0331 casting - prone to cracking", "1991+ heads can replace earlier heads with intake change"]
+          },
+          "wear_classification": "long_life",
+          "common_issues": ["0331 casting cracks", "Valve seat recession (unleaded fuel)"]
+        },
+
+        "head_gasket": {
+          "part_id": "AMC-40-HEAD-GASKET",
+          "description": "Cylinder head gasket",
+          "oem_part_numbers": ["53020673", "4798065"],
+          "aftermarket_options": {
+            "felpro": "9196PT",
+            "victor_reinz": "54174",
+            "mahle": "5765"
+          },
+          "specifications": {
+            "type": "Multi-Layer Steel (MLS)",
+            "compressed_thickness_inches": 0.041,
+            "bore_diameter_inches": 3.940,
+            "fire_ring": true
+          },
+          "interchangeability": {
+            "1987-1990": "Use Renix-specific gasket",
+            "1991-2006": "Common gasket for all"
+          },
+          "wear_classification": "consumable",
+          "torque_sequence": "3-pass, center-out"
+        },
+
+        "intake_valves": {
+          "part_id": "AMC-40-INTAKE-VALVE",
+          "description": "Intake valves (set of 6)",
+          "oem_part_numbers": ["53007548"],
+          "aftermarket_options": {
+            "sealed_power": "V3654",
+            "enginetech": "V2862"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "head_diameter_inches": 1.895,
+            "stem_diameter_inches": 0.3115,
+            "overall_length_inches": 4.910,
+            "face_angle_degrees": 45,
+            "margin_thickness_inches": 0.031,
+            "material": "Stainless Steel"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "exhaust_valves": {
+          "part_id": "AMC-40-EXHAUST-VALVE",
+          "description": "Exhaust valves (set of 6)",
+          "oem_part_numbers": ["53007549"],
+          "aftermarket_options": {
+            "sealed_power": "V3655",
+            "enginetech": "V2863"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "head_diameter_inches": 1.505,
+            "stem_diameter_inches": 0.3115,
+            "overall_length_inches": 4.880,
+            "face_angle_degrees": 45,
+            "margin_thickness_inches": 0.031,
+            "material": "Inconel (sodium-filled optional)"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "valve_springs": {
+          "part_id": "AMC-40-VALVE-SPRING",
+          "description": "Valve springs (set of 12)",
+          "oem_part_numbers": ["53007554"],
+          "aftermarket_options": {
+            "melling": "VS1380",
+            "sealed_power": "VS-1574"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "free_length_inches": 1.960,
+            "installed_height_inches": 1.640,
+            "seat_pressure_lbs": 76,
+            "open_pressure_lbs": 195,
+            "coil_bind_inches": 1.180,
+            "wire_diameter_inches": 0.177,
+            "outer_diameter_inches": 1.320
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "rocker_arms": {
+          "part_id": "AMC-40-ROCKER",
+          "description": "Rocker arms (set of 12)",
+          "oem_part_numbers": ["J3236923"],
+          "aftermarket_options": {
+            "melling": "MR-1",
+            "sealed_power": "R-902"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "type": "Stamped steel",
+            "ratio": 1.60,
+            "pivot_type": "Ball pivot",
+            "adjustment": "Self-adjusting hydraulic lifters"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Rocker arm bridges also available for stability"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "pushrods": {
+          "part_id": "AMC-40-PUSHROD",
+          "description": "Pushrods (set of 12)",
+          "oem_part_numbers": ["J3236926"],
+          "aftermarket_options": {
+            "melling": "MPR-217",
+            "enginetech": "EPR-171"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "length_inches": 7.790,
+            "diameter_inches": 0.312,
+            "wall_thickness_inches": 0.060,
+            "material": "Steel tubing",
+            "tip_style": "Ball both ends"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "hydraulic_lifters": {
+          "part_id": "AMC-40-LIFTER",
+          "description": "Hydraulic lifters (set of 12)",
+          "oem_part_numbers": ["J3237065"],
+          "aftermarket_options": {
+            "melling": "JB2200",
+            "sealed_power": "HT2205",
+            "comp_cams": "812-12"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "type": "Hydraulic flat tappet",
+            "diameter_inches": 0.9040,
+            "length_inches": 2.100,
+            "oil_metering": "Controlled leak-down",
+            "preload_turns": "1/4 to 3/4 turn"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "rebuild_item"
+        }
+      }
+    },
+
+    "camshaft_and_timing": {
+      "description": "Camshaft and timing system",
+      "components": {
+        "camshaft": {
+          "part_id": "AMC-40-CAMSHAFT",
+          "description": "Hydraulic flat tappet camshaft",
+          "oem_part_numbers": {
+            "1987-1990": "J3227755",
+            "1991-2006": "53020676"
+          },
+          "aftermarket_options": {
+            "comp_cams": "20-602-4 (stock replacement)",
+            "crower": "50232 (mild performance)",
+            "howell": "TBI cam"
+          },
+          "specifications": {
+            "type": "Hydraulic flat tappet",
+            "intake_duration_degrees": 194,
+            "exhaust_duration_degrees": 194,
+            "duration_at_050_intake": 116,
+            "duration_at_050_exhaust": 116,
+            "intake_lift_inches": 0.393,
+            "exhaust_lift_inches": 0.393,
+            "lobe_separation_angle_degrees": 114,
+            "journal_count": 4,
+            "bearing_journals": [2.029, 2.019, 2.009, 1.999]
+          },
+          "interchangeability": {
+            "1987-1990": "Renix cam (different profile)",
+            "1991-2006": "HO cam (interchangeable)"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "timing_chain_set": {
+          "part_id": "AMC-40-TIMING-SET",
+          "description": "Timing chain, gears, and tensioner",
+          "oem_part_numbers": ["J3234433"],
+          "aftermarket_options": {
+            "cloyes": "C-3023",
+            "melling": "3-4023S",
+            "sa_gear": "73023 (double roller)"
+          },
+          "components_included": [
+            "Crankshaft sprocket",
+            "Camshaft sprocket",
+            "Timing chain",
+            "Chain tensioner"
+          ],
+          "specifications": {
+            "chain_type": "Single roller",
+            "crank_sprocket_teeth": 21,
+            "cam_sprocket_teeth": 42,
+            "chain_pitch_inches": 0.375,
+            "chain_length_pitches": 64
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Double roller upgrade highly recommended"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 150000
+        },
+
+        "timing_cover": {
+          "part_id": "AMC-40-TIMING-COVER",
+          "description": "Timing chain cover",
+          "oem_part_numbers": ["53020230"],
+          "material": "Aluminum",
+          "specifications": {
+            "seal_bore_inches": 2.817,
+            "mounting_bolts": 12,
+            "bolt_pattern": "Mixed 1/4-20 and 5/16-18"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Oil pump drive location consistent"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "timing_cover_seal": {
+          "part_id": "AMC-40-FRONT-SEAL",
+          "description": "Crankshaft front seal (timing cover)",
+          "oem_part_numbers": ["4792317"],
+          "aftermarket_options": {
+            "national": "4740",
+            "skf": "17187",
+            "timken": "4740"
+          },
+          "specifications": {
+            "type": "Single lip with spring",
+            "inside_diameter_inches": 2.125,
+            "outside_diameter_inches": 2.817,
+            "width_inches": 0.375
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "lubrication_system": {
+      "description": "Oil pump and lubrication components",
+      "components": {
+        "oil_pump": {
+          "part_id": "AMC-40-OIL-PUMP",
+          "description": "Gear-type oil pump",
+          "oem_part_numbers": ["53020827"],
+          "aftermarket_options": {
+            "melling": "M81",
+            "sealed_power": "224-41902",
+            "hv_upgrade": "Melling M81HV (high volume)"
+          },
+          "specifications": {
+            "type": "Internal gear",
+            "drive": "Camshaft driven via distributor/oil pump shaft",
+            "pressure_psi": {
+              "idle_hot": 13,
+              "normal_2000rpm": 40,
+              "max_relief": 75
+            },
+            "gear_clearances": {
+              "inner_to_outer_inches": 0.006,
+              "end_clearance_inches": 0.004
+            }
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "High-volume pumps recommended for high-mileage engines"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "oil_pump_pickup": {
+          "part_id": "AMC-40-PICKUP",
+          "description": "Oil pump pickup tube and screen",
+          "oem_part_numbers": ["53010626"],
+          "specifications": {
+            "tube_diameter_inches": 1.125,
+            "screen_type": "Mesh with bypass",
+            "clearance_to_pan_inches": 0.375
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "oil_pan": {
+          "part_id": "AMC-40-OIL-PAN",
+          "description": "Oil pan (sump)",
+          "oem_part_numbers": {
+            "xj_zj": "53010179",
+            "tj_wj": "53020875"
+          },
+          "material": "Stamped Steel",
+          "specifications": {
+            "capacity_quarts": 6,
+            "drain_plug_thread": "18mm x 1.5",
+            "drain_plug_torque_lb_ft": 25,
+            "mounting_bolts": 18,
+            "bolt_size": "1/4-20 x 0.75"
+          },
+          "interchangeability": {
+            "notes": "XJ/ZJ pan differs from TJ/WJ - check crossmember clearance"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "oil_filter": {
+          "part_id": "AMC-40-OIL-FILTER",
+          "description": "Spin-on oil filter",
+          "oem_part_numbers": ["4781452AA"],
+          "aftermarket_options": {
+            "wix": "51515",
+            "fram": "PH3506",
+            "mobil1": "M1-209",
+            "purolator": "L25288",
+            "k_and_n": "HP-2009"
+          },
+          "specifications": {
+            "thread_size": "3/4-16",
+            "gasket_od_inches": 2.720,
+            "height_inches": 4.50,
+            "bypass_pressure_psi": 11,
+            "anti_drain_valve": true
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Same filter for all applications"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 5000
+        }
+      }
+    },
+
+    "cooling_system": {
+      "description": "Water pump, thermostat, and cooling components",
+      "components": {
+        "water_pump": {
+          "part_id": "AMC-40-WATER-PUMP",
+          "description": "Serpentine belt driven water pump",
+          "oem_part_numbers": {
+            "1987-1990": "J8124515 (V-belt)",
+            "1991-2006": "53020280 (Serpentine)"
+          },
+          "aftermarket_options": {
+            "gates": "42078",
+            "airtex": "AW7160",
+            "gmb": "120-1080"
+          },
+          "specifications": {
+            "drive_type": "Serpentine belt",
+            "rotation": "Reverse (counterclockwise)",
+            "impeller_type": "Stamped steel (OE) / Cast (HD)",
+            "shaft_bearing": "Sealed double-row ball",
+            "mounting_bolts": 4,
+            "bolt_thread": "5/16-18"
+          },
+          "interchangeability": {
+            "1987-1990": "V-belt pump (different)",
+            "1991-2006": "Serpentine pump (interchangeable)"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "thermostat": {
+          "part_id": "AMC-40-THERMOSTAT",
+          "description": "Engine thermostat",
+          "oem_part_numbers": ["52028898AA"],
+          "aftermarket_options": {
+            "stant": "45359 (195°F)",
+            "motorad": "7240-195",
+            "gates": "33189 (180°F - cooler option)"
+          },
+          "specifications": {
+            "type": "Wax pellet",
+            "opening_temp_f": 195,
+            "full_open_temp_f": 212,
+            "valve_lift_inches": 0.350,
+            "flow_rate_gpm": 28
+          },
+          "temperature_options_f": [160, 180, 195],
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 50000
+        },
+
+        "thermostat_housing": {
+          "part_id": "AMC-40-TSTAT-HOUSING",
+          "description": "Thermostat housing",
+          "oem_part_numbers": ["53006193"],
+          "material": "Cast Aluminum",
+          "specifications": {
+            "mounting_bolts": 2,
+            "bolt_thread": "5/16-18",
+            "outlet_size_inches": 1.500,
+            "heater_hose_port_inches": 0.750
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "intake_system": {
+      "description": "Intake manifold and fuel delivery",
+      "components": {
+        "intake_manifold": {
+          "part_id": "AMC-40-INTAKE",
+          "description": "Cast aluminum intake manifold",
+          "oem_part_numbers": {
+            "1987-1990": "53006630 (Renix)",
+            "1991-1995": "53007070",
+            "1996-2006": "53010035"
+          },
+          "material": "Cast Aluminum",
+          "specifications": {
+            "type": "Log-style plenum",
+            "runner_length_inches": 8.5,
+            "plenum_volume_cc": 420,
+            "throttle_body_bore_mm": 60,
+            "fuel_rail_type": "Top-feed injectors"
+          },
+          "interchangeability": {
+            "1987-1990": "Renix-specific (not interchangeable)",
+            "1991-2006": "Interchange with matching injector harness"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "fuel_injectors": {
+          "part_id": "AMC-40-INJECTORS",
+          "description": "Port fuel injectors (set of 6)",
+          "oem_part_numbers": {
+            "1987-1995": "53030343",
+            "1996-2006": "4854181"
+          },
+          "aftermarket_options": {
+            "bosch": "62699 (remanufactured)",
+            "delphi": "FJ10565"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "High impedance",
+            "resistance_ohms": 12,
+            "flow_rate_lbs_hr": 19.8,
+            "spray_pattern": "4-hole",
+            "connector_type": "EV1 (1987-1995) / EV6 (1996-2006)"
+          },
+          "interchangeability": {
+            "notes": "Connector style changed in 1996 - adapter pigtails available"
+          },
+          "wear_classification": "consumable",
+          "cleaning_interval_miles": 60000
+        },
+
+        "throttle_body": {
+          "part_id": "AMC-40-THROTTLE-BODY",
+          "description": "Throttle body assembly",
+          "oem_part_numbers": {
+            "1991-1995": "53007543",
+            "1996-2006": "53030846"
+          },
+          "specifications": {
+            "bore_diameter_mm": 60,
+            "idle_air_control": "Integrated stepper motor",
+            "throttle_position_sensor": "3-wire potentiometer"
+          },
+          "interchangeability": {
+            "notes": "IAC motor and TPS changed across years - match to ECU"
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "exhaust_system": {
+      "description": "Exhaust manifold and related components",
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "AMC-40-EXHAUST-MANIFOLD",
+          "description": "Cast iron log-style exhaust manifold",
+          "oem_part_numbers": {
+            "1987-1999": "53008860",
+            "2000-2006": "53013445"
+          },
+          "aftermarket_options": {
+            "dorman": "674-469",
+            "header_upgrade": "Banks TorqueTube",
+            "header_upgrade_2": "JBA 1527SJS"
+          },
+          "material": "Cast Iron",
+          "weight_lbs": 32,
+          "specifications": {
+            "port_count": 6,
+            "outlet_diameter_inches": 2.50,
+            "flange_bolt_count": 12,
+            "flange_bolt_thread": "3/8-16"
+          },
+          "common_issues": [
+            "Cracking between ports #3-4-5",
+            "Warping causing exhaust leaks",
+            "Broken mounting studs"
+          ],
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "All interchange but later versions have improved cracking resistance"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "exhaust_manifold_gasket": {
+          "part_id": "AMC-40-EXH-GASKET",
+          "description": "Exhaust manifold gasket set",
+          "oem_part_numbers": ["53010238"],
+          "aftermarket_options": {
+            "felpro": "MS 92833",
+            "victor": "MS18776"
+          },
+          "specifications": {
+            "type": "Multi-layer embossed steel",
+            "port_count": 6
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "ignition_system": {
+      "description": "Ignition components including distributor and coils",
+      "components": {
+        "distributor": {
+          "part_id": "AMC-40-DISTRIBUTOR",
+          "description": "Distributor assembly (1991-1999 only)",
+          "oem_part_numbers": ["56041018"],
+          "aftermarket_options": {
+            "standard": "JH152",
+            "airtex": "4D1015"
+          },
+          "specifications": {
+            "drive": "Camshaft gear driven",
+            "shaft_diameter_inches": 0.531,
+            "gear_teeth": 13,
+            "rotation": "Clockwise",
+            "vacuum_advance": false,
+            "electronic_pickup": true
+          },
+          "interchangeability": {
+            "1987-1990": "Different distributor (Renix)",
+            "1991-1999": "Interchangeable",
+            "2000-2006": "No distributor (COP)"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "ignition_coil": {
+          "part_id": "AMC-40-COIL",
+          "description": "Ignition coil",
+          "oem_part_numbers": {
+            "1991-1999": "56028172",
+            "2000-2006": "56028138 (rail-mounted COP)"
+          },
+          "aftermarket_options": {
+            "standard": "UF296 (1991-1999)",
+            "standard_cop": "UF293 (2000-2006)"
+          },
+          "specifications": {
+            "type": {
+              "1991-1999": "Single coil with distributor",
+              "2000-2006": "Coil-on-plug (3 coils for 6 cylinders)"
+            },
+            "primary_resistance_ohms": 0.96,
+            "secondary_resistance_kohms": 11.8,
+            "output_kv": 40
+          },
+          "interchangeability": {
+            "notes": "1991-1999 and 2000-2006 systems not interchangeable"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "spark_plugs": {
+          "part_id": "AMC-40-SPARK-PLUGS",
+          "description": "Spark plugs (set of 6)",
+          "oem_part_numbers": ["4318133"],
+          "aftermarket_options": {
+            "champion": "RC12LC4",
+            "ngk": "ZFR5N",
+            "autolite": "764",
+            "bosch": "FR7LDC+"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "thread_size": "14mm x 1.25",
+            "reach_inches": 0.750,
+            "hex_size_inches": 0.625,
+            "gap_inches": 0.035,
+            "heat_range": "Medium (5-7)"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 30000
+        },
+
+        "spark_plug_wires": {
+          "part_id": "AMC-40-PLUG-WIRES",
+          "description": "Spark plug wire set (1991-1999)",
+          "oem_part_numbers": ["56027798"],
+          "aftermarket_options": {
+            "standard": "7811",
+            "acdelco": "16-834D",
+            "ngk": "52010 (high performance)"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "wire_count": 6,
+            "resistance_ohms_per_ft": 5000,
+            "insulation": "Silicone",
+            "boot_type": "90-degree"
+          },
+          "wire_lengths_inches": [17, 18, 21, 24, 27, 31],
+          "interchangeability": {
+            "1991-1999": "Interchangeable",
+            "2000-2006": "No wires (COP ignition)"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        }
+      }
+    },
+
+    "sensors_and_electronics": {
+      "description": "Engine management sensors",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "AMC-40-CKP",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": {
+            "1991-1999": "56027866 (at flywheel)",
+            "2000-2006": "56041584 (at timing cover)"
+          },
+          "aftermarket_options": {
+            "standard": "PC127 (1991-1999)",
+            "standard_2": "PC530 (2000-2006)"
+          },
+          "specifications": {
+            "type": "Magnetic reluctance",
+            "output": "AC voltage (varies with RPM)",
+            "resistance_ohms": "200-400"
+          },
+          "interchangeability": {
+            "notes": "Location changed from bell housing to timing cover in 2000"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "camshaft_position_sensor": {
+          "part_id": "AMC-40-CMP",
+          "description": "Camshaft position sensor",
+          "oem_part_numbers": {
+            "1991-1999": "In distributor",
+            "2000-2006": "56041479"
+          },
+          "aftermarket_options": {
+            "standard": "PC224 (2000-2006)"
+          },
+          "specifications": {
+            "type": "Hall effect",
+            "output": "Square wave"
+          },
+          "interchangeability": {
+            "notes": "1991-1999 integrated into distributor"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "oxygen_sensors": {
+          "part_id": "AMC-40-O2",
+          "description": "Oxygen sensor(s)",
+          "oem_part_numbers": {
+            "upstream": "56028994",
+            "downstream": "56041942"
+          },
+          "aftermarket_options": {
+            "bosch": "13953",
+            "denso": "234-4001",
+            "ngk": "24318"
+          },
+          "quantity_per_engine": {
+            "1987-1995": 1,
+            "1996-2006": 2
+          },
+          "specifications": {
+            "type": "Heated zirconia",
+            "heater_resistance_ohms": 6,
+            "thread_size": "18mm x 1.5",
+            "connector_wires": 4
+          },
+          "interchangeability": {
+            "notes": "OBD-II (1996+) requires upstream and downstream sensors"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        },
+
+        "coolant_temperature_sensor": {
+          "part_id": "AMC-40-CTS",
+          "description": "Engine coolant temperature sensor",
+          "oem_part_numbers": ["33002954"],
+          "aftermarket_options": {
+            "standard": "TX3",
+            "wells": "TU101"
+          },
+          "specifications": {
+            "type": "NTC thermistor",
+            "resistance_at_77f_ohms": 7500,
+            "resistance_at_212f_ohms": 700,
+            "thread_size": "3/8-18 NPT"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "map_sensor": {
+          "part_id": "AMC-40-MAP",
+          "description": "Manifold Absolute Pressure sensor",
+          "oem_part_numbers": ["56029405"],
+          "aftermarket_options": {
+            "standard": "AS60",
+            "wells": "SU1084"
+          },
+          "specifications": {
+            "type": "Strain gauge",
+            "range_psi": "0-15",
+            "output": "0.5-4.5V linear",
+            "vacuum_hose_size_inches": 0.187
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2006"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "throttle_position_sensor": {
+          "part_id": "AMC-40-TPS",
+          "description": "Throttle position sensor",
+          "oem_part_numbers": ["4874371"],
+          "aftermarket_options": {
+            "standard": "TH189",
+            "wells": "TPS305"
+          },
+          "specifications": {
+            "type": "Rotary potentiometer",
+            "closed_voltage": 0.5,
+            "wot_voltage": 4.5,
+            "reference_voltage": 5.0
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2006"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "gaskets_and_seals": {
+      "description": "Complete gasket and seal set",
+      "components": {
+        "full_gasket_set": {
+          "part_id": "AMC-40-GASKET-SET",
+          "description": "Complete engine gasket set (overhaul)",
+          "oem_part_numbers": ["N/A - sold individually"],
+          "aftermarket_options": {
+            "felpro": "KS2337",
+            "victor_reinz": "95-3469VR",
+            "mahle": "95-3469"
+          },
+          "contents": [
+            "Head gasket",
+            "Intake manifold gasket",
+            "Exhaust manifold gaskets",
+            "Valve cover gasket",
+            "Oil pan gasket",
+            "Timing cover gasket",
+            "Front crankshaft seal",
+            "Rear main seal",
+            "Valve stem seals (12)",
+            "Various O-rings"
+          ],
+          "interchangeability": {
+            "compatible_years": "1991-2006"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "valve_cover_gasket": {
+          "part_id": "AMC-40-VC-GASKET",
+          "description": "Valve cover gasket",
+          "oem_part_numbers": ["53020758"],
+          "aftermarket_options": {
+            "felpro": "VS50411R",
+            "mahle": "VS50411"
+          },
+          "specifications": {
+            "material": "Molded rubber",
+            "reusable": false
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "rear_main_seal": {
+          "part_id": "AMC-40-REAR-SEAL",
+          "description": "Rear crankshaft seal (2-piece)",
+          "oem_part_numbers": ["4720363"],
+          "aftermarket_options": {
+            "national": "5113",
+            "felpro": "BS40656"
+          },
+          "specifications": {
+            "type": "2-piece rope seal",
+            "replacement": "Can upgrade to 1-piece conversion"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "1-piece seal conversion available from Pioneer"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "oil_pan_gasket": {
+          "part_id": "AMC-40-PAN-GASKET",
+          "description": "Oil pan gasket",
+          "oem_part_numbers": ["53010232"],
+          "aftermarket_options": {
+            "felpro": "OS30638C",
+            "mahle": "OS32153"
+          },
+          "specifications": {
+            "type": "Cork/rubber composite or RTV",
+            "end_seals_included": true
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "accessories_and_drive": {
+      "description": "Belt drive and accessories",
+      "components": {
+        "serpentine_belt": {
+          "part_id": "AMC-40-SERP-BELT",
+          "description": "Serpentine accessory drive belt",
+          "oem_part_numbers": {
+            "without_ac": "4854034",
+            "with_ac": "53010158"
+          },
+          "aftermarket_options": {
+            "gates": "K060795 (w/ AC)",
+            "goodyear": "4060790",
+            "continental": "6K795"
+          },
+          "specifications": {
+            "type": "6-rib (6PK)",
+            "width_inches": 0.827,
+            "length_with_ac_inches": 79.5,
+            "length_without_ac_inches": 68.3,
+            "ribs": 6
+          },
+          "interchangeability": {
+            "notes": "Different belt length for A/C vs non-A/C"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        },
+
+        "belt_tensioner": {
+          "part_id": "AMC-40-TENSIONER",
+          "description": "Automatic belt tensioner",
+          "oem_part_numbers": ["53010158AB"],
+          "aftermarket_options": {
+            "gates": "38158",
+            "dayco": "89243",
+            "continental": "49211"
+          },
+          "specifications": {
+            "type": "Spring-loaded automatic",
+            "pulley_diameter_inches": 3.0,
+            "pulley_bearing": "Sealed ball bearing"
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2006"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "idler_pulley": {
+          "part_id": "AMC-40-IDLER",
+          "description": "Belt idler pulley",
+          "oem_part_numbers": ["53010229"],
+          "aftermarket_options": {
+            "gates": "38008",
+            "dayco": "89012"
+          },
+          "specifications": {
+            "diameter_inches": 3.0,
+            "width_inches": 1.0,
+            "bearing_type": "Sealed ball"
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2006"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "alternator": {
+          "part_id": "AMC-40-ALTERNATOR",
+          "description": "Alternator",
+          "oem_part_numbers": ["56005686AB"],
+          "aftermarket_options": {
+            "remy": "92510",
+            "denso": "210-0148",
+            "db_electrical": "AND0130"
+          },
+          "specifications": {
+            "output_amps": 117,
+            "voltage": 14.2,
+            "pulley_type": "6-groove serpentine",
+            "pulley_diameter_inches": 2.4,
+            "mounting": "2-bolt ear"
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2006",
+            "notes": "Output varies 90-136 amps by application"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "starter_motor": {
+          "part_id": "AMC-40-STARTER",
+          "description": "Starter motor",
+          "oem_part_numbers": ["56041207"],
+          "aftermarket_options": {
+            "denso": "280-4150",
+            "remy": "17423",
+            "db_electrical": "SND0232"
+          },
+          "specifications": {
+            "type": "Gear reduction",
+            "cranking_kw": 1.2,
+            "pinion_teeth": 10,
+            "mounting_bolts": 2,
+            "bolt_thread": "3/8-16"
+          },
+          "interchangeability": {
+            "compatible_years": "1987-2006",
+            "notes": "Manual and automatic transmission starters differ"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "power_steering_pump": {
+          "part_id": "AMC-40-PS-PUMP",
+          "description": "Power steering pump",
+          "oem_part_numbers": ["52088139"],
+          "aftermarket_options": {
+            "cardone": "20-820",
+            "acdelco": "36P0259"
+          },
+          "specifications": {
+            "type": "Rotary vane",
+            "flow_rate_gpm": 2.5,
+            "pressure_max_psi": 1350,
+            "pulley_type": "Pressed-on serpentine",
+            "reservoir": "Remote (separate)"
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2006"
+          },
+          "wear_classification": "rebuild_item"
+        }
+      }
+    }
+  }
+}
