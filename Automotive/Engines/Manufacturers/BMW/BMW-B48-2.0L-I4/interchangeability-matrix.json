@@ -1,0 +1,345 @@
+{
+  "engine_id": "BMW-B48-2.0L-I4-TURBO",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "bmw_f_series": {
+      "F20_F21_1_Series": {"name": "1 Series Hatchback", "years": "2015-2019", "models": ["118i", "120i"]},
+      "F22_F23_2_Series": {"name": "2 Series Coupe/Convertible", "years": "2015-2021", "models": ["220i", "228i", "230i"]},
+      "F30_F31_3_Series": {"name": "3 Series Sedan/Wagon", "years": "2015-2019", "models": ["318i", "320i", "330i"]},
+      "F32_F33_F36_4_Series": {"name": "4 Series Coupe/Gran Coupe", "years": "2016-2020", "models": ["420i", "428i", "430i"]},
+      "F48_F49_X1": {"name": "X1 SAV", "years": "2016-2022", "models": ["sDrive18i", "sDrive20i", "xDrive20i", "xDrive28i"]},
+      "F39_X2": {"name": "X2 SAC", "years": "2018-2023", "models": ["sDrive18i", "sDrive20i", "xDrive20i", "xDrive28i"]}
+    },
+    "bmw_g_series": {
+      "G20_G21_3_Series": {"name": "3 Series", "years": "2019-present", "models": ["318i", "320i", "330i"]},
+      "G22_G23_G26_4_Series": {"name": "4 Series", "years": "2020-present", "models": ["420i", "430i"]},
+      "G30_G31_5_Series": {"name": "5 Series", "years": "2017-present", "models": ["520i", "530i"]},
+      "G01_G02_X3_X4": {"name": "X3/X4", "years": "2018-present", "models": ["sDrive20i", "xDrive20i", "sDrive30i", "xDrive30i"]},
+      "G29_Z4": {"name": "Z4 Roadster", "years": "2019-present", "models": ["sDrive20i", "sDrive30i"]}
+    },
+    "mini_f_series": {
+      "F56_F55_Hatchback": {"name": "MINI Hatchback", "years": "2014-present", "models": ["Cooper S", "JCW"]},
+      "F54_Clubman": {"name": "MINI Clubman", "years": "2015-present", "models": ["Cooper S", "JCW"]},
+      "F60_Countryman": {"name": "MINI Countryman", "years": "2017-present", "models": ["Cooper S", "JCW"]}
+    },
+    "toyota": {
+      "A90_GR_Supra": {"name": "GR Supra 2.0", "years": "2020-present", "models": ["SZ", "SZ-R"], "notes": "B48B20O2 variant"}
+    }
+  },
+
+  "engine_variant_classifications": {
+    "gen1_b48": {
+      "years": "2014-2018",
+      "variants": ["B48A20O0", "B48A20O1", "B48A20M0", "B48B20A", "B48B20B"],
+      "key_features": [
+        "Direct injection only",
+        "Standard Mitsubishi TD04 turbo",
+        "Bosch MEVD17.2.9 ECU"
+      ],
+      "common_issues": ["Carbon buildup requires walnut blasting"]
+    },
+    "gen2_b48_tu": {
+      "years": "2018-present",
+      "variants": ["B48B20M0", "B48B20O1", "B48B20O2", "B48A20T1", "B48A20T3"],
+      "key_features": [
+        "Combined direct + port injection",
+        "Revised turbocharger",
+        "Bosch MG1CS003 ECU",
+        "Improved thermal management"
+      ],
+      "improvements": [
+        "No carbon buildup issues",
+        "Higher torque output",
+        "Better emissions compliance"
+      ]
+    }
+  },
+
+  "modular_family_compatibility": {
+    "b38_to_b48": {
+      "description": "B38 1.5L 3-cylinder to B48 2.0L 4-cylinder",
+      "shared_components": [
+        "Bore diameter (82mm)",
+        "Stroke (94.6mm)",
+        "Cylinder head design principles",
+        "VANOS/Valvetronic systems architecture",
+        "Many sensors",
+        "Timing chain design"
+      ],
+      "different_components": [
+        "Engine block (3 vs 4 cylinders)",
+        "Crankshaft (different counterweights)",
+        "Intake manifold",
+        "Exhaust manifold",
+        "Oil pan",
+        "Turbocharger sizing"
+      ],
+      "compatible": false,
+      "notes": "Same per-cylinder dimensions but not interchangeable assemblies"
+    },
+    "b48_to_b58": {
+      "description": "B48 2.0L 4-cylinder to B58 3.0L 6-cylinder",
+      "shared_components": [
+        "Bore diameter (82mm)",
+        "Stroke (94.6mm)",
+        "Oil filter (HU6004X)",
+        "Many sensors",
+        "Ignition coils",
+        "Spark plugs",
+        "VANOS solenoids",
+        "Valvetronic motor",
+        "Some software calibration approaches"
+      ],
+      "different_components": [
+        "Engine block",
+        "Crankshaft",
+        "Cylinder head",
+        "Turbocharger",
+        "Intercooler",
+        "Intake manifold",
+        "Oil pan",
+        "Engine mounts"
+      ],
+      "tuning_crossover": {
+        "applicable": true,
+        "notes": "Many tuners support both platforms. B58 tuning developments often filter down to B48."
+      }
+    }
+  },
+
+  "cross_brand_compatibility": {
+    "bmw_to_mini": {
+      "description": "BMW B48 parts compatibility with MINI Cooper S/JCW",
+      "compatible_components": [
+        "Short block internals (pistons, rods, crank)",
+        "Cylinder head",
+        "Turbocharger (variant-specific)",
+        "Direct injectors",
+        "Ignition components",
+        "Oil filter",
+        "Many sensors"
+      ],
+      "variant_differences": {
+        "mini_specific_ecu": "MINI uses different DME calibrations",
+        "intake_manifold": "Different packaging for MINI engine bay",
+        "exhaust_routing": "Different due to MINI layout",
+        "accessories": "Different accessory drive layout",
+        "engine_mounts": "MINI-specific mounts"
+      },
+      "notes": "Core engine is identical - differences are packaging and calibration"
+    },
+    "bmw_to_toyota_supra": {
+      "description": "BMW B48 in Toyota GR Supra 2.0",
+      "compatible_components": [
+        "All engine internals",
+        "Turbocharger",
+        "Direct and port injectors",
+        "Ignition components"
+      ],
+      "toyota_specific": {
+        "ecu": "Toyota/Denso ECU vs BMW Bosch",
+        "wiring_harness": "Toyota harness and connectors",
+        "instrument_cluster_integration": "Toyota infotainment",
+        "obd_protocols": "Toyota specific"
+      },
+      "tuning_notes": "Different ECU means different tuning solutions required. Not all BMW B48 tunes work on Supra 2.0.",
+      "part_sourcing": "Engine internals can be sourced from BMW or Toyota dealers"
+    }
+  },
+
+  "tuning_platform_compatibility": {
+    "flash_tuning_platforms": {
+      "mhd_flasher": {
+        "name": "MHD Flasher",
+        "website": "mhdtuning.com",
+        "b48_support": true,
+        "variants_supported": ["BMW B48 all variants", "MINI B48 (limited)"],
+        "toyota_support": false,
+        "features": ["OTS maps", "Custom tune support", "Logging", "Burbles/pops"],
+        "platforms": ["iOS", "Android"],
+        "cost_usd": "99-399"
+      },
+      "bootmod3": {
+        "name": "Bootmod3",
+        "website": "protuningfreaks.com",
+        "b48_support": true,
+        "variants_supported": ["BMW B48 all variants"],
+        "features": ["Flash tuning", "Custom maps", "Data logging", "MPI control"],
+        "platforms": ["iOS", "Android", "Windows"],
+        "cost_usd": "100-450"
+      },
+      "ecutek": {
+        "name": "EcuTek",
+        "website": "ecutek.com",
+        "b48_support": true,
+        "toyota_support": true,
+        "notes": "Good option for Toyota Supra 2.0 tuning",
+        "cost_usd": "800-1200"
+      }
+    },
+    "piggyback_tuning": {
+      "jb4": {
+        "name": "Burger JB4",
+        "website": "burgertuning.com",
+        "b48_support": true,
+        "mini_support": true,
+        "features": ["No flash required", "Easy removal", "Bluetooth logging"],
+        "power_gains": "40-70hp",
+        "cost_usd": "479-529"
+      },
+      "bms_data_display": {
+        "name": "BMS Data Display",
+        "website": "burgertuning.com",
+        "notes": "Works with JB4 for real-time data",
+        "cost_usd": "99"
+      }
+    },
+    "standalone_ecu": {
+      "applicable": "Rarely needed for B48",
+      "options": ["Motec", "AEM Infinity", "Link"],
+      "notes": "Only for extreme builds. OEM ECU supports 400+ HP."
+    }
+  },
+
+  "upgrade_path_compatibility": {
+    "stage_1": {
+      "name": "ECU Tune Only",
+      "power_target_hp": "280-320",
+      "torque_target_nm": "440-480",
+      "compatible_platforms": ["All B48 BMW", "All B48 MINI", "Toyota Supra 2.0 (with EcuTek)"],
+      "requirements": ["91-93 octane fuel", "Stock hardware"],
+      "notes": "Safe starting point. B48 responds well to tuning."
+    },
+    "stage_2": {
+      "name": "Bolt-Ons + Tune",
+      "power_target_hp": "320-380",
+      "torque_target_nm": "500-550",
+      "recommended_parts": [
+        "Catless/high-flow downpipe",
+        "Cold air intake",
+        "Aluminum charge pipe",
+        "Stage 2 tune"
+      ],
+      "compatible_platforms": ["All B48 BMW", "All B48 MINI"],
+      "fuel_requirement": "93 octane or E30 blend"
+    },
+    "stage_2_plus": {
+      "name": "Full Bolt-On Stock Turbo",
+      "power_target_hp": "360-400",
+      "torque_target_nm": "550-580",
+      "additional_parts": [
+        "Upgraded intercooler",
+        "Upgraded LPFP",
+        "Upgraded HPFP (recommended)",
+        "E30-E50 fuel"
+      ],
+      "notes": "Pushing stock turbo to its limits"
+    },
+    "stage_3": {
+      "name": "Hybrid/Upgraded Turbo",
+      "power_target_hp": "400-500",
+      "torque_target_nm": "580-650",
+      "required_parts": [
+        "Upgraded turbocharger",
+        "Upgraded HPFP",
+        "Upgraded LPFP",
+        "Port injection kit (if Gen 1)",
+        "Custom tune"
+      ],
+      "transmission_notes": "Consider ZF 8-speed tune or built DCT for MINI",
+      "compatible_platforms": ["BMW B48", "MINI B48 (limited options)"]
+    }
+  },
+
+  "oem_parts_cross_reference": {
+    "oil_filter": {
+      "bmw_part": "11428583898",
+      "mann": "HU6004X",
+      "mahle": "OX404D",
+      "notes": "Same filter as B58 - shared across modular family"
+    },
+    "spark_plugs": {
+      "bmw_part": "12122473343",
+      "ngk": "LKAR8BI9",
+      "ngk_colder": "LKAR8AIX-9",
+      "bosch": "YR6NI332S",
+      "gap_mm": 0.7
+    },
+    "ignition_coils": {
+      "bmw_part": "12138643360",
+      "eldor": "12138657555",
+      "bosch": "0221604800",
+      "notes": "Same coils across many BMW engines"
+    },
+    "water_pump": {
+      "bmw_part": "11517632426",
+      "notes": "Same electric water pump as N20, B58, and other BMW engines"
+    }
+  },
+
+  "known_incompatibilities": {
+    "gen1_vs_gen2_fuel_system": {
+      "description": "Gen 1 (DI only) vs Gen 2 (DI+PI) fuel systems",
+      "notes": "Cannot swap fuel rails or injector setups between generations without extensive modifications"
+    },
+    "turbo_variants": {
+      "description": "Different turbo sizing between low and high output variants",
+      "notes": "Low output (184hp) turbos not direct swap with high output (258hp+) turbos"
+    },
+    "ecu_calibrations": {
+      "description": "ECU/DME is vehicle-specific",
+      "notes": "Cannot swap ECUs between BMW and MINI without coding/programming"
+    },
+    "mini_vs_bmw_accessories": {
+      "description": "Accessory mounting and routing differs",
+      "notes": "Alternator, AC compressor, and accessory brackets are not interchangeable"
+    }
+  },
+
+  "swap_compatibility": {
+    "b48_into_older_bmw": {
+      "feasibility": "Possible but complex",
+      "common_swaps": [
+        "B48 into E36 (requires custom mounts, wiring, ECU solution)",
+        "B48 into E46 (same challenges)"
+      ],
+      "challenges": [
+        "Drive-by-wire throttle",
+        "CAN bus integration",
+        "Engine mounts",
+        "Transmission compatibility",
+        "Cooling system routing"
+      ],
+      "recommended_approach": "Keep as complete BMW donor drivetrain including ECU"
+    },
+    "b58_swap_from_b48_car": {
+      "description": "Upgrading B48 car to B58 engine",
+      "feasibility": "Technically possible, expensive",
+      "considerations": [
+        "Different subframe requirements on some platforms",
+        "Transmission may need upgrading",
+        "Complete harness and ECU swap required",
+        "Exhaust system incompatible",
+        "Cooling system upgrade needed"
+      ],
+      "notes": "Generally not cost-effective vs buying a B58-equipped car"
+    }
+  },
+
+  "regional_variants": {
+    "north_america": {
+      "models": ["320i", "330i", "X1", "X3", "Z4"],
+      "notes": "Standard USDM variants with US emissions"
+    },
+    "europe": {
+      "models": ["318i", "320i", "330i", "X1", "X2", "X3"],
+      "notes": "More model variants, different emissions calibrations"
+    },
+    "asia_pacific": {
+      "china": "Locally produced B48 for Chinese market BMWs (BMW Brilliance)",
+      "japan": "JDM Supra 2.0 (SZ/SZ-R) uses B48B20O2"
+    }
+  }
+}

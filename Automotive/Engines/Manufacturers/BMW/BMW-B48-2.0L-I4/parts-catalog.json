@@ -1,0 +1,753 @@
+{
+  "engine_id": "BMW-B48-2.0L-I4-TURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2020, "make": "BMW", "model": "330i G20", "engine": "B48B20O1"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "B48-BLOCK",
+          "description": "Aluminum engine block with cast iron cylinder liners",
+          "oem_part_numbers": ["11112455838"],
+          "specifications": {
+            "bore_mm": 82.0,
+            "stroke_mm": 94.6,
+            "material": "Aluminum with cast iron liners",
+            "deck_type": "Semi-closed deck"
+          },
+          "notes": "Modular design shared with B38/B58 family - same bore/stroke per cylinder"
+        },
+        "crankshaft": {
+          "part_id": "B48-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["11217640165"],
+          "specifications": {
+            "stroke_mm": 94.6,
+            "material": "Forged Steel",
+            "main_journal_diameter_mm": 52.0,
+            "rod_journal_diameter_mm": 45.0
+          },
+          "notes": "Forged steel provides excellent durability for tuned applications"
+        },
+        "connecting_rods": {
+          "part_id": "B48-CONROD",
+          "description": "Forged steel connecting rods (set of 4)",
+          "oem_part_numbers": ["11247645489"],
+          "aftermarket": {
+            "manley": "14088-4",
+            "cp_carrillo": "BMW-B48-55000H",
+            "maxspeedingrods": "MSR-B48-RODS"
+          },
+          "specifications": {
+            "length_mm": 145.0,
+            "material": "Forged Steel"
+          }
+        },
+        "pistons": {
+          "part_id": "B48-PISTON",
+          "description": "Forged aluminum pistons (set of 4)",
+          "oem_part_numbers": ["11257645490"],
+          "aftermarket": {
+            "je_pistons": "357440",
+            "mahle": "B48-FORGED",
+            "wiseco": "K706M82"
+          },
+          "specifications": {
+            "diameter_mm": 82.0,
+            "compression_height_mm": 30.76,
+            "pin_diameter_mm": 22.0
+          }
+        },
+        "piston_rings": {
+          "part_id": "B48-RINGS",
+          "description": "Piston ring set (set of 4 cylinders)",
+          "oem_part_numbers": ["11257645491"],
+          "aftermarket": {
+            "total_seal": "TS-B48",
+            "mahle": "41919CP"
+          }
+        },
+        "main_bearings": {
+          "part_id": "B48-MAIN-BRG",
+          "description": "Main bearing set",
+          "oem_part_numbers": ["11217640168"],
+          "aftermarket": {
+            "acl": "5M8361H",
+            "king": "MB5750XP"
+          },
+          "quantity": 5
+        },
+        "rod_bearings": {
+          "part_id": "B48-ROD-BRG",
+          "description": "Rod bearing set",
+          "oem_part_numbers": ["11247593968"],
+          "aftermarket": {
+            "acl": "4B8370H",
+            "king": "CR4125XP"
+          },
+          "quantity": 4,
+          "notes": "Consider upgrading for tuned applications"
+        },
+        "thrust_washers": {
+          "part_id": "B48-THRUST",
+          "oem_part_numbers": ["11217640169"],
+          "quantity": 2
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "B48-HEAD",
+          "description": "Aluminum DOHC cylinder head with integrated exhaust manifold",
+          "oem_part_numbers": ["11128631742"],
+          "specifications": {
+            "valves_per_cylinder": 4,
+            "total_valves": 16,
+            "intake_valve_diameter_mm": 32.0,
+            "exhaust_valve_diameter_mm": 28.0,
+            "valvetronic": "Yes",
+            "vanos": "Double VANOS (intake and exhaust)",
+            "integrated_exhaust_manifold": true
+          },
+          "notes": "Integrated exhaust manifold cannot be replaced separately"
+        },
+        "camshaft_intake": {
+          "part_id": "B48-CAM-INT",
+          "description": "Intake camshaft with VANOS",
+          "oem_part_numbers": ["11318631743"]
+        },
+        "camshaft_exhaust": {
+          "part_id": "B48-CAM-EXH",
+          "description": "Exhaust camshaft with VANOS",
+          "oem_part_numbers": ["11318631744"]
+        },
+        "intake_valves": {
+          "part_id": "B48-INTAKE-VALVE",
+          "description": "Intake valves (set of 8)",
+          "oem_part_numbers": ["11347593972"],
+          "aftermarket": {
+            "supertech": "SIVB-1055F",
+            "ferrea": "F6202"
+          },
+          "quantity": 8
+        },
+        "exhaust_valves": {
+          "part_id": "B48-EXHAUST-VALVE",
+          "description": "Exhaust valves (set of 8)",
+          "oem_part_numbers": ["11347593973"],
+          "aftermarket": {
+            "supertech": "SEVE-1055F",
+            "ferrea": "F6203"
+          },
+          "quantity": 8
+        },
+        "valve_springs": {
+          "part_id": "B48-VALVE-SPRINGS",
+          "description": "Valve spring set",
+          "oem_part_numbers": ["11347593974"],
+          "aftermarket": {
+            "supertech": "SPRK-B48"
+          },
+          "quantity": 16
+        },
+        "valve_stem_seals": {
+          "part_id": "B48-STEM-SEALS",
+          "oem_part_numbers": ["11347560456"],
+          "quantity": 16
+        },
+        "head_gasket": {
+          "part_id": "B48-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": ["11128631745"],
+          "aftermarket": {
+            "athena": "330053R",
+            "cometic": "C4618-051"
+          },
+          "specifications": {
+            "type": "MLS (Multi-Layer Steel)",
+            "thickness_mm": 0.9,
+            "bore_mm": 83.0
+          }
+        },
+        "head_bolts": {
+          "part_id": "B48-HEAD-BOLTS",
+          "description": "Head bolt set (TTY - Torque To Yield)",
+          "oem_part_numbers": ["11127645492"],
+          "aftermarket": {
+            "arp": "201-4305",
+            "arp_studs": "201-4206"
+          },
+          "quantity": 10,
+          "notes": "OEM are TTY single-use. ARP studs reusable and stronger."
+        },
+        "valvetronic_motor": {
+          "part_id": "B48-VVT-MOTOR",
+          "description": "Valvetronic eccentric shaft actuator motor",
+          "oem_part_numbers": ["11377618015"],
+          "notes": "Controls variable valve lift"
+        },
+        "vanos_solenoid_intake": {
+          "part_id": "B48-VANOS-INT",
+          "description": "VANOS solenoid - intake",
+          "oem_part_numbers": ["11367585425"]
+        },
+        "vanos_solenoid_exhaust": {
+          "part_id": "B48-VANOS-EXH",
+          "description": "VANOS solenoid - exhaust",
+          "oem_part_numbers": ["11367585426"]
+        }
+      }
+    },
+    "timing_system": {
+      "components": {
+        "timing_chain": {
+          "part_id": "B48-TIMING-CHAIN",
+          "description": "Primary timing chain",
+          "oem_part_numbers": ["11317645494"],
+          "notes": "Single-row chain with automatic tensioner"
+        },
+        "timing_chain_tensioner": {
+          "part_id": "B48-CHAIN-TENSIONER",
+          "oem_part_numbers": ["11317645495"],
+          "notes": "Hydraulic tensioner"
+        },
+        "timing_chain_guide_primary": {
+          "part_id": "B48-CHAIN-GUIDE",
+          "oem_part_numbers": ["11317645496"]
+        },
+        "timing_chain_guide_secondary": {
+          "part_id": "B48-CHAIN-GUIDE-2",
+          "oem_part_numbers": ["11317645497"]
+        },
+        "cam_sprocket_intake": {
+          "part_id": "B48-CAM-SPROCKET-INT",
+          "oem_part_numbers": ["11367645498"],
+          "notes": "VANOS sprocket with hydraulic adjustment"
+        },
+        "cam_sprocket_exhaust": {
+          "part_id": "B48-CAM-SPROCKET-EXH",
+          "oem_part_numbers": ["11367645499"]
+        },
+        "crank_sprocket": {
+          "part_id": "B48-CRANK-SPROCKET",
+          "oem_part_numbers": ["11217645500"]
+        }
+      }
+    },
+    "turbo_system": {
+      "components": {
+        "turbocharger": {
+          "part_id": "B48-TURBO",
+          "description": "Twin-scroll turbocharger",
+          "oem_part_numbers": {
+            "standard_output": "11657645759",
+            "high_output": "11657645760"
+          },
+          "specifications": {
+            "type": "Twin-scroll",
+            "manufacturer": "Mitsubishi",
+            "model": "TD04-19T / TD04-20T",
+            "max_boost_stock_psi": 18,
+            "max_power_stock_turbo_hp": 380
+          },
+          "aftermarket": {
+            "pure_turbos": "PURE-B48-Stage2",
+            "vargas_turbo": "VTT-B48-Hybrid",
+            "big_boost": "BB-B48-400"
+          },
+          "notes": "Located close to engine for fast spool. Integrated into exhaust manifold."
+        },
+        "wastegate_actuator": {
+          "part_id": "B48-WASTEGATE",
+          "description": "Electronic wastegate actuator",
+          "oem_part_numbers": ["11657645761"],
+          "notes": "Electronic control for precise boost regulation"
+        },
+        "intercooler": {
+          "part_id": "B48-INTERCOOLER",
+          "description": "Air-to-air intercooler (charge air cooler)",
+          "oem_part_numbers": ["17517645762"],
+          "aftermarket": {
+            "wagner_tuning": "200001144",
+            "csl_performance": "CSL-B48-FMIC",
+            "mishimoto": "MMINT-B48-17"
+          },
+          "notes": "Stock intercooler heat soaks easily under aggressive driving"
+        },
+        "charge_pipe": {
+          "part_id": "B48-CHARGEPIPE",
+          "description": "Turbo to intercooler charge pipe",
+          "oem_part_numbers": ["11617645763"],
+          "aftermarket": {
+            "vrsf": "VRSF-CP-B48",
+            "burger": "BMS-CP-B48",
+            "afe_power": "46-20436"
+          },
+          "notes": "OEM plastic pipe can fail under increased boost - aluminum upgrade recommended"
+        },
+        "boost_pipe": {
+          "part_id": "B48-BOOST-PIPE",
+          "description": "Intercooler to throttle body pipe",
+          "oem_part_numbers": ["11617645764"]
+        },
+        "diverter_valve": {
+          "part_id": "B48-DV",
+          "description": "Diverter valve / Bypass valve",
+          "oem_part_numbers": ["11657645765"],
+          "aftermarket": {
+            "turbosmart": "TS-0203-1262",
+            "forge": "FMDV14T"
+          }
+        },
+        "turbo_oil_line_feed": {
+          "part_id": "B48-TURBO-OIL-FEED",
+          "oem_part_numbers": ["11427645766"]
+        },
+        "turbo_oil_line_return": {
+          "part_id": "B48-TURBO-OIL-RETURN",
+          "oem_part_numbers": ["11427645767"]
+        },
+        "turbo_coolant_lines": {
+          "part_id": "B48-TURBO-COOLANT",
+          "oem_part_numbers": ["11537645768"]
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "B48-HPFP",
+          "description": "High pressure fuel pump",
+          "oem_part_numbers": ["13518631769"],
+          "aftermarket": {
+            "spool_stage_1": "SPOOL-B48-HPFP1",
+            "spool_stage_2": "SPOOL-B48-HPFP2"
+          },
+          "specifications": {
+            "pressure_bar": 200,
+            "drive": "Cam-driven"
+          },
+          "notes": "Limiting factor for high-power builds - upgrade for 350+ HP"
+        },
+        "low_pressure_fuel_pump": {
+          "part_id": "B48-LPFP",
+          "description": "In-tank low pressure fuel pump",
+          "oem_part_numbers": ["16147645770"],
+          "aftermarket": {
+            "bms": "BMS-B48-LPFP",
+            "spool": "SPOOL-B48-LPFP"
+          },
+          "notes": "Upgrade required for E85 and high-power applications"
+        },
+        "direct_injectors": {
+          "part_id": "B48-DI-INJECTORS",
+          "description": "Direct injectors (set of 4)",
+          "oem_part_numbers": ["13537645771"],
+          "aftermarket": {
+            "bosch_upgraded": "0261500354"
+          },
+          "specifications": {
+            "type": "Piezo",
+            "pressure_bar": 200
+          },
+          "quantity": 4
+        },
+        "port_injectors": {
+          "part_id": "B48-PI-INJECTORS",
+          "description": "Port injectors (set of 4) - Gen 2 TU models only",
+          "oem_part_numbers": ["13537645772"],
+          "specifications": {
+            "applicable_variants": ["B48B20M0", "B48B20O1", "B48A20T1"]
+          },
+          "quantity": 4,
+          "notes": "Only on 2018+ Technical Update models with dual injection"
+        },
+        "fuel_rail_high_pressure": {
+          "part_id": "B48-FUEL-RAIL-HP",
+          "oem_part_numbers": ["13537645773"]
+        },
+        "fuel_rail_low_pressure": {
+          "part_id": "B48-FUEL-RAIL-LP",
+          "oem_part_numbers": ["13537645774"],
+          "notes": "Gen 2 TU models only"
+        },
+        "fuel_pressure_sensor": {
+          "part_id": "B48-FUEL-PRESS-SENSOR",
+          "oem_part_numbers": ["13537645775"]
+        },
+        "fuel_filter": {
+          "part_id": "B48-FUEL-FILTER",
+          "description": "In-tank fuel filter",
+          "oem_part_numbers": ["16147645776"],
+          "notes": "Integrated into fuel pump assembly"
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "air_filter_box": {
+          "part_id": "B48-AIRBOX",
+          "description": "OEM air filter housing",
+          "oem_part_numbers": ["13717645777"]
+        },
+        "air_filter": {
+          "part_id": "B48-AIR-FILTER",
+          "description": "OEM paper air filter",
+          "oem_part_numbers": ["13718631708"],
+          "aftermarket": {
+            "kn_drop_in": "33-3051",
+            "afe_pro_dry": "31-10303"
+          },
+          "notes": "Drop-in performance filter provides minor gains"
+        },
+        "intake_manifold": {
+          "part_id": "B48-INTAKE-MANIFOLD",
+          "description": "Plastic intake manifold with integrated charge air distribution",
+          "oem_part_numbers": ["11617645778"],
+          "notes": "Includes charge motion flaps for low-load efficiency"
+        },
+        "throttle_body": {
+          "part_id": "B48-THROTTLE-BODY",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": ["13547645779"],
+          "specifications": {
+            "diameter_mm": 60
+          }
+        },
+        "mass_airflow_sensor": {
+          "part_id": "B48-MAF",
+          "description": "Mass airflow sensor (hot film)",
+          "oem_part_numbers": ["13627645780"]
+        },
+        "intake_air_temp_sensor": {
+          "part_id": "B48-IAT",
+          "oem_part_numbers": ["13627568421"]
+        },
+        "boost_pressure_sensor": {
+          "part_id": "B48-MAP",
+          "description": "Manifold absolute pressure sensor",
+          "oem_part_numbers": ["13627645781"]
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "turbo_downpipe": {
+          "part_id": "B48-DOWNPIPE",
+          "description": "Turbo downpipe with catalytic converter",
+          "oem_part_numbers": ["18307645782"],
+          "aftermarket": {
+            "vrsf_catless": "VRSF-DP-B48",
+            "afe_catted": "48-36323-HC",
+            "active_autowerke": "AA-B48-DP"
+          },
+          "notes": "Primary cat located in downpipe. Catless off-road use only."
+        },
+        "front_pipe": {
+          "part_id": "B48-FRONT-PIPE",
+          "description": "Front exhaust pipe",
+          "oem_part_numbers": ["18307645783"]
+        },
+        "center_section": {
+          "part_id": "B48-CENTER-PIPE",
+          "description": "Center resonator section",
+          "oem_part_numbers": ["18307645784"]
+        },
+        "muffler": {
+          "part_id": "B48-MUFFLER",
+          "description": "Rear muffler/silencer",
+          "oem_part_numbers": ["18307645785"],
+          "aftermarket": {
+            "remus": "086014",
+            "borla": "140754",
+            "eisenmann": "B4820.00102"
+          }
+        },
+        "o2_sensor_upstream": {
+          "part_id": "B48-O2-UP",
+          "description": "Upstream oxygen sensor (before cat)",
+          "oem_part_numbers": ["11787645786"],
+          "quantity": 1
+        },
+        "o2_sensor_downstream": {
+          "part_id": "B48-O2-DOWN",
+          "description": "Downstream oxygen sensor (after cat)",
+          "oem_part_numbers": ["11787645787"],
+          "quantity": 1
+        },
+        "exhaust_gaskets": {
+          "part_id": "B48-EXH-GASKETS",
+          "oem_part_numbers": ["18307645788"]
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "B48-WATER-PUMP",
+          "description": "Electric water pump",
+          "oem_part_numbers": ["11517632426"],
+          "aftermarket": {
+            "hepu": "P498",
+            "pierburg": "7.02851.20.8"
+          },
+          "specifications": {
+            "type": "Electric",
+            "voltage": 12,
+            "variable_speed": true
+          },
+          "notes": "Common failure point - typically fails 60,000-100,000 miles"
+        },
+        "thermostat": {
+          "part_id": "B48-THERMOSTAT",
+          "description": "Map-controlled thermostat with housing",
+          "oem_part_numbers": ["11537645789"],
+          "specifications": {
+            "opening_temp_c": 97,
+            "full_open_c": 107,
+            "type": "Electronically controlled"
+          }
+        },
+        "radiator": {
+          "part_id": "B48-RADIATOR",
+          "description": "Engine coolant radiator",
+          "oem_part_numbers": ["17117645790"],
+          "aftermarket": {
+            "csf": "CSF-B48-RAD",
+            "mishimoto": "MMRAD-B48-17"
+          }
+        },
+        "coolant_expansion_tank": {
+          "part_id": "B48-EXPANSION-TANK",
+          "oem_part_numbers": ["17137645791"],
+          "notes": "Pressurized tank with integrated sensor"
+        },
+        "coolant_hoses": {
+          "upper_hose": {"part_id": "B48-HOSE-UPPER", "oem_part_numbers": ["11537645792"]},
+          "lower_hose": {"part_id": "B48-HOSE-LOWER", "oem_part_numbers": ["11537645793"]}
+        },
+        "coolant_temp_sensor": {
+          "part_id": "B48-CTS",
+          "oem_part_numbers": ["13627568422"]
+        },
+        "auxiliary_water_pump": {
+          "part_id": "B48-AUX-PUMP",
+          "description": "Auxiliary electric coolant pump",
+          "oem_part_numbers": ["11517645794"],
+          "notes": "For turbo cooling during shutdown"
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "B48-OIL-PUMP",
+          "description": "Variable displacement oil pump",
+          "oem_part_numbers": ["11417645795"],
+          "specifications": {
+            "type": "Variable displacement vane pump",
+            "driven_by": "Chain from crankshaft"
+          }
+        },
+        "oil_filter": {
+          "part_id": "B48-OIL-FILTER",
+          "description": "Cartridge oil filter",
+          "oem_part_numbers": ["11428583898"],
+          "aftermarket": {
+            "mann": "HU6004X",
+            "mahle": "OX404D"
+          },
+          "notes": "Same filter as B58"
+        },
+        "oil_filter_housing": {
+          "part_id": "B48-OIL-FILTER-HOUSING",
+          "oem_part_numbers": ["11428596283"],
+          "notes": "Includes oil cooler passages"
+        },
+        "oil_pan": {
+          "part_id": "B48-OIL-PAN",
+          "description": "Aluminum oil pan",
+          "oem_part_numbers": ["11137645796"]
+        },
+        "oil_drain_plug": {
+          "part_id": "B48-DRAIN-PLUG",
+          "oem_part_numbers": ["11137645797"]
+        },
+        "oil_drain_plug_gasket": {
+          "part_id": "B48-DRAIN-GASKET",
+          "oem_part_numbers": ["11137645798"]
+        },
+        "oil_level_sensor": {
+          "part_id": "B48-OIL-LEVEL",
+          "oem_part_numbers": ["12617645799"]
+        },
+        "oil_pressure_sensor": {
+          "part_id": "B48-OIL-PRESSURE",
+          "oem_part_numbers": ["12617645800"]
+        },
+        "pcv_valve": {
+          "part_id": "B48-PCV",
+          "description": "Crankcase ventilation valve",
+          "oem_part_numbers": ["11127645801"]
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "B48-COILS",
+          "description": "Ignition coils (set of 4)",
+          "oem_part_numbers": ["12138643360"],
+          "aftermarket": {
+            "eldor": "12138657555",
+            "delphi": "GN10571"
+          },
+          "quantity": 4
+        },
+        "spark_plugs": {
+          "part_id": "B48-SPARK-PLUGS",
+          "description": "OEM spark plugs (set of 4)",
+          "oem_part_numbers": ["12122473343"],
+          "aftermarket": {
+            "ngk": "LKAR8BI9",
+            "ngk_colder": "LKAR8AIX-9",
+            "bosch": "YR6NI332S"
+          },
+          "specifications": {
+            "heat_range": "8 (OEM)",
+            "gap_mm": 0.7,
+            "type": "Iridium"
+          },
+          "quantity": 4,
+          "notes": "Use colder plugs (1 step) for tuned applications"
+        },
+        "knock_sensors": {
+          "part_id": "B48-KNOCK",
+          "description": "Knock sensors (2)",
+          "oem_part_numbers": ["13627598861"],
+          "quantity": 2
+        },
+        "crankshaft_position_sensor": {
+          "part_id": "B48-CKP",
+          "oem_part_numbers": ["13627598862"]
+        },
+        "camshaft_position_sensor": {
+          "part_id": "B48-CMP",
+          "oem_part_numbers": ["13627598863"],
+          "quantity": 2,
+          "notes": "One for intake, one for exhaust cam"
+        }
+      }
+    },
+    "engine_management": {
+      "components": {
+        "engine_control_unit": {
+          "part_id": "B48-ECU",
+          "description": "Engine Control Unit (DME)",
+          "oem_part_numbers": ["12148631709"],
+          "manufacturer": "Bosch",
+          "model": "MG1CS003",
+          "notes": "MEVD17.2.9 on earlier models. MG1 on newer."
+        },
+        "throttle_pedal_module": {
+          "part_id": "B48-PEDAL",
+          "oem_part_numbers": ["35427645802"]
+        },
+        "engine_wiring_harness": {
+          "part_id": "B48-HARNESS",
+          "oem_part_numbers": ["12517645803"]
+        }
+      }
+    },
+    "accessory_drive": {
+      "components": {
+        "serpentine_belt": {
+          "part_id": "B48-SERP-BELT",
+          "description": "Accessory drive belt",
+          "oem_part_numbers": ["11287645804"],
+          "aftermarket": {
+            "gates": "K060435",
+            "continental": "6PK1070"
+          }
+        },
+        "belt_tensioner": {
+          "part_id": "B48-TENSIONER",
+          "oem_part_numbers": ["11287645805"]
+        },
+        "idler_pulley": {
+          "part_id": "B48-IDLER",
+          "oem_part_numbers": ["11287645806"]
+        },
+        "alternator": {
+          "part_id": "B48-ALTERNATOR",
+          "description": "180A alternator",
+          "oem_part_numbers": ["12317645807"],
+          "specifications": {
+            "output_amps": 180
+          }
+        },
+        "ac_compressor": {
+          "part_id": "B48-AC-COMP",
+          "oem_part_numbers": ["64529384069"]
+        },
+        "power_steering_pump": {
+          "part_id": "B48-PS-PUMP",
+          "notes": "Electric power steering - no engine-driven pump"
+        }
+      }
+    },
+    "engine_mounts": {
+      "components": {
+        "engine_mount_left": {
+          "part_id": "B48-MOUNT-LEFT",
+          "oem_part_numbers": ["22117645808"],
+          "aftermarket": {
+            "lemforder": "22116856183"
+          }
+        },
+        "engine_mount_right": {
+          "part_id": "B48-MOUNT-RIGHT",
+          "oem_part_numbers": ["22117645809"],
+          "aftermarket": {
+            "lemforder": "22116856184"
+          }
+        },
+        "transmission_mount": {
+          "part_id": "B48-TRANS-MOUNT",
+          "oem_part_numbers": ["22317645810"]
+        }
+      }
+    }
+  },
+
+  "gasket_sets": {
+    "full_engine_gasket_set": {
+      "part_id": "B48-FULL-GASKET",
+      "oem_part_numbers": ["11127645811"],
+      "aftermarket": {
+        "elring": "EL-B48-FULL"
+      },
+      "notes": "Complete gasket set for engine rebuild"
+    },
+    "upper_engine_gasket_set": {
+      "part_id": "B48-UPPER-GASKET",
+      "oem_part_numbers": ["11127645812"],
+      "notes": "Head and valve cover gaskets"
+    },
+    "lower_engine_gasket_set": {
+      "part_id": "B48-LOWER-GASKET",
+      "oem_part_numbers": ["11137645813"],
+      "notes": "Oil pan, front cover, rear main seal"
+    },
+    "valve_cover_gasket": {
+      "part_id": "B48-VC-GASKET",
+      "oem_part_numbers": ["11127645814"],
+      "aftermarket": {
+        "victor_reinz": "VS50755"
+      }
+    }
+  }
+}

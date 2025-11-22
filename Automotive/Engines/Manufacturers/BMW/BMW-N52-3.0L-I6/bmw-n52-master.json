@@ -1,0 +1,838 @@
+{
+  "metadata": {
+    "engine_family": "BMW N52",
+    "manufacturer": "BMW AG",
+    "design_type": "Inline-6 (I6/R6)",
+    "aspiration": "Naturally Aspirated",
+    "fuel_type": "Gasoline",
+    "production_years": "2004-2015",
+    "assembly_plants": [
+      {
+        "plant": "BMW Steyr Engine Plant",
+        "location": "Steyr, Austria",
+        "country": "Austria"
+      }
+    ],
+    "engine_code_prefix": "N52",
+    "predecessor": "M54",
+    "successor": "N53 (Europe), B48/B58 (Global)",
+    "significance": "Last naturally aspirated BMW inline-6, first magnesium/aluminum composite block production engine",
+    "database_version": "1.0.0",
+    "last_updated": "2025-01-15"
+  },
+  "engine_overview": {
+    "description": "The N52 is BMW's final naturally aspirated inline-6 engine, representing the pinnacle of NA inline-6 development. It introduced revolutionary lightweight construction using a magnesium/aluminum composite block, reducing weight by approximately 22 lbs compared to the M54 predecessor. The engine features BMW's second-generation Valvetronic variable valve lift system combined with double-VANOS variable valve timing for optimal efficiency and performance across the rev range.",
+    "design_philosophy": "Maximum efficiency and smoothness from naturally aspirated design with lightweight construction",
+    "notable_features": [
+      "Magnesium/aluminum composite crankcase (first production use)",
+      "Valvetronic II variable valve lift",
+      "Double-VANOS variable valve timing",
+      "Electric water pump (first BMW production application)",
+      "Aluminum cylinder head with composite camshaft covers",
+      "Three-stage variable intake manifold (DISA)",
+      "Returnless fuel system",
+      "Lightweight composite intake manifold"
+    ],
+    "design_innovations": {
+      "block_construction": "Magnesium outer shell with aluminum inner liner and iron cylinder sleeves",
+      "weight_reduction": "Approximately 22 lbs lighter than M54 with same displacement",
+      "valvetronic": "Eliminates throttle butterfly at partial load, reducing pumping losses",
+      "electric_water_pump": "Computer-controlled cooling for optimal engine temperature management"
+    }
+  },
+  "base_specifications": {
+    "configuration": "Inline-6 (I6)",
+    "block_material": "Magnesium/Aluminum composite (AJ62A magnesium alloy outer, AlSi17Cu4Mg aluminum inner)",
+    "head_material": "Aluminum alloy",
+    "valvetrain": {
+      "configuration": "DOHC 24-valve",
+      "valves_per_cylinder": 4,
+      "intake_valves": 2,
+      "exhaust_valves": 2,
+      "variable_valve_timing": "Double-VANOS (intake and exhaust)",
+      "variable_valve_lift": "Valvetronic II (intake only)",
+      "cam_drive": "Duplex roller chain"
+    },
+    "bore_mm": 85.0,
+    "stroke_mm": {
+      "N52B25": 88.0,
+      "N52B30": 88.0
+    },
+    "bore_spacing_mm": 91.0,
+    "deck_height_mm": 220.0,
+    "compression_ratio": {
+      "N52B25": "11.0:1",
+      "N52B30": "10.7:1",
+      "N52B30_high_output": "10.7:1"
+    },
+    "firing_order": "1-5-3-6-2-4",
+    "rotation_direction": "Clockwise (viewed from front)",
+    "engine_weight_kg": 161,
+    "engine_weight_lbs": 355,
+    "redline_rpm": 7000,
+    "rev_limiter_rpm": 7200
+  },
+  "variants": {
+    "N52B25": {
+      "variant_code": "N52B25",
+      "displacement_cc": 2497,
+      "displacement_liters": 2.5,
+      "bore_mm": 85.0,
+      "stroke_mm": 88.0,
+      "compression_ratio": "11.0:1",
+      "power_outputs": [
+        {
+          "rating": "Standard",
+          "horsepower": 177,
+          "horsepower_kw": 130,
+          "hp_rpm": 5800,
+          "torque_nm": 230,
+          "torque_lb_ft": 170,
+          "torque_rpm": 3500
+        },
+        {
+          "rating": "High Output (UL)",
+          "horsepower": 218,
+          "horsepower_kw": 160,
+          "hp_rpm": 6500,
+          "torque_nm": 250,
+          "torque_lb_ft": 184,
+          "torque_rpm": 2750
+        }
+      ],
+      "fuel_system": {
+        "type": "Sequential multi-point fuel injection",
+        "fuel_pressure_bar": 3.5,
+        "injector_flow_rate_cc_min": 180
+      },
+      "applications": [
+        {
+          "model": "BMW 323i",
+          "chassis": "E90/E91/E92/E93",
+          "years": "2005-2011",
+          "market": "North America",
+          "power_hp": 177
+        },
+        {
+          "model": "BMW 523i",
+          "chassis": "E60/E61",
+          "years": "2005-2010",
+          "market": "Europe, Asia",
+          "power_hp": 177
+        },
+        {
+          "model": "BMW X3 2.5si",
+          "chassis": "E83",
+          "years": "2006-2010",
+          "market": "Global",
+          "power_hp": 218
+        }
+      ],
+      "production_years": "2005-2011"
+    },
+    "N52B30": {
+      "variant_code": "N52B30",
+      "displacement_cc": 2996,
+      "displacement_liters": 3.0,
+      "bore_mm": 85.0,
+      "stroke_mm": 88.0,
+      "compression_ratio": "10.7:1",
+      "power_outputs": [
+        {
+          "rating": "Standard (K)",
+          "horsepower": 215,
+          "horsepower_kw": 160,
+          "hp_rpm": 6250,
+          "torque_nm": 270,
+          "torque_lb_ft": 199,
+          "torque_rpm": 2750,
+          "variant_suffix": "K"
+        },
+        {
+          "rating": "High Output (UL/O1)",
+          "horsepower": 255,
+          "horsepower_kw": 190,
+          "hp_rpm": 6600,
+          "torque_nm": 300,
+          "torque_lb_ft": 221,
+          "torque_rpm": 2750,
+          "variant_suffix": "UL/O1"
+        },
+        {
+          "rating": "US Spec (O0)",
+          "horsepower": 230,
+          "horsepower_kw": 170,
+          "hp_rpm": 6500,
+          "torque_nm": 270,
+          "torque_lb_ft": 199,
+          "torque_rpm": 2750,
+          "variant_suffix": "O0"
+        }
+      ],
+      "fuel_system": {
+        "type": "Sequential multi-point fuel injection",
+        "fuel_pressure_bar": 3.5,
+        "injector_flow_rate_cc_min": 200
+      },
+      "applications": [
+        {
+          "model": "BMW 325i",
+          "chassis": "E90/E91/E92/E93",
+          "years": "2005-2007",
+          "market": "Global",
+          "power_hp": 215
+        },
+        {
+          "model": "BMW 328i",
+          "chassis": "E90/E91/E92/E93",
+          "years": "2007-2013",
+          "market": "North America",
+          "power_hp": 230
+        },
+        {
+          "model": "BMW 330i",
+          "chassis": "E90/E91/E92/E93",
+          "years": "2005-2007",
+          "market": "Europe",
+          "power_hp": 255
+        },
+        {
+          "model": "BMW 525i",
+          "chassis": "E60/E61",
+          "years": "2005-2010",
+          "market": "Global",
+          "power_hp": 215
+        },
+        {
+          "model": "BMW 528i",
+          "chassis": "E60/E61",
+          "years": "2008-2010",
+          "market": "North America",
+          "power_hp": 230
+        },
+        {
+          "model": "BMW 530i",
+          "chassis": "E60/E61",
+          "years": "2005-2007",
+          "market": "Europe",
+          "power_hp": 255
+        },
+        {
+          "model": "BMW Z4 3.0i",
+          "chassis": "E85/E86",
+          "years": "2006-2008",
+          "market": "Global",
+          "power_hp": 215
+        },
+        {
+          "model": "BMW Z4 3.0si",
+          "chassis": "E85/E86",
+          "years": "2006-2008",
+          "market": "Global",
+          "power_hp": 255
+        },
+        {
+          "model": "BMW X3 3.0si",
+          "chassis": "E83",
+          "years": "2006-2010",
+          "market": "Global",
+          "power_hp": 255
+        },
+        {
+          "model": "BMW X5 3.0si",
+          "chassis": "E70",
+          "years": "2007-2010",
+          "market": "Global",
+          "power_hp": 255
+        },
+        {
+          "model": "BMW Z4 sDrive30i",
+          "chassis": "E89",
+          "years": "2009-2011",
+          "market": "North America",
+          "power_hp": 255
+        },
+        {
+          "model": "BMW 128i",
+          "chassis": "E82/E88",
+          "years": "2008-2013",
+          "market": "North America",
+          "power_hp": 230
+        },
+        {
+          "model": "BMW 528i",
+          "chassis": "F10/F11",
+          "years": "2011-2012",
+          "market": "North America",
+          "power_hp": 230
+        }
+      ],
+      "production_years": "2004-2015"
+    },
+    "N52B30_KP": {
+      "variant_code": "N52B30KP",
+      "description": "N52B30 with Sulev (Super Ultra Low Emissions Vehicle) compliance",
+      "displacement_cc": 2996,
+      "displacement_liters": 3.0,
+      "bore_mm": 85.0,
+      "stroke_mm": 88.0,
+      "compression_ratio": "10.7:1",
+      "power_outputs": [
+        {
+          "rating": "SULEV Spec",
+          "horsepower": 230,
+          "horsepower_kw": 170,
+          "hp_rpm": 6500,
+          "torque_nm": 270,
+          "torque_lb_ft": 199,
+          "torque_rpm": 2750
+        }
+      ],
+      "emissions_equipment": [
+        "Secondary air injection",
+        "Close-coupled catalytic converters",
+        "Enhanced evaporative emissions system"
+      ],
+      "applications": [
+        {
+          "model": "BMW 328i SULEV",
+          "chassis": "E90/E91/E92/E93",
+          "years": "2007-2013",
+          "market": "California, CARB states",
+          "power_hp": 230
+        },
+        {
+          "model": "BMW 528i SULEV",
+          "chassis": "E60/E61",
+          "years": "2008-2010",
+          "market": "California, CARB states",
+          "power_hp": 230
+        }
+      ],
+      "production_years": "2007-2013"
+    }
+  },
+  "detailed_applications": {
+    "E90_E91_E92_E93_3_Series": {
+      "chassis_codes": ["E90 (Sedan)", "E91 (Touring)", "E92 (Coupe)", "E93 (Convertible)"],
+      "production_years": "2005-2013",
+      "models": [
+        {
+          "model": "323i",
+          "engine_variant": "N52B25",
+          "power_hp": 177,
+          "years": "2005-2011",
+          "transmission_options": ["6-speed manual", "6-speed automatic"]
+        },
+        {
+          "model": "325i",
+          "engine_variant": "N52B30",
+          "power_hp": 215,
+          "years": "2005-2007",
+          "transmission_options": ["6-speed manual", "6-speed automatic"]
+        },
+        {
+          "model": "325xi",
+          "engine_variant": "N52B30",
+          "power_hp": 215,
+          "years": "2005-2007",
+          "drivetrain": "xDrive AWD",
+          "transmission_options": ["6-speed manual", "6-speed automatic"]
+        },
+        {
+          "model": "328i",
+          "engine_variant": "N52B30",
+          "power_hp": 230,
+          "years": "2007-2013",
+          "transmission_options": ["6-speed manual", "6-speed automatic"]
+        },
+        {
+          "model": "328xi/328i xDrive",
+          "engine_variant": "N52B30",
+          "power_hp": 230,
+          "years": "2007-2013",
+          "drivetrain": "xDrive AWD",
+          "transmission_options": ["6-speed manual", "6-speed automatic"]
+        },
+        {
+          "model": "330i",
+          "engine_variant": "N52B30",
+          "power_hp": 255,
+          "years": "2005-2007",
+          "market": "Europe only",
+          "transmission_options": ["6-speed manual", "6-speed automatic"]
+        }
+      ]
+    },
+    "E60_E61_5_Series": {
+      "chassis_codes": ["E60 (Sedan)", "E61 (Touring)"],
+      "production_years": "2005-2010",
+      "models": [
+        {
+          "model": "523i",
+          "engine_variant": "N52B25",
+          "power_hp": 177,
+          "years": "2005-2010",
+          "market": "Europe, Asia"
+        },
+        {
+          "model": "525i",
+          "engine_variant": "N52B30",
+          "power_hp": 215,
+          "years": "2005-2007"
+        },
+        {
+          "model": "525xi",
+          "engine_variant": "N52B30",
+          "power_hp": 215,
+          "years": "2005-2007",
+          "drivetrain": "xDrive AWD"
+        },
+        {
+          "model": "528i",
+          "engine_variant": "N52B30",
+          "power_hp": 230,
+          "years": "2008-2010"
+        },
+        {
+          "model": "528xi/528i xDrive",
+          "engine_variant": "N52B30",
+          "power_hp": 230,
+          "years": "2008-2010",
+          "drivetrain": "xDrive AWD"
+        },
+        {
+          "model": "530i",
+          "engine_variant": "N52B30",
+          "power_hp": 255,
+          "years": "2005-2007",
+          "market": "Europe"
+        }
+      ]
+    },
+    "F10_F11_5_Series": {
+      "chassis_codes": ["F10 (Sedan)", "F11 (Touring)"],
+      "production_years": "2011-2012",
+      "models": [
+        {
+          "model": "528i",
+          "engine_variant": "N52B30",
+          "power_hp": 230,
+          "years": "2011-2012",
+          "note": "Replaced by N20 turbo-4 in 2012"
+        }
+      ]
+    },
+    "E82_E88_1_Series": {
+      "chassis_codes": ["E82 (Coupe)", "E88 (Convertible)"],
+      "production_years": "2008-2013",
+      "models": [
+        {
+          "model": "128i",
+          "engine_variant": "N52B30",
+          "power_hp": 230,
+          "years": "2008-2013"
+        }
+      ]
+    },
+    "E85_E86_Z4": {
+      "chassis_codes": ["E85 (Roadster)", "E86 (Coupe)"],
+      "production_years": "2006-2008",
+      "models": [
+        {
+          "model": "Z4 3.0i",
+          "engine_variant": "N52B30",
+          "power_hp": 215,
+          "years": "2006-2008"
+        },
+        {
+          "model": "Z4 3.0si",
+          "engine_variant": "N52B30",
+          "power_hp": 255,
+          "years": "2006-2008"
+        }
+      ]
+    },
+    "E89_Z4": {
+      "chassis_codes": ["E89 (Roadster)"],
+      "production_years": "2009-2011",
+      "models": [
+        {
+          "model": "Z4 sDrive30i",
+          "engine_variant": "N52B30",
+          "power_hp": 255,
+          "years": "2009-2011"
+        }
+      ]
+    },
+    "E83_X3": {
+      "chassis_codes": ["E83"],
+      "production_years": "2006-2010",
+      "models": [
+        {
+          "model": "X3 2.5si",
+          "engine_variant": "N52B25",
+          "power_hp": 218,
+          "years": "2006-2010"
+        },
+        {
+          "model": "X3 3.0si",
+          "engine_variant": "N52B30",
+          "power_hp": 255,
+          "years": "2006-2010"
+        }
+      ]
+    },
+    "E70_X5": {
+      "chassis_codes": ["E70"],
+      "production_years": "2007-2010",
+      "models": [
+        {
+          "model": "X5 3.0si",
+          "engine_variant": "N52B30",
+          "power_hp": 255,
+          "years": "2007-2010"
+        }
+      ]
+    }
+  },
+  "known_issues": {
+    "critical_issues": [
+      {
+        "issue": "VANOS Solenoid Failure",
+        "severity": "High",
+        "affected_components": ["Intake VANOS solenoid", "Exhaust VANOS solenoid"],
+        "symptoms": [
+          "Rough idle",
+          "Loss of power",
+          "Check engine light with VANOS codes",
+          "Engine stalling",
+          "Poor fuel economy"
+        ],
+        "common_codes": ["2A82", "2A87", "2A7A", "2A7F"],
+        "typical_mileage": "60,000-100,000 miles",
+        "repair_cost_usd": "200-600",
+        "notes": "Common failure due to oil contamination and wear. Often can be cleaned and reinstalled."
+      },
+      {
+        "issue": "Valve Cover Gasket Leak",
+        "severity": "High",
+        "affected_components": ["Valve cover gasket", "Valve cover"],
+        "symptoms": [
+          "Oil smell when engine is hot",
+          "Visible oil around valve cover",
+          "Oil dripping onto exhaust manifold",
+          "Smoke from engine bay"
+        ],
+        "typical_mileage": "70,000-120,000 miles",
+        "repair_cost_usd": "800-1500",
+        "notes": "Valve cover is integrated with PCV system and often requires complete replacement. Eccentric shaft sensor is mounted in valve cover."
+      },
+      {
+        "issue": "Electric Water Pump Failure",
+        "severity": "Critical",
+        "affected_components": ["Electric water pump", "Thermostat housing"],
+        "symptoms": [
+          "Engine overheating",
+          "Coolant warning light",
+          "Reduced engine power message",
+          "No heat from heater"
+        ],
+        "common_codes": ["2E81", "2E82", "2E83", "2E84", "2E85"],
+        "typical_mileage": "60,000-80,000 miles",
+        "repair_cost_usd": "800-1400",
+        "notes": "Electric water pump is prone to failure. Should be replaced proactively at 80k miles. Thermostat often replaced at same time."
+      },
+      {
+        "issue": "Oil Filter Housing Gasket Leak",
+        "severity": "Medium-High",
+        "affected_components": ["Oil filter housing gasket", "Oil cooler gasket"],
+        "symptoms": [
+          "Oil leak from front of engine",
+          "Oil dripping onto alternator",
+          "Low oil level warnings"
+        ],
+        "typical_mileage": "60,000-100,000 miles",
+        "repair_cost_usd": "400-800",
+        "notes": "Common leak point. Gasket deteriorates due to heat cycling. Can damage alternator if ignored."
+      }
+    ],
+    "common_issues": [
+      {
+        "issue": "Eccentric Shaft Sensor Failure",
+        "severity": "Medium",
+        "affected_components": ["Eccentric shaft sensor", "Valvetronic motor"],
+        "symptoms": [
+          "Rough idle",
+          "Limp mode",
+          "Check engine light",
+          "Reduced power"
+        ],
+        "common_codes": ["2A67", "2A68", "2764", "2765"],
+        "typical_mileage": "80,000-120,000 miles",
+        "repair_cost_usd": "500-1200",
+        "notes": "Sensor is integrated into valve cover on later models. May require valve cover replacement."
+      },
+      {
+        "issue": "DISA Valve Failure",
+        "severity": "Medium",
+        "affected_components": ["DISA valve (intake manifold runner control)"],
+        "symptoms": [
+          "Loss of low-end torque",
+          "Rough idle",
+          "Check engine light",
+          "Rattling noise from intake"
+        ],
+        "common_codes": ["2776", "2777", "P1520", "P1521"],
+        "typical_mileage": "80,000-150,000 miles",
+        "repair_cost_usd": "300-600",
+        "notes": "Plastic flaps can break and get ingested into engine. Inspect during throttle body service."
+      },
+      {
+        "issue": "Serpentine Belt Tensioner Failure",
+        "severity": "Medium",
+        "affected_components": ["Belt tensioner", "Idler pulley"],
+        "symptoms": [
+          "Squealing noise on startup",
+          "Belt chirping",
+          "AC not working intermittently"
+        ],
+        "typical_mileage": "80,000-120,000 miles",
+        "repair_cost_usd": "200-400",
+        "notes": "Tensioner pulley bearings wear out. Replace with belt."
+      },
+      {
+        "issue": "Thermostat Failure",
+        "severity": "Medium",
+        "affected_components": ["Electric thermostat", "Thermostat housing"],
+        "symptoms": [
+          "Engine running cold",
+          "Poor fuel economy",
+          "Slow heater warmup",
+          "Check engine light"
+        ],
+        "common_codes": ["2E8A", "2E8B"],
+        "typical_mileage": "60,000-100,000 miles",
+        "repair_cost_usd": "400-700",
+        "notes": "Electronic thermostat fails either open or closed. Often done with water pump."
+      },
+      {
+        "issue": "PCV Valve/CCV System Failure",
+        "severity": "Medium",
+        "affected_components": ["Crankcase ventilation valve", "CCV hoses"],
+        "symptoms": [
+          "Rough idle",
+          "Oil consumption",
+          "Whistling noise from engine",
+          "Check engine light"
+        ],
+        "typical_mileage": "70,000-100,000 miles",
+        "repair_cost_usd": "150-400",
+        "notes": "CCV is integrated into valve cover on N52. May require valve cover replacement for complete fix."
+      },
+      {
+        "issue": "Ignition Coil Failure",
+        "severity": "Low-Medium",
+        "affected_components": ["Ignition coils", "Spark plugs"],
+        "symptoms": [
+          "Misfire",
+          "Rough idle",
+          "Check engine light",
+          "Reduced power"
+        ],
+        "common_codes": ["29CC", "29CD", "29CE", "29CF", "29D0", "29D1"],
+        "typical_mileage": "60,000-100,000 miles",
+        "repair_cost_usd": "150-400",
+        "notes": "Coils should be replaced in pairs or all at once. Use OEM or quality aftermarket."
+      }
+    ],
+    "maintenance_items": [
+      {
+        "item": "Valve Adjustment",
+        "required": false,
+        "notes": "Hydraulic lifters - no adjustment required"
+      },
+      {
+        "item": "Timing Chain Replacement",
+        "required": "Rarely",
+        "typical_life": "200,000+ miles",
+        "notes": "N52 timing chains are very reliable. Chain guides may need replacement before chain."
+      }
+    ]
+  },
+  "maintenance_schedule": {
+    "oil_change": {
+      "bmw_recommendation_miles": 15000,
+      "bmw_recommendation_months": 24,
+      "enthusiast_recommendation_miles": 7500,
+      "enthusiast_recommendation_months": 12,
+      "oil_capacity_liters": 6.5,
+      "oil_capacity_quarts": 6.9,
+      "oil_specification": "BMW Longlife-01 (LL-01)",
+      "viscosity": "0W-40 or 5W-40",
+      "approved_oils": [
+        "Castrol Edge 0W-40",
+        "Mobil 1 0W-40",
+        "Pennzoil Platinum Euro 0W-40",
+        "Liqui Moly Synthoil Energy 0W-40",
+        "BMW TwinPower Turbo 0W-40"
+      ]
+    },
+    "spark_plugs": {
+      "interval_miles": 60000,
+      "interval_km": 100000,
+      "oem_part": "NGK PLKR7A (or equivalent)",
+      "gap_mm": 0.8,
+      "torque_nm": 25
+    },
+    "air_filter": {
+      "interval_miles": 30000,
+      "interval_km": 50000
+    },
+    "fuel_filter": {
+      "interval_miles": 50000,
+      "notes": "Integrated into fuel pump module"
+    },
+    "coolant": {
+      "interval_miles": 100000,
+      "interval_years": 4,
+      "capacity_liters": 10.5,
+      "type": "BMW Blue Coolant (G48 specification)"
+    },
+    "transmission_fluid": {
+      "manual": {
+        "type": "MTF-LT-2 or equivalent GL-4",
+        "capacity_liters": 1.5,
+        "interval": "Lifetime (recommend 60k miles)"
+      },
+      "automatic": {
+        "type": "Shell ATF M-1375.4 or ZF Lifeguard 6",
+        "capacity_liters": 9.0,
+        "interval": "Lifetime (recommend 60k miles)"
+      }
+    },
+    "brake_fluid": {
+      "interval_years": 2,
+      "type": "DOT 4 Low Viscosity"
+    }
+  },
+  "engine_management": {
+    "ecu_type": "Siemens MSV70 / MSV80",
+    "protocol": "CAN-bus",
+    "features": [
+      "Valvetronic control",
+      "Double-VANOS control",
+      "DISA control",
+      "Electric water pump control",
+      "Electronic throttle control",
+      "Knock control",
+      "Fuel injection control",
+      "Emission control"
+    ],
+    "sensors": [
+      {
+        "sensor": "Mass Airflow Sensor (MAF)",
+        "type": "Hot-film",
+        "location": "Air filter housing outlet"
+      },
+      {
+        "sensor": "Crankshaft Position Sensor",
+        "type": "Hall effect",
+        "location": "Rear of engine block"
+      },
+      {
+        "sensor": "Camshaft Position Sensors (2)",
+        "type": "Hall effect",
+        "location": "Front of cylinder head"
+      },
+      {
+        "sensor": "Eccentric Shaft Sensor",
+        "type": "Hall effect",
+        "location": "Valve cover (rear)"
+      },
+      {
+        "sensor": "Knock Sensors (2)",
+        "type": "Piezoelectric",
+        "location": "Engine block"
+      },
+      {
+        "sensor": "Coolant Temperature Sensor",
+        "type": "NTC thermistor",
+        "location": "Thermostat housing"
+      },
+      {
+        "sensor": "Oil Level/Temperature Sensor",
+        "type": "Electronic",
+        "location": "Oil pan"
+      },
+      {
+        "sensor": "Oxygen Sensors (4)",
+        "type": "Wideband (pre-cat), Narrowband (post-cat)",
+        "location": "Exhaust manifolds"
+      }
+    ]
+  },
+  "performance_data": {
+    "N52B30_230hp": {
+      "0_60_mph_seconds": 6.2,
+      "0_100_kph_seconds": 6.5,
+      "quarter_mile_seconds": 14.8,
+      "quarter_mile_mph": 93,
+      "top_speed_mph": 155,
+      "top_speed_limited": true,
+      "fuel_economy_mpg": {
+        "city": 18,
+        "highway": 28,
+        "combined": 22
+      }
+    },
+    "N52B30_255hp": {
+      "0_60_mph_seconds": 5.6,
+      "0_100_kph_seconds": 5.9,
+      "quarter_mile_seconds": 14.2,
+      "quarter_mile_mph": 97,
+      "top_speed_mph": 155,
+      "top_speed_limited": true,
+      "fuel_economy_mpg": {
+        "city": 17,
+        "highway": 26,
+        "combined": 21
+      }
+    }
+  },
+  "tuning_potential": {
+    "naturally_aspirated_limitations": "As a naturally aspirated engine, the N52 has limited tuning potential compared to turbocharged engines. Gains are primarily achieved through intake/exhaust modifications and ECU tuning.",
+    "typical_gains": {
+      "intake_exhaust_only": "5-10 HP",
+      "ecu_tune": "10-15 HP",
+      "full_bolt_ons_with_tune": "15-25 HP"
+    },
+    "common_modifications": [
+      {
+        "modification": "Cold Air Intake",
+        "typical_gain_hp": "3-7",
+        "notes": "Minimal gains, mostly sound enhancement"
+      },
+      {
+        "modification": "Performance Exhaust",
+        "typical_gain_hp": "5-10",
+        "notes": "Headers provide most gain, cat-back mainly for sound"
+      },
+      {
+        "modification": "ECU Tune",
+        "typical_gain_hp": "10-15",
+        "notes": "Removes speed limiter, optimizes ignition/fuel maps"
+      },
+      {
+        "modification": "Performance Camshafts",
+        "typical_gain_hp": "15-25",
+        "notes": "Significant modification, requires tune"
+      }
+    ],
+    "forced_induction": {
+      "feasibility": "Possible but not recommended",
+      "notes": "Magnesium block has thermal limitations. Low compression not ideal for boost. Most enthusiasts swap to N54 or N55 for forced induction builds."
+    },
+    "recommended_approach": "The N52 is best enjoyed as a reliable, smooth daily driver. Those seeking significant power should consider an N54/N55 swap or different vehicle."
+  }
+}

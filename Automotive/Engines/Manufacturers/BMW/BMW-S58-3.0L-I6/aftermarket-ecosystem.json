@@ -1,0 +1,103 @@
+{
+  "engine_id": "BMW-S58-3.0L-I6-TWIN-TURBO",
+  "ecosystem_version": "1.0.0",
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {"url": "https://www.fcpeuro.com", "notes": "Lifetime replacement"},
+      "ecs_tuning": {"url": "https://www.ecstuning.com"},
+      "getbmwparts": {"url": "https://www.getbmwparts.com"}
+    },
+    "performance_specialists": {
+      "vrsf": {"url": "https://www.vfracing.com", "specialty": "Charge pipes, intercoolers"},
+      "evolution_racewerks": {"url": "https://www.evoracewerks.com", "specialty": "Charge pipes, intakes"},
+      "csf_racing": {"url": "https://csfrace.com", "specialty": "Intercoolers, radiators"},
+      "pure_turbos": {"url": "https://pureturbos.com", "specialty": "Hybrid turbos"},
+      "active_autowerke": {"url": "https://activeautowerke.com", "specialty": "Exhaust, tuning"}
+    },
+    "tuning_software": {
+      "bootmod3": {"url": "https://www.bootmod3.net", "cost_stage_1": 599},
+      "mhd_flasher": {"url": "https://mhdflasher.com", "cost_stage_1": 499},
+      "weistec": {"url": "https://weistec.com", "specialty": "OEM+ tuning"}
+    }
+  },
+  "aftermarket_parts": {
+    "charge_pipes": {
+      "vrsf_charge_pipe": {"brand": "VRSF", "price_usd": 375, "material": "Aluminum"},
+      "evo_racewerks_cp": {"brand": "Evolution Racewerks", "price_usd": 350}
+    },
+    "downpipes": {
+      "active_autowerke_catted": {"brand": "Active Autowerke", "price_usd": 1800, "type": "High-flow catted"},
+      "vrsf_catless": {"brand": "VRSF", "price_usd": 1200, "type": "Race (catless)"}
+    },
+    "intakes": {
+      "eventuri_intake": {"brand": "Eventuri", "price_usd": 1200, "material": "Carbon fiber"},
+      "vrsf_intake": {"brand": "VRSF", "price_usd": 450}
+    },
+    "intercoolers": {
+      "csf_race_ic": {"brand": "CSF Racing", "price_usd": 1500, "cooling_improvement": "40%"},
+      "vrsf_ic": {"brand": "VRSF", "price_usd": 1200}
+    },
+    "turbo_upgrades": {
+      "pure_turbos_s58": {"brand": "Pure Turbos", "price_usd": 4500, "power_potential": "900-1000hp"},
+      "vargas_s58_hybrid": {"brand": "Vargas", "price_usd": 4200, "power_potential": "850-950hp"}
+    },
+    "fueling": {
+      "upgraded_lpfp": {"brands": ["AEM", "Walbro"], "price_usd": 800},
+      "port_injection_kit": {"price_usd": 2000, "notes": "Required for 800+ hp"}
+    },
+    "crank_hub_solutions": {
+      "arp_crank_bolt": {"part": "101-2501", "price_usd": 85},
+      "ind_crank_hub_fix": {"price_usd": 350},
+      "mfactory_keyed_hub": {"price_usd": 800}
+    }
+  },
+  "tuning_packages": {
+    "stage_1_daily": {
+      "power_hp": "580-620",
+      "components": [{"item": "BM3/MHD Stage 1", "price_usd": 599}],
+      "total_cost_usd": 599
+    },
+    "stage_2_enthusiast": {
+      "power_hp": "650-700",
+      "components": [
+        {"item": "Stage 2 tune", "price_usd": 699},
+        {"item": "Downpipes", "price_usd": 1500},
+        {"item": "Intake", "price_usd": 600},
+        {"item": "Charge pipe", "price_usd": 375},
+        {"item": "Crank hub fix", "price_usd": 350}
+      ],
+      "total_cost_usd": 3524
+    },
+    "stage_2_plus_e85": {
+      "power_hp": "750-800",
+      "components": [
+        {"item": "E85 tune", "price_usd": 899},
+        {"item": "Full bolt-ons", "price_usd": 3000},
+        {"item": "LPFP upgrade", "price_usd": 800},
+        {"item": "Upgraded IC", "price_usd": 1500},
+        {"item": "Crank hub fix", "price_usd": 350}
+      ],
+      "total_cost_usd": 6549
+    },
+    "hybrid_turbo": {
+      "power_hp": "900-1000+",
+      "components": [
+        {"item": "Pure/Vargas turbos", "price_usd": 4500},
+        {"item": "Custom tune", "price_usd": 1200},
+        {"item": "Port injection", "price_usd": 2000},
+        {"item": "LPFP upgrade", "price_usd": 800},
+        {"item": "Full bolt-ons", "price_usd": 3500},
+        {"item": "Crank hub fix", "price_usd": 350}
+      ],
+      "total_cost_usd": 12350
+    }
+  },
+  "community_resources": {
+    "forums": {
+      "bimmerpost_g80": "https://g80.bimmerpost.com",
+      "bimmerpost_x3m": "https://f97.bimmerpost.com"
+    },
+    "facebook_groups": ["G80 M3 Owners", "S58 Tuning Community"],
+    "youtube": ["Joe Achilles", "Shmee150", "TheStraightPipes"]
+  }
+}

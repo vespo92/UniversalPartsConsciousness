@@ -13,12 +13,17 @@ Automotive/Engines/
     ├── AMC/
     │   └── AMC-4.0L-I6/               # Jeep 4.0L Inline-6
     ├── BMW/
+    │   ├── BMW-B48-2.0L-I4/           # B48 TwinPower Turbo 4-cyl
     │   ├── BMW-B58-3.0L-I6/           # B58 TwinPower Turbo
     │   ├── BMW-M52-2.8L-I6/           # M52 VANOS
     │   ├── BMW-M54-3.0L-I6/           # M54 VANOS
+    │   ├── BMW-N20-2.0L-I4/           # N20 TwinPower Turbo 4-cyl
+    │   ├── BMW-N52-3.0L-I6/           # N52 (Last NA I6)
     │   ├── BMW-N54-3.0L-I6/           # N54 Twin-Turbo
     │   ├── BMW-N55-3.0L-I6/           # N55 Single Twin-Scroll
-    │   └── BMW-S54-3.2L-I6/           # S54 Motorsport
+    │   ├── BMW-S54-3.2L-I6/           # S54 Motorsport
+    │   ├── BMW-S55-3.0L-I6/           # S55 M3/M4 Twin-Turbo
+    │   └── BMW-S58-3.0L-I6/           # S58 G80 M3/G82 M4 Twin-Turbo
     └── VAG/                            # Volkswagen Auto Group
         ├── Audi/
         │   ├── AUDI-EA211-1.4L-TFSI-I4/   # EA211 1.4T
@@ -59,47 +64,93 @@ Automotive/Engines/
 
 ### BMW
 
-#### BMW B58 3.0L I6 (2015-present)
-- **Directory:** `Manufacturers/BMW/BMW-B58-3.0L-I6/`
-- **Displacement:** 3.0L (2998cc)
-- **Configuration:** Inline 6-cylinder, DOHC, single twin-scroll turbo
-- **Power:** 335-382 HP
-- **Applications:** 340i, M340i, 540i, X3 M40i, Supra
+#### M Performance Engines
 
-#### BMW N54 3.0L I6 (2006-2016)
-- **Directory:** `Manufacturers/BMW/BMW-N54-3.0L-I6/`
+##### BMW S58 3.0L I6 (2019-present) - Current M3/M4
+- **Directory:** `Manufacturers/BMW/BMW-S58-3.0L-I6/`
+- **Displacement:** 3.0L (2993cc)
+- **Configuration:** Inline 6-cylinder, DOHC, twin-turbo, dry sump
+- **Power:** 473-543 HP (Standard/Competition/CS/CSL)
+- **Applications:** G80 M3, G82/G83 M4, X3 M F97, X4 M F98
+- **Critical:** Crank hub must be addressed before tuning
+
+##### BMW S55 3.0L I6 (2014-2020) - F80 M3/F82 M4
+- **Directory:** `Manufacturers/BMW/BMW-S55-3.0L-I6/`
 - **Displacement:** 3.0L (2979cc)
-- **Configuration:** Inline 6-cylinder, DOHC, twin turbo
-- **Power:** 300-335 HP
-- **Applications:** 135i, 335i, 535i, Z4 35i
+- **Configuration:** Inline 6-cylinder, DOHC, twin-turbo
+- **Power:** 425-493 HP (Standard/Competition/CS/GTS)
+- **Applications:** F80 M3, F82/F83 M4, F87 M2 Competition
+- **Critical:** Crank hub and rod bearings require attention
 
-#### BMW N55 3.0L I6 (2009-2018)
-- **Directory:** `Manufacturers/BMW/BMW-N55-3.0L-I6/`
-- **Displacement:** 3.0L (2979cc)
-- **Configuration:** Inline 6-cylinder, DOHC, single twin-scroll turbo
-- **Power:** 302-326 HP
-- **Applications:** 335i, 435i, 535i, X5 35i, M235i
-
-#### BMW M54 3.0L I6 (2000-2006)
-- **Directory:** `Manufacturers/BMW/BMW-M54-3.0L-I6/`
-- **Displacement:** 3.0L (2979cc)
-- **Configuration:** Inline 6-cylinder, DOHC, naturally aspirated
-- **Power:** 231 HP
-- **Applications:** 330i, 530i, X3 3.0i, X5 3.0i, Z4 3.0i
-
-#### BMW M52 2.8L I6 (1994-2000)
-- **Directory:** `Manufacturers/BMW/BMW-M52-2.8L-I6/`
-- **Displacement:** 2.8L (2793cc)
-- **Configuration:** Inline 6-cylinder, DOHC, naturally aspirated
-- **Power:** 193 HP
-- **Applications:** 328i, 528i, Z3 2.8
-
-#### BMW S54 3.2L I6 (2000-2006)
+##### BMW S54 3.2L I6 (2000-2006) - E46 M3
 - **Directory:** `Manufacturers/BMW/BMW-S54-3.2L-I6/`
 - **Displacement:** 3.2L (3246cc)
 - **Configuration:** Inline 6-cylinder, DOHC, naturally aspirated, motorsport
 - **Power:** 333-360 HP
 - **Applications:** M3 E46, Z3M, Z4M
+
+#### Modern Turbocharged Inline-6
+
+##### BMW B58 3.0L I6 (2015-present)
+- **Directory:** `Manufacturers/BMW/BMW-B58-3.0L-I6/`
+- **Displacement:** 3.0L (2998cc)
+- **Configuration:** Inline 6-cylinder, DOHC, single twin-scroll turbo
+- **Power:** 335-382 HP
+- **Applications:** 340i, M340i, 540i, X3 M40i, Toyota Supra
+
+##### BMW N55 3.0L I6 (2009-2018)
+- **Directory:** `Manufacturers/BMW/BMW-N55-3.0L-I6/`
+- **Displacement:** 3.0L (2979cc)
+- **Configuration:** Inline 6-cylinder, DOHC, single twin-scroll turbo
+- **Power:** 302-326 HP
+- **Applications:** F30 335i, F32 435i, F10 535i, F15 X5 35i, F22 M235i
+
+##### BMW N54 3.0L I6 (2006-2016) - "The Legend"
+- **Directory:** `Manufacturers/BMW/BMW-N54-3.0L-I6/`
+- **Displacement:** 3.0L (2979cc)
+- **Configuration:** Inline 6-cylinder, DOHC, twin turbo
+- **Power:** 300-335 HP
+- **Applications:** E82 135i, E90 335i, E60 535i, E89 Z4 35i
+
+#### Modern Turbocharged 4-Cylinder
+
+##### BMW B48 2.0L I4 (2014-present)
+- **Directory:** `Manufacturers/BMW/BMW-B48-2.0L-I4/`
+- **Displacement:** 2.0L (1998cc)
+- **Configuration:** Inline 4-cylinder, DOHC, turbocharged
+- **Power:** 184-302 HP
+- **Applications:** F30/G20 320i/330i, G30 520i/530i, F48 X1, G01 X3, MINI Cooper S
+
+##### BMW N20 2.0L I4 (2011-2017)
+- **Directory:** `Manufacturers/BMW/BMW-N20-2.0L-I4/`
+- **Displacement:** 2.0L (1997cc)
+- **Configuration:** Inline 4-cylinder, DOHC, turbocharged
+- **Power:** 184-245 HP
+- **Applications:** F30 320i/328i, F10 520i/528i, F25 X3 28i, E89 Z4
+- **Critical:** Timing chain issues on early production (2011-2015)
+
+#### Classic Naturally Aspirated Inline-6
+
+##### BMW N52 3.0L I6 (2004-2015) - Last NA Inline-6
+- **Directory:** `Manufacturers/BMW/BMW-N52-3.0L-I6/`
+- **Displacement:** 2.5L-3.0L (2497-2996cc)
+- **Configuration:** Inline 6-cylinder, DOHC, naturally aspirated, magnesium block
+- **Power:** 215-255 HP
+- **Applications:** E90 325i/328i/330i, E60 525i/528i/530i, E85 Z4, E83 X3
+
+##### BMW M54 3.0L I6 (2000-2006)
+- **Directory:** `Manufacturers/BMW/BMW-M54-3.0L-I6/`
+- **Displacement:** 3.0L (2979cc)
+- **Configuration:** Inline 6-cylinder, DOHC, naturally aspirated
+- **Power:** 231 HP
+- **Applications:** E46 330i, E39 530i, E53 X5 3.0i, E85 Z4 3.0i
+
+##### BMW M52 2.8L I6 (1994-2000)
+- **Directory:** `Manufacturers/BMW/BMW-M52-2.8L-I6/`
+- **Displacement:** 2.8L (2793cc)
+- **Configuration:** Inline 6-cylinder, DOHC, naturally aspirated
+- **Power:** 193 HP
+- **Applications:** E36/E46 328i, E39 528i, E36 Z3 2.8
 
 ### AMC
 
@@ -241,6 +292,26 @@ To add a new engine to the database:
 | Stage 1 | 420-450 HP | ECU tune |
 | Stage 2 | 500-550 HP | Tune + downpipe + intake |
 | Pure 800 | 700-800 HP | Big turbo + built engine |
+
+### BMW S58 Tuning Quick Reference (G80 M3/G82 M4)
+| Stage | Power | Required Mods |
+|-------|-------|---------------|
+| Stock | 473-543 HP | - |
+| Stage 1 | 580-620 HP | ECU tune + **crank hub fix** |
+| Stage 2 | 650-700 HP | Tune + downpipes + intake + charge pipe |
+| Stage 2+ E85 | 750-800 HP | Full bolt-ons + E85 + LPFP |
+| Hybrid Turbo | 900-1000 HP | Pure/Vargas turbos + fueling |
+
+### BMW S55 Tuning Quick Reference (F80 M3/F82 M4)
+| Stage | Power | Required Mods |
+|-------|-------|---------------|
+| Stock | 425-493 HP | - |
+| Stage 1 | 520-550 HP | ECU tune + **crank hub fix** |
+| Stage 2 | 580-650 HP | Tune + downpipes + intake |
+| Stage 2+ E85 | 700-750 HP | Full bolt-ons + E85 |
+| Hybrid Turbo | 800-900 HP | Pure/VTT turbos + fueling |
+
+**Critical for S58/S55:** Address crank hub and rod bearings before adding significant power!
 
 ## License
 

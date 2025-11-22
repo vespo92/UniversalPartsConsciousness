@@ -1,0 +1,572 @@
+{
+  "engine_id": "BMW-N20-2.0L-I4-TURBO",
+  "common_names": [
+    "N20",
+    "N20B20",
+    "BMW TwinPower Turbo 4-Cylinder",
+    "328i Engine",
+    "528i Engine",
+    "X3 28i Engine"
+  ],
+  "manufacturer": "BMW AG",
+  "engine_family": "BMW N20",
+  "production_years": "2011-2017",
+  "successor": "BMW B48",
+  "predecessor": "BMW N52 (naturally aspirated equivalent)",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {
+      "liters": 1.997,
+      "cubic_inches": 121.9,
+      "cc": 1997
+    },
+    "bore": {
+      "inches": 3.307,
+      "mm": 84.0
+    },
+    "stroke": {
+      "inches": 3.524,
+      "mm": 90.1
+    },
+    "compression_ratio": "10.0:1",
+    "firing_order": "1-3-4-2",
+    "cylinder_numbering": "1 at front (near radiator)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "aluminum_with_iron_liners",
+    "head_material": "aluminum",
+    "valvetrain": "DOHC, 16 valves (4 per cylinder), Double VANOS, Valvetronic III",
+    "forced_induction": {
+      "type": "Single Twin-Scroll Turbocharger",
+      "turbo_model": "Continental/BorgWarner K03",
+      "compressor_wheel_diameter_mm": 44,
+      "turbine_wheel_diameter_mm": 41,
+      "boost_pressure_psi": {
+        "stock_n20b20a": 11.6,
+        "stock_n20b20b": 14.5,
+        "max_stock": 17.4,
+        "overboost": 18.5
+      },
+      "wastegate_type": "Electronic (integrated)",
+      "intercooler": "Air-to-air, front-mounted"
+    },
+    "fuel_system": {
+      "type": "High Pressure Direct Injection (HPI)",
+      "fuel_pressure_bar": {
+        "low_pressure": 5,
+        "high_pressure": 200
+      },
+      "injector_type": "Solenoid (6-hole)",
+      "fuel_pump_high_pressure": "Bosch CP4.1",
+      "fuel_pump_low_pressure": "In-tank electric"
+    },
+    "ignition_system": "Coil-on-plug (Bosch)",
+    "spark_plug_gap_mm": 0.8,
+    "valvetronic": {
+      "equipped": true,
+      "generation": "III",
+      "function": "Variable valve lift replaces conventional throttle",
+      "lift_range_mm": {
+        "minimum": 0.3,
+        "maximum": 9.9
+      }
+    }
+  },
+
+  "engine_variants": {
+    "N20B20A": {
+      "designation": "Low Output",
+      "horsepower": 184,
+      "hp_rpm": 5000,
+      "torque_lb_ft": 199,
+      "torque_nm": 270,
+      "torque_rpm": "1250-4500",
+      "boost_psi": 11.6,
+      "applications": [
+        "F30 320i (2012-2016)",
+        "F10 520i (2011-2016)",
+        "E89 Z4 sDrive20i (2011-2016)",
+        "F25 X3 xDrive20i (2011-2017)"
+      ],
+      "markets": "Europe, Asia",
+      "notes": "Base tune with lower boost"
+    },
+    "N20B20B": {
+      "designation": "High Output",
+      "horsepower": 245,
+      "hp_rpm": 5000,
+      "torque_lb_ft": 258,
+      "torque_nm": 350,
+      "torque_rpm": "1250-4800",
+      "boost_psi": 14.5,
+      "overboost_torque_nm": 350,
+      "applications": [
+        "F30 328i (2012-2016)",
+        "F10 528i (2011-2016)",
+        "F25 X3 28i (2011-2017)",
+        "E89 Z4 sDrive28i (2011-2016)",
+        "F34 328i GT (2013-2016)"
+      ],
+      "markets": "All markets",
+      "notes": "Higher boost, performance tune"
+    },
+    "N20B20O0": {
+      "designation": "Ultra Low Output",
+      "horsepower": 156,
+      "hp_rpm": 4800,
+      "torque_lb_ft": 177,
+      "torque_nm": 240,
+      "torque_rpm": "1500-4000",
+      "applications": [
+        "F30 316i (2012-2015)",
+        "F20 116i (2012-2015)"
+      ],
+      "markets": "Europe only",
+      "notes": "Entry-level detuned variant"
+    },
+    "N26B20": {
+      "designation": "SULEV (Super Ultra Low Emission Vehicle)",
+      "horsepower": 240,
+      "hp_rpm": 5000,
+      "torque_lb_ft": 255,
+      "torque_nm": 345,
+      "torque_rpm": "1250-4800",
+      "applications": [
+        "F30 328i SULEV (2012-2016)",
+        "F10 528i SULEV (2012-2016)",
+        "F25 X3 28i SULEV (2013-2017)"
+      ],
+      "markets": "California CARB states only",
+      "differences_from_n20": [
+        "Secondary air injection system",
+        "Modified exhaust manifold for air injection",
+        "Additional oxygen sensors (4 total vs 2)",
+        "Different ECU tune for emissions",
+        "Slightly modified timing chain components",
+        "N26-specific catalytic converter"
+      ],
+      "notes": "California emissions compliant variant"
+    }
+  },
+
+  "vehicle_applications": {
+    "1_series_f20_f21": {
+      "models": ["116i", "118i"],
+      "years": "2012-2015",
+      "variant": "N20B20A/O0",
+      "hp_range": "136-170",
+      "notes": "Europe only, 5-door hatchback"
+    },
+    "3_series_f30_f31": {
+      "models": ["316i", "320i", "328i"],
+      "years": "2012-2016",
+      "variant": "N20B20A/B/O0",
+      "hp_range": "136-245",
+      "transmission_options": ["6-speed manual", "8-speed ZF automatic"],
+      "notes": "Primary application, sedan and wagon"
+    },
+    "3_series_gt_f34": {
+      "models": ["320i GT", "328i GT"],
+      "years": "2013-2016",
+      "variant": "N20B20A/B",
+      "hp_range": "184-245",
+      "notes": "Gran Turismo hatchback"
+    },
+    "4_series_f32_f33_f36": {
+      "models": ["420i", "428i"],
+      "years": "2013-2016",
+      "variant": "N20B20A/B",
+      "hp_range": "184-245",
+      "notes": "Coupe, Convertible, Gran Coupe"
+    },
+    "5_series_f10_f11": {
+      "models": ["520i", "528i"],
+      "years": "2011-2016",
+      "variant": "N20B20A/B",
+      "hp_range": "184-245",
+      "notes": "Sedan and Touring wagon"
+    },
+    "x1_e84": {
+      "models": ["sDrive18i", "sDrive20i", "xDrive20i", "xDrive28i"],
+      "years": "2012-2015",
+      "variant": "N20B20A/B",
+      "hp_range": "170-245",
+      "notes": "First-gen X1 compact SUV"
+    },
+    "x3_f25": {
+      "models": ["xDrive20i", "xDrive28i"],
+      "years": "2011-2017",
+      "variant": "N20B20A/B",
+      "hp_range": "184-245",
+      "notes": "Second-gen X3"
+    },
+    "x4_f26": {
+      "models": ["xDrive20i", "xDrive28i"],
+      "years": "2014-2018",
+      "variant": "N20B20A/B",
+      "hp_range": "184-245",
+      "notes": "First-gen X4 coupe-SUV"
+    },
+    "z4_e89": {
+      "models": ["sDrive18i", "sDrive20i", "sDrive28i"],
+      "years": "2011-2016",
+      "variant": "N20B20A/B",
+      "hp_range": "156-245",
+      "notes": "Second-gen Z4 roadster"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.3,
+      "capacity_liters": 5.0,
+      "with_filter": true,
+      "recommended_viscosity": ["0W-30", "0W-40", "5W-30"],
+      "bmw_ll_rating": "BMW Longlife-01",
+      "approved_oils": [
+        "Castrol Edge 0W-30 LL01",
+        "BMW TwinPower Turbo 0W-30",
+        "Mobil 1 0W-40 European Car",
+        "Pennzoil Platinum Euro 0W-40",
+        "Liqui Moly Leichtlauf 5W-40"
+      ],
+      "oil_change_interval_miles": {
+        "bmw_recommended": 15000,
+        "severe_service": 7500,
+        "track_use": 3000
+      }
+    },
+    "coolant": {
+      "capacity_liters": 7.0,
+      "type": "BMW Antifreeze/Coolant (blue)",
+      "bmw_part": "82-14-2-209-769",
+      "mix_ratio": "50/50 with distilled water"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 221.0,
+    "main_bearing_journal_diameter_mm": 56.0,
+    "rod_bearing_journal_diameter_mm": 47.0,
+    "cylinder_bore_diameter_mm": 84.0,
+    "cylinder_bore_spacing_mm": 91.0,
+    "connecting_rod_length_mm": 148.0,
+    "piston_compression_height_mm": 32.0,
+    "wrist_pin_diameter_mm": 22.0,
+    "main_bearing_count": 5,
+    "rod_bearing_width_mm": 20.0,
+    "engine_weight_kg": {
+      "dry": 127,
+      "with_accessories": 145
+    },
+    "valve_dimensions": {
+      "intake_valve_head_diameter_mm": 33.0,
+      "exhaust_valve_head_diameter_mm": 28.0,
+      "valve_stem_diameter_mm": 6.0
+    }
+  },
+
+  "electronic_systems": {
+    "engine_management": {
+      "ecu_type": "Siemens MEVD17.2.4",
+      "protocol": "CAN-based",
+      "immobilizer": "EWS4 / CAS integration"
+    },
+    "vanos_control": {
+      "type": "Double VANOS (intake and exhaust)",
+      "adjustment_range_intake": "70 degrees crank",
+      "adjustment_range_exhaust": "60 degrees crank",
+      "solenoid_count": 2
+    },
+    "valvetronic": {
+      "generation": "III",
+      "motor_type": "DC servo motor with eccentric shaft",
+      "position_sensor": "Eccentric shaft sensor",
+      "function": "Replaces conventional throttle body for load control"
+    },
+    "throttle_control": "Valvetronic (throttle body for emergency/cold start only)",
+    "boost_control": "Electronic wastegate actuator",
+    "sensors": {
+      "mass_airflow": "Hot-film type",
+      "manifold_pressure": "MAP sensor",
+      "crankshaft_position": "60-2 reluctor wheel",
+      "camshaft_position": "Hall effect (intake and exhaust)",
+      "knock_sensors": 2,
+      "coolant_temp": 1,
+      "oil_temp": 1,
+      "oil_pressure": 1,
+      "oxygen_sensors_n20": 2,
+      "oxygen_sensors_n26": 4
+    }
+  },
+
+  "known_issues_and_failures": {
+    "critical_timing_chain_failure": {
+      "severity": "CRITICAL",
+      "affected_production": "2011-2015 (especially 2011-2013)",
+      "failure_rate": "High on early production",
+      "symptoms": [
+        "Rattling noise on cold start (chain stretch)",
+        "Timing chain noise when engine reaches operating temp",
+        "Check engine light with VANOS codes",
+        "Engine running rough or misfiring",
+        "Metal shavings in oil",
+        "Complete engine failure if chain jumps timing"
+      ],
+      "root_causes": [
+        "Weak timing chain tensioner design",
+        "Chain guide rail plastic failure",
+        "Timing chain stretch (elongation)",
+        "Oil starvation to tensioner",
+        "Poor quality chain in early production"
+      ],
+      "affected_components": [
+        "Timing chain",
+        "Timing chain tensioner",
+        "Timing chain guide rails (upper and lower)",
+        "Chain guide rail bolts",
+        "VANOS units (secondary damage)"
+      ],
+      "bmw_response": {
+        "tsb_issued": true,
+        "warranty_extension": "Some cases 7 years/70,000 miles",
+        "updated_parts": "Revised tensioner and chain design mid-2015",
+        "class_action": "Multiple class action lawsuits filed"
+      },
+      "prevention": [
+        "Use BMW LL-01 approved oil only",
+        "Short oil change intervals (5000-7000 miles)",
+        "Avoid extended engine idling",
+        "Listen for timing chain rattle on cold start",
+        "Preemptive replacement at 60,000-80,000 miles"
+      ],
+      "repair_cost_usd": {
+        "dealership": "3000-5000",
+        "independent_shop": "2000-3500",
+        "diy_parts_only": "600-1200"
+      },
+      "notes": "THE critical failure point of N20. Can result in catastrophic engine damage if chain jumps timing."
+    },
+    "oil_consumption": {
+      "severity": "MODERATE",
+      "affected_production": "All years",
+      "symptoms": [
+        "Oil level dropping between changes",
+        "Blue smoke on startup or acceleration",
+        "Fouled spark plugs"
+      ],
+      "root_causes": [
+        "Piston ring design (low tension for efficiency)",
+        "Valve stem seal wear",
+        "PCV system issues"
+      ],
+      "acceptable_consumption": "1 quart per 1500-2000 miles (BMW spec)",
+      "excessive_consumption": "Greater than 1 quart per 1000 miles",
+      "solutions": [
+        "Check PCV valve operation",
+        "Valve stem seal replacement",
+        "Piston ring replacement in severe cases"
+      ]
+    },
+    "water_pump_failure": {
+      "severity": "MODERATE",
+      "affected_production": "All years",
+      "typical_failure_mileage": "60000-100000",
+      "symptoms": [
+        "Coolant leak",
+        "Engine overheating",
+        "Coolant warning light"
+      ],
+      "root_cause": "Electric water pump bearing/impeller failure",
+      "bmw_part": "11-51-7-597-715",
+      "repair_cost_usd": {
+        "dealership": "1200-1800",
+        "independent": "600-900",
+        "diy": "300-450"
+      }
+    },
+    "thermostat_failure": {
+      "severity": "MODERATE",
+      "symptoms": [
+        "Engine overheating",
+        "Slow warmup",
+        "Temperature fluctuation"
+      ],
+      "typical_failure_mileage": "50000-80000",
+      "bmw_part": "11-53-7-644-811",
+      "notes": "Often replaced with water pump preventatively"
+    },
+    "vanos_solenoid_issues": {
+      "severity": "MODERATE",
+      "symptoms": [
+        "Rough idle",
+        "Reduced power",
+        "Check engine light (VANOS codes)"
+      ],
+      "root_cause": "Solenoid screen clogging, oil contamination",
+      "solution": "Clean or replace VANOS solenoids",
+      "bmw_parts": {
+        "intake": "11-36-7-585-425",
+        "exhaust": "11-36-7-585-426"
+      }
+    },
+    "valve_cover_gasket_leak": {
+      "severity": "LOW-MODERATE",
+      "symptoms": [
+        "Oil smell",
+        "Visible oil seepage",
+        "Smoke from engine bay"
+      ],
+      "typical_failure_mileage": "60000-100000",
+      "repair_notes": "Replace gasket with updated design",
+      "bmw_part": "11-12-7-588-412"
+    },
+    "high_pressure_fuel_pump": {
+      "severity": "MODERATE",
+      "affected_production": "Early 2011-2012",
+      "symptoms": [
+        "Long crank times",
+        "Engine stalling",
+        "Fuel pressure codes"
+      ],
+      "notes": "Less common than N54 HPFP issues",
+      "bmw_part": "13-51-7-595-339"
+    },
+    "turbo_wastegate_rattle": {
+      "severity": "LOW",
+      "symptoms": [
+        "Rattling noise at certain RPM",
+        "Audible wastegate chatter"
+      ],
+      "root_cause": "Wastegate actuator arm wear",
+      "solution": "Wastegate actuator replacement or turbo replacement"
+    },
+    "carbon_buildup": {
+      "severity": "MODERATE",
+      "symptoms": [
+        "Rough idle",
+        "Reduced power",
+        "Hesitation on acceleration"
+      ],
+      "root_cause": "Direct injection design (no fuel washing valves)",
+      "solution": "Walnut blasting intake valves every 50,000-70,000 miles",
+      "prevention": "Occasional Italian tune-up, catch can installation"
+    }
+  },
+
+  "maintenance_schedule": {
+    "oil_change": {
+      "bmw_interval_miles": 15000,
+      "recommended_interval_miles": 7500,
+      "severe_service_miles": 5000,
+      "notes": "Shorter intervals help timing chain longevity"
+    },
+    "spark_plugs": {
+      "interval_miles": 60000,
+      "oem_part": "NGK 94201 (SILZKBR8D8S)",
+      "notes": "Index spark plugs preferred"
+    },
+    "air_filter": {
+      "interval_miles": 30000
+    },
+    "fuel_filter": {
+      "type": "In-tank (non-serviceable)",
+      "notes": "Replaced with fuel pump assembly if needed"
+    },
+    "coolant_flush": {
+      "interval_miles": 100000,
+      "interval_years": 4
+    },
+    "brake_fluid": {
+      "interval_years": 2,
+      "type": "DOT 4"
+    },
+    "transmission_fluid": {
+      "zf_8hp": {
+        "interval_miles": 60000,
+        "fluid_type": "ZF Lifeguard 8"
+      },
+      "manual": {
+        "interval_miles": 60000,
+        "fluid_type": "MTF-LT-5"
+      }
+    },
+    "timing_chain_inspection": {
+      "interval_miles": 50000,
+      "notes": "Check chain stretch with ISTA diagnostics"
+    },
+    "walnut_blasting": {
+      "interval_miles": 60000,
+      "notes": "Carbon cleaning for intake valves"
+    }
+  },
+
+  "production_history": {
+    "development": "Developed as replacement for naturally aspirated N52 to meet efficiency targets",
+    "production_start": "July 2011",
+    "production_end": "October 2017",
+    "production_location": "Munich, Germany (primary); Steyr, Austria",
+    "total_production_estimate": "Over 2,000,000 units",
+    "major_revisions": {
+      "2011_launch": "Initial production with known timing chain issues",
+      "2013_revision": "Updated timing chain tensioner design",
+      "2015_revision": "Further improved timing chain components",
+      "2017_phase_out": "Replaced by B48 engine"
+    }
+  },
+
+  "comparison_to_competitors": {
+    "vs_audi_2_0t_ea888_gen2": {
+      "displacement": "Same (2.0L)",
+      "power": "N20: 245hp vs EA888: 220hp",
+      "technology": "N20 has Valvetronic, EA888 has AVS",
+      "reliability": "Both have timing chain concerns",
+      "notes": "N20 generally more powerful, EA888 more widely used"
+    },
+    "vs_mercedes_m274": {
+      "displacement": "Same (2.0L)",
+      "power": "N20: 245hp vs M274: 241hp",
+      "technology": "Similar direct injection, turbo approach",
+      "reliability": "M274 has better timing chain record",
+      "notes": "M274 used in W205 C-Class"
+    },
+    "vs_b48_successor": {
+      "displacement": "Same (2.0L)",
+      "power": "N20: 245hp vs B48: 248hp",
+      "technology": "B48 has improved efficiency, better timing chain",
+      "reliability": "B48 significantly more reliable",
+      "notes": "B48 modular design shared with B58"
+    }
+  },
+
+  "notes": {
+    "heritage": "First BMW mass-market turbocharged 4-cylinder, designed to replace N52 for efficiency gains while maintaining performance",
+    "reputation": "Powerful and efficient but plagued by timing chain issues that tarnished its legacy",
+    "strengths": [
+      "Excellent power output for displacement",
+      "Good fuel efficiency with turbo technology",
+      "Valvetronic provides smooth throttle response",
+      "Strong tuning potential (350+ HP capable)",
+      "Proven BMW inline architecture"
+    ],
+    "weaknesses": [
+      "Timing chain failures (critical issue)",
+      "Higher oil consumption than predecessors",
+      "Direct injection carbon buildup",
+      "Expensive timing chain repair",
+      "Complex Valvetronic system"
+    ],
+    "ownership_advice": [
+      "ALWAYS verify timing chain condition before purchase",
+      "Maintain short oil change intervals (7500 miles max)",
+      "Use only BMW LL-01 approved oils",
+      "Budget for timing chain replacement if not done",
+      "Consider pre-emptive timing chain replacement at 60,000 miles"
+    ],
+    "tuning_potential": {
+      "stock_turbo_max_hp": 350,
+      "upgraded_turbo_max_hp": 450,
+      "notes": "Strong internals, responds well to tune. Timing chain should be addressed before tuning."
+    }
+  }
+}

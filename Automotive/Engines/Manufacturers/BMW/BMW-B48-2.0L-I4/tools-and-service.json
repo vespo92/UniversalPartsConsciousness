@@ -1,0 +1,602 @@
+{
+  "engine_id": "BMW-B48-2.0L-I4-TURBO",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "essential_hand_tools": {
+      "metric_sockets_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24],
+      "deep_sockets_mm": [10, 13, 15, 17, 19],
+      "metric_wrenches_mm": [8, 10, 12, 13, 14, 15, 17, 19, 21, 22],
+      "e_torx_sockets": ["E8", "E10", "E12", "E14", "E16", "E18", "E20"],
+      "torx_bits": ["T20", "T25", "T27", "T30", "T40", "T45", "T50", "T55"],
+      "hex_bits_mm": [4, 5, 6, 8, 10],
+      "screwdrivers": ["Phillips #1", "Phillips #2", "Flat 4mm", "Flat 6mm"]
+    },
+    "specialty_bmw_tools": {
+      "oil_filter_cap_wrench": {
+        "description": "Oil filter housing cap wrench",
+        "size": "86mm 16-flute",
+        "part_numbers": ["Schwaben 014410SCH01A", "Assenmacher B86"],
+        "notes": "Same as B58 and other modern BMW engines"
+      },
+      "timing_tool_kit": {
+        "description": "B48 timing chain service tools",
+        "components": [
+          "Crankshaft locking pin",
+          "Camshaft alignment plates",
+          "Chain tensioner retaining pin",
+          "Flywheel locking tool"
+        ],
+        "kit_part_numbers": ["Schwaben B48-TIMING-KIT", "OTC 6490"]
+      },
+      "vanos_tool": {
+        "description": "VANOS unit central bolt tool",
+        "size": "T50 with long extension",
+        "notes": "Requires high torque - use breaker bar"
+      },
+      "coolant_funnel": {
+        "description": "BMW coolant fill funnel",
+        "part_number": "Schwaben 014433SCH01A",
+        "notes": "Prevents air pockets during coolant fill"
+      },
+      "fuel_line_disconnect_tool": {
+        "description": "Quick-connect fuel line release tool",
+        "sizes_mm": [8, 10, 12],
+        "notes": "Required for fuel system service"
+      }
+    },
+    "diagnostic_tools": {
+      "bmw_specific": {
+        "ista_plus": {
+          "description": "BMW factory diagnostic software",
+          "features": ["Full system diagnostics", "Coding", "Programming", "Service functions"],
+          "access": "Dealer or aftermarket ISTA setup",
+          "notes": "Most comprehensive diagnostic capability"
+        },
+        "bimmerlink": {
+          "description": "Consumer-level BMW diagnostic app",
+          "platforms": ["iOS", "Android"],
+          "adapter": "OBDLink LX/MX+ recommended",
+          "cost_usd": "30-40",
+          "features": ["Read/clear codes", "Live data", "Service resets"]
+        },
+        "carly_bmw": {
+          "description": "Consumer diagnostic and coding app",
+          "platforms": ["iOS", "Android"],
+          "cost_usd": "60-80/year",
+          "features": ["Diagnostics", "Coding", "Used car check"]
+        }
+      },
+      "generic_obd2": {
+        "recommended_scanners": [
+          {"name": "OBDLink MX+", "cost_usd": 100, "notes": "Best generic scanner for BMW"},
+          {"name": "BlueDriver", "cost_usd": 100, "notes": "Good all-around scanner"},
+          {"name": "Autel MaxiCOM MK808", "cost_usd": 400, "notes": "Professional level"}
+        ],
+        "limitations": "Generic scanners may not access all BMW-specific modules"
+      },
+      "tuning_interfaces": {
+        "mhd_adapter": {
+          "description": "MHD Flasher OBD adapter",
+          "compatible_adapters": ["OBDLink LX", "OBDLink MX+", "Kiwi 3"],
+          "notes": "Required for MHD flash tuning"
+        },
+        "bootmod3_wifi": {
+          "description": "Bootmod3 WiFi adapter",
+          "cost_usd": 150,
+          "notes": "Faster flashing than Bluetooth"
+        }
+      }
+    },
+    "torque_wrench_requirements": {
+      "small_torque_wrench": {"range_nm": "5-50", "typical_uses": ["Sensors", "Small fasteners", "Drain plug"]},
+      "medium_torque_wrench": {"range_nm": "20-200", "typical_uses": ["Most engine fasteners", "Cylinder head bolts"]},
+      "large_torque_wrench": {"range_nm": "100-400", "typical_uses": ["Crankshaft bolt", "Flywheel bolts"]}
+    }
+  },
+
+  "torque_specifications": {
+    "short_block": {
+      "cylinder_head_bolts": {
+        "torque_sequence": "Inside-out spiral pattern",
+        "steps": [
+          {"step": 1, "torque_nm": 30, "notes": "Initial torque"},
+          {"step": 2, "angle_degrees": 90, "notes": "First angle turn"},
+          {"step": 3, "angle_degrees": 90, "notes": "Second angle turn"},
+          {"step": 4, "angle_degrees": 45, "notes": "Final angle turn"}
+        ],
+        "bolt_type": "TTY (Torque-To-Yield) - single use",
+        "notes": "Always replace head bolts. Clean threads thoroughly."
+      },
+      "main_bearing_cap_bolts": {
+        "torque_nm": 20,
+        "angle_degrees": 70,
+        "notes": "TTY bolts - replace each use"
+      },
+      "connecting_rod_bolts": {
+        "torque_nm": 15,
+        "angle_degrees": 60,
+        "notes": "TTY bolts - critical torque procedure"
+      },
+      "crankshaft_pulley_bolt": {
+        "torque_nm": 60,
+        "angle_degrees": 90,
+        "notes": "Use flywheel locking tool. TTY bolt."
+      },
+      "flywheel_bolts": {
+        "torque_nm": 60,
+        "angle_degrees": 60,
+        "notes": "Lock crankshaft before torquing"
+      },
+      "oil_pan_bolts": {
+        "torque_nm": 10,
+        "notes": "Tighten in crosshatch pattern"
+      }
+    },
+    "cylinder_head": {
+      "camshaft_bearing_caps": {
+        "torque_nm": 10,
+        "notes": "Tighten evenly in sequence"
+      },
+      "valve_cover_bolts": {
+        "torque_nm": 8,
+        "notes": "Plastic cover - do not overtorque"
+      },
+      "cam_sprocket_bolts": {
+        "torque_nm": 10,
+        "angle_degrees": 100,
+        "notes": "Hold cam with appropriate tool"
+      },
+      "vanos_solenoid_bolts": {
+        "torque_nm": 10
+      }
+    },
+    "turbo_system": {
+      "turbo_to_head_nuts": {
+        "torque_nm": 18,
+        "notes": "Access limited - requires patience"
+      },
+      "turbo_oil_line_banjo": {
+        "torque_nm": 25,
+        "notes": "Use new crush washers"
+      },
+      "charge_pipe_clamps": {
+        "torque_nm": 4,
+        "notes": "T-bolt clamps - snug, not overtight"
+      },
+      "intercooler_mounting": {
+        "torque_nm": 10
+      }
+    },
+    "intake_exhaust": {
+      "intake_manifold_bolts": {
+        "torque_nm": 10,
+        "notes": "Plastic manifold - torque carefully"
+      },
+      "throttle_body_bolts": {
+        "torque_nm": 10
+      },
+      "exhaust_downpipe_nuts": {
+        "torque_nm": 22,
+        "notes": "Apply anti-seize to threads"
+      },
+      "o2_sensors": {
+        "torque_nm": 45,
+        "notes": "Apply anti-seize to threads"
+      }
+    },
+    "cooling_system": {
+      "water_pump_bolts": {
+        "torque_nm": 10
+      },
+      "thermostat_housing_bolts": {
+        "torque_nm": 10
+      },
+      "coolant_expansion_tank": {
+        "torque_nm": 5
+      }
+    },
+    "lubrication_system": {
+      "oil_drain_plug": {
+        "torque_nm": 25,
+        "notes": "Replace copper gasket each time"
+      },
+      "oil_filter_cap": {
+        "torque_nm": 22,
+        "notes": "Use proper cap wrench"
+      },
+      "oil_pressure_sensor": {
+        "torque_nm": 25
+      }
+    },
+    "ignition": {
+      "spark_plugs": {
+        "torque_nm": 22,
+        "notes": "Use anti-seize sparingly on threads"
+      },
+      "ignition_coil_bolts": {
+        "torque_nm": 7
+      }
+    },
+    "accessories": {
+      "alternator_bolts": {
+        "torque_nm": 25
+      },
+      "ac_compressor_bolts": {
+        "torque_nm": 25
+      },
+      "engine_mount_bolts": {
+        "torque_nm": 60
+      }
+    }
+  },
+
+  "fluid_specifications": {
+    "engine_oil": {
+      "bmw_specification": "LL-17FE+ or LL-14FE+",
+      "alternate_specs": ["ACEA C5", "API SP 0W-20"],
+      "recommended_viscosity": ["0W-20", "0W-30"],
+      "capacity_with_filter_liters": 5.5,
+      "capacity_quarts": 5.8,
+      "approved_oils": [
+        {"brand": "BMW TwinPower Turbo", "viscosity": "0W-20", "part_number": "83212365926"},
+        {"brand": "Castrol EDGE Professional", "viscosity": "0W-20", "spec": "LL-17FE+"},
+        {"brand": "Mobil 1 ESP", "viscosity": "0W-20", "spec": "Advanced Fuel Economy"},
+        {"brand": "Shell Helix Ultra Professional", "viscosity": "0W-20", "spec": "AML"}
+      ],
+      "change_interval": {
+        "bmw_recommended_miles": 10000,
+        "enthusiast_recommended_miles": 5000,
+        "tuned_engine_miles": 3000,
+        "notes": "Shorter intervals recommended for turbocharged applications"
+      },
+      "notes": "Low viscosity oil critical for fuel economy systems. Do not use conventional oil."
+    },
+    "coolant": {
+      "type": "BMW Coolant (blue) or BMW-approved G48",
+      "mixture": "50/50 with distilled water",
+      "capacity_liters": 6.0,
+      "approved_coolants": [
+        {"brand": "BMW Antifreeze/Coolant", "part_number": "82141467704"},
+        {"brand": "Zerex G48", "color": "Blue"},
+        {"brand": "Pentosin Pentofrost NF", "color": "Blue"}
+      ],
+      "change_interval_miles": 100000,
+      "notes": "Do not mix with orange/red Dexcool-type coolants"
+    },
+    "transmission_fluid": {
+      "zf_8hp": {
+        "fluid_type": "ZF Lifeguard Fluid 8",
+        "capacity_liters": 9.7,
+        "fill_procedure": "Temperature-dependent fill (30-50C)",
+        "approved_alternatives": ["Fuchs Titan ATF 4134", "Pentosin ATF 9"],
+        "change_interval_miles": 50000,
+        "notes": "BMW says lifetime - enthusiasts recommend 50k changes"
+      },
+      "manual_transmission": {
+        "fluid_type": "BMW MTF LT-5",
+        "capacity_liters": 1.5,
+        "notes": "Some B48 applications use manual transmission"
+      }
+    },
+    "brake_fluid": {
+      "specification": "DOT 4 LV (Low Viscosity)",
+      "bmw_part_number": "81220139451",
+      "change_interval_miles": 24000,
+      "notes": "LV fluid required for ABS/DSC systems"
+    },
+    "power_steering_fluid": {
+      "type": "Electric Power Steering",
+      "notes": "No fluid required - EPS system"
+    }
+  },
+
+  "service_operations": {
+    "routine_maintenance": {
+      "oil_change": {
+        "interval_miles": 10000,
+        "enthusiast_interval_miles": 5000,
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Position vehicle on level surface or lift",
+          "Remove undertray (if equipped)",
+          "Remove drain plug with 17mm socket",
+          "Allow oil to drain completely (10+ minutes)",
+          "Remove oil filter cap with 86mm wrench",
+          "Replace filter element",
+          "Install new drain plug gasket",
+          "Reinstall drain plug (25 Nm)",
+          "Install oil filter and tighten cap (22 Nm)",
+          "Fill with 5.5L of approved oil",
+          "Start engine, check for leaks",
+          "Check oil level after 2 minutes",
+          "Reset oil service indicator via iDrive or scan tool"
+        ],
+        "parts_needed": ["Oil filter", "Drain plug gasket", "5.5L engine oil"],
+        "time_estimate_minutes": 30
+      },
+      "spark_plug_replacement": {
+        "interval_miles": 60000,
+        "tuned_interval_miles": 30000,
+        "procedure": [
+          "Remove engine cover",
+          "Disconnect ignition coil connectors",
+          "Remove ignition coil bolts (7 Nm)",
+          "Remove ignition coils",
+          "Use spark plug socket to remove plugs",
+          "Inspect old plugs for condition",
+          "Gap new plugs to 0.7mm if necessary",
+          "Install new plugs (22 Nm)",
+          "Reinstall ignition coils",
+          "Reconnect connectors",
+          "Reinstall engine cover"
+        ],
+        "parts_needed": ["4x NGK LKAR8BI9 or equivalent"],
+        "special_notes": "Use colder plugs (1 step) for tuned engines",
+        "time_estimate_minutes": 45
+      },
+      "air_filter_replacement": {
+        "interval_miles": 30000,
+        "procedure": [
+          "Open airbox clips/screws",
+          "Remove old filter",
+          "Clean airbox housing",
+          "Install new filter with correct orientation",
+          "Secure airbox"
+        ],
+        "parts_needed": ["Air filter element"],
+        "time_estimate_minutes": 15
+      },
+      "coolant_flush": {
+        "interval_miles": 100000,
+        "procedure": [
+          "Allow engine to cool completely",
+          "Remove undertray",
+          "Place drain pan under radiator",
+          "Open radiator drain petcock",
+          "Remove expansion tank cap",
+          "Drain coolant completely",
+          "Close drain petcock",
+          "Fill with distilled water",
+          "Run engine to thermostat opening",
+          "Drain again",
+          "Fill with 50/50 coolant mixture",
+          "Use coolant funnel for air-free fill",
+          "Bleed system per BMW procedure",
+          "Check for leaks"
+        ],
+        "time_estimate_minutes": 90
+      }
+    },
+    "common_repairs": {
+      "water_pump_replacement": {
+        "symptoms": ["Overheating warning", "Coolant loss", "No heat from HVAC"],
+        "typical_failure_miles": "60000-100000",
+        "procedure": [
+          "Drain coolant",
+          "Remove intake components for access",
+          "Disconnect water pump electrical connector",
+          "Remove water pump mounting bolts",
+          "Remove old water pump",
+          "Clean mating surface",
+          "Install new O-ring (included)",
+          "Install new water pump",
+          "Torque bolts to 10 Nm",
+          "Reconnect electrical",
+          "Refill and bleed coolant system"
+        ],
+        "parts_needed": ["Electric water pump", "Coolant (if not reusing)"],
+        "time_estimate_hours": 3,
+        "notes": "Common failure item on all BMW turbo engines with electric pump"
+      },
+      "thermostat_replacement": {
+        "symptoms": ["Slow warmup", "Overheating", "Temperature fluctuation"],
+        "procedure": [
+          "Drain coolant partially",
+          "Remove thermostat housing bolts",
+          "Disconnect electrical connector",
+          "Remove housing and thermostat",
+          "Install new thermostat with new seal",
+          "Torque housing bolts to 10 Nm",
+          "Refill and bleed coolant"
+        ],
+        "time_estimate_hours": 2
+      },
+      "charge_pipe_replacement": {
+        "symptoms": ["Boost loss", "Check engine light", "Hissing noise under boost"],
+        "cause": "OEM plastic charge pipe cracks under pressure",
+        "procedure": [
+          "Remove engine cover",
+          "Loosen charge pipe clamps",
+          "Remove OEM charge pipe",
+          "Install aluminum aftermarket pipe",
+          "Tighten clamps properly",
+          "Check for leaks under boost"
+        ],
+        "parts_needed": ["Aluminum charge pipe", "New clamps (if supplied)"],
+        "time_estimate_minutes": 45,
+        "notes": "Strongly recommended upgrade for any tuned B48"
+      },
+      "carbon_cleaning_gen1": {
+        "applicable_variants": ["B48A20O0", "B48A20O1", "B48B20A", "B48B20B"],
+        "symptoms": ["Rough idle", "Power loss", "Misfires"],
+        "interval_miles": "60000-80000",
+        "methods": [
+          {
+            "name": "Walnut blasting",
+            "description": "Professional intake valve cleaning with walnut shell media",
+            "cost_usd": "400-600",
+            "notes": "Most effective method"
+          },
+          {
+            "name": "Chemical cleaning",
+            "description": "CRC GDI cleaner or similar through intake",
+            "cost_usd": "20-40",
+            "notes": "Preventive maintenance, not as effective as walnut"
+          }
+        ],
+        "notes": "NOT required for Gen 2 TU models with port injection"
+      },
+      "turbo_replacement": {
+        "symptoms": ["Excessive smoke", "Oil consumption", "Whining noise", "No boost"],
+        "typical_failure_miles": "100000+",
+        "procedure_summary": [
+          "Remove intake plumbing",
+          "Drain coolant and oil from turbo lines",
+          "Disconnect oil and coolant lines",
+          "Remove turbo heat shield",
+          "Remove turbo mounting nuts",
+          "Remove turbocharger",
+          "Install new turbo with new gaskets",
+          "Use new oil and coolant lines (recommended)",
+          "Prime turbo with oil before starting"
+        ],
+        "time_estimate_hours": 8,
+        "notes": "Integrated exhaust manifold complicates replacement"
+      },
+      "timing_chain_service": {
+        "symptoms": ["Rattle on cold start", "Timing codes", "Check engine light"],
+        "typical_failure_miles": "150000+",
+        "components_to_replace": [
+          "Timing chain",
+          "Chain tensioner",
+          "Chain guides (all)",
+          "VANOS sprockets (inspect)"
+        ],
+        "procedure_complexity": "Advanced - requires timing tools and experience",
+        "time_estimate_hours": 10,
+        "notes": "B48 timing chain is generally more reliable than N20"
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "boost_leak_test": {
+      "procedure": [
+        "Remove intake tube after MAF",
+        "Attach boost leak tester",
+        "Pressurize to 15-20 PSI",
+        "Listen for leaks",
+        "Check charge pipe connections",
+        "Check intercooler connections",
+        "Check turbo inlet",
+        "Check diverter valve"
+      ],
+      "common_leak_points": [
+        "Charge pipe (cracks in plastic OEM)",
+        "Intercooler end tanks",
+        "Diverter valve",
+        "Intake manifold gasket",
+        "Throttle body seal"
+      ],
+      "tools_needed": ["Boost leak tester", "Smoke machine (optional)"]
+    },
+    "compression_test": {
+      "procedure": [
+        "Warm engine to operating temp",
+        "Remove all spark plugs",
+        "Disable fuel injectors",
+        "Install compression gauge in cylinder 1",
+        "Crank engine 5-7 revolutions",
+        "Record reading",
+        "Repeat for all cylinders"
+      ],
+      "specifications": {
+        "minimum_psi": 150,
+        "maximum_variance_psi": 15,
+        "healthy_range_psi": "175-200"
+      }
+    },
+    "leak_down_test": {
+      "procedure": [
+        "Set cylinder at TDC compression stroke",
+        "Apply 100 PSI to cylinder",
+        "Measure percentage of leak-down"
+      ],
+      "specifications": {
+        "excellent_percent": "0-5",
+        "good_percent": "5-10",
+        "acceptable_percent": "10-15",
+        "worn_percent": "15-20",
+        "failure_percent": "20+"
+      }
+    },
+    "dtc_common_codes": {
+      "boost_related": {
+        "29CD": "Charge pressure too low",
+        "29CF": "Boost pressure regulation",
+        "29D0": "Underboost - check for leaks",
+        "29D1": "Overboost - check wastegate"
+      },
+      "fuel_related": {
+        "29E0": "Fuel pressure too low",
+        "29E1": "Fuel pressure too high",
+        "2FBD": "HPFP performance",
+        "2FB9": "Fuel injector issues"
+      },
+      "ignition_related": {
+        "29CC": "Misfire detected",
+        "29C7": "Combustion misfire cylinder X",
+        "2AAF": "Ignition coil primary circuit"
+      },
+      "vanos_related": {
+        "2A82": "VANOS intake timing retarded",
+        "2A87": "VANOS exhaust timing retarded",
+        "2A9A": "VANOS intake mechanism stuck"
+      },
+      "cooling_related": {
+        "2E81": "Engine coolant temperature sensor",
+        "2E85": "Thermostat performance",
+        "2E89": "Water pump performance"
+      }
+    }
+  },
+
+  "special_procedures": {
+    "service_reset": {
+      "via_idrive": [
+        "Start vehicle (engine off)",
+        "Navigate to Vehicle Info",
+        "Select Vehicle Status",
+        "Select Service Required",
+        "Select Reset",
+        "Confirm reset"
+      ],
+      "via_scan_tool": "Use BimmerLink, Carly, or ISTA to reset service indicators"
+    },
+    "battery_registration": {
+      "why_needed": "BMW manages charging based on battery age/capacity",
+      "procedure": "Use ISTA, BimmerLink, or Carly to register new battery with capacity and date",
+      "notes": "Failure to register can lead to undercharging or overcharging"
+    },
+    "injector_coding": {
+      "why_needed": "Each injector has calibration codes for precise fueling",
+      "procedure": "Use ISTA or dealer tool to code injector values after replacement",
+      "notes": "Required for Gen 2 port + direct injection systems"
+    }
+  },
+
+  "safety_warnings": {
+    "high_pressure_fuel": {
+      "warning": "B48 fuel system operates at 200+ bar pressure",
+      "procedure": "Always relieve fuel pressure before disconnecting fuel lines",
+      "notes": "Wait 10+ minutes after engine off before fuel service"
+    },
+    "turbo_heat": {
+      "warning": "Turbocharger and exhaust reach extreme temperatures",
+      "procedure": "Allow engine to cool completely before turbo service",
+      "notes": "Integrated exhaust manifold retains heat longer"
+    },
+    "coolant_pressure": {
+      "warning": "Cooling system pressurized when hot",
+      "procedure": "Never remove expansion tank cap when engine is hot",
+      "notes": "Pressure can remain even after engine cool-down"
+    },
+    "electric_systems": {
+      "warning": "Multiple high-current electric systems",
+      "procedure": "Disconnect battery before electrical service",
+      "notes": "Wait 5 minutes after disconnect for capacitor discharge"
+    }
+  }
+}

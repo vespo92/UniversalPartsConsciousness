@@ -1,0 +1,338 @@
+{
+  "engine_id": "BMW-S55-3.0L-I6-TWINTURBO",
+  "common_names": [
+    "S55",
+    "S55B30",
+    "BMW M TwinPower Turbo",
+    "M3/M4 Engine",
+    "F80 M3 Engine",
+    "F82 M4 Engine"
+  ],
+  "manufacturer": "BMW M GmbH",
+  "engine_family": "BMW S55",
+  "production_years": "2014-2020",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.979,
+      "cubic_inches": 181.8,
+      "cc": 2979
+    },
+    "bore": {
+      "inches": 3.307,
+      "mm": 84.0
+    },
+    "stroke": {
+      "inches": 3.524,
+      "mm": 89.6
+    },
+    "compression_ratio": "10.2:1",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (near radiator)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "aluminum_with_iron_liners",
+    "head_material": "aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), Double VANOS",
+    "valvetronic": {
+      "equipped": false,
+      "notes": "Unlike N55, S55 does NOT have Valvetronic - uses conventional throttle body"
+    },
+    "forced_induction": {
+      "type": "Twin Turbochargers",
+      "turbo_model": "BMW/BorgWarner Twin-Scroll Mono-Scroll",
+      "configuration": "Parallel twin turbos mounted in exhaust valley",
+      "boost_pressure_psi": {
+        "stock": 14.5,
+        "max_stock": 18.1,
+        "competition_variants": 21.8
+      },
+      "wastegate_type": "Electronic",
+      "intercooler_type": "Air-to-water (charge air cooler)"
+    },
+    "fuel_system": {
+      "type": "High Pressure Direct Injection (HPI)",
+      "fuel_pressure_bar": {
+        "low_pressure": 5,
+        "high_pressure": 200
+      },
+      "injector_type": "Solenoid piezoelectric hybrid"
+    },
+    "ignition_system": "Coil-on-plug",
+    "dry_weight_lbs": 445,
+    "dry_weight_kg": 202
+  },
+
+  "power_output_by_variant": {
+    "f80_m3_f82_f83_m4_standard": {
+      "horsepower": 425,
+      "hp_rpm": 7300,
+      "torque_lb_ft": 406,
+      "torque_rpm": "1850-5500",
+      "redline": 7600,
+      "notes": "Standard M3/M4 output (2015-2018)"
+    },
+    "f80_m3_f82_m4_competition": {
+      "horsepower": 444,
+      "hp_rpm": 7300,
+      "torque_lb_ft": 406,
+      "torque_rpm": "1850-5500",
+      "redline": 7600,
+      "notes": "Competition Package - revised tune, firmer suspension"
+    },
+    "f82_m4_cs": {
+      "horsepower": 454,
+      "hp_rpm": 7300,
+      "torque_lb_ft": 442,
+      "torque_rpm": "1850-5500",
+      "redline": 7600,
+      "notes": "M4 CS - Club Sport variant with lightweighting"
+    },
+    "f82_m4_gts": {
+      "horsepower": 493,
+      "hp_rpm": 7300,
+      "torque_lb_ft": 443,
+      "torque_rpm": "4000-5500",
+      "redline": 7600,
+      "notes": "M4 GTS - water injection system, track-focused"
+    },
+    "f87_m2_competition": {
+      "horsepower": 405,
+      "hp_rpm": 7000,
+      "torque_lb_ft": 406,
+      "torque_rpm": "2350-5200",
+      "redline": 7500,
+      "notes": "M2 Competition - detuned S55"
+    },
+    "f87_m2_cs": {
+      "horsepower": 444,
+      "hp_rpm": 7200,
+      "torque_lb_ft": 406,
+      "torque_rpm": "2350-5500",
+      "redline": 7600,
+      "notes": "M2 CS - full S55 output in M2 chassis"
+    }
+  },
+
+  "vehicle_applications": {
+    "f80_m3_sedan": {
+      "years": "2014-2018",
+      "body_style": "Sedan",
+      "transmission_options": ["6MT", "7DCT"],
+      "notes": "First turbo M3 sedan"
+    },
+    "f80_m3_cs": {
+      "years": "2018",
+      "body_style": "Sedan",
+      "transmission_options": ["7DCT"],
+      "notes": "Club Sport - limited production"
+    },
+    "f82_m4_coupe": {
+      "years": "2014-2020",
+      "body_style": "Coupe",
+      "transmission_options": ["6MT", "7DCT"],
+      "notes": "Replaced E92 M3 coupe"
+    },
+    "f83_m4_convertible": {
+      "years": "2014-2020",
+      "body_style": "Convertible",
+      "transmission_options": ["6MT", "7DCT"],
+      "notes": "Retractable hardtop"
+    },
+    "f82_m4_cs": {
+      "years": "2017-2018",
+      "body_style": "Coupe",
+      "transmission_options": ["7DCT"],
+      "notes": "Club Sport - 3,000 units worldwide"
+    },
+    "f82_m4_gts": {
+      "years": "2016",
+      "body_style": "Coupe",
+      "transmission_options": ["7DCT"],
+      "notes": "Track weapon with water injection - 700 units worldwide"
+    },
+    "f87_m2_competition": {
+      "years": "2018-2021",
+      "body_style": "Coupe",
+      "transmission_options": ["6MT", "7DCT"],
+      "notes": "S55 in compact M2 chassis - replaced N55 M2"
+    },
+    "f87_m2_cs": {
+      "years": "2020-2021",
+      "body_style": "Coupe",
+      "transmission_options": ["6MT", "7DCT"],
+      "notes": "Ultimate M2 - full S55 power"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 6.9,
+      "capacity_liters": 6.5,
+      "with_filter": true,
+      "recommended_viscosity": ["0W-40", "10W-60"],
+      "bmw_ll_rating": "BMW Longlife-01",
+      "approved_oils": [
+        "BMW M TwinPower Turbo 10W-60",
+        "Castrol Edge 0W-40",
+        "Mobil 1 0W-40",
+        "Red Line 10W-40"
+      ],
+      "notes": "10W-60 recommended for track use"
+    },
+    "coolant": {
+      "capacity_liters": 10.5,
+      "type": "BMW Antifreeze/Coolant (blue)",
+      "bmw_part": "82-14-2-209-769"
+    },
+    "transmission_fluid": {
+      "manual_6mt": {
+        "capacity_liters": 1.7,
+        "type": "BMW MTF-LT-4"
+      },
+      "dct_7speed": {
+        "capacity_liters": 9.0,
+        "type": "BMW Dexron VI equivalent"
+      }
+    },
+    "differential": {
+      "capacity_liters": 1.2,
+      "type": "BMW 75W-140 synthetic",
+      "notes": "Active M differential"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 210.0,
+    "main_bearing_journal_diameter_mm": 60.0,
+    "rod_bearing_journal_diameter_mm": 50.0,
+    "cylinder_bore_diameter_mm": 84.0,
+    "connecting_rod_length_mm": 139.0,
+    "piston_compression_height_mm": 30.5,
+    "valve_lift_mm": {
+      "intake": 10.0,
+      "exhaust": 9.7
+    },
+    "cam_duration_degrees": {
+      "intake": 252,
+      "exhaust": 248
+    }
+  },
+
+  "electronic_systems": {
+    "engine_management": "Bosch MEVD17.2.G",
+    "vanos_control": "Double VANOS (intake and exhaust variable valve timing)",
+    "throttle_control": "Electronic throttle body (no Valvetronic)",
+    "boost_control": "Electronic wastegate with adaptive boost control",
+    "water_injection": {
+      "equipped": "M4 GTS only",
+      "function": "Injects water into intake manifold to reduce intake temps and prevent knock"
+    }
+  },
+
+  "key_differences_from_n55": {
+    "turbo_configuration": "Twin parallel turbos vs single twin-scroll",
+    "valvetronic": "S55 lacks Valvetronic - uses conventional throttle",
+    "internals": "Forged crankshaft, rods, and pistons vs some cast components",
+    "oil_cooler": "S55 has dedicated oil-to-water cooler in sump",
+    "intercooler": "Air-to-water charge air cooler vs air-to-air on N55",
+    "connecting_rods": "Lighter forged rods with bushed small end",
+    "crankshaft": "Forged, lighter, more balanced",
+    "throttle_body": "Larger throttle body for increased airflow"
+  },
+
+  "known_issues": {
+    "crank_hub": {
+      "severity": "critical",
+      "description": "Crankshaft hub keyway and dampener can slip under high load",
+      "symptoms": ["Loss of ignition timing", "Engine won't start", "Strange running", "Misfire codes"],
+      "affected_vehicles": "All S55 engines, especially tuned/tracked",
+      "solution": "Crank hub fix kit (IRP, Atech, VAC) - pins or keyed hub upgrade",
+      "cost_range_usd": "1200-2500 installed",
+      "priority": "Do BEFORE any power modifications"
+    },
+    "rod_bearings": {
+      "severity": "high",
+      "description": "Factory rod bearings can wear prematurely under spirited driving",
+      "symptoms": ["Rod knock at cold start", "Metal in oil analysis", "Bearing noise"],
+      "affected_vehicles": "All S55, especially early production and high-mileage",
+      "solution": "Replace with BE Bearings or ACL coated bearings",
+      "preventative_interval_miles": "60000-80000",
+      "cost_range_usd": "2500-4000 installed"
+    },
+    "charge_pipe": {
+      "severity": "medium",
+      "description": "OEM plastic charge pipes can crack under boost",
+      "symptoms": ["Boost loss", "Hissing/whistling sound", "Reduced power"],
+      "solution": "Replace with aluminum aftermarket charge pipe",
+      "cost_range_usd": "200-400"
+    },
+    "oil_pump_drive": {
+      "severity": "medium",
+      "description": "Oil pump drive chain can stretch at high mileage",
+      "symptoms": ["Low oil pressure warning", "Chain noise from front of engine"],
+      "affected_mileage": "100000+",
+      "solution": "Oil pump chain and tensioner replacement"
+    },
+    "vanos_hub_bolts": {
+      "severity": "medium",
+      "description": "VANOS hub bolts can back out if not properly torqued",
+      "symptoms": ["Timing issues", "VANOS faults", "Rough running"],
+      "solution": "Re-torque or upgrade to ARP hardware"
+    },
+    "injector_issues": {
+      "severity": "low",
+      "description": "Injector drift can cause running issues at high power levels",
+      "symptoms": ["Misfires under boost", "AFR inconsistencies"],
+      "solution": "Injector matching or upgraded injectors for high-power builds"
+    }
+  },
+
+  "tuning_potential": {
+    "stock_turbo_limits": {
+      "safe_power_whp": 550,
+      "max_power_whp": 600,
+      "limiting_factors": ["Turbo efficiency", "Fuel system", "Intercooler heat soak"]
+    },
+    "upgraded_turbo_potential": {
+      "hybrid_turbos_whp": "650-750",
+      "single_turbo_conversion_whp": "900-1200",
+      "notes": "Crank hub fix mandatory for any power mods"
+    },
+    "common_power_levels": {
+      "stage_1_whp": "480-520",
+      "stage_2_whp": "520-580",
+      "stage_2_plus_whp": "580-650",
+      "big_turbo_whp": "700-900"
+    },
+    "supporting_mods_required": {
+      "400-500whp": ["Tune", "Downpipes", "Charge pipe"],
+      "500-600whp": ["All above", "Intercooler upgrade", "HPFP upgrade", "Inlet pipes"],
+      "600-700whp": ["All above", "Port injection", "Hybrid turbos", "Crank hub fix"],
+      "700plus_whp": ["Full build", "Forged internals", "Built transmission"]
+    }
+  },
+
+  "notes": {
+    "heritage": "M Division evolution of N55 - purpose-built M engine with twin turbos and forged internals",
+    "reputation": "First turbocharged M3/M4 engine - controversial at release but now highly respected for power potential",
+    "motorsport_use": "Used in IMSA GTD, TC America, and numerous time attack builds",
+    "successor": "S58 3.0L twin-turbo in G80 M3/G82 M4 (2021+)",
+    "production_location": "Munich, Germany",
+    "strengths": [
+      "Massive tuning headroom - 700+ whp achievable",
+      "Forged rotating assembly from factory",
+      "Strong OEM supporting systems (trans, diff, cooling)",
+      "Excellent power-to-weight in M2C and M4 platforms",
+      "Twin turbos provide faster spool than comparable single turbo setups",
+      "Air-to-water intercooler resists heat soak better than air-to-air"
+    ],
+    "weaknesses": [
+      "Crank hub is critical failure point - must be addressed",
+      "Rod bearings require monitoring/replacement",
+      "Complex twin-turbo system harder to service than single turbo",
+      "Lacks Valvetronic of N55 (no variable valve lift)",
+      "Plastic charge pipes crack under boost"
+    ]
+  }
+}

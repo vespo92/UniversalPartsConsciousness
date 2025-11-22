@@ -1,0 +1,232 @@
+{
+  "engine_id": "BMW-S58-3.0L-I6-TWIN-TURBO",
+  "matrix_version": "1.0.0",
+  "platform_info": {
+    "architecture": "CLAR (Cluster Architecture)",
+    "shared_with": "B58 architecture with M enhancements",
+    "orientation": "Longitudinal"
+  },
+  "vehicle_platforms": {
+    "G8X": {
+      "vehicles": ["M3 G80", "M4 G82", "M4 G83 Convertible"],
+      "years": "2021-present"
+    },
+    "F97_F98": {
+      "vehicles": ["X3 M F97", "X4 M F98"],
+      "years": "2019-present"
+    }
+  },
+  "s58_to_b58_compatibility": {
+    "description": "S58 shares B58 architecture but has significant differences",
+    "interchangeable_parts": [
+      "Many sensors (CKP, CMP, knock)",
+      "Some electrical connectors",
+      "Basic gasket dimensions",
+      "Valve cover shape",
+      "Some accessory mounting points"
+    ],
+    "not_interchangeable": [
+      "Turbochargers (twin vs single)",
+      "Exhaust manifolds",
+      "Intercooler system (different A2W design)",
+      "Fuel system (350 bar vs 200 bar)",
+      "Oil system (dry sump vs wet sump)",
+      "Intake manifold",
+      "ECU"
+    ],
+    "notes": "While based on B58, S58 is heavily modified for M use"
+  },
+  "turbo_options": {
+    "oem_turbos": {
+      "part_numbers": {
+        "bank_1": "11657640300",
+        "bank_2": "11657640301"
+      },
+      "power_limit_hp": 600
+    },
+    "hybrid_turbos": {
+      "pure_turbos_pure900": {
+        "description": "Pure Turbos S58 upgrade",
+        "power_potential_hp": "900-1000",
+        "price_usd": 4500
+      },
+      "vargas_stage_2": {
+        "description": "Vargas S58 hybrid turbos",
+        "power_potential_hp": "850-950",
+        "price_usd": 4200
+      }
+    },
+    "big_turbo_kits": {
+      "doc_race_s58": {
+        "description": "DOC Race S58 turbo kit",
+        "power_potential_hp": "1200+",
+        "price_usd": 8000
+      }
+    }
+  },
+  "internal_upgrades": {
+    "rod_bearings": {
+      "oem": "11247640181",
+      "aftermarket": {
+        "ACL_Race": "6B2428H-STD",
+        "King_Racing": "CR6758AM",
+        "BE_Bearings": "S58-BE-ROD"
+      },
+      "notes": "Upgrade recommended for track/tuned cars"
+    },
+    "connecting_rods": {
+      "aftermarket": {
+        "Carrillo": "Custom S58",
+        "Manley": "14436-6"
+      },
+      "power_rating_hp": 1200
+    },
+    "pistons": {
+      "aftermarket": {
+        "CP_Pistons": "SC7715",
+        "JE_Pistons": "Custom S58"
+      },
+      "notes": "Required for big turbo builds"
+    },
+    "crank_hub_solutions": {
+      "critical": true,
+      "description": "Crank hub MUST be addressed before adding power",
+      "solutions": {
+        "ARP_crank_bolt": {
+          "part_number": "101-2501",
+          "price_usd": 85
+        },
+        "IND_crank_hub_fix": {
+          "description": "IND Distribution crank hub solution",
+          "price_usd": 350
+        },
+        "Mfactory_keyed_hub": {
+          "description": "Keyed crank hub kit",
+          "price_usd": 800
+        }
+      }
+    }
+  },
+  "ecu_tuning": {
+    "ecu_type": "Bosch MEVD17.2.K",
+    "tuning_platforms": {
+      "bootmod3": {
+        "stages": ["Stage 1", "Stage 2", "Stage 2+", "Custom"],
+        "method": "OBD flash",
+        "stage_1_hp": 600,
+        "stage_2_hp": 700,
+        "cost_stage_1": 599
+      },
+      "mhd": {
+        "stages": ["Stage 1", "Stage 2", "Custom"],
+        "method": "OBD flash",
+        "stage_1_hp": 580,
+        "cost_stage_1": 499
+      },
+      "pure_tuning": {
+        "stages": ["Stage 1", "Stage 2", "Big turbo"],
+        "method": "Bench flash",
+        "notes": "Matched with Pure Turbos"
+      },
+      "weistec": {
+        "stages": ["W.1", "W.2"],
+        "method": "ECU flash",
+        "stage_1_hp": 620
+      }
+    }
+  },
+  "transmission_compatibility": {
+    "manual_6MT": {
+      "code": "GS6-45DZ",
+      "torque_rating_nm": 650,
+      "applications": ["M3 base", "M4 base"],
+      "notes": "Only available on non-Competition models"
+    },
+    "auto_8AT": {
+      "code": "ZF 8HP76",
+      "torque_rating_nm": 900,
+      "applications": ["All S58 vehicles"],
+      "tuning": {
+        "xHP": "TCU flash for improved shifts",
+        "cost_usd": 400
+      }
+    }
+  },
+  "common_upgrade_paths": {
+    "stage_1_daily": {
+      "description": "Daily driver Stage 1",
+      "components": [
+        {"item": "BM3/MHD Stage 1 tune", "price_usd": 599}
+      ],
+      "power_hp": "580-620",
+      "total_cost_usd": 599,
+      "notes": "Crank hub fix strongly recommended"
+    },
+    "stage_2_enthusiast": {
+      "description": "Full bolt-on Stage 2",
+      "components": [
+        {"item": "Stage 2 ECU tune", "price_usd": 699},
+        {"item": "Catless downpipes", "price_usd": 1500},
+        {"item": "High-flow intake", "price_usd": 600},
+        {"item": "Charge pipe upgrade", "price_usd": 400},
+        {"item": "Crank hub fix", "price_usd": 350}
+      ],
+      "power_hp": "650-700",
+      "total_cost_usd": 3549
+    },
+    "stage_2_plus_e85": {
+      "description": "E85/Meth Stage 2+",
+      "components": [
+        {"item": "Stage 2+ E85 tune", "price_usd": 899},
+        {"item": "Catless downpipes", "price_usd": 1500},
+        {"item": "High-flow intake", "price_usd": 600},
+        {"item": "Charge pipe", "price_usd": 400},
+        {"item": "LPFP upgrade", "price_usd": 800},
+        {"item": "E85 or meth kit", "price_usd": 600},
+        {"item": "Upgraded intercooler", "price_usd": 1200},
+        {"item": "Crank hub fix", "price_usd": 350}
+      ],
+      "power_hp": "750-800",
+      "total_cost_usd": 6349
+    },
+    "hybrid_turbo_build": {
+      "description": "Pure/Vargas hybrid turbo build",
+      "components": [
+        {"item": "Hybrid turbos", "price_usd": 4500},
+        {"item": "Custom tune", "price_usd": 1200},
+        {"item": "Full bolt-ons", "price_usd": 3000},
+        {"item": "LPFP upgrade", "price_usd": 800},
+        {"item": "Port injection", "price_usd": 2000},
+        {"item": "Crank hub fix", "price_usd": 350},
+        {"item": "Upgraded intercooler", "price_usd": 1500}
+      ],
+      "power_hp": "900-1000",
+      "total_cost_usd": 13350
+    }
+  },
+  "cross_platform_info": {
+    "g80_m3_to_g82_m4": {
+      "interchangeable": [
+        "All engine components",
+        "All turbo system components",
+        "All sensors and electronics"
+      ],
+      "different": [
+        "Some chassis-specific mounts",
+        "Exhaust routing after downpipes"
+      ]
+    },
+    "g8x_to_f97_f98": {
+      "interchangeable": [
+        "Core engine components",
+        "Turbochargers",
+        "Most sensors"
+      ],
+      "different": [
+        "Intake routing (SUV packaging)",
+        "Exhaust system routing",
+        "Cooling system components (different radiator size)"
+      ]
+    }
+  }
+}

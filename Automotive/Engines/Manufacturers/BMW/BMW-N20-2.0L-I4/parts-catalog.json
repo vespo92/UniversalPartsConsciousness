@@ -1,0 +1,997 @@
+{
+  "engine_id": "BMW-N20-2.0L-I4-TURBO",
+  "catalog_version": "2.0",
+  "last_updated": "2025-01",
+
+  "short_block_components": {
+    "engine_block": {
+      "oem_part": "11-11-2-352-245",
+      "description": "N20 Aluminum Engine Block Assembly",
+      "material": "Aluminum with cast-iron cylinder liners",
+      "notes": "Complete bare block with main caps",
+      "price_range_usd": "2500-3500"
+    },
+    "crankshaft": {
+      "oem_part": "11-21-7-635-906",
+      "description": "Forged Steel Crankshaft",
+      "material": "Forged steel",
+      "stroke_mm": 90.1,
+      "main_journal_diameter_mm": 56.0,
+      "rod_journal_diameter_mm": 47.0,
+      "notes": "Strong forged crank handles 500+ HP",
+      "price_range_usd": "800-1200"
+    },
+    "main_bearings": {
+      "oem_part": "11-21-7-636-929",
+      "description": "Main Bearing Set (5)",
+      "material": "Tri-metal construction",
+      "standard_size": true,
+      "undersizes_available": ["-0.25mm", "-0.50mm"],
+      "brands": {
+        "oem": "BMW/Glyco",
+        "aftermarket": ["King Bearings", "ACL Race", "Clevite"]
+      },
+      "price_range_usd": "80-150"
+    },
+    "thrust_bearings": {
+      "oem_part": "11-21-1-706-844",
+      "description": "Thrust Bearing Set",
+      "location": "Center main (#3)",
+      "price_range_usd": "40-70"
+    },
+    "pistons": {
+      "oem_part": "11-25-7-640-166",
+      "description": "OEM Piston with Rings",
+      "bore_mm": 84.0,
+      "compression_height_mm": 32.0,
+      "wrist_pin_diameter_mm": 22.0,
+      "compression_ratio": "10.0:1",
+      "coating": "Anti-friction skirt coating",
+      "notes": "Low-friction design contributes to oil consumption",
+      "price_range_usd": "200-350 each",
+      "aftermarket_options": {
+        "mahle": {
+          "part": "029 PI 00141 000",
+          "notes": "OEM supplier, exact replacement"
+        },
+        "je_pistons": {
+          "part": "Custom",
+          "notes": "Forged, lower compression available for turbo builds"
+        },
+        "cp_pistons": {
+          "part": "Custom",
+          "notes": "Forged, coated options available"
+        }
+      }
+    },
+    "piston_rings": {
+      "oem_part": "11-25-7-640-167",
+      "description": "Piston Ring Set (per cylinder)",
+      "ring_count": 3,
+      "ring_widths_mm": {
+        "top_compression": 1.2,
+        "second_compression": 1.0,
+        "oil_control": 2.0
+      },
+      "notes": "Low-tension rings for efficiency",
+      "price_range_usd": "150-250 set of 4",
+      "aftermarket_options": {
+        "total_seal": "Available - better oil control",
+        "mahle": "OEM replacement"
+      }
+    },
+    "connecting_rods": {
+      "oem_part": "11-24-7-636-327",
+      "description": "Connecting Rod Assembly",
+      "material": "Forged steel, fractured cap",
+      "length_mm": 148.0,
+      "big_end_diameter_mm": 50.0,
+      "small_end_diameter_mm": 22.0,
+      "bolt_type": "Torque-to-yield",
+      "notes": "Stock rods good to ~450 HP",
+      "price_range_usd": "150-250 each",
+      "aftermarket_options": {
+        "manley_h_beam": {
+          "notes": "Forged 4340, ARP hardware, 600+ HP",
+          "price_usd": "800-1000 set"
+        },
+        "pauter": {
+          "notes": "Billet, race-proven",
+          "price_usd": "1200+ set"
+        },
+        "integrated_engineering": {
+          "notes": "Popular BMW tuner choice",
+          "price_usd": "700-900 set"
+        }
+      }
+    },
+    "rod_bearings": {
+      "oem_part": "11-24-7-636-928",
+      "description": "Rod Bearing Set (4)",
+      "material": "Tri-metal",
+      "brands": {
+        "oem": "BMW/Glyco",
+        "aftermarket": ["King Bearings", "ACL Race", "Clevite"]
+      },
+      "price_range_usd": "60-120"
+    },
+    "wrist_pins": {
+      "oem_part": "11-25-7-636-325",
+      "description": "Wrist Pin",
+      "diameter_mm": 22.0,
+      "type": "Full-floating",
+      "price_range_usd": "40-60 each"
+    }
+  },
+
+  "cylinder_head_components": {
+    "cylinder_head_assembly": {
+      "oem_part": "11-10-1-710-530",
+      "description": "Complete Cylinder Head (bare)",
+      "material": "Aluminum",
+      "valves_per_cylinder": 4,
+      "camshaft_configuration": "DOHC",
+      "includes_valvetrain": false,
+      "price_range_usd": "1500-2500",
+      "notes": "Check for cracking around coolant passages"
+    },
+    "head_gasket": {
+      "oem_part": "11-12-7-599-212",
+      "description": "Multi-layer Steel Head Gasket",
+      "material": "MLS (Multi-Layer Steel)",
+      "thickness_mm": 0.93,
+      "bore_diameter_mm": 84.5,
+      "price_range_usd": "150-250",
+      "aftermarket_options": {
+        "cometic": {
+          "part": "Custom",
+          "thickness_options_mm": [0.76, 0.92, 1.0, 1.3],
+          "notes": "Thicker options for lowered compression"
+        },
+        "athena": {
+          "notes": "Cooper ring design available"
+        }
+      }
+    },
+    "head_bolts": {
+      "oem_part": "11-12-0-429-524",
+      "description": "Head Bolt Set (10)",
+      "type": "Torque-to-yield (single use)",
+      "price_range_usd": "80-120",
+      "aftermarket_options": {
+        "arp": {
+          "part": "Custom",
+          "type": "Reusable head studs",
+          "notes": "Recommended for boosted applications",
+          "price_usd": "250-350"
+        }
+      }
+    },
+    "intake_valves": {
+      "oem_part": "11-34-7-589-673",
+      "description": "Intake Valve",
+      "head_diameter_mm": 33.0,
+      "stem_diameter_mm": 6.0,
+      "material": "Stainless steel",
+      "quantity_required": 8,
+      "price_range_usd": "30-50 each",
+      "aftermarket_options": {
+        "supertech": "Inconel available",
+        "ferrea": "Racing valves available"
+      }
+    },
+    "exhaust_valves": {
+      "oem_part": "11-34-7-589-674",
+      "description": "Exhaust Valve",
+      "head_diameter_mm": 28.0,
+      "stem_diameter_mm": 6.0,
+      "material": "Sodium-filled stellite",
+      "quantity_required": 8,
+      "price_range_usd": "40-70 each",
+      "aftermarket_options": {
+        "supertech": "Inconel racing valves",
+        "ferrea": "Competition series"
+      }
+    },
+    "valve_springs": {
+      "oem_part": "11-34-7-636-321",
+      "description": "Valve Spring",
+      "type": "Single with damper",
+      "quantity_required": 16,
+      "seat_pressure_lbs": 85,
+      "open_pressure_lbs": 180,
+      "price_range_usd": "15-25 each",
+      "aftermarket_options": {
+        "supertech": {
+          "notes": "Dual springs, higher seat pressure for cams",
+          "price_usd": "400-500 set"
+        },
+        "brian_crower": {
+          "notes": "Performance springs available"
+        }
+      }
+    },
+    "valve_stem_seals": {
+      "oem_part": "11-34-0-033-198",
+      "description": "Valve Stem Seal Set",
+      "quantity_required": 16,
+      "notes": "Replace if oil consumption is excessive",
+      "price_range_usd": "50-100 set"
+    },
+    "valve_keepers": {
+      "oem_part": "11-34-1-745-521",
+      "description": "Valve Keeper/Lock",
+      "quantity_required": 32,
+      "price_range_usd": "30-50 set"
+    },
+    "valve_spring_retainers": {
+      "oem_part": "11-34-7-636-322",
+      "description": "Valve Spring Retainer",
+      "material": "Steel",
+      "quantity_required": 16,
+      "price_range_usd": "60-100 set",
+      "aftermarket_options": {
+        "supertech": "Titanium retainers for high-RPM",
+        "manley": "Lightweight steel"
+      }
+    },
+    "camshafts": {
+      "intake_camshaft": {
+        "oem_part": "11-31-8-648-456",
+        "description": "Intake Camshaft",
+        "duration_degrees": 252,
+        "lift_mm": 9.9,
+        "vanos_equipped": true,
+        "price_range_usd": "400-600"
+      },
+      "exhaust_camshaft": {
+        "oem_part": "11-31-8-648-457",
+        "description": "Exhaust Camshaft",
+        "duration_degrees": 244,
+        "lift_mm": 9.7,
+        "vanos_equipped": true,
+        "price_range_usd": "400-600"
+      },
+      "aftermarket_options": {
+        "schrick": {
+          "notes": "Performance cams available, retain VANOS",
+          "price_usd": "1200-1800 pair"
+        },
+        "cat_cams": {
+          "notes": "European tuner favorite",
+          "price_usd": "1000-1500 pair"
+        }
+      }
+    },
+    "cam_followers": {
+      "oem_part": "11-33-7-568-938",
+      "description": "Hydraulic Lifter/Cam Follower",
+      "type": "Hydraulic roller follower",
+      "quantity_required": 16,
+      "price_range_usd": "20-35 each"
+    },
+    "rocker_arms_valvetronic": {
+      "oem_part": "11-37-7-589-883",
+      "description": "Valvetronic Intermediate Lever",
+      "quantity_required": 8,
+      "function": "Variable valve lift mechanism",
+      "price_range_usd": "50-80 each"
+    }
+  },
+
+  "timing_chain_system": {
+    "_warning": "CRITICAL FAILURE POINT - These components should be replaced as a complete kit",
+    "complete_timing_chain_kit": {
+      "oem_part": "Various - See individual components",
+      "description": "Complete Timing Chain Replacement Kit",
+      "includes": [
+        "Timing chain",
+        "Upper chain guide",
+        "Lower chain guide (chain tensioner rail)",
+        "Chain tensioner with rail",
+        "VANOS gears (2)",
+        "Crankshaft gear",
+        "All bolts and seals"
+      ],
+      "recommended_brands": {
+        "oem_bmw": {
+          "notes": "Use updated parts post-2015 revision",
+          "price_usd": "600-900"
+        },
+        "iwis": {
+          "notes": "OEM chain supplier, excellent quality",
+          "price_usd": "500-700"
+        },
+        "febi_bilstein": {
+          "notes": "Good quality aftermarket",
+          "price_usd": "400-600"
+        },
+        "timing_chain_kit_aftermarket": {
+          "notes": "Complete kits available",
+          "price_usd": "350-550"
+        }
+      }
+    },
+    "timing_chain": {
+      "oem_part": "11-31-7-592-849",
+      "oem_part_updated": "11-31-8-648-732",
+      "description": "Timing Chain (Updated Design)",
+      "type": "Single-row roller chain",
+      "links": 134,
+      "notes": "ALWAYS use updated chain design",
+      "price_range_usd": "150-250",
+      "stretch_limit_mm": 2.0,
+      "measurement_method": "ISTA diagnostics or physical measurement"
+    },
+    "chain_tensioner": {
+      "oem_part": "11-31-7-588-625",
+      "oem_part_updated": "11-31-8-648-731",
+      "description": "Primary Chain Tensioner (Updated)",
+      "type": "Hydraulic with spring backup",
+      "failure_modes": [
+        "Loss of oil pressure to tensioner",
+        "Internal piston wear",
+        "Spring failure"
+      ],
+      "notes": "PRIMARY failure point - always replace with updated version",
+      "price_range_usd": "80-150"
+    },
+    "upper_chain_guide": {
+      "oem_part": "11-31-7-588-996",
+      "oem_part_updated": "11-31-8-648-730",
+      "description": "Upper Timing Chain Guide Rail",
+      "material": "Reinforced plastic",
+      "failure_modes": [
+        "Cracking",
+        "Complete breakage",
+        "Wear groove from chain"
+      ],
+      "price_range_usd": "50-100"
+    },
+    "lower_chain_guide_tensioner_rail": {
+      "oem_part": "11-31-7-588-997",
+      "oem_part_updated": "11-31-8-648-729",
+      "description": "Lower Timing Chain Guide (Tensioner Rail)",
+      "material": "Reinforced plastic",
+      "notes": "Contacts chain tensioner",
+      "price_range_usd": "50-100"
+    },
+    "chain_guide_bolts": {
+      "oem_part": "Various",
+      "description": "Chain Guide Mounting Bolts",
+      "notes": "Replace all bolts during timing chain service",
+      "price_range_usd": "20-40 set"
+    },
+    "vanos_intake_gear": {
+      "oem_part": "11-36-7-583-819",
+      "description": "VANOS Intake Camshaft Gear/Actuator",
+      "function": "Variable valve timing adjustment",
+      "solenoid_part": "11-36-7-585-425",
+      "price_range_usd": "350-500"
+    },
+    "vanos_exhaust_gear": {
+      "oem_part": "11-36-7-583-820",
+      "description": "VANOS Exhaust Camshaft Gear/Actuator",
+      "function": "Variable valve timing adjustment",
+      "solenoid_part": "11-36-7-585-426",
+      "price_range_usd": "350-500"
+    },
+    "vanos_solenoids": {
+      "intake": {
+        "oem_part": "11-36-7-585-425",
+        "description": "VANOS Intake Solenoid",
+        "price_range_usd": "80-150"
+      },
+      "exhaust": {
+        "oem_part": "11-36-7-585-426",
+        "description": "VANOS Exhaust Solenoid",
+        "price_range_usd": "80-150"
+      }
+    },
+    "crankshaft_timing_gear": {
+      "oem_part": "11-31-7-616-144",
+      "description": "Crankshaft Timing Sprocket",
+      "notes": "Usually reusable unless damaged",
+      "price_range_usd": "100-150"
+    },
+    "timing_chain_service_note": {
+      "critical": true,
+      "message": "ALWAYS replace timing chain, tensioner, and ALL guides together. Never replace just one component."
+    }
+  },
+
+  "turbocharger_system": {
+    "turbocharger_assembly": {
+      "oem_part": "11-65-7-642-469",
+      "description": "Complete Turbocharger Assembly",
+      "manufacturer": "Continental/BorgWarner",
+      "model": "K03 Variant",
+      "compressor_wheel_mm": 44,
+      "turbine_wheel_mm": 41,
+      "bearing_type": "Journal bearing",
+      "includes": [
+        "Turbo core",
+        "Exhaust housing",
+        "Compressor housing",
+        "Wastegate actuator"
+      ],
+      "price_range_usd": "1200-1800",
+      "remanufactured_price_usd": "800-1200"
+    },
+    "wastegate_actuator": {
+      "oem_part": "11-65-7-601-058",
+      "description": "Electronic Wastegate Actuator",
+      "type": "Integrated electronic",
+      "failure_symptoms": [
+        "Wastegate rattle",
+        "Boost control issues",
+        "Check engine light"
+      ],
+      "price_range_usd": "300-500"
+    },
+    "turbo_oil_feed_line": {
+      "oem_part": "11-42-7-614-253",
+      "description": "Turbo Oil Feed Pipe",
+      "notes": "Replace during turbo service",
+      "price_range_usd": "40-80"
+    },
+    "turbo_oil_return_line": {
+      "oem_part": "11-42-7-614-254",
+      "description": "Turbo Oil Drain Pipe",
+      "notes": "Replace during turbo service",
+      "price_range_usd": "40-80"
+    },
+    "turbo_coolant_lines": {
+      "feed": {
+        "oem_part": "11-53-7-639-998",
+        "description": "Turbo Coolant Feed Line"
+      },
+      "return": {
+        "oem_part": "11-53-7-639-999",
+        "description": "Turbo Coolant Return Line"
+      },
+      "price_range_usd": "60-100 each"
+    },
+    "turbo_gaskets": {
+      "exhaust_manifold_to_turbo": {
+        "oem_part": "11-65-7-620-507",
+        "description": "Turbo Inlet Gasket",
+        "price_range_usd": "20-40"
+      },
+      "turbo_to_downpipe": {
+        "oem_part": "18-30-7-620-549",
+        "description": "Turbo Outlet Gasket",
+        "price_range_usd": "15-30"
+      }
+    },
+    "exhaust_manifold_integrated": {
+      "oem_part": "11-62-8-657-616",
+      "description": "Exhaust Manifold (Integrated with Turbo Mount)",
+      "material": "Cast iron",
+      "notes": "N20 uses integrated exhaust manifold/turbo housing",
+      "price_range_usd": "600-900"
+    },
+    "charge_pipe": {
+      "hot_side": {
+        "oem_part": "11-61-7-596-922",
+        "description": "Charge Pipe (Turbo to Intercooler)",
+        "material": "Plastic",
+        "common_failure": "Cracking under boost",
+        "price_range_usd": "100-180"
+      },
+      "cold_side": {
+        "oem_part": "11-61-7-596-923",
+        "description": "Charge Pipe (Intercooler to Throttle)",
+        "material": "Plastic",
+        "price_range_usd": "100-180"
+      },
+      "aftermarket_aluminum": {
+        "brands": ["Burger Tuning", "ARM Motorsports", "ECS Tuning"],
+        "notes": "Aluminum charge pipes eliminate cracking risk",
+        "price_range_usd": "150-300"
+      }
+    },
+    "intercooler": {
+      "oem_part": "17-51-7-618-808",
+      "description": "OEM Air-to-Air Intercooler",
+      "type": "Front-mount air-to-air",
+      "core_size": "Stock",
+      "price_range_usd": "400-600",
+      "aftermarket_options": {
+        "wagner_tuning": {
+          "notes": "Competition intercooler, larger core",
+          "price_usd": "800-1200"
+        },
+        "ets": {
+          "notes": "Various core sizes available",
+          "price_usd": "600-1000"
+        },
+        "vrsf": {
+          "notes": "Step-up from stock",
+          "price_usd": "500-700"
+        }
+      }
+    },
+    "boost_pressure_sensor": {
+      "oem_part": "13-62-7-585-493",
+      "description": "MAP/Boost Pressure Sensor",
+      "location": "Intake manifold",
+      "price_range_usd": "80-150"
+    },
+    "blow_off_valve_diverter": {
+      "oem_part": "11-61-7-602-292",
+      "description": "Diverter Valve (Recirculating BOV)",
+      "type": "Electric solenoid",
+      "function": "Recirculates boost pressure during throttle lift",
+      "price_range_usd": "100-180",
+      "aftermarket_options": {
+        "turbosmart": "Vent-to-atmosphere option",
+        "forge_motorsport": "Upgraded diverter valve"
+      }
+    }
+  },
+
+  "fuel_system": {
+    "high_pressure_fuel_pump": {
+      "oem_part": "13-51-7-595-339",
+      "description": "High Pressure Fuel Pump (HPFP)",
+      "manufacturer": "Bosch CP4.1",
+      "pressure_bar": 200,
+      "drive": "Camshaft driven",
+      "notes": "More reliable than N54 HPFP",
+      "price_range_usd": "500-800",
+      "aftermarket_options": {
+        "autotech_hpfp_internals": {
+          "notes": "Upgraded internals for higher fuel demand",
+          "price_usd": "300-500"
+        }
+      }
+    },
+    "low_pressure_fuel_pump": {
+      "oem_part": "16-14-7-276-046",
+      "description": "In-Tank Electric Fuel Pump",
+      "pressure_bar": 5,
+      "location": "In fuel tank",
+      "price_range_usd": "200-400",
+      "aftermarket_options": {
+        "deatschwerks": "Higher flow pump for tuned cars",
+        "walbro_aem": "E85 compatible pumps"
+      }
+    },
+    "fuel_injectors": {
+      "oem_part": "13-64-7-639-994",
+      "description": "Direct Injection Fuel Injector",
+      "type": "Solenoid, 6-hole",
+      "flow_rate_cc_min": 320,
+      "quantity_required": 4,
+      "price_range_usd": "150-250 each",
+      "aftermarket_options": {
+        "injector_dynamics": {
+          "notes": "Larger injectors for big turbo builds",
+          "sizes_cc": [650, 1000, 1300]
+        },
+        "bosch": {
+          "notes": "OEM supplier, exact replacement"
+        }
+      }
+    },
+    "fuel_rail": {
+      "oem_part": "13-53-7-599-287",
+      "description": "High Pressure Fuel Rail",
+      "material": "Steel",
+      "price_range_usd": "200-350"
+    },
+    "fuel_pressure_regulator": {
+      "oem_part": "Integrated with HPFP",
+      "notes": "Part of HPFP assembly",
+      "description": "Pressure regulation is ECU-controlled via HPFP"
+    },
+    "fuel_pressure_sensor": {
+      "oem_part": "13-53-7-614-317",
+      "description": "High Pressure Fuel Sensor",
+      "location": "Fuel rail",
+      "price_range_usd": "80-150"
+    },
+    "fuel_filter": {
+      "oem_part": "16-14-6-766-942",
+      "description": "In-Tank Fuel Filter/Strainer",
+      "type": "Non-serviceable (integrated)",
+      "notes": "Part of fuel pump module"
+    }
+  },
+
+  "intake_system": {
+    "intake_manifold": {
+      "oem_part": "11-61-8-610-521",
+      "description": "Intake Manifold Assembly",
+      "material": "Plastic composite",
+      "includes": "Integrated throttle body mount",
+      "price_range_usd": "400-600"
+    },
+    "throttle_body": {
+      "oem_part": "13-54-7-588-625",
+      "description": "Electronic Throttle Body",
+      "bore_mm": 60,
+      "function": "Emergency/cold start only (Valvetronic handles load)",
+      "price_range_usd": "300-450"
+    },
+    "air_filter": {
+      "oem_part": "13-71-7-602-643",
+      "description": "OEM Panel Air Filter",
+      "price_range_usd": "30-50",
+      "aftermarket_options": {
+        "k_and_n": {
+          "part": "33-2990",
+          "type": "Drop-in performance filter",
+          "price_usd": "50-70"
+        },
+        "aem": {
+          "notes": "Dry flow filter option"
+        },
+        "afe": {
+          "notes": "Pro Dry S or oiled options"
+        }
+      }
+    },
+    "air_filter_housing": {
+      "oem_part": "13-71-7-599-287",
+      "description": "Air Filter Housing/Airbox",
+      "price_range_usd": "150-250"
+    },
+    "mass_airflow_sensor": {
+      "oem_part": "13-62-7-602-038",
+      "description": "Hot Film Mass Airflow Sensor",
+      "type": "Hot-film",
+      "integrated_iat": true,
+      "price_range_usd": "150-300"
+    },
+    "intake_boot": {
+      "oem_part": "13-71-7-602-644",
+      "description": "Intake Boot (MAF to Turbo)",
+      "material": "Rubber",
+      "price_range_usd": "50-100"
+    },
+    "cold_air_intake_systems": {
+      "burger_tuning": {
+        "notes": "BMS intake system",
+        "price_usd": "200-350"
+      },
+      "afe": {
+        "notes": "Various intake options",
+        "price_usd": "300-500"
+      },
+      "eventuri": {
+        "notes": "Premium carbon fiber intake",
+        "price_usd": "800-1200"
+      },
+      "dinan": {
+        "notes": "High-flow intake system",
+        "price_usd": "350-500"
+      }
+    }
+  },
+
+  "exhaust_system": {
+    "exhaust_manifold": {
+      "oem_part": "11-62-8-657-616",
+      "description": "Integrated Exhaust Manifold",
+      "notes": "Integrated with turbo housing on N20",
+      "price_range_usd": "600-900"
+    },
+    "catalytic_converter_n20": {
+      "oem_part": "18-30-7-645-939",
+      "description": "Primary Catalytic Converter (N20)",
+      "type": "Close-coupled to turbo",
+      "o2_sensors": 2,
+      "price_range_usd": "800-1500"
+    },
+    "catalytic_converter_n26": {
+      "oem_part": "18-30-7-645-940",
+      "description": "Primary Catalytic Converter (N26 SULEV)",
+      "type": "Close-coupled with secondary air",
+      "o2_sensors": 4,
+      "notes": "N26 has additional emissions equipment",
+      "price_range_usd": "1000-1800"
+    },
+    "downpipe": {
+      "oem_part": "18-30-7-618-486",
+      "description": "OEM Downpipe Section",
+      "includes_cat": true,
+      "price_range_usd": "400-700",
+      "aftermarket_options": {
+        "catless_downpipe": {
+          "brands": ["VRSF", "ARM Motorsports", "Active Autowerke"],
+          "notes": "For off-road/track use only - significant power gains",
+          "price_usd": "300-500"
+        },
+        "catted_downpipe": {
+          "brands": ["VRSF", "Milltek", "Scorpion"],
+          "notes": "High-flow cat, emissions compliant in some areas",
+          "price_usd": "500-800"
+        }
+      }
+    },
+    "oxygen_sensors": {
+      "pre_cat_n20": {
+        "oem_part": "11-78-7-595-353",
+        "description": "O2 Sensor (Pre-Cat)",
+        "type": "Wideband",
+        "price_range_usd": "150-250"
+      },
+      "post_cat_n20": {
+        "oem_part": "11-78-7-595-354",
+        "description": "O2 Sensor (Post-Cat)",
+        "type": "Narrowband",
+        "price_range_usd": "100-180"
+      }
+    },
+    "exhaust_gaskets": {
+      "downpipe_gasket": {
+        "oem_part": "18-30-7-620-549",
+        "description": "Downpipe Flange Gasket",
+        "price_range_usd": "15-30"
+      }
+    },
+    "aftermarket_exhaust": {
+      "catback_systems": {
+        "remus": {
+          "notes": "Sport exhaust with valve control",
+          "price_usd": "1500-2500"
+        },
+        "akrapovic": {
+          "notes": "Premium titanium option",
+          "price_usd": "3000-5000"
+        },
+        "milltek": {
+          "notes": "Non-resonated or resonated options",
+          "price_usd": "1200-1800"
+        },
+        "mperformance": {
+          "notes": "BMW M Performance exhaust",
+          "price_usd": "1500-2200"
+        }
+      }
+    }
+  },
+
+  "cooling_system": {
+    "water_pump": {
+      "oem_part": "11-51-7-597-715",
+      "description": "Electric Water Pump",
+      "type": "Electric motor driven",
+      "failure_mode": "Bearing/impeller failure",
+      "typical_life_miles": "60000-100000",
+      "price_range_usd": "300-450",
+      "notes": "Common failure item - replace preventatively"
+    },
+    "thermostat": {
+      "oem_part": "11-53-7-644-811",
+      "description": "Engine Thermostat Assembly",
+      "opens_at_c": 97,
+      "electronically_controlled": true,
+      "price_range_usd": "100-180",
+      "notes": "Often replaced with water pump"
+    },
+    "radiator": {
+      "oem_part": "17-11-8-615-426",
+      "description": "Engine Radiator",
+      "material": "Aluminum core, plastic tanks",
+      "price_range_usd": "300-500"
+    },
+    "expansion_tank": {
+      "oem_part": "17-13-7-639-464",
+      "description": "Coolant Expansion Tank",
+      "material": "Plastic",
+      "cap_pressure_bar": 2.0,
+      "price_range_usd": "80-150",
+      "notes": "Check for cracks regularly"
+    },
+    "radiator_hoses": {
+      "upper": {
+        "oem_part": "17-12-7-639-210",
+        "description": "Upper Radiator Hose",
+        "price_range_usd": "40-80"
+      },
+      "lower": {
+        "oem_part": "17-12-7-639-211",
+        "description": "Lower Radiator Hose",
+        "price_range_usd": "40-80"
+      }
+    },
+    "coolant_temp_sensor": {
+      "oem_part": "13-62-1-433-077",
+      "description": "Coolant Temperature Sensor",
+      "price_range_usd": "30-60"
+    }
+  },
+
+  "lubrication_system": {
+    "oil_pump": {
+      "oem_part": "11-41-7-616-119",
+      "description": "Engine Oil Pump",
+      "type": "Variable displacement vane pump",
+      "drive": "Chain driven from crankshaft",
+      "price_range_usd": "400-600"
+    },
+    "oil_filter": {
+      "oem_part": "11-42-7-640-862",
+      "description": "Oil Filter Element",
+      "type": "Cartridge style",
+      "price_range_usd": "10-20",
+      "recommended_brands": ["Mann", "Mahle", "BMW OE"]
+    },
+    "oil_filter_housing": {
+      "oem_part": "11-42-7-614-295",
+      "description": "Oil Filter Housing",
+      "includes": "Heat exchanger mount",
+      "price_range_usd": "200-350"
+    },
+    "oil_filter_housing_gasket": {
+      "oem_part": "11-42-7-508-971",
+      "description": "Oil Filter Housing Gasket",
+      "common_failure": true,
+      "symptoms": "Oil leak at front of engine",
+      "price_range_usd": "20-40"
+    },
+    "oil_pan": {
+      "oem_part": "11-13-7-618-512",
+      "description": "Oil Pan (Lower)",
+      "material": "Aluminum",
+      "capacity_liters": 5.0,
+      "price_range_usd": "300-500"
+    },
+    "oil_pan_gasket": {
+      "oem_part": "11-13-7-560-479",
+      "description": "Oil Pan Gasket",
+      "price_range_usd": "40-80"
+    },
+    "oil_level_sensor": {
+      "oem_part": "12-61-7-607-910",
+      "description": "Oil Level Sensor",
+      "location": "Oil pan",
+      "price_range_usd": "60-100"
+    },
+    "pcv_valve": {
+      "oem_part": "11-12-7-570-292",
+      "description": "PCV Valve/Crankcase Vent Valve",
+      "integrated_location": "Valve cover",
+      "price_range_usd": "80-150"
+    },
+    "oil_cooler": {
+      "oem_part": "11-42-7-552-687",
+      "description": "Engine Oil Cooler (Heat Exchanger)",
+      "type": "Coolant-to-oil",
+      "price_range_usd": "150-300"
+    }
+  },
+
+  "ignition_system": {
+    "ignition_coils": {
+      "oem_part": "12-13-8-647-689",
+      "description": "Ignition Coil (Coil-on-Plug)",
+      "quantity_required": 4,
+      "price_range_usd": "50-80 each",
+      "aftermarket_options": {
+        "eldor": "OEM supplier",
+        "delphi": "Quality aftermarket"
+      }
+    },
+    "spark_plugs": {
+      "oem_part": "12-12-2-158-253",
+      "ngk_part": "SILZKBR8D8S (94201)",
+      "description": "Iridium Spark Plug",
+      "gap_mm": 0.8,
+      "heat_range": 8,
+      "quantity_required": 4,
+      "service_interval_miles": 60000,
+      "price_range_usd": "15-25 each",
+      "performance_options": {
+        "ngk_colder": "SILZKBR8C8S - One step colder for tuned engines",
+        "ngk_2_step_colder": "For heavily modified engines"
+      }
+    }
+  },
+
+  "sensors_and_electronics": {
+    "crankshaft_position_sensor": {
+      "oem_part": "13-62-7-525-015",
+      "description": "Crankshaft Position Sensor",
+      "type": "Hall effect",
+      "reluctor_pattern": "60-2",
+      "price_range_usd": "60-120"
+    },
+    "camshaft_position_sensors": {
+      "intake": {
+        "oem_part": "13-62-7-558-518",
+        "description": "Intake Camshaft Position Sensor",
+        "price_range_usd": "60-100"
+      },
+      "exhaust": {
+        "oem_part": "13-62-7-558-519",
+        "description": "Exhaust Camshaft Position Sensor",
+        "price_range_usd": "60-100"
+      }
+    },
+    "knock_sensors": {
+      "oem_part": "13-62-7-568-422",
+      "description": "Knock Sensor",
+      "quantity_required": 2,
+      "price_range_usd": "80-150 each"
+    },
+    "oil_pressure_sensor": {
+      "oem_part": "12-61-8-611-273",
+      "description": "Oil Pressure Sensor",
+      "price_range_usd": "40-80"
+    },
+    "eccentric_shaft_sensor": {
+      "oem_part": "11-37-7-524-879",
+      "description": "Valvetronic Eccentric Shaft Sensor",
+      "function": "Monitors Valvetronic position",
+      "price_range_usd": "100-180"
+    },
+    "valvetronic_motor": {
+      "oem_part": "11-37-7-548-389",
+      "description": "Valvetronic Eccentric Shaft Actuator Motor",
+      "type": "DC servo motor",
+      "price_range_usd": "300-500"
+    }
+  },
+
+  "gaskets_and_seals_kit": {
+    "complete_engine_gasket_set": {
+      "description": "Full Engine Gasket Set",
+      "includes": [
+        "Head gasket",
+        "Intake manifold gaskets",
+        "Exhaust manifold gaskets",
+        "Valve cover gasket",
+        "Oil pan gasket",
+        "Various seals"
+      ],
+      "brands": {
+        "elring": "OEM supplier",
+        "victor_reinz": "Quality aftermarket"
+      },
+      "price_range_usd": "400-600"
+    },
+    "valve_cover_gasket": {
+      "oem_part": "11-12-7-588-412",
+      "description": "Valve Cover Gasket (Updated)",
+      "price_range_usd": "50-100"
+    },
+    "front_main_seal": {
+      "oem_part": "11-14-1-439-570",
+      "description": "Crankshaft Front Oil Seal",
+      "price_range_usd": "15-30"
+    },
+    "rear_main_seal": {
+      "oem_part": "11-14-2-249-533",
+      "description": "Crankshaft Rear Oil Seal",
+      "price_range_usd": "20-40"
+    },
+    "cam_seals": {
+      "oem_part": "11-34-1-437-526",
+      "description": "Camshaft Oil Seal",
+      "quantity_required": 4,
+      "price_range_usd": "10-20 each"
+    }
+  },
+
+  "engine_mounts": {
+    "left_engine_mount": {
+      "oem_part": "22-11-6-854-783",
+      "description": "Left Engine Mount (Hydraulic)",
+      "price_range_usd": "100-180"
+    },
+    "right_engine_mount": {
+      "oem_part": "22-11-6-854-784",
+      "description": "Right Engine Mount (Hydraulic)",
+      "price_range_usd": "100-180"
+    },
+    "transmission_mount": {
+      "oem_part": "22-31-6-799-331",
+      "description": "Transmission Mount",
+      "price_range_usd": "80-150"
+    }
+  }
+}
