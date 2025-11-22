@@ -1,0 +1,169 @@
+{
+  "engine_id": "AMC-4.0L-I6-POWERTECH",
+  "common_names": [
+    "AMC 4.0",
+    "Jeep 4.0",
+    "Power Tech I6",
+    "242 Inline Six",
+    "The Indestructible Six"
+  ],
+  "manufacturer": "American Motors Corporation / Chrysler",
+  "engine_family": "AMC Straight-6",
+  "production_years": "1987-2006",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 4.0,
+      "cubic_inches": 242,
+      "cc": 3958
+    },
+    "bore": {
+      "inches": 3.875,
+      "mm": 98.43
+    },
+    "stroke": {
+      "inches": 3.414,
+      "mm": 86.72
+    },
+    "compression_ratio": {
+      "1987-1990": "8.8:1",
+      "1991-1995": "8.8:1",
+      "1996-2006": "8.8:1"
+    },
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (radiator side)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "cast_iron",
+    "head_material": "cast_iron",
+    "valvetrain": "OHV pushrod, 12 valves (2 per cylinder)",
+    "fuel_system": {
+      "1987-1990": "Renix Multi-Point Fuel Injection",
+      "1991-1995": "Chrysler SMPI (Sequential MPI)",
+      "1996-2006": "Chrysler SMPI with OBD-II"
+    },
+    "ignition_system": {
+      "1987-1990": "Renix distributorless (coil pack)",
+      "1991-1999": "Distributor with coil",
+      "2000-2006": "Coil-on-plug (distributorless)"
+    }
+  },
+
+  "power_output_by_year": {
+    "1987-1990": {
+      "horsepower": 177,
+      "hp_rpm": 4500,
+      "torque_lb_ft": 224,
+      "torque_rpm": 2500,
+      "notes": "Renix fuel injection"
+    },
+    "1991-1995": {
+      "horsepower": 190,
+      "hp_rpm": 4750,
+      "torque_lb_ft": 225,
+      "torque_rpm": 4000,
+      "notes": "Chrysler SMPI, revised head"
+    },
+    "1996-1999": {
+      "horsepower": 190,
+      "hp_rpm": 4750,
+      "torque_lb_ft": 225,
+      "torque_rpm": 4000,
+      "notes": "OBD-II compliant"
+    },
+    "2000-2006": {
+      "horsepower": 190,
+      "hp_rpm": 4600,
+      "torque_lb_ft": 235,
+      "torque_rpm": 3200,
+      "notes": "Coil-on-plug ignition"
+    }
+  },
+
+  "vehicle_applications": {
+    "jeep_cherokee_xj": {
+      "years": "1987-2001",
+      "notes": "Most common application"
+    },
+    "jeep_comanche_mj": {
+      "years": "1987-1992",
+      "notes": "Pickup truck variant"
+    },
+    "jeep_grand_cherokee_zj": {
+      "years": "1993-1998",
+      "notes": "First gen Grand Cherokee"
+    },
+    "jeep_wrangler_tj": {
+      "years": "1997-2006",
+      "notes": "Target vehicle for this catalog"
+    },
+    "jeep_grand_cherokee_wj": {
+      "years": "1999-2004",
+      "notes": "Second gen Grand Cherokee"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 6,
+      "capacity_liters": 5.7,
+      "with_filter": true,
+      "recommended_viscosity": ["5W-30", "10W-30"],
+      "api_rating": "SJ or higher"
+    },
+    "coolant": {
+      "capacity_quarts": 12,
+      "capacity_liters": 11.4,
+      "type": "HOAT (Hybrid Organic Acid Technology)",
+      "mopar_part": "MS-9769"
+    },
+    "transmission_manual_ax15": {
+      "capacity_pints": 6.5,
+      "type": "75W-90 GL-3"
+    },
+    "transmission_auto_42re": {
+      "capacity_quarts": 8,
+      "type": "ATF+4"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_inches": 9.231,
+    "main_bearing_journal_diameter_inches": 2.4996,
+    "rod_bearing_journal_diameter_inches": 2.0934,
+    "camshaft_bearing_journal_diameter_inches": 2.029,
+    "cylinder_bore_diameter_inches": 3.875,
+    "cylinder_bore_roundness_max_inches": 0.001,
+    "cylinder_bore_taper_max_inches": 0.001,
+    "piston_to_wall_clearance_inches": {
+      "min": 0.0013,
+      "max": 0.0021
+    },
+    "rod_side_clearance_inches": {
+      "min": 0.010,
+      "max": 0.019
+    },
+    "crankshaft_end_play_inches": {
+      "min": 0.0015,
+      "max": 0.0065
+    }
+  },
+
+  "notes": {
+    "heritage": "Evolved from the AMC 258 I6, itself derived from the 1964 AMC 199 I6",
+    "reputation": "Known as one of the most reliable engines ever produced",
+    "common_issues": [
+      "Cracked exhaust manifold (1987-1999)",
+      "Cylinder head cracking between #3 and #4 (0331 castings)",
+      "Water pump failure around 100k miles",
+      "Fouled O2 sensors"
+    ],
+    "strengths": [
+      "Robust cast iron construction",
+      "Low-stress design (under-square bore/stroke)",
+      "Excellent torque curve",
+      "Parts availability excellent",
+      "Simple to work on"
+    ]
+  }
+}

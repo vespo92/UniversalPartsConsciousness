@@ -1,0 +1,539 @@
+{
+  "engine_id": "AMC-4.0L-I6-POWERTECH",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "XJ": {
+      "name": "Jeep Cherokee",
+      "years": "1987-2001",
+      "engine_bay": "Longitudinal, front"
+    },
+    "MJ": {
+      "name": "Jeep Comanche",
+      "years": "1987-1992",
+      "engine_bay": "Longitudinal, front"
+    },
+    "ZJ": {
+      "name": "Jeep Grand Cherokee (1st Gen)",
+      "years": "1993-1998",
+      "engine_bay": "Longitudinal, front"
+    },
+    "TJ": {
+      "name": "Jeep Wrangler",
+      "years": "1997-2006",
+      "engine_bay": "Longitudinal, front"
+    },
+    "WJ": {
+      "name": "Jeep Grand Cherokee (2nd Gen)",
+      "years": "1999-2004",
+      "engine_bay": "Longitudinal, front"
+    }
+  },
+
+  "era_classifications": {
+    "renix": {
+      "years": "1987-1990",
+      "fuel_injection": "Renix Multi-Point",
+      "ignition": "Distributorless coil pack",
+      "ecu": "Renix ECU",
+      "obd": "Pre-OBD"
+    },
+    "ho_pre_obd2": {
+      "years": "1991-1995",
+      "fuel_injection": "Chrysler SMPI",
+      "ignition": "Distributor with single coil",
+      "ecu": "Chrysler SBEC",
+      "obd": "OBD-I"
+    },
+    "ho_obd2": {
+      "years": "1996-1999",
+      "fuel_injection": "Chrysler SMPI",
+      "ignition": "Distributor with single coil",
+      "ecu": "Chrysler PCM",
+      "obd": "OBD-II"
+    },
+    "ho_cop": {
+      "years": "2000-2006",
+      "fuel_injection": "Chrysler SMPI",
+      "ignition": "Coil-on-Plug (distributorless)",
+      "ecu": "Chrysler PCM (NGC)",
+      "obd": "OBD-II"
+    }
+  },
+
+  "interchangeability_groups": {
+    "universal_1987_2006": {
+      "description": "Parts that interchange across ALL 4.0L engines (1987-2006)",
+      "compatibility_score": 100,
+      "parts": [
+        {
+          "part_id": "AMC-40-BLOCK",
+          "notes": "All blocks interchange. Later blocks have minor differences but are functionally identical."
+        },
+        {
+          "part_id": "AMC-40-CRANK",
+          "notes": "All crankshafts interchange. 2000+ have reluctor wheel but can be removed/added."
+        },
+        {
+          "part_id": "AMC-40-CONROD",
+          "notes": "All connecting rods identical."
+        },
+        {
+          "part_id": "AMC-40-PISTON",
+          "notes": "All pistons interchange for same bore size."
+        },
+        {
+          "part_id": "AMC-40-RINGS",
+          "notes": "Ring sets universal for bore size."
+        },
+        {
+          "part_id": "AMC-40-MAIN-BRG",
+          "notes": "All main bearing sets identical."
+        },
+        {
+          "part_id": "AMC-40-ROD-BRG",
+          "notes": "All rod bearing sets identical."
+        },
+        {
+          "part_id": "AMC-40-CAM-BRG",
+          "notes": "All camshaft bearing sets identical."
+        },
+        {
+          "part_id": "AMC-40-TIMING-SET",
+          "notes": "Timing sets interchange, but 2000+ may need reluctor modification."
+        },
+        {
+          "part_id": "AMC-40-OIL-PUMP",
+          "notes": "All oil pumps interchange."
+        },
+        {
+          "part_id": "AMC-40-OIL-FILTER",
+          "notes": "All oil filters identical."
+        },
+        {
+          "part_id": "AMC-40-THERMOSTAT",
+          "notes": "All thermostats interchange."
+        },
+        {
+          "part_id": "AMC-40-SPARK-PLUGS",
+          "notes": "Same spark plug for all years."
+        },
+        {
+          "part_id": "AMC-40-INTAKE-VALVE",
+          "notes": "All intake valves identical."
+        },
+        {
+          "part_id": "AMC-40-EXHAUST-VALVE",
+          "notes": "All exhaust valves identical."
+        },
+        {
+          "part_id": "AMC-40-VALVE-SPRING",
+          "notes": "All valve springs identical."
+        },
+        {
+          "part_id": "AMC-40-LIFTER",
+          "notes": "All hydraulic lifters identical."
+        },
+        {
+          "part_id": "AMC-40-PUSHROD",
+          "notes": "All pushrods identical."
+        },
+        {
+          "part_id": "AMC-40-ROCKER",
+          "notes": "All rocker arms identical."
+        }
+      ]
+    },
+
+    "cylinder_head_groups": {
+      "description": "Cylinder heads have specific interchange patterns",
+      "groups": {
+        "renix_heads_1987_1990": {
+          "years": "1987-1990",
+          "castings": ["7120"],
+          "interchange_with": ["1987", "1988", "1989", "1990"],
+          "upgrade_path": "Can upgrade to 1991+ head with intake manifold change",
+          "notes": "Smaller intake ports, different intake bolt pattern"
+        },
+        "ho_heads_1991_1998": {
+          "years": "1991-1998",
+          "castings": ["0630", "0700"],
+          "interchange_with": ["1991", "1992", "1993", "1994", "1995", "1996", "1997", "1998"],
+          "compatibility_score": 100,
+          "notes": "Best heads - larger ports, proven reliability"
+        },
+        "problematic_heads_1999_2001": {
+          "years": "1999-2001",
+          "castings": ["0331"],
+          "known_issues": "Prone to cracking between cylinders #3 and #4",
+          "recommendation": "AVOID - Replace with 0630/0700 casting if available",
+          "failure_rate": "15-20% develop cracks",
+          "compatibility_score": 50
+        },
+        "revised_heads_2002_2006": {
+          "years": "2002-2006",
+          "castings": ["Revised 0331", "Various"],
+          "interchange_with": ["2002", "2003", "2004", "2005", "2006"],
+          "notes": "Addressed cracking issues but still prefer pre-1999 castings"
+        }
+      },
+      "cross_era_swaps": {
+        "1991_plus_to_renix": {
+          "feasibility": "Yes",
+          "requirements": [
+            "1991+ intake manifold",
+            "Matching fuel rail and injectors",
+            "Throttle body adapter or swap",
+            "Coolant temp sensor relocation"
+          ],
+          "difficulty": "Moderate",
+          "benefit": "Better flow, more power potential"
+        }
+      }
+    },
+
+    "intake_manifold_groups": {
+      "description": "Intake manifold interchangeability",
+      "groups": {
+        "renix_1987_1990": {
+          "years": "1987-1990",
+          "interchange_within_group": true,
+          "cross_compatible": false,
+          "notes": "Renix-specific fuel injection, different injector connectors"
+        },
+        "ho_1991_1995": {
+          "years": "1991-1995",
+          "interchange_within_group": true,
+          "cross_compatible": "With 1996-2006 with injector harness swap",
+          "notes": "EV1 injector connectors"
+        },
+        "ho_obd2_1996_2006": {
+          "years": "1996-2006",
+          "interchange_within_group": true,
+          "cross_compatible": "With 1991-1995 with injector harness swap",
+          "notes": "EV6 injector connectors"
+        }
+      }
+    },
+
+    "ignition_system_groups": {
+      "description": "Ignition system interchangeability",
+      "groups": {
+        "renix_distributorless_1987_1990": {
+          "years": "1987-1990",
+          "type": "Coil pack (distributorless)",
+          "components": [
+            "Coil pack",
+            "Crankshaft position sensor (flywheel)",
+            "Renix ECU"
+          ],
+          "swap_to_distributor": {
+            "feasibility": "Yes - popular upgrade",
+            "requirements": [
+              "1991-1999 distributor",
+              "Distributor hold-down",
+              "Ignition coil",
+              "Spark plug wires",
+              "ECU swap or MegaSquirt"
+            ],
+            "benefit": "Simplified timing adjustment, easier diagnosis"
+          }
+        },
+        "distributor_1991_1999": {
+          "years": "1991-1999",
+          "type": "Distributor with single coil",
+          "components": [
+            "Distributor",
+            "Ignition coil",
+            "Spark plug wires",
+            "CKP sensor (bellhousing)"
+          ],
+          "interchange_within_group": true
+        },
+        "cop_2000_2006": {
+          "years": "2000-2006",
+          "type": "Coil-on-Plug (distributorless)",
+          "components": [
+            "Coil rail (3 coils)",
+            "CKP sensor (timing cover)",
+            "CMP sensor (head)",
+            "60-tooth reluctor wheel"
+          ],
+          "swap_to_distributor": {
+            "feasibility": "Possible but complex",
+            "requirements": [
+              "1991-1999 distributor",
+              "Remove block-off plate, drill/tap for distributor",
+              "Different crankshaft or remove reluctor",
+              "PCM reflash or standalone ECU"
+            ],
+            "difficulty": "High",
+            "recommendation": "Not recommended unless COP system damaged"
+          }
+        }
+      }
+    },
+
+    "water_pump_groups": {
+      "description": "Water pump interchangeability",
+      "groups": {
+        "v_belt_1987_1990": {
+          "years": "1987-1990",
+          "drive": "V-belt",
+          "rotation": "Standard (clockwise)",
+          "interchange_within_group": true,
+          "cross_compatible": false
+        },
+        "serpentine_1991_2006": {
+          "years": "1991-2006",
+          "drive": "Serpentine belt",
+          "rotation": "Reverse (counterclockwise)",
+          "interchange_within_group": true,
+          "notes": "All serpentine pumps interchange"
+        }
+      },
+      "upgrade_path": {
+        "v_belt_to_serpentine": {
+          "feasibility": "Yes - common upgrade",
+          "requirements": [
+            "1991+ water pump",
+            "1991+ serpentine belt system",
+            "Matching pulleys for alternator, PS pump",
+            "Belt tensioner",
+            "Idler pulley"
+          ],
+          "benefit": "Better belt life, more consistent tension, higher accessory speeds"
+        }
+      }
+    },
+
+    "oil_pan_groups": {
+      "description": "Oil pan interchangeability by vehicle platform",
+      "groups": {
+        "xj_mj_zj": {
+          "platforms": ["XJ", "MJ", "ZJ"],
+          "years": "1987-1998",
+          "interchange_within_group": true,
+          "notes": "Similar crossmember and ground clearance"
+        },
+        "tj_wj": {
+          "platforms": ["TJ", "WJ"],
+          "years": "1997-2006",
+          "interchange_within_group": true,
+          "notes": "Different crossmember design, different pan profile"
+        }
+      },
+      "cross_platform_notes": "Pans can physically bolt on but may contact crossmember. Fabrication may be required."
+    },
+
+    "exhaust_manifold_groups": {
+      "description": "Exhaust manifold interchangeability",
+      "groups": {
+        "all_years_1987_2006": {
+          "years": "1987-2006",
+          "interchange": true,
+          "notes": "All exhaust manifolds bolt directly to all 4.0L heads"
+        }
+      },
+      "known_issues": {
+        "cracking": {
+          "common_years": "1987-1999",
+          "location": "Between ports #3, #4, #5",
+          "cause": "Thermal cycling stress",
+          "solutions": [
+            "Replace with OEM (will crack again)",
+            "Upgrade to tubular header",
+            "Install cracked manifold repair kit"
+          ]
+        }
+      },
+      "aftermarket_upgrades": {
+        "banks_torque_tube": {
+          "type": "Tubular manifold",
+          "benefit": "+12-15 HP, cooler EGTs",
+          "notes": "Eliminates cracking issue"
+        },
+        "jba_shorty_headers": {
+          "type": "Shorty headers",
+          "benefit": "+8-12 HP",
+          "notes": "May require ECU tune for OBD-II"
+        }
+      }
+    },
+
+    "flywheel_flexplate_groups": {
+      "description": "Flywheel/flexplate by transmission type",
+      "groups": {
+        "manual_transmission": {
+          "part_type": "Flywheel",
+          "weight_lbs": 28,
+          "ring_gear_teeth": 164,
+          "balance": "External",
+          "transmissions_compatible": ["AX5", "AX15", "NV3550"]
+        },
+        "automatic_transmission": {
+          "part_type": "Flexplate",
+          "ring_gear_teeth": 164,
+          "balance": "External",
+          "transmissions_compatible": ["AW4", "42RE", "42RLE"]
+        }
+      },
+      "swap_notes": {
+        "manual_to_auto": "Requires flexplate, torque converter, transmission crossmember",
+        "auto_to_manual": "Requires flywheel, clutch kit, transmission crossmember, pedal assembly"
+      }
+    },
+
+    "sensors_ecu_compatibility": {
+      "description": "Sensor and ECU compatibility across eras",
+      "groups": {
+        "renix_1987_1990": {
+          "ecu": "Renix ECU",
+          "sensors": {
+            "ckp": "Flywheel mounted",
+            "o2": "1-wire unheated",
+            "cts": "Specific to Renix",
+            "map": "Renix MAP",
+            "tps": "Renix TPS"
+          },
+          "cross_compatible": false,
+          "upgrade_options": ["Full HO swap", "MegaSquirt standalone"]
+        },
+        "ho_1991_1995": {
+          "ecu": "Chrysler SBEC",
+          "sensors": {
+            "ckp": "Bellhousing mounted",
+            "o2": "4-wire heated (1 sensor)",
+            "cts": "3/8 NPT thermistor",
+            "map": "3-bar MAP",
+            "tps": "3-wire rotary"
+          },
+          "cross_compatible": "With 1996-1999 with harness mods"
+        },
+        "ho_obd2_1996_1999": {
+          "ecu": "Chrysler PCM",
+          "sensors": {
+            "ckp": "Bellhousing mounted",
+            "o2": "4-wire heated (2 sensors - upstream/downstream)",
+            "cts": "3/8 NPT thermistor",
+            "map": "3-bar MAP",
+            "tps": "3-wire rotary"
+          },
+          "obd_compliant": true,
+          "cross_compatible": "With 1991-1995 with O2 sensor delete"
+        },
+        "ho_cop_2000_2006": {
+          "ecu": "Chrysler NGC PCM",
+          "sensors": {
+            "ckp": "Timing cover mounted (60-tooth reluctor)",
+            "cmp": "Cylinder head mounted",
+            "o2": "4-wire heated (2 sensors)",
+            "cts": "3/8 NPT thermistor",
+            "map": "3-bar MAP",
+            "tps": "3-wire rotary"
+          },
+          "obd_compliant": true,
+          "cross_compatible": false
+        }
+      }
+    }
+  },
+
+  "common_swaps_and_upgrades": {
+    "stroker_kit_4_6L": {
+      "name": "4.6L Stroker Kit",
+      "description": "Increases displacement from 4.0L to 4.6L or 4.7L",
+      "components_required": [
+        "Stroker crankshaft (3.895 stroke vs 3.414 stock)",
+        "Longer connecting rods or offset ground pins",
+        "Forged pistons (dish for compression)",
+        "ARP rod bolts"
+      ],
+      "power_gain": "+30-40 HP, +40-50 lb-ft torque",
+      "notes": "Requires machine work, balancing"
+    },
+    "renix_to_ho_swap": {
+      "name": "Renix to HO Conversion",
+      "description": "Upgrade 1987-1990 to 1991+ fuel injection and ignition",
+      "components_required": [
+        "1991+ cylinder head",
+        "1991+ intake manifold",
+        "1991+ fuel rail and injectors",
+        "1991-1999 distributor",
+        "1991+ wiring harness",
+        "1991+ ECU (SBEC or PCM)",
+        "1991+ exhaust manifold (optional)",
+        "1991+ throttle body",
+        "Sensors: TPS, MAP, CTS, IAT, O2"
+      ],
+      "benefit": "+13 HP factory, better drivability, OBD capability",
+      "difficulty": "High - full weekend project"
+    },
+    "head_upgrade_0331_replacement": {
+      "name": "0331 Head Replacement",
+      "description": "Replace problematic 1999-2001 0331 casting",
+      "recommended_replacement": "1991-1998 0630 or 0700 casting",
+      "components_required": [
+        "Replacement cylinder head",
+        "Head gasket set",
+        "Head bolts (ARP recommended)",
+        "Valve cover gasket"
+      ],
+      "notes": "Check core charge, have head inspected before installation"
+    },
+    "header_upgrade": {
+      "name": "Exhaust Header Upgrade",
+      "description": "Replace cracking cast manifold with tubular headers",
+      "options": [
+        {
+          "brand": "Banks TorqueTube",
+          "type": "Cast tubular manifold",
+          "power_gain": "+12-15 HP",
+          "egt_reduction": "200°F"
+        },
+        {
+          "brand": "JBA",
+          "type": "Shorty headers",
+          "power_gain": "+8-12 HP"
+        },
+        {
+          "brand": "Thorley",
+          "type": "Tri-Y headers",
+          "power_gain": "+15-20 HP"
+        }
+      ],
+      "notes": "Check emissions compliance in your state"
+    }
+  },
+
+  "donor_vehicle_recommendations": {
+    "best_donors_for_parts": [
+      {
+        "vehicle": "1996-1998 Jeep Cherokee XJ",
+        "reason": "Best head castings (0630/0700), pre-0331, complete HO system",
+        "common_pull_parts": ["Head", "Intake", "Complete engine"]
+      },
+      {
+        "vehicle": "1997-1999 Jeep Wrangler TJ",
+        "reason": "Direct fit for TJ projects, same accessory layout",
+        "common_pull_parts": ["Complete engine", "Wiring harness"]
+      },
+      {
+        "vehicle": "1993-1998 Jeep Grand Cherokee ZJ",
+        "reason": "Often lower miles, same drivetrain",
+        "common_pull_parts": ["Engine", "Transmission", "Transfer case"]
+      }
+    ],
+    "avoid_as_donors": [
+      {
+        "vehicle": "1999-2001 with 0331 head",
+        "reason": "High likelihood of cracked head"
+      },
+      {
+        "vehicle": "High-mileage fleet vehicles",
+        "reason": "Excessive wear, unknown maintenance history"
+      }
+    ]
+  }
+}

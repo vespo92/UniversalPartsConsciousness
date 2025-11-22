@@ -1,0 +1,800 @@
+{
+  "engine_id": "AMC-4.0L-I6-POWERTECH",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "hand_tools": {
+      "wrenches": {
+        "combination_wrenches_metric": {
+          "sizes_mm": [8, 10, 12, 13, 14, 15, 17, 18, 19, 21, 22, 24],
+          "priority": "essential",
+          "usage": "General fasteners throughout engine"
+        },
+        "combination_wrenches_sae": {
+          "sizes_inches": ["1/4", "5/16", "3/8", "7/16", "1/2", "9/16", "5/8", "11/16", "3/4", "13/16", "7/8", "15/16", "1"],
+          "priority": "essential",
+          "usage": "American-made components, older fasteners"
+        },
+        "flare_nut_wrenches": {
+          "sizes": ["10mm", "13mm", "14mm", "5/8", "11/16"],
+          "priority": "recommended",
+          "usage": "Fuel lines, brake lines, sensor fittings"
+        }
+      },
+      "sockets": {
+        "metric_shallow": {
+          "sizes_mm": [8, 10, 12, 13, 14, 15, 17, 18, 19, 21, 22, 24],
+          "drives": ["3/8", "1/2"],
+          "priority": "essential"
+        },
+        "metric_deep": {
+          "sizes_mm": [10, 12, 13, 14, 15, 17, 18, 19],
+          "drives": ["3/8", "1/2"],
+          "priority": "essential"
+        },
+        "sae_shallow": {
+          "sizes_inches": ["3/8", "7/16", "1/2", "9/16", "5/8", "11/16", "3/4", "13/16", "7/8"],
+          "drives": ["3/8", "1/2"],
+          "priority": "essential"
+        },
+        "sae_deep": {
+          "sizes_inches": ["1/2", "9/16", "5/8", "3/4"],
+          "drives": ["3/8", "1/2"],
+          "priority": "recommended"
+        },
+        "spark_plug_socket": {
+          "size": "13/16 inch (20.6mm)",
+          "type": "Deep with rubber insert",
+          "drive": "3/8",
+          "priority": "essential"
+        }
+      },
+      "ratchets": {
+        "sizes": ["1/4", "3/8", "1/2"],
+        "type": "Fine-tooth (72+)",
+        "priority": "essential",
+        "extensions": ["3 inch", "6 inch", "10 inch"],
+        "u_joints": ["3/8", "1/2"],
+        "flex_handles": ["3/8", "1/2"]
+      },
+      "screwdrivers": {
+        "phillips": ["#1", "#2", "#3"],
+        "flathead": ["3/16", "1/4", "5/16"],
+        "torx": ["T15", "T20", "T25", "T27", "T30", "T40", "T45", "T50"],
+        "priority": "essential"
+      },
+      "hex_keys": {
+        "metric_mm": [3, 4, 5, 6, 8, 10],
+        "sae_inches": ["1/8", "5/32", "3/16", "7/32", "1/4", "5/16"],
+        "priority": "essential"
+      },
+      "pliers": {
+        "types": [
+          "Needle nose",
+          "Slip joint",
+          "Channel lock (10 inch, 16 inch)",
+          "Locking pliers (Vise-Grip)",
+          "Snap ring pliers (internal)",
+          "Snap ring pliers (external)",
+          "Hose clamp pliers"
+        ],
+        "priority": "essential"
+      }
+    },
+
+    "torque_tools": {
+      "torque_wrench_click_type": {
+        "ranges": [
+          {"drive": "3/8", "range_lb_ft": "10-80", "usage": "Valve cover, small fasteners"},
+          {"drive": "1/2", "range_lb_ft": "20-150", "usage": "Head bolts, main caps, rod caps"}
+        ],
+        "priority": "essential",
+        "calibration": "Annually or after dropping"
+      },
+      "torque_wrench_beam_type": {
+        "range_lb_ft": "0-150",
+        "usage": "Backup verification",
+        "priority": "recommended"
+      },
+      "torque_angle_gauge": {
+        "usage": "Torque-to-yield head bolts if used",
+        "priority": "optional"
+      }
+    },
+
+    "specialty_tools": {
+      "engine_specific": {
+        "harmonic_balancer_puller": {
+          "description": "3-jaw puller for crankshaft pulley removal",
+          "part_numbers": {
+            "otc": "4531",
+            "lisle": "54680"
+          },
+          "priority": "essential_for_timing",
+          "rental_available": true
+        },
+        "harmonic_balancer_installer": {
+          "description": "Threaded installer for crankshaft pulley installation",
+          "thread_size": "7/16-20",
+          "priority": "essential_for_timing",
+          "rental_available": true
+        },
+        "camshaft_bearing_tool": {
+          "description": "Driver set for cam bearing installation/removal",
+          "sizes_required_inches": [2.029, 2.019, 2.009, 1.999],
+          "priority": "required_for_rebuild",
+          "rental_available": true
+        },
+        "valve_spring_compressor": {
+          "description": "Compresses valve springs for retainer removal",
+          "types": [
+            {"type": "OHV style", "description": "Works with head on engine"},
+            {"type": "Bench style", "description": "Head removed from engine"}
+          ],
+          "priority": "essential_for_valvetrain",
+          "rental_available": true
+        },
+        "oil_pump_primer": {
+          "description": "Pre-lube tool, drives oil pump without starting engine",
+          "drive": "1/2 inch drill",
+          "priority": "recommended",
+          "diy_alternative": "Cut distributor shaft"
+        },
+        "piston_ring_compressor": {
+          "description": "Compresses rings for piston installation",
+          "bore_size_inches": 3.875,
+          "priority": "essential_for_rebuild"
+        },
+        "piston_ring_expander": {
+          "description": "Safely expands rings for installation on piston",
+          "priority": "recommended"
+        },
+        "ridge_reamer": {
+          "description": "Removes cylinder ridge before piston removal",
+          "bore_range_inches": "3.5-4.25",
+          "priority": "recommended_for_rebuild"
+        },
+        "cylinder_hone": {
+          "description": "Deglazes cylinder walls for new rings",
+          "types": [
+            {"type": "Ball hone (flex-hone)", "grit": 240, "usage": "Light deglazing"},
+            {"type": "3-stone hone", "grit": 220, "usage": "Deeper crosshatch"}
+          ],
+          "priority": "essential_for_rebuild"
+        },
+        "plastigage": {
+          "description": "Measures bearing clearances",
+          "colors": ["Green (0.001-0.003)", "Red (0.002-0.006)"],
+          "priority": "essential_for_rebuild"
+        }
+      },
+
+      "general_automotive": {
+        "engine_hoist": {
+          "capacity_lbs": 2000,
+          "type": "Cherry picker",
+          "priority": "essential_for_removal",
+          "rental_available": true
+        },
+        "engine_stand": {
+          "capacity_lbs": 1000,
+          "mounting": "4-arm universal",
+          "priority": "recommended_for_rebuild",
+          "rental_available": true
+        },
+        "jack_and_stands": {
+          "jack_capacity_tons": 3,
+          "stand_capacity_tons": 3,
+          "quantity_stands": 4,
+          "priority": "essential"
+        },
+        "creeper": {
+          "type": "Padded, low profile",
+          "priority": "recommended"
+        },
+        "fender_covers": {
+          "priority": "recommended",
+          "purpose": "Protect paint during engine work"
+        }
+      },
+
+      "measuring_tools": {
+        "dial_bore_gauge": {
+          "range_inches": "2-6",
+          "resolution_inches": 0.0001,
+          "usage": "Measure cylinder bore wear, taper, out-of-round",
+          "priority": "required_for_rebuild"
+        },
+        "outside_micrometer_set": {
+          "range_inches": "0-4",
+          "resolution_inches": 0.0001,
+          "usage": "Measure crankshaft journals, piston diameter",
+          "priority": "required_for_rebuild"
+        },
+        "inside_micrometer": {
+          "range_inches": "2-3",
+          "usage": "Measure main/rod bearing bores",
+          "priority": "recommended_for_rebuild"
+        },
+        "dial_indicator_with_magnetic_base": {
+          "range_inches": 1,
+          "resolution_inches": 0.001,
+          "usage": "Measure runout, end play",
+          "priority": "recommended"
+        },
+        "feeler_gauges": {
+          "range_inches": "0.002-0.035",
+          "usage": "Measure ring end gap, valve clearance",
+          "priority": "essential"
+        },
+        "straight_edge": {
+          "length_inches": 24,
+          "material": "Precision ground steel",
+          "usage": "Check head/block flatness",
+          "priority": "recommended"
+        },
+        "compression_tester": {
+          "type": "Screw-in with gauge",
+          "thread": "14mm x 1.25",
+          "priority": "essential"
+        },
+        "leak_down_tester": {
+          "usage": "Diagnose ring/valve sealing",
+          "priority": "recommended"
+        }
+      },
+
+      "fluid_handling": {
+        "drain_pans": {
+          "capacity_quarts": [6, 12],
+          "priority": "essential"
+        },
+        "funnel_set": {
+          "priority": "essential"
+        },
+        "coolant_flush_kit": {
+          "priority": "recommended"
+        },
+        "vacuum_oil_extractor": {
+          "priority": "optional",
+          "usage": "Top-side oil changes"
+        }
+      },
+
+      "electrical_diagnostic": {
+        "multimeter": {
+          "functions": ["DC voltage", "AC voltage", "Resistance", "Continuity"],
+          "priority": "essential"
+        },
+        "test_light": {
+          "priority": "essential"
+        },
+        "obd2_scanner": {
+          "type": "Full-function (live data)",
+          "priority": "essential_for_1996_plus",
+          "recommended_models": ["BlueDriver", "Autel MaxiCOM", "Launch CRP123"]
+        },
+        "timing_light": {
+          "type": "Inductive, adjustable advance",
+          "priority": "recommended_for_1991_1999",
+          "usage": "Verify base timing (distributor models)"
+        },
+        "noid_light_set": {
+          "usage": "Test injector pulse",
+          "priority": "recommended"
+        }
+      }
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "description": "Engine oil and filter replacement",
+        "interval": {
+          "miles": 5000,
+          "months": 6,
+          "severe_service_miles": 3000
+        },
+        "difficulty": "beginner",
+        "time_minutes": 30,
+        "tools_required": [
+          {"tool": "15mm socket or wrench", "usage": "Drain plug (some models)"},
+          {"tool": "18mm socket or wrench", "usage": "Drain plug (most models)"},
+          {"tool": "Oil filter wrench", "usage": "Filter removal"},
+          {"tool": "Drain pan (6 qt)", "usage": "Catch oil"},
+          {"tool": "Funnel", "usage": "Add new oil"},
+          {"tool": "Torque wrench 3/8", "usage": "Drain plug torque"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-OIL-FILTER", "quantity": 1},
+          {"part": "Engine oil 5W-30 or 10W-30", "quantity_quarts": 6}
+        ],
+        "torque_specs": {
+          "drain_plug_lb_ft": 25
+        },
+        "procedure_notes": [
+          "Warm engine for 5 minutes before draining",
+          "Replace drain plug washer if damaged",
+          "Hand-tighten filter, then 3/4 turn more",
+          "Check for leaks after starting"
+        ]
+      },
+
+      "spark_plug_replacement": {
+        "description": "Replace all 6 spark plugs",
+        "interval": {
+          "miles": 30000,
+          "platinum_miles": 60000,
+          "iridium_miles": 100000
+        },
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools_required": [
+          {"tool": "13/16 inch spark plug socket", "usage": "Plug removal/install"},
+          {"tool": "3/8 ratchet with 6 inch extension", "usage": "Access rear plugs"},
+          {"tool": "Gap gauge", "usage": "Verify plug gap"},
+          {"tool": "Torque wrench 3/8", "usage": "Final torque"},
+          {"tool": "Anti-seize compound", "usage": "Thread protection"},
+          {"tool": "Dielectric grease", "usage": "Boot protection"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-SPARK-PLUGS", "quantity": 6}
+        ],
+        "torque_specs": {
+          "spark_plug_lb_ft": 27
+        },
+        "procedure_notes": [
+          "Gap new plugs to 0.035 inch",
+          "Remove plugs when engine is COLD",
+          "Apply thin coat of anti-seize to threads",
+          "Hand-thread plugs first to avoid cross-threading",
+          "Inspect old plugs for diagnosis"
+        ]
+      },
+
+      "coolant_flush": {
+        "description": "Drain and refill cooling system",
+        "interval": {
+          "miles": 60000,
+          "years": 5
+        },
+        "difficulty": "intermediate",
+        "time_minutes": 90,
+        "tools_required": [
+          {"tool": "Large drain pan (3 gal)", "usage": "Catch coolant"},
+          {"tool": "10mm socket", "usage": "Hose clamps"},
+          {"tool": "Pliers", "usage": "Spring clamps"},
+          {"tool": "Funnel", "usage": "Refill"},
+          {"tool": "Spill-free funnel (optional)", "usage": "No-mess fill"}
+        ],
+        "parts_required": [
+          {"part": "HOAT coolant concentrate", "quantity_gallons": 2},
+          {"part": "Distilled water", "quantity_gallons": 2},
+          {"part_id": "AMC-40-THERMOSTAT", "quantity": 1, "optional": true}
+        ],
+        "procedure_notes": [
+          "Open radiator drain AND block drain for complete drain",
+          "Block drain plug is on driver side of block",
+          "Use 50/50 coolant mix",
+          "Bleed air from system - leave cap off, run engine until thermostat opens",
+          "Check level after driving and cooling"
+        ]
+      },
+
+      "valve_cover_gasket": {
+        "description": "Replace leaking valve cover gasket",
+        "interval": "As needed (oil leaks)",
+        "difficulty": "beginner",
+        "time_minutes": 60,
+        "tools_required": [
+          {"tool": "10mm socket", "usage": "Valve cover bolts"},
+          {"tool": "Flathead screwdriver", "usage": "Break gasket seal"},
+          {"tool": "Plastic scraper", "usage": "Remove old gasket"},
+          {"tool": "Brake cleaner", "usage": "Clean surfaces"},
+          {"tool": "Torque wrench 3/8", "usage": "Final torque"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-VC-GASKET", "quantity": 1},
+          {"part": "RTV silicone (black)", "usage": "Corner sealing"}
+        ],
+        "torque_specs": {
+          "valve_cover_bolts_lb_in": 85
+        },
+        "procedure_notes": [
+          "Remove all accessories blocking access",
+          "Do NOT pry against head surface",
+          "Clean both surfaces thoroughly",
+          "Apply small dab of RTV at corners only",
+          "Torque in crisscross pattern"
+        ]
+      }
+    },
+
+    "repairs": {
+      "water_pump_replacement": {
+        "description": "Replace failed water pump",
+        "symptoms": ["Coolant leak at weep hole", "Bearing noise", "Overheating"],
+        "difficulty": "intermediate",
+        "time_hours": 2,
+        "tools_required": [
+          {"tool": "Serpentine belt tool", "usage": "Release tensioner"},
+          {"tool": "13mm socket", "usage": "Water pump bolts"},
+          {"tool": "10mm socket", "usage": "Fan shroud"},
+          {"tool": "32mm wrench or fan clutch tool", "usage": "Fan clutch removal"},
+          {"tool": "Drain pan", "usage": "Catch coolant"},
+          {"tool": "Plastic scraper", "usage": "Gasket removal"},
+          {"tool": "Torque wrench 3/8", "usage": "Final torque"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-WATER-PUMP", "quantity": 1},
+          {"part": "Water pump gasket", "quantity": 1},
+          {"part": "Coolant", "quantity_quarts": 2},
+          {"part": "Thread sealant", "quantity": 1}
+        ],
+        "torque_specs": {
+          "water_pump_bolts_lb_ft": 22
+        },
+        "procedure_notes": [
+          "Mark belt routing before removal",
+          "Fan clutch is REVERSE thread (turn clockwise to loosen)",
+          "Apply thread sealant to bolts that enter water jackets",
+          "Fill cooling system and bleed air",
+          "Check for leaks at operating temperature"
+        ]
+      },
+
+      "thermostat_replacement": {
+        "description": "Replace stuck thermostat",
+        "symptoms": ["Overheating", "No heat from heater", "Temperature gauge erratic"],
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools_required": [
+          {"tool": "10mm socket", "usage": "Hose clamps"},
+          {"tool": "13mm socket", "usage": "Housing bolts"},
+          {"tool": "Drain pan", "usage": "Catch coolant"},
+          {"tool": "Plastic scraper", "usage": "Clean surfaces"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-THERMOSTAT", "quantity": 1},
+          {"part": "Thermostat gasket or O-ring", "quantity": 1},
+          {"part": "Coolant", "quantity_quarts": 1}
+        ],
+        "procedure_notes": [
+          "Thermostat spring goes DOWN (toward engine)",
+          "Jiggle valve faces UP for air bleeding",
+          "Test old thermostat in boiling water to confirm failure"
+        ]
+      },
+
+      "distributor_replacement_1991_1999": {
+        "description": "Replace distributor assembly",
+        "applies_to": "1991-1999 only",
+        "difficulty": "intermediate",
+        "time_hours": 1,
+        "tools_required": [
+          {"tool": "10mm socket", "usage": "Distributor cap screws"},
+          {"tool": "13mm socket", "usage": "Hold-down bolt"},
+          {"tool": "Paint marker", "usage": "Mark position"},
+          {"tool": "Timing light", "usage": "Verify timing"},
+          {"tool": "Flathead screwdriver", "usage": "Rotor removal"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-DISTRIBUTOR", "quantity": 1},
+          {"part": "Distributor cap", "quantity": 1},
+          {"part": "Rotor", "quantity": 1}
+        ],
+        "procedure_notes": [
+          "Mark distributor body position on block BEFORE removal",
+          "Mark rotor position relative to cap",
+          "Note wire positions on old cap",
+          "Engine should be at TDC #1 cylinder",
+          "Verify base timing after installation (12-14° BTDC)"
+        ]
+      },
+
+      "exhaust_manifold_replacement": {
+        "description": "Replace cracked exhaust manifold",
+        "symptoms": ["Exhaust leak sound", "Visible crack", "CEL for O2 sensor"],
+        "difficulty": "intermediate",
+        "time_hours": 3,
+        "tools_required": [
+          {"tool": "13mm deep socket", "usage": "Manifold nuts"},
+          {"tool": "15mm socket", "usage": "Manifold bolts"},
+          {"tool": "O2 sensor socket (22mm)", "usage": "O2 sensor removal"},
+          {"tool": "Penetrating oil (PB Blaster)", "usage": "Loosen seized hardware"},
+          {"tool": "Stud extractor set", "usage": "Broken stud removal"},
+          {"tool": "Propane torch", "usage": "Heat seized fasteners"},
+          {"tool": "Torque wrench 1/2", "usage": "Final torque"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-EXHAUST-MANIFOLD", "quantity": 1},
+          {"part_id": "AMC-40-EXH-GASKET", "quantity": 1},
+          {"part": "New manifold studs/bolts", "quantity": 12},
+          {"part": "Copper anti-seize", "quantity": 1}
+        ],
+        "torque_specs": {
+          "manifold_nuts_lb_ft": 23
+        },
+        "procedure_notes": [
+          "Soak all fasteners with penetrating oil 24 hours before",
+          "Heat individual studs if stuck",
+          "Expect to break studs - have extraction tools ready",
+          "Apply anti-seize to new studs for future service",
+          "Torque in center-out pattern"
+        ]
+      },
+
+      "head_gasket_replacement": {
+        "description": "Replace blown head gasket (major repair)",
+        "symptoms": ["Coolant in oil (milky)", "Oil in coolant", "Overheating", "White exhaust smoke"],
+        "difficulty": "advanced",
+        "time_hours": 10,
+        "tools_required": [
+          {"tool": "Complete socket set (metric/SAE)", "usage": "Various fasteners"},
+          {"tool": "Torque wrench 1/2 (ft-lb)", "usage": "Head bolt torque"},
+          {"tool": "Breaker bar 1/2", "usage": "Head bolt removal"},
+          {"tool": "Engine hoist", "usage": "If removing head completely"},
+          {"tool": "Straight edge 24 inch", "usage": "Check flatness"},
+          {"tool": "Feeler gauge set", "usage": "Measure warpage"},
+          {"tool": "Plastic scraper", "usage": "Gasket removal"},
+          {"tool": "Brass brush", "usage": "Clean bolt holes"},
+          {"tool": "Thread chaser", "usage": "Clean bolt threads"},
+          {"tool": "Shop vacuum", "usage": "Clean debris from cylinders"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-HEAD-GASKET", "quantity": 1},
+          {"part": "Head bolt set (ARP recommended)", "quantity": 1},
+          {"part": "Intake manifold gasket", "quantity": 1},
+          {"part": "Exhaust manifold gasket", "quantity": 1},
+          {"part": "Valve cover gasket", "quantity": 1},
+          {"part": "Thermostat gasket", "quantity": 1},
+          {"part": "Engine oil", "quantity_quarts": 6},
+          {"part": "Coolant", "quantity_gallons": 2}
+        ],
+        "torque_specs": {
+          "head_bolts_lb_ft": 110,
+          "sequence": "Center-out, 3 passes (40, 80, 110 lb-ft)"
+        },
+        "procedure_notes": [
+          "CRITICAL: Check head for cracks before reinstalling",
+          "Check head flatness - max 0.004 inch across surface",
+          "Send head to machine shop if warped",
+          "Clean all bolt holes thoroughly",
+          "Lightly oil head bolt threads and under-head surface",
+          "Follow EXACT torque sequence",
+          "Verify 0331 casting number - replace if found"
+        ]
+      },
+
+      "timing_chain_replacement": {
+        "description": "Replace worn timing chain and gears",
+        "symptoms": ["Timing chain rattle", "Poor performance", "Excessive chain slack"],
+        "difficulty": "advanced",
+        "time_hours": 6,
+        "tools_required": [
+          {"tool": "Harmonic balancer puller", "usage": "Remove crank pulley"},
+          {"tool": "Harmonic balancer installer", "usage": "Install crank pulley"},
+          {"tool": "Timing cover seal driver", "usage": "Install front seal"},
+          {"tool": "Plastic scraper", "usage": "Gasket removal"},
+          {"tool": "Torque wrench set", "usage": "Multiple torques"},
+          {"tool": "RTV silicone", "usage": "Timing cover sealing"},
+          {"tool": "Dial indicator", "usage": "Check TDC"}
+        ],
+        "parts_required": [
+          {"part_id": "AMC-40-TIMING-SET", "quantity": 1},
+          {"part_id": "AMC-40-FRONT-SEAL", "quantity": 1},
+          {"part": "Timing cover gasket", "quantity": 1},
+          {"part": "Oil pan gasket (front section)", "quantity": 1}
+        ],
+        "procedure_notes": [
+          "Set engine to TDC #1 compression before removal",
+          "Mark timing marks on old chain/gears",
+          "Align timing marks on new gears",
+          "Check chain deflection - max 1/2 inch",
+          "Apply RTV at timing cover-to-oil pan junction",
+          "Upgrade to double-roller chain recommended"
+        ]
+      }
+    },
+
+    "engine_rebuild": {
+      "complete_rebuild": {
+        "description": "Full engine disassembly, inspection, and reassembly",
+        "difficulty": "expert",
+        "time_hours": 40,
+        "prerequisite_knowledge": [
+          "All maintenance and repair procedures",
+          "Precision measurement techniques",
+          "Engine theory and operation"
+        ],
+        "tools_required": [
+          {"category": "All hand tools", "required": true},
+          {"category": "All torque tools", "required": true},
+          {"tool": "Engine hoist", "usage": "Remove/install engine"},
+          {"tool": "Engine stand", "usage": "Work on engine"},
+          {"tool": "Dial bore gauge", "usage": "Measure cylinder wear"},
+          {"tool": "Outside micrometers (0-4 inch)", "usage": "Measure journals"},
+          {"tool": "Plastigage", "usage": "Check bearing clearances"},
+          {"tool": "Piston ring compressor", "usage": "Install pistons"},
+          {"tool": "Ridge reamer", "usage": "Remove cylinder ridge"},
+          {"tool": "Cylinder hone", "usage": "Deglaze cylinders"},
+          {"tool": "Camshaft bearing tool", "usage": "Replace cam bearings"},
+          {"tool": "Valve spring compressor", "usage": "Valvetrain work"},
+          {"tool": "Valve seat cutter set", "usage": "Resurface seats (if doing in-house)"},
+          {"tool": "Assembly lube", "usage": "Initial lubrication"},
+          {"tool": "Engine paint", "usage": "Refinish block (optional)"}
+        ],
+        "machine_shop_services": [
+          {"service": "Hot tank cleaning", "typical_cost_usd": 75},
+          {"service": "Magnaflux crack check (block and head)", "typical_cost_usd": 100},
+          {"service": "Cylinder boring and honing", "typical_cost_usd": 200},
+          {"service": "Crankshaft grinding", "typical_cost_usd": 150},
+          {"service": "Head resurfacing", "typical_cost_usd": 75},
+          {"service": "Valve job (seats and guides)", "typical_cost_usd": 300},
+          {"service": "Line boring main saddles (if needed)", "typical_cost_usd": 200},
+          {"service": "Balancing rotating assembly", "typical_cost_usd": 200}
+        ],
+        "rebuild_kit_contents": {
+          "standard_kit": [
+            "Piston and ring set",
+            "Main bearing set",
+            "Rod bearing set",
+            "Camshaft bearing set",
+            "Timing chain set",
+            "Full gasket set",
+            "Freeze plugs",
+            "Oil pump"
+          ],
+          "premium_kit_additions": [
+            "Camshaft",
+            "Lifter set",
+            "Timing cover seal",
+            "Rear main seal",
+            "Valve seals",
+            "ARP head bolts",
+            "ARP rod bolts"
+          ]
+        },
+        "critical_measurements": [
+          {
+            "measurement": "Cylinder bore diameter",
+            "specification_inches": 3.875,
+            "max_wear_inches": 0.005,
+            "action_if_exceeded": "Bore and hone to next oversize"
+          },
+          {
+            "measurement": "Cylinder out-of-round",
+            "max_inches": 0.001,
+            "action_if_exceeded": "Bore and hone"
+          },
+          {
+            "measurement": "Cylinder taper",
+            "max_inches": 0.001,
+            "action_if_exceeded": "Bore and hone"
+          },
+          {
+            "measurement": "Main journal diameter",
+            "specification_inches": 2.4996,
+            "min_inches": 2.4986,
+            "action_if_below": "Grind crankshaft"
+          },
+          {
+            "measurement": "Rod journal diameter",
+            "specification_inches": 2.0934,
+            "min_inches": 2.0924,
+            "action_if_below": "Grind crankshaft"
+          },
+          {
+            "measurement": "Crankshaft runout",
+            "max_inches": 0.002,
+            "action_if_exceeded": "Straighten or replace"
+          },
+          {
+            "measurement": "Main bearing clearance",
+            "specification_inches": "0.001-0.0025",
+            "method": "Plastigage"
+          },
+          {
+            "measurement": "Rod bearing clearance",
+            "specification_inches": "0.001-0.0025",
+            "method": "Plastigage"
+          },
+          {
+            "measurement": "Crankshaft end play",
+            "specification_inches": "0.0015-0.0065"
+          },
+          {
+            "measurement": "Connecting rod side clearance",
+            "specification_inches": "0.010-0.019"
+          },
+          {
+            "measurement": "Piston ring end gap",
+            "specification_inches": "0.010-0.020"
+          },
+          {
+            "measurement": "Head flatness",
+            "max_deviation_inches": 0.004,
+            "action_if_exceeded": "Resurface head"
+          }
+        ],
+        "assembly_lubrication": {
+          "main_bearings": "Assembly lube",
+          "rod_bearings": "Assembly lube",
+          "cam_bearings": "Assembly lube",
+          "piston_rings": "Engine oil",
+          "cylinder_walls": "Engine oil",
+          "cam_lobes": "Moly assembly lube (CRITICAL)",
+          "lifters": "Moly assembly lube"
+        }
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "compression_test": {
+      "description": "Measure cylinder sealing capability",
+      "tools_required": ["Compression tester", "Spark plug socket"],
+      "procedure": [
+        "Warm engine to operating temperature",
+        "Remove all spark plugs",
+        "Disable fuel system (pull fuel pump fuse)",
+        "Disable ignition (disconnect coil)",
+        "Install tester in cylinder #1",
+        "Crank engine 5-7 revolutions",
+        "Record reading",
+        "Repeat for all cylinders"
+      ],
+      "specifications": {
+        "minimum_psi": 120,
+        "maximum_variation_psi": 15,
+        "rebuild_threshold_psi": 100
+      },
+      "diagnosis": {
+        "low_all_cylinders": "Worn rings or cylinders",
+        "low_adjacent_cylinders": "Head gasket failure",
+        "low_one_cylinder": "Valve or ring issue - perform wet test"
+      }
+    },
+    "wet_test": {
+      "description": "Determine if low compression is rings or valves",
+      "procedure": [
+        "Squirt 1 tablespoon oil into low cylinder",
+        "Repeat compression test",
+        "If pressure increases 15+ psi: rings are worn",
+        "If pressure stays same: valve issue"
+      ]
+    },
+    "leak_down_test": {
+      "description": "Pinpoint location of compression loss",
+      "tools_required": ["Leak-down tester", "Air compressor"],
+      "specifications": {
+        "acceptable_leakage_percent": 10,
+        "concern_threshold_percent": 20,
+        "rebuild_threshold_percent": 30
+      },
+      "diagnosis": {
+        "air_at_tailpipe": "Exhaust valve leak",
+        "air_at_throttle_body": "Intake valve leak",
+        "air_at_oil_filler": "Ring blowby",
+        "air_at_radiator": "Head gasket leak"
+      }
+    },
+    "oil_pressure_test": {
+      "description": "Verify lubrication system function",
+      "tools_required": ["Mechanical oil pressure gauge"],
+      "specifications": {
+        "cold_idle_psi": 35,
+        "hot_idle_min_psi": 13,
+        "hot_2000rpm_psi": 40,
+        "relief_pressure_psi": 75
+      },
+      "diagnosis": {
+        "low_hot_idle": "Worn bearings or oil pump",
+        "no_pressure": "Oil pump failure or pickup blocked",
+        "erratic_pressure": "Low oil level or pickup loose"
+      }
+    }
+  }
+}
