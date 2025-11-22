@@ -1,0 +1,216 @@
+{
+  "engine_id": "TOYOTA-2JZ-GE-3.0L-I6-NA",
+  "common_names": [
+    "2JZ-GE",
+    "2JZ NA",
+    "IS300 Engine",
+    "GS300 Engine",
+    "Non-Turbo 2JZ"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota JZ",
+  "production_years": "1991-2007",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.997,
+      "cubic_inches": 182.9,
+      "cc": 2997
+    },
+    "bore": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "stroke": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "compression_ratio": "10.5:1 (non-VVTi) / 10.0:1 (VVTi)",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (timing belt end)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), VVTi on later models",
+    "fuel_system": {
+      "type": "Sequential Multi-port Fuel Injection (SFI)",
+      "fuel_pressure_bar": 3.0,
+      "injector_type": "Top-feed 315cc"
+    },
+    "ignition_system": "Distributorless ignition (DIS) / Coil-on-plug (VVTi)"
+  },
+
+  "power_output_by_year": {
+    "1991_1997_non_vvti": {
+      "horsepower": 220,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 210,
+      "torque_rpm": 4800,
+      "notes": "Initial production, no variable valve timing"
+    },
+    "1998_2005_vvti_us_gs300": {
+      "horsepower": 220,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 220,
+      "torque_rpm": 3800,
+      "notes": "US market Lexus GS300 with VVTi"
+    },
+    "2001_2005_is300": {
+      "horsepower": 215,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 218,
+      "torque_rpm": 3800,
+      "notes": "Lexus IS300 / Toyota Altezza AS300"
+    },
+    "1997_2004_jdm_vvti": {
+      "horsepower": 230,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 221,
+      "torque_rpm": 4000,
+      "notes": "JDM spec with higher output"
+    }
+  },
+
+  "vehicle_applications": {
+    "a80_supra_na": {
+      "years": "1993-1998",
+      "chassis_code": "JZA80",
+      "notes": "MK4 Supra non-turbo"
+    },
+    "jzs147_aristo": {
+      "years": "1991-1997",
+      "chassis_code": "JZS147",
+      "notes": "Toyota Aristo 3.0Q (JDM)"
+    },
+    "jzs160_aristo": {
+      "years": "1997-2004",
+      "chassis_code": "JZS160",
+      "notes": "Toyota Aristo 2nd gen NA (JDM)"
+    },
+    "jzs160_gs300": {
+      "years": "1998-2005",
+      "chassis_code": "JZS160",
+      "notes": "Lexus GS300"
+    },
+    "sxe10_is300_altezza": {
+      "years": "2001-2005",
+      "chassis_code": "JCE10/SXE10",
+      "notes": "Lexus IS300 (US) / Toyota Altezza AS300 (JDM)"
+    },
+    "jzx100_chaser_cresta_mark2": {
+      "years": "1996-2001",
+      "chassis_code": "JZX100",
+      "notes": "Toyota Chaser/Cresta/Mark II with NA option (JDM)"
+    },
+    "jzx110_mark2": {
+      "years": "2000-2004",
+      "chassis_code": "JZX110",
+      "notes": "Toyota Mark II (JDM)"
+    },
+    "jzs171_crown_athlete": {
+      "years": "1999-2003",
+      "chassis_code": "JZS171",
+      "notes": "Toyota Crown Athlete (JDM)"
+    },
+    "jzz30_soarer": {
+      "years": "1991-2000",
+      "chassis_code": "JZZ30",
+      "notes": "Toyota Soarer 3.0 (JDM)"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.7,
+      "capacity_liters": 5.4,
+      "with_filter": true,
+      "recommended_viscosity": ["5W-30", "10W-30"],
+      "approved_oils": ["Toyota Genuine 5W-30", "Mobil 1", "Castrol GTX"]
+    },
+    "coolant": {
+      "capacity_quarts": 9.5,
+      "capacity_liters": 9.0,
+      "type": "Toyota Super Long Life Coolant (red)"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 220.0,
+    "main_bearing_journal_diameter_mm": 62.0,
+    "rod_bearing_journal_diameter_mm": 52.0,
+    "cylinder_bore_diameter_mm": 86.0,
+    "connecting_rod_length_mm": 142.0,
+    "crankshaft_stroke_mm": 86.0,
+    "valve_lift_mm": {
+      "intake": 8.25,
+      "exhaust": 7.8
+    }
+  },
+
+  "key_differences_from_gte": {
+    "pistons": "Higher compression (10.5:1 vs 8.5:1)",
+    "cylinder_head": "Different combustion chamber, smaller valves (intake 33mm vs 33mm same, exhaust 27.5mm vs 29mm)",
+    "oil_squirters": "NOT present on GE block (can be retrofitted)",
+    "turbo_provisions": "No oil/coolant turbo fittings",
+    "fuel_system": "Lower flow injectors (315cc vs 440cc)",
+    "ecu": "Different engine management, no boost control"
+  },
+
+  "turbo_conversion_notes": {
+    "block_compatibility": "GE block is IDENTICAL to GTE - same cast iron construction",
+    "head_differences": "GE head has smaller exhaust valves, higher compression",
+    "conversion_options": {
+      "option_1_keep_ge_head": {
+        "description": "Boost GE head with lower boost levels",
+        "max_safe_boost_psi": "8-10",
+        "max_power_hp": "350-400",
+        "notes": "Must lower compression with thicker head gasket or custom pistons"
+      },
+      "option_2_gte_head_swap": {
+        "description": "Swap to GTE head for proper turbo setup",
+        "max_power_hp": "Same as GTE (800+ on stock internals)",
+        "additional_parts_needed": ["GTE head", "GTE exhaust manifold", "GTE intake manifold", "GTE ECU or standalone"],
+        "notes": "Most common conversion path"
+      },
+      "option_3_na_t_conversion": {
+        "description": "Add turbo to GE with supporting mods",
+        "parts_needed": ["Turbo manifold", "Turbo", "Intercooler", "Fuel system upgrade", "ECU tune"],
+        "notes": "Popular budget build option"
+      }
+    },
+    "required_for_any_turbo_conversion": [
+      "Lower compression (custom pistons or thicker head gasket)",
+      "Upgraded fuel system (550cc+ injectors, Walbro pump)",
+      "Standalone ECU or GTE ECU swap",
+      "Oil feed and return lines",
+      "Intercooler and piping"
+    ]
+  },
+
+  "notes": {
+    "heritage": "The naturally aspirated variant of Toyota's legendary JZ engine family. Shares the same robust iron block as the 2JZ-GTE, making it an excellent candidate for turbo conversions.",
+    "reputation": "Smooth, reliable, and understressed. The 2JZ-GE is known for extreme reliability and longevity, often exceeding 300,000 miles with basic maintenance. Popular as a budget turbo platform.",
+    "common_issues": [
+      "VVTi gear rattle on early models (TSB available)",
+      "Timing belt maintenance critical",
+      "Oil leaks from valve cover and cam seals",
+      "Throttle position sensor wear",
+      "MAF sensor failure"
+    ],
+    "strengths": [
+      "Same bulletproof iron block as GTE",
+      "Excellent reliability and longevity",
+      "Smooth inline-6 power delivery",
+      "Lower cost than GTE for turbo conversion base",
+      "Widely available in US (IS300, GS300)",
+      "Simple maintenance"
+    ],
+    "maintenance_critical": [
+      "Timing belt and tensioner every 60,000 miles",
+      "Water pump replacement with timing belt",
+      "Spark plugs every 30,000 miles",
+      "Oil changes every 5,000 miles"
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "manufacturer_id": "TOYOTA",
+  "full_name": "Toyota Motor Corporation",
+  "founded": 1937,
+  "headquarters": "Toyota City, Aichi, Japan",
+  "overview_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "company_history": {
+    "founding": "Toyota Motor Corporation was founded by Kiichiro Toyoda in 1937 as a spinoff from his father's company, Toyota Industries.",
+    "name_origin": "The name was changed from 'Toyoda' to 'Toyota' because it takes 8 brush strokes to write in Japanese, which is considered lucky.",
+    "first_vehicle": "1936 Toyota AA sedan",
+    "us_market_entry": "1957 with the Toyota Crown",
+    "major_milestones": [
+      "1966: Corolla introduced - becomes best-selling car ever",
+      "1967: 2000GT sports car establishes performance credibility",
+      "1979: First Toyota pickup sold in USA",
+      "1984: NUMMI joint venture with GM begins",
+      "1989: Lexus brand launched",
+      "1997: First Prius hybrid introduced",
+      "2002: Formula 1 entry",
+      "2020: World's largest automaker by production volume"
+    ]
+  },
+
+  "engine_families": {
+    "a_series": {
+      "description": "Small displacement inline-4 engines",
+      "production_years": "1978-present",
+      "notable_engines": ["4A-GE", "4A-FE", "1AZ-FE", "2AZ-FE"],
+      "displacement_range": "1.3L - 2.4L",
+      "highlights": "4A-GE is legendary high-revving engine from AE86"
+    },
+    "s_series": {
+      "description": "Mid-size inline-4 engines",
+      "production_years": "1982-2007",
+      "notable_engines": ["3S-GE", "3S-GTE", "5S-FE"],
+      "displacement_range": "1.8L - 2.2L",
+      "highlights": "3S-GTE won multiple WRC championships"
+    },
+    "m_series": {
+      "description": "Inline-6 engines (predecessor to JZ)",
+      "production_years": "1965-1992",
+      "notable_engines": ["5M-GE", "7M-GE", "7M-GTE"],
+      "displacement_range": "2.0L - 3.0L",
+      "highlights": "Powered MK2 and MK3 Supra"
+    },
+    "jz_series": {
+      "description": "Modern inline-6 engines",
+      "production_years": "1990-2007",
+      "notable_engines": ["1JZ-GTE", "2JZ-GE", "2JZ-GTE"],
+      "displacement_range": "2.5L - 3.0L",
+      "highlights": "2JZ-GTE is one of the most legendary engines ever made"
+    },
+    "uz_series": {
+      "description": "DOHC V8 engines",
+      "production_years": "1989-2012",
+      "notable_engines": ["1UZ-FE", "2UZ-FE", "3UZ-FE"],
+      "displacement_range": "4.0L - 4.7L",
+      "highlights": "Launched Lexus brand, legendary reliability"
+    },
+    "gr_series": {
+      "description": "Modern V6 engines",
+      "production_years": "2002-present",
+      "notable_engines": ["1GR-FE", "2GR-FE", "2GR-FSE"],
+      "displacement_range": "3.5L - 4.0L",
+      "highlights": "Powers Lotus Evora, modern Camry/Lexus"
+    },
+    "r_series": {
+      "description": "Truck inline-4 engines",
+      "production_years": "1953-2004",
+      "notable_engines": ["20R", "22R", "22R-E", "22R-TE"],
+      "displacement_range": "1.5L - 2.4L",
+      "highlights": "22R-E legendary truck reliability"
+    },
+    "dynamic_force": {
+      "description": "Latest generation high-efficiency engines",
+      "production_years": "2017-present",
+      "notable_engines": ["A25A-FKS", "M20A-FKS", "G16E-GTS"],
+      "highlights": "G16E-GTS is world's most powerful 3-cylinder"
+    }
+  },
+
+  "iconic_engines_summary": [
+    {
+      "engine": "2JZ-GTE",
+      "fame": "Most legendary tuner engine",
+      "power_potential": "1000+ HP on stock block",
+      "vehicles": ["MK4 Supra", "Aristo"]
+    },
+    {
+      "engine": "4A-GE",
+      "fame": "AE86 drift legend, Initial D",
+      "power_potential": "200+ HP NA",
+      "vehicles": ["AE86 Corolla", "MR2"]
+    },
+    {
+      "engine": "3S-GTE",
+      "fame": "WRC championship winning engine",
+      "power_potential": "400+ HP on stock internals",
+      "vehicles": ["Celica GT-Four", "MR2 Turbo"]
+    },
+    {
+      "engine": "1UZ-FE",
+      "fame": "Launched Lexus, legendary V8",
+      "power_potential": "500+ HP supercharged",
+      "vehicles": ["LS400", "SC400"]
+    },
+    {
+      "engine": "22R-E",
+      "fame": "Million mile reliability",
+      "power_potential": "200+ HP turbo",
+      "vehicles": ["Toyota Pickup", "4Runner"]
+    },
+    {
+      "engine": "G16E-GTS",
+      "fame": "Most powerful 3-cylinder ever",
+      "power_potential": "400+ HP tuned",
+      "vehicles": ["GR Yaris", "GR Corolla"]
+    }
+  ],
+
+  "motorsport_heritage": {
+    "wrc": {
+      "championships": [
+        "1990 Drivers (Carlos Sainz)",
+        "1992 Constructors",
+        "1993 Constructors",
+        "1994 Constructors",
+        "2021-2023 Constructors (GR Yaris based)"
+      ],
+      "notable_cars": ["Celica GT-Four ST185/ST205", "Yaris WRC", "GR Yaris Rally1"]
+    },
+    "le_mans": {
+      "wins": ["2018", "2019", "2020", "2021", "2022", "2023"],
+      "cars": ["TS050 Hybrid", "GR010 Hybrid"]
+    },
+    "nascar": {
+      "championships": "Multiple manufacturer championships",
+      "cars": ["Camry", "Supra"]
+    },
+    "drift": {
+      "cultural_impact": "AE86 and JZA80 Supra are drift culture icons",
+      "formula_drift": "Multiple championship winning Supras"
+    },
+    "gazoo_racing": {
+      "founded": 2007,
+      "philosophy": "Making ever-better cars through motorsport",
+      "gr_lineup": ["GR Supra", "GR86", "GR Yaris", "GR Corolla"]
+    }
+  },
+
+  "production_philosophy": {
+    "toyota_production_system": {
+      "description": "Revolutionary manufacturing system",
+      "principles": [
+        "Just-in-Time manufacturing",
+        "Jidoka (automation with human touch)",
+        "Kaizen (continuous improvement)",
+        "Respect for people"
+      ],
+      "impact": "Became template for lean manufacturing worldwide"
+    },
+    "quality_focus": {
+      "description": "Relentless focus on reliability and quality",
+      "examples": [
+        "2JZ engine runs 300,000+ miles regularly",
+        "22R-E 'million mile engine' reputation",
+        "1UZ-FE V8 exceptional longevity"
+      ]
+    }
+  },
+
+  "engines_in_this_database": [
+    {
+      "engine_id": "TOYOTA-2JZ-GTE-3.0L-I6",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-2JZ-GE-3.0L-I6",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-1JZ-GTE-2.5L-I6",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-4A-GE-1.6L-I4",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-3S-GTE-2.0L-I4",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-1UZ-FE-4.0L-V8",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-2GR-FE-3.5L-V6",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-G16E-GTS-1.6L-I3",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-7M-GTE-3.0L-I6",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-1GR-FE-4.0L-V6",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-22R-E-2.4L-I4",
+      "status": "Complete documentation"
+    },
+    {
+      "engine_id": "TOYOTA-5M-GE-2.8L-I6",
+      "status": "Complete documentation"
+    }
+  ]
+}

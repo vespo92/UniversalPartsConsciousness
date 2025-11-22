@@ -1,0 +1,262 @@
+{
+  "engine_id": "TOYOTA-4A-GE-1.6L-I4-NA",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "generation_interchangeability": {
+    "16v_generations": {
+      "gen1_bigport": {
+        "years": "1983-1987",
+        "head_type": "Large port",
+        "valve_count": 16,
+        "cam_covers": "Blue"
+      },
+      "gen2_smallport": {
+        "years": "1987-1991",
+        "head_type": "Small port",
+        "valve_count": 16,
+        "cam_covers": "Red/Orange"
+      },
+      "gen3_revised": {
+        "years": "1991-1995",
+        "head_type": "Small port revised",
+        "valve_count": 16,
+        "cam_covers": "Red"
+      },
+      "interchangeability_16v": {
+        "blocks": "All 16V blocks are identical",
+        "heads": "Can swap between generations with intake/exhaust modifications",
+        "pistons": "Interchangeable within 16V (check compression ratio)",
+        "crankshaft": "Identical across all 16V generations",
+        "connecting_rods": "Identical across all 16V generations"
+      }
+    },
+    "20v_generations": {
+      "gen4_silvertop": {
+        "years": "1991-1995",
+        "head_type": "20V ITB",
+        "valve_count": 20,
+        "cam_covers": "Silver"
+      },
+      "gen5_blacktop": {
+        "years": "1995-2002",
+        "head_type": "20V ITB with VVT",
+        "valve_count": 20,
+        "cam_covers": "Black"
+      },
+      "interchangeability_20v": {
+        "blocks": "20V blocks slightly different from 16V (oil passages)",
+        "heads": "Silvertop and Blacktop heads different (VVT)",
+        "pistons": "20V pistons NOT interchangeable with 16V (valve reliefs)",
+        "crankshaft": "Same as 16V",
+        "connecting_rods": "Same as 16V"
+      }
+    },
+    "16v_to_20v_swap": {
+      "description": "Swapping 20V head onto 16V block",
+      "feasibility": "Common and well documented",
+      "considerations": [
+        "Different oil passages - may need block drilling",
+        "Different pistons needed (20V valve reliefs)",
+        "Different intake manifold (ITBs)",
+        "Different exhaust manifold",
+        "Different wiring harness",
+        "Different ECU required"
+      ],
+      "common_approach": "Complete 20V engine swap preferred over head swap"
+    }
+  },
+
+  "parts_interchangeability": {
+    "block_components": {
+      "engine_block": {
+        "16v_all_gens": "Fully interchangeable",
+        "20v_to_16v": "Similar but different oil passages",
+        "notes": "16V more commonly available"
+      },
+      "crankshaft": {
+        "all_generations": "IDENTICAL across all 4A-GE variants",
+        "notes": "Same stroke, same journals"
+      },
+      "connecting_rods": {
+        "all_generations": "IDENTICAL across all variants",
+        "aftermarket": "Widely available (Eagle, Manley, BC)"
+      },
+      "pistons": {
+        "16v_all_gens": "Interchangeable (check compression ratio)",
+        "20v": "NOT interchangeable with 16V (different valve reliefs)",
+        "notes": "20V pistons have 5-valve relief pattern"
+      },
+      "main_bearings": {
+        "all_generations": "IDENTICAL"
+      },
+      "rod_bearings": {
+        "all_generations": "IDENTICAL"
+      }
+    },
+    "head_components": {
+      "16v_bigport_to_smallport": {
+        "interchangeable": "Physically yes",
+        "considerations": [
+          "Different intake ports (affects power curve)",
+          "Different intake manifold bolt pattern",
+          "Smallport preferred for most applications"
+        ]
+      },
+      "silvertop_to_blacktop": {
+        "interchangeable": "YES with caveats",
+        "differences": [
+          "Blacktop has VVT on intake cam",
+          "Different cam gears",
+          "Different ECU requirements"
+        ],
+        "notes": "Blacktop preferred for higher output"
+      },
+      "camshafts_16v": {
+        "within_16v": "Interchangeable between generations",
+        "different_grinds": "Various OEM profiles available"
+      },
+      "camshafts_20v": {
+        "silvertop_to_blacktop_intake": "NOT interchangeable (VVT gear)",
+        "silvertop_to_blacktop_exhaust": "Interchangeable"
+      },
+      "valve_springs": {
+        "16v": "Same across all 16V generations",
+        "20v": "Same across both 20V generations",
+        "16v_to_20v": "Different - 20V uses 5 springs per cylinder"
+      }
+    },
+    "intake_system": {
+      "16v_bigport_manifold": {
+        "fits": "Gen 1 heads only (large port)",
+        "includes_tvis": true
+      },
+      "16v_smallport_manifold": {
+        "fits": "Gen 2 and Gen 3 heads",
+        "includes_tvis": true
+      },
+      "20v_itb": {
+        "fits": "20V heads only (special flange)",
+        "throttle_body_size": "42mm stock",
+        "notes": "Individual throttle bodies - highly desirable"
+      },
+      "itb_on_16v": {
+        "feasibility": "Possible with adapter plates",
+        "common_options": [
+          "Jenvey ITBs with adapter",
+          "Toda Racing ITB kit",
+          "Custom adapter plate for 20V ITBs"
+        ]
+      }
+    },
+    "exhaust_manifold": {
+      "16v": "Various between applications (FWD vs RWD)",
+      "20v": "Specific to 20V applications",
+      "aftermarket_headers": "Available for both 16V and 20V"
+    },
+    "ignition_system": {
+      "16v_early": "Distributor with external igniter",
+      "16v_late": "Distributor with integrated igniter",
+      "20v_silvertop": "Distributor",
+      "20v_blacktop": "Distributorless (coil-on-plug)",
+      "interchangeability": "Limited - different systems"
+    },
+    "fuel_injection": {
+      "injectors_16v": "Similar across generations, low impedance",
+      "injectors_20v": "Different connectors and flow rates",
+      "fuel_rail_16v": "Side-feed design",
+      "fuel_rail_20v": "Top-feed design (easier to upgrade)"
+    }
+  },
+
+  "transmission_compatibility": {
+    "t50_5_speed": {
+      "used_in": "AE86 (RWD)",
+      "strength": "Light duty, 200 HP max",
+      "notes": "Glass 5th gear syndrome on hard launches"
+    },
+    "w55_5_speed": {
+      "used_in": "Celica, Camry (FWD adapted to RWD)",
+      "strength": "Moderate, 250 HP",
+      "notes": "Common T50 upgrade"
+    },
+    "w58_5_speed": {
+      "used_in": "Supra MK3 (can adapt to 4A-GE)",
+      "strength": "300+ HP capable",
+      "notes": "Requires adapter plate or custom bellhousing"
+    },
+    "j160_6_speed": {
+      "used_in": "Altezza (RWD 4A-GE applications)",
+      "strength": "Good for high-revving engines",
+      "notes": "Direct bolt-on for some 4A-GE swaps"
+    },
+    "c50_c52_transaxle": {
+      "used_in": "FWD Corolla, MR2",
+      "notes": "FWD applications"
+    }
+  },
+
+  "common_swaps": {
+    "20v_into_ae86": {
+      "description": "Installing 20V engine into AE86 chassis",
+      "engine_options": ["Silvertop 20V", "Blacktop 20V (preferred)"],
+      "requirements": [
+        "Engine mount modifications (bolt-in kits available)",
+        "Custom or adapter wiring harness",
+        "20V ECU or standalone",
+        "20V specific exhaust manifold or header",
+        "Oil pan modification for RWD",
+        "Possibly different flywheel"
+      ],
+      "difficulty": "Moderate - well documented swap",
+      "kit_sources": ["Techno Toy Tuning", "MK Indy", "Various JDM sources"]
+    },
+    "4age_into_ae70_ke70": {
+      "description": "4A-GE into earlier RWD Corolla",
+      "feasibility": "Common swap",
+      "requirements": [
+        "AE86 crossmember or modifications",
+        "Engine mounts",
+        "Transmission (T50 or upgrade)",
+        "Wiring harness",
+        "Fuel system"
+      ]
+    },
+    "4age_into_aw11_mr2": {
+      "description": "Upgrading AW11 MR2 to 20V or bigger cams",
+      "notes": "Stock AW11 came with 4A-GE, upgrades common"
+    },
+    "itb_conversion_16v": {
+      "description": "Adding individual throttle bodies to 16V engine",
+      "options": [
+        "20V ITBs with adapter plate",
+        "Jenvey/Weber DCOE-style ITBs",
+        "Toda Racing ITB kit"
+      ],
+      "benefits": "Improved throttle response, more power, great sound",
+      "requirements": "ECU tune or standalone ECU"
+    }
+  },
+
+  "aftermarket_upgrade_compatibility": {
+    "head_work": {
+      "16v_porting": "Well-documented, significant gains available",
+      "20v_porting": "Less common, already flows well",
+      "valve_upgrades": "Supertech, Ferrea available for both"
+    },
+    "camshafts": {
+      "16v_options": ["Toda", "TRD", "HKS", "Brian Crower"],
+      "20v_options": ["Toda", "Tomei", "Brian Crower"],
+      "notes": "20V already has aggressive stock cams"
+    },
+    "turbo_kits": {
+      "availability": "Various for both 16V and 20V",
+      "common_turbos": ["TD04", "GT28", "T25"],
+      "notes": "Lower compression pistons recommended for boost"
+    },
+    "standalone_ecu": {
+      "popular_options": ["Haltech", "Link", "AEM", "Megasquirt"],
+      "notes": "Required for significant modifications"
+    }
+  }
+}

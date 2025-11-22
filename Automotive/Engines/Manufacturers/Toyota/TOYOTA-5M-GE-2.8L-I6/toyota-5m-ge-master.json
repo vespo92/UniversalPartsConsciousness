@@ -1,0 +1,238 @@
+{
+  "engine_id": "TOYOTA-5M-GE-2.8L-I6-NA",
+  "common_names": [
+    "5M-GE",
+    "5MGE",
+    "5M",
+    "Cressida Engine",
+    "MK2 Supra Engine",
+    "Toyota DOHC Six"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota M Series",
+  "production_years": "1981-1988",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.759,
+      "cubic_inches": 168.4,
+      "cc": 2759
+    },
+    "bore": {
+      "inches": 3.27,
+      "mm": 83.0
+    },
+    "stroke": {
+      "inches": 3.35,
+      "mm": 85.0
+    },
+    "compression_ratio": "8.8:1 (early) / 9.2:1 (late)",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (timing belt end)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder)",
+    "fuel_system": {
+      "type": "Electronic Fuel Injection (EFI)",
+      "fuel_pressure_bar": 2.5
+    },
+    "ignition_system": "Distributor with electronic ignition"
+  },
+
+  "power_output_by_year": {
+    "1982_1984": {
+      "horsepower": 145,
+      "hp_rpm": 5400,
+      "torque_lb_ft": 155,
+      "torque_rpm": 4400,
+      "notes": "Early production"
+    },
+    "1984_1986_revised": {
+      "horsepower": 150,
+      "hp_rpm": 5400,
+      "torque_lb_ft": 159,
+      "torque_rpm": 4400,
+      "notes": "Revised intake and exhaust"
+    },
+    "1986_1988_high_comp": {
+      "horsepower": 161,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 163,
+      "torque_rpm": 4400,
+      "notes": "Higher compression, final evolution"
+    },
+    "jdm_spec": {
+      "horsepower": 175,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 170,
+      "torque_rpm": 4600,
+      "notes": "Japanese domestic market higher output"
+    }
+  },
+
+  "vehicle_applications": {
+    "ma61_supra": {
+      "years": "1982-1986",
+      "chassis_code": "MA61",
+      "notes": "MK2 Supra - primary sports application"
+    },
+    "mx73_cressida": {
+      "years": "1983-1988",
+      "chassis_code": "MX73",
+      "notes": "Cressida luxury sedan"
+    },
+    "mx75_chaser_cresta": {
+      "years": "1984-1988",
+      "chassis_code": "MX75",
+      "notes": "JDM luxury sedans"
+    },
+    "ms125_crown": {
+      "years": "1983-1987",
+      "chassis_code": "MS125",
+      "notes": "JDM Toyota Crown"
+    },
+    "gx71_mark2": {
+      "years": "1984-1988",
+      "chassis_code": "GX71 (also MX71)",
+      "notes": "JDM Mark II"
+    }
+  },
+
+  "related_engines": {
+    "4m": {
+      "displacement_cc": 2563,
+      "years": "1972-1980",
+      "valvetrain": "SOHC 12V",
+      "notes": "Predecessor, Crown and early Supra"
+    },
+    "5m": {
+      "displacement_cc": 2759,
+      "years": "1978-1984",
+      "valvetrain": "SOHC 12V",
+      "notes": "SOHC version of 5M"
+    },
+    "6m_ge": {
+      "displacement_cc": 2954,
+      "years": "1986-1988",
+      "valvetrain": "DOHC 24V",
+      "notes": "Larger displacement evolution, Japan market"
+    },
+    "7m_ge": {
+      "displacement_cc": 2954,
+      "years": "1986-1992",
+      "valvetrain": "DOHC 24V",
+      "notes": "US market evolution, MK3 Supra NA"
+    },
+    "7m_gte": {
+      "displacement_cc": 2954,
+      "years": "1986-1992",
+      "valvetrain": "DOHC 24V Turbo",
+      "notes": "Turbocharged evolution, MK3 Supra Turbo"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.0,
+      "capacity_liters": 4.7,
+      "with_filter": true,
+      "recommended_viscosity": ["10W-30", "10W-40", "20W-50"]
+    },
+    "coolant": {
+      "capacity_quarts": 9.5,
+      "capacity_liters": 9.0,
+      "type": "Ethylene glycol antifreeze/coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 215.0,
+    "main_bearing_journal_diameter_mm": 62.0,
+    "rod_bearing_journal_diameter_mm": 48.0,
+    "cylinder_bore_diameter_mm": 83.0,
+    "connecting_rod_length_mm": 139.0,
+    "crankshaft_stroke_mm": 85.0
+  },
+
+  "toyota_m_series_evolution": {
+    "description": "The M series was Toyota's flagship inline-6 family from 1965-1992",
+    "evolution": [
+      {
+        "model": "M",
+        "years": "1965-1985",
+        "displacement": "2.0L",
+        "notes": "Original M series"
+      },
+      {
+        "model": "2M/3M",
+        "years": "1967-1980",
+        "displacement": "2.3L-2.5L",
+        "notes": "Early Crown and luxury vehicles"
+      },
+      {
+        "model": "4M/5M",
+        "years": "1972-1988",
+        "displacement": "2.6L-2.8L",
+        "notes": "SOHC to DOHC evolution"
+      },
+      {
+        "model": "6M-GE/7M-GE/7M-GTE",
+        "years": "1986-1992",
+        "displacement": "3.0L",
+        "notes": "Final M series evolution"
+      }
+    ],
+    "successor": "The JZ series (1JZ-GE/GTE, 2JZ-GE/GTE) replaced the M series"
+  },
+
+  "notes": {
+    "heritage": "The 5M-GE was Toyota's first production DOHC inline-6 with 24 valves for the North American market. It represented a significant step up in technology from the SOHC 5M and established the template for Toyota's future inline-6 engines.",
+    "reputation": "Smooth and refined, the 5M-GE was considered sophisticated for its era. While not as legendary as the later 2JZ, it proved Toyota could build a refined, powerful inline-6. Good reliability with proper maintenance.",
+    "common_issues": [
+      "Timing belt failures (interference engine - critical)",
+      "Oil leaks from cam seals and valve covers",
+      "AFM (Airflow Meter) failures",
+      "Cold start injector issues",
+      "Distributor wear",
+      "EGR system problems"
+    ],
+    "strengths": [
+      "Smooth inline-6 power delivery",
+      "DOHC design ahead of its time",
+      "Robust iron block",
+      "Good torque curve for daily driving",
+      "Well-suited to luxury and GT applications"
+    ],
+    "maintenance_critical": [
+      "Timing belt every 60,000 miles (CRITICAL - interference engine)",
+      "Water pump with timing belt",
+      "Valve adjustment every 60,000 miles",
+      "Oil changes every 3,000-5,000 miles"
+    ],
+    "comparison_to_successors": {
+      "vs_7m": "7M has more displacement but similar architecture",
+      "vs_1jz": "1JZ is more advanced with better head flow",
+      "vs_2jz": "2JZ is significantly more advanced in all areas"
+    },
+    "collectibility": {
+      "ma61_supra": "MK2 Supra becoming collectible",
+      "mx73_cressida": "Cressida drift car popularity increasing values",
+      "notes": "Clean examples with 5M-GE increasingly sought after"
+    },
+    "swap_considerations": {
+      "upgrade_path": "Many owners swap to 7M-GTE or 1JZ-GTE/2JZ-GTE",
+      "reasons": [
+        "More power potential",
+        "Better aftermarket support",
+        "Improved reliability (especially 1JZ/2JZ)"
+      ],
+      "keep_5m_reasons": [
+        "Originality for restoration",
+        "Simpler maintenance",
+        "Period-correct for shows"
+      ]
+    }
+  }
+}

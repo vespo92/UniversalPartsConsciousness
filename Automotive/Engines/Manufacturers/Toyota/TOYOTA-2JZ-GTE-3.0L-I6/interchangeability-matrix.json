@@ -1,0 +1,237 @@
+{
+  "engine_id": "TOYOTA-2JZ-GTE-3.0L-I6-TWINTURBO",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "engine_family_interchangeability": {
+    "jz_family": {
+      "description": "All JZ engines share significant interchangeability",
+      "members": ["1JZ-GE", "1JZ-GTE", "2JZ-GE", "2JZ-GTE"],
+      "shared_components": {
+        "block": {
+          "1jz_to_2jz": "Different blocks - 1JZ shorter deck height",
+          "2jz_ge_to_gte": "IDENTICAL blocks - same casting",
+          "notes": "2JZ-GE block can be built into GTE with GTE head and turbo"
+        },
+        "head": {
+          "non_vvti": "Non-VVTi heads interchange between GE and GTE with modifications",
+          "vvti": "VVTi heads require VVTi exhaust camshaft",
+          "ge_vs_gte_differences": [
+            "Combustion chamber design (higher vs lower compression)",
+            "Exhaust valve size (27.5mm GE vs 29mm GTE)",
+            "Oil squirter provisions"
+          ]
+        },
+        "crankshaft": {
+          "2jz_ge_to_gte": "IDENTICAL - fully interchangeable",
+          "1jz_to_2jz": "NOT interchangeable - different stroke and journal size"
+        },
+        "connecting_rods": {
+          "2jz_ge_to_gte": "IDENTICAL",
+          "1jz_to_2jz": "NOT interchangeable - different length"
+        }
+      }
+    }
+  },
+
+  "parts_interchangeability": {
+    "pistons": {
+      "2jz_ge_to_2jz_gte": {
+        "interchangeable": "NO",
+        "reason": "Different compression ratio (10.5:1 vs 8.5:1)",
+        "notes": "GE pistons too high compression for boost"
+      },
+      "2jz_gte_non_vvti_to_vvti": {
+        "interchangeable": "YES with ECU changes",
+        "notes": "Same compression ratio"
+      }
+    },
+    "camshafts": {
+      "2jz_ge_to_2jz_gte": {
+        "interchangeable": "Different profiles but physically fit",
+        "notes": "GE cams have more duration, GTE cams optimized for boost"
+      },
+      "non_vvti_to_vvti": {
+        "intake": "NOT interchangeable - VVTi gear on VVTi cams",
+        "exhaust": "NOT interchangeable - VVTi actuator on VVTi exhaust cam"
+      }
+    },
+    "timing_belt": {
+      "all_2jz": "IDENTICAL across all 2JZ variants",
+      "1jz_to_2jz": "DIFFERENT - 1JZ uses shorter belt"
+    },
+    "water_pump": {
+      "2jz_ge_to_2jz_gte": "IDENTICAL",
+      "notes": "Same part number and mounting"
+    },
+    "oil_pump": {
+      "2jz_ge_to_2jz_gte": "IDENTICAL external dimensions",
+      "notes": "GTE may have slightly different internal specs"
+    },
+    "oil_pan": {
+      "2jz_ge_to_2jz_gte": {
+        "interchangeable": "Depends on application",
+        "notes": "Different sumps for different chassis (Supra vs Aristo vs IS300)"
+      }
+    },
+    "intake_manifold": {
+      "2jz_ge_to_2jz_gte": {
+        "interchangeable": "NO",
+        "reason": "GTE has integrated turbo plumbing, GE is NA design"
+      }
+    },
+    "exhaust_manifold": {
+      "2jz_ge_to_2jz_gte": {
+        "interchangeable": "NO",
+        "reason": "GTE has integrated turbo mounting"
+      }
+    },
+    "fuel_injectors": {
+      "2jz_ge_to_2jz_gte": {
+        "interchangeable": "Physically yes, but different flow rates",
+        "ge_flow": "315cc",
+        "gte_flow": "440cc",
+        "notes": "Would need ECU retune if swapped"
+      }
+    },
+    "ignition_coils": {
+      "non_vvti": {
+        "type": "Wasted spark igniter pack",
+        "notes": "Uses distributor-less ignition system"
+      },
+      "vvti": {
+        "type": "Coil-on-plug",
+        "notes": "Significantly better for high boost applications"
+      },
+      "interchangeable": "NO - different systems entirely"
+    },
+    "ecu": {
+      "2jz_ge_to_2jz_gte": "NOT interchangeable without extensive modification",
+      "non_vvti_to_vvti": "NOT interchangeable",
+      "notes": "Standalone ECU recommended for any serious build"
+    }
+  },
+
+  "common_swaps_and_conversions": {
+    "2jz_ge_turbo_conversion": {
+      "description": "Adding turbo to 2JZ-GE",
+      "approach_1_keep_ge_head": {
+        "parts_needed": [
+          "Turbo manifold",
+          "Turbocharger",
+          "Intercooler and piping",
+          "Upgraded fuel system (550cc+ injectors, Walbro pump)",
+          "Standalone ECU or GTE ECU swap",
+          "Oil feed/return lines",
+          "Thicker head gasket (1.5mm+ for lower compression)"
+        ],
+        "max_safe_power": "350-400 HP",
+        "notes": "Head gasket is the weak point"
+      },
+      "approach_2_gte_head_swap": {
+        "parts_needed": [
+          "GTE cylinder head",
+          "GTE intake manifold",
+          "GTE exhaust manifold with turbos OR aftermarket single turbo manifold",
+          "GTE fuel system OR aftermarket upgrade",
+          "GTE ECU or standalone"
+        ],
+        "max_safe_power": "700+ HP on stock bottom end",
+        "notes": "Essentially building a full GTE - most common approach"
+      }
+    },
+    "1jz_gte_to_2jz_gte_swap": {
+      "description": "Upgrading 1JZ to 2JZ in JZX chassis",
+      "parts_needed": [
+        "Complete 2JZ-GTE engine",
+        "2JZ transmission adapter or complete trans",
+        "2JZ wiring harness",
+        "ECU (2JZ or standalone)",
+        "Custom or adapter engine mounts",
+        "Exhaust modifications"
+      ],
+      "difficulty": "Moderate - common swap with kits available",
+      "notes": "Popular in JZX100 drift cars"
+    },
+    "vvti_head_on_non_vvti_block": {
+      "description": "Using VVTi coil-on-plug head on non-VVTi block",
+      "parts_needed": [
+        "VVTi cylinder head",
+        "VVTi exhaust camshaft (has VVTi actuator)",
+        "VVTi wiring",
+        "VVTi compatible ECU or standalone"
+      ],
+      "benefits": "Coil-on-plug ignition much better for high boost",
+      "difficulty": "Moderate"
+    }
+  },
+
+  "transmission_compatibility": {
+    "r154_5_speed": {
+      "compatible_with": "1JZ-GTE, 2JZ-GTE",
+      "bellhousing_pattern": "Same as JZ series",
+      "max_torque_capacity": "~450 lb-ft stock",
+      "notes": "Common upgrade from W58"
+    },
+    "v160_6_speed": {
+      "compatible_with": "2JZ-GTE (Supra)",
+      "bellhousing_pattern": "Same as R154",
+      "max_torque_capacity": "~500 lb-ft",
+      "notes": "Getrag V160 - stock Supra turbo trans"
+    },
+    "cd009_350z_swap": {
+      "compatible_with": "1JZ, 2JZ with adapter",
+      "adapter_required": "Yes - Collins adapter or similar",
+      "max_torque_capacity": "600+ lb-ft",
+      "notes": "Popular affordable 6-speed option"
+    },
+    "t56_magnum_swap": {
+      "compatible_with": "JZ series with adapter",
+      "adapter_required": "Yes",
+      "max_torque_capacity": "700+ lb-ft",
+      "notes": "Heavy duty option for high power"
+    },
+    "a340e_auto": {
+      "compatible_with": "2JZ-GE, 2JZ-GTE",
+      "max_torque_capacity": "~350 lb-ft stock",
+      "notes": "Stock Supra auto, can be built stronger"
+    }
+  },
+
+  "accessory_and_ancillary_parts": {
+    "alternator": {
+      "2jz_ge_to_2jz_gte": "Different mounting on some applications",
+      "notes": "Check specific vehicle application"
+    },
+    "power_steering_pump": {
+      "2jz_ge_to_2jz_gte": "Generally interchangeable",
+      "notes": "Mounting may vary by chassis"
+    },
+    "ac_compressor": {
+      "2jz_ge_to_2jz_gte": "Interchangeable in same chassis",
+      "notes": "Bracket may differ between applications"
+    },
+    "starter_motor": {
+      "2jz_ge_to_2jz_gte": "IDENTICAL",
+      "notes": "Same starter for all 2JZ"
+    }
+  },
+
+  "chassis_specific_notes": {
+    "jza80_supra": {
+      "engine_mounts": "2JZ-GTE specific",
+      "oil_pan": "Rear sump design",
+      "wiring": "JZA80 specific harness"
+    },
+    "jzs147_aristo": {
+      "engine_mounts": "JZS14x specific",
+      "oil_pan": "Different from Supra",
+      "transmission": "Auto only (stock)"
+    },
+    "jce10_is300_altezza": {
+      "engine_mounts": "IS300 specific",
+      "oil_pan": "Different from Supra",
+      "notes": "Popular 2JZ-GTE swap candidate (comes with 2JZ-GE)"
+    }
+  }
+}

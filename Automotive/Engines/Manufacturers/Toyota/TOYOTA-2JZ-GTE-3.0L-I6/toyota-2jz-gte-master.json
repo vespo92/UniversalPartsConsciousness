@@ -1,0 +1,219 @@
+{
+  "engine_id": "TOYOTA-2JZ-GTE-3.0L-I6-TWINTURBO",
+  "common_names": [
+    "2JZ-GTE",
+    "2JZ",
+    "Supra Engine",
+    "The Legend",
+    "1000HP Factory Block",
+    "Toyota Inline 6"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota JZ",
+  "production_years": "1991-2002",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.997,
+      "cubic_inches": 182.9,
+      "cc": 2997
+    },
+    "bore": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "stroke": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "compression_ratio": "8.5:1 (US/EU) / 10.0:1 (JDM VVTi)",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (timing belt end)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), VVTi on later models",
+    "forced_induction": {
+      "type": "Sequential Twin Turbochargers",
+      "primary_turbo": "CT20A (small, quick spool)",
+      "secondary_turbo": "CT20A (larger, high RPM)",
+      "boost_pressure_psi": {
+        "stock": 10,
+        "stock_peak": 14.7,
+        "transition_rpm": 4000
+      },
+      "wastegate_type": "Internal with external bypass"
+    },
+    "fuel_system": {
+      "type": "Electronic Fuel Injection (EFI)",
+      "fuel_pressure_bar": 3.0,
+      "injector_type": "Side-feed 440cc (stock)"
+    },
+    "ignition_system": "Distributorless ignition (DIS), Coil-on-plug (VVTi models)"
+  },
+
+  "power_output_by_year": {
+    "1991_1992_jdm_non_vvti": {
+      "horsepower": 280,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 318,
+      "torque_rpm": 4000,
+      "notes": "Japanese gentleman's agreement limit (actual power ~320HP)"
+    },
+    "1993_1996_us_mk4_auto": {
+      "horsepower": 220,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 210,
+      "torque_rpm": 4000,
+      "notes": "Detuned for automatic transmission, single turbo setup"
+    },
+    "1993_1996_us_mk4_manual": {
+      "horsepower": 320,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 315,
+      "torque_rpm": 4000,
+      "notes": "US spec 6-speed manual"
+    },
+    "1997_2002_jdm_vvti": {
+      "horsepower": 280,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 320,
+      "torque_rpm": 3600,
+      "notes": "VVTi version with improved torque curve, actual ~330HP"
+    },
+    "1993_1998_aristo_v300": {
+      "horsepower": 280,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 324,
+      "torque_rpm": 4000,
+      "notes": "Toyota Aristo (Lexus GS300) JDM version"
+    }
+  },
+
+  "vehicle_applications": {
+    "a80_supra_turbo": {
+      "years": "1993-2002",
+      "chassis_code": "JZA80",
+      "notes": "Most iconic application - MK4 Supra Turbo"
+    },
+    "jzs147_aristo_v300": {
+      "years": "1991-1997",
+      "chassis_code": "JZS147",
+      "notes": "Toyota Aristo V300 (JDM)"
+    },
+    "jzs161_aristo_v300": {
+      "years": "1997-2004",
+      "chassis_code": "JZS161",
+      "notes": "Toyota Aristo V300 2nd gen with VVTi (JDM)"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.5,
+      "capacity_liters": 5.2,
+      "with_filter": true,
+      "recommended_viscosity": ["5W-30", "10W-30", "15W-40"],
+      "approved_oils": ["Toyota Genuine", "Mobil 1", "Castrol GTX", "Royal Purple"]
+    },
+    "coolant": {
+      "capacity_quarts": 9.5,
+      "capacity_liters": 9.0,
+      "type": "Toyota Super Long Life Coolant (red)"
+    },
+    "transmission_manual_v160": {
+      "capacity_liters": 2.6,
+      "type": "GL-4 75W-90",
+      "notes": "Getrag V160 6-speed"
+    },
+    "transmission_manual_r154": {
+      "capacity_liters": 2.3,
+      "type": "GL-4 75W-90",
+      "notes": "R154 5-speed"
+    },
+    "transmission_auto_a340e": {
+      "capacity_liters": 9.0,
+      "type": "Toyota Type T-IV ATF"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 220.0,
+    "main_bearing_journal_diameter_mm": 62.0,
+    "rod_bearing_journal_diameter_mm": 52.0,
+    "cylinder_bore_diameter_mm": 86.0,
+    "piston_to_wall_clearance_mm": {
+      "min": 0.035,
+      "max": 0.055
+    },
+    "connecting_rod_length_mm": 142.0,
+    "crankshaft_stroke_mm": 86.0,
+    "valve_lift_mm": {
+      "intake": 8.25,
+      "exhaust": 7.8
+    },
+    "camshaft_duration_degrees": {
+      "intake": 232,
+      "exhaust": 236
+    },
+    "block_bore_spacing_mm": 96.0,
+    "main_cap_bolts": "6-bolt on all mains"
+  },
+
+  "electronic_systems": {
+    "engine_management": {
+      "non_vvti": "Toyota TCCS (ECU: 89661-14630)",
+      "vvti": "Toyota ETCS-i with VVTi control"
+    },
+    "vvti_control": "Intake camshaft only (VVTi models)",
+    "throttle_control": "Cable throttle (non-VVTi) / Electronic throttle (VVTi)",
+    "knock_sensors": 2,
+    "oxygen_sensors": {
+      "pre_cat": 1,
+      "post_cat": 1
+    },
+    "mass_airflow_sensors": 1,
+    "turbo_control": {
+      "type": "Sequential twin turbo with bypass valves",
+      "transition_solenoids": 4,
+      "boost_control_solenoid": "Electronic wastegate solenoid"
+    }
+  },
+
+  "notes": {
+    "heritage": "The 2JZ-GTE is widely considered one of the greatest engines ever produced. Developed as part of Toyota's JZ engine family, it represents the pinnacle of Toyota's inline-6 turbo engineering. The iron block design allows for extreme boost levels while maintaining reliability.",
+    "reputation": "LEGENDARY status in the tuning world. Stock internals have been proven to handle 800+ HP reliably. With basic bolt-ons, 500HP is easily achievable. World record builds have exceeded 2000HP on the factory block. The closed-deck design and oil squirters contribute to its unmatched durability.",
+    "common_issues": [
+      "Timing belt failure (replace every 60k miles)",
+      "Stock turbo ceramic wheels can shatter at high boost",
+      "Sequential turbo system complexity (transition valve issues)",
+      "Oil leaks from cam seals and valve covers",
+      "Crank position sensor failure",
+      "Throttle position sensor wear",
+      "IACV (Idle Air Control Valve) failure",
+      "Water pump weep hole leak"
+    ],
+    "strengths": [
+      "Incredibly strong iron block - handles 1000+ HP on stock internals",
+      "Forged crankshaft from factory",
+      "Oil squirters for piston cooling",
+      "Closed deck design for cylinder rigidity",
+      "Large displacement (3.0L) provides excellent torque",
+      "Smooth inline-6 power delivery",
+      "Massive aftermarket support worldwide",
+      "Engine design allows for enormous turbo upgrades",
+      "Head flows well for factory casting",
+      "Simple distributor-less ignition system"
+    ],
+    "maintenance_critical": [
+      "Timing belt and tensioner every 60,000 miles",
+      "Water pump replacement with timing belt",
+      "Cam seals inspection during timing belt service",
+      "Valve cover gaskets every 80,000 miles",
+      "Spark plugs every 30,000 miles",
+      "Oil changes every 3,000-5,000 miles with quality oil"
+    ],
+    "historical_significance": "The 2JZ-GTE became a cultural icon through the Fast & Furious franchise and 1990s import tuning scene. Its combination of Toyota reliability, massive power potential, and smooth inline-6 character made it the benchmark for all sport compact engines. Even 25+ years after production ended, it remains the gold standard for engine swaps."
+  }
+}

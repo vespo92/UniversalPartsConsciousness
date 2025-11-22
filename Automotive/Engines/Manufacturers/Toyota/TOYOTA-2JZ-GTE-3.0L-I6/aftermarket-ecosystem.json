@@ -1,0 +1,863 @@
+{
+  "engine_id": "TOYOTA-2JZ-GTE-3.0L-I6-TWINTURBO",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors": {
+    "specialty_toyota_jdm": {
+      "real_street_performance": {
+        "name": "Real Street Performance",
+        "url": "https://www.realstreetperformance.com",
+        "specialty": "2JZ/1JZ Complete Builds",
+        "notes": "Premier 2JZ builder in USA, world record holder"
+      },
+      "titan_motorsports": {
+        "name": "Titan Motorsports",
+        "url": "https://www.titanmotorsports.com",
+        "specialty": "Toyota/Supra Performance",
+        "notes": "Complete 2JZ builds and parts, racing heritage"
+      },
+      "grannas_racing": {
+        "name": "Grannas Racing",
+        "url": "https://www.grannasracing.com",
+        "specialty": "2JZ Racing",
+        "notes": "Formula Drift Supra team, pro-level parts"
+      },
+      "sp_engineering": {
+        "name": "SP Engineering",
+        "url": "https://www.spengineusa.com",
+        "specialty": "2JZ Turbo Systems",
+        "notes": "Twin turbo upgrades, manifolds"
+      },
+      "ross_machine_racing": {
+        "name": "Ross Machine Racing",
+        "url": "https://www.rossmachineracing.com",
+        "specialty": "2JZ Fuel Systems and Manifolds",
+        "notes": "Billet fuel rails, intake manifolds"
+      },
+      "driftmotion": {
+        "name": "Driftmotion",
+        "url": "https://www.driftmotion.com",
+        "specialty": "JZ Engine Swaps and Parts",
+        "notes": "Complete swap kits, wiring harnesses, great prices"
+      },
+      "xcessive_manufacturing": {
+        "name": "Xcessive Manufacturing",
+        "url": "https://www.xcessivemanufacturing.com",
+        "specialty": "2JZ Swap Mounts and Adapters",
+        "notes": "Engine/trans swap components"
+      },
+      "suprastore": {
+        "name": "SupraStore",
+        "url": "https://www.suprastore.com",
+        "specialty": "Supra OEM and Performance Parts",
+        "notes": "Large OEM parts inventory"
+      }
+    },
+    "japanese_tuning": {
+      "hks": {
+        "name": "HKS Japan",
+        "url": "https://www.hks-power.co.jp",
+        "specialty": "Complete Tuning Solutions",
+        "products": ["Turbo kits", "Cams", "Electronics", "Exhaust"],
+        "notes": "Japanese legend, extensive 2JZ catalog"
+      },
+      "greddy": {
+        "name": "GReddy/Trust",
+        "url": "https://www.greddy.com",
+        "specialty": "Turbo and Exhaust Systems",
+        "notes": "TD06 turbo kits, intercoolers"
+      },
+      "tomei": {
+        "name": "Tomei Powered",
+        "url": "https://www.tomeiusa.com",
+        "specialty": "Internal Engine Components",
+        "products": ["Cams", "Pistons", "Ti Exhaust"],
+        "notes": "High-quality Japanese internals"
+      },
+      "blitz": {
+        "name": "Blitz Japan",
+        "url": "https://www.blitz.co.jp",
+        "specialty": "Turbo and Electronics",
+        "notes": "Boost controllers, intercoolers"
+      },
+      "apexi": {
+        "name": "A'PEXi",
+        "url": "https://www.apexi-usa.com",
+        "specialty": "Electronics and Turbo",
+        "notes": "AVC-R boost controller, Power FC"
+      },
+      "trd": {
+        "name": "Toyota Racing Development",
+        "url": "https://www.trdusa.com",
+        "specialty": "OEM+ Performance",
+        "notes": "Factory performance parts"
+      }
+    },
+    "engine_management": {
+      "aem": {
+        "name": "AEM Electronics",
+        "url": "https://www.aemelectronics.com",
+        "type": "Standalone ECU",
+        "products": ["Infinity", "Series 2"],
+        "notes": "Popular choice for 2JZ builds"
+      },
+      "haltech": {
+        "name": "Haltech",
+        "url": "https://www.haltech.com",
+        "type": "Standalone ECU",
+        "products": ["Elite 2500", "Nexus R5"],
+        "notes": "User friendly, great datalogging"
+      },
+      "link_ecu": {
+        "name": "Link ECU",
+        "url": "https://www.linkecu.com",
+        "type": "Standalone ECU",
+        "products": ["G4X Plugin", "Fury"],
+        "notes": "Excellent value, plug-and-play options"
+      },
+      "motec": {
+        "name": "MoTeC",
+        "url": "https://www.motec.com.au",
+        "type": "Standalone ECU",
+        "products": ["M150", "M1"],
+        "notes": "Professional grade, unlimited potential"
+      },
+      "apexi_power_fc": {
+        "name": "A'PEXi Power FC",
+        "url": "https://www.apexi-usa.com",
+        "type": "Plug-in ECU",
+        "notes": "JDM classic, plug-and-play with Commander"
+      },
+      "emanage": {
+        "name": "GReddy e-Manage",
+        "url": "https://www.greddy.com",
+        "type": "Piggyback ECU",
+        "notes": "Budget option, works with stock ECU"
+      }
+    },
+    "turbo_specialists": {
+      "garrett": {
+        "name": "Garrett Motion",
+        "url": "https://www.garrettmotion.com",
+        "specialty": "Turbochargers",
+        "popular_models": ["GTX3576R Gen II", "GTX3582R", "G35-900", "G42-1200"],
+        "notes": "Industry standard for single turbo builds"
+      },
+      "precision_turbo": {
+        "name": "Precision Turbo",
+        "url": "https://www.precisionturbo.net",
+        "specialty": "Turbochargers",
+        "popular_models": ["6266 CEA", "6466", "6766", "7675"],
+        "notes": "Pro Mod proven"
+      },
+      "borg_warner": {
+        "name": "BorgWarner",
+        "url": "https://www.borgwarner.com",
+        "specialty": "Turbochargers",
+        "popular_models": ["S300 SX-E", "S362 SX-E", "S400 SX4"],
+        "notes": "Excellent value, smooth power curves"
+      },
+      "full_race": {
+        "name": "Full-Race Motorsports",
+        "url": "https://www.full-race.com",
+        "specialty": "Turbo Manifolds and Kits",
+        "notes": "ProStreet manifolds, complete kits"
+      },
+      "doc_race": {
+        "name": "Doc Race",
+        "url": "https://www.doc-race.com",
+        "specialty": "2JZ Turbo Manifolds",
+        "notes": "Quality T4 manifolds, complete kits"
+      }
+    },
+    "internal_engine": {
+      "brian_crower": {
+        "name": "Brian Crower",
+        "url": "https://www.briancrower.com",
+        "specialty": "Camshafts, Rods, Valvetrain",
+        "notes": "Extensive 2JZ catalog, great quality"
+      },
+      "manley": {
+        "name": "Manley Performance",
+        "url": "https://www.manleyperformance.com",
+        "specialty": "Connecting Rods",
+        "notes": "H-beam and I-beam options"
+      },
+      "carrillo": {
+        "name": "Carrillo Industries",
+        "url": "https://www.cp-carrillo.com",
+        "specialty": "Connecting Rods",
+        "notes": "Pro-level rods, bullet proof"
+      },
+      "wiseco": {
+        "name": "Wiseco",
+        "url": "https://www.wiseco.com",
+        "specialty": "Forged Pistons",
+        "notes": "Good value forged options"
+      },
+      "cp_pistons": {
+        "name": "CP Pistons",
+        "url": "https://www.cp-carrillo.com",
+        "specialty": "Forged Pistons",
+        "notes": "Custom compression ratios available"
+      },
+      "je_pistons": {
+        "name": "JE Pistons",
+        "url": "https://www.jepistons.com",
+        "specialty": "Forged Pistons",
+        "notes": "FSR and shelf stock options"
+      },
+      "supertech": {
+        "name": "Supertech Performance",
+        "url": "https://www.supertechperformance.com",
+        "specialty": "Valvetrain",
+        "notes": "Valves, springs, retainers"
+      },
+      "kelford": {
+        "name": "Kelford Cams",
+        "url": "https://www.kelfordcams.com",
+        "specialty": "Camshafts",
+        "notes": "New Zealand made, excellent profiles"
+      },
+      "arp": {
+        "name": "ARP",
+        "url": "https://www.arp-bolts.com",
+        "specialty": "Fasteners",
+        "notes": "Head studs, rod bolts, main studs - essential"
+      },
+      "acl": {
+        "name": "ACL Race Bearings",
+        "url": "https://www.aclraceseries.com",
+        "specialty": "Engine Bearings",
+        "notes": "Race series with coatings"
+      },
+      "king": {
+        "name": "King Engine Bearings",
+        "url": "https://www.kingbearings.com",
+        "specialty": "Engine Bearings",
+        "notes": "pMax coating available"
+      }
+    },
+    "fuel_system": {
+      "deatschwerks": {
+        "name": "DeatschWerks",
+        "url": "https://www.deatschwerks.com",
+        "specialty": "Fuel Injectors and Pumps",
+        "notes": "Drop-in injector options, flow matched"
+      },
+      "injector_dynamics": {
+        "name": "Injector Dynamics",
+        "url": "https://www.injectordynamics.com",
+        "specialty": "Fuel Injectors",
+        "notes": "ID1050X and ID1300X popular choices"
+      },
+      "walbro": {
+        "name": "Walbro",
+        "url": "https://www.walbro.com",
+        "specialty": "Fuel Pumps",
+        "notes": "255 LPH classic upgrade"
+      },
+      "aeromotive": {
+        "name": "Aeromotive",
+        "url": "https://www.aeromotiveinc.com",
+        "specialty": "Complete Fuel Systems",
+        "notes": "Stealth pumps, regulators, filters"
+      },
+      "radium_engineering": {
+        "name": "Radium Engineering",
+        "url": "https://www.radiumauto.com",
+        "specialty": "Fuel Surge Tanks",
+        "notes": "Essential for high-power builds"
+      }
+    }
+  },
+
+  "aftermarket_parts_by_category": {
+    "turbo_kits": {
+      "description": "Complete turbo upgrade solutions",
+      "options": {
+        "garrett_gtx3582r_kit": {
+          "manufacturer": "Various (Garrett turbo)",
+          "turbo": "GTX3582R Gen II",
+          "max_power_hp": 750,
+          "price_range_usd": "4500-7000",
+          "notes": "Most popular single turbo choice, excellent spool for size"
+        },
+        "precision_6466_kit": {
+          "manufacturer": "Various (Precision turbo)",
+          "turbo": "PT6466 CEA",
+          "max_power_hp": 850,
+          "price_range_usd": "5000-8000",
+          "notes": "More top-end power than GTX35, slightly slower spool"
+        },
+        "borg_warner_s366": {
+          "manufacturer": "Various (BorgWarner turbo)",
+          "turbo": "S366 SX-E",
+          "max_power_hp": 800,
+          "price_range_usd": "3500-6000",
+          "notes": "Great value, smooth power delivery"
+        },
+        "doc_race_single_turbo_kit": {
+          "manufacturer": "Doc Race",
+          "part_number": "DR-2JZ-T4-KIT",
+          "max_power_hp": 900,
+          "price_range_usd": "2500-4000",
+          "includes": ["T4 manifold", "Downpipe", "Oil lines"],
+          "notes": "Complete manifold and plumbing, add your own turbo"
+        },
+        "sp_engineering_twin_upgrade": {
+          "manufacturer": "SP Engineering",
+          "type": "Upgraded OEM-style twins",
+          "max_power_hp": 650,
+          "price_range_usd": "3500-5000",
+          "notes": "Keeps sequential system, much better flow"
+        },
+        "hks_gt3240": {
+          "manufacturer": "HKS",
+          "part_number": "11003-AT001",
+          "turbo": "GT3240",
+          "max_power_hp": 700,
+          "price_range_usd": "5500-7000",
+          "notes": "Japanese quality, complete kit"
+        }
+      }
+    },
+
+    "head_studs": {
+      "description": "Critical fasteners for high-boost applications",
+      "when_needed": "Any build over 500 HP, or preventative on any boosted build",
+      "options": {
+        "arp_head_studs": {
+          "manufacturer": "ARP",
+          "part_number": "203-4205",
+          "type": "Head Stud Kit",
+          "material": "ARP2000",
+          "clamp_load_increase": "+35%",
+          "price_range_usd": "380-450",
+          "notes": "ESSENTIAL for any serious build. Prevents head lift."
+        },
+        "arp_main_studs": {
+          "manufacturer": "ARP",
+          "part_number": "203-5001",
+          "type": "Main Stud Kit",
+          "material": "ARP2000",
+          "price_range_usd": "200-280",
+          "notes": "Recommended for 700+ HP builds"
+        },
+        "arp_rod_bolts": {
+          "manufacturer": "ARP",
+          "part_number": "203-6004",
+          "type": "Rod Bolt Kit",
+          "material": "ARP2000",
+          "price_range_usd": "120-150",
+          "notes": "Upgrade during any rod bearing service"
+        }
+      }
+    },
+
+    "camshafts": {
+      "description": "Performance camshaft profiles",
+      "options": {
+        "brian_crower_stage2": {
+          "manufacturer": "Brian Crower",
+          "part_number": "BC0331",
+          "duration_degrees": 272,
+          "lift_mm": 10.0,
+          "price_range_usd": "800-1000",
+          "notes": "Popular street/strip choice"
+        },
+        "brian_crower_stage3": {
+          "manufacturer": "Brian Crower",
+          "part_number": "BC0332",
+          "duration_degrees": 280,
+          "lift_mm": 11.0,
+          "price_range_usd": "900-1100",
+          "notes": "Race oriented, rough idle"
+        },
+        "hks_264": {
+          "manufacturer": "HKS",
+          "part_number": "2202-RT084",
+          "duration_degrees": 264,
+          "lift_mm": 9.3,
+          "price_range_usd": "900-1100",
+          "notes": "Mild upgrade, good street manners"
+        },
+        "kelford_272": {
+          "manufacturer": "Kelford Cams",
+          "part_number": "213-B",
+          "duration_degrees": 272,
+          "lift_mm": 10.0,
+          "price_range_usd": "750-950",
+          "notes": "Excellent quality, good value"
+        },
+        "tomei_270": {
+          "manufacturer": "Tomei",
+          "part_number": "TA301A-TY02A",
+          "duration_degrees": 270,
+          "lift_mm": 10.2,
+          "price_range_usd": "850-1000",
+          "notes": "Japanese quality, great mid-range"
+        }
+      }
+    },
+
+    "valvetrain_upgrades": {
+      "description": "High RPM valvetrain components",
+      "when_needed": "Aftermarket cams, high boost, 7500+ RPM",
+      "options": {
+        "brian_crower_spring_kit": {
+          "manufacturer": "Brian Crower",
+          "part_number": "BC0070",
+          "type": "Dual Spring Kit",
+          "price_range_usd": "450-550",
+          "notes": "Includes springs, retainers, seats"
+        },
+        "supertech_valve_springs": {
+          "manufacturer": "Supertech",
+          "part_number": "SPR-TS1012-BE",
+          "type": "Dual Springs",
+          "price_range_usd": "350-450",
+          "notes": "Beehive design, great for mild cams"
+        },
+        "supertech_valves": {
+          "manufacturer": "Supertech",
+          "part_number": "INTV-1061 / EXHV-1061",
+          "type": "Stainless/Inconel Valves",
+          "price_range_usd": "450-600",
+          "notes": "Upgraded for high heat/boost"
+        },
+        "ferrea_valves": {
+          "manufacturer": "Ferrea",
+          "part_number": "F1453P / F1454P",
+          "type": "Racing Valves",
+          "price_range_usd": "550-750",
+          "notes": "Race proven"
+        }
+      }
+    },
+
+    "pistons_and_rods": {
+      "description": "Forged internals for high-power builds",
+      "when_needed": "800+ HP builds, high boost, E85",
+      "options": {
+        "wiseco_pistons": {
+          "manufacturer": "Wiseco",
+          "part_number": "K613M86",
+          "type": "Forged Pistons (set of 6)",
+          "price_range_usd": "700-900",
+          "compression_options": ["8.5:1", "9.0:1", "9.5:1"],
+          "notes": "Good value forged option"
+        },
+        "cp_carrillo_pistons": {
+          "manufacturer": "CP-Carrillo",
+          "part_number": "SC7473",
+          "type": "Forged Pistons (set of 6)",
+          "price_range_usd": "1000-1300",
+          "notes": "Premium quality, shelf stock"
+        },
+        "je_pistons": {
+          "manufacturer": "JE Pistons",
+          "part_number": "323691",
+          "type": "Forged Pistons (set of 6)",
+          "price_range_usd": "850-1100",
+          "notes": "FSR coating available"
+        },
+        "manley_h_beam_rods": {
+          "manufacturer": "Manley",
+          "part_number": "14024-6",
+          "type": "H-Beam Connecting Rods",
+          "price_range_usd": "850-1000",
+          "notes": "Good to 1000+ HP"
+        },
+        "brian_crower_rods": {
+          "manufacturer": "Brian Crower",
+          "part_number": "BC6139",
+          "type": "ProH2K Rods",
+          "price_range_usd": "1000-1200",
+          "notes": "1200+ HP capable"
+        },
+        "carrillo_rods": {
+          "manufacturer": "Carrillo",
+          "part_number": "TOY-2JZT-65000H",
+          "type": "Pro-H Connecting Rods",
+          "price_range_usd": "1400-1800",
+          "notes": "Bullet proof, 1500+ HP proven"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "Fuel system upgrades for high power",
+      "options": {
+        "dw_550cc_injectors": {
+          "manufacturer": "DeatschWerks",
+          "part_number": "16S-07-0550-6",
+          "flow_cc_min": 550,
+          "price_range_usd": "450-550",
+          "supports_power_hp": 550,
+          "notes": "Drop-in upgrade, flow matched"
+        },
+        "id1050x_injectors": {
+          "manufacturer": "Injector Dynamics",
+          "part_number": "1050.48.14.14.6",
+          "flow_cc_min": 1050,
+          "price_range_usd": "950-1100",
+          "supports_power_hp": 950,
+          "notes": "Industry standard, excellent atomization"
+        },
+        "id1300x_injectors": {
+          "manufacturer": "Injector Dynamics",
+          "part_number": "1300.48.14.14.6",
+          "flow_cc_min": 1300,
+          "price_range_usd": "1100-1300",
+          "supports_power_hp": 1200,
+          "notes": "E85 builds, 1000+ HP"
+        },
+        "walbro_255_pump": {
+          "manufacturer": "Walbro",
+          "part_number": "GSS342",
+          "flow_lph": 255,
+          "price_range_usd": "80-120",
+          "supports_power_hp": 500,
+          "notes": "Classic upgrade, reliable"
+        },
+        "aem_320_pump": {
+          "manufacturer": "AEM",
+          "part_number": "50-1000",
+          "flow_lph": 320,
+          "price_range_usd": "130-180",
+          "supports_power_hp": 650,
+          "notes": "Good for E85 builds"
+        },
+        "dw_400_pump": {
+          "manufacturer": "DeatschWerks",
+          "part_number": "DW400",
+          "flow_lph": 400,
+          "price_range_usd": "200-250",
+          "supports_power_hp": 850,
+          "notes": "High flow, quiet operation"
+        },
+        "dual_pump_surge_tank": {
+          "manufacturer": "Radium Engineering",
+          "part_number": "20-0138",
+          "type": "Surge Tank with Dual Walbro 450s",
+          "price_range_usd": "800-1100",
+          "supports_power_hp": 1200,
+          "notes": "Essential for 1000+ HP"
+        },
+        "top_feed_fuel_rail_kit": {
+          "manufacturer": "Ross Machine Racing",
+          "part_number": "RMR-2JZ",
+          "type": "Complete Top-Feed Conversion",
+          "price_range_usd": "600-800",
+          "notes": "Required for large injectors"
+        }
+      }
+    },
+
+    "intercoolers": {
+      "description": "Front-mount intercooler upgrades",
+      "options": {
+        "mishimoto_fmic": {
+          "manufacturer": "Mishimoto",
+          "part_number": "MMINT-SUP-93T",
+          "type": "Top Mount to Front Mount Conversion",
+          "price_range_usd": "700-900",
+          "notes": "Bolt-on kit, good value"
+        },
+        "hks_fmic": {
+          "manufacturer": "HKS",
+          "part_number": "13001-AT006",
+          "type": "R-Type Front Mount",
+          "price_range_usd": "1200-1500",
+          "notes": "Japanese quality, excellent flow"
+        },
+        "greddy_fmic": {
+          "manufacturer": "GReddy",
+          "part_number": "12020479",
+          "type": "Front Mount Kit",
+          "price_range_usd": "1000-1200",
+          "notes": "Complete kit with piping"
+        }
+      }
+    }
+  },
+
+  "build_packages": {
+    "stage_1_stock_turbos": {
+      "name": "Stage 1 - Stock Turbos",
+      "target_power_hp": "400-450",
+      "target_torque_lb_ft": "420-480",
+      "total_cost_estimate_usd": "1500-3000",
+      "description": "Safe power increase on stock turbos",
+      "required_parts": [
+        {
+          "category": "ECU Tune",
+          "options": ["AEM EMS", "Haltech", "Power FC"],
+          "cost_range": "500-1500"
+        },
+        {
+          "category": "Exhaust",
+          "options": ["3\" catback with high-flow cat or test pipe"],
+          "cost_range": "400-800"
+        },
+        {
+          "category": "Boost Controller",
+          "options": ["HKS EVC", "GReddy Profec", "Manual boost controller"],
+          "cost_range": "150-400"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Front Mount Intercooler",
+          "options": ["Mishimoto", "GReddy"],
+          "cost_range": "700-1200"
+        },
+        {
+          "category": "Fuel Injectors",
+          "options": ["550cc upgrade"],
+          "cost_range": "400-550"
+        }
+      ],
+      "fuel_requirement": "91 octane minimum, 93 recommended",
+      "notes": "Stock turbos ceramic wheels may fail at sustained high boost. Upgrade recommended for reliability."
+    },
+
+    "stage_2_single_turbo": {
+      "name": "Stage 2 - Single Turbo Conversion",
+      "target_power_hp": "600-750",
+      "target_torque_lb_ft": "550-700",
+      "total_cost_estimate_usd": "8000-15000",
+      "description": "Single turbo conversion, stock internals",
+      "required_parts": [
+        {
+          "category": "Turbo Kit",
+          "options": ["GTX3576R kit", "Precision 6266 kit", "BorgWarner S362 kit"],
+          "cost_range": "4500-8000"
+        },
+        {
+          "category": "Fuel System",
+          "options": ["ID1050X injectors", "Walbro 255 pump", "Adjustable FPR"],
+          "cost_range": "1200-1600"
+        },
+        {
+          "category": "Standalone ECU",
+          "options": ["Haltech Elite 2500", "AEM Infinity", "Link G4X"],
+          "cost_range": "1500-3000"
+        },
+        {
+          "category": "Exhaust",
+          "options": ["4\" downpipe and exhaust"],
+          "cost_range": "600-1000"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Head Studs",
+          "options": ["ARP 203-4205"],
+          "cost_range": "380-450",
+          "reason": "Prevents head lift at high boost"
+        },
+        {
+          "category": "Head Gasket",
+          "options": ["Cometic MLS"],
+          "cost_range": "200-300"
+        },
+        {
+          "category": "Intercooler",
+          "options": ["Large front mount"],
+          "cost_range": "700-1200"
+        },
+        {
+          "category": "Oil Cooler",
+          "options": ["External oil cooler kit"],
+          "cost_range": "400-600"
+        }
+      ],
+      "fuel_requirement": "93 octane or E30 blend",
+      "notes": "Stock internals proven to 700+ HP. Head studs highly recommended. This is the sweet spot for street builds."
+    },
+
+    "stage_3_built_engine": {
+      "name": "Stage 3 - Built Engine",
+      "target_power_hp": "900-1200+",
+      "target_torque_lb_ft": "800-1100+",
+      "total_cost_estimate_usd": "25000-50000+",
+      "description": "Full built engine for extreme power",
+      "required_parts": [
+        {
+          "category": "Forged Pistons",
+          "options": ["CP-Carrillo", "JE Pistons", "Wiseco"],
+          "cost_range": "700-1300"
+        },
+        {
+          "category": "Forged Rods",
+          "options": ["Carrillo", "Brian Crower", "Manley"],
+          "cost_range": "850-1800"
+        },
+        {
+          "category": "ARP Head Studs",
+          "options": ["ARP 203-4205"],
+          "cost_range": "380-450"
+        },
+        {
+          "category": "ARP Main Studs",
+          "options": ["ARP 203-5001"],
+          "cost_range": "200-280"
+        },
+        {
+          "category": "Race Bearings",
+          "options": ["ACL Race", "King"],
+          "cost_range": "250-400"
+        },
+        {
+          "category": "Upgraded Valvetrain",
+          "options": ["Brian Crower spring kit", "Supertech valves"],
+          "cost_range": "700-1200"
+        },
+        {
+          "category": "Cams",
+          "options": ["Brian Crower 272+", "Kelford 280"],
+          "cost_range": "800-1200"
+        },
+        {
+          "category": "Large Turbo",
+          "options": ["Garrett G35-900", "Precision 6766", "G42-1200"],
+          "cost_range": "2000-4000"
+        },
+        {
+          "category": "Full Fuel System",
+          "options": ["ID1300X", "Dual pumps", "Surge tank", "Return system"],
+          "cost_range": "2500-4000"
+        },
+        {
+          "category": "Machine Work",
+          "options": ["Bore, hone, deck, balance"],
+          "cost_range": "1500-3000"
+        },
+        {
+          "category": "Engine Build Labor",
+          "options": ["Professional assembly"],
+          "cost_range": "3000-6000"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Built Transmission",
+          "options": ["Built V160", "T56 Magnum swap", "CD009 swap"],
+          "cost_range": "5000-12000"
+        },
+        {
+          "category": "Upgraded Clutch",
+          "options": ["OS Giken", "Competition Clutch"],
+          "cost_range": "1500-3500"
+        },
+        {
+          "category": "Billet Oil Pump",
+          "options": ["Boundary", "Titan"],
+          "cost_range": "400-600"
+        }
+      ],
+      "fuel_requirement": "E85 or Race Fuel (C16, VP Q16)",
+      "notes": "Professional build required. World record builds have exceeded 2000HP on these blocks. Transmission and drivetrain often become the weak link at this level."
+    }
+  },
+
+  "maintenance_kits": {
+    "timing_belt_kit": {
+      "name": "Complete Timing Belt Kit",
+      "interval_miles": 60000,
+      "cost_range_usd": "300-450",
+      "contents": [
+        "Timing belt (Gates or Continental)",
+        "Tensioner bearing",
+        "Idler pulleys (2)",
+        "Water pump",
+        "Front crank seal",
+        "Cam seals (2)"
+      ],
+      "notes": "CRITICAL maintenance item. Never skip or delay."
+    },
+    "oil_service_kit": {
+      "name": "Oil Change Kit",
+      "interval_miles": 3000,
+      "cost_range_usd": "60-100",
+      "contents": [
+        "6 liters quality synthetic oil (5W-30 or 10W-30)",
+        "Oil filter (OEM or Wix)",
+        "Drain plug crush washer"
+      ],
+      "notes": "Use shorter intervals (3000 mi) for boosted applications"
+    },
+    "spark_plug_kit": {
+      "name": "Spark Plug Service",
+      "interval_miles": 30000,
+      "cost_range_usd": "40-80",
+      "contents": [
+        "Spark plugs x6 (NGK BKR6E stock or colder for boost)"
+      ]
+    },
+    "cooling_refresh_kit": {
+      "name": "Cooling System Refresh",
+      "interval_miles": 100000,
+      "cost_range_usd": "200-350",
+      "contents": [
+        "Radiator hoses (upper and lower)",
+        "Thermostat",
+        "Coolant temperature sensor",
+        "Coolant"
+      ]
+    }
+  },
+
+  "common_swap_platforms": {
+    "description": "The 2JZ-GTE is one of the most popular swap engines",
+    "popular_swaps": {
+      "nissan_s_chassis": {
+        "platform": "Nissan 240SX (S13/S14/S15)",
+        "difficulty": "Moderate",
+        "kit_availability": "Excellent",
+        "kit_sources": ["Xcessive Manufacturing", "Driftmotion"],
+        "notes": "Most popular 2JZ swap platform. Tons of documentation."
+      },
+      "nissan_z_chassis": {
+        "platform": "Nissan 350Z/370Z",
+        "difficulty": "Moderate",
+        "kit_availability": "Good",
+        "notes": "Growing in popularity, good chassis rigidity"
+      },
+      "bmw_e36": {
+        "platform": "BMW E36 (3 Series)",
+        "difficulty": "Moderate",
+        "kit_availability": "Good",
+        "kit_sources": ["Xcessive Manufacturing"],
+        "notes": "Great handling chassis, popular in drifting"
+      },
+      "bmw_e46": {
+        "platform": "BMW E46 (3 Series)",
+        "difficulty": "Moderate",
+        "kit_availability": "Good",
+        "notes": "Similar to E36, slightly tighter fit"
+      },
+      "lexus_is300": {
+        "platform": "Lexus IS300",
+        "difficulty": "Easy",
+        "kit_availability": "Not needed",
+        "notes": "Factory 2JZ-GE car - direct swap with wiring and turbo add"
+      },
+      "toyota_86_brz": {
+        "platform": "Toyota 86 / Subaru BRZ / Scion FR-S",
+        "difficulty": "Hard",
+        "kit_availability": "Limited",
+        "notes": "Tight fit, requires significant modification"
+      },
+      "mazda_rx7_fd": {
+        "platform": "Mazda RX-7 FD",
+        "difficulty": "Moderate",
+        "kit_availability": "Limited",
+        "notes": "Popular for reliability over rotary"
+      }
+    }
+  }
+}
