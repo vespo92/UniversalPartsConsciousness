@@ -1,0 +1,233 @@
+{
+  "engine_id": "CHEVY-BBC-454-7.4L-V8",
+  "common_names": ["Big Block Chevy 454", "BBC 454", "Rat Motor", "LS5", "LS6", "LS7"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "Big Block Chevrolet Mark IV",
+  "production_years": "1970-1996",
+
+  "historical_significance": {
+    "summary": "The pinnacle of American muscle car displacement and power",
+    "achievements": [
+      "LS6 rated at 450hp gross - peak muscle car power",
+      "Dominated NASCAR and drag racing",
+      "Powered iconic Chevelle SS 454, Corvette, El Camino",
+      "Remained in production for trucks through 1996"
+    ],
+    "cultural_impact": "The ultimate expression of cubic inches solves everything"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 454,
+      "liters": 7.440,
+      "cc": 7440
+    },
+    "bore": {
+      "inches": 4.251,
+      "mm": 107.95
+    },
+    "stroke": {
+      "inches": 4.000,
+      "mm": 101.6
+    },
+    "compression_ratio_range": "8.5:1 to 11.25:1",
+    "firing_order": "1-8-4-3-6-5-7-2",
+    "cylinder_numbering": "Driver side 1-3-5-7, Passenger side 2-4-6-8",
+    "rotation": "Clockwise viewed from front",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron or Aluminum",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic or solid lifters",
+    "cam_drive": "Timing chain",
+    "deck_height_inches": 9.800,
+    "bore_spacing_inches": 4.840,
+    "main_bearing_caps": "2-bolt or 4-bolt"
+  },
+
+  "power_output_by_variant": {
+    "ls5_1970": {
+      "name": "LS5",
+      "years": "1970-1976",
+      "horsepower_gross": 390,
+      "hp_rpm": 4800,
+      "torque_lb_ft": 500,
+      "torque_rpm": 3400,
+      "compression": "10.25:1",
+      "carburetor": "Rochester Quadrajet 780 CFM",
+      "notes": "Standard 454 option"
+    },
+    "ls6_1970": {
+      "name": "LS6 (Legendary)",
+      "years": "1970-1971",
+      "horsepower_gross": 450,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 500,
+      "torque_rpm": 3600,
+      "compression": "11.25:1",
+      "carburetor": "Holley 780 CFM",
+      "camshaft": "Solid lifter, aggressive timing",
+      "cylinder_heads": "Rectangular port, closed chamber",
+      "notes": "Most powerful production engine of the muscle car era"
+    },
+    "ls7_1970": {
+      "name": "LS7 (ZL1 race engine rated)",
+      "years": "1970 (cancelled production)",
+      "horsepower_gross": 465,
+      "notes": "Never sold to public, became COPO option"
+    },
+    "ls4_1973": {
+      "name": "LS4",
+      "years": "1973-1976",
+      "horsepower_net": 275,
+      "hp_rpm": 4400,
+      "torque_lb_ft": 380,
+      "torque_rpm": 2800,
+      "compression": "8.5:1",
+      "notes": "Emissions-compliant version"
+    },
+    "l19_truck": {
+      "name": "L19/L29 Truck 454",
+      "years": "1987-1996",
+      "horsepower": 230,
+      "torque_lb_ft": 385,
+      "fuel_system": "Throttle Body Injection",
+      "notes": "Final production variant"
+    },
+    "ss454_crate": {
+      "name": "SS454 Crate Engine",
+      "years": "Current",
+      "horsepower": 425,
+      "torque_lb_ft": 500,
+      "features": ["Aluminum oval port heads", "Hydraulic roller cam"],
+      "notes": "GM Performance Parts offering"
+    }
+  },
+
+  "vehicle_applications": {
+    "chevelle_ss": {
+      "years": "1970-1972",
+      "models": ["Chevelle SS 454", "El Camino SS"],
+      "notes": "Iconic muscle car application"
+    },
+    "corvette": {
+      "years": "1970-1974",
+      "models": ["C3 Stingray"],
+      "notes": "Big block Corvette legend"
+    },
+    "camaro": {
+      "years": "1970-1972",
+      "models": ["Camaro RS/SS", "Z28"],
+      "notes": "Limited availability in F-body"
+    },
+    "monte_carlo": {
+      "years": "1970-1975",
+      "notes": "SS package"
+    },
+    "full_size": {
+      "years": "1970-1976",
+      "models": ["Impala", "Caprice"],
+      "notes": "Full-size performance option"
+    },
+    "trucks": {
+      "c_k_series": "1973-1996",
+      "suburban": "1973-1996",
+      "motorhome_chassis": "1973-1996",
+      "notes": "Primary truck/RV application in later years"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5,
+      "with_filter_quarts": 6,
+      "recommended_viscosity": ["10W-30", "10W-40", "20W-50"],
+      "filter_types": ["PF35", "PF2", "Wix 51061"]
+    },
+    "coolant": {
+      "capacity_gallons": 5,
+      "capacity_liters": 18.9,
+      "type": "50/50 Ethylene Glycol"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_inches": 9.800,
+    "bore_spacing_inches": 4.840,
+    "main_journal_diameter_inches": 2.7485,
+    "rod_journal_diameter_inches": 2.200,
+    "connecting_rod_length_inches": 6.135,
+    "piston_pin_diameter_inches": 0.990,
+    "camshaft_journal_diameter_inches": 1.9482
+  },
+
+  "cylinder_head_options": {
+    "oval_port": {
+      "description": "Production heads, good flow efficiency",
+      "intake_valve_inches": 2.06,
+      "exhaust_valve_inches": 1.72,
+      "castings": ["346236", "353049"]
+    },
+    "rectangular_port": {
+      "description": "High-performance heads, maximum flow",
+      "intake_valve_inches": 2.19,
+      "exhaust_valve_inches": 1.88,
+      "castings": ["3964291 (LS6)", "3963369 (LS7)"],
+      "notes": "Required for maximum power, need matching intake"
+    },
+    "peanut_port": {
+      "description": "Small port economy heads",
+      "intake_valve_inches": 1.94,
+      "exhaust_valve_inches": 1.50,
+      "notes": "Avoid for performance builds"
+    }
+  },
+
+  "common_issues_and_solutions": {
+    "overheating": {
+      "cause": "Large displacement, high heat output",
+      "solution": "Ensure adequate cooling system, consider aluminum radiator"
+    },
+    "oil_consumption": {
+      "cause": "Large bore walls, worn rings",
+      "solution": "Proper ring gap, quality rings, plateau honing"
+    },
+    "valve_float": {
+      "cause": "Stock valve springs weak for high RPM",
+      "solution": "Upgrade to performance valve springs"
+    },
+    "cracked_exhaust_manifolds": {
+      "cause": "Expansion/contraction cycles",
+      "solution": "Headers are superior replacement"
+    }
+  },
+
+  "stroker_potential": {
+    "496ci": {
+      "stroke_inches": 4.250,
+      "bore_inches": 4.310,
+      "notes": "Popular stroker combination"
+    },
+    "502ci": {
+      "stroke_inches": 4.250,
+      "bore_inches": 4.466,
+      "notes": "Maximum street stroker"
+    },
+    "540ci": {
+      "stroke_inches": 4.500,
+      "bore_inches": 4.500,
+      "notes": "Race-only, aftermarket block required"
+    },
+    "572ci": {
+      "stroke_inches": 4.750,
+      "bore_inches": 4.560,
+      "notes": "GM ZZ572 crate specification"
+    }
+  },
+
+  "notes": {
+    "heritage": "Evolution from 396ci (1965) and 427ci (1966)",
+    "legacy": "Ultimate displacement for production muscle cars",
+    "nickname": "Rat Motor (vs. Mouse Motor for SBC)",
+    "identification": "Engine code stamped on front passenger side pad"
+  }
+}

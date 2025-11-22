@@ -1,0 +1,495 @@
+{
+  "engine_id": "CHEVY-SBC-350-5.7L-V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "notes": "Comprehensive parts catalog for Small Block Chevy 350",
+
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": {
+        "engine_block": {
+          "part_id": "SBC350-BLOCK",
+          "description": "Cast iron 350 engine block",
+          "oem_part_numbers": {
+            "2_bolt_main": ["3970010", "3970014", "14010207"],
+            "4_bolt_main": ["3970010", "10066034", "14010207"],
+            "bowtie_race": ["10134363", "12480047"]
+          },
+          "material": "Cast Iron",
+          "weight_lbs": 150,
+          "specifications": {
+            "bore_diameter_std_inches": 4.000,
+            "max_overbore_inches": 4.060,
+            "deck_height_inches": 9.025,
+            "main_bearing_bores": 5,
+            "cam_bearing_bores": 5
+          },
+          "wear_classification": "long_life",
+          "aftermarket_options": {
+            "dart_shp": "Dart SHP 350 block",
+            "world_man_o_war": "World Products Man O'War",
+            "gm_bowtie": "GM Performance Bowtie blocks"
+          }
+        },
+        "crankshaft": {
+          "part_id": "SBC350-CRANK",
+          "description": "350 crankshaft, 3.48-inch stroke",
+          "oem_part_numbers": {
+            "cast_iron_1pc_seal": ["10108656", "14088526"],
+            "cast_iron_2pc_seal": ["3941184"]
+          },
+          "material": "Cast Nodular Iron or Forged Steel",
+          "specifications": {
+            "stroke_inches": 3.480,
+            "main_journal_inches": 2.448,
+            "rod_journal_inches": 2.100,
+            "rear_seal": "1-piece or 2-piece"
+          },
+          "aftermarket_options": {
+            "scat_cast": "SCAT 9000 series cast",
+            "scat_forged": "SCAT 4340 forged",
+            "eagle": "Eagle 4340 forged",
+            "callies": "Callies Compstar forged",
+            "383_stroker": "3.75-inch stroke for 383ci"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "connecting_rods": {
+          "part_id": "SBC350-CONROD",
+          "description": "350 connecting rods, 5.7-inch center to center",
+          "oem_part_numbers": ["3973386", "14096151"],
+          "material": "Powdered Metal or Forged Steel",
+          "specifications": {
+            "length_inches": 5.700,
+            "big_end_diameter_inches": 2.225,
+            "small_end_diameter_inches": 0.927,
+            "bolt_size": "3/8-inch"
+          },
+          "aftermarket_options": {
+            "eagle_sir": "Eagle SIR I-beam",
+            "scat_4340": "SCAT 4340 H-beam",
+            "manley": "Manley 4340 forged",
+            "oliver": "Oliver billet"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "pistons": {
+          "part_id": "SBC350-PISTON",
+          "description": "350 pistons, various compression ratios",
+          "oem_specs": {
+            "bore_std_inches": 4.000,
+            "pin_diameter_inches": 0.927,
+            "compression_height_inches": 1.560
+          },
+          "aftermarket_options": {
+            "keith_black": "KB Hypereutectic",
+            "speed_pro": "Speed Pro Hypereutectic",
+            "je": "JE Forged",
+            "wiseco": "Wiseco Forged",
+            "mahle": "Mahle PowerPak forged",
+            "cp_carrillo": "CP-Carrillo forged"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "piston_rings": {
+          "part_id": "SBC350-RINGS",
+          "description": "Piston ring set for 4.00-inch bore",
+          "oem_specs": {
+            "top_ring_inches": "5/64 or 1.5mm",
+            "second_ring_inches": "5/64 or 1.5mm",
+            "oil_ring_inches": "3/16 or 3mm"
+          },
+          "recommended_brands": ["Hastings", "Total Seal", "Speed Pro", "Mahle", "JE Pro Seal"],
+          "wear_classification": "service_item"
+        },
+        "main_bearings": {
+          "part_id": "SBC350-MAIN-BRG",
+          "description": "Main bearing set, 2.448-inch journal",
+          "recommended_brands": ["Clevite H-series", "King", "ACL Race", "Federal Mogul"],
+          "sizes_available": ["STD", ".001", ".010", ".020", ".030"],
+          "wear_classification": "service_item"
+        },
+        "rod_bearings": {
+          "part_id": "SBC350-ROD-BRG",
+          "description": "Rod bearing set, 2.100-inch journal",
+          "recommended_brands": ["Clevite H-series", "King", "ACL Race", "Federal Mogul"],
+          "sizes_available": ["STD", ".001", ".010", ".020", ".030"],
+          "wear_classification": "service_item"
+        },
+        "camshaft_bearings": {
+          "part_id": "SBC350-CAM-BRG",
+          "description": "Cam bearing set",
+          "recommended_brands": ["Dura-Bond", "Federal Mogul", "Clevite"],
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "description": "Cylinder head assemblies and components",
+      "components": {
+        "cylinder_head_iron": {
+          "part_id": "SBC350-HEAD-IRON",
+          "description": "Cast iron cylinder heads",
+          "oem_castings": {
+            "small_valve": ["882", "292", "487"],
+            "large_valve": ["041", "462", "186", "492", "441"],
+            "vortec": ["12558062", "10239906"]
+          },
+          "specifications": {
+            "combustion_chamber_cc_range": "64-76",
+            "intake_port_volume_cc": "160-180",
+            "intake_valve_standard": "1.94-inch",
+            "intake_valve_large": "2.02-inch"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "cylinder_head_aluminum_aftermarket": {
+          "part_id": "SBC350-HEAD-ALUM",
+          "description": "Aftermarket aluminum cylinder heads",
+          "popular_options": {
+            "edelbrock_performer": { "part_number": "60899", "flow_cfm": 185 },
+            "edelbrock_performer_rpm": { "part_number": "60975", "flow_cfm": 220 },
+            "afr_195": { "part_number": "1040", "flow_cfm": 260 },
+            "afr_220": { "part_number": "1065", "flow_cfm": 290 },
+            "dart_pro_1": { "part_number": "11511123P", "flow_cfm": 310 },
+            "brodix_track_1": { "flow_cfm": 295 },
+            "trick_flow_super_23": { "part_number": "TFS-30400001", "flow_cfm": 225 }
+          },
+          "wear_classification": "long_life"
+        },
+        "valves": {
+          "part_id": "SBC350-VALVES",
+          "description": "Intake and exhaust valves",
+          "oem_sizes": {
+            "intake_small": "1.94-inch",
+            "intake_large": "2.02-inch",
+            "exhaust_small": "1.50-inch",
+            "exhaust_large": "1.60-inch"
+          },
+          "aftermarket_brands": ["Manley", "Ferrea", "Del West", "Kibblewhite"],
+          "wear_classification": "service_item"
+        },
+        "valve_springs": {
+          "part_id": "SBC350-VSPRINGS",
+          "description": "Valve spring sets",
+          "stock_specs": {
+            "seat_pressure_lbs": 85,
+            "open_pressure_lbs": 220
+          },
+          "performance_brands": ["Comp Cams", "PAC Racing", "Isky", "Crower"],
+          "wear_classification": "service_item"
+        },
+        "rocker_arms": {
+          "part_id": "SBC350-ROCKERS",
+          "description": "Rocker arm assemblies",
+          "oem_ratio": "1.5:1",
+          "oem_stud_size": "3/8-inch",
+          "aftermarket_options": {
+            "comp_cams_roller": "Comp Cams roller rockers 1.5:1 or 1.6:1",
+            "crane_gold": "Crane Gold Race roller",
+            "jesel_shaft": "Jesel shaft-mount rockers"
+          },
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "camshaft_valvetrain": {
+      "description": "Camshaft and valvetrain components",
+      "components": {
+        "camshaft": {
+          "part_id": "SBC350-CAM",
+          "description": "Camshaft",
+          "oem_types": ["Hydraulic flat tappet", "Solid flat tappet"],
+          "aftermarket_brands": ["Comp Cams", "Crane", "Lunati", "Isky", "Crower", "Howard's"],
+          "popular_grinds": {
+            "mild_street": "Comp Cams XE268H - 224/230 duration @ .050",
+            "street_strip": "Comp Cams XE274H - 230/236 duration @ .050",
+            "roller": "Comp Cams XR288HR - 242/248 duration @ .050"
+          },
+          "wear_classification": "service_item"
+        },
+        "lifters": {
+          "part_id": "SBC350-LIFTERS",
+          "description": "Hydraulic or solid lifters",
+          "types": {
+            "hydraulic_flat": "0.842-inch diameter",
+            "solid_flat": "0.842-inch diameter",
+            "hydraulic_roller": "Requires spider and link bar",
+            "solid_roller": "Requires guide plates"
+          },
+          "recommended_brands": ["Comp Cams", "Crane", "Johnson", "Morel"],
+          "wear_classification": "service_item"
+        },
+        "timing_chain_set": {
+          "part_id": "SBC350-TIMING",
+          "description": "Timing chain and gear set",
+          "types": {
+            "stock": "Single roller chain",
+            "performance": "Double roller chain",
+            "race": "Gear drive or billet chain"
+          },
+          "recommended_brands": ["Cloyes", "Comp Cams", "Rollmaster", "JP Performance"],
+          "wear_classification": "service_item"
+        },
+        "pushrods": {
+          "part_id": "SBC350-PUSHRODS",
+          "description": "Pushrods",
+          "oem_length_inches": 7.794,
+          "oem_diameter_inches": "5/16",
+          "aftermarket_options": ["Comp Cams Hi-Tech", "Trend", "Smith Brothers"],
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "intake_exhaust": {
+      "description": "Intake manifold and exhaust components",
+      "components": {
+        "intake_manifold_carb": {
+          "part_id": "SBC350-INTAKE-CARB",
+          "description": "Carburetor intake manifolds",
+          "popular_options": {
+            "edelbrock_performer": { "part_number": "2101", "type": "Dual-plane" },
+            "edelbrock_rpm": { "part_number": "7101", "type": "Single-plane" },
+            "holley_stealth_ram": { "type": "EFI tunnel ram style" },
+            "weiand_team_g": { "type": "Dual-plane" },
+            "brodix_hv1000": { "type": "Single-plane race" }
+          },
+          "wear_classification": "long_life"
+        },
+        "intake_manifold_tpi": {
+          "part_id": "SBC350-INTAKE-TPI",
+          "description": "Tuned Port Injection intake (1985-1992)",
+          "oem_part_numbers": ["10088114"],
+          "aftermarket_options": ["Edelbrock TPI", "Holley Stealth Ram", "ACCEL SuperRam"],
+          "wear_classification": "long_life"
+        },
+        "exhaust_manifolds": {
+          "part_id": "SBC350-EXH-MAN",
+          "description": "Cast iron exhaust manifolds",
+          "types": ["Ram horn", "Center dump", "Log style"],
+          "wear_classification": "long_life"
+        },
+        "headers": {
+          "part_id": "SBC350-HEADERS",
+          "description": "Aftermarket headers",
+          "popular_brands": ["Hooker", "Hedman", "Flowmaster", "Doug's", "Patriot"],
+          "tube_sizes": {
+            "street": "1-5/8 or 1-3/4 inch primary",
+            "race": "1-7/8 or 2 inch primary"
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "Fuel delivery components",
+      "components": {
+        "carburetor": {
+          "part_id": "SBC350-CARB",
+          "description": "Carburetors",
+          "popular_options": {
+            "holley_750": "Holley 750 CFM 4150 series",
+            "holley_670": "Holley Street Avenger 670",
+            "edelbrock_1406": "Edelbrock Performer 600 CFM",
+            "quadrajet": "Rochester Quadrajet (OEM)"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "fuel_pump_mechanical": {
+          "part_id": "SBC350-FUEL-PUMP",
+          "description": "Mechanical fuel pump",
+          "oem_part_numbers": ["6416966"],
+          "aftermarket_brands": ["Carter", "Holley", "Edelbrock", "Quick Fuel"],
+          "flow_gph_range": "80-130",
+          "wear_classification": "service_item"
+        },
+        "fuel_injectors_tpi": {
+          "part_id": "SBC350-TPI-INJ",
+          "description": "TPI fuel injectors",
+          "oem_flow_lbhr": 22,
+          "upgraded_options": ["24 lb/hr", "28 lb/hr", "30 lb/hr"],
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "ignition_system": {
+      "description": "Ignition components",
+      "components": {
+        "distributor_hei": {
+          "part_id": "SBC350-DIST-HEI",
+          "description": "HEI distributor",
+          "oem_part_numbers": ["1103646", "1111493"],
+          "aftermarket_options": {
+            "msd": "MSD Pro-Billet",
+            "accel": "ACCEL SuperStock",
+            "performance_distributors": "DUI"
+          },
+          "wear_classification": "service_item"
+        },
+        "coil": {
+          "part_id": "SBC350-COIL",
+          "description": "Ignition coil",
+          "oem_output_kv": 35,
+          "aftermarket_options": {
+            "msd_blaster": "MSD Blaster 2",
+            "accel": "ACCEL SuperStock",
+            "msd_6al": "MSD 6AL ignition box + coil"
+          },
+          "wear_classification": "service_item"
+        },
+        "spark_plugs": {
+          "part_id": "SBC350-PLUGS",
+          "description": "Spark plugs",
+          "oem_heat_range": "AC R45TS",
+          "popular_options": {
+            "ac_delco": "R45TS, R44TS",
+            "ngk": "TR55, R5671A series",
+            "autolite": "25, 26"
+          },
+          "wear_classification": "service_item"
+        },
+        "spark_plug_wires": {
+          "part_id": "SBC350-WIRES",
+          "description": "Spark plug wire set",
+          "popular_brands": ["Taylor", "MSD", "ACCEL", "Moroso"],
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "lubrication_system": {
+      "description": "Oil system components",
+      "components": {
+        "oil_pump": {
+          "part_id": "SBC350-OIL-PUMP",
+          "description": "Oil pump",
+          "types": {
+            "standard_volume": "Stock replacement",
+            "high_volume": "15% more flow",
+            "high_pressure": "10+ PSI higher"
+          },
+          "popular_brands": ["Melling", "Sealed Power", "Moroso"],
+          "wear_classification": "service_item"
+        },
+        "oil_pan": {
+          "part_id": "SBC350-OIL-PAN",
+          "description": "Oil pan",
+          "capacities": {
+            "stock": "4-5 quarts",
+            "deep_sump": "6-7 quarts",
+            "road_race": "8+ quarts with baffles"
+          },
+          "popular_brands": ["Moroso", "Canton", "Milodon"],
+          "wear_classification": "long_life"
+        },
+        "oil_filter": {
+          "part_id": "SBC350-OIL-FILTER",
+          "description": "Oil filter",
+          "oem_part_numbers": ["PF25", "PF35"],
+          "aftermarket_options": ["Wix 51061", "K&N HP-2001", "Mobil 1 M1-102"],
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "cooling_system": {
+      "description": "Cooling system components",
+      "components": {
+        "water_pump": {
+          "part_id": "SBC350-WATER-PUMP",
+          "description": "Water pump",
+          "types": {
+            "short": "1969 and later",
+            "long": "1955-1968"
+          },
+          "aftermarket_brands": ["Edelbrock", "Stewart", "Weiand", "Flowkooler"],
+          "wear_classification": "service_item"
+        },
+        "thermostat": {
+          "part_id": "SBC350-THERMOSTAT",
+          "description": "Thermostat",
+          "temperature_options_f": [160, 180, 195],
+          "oem_recommendation": "195°F for emissions, 180°F for performance",
+          "wear_classification": "service_item"
+        },
+        "radiator": {
+          "part_id": "SBC350-RADIATOR",
+          "description": "Radiator (application specific)",
+          "popular_brands": ["Be Cool", "Griffin", "AFCO", "Champion"],
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "gaskets_seals": {
+      "description": "Gaskets and seals",
+      "components": {
+        "head_gaskets": {
+          "part_id": "SBC350-HEAD-GASKET",
+          "description": "Cylinder head gaskets",
+          "bore_size_options_inches": [4.000, 4.060, 4.125, 4.165],
+          "popular_brands": ["Fel-Pro", "Cometic", "Victor Reinz", "SCE"],
+          "types": ["Composition", "MLS (Multi-Layer Steel)"],
+          "wear_classification": "service_item"
+        },
+        "intake_gaskets": {
+          "part_id": "SBC350-INTAKE-GASKET",
+          "description": "Intake manifold gaskets",
+          "popular_options": ["Fel-Pro 1205", "Fel-Pro 1206", "Mr. Gasket"],
+          "wear_classification": "service_item"
+        },
+        "rear_main_seal": {
+          "part_id": "SBC350-RMS",
+          "description": "Rear main seal",
+          "types": {
+            "2_piece_rope": "Pre-1986",
+            "1_piece_lip": "1986+ or conversion"
+          },
+          "popular_brands": ["Fel-Pro", "Pioneer", "National"],
+          "wear_classification": "service_item"
+        },
+        "complete_gasket_set": {
+          "part_id": "SBC350-GASKET-SET",
+          "description": "Complete engine gasket set",
+          "popular_brands": ["Fel-Pro", "Victor Reinz", "Mahle"],
+          "wear_classification": "service_item"
+        }
+      }
+    },
+
+    "engine_accessories": {
+      "description": "Accessory drive and mounts",
+      "components": {
+        "alternator": {
+          "part_id": "SBC350-ALTERNATOR",
+          "description": "Alternator",
+          "output_range_amps": "63-140",
+          "popular_brands": ["Delco Remy", "Powermaster", "March"],
+          "wear_classification": "service_item"
+        },
+        "starter": {
+          "part_id": "SBC350-STARTER",
+          "description": "Starter motor",
+          "types": {
+            "heavy_duty": "Stock replacement",
+            "mini_starter": "Powermaster, MSD DynaForce"
+          },
+          "wear_classification": "service_item"
+        },
+        "harmonic_balancer": {
+          "part_id": "SBC350-BALANCER",
+          "description": "Harmonic balancer/damper",
+          "size_options_inches": [6.75, 8.0],
+          "aftermarket_brands": ["ATI", "Fluidampr", "Professional Products"],
+          "wear_classification": "service_item"
+        }
+      }
+    }
+  }
+}

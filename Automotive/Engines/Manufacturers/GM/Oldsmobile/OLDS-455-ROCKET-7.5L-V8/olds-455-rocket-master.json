@@ -1,0 +1,128 @@
+{
+  "engine_id": "OLDS-455-ROCKET-7.5L-V8",
+  "common_names": ["Oldsmobile 455", "Olds 455", "Rocket 455", "W-30", "W-31"],
+  "manufacturer": "General Motors - Oldsmobile Division",
+  "engine_family": "Oldsmobile Rocket V8",
+  "production_years": "1968-1976",
+
+  "historical_significance": {
+    "summary": "Oldsmobile's ultimate muscle car engine, iconic in 442 applications",
+    "achievements": [
+      "370hp W-30 version dominated drag strips",
+      "Powered iconic Cutlass 442 and Hurst/Olds",
+      "Torque monster - 500 lb-ft from factory",
+      "Oldsmobile pioneered the modern OHV V8 (1949 Rocket 88)"
+    ],
+    "cultural_impact": "First muscle car era - Rocket 88 started it all"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 455,
+      "liters": 7.456,
+      "cc": 7456
+    },
+    "bore": { "inches": 4.126, "mm": 104.8 },
+    "stroke": { "inches": 4.250, "mm": 108.0 },
+    "compression_ratio_range": "8.5:1 to 10.5:1",
+    "firing_order": "1-8-4-3-6-5-7-2",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV, 2 valves per cylinder"
+  },
+
+  "power_output_by_variant": {
+    "base_455_1970": {
+      "horsepower_gross": 365,
+      "hp_rpm": 4600,
+      "torque_lb_ft": 500,
+      "torque_rpm": 3200
+    },
+    "w30_1970": {
+      "name": "W-30",
+      "horsepower_gross": 370,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 500,
+      "torque_rpm": 3600,
+      "features": ["Special cam", "Aluminum intake", "Force-air induction"]
+    },
+    "455_1971_net": {
+      "horsepower_net": 320,
+      "notes": "Net HP rating began"
+    },
+    "455_1976": {
+      "horsepower_net": 190,
+      "notes": "Emissions era, final year"
+    }
+  },
+
+  "vehicle_applications": {
+    "cutlass_442": {
+      "years": "1968-1971",
+      "notes": "Iconic muscle car"
+    },
+    "hurst_olds": {
+      "years": "1968-1972",
+      "notes": "Hurst-modified, limited production"
+    },
+    "toronado": {
+      "years": "1968-1976",
+      "notes": "Front-wheel drive luxury coupe"
+    },
+    "98_regency": {
+      "years": "1968-1976",
+      "notes": "Full-size luxury"
+    },
+    "delta_88": {
+      "years": "1968-1976",
+      "notes": "Full-size sedan"
+    }
+  },
+
+  "unique_features": {
+    "tall_deck": {
+      "deck_height_inches": 10.625,
+      "notes": "Taller than most GM V8s"
+    },
+    "long_stroke": {
+      "stroke_inches": 4.250,
+      "benefit": "Massive torque"
+    },
+    "w_machine_variants": {
+      "w30": "Force-air induction, aluminum intake",
+      "w31": "Small-block performance package"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5,
+      "with_filter_quarts": 6
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_inches": 10.625,
+    "bore_spacing_inches": 4.550,
+    "main_journal_diameter_inches": 3.000,
+    "rod_journal_diameter_inches": 2.500,
+    "rod_length_inches": 6.735
+  },
+
+  "olds_vs_chevy": {
+    "differences": [
+      "Taller deck height",
+      "Different bellhousing pattern",
+      "Unique intake manifold design",
+      "Different starter location",
+      "Larger main journals"
+    ]
+  },
+
+  "notes": {
+    "heritage": "Evolved from 1949 Rocket 88 - first modern OHV V8",
+    "legacy": "Oldsmobile division discontinued 2004",
+    "collector_status": "W-30 and Hurst/Olds highly collectible"
+  }
+}

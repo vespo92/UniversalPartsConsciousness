@@ -1,0 +1,119 @@
+{
+  "engine_id": "CHEVY-LT4-6.2L-V8-SUPERCHARGED",
+  "common_names": ["LT4", "Supercharged LT1", "Z06 Engine", "ZL1 Engine"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "LT/Gen V Small Block Supercharged",
+  "production_years": "2015-present",
+
+  "historical_significance": {
+    "summary": "Factory supercharged Gen V V8 producing 650hp",
+    "achievements": [
+      "Most powerful Camaro production engine ever",
+      "Eaton R1740 TVS supercharger from factory",
+      "Forged internals standard",
+      "Powers C7 Z06, Camaro ZL1, Cadillac CT5-V Blackwing"
+    ]
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree supercharged",
+    "displacement": {
+      "cubic_inches": 376,
+      "liters": 6.162
+    },
+    "bore": { "inches": 4.065 },
+    "stroke": { "inches": 3.622 },
+    "compression_ratio": "10.0:1",
+    "block_material": "Aluminum (reinforced for boost)",
+    "head_material": "Aluminum",
+    "supercharger": {
+      "type": "Eaton R1740 TVS Roots-style",
+      "displacement_liters": 1.7,
+      "boost_psi": 9.4,
+      "intercooler": "Integral water-to-air"
+    },
+    "fuel_system": "Direct Injection + Port Injection",
+    "fuel_delivery": "Dual fuel system for boost",
+    "valvetrain": "OHV, VVT, hydraulic roller",
+    "ignition": "Coil-near-plug"
+  },
+
+  "power_output": {
+    "c7_z06": {
+      "horsepower": 650,
+      "hp_rpm": 6400,
+      "torque_lb_ft": 650,
+      "torque_rpm": 3600
+    },
+    "camaro_zl1": {
+      "horsepower": 650,
+      "hp_rpm": 6400,
+      "torque_lb_ft": 650,
+      "torque_rpm": 3600
+    },
+    "ct5_v_blackwing": {
+      "horsepower": 668,
+      "hp_rpm": 6500,
+      "torque_lb_ft": 659,
+      "torque_rpm": 3600
+    },
+    "crate_engine": {
+      "horsepower": 650,
+      "notes": "GM Performance crate engine"
+    }
+  },
+
+  "vehicle_applications": {
+    "corvette_z06": { "years": "2015-2019", "notes": "C7 Z06" },
+    "camaro_zl1": { "years": "2017-present", "notes": "6th Gen Camaro ZL1" },
+    "cadillac_cts_v": { "years": "2016-2019", "notes": "Third-gen CTS-V" },
+    "cadillac_ct5_v_blackwing": { "years": "2022-present", "notes": "668hp variant" }
+  },
+
+  "key_features": {
+    "forged_internals": {
+      "crankshaft": "Forged steel",
+      "connecting_rods": "Forged titanium",
+      "pistons": "Forged aluminum"
+    },
+    "dual_fuel_system": {
+      "description": "DI + port injection",
+      "benefit": "More fuel delivery capability for boost"
+    },
+    "strengthened_block": {
+      "improvements": ["Larger head studs", "Improved oiling", "Stronger casting"]
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 8.5,
+      "type": "0W-40 synthetic",
+      "notes": "Supercharged engines run hotter"
+    },
+    "supercharger_oil": {
+      "capacity_oz": 8,
+      "type": "Eaton supercharger oil",
+      "interval_miles": 100000
+    }
+  },
+
+  "performance_potential": {
+    "stock": "650-668hp",
+    "pulley_tune": { "power_hp": "700-750", "mods": ["Smaller pulley", "Tune"] },
+    "full_bolt_on": { "power_hp": "800-900", "mods": ["Pulley", "Headers", "Intake", "Tune"] },
+    "ported_blower": { "power_hp": "900-1100", "mods": ["Ported supercharger", "Supporting mods"] }
+  },
+
+  "common_issues": {
+    "supercharger_snout_failure": {
+      "affected": "Early C7 Z06 (2015-2016)",
+      "cause": "Bearing wear in supercharger isolator",
+      "solution": "Upgraded supercharger snout"
+    },
+    "overheating": {
+      "cause": "High heat output, track use",
+      "solution": "Heat exchanger upgrade, proper cooling"
+    }
+  }
+}

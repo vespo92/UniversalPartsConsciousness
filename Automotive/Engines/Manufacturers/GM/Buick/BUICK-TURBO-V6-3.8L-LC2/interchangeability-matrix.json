@@ -1,0 +1,48 @@
+{
+  "engine_id": "BUICK-TURBO-V6-3.8L-LC2",
+  "matrix_version": "1.0.0",
+
+  "buick_v6_family": {
+    "production_span": "1962-2008",
+    "configurations": {
+      "odd_fire": "1962-1984 (uneven firing intervals)",
+      "even_fire": "1985-2008 (smooth operation)"
+    },
+    "displacements": ["3.0L", "3.3L", "3.8L", "4.1L"]
+  },
+
+  "turbo_specific_components": {
+    "turbo_only": ["Turbo pistons", "Turbo rods", "Oil return lines", "Turbo block casting"],
+    "shared_with_na": ["Block external dimensions", "Head bolt pattern", "Accessories"]
+  },
+
+  "hot_air_vs_intercooled": {
+    "hot_air_1984_1985": {
+      "intercooler": "None",
+      "turbo": "TB03",
+      "power": "200hp"
+    },
+    "intercooled_1986_1987": {
+      "intercooler": "Air-to-air",
+      "turbo": "T3",
+      "power": "235-276hp"
+    },
+    "upgrade_path": "Hot air cars commonly upgraded to intercooled setup"
+  },
+
+  "3800_series_interchange": {
+    "series_i": "1988-1995",
+    "series_ii": "1996-2004",
+    "series_iii": "2005-2008",
+    "turbo_to_na_swap": "Turbo components can be added to NA 3800 with modifications"
+  },
+
+  "transmission_compatibility": {
+    "manual": "T5 (rare option)",
+    "automatic": "200-4R (standard)",
+    "swaps": {
+      "2004r_to_700r4": "Popular strength upgrade",
+      "th350": "Possible with modifications"
+    }
+  }
+}

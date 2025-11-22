@@ -1,0 +1,325 @@
+{
+  "engine_id": "CHEVY-SBC-350-5.7L-V8",
+  "common_names": ["Small Block Chevy 350", "SBC 350", "Chevy 350", "5.7L V8", "LT-1", "L48", "L82", "ZZ4"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "Small Block Chevrolet Gen I",
+  "production_years": "1967-2003",
+  "total_production": "Over 100 million units (all SBC variants)",
+
+  "historical_significance": {
+    "summary": "The most produced V8 engine in automotive history",
+    "achievements": [
+      "Powered vehicles from economy cars to Corvettes",
+      "Dominated NASCAR, drag racing, and grassroots motorsports",
+      "Became the universal platform for hot rodding",
+      "Aftermarket support unmatched by any other engine",
+      "Still in production as crate engine (ZZ4, ZZ6)"
+    ],
+    "cultural_impact": "Defined American V8 performance for generations"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 350,
+      "liters": 5.733,
+      "cc": 5733
+    },
+    "bore": {
+      "inches": 4.000,
+      "mm": 101.6
+    },
+    "stroke": {
+      "inches": 3.480,
+      "mm": 88.4
+    },
+    "compression_ratio_range": "8.0:1 to 11.0:1",
+    "firing_order": "1-8-4-3-6-5-7-2",
+    "cylinder_numbering": "Driver side 1-3-5-7, Passenger side 2-4-6-8 (front to rear)",
+    "rotation": "Clockwise viewed from front",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron or Aluminum",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic or solid lifters",
+    "cam_drive": "Timing chain",
+    "deck_height_inches": 9.025,
+    "bore_spacing_inches": 4.400,
+    "main_bearing_caps": "2-bolt or 4-bolt",
+    "crankshaft_type": "Cast iron or forged steel"
+  },
+
+  "power_output_by_variant": {
+    "l48_1967": {
+      "name": "L48 Base",
+      "years": "1967-1980",
+      "horsepower": 295,
+      "hp_rpm": 4800,
+      "torque_lb_ft": 380,
+      "torque_rpm": 3200,
+      "compression": "10.25:1",
+      "carburetor": "Rochester Quadrajet 4-barrel",
+      "notes": "Gross HP rating"
+    },
+    "l46_1969": {
+      "name": "L46",
+      "years": "1969-1970",
+      "horsepower": 350,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 380,
+      "torque_rpm": 3600,
+      "compression": "11.0:1",
+      "carburetor": "Holley 4-barrel",
+      "notes": "High-performance Corvette option"
+    },
+    "lt1_1970": {
+      "name": "LT-1 (Gen I)",
+      "years": "1970-1972",
+      "horsepower": 370,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 380,
+      "torque_rpm": 4000,
+      "compression": "11.0:1",
+      "camshaft": "Solid lifter, 317/346 degrees duration",
+      "notes": "Legendary solid-lifter performance engine"
+    },
+    "l82_1973": {
+      "name": "L82",
+      "years": "1973-1980",
+      "horsepower_net": 250,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 285,
+      "torque_rpm": 4000,
+      "compression": "9.0:1",
+      "notes": "Emissions-era performance option, net HP"
+    },
+    "l98_1985": {
+      "name": "L98 TPI",
+      "years": "1985-1991",
+      "horsepower": 230,
+      "hp_rpm": 4400,
+      "torque_lb_ft": 330,
+      "torque_rpm": 3200,
+      "fuel_system": "Tuned Port Injection",
+      "notes": "First fuel-injected production 350"
+    },
+    "lt1_1992": {
+      "name": "LT1 (Gen II)",
+      "years": "1992-1997",
+      "horsepower": 300,
+      "hp_rpm": 5000,
+      "torque_lb_ft": 340,
+      "torque_rpm": 3600,
+      "fuel_system": "Sequential fuel injection",
+      "features": ["Reverse-flow cooling", "Optical distributor"],
+      "notes": "Modern interpretation, 4th gen F-body and C4 ZR-1"
+    },
+    "l31_vortec": {
+      "name": "L31 Vortec 5700",
+      "years": "1996-2002",
+      "horsepower": 255,
+      "hp_rpm": 4600,
+      "torque_lb_ft": 330,
+      "torque_rpm": 2800,
+      "cylinder_heads": "Vortec iron heads",
+      "notes": "Truck variant with improved heads"
+    },
+    "zz4_crate": {
+      "name": "ZZ4 Crate Engine",
+      "years": "1996-present",
+      "horsepower": 355,
+      "hp_rpm": 5000,
+      "torque_lb_ft": 405,
+      "torque_rpm": 3800,
+      "features": ["Aluminum heads", "Roller camshaft", "Four-bolt mains"],
+      "notes": "GM Performance Parts crate engine"
+    }
+  },
+
+  "vehicle_applications": {
+    "corvette": {
+      "years": "1967-1981",
+      "models": ["C2 Sting Ray", "C3 Stingray"],
+      "notes": "Base and optional engine throughout"
+    },
+    "camaro": {
+      "years": "1967-2002",
+      "models": ["1st Gen SS", "2nd Gen Z28", "3rd Gen IROC-Z", "4th Gen SS"],
+      "notes": "Legendary muscle car powerplant"
+    },
+    "chevelle_ss": {
+      "years": "1967-1972",
+      "notes": "SS 350 option"
+    },
+    "nova": {
+      "years": "1968-1979",
+      "notes": "Lightweight muscle car favorite"
+    },
+    "impala_caprice": {
+      "years": "1967-1996",
+      "notes": "Full-size sedan and wagon"
+    },
+    "trucks": {
+      "c_k_series": "1967-1998",
+      "suburban": "1967-1999",
+      "blazer": "1969-1994",
+      "notes": "Workhorse truck engine"
+    },
+    "monte_carlo": {
+      "years": "1970-1988",
+      "notes": "Personal luxury coupe"
+    },
+    "el_camino": {
+      "years": "1968-1987",
+      "notes": "Car-based pickup"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5,
+      "capacity_liters": 4.7,
+      "with_filter_quarts": 5.5,
+      "recommended_viscosity": ["10W-30", "10W-40", "20W-50"],
+      "modern_recommendation": "5W-30 or 10W-30",
+      "filter_types": ["PF25", "PF35", "Fram PH8A", "Wix 51061"]
+    },
+    "coolant": {
+      "capacity_gallons": 4,
+      "capacity_liters": 15.1,
+      "type": "50/50 Ethylene Glycol antifreeze",
+      "modern_recommendation": "Dex-Cool compatible or Green antifreeze"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_inches": 9.025,
+    "bore_spacing_inches": 4.400,
+    "main_journal_diameter_inches": 2.448,
+    "rod_journal_diameter_inches": 2.100,
+    "main_bearing_width_inches": 0.991,
+    "rod_bearing_width_inches": 0.940,
+    "connecting_rod_length_inches": 5.700,
+    "piston_pin_diameter_inches": 0.927,
+    "camshaft_bearing_diameter_inches": {
+      "front": 1.8682,
+      "center": 1.8682,
+      "rear": 1.8682
+    }
+  },
+
+  "block_casting_numbers": {
+    "early_2_bolt": ["3970010", "3970014", "3970020"],
+    "4_bolt_main": ["3970010", "14010207", "10066034"],
+    "truck_blocks": ["10066136", "12550592"],
+    "notes": "4-bolt main blocks preferred for performance builds"
+  },
+
+  "cylinder_head_options": {
+    "small_valve_casting": {
+      "intake_valve_inches": 1.94,
+      "exhaust_valve_inches": 1.50,
+      "chamber_cc": 76,
+      "castings": ["882", "292"]
+    },
+    "large_valve_casting": {
+      "intake_valve_inches": 2.02,
+      "exhaust_valve_inches": 1.60,
+      "chamber_cc": 64,
+      "castings": ["041", "462", "186", "492"]
+    },
+    "vortec": {
+      "intake_valve_inches": 1.94,
+      "exhaust_valve_inches": 1.50,
+      "chamber_cc": 64,
+      "flow_improvement": "20% over previous iron heads",
+      "castings": ["12558062", "10239906"]
+    },
+    "aluminum_aftermarket": {
+      "examples": ["Edelbrock Performer RPM", "AFR 195", "Dart Pro 1", "Brodix Track 1"],
+      "flow_cfm_range": "220-300+ CFM intake"
+    }
+  },
+
+  "electronic_systems": {
+    "ignition_systems": {
+      "points": {
+        "years": "1967-1974",
+        "type": "Breaker points",
+        "dwell_degrees": 30
+      },
+      "hei": {
+        "years": "1975-1986",
+        "type": "High Energy Ignition",
+        "features": "Integral coil in distributor cap"
+      },
+      "optispark": {
+        "years": "1992-1997",
+        "type": "Optical distributor",
+        "location": "Under water pump",
+        "notes": "LT1 only, reliability concerns"
+      }
+    },
+    "fuel_systems": {
+      "carburetor_options": ["Rochester 2-barrel", "Rochester Quadrajet", "Holley 4-barrel"],
+      "tpi": {
+        "years": "1985-1992",
+        "type": "Tuned Port Injection",
+        "controller": "ECM"
+      },
+      "sfi": {
+        "years": "1992-1997",
+        "type": "Sequential Fuel Injection",
+        "controller": "PCM"
+      }
+    }
+  },
+
+  "common_issues_and_solutions": {
+    "oil_consumption": {
+      "cause": "Worn valve seals or piston rings",
+      "solution": "Replace valve seals, hone cylinders and install new rings"
+    },
+    "lifter_noise": {
+      "cause": "Collapsed hydraulic lifters or worn cam lobes",
+      "solution": "Replace lifters, inspect camshaft"
+    },
+    "timing_chain_stretch": {
+      "cause": "High mileage wear",
+      "symptoms": ["Rough idle", "Hard starting", "Poor performance"],
+      "solution": "Replace timing set with double-roller chain"
+    },
+    "intake_manifold_leaks": {
+      "cause": "Deteriorated gaskets",
+      "solution": "Replace with quality gasket set, proper torque sequence"
+    },
+    "rear_main_seal_leak": {
+      "cause": "Rope seal deterioration (early) or lip seal wear",
+      "solution": "Replace with 1-piece rear main seal conversion"
+    }
+  },
+
+  "performance_potential": {
+    "mild_street": {
+      "power_hp": "350-400",
+      "modifications": ["Aluminum heads", "Camshaft upgrade", "Headers", "Intake manifold"],
+      "cost_range": "$2,000-4,000"
+    },
+    "street_strip": {
+      "power_hp": "400-500",
+      "modifications": ["Forged rotating assembly", "Ported heads", "Aggressive cam", "Fuel system upgrade"],
+      "cost_range": "$5,000-10,000"
+    },
+    "full_race": {
+      "power_hp": "500-650+",
+      "modifications": ["383 stroker kit", "CNC ported heads", "Solid roller cam", "Race intake"],
+      "notes": "Practical limit for .030 over 350, go 383/400 for more"
+    }
+  },
+
+  "notes": {
+    "heritage": "Evolved from 1955 265ci, the engine that launched Chevrolet V8 performance",
+    "legacy": "Created the universal small block platform that dominated for 50 years",
+    "aftermarket": "More aftermarket support than any engine in history",
+    "swaps": "Common swap into hot rods, kit cars, boats, aircraft - truly universal",
+    "identification": "Engine code stamped on front passenger side of block below cylinder head"
+  }
+}

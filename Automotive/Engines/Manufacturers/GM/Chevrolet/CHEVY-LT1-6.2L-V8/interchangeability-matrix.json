@@ -1,0 +1,67 @@
+{
+  "engine_id": "CHEVY-LT1-6.2L-V8",
+  "matrix_version": "1.0.0",
+
+  "lt_family_overview": {
+    "description": "Gen V LT engine family with direct injection",
+    "engines": ["LT1", "LT2", "LT4", "LT5", "LT6", "L82", "L83", "L86", "L87"],
+    "key_difference_from_ls": "Direct injection fuel system"
+  },
+
+  "ls_vs_lt_compatibility": {
+    "shared_dimensions": {
+      "bore_spacing": "4.400 inches (same)",
+      "bellhousing": "Same LS pattern"
+    },
+    "not_compatible": {
+      "heads": "Different water jackets, DI provisions",
+      "intake": "DI intake vs port injection",
+      "valvetrain": "VVT cam, different timing cover",
+      "fuel_system": "Completely different architecture"
+    }
+  },
+
+  "lt_family_interchange": {
+    "lt1_lt2_lt4": {
+      "block": "Interchangeable with mods",
+      "heads": "Interchange within Gen V family",
+      "intake": "Different for NA vs supercharged"
+    },
+    "lt6": {
+      "unique": "Flat-plane crank, unique heads",
+      "not_interchangeable": "With other LT engines"
+    }
+  },
+
+  "transmission_compatibility": {
+    "bellhousing": "LS/LT pattern (same as LS)",
+    "manual": ["TR6060", "Tremec T56 Magnum"],
+    "automatic": ["8L90E", "10L90E", "10R80 (with adapter)"]
+  },
+
+  "swap_considerations": {
+    "lt_into_ls_car": {
+      "possible": true,
+      "requirements": [
+        "LT-specific ECU and harness",
+        "LT accessory drive",
+        "LT fuel system components",
+        "Standalone harness option available"
+      ]
+    },
+    "ls_heads_on_lt": {
+      "possible": "Not recommended",
+      "issues": ["Water jacket differences", "DI provisions"]
+    }
+  },
+
+  "crate_engine_options": {
+    "lt1_crate": {
+      "description": "Complete LT1 crate engine",
+      "includes_controller": "E-Rod versions include complete controls"
+    },
+    "connect_cruise": {
+      "options": ["LT1 + 8L90E", "LT1 + 6L80E"]
+    }
+  }
+}

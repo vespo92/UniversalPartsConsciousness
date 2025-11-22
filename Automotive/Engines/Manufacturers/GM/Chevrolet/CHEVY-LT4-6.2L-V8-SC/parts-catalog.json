@@ -1,0 +1,80 @@
+{
+  "engine_id": "CHEVY-LT4-6.2L-V8-SUPERCHARGED",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "LT4-BLOCK",
+          "description": "Reinforced aluminum block for boost",
+          "specifications": {
+            "bore_inches": 4.065,
+            "deck_height_inches": 9.290,
+            "upgrades_from_lt1": ["Stronger casting", "Improved oiling"]
+          }
+        },
+        "crankshaft": {
+          "part_id": "LT4-CRANK",
+          "description": "Forged steel crankshaft",
+          "stroke_inches": 3.622
+        },
+        "connecting_rods": {
+          "part_id": "LT4-CONROD",
+          "description": "Forged titanium connecting rods",
+          "material": "Titanium",
+          "weight_reduction": "25% lighter than steel"
+        },
+        "pistons": {
+          "part_id": "LT4-PISTON",
+          "description": "Forged aluminum pistons for boost",
+          "compression_ratio": "10.0:1"
+        }
+      }
+    },
+
+    "supercharger_system": {
+      "components": {
+        "supercharger": {
+          "part_id": "LT4-SUPERCHARGER",
+          "description": "Eaton R1740 TVS supercharger",
+          "displacement_liters": 1.7,
+          "boost_psi_stock": 9.4,
+          "aftermarket_upgrades": {
+            "pulley": "Smaller pulley for more boost",
+            "porting": "Ported for more flow"
+          }
+        },
+        "intercooler": {
+          "part_id": "LT4-INTERCOOLER",
+          "type": "Water-to-air",
+          "location": "Integral to supercharger lid",
+          "upgrades": ["Larger heat exchanger", "Ice tank", "Dual pump"]
+        },
+        "supercharger_drive": {
+          "part_id": "LT4-SC-BELT",
+          "type": "8-rib serpentine",
+          "pulley_options": ["Stock 2.45\"", "2.35\" (10%)", "2.25\" (15%)"]
+        }
+      }
+    },
+
+    "fuel_system": {
+      "components": {
+        "direct_injection": {
+          "part_id": "LT4-DI",
+          "description": "High-pressure direct injection"
+        },
+        "port_injection": {
+          "part_id": "LT4-PI",
+          "description": "Supplemental port injection",
+          "purpose": "Additional fuel for boost"
+        },
+        "fuel_pump": {
+          "part_id": "LT4-FUEL-PUMP",
+          "notes": "Higher capacity than LT1"
+        }
+      }
+    }
+  }
+}

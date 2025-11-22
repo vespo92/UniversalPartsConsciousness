@@ -1,0 +1,37 @@
+{
+  "engine_id": "CADILLAC-500-8.2L-V8",
+  "service_version": "1.0.0",
+
+  "service_notes": {
+    "size_considerations": "Very large engine, requires adequate workspace",
+    "weight": "Approximately 700 lbs complete"
+  },
+
+  "torque_specifications": {
+    "main_cap_bolts": { "torque_lb_ft": 90 },
+    "connecting_rod_bolts": { "torque_lb_ft": 40 },
+    "cylinder_head_bolts": { "torque_lb_ft": 95, "sequence": "Center outward" },
+    "intake_manifold": { "torque_lb_ft": 30 },
+    "exhaust_manifold": { "torque_lb_ft": 25 },
+    "rocker_arm_nuts": { "torque_lb_ft": 25 }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 6,
+      "filter": "PF45 or equivalent",
+      "interval_miles": 3000
+    }
+  },
+
+  "common_repairs": {
+    "rear_main_seal": {
+      "type": "Rope seal",
+      "upgrade": "One-piece conversion available"
+    },
+    "timing_chain": {
+      "symptom": "Rattle at idle",
+      "solution": "Double-roller timing set"
+    }
+  }
+}

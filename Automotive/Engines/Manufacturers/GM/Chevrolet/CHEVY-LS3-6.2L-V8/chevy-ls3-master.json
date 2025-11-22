@@ -1,0 +1,158 @@
+{
+  "engine_id": "CHEVY-LS3-6.2L-V8",
+  "common_names": ["LS3", "Gen IV Small Block", "6.2L V8", "Corvette V8"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "LS/Gen IV Small Block",
+  "production_years": "2008-2017",
+
+  "historical_significance": {
+    "summary": "The most popular LS crate engine and apex of naturally aspirated LS development",
+    "achievements": [
+      "430hp naturally aspirated from factory",
+      "Rectangle port heads for superior airflow",
+      "Became the go-to crate engine for swaps",
+      "Powered C6 Corvette, 5th gen Camaro SS"
+    ]
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 376,
+      "liters": 6.162,
+      "cc": 6162
+    },
+    "bore": {
+      "inches": 4.065,
+      "mm": 103.25
+    },
+    "stroke": {
+      "inches": 3.622,
+      "mm": 92.0
+    },
+    "compression_ratio": "10.7:1",
+    "firing_order": "1-8-7-2-6-5-4-3",
+    "block_material": "Aluminum with iron cylinder liners",
+    "head_material": "Aluminum rectangle port (L92/LS3 style)",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic roller",
+    "fuel_system": "Sequential multi-port fuel injection",
+    "ignition_system": "Coil-near-plug",
+    "cam_drive": "Timing chain with VVT option"
+  },
+
+  "power_output_by_application": {
+    "c6_corvette_2008_2013": {
+      "horsepower": 430,
+      "hp_rpm": 5900,
+      "torque_lb_ft": 424,
+      "torque_rpm": 4600
+    },
+    "c6_corvette_grand_sport": {
+      "horsepower": 436,
+      "hp_rpm": 5900,
+      "torque_lb_ft": 428,
+      "torque_rpm": 4600,
+      "notes": "Dry sump option"
+    },
+    "camaro_ss_2010_2015": {
+      "horsepower": 426,
+      "hp_rpm": 5900,
+      "torque_lb_ft": 420,
+      "torque_rpm": 4600
+    },
+    "gm_crate_engine": {
+      "horsepower": 430,
+      "notes": "E-Rod emissions-compliant version available"
+    }
+  },
+
+  "vehicle_applications": {
+    "corvette": {
+      "years": "2008-2013",
+      "models": ["C6 Coupe", "C6 Convertible", "C6 Grand Sport"]
+    },
+    "camaro": {
+      "years": "2010-2015",
+      "models": ["Camaro SS"]
+    },
+    "ss_sedan": {
+      "years": "2014-2017",
+      "notes": "Chevrolet SS (Holden Commodore)"
+    },
+    "caprice_ppv": {
+      "years": "2011-2017",
+      "notes": "Police Patrol Vehicle"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_with_filter_quarts": 6.0,
+      "recommended_viscosity": ["5W-30"],
+      "filter": "AC Delco PF48"
+    },
+    "coolant": {
+      "capacity_gallons": 3.8,
+      "type": "Dex-Cool"
+    }
+  },
+
+  "key_features": {
+    "rectangle_port_heads": "L92/LS3 high-flow design, 68cc chambers",
+    "58x_reluctor": "58-tooth crank sensor wheel (Gen IV)",
+    "vvt_capable": "Some applications have variable valve timing",
+    "high_flow_intake": "Improved composite intake over LS2"
+  },
+
+  "cylinder_head_specifications": {
+    "casting_numbers": ["5364 (243)", "821 (799)"],
+    "intake_valve_inches": 2.165,
+    "exhaust_valve_inches": 1.59,
+    "intake_port_cc": 260,
+    "combustion_chamber_cc": 68,
+    "intake_flow_cfm_at_600": 315,
+    "exhaust_flow_cfm_at_600": 235
+  },
+
+  "performance_potential": {
+    "stock": "426-436hp",
+    "bolt_ons": {
+      "power_hp": "450-480",
+      "mods": ["CAI", "Headers", "Exhaust", "Tune"]
+    },
+    "cam_only": {
+      "power_hp": "500-530",
+      "mods": ["Cam", "Valve springs", "Tune"]
+    },
+    "heads_cam": {
+      "power_hp": "550-600",
+      "mods": ["Ported heads or aftermarket", "Aggressive cam", "Intake"]
+    },
+    "boosted": {
+      "power_hp": "700-1200+",
+      "notes": "Stock block good to ~900hp, forged for more"
+    }
+  },
+
+  "vs_ls1_comparison": {
+    "improvements": [
+      "Rectangle port heads (260cc vs 200cc)",
+      "Larger bore (4.065 vs 3.898)",
+      "More displacement (376ci vs 346ci)",
+      "Higher compression (10.7:1 vs 10.25:1)",
+      "More power (430hp vs 350hp)",
+      "58X reluctor wheel for finer tuning"
+    ],
+    "shared": [
+      "Same stroke (3.622)",
+      "Same bellhousing pattern",
+      "Same accessory drive options"
+    ]
+  },
+
+  "notes": {
+    "crate_popularity": "Most popular GM crate engine for LS swaps",
+    "e_rod_version": "Emissions-legal version includes cats, controls",
+    "identification": "RPO LS3 on engine decal"
+  }
+}

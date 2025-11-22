@@ -1,0 +1,43 @@
+{
+  "engine_id": "CHEVY-LS7-7.0L-V8",
+  "matrix_version": "1.0.0",
+
+  "ls7_unique_components": {
+    "block": "Tall deck, siamesed bores - LS7 specific",
+    "crankshaft": "4.000 stroke forged - fits other tall deck blocks",
+    "rods": "Titanium - unique to LS7, special handling required",
+    "heads": "CNC ported with titanium valves - fits other LS blocks",
+    "dry_sump": "Complete system specific to Z06/Z28 chassis"
+  },
+
+  "heads_on_other_engines": {
+    "compatibility": "LS7 heads can bolt to any LS/LT block",
+    "intake_required": "Rectangle port intake (LS3, LS7, L92 style)",
+    "popular_swap": "LS7 heads on LS3 or stroked LS builds",
+    "notes": "High flow makes them ideal for boosted builds (remove titanium valves first)"
+  },
+
+  "crank_compatibility": {
+    "stroke_inches": 4.000,
+    "fits_blocks": ["LS7 tall deck", "Aftermarket tall deck"],
+    "dry_sump_specific": "LS7 crank has dry sump provisions"
+  },
+
+  "titanium_rod_considerations": {
+    "handling": "Do NOT drop or strike",
+    "torque": "Specific stretch procedure required",
+    "boost_limit": "Conservative estimates ~600hp on titanium rods",
+    "upgrade_path": "Steel rods for forced induction builds"
+  },
+
+  "wet_sump_conversion": {
+    "possible": true,
+    "requires": ["Wet sump oil pan", "Different valley cover", "Alternate accessories"],
+    "vendors": "Mast Motorsports, Katech"
+  },
+
+  "camshaft_compatibility": {
+    "ls7_cam_in_other_ls": "Works but may be mild for LS1/LS3",
+    "aftermarket_cams": "Must be titanium-valve compatible (reduced spring pressure)"
+  }
+}

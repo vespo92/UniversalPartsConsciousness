@@ -1,0 +1,160 @@
+{
+  "engine_id": "CHEVY-LS1-5.7L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "The LS1 sparked the most active aftermarket engine ecosystem since the SBC",
+    "primary_markets": ["Engine swaps", "Corvette performance", "F-body upgrades", "Drift cars"]
+  },
+
+  "major_vendors": {
+    "texas_speed_performance": {
+      "name": "Texas Speed & Performance (TSP)",
+      "url": "https://www.texasspeed.com",
+      "specialty": "Complete LS packages, cams, heads",
+      "popular_products": {
+        "cam_packages": "Stage 1-4 cam kits",
+        "heads": "PRC heads",
+        "long_blocks": "Complete long blocks"
+      }
+    },
+    "summit_racing": {
+      "url": "https://www.summitracing.com",
+      "specialty": "Full LS catalog"
+    },
+    "jegs": {
+      "url": "https://www.jegs.com",
+      "specialty": "LS parts and kits"
+    },
+    "speed_engineering": {
+      "specialty": "Headers and exhaust"
+    },
+    "lsx_innovations": {
+      "specialty": "LS specialty tools and billet parts"
+    }
+  },
+
+  "performance_manufacturers": {
+    "camshafts": {
+      "btrcam": "BTR Cam, high-quality custom grinds",
+      "texas_speed": "Value-oriented performance cams",
+      "comp_cams": "Full line of LS cams",
+      "cam_motion": "Custom and shelf cams",
+      "brian_tooley": "Premium grinds"
+    },
+    "cylinder_heads": {
+      "trick_flow": "GenX cathedral and rectangle",
+      "afr": "High-flow aluminum heads",
+      "texas_speed_prc": "Budget performance heads",
+      "mast_motorsports": "Premium CNC ported"
+    },
+    "forced_induction": {
+      "vortech": "Centrifugal superchargers",
+      "procharger": "Centrifugal superchargers",
+      "whipple": "Twin-screw superchargers",
+      "kenne_bell": "Twin-screw superchargers",
+      "garrett": "Turbocharger systems",
+      "precision_turbo": "High-end turbos"
+    },
+    "intake_manifolds": {
+      "fast": "FAST LSXR intakes",
+      "holley": "Hi-Ram, Mid-Rise intakes",
+      "msd": "Atomic AirForce",
+      "nick_williams": "Premium throttle bodies"
+    }
+  },
+
+  "swap_kits": {
+    "engine_mounts": {
+      "hooker_blackheart": "Various vehicle applications",
+      "holley": "LS swap mounts",
+      "dirty_dingo": "Swap brackets",
+      "sikky": "Import swap kits"
+    },
+    "oil_pans": {
+      "holley": "Front/rear sump swap pans",
+      "moroso": "Road race pans",
+      "canton": "Various applications"
+    },
+    "wiring_harnesses": {
+      "psi_conversion": "Standalone harnesses",
+      "speartech": "Custom harnesses",
+      "howell_efi": "Complete swap harnesses"
+    },
+    "complete_packages": {
+      "chevrolet_performance": "Connect & Cruise packages",
+      "pace_performance": "Turn-key swap packages"
+    }
+  },
+
+  "crate_engine_options": {
+    "gm_performance": {
+      "ls376_480": {
+        "displacement": "376ci (6.2L)",
+        "horsepower": 480,
+        "price_usd": 8500
+      },
+      "lsa_supercharged": {
+        "displacement": "376ci",
+        "horsepower": 556,
+        "price_usd": 15000
+      }
+    },
+    "blueprint_engines": {
+      "ls_series": "Complete LS crate engines"
+    }
+  },
+
+  "tuning_solutions": {
+    "hp_tuners": {
+      "description": "Industry-standard LS tuning",
+      "cost_range_usd": "500-700",
+      "features": ["Full PCM access", "Data logging", "Custom tuning"]
+    },
+    "efi_live": {
+      "description": "Professional LS tuning",
+      "features": ["Real-time tuning", "Commercial use"]
+    },
+    "holley_terminator": {
+      "description": "Self-learning standalone EFI",
+      "cost_usd": 1800,
+      "features": ["No laptop needed", "Base maps included"]
+    }
+  },
+
+  "popular_builds": {
+    "bolt_on_streetcar": {
+      "target_hp": "400-420",
+      "cost_estimate": "$1500-2500",
+      "parts": ["CAI", "Headers", "Exhaust", "Tune"]
+    },
+    "cam_only": {
+      "target_hp": "450-480",
+      "cost_estimate": "$2000-3500",
+      "parts": ["Cam", "Valve springs", "Pushrods", "Tune"]
+    },
+    "heads_cam": {
+      "target_hp": "550+",
+      "cost_estimate": "$5000-8000",
+      "parts": ["Ported heads or LS3 heads", "Cam", "Intake", "Headers"]
+    },
+    "boosted_build": {
+      "target_hp": "700-1000+",
+      "cost_estimate": "$10000-20000",
+      "parts": ["Forged internals", "Supercharger or turbo", "Fuel system", "Tune"]
+    }
+  },
+
+  "community_resources": {
+    "forums": {
+      "ls1tech": "Largest LS community forum",
+      "corvetteforum": "Corvette-specific LS discussion",
+      "ls1gto": "GTO-specific",
+      "ls1lt1": "General LS and LT discussion"
+    },
+    "facebook_groups": {
+      "ls_swap": "LS swap discussion",
+      "ls1_ls2_ls3_ls7": "General LS groups"
+    }
+  }
+}

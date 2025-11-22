@@ -1,0 +1,66 @@
+{
+  "engine_id": "CHEVY-LT1-6.2L-V8",
+  "service_version": "1.0.0",
+
+  "tool_inventory": {
+    "specialty_tools": {
+      "di_fuel_system": {
+        "description": "Tools for direct injection fuel system",
+        "includes": ["Fuel pressure gauge (high pressure)", "Injector removal tools"]
+      },
+      "cam_phaser_tool": {
+        "description": "Tool for VVT cam phaser service",
+        "notes": "Required for cam swaps"
+      },
+      "carbon_cleaning": {
+        "description": "Walnut blaster for intake valve carbon",
+        "notes": "Every 50-75k miles recommended"
+      }
+    }
+  },
+
+  "torque_specifications": {
+    "cylinder_head_bolts": {
+      "procedure": "TTY - 22 lb-ft + 90° + 70°",
+      "notes": "Replace bolts each use"
+    },
+    "main_cap_bolts": {
+      "inner": "15 lb-ft + 80°",
+      "outer": "18 lb-ft"
+    },
+    "rod_bolts": "15 lb-ft + 75°",
+    "intake_manifold": "44 lb-ft"
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 8.0,
+      "corvette_oil": "0W-40 (Mobil 1 Dexos recommended)",
+      "camaro_oil": "5W-30",
+      "filter": "AC Delco PF64",
+      "interval_miles": 7500
+    },
+    "spark_plug_replacement": {
+      "interval_miles": 100000,
+      "plug": "AC Delco 41-114",
+      "gap_inches": 0.040
+    },
+    "carbon_cleaning": {
+      "interval_miles": 60000,
+      "method": "Walnut shell blasting",
+      "notes": "DI engines do not wash valves with fuel"
+    },
+    "afm_delete": {
+      "difficulty": "Advanced",
+      "components": ["DOD delete cam", "Non-AFM lifters", "Valley cover", "Tune"],
+      "benefits": "Eliminates lifter failure risk"
+    }
+  },
+
+  "maintenance_schedule": {
+    "oil_change": "Oil life monitor or 7,500 miles",
+    "spark_plugs": "100,000 miles",
+    "coolant": "5 years/150,000 miles",
+    "transmission_fluid_8l90": "45,000 miles"
+  }
+}

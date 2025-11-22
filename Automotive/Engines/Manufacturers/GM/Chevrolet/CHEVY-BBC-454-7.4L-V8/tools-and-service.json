@@ -1,0 +1,83 @@
+{
+  "engine_id": "CHEVY-BBC-454-7.4L-V8",
+  "service_version": "1.0.0",
+
+  "tool_inventory": {
+    "specialty_tools": {
+      "harmonic_balancer_puller": {
+        "description": "BBC-specific balancer puller",
+        "notes": "Larger diameter than SBC"
+      },
+      "valve_spring_compressor": {
+        "description": "Heavy-duty for BBC valve springs",
+        "recommendation": "COMP Cams 4755"
+      },
+      "piston_ring_compressor": {
+        "sizes_inches": ["4.250", "4.280", "4.310", "4.500"]
+      }
+    },
+    "lifting_equipment": {
+      "engine_hoist": {
+        "minimum_capacity_lbs": 1500,
+        "notes": "BBC significantly heavier than SBC (600+ lbs)"
+      }
+    }
+  },
+
+  "torque_specifications": {
+    "main_cap_bolts": {
+      "inner_2_bolt": { "torque_lb_ft": 105 },
+      "inner_4_bolt": { "torque_lb_ft": 105 },
+      "outer_4_bolt": { "torque_lb_ft": 65 }
+    },
+    "connecting_rod_bolts": {
+      "standard_7_16": { "torque_lb_ft": 50 },
+      "arp_bolts": { "torque_lb_ft": 63, "notes": "With ARP lube" }
+    },
+    "cylinder_head_bolts": {
+      "standard": { "torque_lb_ft": 80, "sequence": "From center outward" },
+      "arp_studs": { "torque_lb_ft": 90 }
+    },
+    "intake_manifold_bolts": {
+      "torque_lb_ft": 30
+    },
+    "rocker_arm_nuts": {
+      "hydraulic": "Zero lash plus 1 turn",
+      "solid": "Set to cam card specification"
+    }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_with_filter_quarts": 6,
+      "filter_options": ["PF35", "Wix 51061", "K&N HP-2001"],
+      "drain_plug_torque_lb_ft": 20
+    },
+    "timing_chain_replacement": {
+      "difficulty": "Advanced",
+      "time_hours": 5,
+      "notes": "Water pump, balancer, timing cover removal required"
+    },
+    "cam_swap": {
+      "difficulty": "Advanced",
+      "time_hours": 10,
+      "notes": "Similar to SBC but larger components"
+    }
+  },
+
+  "common_repairs": {
+    "overheating_issues": {
+      "cause": "High heat output from large displacement",
+      "solutions": [
+        "Upgrade to aluminum radiator",
+        "Install electric fans",
+        "Use 160°F thermostat for street use",
+        "Ensure proper water pump flow direction"
+      ]
+    },
+    "oil_pressure_low": {
+      "causes": ["Worn bearings", "Weak oil pump", "Wrong oil viscosity"],
+      "solutions": ["Rebuild with new bearings", "Install high-volume pump", "Use 10W-40 or 20W-50"]
+    }
+  }
+}

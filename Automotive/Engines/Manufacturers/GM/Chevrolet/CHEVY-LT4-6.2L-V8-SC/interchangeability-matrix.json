@@ -1,0 +1,46 @@
+{
+  "engine_id": "CHEVY-LT4-6.2L-V8-SUPERCHARGED",
+  "matrix_version": "1.0.0",
+
+  "lt4_compatibility": {
+    "lt1_lt4_interchange": {
+      "block": "LT4 block stronger but same external dimensions",
+      "heads": "Same heads as LT1",
+      "supercharger": "Can add to LT1 with supporting mods"
+    },
+    "lsa_vs_lt4": {
+      "lsa": "Gen IV supercharged (Cadillac CTS-V)",
+      "lt4": "Gen V supercharged",
+      "interchange": "Not directly compatible"
+    }
+  },
+
+  "supercharger_swap_to_lt1": {
+    "feasible": true,
+    "requirements": [
+      "LT4 supercharger assembly",
+      "LT4 fuel system (dual fuel)",
+      "LT4 intake manifold",
+      "Forged internals recommended",
+      "Professional tune"
+    ],
+    "power_potential": "550-600hp on stock LT1 internals"
+  },
+
+  "pulley_upgrades": {
+    "stock_pulley": { "diameter_inches": 2.45, "boost_psi": 9.4 },
+    "10_percent": { "diameter_inches": 2.35, "boost_psi": 11 },
+    "15_percent": { "diameter_inches": 2.25, "boost_psi": 12.5 },
+    "notes": "Smaller pulley = more boost"
+  },
+
+  "crate_engine_packages": {
+    "lt4_crate": {
+      "description": "Complete LT4 crate engine",
+      "includes": "Supercharger, all accessories"
+    },
+    "connect_cruise": {
+      "options": ["LT4 + 8L90E", "LT4 + 10L90E"]
+    }
+  }
+}

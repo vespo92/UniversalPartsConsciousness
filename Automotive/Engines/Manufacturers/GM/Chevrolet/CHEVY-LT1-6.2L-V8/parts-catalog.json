@@ -1,0 +1,110 @@
+{
+  "engine_id": "CHEVY-LT1-6.2L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "LT1-BLOCK",
+          "description": "Gen V aluminum block",
+          "specifications": {
+            "bore_inches": 4.065,
+            "deck_height_inches": 9.290,
+            "main_caps": "6-bolt cross-bolted"
+          }
+        },
+        "crankshaft": {
+          "part_id": "LT1-CRANK",
+          "description": "Forged steel crankshaft",
+          "specifications": {
+            "stroke_inches": 3.622,
+            "reluctor": "58X"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "LT1-CONROD",
+          "description": "Forged steel connecting rods",
+          "length_inches": 6.098
+        },
+        "pistons": {
+          "part_id": "LT1-PISTON",
+          "description": "Forged pistons with DI bowl",
+          "specifications": {
+            "bore_inches": 4.065,
+            "di_bowl": "Direct injection piston design"
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "lt1_heads": {
+          "part_id": "LT1-HEAD",
+          "description": "Gen V rectangle port heads",
+          "specifications": {
+            "intake_valve": 2.13,
+            "exhaust_valve": 1.59,
+            "chamber_cc": 56.0
+          }
+        },
+        "valve_springs": {
+          "part_id": "LT1-VSPRINGS",
+          "description": "VVT-compatible beehive springs"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "LT1-HPFP",
+          "description": "Direct injection high-pressure pump",
+          "pressure_psi": 2175,
+          "location": "Cam driven"
+        },
+        "fuel_injectors": {
+          "part_id": "LT1-DI-INJ",
+          "description": "Direct injection fuel injectors",
+          "notes": "Mounted in cylinder head"
+        }
+      }
+    },
+
+    "valvetrain": {
+      "components": {
+        "camshaft": {
+          "part_id": "LT1-CAM",
+          "description": "VVT hydraulic roller cam with phaser",
+          "notes": "3-bolt cam with phaser on front"
+        },
+        "cam_phaser": {
+          "part_id": "LT1-PHASER",
+          "description": "Variable valve timing phaser",
+          "range_degrees": 65
+        },
+        "afm_lifters": {
+          "part_id": "LT1-AFM-LIFTERS",
+          "description": "Active Fuel Management lifters",
+          "notes": "Collapsible for cylinder deactivation"
+        }
+      }
+    },
+
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "LT1-INTAKE",
+          "description": "Composite intake manifold",
+          "notes": "Different from LS, DI specific"
+        },
+        "throttle_body": {
+          "part_id": "LT1-TB",
+          "oem_size_mm": 87,
+          "type": "Electronic throttle control"
+        }
+      }
+    }
+  }
+}

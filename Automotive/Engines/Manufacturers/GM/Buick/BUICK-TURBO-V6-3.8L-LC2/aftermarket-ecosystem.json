@@ -1,0 +1,72 @@
+{
+  "engine_id": "BUICK-TURBO-V6-3.8L-LC2",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Dedicated and passionate aftermarket for Turbo Buicks",
+    "strength": "Strong community support despite niche market"
+  },
+
+  "specialists": {
+    "full_throttle_speed": {
+      "specialty": "Complete GN builds and parts",
+      "url": "https://www.fullthrottlespeed.com"
+    },
+    "precision_turbo": {
+      "specialty": "Turbo upgrades"
+    },
+    "champion_heads": {
+      "specialty": "Cylinder heads and engine building"
+    },
+    "gbodyparts": {
+      "specialty": "Restoration and performance parts"
+    },
+    "turbo_tweak": {
+      "specialty": "ECM chips and tuning",
+      "url": "https://www.turbotweak.com"
+    },
+    "kirbans": {
+      "specialty": "Restoration and performance",
+      "url": "https://www.kirbansbuickperformance.com"
+    }
+  },
+
+  "popular_modifications": {
+    "stage_1_chip_exhaust": {
+      "power_hp": "280-300",
+      "cost_usd": "500-1000"
+    },
+    "turbo_upgrade_chip": {
+      "power_hp": "350-400",
+      "components": ["TE44 turbo", "Chip", "Fuel pump", "Injectors"],
+      "cost_usd": "2000-3000"
+    },
+    "big_turbo_setup": {
+      "power_hp": "500-700",
+      "components": ["PT62 or GT35R", "Built trans", "Fuel system", "Intercooler"],
+      "cost_usd": "8000-15000"
+    },
+    "full_race": {
+      "power_hp": "800-1200+",
+      "components": ["Built engine", "Large turbo", "Roll cage", "Drag suspension"],
+      "cost_usd": "30000+"
+    }
+  },
+
+  "tuning_solutions": {
+    "turbo_tweak": "Gold standard for GN chips",
+    "scanmaster": "Essential monitoring tool",
+    "powerlogger": "Advanced datalogging"
+  },
+
+  "community": {
+    "forums": {
+      "turbobuicks": "TurboBuicks.com - largest community",
+      "gnttype": "GNTtype.org"
+    },
+    "events": {
+      "buick_gs_nationals": "Annual Buick gathering",
+      "bowling_green": "Bowling Green Performance Clinic"
+    }
+  }
+}

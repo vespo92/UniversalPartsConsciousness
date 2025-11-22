@@ -1,0 +1,79 @@
+{
+  "engine_id": "OLDS-455-ROCKET-7.5L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "OLDS455-BLOCK",
+          "description": "Cast iron tall-deck block",
+          "specifications": {
+            "bore_inches": 4.126,
+            "deck_height_inches": 10.625,
+            "main_caps": "2 or 4-bolt"
+          }
+        },
+        "crankshaft": {
+          "part_id": "OLDS455-CRANK",
+          "description": "Cast iron crankshaft",
+          "specifications": {
+            "stroke_inches": 4.250,
+            "main_journal_inches": 3.000,
+            "rod_journal_inches": 2.500
+          },
+          "aftermarket": {
+            "eagle": "Eagle 4340 forged",
+            "scat": "SCAT forged"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "OLDS455-CONROD",
+          "description": "Oldsmobile connecting rods",
+          "length_inches": 6.735,
+          "aftermarket": ["Eagle", "SCAT", "Manley"]
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "standard_heads": {
+          "part_id": "OLDS455-HEAD-STD",
+          "castings": ["C", "D", "E heads"],
+          "specifications": {
+            "intake_valve_inches": 2.07,
+            "exhaust_valve_inches": 1.63
+          }
+        },
+        "w30_heads": {
+          "part_id": "OLDS455-HEAD-W30",
+          "description": "W-30 performance heads",
+          "specifications": {
+            "intake_valve_inches": 2.07,
+            "exhaust_valve_inches": 1.72,
+            "chamber_cc": 77
+          }
+        }
+      }
+    },
+
+    "intake_manifolds": {
+      "components": {
+        "cast_iron": {
+          "part_id": "OLDS455-INTAKE-IRON",
+          "description": "Standard cast iron intake"
+        },
+        "w30_aluminum": {
+          "part_id": "OLDS455-INTAKE-W30",
+          "description": "W-30 aluminum intake",
+          "notes": "Highly desirable for restoration"
+        },
+        "aftermarket": {
+          "edelbrock": "Edelbrock Performer",
+          "offenhauser": "Offy intake"
+        }
+      }
+    }
+  }
+}

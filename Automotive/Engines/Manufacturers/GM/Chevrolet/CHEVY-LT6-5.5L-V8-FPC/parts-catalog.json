@@ -1,0 +1,98 @@
+{
+  "engine_id": "CHEVY-LT6-5.5L-V8-FLAT-PLANE-CRANK",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "LT6-BLOCK",
+          "description": "Aluminum block for flat-plane crank",
+          "specifications": {
+            "bore_inches": 4.104,
+            "deck_height_inches": 9.140,
+            "unique": "Flat-plane crank journals"
+          }
+        },
+        "crankshaft": {
+          "part_id": "LT6-CRANK",
+          "description": "Flat-plane forged steel crankshaft",
+          "specifications": {
+            "stroke_inches": 3.150,
+            "type": "180-degree flat-plane",
+            "material": "Forged steel"
+          },
+          "notes": "First American flat-plane production crank"
+        },
+        "connecting_rods": {
+          "part_id": "LT6-CONROD",
+          "description": "Forged titanium rods",
+          "material": "Titanium",
+          "length_inches": 5.74
+        },
+        "pistons": {
+          "part_id": "LT6-PISTON",
+          "description": "Forged aluminum high-compression pistons",
+          "compression_ratio": "12.5:1"
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "dohc_heads": {
+          "part_id": "LT6-HEAD",
+          "description": "DOHC 32-valve aluminum heads",
+          "specifications": {
+            "camshafts_per_head": 2,
+            "valves_per_cylinder": 4,
+            "intake_valve_mm": 38.0,
+            "exhaust_valve_mm": 30.0
+          },
+          "notes": "Completely unique to LT6"
+        },
+        "camshafts": {
+          "part_id": "LT6-CAMS",
+          "description": "Four DOHC camshafts with VVT",
+          "duration_intake": "280 degrees",
+          "duration_exhaust": "274 degrees",
+          "vvt": "Dual variable valve timing"
+        },
+        "finger_followers": {
+          "part_id": "LT6-FOLLOWERS",
+          "description": "Low-mass finger followers",
+          "purpose": "Enable 8600 RPM operation"
+        }
+      }
+    },
+
+    "dry_sump_system": {
+      "components": {
+        "oil_tank": {
+          "part_id": "LT6-OIL-TANK",
+          "capacity_quarts": 10.5
+        },
+        "scavenge_pump": {
+          "part_id": "LT6-SCAV-PUMP",
+          "stages": 4
+        }
+      }
+    },
+
+    "intake_exhaust": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "LT6-INTAKE",
+          "description": "Individual throttle body per cylinder",
+          "throttle_bodies": 8,
+          "notes": "ITB setup for high-RPM response"
+        },
+        "exhaust_manifolds": {
+          "part_id": "LT6-EXHAUST",
+          "description": "Equal-length headers",
+          "notes": "Designed for flat-plane exhaust pulses"
+        }
+      }
+    }
+  }
+}

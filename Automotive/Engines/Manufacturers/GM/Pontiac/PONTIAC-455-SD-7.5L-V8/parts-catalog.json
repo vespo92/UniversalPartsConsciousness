@@ -1,0 +1,108 @@
+{
+  "engine_id": "PONTIAC-455-SD-7.5L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "PONT455SD-BLOCK",
+          "description": "SD-455 reinforced block",
+          "oem_casting": "481988 (SD block)",
+          "specifications": {
+            "bore_inches": 4.151,
+            "main_caps": "4-bolt main",
+            "deck_height_inches": 10.240
+          },
+          "notes": "Dry deck, thick wall, very rare"
+        },
+        "crankshaft": {
+          "part_id": "PONT455SD-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_number": "494230",
+          "specifications": {
+            "stroke_inches": 4.210,
+            "main_journal_inches": 3.250,
+            "rod_journal_inches": 2.250
+          }
+        },
+        "connecting_rods": {
+          "part_id": "PONT455SD-CONROD",
+          "description": "Forged steel pink connecting rods",
+          "oem_part_number": "535461",
+          "specifications": {
+            "length_inches": 6.625,
+            "bolt_size": "7/16-inch"
+          },
+          "notes": "Pink paint marks them as SD rods"
+        },
+        "pistons": {
+          "part_id": "PONT455SD-PISTON",
+          "description": "Forged aluminum pistons",
+          "oem_part_number": "9794068",
+          "specifications": {
+            "bore_inches": 4.151,
+            "compression_ratio": "8.4:1"
+          }
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "round_port_heads": {
+          "part_id": "PONT455SD-HEAD",
+          "description": "Round port SD heads (7K3)",
+          "oem_casting": "9799507 (7K3)",
+          "specifications": {
+            "intake_valve_inches": 2.11,
+            "exhaust_valve_inches": 1.77,
+            "combustion_chamber_cc": 93,
+            "intake_flow_cfm": 290,
+            "exhaust_flow_cfm": 215
+          },
+          "notes": "Extremely valuable - verify casting number"
+        }
+      }
+    },
+
+    "intake_exhaust": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "PONT455SD-INTAKE",
+          "description": "Cast iron SD intake",
+          "oem_part_number": "9794071",
+          "aftermarket": {
+            "edelbrock": "Edelbrock Performer",
+            "offenhauser": "Offy dual-quad"
+          }
+        },
+        "carburetor": {
+          "part_id": "PONT455SD-CARB",
+          "description": "Rochester Quadrajet 800 CFM",
+          "oem_part_number": "7043263"
+        }
+      }
+    },
+
+    "camshaft": {
+      "part_id": "PONT455SD-CAM",
+      "description": "SD hydraulic camshaft",
+      "oem_part_number": "9794070",
+      "specifications": {
+        "duration_at_050": "212/230",
+        "lift_inches": "0.470/0.481",
+        "lobe_separation": 113
+      }
+    }
+  },
+
+  "reproduction_parts": {
+    "notes": "Several manufacturers make reproduction SD parts",
+    "vendors": {
+      "butler_performance": "SD reproduction components",
+      "sd_performance": "Specialty Pontiac parts",
+      "kauffman_racing": "Pontiac performance parts"
+    }
+  }
+}

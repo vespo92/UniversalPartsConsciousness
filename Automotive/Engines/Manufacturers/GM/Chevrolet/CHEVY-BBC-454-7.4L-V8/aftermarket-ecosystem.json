@@ -1,0 +1,108 @@
+{
+  "engine_id": "CHEVY-BBC-454-7.4L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Big Block Chevy aftermarket - second only to SBC",
+    "primary_applications": ["Muscle car restoration", "Street rods", "Marine", "Tractor pulling", "Drag racing"]
+  },
+
+  "crate_engines": {
+    "gm_performance": {
+      "zz454": {
+        "displacement": "454ci",
+        "horsepower": 425,
+        "torque": 500,
+        "price_usd": 9000,
+        "features": ["Oval port aluminum heads", "Hydraulic roller cam"]
+      },
+      "zz502": {
+        "displacement": "502ci",
+        "horsepower": 508,
+        "torque": 565,
+        "price_usd": 15000,
+        "features": ["Aluminum heads", "Hydraulic roller"]
+      },
+      "zz572_620": {
+        "displacement": "572ci",
+        "horsepower": 620,
+        "torque": 657,
+        "price_usd": 22000,
+        "notes": "Ultimate BBC crate engine"
+      }
+    },
+    "blueprint_engines": {
+      "bp4541ct1": {
+        "displacement": "454ci",
+        "horsepower": 460,
+        "price_usd": 6500
+      }
+    }
+  },
+
+  "performance_manufacturers": {
+    "cylinder_heads": {
+      "brodix": {
+        "specialty": "Race BBC heads",
+        "products": ["BB-2 Plus", "BB-3 Xtra"]
+      },
+      "afr": {
+        "specialty": "High-flow aluminum",
+        "products": ["Magnum Oval Port", "385cc Rectangle"]
+      },
+      "dart": {
+        "specialty": "Blocks and heads",
+        "products": ["Pro 1", "Big Chief"]
+      },
+      "trick_flow": {
+        "specialty": "Street/strip heads",
+        "products": ["PowerPort 320"]
+      }
+    },
+    "blocks": {
+      "dart_big_m": {
+        "bore_capacity_inches": 4.600,
+        "deck_options": ["Standard", "Tall"]
+      },
+      "world_merlin": {
+        "bore_capacity_inches": 4.500,
+        "notes": "Popular race block"
+      }
+    },
+    "stroker_kits": {
+      "scat": "496ci, 502ci, 540ci kits",
+      "eagle": "Complete rotating assemblies",
+      "callies": "Premium forged crankshafts"
+    },
+    "superchargers": {
+      "weiand": "6-71, 8-71, 14-71 blowers",
+      "bds": "Belt drive systems",
+      "vortech": "Centrifugal kits"
+    }
+  },
+
+  "popular_builds": {
+    "street_454": {
+      "target_hp": "400-450",
+      "cost_estimate": "$6000-8000",
+      "components": ["Oval port aluminum heads", "Mild hydraulic cam", "Dual-plane intake"]
+    },
+    "street_strip_496": {
+      "target_hp": "550-600",
+      "cost_estimate": "$12000-15000",
+      "components": ["496 stroker kit", "Rectangle port heads", "Solid roller cam"]
+    },
+    "all_out_572": {
+      "target_hp": "750-1000+",
+      "cost_estimate": "$25000+",
+      "components": ["572 rotating assembly", "Brodix heads", "Blower or nitrous"]
+    }
+  },
+
+  "vendors": {
+    "summit_racing": "Full BBC catalog",
+    "jegs": "Performance BBC parts",
+    "speedway_motors": "Street rod BBC components",
+    "scoggin_dickey": "GM crate engines"
+  }
+}

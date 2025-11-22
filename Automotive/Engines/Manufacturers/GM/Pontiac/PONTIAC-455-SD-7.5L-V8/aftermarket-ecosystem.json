@@ -1,0 +1,72 @@
+{
+  "engine_id": "PONTIAC-455-SD-7.5L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Dedicated Pontiac V8 aftermarket supports SD builds",
+    "challenge": "Original SD parts extremely rare and expensive"
+  },
+
+  "specialists": {
+    "butler_performance": {
+      "url": "https://www.butlerperformance.com",
+      "specialty": "Complete Pontiac engine builds, SD reproductions",
+      "offerings": ["Complete engines", "Stroker kits", "Cylinder heads"]
+    },
+    "kauffman_racing": {
+      "specialty": "Pontiac racing engines",
+      "offerings": ["Racing components", "Engine building"]
+    },
+    "sd_performance": {
+      "specialty": "Super Duty reproduction parts"
+    },
+    "kre": {
+      "name": "Kaufmann Racing Equipment",
+      "specialty": "Pontiac cylinder heads and components"
+    }
+  },
+
+  "reproduction_parts": {
+    "cylinder_heads": {
+      "edelbrock": "Edelbrock Pontiac heads",
+      "kre": "KRE Pontiac heads",
+      "butler_d_port": "Butler CNC D-port heads"
+    },
+    "intake_manifolds": {
+      "edelbrock_performer": "Dual-plane intake",
+      "edelbrock_performer_rpm": "High-rise intake"
+    },
+    "rotating_assembly": {
+      "scat": "Pontiac stroker kits",
+      "eagle": "Pontiac rotating assemblies"
+    }
+  },
+
+  "popular_builds": {
+    "455_rebuild": {
+      "target_hp": "350-400",
+      "components": ["Rebuilt heads", "Mild cam", "Headers"]
+    },
+    "455_ho_clone": {
+      "target_hp": "450-500",
+      "components": ["D-port heads", "Performance cam", "Intake upgrade"]
+    },
+    "sd_tribute": {
+      "target_hp": "500-600",
+      "components": ["Round port heads", "SD-spec cam", "Forged internals"]
+    }
+  },
+
+  "vendors": {
+    "summit_racing": "Pontiac performance parts",
+    "jegs": "Pontiac engine components",
+    "ames_performance": "Restoration parts",
+    "year_one": "Restoration and performance"
+  },
+
+  "value_considerations": {
+    "original_sd_engine": "$50,000-100,000+",
+    "original_sd_parts": "Premium pricing, verify authenticity",
+    "reproduction": "Cost-effective for performance builds"
+  }
+}

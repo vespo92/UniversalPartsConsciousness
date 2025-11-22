@@ -1,0 +1,165 @@
+{
+  "engine_id": "CHEVY-LS7-7.0L-V8",
+  "common_names": ["LS7", "7.0L V8", "427ci", "Z06 Engine"],
+  "manufacturer": "General Motors - Chevrolet Division",
+  "engine_family": "LS/Gen IV Small Block",
+  "production_years": "2006-2015",
+
+  "historical_significance": {
+    "summary": "The ultimate naturally aspirated LS engine - 505hp from 427 cubic inches",
+    "achievements": [
+      "Highest specific output of any pushrod production engine",
+      "Hand-built at GM Performance Build Center",
+      "Titanium intake valves and titanium connecting rods",
+      "Dry-sump oiling standard",
+      "8,000 RPM redline capability"
+    ],
+    "cultural_impact": "Proved pushrod engines could compete with exotic multi-cam designs"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 427,
+      "liters": 7.008,
+      "cc": 7008
+    },
+    "bore": {
+      "inches": 4.125,
+      "mm": 104.8
+    },
+    "stroke": {
+      "inches": 4.000,
+      "mm": 101.6
+    },
+    "compression_ratio": "11.0:1",
+    "firing_order": "1-8-7-2-6-5-4-3",
+    "block_material": "Aluminum (siamesed bore)",
+    "head_material": "Aluminum CNC-ported",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic roller",
+    "valve_materials": {
+      "intake": "Titanium (32g each)",
+      "exhaust": "Sodium-filled stainless steel"
+    },
+    "cam_drive": "Timing chain",
+    "oiling_system": "Dry sump (4-stage)",
+    "redline_rpm": 7000,
+    "rev_limiter_rpm": 7100
+  },
+
+  "power_output": {
+    "peak_horsepower": 505,
+    "hp_rpm": 6300,
+    "peak_torque_lb_ft": 470,
+    "torque_rpm": 4800,
+    "specific_output_hp_per_liter": 72,
+    "specific_output_hp_per_ci": 1.18
+  },
+
+  "vehicle_applications": {
+    "corvette_z06": {
+      "years": "2006-2013",
+      "models": ["C6 Z06"],
+      "notes": "Primary application, standard dry sump"
+    },
+    "camaro_z28": {
+      "years": "2014-2015",
+      "models": ["5th Gen Camaro Z/28"],
+      "horsepower": 505,
+      "notes": "Track-focused application"
+    }
+  },
+
+  "unique_features": {
+    "titanium_intake_valves": {
+      "weight_grams": 32,
+      "benefit": "Reduced valvetrain mass, higher RPM capability"
+    },
+    "titanium_connecting_rods": {
+      "weight_grams": 464,
+      "benefit": "Reduced rotating mass"
+    },
+    "dry_sump_oiling": {
+      "stages": 4,
+      "capacity_quarts": 10.5,
+      "benefit": "Consistent oil pressure in high-G cornering"
+    },
+    "cnc_ported_heads": {
+      "intake_flow_cfm": 375,
+      "exhaust_flow_cfm": 275,
+      "notes": "Factory CNC ported, not cast"
+    },
+    "hand_built": {
+      "location": "GM Performance Build Center, Wixom, MI",
+      "signature": "Each engine signed by builder"
+    }
+  },
+
+  "cylinder_head_specifications": {
+    "casting_number": "8452",
+    "intake_valve_inches": 2.200,
+    "exhaust_valve_inches": 1.610,
+    "intake_port_cc": 270,
+    "combustion_chamber_cc": 70,
+    "intake_flow_cfm_at_600": 375,
+    "exhaust_flow_cfm_at_600": 275,
+    "valve_spring_seat_lbs": 155,
+    "valve_spring_open_lbs": 400
+  },
+
+  "fluid_capacities": {
+    "engine_oil_dry_sump": {
+      "total_system_quarts": 10.5,
+      "tank_location": "Driver side rear of engine",
+      "type": "5W-30 synthetic"
+    },
+    "coolant": {
+      "capacity_gallons": 4.0,
+      "type": "Dex-Cool"
+    }
+  },
+
+  "critical_dimensions": {
+    "bore_inches": 4.125,
+    "stroke_inches": 4.000,
+    "deck_height_inches": 9.260,
+    "rod_length_inches": 6.067,
+    "piston_compression_height_inches": 1.060
+  },
+
+  "performance_potential": {
+    "stock": "505hp",
+    "bolt_ons": {
+      "power_hp": "530-560",
+      "mods": ["Headers", "Exhaust", "Intake", "Tune"]
+    },
+    "cam_only": {
+      "power_hp": "570-620",
+      "notes": "Must maintain titanium valve compatibility"
+    },
+    "forced_induction": {
+      "power_hp": "700-1000+",
+      "notes": "Titanium rods limit boost, may need upgrade"
+    }
+  },
+
+  "known_issues": {
+    "rocker_arm_failure": {
+      "cause": "Trunnion bearing wear",
+      "affected_years": "2006-2008",
+      "solution": "LS7 trunnion upgrade kit (needle bearings)",
+      "preventive": "Install upgraded trunnions proactively"
+    },
+    "valve_guide_wear": {
+      "cause": "Titanium valve stem wear on guides",
+      "solution": "Bronze guide liners, premium synthetic oil"
+    }
+  },
+
+  "notes": {
+    "heritage": "Spiritual successor to original 427 big block",
+    "legacy": "Proved American pushrod technology",
+    "crate_availability": "Available as GM Performance crate engine",
+    "identification": "LS7 callout on engine cover, hand-signed by builder"
+  }
+}

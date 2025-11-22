@@ -1,0 +1,25 @@
+{
+  "engine_id": "OLDS-455-ROCKET-7.5L-V8",
+  "service_version": "1.0.0",
+
+  "torque_specifications": {
+    "main_cap_bolts": { "torque_lb_ft": 100 },
+    "connecting_rod_bolts": { "torque_lb_ft": 42 },
+    "cylinder_head_bolts": { "torque_lb_ft": 85 },
+    "intake_manifold": { "torque_lb_ft": 35 },
+    "exhaust_manifold": { "torque_lb_ft": 25 }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 6,
+      "filter": "PF35 equivalent",
+      "interval_miles": 3000
+    }
+  },
+
+  "common_issues": {
+    "rear_main_seal": "Rope seal - upgrade to 1-piece available",
+    "head_gasket": "Verify deck flatness"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "engine_id": "PONTIAC-455-SD-7.5L-V8",
+  "service_version": "1.0.0",
+
+  "tool_requirements": {
+    "standard_tools": "Same as other Pontiac V8s",
+    "specialty": {
+      "harmonic_balancer_puller": "Pontiac-specific",
+      "valve_spring_compressor": "Standard Pontiac V8 tool"
+    }
+  },
+
+  "torque_specifications": {
+    "main_cap_bolts": {
+      "inner_4_bolt": { "torque_lb_ft": 100 },
+      "outer_4_bolt": { "torque_lb_ft": 70 }
+    },
+    "connecting_rod_bolts": { "torque_lb_ft": 45 },
+    "cylinder_head_bolts": { "torque_lb_ft": 95, "sequence": "From center outward" },
+    "intake_manifold": { "torque_lb_ft": 40 },
+    "exhaust_manifold": { "torque_lb_ft": 30 },
+    "rocker_arm_nuts": { "procedure": "Zero lash plus 1/2 turn" }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 6,
+      "filter": "PF25 or equivalent",
+      "interval_miles": 3000
+    },
+    "valve_adjustment": {
+      "type": "Hydraulic - self-adjusting",
+      "procedure": "Zero lash plus 1/2 turn at preload"
+    }
+  },
+
+  "common_repairs": {
+    "head_gasket": {
+      "notes": "Verify deck flatness, Pontiac heads prone to warping"
+    },
+    "rear_main_seal": {
+      "type": "Rope seal",
+      "upgrade": "One-piece seal conversion available"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "engine_id": "CHEVY-LS3-6.2L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "The LS3 is the most popular GM crate engine and has extensive aftermarket support",
+    "primary_use": "Engine swaps, Corvette/Camaro performance upgrades"
+  },
+
+  "crate_engines": {
+    "gm_performance": {
+      "ls3_crate": {
+        "part_number": "19370411",
+        "horsepower": 430,
+        "torque": 424,
+        "price_usd": 7800
+      },
+      "e_rod_ls3": {
+        "part_number": "19257230",
+        "horsepower": 430,
+        "features": ["50-state legal", "Complete system"],
+        "price_usd": 9500
+      },
+      "ls3_hot_cam": {
+        "part_number": "19369326",
+        "horsepower": 495,
+        "features": ["Hotter cam", "Upgraded springs"],
+        "price_usd": 8500
+      }
+    }
+  },
+
+  "connect_cruise_packages": {
+    "ls3_t56": {
+      "description": "LS3 with T56 manual",
+      "power_hp": 430
+    },
+    "ls3_4l65e": {
+      "description": "LS3 with 4L65E automatic",
+      "power_hp": 430
+    }
+  },
+
+  "popular_upgrades": {
+    "cam_kits": {
+      "btrcam_stage_2": "Street/strip cam package",
+      "texas_speed_stage_3": "Aggressive street cam",
+      "comp_xer_230": "Performance cam"
+    },
+    "heads": {
+      "factory_ported": "CNC porting of stock heads",
+      "mast_black_label": "Premium CNC ported",
+      "afr_270": "High-flow aftermarket"
+    },
+    "forced_induction": {
+      "magnuson_tvs2300": "Supercharger kit, 600+hp",
+      "whipple_w175": "Supercharger kit, 650+hp",
+      "on3_turbo_kit": "Twin turbo, 800+hp capable"
+    }
+  },
+
+  "vendors": {
+    "scoggin_dickey": "Official GM Performance dealer",
+    "pace_performance": "Connect & Cruise specialist",
+    "texas_speed": "Complete LS packages",
+    "summit_racing": "Full LS3 catalog"
+  }
+}

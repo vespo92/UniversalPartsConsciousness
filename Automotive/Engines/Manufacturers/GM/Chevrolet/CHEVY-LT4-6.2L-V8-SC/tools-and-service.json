@@ -1,0 +1,42 @@
+{
+  "engine_id": "CHEVY-LT4-6.2L-V8-SUPERCHARGED",
+  "service_version": "1.0.0",
+
+  "specialty_tools": {
+    "supercharger_service": {
+      "snout_tool": "For supercharger snout replacement",
+      "pulley_tool": "For supercharger pulley changes"
+    }
+  },
+
+  "service_operations": {
+    "oil_change": {
+      "capacity_quarts": 8.5,
+      "oil": "0W-40 synthetic (Mobil 1)",
+      "filter": "AC Delco PF64",
+      "interval_miles": 5000
+    },
+    "supercharger_oil_change": {
+      "capacity_oz": 8,
+      "oil": "Eaton supercharger oil",
+      "interval_miles": 100000
+    },
+    "intercooler_flush": {
+      "interval_miles": 50000,
+      "fluid": "Distilled water with Dex-Cool"
+    }
+  },
+
+  "common_repairs": {
+    "snout_upgrade": {
+      "symptoms": "Whining noise, decreased boost",
+      "solution": "Upgraded supercharger snout",
+      "difficulty": "Intermediate"
+    }
+  },
+
+  "torque_specifications": {
+    "supercharger_bolts": { "torque_lb_ft": 18 },
+    "other": "Same as LT1"
+  }
+}

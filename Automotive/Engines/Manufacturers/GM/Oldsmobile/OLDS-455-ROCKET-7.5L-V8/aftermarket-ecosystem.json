@@ -1,0 +1,52 @@
+{
+  "engine_id": "OLDS-455-ROCKET-7.5L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Dedicated Oldsmobile aftermarket exists but smaller than Chevrolet",
+    "challenge": "Oldsmobile division discontinued in 2004"
+  },
+
+  "specialists": {
+    "mondello_performance": {
+      "url": "https://www.mondelloperformance.com",
+      "specialty": "Oldsmobile engine specialists",
+      "offerings": ["Complete engines", "Cylinder heads", "Stroker kits"]
+    },
+    "jms_racing_heads": {
+      "specialty": "Oldsmobile cylinder heads"
+    }
+  },
+
+  "parts_availability": {
+    "cylinder_heads": {
+      "mondello": "Mondello D5 and D6 heads",
+      "edelbrock": "Edelbrock Oldsmobile heads (discontinued)"
+    },
+    "intake_manifolds": {
+      "edelbrock": "Performer series (limited)",
+      "reproduction_w30": "Reproduction aluminum intakes"
+    },
+    "rotating_assembly": {
+      "eagle": "Forged assemblies available",
+      "scat": "Rotating assembly kits"
+    }
+  },
+
+  "restoration_parts": {
+    "year_one": "442 restoration parts",
+    "inline_tube": "Brake and fuel lines",
+    "ames_performance": "Body and trim"
+  },
+
+  "popular_builds": {
+    "455_rebuild": {
+      "target_hp": "350-400",
+      "components": ["Rebuilt heads", "Performance cam", "Headers"]
+    },
+    "w30_tribute": {
+      "target_hp": "450-500",
+      "components": ["W-30 spec cam", "Aluminum intake", "Force-air system"]
+    }
+  }
+}

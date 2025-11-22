@@ -1,0 +1,138 @@
+{
+  "engine_id": "CHEVY-LS1-5.7L-V8",
+  "matrix_version": "1.0.0",
+
+  "ls_family_overview": {
+    "description": "Gen III/IV LS engine family interchangeability",
+    "generations": {
+      "gen_iii": {
+        "engines": ["LS1", "LS6", "LQ4", "LQ9", "L33"],
+        "years": "1997-2007",
+        "reluctor": "24X"
+      },
+      "gen_iv": {
+        "engines": ["LS2", "LS3", "LS7", "LS9", "L76", "L92", "L99"],
+        "years": "2005-2017",
+        "reluctor": "58X",
+        "features": ["VVT capable", "AFM capable"]
+      }
+    }
+  },
+
+  "block_interchangeability": {
+    "all_ls_shared": {
+      "bore_spacing_inches": 4.400,
+      "bellhousing_pattern": "LS/LT pattern",
+      "motor_mount_pattern": "Universal LS pattern",
+      "oil_filter_location": "Front of block"
+    },
+    "deck_heights": {
+      "standard_ls": 9.240,
+      "ls7_tall_deck": 9.260
+    },
+    "bore_sizes": {
+      "ls1_ls6": 3.898,
+      "ls2_l76": 4.000,
+      "ls3_l92": 4.065,
+      "ls7": 4.125
+    }
+  },
+
+  "crankshaft_interchange": {
+    "24x_vs_58x": {
+      "difference": "Reluctor wheel teeth count",
+      "24x_engines": ["LS1", "LS6", "LQ4", "LQ9"],
+      "58x_engines": ["LS2", "LS3", "LS7", "LS9", "L76", "L92"],
+      "swap_notes": "Requires matching PCM or conversion"
+    },
+    "stroke_options": {
+      "3_622_stock": "LS1/LS6 stroke",
+      "4_000_stroke": "LS2/LS3/L92 stroke",
+      "4_000_ls7": "LS7 stroke (dry sump)",
+      "4_125_stroker": "Aftermarket 408ci"
+    }
+  },
+
+  "cylinder_head_interchange": {
+    "port_styles": {
+      "cathedral_port": {
+        "engines": ["LS1", "LS6", "LS2", "LQ4", "LQ9"],
+        "intake_cc": "195-210",
+        "notes": "Original LS design, smaller ports"
+      },
+      "rectangle_port": {
+        "engines": ["LS3", "L92", "LS7", "LS9"],
+        "intake_cc": "250-270",
+        "notes": "Later design, better high-RPM flow"
+      }
+    },
+    "swap_notes": {
+      "cathedral_to_rectangle": "Requires rectangle port intake manifold",
+      "ls3_heads_on_ls1": "Common upgrade, dramatic flow improvement",
+      "ls7_heads": "Titanium intake valves, CNC ported from factory"
+    }
+  },
+
+  "intake_manifold_interchange": {
+    "cathedral_port_intakes": {
+      "compatibility": ["LS1", "LS6", "LS2", "LQ4", "LQ9"],
+      "examples": ["FAST 92mm", "Holley", "Stock LS1/LS6"]
+    },
+    "rectangle_port_intakes": {
+      "compatibility": ["LS3", "L92", "LS7", "L76"],
+      "examples": ["FAST LSXR", "Holley Hi-Ram", "Stock LS3"]
+    }
+  },
+
+  "accessory_drive": {
+    "corvette_dry_sump": {
+      "ls1_corvette": "Has provision but not used",
+      "ls7": "True dry sump system"
+    },
+    "f_body_truck": {
+      "accessory_drive": "Standard wet sump"
+    },
+    "swap_kits": {
+      "concept_one": "Serpentine conversion kit",
+      "holley": "LS swap accessory drive"
+    }
+  },
+
+  "transmission_compatibility": {
+    "bellhousing_pattern": "LS/LT pattern (different from Gen I SBC)",
+    "manual_transmissions": {
+      "t56": "OEM for F-body, GTO",
+      "tr6060": "OEM for later performance cars",
+      "cd009": "Nissan 350Z trans swap popular"
+    },
+    "automatic_transmissions": {
+      "4l60e": "OEM for most applications",
+      "4l80e": "Heavy-duty upgrade",
+      "6l80e": "6-speed automatic"
+    }
+  },
+
+  "wiring_compatibility": {
+    "24x_pcm": {
+      "years": "1997-2007 (Gen III)",
+      "tuning": "HP Tuners, EFI Live"
+    },
+    "58x_pcm": {
+      "years": "2006+ (Gen IV)",
+      "tuning": "HP Tuners, EFI Live"
+    },
+    "standalone_options": {
+      "holley_terminator": "Self-learning EFI",
+      "fast_xfi": "Full standalone",
+      "megasquirt": "Budget standalone"
+    }
+  },
+
+  "common_swap_combinations": {
+    "ls1_in_s10": "Classic truck swap",
+    "ls1_in_240sx": "Drift car favorite",
+    "ls1_in_miata": "Power upgrade extreme",
+    "ls1_in_e36_bmw": "German-American fusion",
+    "ls1_in_rx7": "Rotary replacement"
+  }
+}

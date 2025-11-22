@@ -1,0 +1,97 @@
+{
+  "engine_id": "CADILLAC-500-8.2L-V8",
+  "catalog_version": "1.0.0",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "CAD500-BLOCK",
+          "description": "Cast iron 500ci block",
+          "specifications": {
+            "bore_inches": 4.300,
+            "deck_height_inches": 10.815,
+            "main_caps": "2-bolt"
+          },
+          "notes": "Same block as 472, different stroke"
+        },
+        "crankshaft": {
+          "part_id": "CAD500-CRANK",
+          "description": "Cast nodular iron crankshaft",
+          "specifications": {
+            "stroke_inches": 4.304,
+            "main_journal_inches": 3.250,
+            "rod_journal_inches": 2.500
+          },
+          "stroker_potential": "Some aftermarket cranks available"
+        },
+        "connecting_rods": {
+          "part_id": "CAD500-CONROD",
+          "description": "Cast connecting rods",
+          "length_inches": 6.750,
+          "aftermarket": "Limited options, NOS preferred"
+        },
+        "pistons": {
+          "part_id": "CAD500-PISTON",
+          "description": "Cast aluminum pistons",
+          "bore_inches": 4.300,
+          "aftermarket": ["Keith Black", "Silv-O-Lite replacement"]
+        }
+      }
+    },
+
+    "cylinder_heads": {
+      "components": {
+        "stock_heads": {
+          "part_id": "CAD500-HEAD",
+          "description": "Cast iron closed-chamber heads",
+          "specifications": {
+            "intake_valve_inches": 2.00,
+            "exhaust_valve_inches": 1.625,
+            "chamber_cc": 76
+          }
+        },
+        "open_chamber_heads": {
+          "description": "Later emissions heads",
+          "chamber_cc": 120,
+          "notes": "Lower compression"
+        }
+      }
+    },
+
+    "intake_manifolds": {
+      "components": {
+        "stock_cast_iron": {
+          "part_id": "CAD500-INTAKE",
+          "description": "Cast iron 4-barrel intake"
+        },
+        "aftermarket": {
+          "offenhauser": "Offy dual-quad intake",
+          "edelbrock": "Limited Cadillac options"
+        }
+      }
+    },
+
+    "exhaust": {
+      "components": {
+        "manifolds": {
+          "part_id": "CAD500-EXH-MAN",
+          "description": "Cast iron exhaust manifolds"
+        },
+        "headers": {
+          "limited": true,
+          "notes": "Custom fabrication often required"
+        }
+      }
+    }
+  },
+
+  "parts_sourcing": {
+    "nos": "New Old Stock preferred for many components",
+    "specialty_suppliers": {
+      "cadillac_parts": "Cadillac Parts Online",
+      "rockauto": "Some replacement parts",
+      "machine_shops": "Custom work often required"
+    }
+  }
+}

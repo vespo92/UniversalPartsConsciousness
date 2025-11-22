@@ -1,0 +1,65 @@
+{
+  "engine_id": "CHEVY-LS7-7.0L-V8",
+  "ecosystem_version": "1.0.0",
+
+  "market_overview": {
+    "description": "Premium LS engine with specialized aftermarket",
+    "primary_use": ["Z06 upgrades", "High-end LS builds", "Head donor"]
+  },
+
+  "crate_engine": {
+    "gm_performance_ls7": {
+      "part_number": "19329246",
+      "horsepower": 505,
+      "torque": 470,
+      "includes": "Dry sump system",
+      "price_usd": 16000,
+      "notes": "Hand-built, signed by builder"
+    }
+  },
+
+  "common_upgrades": {
+    "trunnion_kit": {
+      "description": "Needle bearing trunnion upgrade",
+      "brands": ["COMP Cams", "Texas Speed", "Katech"],
+      "price_usd": "150-300",
+      "necessity": "Highly recommended for all LS7s"
+    },
+    "headers": {
+      "kooks": "Kooks long tube headers",
+      "american_racing": "ARH headers"
+    },
+    "camshaft": {
+      "notes": "Must be titanium-valve safe",
+      "brands": ["BTR", "Texas Speed (LS7 specific)", "Cam Motion"]
+    }
+  },
+
+  "parts_for_other_builds": {
+    "ls7_heads": {
+      "description": "Popular for boosted LS builds",
+      "notes": "Remove titanium valves, install steel/Inconel for boost",
+      "price_used": "$2000-3500/pair"
+    },
+    "ls7_crank": {
+      "description": "4.000 stroke for stroker builds",
+      "notes": "Forged steel, dry sump provisions"
+    }
+  },
+
+  "specialists": {
+    "katech": {
+      "specialty": "LS7 engine building and upgrades",
+      "location": "Michigan",
+      "notes": "LS7 experts, wet sump conversions"
+    },
+    "mast_motorsports": {
+      "specialty": "LS7 heads and engine packages",
+      "notes": "Premium CNC porting"
+    },
+    "lingenfelter": {
+      "specialty": "LS7 forced induction packages",
+      "notes": "Supercharger and turbo kits"
+    }
+  }
+}

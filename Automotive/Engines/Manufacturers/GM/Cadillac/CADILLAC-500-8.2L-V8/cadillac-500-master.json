@@ -1,0 +1,154 @@
+{
+  "engine_id": "CADILLAC-500-8.2L-V8",
+  "common_names": ["Cadillac 500", "8.2L V8", "Cadillac 472/500"],
+  "manufacturer": "General Motors - Cadillac Division",
+  "engine_family": "Cadillac 472/500 V8",
+  "production_years": "1970-1976",
+
+  "historical_significance": {
+    "summary": "The largest displacement American production V8 engine ever built",
+    "achievements": [
+      "500 cubic inches (8.2 liters) - largest US production V8",
+      "400 lb-ft of torque at only 2,000 RPM",
+      "Designed for effortless luxury cruising",
+      "Powered the largest American luxury cars"
+    ],
+    "cultural_impact": "Ultimate expression of American excess in automotive form"
+  },
+
+  "base_specifications": {
+    "configuration": "V8 90-degree",
+    "displacement": {
+      "cubic_inches": 500,
+      "liters": 8.194,
+      "cc": 8194
+    },
+    "bore": { "inches": 4.300, "mm": 109.2 },
+    "stroke": { "inches": 4.304, "mm": 109.3 },
+    "compression_ratio_range": "8.25:1 to 10.0:1",
+    "firing_order": "1-5-6-3-4-2-7-8",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV, 2 valves per cylinder, hydraulic lifters",
+    "carburetor": "Rochester Quadrajet"
+  },
+
+  "power_output_by_year": {
+    "1970_gross": {
+      "horsepower_gross": 400,
+      "hp_rpm": 4400,
+      "torque_lb_ft": 550,
+      "torque_rpm": 3000,
+      "notes": "Peak gross HP rating"
+    },
+    "1971_gross": {
+      "horsepower_gross": 365,
+      "torque_lb_ft": 535
+    },
+    "1972_net": {
+      "horsepower_net": 235,
+      "torque_lb_ft_net": 385,
+      "notes": "Net HP rating began"
+    },
+    "1976_final": {
+      "horsepower_net": 190,
+      "torque_lb_ft_net": 360,
+      "notes": "Final year, emissions reduced output"
+    }
+  },
+
+  "vehicle_applications": {
+    "eldorado": {
+      "years": "1970-1976",
+      "notes": "Front-wheel drive luxury coupe"
+    },
+    "fleetwood": {
+      "years": "1970-1976",
+      "models": ["Sixty Special", "Brougham"],
+      "notes": "Full-size luxury sedan"
+    },
+    "deville": {
+      "years": "1970-1976",
+      "notes": "Standard Cadillac luxury"
+    },
+    "commercial_chassis": {
+      "years": "1970-1976",
+      "notes": "Hearse and limousine base"
+    }
+  },
+
+  "unique_features": {
+    "low_rpm_torque": {
+      "description": "Maximum torque at 2,000 RPM",
+      "benefit": "Effortless acceleration from any speed"
+    },
+    "oversquare_nearly_square": {
+      "bore_stroke_ratio": 0.999,
+      "notes": "Almost perfectly square bore/stroke"
+    },
+    "front_wheel_drive_version": {
+      "eldorado": "Transverse-mounted in Eldorado",
+      "notes": "Required special accessories"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5,
+      "with_filter_quarts": 6
+    },
+    "coolant": {
+      "capacity_gallons": 5.5
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_inches": 10.815,
+    "bore_spacing_inches": 4.935,
+    "main_journal_diameter_inches": 3.250,
+    "rod_journal_diameter_inches": 2.500,
+    "rod_length_inches": 6.750
+  },
+
+  "472_vs_500": {
+    "differences": {
+      "472": { "bore_inches": 4.300, "stroke_inches": 4.060, "displacement_ci": 472 },
+      "500": { "bore_inches": 4.300, "stroke_inches": 4.304, "displacement_ci": 500 }
+    },
+    "shared": ["Block", "Heads", "Accessories", "External dimensions"]
+  },
+
+  "performance_potential": {
+    "stock_rebuild": "300-350hp",
+    "mild_performance": {
+      "power_hp": "400-450",
+      "mods": ["Cam", "Headers", "Intake", "Carb"]
+    },
+    "serious_build": {
+      "power_hp": "500-600",
+      "mods": ["Ported heads", "Stroker", "Forced induction possible"]
+    }
+  },
+
+  "common_issues": {
+    "overheating": {
+      "cause": "Large displacement, poor cooling system maintenance",
+      "solution": "Aluminum radiator, electric fans"
+    },
+    "oil_leaks": {
+      "cause": "Aged gaskets",
+      "solution": "Complete reseal with modern gaskets"
+    },
+    "parts_availability": {
+      "issue": "Limited aftermarket support",
+      "solution": "NOS, specialty suppliers, machine work"
+    }
+  },
+
+  "notes": {
+    "heritage": "Evolution of Cadillac 429 (1964-1967)",
+    "legacy": "Last truly massive American V8",
+    "successor": "Replaced by 425, then Northstar",
+    "collector_status": "Growing collectibility for period Cadillacs"
+  }
+}
