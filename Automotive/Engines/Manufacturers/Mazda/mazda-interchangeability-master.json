@@ -1,0 +1,235 @@
+{
+  "manufacturer": "Mazda Motor Corporation",
+  "document_type": "Cross-Engine Interchangeability Matrix",
+  "last_updated": "2024-11-22",
+  "version": "1.0.0",
+
+  "rotary_engine_interchangeability": {
+    "overview": "Rotary engines share many components across generations, but side-port (Renesis) vs peripheral-port (13B-REW) are not directly compatible.",
+
+    "rotor_compatibility": {
+      "12a_to_13b": {
+        "compatible": false,
+        "reason": "Different rotor width (70mm vs 80mm) and displacement",
+        "notes": "Some internal components like springs may be shared"
+      },
+      "13b_na_to_13b_rew": {
+        "compatible": true,
+        "notes": "Same rotor dimensions. REW has larger ports. Seals differ slightly.",
+        "modifications": ["Port matching may be needed"]
+      },
+      "13b_rew_to_renesis": {
+        "compatible": false,
+        "reason": "Renesis uses side exhaust ports - completely different housing design",
+        "notes": "E-shaft and some internal bearings may interchange"
+      }
+    },
+
+    "housing_compatibility": {
+      "13b_fc_to_fd": {
+        "compatible": true,
+        "notes": "FC turbo and FD REW housings share dimensions",
+        "considerations": ["Port size differences", "Intake mounting"]
+      },
+      "13b_na_to_turbo": {
+        "compatible": "partial",
+        "notes": "NA housings can be used with turbo, but port work usually needed"
+      }
+    },
+
+    "eccentric_shaft_compatibility": {
+      "12a_to_13b": {"compatible": false, "reason": "Different dimensions"},
+      "13b_all_variants": {"compatible": true, "notes": "E-shafts interchangeable across 13B family"},
+      "renesis_to_rew": {"compatible": false, "reason": "Different rear seal and counterweight design"}
+    },
+
+    "turbo_swaps": {
+      "fc_single_to_fd": {
+        "difficulty": "moderate",
+        "notes": "Common swap to add turbo to NA FC engines",
+        "parts_needed": ["Turbo manifold", "Oil lines", "Intercooler", "ECU"]
+      },
+      "fd_sequential_to_single": {
+        "difficulty": "common",
+        "notes": "Most popular FD modification - eliminates sequential complexity",
+        "parts_needed": ["Single turbo manifold", "Downpipe", "IC piping", "Fuel upgrades", "ECU"]
+      }
+    }
+  },
+
+  "miata_b_series_interchangeability": {
+    "overview": "B6 and BP engines share many components. Both can be swapped into NA/NB Miatas with varying difficulty.",
+
+    "block_compatibility": {
+      "b6_to_bp": {
+        "compatible": false,
+        "reason": "Different displacement, bore, deck height",
+        "notes": "Cannot directly swap blocks"
+      }
+    },
+
+    "head_compatibility": {
+      "b6_head_on_bp": {
+        "compatible": "with modifications",
+        "notes": "Early experimentation done, but not recommended",
+        "issues": ["Port mismatch", "Compression changes"]
+      },
+      "bp_vvt_to_non_vvt": {
+        "compatible": true,
+        "notes": "VVT heads can be used on non-VVT blocks with cam gear swap",
+        "modifications": ["Delete VVT cam gear", "Use non-VVT timing components"]
+      }
+    },
+
+    "transmission_compatibility": {
+      "na_to_nb": {
+        "compatible": true,
+        "notes": "5-speed and 6-speed share bellhousing pattern",
+        "considerations": ["Shifter linkage", "Crossmember differences"]
+      },
+      "b6_to_bp": {
+        "compatible": true,
+        "notes": "Same transmission bolt pattern across B-series"
+      }
+    },
+
+    "popular_swaps": {
+      "bp_turbo_into_na": {
+        "difficulty": "moderate",
+        "source": "Mazdaspeed Miata (NB)",
+        "power_gain": "50+ HP",
+        "required": ["Turbo kit", "Intercooler", "ECU", "Fuel system upgrades"]
+      },
+      "nb_vvt_into_na": {
+        "difficulty": "moderate",
+        "power_gain": "~15 HP",
+        "required": ["VVT head", "NB ECU", "Wiring modifications"]
+      }
+    },
+
+    "flywheel_compatibility": {
+      "b6_to_bp": {"compatible": true, "notes": "Same bolt pattern"},
+      "na_to_nb": {"compatible": true, "notes": "1.8L uses same flywheel across generations"}
+    }
+  },
+
+  "mzr_to_skyactiv_compatibility": {
+    "overview": "MZR and Skyactiv are different engine families with limited compatibility.",
+
+    "ecu_compatibility": {
+      "mzr_to_skyactiv": {
+        "compatible": false,
+        "reason": "Completely different engine management systems"
+      },
+      "mazdaspeed_ecu_swap": {
+        "compatible": "within generation",
+        "notes": "Gen1 and Gen2 Mazdaspeed 3 use different ECUs"
+      }
+    },
+
+    "transmission_compatibility": {
+      "mzr_manual_to_skyactiv": {
+        "compatible": false,
+        "reason": "Different bellhousing patterns"
+      },
+      "mazda3_mzr_trans_swap": {
+        "compatible": true,
+        "notes": "BK and BL Mazda3 share transmissions"
+      }
+    }
+  },
+
+  "cross_platform_engine_swaps": {
+    "rotary_into_miata": {
+      "13b_rew_into_na_nb": {
+        "difficulty": "complex",
+        "notes": "Popular but challenging swap - requires significant fabrication",
+        "kits_available": ["Maruha Motors (JDM)", "Custom fabrication shops"],
+        "required": [
+          "Custom engine mounts",
+          "Transmission adapter or Mazda trans swap",
+          "Custom exhaust",
+          "Complete wiring harness",
+          "Cooling system modifications"
+        ],
+        "considerations": ["Weight distribution", "Hood clearance", "Driveshaft length"]
+      }
+    },
+
+    "miata_engine_into_other_chassis": {
+      "bp_into_locost_seven": {
+        "difficulty": "popular",
+        "notes": "Very common swap for kit cars",
+        "aftermarket_support": "Extensive"
+      }
+    },
+
+    "ford_mazda_compatibility": {
+      "overview": "During Ford partnership (1979-2015), many components were shared",
+      "mzr_duratec": {
+        "compatibility": "high",
+        "notes": "MZR and Duratec share architecture - many parts interchange",
+        "shared_vehicles": ["Mazda3/Ford Focus", "Mazda6/Ford Fusion", "Mazda Tribute/Ford Escape"]
+      },
+      "b_series_ford": {
+        "bp_escort_probe": {
+          "compatible": true,
+          "notes": "Ford Escort GT and Probe used Mazda BP engines"
+        }
+      }
+    }
+  },
+
+  "parts_sharing_across_platforms": {
+    "oil_filters": {
+      "mazda_small_block": {
+        "engines": ["B6", "BP", "MZR 2.0"],
+        "common_filter": "WIX 51394",
+        "notes": "Same filter thread and size"
+      },
+      "mazda_rotary": {
+        "engines": ["12A", "13B", "Renesis"],
+        "common_filter": "WIX 51394",
+        "notes": "All rotaries use same filter"
+      }
+    },
+
+    "timing_components": {
+      "mzr_timing_chain": {
+        "engines": ["LF", "L3", "L5"],
+        "notes": "Timing chain guides and tensioners share designs"
+      },
+      "b_series_timing_belt": {
+        "engines": ["B6", "BP"],
+        "notes": "Same timing belt design - Gates T227"
+      }
+    },
+
+    "ignition_components": {
+      "miata_coils": {
+        "na_nb_compatibility": true,
+        "notes": "Coil pack design similar across generations"
+      },
+      "mzr_coils": {
+        "mazda3_mazda6": true,
+        "notes": "COP coils interchangeable within MZR family"
+      }
+    }
+  },
+
+  "jdm_vs_usdm_differences": {
+    "13b_rew": {
+      "power_difference": "JDM 280HP vs USDM 255HP",
+      "reasons": ["Different ECU tune", "Catalyst design", "Emissions equipment"],
+      "ecu_swap_notes": "JDM ECU can be used with modifications"
+    },
+    "bp_miata": {
+      "differences": "Minimal between markets",
+      "notes": "JDM spec slightly higher compression available"
+    },
+    "skyactiv": {
+      "compression_ratio": "Some markets get 12:1 vs 13:1 based on fuel quality",
+      "power_differences": "Minimal"
+    }
+  }
+}

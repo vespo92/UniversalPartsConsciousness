@@ -1,0 +1,101 @@
+{
+  "engine_id": "MAZDA-13B-REW-TWIN-TURBO",
+  "common_names": ["13B-REW", "Twin-Turbo Rotary", "Sequential Twin-Turbo", "RX-7 Engine"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Wankel Rotary",
+  "production_years": "1992-2002",
+
+  "base_specifications": {
+    "configuration": "Twin-Rotor Wankel",
+    "displacement": {"liters": 1.308, "cc": 1308, "equivalent_displacement_cc": 2616},
+    "rotor_dimensions": {
+      "rotor_width_mm": 80,
+      "rotor_radius_mm": 105,
+      "eccentricity_mm": 15,
+      "trochoid_housing_major_mm": 240,
+      "trochoid_housing_minor_mm": 210
+    },
+    "compression_ratio": "9.0:1",
+    "firing_order": "Front rotor leads rear by 270°",
+    "housing_material": "Aluminum with chrome-molybdenum steel apex seals",
+    "rotor_material": "Cast iron with hard-anodized surface",
+    "forced_induction": {
+      "type": "Sequential Twin-Turbocharger",
+      "primary_turbo": "Hitachi HT-12",
+      "secondary_turbo": "Hitachi HT-10",
+      "boost_psi": {"stock": 10, "max_safe": 18}
+    },
+    "fuel_system": {
+      "type": "Multi-point fuel injection",
+      "primary_injectors": "550cc",
+      "secondary_injectors": "850cc (total 6 injectors)"
+    },
+    "ignition_system": {
+      "type": "Distributorless ignition",
+      "coils_per_rotor": 2,
+      "leading_timing": "Variable",
+      "trailing_timing": "Variable"
+    },
+    "redline_rpm": 8000,
+    "peak_power_rpm": 6500,
+    "oil_injection_system": "Metered oil injection (MOP) to apex seals"
+  },
+
+  "power_output_by_variant": {
+    "fd3s_series_6_jdm": {"hp": 280, "torque_lb_ft": 231, "notes": "JDM gentleman's agreement limit"},
+    "fd3s_series_6_actual": {"hp": 300, "torque_lb_ft": 240, "notes": "Actual dyno output"},
+    "fd3s_usdm": {"hp": 255, "torque_lb_ft": 217, "notes": "US-spec 1993-1995"},
+    "fd3s_spirit_r": {"hp": 280, "torque_lb_ft": 232, "notes": "2002 Spirit R Special Edition"},
+    "fd3s_type_rs": {"hp": 265, "torque_lb_ft": 224, "notes": "Type RS (lighter, track-focused)"}
+  },
+
+  "vehicle_applications": {
+    "fd3s_rx7_series_1_2": {"years": "1992-1995", "notes": "Early FD RX-7, 255hp US-spec"},
+    "fd3s_rx7_series_3_4": {"years": "1995-1998", "notes": "Revised sequential system"},
+    "fd3s_rx7_series_5_6": {"years": "1998-2002", "notes": "Final evolution, 280hp JDM"},
+    "jc_cosmo_twin_turbo": {"years": "1990-1996", "notes": "20B 3-rotor variant available"},
+    "eunos_cosmo": {"years": "1990-1996", "notes": "Luxury GT with 13B-REW option"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 4.7, "viscosity": ["5W-30", "10W-30", "10W-40"], "spec": "API SG or higher"},
+    "premix_ratio": "1:100 recommended for forced induction",
+    "coolant": {"liters": 9.0}
+  },
+
+  "notes": {
+    "heritage": "The 13B-REW represents the pinnacle of Mazda's rotary development. Sequential twin-turbo system was revolutionary for its time.",
+    "reputation": "Legendary performance engine with cult following. Known for high-revving character and smooth power delivery.",
+    "design_philosophy": "Mazda's commitment to rotary technology resulted in the most powerful production rotary ever made.",
+    "key_features": [
+      "Sequential twin-turbo eliminates turbo lag",
+      "High specific output per displacement",
+      "Smooth, linear power delivery",
+      "Unique exhaust note beloved by enthusiasts",
+      "Compact and lightweight design"
+    ],
+    "common_issues": [
+      "Apex seal failure (often due to poor maintenance)",
+      "Coolant seal leaks (O-ring degradation)",
+      "Carbon buildup on ports",
+      "Cat converter melting (running rich)",
+      "Twin turbo solenoid failures",
+      "Vacuum line deterioration"
+    ],
+    "maintenance_critical": [
+      "Pre-mix oil with fuel (enthusiast recommendation)",
+      "Never shut off hot engine - let idle 30+ seconds",
+      "Rev to redline weekly to prevent carbon buildup",
+      "Monitor coolant levels frequently",
+      "Use quality synthetic oil"
+    ],
+    "strengths": [
+      "Incredible power-to-weight ratio",
+      "Smooth, high-revving operation",
+      "Unique sound and character",
+      "Responds extremely well to modifications",
+      "Strong aftermarket support"
+    ],
+    "tuning_notes": "Stock twins good to ~400hp. Single turbo conversions regularly achieve 500-700hp. 800+hp builds possible with peripheral port modifications."
+  }
+}

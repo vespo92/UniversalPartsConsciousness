@@ -1,0 +1,87 @@
+{
+  "engine_id": "MAZDA-12A-ROTARY",
+  "common_names": ["12A", "Mazda Rotary", "Wankel 12A", "RX-7 FB Engine"],
+  "manufacturer": "Mazda Motor Corporation (Toyo Kogyo)",
+  "engine_family": "Mazda Wankel Rotary",
+  "production_years": "1970-1985",
+
+  "base_specifications": {
+    "configuration": "Twin-Rotor Wankel",
+    "displacement": {"liters": 1.146, "cc": 1146, "equivalent_displacement_cc": 2292},
+    "rotor_dimensions": {
+      "rotor_width_mm": 70,
+      "rotor_radius_mm": 105,
+      "eccentricity_mm": 15,
+      "trochoid_housing_major_mm": 240,
+      "trochoid_housing_minor_mm": 210
+    },
+    "compression_ratio": "9.4:1",
+    "firing_order": "Front rotor leads rear by 270°",
+    "housing_material": "Aluminum with apex seal grooves",
+    "rotor_material": "Cast iron",
+    "fuel_system": {
+      "type": "Carburetor (early) / EFI (later)",
+      "carburetor_types": ["Nikki 4-barrel", "Weber DCOE"]
+    },
+    "ignition_system": {
+      "type": "Distributor with leading/trailing",
+      "points": "Early models",
+      "electronic": "Later models"
+    },
+    "redline_rpm": 7000,
+    "peak_power_rpm": 6000
+  },
+
+  "power_output_by_variant": {
+    "12a_carbureted_1970": {"hp": 100, "torque_lb_ft": 103, "notes": "Early R100/RX-2"},
+    "12a_carbureted_1974": {"hp": 95, "torque_lb_ft": 100, "notes": "Emissions-era reduction"},
+    "12a_fb_rx7_1979": {"hp": 100, "torque_lb_ft": 105, "notes": "First-gen RX-7 (SA22C)"},
+    "12a_gsl_se_1984": {"hp": 135, "torque_lb_ft": 133, "notes": "Fuel-injected GSL-SE"},
+    "12a_turbo_cosmo": {"hp": 160, "torque_lb_ft": 163, "notes": "Turbocharged Cosmo AP"}
+  },
+
+  "vehicle_applications": {
+    "r100_familia_rotary": {"years": "1968-1973", "notes": "First rotary passenger car"},
+    "rx2_capella": {"years": "1970-1978", "notes": "Compact sedan/coupe"},
+    "rx3_savanna": {"years": "1971-1978", "notes": "Racing legend, touring car"},
+    "rx4_luce": {"years": "1972-1977", "notes": "Larger luxury rotary"},
+    "cosmo_ap": {"years": "1975-1981", "notes": "Grand tourer"},
+    "rx7_sa22c_fb": {"years": "1978-1985", "notes": "First-generation RX-7"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 4.2, "viscosity": ["10W-30", "10W-40", "20W-50"], "spec": "API SE or higher"},
+    "premix_ratio": "1:150 recommended for forced induction builds",
+    "coolant": {"liters": 7.5}
+  },
+
+  "notes": {
+    "heritage": "The 12A was Mazda's workhorse rotary from the early '70s through mid-'80s. Raced extensively worldwide with great success.",
+    "reputation": "Reliable, characterful engine that defined the rotary experience for a generation.",
+    "key_features": [
+      "Compact and lightweight design",
+      "Smooth, high-revving operation",
+      "Strong racing heritage",
+      "Simpler than later 13B designs"
+    ],
+    "common_issues": [
+      "Apex seal wear (normal wear item)",
+      "Carburetor issues (early models)",
+      "Thermal reactor problems (emissions equipment)",
+      "Flooding on cold starts"
+    ],
+    "maintenance_critical": [
+      "Frequent oil changes (3000 miles)",
+      "Don't shut off cold - let it warm up",
+      "Rev weekly to prevent carbon buildup",
+      "Keep cooling system maintained"
+    ],
+    "strengths": [
+      "Lightweight",
+      "Simple design",
+      "Very tuneable",
+      "Excellent aftermarket support for vintage builds"
+    ],
+    "tuning_notes": "Bridge porting popular for racing. Turbocharged 12As can make 300+ HP with proper fueling."
+  }
+}

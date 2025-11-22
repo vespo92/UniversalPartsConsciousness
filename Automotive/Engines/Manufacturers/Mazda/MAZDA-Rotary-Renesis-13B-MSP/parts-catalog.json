@@ -1,0 +1,244 @@
+{
+  "engine_id": "MAZDA-RENESIS-13B-MSP",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2008, "make": "Mazda", "model": "RX-8 Grand Touring", "engine": "13B-MSP Renesis"},
+
+  "systems": {
+    "rotating_assembly": {
+      "components": {
+        "front_rotor": {
+          "part_id": "RENESIS-ROTOR-FRONT",
+          "description": "Front rotor assembly",
+          "oem_part_numbers": ["N3R1-10-S30"],
+          "specifications": {"faces": 3, "material": "Cast iron with special coating"},
+          "notes": "Side exhaust port design - NOT interchangeable with REW"
+        },
+        "rear_rotor": {
+          "part_id": "RENESIS-ROTOR-REAR",
+          "description": "Rear rotor assembly",
+          "oem_part_numbers": ["N3R1-10-S40"]
+        },
+        "eccentric_shaft": {
+          "part_id": "RENESIS-ESHAFT",
+          "description": "Eccentric shaft",
+          "oem_part_numbers": ["N3R1-11-301"],
+          "specifications": {"eccentricity_mm": 15, "main_journal_mm": 70}
+        },
+        "apex_seals": {
+          "part_id": "RENESIS-APEX-SEAL-SET",
+          "description": "3-piece apex seal set (6 per engine)",
+          "oem_part_numbers": ["N3R1-10-A07"],
+          "aftermarket": {"atkins_rotary": "ATK-REN-APEX"},
+          "specifications": {"width_mm": 2.0},
+          "notes": "Renesis-specific seals - different from REW"
+        },
+        "side_seals": {
+          "part_id": "RENESIS-SIDE-SEAL-SET",
+          "description": "Side seals (set of 12)",
+          "oem_part_numbers": ["N3R1-10-A40"]
+        },
+        "corner_seals": {
+          "part_id": "RENESIS-CORNER-SEAL-SET",
+          "description": "Corner seals (set of 6)",
+          "oem_part_numbers": ["N3R1-10-A50"]
+        },
+        "rotor_bearings": {
+          "part_id": "RENESIS-ROTOR-BRG",
+          "description": "Rotor bearings",
+          "oem_part_numbers": ["N3R1-11-C20"]
+        }
+      }
+    },
+    "housings": {
+      "components": {
+        "front_side_housing": {
+          "part_id": "RENESIS-FSH",
+          "description": "Front side housing with side exhaust port",
+          "oem_part_numbers": ["N3R1-10-D00"],
+          "notes": "Side exhaust ports - unique to Renesis"
+        },
+        "front_rotor_housing": {
+          "part_id": "RENESIS-FRH",
+          "description": "Front rotor housing (trochoid)",
+          "oem_part_numbers": ["N3R1-10-C10"]
+        },
+        "intermediate_housing": {
+          "part_id": "RENESIS-INTER",
+          "description": "Intermediate housing with side exhaust",
+          "oem_part_numbers": ["N3R1-10-C20"]
+        },
+        "rear_rotor_housing": {
+          "part_id": "RENESIS-RRH",
+          "description": "Rear rotor housing",
+          "oem_part_numbers": ["N3R1-10-C30"]
+        },
+        "rear_side_housing": {
+          "part_id": "RENESIS-RSH",
+          "description": "Rear side housing with side exhaust port",
+          "oem_part_numbers": ["N3R1-10-D10"]
+        },
+        "tension_bolts": {
+          "part_id": "RENESIS-TENSION-BOLTS",
+          "description": "Tension bolt set (19 bolts)",
+          "oem_part_numbers": ["N3R1-10-127"]
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "fuel_injectors_primary": {
+          "part_id": "RENESIS-INJ-PRI",
+          "description": "Primary fuel injectors (2)",
+          "oem_part_numbers": ["N3R1-13-250"],
+          "specifications": {"flow_cc": 380}
+        },
+        "fuel_injectors_secondary": {
+          "part_id": "RENESIS-INJ-SEC",
+          "description": "Secondary fuel injectors (4)",
+          "oem_part_numbers": ["N3R1-13-260"],
+          "specifications": {"flow_cc": 650}
+        },
+        "fuel_pump": {
+          "part_id": "RENESIS-FPUMP",
+          "description": "In-tank fuel pump",
+          "oem_part_numbers": ["N3R1-13-350"],
+          "aftermarket": {"walbro": "GSS342"}
+        },
+        "fuel_pressure_regulator": {
+          "part_id": "RENESIS-FPR",
+          "description": "Fuel pressure regulator",
+          "oem_part_numbers": ["N3R1-13-280"],
+          "specifications": {"pressure_psi": 50}
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils_leading": {
+          "part_id": "RENESIS-COIL-L",
+          "description": "Leading ignition coils (2)",
+          "oem_part_numbers": ["N3H1-18-100"],
+          "quantity": 2,
+          "notes": "Series 2 coils improved - upgrade for Series 1"
+        },
+        "ignition_coils_trailing": {
+          "part_id": "RENESIS-COIL-T",
+          "description": "Trailing ignition coils (2)",
+          "oem_part_numbers": ["N3H1-18-100A"],
+          "quantity": 2
+        },
+        "spark_plugs_leading": {
+          "part_id": "RENESIS-PLUG-L",
+          "description": "Leading spark plugs",
+          "oem_part_numbers": ["N3H1-18-110"],
+          "aftermarket": {"ngk": "RE9B-T", "denso": "IRL01-32"},
+          "quantity": 2,
+          "gap_mm": 0.9
+        },
+        "spark_plugs_trailing": {
+          "part_id": "RENESIS-PLUG-T",
+          "description": "Trailing spark plugs",
+          "oem_part_numbers": ["N3H1-18-110A"],
+          "aftermarket": {"ngk": "RE7C-L"},
+          "quantity": 2,
+          "gap_mm": 1.1
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "variable_intake_manifold": {
+          "part_id": "RENESIS-VIM",
+          "description": "3-stage variable intake manifold",
+          "oem_part_numbers": ["N3H1-13-100"],
+          "notes": "Three runner lengths for broad powerband"
+        },
+        "throttle_body": {
+          "part_id": "RENESIS-TB",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": ["N3H1-13-640"]
+        },
+        "air_flow_meter": {
+          "part_id": "RENESIS-MAF",
+          "description": "Mass air flow sensor",
+          "oem_part_numbers": ["N3H1-13-215"]
+        },
+        "ssv_valves": {
+          "part_id": "RENESIS-SSV",
+          "description": "Secondary shutter valves",
+          "oem_part_numbers": ["N3H1-13-190"],
+          "notes": "Often deleted for performance"
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "RENESIS-EXMAN",
+          "description": "Exhaust manifold (side-port outlet)",
+          "oem_part_numbers": ["N3H1-13-450"],
+          "aftermarket": {"racing_beat": "RB-16190"}
+        },
+        "catalytic_converter": {
+          "part_id": "RENESIS-CAT",
+          "description": "Main catalytic converter",
+          "oem_part_numbers": ["N3H1-40-305"],
+          "notes": "Known to clog - monitor for backpressure"
+        },
+        "pre_cat": {
+          "part_id": "RENESIS-PRECAT",
+          "description": "Pre-catalytic converter",
+          "oem_part_numbers": ["N3H1-40-305A"]
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "RENESIS-WPUMP",
+          "description": "Mechanical water pump",
+          "oem_part_numbers": ["N3H1-15-100"]
+        },
+        "thermostat": {
+          "part_id": "RENESIS-TSTAT",
+          "description": "Thermostat",
+          "oem_part_numbers": ["N3H1-15-171"],
+          "specifications": {"opens_celsius": 80}
+        },
+        "radiator": {
+          "part_id": "RENESIS-RAD",
+          "description": "Aluminum radiator",
+          "oem_part_numbers": ["N3H1-15-200"],
+          "aftermarket": {"koyo": "VH090650", "csf": "CSF-RX8-RAD"}
+        },
+        "oil_cooler": {
+          "part_id": "RENESIS-OIL-COOL",
+          "description": "Engine oil cooler",
+          "oem_part_numbers": ["N3H1-14-700"]
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "RENESIS-OPUMP",
+          "description": "Oil pump assembly",
+          "oem_part_numbers": ["N3H1-14-100"]
+        },
+        "metering_oil_pump": {
+          "part_id": "RENESIS-MOP",
+          "description": "Metering oil pump (OMP)",
+          "oem_part_numbers": ["N3H1-14-600"],
+          "notes": "Injects oil into combustion chamber for apex seal lubrication"
+        },
+        "oil_filter": {
+          "part_id": "RENESIS-OFILT",
+          "description": "Oil filter",
+          "oem_part_numbers": ["N3H1-14-302"],
+          "aftermarket": {"wix": "51394", "k&n": "HP-1010"}
+        }
+      }
+    }
+  }
+}

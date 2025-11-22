@@ -1,0 +1,86 @@
+{
+  "engine_id": "MAZDA-MZR-2.3L-I4-TURBO",
+  "common_names": ["MZR 2.3 DISI Turbo", "L3-VDT", "Mazdaspeed Engine", "DISI Turbo", "MS3 Engine", "MS6 Engine"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda MZR / Ford Duratec",
+  "production_years": "2005-2013",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder Turbocharged",
+    "displacement": {"liters": 2.261, "cc": 2261},
+    "bore": {"mm": 87.5},
+    "stroke": {"mm": 94.0},
+    "compression_ratio": "9.5:1",
+    "firing_order": "1-3-4-2",
+    "block_material": "Aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves, Chain-driven",
+    "forced_induction": {
+      "type": "K04 Turbocharger (Borg Warner)",
+      "boost_psi": {"stock": 15.5, "max_safe": 23}
+    },
+    "fuel_system": {
+      "type": "Direct Injection Spark Ignition (DISI)",
+      "injector_type": "High-pressure direct injection"
+    },
+    "variable_valve_timing": "S-VT on intake cam",
+    "redline_rpm": 6500,
+    "peak_power_rpm": 5500
+  },
+
+  "power_output_by_variant": {
+    "l3_vdt_ms3_gen1": {"hp": 263, "torque_lb_ft": 280, "notes": "2007-2009 Mazdaspeed 3"},
+    "l3_vdt_ms3_gen2": {"hp": 263, "torque_lb_ft": 280, "notes": "2010-2013 Mazdaspeed 3"},
+    "l3_vdt_ms6": {"hp": 274, "torque_lb_ft": 280, "notes": "2006-2007 Mazdaspeed 6"},
+    "l3_vdt_cx7": {"hp": 244, "torque_lb_ft": 258, "notes": "2007-2012 CX-7 Turbo (detuned)"}
+  },
+
+  "vehicle_applications": {
+    "mazdaspeed3_gen1": {"years": "2007-2009", "notes": "Hot hatch, FWD"},
+    "mazdaspeed3_gen2": {"years": "2010-2013", "notes": "Revised styling, same powertrain"},
+    "mazdaspeed6": {"years": "2006-2007", "notes": "AWD sports sedan"},
+    "cx7_turbo": {"years": "2007-2012", "notes": "Compact CUV (detuned version)"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 5.7, "viscosity": ["5W-20", "5W-30"], "spec": "API SM synthetic required"},
+    "coolant": {"liters": 7.5}
+  },
+
+  "notes": {
+    "heritage": "The L3-VDT was Mazda's first turbocharged direct-injection engine. Brought significant power to the compact car segment.",
+    "reputation": "Potent performer with strong torque steer (FWD). Known for tunability and aftermarket support.",
+    "design_philosophy": "High-output direct injection turbo for maximum performance in Mazdaspeed lineup.",
+    "key_features": [
+      "Direct Injection Spark Ignition (DISI)",
+      "Borg Warner K04 turbo",
+      "Forged crankshaft",
+      "Oil-cooled pistons"
+    ],
+    "common_issues": [
+      "VVT actuator failure (timing rattle)",
+      "Turbo seal failure (oil consumption)",
+      "HPFP (High Pressure Fuel Pump) failure",
+      "Motor mount failure (vibration)",
+      "Timing chain guide wear",
+      "Zoom-zoom syndrome (spark plug blowout - Gen1)"
+    ],
+    "critical_recalls_tsbs": [
+      "Spark plug recall (Gen1 - threads strip from head)",
+      "VVT actuator TSB"
+    ],
+    "maintenance_critical": [
+      "Synthetic oil only - 5W-30",
+      "Oil changes every 5000 miles",
+      "Check VVT at startup for rattle",
+      "Monitor boost and AFR if tuned"
+    ],
+    "strengths": [
+      "Strong power output",
+      "Excellent aftermarket support",
+      "Responds very well to modifications",
+      "Robust bottom end"
+    ],
+    "tuning_notes": "Stock K04 good to ~350HP. Big turbo builds achieve 400-500HP. HPFP upgrade critical for 300+ HP."
+  }
+}

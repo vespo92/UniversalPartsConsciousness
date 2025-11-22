@@ -1,0 +1,314 @@
+{
+  "engine_id": "MAZDA-13B-REW-TWIN-TURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 1995, "make": "Mazda", "model": "RX-7 FD3S", "engine": "13B-REW"},
+
+  "systems": {
+    "rotating_assembly": {
+      "components": {
+        "front_rotor": {
+          "part_id": "13B-ROTOR-FRONT",
+          "description": "Front rotor housing assembly",
+          "oem_part_numbers": ["N3A1-10-S30A"],
+          "specifications": {"faces": 3, "material": "Cast iron with hard anodizing"},
+          "notes": "Rotors are directional - front differs from rear"
+        },
+        "rear_rotor": {
+          "part_id": "13B-ROTOR-REAR",
+          "description": "Rear rotor housing assembly",
+          "oem_part_numbers": ["N3A1-10-S40A"]
+        },
+        "eccentric_shaft": {
+          "part_id": "13B-ESHAFT",
+          "description": "Eccentric shaft (crankshaft equivalent)",
+          "oem_part_numbers": ["N3A1-11-301"],
+          "aftermarket": {"goopy_performance": "GP-ESHAFT-13B"},
+          "specifications": {"eccentricity_mm": 15, "main_journal_mm": 70}
+        },
+        "apex_seals": {
+          "part_id": "13B-APEX-SEAL-SET",
+          "description": "3-piece apex seal set (per rotor, 6 per engine)",
+          "oem_part_numbers": ["N3A1-10-A07"],
+          "aftermarket": {"goopy": "GP-APEX-3MM", "atkins_rotary": "AR-APEX-2MM"},
+          "specifications": {"width_mm": 2.0, "material": "Chrome-molybdenum steel"},
+          "notes": "2mm seals for street, 3mm for racing. Critical wear item."
+        },
+        "side_seals": {
+          "part_id": "13B-SIDE-SEAL-SET",
+          "description": "Side seals (set of 12 per engine)",
+          "oem_part_numbers": ["N3A1-10-A40"],
+          "aftermarket": {"goopy": "GP-SIDE-SEAL"}
+        },
+        "corner_seals": {
+          "part_id": "13B-CORNER-SEAL-SET",
+          "description": "Corner seals (set of 6)",
+          "oem_part_numbers": ["N3A1-10-A50"]
+        },
+        "rotor_bearings": {
+          "part_id": "13B-ROTOR-BRG",
+          "description": "Rotor bearings",
+          "oem_part_numbers": ["N3A1-11-C20"],
+          "aftermarket": {"acl": "ACL-13B-ROTOR"}
+        },
+        "stationary_gears": {
+          "part_id": "13B-STAT-GEAR",
+          "description": "Stationary gear set (front and rear)",
+          "oem_part_numbers": {"front": "N3A1-10-E00", "rear": "N3A1-10-E10"}
+        }
+      }
+    },
+    "housings": {
+      "components": {
+        "front_side_housing": {
+          "part_id": "13B-FSH",
+          "description": "Front side housing (iron insert)",
+          "oem_part_numbers": ["N3A1-10-D00"]
+        },
+        "front_rotor_housing": {
+          "part_id": "13B-FRH",
+          "description": "Front rotor housing (trochoid)",
+          "oem_part_numbers": ["N3A1-10-C10"],
+          "notes": "Chrome plated inner surface"
+        },
+        "intermediate_housing": {
+          "part_id": "13B-INTER",
+          "description": "Intermediate (center) housing",
+          "oem_part_numbers": ["N3A1-10-C20"]
+        },
+        "rear_rotor_housing": {
+          "part_id": "13B-RRH",
+          "description": "Rear rotor housing (trochoid)",
+          "oem_part_numbers": ["N3A1-10-C30"]
+        },
+        "rear_side_housing": {
+          "part_id": "13B-RSH",
+          "description": "Rear side housing",
+          "oem_part_numbers": ["N3A1-10-D10"]
+        },
+        "tension_bolts": {
+          "part_id": "13B-TENSION-BOLTS",
+          "description": "Tension bolt set (19 bolts)",
+          "oem_part_numbers": ["N3A1-10-127"],
+          "aftermarket": {"arp": "ARP-13B-TBOLT"},
+          "specifications": {"torque_ft_lb": 25, "sequence": "Star pattern from center"}
+        }
+      }
+    },
+    "turbo_system": {
+      "components": {
+        "primary_turbocharger": {
+          "part_id": "13B-REW-PRIMARY-TURBO",
+          "description": "Primary (small) turbocharger - HT-12",
+          "oem_part_numbers": ["N3A1-13-700"],
+          "notes": "Primary spools at 1800 RPM, provides boost to 4000 RPM"
+        },
+        "secondary_turbocharger": {
+          "part_id": "13B-REW-SECONDARY-TURBO",
+          "description": "Secondary (large) turbocharger - HT-10",
+          "oem_part_numbers": ["N3A1-13-710"],
+          "notes": "Secondary engages at 4000+ RPM, compound boost"
+        },
+        "sequential_transition_valve": {
+          "part_id": "13B-REW-TRANS-VALVE",
+          "description": "Turbo transition valve (charge control)",
+          "oem_part_numbers": ["N3A1-13-995"]
+        },
+        "turbo_control_solenoids": {
+          "part_id": "13B-REW-SOL-SET",
+          "description": "Sequential turbo control solenoid set",
+          "oem_part_numbers": ["N3A1-18-741"],
+          "notes": "Common failure item - controls boost transition"
+        },
+        "intercooler": {
+          "part_id": "13B-REW-IC",
+          "description": "Factory top-mount intercooler",
+          "oem_part_numbers": ["N3A1-13-565"],
+          "aftermarket": {"greddy": "TRUST-V-MOUNT", "hks": "HKS-FMIC-FD"}
+        },
+        "intercooler_piping": {
+          "part_id": "13B-REW-IC-PIPE",
+          "description": "Intercooler piping set",
+          "oem_part_numbers": ["N3A1-13-XXX"],
+          "aftermarket": {"greddy": "GREDDY-IC-PIPE-FD"}
+        },
+        "wastegate_actuators": {
+          "part_id": "13B-REW-WG",
+          "description": "Internal wastegate actuators (2)",
+          "oem_part_numbers": ["N3A1-13-726"]
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "primary_injectors": {
+          "part_id": "13B-REW-INJ-PRI",
+          "description": "Primary fuel injectors (2)",
+          "oem_part_numbers": ["N3A1-13-250"],
+          "specifications": {"flow_cc": 550}
+        },
+        "secondary_injectors": {
+          "part_id": "13B-REW-INJ-SEC",
+          "description": "Secondary fuel injectors (4)",
+          "oem_part_numbers": ["N3A1-13-260"],
+          "specifications": {"flow_cc": 850},
+          "aftermarket": {"rc_engineering": "RC-1200CC", "id": "ID2000"}
+        },
+        "fuel_pump": {
+          "part_id": "13B-REW-FPUMP",
+          "description": "In-tank fuel pump",
+          "oem_part_numbers": ["N3A1-13-350"],
+          "aftermarket": {"walbro": "GSS342", "aem": "50-1000"}
+        },
+        "fuel_pressure_regulator": {
+          "part_id": "13B-REW-FPR",
+          "description": "Fuel pressure regulator",
+          "oem_part_numbers": ["N3A1-13-280"],
+          "specifications": {"pressure_psi": 43}
+        },
+        "fuel_rails": {
+          "part_id": "13B-REW-FRAIL",
+          "description": "Fuel rail assembly (primary and secondary)",
+          "oem_part_numbers": ["N3A1-13-170"]
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "leading_ignition_coils": {
+          "part_id": "13B-REW-COIL-L",
+          "description": "Leading ignition coils (2)",
+          "oem_part_numbers": ["N3A1-18-100"],
+          "quantity": 2
+        },
+        "trailing_ignition_coils": {
+          "part_id": "13B-REW-COIL-T",
+          "description": "Trailing ignition coils (2)",
+          "oem_part_numbers": ["N3A1-18-100A"],
+          "quantity": 2
+        },
+        "spark_plugs_leading": {
+          "part_id": "13B-REW-PLUG-L",
+          "description": "Leading spark plugs",
+          "oem_part_numbers": ["N3A1-18-110"],
+          "aftermarket": {"ngk": "BUR9EQP", "denso": "IK01-27"},
+          "quantity": 2,
+          "gap_mm": 0.8
+        },
+        "spark_plugs_trailing": {
+          "part_id": "13B-REW-PLUG-T",
+          "description": "Trailing spark plugs",
+          "oem_part_numbers": ["N3A1-18-110A"],
+          "aftermarket": {"ngk": "BUR7EQP"},
+          "quantity": 2,
+          "gap_mm": 1.1
+        },
+        "crank_angle_sensor": {
+          "part_id": "13B-REW-CAS",
+          "description": "Crank angle sensor",
+          "oem_part_numbers": ["N3A1-18-221"]
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "13B-REW-WPUMP",
+          "description": "Mechanical water pump",
+          "oem_part_numbers": ["N3A1-15-100"]
+        },
+        "thermostat": {
+          "part_id": "13B-REW-TSTAT",
+          "description": "Thermostat",
+          "oem_part_numbers": ["N3A1-15-171"],
+          "specifications": {"opens_celsius": 82}
+        },
+        "radiator": {
+          "part_id": "13B-REW-RAD",
+          "description": "Aluminum radiator",
+          "oem_part_numbers": ["N3A1-15-200"],
+          "aftermarket": {"koyo": "VH060644", "csf": "CSF-RX7-RAD"}
+        },
+        "oil_cooler": {
+          "part_id": "13B-REW-OIL-COOL",
+          "description": "Engine oil cooler",
+          "oem_part_numbers": ["N3A1-14-700"]
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "13B-REW-OPUMP",
+          "description": "Trochoid oil pump",
+          "oem_part_numbers": ["N3A1-14-100"]
+        },
+        "metering_oil_pump": {
+          "part_id": "13B-REW-MOP",
+          "description": "Metering oil pump (apex seal lubrication)",
+          "oem_part_numbers": ["N3A1-14-600"],
+          "notes": "Critical for apex seal longevity - do not delete"
+        },
+        "oil_filter": {
+          "part_id": "13B-REW-OFILT",
+          "description": "Oil filter",
+          "oem_part_numbers": ["N3A1-14-302"],
+          "aftermarket": {"wix": "51394", "k&n": "HP-1010"}
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "throttle_body": {
+          "part_id": "13B-REW-TB",
+          "description": "Throttle body assembly",
+          "oem_part_numbers": ["N3A1-13-640"]
+        },
+        "intake_manifold": {
+          "part_id": "13B-REW-IM",
+          "description": "Upper intake manifold",
+          "oem_part_numbers": ["N3A1-13-100"],
+          "aftermarket": {"greddy": "GREDDY-IM-13B"}
+        },
+        "air_flow_meter": {
+          "part_id": "13B-REW-AFM",
+          "description": "Air flow meter",
+          "oem_part_numbers": ["N3A1-13-215"]
+        },
+        "air_pump": {
+          "part_id": "13B-REW-AIRPUMP",
+          "description": "Air injection pump (emissions)",
+          "oem_part_numbers": ["N3A1-18-600"],
+          "notes": "Often deleted in performance builds"
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "13B-REW-EXMAN",
+          "description": "Exhaust manifold (twin outlet)",
+          "oem_part_numbers": ["N3A1-13-450"],
+          "aftermarket": {"racing_beat": "RB-16120", "greddy": "GREDDY-MAN-FD"}
+        },
+        "downpipe": {
+          "part_id": "13B-REW-DP",
+          "description": "Downpipe (twin turbo outlet to single)",
+          "oem_part_numbers": ["N3A1-40-500"],
+          "aftermarket": {"hks": "HKS-DP-FD", "greddy": "GREDDY-DP-FD"}
+        },
+        "catalytic_converter": {
+          "part_id": "13B-REW-CAT",
+          "description": "Main catalytic converter",
+          "oem_part_numbers": ["N3A1-40-305"]
+        },
+        "pre_cat": {
+          "part_id": "13B-REW-PRECAT",
+          "description": "Pre-catalytic converter",
+          "oem_part_numbers": ["N3A1-40-305A"],
+          "notes": "Known to clog and cause power loss"
+        }
+      }
+    }
+  }
+}

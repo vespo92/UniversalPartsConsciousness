@@ -1,0 +1,134 @@
+{
+  "manufacturer_id": "MAZDA-MOTOR-CORPORATION",
+  "company_names": {
+    "original": "Toyo Cork Kogyo Co., Ltd.",
+    "1927": "Toyo Kogyo Co., Ltd.",
+    "1984": "Mazda Motor Corporation"
+  },
+  "founded": 1920,
+  "headquarters": "Fuchu, Aki, Hiroshima, Japan",
+  "automotive_production_start": 1931,
+
+  "company_timeline": {
+    "1920s": {
+      "1920": "Founded as Toyo Cork Kogyo - cork manufacturing",
+      "1927": "Renamed Toyo Kogyo, diversified into machining tools"
+    },
+    "1930s": {
+      "1931": "First motorized vehicle - Mazda-Go three-wheeled truck",
+      "1936": "Adopted 'Mazda' name for vehicles (from Ahura Mazda)"
+    },
+    "1940s": {
+      "1945": "Hiroshima factory survived atomic bomb - aided city recovery",
+      "1949": "Resumed vehicle production post-war"
+    },
+    "1950s": {
+      "1950": "Resumed three-wheeled truck production",
+      "1958": "First passenger car prototype - the R360 Coupe development begins",
+      "1959": "Mazda and NSU (Germany) begin Wankel rotary engine collaboration"
+    },
+    "1960s": {
+      "1960": "R360 Coupe - first Mazda passenger car",
+      "1961": "Technical agreement with NSU for Wankel rotary development",
+      "1963": "Familia/323 line begins",
+      "1967": "Cosmo Sport 110S - world's first production twin-rotor Wankel car",
+      "1968": "Familia Rotary R100 - first volume rotary production car"
+    },
+    "1970s": {
+      "1970": "12A rotary engine introduced",
+      "1971": "Savanna RX-3 launched - racing legend begins",
+      "1973": "13B rotary engine introduced",
+      "1974": "Partnership with Ford Motor Company begins",
+      "1978": "RX-7 (SA22C/FB) launched - iconic rotary sports car"
+    },
+    "1980s": {
+      "1984": "Company officially renamed Mazda Motor Corporation",
+      "1985": "626 becomes first Japanese car manufactured in USA (Flat Rock, MI)",
+      "1989": "MX-5 Miata (NA) launched - revives roadster segment",
+      "1989": "Mazda 787B development begins for Le Mans"
+    },
+    "1990s": {
+      "1991": "787B wins Le Mans 24 Hours - only rotary victory",
+      "1992": "RX-7 (FD3S) introduced with 13B-REW twin-turbo",
+      "1994": "Ford increases stake to 33.4%",
+      "1996": "Lantis/323F with Miller-cycle V6",
+      "1999": "Ford controlling stake established"
+    },
+    "2000s": {
+      "2002": "RX-7 production ends",
+      "2003": "RX-8 with Renesis engine - Engine of the Year",
+      "2004": "Mazdaspeed 3 and 6 introduced",
+      "2008": "Ford reduces stake amid financial crisis",
+      "2009": "Skyactiv technology development announced"
+    },
+    "2010s": {
+      "2010": "Ford divests to 3% stake - Mazda independent again",
+      "2012": "Skyactiv-G and Skyactiv-D production begins",
+      "2012": "RX-8 production ends - last production rotary",
+      "2015": "Fourth-gen MX-5 (ND) launched",
+      "2019": "Skyactiv-X SPCCI engine debuts - first production compression ignition gasoline"
+    },
+    "2020s": {
+      "2020": "Partnership with Toyota deepens",
+      "2021": "Rotary returns as range extender in MX-30",
+      "2023": "Inline-6 Skyactiv 3.3L and CX-60/90 platform launch",
+      "2024": "Expanded EV and hybrid strategy"
+    }
+  },
+
+  "rotary_engine_timeline": {
+    "10A": {"years": "1967-1973", "displacement_cc": 982, "applications": ["Cosmo Sport", "R100"]},
+    "12A": {"years": "1970-1985", "displacement_cc": 1146, "applications": ["RX-3", "RX-4", "RX-7 FB"]},
+    "13B": {"years": "1973-2002", "displacement_cc": 1308, "applications": ["Cosmo", "RX-7 FC/FD"]},
+    "13B-REW": {"years": "1992-2002", "displacement_cc": 1308, "applications": ["RX-7 FD3S"], "notes": "Sequential twin-turbo"},
+    "Renesis": {"years": "2003-2012", "displacement_cc": 1308, "applications": ["RX-8"], "notes": "Side exhaust ports"},
+    "8C": {"years": "2021-present", "displacement_cc": 830, "applications": ["MX-30 R-EV"], "notes": "Range extender"}
+  },
+
+  "piston_engine_families": {
+    "A_series": {"years": "1968-1978", "displacements": ["1.0L", "1.3L"], "applications": ["Familia", "1300"]},
+    "B_series": {"years": "1985-2005", "displacements": ["1.6L", "1.8L"], "applications": ["Miata", "323"]},
+    "F_series": {"years": "1983-2002", "displacements": ["2.0L", "2.2L"], "applications": ["626", "MX-6", "Probe"]},
+    "K_series": {"years": "1991-2002", "displacements": ["2.0L", "2.5L V6"], "applications": ["626", "MX-6", "Millenia"]},
+    "MZR": {"years": "2001-2018", "displacements": ["1.8L", "2.0L", "2.3L", "2.5L"], "applications": ["Mazda3", "Mazda6", "CX-7"]},
+    "Skyactiv_G": {"years": "2011-present", "displacements": ["1.5L", "2.0L", "2.5L"], "applications": ["Current lineup"]},
+    "Skyactiv_X": {"years": "2019-present", "displacements": ["2.0L"], "applications": ["Mazda3", "CX-30"]},
+    "Skyactiv_D": {"years": "2012-present", "displacements": ["1.5L", "2.2L"], "applications": ["Global diesel models"]}
+  },
+
+  "motorsport_achievements": {
+    "le_mans": {
+      "1991": {
+        "car": "787B",
+        "engine": "R26B 4-rotor (2.6L)",
+        "result": "Overall victory - only rotary winner",
+        "drivers": ["Johnny Herbert", "Volker Weidler", "Bertrand Gachot"]
+      }
+    },
+    "imsa_gto": {
+      "years": "1979-1992",
+      "wins": "Multiple championships",
+      "cars": ["RX-7"]
+    },
+    "btcc": {
+      "years": "1980-1990s",
+      "cars": ["323", "RX-7"]
+    },
+    "wrc": {
+      "years": "1999-2002",
+      "car": "323 WRC",
+      "notes": "Works team effort"
+    }
+  },
+
+  "philosophy": {
+    "jinba_ittai": {
+      "meaning": "Horse and rider as one",
+      "description": "Mazda's driving philosophy emphasizing driver connection and engagement"
+    },
+    "skyactiv": {
+      "meaning": "Efficiency through engineering",
+      "description": "Holistic approach to vehicle efficiency - engine, transmission, chassis, body"
+    }
+  }
+}

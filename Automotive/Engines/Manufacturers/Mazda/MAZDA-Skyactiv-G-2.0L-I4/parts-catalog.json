@@ -1,0 +1,192 @@
+{
+  "engine_id": "MAZDA-SKYACTIV-G-2.0L-I4",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2019, "make": "Mazda", "model": "MX-5 Miata ND", "engine": "PE-VPR Skyactiv-G 2.0"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "SKYG20-BLOCK",
+          "description": "Aluminum block with iron liners",
+          "oem_part_numbers": ["PE01-10-300"],
+          "specifications": {"bore_mm": 83.5, "stroke_mm": 91.2, "compression": "13.0:1"}
+        },
+        "crankshaft": {
+          "part_id": "SKYG20-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["PE01-11-301"],
+          "specifications": {"stroke_mm": 91.2}
+        },
+        "connecting_rods": {
+          "part_id": "SKYG20-CONROD",
+          "description": "Connecting rods (set of 4)",
+          "oem_part_numbers": ["PE01-11-210"]
+        },
+        "pistons": {
+          "part_id": "SKYG20-PISTON",
+          "description": "High-compression cavity pistons (set of 4)",
+          "oem_part_numbers": ["PE01-11-SA0"],
+          "specifications": {"compression": "13.0:1", "cavity_design": "Anti-knock"}
+        },
+        "main_bearings": {
+          "part_id": "SKYG20-MAIN-BRG",
+          "oem_part_numbers": ["PE01-11-SE0"]
+        },
+        "rod_bearings": {
+          "part_id": "SKYG20-ROD-BRG",
+          "oem_part_numbers": ["PE01-11-SH0"]
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "SKYG20-HEAD",
+          "description": "DOHC aluminum head with 4-2-1 exhaust integration",
+          "oem_part_numbers": ["PE01-10-090"],
+          "specifications": {"valves": 16, "exhaust_manifold": "Integrated 4-2-1"}
+        },
+        "camshafts": {
+          "part_id": "SKYG20-CAMSHAFT-SET",
+          "description": "Dual S-VT camshafts",
+          "oem_part_numbers": {"intake": "PE01-12-440", "exhaust": "PE01-12-420"}
+        },
+        "vvt_actuators": {
+          "part_id": "SKYG20-VVT",
+          "description": "S-VT actuators (intake and exhaust)",
+          "oem_part_numbers": {"intake": "PE01-12-4X0", "exhaust": "PE01-12-4Y0"}
+        },
+        "valve_springs": {
+          "part_id": "SKYG20-VALVE-SPRINGS",
+          "oem_part_numbers": ["PE01-12-111"]
+        },
+        "head_gasket": {
+          "part_id": "SKYG20-HEAD-GASKET",
+          "description": "MLS head gasket",
+          "oem_part_numbers": ["PE01-10-271"]
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "SKYG20-HPFP",
+          "description": "High-pressure direct injection pump",
+          "oem_part_numbers": ["PE01-13-800"],
+          "specifications": {"pressure_bar": 200}
+        },
+        "fuel_injectors": {
+          "part_id": "SKYG20-INJECTORS",
+          "description": "Direct injectors (set of 4)",
+          "oem_part_numbers": ["PE01-13-250"]
+        },
+        "fuel_pump_module": {
+          "part_id": "SKYG20-LPFP",
+          "description": "In-tank fuel pump module",
+          "oem_part_numbers": ["PE01-13-350"]
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "SKYG20-IM",
+          "description": "Variable-length intake manifold",
+          "oem_part_numbers": ["PE01-13-100"]
+        },
+        "throttle_body": {
+          "part_id": "SKYG20-TB",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": ["PE01-13-640"]
+        },
+        "air_filter": {
+          "part_id": "SKYG20-AIRFILTER",
+          "oem_part_numbers": ["PE01-13-Z40"],
+          "aftermarket": {"k&n": "33-5040"}
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold": {
+          "part_id": "SKYG20-EXMAN",
+          "description": "4-2-1 integrated exhaust manifold (in head)",
+          "notes": "Integrated into cylinder head for optimal scavenging"
+        },
+        "catalytic_converter": {
+          "part_id": "SKYG20-CAT",
+          "description": "Close-coupled catalytic converter",
+          "oem_part_numbers": ["PE01-40-305"]
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "SKYG20-COILS",
+          "description": "Coil-on-plug ignition coils (set of 4)",
+          "oem_part_numbers": ["PE01-18-100"]
+        },
+        "spark_plugs": {
+          "part_id": "SKYG20-SPARK-PLUGS",
+          "description": "Iridium spark plugs",
+          "oem_part_numbers": ["PE01-18-110"],
+          "aftermarket": {"ngk": "DILKAR7G11HS"},
+          "quantity": 4,
+          "gap_mm": 1.1
+        }
+      }
+    },
+    "timing_system": {
+      "components": {
+        "timing_chain": {
+          "part_id": "SKYG20-CHAIN",
+          "description": "Roller timing chain",
+          "oem_part_numbers": ["PE01-12-201"],
+          "notes": "Lifetime chain - no scheduled replacement"
+        },
+        "timing_chain_tensioner": {
+          "part_id": "SKYG20-TENS",
+          "description": "Hydraulic chain tensioner",
+          "oem_part_numbers": ["PE01-12-500"]
+        },
+        "timing_chain_guides": {
+          "part_id": "SKYG20-GUIDES",
+          "oem_part_numbers": ["PE01-12-510", "PE01-12-520"]
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "SKYG20-WPUMP",
+          "description": "Mechanical water pump",
+          "oem_part_numbers": ["PE01-15-010"]
+        },
+        "thermostat": {
+          "part_id": "SKYG20-TSTAT",
+          "oem_part_numbers": ["PE01-15-171"]
+        },
+        "radiator": {
+          "part_id": "SKYG20-RAD",
+          "oem_part_numbers": ["PE01-15-200"]
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "SKYG20-OPUMP",
+          "oem_part_numbers": ["PE01-14-100"]
+        },
+        "oil_filter": {
+          "part_id": "SKYG20-OFILTER",
+          "oem_part_numbers": ["PE01-14-302"],
+          "aftermarket": {"k&n": "HP-1008", "wix": "57356"}
+        }
+      }
+    }
+  }
+}
