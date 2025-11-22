@@ -1,0 +1,171 @@
+{
+  "engine_family_id": "HONDA-B-SERIES",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "performance_tiers": {
+    "tier_1_bolt_ons": {
+      "name": "Street Performance",
+      "power_target_hp": "180-220",
+      "description": "Basic bolt-on modifications for improved response and power",
+      "components": {
+        "intake": {
+          "cold_air_intake": ["AEM", "Injen", "K&N"],
+          "expected_gain_hp": "5-10"
+        },
+        "exhaust": {
+          "header": {
+            "brands": ["DC Sports", "Skunk2 Alpha", "Megan Racing"],
+            "configuration": "4-2-1 recommended for street"
+          },
+          "cat_back": {
+            "brands": ["Skunk2", "Greddy", "Tanabe"],
+            "expected_gain_hp": "5-10"
+          }
+        },
+        "tune": {
+          "description": "Hondata S300 or Neptune for proper tuning",
+          "expected_gain_hp": "10-15"
+        }
+      },
+      "total_expected_hp": "200-230"
+    },
+    "tier_2_head_work": {
+      "name": "All-Motor Build",
+      "power_target_hp": "220-260",
+      "description": "Head work and valvetrain upgrades for high-RPM power",
+      "components": {
+        "camshafts": {
+          "mild": "Skunk2 Stage 1 / Toda A",
+          "aggressive": "Skunk2 Stage 2 / Toda B",
+          "expected_gain_hp": "10-20"
+        },
+        "valvetrain": {
+          "springs": "Skunk2 Alpha or Supertech dual springs",
+          "retainers": "Titanium retainers",
+          "valves": "Oversize stainless or inconel"
+        },
+        "port_work": {
+          "description": "Head porting and polishing",
+          "providers": ["Endyn", "Portflow", "Various local shops"],
+          "expected_gain_hp": "10-20"
+        },
+        "throttle_body": {
+          "size": "68-70mm",
+          "brands": ["Skunk2", "Blox", "S90"]
+        },
+        "intake_manifold": {
+          "options": ["Skunk2 Pro Series", "Blox Power", "ITBs"],
+          "expected_gain_hp": "10-15"
+        }
+      },
+      "total_expected_hp": "240-280"
+    },
+    "tier_3_built_motor": {
+      "name": "Full Build N/A",
+      "power_target_hp": "260-300+",
+      "description": "Full engine build for maximum naturally aspirated power",
+      "components": {
+        "short_block": {
+          "pistons": "JE, Wiseco, CP - 12.5:1+ compression",
+          "rods": "Eagle, Manley, Brian Crower",
+          "bearings": "ACL Race series"
+        },
+        "cylinder_head": {
+          "valves": "Oversize Supertech or Ferrea",
+          "springs": "High-lift dual springs",
+          "cams": "Aggressive profile (280+ duration)",
+          "port_work": "Full CNC porting"
+        },
+        "induction": {
+          "throttle_bodies": "Individual Throttle Bodies (ITBs)",
+          "brands": ["TWM", "Jenvey", "Skunk2 Pro"],
+          "expected_gain_hp": "20-30 over manifold"
+        }
+      },
+      "total_expected_hp": "280-320",
+      "notes": "Over 300hp N/A requires extensive head work and likely displacement increase"
+    },
+    "tier_4_forced_induction": {
+      "name": "Turbo Build",
+      "power_target_hp": "350-600+",
+      "description": "Turbocharged B-series for serious power",
+      "components": {
+        "turbo_kit": {
+          "entry_level": ["Rev9", "CXRacing", "Emusa"],
+          "quality": ["Full-Race", "Kraftwerks", "Hondata custom"],
+          "turbo_size": {
+            "street_350hp": "GT2860RS / T3-60-1",
+            "street_500hp": "GT3076R / T4-70-1",
+            "track_600hp+": "GT35R / Precision 6266"
+          }
+        },
+        "fuel_system": {
+          "injectors": "550cc+ (RC, ID)",
+          "fuel_pump": "Walbro 255 or AEM 340",
+          "fuel_rail": "Skunk2 or custom"
+        },
+        "engine_management": {
+          "options": ["Hondata S300", "AEM EMS", "Haltech"],
+          "critical": "Professional tuning required"
+        },
+        "supporting_mods": {
+          "clutch": "ACT, Exedy, Competition Clutch",
+          "trans": "LSD, gear sets available",
+          "half_shafts": "The Driveshaft Shop (DSS)"
+        }
+      },
+      "notes": "Stock B18C bottom end reliable to ~400hp. B20 block preferred for boost due to lower compression"
+    }
+  },
+
+  "ls_vtec_build": {
+    "description": "Combining B18A/B block with VTEC head for 1.8L VTEC",
+    "block": "B18A1, B18B1 (non-VTEC)",
+    "head": "B16A, B18C1, B18C5",
+    "required_parts": [
+      "VTEC oil line or sandwich plate",
+      "VTEC wiring to ECU",
+      "Compatible ECU (P28 with VTEC, P72, P73)"
+    ],
+    "considerations": [
+      "May need to resurface block/head for proper clearance",
+      "Compression ratio varies based on head used",
+      "Popular and proven combination"
+    ],
+    "expected_power": "180-200hp with basic mods"
+  },
+
+  "trusted_builders": {
+    "national": [
+      {"name": "Endyn Racing", "specialty": "Head work, blueprinting"},
+      {"name": "Inline Pro", "specialty": "Full engine builds"},
+      {"name": "Golden Eagle", "specialty": "Sleeves, machining"},
+      {"name": "Brian Crower", "specialty": "Rotating assemblies"}
+    ]
+  },
+
+  "ecu_tuning": {
+    "obd1_options": {
+      "hondata_s300": {
+        "description": "Gold standard for OBD1 Honda tuning",
+        "features": ["Datalogging", "VTEC control", "Boost control", "Launch control"]
+      },
+      "neptune_rtp": {
+        "description": "Budget-friendly alternative",
+        "features": ["Real-time tuning", "Datalogging"]
+      }
+    },
+    "standalone_options": {
+      "aem_ems": "Full standalone for complex builds",
+      "haltech": "Professional standalone",
+      "megasquirt": "DIY budget standalone"
+    }
+  },
+
+  "parts_sources": {
+    "new_parts": ["Inline Pro", "King Motorsports", "Evasive Motorsports", "Jhpusa"],
+    "used_parts": ["Honda-tech forums", "Facebook groups", "eBay"],
+    "jdm_parts": ["Minkara", "Yahoo Japan Auctions", "JDM importers"]
+  }
+}

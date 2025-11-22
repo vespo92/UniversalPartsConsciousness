@@ -1,0 +1,329 @@
+{
+  "engine_family_id": "HONDA-K-SERIES",
+  "common_names": ["K-Series", "K20", "K24", "i-VTEC", "Type R Engine", "RSX Engine", "TSX Engine"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "2001-present",
+  "historical_significance": "The successor to the legendary B-series. Introduced i-VTEC and became the new standard for high-revving Honda performance.",
+
+  "variants": {
+    "k20a": {
+      "engine_code": "K20A",
+      "displacement_cc": 1998,
+      "bore_mm": 86.0,
+      "stroke_mm": 86.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 220,
+      "rpm_at_peak_power": 8000,
+      "torque_nm": 206,
+      "rpm_at_peak_torque": 6000,
+      "redline_rpm": 8400,
+      "compression_ratio": "11.5:1",
+      "vtec_engagement_rpm": 5800,
+      "production_years": "2001-2006",
+      "applications": ["Integra Type R (DC5 JDM)", "Civic Type R (EP3 JDM)"],
+      "notes": "JDM Type R spec. Red valve cover. Hand-ported. The benchmark for naturally aspirated 4-cylinder performance"
+    },
+    "k20a2": {
+      "engine_code": "K20A2",
+      "displacement_cc": 1998,
+      "bore_mm": 86.0,
+      "stroke_mm": 86.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 200,
+      "rpm_at_peak_power": 7400,
+      "torque_nm": 193,
+      "rpm_at_peak_torque": 6000,
+      "redline_rpm": 8100,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5800,
+      "production_years": "2002-2006",
+      "applications": ["Acura RSX Type S (DC5 USDM)"],
+      "notes": "USDM Type S engine. Black valve cover"
+    },
+    "k20a3": {
+      "engine_code": "K20A3",
+      "displacement_cc": 1998,
+      "bore_mm": 86.0,
+      "stroke_mm": 86.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 160,
+      "rpm_at_peak_power": 6500,
+      "torque_nm": 188,
+      "rpm_at_peak_torque": 4000,
+      "redline_rpm": 6800,
+      "compression_ratio": "9.8:1",
+      "production_years": "2002-2006",
+      "applications": ["Acura RSX Base (DC5)", "Civic Si (EP3 USDM)"],
+      "notes": "Base RSX/Si engine. Economy-focused i-VTEC"
+    },
+    "k20c1": {
+      "engine_code": "K20C1",
+      "displacement_cc": 1996,
+      "bore_mm": 86.0,
+      "stroke_mm": 85.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "model": "MHI TD04",
+        "boost_psi": 22.8
+      },
+      "power_hp": 306,
+      "rpm_at_peak_power": 6500,
+      "torque_nm": 400,
+      "rpm_at_peak_torque": 2500,
+      "redline_rpm": 7000,
+      "compression_ratio": "9.8:1",
+      "production_years": "2015-present",
+      "applications": ["Civic Type R (FK8/FL5)", "Acura Integra Type S"],
+      "notes": "First turbocharged Type R engine. Earth Dreams technology. Current production"
+    },
+    "k20c2": {
+      "engine_code": "K20C2",
+      "displacement_cc": 1996,
+      "bore_mm": 86.0,
+      "stroke_mm": 85.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC VTEC Turbo, 16 valves",
+      "forced_induction": {
+        "type": "Single Turbo",
+        "boost_psi": 16.5
+      },
+      "power_hp": 205,
+      "rpm_at_peak_power": 5700,
+      "torque_nm": 260,
+      "rpm_at_peak_torque": 1600,
+      "redline_rpm": 6500,
+      "compression_ratio": "10.8:1",
+      "production_years": "2016-present",
+      "applications": ["Accord 2.0T (CV2)", "Acura RDX Turbo"],
+      "notes": "Detuned turbo K20 for mainstream applications"
+    },
+    "k20z1": {
+      "engine_code": "K20Z1",
+      "displacement_cc": 1998,
+      "bore_mm": 86.0,
+      "stroke_mm": 86.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 210,
+      "rpm_at_peak_power": 7800,
+      "torque_nm": 194,
+      "rpm_at_peak_torque": 6200,
+      "redline_rpm": 8200,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5800,
+      "production_years": "2006-2011",
+      "applications": ["Civic Type R (FD2 JDM)", "Civic Si (FG2 USDM)"],
+      "notes": "High-output K20 for 8th gen Civic"
+    },
+    "k20z3": {
+      "engine_code": "K20Z3",
+      "displacement_cc": 1998,
+      "bore_mm": 86.0,
+      "stroke_mm": 86.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 197,
+      "rpm_at_peak_power": 7800,
+      "torque_nm": 188,
+      "rpm_at_peak_torque": 6200,
+      "redline_rpm": 8000,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5800,
+      "production_years": "2006-2011",
+      "applications": ["Civic Si (FA5/FG2 USDM)"],
+      "notes": "USDM Civic Si engine"
+    },
+    "k24a1": {
+      "engine_code": "K24A1",
+      "displacement_cc": 2354,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 160,
+      "rpm_at_peak_power": 5500,
+      "torque_nm": 218,
+      "rpm_at_peak_torque": 4500,
+      "redline_rpm": 6500,
+      "compression_ratio": "9.7:1",
+      "production_years": "2002-2008",
+      "applications": ["CR-V (RD4-RD8)", "Element"],
+      "notes": "SUV-oriented K24"
+    },
+    "k24a2": {
+      "engine_code": "K24A2",
+      "displacement_cc": 2354,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 205,
+      "rpm_at_peak_power": 7000,
+      "torque_nm": 225,
+      "rpm_at_peak_torque": 4500,
+      "redline_rpm": 7200,
+      "compression_ratio": "10.5:1",
+      "vtec_engagement_rpm": 5800,
+      "production_years": "2004-2014",
+      "applications": ["Acura TSX", "Accord Euro R (CL9)"],
+      "notes": "High-output K24. Very popular for swaps and builds"
+    },
+    "k24a4": {
+      "engine_code": "K24A4",
+      "displacement_cc": 2354,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 166,
+      "rpm_at_peak_power": 5800,
+      "torque_nm": 220,
+      "rpm_at_peak_torque": 4000,
+      "redline_rpm": 6500,
+      "compression_ratio": "9.7:1",
+      "production_years": "2003-2007",
+      "applications": ["Accord LX/EX (CM5)"],
+      "notes": "Accord base K24"
+    },
+    "k24a8": {
+      "engine_code": "K24A8",
+      "displacement_cc": 2354,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 190,
+      "rpm_at_peak_power": 7000,
+      "torque_nm": 220,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 7200,
+      "compression_ratio": "10.5:1",
+      "vtec_engagement_rpm": 5800,
+      "production_years": "2007-2012",
+      "applications": ["Accord EX-L (CP2)"],
+      "notes": "Updated Accord K24 with higher output"
+    },
+    "k24z3": {
+      "engine_code": "K24Z3",
+      "displacement_cc": 2354,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 177,
+      "rpm_at_peak_power": 6300,
+      "torque_nm": 218,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.5:1",
+      "production_years": "2008-2012",
+      "applications": ["Accord LX/EX (CP2)"],
+      "notes": "Base 8th gen Accord K24"
+    },
+    "k24z7": {
+      "engine_code": "K24Z7",
+      "displacement_cc": 2354,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC, 16 valves",
+      "power_hp": 201,
+      "rpm_at_peak_power": 7000,
+      "torque_nm": 230,
+      "rpm_at_peak_torque": 4400,
+      "redline_rpm": 7200,
+      "compression_ratio": "11.0:1",
+      "vtec_engagement_rpm": 5700,
+      "production_years": "2012-2015",
+      "applications": ["Civic Si (FB6/FG4)"],
+      "notes": "Civic Si K24 - popular for swaps"
+    },
+    "k24w": {
+      "engine_code": "K24W",
+      "displacement_cc": 2356,
+      "bore_mm": 87.0,
+      "stroke_mm": 99.1,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "DOHC i-VTEC + Direct Injection, 16 valves",
+      "power_hp": 185,
+      "rpm_at_peak_power": 6400,
+      "torque_nm": 245,
+      "rpm_at_peak_torque": 3900,
+      "redline_rpm": 6800,
+      "compression_ratio": "11.1:1",
+      "production_years": "2013-2017",
+      "applications": ["Accord (CR2)", "CR-V (RM4)"],
+      "notes": "Earth Dreams direct injection K24. Last naturally aspirated Accord engine"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy",
+    "head_material": "Aluminum alloy",
+    "bore_spacing_mm": 94.0,
+    "firing_order": "1-3-4-2",
+    "oil_capacity_liters": 4.4,
+    "coolant_capacity_liters": 7.0,
+    "timing_system": "Chain-driven",
+    "timing_chain_type": "Roller chain with automatic tensioner"
+  },
+
+  "i_vtec_technology": {
+    "description": "Intelligent Variable Valve Timing and Lift Electronic Control",
+    "improvements_over_vtec": [
+      "Continuously variable cam phasing (VTC) on intake cam",
+      "VTEC on both cams (high-output variants)",
+      "Better low-end torque with high-RPM power"
+    ],
+    "components": {
+      "vtc": "Variable Timing Control - oil pressure actuated cam phaser",
+      "vtec": "Traditional lift/duration switching",
+      "intake_cam_phasing": "0-50 degree range (varies by application)"
+    }
+  },
+
+  "notes": {
+    "heritage": "The K-series replaced both B-series (performance) and F-series (Accord) engines. It combined the best of both",
+    "reputation": "The new standard for Honda performance. Strong, reliable, and responds extremely well to modifications",
+    "k_swap": {
+      "description": "K-series swap into older Hondas",
+      "popularity": "Extremely popular - the most common modern Honda swap",
+      "kits": ["Hasport", "Innovative Mounts", "Hybrid Racing"],
+      "notes": "K20/K24 can fit in virtually any Honda chassis with proper mounts"
+    },
+    "common_builds": {
+      "k20_k24_hybrid": {
+        "description": "K20A head on K24 block (Frankenmotor)",
+        "result": "2.4L with K20A high-RPM head = best of both worlds",
+        "power_potential": "270+ hp naturally aspirated"
+      },
+      "turbo_k24": {
+        "description": "Turbocharged K24",
+        "power_potential": "400-600+ hp with proper supporting mods",
+        "notes": "K24 low compression variants preferred for boost"
+      }
+    },
+    "common_issues": [
+      "Timing chain tensioner wear",
+      "Exhaust cam lobe wear (early K20A3)",
+      "Water pump failures",
+      "VTC actuator rattle on cold start",
+      "Rocker arm failure (rare, check at high mileage)"
+    ],
+    "maintenance_intervals": {
+      "timing_chain": "Lifetime (inspect at 160000km)",
+      "valve_adjustment_km": 168000,
+      "spark_plugs_km": 160000
+    },
+    "tuning_notes": {
+      "naturally_aspirated": "Header, intake, tune add 15-25hp. Cams can add 15-20hp. ITBs add power but require significant tuning",
+      "forced_induction": "Stock internals handle 400hp (K24) to 350hp (K20). Built K24 can exceed 1000hp",
+      "notes": "Chain-driven timing means no belt changes. Very strong rod bolts are the weak point under extreme boost"
+    }
+  }
+}

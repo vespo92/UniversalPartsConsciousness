@@ -1,0 +1,261 @@
+{
+  "engine_family_id": "HONDA-K-SERIES",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_engine": "K20A2 (RSX Type S)",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "K20-BLOCK",
+          "description": "Aluminum block - no sleeves",
+          "oem_part_numbers": {
+            "k20a2": "11000-PRB-A00",
+            "k24a2": "11000-RAA-A00"
+          },
+          "specifications": {"bore_mm": 86.0, "deck_height_mm": 212.0},
+          "aftermarket": {
+            "darton_sleeves": "K20 Sleeve Kit",
+            "notes": "Sleeving required for extreme builds"
+          }
+        },
+        "crankshaft": {
+          "part_id": "K20-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": {"k20a2": "13310-PRB-A00"},
+          "specifications": {"stroke_mm": 86.0, "main_journal_mm": 55.0},
+          "aftermarket": {
+            "brian_crower": "BC4320",
+            "k1": "011-DI17088",
+            "scat": "SK4-HK20-340-5807-FB"
+          }
+        },
+        "connecting_rods": {
+          "part_id": "K20-CONRODS",
+          "description": "Forged connecting rods (set of 4)",
+          "oem_part_numbers": {"k20a2": "13210-PRB-A00"},
+          "specifications": {"length_mm": 139.0, "wrist_pin_mm": 22.0},
+          "aftermarket": {
+            "eagle": "CRS5290K3D",
+            "manley": "14029-4",
+            "brian_crower": "BC6052"
+          }
+        },
+        "pistons": {
+          "part_id": "K20-PISTONS",
+          "description": "Forged pistons (set of 4)",
+          "oem_part_numbers": {"k20a2": "13010-PRB-A00"},
+          "specifications": {"bore_mm": 86.0},
+          "aftermarket": {
+            "wiseco": "K632M86",
+            "je_pistons": "242858",
+            "cp_pistons": "SC7068"
+          }
+        },
+        "main_bearings": {
+          "part_id": "K-MAIN-BRG",
+          "oem_part_numbers": {"standard": "13311-PPA-A00"},
+          "aftermarket": {"acl": "5M2152H", "king": "MB5259XP"}
+        },
+        "rod_bearings": {
+          "part_id": "K-ROD-BRG",
+          "oem_part_numbers": {"standard": "13211-PPA-A00"},
+          "aftermarket": {"acl": "4B1960H", "king": "CR4542XP"}
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head_assembly": {
+          "part_id": "K20A2-HEAD",
+          "description": "i-VTEC cylinder head",
+          "oem_part_numbers": {"k20a2": "12100-PRB-A00"},
+          "specifications": {"combustion_chamber_cc": 44.0},
+          "popular_swaps": {
+            "k20a_head": "JDM Type R head for more power",
+            "ported_k20a2": "CNC ported for improved flow"
+          }
+        },
+        "head_gasket": {
+          "part_id": "K20-HG",
+          "oem_part_numbers": {"k20": "12251-PRB-A01"},
+          "specifications": {"thickness_mm": 0.4, "bore_mm": 87.0},
+          "aftermarket": {
+            "cometic": "C4564-030",
+            "golden_eagle": "GE-K20-HG"
+          }
+        },
+        "camshafts": {
+          "part_id": "K20A2-CAMS",
+          "description": "i-VTEC camshafts",
+          "oem_part_numbers": {
+            "intake": "14110-PRB-A00",
+            "exhaust": "14120-PRB-A00"
+          },
+          "aftermarket": {
+            "skunk2": "304-05-0120 (Stage 2)",
+            "toda": "14111-K20-000",
+            "brian_crower": "BC0201"
+          },
+          "jdm_upgrade": {
+            "k20a_cams": "More aggressive JDM Type R cams",
+            "part_numbers": {"intake": "14110-PRC-A00", "exhaust": "14120-PRC-A00"}
+          }
+        },
+        "valve_springs": {
+          "part_id": "K20-SPRINGS",
+          "oem_part_numbers": {"k20a2": "14751-PRB-A01"},
+          "aftermarket": {
+            "skunk2": "344-05-1260 (Alpha)",
+            "supertech": "SPR-H1020D",
+            "ferrea": "K1020D"
+          }
+        },
+        "valves": {
+          "part_id": "K20-VALVES",
+          "oem_intake": "14711-PRB-A00",
+          "oem_exhaust": "14721-PRB-A00",
+          "specifications": {
+            "intake_diameter_mm": 35.0,
+            "exhaust_diameter_mm": 30.0
+          },
+          "aftermarket": {
+            "supertech": "SIVK-1024F (intake) / SEVK-1024E (exhaust)",
+            "ferrea": "F5004P-6 / F5005P-6"
+          }
+        },
+        "vtc_actuator": {
+          "part_id": "K20-VTC",
+          "description": "Variable Timing Control cam phaser",
+          "oem_part_numbers": {"k20": "14310-PRB-A01"},
+          "notes": "Cold start rattle often caused by VTC actuator wear"
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "K20A2-IM",
+          "description": "PRB intake manifold",
+          "oem_part_numbers": {"k20a2": "17100-PRB-A00"},
+          "popular_upgrades": {
+            "rbc_manifold": {
+              "description": "Larger runners from RSX Type S (2005-06)",
+              "oem_pn": "17100-RBC-A00",
+              "notes": "Bolt-on upgrade, requires adapter plate for early cars"
+            },
+            "prb_vs_rbc": "RBC flows more at high RPM, PRB better low-mid"
+          },
+          "aftermarket": {
+            "skunk2": "307-05-0310 (Ultra Street)",
+            "blox": "BXIM-10400"
+          }
+        },
+        "throttle_body": {
+          "part_id": "K20-TB",
+          "description": "Drive-by-cable throttle body (2002-05)",
+          "oem_part_numbers": {"k20a2": "16400-PRB-A01"},
+          "specifications": {"diameter_mm": 64},
+          "aftermarket": {
+            "skunk2": "309-05-0085 (70mm)",
+            "blox": "BXIM-00301 (68mm)"
+          },
+          "notes": "2006+ cars are drive-by-wire"
+        },
+        "fuel_injectors": {
+          "part_id": "K20-INJ",
+          "description": "Fuel injectors (set of 4)",
+          "oem_part_numbers": {"k20a2": "16450-PRB-A01"},
+          "specifications": {"flow_cc": 310, "ohms": "High impedance"},
+          "aftermarket": {
+            "injector_dynamics": "ID1050X",
+            "fic": "IS117-0550H"
+          }
+        },
+        "fuel_rail": {
+          "part_id": "K20-RAIL",
+          "oem_part_numbers": {"k20": "16610-PRB-A00"},
+          "aftermarket": {"skunk2": "350-05-5015", "aem": "25-302"}
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold_header": {
+          "part_id": "K20-HEADER",
+          "oem_part_numbers": {"k20a2": "18100-PRB-A00"},
+          "aftermarket": {
+            "skunk2": "412-05-1900 (Alpha)",
+            "plm": "PLM-K-HEADER",
+            "toda": "18100-K20-000"
+          },
+          "configurations": ["4-2-1"],
+          "notes": "Most aftermarket headers are 4-2-1 for broad powerband"
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "K20-COILS",
+          "description": "Coil-on-plug ignition coils (set of 4)",
+          "oem_part_numbers": {"k20": "30520-PNA-007"},
+          "aftermarket": {"aem": "30-2853 (smart coils)"}
+        },
+        "spark_plugs": {
+          "part_id": "K20-PLUGS",
+          "oem_part_numbers": {"ngk_stock": "NGK IZFR6K11"},
+          "aftermarket": {
+            "ngk_colder": "ILZKR7B-11S",
+            "denso": "SK20R11"
+          },
+          "gap_mm": 1.1
+        }
+      }
+    },
+    "timing_system": {
+      "components": {
+        "timing_chain": {
+          "part_id": "K20-CHAIN",
+          "oem_part_numbers": {"k20": "14401-PNA-004"},
+          "aftermarket": {"cloyes": "C1001"}
+        },
+        "timing_tensioner": {
+          "part_id": "K20-TENSIONER",
+          "oem_part_numbers": {"k20": "14520-PNA-003"},
+          "notes": "Replace if rattle or stretch detected"
+        },
+        "timing_guides": {
+          "part_id": "K20-GUIDES",
+          "oem_part_numbers": {
+            "top_guide": "14530-PNA-003",
+            "side_guide": "14540-PNA-003"
+          }
+        }
+      }
+    },
+    "oiling_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "K20-OIL-PUMP",
+          "oem_part_numbers": {"k20": "15100-PRB-A01"},
+          "aftermarket": {"boundary": "K-EVO"}
+        },
+        "oil_pan": {
+          "part_id": "K20-PAN",
+          "oem_part_numbers": {"k20": "11200-PRB-A00"},
+          "aftermarket": {
+            "moroso": "20920 (baffled)",
+            "spoon": "11200-DC5-001"
+          }
+        },
+        "oil_filter": {
+          "part_id": "K-OIL-FILTER",
+          "oem_part_numbers": {"15400-PLM-A02": "Honda OEM"},
+          "aftermarket": {"wix": "57356", "k&n": "HP-1004"}
+        }
+      }
+    }
+  }
+}

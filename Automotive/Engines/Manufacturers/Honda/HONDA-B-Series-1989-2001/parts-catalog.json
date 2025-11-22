@@ -1,0 +1,247 @@
+{
+  "engine_family_id": "HONDA-B-SERIES",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_engine": "B18C5 (Integra Type R)",
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "B18-BLOCK",
+          "description": "Aluminum block with cast iron sleeves",
+          "oem_part_numbers": {
+            "b18c5": "11000-P73-A00",
+            "b18c1": "11000-P72-A00",
+            "b18b1": "11000-PR4-A00"
+          },
+          "specifications": {"bore_mm": 81.0, "deck_height_mm": 212.0}
+        },
+        "crankshaft": {
+          "part_id": "B18-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": {"b18c": "13310-P73-003"},
+          "specifications": {"stroke_mm": 87.2, "main_journal_mm": 50.0},
+          "aftermarket": {"brian_crower": "BC4320", "k1": "011DI17087"}
+        },
+        "connecting_rods": {
+          "part_id": "B18C-CONRODS",
+          "description": "Forged steel connecting rods (set of 4)",
+          "oem_part_numbers": {"b18c5": "13210-P73-000"},
+          "specifications": {"length_mm": 137.0, "wrist_pin_mm": 21.0},
+          "aftermarket": {
+            "eagle": "CRS5394H3D",
+            "manley": "14024-4",
+            "bc_brian_crower": "BC6110"
+          }
+        },
+        "pistons": {
+          "part_id": "B18C5-PISTONS",
+          "description": "High-compression forged pistons (set of 4)",
+          "oem_part_numbers": {"b18c5": "13010-P73-000"},
+          "specifications": {"bore_mm": 81.0, "compression_height_mm": 30.17},
+          "aftermarket": {
+            "wiseco": "K544M81",
+            "je_pistons": "182072",
+            "cp_pistons": "SC7017"
+          }
+        },
+        "main_bearings": {
+          "part_id": "B-MAIN-BRG",
+          "oem_part_numbers": {"standard": "13311-P30-003"},
+          "aftermarket": {"acl": "5M1959H", "clevite": "MS-2029H"}
+        },
+        "rod_bearings": {
+          "part_id": "B-ROD-BRG",
+          "oem_part_numbers": {"standard": "13211-P30-003"},
+          "aftermarket": {"acl": "4B1912H", "clevite": "CB-1442H"}
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head_assembly": {
+          "part_id": "B18C5-HEAD",
+          "description": "VTEC cylinder head with hand-ported intake",
+          "oem_part_numbers": {"b18c5": "12100-P73-A00"},
+          "specifications": {"combustion_chamber_cc": 42.7, "intake_port_size": "Large"},
+          "notes": "Type R head has hand-ported intake runners"
+        },
+        "head_gasket": {
+          "part_id": "B18C-HG",
+          "oem_part_numbers": {"b18c": "12251-P72-004"},
+          "specifications": {"thickness_mm": 0.6, "bore_mm": 82.0},
+          "aftermarket": {
+            "cometic": "C4249-030",
+            "golden_eagle": "GE-B18C-HG"
+          }
+        },
+        "camshafts": {
+          "part_id": "B18C5-CAMS",
+          "description": "VTEC camshafts",
+          "oem_part_numbers": {
+            "intake": "14111-P73-A00",
+            "exhaust": "14121-P73-A00"
+          },
+          "specifications": {
+            "intake_duration": "304/280 degrees (VTEC/non-VTEC)",
+            "exhaust_duration": "286/274 degrees",
+            "intake_lift_mm": "11.4/8.1",
+            "exhaust_lift_mm": "10.6/7.6"
+          },
+          "aftermarket": {
+            "skunk2": "305-05-0100 (Stage 1)",
+            "toda": "14111-B18-101",
+            "brian_crower": "BC0011"
+          }
+        },
+        "valve_springs": {
+          "part_id": "B18C-SPRINGS",
+          "oem_part_numbers": {"b18c5": "14751-P73-000"},
+          "aftermarket": {
+            "skunk2": "344-05-1300 (Alpha)",
+            "supertech": "SPR-H1021D",
+            "brian_crower": "BC0060"
+          }
+        },
+        "valves": {
+          "part_id": "B18C-VALVES",
+          "oem_intake": "14711-P73-000",
+          "oem_exhaust": "14721-P73-000",
+          "specifications": {
+            "intake_diameter_mm": 35.0,
+            "exhaust_diameter_mm": 30.0
+          },
+          "aftermarket": {
+            "supertech": "SIVB-1035F (intake)",
+            "ferrea": "F1008P"
+          }
+        },
+        "rocker_arms": {
+          "part_id": "B18C-ROCKERS",
+          "description": "VTEC rocker arm assembly",
+          "oem_part_numbers": {"vtec_intake": "14620-P72-A00"},
+          "notes": "VTEC rocker arms include locking pins for high-cam engagement"
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "B18C5-IM",
+          "description": "Hand-ported Type R intake manifold",
+          "oem_part_numbers": {"b18c5_type_r": "17100-P73-A00"},
+          "aftermarket": {
+            "skunk2": "307-05-0270 (Pro)",
+            "blox": "BXIM-10100",
+            "edelbrock": "4755"
+          },
+          "notes": "Type R manifold is hand-ported at factory"
+        },
+        "throttle_body": {
+          "part_id": "B18C-TB",
+          "description": "62mm throttle body",
+          "oem_part_numbers": {"b18c5": "16400-P73-A00"},
+          "aftermarket": {
+            "skunk2": "309-05-0060 (68mm)",
+            "blox": "BXIM-10300 (70mm)"
+          }
+        },
+        "fuel_injectors": {
+          "part_id": "B18C-INJ",
+          "description": "Fuel injectors (set of 4)",
+          "oem_part_numbers": {"b18c5": "16450-P73-A01"},
+          "specifications": {"flow_cc": 290, "ohms": "High impedance"},
+          "aftermarket": {
+            "injector_dynamics": "ID1050X",
+            "bosch": "0280158821"
+          }
+        },
+        "fuel_rail": {
+          "part_id": "B18C-RAIL",
+          "oem_part_numbers": {"b18c": "16610-P72-A00"},
+          "aftermarket": {"skunk2": "350-05-5000"}
+        }
+      }
+    },
+    "exhaust_system": {
+      "components": {
+        "exhaust_manifold_header": {
+          "part_id": "B18C-HEADER",
+          "oem_part_numbers": {"b18c5": "18100-P73-A00"},
+          "aftermarket": {
+            "skunk2": "412-05-1000 (Alpha)",
+            "dc_sports": "AHC6012",
+            "hytech": "HT-B18-4-1"
+          },
+          "configurations": ["4-2-1", "4-1"],
+          "notes": "4-2-1 for street, 4-1 for track/high-RPM"
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "distributor": {
+          "part_id": "B18C-DIST",
+          "oem_part_numbers": {"b18c5": "30100-P73-A02"},
+          "aftermarket": {"msd": "8485"}
+        },
+        "ignition_coil": {
+          "part_id": "B-COIL",
+          "oem_part_numbers": {"internal": "30500-P73-A01"},
+          "aftermarket": {"msd": "8227 (Blaster)"}
+        },
+        "spark_plugs": {
+          "part_id": "B18C-PLUGS",
+          "oem_part_numbers": {"ngk_stock": "NGK IZFR6K-11S"},
+          "aftermarket": {
+            "ngk_colder": "BCPR7ES-11",
+            "denso": "IK24"
+          },
+          "gap_mm": 1.1
+        }
+      }
+    },
+    "oiling_system": {
+      "components": {
+        "oil_pump": {
+          "part_id": "B18C-OIL-PUMP",
+          "oem_part_numbers": {"b18c": "15100-P72-A01"},
+          "aftermarket": {"acl": "OPHD1145", "boundary": "B1-EVO"}
+        },
+        "oil_pan": {
+          "part_id": "B18C-PAN",
+          "oem_part_numbers": {"b18c5": "11200-P73-000"},
+          "aftermarket": {"moroso": "20915 (baffled)"}
+        },
+        "oil_filter": {
+          "part_id": "B-OIL-FILTER",
+          "oem_part_numbers": {"15400-PLM-A02": "Honda OEM"},
+          "aftermarket": {"wix": "51356", "k&n": "HP-1004"}
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "B18C-WATER-PUMP",
+          "oem_part_numbers": {"b18c": "19200-P72-013"},
+          "aftermarket": {"npw": "H-54", "aisin": "WPH-054"}
+        },
+        "thermostat": {
+          "part_id": "B-THERMOSTAT",
+          "oem_part_numbers": {"19301-PAA-306": "Standard"},
+          "aftermarket": {"mishimoto": "MMTS-INT-90 (low temp)"}
+        },
+        "radiator": {
+          "part_id": "B18C-RAD",
+          "aftermarket": {
+            "koyo": "VH081226",
+            "mishimoto": "MMRAD-INT-94",
+            "skunk2": "349-05-1500"
+          }
+        }
+      }
+    }
+  }
+}

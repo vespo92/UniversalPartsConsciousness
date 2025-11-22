@@ -1,0 +1,153 @@
+{
+  "engine_family_id": "HONDA-R-SERIES",
+  "common_names": ["R-Series", "R18", "R20", "Civic R18", "Economy Civic Engine"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "2006-2015",
+  "historical_significance": "Replaced the D-series as Honda's economy Civic engine. Single cam design with i-VTEC for efficiency.",
+
+  "variants": {
+    "r18a1": {
+      "engine_code": "R18A1",
+      "displacement_cc": 1799,
+      "bore_mm": 81.0,
+      "stroke_mm": 87.3,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC i-VTEC, 16 valves",
+      "power_hp": 140,
+      "rpm_at_peak_power": 6300,
+      "torque_nm": 174,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.5:1",
+      "production_years": "2006-2011",
+      "applications": ["Civic LX/EX (FD1/FA1/FG1 USDM)"],
+      "notes": "Primary Civic economy engine for 8th generation"
+    },
+    "r18a2": {
+      "engine_code": "R18A2",
+      "displacement_cc": 1799,
+      "bore_mm": 81.0,
+      "stroke_mm": 87.3,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC i-VTEC, 16 valves",
+      "power_hp": 140,
+      "rpm_at_peak_power": 6300,
+      "torque_nm": 174,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.5:1",
+      "production_years": "2009-2011",
+      "applications": ["Civic (Asian markets)"],
+      "notes": "Asian market variant with minor calibration differences"
+    },
+    "r18z1": {
+      "engine_code": "R18Z1",
+      "displacement_cc": 1799,
+      "bore_mm": 81.0,
+      "stroke_mm": 87.3,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC i-VTEC, 16 valves",
+      "power_hp": 143,
+      "rpm_at_peak_power": 6500,
+      "torque_nm": 174,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.6:1",
+      "production_years": "2012-2015",
+      "applications": ["Civic LX/EX (FB2 USDM)", "ILX Base"],
+      "notes": "Updated R18 for 9th generation Civic"
+    },
+    "r18a_vtec_e": {
+      "engine_code": "R18A VTEC-E",
+      "displacement_cc": 1799,
+      "bore_mm": 81.0,
+      "stroke_mm": 87.3,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC i-VTEC-E, 16 valves",
+      "power_hp": 140,
+      "rpm_at_peak_power": 6300,
+      "torque_nm": 174,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.5:1",
+      "production_years": "2006-2011",
+      "applications": ["Civic (European markets)"],
+      "notes": "European variant with economy-focused VTEC-E"
+    },
+    "r20a": {
+      "engine_code": "R20A",
+      "displacement_cc": 1997,
+      "bore_mm": 81.0,
+      "stroke_mm": 96.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC i-VTEC, 16 valves",
+      "power_hp": 156,
+      "rpm_at_peak_power": 6300,
+      "torque_nm": 192,
+      "rpm_at_peak_torque": 4300,
+      "redline_rpm": 6800,
+      "compression_ratio": "10.5:1",
+      "production_years": "2007-2015",
+      "applications": ["Accord (Asian markets)", "CR-V (some markets)", "Stream"],
+      "notes": "Larger displacement R-series. Used primarily in Asian markets"
+    },
+    "r20a3": {
+      "engine_code": "R20A3",
+      "displacement_cc": 1997,
+      "bore_mm": 81.0,
+      "stroke_mm": 96.9,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC i-VTEC, 16 valves",
+      "power_hp": 155,
+      "rpm_at_peak_power": 6200,
+      "torque_nm": 190,
+      "rpm_at_peak_torque": 4200,
+      "redline_rpm": 6500,
+      "compression_ratio": "10.6:1",
+      "production_years": "2008-2013",
+      "applications": ["Accord (Asia)", "CR-V (Asia)"],
+      "notes": "Accord-spec R20"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy",
+    "head_material": "Aluminum alloy",
+    "bore_spacing_mm": 86.0,
+    "firing_order": "1-3-4-2",
+    "oil_capacity_liters": 3.7,
+    "coolant_capacity_liters": 6.0,
+    "timing_system": "Chain-driven",
+    "balance_shaft": "Single balance shaft (R20 only)"
+  },
+
+  "notes": {
+    "heritage": "The R-series was designed as the D-series replacement. Modern SOHC design with chain timing and i-VTEC",
+    "reputation": "Very reliable economy engine. Not exciting but gets excellent fuel economy and lasts forever",
+    "comparison_to_d_series": {
+      "advantages": [
+        "Chain timing (no belt changes)",
+        "Better fuel economy",
+        "More torque",
+        "Improved emissions"
+      ],
+      "disadvantages": [
+        "Less rev-happy than D-series VTEC",
+        "Heavier than D-series",
+        "Less aftermarket support"
+      ]
+    },
+    "common_issues": [
+      "Very few issues - extremely reliable",
+      "Some timing chain tensioner noise",
+      "Valve cover gasket seepage",
+      "VTC actuator noise on cold start"
+    ],
+    "maintenance_intervals": {
+      "timing_chain": "Lifetime (inspect at 160000km)",
+      "valve_adjustment_km": 168000,
+      "spark_plugs_km": 160000
+    },
+    "tuning_notes": "Not a performance platform. Limited aftermarket support. Most owners keep stock for reliability and economy."
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "engine_family_id": "HONDA-D-SERIES",
+  "common_names": ["D-Series", "D15", "D16", "SOHC Civic Engine", "Economy VTEC"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1984-2006",
+  "historical_significance": "Honda's longest-running and most produced economy engine family. Introduced VTEC to affordable cars.",
+
+  "variants": {
+    "d12b1": {
+      "engine_code": "D12B1",
+      "displacement_cc": 1200,
+      "bore_mm": 75.0,
+      "stroke_mm": 68.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 8 valves",
+      "power_hp": 52,
+      "torque_nm": 93,
+      "compression_ratio": "9.0:1",
+      "production_years": "1988-1991",
+      "applications": ["Civic (JDM)"],
+      "fuel_system": "Carburetor"
+    },
+    "d13b": {
+      "engine_code": "D13B",
+      "displacement_cc": 1343,
+      "bore_mm": 75.0,
+      "stroke_mm": 76.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 8/16 valves",
+      "power_hp": 62,
+      "torque_nm": 107,
+      "compression_ratio": "9.2:1",
+      "production_years": "1988-2000",
+      "applications": ["Civic (JDM)", "City", "Logo"],
+      "notes": "Base economy engine"
+    },
+    "d15a2": {
+      "engine_code": "D15A2",
+      "displacement_cc": 1493,
+      "bore_mm": 75.0,
+      "stroke_mm": 84.5,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 8 valves",
+      "power_hp": 76,
+      "torque_nm": 122,
+      "compression_ratio": "9.2:1",
+      "production_years": "1984-1987",
+      "applications": ["CRX", "Civic Third Gen"],
+      "fuel_system": "Carburetor",
+      "notes": "First D-series engine"
+    },
+    "d15b": {
+      "engine_code": "D15B",
+      "displacement_cc": 1493,
+      "bore_mm": 75.0,
+      "stroke_mm": 84.5,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 105,
+      "torque_nm": 133,
+      "compression_ratio": "9.3:1",
+      "production_years": "1988-2001",
+      "applications": ["Civic EF/EG/EK", "CRX", "Del Sol"],
+      "fuel_system": "PGM-FI",
+      "notes": "Non-VTEC high-output version"
+    },
+    "d15b_vtec": {
+      "engine_code": "D15B VTEC",
+      "displacement_cc": 1493,
+      "bore_mm": 75.0,
+      "stroke_mm": 84.5,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC, 16 valves",
+      "power_hp": 130,
+      "rpm_at_peak_power": 7000,
+      "torque_nm": 138,
+      "compression_ratio": "9.3:1",
+      "vtec_engagement_rpm": 4800,
+      "production_years": "1991-2000",
+      "applications": ["Civic EG VTi", "Civic EK VTi", "Del Sol VTi (JDM)"],
+      "notes": "3-stage SOHC VTEC - one of the most efficient implementations"
+    },
+    "d15z1": {
+      "engine_code": "D15Z1",
+      "displacement_cc": 1493,
+      "bore_mm": 75.0,
+      "stroke_mm": 84.5,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC-E, 16 valves",
+      "power_hp": 92,
+      "torque_nm": 131,
+      "compression_ratio": "9.3:1",
+      "production_years": "1992-1995",
+      "applications": ["Civic VX"],
+      "notes": "VTEC-E for fuel economy - 12 valves at low RPM, 16 at high. 50+ MPG capable"
+    },
+    "d16a1": {
+      "engine_code": "D16A1",
+      "displacement_cc": 1590,
+      "bore_mm": 75.0,
+      "stroke_mm": 90.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 113,
+      "torque_nm": 140,
+      "compression_ratio": "9.5:1",
+      "production_years": "1986-1989",
+      "applications": ["Integra First Gen"],
+      "fuel_system": "PGM-FI",
+      "notes": "First 16-valve D-series engine"
+    },
+    "d16a6": {
+      "engine_code": "D16A6",
+      "displacement_cc": 1590,
+      "bore_mm": 75.0,
+      "stroke_mm": 90.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 108,
+      "torque_nm": 142,
+      "compression_ratio": "9.1:1",
+      "production_years": "1988-1995",
+      "applications": ["Civic Si (EF/EG)", "CRX Si"],
+      "notes": "Popular for budget builds"
+    },
+    "d16y8": {
+      "engine_code": "D16Y8",
+      "displacement_cc": 1590,
+      "bore_mm": 75.0,
+      "stroke_mm": 90.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC, 16 valves",
+      "power_hp": 127,
+      "rpm_at_peak_power": 6600,
+      "torque_nm": 150,
+      "compression_ratio": "9.6:1",
+      "vtec_engagement_rpm": 5600,
+      "production_years": "1996-2000",
+      "applications": ["Civic EX (EK)", "Del Sol VTEC"],
+      "notes": "USDM VTEC D-series"
+    },
+    "d16z6": {
+      "engine_code": "D16Z6",
+      "displacement_cc": 1590,
+      "bore_mm": 75.0,
+      "stroke_mm": 90.0,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC, 16 valves",
+      "power_hp": 125,
+      "rpm_at_peak_power": 6600,
+      "torque_nm": 146,
+      "compression_ratio": "9.2:1",
+      "vtec_engagement_rpm": 4800,
+      "production_years": "1992-1995",
+      "applications": ["Civic Si (EG)", "Del Sol VTEC"],
+      "notes": "Very popular swap engine for earlier Civics"
+    },
+    "d17a": {
+      "engine_code": "D17A",
+      "displacement_cc": 1668,
+      "bore_mm": 75.0,
+      "stroke_mm": 94.4,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 16 valves",
+      "power_hp": 115,
+      "torque_nm": 149,
+      "compression_ratio": "9.5:1",
+      "production_years": "2001-2005",
+      "applications": ["Civic (7th Gen)"],
+      "notes": "Final evolution of D-series"
+    },
+    "d17a2_vtec": {
+      "engine_code": "D17A2",
+      "displacement_cc": 1668,
+      "bore_mm": 75.0,
+      "stroke_mm": 94.4,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC VTEC, 16 valves",
+      "power_hp": 127,
+      "rpm_at_peak_power": 6300,
+      "torque_nm": 155,
+      "compression_ratio": "9.9:1",
+      "vtec_engagement_rpm": 5400,
+      "production_years": "2001-2005",
+      "applications": ["Civic EX (7th Gen)"],
+      "notes": "Final VTEC D-series before K-series takeover"
+    }
+  },
+
+  "base_specifications": {
+    "block_material": "Aluminum alloy",
+    "head_material": "Aluminum alloy",
+    "bore_spacing_mm": 86.0,
+    "deck_height_mm": 212.0,
+    "firing_order": "1-3-4-2",
+    "oil_capacity_liters": 3.4,
+    "coolant_capacity_liters": 5.0
+  },
+
+  "vtec_technology": {
+    "sohc_vtec": {
+      "description": "Single cam VTEC system with 3 cam lobes per cylinder",
+      "components": ["Rocker arms with locking pins", "Oil pressure solenoid", "Hydraulic passages"],
+      "operation": "At VTEC engagement RPM, oil pressure locks rocker arms to high-lift cam lobe"
+    },
+    "vtec_e": {
+      "description": "Economy VTEC - deactivates one intake valve at low RPM",
+      "benefit": "12-valve operation at cruise for improved fuel economy",
+      "engagement": "Switches to 16-valve at higher RPM/load"
+    }
+  },
+
+  "notes": {
+    "heritage": "The D-series replaced the older CVCC engines and introduced affordable VTEC technology",
+    "reputation": "Reliable, efficient, and extremely popular for budget Honda builds",
+    "popular_swaps": [
+      "D16Z6 into older Civics (popular VTEC swap)",
+      "D15B VTEC from JDM for more power",
+      "Mini-me (VTEC head on non-VTEC block)"
+    ],
+    "common_issues": [
+      "Distributor O-ring leaks (oil leak onto distributor)",
+      "Valve cover gasket seepage",
+      "VTEC solenoid gasket leaks",
+      "Timing belt maintenance critical",
+      "Exhaust manifold cracks"
+    ],
+    "maintenance_intervals": {
+      "timing_belt_km": 160000,
+      "valve_adjustment_km": 48000,
+      "spark_plugs_km": 48000
+    },
+    "tuning_notes": "D-series responds well to bolt-ons but is limited by SOHC design. Popular mods: intake, header, exhaust, VTEC controller. For serious power, B-series swap is preferred."
+  }
+}

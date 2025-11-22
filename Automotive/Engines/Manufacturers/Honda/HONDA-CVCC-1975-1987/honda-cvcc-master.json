@@ -1,0 +1,136 @@
+{
+  "engine_family_id": "HONDA-CVCC",
+  "common_names": ["CVCC", "Compound Vortex Controlled Combustion", "Clean Engine", "ED/EJ Series"],
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1975-1987",
+  "historical_significance": "Revolutionary stratified-charge engine that met US emissions without catalytic converter",
+
+  "variants": {
+    "ed1_1200": {
+      "engine_code": "ED1",
+      "displacement_cc": 1237,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves (8 main + 4 aux)",
+      "power_hp": 52,
+      "torque_nm": 88,
+      "compression_ratio": "8.1:1",
+      "production_years": "1975-1979",
+      "applications": ["Civic CVCC", "Civic 1200"],
+      "notes": "First CVCC engine in production"
+    },
+    "ed3_1335": {
+      "engine_code": "ED3",
+      "displacement_cc": 1335,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves (8 main + 4 aux)",
+      "power_hp": 55,
+      "torque_nm": 93,
+      "compression_ratio": "8.1:1",
+      "production_years": "1975-1979",
+      "applications": ["Accord First Gen", "Civic 1300"],
+      "notes": "Larger CVCC variant for the new Accord"
+    },
+    "ed4_1487": {
+      "engine_code": "ED4",
+      "displacement_cc": 1487,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves CVCC",
+      "power_hp": 67,
+      "torque_nm": 108,
+      "compression_ratio": "8.4:1",
+      "production_years": "1976-1979",
+      "applications": ["Accord", "Prelude First Gen"],
+      "notes": "Powered the original Honda Prelude"
+    },
+    "ej1_1599": {
+      "engine_code": "EJ1",
+      "displacement_cc": 1599,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves CVCC-II",
+      "power_hp": 75,
+      "torque_nm": 122,
+      "compression_ratio": "8.8:1",
+      "production_years": "1980-1983",
+      "applications": ["Accord Second Gen", "Prelude Second Gen"],
+      "notes": "CVCC-II with improved emissions control"
+    },
+    "ek1_1751": {
+      "engine_code": "EK1",
+      "displacement_cc": 1751,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves CVCC-II",
+      "power_hp": 86,
+      "torque_nm": 138,
+      "compression_ratio": "8.8:1",
+      "production_years": "1982-1985",
+      "applications": ["Accord Third Gen", "Prelude Second Gen (late)"],
+      "notes": "Largest CVCC engine"
+    },
+    "es1_1829_fi": {
+      "engine_code": "ES1",
+      "displacement_cc": 1829,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves CVCC",
+      "fuel_injection": "Honda PGM-FI",
+      "power_hp": 101,
+      "torque_nm": 151,
+      "compression_ratio": "9.1:1",
+      "production_years": "1984-1987",
+      "applications": ["Accord SEi", "Prelude Si"],
+      "notes": "First fuel-injected CVCC engine. PGM-FI was one of the first reliable mass-market FI systems"
+    },
+    "es2_1955_carb": {
+      "engine_code": "ES2",
+      "displacement_cc": 1955,
+      "configuration": "Inline 4-cylinder",
+      "valvetrain": "SOHC, 12 valves CVCC",
+      "power_hp": 98,
+      "torque_nm": 156,
+      "compression_ratio": "9.1:1",
+      "production_years": "1985-1987",
+      "applications": ["Accord LX/LX-i"],
+      "notes": "Final evolution of carbureted CVCC"
+    }
+  },
+
+  "cvcc_technology": {
+    "principle": "Stratified charge combustion using pre-chamber",
+    "components": {
+      "pre_chamber": "Small auxiliary combustion chamber with rich mixture",
+      "main_chamber": "Larger chamber with very lean mixture",
+      "auxiliary_intake_valve": "Third valve per cylinder for pre-chamber"
+    },
+    "advantages": [
+      "Met 1975 US emissions without catalytic converter",
+      "Better fuel economy than competitors",
+      "Ran on regular unleaded gasoline",
+      "Lower NOx emissions"
+    ],
+    "how_it_works": "Rich mixture in pre-chamber ignites easily, then flame front ignites lean mixture in main chamber"
+  },
+
+  "base_specifications": {
+    "block_material": "Cast iron",
+    "head_material": "Aluminum alloy",
+    "fuel_system": "Keihin carburetor (most) or PGM-FI (ES1)",
+    "ignition": "Points (early) or Electronic (late)",
+    "oil_capacity_liters": 3.5
+  },
+
+  "notes": {
+    "heritage": "CVCC was developed by Honda's research team led by engineer Takeo Fujisawa",
+    "historical_impact": [
+      "First engine to meet 1975 Clean Air Act without catalytic converter",
+      "Licensed to Ford, Chrysler, and Isuzu",
+      "Proved Japanese manufacturers could lead in emissions technology",
+      "Established Honda's reputation for innovation"
+    ],
+    "common_issues": [
+      "Auxiliary valve carbon buildup",
+      "Carburetor float issues",
+      "Head gasket seepage",
+      "Pre-chamber fouling if running too rich"
+    ],
+    "maintenance_notes": "Auxiliary valves require periodic cleaning. Use quality fuel to prevent pre-chamber deposits."
+  }
+}

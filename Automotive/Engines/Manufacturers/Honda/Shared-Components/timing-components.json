@@ -1,0 +1,135 @@
+{
+  "component_type": "Timing Components",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "description": "Timing belts, chains, tensioners, and water pumps for Honda engine families",
+
+  "belt_driven_engines": {
+    "description": "Engines using rubber timing belts - require periodic replacement",
+    "families": ["B-series", "D-series", "F-series", "H-series", "J-series (V6)"],
+    "replacement_interval_km": 160000,
+    "replacement_interval_miles": 100000,
+    "notes": "All belt-driven Honda engines are interference - belt failure = engine damage"
+  },
+
+  "chain_driven_engines": {
+    "description": "Engines using metal timing chains - lifetime component",
+    "families": ["K-series", "L-series", "R-series", "Earth Dreams"],
+    "inspection_interval_km": 160000,
+    "notes": "Chains should last engine lifetime but tensioner/guides may need replacement"
+  },
+
+  "timing_belt_kits": {
+    "b_series": {
+      "oem_part_numbers": {
+        "timing_belt": "14400-P72-014",
+        "tensioner": "14510-P13-003",
+        "idler_pulley": "14520-P13-003",
+        "water_pump": "19200-P72-013"
+      },
+      "aftermarket": {
+        "gates": "TCKWP312",
+        "continental": "TB312K1",
+        "aisin": "TKH-002"
+      },
+      "belt_teeth": 104
+    },
+    "d_series": {
+      "oem_part_numbers": {
+        "timing_belt": "14400-P2A-004",
+        "tensioner": "14510-P2A-003",
+        "water_pump": "19200-P2A-003"
+      },
+      "aftermarket": {
+        "gates": "TCKWP224",
+        "aisin": "TKH-005"
+      },
+      "belt_teeth": 104
+    },
+    "h_series": {
+      "oem_part_numbers": {
+        "timing_belt": "14400-P13-004",
+        "tensioner": "14510-P13-003",
+        "balance_shaft_belt": "13404-P13-004",
+        "water_pump": "19200-P13-003"
+      },
+      "aftermarket": {
+        "gates": "TCKWP329",
+        "aisin": "TKH-004"
+      },
+      "belt_teeth": 134,
+      "notes": "H-series has separate balance shaft belt"
+    },
+    "j_series_v6": {
+      "oem_part_numbers": {
+        "timing_belt": "14400-RCA-A01",
+        "tensioner": "14510-RCA-A01",
+        "water_pump": "19200-RDV-J01"
+      },
+      "aftermarket": {
+        "gates": "TCKWP329",
+        "aisin": "TKH-006"
+      },
+      "notes": "V6 belt service is more complex - recommend professional installation"
+    }
+  },
+
+  "timing_chain_kits": {
+    "k_series": {
+      "oem_part_numbers": {
+        "timing_chain": "14401-PNA-004",
+        "tensioner": "14520-PNA-003",
+        "chain_guide_top": "14530-PNA-003",
+        "chain_guide_side": "14540-PNA-003"
+      },
+      "aftermarket": {
+        "cloyes": "9-4212S",
+        "melling": "3-4212S"
+      },
+      "notes": "Chain stretch is rare. Tensioner failure more common"
+    },
+    "r_series": {
+      "oem_part_numbers": {
+        "timing_chain": "14401-RNA-A01",
+        "tensioner": "14520-RNA-A01"
+      },
+      "notes": "Very reliable - rarely needs replacement"
+    }
+  },
+
+  "water_pump_notes": {
+    "belt_driven_pumps": "Always replace water pump with timing belt - labor is already done",
+    "common_failure_signs": [
+      "Coolant leak from weep hole",
+      "Bearing noise",
+      "Overheating",
+      "Coolant in oil (severe failure)"
+    ],
+    "oem_vs_aftermarket": "OEM or quality aftermarket (Aisin, NPW) recommended. Cheap pumps fail early"
+  },
+
+  "service_recommendations": {
+    "timing_belt_service": {
+      "components_to_replace": [
+        "Timing belt",
+        "Tensioner",
+        "Idler pulley (if applicable)",
+        "Water pump",
+        "Front crankshaft seal",
+        "Cam seals (if leaking)"
+      ],
+      "inspect": [
+        "Belt guides",
+        "Tensioner spring",
+        "Pulley bearings"
+      ]
+    },
+    "timing_chain_inspection": {
+      "check_for": [
+        "Chain stretch (timing marks off)",
+        "Tensioner operation",
+        "Guide wear",
+        "VTC actuator rattle (K-series)"
+      ]
+    }
+  }
+}
