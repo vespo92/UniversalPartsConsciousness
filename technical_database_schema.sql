@@ -105,25 +105,136 @@ CREATE TABLE fastener_heads (
     PRIMARY KEY (part_id)
 );
 
--- Material compatibility matrix
+-- Material reference library - thermal and mechanical properties
+CREATE TABLE materials_reference (
+    material_id VARCHAR(50) PRIMARY KEY,  -- e.g., "A356.0-T6", "Gray_Iron_Class_30"
+
+    -- Classification
+    material_category VARCHAR(50) NOT NULL,  -- aluminum_alloy, cast_iron, steel, superalloy
+    common_names TEXT[],  -- Array of common names
+    description TEXT,
+
+    -- Thermal properties (CRITICAL for material consciousness)
+    thermal_expansion_ppm_k DECIMAL(6,2),  -- Coefficient of thermal expansion
+    thermal_conductivity_w_mk DECIMAL(8,2),  -- W/(m·K)
+    melting_point_c DECIMAL(8,2),
+    specific_heat_j_kg_k DECIMAL(8,2),
+    max_service_temp_c DECIMAL(8,2),
+
+    -- Mechanical properties
+    tensile_strength_mpa DECIMAL(10,2),
+    yield_strength_mpa DECIMAL(10,2),
+    elongation_percent DECIMAL(5,2),
+    hardness VARCHAR(30),  -- "80 HB", "35 HRC", etc.
+    elastic_modulus_gpa DECIMAL(8,2),
+    fatigue_strength_mpa DECIMAL(10,2),
+
+    -- Composition (stored as JSONB for flexibility)
+    composition JSONB,  -- {"aluminum": "balance", "silicon": "6.5-7.5", ...}
+
+    -- Processing information
+    typical_processing TEXT[],  -- ["sand_casting", "die_casting", ...]
+    heat_treatment VARCHAR(100),  -- "T6", "Normalized", etc.
+
+    -- Usage context
+    typical_applications TEXT[],
+    oem_usage_examples TEXT[],
+
+    -- Metadata
+    data_source VARCHAR(100),
+    last_updated TIMESTAMP DEFAULT NOW(),
+
+    INDEX idx_material_category (material_category),
+    INDEX idx_thermal_expansion (thermal_expansion_ppm_k)
+);
+
+-- Material interface definitions - WHERE MATERIALS MEET
+CREATE TABLE material_interfaces (
+    interface_id VARCHAR(100) PRIMARY KEY,  -- e.g., "aluminum_block_iron_liner"
+
+    -- Materials involved
+    material_1_id VARCHAR(50) REFERENCES materials_reference(material_id),
+    material_2_id VARCHAR(50) REFERENCES materials_reference(material_id),
+    interface_description TEXT NOT NULL,
+
+    -- Thermal differential (THE KEY TO MATERIAL CONSCIOUSNESS)
+    expansion_differential_ppm_k DECIMAL(6,2),  -- Calculated: |mat1_expansion - mat2_expansion|
+    at_100c_rise_notes TEXT,  -- Human-readable impact at typical temperature rise
+
+    -- Engineering considerations
+    critical_considerations TEXT[],
+    failure_modes TEXT[],
+    design_solutions TEXT[],
+
+    -- Service implications
+    service_notes JSONB,  -- Detailed service guidance
+
+    -- Examples
+    engines_using_this_interface TEXT[],
+
+    INDEX idx_materials (material_1_id, material_2_id)
+);
+
+-- Material compatibility matrix (enhanced)
 CREATE TABLE material_compatibility (
     id SERIAL PRIMARY KEY,
-    material_1 VARCHAR(50) NOT NULL,
-    material_2 VARCHAR(50) NOT NULL,
-    
+    material_1 VARCHAR(50) NOT NULL REFERENCES materials_reference(material_id),
+    material_2 VARCHAR(50) NOT NULL REFERENCES materials_reference(material_id),
+
     -- Mechanical compatibility
-    galvanic_corrosion_risk VARCHAR(20),  -- none, low, medium, high
-    differential_expansion DECIMAL(10,6),  -- ppm/°C difference
-    
+    galvanic_corrosion_risk VARCHAR(20),  -- none, low, medium, high, very_high
+    galvanic_voltage_mv INTEGER,  -- Galvanic potential difference
+    differential_expansion DECIMAL(10,6),  -- ppm/°C difference (calculated)
+
     -- Installation parameters
     thread_lock_required BOOLEAN,
     anti_seize_required BOOLEAN,
     insert_recommended BOOLEAN,
-    
+    isolation_required BOOLEAN,  -- For high galvanic risk
+
     -- Torque adjustments
     torque_reduction_factor DECIMAL(4,3) DEFAULT 1.0,
-    
+
+    -- Thread engagement requirements
+    min_engagement_multiplier DECIMAL(3,2) DEFAULT 1.0,  -- 1.5 for aluminum threads
+
+    -- Prevention methods
+    corrosion_prevention TEXT[],  -- ["coating", "anti-seize", "isolation"]
+
     UNIQUE(material_1, material_2)
+);
+
+-- Engine material configurations - links engines to their material interfaces
+CREATE TABLE engine_material_configuration (
+    engine_id VARCHAR(100) PRIMARY KEY,
+
+    -- Block configuration
+    block_material_id VARCHAR(50) REFERENCES materials_reference(material_id),
+    block_casting_method VARCHAR(50),
+
+    -- Liner/bore configuration
+    bore_type VARCHAR(50),  -- "iron_liner", "nikasil", "alusil", "ptwa", "parent_bore"
+    liner_material_id VARCHAR(50) REFERENCES materials_reference(material_id),
+    liner_interference_fit_mm VARCHAR(20),  -- "0.05-0.08"
+
+    -- Head configuration
+    head_material_id VARCHAR(50) REFERENCES materials_reference(material_id),
+    head_casting_method VARCHAR(50),
+
+    -- Interface types
+    block_liner_interface VARCHAR(100) REFERENCES material_interfaces(interface_id),
+    head_block_interface VARCHAR(100) REFERENCES material_interfaces(interface_id),
+
+    -- Head gasket requirements
+    head_gasket_type VARCHAR(50),  -- "MLS", "composite", "copper"
+    deck_surface_finish_ra_microns DECIMAL(4,2),
+
+    -- Material consciousness notes
+    thermal_management_notes TEXT,
+    service_considerations TEXT[],
+
+    INDEX idx_block_material (block_material_id),
+    INDEX idx_bore_type (bore_type)
 );
 
 -- Thread compatibility matrix
@@ -283,6 +394,78 @@ LEFT JOIN fastener_heads fh ON p.part_id = fh.part_id;
 CREATE INDEX idx_search_thread ON part_search(nominal_diameter, pitch);
 CREATE INDEX idx_search_length ON part_search(length);
 CREATE INDEX idx_search_drive ON part_search(drive_type, drive_size);
+
+-- Material consciousness helper functions
+
+-- Calculate thermal expansion difference between two materials
+CREATE OR REPLACE FUNCTION calculate_expansion_differential(
+    material_1_id VARCHAR(50),
+    material_2_id VARCHAR(50)
+) RETURNS TABLE (
+    expansion_difference_ppm_k DECIMAL(6,2),
+    at_100c_growth_per_100mm_difference_mm DECIMAL(6,4),
+    ratio DECIMAL(4,2),
+    consciousness_note TEXT
+) AS $$
+DECLARE
+    mat1_expansion DECIMAL(6,2);
+    mat2_expansion DECIMAL(6,2);
+    diff DECIMAL(6,2);
+    growth_diff DECIMAL(6,4);
+BEGIN
+    -- Get expansion coefficients
+    SELECT thermal_expansion_ppm_k INTO mat1_expansion
+    FROM materials_reference WHERE material_id = material_1_id;
+
+    SELECT thermal_expansion_ppm_k INTO mat2_expansion
+    FROM materials_reference WHERE material_id = material_2_id;
+
+    -- Calculate difference
+    diff := ABS(mat1_expansion - mat2_expansion);
+    -- Growth difference per 100mm at 100°C rise: (diff ppm/K) * 100K * 100mm / 1,000,000
+    growth_diff := diff * 100 * 100 / 1000000;
+
+    RETURN QUERY
+    SELECT
+        diff,
+        growth_diff,
+        CASE WHEN mat2_expansion > 0 THEN mat1_expansion / mat2_expansion ELSE NULL END,
+        CASE
+            WHEN diff < 3 THEN 'Matched expansion - simple sealing'
+            WHEN diff < 8 THEN 'Moderate differential - standard gaskets OK'
+            WHEN diff < 12 THEN 'Significant differential - MLS gasket recommended, consider interference fits'
+            ELSE 'High differential - critical engineering required for interface'
+        END;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Get material consciousness summary for an engine
+CREATE OR REPLACE FUNCTION get_engine_material_consciousness(
+    engine VARCHAR(100)
+) RETURNS TABLE (
+    interface_type VARCHAR(100),
+    materials TEXT,
+    expansion_differential DECIMAL(6,2),
+    critical_notes TEXT[],
+    failure_modes TEXT[]
+) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT
+        mi.interface_id,
+        mr1.material_id || ' <-> ' || mr2.material_id,
+        mi.expansion_differential_ppm_k,
+        mi.critical_considerations,
+        mi.failure_modes
+    FROM engine_material_configuration emc
+    LEFT JOIN material_interfaces mi ON
+        emc.block_liner_interface = mi.interface_id OR
+        emc.head_block_interface = mi.interface_id
+    LEFT JOIN materials_reference mr1 ON mi.material_1_id = mr1.material_id
+    LEFT JOIN materials_reference mr2 ON mi.material_2_id = mr2.material_id
+    WHERE emc.engine_id = engine;
+END;
+$$ LANGUAGE plpgsql;
 
 -- Example: Complete compatibility check function
 CREATE OR REPLACE FUNCTION check_complete_compatibility(

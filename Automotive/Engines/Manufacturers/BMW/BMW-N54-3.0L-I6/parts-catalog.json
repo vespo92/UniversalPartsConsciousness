@@ -17,7 +17,26 @@
           "part_id": "N54-BLOCK",
           "description": "Aluminum engine block with cast iron liners",
           "oem_part_numbers": ["11110392999", "11112210797"],
-          "material": "Aluminum with Cast Iron Liners",
+          "material": {
+            "summary": "Aluminum with Cast Iron Liners",
+            "block_alloy": "A356.0-T6",
+            "block_properties": {
+              "thermal_expansion_ppm_k": 21.4,
+              "thermal_conductivity_w_mk": 151,
+              "tensile_strength_mpa": 262,
+              "yield_strength_mpa": 186,
+              "hardness_hb": 80
+            },
+            "liner_material": "Pearlitic Gray Iron",
+            "liner_properties": {
+              "thermal_expansion_ppm_k": 11.0,
+              "thermal_conductivity_w_mk": 48,
+              "bore_surface_hardness_hv": "240-280",
+              "bore_surface_finish_ra_microns": "0.4-0.8"
+            },
+            "interface_type": "aluminum_block_iron_liner",
+            "interface_consideration": "10.4 ppm/K differential expansion - aluminum grows 2x faster than iron liners"
+          },
           "weight_lbs": 110,
           "specifications": {
             "deck_height_mm": 210.0,
@@ -25,7 +44,10 @@
             "main_bearing_bores": 7,
             "main_cap_bolts": "4-bolt all mains",
             "cylinder_bore_spacing_mm": 91.0,
-            "liner_type": "Cast iron pressed-in"
+            "liner_type": "Cast iron pressed-in",
+            "liner_interference_fit_mm": "0.05-0.08",
+            "liner_wall_thickness_mm": 2.5,
+            "max_overbore_mm": 0.5
           },
           "interchangeability": {
             "compatible_years": "2007-2016",
@@ -86,11 +108,26 @@
           "description": "Forged aluminum pistons (set of 6)",
           "oem_part_numbers": ["11257566478", "11257580688"],
           "aftermarket_options": {
-            "mahle": "197203706",
-            "je_pistons": "353742",
-            "cp_pistons": "SC7515"
+            "mahle": {"part": "197203706", "material": "4032-T6 Hypereutectic"},
+            "je_pistons": {"part": "353742", "material": "2618-T6 Forged"},
+            "cp_pistons": {"part": "SC7515", "material": "2618-T6 Forged"}
           },
-          "material": "Forged Aluminum",
+          "material": {
+            "summary": "Forged Aluminum",
+            "oem_alloy": "4032-T6 Hypereutectic",
+            "oem_properties": {
+              "thermal_expansion_ppm_k": 19.4,
+              "tensile_strength_mpa": 379,
+              "hardness_hb": 120
+            },
+            "performance_alloy": "2618-T6 Forged",
+            "performance_properties": {
+              "thermal_expansion_ppm_k": 22.3,
+              "tensile_strength_mpa": 440,
+              "fatigue_strength_mpa": 125,
+              "note": "Higher expansion requires larger piston-to-wall clearance"
+            }
+          },
           "weight_grams_each": 385,
           "quantity_per_engine": 6,
           "specifications": {
@@ -99,6 +136,20 @@
             "pin_bore_diameter_mm": 22.0,
             "ring_groove_count": 3,
             "dome_type": "Dished for direct injection"
+          },
+          "material_interface_with_bore": {
+            "type": "aluminum_piston_iron_bore",
+            "bore_material": "Cast Iron Liner",
+            "bore_expansion_ppm_k": 11.0,
+            "clearance_specs": {
+              "oem_4032_cold_clearance_mm": "0.025-0.040",
+              "forged_2618_cold_clearance_mm": "0.075-0.100",
+              "note": "4032 has lower expansion so can run tighter clearance. 2618 stronger but needs more clearance."
+            },
+            "piston_coatings": {
+              "skirt_coating": "Moly-graphite (reduces friction at cold start when clearance is largest)",
+              "ring_land_coating": "Hard anodize (wear resistance)"
+            }
           },
           "interchangeability": {
             "compatible_years": "2007-2016"
@@ -171,7 +222,19 @@
           "part_id": "N54-HEAD",
           "description": "Aluminum DOHC cylinder head",
           "oem_part_numbers": ["11127565714", "11127582245"],
-          "material": "Aluminum",
+          "material": {
+            "summary": "Aluminum",
+            "alloy": "A356.0-T6",
+            "thermal_expansion_ppm_k": 21.4,
+            "thermal_conductivity_w_mk": 151,
+            "tensile_strength_mpa": 262,
+            "interface_with_block": {
+              "type": "aluminum_head_aluminum_block",
+              "expansion_differential_ppm_k": 0,
+              "advantage": "Matched expansion - head and block grow together"
+            },
+            "deck_surface_finish_ra_microns": "<1.6"
+          },
           "weight_lbs": 55,
           "specifications": {
             "combustion_chamber_volume_cc": 48.0,
@@ -198,11 +261,28 @@
             "victor_reinz": "613624000",
             "athena": "N54-MLS-RACE"
           },
+          "material": {
+            "summary": "Multi-Layer Steel (MLS)",
+            "layer_material": "Spring Steel (301 Stainless)",
+            "thermal_expansion_ppm_k": 16.0,
+            "outer_coating": "Viton rubber with anti-stick",
+            "combustion_seal": "Folded steel stopper layer"
+          },
           "specifications": {
             "type": "Multi-Layer Steel (MLS)",
             "compressed_thickness_mm": 1.2,
             "bore_diameter_mm": 85.0,
-            "layers": 3
+            "layers": 3,
+            "spring_recovery_percent": ">95"
+          },
+          "material_interface_role": {
+            "sealing_between": ["aluminum_head", "aluminum_block_deck"],
+            "why_mls_required": "Spring steel layers accommodate minor surface irregularities and thermal movement",
+            "surface_finish_requirement": {
+              "head_deck_ra_microns": "<1.6",
+              "block_deck_ra_microns": "<1.6",
+              "note": "MLS gaskets require smoother surfaces than composite gaskets"
+            }
           },
           "wear_classification": "consumable"
         },
@@ -219,8 +299,21 @@
           "specifications": {
             "head_diameter_mm": 31.0,
             "stem_diameter_mm": 6.0,
-            "overall_length_mm": 102.5,
-            "material": "Stainless Steel"
+            "overall_length_mm": 102.5
+          },
+          "material": {
+            "summary": "Stainless Steel",
+            "alloy": "21-4N (Austenitic Stainless)",
+            "properties": {
+              "max_operating_temp_c": 760,
+              "thermal_expansion_ppm_k": 18.0,
+              "hardness_hrc": "28-35"
+            },
+            "valve_seat_interface": {
+              "seat_material": "Powdered metal insert",
+              "seat_hardness_hrc": "38-44",
+              "note": "Intake runs cooler - stainless adequate, no need for superalloy"
+            }
           },
           "wear_classification": "rebuild_item"
         },
@@ -237,8 +330,22 @@
           "specifications": {
             "head_diameter_mm": 27.0,
             "stem_diameter_mm": 6.0,
-            "overall_length_mm": 101.5,
-            "material": "Inconel"
+            "overall_length_mm": 101.5
+          },
+          "material": {
+            "summary": "Inconel Superalloy",
+            "alloy": "Inconel 751",
+            "properties": {
+              "max_operating_temp_c": 870,
+              "thermal_expansion_ppm_k": 12.8,
+              "tensile_strength_at_650c_mpa": 862
+            },
+            "why_inconel": "Exhaust valves see 700-850C temperatures - requires nickel superalloy to maintain strength",
+            "valve_seat_interface": {
+              "seat_material": "Stellite F or hardened insert",
+              "seat_hardness_hrc": "38-44",
+              "note": "High-temp exhaust gas requires premium seat material"
+            }
           },
           "wear_classification": "rebuild_item"
         },

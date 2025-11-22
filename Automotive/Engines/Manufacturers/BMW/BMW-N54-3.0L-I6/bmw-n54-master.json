@@ -30,8 +30,41 @@
     "firing_order": "1-5-3-6-2-4",
     "cylinder_numbering": "1 at front (near radiator)",
     "rotation": "clockwise (viewed from front)",
-    "block_material": "aluminum_with_iron_liners",
-    "head_material": "aluminum",
+    "block_material": {
+      "primary": "aluminum_with_iron_liners",
+      "alloy": "A356.0-T6",
+      "casting_method": "low_pressure_die_cast",
+      "thermal_expansion_ppm_k": 21.4,
+      "thermal_conductivity_w_mk": 151
+    },
+    "head_material": {
+      "primary": "aluminum",
+      "alloy": "A356.0-T6",
+      "casting_method": "low_pressure_die_cast",
+      "thermal_expansion_ppm_k": 21.4,
+      "thermal_conductivity_w_mk": 151
+    },
+    "cylinder_liner": {
+      "type": "press_fit_iron",
+      "material": "pearlitic_gray_iron",
+      "thermal_expansion_ppm_k": 11.0,
+      "bore_hardness_hv": "240-280",
+      "interference_fit_mm": "0.05-0.08"
+    },
+    "material_interface_notes": {
+      "block_liner_interface": {
+        "type": "aluminum_block_iron_liner",
+        "thermal_expansion_differential_ppm_k": 10.4,
+        "critical_consideration": "Aluminum expands 2x faster than iron - interference fit must maintain contact at operating temperature",
+        "failure_modes": ["liner_dropout", "bore_distortion", "hotspots_from_lost_contact"]
+      },
+      "head_block_interface": {
+        "type": "aluminum_head_aluminum_block",
+        "thermal_expansion_differential_ppm_k": 0,
+        "advantage": "Matched expansion simplifies head gasket sealing",
+        "gasket_type": "MLS_recommended"
+      }
+    },
     "valvetrain": "DOHC, 24 valves (4 per cylinder), Double VANOS",
     "forced_induction": {
       "type": "Twin Turbochargers",

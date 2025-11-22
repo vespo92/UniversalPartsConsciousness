@@ -1,0 +1,362 @@
+{
+  "_schema_version": "1.0.0",
+  "_description": "Universal Parts Consciousness - Material Interface Awareness",
+  "_purpose": "Critical engineering documentation for material junctions in engines - where aluminum meets iron, steel meets aluminum, etc.",
+
+  "critical_interfaces": {
+    "aluminum_block_iron_liner": {
+      "description": "Press-fit or cast-in iron cylinder liners in aluminum engine blocks",
+      "materials_involved": {
+        "parent": {
+          "material": "A356.0-T6 Aluminum",
+          "expansion_coefficient_ppm_k": 21.4
+        },
+        "insert": {
+          "material": "Pearlitic Gray Iron (Liner)",
+          "expansion_coefficient_ppm_k": 11.0
+        }
+      },
+      "thermal_differential": {
+        "expansion_difference_ppm_k": 10.4,
+        "at_100c_rise_per_84mm_bore": {
+          "aluminum_growth_mm": 0.180,
+          "iron_growth_mm": 0.092,
+          "differential_mm": 0.088
+        },
+        "engineering_impact": "Aluminum expands nearly 2x faster than iron - critical for interference fit retention"
+      },
+      "design_considerations": {
+        "interference_fit": {
+          "cold_interference_mm": "0.05-0.08",
+          "purpose": "Maintain contact at operating temperature despite differential expansion",
+          "failure_mode": "Insufficient interference allows liner movement under combustion loads"
+        },
+        "liner_flange": {
+          "purpose": "Prevents axial movement and provides deck sealing surface",
+          "material_note": "Flange contacts aluminum deck - requires controlled surface finish"
+        },
+        "heat_transfer_path": {
+          "description": "Heat must conduct from iron liner through interference fit to aluminum block to coolant",
+          "gap_resistance": "Air gap from lost interference creates thermal barrier - hotspots, detonation"
+        }
+      },
+      "service_implications": {
+        "overbore_limits": {
+          "iron_liner_typical_overbore_mm": "0.5-1.0",
+          "limiting_factor": "Minimum wall thickness to parent material",
+          "note": "Unlike all-iron blocks, cannot bore significantly oversize"
+        },
+        "liner_replacement": {
+          "feasibility": "Possible but requires specialized pressing equipment",
+          "deck_height_concern": "Must verify deck height after liner replacement"
+        },
+        "thermal_cycling": {
+          "concern": "Repeated hot/cold cycles stress the interference fit",
+          "high_performance_note": "Track use with extreme thermal cycles can loosen liners"
+        }
+      },
+      "failure_modes": [
+        "Liner dropout from lost interference fit",
+        "Liner cracking from over-interference (cold press)",
+        "Bore distortion from uneven thermal distribution",
+        "Cavitation erosion on coolant side of liner"
+      ],
+      "engines_using_this_interface": [
+        "BMW N54/N55/B58 (all modern BMW turbo engines)",
+        "BMW S54/S55/S58 (M engines)",
+        "Toyota 2JZ-GTE",
+        "Nissan RB26DETT",
+        "Mercedes M133/M139",
+        "Audi EA888 Gen3+"
+      ]
+    },
+
+    "aluminum_head_iron_block": {
+      "description": "Aluminum cylinder head mated to cast iron block - classic hybrid construction",
+      "materials_involved": {
+        "head": {
+          "material": "A356.0-T6 Aluminum",
+          "expansion_coefficient_ppm_k": 21.4
+        },
+        "block": {
+          "material": "Gray Cast Iron Class 30",
+          "expansion_coefficient_ppm_k": 10.8
+        }
+      },
+      "thermal_differential": {
+        "expansion_difference_ppm_k": 10.6,
+        "at_100c_rise_across_200mm_head_width": {
+          "aluminum_growth_mm": 0.428,
+          "iron_growth_mm": 0.216,
+          "differential_mm": 0.212
+        },
+        "engineering_impact": "Head grows significantly more than block - head bolts must accommodate this movement"
+      },
+      "head_gasket_requirements": {
+        "type": "Multi-Layer Steel (MLS) STRONGLY recommended",
+        "composite_gasket_risk": "Composite gaskets cannot reliably seal dissimilar expansion materials",
+        "mls_advantages": [
+          "Spring steel layers accommodate differential movement",
+          "Embossed combustion seals maintain contact pressure",
+          "Better recovery after thermal cycling"
+        ],
+        "surface_finish_requirements": {
+          "aluminum_head_ra": "<1.6 microns (64 microinch)",
+          "iron_block_ra": "<3.2 microns (125 microinch)",
+          "note": "MLS gaskets require smoother surfaces than composite gaskets"
+        }
+      },
+      "head_bolt_considerations": {
+        "bolt_material": "High-strength alloy steel (typically 10.9 or 12.9 grade)",
+        "thread_engagement": {
+          "in_aluminum": "Must use 1.5D engagement minimum due to lower shear strength",
+          "in_iron": "1.0D engagement typically sufficient"
+        },
+        "torque_sequence": "Critical - must draw head down evenly",
+        "torque_to_yield": {
+          "purpose": "TTY bolts stretch consistently to maintain clamp load through thermal cycles",
+          "note": "Single-use - do not reuse TTY head bolts"
+        },
+        "thermal_effects": "Steel bolts expand less than aluminum head - clamp load increases at temperature"
+      },
+      "coolant_passage_alignment": {
+        "concern": "Differential expansion can misalign coolant passages",
+        "design_solution": "Oversized coolant holes with O-ring seals or elastomeric gaskets"
+      },
+      "service_implications": {
+        "head_resurfacing": {
+          "aluminum_limit_mm": "0.1-0.2",
+          "iron_limit_mm": "0.25-0.5",
+          "combined_limit": "Check manufacturer spec for total deck height variation"
+        },
+        "head_warpage_check": {
+          "aluminum_max_warpage_mm": "0.05 per 150mm",
+          "iron_max_warpage_mm": "0.10 per 150mm"
+        }
+      },
+      "engines_using_this_interface": [
+        "Chevrolet LS1/LS2/LS3 (aluminum heads, iron block options)",
+        "AMC 4.0L I6 with aftermarket aluminum head",
+        "Ford 302/351W with aftermarket aluminum heads",
+        "Chrysler 5.7/6.1/6.4 Hemi"
+      ]
+    },
+
+    "aluminum_head_aluminum_block": {
+      "description": "All-aluminum construction - matched thermal expansion simplifies sealing",
+      "materials_involved": {
+        "head": {
+          "material": "A356.0-T6 Aluminum",
+          "expansion_coefficient_ppm_k": 21.4
+        },
+        "block": {
+          "material": "A356.0-T6 Aluminum (same alloy)",
+          "expansion_coefficient_ppm_k": 21.4
+        }
+      },
+      "thermal_differential": {
+        "expansion_difference_ppm_k": 0,
+        "engineering_impact": "Matched expansion - head and block grow together"
+      },
+      "advantages": [
+        "Head gasket sealing simplified - no differential movement",
+        "Consistent clamp load through thermal range",
+        "Lighter weight assembly",
+        "Better heat dissipation"
+      ],
+      "considerations": {
+        "bore_interface": "Still need wear-resistant bore surface (coating or liner)",
+        "fastener_threads": {
+          "concern": "Aluminum threads weaker than iron",
+          "solutions": ["Thread inserts (Helicoil/Time-Sert)", "Through-bolts with steel nuts", "Longer engagement"]
+        }
+      },
+      "engines_using_this_interface": [
+        "BMW N52 (Alusil bore coating)",
+        "All modern BMW with iron liners",
+        "Audi/VW EA888 Gen3+",
+        "Honda K-series",
+        "Toyota 2GR/3GR/4GR V6"
+      ]
+    },
+
+    "steel_fastener_in_aluminum": {
+      "description": "Steel bolts threaded into aluminum - common throughout engines",
+      "materials_involved": {
+        "fastener": {
+          "material": "Alloy Steel (10.9/12.9 grade)",
+          "expansion_coefficient_ppm_k": 12.0
+        },
+        "parent": {
+          "material": "A356.0-T6 Aluminum",
+          "expansion_coefficient_ppm_k": 21.4
+        }
+      },
+      "thermal_differential": {
+        "expansion_difference_ppm_k": 9.4,
+        "engineering_impact": "Aluminum expands more than steel - affects clamp load at temperature"
+      },
+      "torque_considerations": {
+        "cold_vs_hot": "Clamp load INCREASES as assembly heats (aluminum grows, steel doesn't keep up)",
+        "anti_seize": {
+          "required": "YES - prevents galling between dissimilar metals",
+          "torque_reduction": "Reduce torque 15-20% when using anti-seize",
+          "compounds": ["Copper-based", "Nickel-based", "Moly-based"]
+        },
+        "thread_locker": {
+          "use_case": "Only for fasteners not subject to thermal cycling",
+          "note": "Thermal cycling can break thread locker bond"
+        }
+      },
+      "thread_engagement": {
+        "minimum_engagement": "1.5x fastener diameter in aluminum",
+        "comparison_to_steel": "Steel requires only 1.0x diameter engagement",
+        "thread_stripping": "Aluminum threads fail first - size engagement for aluminum"
+      },
+      "galvanic_corrosion": {
+        "risk_level": "Moderate",
+        "prevention": ["Plated/coated fasteners", "Anti-seize compound", "Keep assembly dry"]
+      },
+      "retorque_requirements": {
+        "initial_settle": "Many aluminum assemblies require retorque after initial heat cycle",
+        "examples": ["Aluminum intake manifolds", "Valve covers", "Oil pans"]
+      }
+    },
+
+    "aluminum_piston_iron_bore": {
+      "description": "Aluminum piston in iron cylinder liner or iron block bore",
+      "materials_involved": {
+        "piston": {
+          "material_cast": "4032-T6 Hypereutectic Aluminum",
+          "expansion_coefficient_cast_ppm_k": 19.4,
+          "material_forged": "2618-T6 Forged Aluminum",
+          "expansion_coefficient_forged_ppm_k": 22.3
+        },
+        "bore": {
+          "material": "Gray Cast Iron",
+          "expansion_coefficient_ppm_k": 11.0
+        }
+      },
+      "piston_to_wall_clearance": {
+        "cast_hypereutectic_4032": {
+          "cold_clearance_mm": "0.025-0.050",
+          "reason": "Lower expansion = tighter cold clearance possible"
+        },
+        "forged_2618": {
+          "cold_clearance_mm": "0.075-0.125",
+          "reason": "Higher expansion requires more clearance to prevent seizure"
+        },
+        "note": "Piston expands MORE than bore - clearance decreases at temperature"
+      },
+      "skirt_design": {
+        "purpose": "Cam-ground and barrel-shaped to compensate for non-uniform expansion",
+        "expansion_struts": "Some pistons have steel struts cast in to control skirt expansion"
+      },
+      "piston_rock_and_slap": {
+        "cause": "Excessive cold clearance causes piston slap on startup",
+        "resolution": "Balance between seizure prevention and NVH control"
+      },
+      "coatings": {
+        "skirt_coatings": ["Moly-graphite", "Phosphate", "Polymer film"],
+        "purpose": "Reduce friction and wear during cold startup when clearances are largest"
+      }
+    },
+
+    "aluminum_piston_aluminum_bore": {
+      "description": "Aluminum piston in coated aluminum bore (Nikasil, Alusil, PTWA)",
+      "materials_involved": {
+        "piston": {
+          "material": "4032-T6 or 2618-T6 Aluminum",
+          "expansion_coefficient_ppm_k": "19.4-22.3"
+        },
+        "bore": {
+          "material": "A356.0 Aluminum with coating",
+          "expansion_coefficient_ppm_k": 21.4
+        }
+      },
+      "thermal_differential": {
+        "expansion_difference_ppm_k": "0-3 depending on piston alloy",
+        "engineering_impact": "Much closer expansion rates than iron bore"
+      },
+      "clearance_advantages": {
+        "tighter_clearance_possible": "0.020-0.040mm typical",
+        "reduced_piston_slap": "Better NVH characteristics",
+        "faster_warmup_sealing": "Rings seal quicker on startup"
+      },
+      "coating_compatibility": {
+        "nikasil": {
+          "ring_requirement": "Chrome or moly-faced rings",
+          "fuel_sensitivity": "High sulfur fuel causes coating failure"
+        },
+        "alusil": {
+          "ring_requirement": "Ferrous or moly rings - must be harder than exposed silicon",
+          "break_in": "Requires careful break-in to expose silicon crystals"
+        }
+      }
+    }
+  },
+
+  "galvanic_corrosion_matrix": {
+    "_description": "Risk assessment for dissimilar metal contact in engine assemblies",
+    "aluminum_to_steel": {
+      "risk": "moderate",
+      "voltage_difference_mv": 350,
+      "prevention": ["Coating", "Anti-seize", "Isolation", "Keep dry"]
+    },
+    "aluminum_to_cast_iron": {
+      "risk": "moderate",
+      "voltage_difference_mv": 300,
+      "prevention": ["Coating", "Gaskets", "Anti-seize"]
+    },
+    "aluminum_to_stainless": {
+      "risk": "high",
+      "voltage_difference_mv": 500,
+      "prevention": ["Insulating washers", "Coating", "Keep dry"]
+    },
+    "aluminum_to_copper": {
+      "risk": "very_high",
+      "voltage_difference_mv": 700,
+      "prevention": ["AVOID direct contact", "Use brass or bronze isolation"]
+    },
+    "steel_to_cast_iron": {
+      "risk": "low",
+      "voltage_difference_mv": 50,
+      "prevention": ["Standard corrosion protection sufficient"]
+    }
+  },
+
+  "torque_adjustment_factors": {
+    "_description": "Torque modifications for material combinations and lubricants",
+    "base_torque_for": "Steel fastener in steel, clean and dry",
+    "aluminum_parent_factor": 0.85,
+    "with_anti_seize_factor": 0.80,
+    "with_engine_oil_factor": 0.85,
+    "with_moly_lube_factor": 0.70,
+    "stainless_fastener_factor": 0.80,
+    "combined_example": {
+      "scenario": "Steel bolt in aluminum with anti-seize",
+      "calculation": "Base torque × 0.85 × 0.80 = 68% of book torque for steel-in-steel dry"
+    }
+  },
+
+  "thermal_expansion_summary_table": {
+    "_units": "ppm/K (parts per million per Kelvin, also written as μm/m·K)",
+    "materials": {
+      "aluminum_a356": 21.4,
+      "aluminum_4032_piston": 19.4,
+      "aluminum_2618_piston": 22.3,
+      "gray_cast_iron": 10.8,
+      "ductile_iron": 11.2,
+      "cylinder_liner_iron": 11.0,
+      "steel_4340": 12.3,
+      "steel_alloy_generic": 12.0,
+      "stainless_304": 17.2,
+      "inconel": 12.8
+    },
+    "quick_reference": {
+      "aluminum_vs_iron_ratio": 2.0,
+      "aluminum_vs_steel_ratio": 1.8,
+      "note": "Aluminum expands roughly twice as fast as iron - the fundamental challenge in hybrid engine construction"
+    }
+  }
+}
