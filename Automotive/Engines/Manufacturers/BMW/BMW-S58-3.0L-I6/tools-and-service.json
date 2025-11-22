@@ -1,0 +1,222 @@
+{
+  "engine_id": "BMW-S58-3.0L-I6-TWIN-TURBO",
+  "service_version": "1.0.0",
+  "tool_inventory": {
+    "essential_tools": {
+      "metric_sockets_mm": [6, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+      "metric_wrenches_mm": [8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 22],
+      "torx": ["T20", "T25", "T27", "T30", "T40", "T45", "T50", "T55", "E10", "E12", "E14", "E16", "E18"],
+      "allen_hex_mm": [4, 5, 6, 8, 10, 12],
+      "screwdrivers": ["Phillips #2", "Flathead medium"]
+    },
+    "specialty_tools": {
+      "bmw_specific": {
+        "ISTA_ISID": {
+          "description": "BMW dealer diagnostic system",
+          "use": "Full diagnostics, coding, programming"
+        },
+        "oil_filter_socket": {
+          "description": "86mm 16-flute oil filter cap socket",
+          "use": "Oil filter housing removal"
+        },
+        "timing_tools": {
+          "description": "S58 cam/crank locking tools",
+          "use": "Timing chain service"
+        }
+      },
+      "torque_tools": {
+        "torque_wrench_small": {"range": "4-25 Nm"},
+        "torque_wrench_medium": {"range": "10-100 Nm"},
+        "torque_wrench_large": {"range": "40-250 Nm"},
+        "angle_gauge": {"use": "TTY fasteners"}
+      }
+    },
+    "diagnostic_equipment": {
+      "bimmerlink": {
+        "description": "BimmerLink mobile diagnostic app",
+        "cost_usd": 35,
+        "capabilities": ["Live data", "Fault codes", "Basic coding"]
+      },
+      "bimmercode": {
+        "description": "BimmerCode coding app",
+        "cost_usd": 45,
+        "capabilities": ["Vehicle coding", "Feature activation"]
+      },
+      "ista": {
+        "description": "BMW ISTA diagnostic software",
+        "capabilities": ["Full diagnostics", "Programming", "Service functions"]
+      },
+      "mhd_flasher": {
+        "description": "MHD Flasher app",
+        "cost_usd": 499,
+        "capabilities": ["ECU tuning", "Data logging", "Fault codes"]
+      },
+      "bootmod3": {
+        "description": "Bootmod3 tuning platform",
+        "cost_usd": 599,
+        "capabilities": ["ECU tuning", "Data logging", "Custom maps"]
+      }
+    }
+  },
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 10000,
+        "interval_km": 15000,
+        "track_use_interval_miles": 3000,
+        "oil_specification": "BMW LL-01 FE or LL-17 FE+",
+        "oil_viscosity": "0W-30",
+        "capacity_liters": 8.5,
+        "filter_part": "11427640620",
+        "drain_plug_torque_nm": 25,
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Lift vehicle and remove undertray",
+          "Locate dry sump oil tank drain",
+          "Remove drain plug (17mm)",
+          "Allow complete drain (15+ minutes)",
+          "Remove oil filter housing cap (86mm socket)",
+          "Replace filter element",
+          "Reinstall drain plug with new washer",
+          "Reinstall filter cap - torque 25 Nm",
+          "Add 8L oil initially",
+          "Start engine, check for leaks",
+          "Check level via iDrive, top off as needed",
+          "Reset service via ISTA or coding tool"
+        ],
+        "estimated_time_minutes": 45,
+        "difficulty": "Intermediate",
+        "notes": "Dry sump holds more oil than wet sump engines"
+      },
+      "spark_plug_replacement": {
+        "interval_miles": 45000,
+        "interval_km": 72000,
+        "tuned_interval_miles": 20000,
+        "spark_plug": "NGK SILKAR8C8S",
+        "gap_mm": 0.7,
+        "torque_nm": 22,
+        "procedure": [
+          "Remove engine cover",
+          "Disconnect coil pack connectors",
+          "Remove coil packs (T30 Torx)",
+          "Clean spark plug wells with compressed air",
+          "Remove spark plugs (14mm thin-wall socket)",
+          "Gap new plugs if needed (0.7mm)",
+          "Install new plugs - hand tight then torque 22 Nm",
+          "Reinstall coils and connectors"
+        ],
+        "estimated_time_minutes": 60,
+        "difficulty": "Easy"
+      },
+      "air_filter_replacement": {
+        "interval_miles": 30000,
+        "procedure": [
+          "Remove airbox cover clips",
+          "Lift cover and remove filters",
+          "Install new filters",
+          "Secure cover"
+        ],
+        "estimated_time_minutes": 15,
+        "difficulty": "Very Easy"
+      }
+    },
+    "common_repairs": {
+      "charge_pipe_upgrade": {
+        "reason": "OEM plastic can crack under boost",
+        "aftermarket_options": ["VRSF", "Evolution Racewerks", "CSF"],
+        "procedure": [
+          "Remove intake tract",
+          "Loosen hose clamps on charge pipe",
+          "Remove OEM plastic pipe",
+          "Install aluminum charge pipe with silicone couplers",
+          "Ensure all connections are secure",
+          "Reinstall intake"
+        ],
+        "estimated_time_minutes": 60,
+        "difficulty": "Intermediate"
+      },
+      "crank_hub_fix": {
+        "critical": true,
+        "reason": "Crank hub can slip under high torque, causing timing issues",
+        "solutions": {
+          "arp_crank_bolt": {
+            "description": "Upgraded crank bolt",
+            "part_number": "101-2501",
+            "difficulty": "Advanced"
+          },
+          "keyed_hub_kit": {
+            "description": "Keyed crank hub solution",
+            "difficulty": "Expert - requires engine disassembly"
+          }
+        },
+        "notes": "MUST be addressed before significant tuning"
+      },
+      "downpipe_replacement": {
+        "reason": "Performance upgrade or catalyst replacement",
+        "procedure": [
+          "Raise vehicle on lift",
+          "Remove heat shields",
+          "Disconnect O2 sensors",
+          "Support exhaust",
+          "Remove downpipe bolts at turbos",
+          "Remove downpipe bolts at mid-pipe",
+          "Remove OEM downpipes",
+          "Install new downpipes with new gaskets",
+          "Reconnect O2 sensors",
+          "For catless: flash tune to disable CEL"
+        ],
+        "estimated_time_hours": 3,
+        "difficulty": "Intermediate"
+      }
+    }
+  },
+  "diagnostic_procedures": {
+    "boost_leak_testing": {
+      "method": "Smoke test or boost leak tester",
+      "common_leak_points": [
+        "Charge pipe connections",
+        "Intercooler connections",
+        "Turbo inlet",
+        "Blow-off valve"
+      ]
+    },
+    "oil_analysis": {
+      "frequency": "Every oil change for tuned/track cars",
+      "providers": ["Blackstone Labs", "SPECTROil"],
+      "look_for": ["Bearing metals", "Fuel dilution", "Coolant contamination"]
+    }
+  },
+  "torque_specifications": {
+    "cylinder_head": {
+      "head_bolts": {"method": "TTY", "initial_nm": 40, "angle_degrees": "90+90"}
+    },
+    "accessories": {
+      "spark_plugs": {"torque_nm": 22},
+      "ignition_coils": {"torque_nm": 10},
+      "oil_drain_plug": {"torque_nm": 25},
+      "oil_filter_housing": {"torque_nm": 25},
+      "turbo_oil_lines": {"torque_nm": 20}
+    }
+  },
+  "fluid_specifications": {
+    "engine_oil": {
+      "specification": "BMW LL-01 FE or LL-17 FE+",
+      "viscosity": "0W-30",
+      "capacity_liters": 8.5,
+      "approved_oils": [
+        "Castrol EDGE Professional LL04 0W-30",
+        "Shell Helix Ultra ECT C3 0W-30",
+        "Liqui Moly Top Tec 6100 0W-30"
+      ]
+    },
+    "coolant": {
+      "specification": "BMW Antifreeze/Coolant",
+      "color": "Blue",
+      "capacity_liters": 12
+    },
+    "transmission_8AT": {
+      "specification": "ZF Lifeguard 8",
+      "capacity_liters": 9.7
+    }
+  }
+}

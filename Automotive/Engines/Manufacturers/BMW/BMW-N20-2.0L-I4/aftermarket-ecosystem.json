@@ -1,0 +1,1117 @@
+{
+  "engine_id": "BMW-N20-2.0L-I4-TURBO",
+  "aftermarket_version": "2.0",
+  "last_updated": "2025-01",
+
+  "tuning_companies": {
+    "tier_1_major_tuners": {
+      "dinan": {
+        "name": "Dinan Engineering",
+        "location": "Morgan Hill, CA, USA",
+        "website": "https://dinancars.com",
+        "specialization": "Premium BMW performance, dealer-supported modifications",
+        "n20_products": {
+          "stage_1_software": {
+            "part_number": "D900-N20-S1",
+            "hp_gain": "35-40",
+            "torque_gain_lb_ft": "45-55",
+            "price_usd": "749",
+            "features": [
+              "Dealer-safe (not detectable with standard tools)",
+              "Preserves BMW warranty (Dinan warranty)",
+              "Multiple power modes"
+            ]
+          },
+          "cold_air_intake": {
+            "part_number": "D760-0053",
+            "hp_gain": "10-15",
+            "price_usd": "449"
+          },
+          "high_flow_intake_system": {
+            "part_number": "D760-0053B",
+            "price_usd": "649",
+            "notes": "Carbon fiber airbox"
+          }
+        },
+        "reputation": "Premium quality, best for maintaining warranty relationships",
+        "support": "Dealer network support"
+      },
+      "burger_tuning_bms": {
+        "name": "Burger Motorsports (BMS)",
+        "location": "Los Angeles, CA, USA",
+        "website": "https://burgertuning.com",
+        "specialization": "N20/N26 tuning specialists, affordable performance",
+        "n20_products": {
+          "jb4_piggyback": {
+            "model": "JB4 N20/N26",
+            "hp_gain": "40-60",
+            "torque_gain_lb_ft": "60-80",
+            "price_usd": "479",
+            "features": [
+              "Plug-and-play piggyback",
+              "User-adjustable maps",
+              "Data logging capability",
+              "Bluetooth connectivity",
+              "Removable/undetectable",
+              "E85/flex fuel capable with sensor"
+            ],
+            "maps_included": [
+              "Map 0: Stock (logging only)",
+              "Map 1: Low boost economy",
+              "Map 2: Stage 1 (93 octane)",
+              "Map 3: Stage 2 (93 octane, bolt-ons)",
+              "Map 5: Valet mode",
+              "Map 6: E85/Flex fuel"
+            ]
+          },
+          "jb4_backend_flash": {
+            "model": "JB4 + MHD Backend Flash",
+            "description": "JB4 piggyback combined with ECU flash",
+            "hp_gain": "50-70",
+            "price_usd": "479 (JB4) + $200 (MHD license)",
+            "notes": "Best of both worlds - piggyback boost control + ECU timing"
+          },
+          "bms_intake": {
+            "model": "Burger Motorsport Performance Intake",
+            "price_usd": "279",
+            "notes": "Designed to work with JB4"
+          },
+          "charge_pipe": {
+            "model": "BMS Aluminum Charge Pipe",
+            "price_usd": "189",
+            "notes": "Replaces crack-prone plastic pipe"
+          },
+          "oil_catch_can": {
+            "model": "BMS Oil Catch Can Kit",
+            "price_usd": "225",
+            "notes": "Reduces carbon buildup"
+          }
+        },
+        "reputation": "Best value for N20 tuning, excellent community support",
+        "support": "Active forum community, good tech support"
+      },
+      "bootmod3": {
+        "name": "bootmod3 (ProTuningFreaks)",
+        "location": "Online platform",
+        "website": "https://bootmod3.net",
+        "specialization": "Professional ECU flash platform for BMW",
+        "n20_products": {
+          "stage_1_license": {
+            "hp_gain": "40-50",
+            "torque_gain_lb_ft": "50-65",
+            "price_usd": "550",
+            "features": [
+              "Direct ECU flash",
+              "Multiple off-the-shelf maps",
+              "Custom tuning capability",
+              "Data logging",
+              "TCU tuning available"
+            ]
+          },
+          "stage_2_license": {
+            "hp_gain": "55-75",
+            "requirements": "Downpipe, intake recommended",
+            "price_usd": "550 (same license)",
+            "notes": "Stage 2 maps require hardware"
+          },
+          "e85_flex_fuel_tune": {
+            "hp_gain": "70-90 (E85)",
+            "requirements": "LPFP upgrade, flex fuel sensor",
+            "price_usd": "Included with license"
+          },
+          "custom_tuning": {
+            "description": "Professional remote tuning",
+            "price_usd": "$200-400 additional",
+            "notes": "For fully built or unique setups"
+          }
+        },
+        "reputation": "Professional-grade platform, excellent for custom tunes",
+        "support": "Online support, tuner network"
+      },
+      "mhd_flasher": {
+        "name": "MHD Flasher",
+        "location": "Online platform (mobile app)",
+        "website": "https://mhdtuning.com",
+        "specialization": "Phone-based BMW ECU flashing",
+        "n20_products": {
+          "mhd_app_license": {
+            "price_usd": "$199 (one-time license per VIN)",
+            "features": [
+              "Flash from iOS/Android phone",
+              "Free off-the-shelf maps",
+              "Data logging",
+              "Diagnostic features",
+              "Multiple map slots"
+            ]
+          },
+          "off_the_shelf_maps": {
+            "stage_1_93": {
+              "hp_gain": "35-45",
+              "requirements": "None",
+              "price": "Included"
+            },
+            "stage_2_93": {
+              "hp_gain": "50-65",
+              "requirements": "Downpipe",
+              "price": "Included"
+            },
+            "stage_2_e30": {
+              "hp_gain": "65-80",
+              "requirements": "Downpipe, E30 fuel",
+              "price": "Included"
+            },
+            "stage_2_e85": {
+              "hp_gain": "75-95",
+              "requirements": "Downpipe, LPFP, E85",
+              "price": "Included"
+            }
+          },
+          "custom_tuning": {
+            "providers": ["BMS", "Stratified", "Wedge Performance"],
+            "price_usd": "$200-400"
+          }
+        },
+        "reputation": "Best value flash platform, huge community",
+        "support": "Active community forum, Facebook groups"
+      }
+    },
+    "tier_2_specialty_tuners": {
+      "active_autowerke": {
+        "name": "Active Autowerke",
+        "location": "Miami, FL, USA",
+        "website": "https://activeautowerke.com",
+        "specialization": "BMW performance exhaust and tuning",
+        "n20_products": {
+          "performance_software": {
+            "hp_gain": "40-50",
+            "price_usd": "$650-850"
+          },
+          "catted_downpipe": {
+            "price_usd": "$599",
+            "notes": "High-flow catalytic converter"
+          },
+          "catback_exhaust": {
+            "price_usd": "$1299-1699",
+            "options": ["Quad tip", "Dual tip"]
+          }
+        }
+      },
+      "turner_motorsport": {
+        "name": "Turner Motorsport",
+        "location": "Amesbury, MA, USA",
+        "website": "https://turnermotorsport.com",
+        "specialization": "BMW racing and performance parts",
+        "n20_products": {
+          "performance_software": {
+            "price_usd": "$599"
+          },
+          "cold_air_intake": {
+            "price_usd": "$399"
+          },
+          "timing_chain_kit": {
+            "description": "Complete timing chain service kit",
+            "price_usd": "$450-650",
+            "notes": "Quality OEM/aftermarket components"
+          }
+        },
+        "reputation": "Strong racing heritage, quality parts"
+      },
+      "ecutek": {
+        "name": "EcuTek",
+        "location": "UK/Global",
+        "website": "https://ecutek.com",
+        "specialization": "Professional ECU tuning platform",
+        "n20_products": {
+          "ecutek_license": {
+            "price_usd": "$750-900",
+            "features": [
+              "Professional tuning platform",
+              "Live tuning capability",
+              "Advanced data logging",
+              "Requires ECU unlock"
+            ]
+          },
+          "custom_tuning": {
+            "available_through": "Certified EcuTek dealers",
+            "price_usd": "$300-600 additional"
+          }
+        },
+        "reputation": "Professional-grade, used by serious tuners"
+      }
+    }
+  },
+
+  "performance_parts_manufacturers": {
+    "turbocharger_upgrades": {
+      "pure_turbos": {
+        "name": "Pure Turbos",
+        "website": "https://pureturbos.com",
+        "n20_products": {
+          "pure_stage_2": {
+            "description": "Upgraded turbo with larger compressor",
+            "hp_potential": "380-420",
+            "price_usd": "$1,699",
+            "features": [
+              "Larger compressor wheel",
+              "Upgraded bearings",
+              "Drop-in replacement",
+              "Retains OEM fitment"
+            ]
+          }
+        }
+      },
+      "vargas_turbo_technologies": {
+        "name": "Vargas Turbo Technologies (VTT)",
+        "website": "https://vaboracing.com",
+        "n20_products": {
+          "vtt_stg2_turbo": {
+            "description": "Stage 2 hybrid turbo",
+            "hp_potential": "380-420",
+            "price_usd": "$1,400-1,800"
+          }
+        }
+      },
+      "precision_turbo": {
+        "name": "Precision Turbo",
+        "specialization": "Custom turbo kits for serious builds",
+        "notes": "For fully custom big turbo setups"
+      }
+    },
+    "intercooler_upgrades": {
+      "wagner_tuning": {
+        "name": "Wagner Tuning",
+        "location": "Germany",
+        "website": "https://wagner-tuning.com",
+        "n20_products": {
+          "competition_intercooler": {
+            "model": "Wagner Competition Intercooler",
+            "price_usd": "$899-1,199",
+            "efficiency_increase": "100%+ over stock",
+            "features": [
+              "Bar and plate core",
+              "Direct bolt-on fitment",
+              "Significant temperature reduction"
+            ]
+          },
+          "evo_intercooler": {
+            "model": "Wagner EVO Intercooler",
+            "price_usd": "$699-899",
+            "notes": "Step-up from stock, more affordable option"
+          }
+        }
+      },
+      "vrsf": {
+        "name": "VRSF",
+        "location": "USA",
+        "website": "https://vrsf.com",
+        "n20_products": {
+          "fmic_upgrade": {
+            "model": "VRSF Front Mount Intercooler",
+            "price_usd": "$499-699",
+            "options": ["Street", "Race"],
+            "notes": "Popular choice, good value"
+          },
+          "charge_pipe_upgrade": {
+            "model": "VRSF Aluminum Charge Pipe",
+            "price_usd": "$179",
+            "notes": "Eliminates plastic charge pipe failure"
+          },
+          "catless_downpipe": {
+            "model": "VRSF Catless Downpipe",
+            "price_usd": "$329",
+            "notes": "Significant power gain, off-road only"
+          }
+        }
+      },
+      "ets": {
+        "name": "Extreme Turbo Systems (ETS)",
+        "website": "https://extremeturbosystems.com",
+        "n20_products": {
+          "intercooler_kit": {
+            "model": "ETS FMIC Kit",
+            "price_usd": "$799-1,099",
+            "options": "Various core sizes"
+          }
+        }
+      }
+    },
+    "intake_systems": {
+      "afe_power": {
+        "name": "aFe Power",
+        "website": "https://afepower.com",
+        "n20_products": {
+          "momentum_intake": {
+            "model": "Momentum GT Cold Air Intake",
+            "part_number": "54-76309",
+            "price_usd": "$459",
+            "filter_type": "Pro 5R (oiled) or Pro Dry S (dry)"
+          },
+          "takeda_intake": {
+            "model": "Takeda Stage 2 Intake",
+            "price_usd": "$389",
+            "notes": "Short ram intake option"
+          }
+        }
+      },
+      "eventuri": {
+        "name": "Eventuri",
+        "location": "UK",
+        "website": "https://eventuri.net",
+        "n20_products": {
+          "carbon_intake": {
+            "model": "Eventuri Carbon Fiber Intake",
+            "price_usd": "$899-1,199",
+            "features": [
+              "Full carbon fiber airbox",
+              "Venturi effect design",
+              "Premium quality"
+            ],
+            "notes": "Premium option for show and go"
+          }
+        }
+      },
+      "injen": {
+        "name": "Injen Technology",
+        "website": "https://injen.com",
+        "n20_products": {
+          "evolution_intake": {
+            "model": "Evolution Cold Air Intake",
+            "price_usd": "$389",
+            "carb_legal": true
+          }
+        }
+      },
+      "k_and_n": {
+        "name": "K&N Engineering",
+        "website": "https://knfilters.com",
+        "n20_products": {
+          "drop_in_filter": {
+            "part_number": "33-2990",
+            "price_usd": "$59",
+            "notes": "Simple drop-in upgrade, washable"
+          },
+          "typhoon_intake": {
+            "model": "Typhoon Cold Air Intake",
+            "price_usd": "$379"
+          }
+        }
+      }
+    },
+    "exhaust_systems": {
+      "akrapovic": {
+        "name": "Akrapovic",
+        "location": "Slovenia",
+        "website": "https://akrapovic.com",
+        "n20_products": {
+          "evolution_exhaust": {
+            "model": "Evolution Line (Titanium)",
+            "price_usd": "$3,500-5,000",
+            "weight_savings_lbs": "15-20",
+            "features": [
+              "Full titanium construction",
+              "Carbon fiber tips",
+              "Optimal flow design",
+              "Race-inspired sound"
+            ],
+            "notes": "Premium exhaust, best sound quality"
+          },
+          "slip_on_line": {
+            "model": "Slip-On Line",
+            "price_usd": "$1,800-2,500",
+            "notes": "Axle-back system only"
+          }
+        }
+      },
+      "remus": {
+        "name": "Remus",
+        "location": "Austria",
+        "website": "https://remus.eu",
+        "n20_products": {
+          "sport_exhaust": {
+            "model": "Remus Sport Exhaust",
+            "price_usd": "$1,599-2,199",
+            "features": [
+              "Electronic valve control",
+              "EC type approval available",
+              "Multiple tip options"
+            ]
+          }
+        }
+      },
+      "milltek": {
+        "name": "Milltek Sport",
+        "location": "UK",
+        "website": "https://millteksport.com",
+        "n20_products": {
+          "catback_system": {
+            "model": "Cat-Back System",
+            "price_usd": "$1,299-1,799",
+            "options": ["Resonated", "Non-resonated"],
+            "tip_options": ["Polished", "Black"]
+          },
+          "secondary_cat_delete": {
+            "model": "Secondary Cat Delete Pipes",
+            "price_usd": "$399-599",
+            "notes": "For track use"
+          }
+        }
+      },
+      "scorpion": {
+        "name": "Scorpion Exhausts",
+        "location": "UK",
+        "website": "https://scorpion-exhausts.com",
+        "n20_products": {
+          "cat_back": {
+            "model": "Non-Resonated Cat-Back",
+            "price_usd": "$999-1,399"
+          }
+        }
+      },
+      "bmw_m_performance": {
+        "name": "BMW M Performance",
+        "description": "OEM BMW performance parts",
+        "n20_products": {
+          "m_performance_exhaust": {
+            "model": "M Performance Exhaust System",
+            "price_usd": "$1,500-2,200",
+            "features": [
+              "Factory appearance",
+              "Enhanced sound",
+              "BMW warranty compatible"
+            ]
+          }
+        }
+      }
+    },
+    "downpipes": {
+      "arm_motorsports": {
+        "name": "ARM Motorsports",
+        "website": "https://armmotorsports.com",
+        "n20_products": {
+          "catless_downpipe": {
+            "model": "N20 Catless Downpipe",
+            "price_usd": "$349",
+            "notes": "Off-road use only"
+          },
+          "catted_downpipe": {
+            "model": "N20 High-Flow Catted Downpipe",
+            "price_usd": "$549",
+            "notes": "200-cell high-flow cat"
+          }
+        }
+      },
+      "vrsf": {
+        "products_listed_above": true
+      },
+      "active_autowerke": {
+        "products_listed_above": true
+      }
+    },
+    "fuel_system_upgrades": {
+      "autotech_high_volume": {
+        "name": "Autotech High Volume Fuel Internals",
+        "description": "HPFP upgrade internals",
+        "price_usd": "$399",
+        "hp_support": "Up to ~450 HP",
+        "notes": "Popular choice for Stage 2+ builds"
+      },
+      "deatschwerks": {
+        "name": "DeatschWerks",
+        "website": "https://deatschwerks.com",
+        "n20_products": {
+          "dw300_lpfp": {
+            "model": "DW300 In-Tank Fuel Pump",
+            "flow_lph": 340,
+            "price_usd": "$179",
+            "notes": "Required for E85 builds"
+          },
+          "dw400_lpfp": {
+            "model": "DW400 In-Tank Fuel Pump",
+            "flow_lph": 415,
+            "price_usd": "$199",
+            "notes": "For big power E85 builds"
+          }
+        }
+      },
+      "walbro": {
+        "name": "Walbro/TI Automotive",
+        "n20_products": {
+          "450_lph_pump": {
+            "model": "F90000267",
+            "flow_lph": 450,
+            "price_usd": "$149",
+            "notes": "E85 compatible"
+          }
+        }
+      },
+      "injector_dynamics": {
+        "name": "Injector Dynamics",
+        "website": "https://injectordynamics.com",
+        "notes": "High-flow injectors for big power builds (450+ HP)"
+      }
+    }
+  },
+
+  "suspension_and_handling": {
+    "coilovers": {
+      "kw_suspensions": {
+        "name": "KW Suspensions",
+        "location": "Germany",
+        "website": "https://kwsuspensions.com",
+        "f30_products": {
+          "kw_v1": {
+            "model": "Variant 1",
+            "price_usd": "$1,499",
+            "features": "Height adjustable, fixed damping"
+          },
+          "kw_v2": {
+            "model": "Variant 2",
+            "price_usd": "$1,999",
+            "features": "Height and rebound adjustable"
+          },
+          "kw_v3": {
+            "model": "Variant 3",
+            "price_usd": "$2,499",
+            "features": "Height, rebound, and compression adjustable"
+          },
+          "kw_clubsport": {
+            "model": "Clubsport",
+            "price_usd": "$3,299",
+            "features": "Track-focused with top mounts"
+          }
+        }
+      },
+      "ohlins": {
+        "name": "Ohlins",
+        "location": "Sweden",
+        "f30_products": {
+          "road_track": {
+            "model": "Road & Track",
+            "price_usd": "$2,899",
+            "features": "Premium Swedish engineering"
+          },
+          "dfw": {
+            "model": "DFV Coilovers",
+            "price_usd": "$3,299",
+            "features": "Dual flow valve technology"
+          }
+        }
+      },
+      "bc_racing": {
+        "name": "BC Racing",
+        "location": "Taiwan/USA",
+        "f30_products": {
+          "br_series": {
+            "model": "BR Series",
+            "price_usd": "$1,095",
+            "features": "30-way adjustable, mono-tube"
+          },
+          "ds_series": {
+            "model": "DS Series",
+            "price_usd": "$1,495",
+            "features": "Separate dampening adjusters"
+          }
+        },
+        "reputation": "Best value performance coilovers"
+      },
+      "h_and_r": {
+        "name": "H&R",
+        "f30_products": {
+          "rss_coilovers": {
+            "model": "RSS Coilovers",
+            "price_usd": "$2,199",
+            "features": "German engineered, TUV approved"
+          }
+        }
+      }
+    },
+    "springs": {
+      "h_and_r_springs": {
+        "name": "H&R Sport Springs",
+        "drop_front_in": 1.3,
+        "drop_rear_in": 1.0,
+        "price_usd": "$299"
+      },
+      "eibach": {
+        "name": "Eibach",
+        "f30_products": {
+          "pro_kit": {
+            "model": "Pro-Kit Springs",
+            "drop_in": "0.8-1.2",
+            "price_usd": "$299"
+          },
+          "sportline": {
+            "model": "Sportline Springs",
+            "drop_in": "1.5-2.0",
+            "price_usd": "$349"
+          }
+        }
+      },
+      "swift_springs": {
+        "name": "Swift Springs",
+        "specialization": "Lightweight performance springs",
+        "notes": "Popular for coilover upgrades"
+      }
+    },
+    "sway_bars": {
+      "h_and_r_sway_bars": {
+        "name": "H&R Sway Bars",
+        "f30_products": {
+          "front_sway": {
+            "size_mm": 28,
+            "price_usd": "$319"
+          },
+          "rear_sway": {
+            "size_mm": 22,
+            "adjustable": true,
+            "price_usd": "$329"
+          }
+        }
+      },
+      "dinan": {
+        "name": "Dinan Anti-Roll Bar Set",
+        "price_usd": "$899",
+        "notes": "Front and rear set"
+      }
+    }
+  },
+
+  "brakes": {
+    "big_brake_kits": {
+      "stoptech": {
+        "name": "StopTech",
+        "f30_products": {
+          "st40_bbk": {
+            "model": "ST-40 Big Brake Kit",
+            "rotor_size_front_in": 14.0,
+            "piston_count": 4,
+            "price_usd": "$2,899",
+            "features": "Direct bolt-on, fits 18\" wheels"
+          },
+          "st60_bbk": {
+            "model": "ST-60 Big Brake Kit",
+            "rotor_size_front_in": 15.0,
+            "piston_count": 6,
+            "price_usd": "$3,699",
+            "notes": "Requires 19\" wheels minimum"
+          }
+        }
+      },
+      "ap_racing": {
+        "name": "AP Racing",
+        "f30_products": {
+          "radi_cal": {
+            "model": "Radi-CAL Big Brake Kit",
+            "price_usd": "$4,000-6,000",
+            "notes": "Race-proven, premium option"
+          }
+        }
+      },
+      "brembo": {
+        "name": "Brembo",
+        "f30_products": {
+          "gt_kit": {
+            "model": "GT Big Brake Kit",
+            "price_usd": "$3,500-5,000",
+            "options": ["Drilled", "Slotted"]
+          }
+        }
+      }
+    },
+    "brake_pads": {
+      "hawk": {
+        "name": "Hawk Performance",
+        "f30_products": {
+          "hps_5_0": {
+            "compound": "HPS 5.0",
+            "price_usd": "$159/axle",
+            "application": "Street, spirited driving"
+          },
+          "hp_plus": {
+            "compound": "HP+",
+            "price_usd": "$179/axle",
+            "application": "Street/track dual use"
+          },
+          "dtc_60": {
+            "compound": "DTC-60",
+            "price_usd": "$229/axle",
+            "application": "Track only"
+          }
+        }
+      },
+      "ebc": {
+        "name": "EBC Brakes",
+        "f30_products": {
+          "yellowstuff": {
+            "model": "Yellowstuff",
+            "price_usd": "$149/axle",
+            "application": "Performance street"
+          },
+          "redstuff": {
+            "model": "Redstuff",
+            "price_usd": "$129/axle",
+            "application": "Low dust street"
+          }
+        }
+      },
+      "ferodo": {
+        "name": "Ferodo",
+        "f30_products": {
+          "ds2500": {
+            "compound": "DS2500",
+            "price_usd": "$199/axle",
+            "application": "Street/track"
+          },
+          "ds1_11": {
+            "compound": "DS1.11",
+            "price_usd": "$299/axle",
+            "application": "Endurance racing"
+          }
+        }
+      }
+    },
+    "rotors": {
+      "stoptech_rotors": {
+        "cryo_treated": {
+          "model": "Cryo Stop Rotors",
+          "price_usd": "$199-299 each"
+        },
+        "sport_rotors": {
+          "model": "Sport Drilled/Slotted",
+          "price_usd": "$149-199 each"
+        }
+      },
+      "girodisc": {
+        "name": "Girodisc",
+        "specialization": "2-piece floating rotors",
+        "price_usd": "$600-900/pair",
+        "notes": "Premium track rotors"
+      },
+      "dba": {
+        "name": "DBA (Disc Brakes Australia)",
+        "f30_products": {
+          "4000_series": {
+            "model": "4000 Series T3 Slot",
+            "price_usd": "$199-299 each"
+          }
+        }
+      }
+    },
+    "brake_lines": {
+      "stoptech_lines": {
+        "model": "Stainless Steel Brake Lines",
+        "price_usd": "$149/set",
+        "features": "Improved pedal feel, DOT approved"
+      },
+      "goodridge": {
+        "model": "G-Stop Brake Lines",
+        "price_usd": "$129/set"
+      }
+    },
+    "brake_fluid": {
+      "motul_rbf_600": {
+        "name": "Motul RBF 600",
+        "boiling_point_dry_f": 594,
+        "price_usd": "$25/bottle",
+        "application": "Track use"
+      },
+      "ate_super_blue": {
+        "name": "ATE Super Blue",
+        "price_usd": "$15/bottle",
+        "application": "Street/light track"
+      }
+    }
+  },
+
+  "wheels_and_tires": {
+    "popular_wheel_brands": {
+      "apex": {
+        "name": "Apex Race Parts",
+        "specialization": "BMW-specific wheels",
+        "popular_models": ["EC-7", "ARC-8", "SM-10"],
+        "price_range_usd": "$300-500/wheel",
+        "notes": "Best value for track wheels"
+      },
+      "bbs": {
+        "name": "BBS",
+        "location": "Germany",
+        "popular_models": ["LM", "CH-R", "CI-R"],
+        "price_range_usd": "$600-1,200/wheel",
+        "notes": "OEM quality, classic designs"
+      },
+      "volk_racing": {
+        "name": "Volk Racing (Rays)",
+        "location": "Japan",
+        "popular_models": ["TE37", "ZE40", "CE28"],
+        "price_range_usd": "$700-1,000/wheel",
+        "notes": "Premium forged wheels"
+      },
+      "vmr": {
+        "name": "VMR Wheels",
+        "popular_models": ["V801", "V710", "V810"],
+        "price_range_usd": "$250-400/wheel",
+        "notes": "Good value flow-formed"
+      },
+      "avant_garde": {
+        "name": "Avant Garde",
+        "popular_models": ["M310", "M510", "F320"],
+        "price_range_usd": "$300-600/wheel",
+        "notes": "Aggressive fitments available"
+      }
+    },
+    "recommended_tire_sizes": {
+      "stock_equivalent": {
+        "front": "225/45R18 or 225/40R19",
+        "rear": "255/40R18 or 255/35R19"
+      },
+      "square_setup": {
+        "description": "Same size all four corners",
+        "size": "255/35R18 or 255/35R19",
+        "benefits": "Tire rotation possible, balanced handling"
+      },
+      "track_setup": {
+        "front": "255/35R18",
+        "rear": "275/35R18",
+        "notes": "Wide tires for grip"
+      }
+    },
+    "performance_tires": {
+      "michelin": {
+        "pilot_sport_4s": {
+          "type": "Max Performance Summer",
+          "price_usd": "$250-350 each",
+          "notes": "Best all-around performance tire"
+        },
+        "pilot_sport_cup_2": {
+          "type": "Extreme Performance",
+          "price_usd": "$300-400 each",
+          "notes": "Track-focused, street legal"
+        }
+      },
+      "continental": {
+        "extremecontact_sport": {
+          "type": "Max Performance Summer",
+          "price_usd": "$200-280 each"
+        }
+      },
+      "bridgestone": {
+        "potenza_re71rs": {
+          "type": "Extreme Performance",
+          "price_usd": "$250-350 each",
+          "notes": "Excellent grip, track proven"
+        }
+      }
+    }
+  },
+
+  "maintenance_parts_suppliers": {
+    "oem_parts": {
+      "fcp_euro": {
+        "name": "FCP Euro",
+        "website": "https://fcpeuro.com",
+        "specialization": "BMW OEM and quality aftermarket parts",
+        "key_feature": "Lifetime replacement guarantee",
+        "timing_chain_kit": "Available - quality brands",
+        "notes": "Excellent for maintenance parts"
+      },
+      "ecs_tuning": {
+        "name": "ECS Tuning",
+        "website": "https://ecstuning.com",
+        "specialization": "BMW parts and DIY resources",
+        "notes": "Good selection, helpful guides"
+      },
+      "pelican_parts": {
+        "name": "Pelican Parts",
+        "website": "https://pelicanparts.com",
+        "specialization": "BMW technical articles and parts",
+        "notes": "Great technical resources"
+      },
+      "bimmerworld": {
+        "name": "BimmerWorld",
+        "website": "https://bimmerworld.com",
+        "specialization": "BMW racing and performance",
+        "notes": "Track-focused parts selection"
+      }
+    },
+    "timing_chain_kit_sources": {
+      "fcp_euro_kit": {
+        "description": "Complete timing chain kit with updated parts",
+        "brands": ["BMW OE", "Febi", "IWIS"],
+        "price_range_usd": "$450-700",
+        "includes": "Chain, tensioner, all guides, bolts"
+      },
+      "ecs_tuning_kit": {
+        "description": "Timing chain kit options",
+        "price_range_usd": "$400-650"
+      }
+    }
+  },
+
+  "oil_catch_can_systems": {
+    "purpose": "Reduce carbon buildup by capturing oil vapors before intake",
+    "burger_tuning_bms": {
+      "model": "BMS Baffled Oil Catch Can",
+      "price_usd": "$225",
+      "notes": "N20 specific kit"
+    },
+    "mishimoto": {
+      "model": "Mishimoto Baffled Catch Can",
+      "price_usd": "$175-225",
+      "notes": "Universal, requires custom install"
+    },
+    "radium_engineering": {
+      "model": "Radium Catch Can",
+      "price_usd": "$249",
+      "notes": "Premium quality"
+    }
+  },
+
+  "recommended_build_combinations": {
+    "daily_driver_plus": {
+      "description": "Reliable daily with extra pep",
+      "budget_usd": "1,500-2,500",
+      "components": [
+        "JB4 or MHD Stage 1 tune",
+        "Drop-in K&N filter",
+        "Complete timing chain service (updated parts)",
+        "Catch can"
+      ],
+      "power_output": "~280-290 HP",
+      "notes": "Focus on reliability with modest power increase"
+    },
+    "spirited_street": {
+      "description": "Noticeable performance upgrade",
+      "budget_usd": "4,000-6,000",
+      "components": [
+        "Bootmod3 or MHD Stage 2 tune",
+        "High-flow catted downpipe",
+        "VRSF intercooler",
+        "Aluminum charge pipe",
+        "Cold air intake",
+        "Timing chain service"
+      ],
+      "power_output": "~310-330 HP",
+      "notes": "Great balance of power and driveability"
+    },
+    "track_day_build": {
+      "description": "Maximum stock turbo performance",
+      "budget_usd": "8,000-12,000",
+      "components": [
+        "Custom tune (MHD or Bootmod3)",
+        "Large FMIC (Wagner or similar)",
+        "Catless downpipe",
+        "Full intake system",
+        "HPFP internals",
+        "Oil cooler",
+        "Coilovers (BC or KW)",
+        "Upgraded brake pads and fluid",
+        "Timing chain service"
+      ],
+      "power_output": "~340-360 HP",
+      "notes": "Track-ready while still streetable"
+    },
+    "all_out_street_monster": {
+      "description": "Big turbo build",
+      "budget_usd": "20,000-35,000",
+      "components": [
+        "Upgraded turbo (Pure Stage 2 or similar)",
+        "Built internals (forged pistons and rods)",
+        "All Stage 2+ bolt-ons",
+        "Upgraded fuel system (LPFP, HPFP)",
+        "E85/Flex fuel setup",
+        "Custom tune",
+        "Upgraded clutch (manual) or trans cooler (auto)",
+        "Full suspension upgrade",
+        "Big brake kit"
+      ],
+      "power_output": "~420-500+ HP",
+      "notes": "Serious build requiring extensive work"
+    }
+  },
+
+  "community_resources": {
+    "forums": {
+      "f30post": {
+        "url": "https://f30post.com",
+        "description": "Largest F30/F32/F33/F36 community",
+        "n20_section": "Dedicated N20 sub-forum"
+      },
+      "bimmerpost": {
+        "url": "https://bimmerpost.com",
+        "description": "Umbrella site for all BMW forums"
+      },
+      "bimmerfest": {
+        "url": "https://bimmerfest.com",
+        "description": "Active BMW enthusiast community"
+      },
+      "e90post": {
+        "url": "https://e90post.com",
+        "description": "E9X community, good technical info"
+      }
+    },
+    "facebook_groups": {
+      "n20_n26_owners": {
+        "name": "BMW N20/N26 Owners Group",
+        "members": "20,000+",
+        "focus": "N20/N26 specific discussions"
+      },
+      "f30_f32_group": {
+        "name": "BMW F30/F32 Group",
+        "members": "50,000+",
+        "focus": "General F30/F32 discussions"
+      },
+      "mhd_tuning": {
+        "name": "MHD Tuning Community",
+        "members": "30,000+",
+        "focus": "MHD users and support"
+      },
+      "jb4_group": {
+        "name": "Burger Motorsports JB4 Group",
+        "members": "40,000+",
+        "focus": "JB4 users and support"
+      }
+    },
+    "youtube_channels": {
+      "50_skid": {
+        "name": "50's Kid",
+        "focus": "BMW maintenance and DIY"
+      },
+      "shopdap": {
+        "name": "ShopDAP",
+        "focus": "European car repairs"
+      }
+    }
+  },
+
+  "warranty_and_legal_considerations": {
+    "magnuson_moss_act": {
+      "description": "Federal law that limits how dealers can void warranties",
+      "key_point": "Modification alone cannot void warranty - dealer must prove modification caused failure",
+      "example": "Tune cannot void warranty on window regulator failure"
+    },
+    "emissions_compliance": {
+      "california_carb": {
+        "note": "Many performance parts not CARB legal in California",
+        "compliant_options": "Injen, aFe CARB-legal intakes",
+        "downpipe_note": "Catless/high-flow downpipes NOT street legal"
+      },
+      "n26_sulev": {
+        "note": "N26 SULEV vehicles have stricter emissions requirements",
+        "tuning_consideration": "Some tunes may trigger emissions-related CEL"
+      }
+    },
+    "insurance_considerations": {
+      "note": "Disclose modifications to insurance",
+      "coverage": "Some modifications may not be covered in accident",
+      "specialty_insurance": "Hagerty, Grundy for modified vehicles"
+    },
+    "ecu_flash_detection": {
+      "dealer_detection": "Dealers can detect ECU flash history",
+      "solutions": [
+        "JB4 piggyback (not detectable)",
+        "Dinan (dealer-supported warranty)",
+        "Return to stock before service"
+      ]
+    }
+  }
+}

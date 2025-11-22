@@ -1,0 +1,1188 @@
+{
+  "metadata": {
+    "engine_family": "BMW N52",
+    "ecosystem_version": "1.0.0",
+    "last_updated": "2025-01-15",
+    "notes": "N52 is naturally aspirated with limited performance aftermarket. Focus is on maintenance and reliability."
+  },
+  "market_overview": {
+    "description": "The BMW N52 aftermarket is primarily focused on maintenance, reliability, and OEM-equivalent replacement parts rather than performance modifications. As BMW's last naturally aspirated inline-6, the N52 has a dedicated following of enthusiasts who appreciate its smooth power delivery and relative simplicity compared to turbocharged successors.",
+    "market_segments": {
+      "maintenance_and_repair": {
+        "market_size": "Large",
+        "description": "Largest segment - cooling system, gaskets, sensors, and wear items",
+        "growth_trend": "Stable"
+      },
+      "oem_equivalent_parts": {
+        "market_size": "Large",
+        "description": "OEM supplier parts at lower prices than dealer",
+        "growth_trend": "Stable"
+      },
+      "performance_modifications": {
+        "market_size": "Small",
+        "description": "Limited market due to NA engine and Valvetronic complexity",
+        "growth_trend": "Declining"
+      },
+      "restoration_and_preservation": {
+        "market_size": "Growing",
+        "description": "Keeping clean examples running for enthusiasts",
+        "growth_trend": "Increasing"
+      }
+    }
+  },
+  "parts_vendors": {
+    "oem_and_oem_equivalent": [
+      {
+        "vendor": "FCP Euro",
+        "website": "https://www.fcpeuro.com",
+        "description": "Premier source for OEM and OE-equivalent European car parts",
+        "specialties": [
+          "OEM and OE-equivalent parts",
+          "Lifetime replacement guarantee",
+          "Curated part selection",
+          "Technical resources"
+        ],
+        "notable_offerings": {
+          "cooling_refresh_kit": "Complete water pump, thermostat, hoses kit",
+          "vanos_solenoid_kit": "Updated solenoids with filters",
+          "valve_cover_kits": "Complete with gaskets and hardware",
+          "maintenance_kits": "Oil service, brake service, etc."
+        },
+        "price_range": "Premium",
+        "warranty": "Lifetime replacement on most parts",
+        "shipping": "Free shipping over $49"
+      },
+      {
+        "vendor": "ECS Tuning",
+        "website": "https://www.ecstuning.com",
+        "description": "Large BMW parts retailer with house brand and OEM options",
+        "specialties": [
+          "Wide selection OEM and aftermarket",
+          "House brand (Bremmen/Schwaben)",
+          "DIY kits with grouped parts",
+          "Tools and equipment"
+        ],
+        "notable_offerings": {
+          "n52_cooling_overhaul_kit": "Complete cooling system refresh",
+          "gasket_mega_kit": "All common leak-point gaskets",
+          "ignition_service_kit": "Plugs, coils, connectors"
+        },
+        "price_range": "Budget to Premium",
+        "warranty": "1-2 years typical",
+        "shipping": "Free over $99"
+      },
+      {
+        "vendor": "Pelican Parts",
+        "website": "https://www.pelicanparts.com",
+        "description": "Established European car parts supplier",
+        "specialties": [
+          "OEM part sourcing",
+          "Extensive technical articles",
+          "Hard-to-find parts",
+          "BMW specialty"
+        ],
+        "notable_offerings": {
+          "tech_articles": "Comprehensive DIY guides for N52",
+          "oem_parts": "Genuine BMW and OE supplier parts"
+        },
+        "price_range": "Mid-range to Premium",
+        "warranty": "Varies by manufacturer"
+      },
+      {
+        "vendor": "Bavarian Autosport",
+        "website": "https://www.bavauto.com",
+        "description": "BMW specialist with OEM and performance parts",
+        "specialties": [
+          "BMW exclusive focus",
+          "Technical support",
+          "Quality curated selection"
+        ],
+        "price_range": "Mid-range to Premium"
+      },
+      {
+        "vendor": "Turner Motorsport",
+        "website": "https://www.turnermotorsport.com",
+        "description": "BMW racing and performance parts specialist",
+        "specialties": [
+          "Performance parts",
+          "Racing heritage",
+          "Technical expertise",
+          "E9x 3-series specialty"
+        ],
+        "notable_offerings": {
+          "suspension": "Performance suspension for E90/E60",
+          "brakes": "Big brake kits and pads",
+          "maintenance": "Quality maintenance parts"
+        },
+        "price_range": "Premium",
+        "racing_credentials": "Grand-Am, World Challenge racing"
+      },
+      {
+        "vendor": "RockAuto",
+        "website": "https://www.rockauto.com",
+        "description": "Budget-friendly parts warehouse",
+        "specialties": [
+          "Lowest prices",
+          "Wide brand selection",
+          "Economy to premium options"
+        ],
+        "notable_offerings": {
+          "multiple_brands": "Same part from 3-10 different manufacturers",
+          "oem_suppliers": "Bosch, Continental, Mahle at discounted prices"
+        },
+        "price_range": "Budget to Mid-range",
+        "warranty": "Manufacturer warranty only",
+        "notes": "No phone support, limited returns"
+      },
+      {
+        "vendor": "AutohausAZ",
+        "website": "https://www.autohausaz.com",
+        "description": "European car parts specialist",
+        "specialties": [
+          "OEM and OE-equivalent",
+          "German car focus",
+          "Good customer service"
+        ],
+        "price_range": "Mid-range",
+        "warranty": "1 year"
+      }
+    ],
+    "performance_specialists": [
+      {
+        "vendor": "Active Autowerke",
+        "website": "https://www.activeautowerke.com",
+        "description": "BMW tuning and performance specialist",
+        "n52_offerings": {
+          "exhaust_systems": {
+            "available": true,
+            "types": ["Cat-back exhaust", "Headers (limited)"],
+            "typical_gains": "5-10 HP",
+            "notes": "Focus is on sound enhancement"
+          },
+          "ecu_tuning": {
+            "available": true,
+            "description": "ECU calibration for N52",
+            "typical_gains": "10-15 HP",
+            "features": ["Rev limit increase", "Throttle response", "Speed limiter removal"]
+          },
+          "intakes": {
+            "available": true,
+            "types": ["Cold air intake"],
+            "typical_gains": "3-7 HP"
+          }
+        },
+        "notes": "Limited N52 focus due to NA limitations, more N54/N55 products"
+      },
+      {
+        "vendor": "Dinan",
+        "website": "https://www.dinancars.com",
+        "description": "Premium BMW tuning, former factory relationship",
+        "n52_offerings": {
+          "software": {
+            "available": true,
+            "part_number": "D900-328i",
+            "typical_gains": "8-12 HP",
+            "features": ["Optimized ignition timing", "Throttle response", "Rev limit adjustment"],
+            "warranty": "Dinan limited warranty"
+          },
+          "exhaust": {
+            "available": true,
+            "types": ["Free-flow exhaust"],
+            "sound": "Refined, not aggressive"
+          },
+          "suspension": {
+            "available": true,
+            "description": "Handling kits for E90/E60"
+          }
+        },
+        "reputation": "Premium brand, dealer-friendly modifications",
+        "notes": "Limited N52 performance potential acknowledged"
+      },
+      {
+        "vendor": "Macht Schnell",
+        "website": "https://www.machtschnell.com",
+        "description": "BMW racing and street performance",
+        "n52_offerings": {
+          "intakes": {
+            "available": false,
+            "notes": "Focus on turbocharged engines"
+          },
+          "exhaust": {
+            "available": true,
+            "types": ["Race exhaust systems"],
+            "notes": "Track-focused"
+          }
+        },
+        "focus": "N54/N55/S55 primarily"
+      },
+      {
+        "vendor": "Burger Motorsports",
+        "website": "https://www.burgertuning.com",
+        "description": "BMW ECU tuning specialists",
+        "n52_offerings": {
+          "jb_plus": {
+            "available": false,
+            "notes": "JB+ only for turbocharged engines"
+          },
+          "ecu_tuning": {
+            "available": "Limited",
+            "notes": "Focus on forced induction platforms"
+          }
+        },
+        "notes": "Minimal N52 support - turbo-focused company"
+      }
+    ],
+    "maintenance_specialists": [
+      {
+        "vendor": "Blauparts",
+        "website": "https://www.blauparts.com",
+        "description": "Fluid and filter specialists",
+        "n52_offerings": {
+          "oil_service_kits": {
+            "available": true,
+            "contents": ["Approved oil", "OE filter", "Drain plug gasket"],
+            "price_range": "$60-80"
+          },
+          "transmission_service_kits": {
+            "available": true,
+            "contents": ["Correct ATF", "Filter", "Pan gasket", "Hardware"],
+            "price_range": "$150-200"
+          },
+          "coolant_kits": {
+            "available": true,
+            "contents": ["BMW-approved coolant", "Proper mix ratio"]
+          }
+        },
+        "specialty": "Correct fluids for German cars"
+      },
+      {
+        "vendor": "Liqui Moly USA",
+        "website": "https://www.liqui-moly.com",
+        "description": "German lubricants and additives",
+        "n52_offerings": {
+          "engine_oil": {
+            "product": "Synthoil Energy 0W-40",
+            "certification": "BMW LL-01 approved",
+            "price_per_liter": "$12-15"
+          },
+          "fuel_system_cleaner": {
+            "product": "Jectron Fuel Injection Cleaner",
+            "usage": "Every 3,000 miles for fuel system maintenance"
+          },
+          "oil_additives": {
+            "product": "MoS2 Anti-Friction",
+            "notes": "For high-mileage N52 engines"
+          },
+          "coolant": {
+            "product": "KFS 11",
+            "specification": "G48 compatible"
+          }
+        }
+      }
+    ]
+  },
+  "maintenance_parts": {
+    "cooling_system": {
+      "water_pump": {
+        "oem_part_number": "11-51-7-586-925",
+        "options": [
+          {
+            "brand": "Pierburg",
+            "quality": "OEM Supplier",
+            "price_range": "$200-300",
+            "warranty": "2 years",
+            "notes": "Recommended - OEM quality"
+          },
+          {
+            "brand": "Continental/VDO",
+            "quality": "OEM Supplier",
+            "price_range": "$200-280",
+            "warranty": "2 years",
+            "notes": "Also supplies OEM"
+          },
+          {
+            "brand": "Graf",
+            "quality": "Aftermarket",
+            "price_range": "$150-200",
+            "warranty": "1 year",
+            "notes": "Budget option, mixed reviews"
+          },
+          {
+            "brand": "URO Parts",
+            "quality": "Economy",
+            "price_range": "$100-150",
+            "warranty": "1 year",
+            "notes": "Cheapest option, lower longevity expected"
+          }
+        ],
+        "replacement_interval": "80,000-100,000 miles or at failure",
+        "failure_symptom": "Overheating, fault codes 2E81-2E85"
+      },
+      "thermostat": {
+        "oem_part_number": "11-53-7-549-476",
+        "options": [
+          {
+            "brand": "Mahle Behr",
+            "quality": "OEM Supplier",
+            "price_range": "$80-120",
+            "warranty": "2 years",
+            "notes": "Recommended"
+          },
+          {
+            "brand": "Wahler",
+            "quality": "OEM Equivalent",
+            "price_range": "$60-90",
+            "warranty": "1 year",
+            "notes": "Good alternative"
+          },
+          {
+            "brand": "Vemo",
+            "quality": "Aftermarket",
+            "price_range": "$40-60",
+            "warranty": "1 year",
+            "notes": "Budget option"
+          }
+        ],
+        "replacement_interval": "Replace with water pump preventively"
+      },
+      "expansion_tank": {
+        "oem_part_number": "17-13-7-543-003",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$60-80",
+            "notes": "Tanks can crack with age"
+          },
+          {
+            "brand": "Behr",
+            "quality": "OEM Equivalent",
+            "price_range": "$40-60"
+          }
+        ],
+        "replacement_interval": "Replace if cracked or at 100k+ miles preventively"
+      },
+      "cooling_system_refresh_kits": {
+        "description": "Complete cooling system overhaul",
+        "typical_contents": [
+          "Electric water pump",
+          "Thermostat with housing",
+          "Expansion tank with cap",
+          "Upper and lower hoses",
+          "Coolant"
+        ],
+        "kit_prices": {
+          "fcp_euro": "$400-500",
+          "ecs_tuning": "$350-450",
+          "diy_sourced": "$300-400"
+        },
+        "labor_time": "4-6 hours DIY",
+        "notes": "Recommended at 80-100k miles"
+      }
+    },
+    "gaskets_and_seals": {
+      "valve_cover_gasket_set": {
+        "oem_part_number": "11-12-7-566-286",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$50-70",
+            "notes": "Gasket only"
+          },
+          {
+            "brand": "Elring",
+            "quality": "OEM Supplier",
+            "price_range": "$30-50",
+            "notes": "Quality equivalent"
+          },
+          {
+            "brand": "Victor Reinz",
+            "quality": "OEM Supplier",
+            "price_range": "$30-50",
+            "notes": "Quality equivalent"
+          }
+        ],
+        "complete_valve_cover": {
+          "description": "Complete valve cover assembly (recommended for late N52)",
+          "oem_part_number": "11-12-7-582-245",
+          "price_range": "$300-400",
+          "notes": "Includes integrated CCV and eccentric shaft sensor mount"
+        },
+        "replacement_interval": "When leaking, typically 80-120k miles"
+      },
+      "oil_filter_housing_gasket": {
+        "oem_part_number": "11-42-7-525-335",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$20-30"
+          },
+          {
+            "brand": "Elring",
+            "quality": "OEM Supplier",
+            "price_range": "$15-25"
+          },
+          {
+            "brand": "Victor Reinz",
+            "quality": "OEM Supplier",
+            "price_range": "$15-25"
+          }
+        ],
+        "replacement_interval": "When leaking, typically 60-100k miles"
+      },
+      "oil_pan_gasket": {
+        "oem_part_number": "11-13-7-566-476",
+        "options": [
+          {
+            "brand": "Elring",
+            "quality": "OEM Supplier",
+            "price_range": "$30-50"
+          },
+          {
+            "brand": "Victor Reinz",
+            "quality": "OEM Supplier",
+            "price_range": "$30-50"
+          }
+        ],
+        "replacement_interval": "When leaking"
+      },
+      "head_gasket": {
+        "oem_part_number": "11-12-7-548-921",
+        "options": [
+          {
+            "brand": "Elring",
+            "quality": "OEM Supplier",
+            "price_range": "$80-120"
+          },
+          {
+            "brand": "Victor Reinz",
+            "quality": "OEM Supplier",
+            "price_range": "$80-120"
+          }
+        ],
+        "notes": "Head gasket failure rare on N52"
+      }
+    },
+    "vanos_and_valvetronic": {
+      "vanos_solenoids": {
+        "intake_oem_part_number": "11-36-7-560-462",
+        "exhaust_oem_part_number": "11-36-7-560-463",
+        "options": [
+          {
+            "brand": "Pierburg",
+            "quality": "OEM Supplier",
+            "price_range": "$100-150 each",
+            "warranty": "2 years",
+            "notes": "Highly recommended - original supplier"
+          },
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$150-200 each",
+            "notes": "Same as Pierburg, higher price"
+          },
+          {
+            "brand": "Dorman",
+            "quality": "Budget Aftermarket",
+            "price_range": "$40-60 each",
+            "warranty": "1 year",
+            "notes": "Mixed reviews, OEM recommended"
+          }
+        ],
+        "replacement_interval": "60-100k miles or at failure",
+        "tip": "Replace both together, clean filter screens during service"
+      },
+      "eccentric_shaft_sensor": {
+        "oem_part_number": "11-37-7-524-879 (early) / Integrated (late)",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$150-250",
+            "notes": "Late models require valve cover replacement"
+          },
+          {
+            "brand": "VDO",
+            "quality": "OEM Supplier",
+            "price_range": "$120-180"
+          }
+        ],
+        "notes": "Late N52 has sensor integrated into valve cover"
+      },
+      "valvetronic_motor": {
+        "oem_part_number": "11-37-7-548-389",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$400-600"
+          },
+          {
+            "brand": "VDO",
+            "quality": "OEM Supplier",
+            "price_range": "$300-450"
+          }
+        ],
+        "failure_rate": "Low - typically lasts life of engine"
+      }
+    },
+    "ignition_system": {
+      "ignition_coils": {
+        "oem_part_number": "12-13-7-594-937",
+        "options": [
+          {
+            "brand": "Bosch",
+            "quality": "OEM Supplier",
+            "price_range": "$30-45 each",
+            "warranty": "2 years",
+            "notes": "Recommended"
+          },
+          {
+            "brand": "Delphi",
+            "quality": "OEM Supplier",
+            "price_range": "$25-40 each",
+            "warranty": "2 years",
+            "notes": "Also supplies OEM"
+          },
+          {
+            "brand": "Eldor",
+            "quality": "OEM Supplier",
+            "price_range": "$30-45 each",
+            "notes": "Italian quality"
+          },
+          {
+            "brand": "Bremi",
+            "quality": "Aftermarket",
+            "price_range": "$20-30 each",
+            "notes": "Budget option, acceptable quality"
+          }
+        ],
+        "replacement_interval": "At failure, typically 60-100k miles",
+        "tip": "Replace in pairs or all 6 together"
+      },
+      "spark_plugs": {
+        "oem_part_number": "12-12-0-037-607",
+        "options": [
+          {
+            "brand": "NGK",
+            "model": "PLKR7A",
+            "quality": "OEM Equivalent",
+            "price_range": "$10-15 each",
+            "gap_mm": 0.8,
+            "notes": "Most recommended"
+          },
+          {
+            "brand": "Bosch",
+            "model": "ZR5TPP33S",
+            "quality": "OEM Equivalent",
+            "price_range": "$8-12 each",
+            "notes": "Good alternative"
+          }
+        ],
+        "replacement_interval": "60,000 miles"
+      }
+    },
+    "filters": {
+      "oil_filter": {
+        "oem_part_number": "11-42-7-566-327",
+        "options": [
+          {
+            "brand": "Mann",
+            "model": "HU 816 x",
+            "quality": "OEM Supplier",
+            "price_range": "$8-12",
+            "notes": "Most recommended"
+          },
+          {
+            "brand": "Mahle",
+            "model": "OX 387D",
+            "quality": "OEM Equivalent",
+            "price_range": "$8-12"
+          },
+          {
+            "brand": "Hengst",
+            "quality": "OEM Equivalent",
+            "price_range": "$7-10"
+          },
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$12-18"
+          }
+        ],
+        "replacement_interval": "With every oil change"
+      },
+      "air_filter": {
+        "oem_part_number": "13-71-7-521-033",
+        "options": [
+          {
+            "brand": "Mann",
+            "model": "C 29 150",
+            "quality": "OEM Supplier",
+            "price_range": "$20-30"
+          },
+          {
+            "brand": "Mahle",
+            "quality": "OEM Equivalent",
+            "price_range": "$20-30"
+          },
+          {
+            "brand": "K&N",
+            "model": "33-2070",
+            "quality": "Performance",
+            "price_range": "$50-60",
+            "notes": "Reusable, minimal performance gain"
+          }
+        ],
+        "replacement_interval": "30,000 miles"
+      },
+      "cabin_filter": {
+        "options": [
+          {
+            "brand": "Mann",
+            "quality": "OEM Equivalent",
+            "price_range": "$20-30"
+          },
+          {
+            "brand": "Bosch",
+            "quality": "OEM Equivalent",
+            "price_range": "$15-25"
+          }
+        ],
+        "replacement_interval": "20,000 miles or annually"
+      }
+    },
+    "accessory_drive": {
+      "serpentine_belt": {
+        "oem_part_number": "11-28-7-631-817",
+        "options": [
+          {
+            "brand": "Continental",
+            "quality": "OEM Supplier",
+            "price_range": "$30-50"
+          },
+          {
+            "brand": "Gates",
+            "quality": "Premium Aftermarket",
+            "price_range": "$25-40"
+          },
+          {
+            "brand": "Dayco",
+            "quality": "Aftermarket",
+            "price_range": "$20-30"
+          }
+        ],
+        "replacement_interval": "60,000 miles or with tensioner"
+      },
+      "belt_tensioner": {
+        "oem_part_number": "11-28-7-571-015",
+        "options": [
+          {
+            "brand": "INA",
+            "quality": "OEM Supplier",
+            "price_range": "$60-90"
+          },
+          {
+            "brand": "Litens",
+            "quality": "OEM Equivalent",
+            "price_range": "$50-70"
+          },
+          {
+            "brand": "Gates",
+            "quality": "Aftermarket",
+            "price_range": "$40-60"
+          }
+        ],
+        "replacement_interval": "80-120k miles"
+      },
+      "idler_pulley": {
+        "oem_part_number": "11-28-7-578-674",
+        "options": [
+          {
+            "brand": "INA",
+            "quality": "OEM Supplier",
+            "price_range": "$25-40"
+          },
+          {
+            "brand": "Gates",
+            "quality": "Aftermarket",
+            "price_range": "$20-30"
+          }
+        ],
+        "replacement_interval": "With tensioner"
+      }
+    },
+    "sensors": {
+      "oxygen_sensors": {
+        "pre_cat": {
+          "oem_part_number": "11-78-7-589-121/122",
+          "options": [
+            {
+              "brand": "Bosch",
+              "quality": "OEM Supplier",
+              "price_range": "$100-150 each"
+            }
+          ],
+          "type": "Wideband (A/F ratio)"
+        },
+        "post_cat": {
+          "oem_part_number": "11-78-7-576-673/674",
+          "options": [
+            {
+              "brand": "Bosch",
+              "quality": "OEM Supplier",
+              "price_range": "$60-90 each"
+            }
+          ],
+          "type": "Narrowband (switching)"
+        },
+        "replacement_interval": "At failure or 100k+ miles"
+      },
+      "mass_airflow_sensor": {
+        "oem_part_number": "13-62-7-566-984",
+        "options": [
+          {
+            "brand": "Siemens/VDO",
+            "quality": "OEM Supplier",
+            "price_range": "$150-250"
+          },
+          {
+            "brand": "Bosch",
+            "quality": "OEM Equivalent",
+            "price_range": "$120-180"
+          }
+        ],
+        "notes": "Clean with MAF cleaner before replacing"
+      },
+      "camshaft_position_sensors": {
+        "oem_part_number": "13-62-7-566-988/989",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$80-120 each"
+          },
+          {
+            "brand": "VDO",
+            "quality": "OEM Supplier",
+            "price_range": "$60-90 each"
+          }
+        ]
+      },
+      "crankshaft_position_sensor": {
+        "oem_part_number": "13-62-7-566-987",
+        "options": [
+          {
+            "brand": "Genuine BMW",
+            "quality": "OEM",
+            "price_range": "$80-120"
+          },
+          {
+            "brand": "Bosch",
+            "quality": "OEM Supplier",
+            "price_range": "$50-80"
+          }
+        ]
+      }
+    }
+  },
+  "performance_modifications": {
+    "disclaimer": "The BMW N52 is a naturally aspirated engine with limited performance modification potential. Gains are modest compared to turbocharged platforms. Most enthusiasts focus on maintaining reliability rather than adding power.",
+    "intake_systems": {
+      "cold_air_intakes": {
+        "description": "Aftermarket intake systems",
+        "typical_gains": "3-7 HP (mostly perceived due to intake sound)",
+        "options": [
+          {
+            "brand": "aFe Power",
+            "model": "Magnum Force Stage 2",
+            "price_range": "$300-400",
+            "claimed_gains": "Up to 7 HP",
+            "notes": "Includes oiled or dry filter option"
+          },
+          {
+            "brand": "K&N",
+            "model": "57-1001",
+            "price_range": "$250-350",
+            "claimed_gains": "5-7 HP",
+            "notes": "Reusable oiled filter"
+          },
+          {
+            "brand": "aFe Power",
+            "model": "Takeda",
+            "price_range": "$350-450",
+            "notes": "Pro Dry S filter option"
+          },
+          {
+            "brand": "Injen",
+            "model": "SP Series",
+            "price_range": "$300-400",
+            "notes": "If available for N52"
+          }
+        ],
+        "real_world_assessment": "Intake upgrades on N52 provide minimal measurable power gain. Primary benefit is improved throttle response feel and intake sound. OEM airbox is well designed."
+      },
+      "drop_in_filters": {
+        "description": "Performance panel filter for OEM airbox",
+        "options": [
+          {
+            "brand": "K&N",
+            "model": "33-2070",
+            "price_range": "$50-60",
+            "notes": "Reusable oiled filter"
+          },
+          {
+            "brand": "aFe",
+            "model": "Pro Dry S",
+            "price_range": "$50-60",
+            "notes": "Oil-free option"
+          }
+        ],
+        "notes": "Recommended for those wanting slight improvement without full intake swap"
+      }
+    },
+    "exhaust_systems": {
+      "cat_back_exhaust": {
+        "description": "Exhaust from catalytic converters back",
+        "typical_gains": "3-8 HP (with tune)",
+        "options": [
+          {
+            "brand": "Borla",
+            "price_range": "$800-1200",
+            "sound": "Aggressive but refined",
+            "material": "Stainless steel"
+          },
+          {
+            "brand": "Magnaflow",
+            "price_range": "$600-900",
+            "sound": "Deep, moderate volume",
+            "material": "Stainless steel"
+          },
+          {
+            "brand": "Corsa",
+            "price_range": "$900-1300",
+            "sound": "Sport sound, minimal drone",
+            "material": "Stainless steel"
+          },
+          {
+            "brand": "Agency Power",
+            "price_range": "$700-1000",
+            "sound": "Aggressive",
+            "notes": "Track-focused"
+          }
+        ],
+        "real_world_assessment": "Cat-back exhaust on N52 primarily provides sound enhancement. Minimal power gains without headers. Most systems maintain a refined BMW character."
+      },
+      "headers": {
+        "description": "Long tube or shorty headers",
+        "typical_gains": "10-15 HP (with tune)",
+        "options": [
+          {
+            "brand": "Active Autowerke",
+            "type": "Long tube",
+            "price_range": "$1500-2000",
+            "notes": "Limited availability for N52"
+          },
+          {
+            "brand": "Supersprint",
+            "type": "Manifold replacement",
+            "price_range": "$1200-1800",
+            "notes": "European quality"
+          }
+        ],
+        "real_world_assessment": "Headers provide the most exhaust-related gains on N52 but are expensive and may cause check engine lights without tune. Cost/benefit ratio is poor for street use."
+      }
+    },
+    "ecu_tuning": {
+      "description": "Engine control unit software modifications",
+      "typical_gains": "10-15 HP",
+      "options": [
+        {
+          "brand": "Dinan",
+          "type": "Flash tune",
+          "price_range": "$400-600",
+          "features": ["Optimized ignition maps", "Rev limit increase", "Throttle response"],
+          "warranty": "Dinan warranty",
+          "dealer_friendly": true
+        },
+        {
+          "brand": "Active Autowerke",
+          "type": "Flash tune",
+          "price_range": "$300-500",
+          "features": ["Power optimization", "Speed limiter removal"],
+          "notes": "Track-focused tuning"
+        },
+        {
+          "brand": "Shark Injector",
+          "type": "Handheld tuner",
+          "price_range": "$350-450",
+          "features": ["Multiple maps", "Data logging"],
+          "notes": "DIY friendly"
+        }
+      ],
+      "real_world_assessment": "ECU tuning provides the best power gains per dollar on N52. Benefits include smoother power delivery, removed speed limiter, and slightly higher rev limit. Worth considering for enthusiasts.",
+      "tuning_limitations": {
+        "valvetronic_complexity": "Valvetronic system limits conventional tuning approaches",
+        "na_limitations": "No boost to increase - limited to ignition/fuel optimization",
+        "emissions": "Most tunes maintain emissions compliance"
+      }
+    },
+    "suspension_and_handling": {
+      "description": "While not engine modifications, suspension upgrades are popular for N52-powered vehicles",
+      "options": [
+        {
+          "category": "Lowering Springs",
+          "brands": ["H&R", "Eibach", "Dinan"],
+          "typical_drop": "1.0-1.5 inches",
+          "price_range": "$250-400"
+        },
+        {
+          "category": "Coilovers",
+          "brands": ["KW", "Bilstein", "Ohlins"],
+          "price_range": "$1500-3500",
+          "notes": "Adjustable height and damping"
+        },
+        {
+          "category": "Sway Bars",
+          "brands": ["H&R", "Dinan", "Hotchkis"],
+          "price_range": "$300-600",
+          "notes": "Reduces body roll"
+        }
+      ],
+      "notes": "Handling modifications often provide more driver enjoyment than power modifications on N52 cars"
+    }
+  },
+  "forced_induction": {
+    "disclaimer": "Forced induction on N52 is generally NOT recommended",
+    "reasons_against": [
+      "Magnesium block has thermal management concerns under boost",
+      "Low compression ratio (10.7:1) not optimal for turbo efficiency",
+      "Valvetronic system complexity with boost control",
+      "Cost approaches or exceeds N54/N55 swap",
+      "Limited supporting aftermarket",
+      "Reliability concerns"
+    ],
+    "historical_kits": {
+      "description": "Some supercharger kits existed but are now largely discontinued",
+      "examples": [
+        {
+          "brand": "ESS Tuning",
+          "type": "Centrifugal supercharger",
+          "status": "Discontinued",
+          "power_potential": "300-350 HP",
+          "notes": "Was available but limited support now"
+        }
+      ]
+    },
+    "recommended_alternative": {
+      "description": "For those wanting forced induction power from a BMW inline-6",
+      "options": [
+        {
+          "option": "N54/N55 engine swap",
+          "description": "Swap to turbocharged N54 or N55 engine",
+          "cost_range": "$5000-10000 (DIY) / $10000-15000 (shop)",
+          "power_potential": "300-600+ HP with supporting mods",
+          "notes": "Well-documented swaps, extensive aftermarket support"
+        },
+        {
+          "option": "Different vehicle",
+          "description": "Purchase 335i, 135i, or similar with N54/N55",
+          "notes": "Often more cost-effective than extensive N52 modification"
+        }
+      ]
+    }
+  },
+  "community_resources": {
+    "forums": [
+      {
+        "name": "Bimmerpost",
+        "url": "https://www.bimmerpost.com",
+        "description": "Largest BMW enthusiast forum",
+        "relevant_sections": ["E90 Forum", "E60 Forum", "DIY Section"],
+        "activity": "Very Active"
+      },
+      {
+        "name": "Bimmerfest",
+        "url": "https://www.bimmerfest.com",
+        "description": "Long-standing BMW community",
+        "relevant_sections": ["E90/E91/E92/E93 Forum", "E60/E61 Forum"],
+        "activity": "Active"
+      },
+      {
+        "name": "E90Post",
+        "url": "https://www.e90post.com",
+        "description": "E90/E91/E92/E93 specific forum",
+        "relevant_sections": ["N52 Engine Forum", "DIY Section"],
+        "activity": "Active"
+      },
+      {
+        "name": "BMW Reddit",
+        "url": "https://www.reddit.com/r/BMW",
+        "description": "BMW subreddit community",
+        "activity": "Very Active"
+      },
+      {
+        "name": "SpoolStreet",
+        "url": "https://www.spoolstreet.com",
+        "description": "BMW performance forum",
+        "relevant_sections": ["N52 discussions (limited)"],
+        "activity": "Moderate",
+        "notes": "More focused on turbocharged engines"
+      }
+    ],
+    "youtube_channels": [
+      {
+        "channel": "50's Kid",
+        "focus": "BMW DIY repair and maintenance",
+        "n52_content": "Multiple N52 repair videos",
+        "subscriber_count": "500k+"
+      },
+      {
+        "channel": "ShopLifeTV",
+        "focus": "BMW technician perspective",
+        "n52_content": "Common failure analysis"
+      },
+      {
+        "channel": "FCP Euro",
+        "focus": "European car DIY",
+        "n52_content": "Maintenance tutorials"
+      },
+      {
+        "channel": "DIY BMW Repairs",
+        "focus": "Specifically BMW repairs",
+        "n52_content": "Several N52 procedure videos"
+      }
+    ],
+    "facebook_groups": [
+      {
+        "name": "BMW E90/E92/E93 Owners",
+        "members": "100k+",
+        "focus": "E90 platform general discussion"
+      },
+      {
+        "name": "BMW N52 Engine Owners",
+        "focus": "N52 specific discussions and troubleshooting"
+      }
+    ]
+  },
+  "professional_services": {
+    "independent_specialists": {
+      "description": "Independent BMW specialist shops often provide better value than dealerships",
+      "what_to_look_for": [
+        "BMW certification or extensive BMW experience",
+        "Access to ISTA diagnostic equipment",
+        "Familiarity with N52-specific issues",
+        "Willingness to use quality OE-equivalent parts"
+      ],
+      "typical_labor_rates": {
+        "independent_specialist": "$100-150/hour",
+        "dealership": "$150-250/hour",
+        "general_mechanic": "$80-120/hour (may lack BMW expertise)"
+      }
+    },
+    "common_service_costs": {
+      "oil_change": {
+        "diy": "$60-80",
+        "independent": "$100-150",
+        "dealer": "$150-200"
+      },
+      "water_pump_replacement": {
+        "diy": "$250-400",
+        "independent": "$600-900",
+        "dealer": "$1000-1400"
+      },
+      "valve_cover_gasket": {
+        "diy": "$100-400 (depends on valve cover replacement)",
+        "independent": "$600-1000",
+        "dealer": "$1000-1500"
+      },
+      "vanos_solenoid_replacement": {
+        "diy": "$200-400",
+        "independent": "$400-600",
+        "dealer": "$600-900"
+      },
+      "cooling_system_refresh": {
+        "diy": "$400-600",
+        "independent": "$1000-1500",
+        "dealer": "$1800-2500"
+      }
+    }
+  },
+  "buying_guide": {
+    "for_used_n52_vehicles": {
+      "description": "What to look for when purchasing an N52-powered BMW",
+      "pre_purchase_inspection": [
+        "Check for oil leaks (valve cover, oil filter housing)",
+        "Verify no coolant leaks or overheating history",
+        "Listen for VANOS rattles on cold start",
+        "Check for rough idle (Valvetronic issues)",
+        "Pull fault codes with ISTA/compatible scanner",
+        "Verify electric water pump operation",
+        "Check service records for maintenance history"
+      ],
+      "maintenance_history_red_flags": [
+        "No record of oil changes or infrequent changes",
+        "Overheating incidents",
+        "Multiple VANOS-related repairs",
+        "Valve cover replaced multiple times"
+      ],
+      "ideal_candidate": [
+        "Complete service records",
+        "Recent cooling system refresh (80k+)",
+        "VANOS solenoids recently serviced",
+        "Single owner or documented ownership",
+        "Garaged and well-maintained"
+      ],
+      "expected_costs_after_purchase": {
+        "well_maintained": "$500-1000/year average maintenance",
+        "deferred_maintenance": "$2000-5000 catch-up, then normal maintenance",
+        "notes": "N52 is generally reliable but requires proper maintenance"
+      }
+    }
+  },
+  "long_term_ownership": {
+    "reliability_assessment": {
+      "overall": "Good - Above average for BMW",
+      "strengths": [
+        "Timing chain typically lasts 200k+ miles",
+        "No turbo components to fail",
+        "Valvetronic rarely fails catastrophically",
+        "Strong aftermarket support for maintenance"
+      ],
+      "weaknesses": [
+        "Electric water pump finite lifespan",
+        "Various gasket/seal age-related leaks",
+        "VANOS solenoid maintenance required",
+        "Magnesium block not rebuildable traditionally"
+      ]
+    },
+    "high_mileage_considerations": {
+      "100k_plus_miles": {
+        "expected_maintenance": [
+          "Cooling system refresh if not done",
+          "VANOS solenoid service",
+          "Various gaskets as they leak",
+          "Accessory drive components"
+        ],
+        "reliability": "Good with proper maintenance"
+      },
+      "200k_plus_miles": {
+        "expected_maintenance": [
+          "Possible timing chain guides",
+          "Engine mounts",
+          "Additional cooling system components",
+          "Sensors as they age"
+        ],
+        "reliability": "Varies based on maintenance history",
+        "notes": "Well-maintained N52s regularly reach 200k+"
+      }
+    },
+    "ownership_costs": {
+      "compared_to_japanese_na_inline_6": "Higher maintenance costs but comparable reliability",
+      "compared_to_n54_n55": "Lower maintenance costs, fewer critical failure points",
+      "compared_to_american_v8": "Similar maintenance costs, more specialized parts"
+    }
+  }
+}

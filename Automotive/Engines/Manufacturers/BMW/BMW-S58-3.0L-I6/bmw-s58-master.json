@@ -1,0 +1,271 @@
+{
+  "engine_id": "BMW-S58-3.0L-I6-TWIN-TURBO",
+  "common_names": [
+    "S58",
+    "S58B30",
+    "BMW S58",
+    "M TwinPower Turbo"
+  ],
+  "manufacturer": "BMW M GmbH",
+  "production_years": "2019-present",
+  "engine_type": "Inline-6 Twin-Turbocharged Petrol",
+  "based_on": "B58 architecture with M-specific enhancements",
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.993,
+      "cc": 2993,
+      "cubic_inches": 182.6
+    },
+    "bore": {
+      "mm": 84.0,
+      "inches": 3.307
+    },
+    "stroke": {
+      "mm": 90.0,
+      "inches": 3.543
+    },
+    "compression_ratio": "9.3:1",
+    "block_material": "Closed-deck aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": {
+      "configuration": "DOHC",
+      "valves_per_cylinder": 4,
+      "total_valves": 24,
+      "variable_timing": "Double VANOS (intake and exhaust)",
+      "variable_lift": "Valvetronic IV",
+      "timing_drive": "Chain-driven"
+    },
+    "forced_induction": {
+      "type": "Twin Turbochargers",
+      "configuration": "Parallel twin-scroll",
+      "manufacturer": "BorgWarner",
+      "boost_pressure_bar": 1.7,
+      "max_boost_psi": 24.7,
+      "intercooler": "Air-to-water"
+    },
+    "fuel_system": {
+      "type": "Direct Injection",
+      "fuel_pressure_bar": 350,
+      "injector_type": "Piezo direct injection",
+      "injector_count": 6
+    },
+    "ignition_system": {
+      "type": "Coil-on-plug",
+      "spark_plugs": "NGK SILKAR8C8S",
+      "spark_plug_gap_mm": 0.7
+    },
+    "dry_sump": true,
+    "oil_capacity_liters": 8.5
+  },
+  "power_output_by_variant": {
+    "S58B30T0_standard": {
+      "code": "S58B30T0",
+      "applications": ["M3 G80", "M4 G82/G83", "X3 M F97", "X4 M F98"],
+      "power_hp": 473,
+      "power_kw": 353,
+      "torque_nm": 550,
+      "torque_lb_ft": 406,
+      "redline_rpm": 7200,
+      "max_power_rpm": 6250,
+      "max_torque_rpm": "2750-5500",
+      "production_years": "2019-present"
+    },
+    "S58B30T0_competition": {
+      "code": "S58B30T0",
+      "applications": ["M3 Competition G80", "M4 Competition G82/G83", "X3 M Competition", "X4 M Competition"],
+      "power_hp": 503,
+      "power_kw": 375,
+      "torque_nm": 650,
+      "torque_lb_ft": 479,
+      "redline_rpm": 7200,
+      "max_power_rpm": 6250,
+      "max_torque_rpm": "2750-5500",
+      "production_years": "2019-present"
+    },
+    "S58B30T0_cs": {
+      "code": "S58B30T0",
+      "applications": ["M3 CS", "M4 CSL"],
+      "power_hp": 543,
+      "power_kw": 405,
+      "torque_nm": 650,
+      "torque_lb_ft": 479,
+      "redline_rpm": 7200,
+      "max_power_rpm": 6250,
+      "max_torque_rpm": "2750-5500",
+      "production_years": "2023-present",
+      "notes": "Highest output S58 variant"
+    }
+  },
+  "vehicle_applications": {
+    "m3_g80": {
+      "model": "M3 (G80)",
+      "years": "2021-present",
+      "body": "Sedan",
+      "variants": {
+        "M3": {"hp": 473, "drivetrain": "RWD", "transmission": "6MT/8AT"},
+        "M3_Competition": {"hp": 503, "drivetrain": "RWD", "transmission": "8AT"},
+        "M3_Competition_xDrive": {"hp": 503, "drivetrain": "AWD", "transmission": "8AT"},
+        "M3_CS": {"hp": 543, "drivetrain": "AWD", "transmission": "8AT"}
+      }
+    },
+    "m4_g82_g83": {
+      "model": "M4 (G82 Coupe / G83 Convertible)",
+      "years": "2021-present",
+      "variants": {
+        "M4": {"hp": 473, "drivetrain": "RWD", "transmission": "6MT/8AT"},
+        "M4_Competition": {"hp": 503, "drivetrain": "RWD", "transmission": "8AT"},
+        "M4_Competition_xDrive": {"hp": 503, "drivetrain": "AWD", "transmission": "8AT"},
+        "M4_CSL": {"hp": 543, "drivetrain": "RWD", "transmission": "8AT"}
+      }
+    },
+    "x3m_f97": {
+      "model": "X3 M (F97)",
+      "years": "2019-present",
+      "body": "SUV",
+      "variants": {
+        "X3_M": {"hp": 473, "drivetrain": "AWD", "transmission": "8AT"},
+        "X3_M_Competition": {"hp": 503, "drivetrain": "AWD", "transmission": "8AT"}
+      }
+    },
+    "x4m_f98": {
+      "model": "X4 M (F98)",
+      "years": "2019-present",
+      "body": "SUV Coupe",
+      "variants": {
+        "X4_M": {"hp": 473, "drivetrain": "AWD", "transmission": "8AT"},
+        "X4_M_Competition": {"hp": 503, "drivetrain": "AWD", "transmission": "8AT"}
+      }
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 8.5,
+      "specification": "BMW LL-01 FE or LL-17 FE+",
+      "viscosity": "0W-30",
+      "recommended_brands": ["Castrol EDGE Professional", "Shell Helix Ultra", "Liqui Moly"],
+      "notes": "Dry sump system requires more oil"
+    },
+    "coolant": {
+      "capacity_liters": 12.0,
+      "specification": "BMW Antifreeze/Coolant"
+    },
+    "transmission_auto": {
+      "capacity_liters": 9.7,
+      "specification": "ZF Lifeguard 8"
+    }
+  },
+  "service_intervals": {
+    "oil_change": {
+      "interval_miles": 10000,
+      "interval_km": 15000,
+      "time_months": 12,
+      "track_interval_miles": 3000,
+      "notes": "Shorter intervals recommended for track use"
+    },
+    "spark_plugs": {
+      "interval_miles": 45000,
+      "interval_km": 72000,
+      "notes": "Check more frequently if tuned"
+    },
+    "air_filter": {
+      "interval_miles": 30000,
+      "interval_km": 48000
+    },
+    "transmission_fluid": {
+      "interval_miles": 50000,
+      "interval_km": 80000,
+      "notes": "BMW claims lifetime, but service recommended"
+    }
+  },
+  "differences_from_b58": {
+    "crankshaft": "Forged steel (vs B58 forged)",
+    "connecting_rods": "Forged steel, lighter",
+    "pistons": "M-specific forged, oil-cooled",
+    "turbochargers": "Twin turbos (vs single twin-scroll on B58)",
+    "exhaust_manifold": "Twin-scroll design per turbo",
+    "intercooler": "Larger air-to-water",
+    "oil_system": "Dry sump with separate oil tank",
+    "fuel_system": "Higher pressure (350 bar vs 200 bar)",
+    "cylinder_head": "Revised ports, larger valves",
+    "block": "Reinforced for higher cylinder pressures"
+  },
+  "known_issues": {
+    "crank_hub": {
+      "severity": "High",
+      "symptoms": ["Timing issues", "Misfires", "Engine damage possible"],
+      "cause": "Crank hub can slip under high torque loads",
+      "solution": "Upgraded crank hub retainer (ARP, etc.)",
+      "notes": "Critical for any tuned car - address before adding power"
+    },
+    "charge_pipe": {
+      "severity": "Low",
+      "symptoms": ["Boost leak", "Pop under load"],
+      "cause": "Plastic charge pipe can crack",
+      "solution": "Upgraded aluminum charge pipe"
+    },
+    "rod_bearing_monitoring": {
+      "severity": "Medium",
+      "symptoms": ["Metallic sounds", "Oil analysis showing wear metals"],
+      "cause": "High-performance use can accelerate wear",
+      "solution": "Regular oil analysis, upgraded bearings for track cars"
+    }
+  },
+  "tuning_potential": {
+    "stage_1": {
+      "description": "ECU tune only",
+      "power_hp": "580-620",
+      "torque_nm": "750-800",
+      "requirements": ["ECU tune"],
+      "estimated_cost_usd": 1500
+    },
+    "stage_2": {
+      "description": "ECU tune + downpipes + intake",
+      "power_hp": "650-700",
+      "torque_nm": "850-900",
+      "requirements": ["ECU tune", "Catless downpipes", "High-flow intake", "Charge pipe upgrade"],
+      "estimated_cost_usd": 5000
+    },
+    "stage_2_plus": {
+      "description": "Full bolt-ons + E85",
+      "power_hp": "750-800",
+      "torque_nm": "950-1000",
+      "requirements": ["ECU tune", "Downpipes", "Intake", "E85 or meth", "Upgraded LPFP", "Upgraded intercooler"],
+      "estimated_cost_usd": 10000
+    },
+    "hybrid_turbo": {
+      "description": "Pure/Vargas hybrid turbos",
+      "power_hp": "900-1000+",
+      "requirements": ["Hybrid turbos", "Built LPFP", "Port injection", "Upgraded intercooler", "Crank hub fix"],
+      "estimated_cost_usd": 20000
+    },
+    "critical_upgrades_before_tuning": [
+      "Crank hub retainer (ARP/IND)",
+      "Aluminum charge pipe",
+      "Quality oil at short intervals"
+    ]
+  },
+  "notes": {
+    "heritage": "Evolution of B58 for M applications - BMW's most powerful production inline-6",
+    "strengths": [
+      "Tremendous power from factory (up to 543hp)",
+      "Excellent tuning potential (800+ hp achievable)",
+      "Dry sump allows for high-G cornering",
+      "Very responsive twin-turbo system",
+      "Strong aftermarket support"
+    ],
+    "weaknesses": [
+      "Crank hub issue must be addressed for tuned cars",
+      "Complex dry sump system",
+      "Expensive to maintain and repair",
+      "Limited manual transmission option"
+    ],
+    "comparison_to_s55": [
+      "More power and torque stock",
+      "Better fuel economy",
+      "Quieter and smoother operation",
+      "Larger displacement (2993cc vs 2979cc)",
+      "Higher fuel pressure system"
+    ]
+  }
+}

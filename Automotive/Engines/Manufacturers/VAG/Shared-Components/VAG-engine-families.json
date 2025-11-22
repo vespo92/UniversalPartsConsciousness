@@ -1,0 +1,243 @@
+{
+  "manufacturer": "Volkswagen AG",
+  "description": "Overview of VAG engine families and cross-brand compatibility",
+  "version": "1.0.0",
+  "brands_overview": {
+    "volkswagen": {
+      "parent": true,
+      "headquarters": "Wolfsburg, Germany",
+      "engine_prefix": "TSI/TDI"
+    },
+    "audi": {
+      "parent": false,
+      "headquarters": "Ingolstadt, Germany",
+      "engine_prefix": "TFSI/TDI",
+      "notes": "Premium brand using VAG platforms"
+    },
+    "porsche": {
+      "parent": false,
+      "headquarters": "Stuttgart, Germany",
+      "vag_engines": "Uses EA888 variants in base models (Macan, Cayenne base)",
+      "notes": "Mostly independent engine development for sports cars"
+    },
+    "seat": {
+      "parent": false,
+      "headquarters": "Martorell, Spain",
+      "engine_prefix": "TSI/TDI",
+      "notes": "Spanish brand, uses full VAG platform sharing"
+    },
+    "skoda": {
+      "parent": false,
+      "headquarters": "Mladá Boleslav, Czech Republic",
+      "engine_prefix": "TSI/TDI",
+      "notes": "Czech brand, full VAG platform sharing"
+    },
+    "lamborghini": {
+      "parent": false,
+      "headquarters": "Sant'Agata Bolognese, Italy",
+      "vag_engines": "Uses VAG V10 (Audi-derived) in Huracan",
+      "notes": "Urus uses VAG-derived twin-turbo V8"
+    },
+    "bentley": {
+      "parent": false,
+      "headquarters": "Crewe, England",
+      "vag_engines": "Uses VAG W12 and V8 engines",
+      "notes": "Luxury brand with VAG powertrains"
+    },
+    "bugatti": {
+      "parent": false,
+      "headquarters": "Molsheim, France",
+      "vag_engines": "W16 (quad-turbo, VAG architecture)",
+      "notes": "Hypercar division"
+    }
+  },
+  "engine_families": {
+    "petrol_4_cylinder": {
+      "EA211": {
+        "displacement": "1.0L - 1.5L",
+        "configuration": "I4",
+        "years": "2012-present",
+        "applications": [
+          "VW Golf 7/8",
+          "Audi A1/A3",
+          "SEAT Leon/Ibiza",
+          "Skoda Octavia/Fabia"
+        ],
+        "key_variants": [
+          "1.0 TSI (95-115hp)",
+          "1.4 TSI/TFSI (125-150hp)",
+          "1.5 TSI evo (130-150hp)"
+        ],
+        "shared_components": {
+          "turbo_is12": "IHI IS12 - shared across all 1.4T",
+          "timing_system": "Wet belt system",
+          "fuel_injection": "Direct injection (Gen1) or Combined DI+PI (Gen2)"
+        },
+        "database_reference": "../Audi/AUDI-EA211-1.4L-TFSI-I4/"
+      },
+      "EA888": {
+        "displacement": "1.8L - 2.0L",
+        "configuration": "I4",
+        "years": "2008-present",
+        "generations": ["Gen1", "Gen2", "Gen3", "Gen3B", "Gen4"],
+        "applications": [
+          "VW Golf GTI/R",
+          "Audi A3/S3/TT/TTS",
+          "SEAT Leon Cupra",
+          "Skoda Octavia RS",
+          "Porsche Macan base"
+        ],
+        "key_variants": [
+          "2.0 TSI/TFSI 180-230hp (IS20)",
+          "2.0 TSI/TFSI 280-333hp (IS38)"
+        ],
+        "shared_components": {
+          "turbo_is20": "IHI IS20 - GTI/A3/TT applications",
+          "turbo_is38": "IHI IS38 - Golf R/S3/TTS/Cupra",
+          "timing_system": "Chain drive",
+          "fuel_injection": "DI only (Gen1-2) or Combined DI+PI (Gen3+)"
+        },
+        "database_reference": "../Audi/AUDI-EA888-2.0L-TFSI-I4/"
+      },
+      "EA855_evo": {
+        "displacement": "2.5L",
+        "configuration": "I5",
+        "years": "2017-present",
+        "applications": [
+          "Audi RS3",
+          "Audi TT RS",
+          "Audi RS Q3"
+        ],
+        "key_variant": "2.5 TFSI 400hp",
+        "notes": "5-cylinder performance engine"
+      }
+    },
+    "petrol_6_cylinder": {
+      "EA839": {
+        "displacement": "2.9L - 3.0L",
+        "configuration": "V6 Twin-Turbo",
+        "years": "2016-present",
+        "applications": [
+          "Audi S4/S5/S6/S7",
+          "Audi SQ5/SQ7",
+          "Porsche Macan S/GTS"
+        ],
+        "key_variants": [
+          "2.9 TFSI 450hp",
+          "3.0 TFSI 340-354hp"
+        ]
+      }
+    },
+    "petrol_8_cylinder": {
+      "EA825": {
+        "displacement": "4.0L",
+        "configuration": "V8 Twin-Turbo",
+        "years": "2017-present",
+        "applications": [
+          "Audi RS6/RS7",
+          "Audi RSQ8",
+          "Lamborghini Urus",
+          "Bentley Continental GT",
+          "Porsche Cayenne Turbo/Turbo S"
+        ],
+        "key_variants": [
+          "4.0 TFSI 600hp (RS6/RS7)",
+          "4.0 TFSI 650hp (Urus)"
+        ],
+        "notes": "Shared architecture across luxury/performance brands"
+      }
+    },
+    "diesel_4_cylinder": {
+      "EA288": {
+        "displacement": "1.6L - 2.0L",
+        "configuration": "I4 TDI",
+        "years": "2012-present",
+        "applications": "All VAG brands",
+        "key_variants": [
+          "1.6 TDI (90-120hp)",
+          "2.0 TDI (150-200hp)"
+        ]
+      },
+      "EA288_evo": {
+        "displacement": "2.0L",
+        "configuration": "I4 TDI",
+        "years": "2019-present",
+        "notes": "Twin-dosing SCR emissions system"
+      }
+    }
+  },
+  "platform_sharing": {
+    "MQB": {
+      "full_name": "Modularer Querbaukasten (Modular Transverse Matrix)",
+      "years": "2012-present",
+      "orientation": "Transverse (FWD/AWD)",
+      "vehicles": {
+        "volkswagen": ["Golf", "Jetta", "Tiguan", "Passat", "Arteon"],
+        "audi": ["A3", "Q2", "Q3", "TT"],
+        "seat": ["Leon", "Ateca", "Tarraco"],
+        "skoda": ["Octavia", "Karoq", "Kodiaq", "Superb"]
+      },
+      "engine_compatibility": "EA211, EA888 all generations",
+      "notes": "Most common VAG platform"
+    },
+    "MLB": {
+      "full_name": "Modularer Längsbaukasten (Modular Longitudinal Matrix)",
+      "years": "2015-present",
+      "orientation": "Longitudinal (AWD focused)",
+      "vehicles": {
+        "audi": ["A4", "A5", "A6", "A7", "A8", "Q5", "Q7", "Q8"],
+        "porsche": ["Macan", "Cayenne"],
+        "bentley": ["Bentayga"],
+        "lamborghini": ["Urus"]
+      },
+      "engine_compatibility": "EA888 (transverse adapted), EA839, EA825"
+    },
+    "MSB": {
+      "full_name": "Modular Sports Platform",
+      "years": "2017-present",
+      "vehicles": ["Porsche Panamera", "Bentley Continental GT", "Bentley Flying Spur"],
+      "notes": "Porsche-developed sports/luxury platform"
+    },
+    "PQ35": {
+      "full_name": "A-platform",
+      "years": "2003-2013",
+      "vehicles": ["Golf 5/6", "Audi A3 8P", "Tiguan 1"],
+      "engine_compatibility": "EA888 Gen1/Gen2",
+      "notes": "Predecessor to MQB"
+    }
+  },
+  "parts_interchangeability_summary": {
+    "fully_shared_across_brands": [
+      "Engine blocks (same family)",
+      "Rotating assemblies",
+      "Turbochargers (IS12/IS20/IS38)",
+      "Fuel pumps (HPFP/LPFP)",
+      "Fuel injectors",
+      "Timing components",
+      "Oil filters",
+      "Spark plugs",
+      "Ignition coils",
+      "Most sensors",
+      "ECU hardware (calibration varies)"
+    ],
+    "vehicle_specific_parts": [
+      "Air filter housing (packaging)",
+      "Intake manifold (some variations)",
+      "Intercooler (mounting points)",
+      "Exhaust system (routing)",
+      "Engine mounts (chassis specific)",
+      "Coolant hoses (routing)"
+    ],
+    "calibration_specific": [
+      "ECU software",
+      "TCU software",
+      "Boost maps",
+      "Fuel maps"
+    ]
+  },
+  "aftermarket_notes": {
+    "tuning_compatibility": "All VAG 4-cylinder engines share tuning platform - APR, Unitronic, IE, etc. support all brands",
+    "parts_sourcing": "OEM parts can be sourced from any VAG dealer regardless of brand badge",
+    "cross_brand_swaps": "IS38 from Golf R fits Audi A3, SEAT Leon, Skoda Octavia etc."
+  }
+}

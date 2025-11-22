@@ -1,0 +1,191 @@
+{
+  "component_id": "VAG-TURBO-IS20",
+  "description": "IHI IS20 Turbocharger - Shared across VAG 2.0T applications",
+  "manufacturer": "IHI Corporation",
+  "version": "1.0.0",
+  "specifications": {
+    "type": "Single turbocharger",
+    "wastegate": "Internal electronic",
+    "bearing_type": "Journal bearing",
+    "compressor_wheel": {
+      "inducer_mm": 40,
+      "exducer_mm": 51,
+      "trim": 62
+    },
+    "turbine_wheel": {
+      "inducer_mm": 47,
+      "exducer_mm": 42,
+      "trim": 80
+    },
+    "a_r_ratio": {
+      "compressor": 0.52,
+      "turbine": 0.82
+    },
+    "max_rpm": 220000,
+    "max_boost_bar": 1.5,
+    "oil_flow_lpm": 1.2,
+    "coolant_cooled": true
+  },
+  "oem_part_numbers": {
+    "early_2014_2016": "06K145874L",
+    "revised_2016_plus": "06K145874M",
+    "latest_revision": "06K145874N",
+    "notes": "All versions interchangeable - later versions have minor improvements"
+  },
+  "vehicle_applications": {
+    "volkswagen": {
+      "golf_gti_mk7": {
+        "years": "2014-2020",
+        "power_hp": "220-245",
+        "engine_code": "CXCA/DLBA"
+      },
+      "golf_gti_mk7_5": {
+        "years": "2018-2020",
+        "power_hp": "228-245",
+        "engine_code": "DLBA"
+      },
+      "jetta_gli_mk7": {
+        "years": "2019-present",
+        "power_hp": "228"
+      },
+      "tiguan_2.0t": {
+        "years": "2018-present",
+        "power_hp": "184-230"
+      }
+    },
+    "audi": {
+      "a3_8v_2.0_tfsi": {
+        "years": "2014-2020",
+        "power_hp": "190-220",
+        "engine_code": "CZPB/CYPB"
+      },
+      "q3_f3_35_tfsi": {
+        "years": "2019-present",
+        "power_hp": "150-230"
+      },
+      "tt_8s_2.0_tfsi": {
+        "years": "2015-present",
+        "power_hp": "230"
+      }
+    },
+    "seat": {
+      "leon_cupra_280": {
+        "years": "2014-2017",
+        "power_hp": "280",
+        "notes": "Higher boost map than GTI"
+      },
+      "ateca_2.0_tsi": {
+        "years": "2016-present",
+        "power_hp": "190"
+      }
+    },
+    "skoda": {
+      "octavia_rs_245": {
+        "years": "2017-2020",
+        "power_hp": "245"
+      },
+      "superb_2.0_tsi": {
+        "years": "2015-present",
+        "power_hp": "220"
+      }
+    }
+  },
+  "stock_performance": {
+    "standard_tune": {
+      "power_hp": "220-230",
+      "torque_nm": "350-370",
+      "spool_rpm": 2500,
+      "peak_boost_psi": 18
+    },
+    "performance_pack_tune": {
+      "power_hp": "245",
+      "torque_nm": "370",
+      "peak_boost_psi": 20
+    }
+  },
+  "tuning_potential": {
+    "stage_1": {
+      "description": "ECU tune only",
+      "power_hp": "280-300",
+      "torque_nm": "400-420",
+      "spool_rpm": 2400,
+      "peak_boost_psi": 24,
+      "supporting_mods": "None required"
+    },
+    "stage_2": {
+      "description": "ECU tune + downpipe + intake",
+      "power_hp": "320-340",
+      "torque_nm": "440-460",
+      "peak_boost_psi": 26,
+      "supporting_mods": ["Downpipe", "Cold air intake", "Intercooler recommended"]
+    },
+    "stage_2_plus": {
+      "description": "Maximum IS20 output",
+      "power_hp": "340-360",
+      "torque_nm": "460-480",
+      "peak_boost_psi": 28,
+      "supporting_mods": ["Downpipe", "Intake", "Upgraded intercooler", "Upgraded HPFP"],
+      "notes": "Pushing IS20 efficiency limits"
+    },
+    "max_reliable_output": {
+      "power_hp": 350,
+      "torque_nm": 470,
+      "notes": "Beyond this, turbo efficiency drops significantly - upgrade to IS38"
+    }
+  },
+  "upgrade_paths": {
+    "is38_swap": {
+      "description": "Direct bolt-on upgrade from Golf R/S3",
+      "part_numbers": ["06K145874F", "06K145874G"],
+      "power_potential_hp": "370-450",
+      "cost_used_usd": 800,
+      "cost_new_usd": 1400,
+      "required_changes": ["IS38 ECU tune"],
+      "notes": "Most popular upgrade - significantly larger turbo"
+    },
+    "hybrid_is20_tte420": {
+      "description": "TTE420 hybrid in IS20 housing",
+      "vendor": "TTE Performance",
+      "power_potential_hp": "400-420",
+      "cost_usd": 1899,
+      "advantages": ["Stock-like spool", "Fits in IS20 location"],
+      "notes": "Upgraded wheels in OEM housing"
+    },
+    "frankenturbo_f4h": {
+      "description": "Frankenturbo hybrid",
+      "vendor": "Frankenturbo",
+      "power_potential_hp": "350-380",
+      "cost_usd": 1299
+    }
+  },
+  "common_failures": {
+    "wastegate_actuator": {
+      "symptoms": ["Boost spikes", "Limp mode", "Rattle"],
+      "cause": "Electronic actuator wear",
+      "solution": "Replace wastegate actuator",
+      "part_number": "06K145725B"
+    },
+    "shaft_play": {
+      "symptoms": ["Oil consumption", "Smoke", "Whine"],
+      "cause": "Bearing wear at high mileage",
+      "solution": "Replace turbocharger"
+    },
+    "compressor_wheel_damage": {
+      "symptoms": ["Reduced boost", "Strange sounds"],
+      "cause": "Foreign object damage or surge",
+      "solution": "Replace turbocharger"
+    }
+  },
+  "service_notes": {
+    "oil_requirements": "Use VW 504/507 or 508/509 spec oil",
+    "cool_down_period": "30-60 seconds at idle after hard driving",
+    "inspection_interval": "Check for shaft play every 60k miles",
+    "pre_start_prime": "Let oil pressure build before revving"
+  },
+  "cross_references": {
+    "related_turbos": {
+      "is12": "Smaller turbo from 1.4T - IS20 is direct upgrade",
+      "is38": "Larger turbo from Golf R/S3 - upgrade from IS20"
+    }
+  }
+}

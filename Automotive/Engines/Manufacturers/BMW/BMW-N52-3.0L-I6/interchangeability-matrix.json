@@ -1,0 +1,442 @@
+{
+  "metadata": {
+    "engine_family": "BMW N52",
+    "matrix_version": "1.0.0",
+    "last_updated": "2025-01-15",
+    "disclaimer": "Always verify part compatibility with VIN and production date. This matrix provides general guidance only."
+  },
+  "variant_interchangeability": {
+    "description": "Compatibility between N52 engine variants",
+    "N52B25_to_N52B30": {
+      "overall_compatibility": "High - Same architecture, different displacement",
+      "shared_components": {
+        "block": {
+          "interchangeable": false,
+          "notes": "Different stroke/bore configuration"
+        },
+        "cylinder_head": {
+          "interchangeable": true,
+          "notes": "Same head, different calibration. Valvetronic components identical."
+        },
+        "crankshaft": {
+          "interchangeable": false,
+          "notes": "Same stroke but different balancing"
+        },
+        "connecting_rods": {
+          "interchangeable": true,
+          "notes": "Same length and specifications"
+        },
+        "pistons": {
+          "interchangeable": false,
+          "notes": "Different compression heights for different CR"
+        },
+        "camshafts": {
+          "interchangeable": true,
+          "notes": "Same profiles, different calibration"
+        },
+        "vanos_units": {
+          "interchangeable": true,
+          "notes": "Identical between variants"
+        },
+        "valvetronic_components": {
+          "interchangeable": true,
+          "notes": "Complete system interchangeable"
+        },
+        "intake_manifold": {
+          "interchangeable": true,
+          "notes": "Same part, ECU calibration differs"
+        },
+        "exhaust_manifolds": {
+          "interchangeable": true,
+          "notes": "Identical between variants"
+        },
+        "throttle_body": {
+          "interchangeable": true,
+          "notes": "Same specifications"
+        },
+        "fuel_injectors": {
+          "interchangeable": true,
+          "notes": "Same flow rate, ECU compensates"
+        },
+        "water_pump": {
+          "interchangeable": true,
+          "notes": "Identical electric water pump"
+        },
+        "oil_pump": {
+          "interchangeable": true,
+          "notes": "Same variable displacement pump"
+        },
+        "sensors": {
+          "interchangeable": true,
+          "notes": "All sensors identical between variants"
+        }
+      }
+    },
+    "standard_vs_high_output": {
+      "description": "N52B30 standard output vs high output variants",
+      "differences": {
+        "ecu_calibration": "Different maps for power/torque curves",
+        "exhaust_manifolds": "High output may have less restrictive cats",
+        "intake_manifold": "Identical hardware"
+      },
+      "conversion_feasibility": {
+        "software_only": "Possible with ECU flash/tune",
+        "hardware_changes": "Minimal - mostly software",
+        "notes": "Standard to high output conversion primarily requires ECU tuning"
+      }
+    },
+    "sulev_vs_standard": {
+      "description": "SULEV (KP) variant vs standard variants",
+      "sulev_specific_components": [
+        "Secondary air injection system",
+        "Close-coupled catalytic converters (different)",
+        "Enhanced EVAP system",
+        "Specific oxygen sensors",
+        "SULEV ECU calibration"
+      ],
+      "interchangeable_with_standard": [
+        "Internal engine components",
+        "Valvetronic system",
+        "VANOS system",
+        "Cooling system",
+        "Lubrication system"
+      ],
+      "notes": "SULEV vehicles have additional emissions hardware. Most internal components interchangeable."
+    }
+  },
+  "predecessor_compatibility": {
+    "M54_to_N52": {
+      "description": "M54 predecessor compatibility with N52",
+      "overall_compatibility": "Low - Significantly different architecture",
+      "major_differences": [
+        "N52 has magnesium/aluminum composite block vs M54 aluminum",
+        "N52 has Valvetronic, M54 does not",
+        "N52 has electric water pump, M54 has mechanical",
+        "Different ECU and wiring",
+        "Different engine mount positions",
+        "Different oil filter housing design"
+      ],
+      "shared_components": {
+        "connecting_rods": {
+          "interchangeable": false,
+          "notes": "Different specifications"
+        },
+        "transmission_bellhousing_pattern": {
+          "interchangeable": true,
+          "notes": "Same manual transmission pattern - allows M54/N52 transmission swap"
+        },
+        "some_sensors": {
+          "interchangeable": "Limited",
+          "notes": "Some sensors may be compatible but verify part numbers"
+        },
+        "accessory_drive_components": {
+          "interchangeable": "Limited",
+          "notes": "Some pulleys and belts may fit"
+        }
+      },
+      "swap_considerations": {
+        "m54_to_n52_swap": {
+          "difficulty": "High",
+          "requirements": [
+            "Complete engine harness",
+            "N52 ECU (DME)",
+            "N52 specific sensors",
+            "Modified motor mounts",
+            "N52 exhaust manifolds",
+            "N52 intake system",
+            "Cooling system modifications"
+          ],
+          "notes": "Popular swap for weight reduction. Requires significant electrical work."
+        },
+        "n52_to_m54_swap": {
+          "difficulty": "Medium-High",
+          "requirements": [
+            "M54 engine harness",
+            "M54 ECU",
+            "Mechanical water pump provisions",
+            "M54 intake manifold"
+          ],
+          "notes": "Rarely done - M54 is heavier with less power"
+        }
+      }
+    }
+  },
+  "successor_compatibility": {
+    "N52_to_N53": {
+      "description": "N53 direct injection successor (Europe only)",
+      "overall_compatibility": "Medium - Same basic architecture with direct injection",
+      "major_differences": [
+        "N53 has direct injection, N52 has port injection",
+        "N53 has high-pressure fuel system",
+        "Different cylinder head (DI injector bosses)",
+        "Different pistons (DI bowl design)",
+        "Different intake manifold (no fuel rails)",
+        "Different ECU for DI control"
+      ],
+      "shared_components": {
+        "block_architecture": "Similar external dimensions",
+        "valvetronic_system": "Largely interchangeable",
+        "vanos_system": "Similar design",
+        "cooling_system": "Similar components",
+        "some_sensors": "Several sensors compatible"
+      }
+    },
+    "N52_to_N55": {
+      "description": "N55 turbocharged successor compatibility",
+      "overall_compatibility": "Low - Different architecture (turbocharged)",
+      "swap_popularity": "Very popular upgrade swap",
+      "swap_requirements": [
+        "Complete N55 engine and turbo system",
+        "N55 wiring harness",
+        "N55 ECU",
+        "N55 exhaust system",
+        "Upgraded fuel system",
+        "Additional cooling (intercooler)",
+        "Modified engine mounts"
+      ],
+      "shared_components": {
+        "transmission_pattern": "Compatible with modifications",
+        "some_accessories": "Limited compatibility"
+      }
+    }
+  },
+  "cross_application_compatibility": {
+    "description": "Parts compatibility across different vehicle applications",
+    "E90_E60_compatibility": {
+      "shared_components": [
+        "All internal engine components",
+        "Valvetronic system",
+        "VANOS system",
+        "Intake manifold",
+        "Exhaust manifolds",
+        "Sensors",
+        "Electric water pump"
+      ],
+      "vehicle_specific_components": [
+        "Engine mounts (different between E90/E60)",
+        "Accessory brackets (may vary)",
+        "Wiring harness routing",
+        "Oil pan (some RWD vs xDrive differences)"
+      ]
+    },
+    "rwd_vs_xdrive": {
+      "description": "RWD vs xDrive (AWD) compatibility",
+      "differences": [
+        "Oil pan design (xDrive has transfer case provisions)",
+        "Some accessory brackets",
+        "Wiring harness routing"
+      ],
+      "shared_components": [
+        "Complete internal engine",
+        "Cylinder head assembly",
+        "Timing components",
+        "Most external components"
+      ]
+    },
+    "coupe_vs_sedan_vs_touring": {
+      "description": "Body style compatibility",
+      "engine_compatibility": "100% - Same engines regardless of body style",
+      "notes": "Engine components fully interchangeable across body styles within same chassis generation"
+    }
+  },
+  "aftermarket_parts_compatibility": {
+    "description": "Aftermarket parts interchange information",
+    "common_aftermarket_brands": {
+      "water_pumps": [
+        {
+          "brand": "Pierburg",
+          "compatibility": "OEM supplier - direct replacement",
+          "part_numbers": ["7.02851.20.0"]
+        },
+        {
+          "brand": "Continental/VDO",
+          "compatibility": "OEM supplier - direct replacement",
+          "part_numbers": ["A2C59514607"]
+        },
+        {
+          "brand": "Graf",
+          "compatibility": "Aftermarket - direct fit",
+          "quality": "Good"
+        }
+      ],
+      "thermostats": [
+        {
+          "brand": "Mahle Behr",
+          "compatibility": "OEM supplier - direct replacement",
+          "part_numbers": ["TM 14 97"]
+        },
+        {
+          "brand": "Wahler",
+          "compatibility": "Direct fit aftermarket",
+          "quality": "Good"
+        }
+      ],
+      "vanos_solenoids": [
+        {
+          "brand": "Pierburg",
+          "compatibility": "OEM supplier",
+          "notes": "Recommended for VANOS solenoids"
+        },
+        {
+          "brand": "Dorman",
+          "compatibility": "Aftermarket fit",
+          "quality": "Budget option",
+          "notes": "Mixed reviews - OEM recommended"
+        }
+      ],
+      "valve_covers": [
+        {
+          "brand": "OEM BMW",
+          "notes": "Recommended due to integrated CCV and eccentric shaft sensor"
+        },
+        {
+          "brand": "URO Parts",
+          "compatibility": "Aftermarket fit",
+          "quality": "Budget option",
+          "notes": "May not include all integrated components"
+        }
+      ],
+      "ignition_coils": [
+        {
+          "brand": "Bosch",
+          "compatibility": "OEM supplier - direct replacement",
+          "part_numbers": ["0221504470"]
+        },
+        {
+          "brand": "Delphi",
+          "compatibility": "OEM supplier - direct replacement",
+          "part_numbers": ["GN10571"]
+        },
+        {
+          "brand": "Eldor",
+          "compatibility": "OEM supplier",
+          "quality": "Excellent"
+        }
+      ],
+      "spark_plugs": [
+        {
+          "brand": "NGK",
+          "compatibility": "OEM equivalent",
+          "part_numbers": ["PLKR7A", "94290"]
+        },
+        {
+          "brand": "Bosch",
+          "compatibility": "Direct fit",
+          "part_numbers": ["ZR5TPP33S"]
+        }
+      ],
+      "oil_filters": [
+        {
+          "brand": "Mann",
+          "compatibility": "OEM supplier equivalent",
+          "part_numbers": ["HU 816 x"]
+        },
+        {
+          "brand": "Mahle",
+          "compatibility": "Direct fit",
+          "part_numbers": ["OX 387D"]
+        },
+        {
+          "brand": "Hengst",
+          "compatibility": "Direct fit",
+          "quality": "Good"
+        }
+      ]
+    }
+  },
+  "transmission_compatibility": {
+    "description": "Compatible transmissions for N52 engines",
+    "manual_transmissions": [
+      {
+        "code": "GS6-37BZ",
+        "type": "6-speed manual",
+        "torque_capacity_nm": 370,
+        "applications": ["E90 325i/328i", "E60 525i/528i"],
+        "notes": "Standard manual transmission"
+      },
+      {
+        "code": "GS6-53BZ",
+        "type": "6-speed manual",
+        "torque_capacity_nm": 530,
+        "applications": ["High performance variants"],
+        "notes": "Heavier duty, from 335i - can be retrofitted"
+      }
+    ],
+    "automatic_transmissions": [
+      {
+        "code": "GA6HP19Z",
+        "type": "6-speed automatic",
+        "manufacturer": "ZF",
+        "torque_capacity_nm": 400,
+        "applications": ["E90 325i/328i", "E82 128i"],
+        "notes": "Standard automatic transmission"
+      },
+      {
+        "code": "GA6HP21Z",
+        "type": "6-speed automatic",
+        "manufacturer": "ZF",
+        "torque_capacity_nm": 450,
+        "applications": ["E60 525i/528i/530i", "E70 X5"],
+        "notes": "Heavier duty for larger vehicles"
+      }
+    ]
+  },
+  "oem_suppliers": {
+    "description": "Original equipment suppliers for N52 components",
+    "suppliers": {
+      "engine_management": "Siemens VDO / Continental",
+      "fuel_injection": "Bosch",
+      "ignition": "Bosch / Delphi / Eldor",
+      "water_pump": "Pierburg / Continental",
+      "thermostat": "Mahle Behr / Wahler",
+      "oil_pump": "Schwabische Huttenwerke (SHW)",
+      "vanos": "INA / Hilite",
+      "valvetronic": "INA",
+      "gaskets": "Elring / Victor Reinz",
+      "bearings": "Glyco / Federal Mogul",
+      "sensors": "Bosch / Continental",
+      "alternator": "Bosch / Valeo",
+      "starter": "Bosch"
+    }
+  },
+  "production_changes": {
+    "description": "Production changes affecting parts compatibility",
+    "timeline": [
+      {
+        "date": "2004-09",
+        "change": "N52 production begins",
+        "notes": "Initial release with N52B30 in E60 530i"
+      },
+      {
+        "date": "2005-03",
+        "change": "N52B25 introduced",
+        "notes": "2.5L variant for entry-level models"
+      },
+      {
+        "date": "2007-03",
+        "change": "Valve cover revision",
+        "notes": "Updated CCV system integration. Not backwards compatible with early covers."
+      },
+      {
+        "date": "2007-09",
+        "change": "Eccentric shaft sensor integration",
+        "notes": "Sensor moved into valve cover on some models. Part number change for valve cover."
+      },
+      {
+        "date": "2008-01",
+        "change": "VANOS solenoid revision",
+        "notes": "Updated solenoid design with improved reliability. New part numbers."
+      },
+      {
+        "date": "2010-09",
+        "change": "Late production updates",
+        "notes": "Minor revisions for continued production in some markets"
+      }
+    ],
+    "compatibility_notes": {
+      "valve_covers": "Early and late valve covers not interchangeable due to CCV and sensor integration changes",
+      "vanos_solenoids": "Updated solenoids backward compatible but not recommended to mix old/new",
+      "sensors": "Most sensors consistent throughout production"
+    }
+  }
+}

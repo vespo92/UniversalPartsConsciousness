@@ -1,0 +1,694 @@
+{
+  "engine_id": "BMW-S55-3.0L-I6-TWINTURBO",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {"url": "https://www.fcpeuro.com", "specialty": "OEM/OE parts, lifetime warranty", "ships_from": "USA"},
+      "ecs_tuning": {"url": "https://www.ecstuning.com", "specialty": "OEM and performance parts", "ships_from": "USA"},
+      "getbmwparts": {"url": "https://www.getbmwparts.com", "specialty": "Genuine BMW parts", "ships_from": "USA"},
+      "realoem": {"url": "https://www.realoem.com", "specialty": "BMW parts diagrams/lookup", "type": "reference"},
+      "pelican_parts": {"url": "https://www.pelicanparts.com", "specialty": "BMW/European parts", "ships_from": "USA"},
+      "turner_motorsport": {"url": "https://www.turnermotorsport.com", "specialty": "BMW performance and OEM parts", "ships_from": "USA"}
+    },
+    "performance_parts": {
+      "vrsf": {"name": "VRSF", "url": "https://www.vrsf.com", "specialty": "Intercoolers, downpipes, charge pipes, intakes"},
+      "evolution_racewerks": {"name": "Evolution Racewerks", "url": "https://www.evolutionracewerks.com", "specialty": "Intercoolers, charge pipes, oil coolers"},
+      "bms": {"name": "Burger Motorsports", "url": "https://www.burgertuning.com", "specialty": "JB4, intakes, catch cans, port injection"},
+      "dinan": {"name": "Dinan", "url": "https://www.dinancars.com", "specialty": "Complete performance packages, warranty-safe"},
+      "active_autowerke": {"name": "Active Autowerke", "url": "https://www.activeautowerke.com", "specialty": "Exhausts, downpipes, tuning"},
+      "eventuri": {"name": "Eventuri", "url": "https://www.eventuri.net", "specialty": "Premium carbon fiber intakes"},
+      "csf": {"name": "CSF Racing", "url": "https://www.csfrace.com", "specialty": "Radiators, intercoolers, cooling products"},
+      "kw_suspensions": {"name": "KW Suspensions", "url": "https://www.kwsuspensions.com", "specialty": "Coilovers, suspension components"},
+      "agency_power": {"name": "Agency Power", "url": "https://www.agency-power.com", "specialty": "Carbon fiber parts, exhausts"},
+      "macht_schnell": {"name": "Macht Schnell", "url": "https://www.macht-schnell.com", "specialty": "Competition parts, aero"},
+      "rogue_engineering": {"name": "Rogue Engineering", "url": "https://www.rogueel.com", "specialty": "Performance parts, mounts"}
+    },
+    "crank_hub_specialists": {
+      "irp": {"name": "IRP Individual Racing Parts", "url": "https://www.irp-racing.com", "specialty": "Crank hub fix kits"},
+      "vac_motorsports": {"name": "VAC Motorsports", "url": "https://www.vacmotorsports.com", "specialty": "Crank hub kits, engine building"},
+      "atech_motorsports": {"name": "Atech Motorsports", "specialty": "Crank hub solutions"},
+      "cj_motorsports": {"name": "CJ Motorsports", "url": "https://www.cjmotorsportsonline.com", "specialty": "Crank hub installation, S55 builds"}
+    },
+    "turbo_specialists": {
+      "pure_turbos": {"name": "Pure Turbos", "url": "https://www.pureturbos.com", "specialty": "Hybrid turbo upgrades"},
+      "vargas_turbo": {"name": "Vargas Turbo Technologies (VTT)", "url": "https://www.vfracing.com", "specialty": "Hybrid turbos, single turbo kits"},
+      "ftp_motorsport": {"name": "FTP Motorsport", "url": "https://www.ftpmotorsport.com", "specialty": "Turbo upgrades, charge pipes"},
+      "doc_race": {"name": "Doc Race", "url": "https://www.docrace.com", "specialty": "Single turbo manifolds and kits"}
+    },
+    "tuning_software": {
+      "mhd": {"name": "MHD Flasher", "url": "https://www.mhdtuning.com", "platforms": ["iOS", "Android"], "cost": "$99-399", "notes": "Most popular S55 flash tuning"},
+      "bootmod3": {"name": "Bootmod3", "url": "https://www.protuningfreaks.com", "platforms": ["iOS", "Android", "Windows"], "cost": "$100-450"},
+      "ecutek": {"name": "ECUtek", "url": "https://www.ecutek.com", "type": "Professional flash", "notes": "Dealer-installed"},
+      "jb4": {"name": "Burger JB4", "url": "https://www.burgertuning.com", "type": "Piggyback", "cost": "$479-549", "notes": "No flash, removable"}
+    },
+    "custom_tuning_services": {
+      "wedge_performance": {"name": "Wedge Performance", "specialty": "Custom MHD/BM3 tunes"},
+      "ess_tuning": {"name": "ESS Tuning", "url": "https://www.esstuning.com", "specialty": "Supercharger and turbo tunes"},
+      "twist_n_shout": {"name": "Twist N Shout", "specialty": "E85 and high-power tunes"},
+      "emd_auto": {"name": "EMD Auto", "specialty": "Custom ECU calibration"}
+    },
+    "internal_engine": {
+      "cp_carrillo": {"url": "https://www.cp-carrillo.com", "specialty": "Forged pistons, connecting rods"},
+      "manley": {"url": "https://www.manleyperformance.com", "specialty": "Forged internals"},
+      "arp": {"url": "https://www.arp-bolts.com", "specialty": "High-strength fasteners"},
+      "cometic": {"url": "https://www.cometic.com", "specialty": "MLS head gaskets"},
+      "supertech": {"url": "https://www.supertechperformance.com", "specialty": "Valves, springs, retainers"},
+      "be_bearings": {"url": "https://www.bebearings.net", "specialty": "Coated rod and main bearings"},
+      "king_bearings": {"url": "https://www.kingbearings.com", "specialty": "Performance bearings"},
+      "acl": {"url": "https://www.aclbearings.com", "specialty": "Race bearings"}
+    },
+    "fuel_system": {
+      "deatschwerks": {"url": "https://www.deatschwerks.com", "specialty": "High-flow fuel pumps, injectors"},
+      "walbro": {"url": "https://www.walbro.com", "specialty": "In-tank fuel pumps"},
+      "sst_tuning": {"name": "SST Tuning", "specialty": "Port injection kits"},
+      "motiv": {"name": "Motiv Concepts", "specialty": "S55 port injection systems"}
+    },
+    "exhaust": {
+      "akrapovic": {"url": "https://www.akrapovic.com", "specialty": "Titanium exhausts, world-class quality", "price_tier": "ultra_premium"},
+      "eisenmann": {"url": "https://www.eisenmann.de", "specialty": "German-made exhausts", "price_tier": "premium"},
+      "remus": {"url": "https://www.remus.eu", "specialty": "Sport exhausts", "price_tier": "premium"},
+      "borla": {"url": "https://www.borla.com", "specialty": "Stainless steel exhausts", "price_tier": "mid"},
+      "corsa": {"url": "https://www.corsaperformance.com", "specialty": "Active valve exhausts", "price_tier": "mid"}
+    },
+    "cooling": {
+      "csf": {"url": "https://www.csfrace.com", "specialty": "Radiators, intercoolers"},
+      "mishimoto": {"url": "https://www.mishimoto.com", "specialty": "Cooling products, catch cans"},
+      "setrab": {"url": "https://www.setrab.com", "specialty": "Oil coolers"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "eventuri_carbon": {
+        "part_number": "EVE-F8XM-CF-INT",
+        "type": "Full Carbon Fiber Intake System",
+        "price_usd": 1899,
+        "power_gain": "15-25hp",
+        "notes": "Premium carbon fiber with velocity stacks - top tier"
+      },
+      "dinan_intake": {
+        "part_number": "D760-0051",
+        "type": "High Flow Intake",
+        "price_usd": 895,
+        "power_gain": "12-18hp",
+        "notes": "Warranty-safe, dyno-tested"
+      },
+      "vrsf_intake": {
+        "part_number": "VRSF-S55-INT",
+        "type": "Performance Intake Kit",
+        "price_usd": 449,
+        "power_gain": "10-15hp"
+      },
+      "afe_momentum": {
+        "part_number": "54-12202",
+        "type": "Cold Air Intake",
+        "price_usd": 449,
+        "power_gain": "12-18hp"
+      },
+      "bms_dual_cone": {
+        "part_number": "BMS-S55-INTAKE",
+        "type": "Dual Cone Performance Intake",
+        "price_usd": 399,
+        "power_gain": "10-15hp"
+      }
+    },
+    "inlet_pipes": {
+      "vrsf_inlet": {
+        "part_number": "VRSF-S55-INLET",
+        "type": "Aluminum Turbo Inlet Pipes",
+        "price_usd": 299,
+        "power_gain": "5-10hp",
+        "notes": "Replaces restrictive OEM plastic"
+      },
+      "eventuri_inlet": {
+        "part_number": "EVE-S55-INLET",
+        "type": "Carbon Fiber Inlet Pipes",
+        "price_usd": 699,
+        "notes": "Matching carbon to intake"
+      },
+      "ftp_inlet": {
+        "part_number": "FTP-S55-INLET",
+        "type": "Aluminum Inlet Pipes",
+        "price_usd": 279
+      }
+    },
+    "charge_pipes": {
+      "vrsf_charge_pipe": {
+        "part_number": "VRSF-S55-CP",
+        "type": "Aluminum Charge Pipe Kit",
+        "price_usd": 299,
+        "notes": "Replaces failure-prone OEM plastic"
+      },
+      "er_charge_pipe": {
+        "part_number": "ER-S55-CP",
+        "type": "Aluminum Charge Pipe Kit",
+        "price_usd": 349
+      },
+      "arm_charge_pipe": {
+        "part_number": "ARM-S55-CP",
+        "type": "Aluminum Charge Pipe",
+        "price_usd": 329
+      },
+      "ftp_charge_pipe": {
+        "part_number": "FTP-S55-CHARGE",
+        "type": "Aluminum Charge Pipes",
+        "price_usd": 279
+      }
+    },
+    "intercoolers": {
+      "csf_fmic": {
+        "part_number": "CSF-8082",
+        "type": "High Performance FMIC",
+        "price_usd": 999,
+        "cooling_improvement": "60%",
+        "notes": "Race-proven, eliminates heat soak"
+      },
+      "vrsf_competition_ic": {
+        "part_number": "VRSF-S55-COMP-IC",
+        "type": "Competition Intercooler",
+        "price_usd": 899,
+        "cooling_improvement": "55%"
+      },
+      "er_fmic": {
+        "part_number": "ER-S55-FMIC",
+        "type": "Front Mount Intercooler",
+        "price_usd": 849,
+        "cooling_improvement": "50%"
+      },
+      "dinan_intercooler": {
+        "part_number": "D330-0020",
+        "type": "High Performance Intercooler",
+        "price_usd": 1295,
+        "notes": "Warranty-safe upgrade"
+      },
+      "ltr_radiator_upgrade": {
+        "description": "Low-temp radiator upgrade for charge cooler circuit",
+        "csf": {"part_number": "CSF-8075", "price_usd": 599},
+        "notes": "Improves air-to-water intercooler efficiency"
+      }
+    },
+    "downpipes": {
+      "vrsf_catless": {
+        "part_number": "VRSF-S55-DP-RACE",
+        "type": "Catless Race Downpipes",
+        "price_usd": 599,
+        "power_gain": "25-40hp",
+        "notes": "Off-road use only"
+      },
+      "vrsf_catted": {
+        "part_number": "VRSF-S55-DP-HFC",
+        "type": "High Flow Catted Downpipes",
+        "price_usd": 899,
+        "power_gain": "20-30hp",
+        "notes": "200 cell cats, emissions legal in some areas"
+      },
+      "active_autowerke_dp": {
+        "part_number": "AA-S55-DP",
+        "type": "High Flow Downpipes",
+        "price_usd": 999,
+        "power_gain": "25-35hp"
+      },
+      "akrapovic_dp": {
+        "part_number": "DP-BM/SS/5-C",
+        "type": "Titanium Downpipes with Cats",
+        "price_usd": 3495,
+        "weight_savings_lbs": 12,
+        "notes": "Ultra-premium titanium"
+      },
+      "er_downpipes": {
+        "part_number": "ER-S55-CATLESS",
+        "type": "Catless Downpipes",
+        "price_usd": 549,
+        "notes": "Off-road use only"
+      }
+    },
+    "exhaust_systems": {
+      "akrapovic_evolution": {
+        "part_number": "ME-BM/T/5H",
+        "type": "Titanium Evolution Exhaust",
+        "price_usd": 5995,
+        "weight_savings_lbs": 24,
+        "notes": "The gold standard - titanium with carbon tips"
+      },
+      "akrapovic_slip_on": {
+        "part_number": "S-BM/T/6H",
+        "type": "Titanium Slip-On Mufflers",
+        "price_usd": 3495,
+        "weight_savings_lbs": 15
+      },
+      "eisenmann_race": {
+        "part_number": "B5432.01001",
+        "type": "Race Exhaust",
+        "price_usd": 2895,
+        "notes": "German quality, aggressive sound"
+      },
+      "remus_sport": {
+        "part_number": "089015",
+        "type": "Sport Exhaust",
+        "price_usd": 2495
+      },
+      "borla_atak": {
+        "part_number": "140734",
+        "type": "Cat-Back ATAK",
+        "price_usd": 2199,
+        "notes": "Aggressive sound, stainless steel"
+      },
+      "active_autowerke_exhaust": {
+        "part_number": "AA-S55-EXH",
+        "type": "Performance Exhaust",
+        "price_usd": 1899
+      },
+      "dinan_exhaust": {
+        "part_number": "D660-0060",
+        "type": "Free Flow Exhaust",
+        "price_usd": 2495,
+        "notes": "Warranty-safe"
+      },
+      "mpe_exhaust_valve": {
+        "description": "M Performance Exhaust with valve control",
+        "oem_upgrade": true,
+        "price_usd": 3000,
+        "notes": "BMW accessory - switchable sound modes"
+      }
+    },
+    "diverter_valves": {
+      "forge_bov": {
+        "part_number": "FMDVF80",
+        "type": "Diverter Valve Upgrade",
+        "price_usd": 299,
+        "notes": "Improved response over OEM"
+      },
+      "turbosmart_bov": {
+        "part_number": "TS-0203-1069",
+        "type": "Dual Port BOV",
+        "price_usd": 349,
+        "notes": "Adjustable spring rates"
+      },
+      "bms_bov": {
+        "part_number": "BMS-S55-BOV",
+        "type": "Upgraded Diverter Valve",
+        "price_usd": 199
+      }
+    },
+    "oil_catch_cans": {
+      "bms_occ": {
+        "part_number": "BMS-S55-OCC",
+        "type": "Oil Catch Can Kit",
+        "price_usd": 299,
+        "notes": "Helps reduce carbon buildup on valves"
+      },
+      "mishimoto_occ": {
+        "part_number": "MMBCC-S55-15",
+        "type": "Baffled Oil Catch Can",
+        "price_usd": 349
+      },
+      "radium_occ": {
+        "part_number": "RADIUM-S55-OCC",
+        "type": "Dual Catch Can Kit",
+        "price_usd": 449,
+        "notes": "Premium baffled design"
+      }
+    },
+    "crank_hub_solutions": {
+      "irp_crank_hub": {
+        "vendor": "IRP",
+        "part_number": "IRP-S55-PINNED",
+        "type": "Pinned Crank Hub Kit",
+        "price_usd": 895,
+        "notes": "Industry-standard solution"
+      },
+      "vac_crank_hub": {
+        "vendor": "VAC Motorsports",
+        "part_number": "VAC-S55-HUB",
+        "type": "Keyed Crank Hub",
+        "price_usd": 995,
+        "notes": "Heavy-duty keyed design"
+      },
+      "atech_crank_hub": {
+        "vendor": "Atech",
+        "part_number": "ATECH-S55-FIX",
+        "type": "Crank Hub Fix Kit",
+        "price_usd": 850
+      },
+      "labor_note": "Installation typically $500-1000 additional"
+    },
+    "rod_bearings": {
+      "be_bearings_coated": {
+        "vendor": "BE Bearings",
+        "part_number": "BE-S55-RACE",
+        "type": "Coated Race Rod Bearings",
+        "price_usd": 399,
+        "notes": "Top choice for S55 - WPC treated and coated"
+      },
+      "acl_race": {
+        "part_number": "6B2960HX-STD",
+        "type": "Race Series Rod Bearings",
+        "price_usd": 175,
+        "notes": "Good budget race bearing"
+      },
+      "king_racing": {
+        "part_number": "CR4542XP",
+        "type": "Performance Rod Bearings",
+        "price_usd": 195
+      },
+      "labor_note": "Installation typically $2000-3000 additional"
+    },
+    "turbo_upgrades": {
+      "pure_stage_1": {
+        "vendor": "Pure Turbos",
+        "part_number": "PURE-S55-STG1",
+        "type": "Stage 1 Hybrid Turbos",
+        "price_usd": 2199,
+        "power_potential_whp": "550-600",
+        "notes": "Drop-in upgrade, stock location"
+      },
+      "pure_stage_2": {
+        "vendor": "Pure Turbos",
+        "part_number": "PURE-S55-STG2",
+        "type": "Stage 2 Hybrid Turbos",
+        "price_usd": 2899,
+        "power_potential_whp": "650-750",
+        "notes": "Requires supporting mods"
+      },
+      "vtt_stage_1": {
+        "vendor": "Vargas Turbo Technologies",
+        "part_number": "VTT-S55-STG1",
+        "type": "GC Stage 1 Turbos",
+        "price_usd": 1999,
+        "power_potential_whp": "500-550"
+      },
+      "vtt_stage_2": {
+        "vendor": "Vargas Turbo Technologies",
+        "part_number": "VTT-S55-STG2",
+        "type": "GC Stage 2 Turbos",
+        "price_usd": 2699,
+        "power_potential_whp": "600-700"
+      },
+      "ftp_turbo": {
+        "vendor": "FTP Motorsport",
+        "part_number": "FTP-S55-HYBRID",
+        "type": "Hybrid Turbo Upgrade",
+        "price_usd": 2299,
+        "power_potential_whp": "550-650"
+      },
+      "single_turbo_kit": {
+        "vendor": "Doc Race",
+        "description": "Single turbo conversion",
+        "price_usd": "4000-8000",
+        "power_potential_whp": "900-1200+",
+        "notes": "Full race application - requires extensive supporting mods"
+      }
+    },
+    "port_injection": {
+      "bms_port_injection": {
+        "part_number": "BMS-S55-PI",
+        "type": "Port Injection Kit",
+        "price_usd": 1699,
+        "notes": "Required for 600+ whp builds"
+      },
+      "sst_port_injection": {
+        "part_number": "SST-S55-PORT",
+        "type": "Port Injection System",
+        "price_usd": 1899,
+        "notes": "Complete kit with controller"
+      },
+      "motiv_port_injection": {
+        "vendor": "Motiv",
+        "part_number": "MOTIV-S55-PI",
+        "type": "Port Injection Kit",
+        "price_usd": 1799
+      }
+    },
+    "fuel_system": {
+      "lpfp_upgrade": {
+        "deatschwerks_340": {
+          "part_number": "DW-S55-340",
+          "type": "340LPH In-Tank Pump",
+          "price_usd": 199
+        },
+        "walbro_450": {
+          "part_number": "F90000274",
+          "type": "450LPH In-Tank Pump",
+          "price_usd": 149
+        }
+      },
+      "hpfp_upgrade": {
+        "autotech_hpfp": {
+          "part_number": "AUTOTECH-S55-HPFP",
+          "type": "High Volume HPFP Internals",
+          "price_usd": 549
+        }
+      },
+      "flex_fuel_kit": {
+        "bms_flex": {
+          "part_number": "BMS-S55-FLEX",
+          "type": "Bluetooth Flex Fuel Kit",
+          "price_usd": 299,
+          "notes": "Reads ethanol content for MHD/BM3"
+        }
+      }
+    },
+    "engine_internals": {
+      "pistons": {
+        "cp_pistons": {"part_number": "SC7490", "type": "Forged Pistons", "price_usd": 999, "compression": "9.5:1"},
+        "je_pistons": {"part_number": "361522", "type": "Shelf Pistons", "price_usd": 899, "compression": "9.5:1"},
+        "mahle_motorsport": {"part_number": "S55-FORGED", "type": "Forged Pistons", "price_usd": 949}
+      },
+      "connecting_rods": {
+        "cp_carrillo": {"part_number": "BMW-S55-65000H", "type": "H-Beam Rods", "price_usd": 1499},
+        "manley_turbo_tuff": {"part_number": "14086-6", "type": "Turbo Tuff I-Beam", "price_usd": 1099},
+        "pauter": {"part_number": "BMW-S55-650", "type": "X-Beam Rods", "price_usd": 1299}
+      },
+      "head_studs": {
+        "arp": {"part_number": "201-4307", "type": "Head Stud Kit", "price_usd": 549, "notes": "Required for high boost"}
+      },
+      "head_gaskets": {
+        "cometic_mls": {"part_number": "C4606-030", "type": "MLS Head Gasket", "price_usd": 189},
+        "athena_cut_ring": {"part_number": "SCE-S55-CR", "type": "Cut Ring Gasket", "price_usd": 349, "notes": "For extreme boost"}
+      }
+    },
+    "cooling_upgrades": {
+      "oil_cooler": {
+        "csf_oil_cooler": {"part_number": "CSF-8076", "type": "Oil Cooler Upgrade", "price_usd": 799},
+        "setrab_kit": {"description": "External oil cooler kit", "price_usd": 1299, "notes": "For track/high-power use"}
+      },
+      "radiator": {
+        "csf_radiator": {"part_number": "CSF-8070", "type": "High Performance Radiator", "price_usd": 899},
+        "mishimoto_radiator": {"part_number": "MMRAD-S55-15", "type": "Aluminum Radiator", "price_usd": 799}
+      },
+      "water_injection": {
+        "aquamist": {"description": "Water/Methanol injection kit", "price_usd": 499, "notes": "Reduces IATs, prevents knock"}
+      }
+    },
+    "transmission_upgrades": {
+      "manual_clutch": {
+        "os_giken": {"description": "Twin Disc Clutch Kit", "price_usd": 3495, "torque_capacity_lb_ft": 800},
+        "rps_carbon": {"description": "Carbon Twin Disc", "price_usd": 2495, "torque_capacity_lb_ft": 700},
+        "sachs_performance": {"description": "Single Disc Performance", "price_usd": 1495, "torque_capacity_lb_ft": 550}
+      },
+      "dct_clutch": {
+        "dodson_clutch_pack": {"description": "DCT Clutch Pack Upgrade", "price_usd": 2999, "notes": "Holds 900+ wtq"},
+        "tcu_tune": {"description": "xHP or similar DCT tune", "price_usd": 249, "notes": "Faster shifts, higher torque capacity"}
+      },
+      "short_shifter": {
+        "uuc_short_shifter": {"price_usd": 399},
+        "dinan_short_shifter": {"price_usd": 449}
+      }
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - ECU Tune",
+      "power_target_whp": "480-520",
+      "parts": [
+        {"part": "MHD Stage 1 Tune", "price_usd": 149},
+        {"part": "High-flow air filters", "price_usd": 60}
+      ],
+      "total_cost_usd": "200-250",
+      "recommended_additions": ["Crank hub fix before any power mods"],
+      "notes": "Best value - significant gains with tune alone"
+    },
+    "stage_1_plus": {
+      "name": "Stage 1+ - Tune with Safety Mods",
+      "power_target_whp": "480-520",
+      "parts": [
+        {"part": "MHD Stage 1 Tune", "price_usd": 149},
+        {"part": "Crank Hub Fix (IRP)", "price_usd": 895},
+        {"part": "Charge Pipes (VRSF)", "price_usd": 299},
+        {"part": "High-flow air filters", "price_usd": 60}
+      ],
+      "total_cost_usd": "1400-1600",
+      "notes": "Safe foundation for all future modifications"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Bolt-Ons + Tune",
+      "power_target_whp": "520-580",
+      "parts": [
+        {"part": "MHD Stage 2 Tune", "price_usd": 199},
+        {"part": "Crank Hub Fix", "price_usd": 895},
+        {"part": "Catless Downpipes", "price_usd": 599},
+        {"part": "Charge Pipes", "price_usd": 299},
+        {"part": "Performance Intake", "price_usd": 449}
+      ],
+      "total_cost_usd": "2500-3000",
+      "notes": "Solid street/weekend warrior setup"
+    },
+    "stage_2_plus": {
+      "name": "Stage 2+ - Full Bolt-Ons",
+      "power_target_whp": "580-650",
+      "parts": [
+        {"part": "MHD Stage 2+ Tune", "price_usd": 299},
+        {"part": "Crank Hub Fix", "price_usd": 895},
+        {"part": "Rod Bearings (BE)", "price_usd": 399},
+        {"part": "Catless Downpipes", "price_usd": 599},
+        {"part": "Charge Pipes", "price_usd": 299},
+        {"part": "Inlet Pipes", "price_usd": 299},
+        {"part": "Upgraded Intercooler", "price_usd": 899},
+        {"part": "Performance Intake", "price_usd": 449},
+        {"part": "Flex Fuel Kit", "price_usd": 299},
+        {"part": "Catch Can", "price_usd": 299}
+      ],
+      "total_cost_usd": "5000-6000",
+      "notes": "Near stock turbo limit - E30-E50 capable"
+    },
+    "stage_3": {
+      "name": "Stage 3 - Hybrid Turbos",
+      "power_target_whp": "650-800",
+      "parts": [
+        {"part": "Pure Stage 2 Turbos", "price_usd": 2899},
+        {"part": "Custom Tune", "price_usd": 500},
+        {"part": "Port Injection Kit", "price_usd": 1699},
+        {"part": "All Stage 2+ parts", "price_usd": 4000},
+        {"part": "LPFP Upgrade", "price_usd": 199},
+        {"part": "Upgraded Diverter Valves", "price_usd": 299},
+        {"part": "Clutch Upgrade (MT)", "price_usd": 1495}
+      ],
+      "total_cost_usd": "11000-14000",
+      "notes": "Serious street/track car - requires fueling support"
+    },
+    "full_build": {
+      "name": "Stage 4 - Built Motor",
+      "power_target_whp": "900+",
+      "parts": [
+        {"part": "Forged Pistons", "price_usd": 999},
+        {"part": "Forged Rods", "price_usd": 1499},
+        {"part": "ARP Head Studs", "price_usd": 549},
+        {"part": "BE Main and Rod Bearings", "price_usd": 599},
+        {"part": "Big Turbos or Single Turbo Kit", "price_usd": 4000},
+        {"part": "Full Fueling (Port + Meth)", "price_usd": 2500},
+        {"part": "All supporting mods", "price_usd": 6000},
+        {"part": "Trans Build (DCT)", "price_usd": 3000},
+        {"part": "Machine Work and Assembly", "price_usd": 4000}
+      ],
+      "total_cost_usd": "25000-40000",
+      "notes": "Full race build - dedicated track car"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["7L BMW LL-01 or 10W-60", "Mann HU816X Filter", "Drain Plug Gasket"],
+      "price_usd": 85,
+      "source": "FCP Euro - Lifetime Warranty",
+      "interval_miles": 5000
+    },
+    "spark_plug_kit": {
+      "parts": ["6x NGK 94201"],
+      "price_usd": 65,
+      "interval_miles": {
+        "stock": 30000,
+        "tuned": 15000
+      }
+    },
+    "ignition_coil_kit": {
+      "parts": ["6x Eldor/Bosch Ignition Coils"],
+      "price_usd": 180,
+      "source": "FCP Euro",
+      "interval_miles": 75000
+    },
+    "rod_bearing_service": {
+      "parts": ["BE Bearings Rod Bearing Set", "Fresh Oil", "Gaskets"],
+      "price_usd": 599,
+      "labor_usd": "2000-3000",
+      "interval_miles": 60000,
+      "notes": "Preventative maintenance - critical for S55"
+    },
+    "crank_hub_fix_kit": {
+      "parts": ["IRP or VAC Crank Hub Kit"],
+      "price_usd": 895,
+      "labor_usd": "500-1000",
+      "notes": "Do once - do before any power modifications"
+    }
+  },
+
+  "quality_tiers": {
+    "budget": {
+      "description": "Affordable entry-level upgrades",
+      "brands": ["BMS", "VRSF", "ARM", "FTP"],
+      "notes": "Good value, proven products"
+    },
+    "mid_tier": {
+      "description": "Balance of price and quality",
+      "brands": ["Evolution Racewerks", "aFe", "Mishimoto", "Forge", "Active Autowerke"],
+      "notes": "Quality construction, good warranty"
+    },
+    "premium": {
+      "description": "High-end street/track parts",
+      "brands": ["Eventuri", "Dinan", "CSF", "Akrapovic", "KW"],
+      "notes": "Premium materials, extensive R&D"
+    },
+    "race": {
+      "description": "Competition-grade components",
+      "brands": ["CP-Carrillo", "Manley", "ARP", "Pure Turbos", "BE Bearings", "OS Giken"],
+      "notes": "Built for abuse, professional-level quality"
+    }
+  },
+
+  "tuning_notes": {
+    "flash_tuning_options": {
+      "mhd": {
+        "pros": ["Most popular", "Good support community", "Affordable maps", "DIY friendly"],
+        "cons": ["Phone required", "Learning curve for custom"],
+        "cost": "$99-399"
+      },
+      "bootmod3": {
+        "pros": ["Professional interface", "Good burst mode", "Multi-platform"],
+        "cons": ["Slightly more expensive", "Smaller community"],
+        "cost": "$100-450"
+      },
+      "jb4": {
+        "pros": ["No flash - completely reversible", "Dealer undetectable", "Can stack with flash"],
+        "cons": ["Not as much control as flash", "Piggyback limitations"],
+        "cost": "$479-549"
+      }
+    },
+    "ethanol_tuning": {
+      "e30_blend": {
+        "power_gain_percent": "5-8%",
+        "notes": "Safe on stock fueling up to Stage 2+"
+      },
+      "e50_blend": {
+        "power_gain_percent": "10-15%",
+        "notes": "Requires upgraded LPFP minimum"
+      },
+      "e85": {
+        "power_gain_percent": "15-25%",
+        "notes": "Requires port injection for high-power builds"
+      },
+      "flex_fuel": {
+        "description": "Sensor reads ethanol content for automatic tuning adjustment",
+        "cost_usd": 299
+      }
+    },
+    "critical_tuning_notes": [
+      "ALWAYS fix crank hub before any power modifications",
+      "Monitor rod bearings via oil analysis",
+      "Upgrade charge pipes before tuning - OEM will crack",
+      "Use quality 93 octane or E30+ for tuned applications",
+      "Consider intercooler upgrade for sustained high-power driving"
+    ]
+  }
+}

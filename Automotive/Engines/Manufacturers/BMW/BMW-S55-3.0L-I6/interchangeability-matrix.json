@@ -1,0 +1,366 @@
+{
+  "engine_id": "BMW-S55-3.0L-I6-TWINTURBO",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "F80": {"name": "M3 Sedan", "years": "2014-2018", "models": ["M3", "M3 Competition", "M3 CS"]},
+    "F82": {"name": "M4 Coupe", "years": "2014-2020", "models": ["M4", "M4 Competition", "M4 CS", "M4 GTS"]},
+    "F83": {"name": "M4 Convertible", "years": "2014-2020", "models": ["M4", "M4 Competition"]},
+    "F87_M2C": {"name": "M2 Competition", "years": "2018-2021", "models": ["M2 Competition", "M2 CS"]}
+  },
+
+  "era_classifications": {
+    "early_s55": {
+      "years": "2014-2016",
+      "ecu": "MEVD17.2.G",
+      "notes": "Original production - all known issues present"
+    },
+    "mid_s55": {
+      "years": "2017-2018",
+      "ecu": "MEVD17.2.G",
+      "notes": "Minor revisions to some components"
+    },
+    "late_s55_m2c": {
+      "years": "2018-2021",
+      "ecu": "MEVD17.2.G",
+      "notes": "M2 Competition and M2 CS applications - detuned in base M2C"
+    }
+  },
+
+  "variant_differences": {
+    "standard_vs_competition": {
+      "power_difference": "425 vs 444 HP",
+      "hardware_changes": "None - ECU tune only",
+      "interchangeable": true,
+      "notes": "Competition package is purely a software tune plus chassis upgrades"
+    },
+    "m4_cs": {
+      "power": "454 HP",
+      "hardware_changes": [
+        "Revised ECU tune",
+        "Lightened components (CFRP hood, trunk)",
+        "Revised intercooler tune"
+      ],
+      "unique_parts": ["Carbon fiber hood", "Carbon fiber trunk", "Alcantara interior"]
+    },
+    "m4_gts": {
+      "power": "493 HP",
+      "hardware_changes": [
+        "Water injection system",
+        "Revised turbos with upgraded wastegate springs",
+        "Unique ECU tune",
+        "OLED taillights",
+        "Roll cage"
+      ],
+      "unique_parts": {
+        "water_injection_tank": "Yes",
+        "water_injection_pump": "Yes",
+        "water_injectors": "Yes",
+        "revised_intake_manifold": "With water injection ports"
+      },
+      "notes": "Only 700 produced - track-focused"
+    },
+    "m2_competition_vs_m3_m4": {
+      "differences": [
+        "Detuned to 405 HP (vs 425-444)",
+        "Different intake air routing for M2 chassis",
+        "Different exhaust routing",
+        "M2 specific engine mounts"
+      ],
+      "shared_internals": "Rotating assembly, head, turbos all identical",
+      "interchangeable_parts": "Most internal components interchange"
+    }
+  },
+
+  "interchangeability_groups": {
+    "universal_all_s55": {
+      "description": "Parts that interchange across ALL S55 engines",
+      "parts": [
+        {"part_id": "S55-CRANK", "notes": "All crankshafts identical"},
+        {"part_id": "S55-CONROD", "notes": "All connecting rods identical"},
+        {"part_id": "S55-PISTON", "notes": "All pistons identical"},
+        {"part_id": "S55-HEAD", "notes": "Cylinder heads identical (except GTS water injection)"},
+        {"part_id": "S55-MAIN-BRG", "notes": "All main bearings identical"},
+        {"part_id": "S55-ROD-BRG", "notes": "All rod bearings identical"},
+        {"part_id": "S55-TURBO-SET", "notes": "Base turbos identical across variants"},
+        {"part_id": "S55-OIL-FILTER", "notes": "Universal filter"},
+        {"part_id": "S55-SPARK-PLUGS", "notes": "Same plugs all variants"},
+        {"part_id": "S55-COILS", "notes": "All ignition coils identical"}
+      ]
+    },
+    "platform_specific": {
+      "f80_f82_f83_shared": {
+        "description": "Parts shared between M3/M4",
+        "parts": [
+          "Engine mounts",
+          "Exhaust system (full)",
+          "Intake system",
+          "Cooling system"
+        ]
+      },
+      "f87_specific": {
+        "description": "M2 Competition unique parts",
+        "parts": [
+          "Engine mounts (M2 specific)",
+          "Intake ducting (different airbox routing)",
+          "Exhaust system (M2 specific)",
+          "Charge pipes (different routing)"
+        ]
+      }
+    }
+  },
+
+  "cross_engine_compatibility": {
+    "s55_to_n55": {
+      "relationship": "S55 is M Division evolution of N55",
+      "shared_parts": [
+        "Oil filter (same part number)",
+        "Spark plug type (same heat range)",
+        "Basic architecture dimensions (bore/stroke)"
+      ],
+      "not_compatible": [
+        "Cylinder head (N55 has Valvetronic, S55 does not)",
+        "Turbochargers (twin vs single twin-scroll)",
+        "Connecting rods (S55 lighter, bushed small end)",
+        "Pistons (S55 different compression height)",
+        "Intake manifold (S55 has integrated intercooler)",
+        "Fuel injectors (different flow rate)",
+        "ECU (completely different software)"
+      ],
+      "notes": "Very limited parts sharing despite similar displacement"
+    },
+    "s55_to_s58": {
+      "relationship": "S58 is successor to S55",
+      "shared_parts": [
+        "Oil filter (some overlap)",
+        "Basic concept and design philosophy"
+      ],
+      "not_compatible": [
+        "Block (S58 has closed deck)",
+        "Head (S58 revised port design)",
+        "Turbos (S58 larger)",
+        "Most components - S58 is new design"
+      ],
+      "notes": "Different generation - minimal parts sharing"
+    },
+    "s55_to_b58": {
+      "relationship": "Different engine families",
+      "shared_parts": ["Minimal - oil filter may overlap"],
+      "not_compatible": ["Nearly all components"],
+      "notes": "B58 is non-M engine - different design philosophy"
+    }
+  },
+
+  "common_swaps_and_upgrades": {
+    "stage_1": {
+      "name": "ECU Tune Only",
+      "power_whp": "480-520",
+      "requirements": [
+        "Flash tune (MHD, Bootmod3, or custom)",
+        "91+ octane (93 recommended)"
+      ],
+      "mandatory_supporting_mods": ["None, but crank hub fix highly recommended"]
+    },
+    "stage_2": {
+      "name": "Bolt-Ons + Tune",
+      "power_whp": "520-580",
+      "requirements": [
+        "Stage 2 flash tune",
+        "Catless or high-flow catted downpipes",
+        "Upgraded charge pipes",
+        "93 octane or E30 blend"
+      ],
+      "recommended_supporting_mods": [
+        "Crank hub fix",
+        "Upgraded intercooler",
+        "Inlet pipes"
+      ]
+    },
+    "stage_2_plus": {
+      "name": "Full Bolt-Ons",
+      "power_whp": "580-650",
+      "requirements": [
+        "Stage 2+ tune",
+        "Downpipes",
+        "Charge pipes",
+        "Inlet pipes",
+        "Upgraded intercooler",
+        "E30-E50 fuel blend",
+        "Crank hub fix (mandatory)"
+      ],
+      "recommended_supporting_mods": [
+        "Rod bearing upgrade",
+        "Upgraded diverter valves",
+        "Oil cooler upgrade"
+      ],
+      "notes": "Near stock turbo limit"
+    },
+    "hybrid_turbo": {
+      "name": "Upgraded Turbos",
+      "power_whp": "650-800",
+      "requirements": [
+        "Pure/Vargas/FTP hybrid turbos",
+        "Custom tune",
+        "Port injection kit",
+        "Upgraded HPFP or LPFP",
+        "Meth injection or E85 fueling",
+        "Crank hub fix (mandatory)"
+      ],
+      "mandatory_supporting_mods": [
+        "Rod bearing upgrade",
+        "Transmission upgrades (clutch for MT, clutch packs for DCT)"
+      ],
+      "notes": "Requires significant supporting mods"
+    },
+    "big_turbo_single": {
+      "name": "Single Turbo Conversion",
+      "power_whp": "900-1200+",
+      "requirements": [
+        "Single turbo kit (Precision, Garrett, etc.)",
+        "Custom manifold",
+        "Standalone or heavily modified ECU",
+        "Built motor recommended",
+        "Port injection mandatory",
+        "E85 or race fuel"
+      ],
+      "mandatory_supporting_mods": [
+        "Forged internals (if not already)",
+        "Built transmission",
+        "Built differential",
+        "Upgraded axles",
+        "Fuel system overhaul"
+      ],
+      "notes": "Full race build - not daily drivable"
+    }
+  },
+
+  "transmission_compatibility": {
+    "manual_6mt": {
+      "code": "GS6-45BZ",
+      "torque_capacity_lb_ft": 450,
+      "upgrades": {
+        "clutch": ["OS Giken", "RPS", "Sachs Performance"],
+        "flywheel": ["Lightweight steel", "Aluminum"],
+        "short_shifter": ["IND", "Dinan", "UUC"]
+      },
+      "notes": "Stock clutch slips around 500 wtq"
+    },
+    "dct_7speed": {
+      "code": "GS7D36SG",
+      "torque_capacity_lb_ft": 550,
+      "upgrades": {
+        "clutch_packs": ["Dodson", "SST"],
+        "software": ["xHP", "TCU tune"]
+      },
+      "notes": "DCT handles more power than manual"
+    }
+  },
+
+  "differential_options": {
+    "active_m_diff": {
+      "description": "Standard on all M3/M4/M2C",
+      "ratio": "3.15:1",
+      "type": "Active electronic limited slip",
+      "upgrades": {
+        "aftermarket_lsd": ["Drexler", "OS Giken"],
+        "differential_cooler": "Recommended for track use"
+      }
+    }
+  },
+
+  "known_failure_points": {
+    "crank_hub": {
+      "severity": "CRITICAL",
+      "affected_vehicles": "ALL S55 engines",
+      "symptoms": ["Loss of timing", "No start", "Engine damage"],
+      "solution": {
+        "preferred": "Pin kit installation (IRP, Atech, VAC)",
+        "alternative": "Keyed crank hub upgrade",
+        "cost_range": "$1200-2500 installed"
+      },
+      "notes": "FIX BEFORE ANY POWER MODIFICATIONS - can destroy engine"
+    },
+    "rod_bearings": {
+      "severity": "HIGH",
+      "affected_vehicles": "All S55, especially early production",
+      "symptoms": ["Knock on cold start", "Metal in oil", "Rod knock"],
+      "solution": {
+        "recommended_interval_miles": 60000,
+        "bearings": ["BE Bearings coated", "ACL Race"],
+        "cost_range": "$2500-4000 installed"
+      },
+      "preventative_measure": "Oil analysis every 5000 miles"
+    },
+    "charge_pipe_cracking": {
+      "severity": "MEDIUM",
+      "affected_vehicles": "All S55",
+      "symptoms": ["Boost loss", "Hissing sound", "Check engine light"],
+      "solution": {
+        "upgrade": "Aluminum charge pipes",
+        "vendors": ["VRSF", "Evolution Racewerks", "ARM"],
+        "cost_range": "$200-400"
+      }
+    },
+    "oil_pump_chain_stretch": {
+      "severity": "MEDIUM",
+      "affected_vehicles": "High mileage S55 (100k+)",
+      "symptoms": ["Low oil pressure warning", "Chain noise"],
+      "solution": {
+        "parts": ["Oil pump chain", "Tensioner", "Guides"],
+        "cost_range": "$1500-2500 installed"
+      }
+    },
+    "vanos_hub_bolt_loosening": {
+      "severity": "MEDIUM",
+      "affected_vehicles": "Track-driven S55",
+      "symptoms": ["Timing issues", "VANOS faults", "Rough running"],
+      "solution": {
+        "check_torque": "During any timing service",
+        "upgrade": "ARP VANOS bolts"
+      }
+    }
+  },
+
+  "upgrade_paths": {
+    "daily_driver_enthusiast": {
+      "budget": "$3000-5000",
+      "mods": [
+        "Crank hub fix",
+        "MHD/BM3 Stage 1 tune",
+        "Charge pipes",
+        "Upgraded air filters"
+      ],
+      "power_target": "480-500 whp",
+      "notes": "Reliable daily with spirited driving"
+    },
+    "weekend_warrior": {
+      "budget": "$8000-12000",
+      "mods": [
+        "Crank hub fix",
+        "Rod bearings",
+        "Stage 2 tune",
+        "Downpipes",
+        "Charge pipes",
+        "Intercooler",
+        "Inlet pipes"
+      ],
+      "power_target": "550-600 whp",
+      "notes": "Strong street/occasional track car"
+    },
+    "track_focused": {
+      "budget": "$20000-35000",
+      "mods": [
+        "All weekend warrior mods",
+        "Hybrid turbos",
+        "Port injection",
+        "Oil cooler upgrade",
+        "Transmission upgrades",
+        "Brake upgrades",
+        "Suspension"
+      ],
+      "power_target": "700+ whp",
+      "notes": "Dedicated track weapon"
+    }
+  }
+}

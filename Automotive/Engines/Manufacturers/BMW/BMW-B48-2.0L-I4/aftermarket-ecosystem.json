@@ -1,0 +1,860 @@
+{
+  "engine_id": "BMW-B48-2.0L-I4-TURBO",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {
+        "url": "https://www.fcpeuro.com",
+        "specialty": "OEM/OE parts with lifetime replacement warranty",
+        "ships_from": "USA",
+        "b48_coverage": "Excellent",
+        "notes": "Best for maintenance parts - lifetime warranty on wear items"
+      },
+      "ecs_tuning": {
+        "url": "https://www.ecstuning.com",
+        "specialty": "OEM and performance parts",
+        "ships_from": "USA",
+        "b48_coverage": "Good",
+        "notes": "Good selection of both OEM and aftermarket"
+      },
+      "getbmwparts": {
+        "url": "https://www.getbmwparts.com",
+        "specialty": "Genuine BMW parts",
+        "ships_from": "USA",
+        "notes": "Official BMW parts at discount prices"
+      },
+      "realoem": {
+        "url": "https://www.realoem.com",
+        "specialty": "BMW parts diagrams and part number lookup",
+        "type": "Reference",
+        "notes": "Essential resource for identifying correct part numbers"
+      },
+      "pelican_parts": {
+        "url": "https://www.pelicanparts.com",
+        "specialty": "European car parts",
+        "ships_from": "USA",
+        "notes": "Good technical resources and how-to guides"
+      }
+    },
+    "performance_parts": {
+      "burger_motorsports": {
+        "name": "Burger Motorsports (BMS)",
+        "url": "https://www.burgertuning.com",
+        "specialty": "JB4, intakes, charge pipes, LPFP",
+        "b48_products": ["JB4", "Drop-in filters", "Charge pipes", "LPFP upgrades"],
+        "notes": "Pioneer in BMW piggyback tuning"
+      },
+      "vrsf": {
+        "name": "VRSF",
+        "url": "https://www.vrsf.com",
+        "specialty": "Intercoolers, downpipes, charge pipes",
+        "b48_products": ["Catless downpipes", "Charge pipes", "FMIC kits"],
+        "notes": "Good value performance parts"
+      },
+      "afe_power": {
+        "name": "aFe Power",
+        "url": "https://www.afepower.com",
+        "specialty": "Intakes, filters, exhaust",
+        "b48_products": ["Momentum GT intakes", "Magnum FORCE intakes", "Drop-in filters"],
+        "notes": "Well-engineered intake systems"
+      },
+      "eventuri": {
+        "name": "Eventuri",
+        "url": "https://www.eventuri.net",
+        "specialty": "Carbon fiber intake systems",
+        "b48_products": ["Carbon fiber intake system"],
+        "notes": "Premium carbon intake with excellent engineering"
+      },
+      "csl_performance": {
+        "name": "CSL Performance",
+        "url": "https://www.csl-performance.com",
+        "specialty": "High-performance intercoolers",
+        "b48_products": ["Competition FMIC", "Charge cooler upgrades"],
+        "notes": "High-end cooling solutions"
+      },
+      "wagner_tuning": {
+        "name": "Wagner Tuning",
+        "url": "https://www.wagnertuning.com",
+        "specialty": "Competition intercoolers",
+        "b48_products": ["Competition FMIC kits"],
+        "notes": "German-engineered intercoolers"
+      },
+      "mishimoto": {
+        "name": "Mishimoto",
+        "url": "https://www.mishimoto.com",
+        "specialty": "Cooling products, performance parts",
+        "b48_products": ["Intercoolers", "Radiators", "Oil coolers", "Catch cans"],
+        "notes": "Lifetime warranty on all products"
+      },
+      "dinan": {
+        "name": "Dinan Engineering",
+        "url": "https://www.dinancars.com",
+        "specialty": "BMW-focused performance",
+        "b48_products": ["Tuning", "Intakes", "Exhaust", "Suspension"],
+        "notes": "Preserves BMW warranty with Dinan warranty"
+      },
+      "active_autowerke": {
+        "name": "Active Autowerke",
+        "url": "https://www.activeautowerke.com",
+        "specialty": "BMW exhaust and tuning",
+        "b48_products": ["Catted downpipes", "Exhaust systems"],
+        "notes": "Quality exhaust manufacturer"
+      }
+    },
+    "tuning_software": {
+      "mhd_flasher": {
+        "name": "MHD Flasher",
+        "url": "https://www.mhdtuning.com",
+        "platforms": ["iOS", "Android"],
+        "b48_support": true,
+        "cost": {
+          "stage_1": "$199",
+          "stage_2": "$249",
+          "burbles": "$49",
+          "full_license": "$399"
+        },
+        "features": [
+          "OTS (off-the-shelf) maps",
+          "Custom tune support",
+          "Real-time data logging",
+          "Burbles/pops tune",
+          "Launch control"
+        ],
+        "notes": "Most popular flash tuning option for B48"
+      },
+      "bootmod3": {
+        "name": "Bootmod3",
+        "url": "https://www.protuningfreaks.com",
+        "platforms": ["iOS", "Android", "Windows"],
+        "b48_support": true,
+        "cost": {
+          "stage_1": "$150",
+          "stage_2": "$200",
+          "full_license": "$450"
+        },
+        "features": [
+          "Flash tuning",
+          "Custom maps",
+          "Data logging",
+          "Port injection control (Gen 2)"
+        ],
+        "notes": "Alternative to MHD with strong community support"
+      },
+      "jb4_piggyback": {
+        "name": "Burger JB4",
+        "url": "https://www.burgertuning.com",
+        "type": "Piggyback",
+        "b48_support": true,
+        "cost": "$479-529",
+        "features": [
+          "No flash required",
+          "Removable for warranty",
+          "Bluetooth logging",
+          "Multiple maps",
+          "Ethanol sensing (optional)"
+        ],
+        "notes": "Best option for warranty-conscious enthusiasts"
+      },
+      "xhp_flasher": {
+        "name": "xHP Flasher",
+        "url": "https://www.xhpflash.com",
+        "specialty": "Transmission tuning",
+        "b48_compatible": true,
+        "cost": "$129",
+        "features": [
+          "Faster shifts",
+          "Higher torque limits",
+          "Launch control improvement",
+          "Sport mode enhancement"
+        ],
+        "notes": "Essential for tuned B48 with ZF 8-speed"
+      },
+      "ecutek": {
+        "name": "EcuTek",
+        "url": "https://www.ecutek.com",
+        "b48_support": true,
+        "toyota_supra_support": true,
+        "cost": "$800-1200",
+        "notes": "Good option for Toyota Supra 2.0 tuning"
+      }
+    },
+    "internal_engine": {
+      "cp_carrillo": {
+        "url": "https://www.cp-carrillo.com",
+        "specialty": "Pistons and connecting rods",
+        "b48_products": ["Forged pistons", "H-beam rods"],
+        "notes": "Top-tier engine internals"
+      },
+      "manley": {
+        "url": "https://www.manleyperformance.com",
+        "specialty": "Forged internals",
+        "b48_products": ["Turbo Tuff rods", "Forged pistons"],
+        "notes": "Proven in high-power builds"
+      },
+      "je_pistons": {
+        "url": "https://www.jepistons.com",
+        "specialty": "Custom and shelf pistons",
+        "b48_products": ["Forged pistons various compression ratios"],
+        "notes": "Wide variety of piston options"
+      },
+      "wiseco": {
+        "url": "https://www.wiseco.com",
+        "specialty": "Forged pistons",
+        "b48_products": ["Sport compact pistons"],
+        "notes": "Good value forged pistons"
+      },
+      "arp": {
+        "url": "https://www.arp-bolts.com",
+        "specialty": "High-performance fasteners",
+        "b48_products": ["Head stud kit", "Main stud kit", "Rod bolt kit"],
+        "notes": "Essential for any serious build"
+      },
+      "supertech": {
+        "url": "https://www.supertechperformance.com",
+        "specialty": "Valvetrain components",
+        "b48_products": ["Valves", "Springs", "Retainers"],
+        "notes": "Quality valvetrain upgrades"
+      },
+      "acl_bearings": {
+        "url": "https://www.aclbearings.com",
+        "specialty": "Race bearings",
+        "b48_products": ["Main bearings", "Rod bearings"],
+        "notes": "Race-proven bearing technology"
+      }
+    },
+    "turbo_specialists": {
+      "pure_turbos": {
+        "name": "Pure Turbos",
+        "url": "https://www.pureturbos.com",
+        "specialty": "Upgraded and hybrid turbochargers",
+        "b48_products": [
+          {"name": "Pure Stage 2", "power_potential": "400-450whp", "price_usd": 1899},
+          {"name": "Pure Stage 2 High Flow", "power_potential": "450-500whp", "price_usd": 2299}
+        ],
+        "notes": "Popular upgrade path for B48"
+      },
+      "vargas_turbo": {
+        "name": "Vargas Turbo Technologies (VTT)",
+        "url": "https://www.vargasturbo.com",
+        "specialty": "Hybrid and upgraded turbos",
+        "b48_products": [
+          {"name": "VTT GC B48 Hybrid", "power_potential": "380-420whp", "price_usd": 1799}
+        ],
+        "notes": "Known for B58 - also supports B48"
+      },
+      "borg_warner": {
+        "name": "BorgWarner",
+        "url": "https://www.borgwarner.com",
+        "specialty": "OEM turbocharger manufacturer",
+        "b48_products": ["Replacement turbos", "Upgraded EFR units"],
+        "notes": "Source of many OE turbos"
+      },
+      "garrett": {
+        "name": "Garrett Motion",
+        "url": "https://www.garrettmotion.com",
+        "specialty": "Performance turbochargers",
+        "notes": "Larger turbos for big power builds"
+      }
+    },
+    "fuel_system_specialists": {
+      "spool_performance": {
+        "name": "Spool Performance",
+        "url": "https://www.spoolperformance.com",
+        "specialty": "BMW fuel system upgrades",
+        "b48_products": [
+          {"name": "Stage 1 HPFP", "price_usd": 599, "flow_increase": "30%"},
+          {"name": "Stage 2 HPFP", "price_usd": 899, "flow_increase": "50%"},
+          {"name": "LPFP Upgrade", "price_usd": 449},
+          {"name": "Port Injection Kit", "price_usd": 2199}
+        ],
+        "notes": "Leading fuel system upgrades for BMW turbo engines"
+      },
+      "fuel_it": {
+        "name": "Fuel-It!",
+        "url": "https://www.fuelitethanol.com",
+        "specialty": "Ethanol and fuel system upgrades",
+        "b48_products": ["LPFP upgrades", "Flex fuel kits", "Fuel sensor kits"],
+        "notes": "Specialists in ethanol fueling solutions"
+      },
+      "deatschwerks": {
+        "name": "DeatschWerks",
+        "url": "https://www.deatschwerks.com",
+        "specialty": "High-flow injectors and fuel pumps",
+        "notes": "Quality fuel system components"
+      }
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "eventuri_carbon": {
+        "vendor": "Eventuri",
+        "part_number": "EVE-B48-CF",
+        "type": "Carbon Fiber Intake",
+        "price_usd": 899,
+        "power_gain_hp": "15-20",
+        "notes": "Premium carbon intake with excellent airflow"
+      },
+      "afe_magnum_force": {
+        "vendor": "aFe Power",
+        "part_number": "54-12882-B",
+        "type": "Cold Air Intake",
+        "price_usd": 379,
+        "power_gain_hp": "10-15",
+        "notes": "Good value performance intake"
+      },
+      "mst_performance": {
+        "vendor": "MST Performance",
+        "part_number": "BW-B4801",
+        "type": "Cold Air Intake",
+        "price_usd": 299,
+        "power_gain_hp": "8-12",
+        "notes": "Budget-friendly intake option"
+      },
+      "dinan_intake": {
+        "vendor": "Dinan",
+        "part_number": "D760-0052",
+        "type": "Carbon Fiber Intake",
+        "price_usd": 699,
+        "power_gain_hp": "12-18",
+        "notes": "Warranty-safe option"
+      },
+      "bms_dual_cone": {
+        "vendor": "Burger Motorsports",
+        "part_number": "BMS-B48-INT",
+        "type": "Dual Cone Intake",
+        "price_usd": 349,
+        "power_gain_hp": "10-15"
+      }
+    },
+    "charge_pipes": {
+      "vrsf_aluminum": {
+        "vendor": "VRSF",
+        "part_number": "10901055",
+        "type": "Aluminum Charge Pipe",
+        "price_usd": 169,
+        "notes": "Replaces crack-prone OEM plastic"
+      },
+      "bms_aluminum": {
+        "vendor": "Burger Motorsports",
+        "part_number": "BMS-B48-CP",
+        "type": "Aluminum Charge Pipe",
+        "price_usd": 159,
+        "notes": "Essential upgrade for tuned cars"
+      },
+      "afe_charge_pipe": {
+        "vendor": "aFe Power",
+        "part_number": "46-20436",
+        "type": "Aluminum Charge Pipe",
+        "price_usd": 189,
+        "notes": "High-quality construction"
+      },
+      "mishimoto_charge_pipe": {
+        "vendor": "Mishimoto",
+        "part_number": "MMICP-B48-17",
+        "type": "Aluminum Charge Pipe",
+        "price_usd": 199,
+        "notes": "Lifetime warranty"
+      }
+    },
+    "intercoolers": {
+      "wagner_competition": {
+        "vendor": "Wagner Tuning",
+        "part_number": "200001144",
+        "type": "Competition FMIC",
+        "price_usd": 899,
+        "cooling_improvement_percent": 55,
+        "notes": "Excellent cooling capacity"
+      },
+      "csl_performance_fmic": {
+        "vendor": "CSL Performance",
+        "part_number": "CSL-B48-FMIC",
+        "type": "Competition FMIC",
+        "price_usd": 799,
+        "cooling_improvement_percent": 50
+      },
+      "mishimoto_fmic": {
+        "vendor": "Mishimoto",
+        "part_number": "MMINT-B48-17",
+        "type": "Performance FMIC",
+        "price_usd": 649,
+        "cooling_improvement_percent": 45,
+        "notes": "Lifetime warranty"
+      },
+      "vrsf_fmic": {
+        "vendor": "VRSF",
+        "part_number": "10303055",
+        "type": "Front Mount Intercooler",
+        "price_usd": 599,
+        "cooling_improvement_percent": 40,
+        "notes": "Good value option"
+      }
+    },
+    "downpipes": {
+      "vrsf_catless": {
+        "vendor": "VRSF",
+        "part_number": "10201055",
+        "type": "Catless Downpipe",
+        "price_usd": 349,
+        "power_gain_hp": "15-25",
+        "notes": "Off-road use only - check local laws"
+      },
+      "active_autowerke_catted": {
+        "vendor": "Active Autowerke",
+        "part_number": "AA-B48-DP-200",
+        "type": "200-Cell High Flow Cat",
+        "price_usd": 599,
+        "power_gain_hp": "10-18",
+        "notes": "Emissions-compliant option"
+      },
+      "afe_catted": {
+        "vendor": "aFe Power",
+        "part_number": "48-36323-HC",
+        "type": "High Flow Catted",
+        "price_usd": 549,
+        "power_gain_hp": "12-18",
+        "notes": "Quality catted downpipe"
+      },
+      "cts_turbo_catless": {
+        "vendor": "CTS Turbo",
+        "part_number": "CTS-EXH-DP-0037",
+        "type": "Catless Downpipe",
+        "price_usd": 299,
+        "power_gain_hp": "15-25",
+        "notes": "Budget catless option"
+      }
+    },
+    "exhaust_systems": {
+      "remus_sport": {
+        "vendor": "Remus",
+        "part_number": "086014 1500",
+        "type": "Sport Exhaust",
+        "price_usd": 2499,
+        "notes": "German quality, great sound"
+      },
+      "eisenmann_race": {
+        "vendor": "Eisenmann",
+        "part_number": "B4820.00102",
+        "type": "Race Exhaust",
+        "price_usd": 2299,
+        "notes": "Aggressive sound profile"
+      },
+      "borla_atak": {
+        "vendor": "Borla",
+        "part_number": "140754",
+        "type": "ATAK Cat-Back",
+        "price_usd": 1599,
+        "notes": "Aggressive exhaust note"
+      },
+      "active_autowerke": {
+        "vendor": "Active Autowerke",
+        "part_number": "AA-B48-CBE",
+        "type": "Performance Cat-Back",
+        "price_usd": 1299,
+        "notes": "Good balance of sound and performance"
+      },
+      "magnaflow_street": {
+        "vendor": "Magnaflow",
+        "part_number": "19400",
+        "type": "Street Series",
+        "price_usd": 899,
+        "notes": "Budget-friendly exhaust option"
+      }
+    },
+    "turbo_upgrades": {
+      "pure_stage_2": {
+        "vendor": "Pure Turbos",
+        "part_number": "PURE-B48-S2",
+        "type": "Hybrid Turbo",
+        "price_usd": 1899,
+        "power_potential_whp": "400-450",
+        "spool_characteristics": "Similar to stock",
+        "notes": "Direct bolt-on, requires tune"
+      },
+      "vtt_hybrid": {
+        "vendor": "Vargas Turbo",
+        "part_number": "VTT-B48-HYB",
+        "type": "Hybrid Turbo",
+        "price_usd": 1799,
+        "power_potential_whp": "380-420",
+        "notes": "Good midrange power"
+      },
+      "borg_warner_efr_6258": {
+        "vendor": "BorgWarner",
+        "type": "Big Turbo Kit",
+        "price_usd": 2500,
+        "power_potential_whp": "500-600",
+        "notes": "For big power builds - requires custom manifold/adapter"
+      }
+    },
+    "fueling_upgrades": {
+      "spool_hpfp_stage_1": {
+        "vendor": "Spool Performance",
+        "part_number": "SPOOL-B48-HPFP1",
+        "type": "Stage 1 HPFP",
+        "price_usd": 599,
+        "flow_increase_percent": 30,
+        "notes": "Required for Stage 2+ power"
+      },
+      "spool_hpfp_stage_2": {
+        "vendor": "Spool Performance",
+        "part_number": "SPOOL-B48-HPFP2",
+        "type": "Stage 2 HPFP",
+        "price_usd": 899,
+        "flow_increase_percent": 50,
+        "notes": "For hybrid turbo builds"
+      },
+      "bms_lpfp": {
+        "vendor": "Burger Motorsports",
+        "part_number": "BMS-B48-LPFP",
+        "type": "Low Pressure Fuel Pump",
+        "price_usd": 379,
+        "notes": "Required for E85 use"
+      },
+      "spool_lpfp": {
+        "vendor": "Spool Performance",
+        "part_number": "SPOOL-B48-LPFP",
+        "type": "Stage 3 LPFP",
+        "price_usd": 449,
+        "notes": "Higher flow than BMS option"
+      },
+      "port_injection_kit": {
+        "vendor": "Spool Performance",
+        "part_number": "SPOOL-B48-PI",
+        "type": "Port Injection Kit",
+        "price_usd": 2199,
+        "notes": "Essential for Gen 1 B48 high-power builds"
+      },
+      "flex_fuel_kit": {
+        "vendor": "Fuel-It!",
+        "part_number": "FUEL-B48-FFX",
+        "type": "Flex Fuel Sensor Kit",
+        "price_usd": 549,
+        "notes": "Enables E85/gas blending with compatible tune"
+      }
+    },
+    "engine_internals": {
+      "cp_pistons": {
+        "vendor": "CP-Carrillo",
+        "part_number": "SC7485",
+        "type": "Forged Pistons (set of 4)",
+        "price_usd": 799,
+        "compression": "9.5:1",
+        "notes": "For turbo builds targeting 450+ HP"
+      },
+      "je_pistons": {
+        "vendor": "JE Pistons",
+        "part_number": "JE-B48-82",
+        "type": "Forged Pistons (set of 4)",
+        "price_usd": 699,
+        "notes": "Various compression ratios available"
+      },
+      "manley_rods": {
+        "vendor": "Manley",
+        "part_number": "14447-4",
+        "type": "Turbo Tuff Rods (set of 4)",
+        "price_usd": 899,
+        "notes": "Proven in high-HP builds"
+      },
+      "cp_carrillo_rods": {
+        "vendor": "CP-Carrillo",
+        "part_number": "BMW-B48-55000H",
+        "type": "H-Beam Rods (set of 4)",
+        "price_usd": 1199,
+        "notes": "Top-tier connecting rods"
+      },
+      "arp_head_studs": {
+        "vendor": "ARP",
+        "part_number": "201-4305",
+        "type": "Head Stud Kit",
+        "price_usd": 499,
+        "notes": "Required for 400+ HP builds"
+      },
+      "athena_head_gasket": {
+        "vendor": "Athena",
+        "part_number": "330053R",
+        "type": "MLS Head Gasket",
+        "price_usd": 199,
+        "notes": "Upgraded head gasket for built engines"
+      },
+      "acl_race_bearings": {
+        "vendor": "ACL",
+        "part_number": "4B8370H",
+        "type": "Race Rod Bearings",
+        "price_usd": 149,
+        "notes": "Upgraded rod bearings"
+      }
+    },
+    "cooling_upgrades": {
+      "csf_radiator": {
+        "vendor": "CSF",
+        "part_number": "CSF-B48-RAD",
+        "type": "High Performance Radiator",
+        "price_usd": 749,
+        "notes": "Improved cooling for track use"
+      },
+      "mishimoto_radiator": {
+        "vendor": "Mishimoto",
+        "part_number": "MMRAD-B48-17",
+        "type": "Aluminum Radiator",
+        "price_usd": 599,
+        "notes": "Lifetime warranty"
+      },
+      "csf_charge_cooler": {
+        "vendor": "CSF",
+        "part_number": "CSF-B48-CC",
+        "type": "Upgraded Charge Air Cooler",
+        "price_usd": 1099,
+        "notes": "For water-cooled IC models (if applicable)"
+      },
+      "setrab_oil_cooler": {
+        "vendor": "Setrab",
+        "type": "Engine Oil Cooler Kit",
+        "price_usd": 899,
+        "notes": "For track use and high-power builds"
+      }
+    },
+    "diverter_valves": {
+      "turbosmart_kompact": {
+        "vendor": "Turbosmart",
+        "part_number": "TS-0203-1262",
+        "type": "Kompact Plumb-Back",
+        "price_usd": 199,
+        "notes": "Improved boost response"
+      },
+      "forge_dv": {
+        "vendor": "Forge Motorsport",
+        "part_number": "FMDV14T",
+        "type": "Recirculating DV",
+        "price_usd": 179,
+        "notes": "Proven reliability"
+      },
+      "gfb_dv_plus": {
+        "vendor": "Go Fast Bits",
+        "part_number": "T9354",
+        "type": "DV+ Upgrade",
+        "price_usd": 99,
+        "notes": "Budget DV upgrade using OEM housing"
+      }
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Tune Only",
+      "power_target_whp": "250-280",
+      "power_target_wtq": "320-360",
+      "total_cost_usd": "200-500",
+      "parts": [
+        {"part": "MHD or Bootmod3 Stage 1 Tune", "price_usd": 199, "required": true},
+        {"part": "JB4 (alternative to flash)", "price_usd": 479, "required": false}
+      ],
+      "fuel_requirement": "93 octane",
+      "notes": "Best bang-for-buck. B48 responds well to simple tune."
+    },
+    "stage_1_plus": {
+      "name": "Stage 1+ - Tune with Basics",
+      "power_target_whp": "270-300",
+      "power_target_wtq": "350-400",
+      "total_cost_usd": "600-900",
+      "parts": [
+        {"part": "MHD/BM3 Stage 1+ Tune", "price_usd": 199, "required": true},
+        {"part": "Drop-in K&N Filter", "price_usd": 50, "required": false},
+        {"part": "Aluminum Charge Pipe", "price_usd": 169, "required": true}
+      ],
+      "fuel_requirement": "93 octane",
+      "notes": "Charge pipe prevents boost leak failures"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full Bolt-Ons",
+      "power_target_whp": "310-350",
+      "power_target_wtq": "400-440",
+      "total_cost_usd": "1800-2500",
+      "parts": [
+        {"part": "MHD/BM3 Stage 2 Tune", "price_usd": 249, "required": true},
+        {"part": "Cold Air Intake", "price_usd": 350, "required": true},
+        {"part": "Aluminum Charge Pipe", "price_usd": 169, "required": true},
+        {"part": "Catless Downpipe", "price_usd": 349, "required": true},
+        {"part": "Upgraded FMIC", "price_usd": 599, "required": true}
+      ],
+      "fuel_requirement": "93 octane or E30",
+      "supporting_mods": ["xHP transmission tune recommended"],
+      "notes": "Approaching stock turbo limit. Must have intercooler for consistent power."
+    },
+    "stage_2_plus": {
+      "name": "Stage 2+ - Max Stock Turbo",
+      "power_target_whp": "350-380",
+      "power_target_wtq": "450-480",
+      "total_cost_usd": "3000-4000",
+      "parts": [
+        {"part": "MHD/BM3 Stage 2+ Tune with E30 map", "price_usd": 299, "required": true},
+        {"part": "Premium Intake (Eventuri)", "price_usd": 899, "required": true},
+        {"part": "Aluminum Charge Pipe", "price_usd": 169, "required": true},
+        {"part": "Catless Downpipe", "price_usd": 349, "required": true},
+        {"part": "Competition FMIC", "price_usd": 799, "required": true},
+        {"part": "LPFP Upgrade", "price_usd": 379, "required": true},
+        {"part": "xHP Trans Tune", "price_usd": 129, "required": true}
+      ],
+      "fuel_requirement": "E30-E50 blend",
+      "notes": "Pushing stock turbo to absolute maximum. E85 blend required for top power."
+    },
+    "stage_3": {
+      "name": "Stage 3 - Hybrid Turbo",
+      "power_target_whp": "400-450",
+      "power_target_wtq": "480-520",
+      "total_cost_usd": "6000-8000",
+      "parts": [
+        {"part": "Pure Stage 2 Turbo", "price_usd": 1899, "required": true},
+        {"part": "Custom Pro Tune", "price_usd": 500, "required": true},
+        {"part": "Premium Intake", "price_usd": 899, "required": true},
+        {"part": "Competition FMIC", "price_usd": 899, "required": true},
+        {"part": "3\" Downpipe", "price_usd": 399, "required": true},
+        {"part": "HPFP Stage 1", "price_usd": 599, "required": true},
+        {"part": "LPFP Upgrade", "price_usd": 449, "required": true},
+        {"part": "Port Injection Kit (Gen 1)", "price_usd": 2199, "required": "Gen 1 only"},
+        {"part": "xHP Stage 3 Trans Tune", "price_usd": 129, "required": true}
+      ],
+      "fuel_requirement": "E50-E85",
+      "supporting_mods": ["Upgraded clutch for manual trans", "Transmission cooler recommended"],
+      "notes": "Significant power increase. Supporting mods critical."
+    },
+    "stage_4": {
+      "name": "Stage 4 - Built Motor",
+      "power_target_whp": "500-600+",
+      "power_target_wtq": "550-650+",
+      "total_cost_usd": "15000-25000",
+      "parts": [
+        {"part": "Forged Pistons", "price_usd": 799, "required": true},
+        {"part": "Forged Rods", "price_usd": 1199, "required": true},
+        {"part": "ARP Head Studs", "price_usd": 499, "required": true},
+        {"part": "Upgraded Head Gasket", "price_usd": 199, "required": true},
+        {"part": "Big Turbo Setup", "price_usd": 2500, "required": true},
+        {"part": "Port Injection Kit", "price_usd": 2199, "required": true},
+        {"part": "HPFP Stage 2", "price_usd": 899, "required": true},
+        {"part": "LPFP Upgrade", "price_usd": 449, "required": true},
+        {"part": "Full Cooling Package", "price_usd": 2000, "required": true},
+        {"part": "Custom Pro Tune", "price_usd": 800, "required": true},
+        {"part": "Engine Build Labor", "price_usd": 3000, "required": true}
+      ],
+      "fuel_requirement": "E85",
+      "supporting_mods": ["Built transmission", "Upgraded driveline", "Roll cage recommended"],
+      "notes": "Full race build. Transmission will be limiting factor."
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": [
+        "5.5L BMW TwinPower 0W-20 or Castrol 0W-30",
+        "Mann HU6004X Oil Filter",
+        "Drain Plug Gasket"
+      ],
+      "price_usd": 70,
+      "source": "FCP Euro - Lifetime Warranty",
+      "interval_miles": 10000,
+      "enthusiast_interval_miles": 5000
+    },
+    "spark_plug_kit": {
+      "parts": ["4x NGK LKAR8BI9"],
+      "price_usd": 50,
+      "interval_miles": 60000,
+      "tuned_interval_miles": 30000
+    },
+    "ignition_coil_kit": {
+      "parts": ["4x Eldor/Bosch Ignition Coils"],
+      "price_usd": 140,
+      "source": "FCP Euro"
+    },
+    "air_filter": {
+      "parts": ["OEM Air Filter or K&N 33-3051"],
+      "price_usd": 35,
+      "interval_miles": 30000
+    },
+    "coolant_service_kit": {
+      "parts": [
+        "4L BMW Coolant",
+        "Thermostat with housing",
+        "Thermostat gasket"
+      ],
+      "price_usd": 180,
+      "interval_miles": 100000
+    }
+  },
+
+  "quality_tiers": {
+    "budget": {
+      "description": "Entry-level upgrades, good value for money",
+      "brands": ["VRSF", "MST Performance", "CTS Turbo", "GFB", "BMS"],
+      "typical_price_range": "Budget-friendly",
+      "quality": "Good",
+      "notes": "Great for getting started without breaking the bank"
+    },
+    "mid_tier": {
+      "description": "Excellent balance of quality and price",
+      "brands": ["aFe Power", "Mishimoto", "Wagner Tuning", "Active Autowerke", "Borla"],
+      "typical_price_range": "Moderate",
+      "quality": "Very Good",
+      "notes": "Sweet spot for most enthusiasts"
+    },
+    "premium": {
+      "description": "High-end street and track components",
+      "brands": ["Eventuri", "CSF", "Remus", "Eisenmann", "Dinan"],
+      "typical_price_range": "Premium",
+      "quality": "Excellent",
+      "notes": "Best materials and engineering"
+    },
+    "race": {
+      "description": "Competition and high-power build components",
+      "brands": ["CP-Carrillo", "Manley", "Pure Turbos", "Spool Performance", "ARP"],
+      "typical_price_range": "High",
+      "quality": "Race-proven",
+      "notes": "For serious builds targeting maximum power"
+    }
+  },
+
+  "b48_specific_considerations": {
+    "advantages": {
+      "modular_platform": "Shares design with B58 - some parts and tuning knowledge transfers",
+      "modern_electronics": "Responsive to tuning with modern ECU",
+      "adequate_stock_internals": "Can handle 350+ HP on stock internals",
+      "gen_2_dual_injection": "2018+ models eliminate carbon buildup concerns"
+    },
+    "limitations": {
+      "smaller_turbo": "Stock turbo maxes out around 350-380 HP",
+      "less_aftermarket": "Not as much aftermarket support as B58",
+      "4_cylinder_limits": "4-cylinder inherently limited vs 6-cylinder B58",
+      "gen_1_carbon": "Gen 1 DI-only models require walnut blasting"
+    },
+    "comparison_to_b58": {
+      "power_headroom": "B58 has much more potential (700+ HP vs 450-500 HP)",
+      "aftermarket_support": "B58 has larger aftermarket ecosystem",
+      "cost_effectiveness": "B48 mods more affordable but smaller gains",
+      "recommendation": "If wanting big power, consider B58 swap or different platform"
+    }
+  },
+
+  "community_resources": {
+    "forums": [
+      {"name": "Bimmerpost", "url": "https://www.bimmerpost.com", "notes": "Largest BMW forum - B48 subforum"},
+      {"name": "SpoolStreet", "url": "https://www.spoolstreet.com", "notes": "BMW tuning focused"},
+      {"name": "MHD Forums", "url": "https://forum.mhdtuning.com", "notes": "MHD tuning community"}
+    ],
+    "facebook_groups": [
+      "MHD F & G Series Tuning",
+      "Bootmod3 F/G Series Tuning",
+      "B48 Owners Group"
+    ],
+    "youtube_channels": [
+      {"name": "50's Kid", "notes": "BMW performance and comparison"},
+      {"name": "Evolve Automotive", "notes": "BMW tuning content"},
+      {"name": "Schmee150", "notes": "BMW reviews and content"}
+    ],
+    "tuning_shops": [
+      {"name": "ESS Tuning", "location": "USA", "specialty": "BMW tuning"},
+      {"name": "RK Tunes", "location": "USA", "specialty": "MHD custom tunes"},
+      {"name": "Evolve Automotive", "location": "UK", "specialty": "BMW performance"}
+    ]
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "engine_id": "BMW-S58-3.0L-I6-TWIN-TURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": {
+        "engine_block": {
+          "part_id": "S58-BLOCK",
+          "description": "Closed-deck aluminum block with iron liners",
+          "oem_part_numbers": {
+            "standard": "11112456097"
+          },
+          "specifications": {
+            "bore_mm": 84.0,
+            "material": "Die-cast aluminum",
+            "deck_type": "Closed-deck",
+            "liners": "Cast iron"
+          },
+          "notes": "Reinforced vs B58 for higher cylinder pressures"
+        },
+        "crankshaft": {
+          "part_id": "S58-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": {
+            "standard": "11217640165"
+          },
+          "specifications": {
+            "stroke_mm": 90.0,
+            "main_journal_mm": 60,
+            "rod_journal_mm": 52,
+            "material": "Forged steel",
+            "counterweights": 12
+          }
+        },
+        "connecting_rods": {
+          "part_id": "S58-ROD",
+          "description": "Forged steel connecting rods",
+          "oem_part_numbers": {
+            "standard": "11247640167"
+          },
+          "specifications": {
+            "length_mm": 140.7,
+            "wrist_pin_mm": 22,
+            "material": "Forged steel",
+            "weight_grams": 545
+          },
+          "quantity": 6
+        },
+        "pistons": {
+          "part_id": "S58-PISTON",
+          "description": "Forged aluminum M-spec pistons with oil cooling",
+          "oem_part_numbers": {
+            "standard": "11257640168"
+          },
+          "specifications": {
+            "diameter_mm": 84.0,
+            "compression_ratio": "9.3:1",
+            "cooling": "Oil-cooled via piston jets",
+            "coating": "Low-friction skirt coating"
+          },
+          "quantity": 6
+        },
+        "main_bearings": {
+          "part_id": "S58-MAIN-BEARING",
+          "description": "Main crankshaft bearings",
+          "oem_part_numbers": {
+            "standard": "11217640180"
+          },
+          "quantity": 7,
+          "aftermarket": {
+            "ACL_Race": "7M2428H-STD",
+            "King_Racing": "MB5758AM"
+          }
+        },
+        "rod_bearings": {
+          "part_id": "S58-ROD-BEARING",
+          "description": "Connecting rod bearings",
+          "oem_part_numbers": {
+            "standard": "11247640181"
+          },
+          "quantity": 6,
+          "aftermarket": {
+            "ACL_Race": "6B2428H-STD",
+            "King_Racing": "CR6758AM",
+            "BE_Bearings": "S58-ROD-BE"
+          }
+        },
+        "crank_hub": {
+          "part_id": "S58-CRANK-HUB",
+          "description": "Crankshaft hub/pulley assembly",
+          "oem_part_numbers": {
+            "standard": "11237640190"
+          },
+          "aftermarket_upgrades": {
+            "ARP_crank_bolt": "101-2501",
+            "IND_crank_hub_fix": "IND-S58-CHF"
+          },
+          "notes": "CRITICAL: Upgrade crank hub retention before adding power"
+        }
+      }
+    },
+    "cylinder_head": {
+      "description": "Cylinder head and valvetrain",
+      "components": {
+        "cylinder_head": {
+          "part_id": "S58-HEAD",
+          "description": "Aluminum cylinder head with revised ports",
+          "oem_part_numbers": {
+            "standard": "11127640200"
+          },
+          "specifications": {
+            "material": "Aluminum alloy",
+            "valves_per_cylinder": 4,
+            "port_design": "M-optimized for flow",
+            "combustion_chamber_cc": 50
+          }
+        },
+        "intake_camshaft": {
+          "part_id": "S58-CAM-INTAKE",
+          "description": "Intake camshaft with VANOS",
+          "oem_part_numbers": {
+            "standard": "11317640210"
+          },
+          "specifications": {
+            "duration_degrees": 268,
+            "lift_mm": 11.0,
+            "vanos_range_degrees": 70
+          }
+        },
+        "exhaust_camshaft": {
+          "part_id": "S58-CAM-EXHAUST",
+          "description": "Exhaust camshaft with VANOS",
+          "oem_part_numbers": {
+            "standard": "11317640211"
+          },
+          "specifications": {
+            "duration_degrees": 264,
+            "lift_mm": 11.0,
+            "vanos_range_degrees": 50
+          }
+        },
+        "valvetronic_motor": {
+          "part_id": "S58-VALVETRONIC",
+          "description": "Valvetronic eccentric shaft motor",
+          "oem_part_numbers": {
+            "standard": "11377640220"
+          }
+        },
+        "intake_valves": {
+          "part_id": "S58-VALVE-INTAKE",
+          "description": "Intake valves",
+          "oem_part_numbers": {
+            "standard": "11347640230"
+          },
+          "specifications": {
+            "head_diameter_mm": 32.5,
+            "stem_diameter_mm": 6.0,
+            "material": "Stainless steel"
+          },
+          "quantity": 12
+        },
+        "exhaust_valves": {
+          "part_id": "S58-VALVE-EXHAUST",
+          "description": "Sodium-filled exhaust valves",
+          "oem_part_numbers": {
+            "standard": "11347640231"
+          },
+          "specifications": {
+            "head_diameter_mm": 28.0,
+            "stem_diameter_mm": 6.0,
+            "material": "Sodium-filled inconel"
+          },
+          "quantity": 12
+        },
+        "valve_springs": {
+          "part_id": "S58-VALVE-SPRING",
+          "description": "Beehive valve springs",
+          "oem_part_numbers": {
+            "standard": "11347640240"
+          },
+          "quantity": 24
+        },
+        "timing_chain": {
+          "part_id": "S58-TIMING-CHAIN",
+          "description": "Primary timing chain",
+          "oem_part_numbers": {
+            "standard": "11317640250"
+          }
+        }
+      }
+    },
+    "turbo_system": {
+      "description": "Twin turbocharger system",
+      "components": {
+        "turbocharger_bank_1": {
+          "part_id": "S58-TURBO-1",
+          "description": "Front bank turbocharger (cylinders 1-3)",
+          "oem_part_numbers": {
+            "standard": "11657640300"
+          },
+          "specifications": {
+            "manufacturer": "BorgWarner",
+            "type": "Twin-scroll",
+            "compressor_mm": 56,
+            "turbine_mm": 52
+          }
+        },
+        "turbocharger_bank_2": {
+          "part_id": "S58-TURBO-2",
+          "description": "Rear bank turbocharger (cylinders 4-6)",
+          "oem_part_numbers": {
+            "standard": "11657640301"
+          },
+          "specifications": {
+            "manufacturer": "BorgWarner",
+            "type": "Twin-scroll"
+          }
+        },
+        "wastegate_actuators": {
+          "part_id": "S58-WASTEGATE",
+          "description": "Electronic wastegate actuators",
+          "oem_part_numbers": {
+            "bank_1": "11657640310",
+            "bank_2": "11657640311"
+          },
+          "quantity": 2
+        },
+        "intercooler": {
+          "part_id": "S58-INTERCOOLER",
+          "description": "Air-to-water intercooler core",
+          "oem_part_numbers": {
+            "standard": "17517640400"
+          },
+          "specifications": {
+            "type": "Air-to-water",
+            "location": "Integrated in intake manifold"
+          }
+        },
+        "intercooler_pump": {
+          "part_id": "S58-IC-PUMP",
+          "description": "Intercooler coolant pump",
+          "oem_part_numbers": {
+            "standard": "11517640401"
+          }
+        },
+        "charge_pipes": {
+          "part_id": "S58-CHARGE-PIPE",
+          "description": "Turbo to intercooler charge pipes",
+          "oem_part_numbers": {
+            "hot_side": "11617640420",
+            "cold_side": "11617640421"
+          },
+          "notes": "OEM plastic - upgrade to aluminum recommended"
+        }
+      }
+    },
+    "fuel_system": {
+      "description": "High-pressure direct injection system",
+      "components": {
+        "high_pressure_fuel_pumps": {
+          "part_id": "S58-HPFP",
+          "description": "High-pressure fuel pumps (twin)",
+          "oem_part_numbers": {
+            "bank_1": "13517640500",
+            "bank_2": "13517640501"
+          },
+          "specifications": {
+            "max_pressure_bar": 350,
+            "quantity": 2
+          }
+        },
+        "fuel_rails": {
+          "part_id": "S58-FUEL-RAIL",
+          "description": "High-pressure fuel rails",
+          "oem_part_numbers": {
+            "standard": "13537640510"
+          },
+          "quantity": 2
+        },
+        "fuel_injectors": {
+          "part_id": "S58-INJECTOR",
+          "description": "Piezo direct fuel injectors",
+          "oem_part_numbers": {
+            "standard": "13537640520"
+          },
+          "specifications": {
+            "type": "Piezo direct injection",
+            "pressure_bar": 350,
+            "flow_cc_min": 520
+          },
+          "quantity": 6
+        },
+        "low_pressure_fuel_pump": {
+          "part_id": "S58-LPFP",
+          "description": "In-tank low-pressure fuel pump",
+          "oem_part_numbers": {
+            "standard": "16117640530"
+          }
+        },
+        "fuel_pressure_sensor": {
+          "part_id": "S58-FPS",
+          "description": "Fuel rail pressure sensor",
+          "oem_part_numbers": {
+            "standard": "13537640540"
+          }
+        }
+      }
+    },
+    "oil_system": {
+      "description": "Dry sump lubrication system",
+      "components": {
+        "oil_tank": {
+          "part_id": "S58-OIL-TANK",
+          "description": "Dry sump oil tank",
+          "oem_part_numbers": {
+            "standard": "11137640600"
+          },
+          "specifications": {
+            "capacity_liters": 8.5,
+            "location": "Front of engine"
+          }
+        },
+        "scavenge_pump": {
+          "part_id": "S58-SCAVENGE-PUMP",
+          "description": "Oil scavenge pump",
+          "oem_part_numbers": {
+            "standard": "11417640610"
+          }
+        },
+        "pressure_pump": {
+          "part_id": "S58-PRESSURE-PUMP",
+          "description": "Oil pressure pump",
+          "oem_part_numbers": {
+            "standard": "11417640611"
+          }
+        },
+        "oil_filter": {
+          "part_id": "S58-OIL-FILTER",
+          "description": "Oil filter element",
+          "oem_part_numbers": {
+            "standard": "11427640620"
+          },
+          "aftermarket": {
+            "Mann": "HU8008Z",
+            "Mahle": "OX815D"
+          }
+        },
+        "oil_cooler": {
+          "part_id": "S58-OIL-COOLER",
+          "description": "Engine oil cooler",
+          "oem_part_numbers": {
+            "standard": "17227640630"
+          }
+        }
+      }
+    },
+    "intake_system": {
+      "description": "Air intake components",
+      "components": {
+        "air_filter_housing": {
+          "part_id": "S58-AIRBOX",
+          "description": "Air filter housing",
+          "oem_part_numbers": {
+            "standard": "13717640700"
+          }
+        },
+        "air_filters": {
+          "part_id": "S58-AIR-FILTER",
+          "description": "Engine air filters",
+          "oem_part_numbers": {
+            "standard": "13727640701"
+          },
+          "quantity": 2,
+          "aftermarket": {
+            "K&N": "33-3131",
+            "BMC": "FB960/04"
+          }
+        },
+        "intake_manifold": {
+          "part_id": "S58-INTAKE",
+          "description": "Intake manifold with integrated intercooler",
+          "oem_part_numbers": {
+            "standard": "11617640710"
+          }
+        },
+        "throttle_body": {
+          "part_id": "S58-THROTTLE",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": {
+            "standard": "13547640720"
+          },
+          "specifications": {
+            "bore_mm": 70
+          }
+        }
+      }
+    },
+    "exhaust_system": {
+      "description": "Exhaust manifolds and downpipes",
+      "components": {
+        "exhaust_manifolds": {
+          "part_id": "S58-EXHAUST-MANIFOLD",
+          "description": "Twin-scroll exhaust manifolds",
+          "oem_part_numbers": {
+            "bank_1": "11627640800",
+            "bank_2": "11627640801"
+          },
+          "quantity": 2,
+          "notes": "Integrated into turbo housings"
+        },
+        "downpipes": {
+          "part_id": "S58-DOWNPIPE",
+          "description": "Turbo downpipes with catalysts",
+          "oem_part_numbers": {
+            "bank_1": "18307640810",
+            "bank_2": "18307640811"
+          },
+          "quantity": 2
+        },
+        "oxygen_sensors": {
+          "part_id": "S58-O2",
+          "description": "Oxygen sensors (wideband and narrowband)",
+          "oem_part_numbers": {
+            "pre_cat_bank_1": "11787640820",
+            "pre_cat_bank_2": "11787640821",
+            "post_cat_bank_1": "11787640822",
+            "post_cat_bank_2": "11787640823"
+          },
+          "quantity": 4
+        }
+      }
+    },
+    "cooling_system": {
+      "description": "Engine cooling components",
+      "components": {
+        "water_pump": {
+          "part_id": "S58-WATER-PUMP",
+          "description": "Electric water pump",
+          "oem_part_numbers": {
+            "standard": "11517640900"
+          }
+        },
+        "thermostat": {
+          "part_id": "S58-THERMOSTAT",
+          "description": "Electronically controlled thermostat",
+          "oem_part_numbers": {
+            "standard": "11537640910"
+          }
+        },
+        "radiator": {
+          "part_id": "S58-RADIATOR",
+          "description": "Main engine radiator",
+          "oem_part_numbers": {
+            "m3_g80": "17117640920",
+            "x3m_f97": "17117640921"
+          }
+        }
+      }
+    },
+    "ignition_system": {
+      "description": "Ignition components",
+      "components": {
+        "ignition_coils": {
+          "part_id": "S58-COIL",
+          "description": "Coil-on-plug ignition coils",
+          "oem_part_numbers": {
+            "standard": "12137641000"
+          },
+          "quantity": 6
+        },
+        "spark_plugs": {
+          "part_id": "S58-SPARK",
+          "description": "Iridium spark plugs",
+          "oem_part_numbers": {
+            "standard": "12127641010",
+            "NGK": "SILKAR8C8S"
+          },
+          "specifications": {
+            "gap_mm": 0.7,
+            "heat_range": 8
+          },
+          "quantity": 6
+        }
+      }
+    },
+    "sensors": {
+      "description": "Engine sensors and ECU",
+      "components": {
+        "crankshaft_sensor": {
+          "part_id": "S58-CKP",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": {
+            "standard": "13627641100"
+          }
+        },
+        "camshaft_sensors": {
+          "part_id": "S58-CMP",
+          "description": "Camshaft position sensors",
+          "oem_part_numbers": {
+            "intake": "13627641101",
+            "exhaust": "13627641102"
+          },
+          "quantity": 2
+        },
+        "knock_sensors": {
+          "part_id": "S58-KNOCK",
+          "description": "Knock sensors",
+          "oem_part_numbers": {
+            "standard": "13627641110"
+          },
+          "quantity": 2
+        },
+        "map_sensor": {
+          "part_id": "S58-MAP",
+          "description": "Manifold absolute pressure sensor",
+          "oem_part_numbers": {
+            "standard": "13627641120"
+          }
+        },
+        "dme": {
+          "part_id": "S58-DME",
+          "description": "Digital Motor Electronics (ECU)",
+          "oem_part_numbers": {
+            "standard": "Vehicle specific"
+          },
+          "notes": "Bosch MEVD17.2.K - flash tunable"
+        }
+      }
+    }
+  }
+}

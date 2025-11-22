@@ -1,0 +1,584 @@
+{
+  "engine_id": "BMW-N20-2.0L-I4-TURBO",
+  "matrix_version": "2.0",
+  "last_updated": "2025-01",
+
+  "n20_vs_n26_comparison": {
+    "overview": {
+      "n20": "Standard emissions variant, Federal/49-state",
+      "n26": "SULEV (Super Ultra Low Emission Vehicle) variant, California CARB states",
+      "key_differences": "N26 has secondary air injection system for cold-start emissions"
+    },
+    "shared_components": {
+      "short_block": {
+        "interchangeable": true,
+        "notes": "Block, crank, rods, pistons are identical"
+      },
+      "cylinder_head": {
+        "interchangeable": "PARTIAL",
+        "notes": "N26 head has additional port for secondary air injection"
+      },
+      "timing_chain_system": {
+        "interchangeable": true,
+        "notes": "Same timing chain, tensioner, guides. Critical failure point for both."
+      },
+      "turbocharger": {
+        "interchangeable": true,
+        "notes": "Same turbo unit, wastegate, boost control"
+      },
+      "fuel_system": {
+        "hpfp": {
+          "interchangeable": true
+        },
+        "injectors": {
+          "interchangeable": true
+        },
+        "fuel_rail": {
+          "interchangeable": true
+        }
+      },
+      "intake_manifold": {
+        "interchangeable": true,
+        "notes": "Same intake manifold design"
+      },
+      "valvetronic_system": {
+        "interchangeable": true,
+        "notes": "Same Valvetronic III components"
+      },
+      "vanos_system": {
+        "interchangeable": true,
+        "notes": "Same Double VANOS hardware"
+      },
+      "ignition_components": {
+        "interchangeable": true,
+        "notes": "Same coils, plugs"
+      },
+      "cooling_system": {
+        "interchangeable": true,
+        "notes": "Same water pump, thermostat, radiator"
+      },
+      "oil_system": {
+        "interchangeable": true,
+        "notes": "Same oil pump, filter, pan"
+      }
+    },
+    "different_components": {
+      "exhaust_manifold": {
+        "interchangeable": false,
+        "reason": "N26 has integrated secondary air injection port",
+        "n20_part": "11-62-8-657-616",
+        "n26_part": "11-62-8-657-617"
+      },
+      "secondary_air_system": {
+        "n20": "Not equipped",
+        "n26": "Full secondary air injection system",
+        "n26_components": [
+          "Secondary air pump (11-72-7-636-150)",
+          "Secondary air valve (11-72-7-636-151)",
+          "Air injection tube to manifold"
+        ]
+      },
+      "catalytic_converter": {
+        "interchangeable": false,
+        "reason": "N26 cat is larger with additional O2 bungs",
+        "n20_o2_sensors": 2,
+        "n26_o2_sensors": 4
+      },
+      "ecu_tune": {
+        "interchangeable": false,
+        "reason": "N26 has specific emissions calibration for SULEV compliance",
+        "notes": "N26 tune cannot be directly applied to N20 wiring"
+      },
+      "wiring_harness": {
+        "interchangeable": false,
+        "reason": "N26 has additional connectors for secondary air and extra O2 sensors"
+      }
+    },
+    "conversion_feasibility": {
+      "n20_to_n26": {
+        "feasibility": "Not recommended",
+        "reason": "Requires extensive exhaust system changes, additional sensors, ECU reflash",
+        "components_needed": [
+          "N26 exhaust manifold",
+          "Secondary air injection system",
+          "N26 catalytic converter",
+          "Additional O2 sensors",
+          "N26-specific wiring",
+          "ECU recode or replacement"
+        ],
+        "estimated_cost_usd": "3000-5000+"
+      },
+      "n26_to_n20": {
+        "feasibility": "Possible but not useful",
+        "reason": "Can remove secondary air system, but no benefit",
+        "notes": "N26 already passes federal emissions, conversion provides no advantage"
+      }
+    }
+  },
+
+  "n20_variant_interchangeability": {
+    "n20b20a_vs_n20b20b": {
+      "physical_hardware": {
+        "interchangeable": true,
+        "notes": "Same hardware, different boost/tune"
+      },
+      "ecu_tune": {
+        "difference": "N20B20A: 11.6 psi, 184 HP | N20B20B: 14.5 psi, 245 HP",
+        "reflash_possible": true,
+        "notes": "ECU tune determines power output, hardware identical"
+      },
+      "turbo": {
+        "interchangeable": true,
+        "notes": "Same K03 turbo on both variants"
+      }
+    },
+    "n20b20o0_base_variant": {
+      "notes": "Entry-level 156 HP variant (Europe)",
+      "hardware_difference": "None - purely ECU-limited",
+      "upgrade_path": "Reflash to N20B20A or B tune"
+    }
+  },
+
+  "parts_cross_reference": {
+    "timing_chain_components": {
+      "description": "Critical - use updated parts regardless of production year",
+      "original_parts": {
+        "chain": "11-31-7-592-849",
+        "tensioner": "11-31-7-588-625",
+        "upper_guide": "11-31-7-588-996",
+        "lower_guide": "11-31-7-588-997"
+      },
+      "updated_parts": {
+        "chain": "11-31-8-648-732",
+        "tensioner": "11-31-8-648-731",
+        "upper_guide": "11-31-8-648-730",
+        "lower_guide": "11-31-8-648-729",
+        "notes": "ALWAYS use updated parts - critical improvement"
+      },
+      "aftermarket_equivalents": {
+        "iwis": "Complete kit available - OEM supplier quality",
+        "febi_bilstein": "Complete kit available",
+        "timing_chain_kit_sources": ["FCP Euro", "ECS Tuning", "Pelican Parts"]
+      }
+    },
+    "water_pump_thermostat": {
+      "water_pump": {
+        "n20_n26_shared": true,
+        "oem_part": "11-51-7-597-715",
+        "aftermarket": {
+          "pierburg": "OEM supplier",
+          "graf": "Quality aftermarket"
+        }
+      },
+      "thermostat": {
+        "n20_n26_shared": true,
+        "oem_part": "11-53-7-644-811",
+        "aftermarket": {
+          "wahler": "OEM supplier",
+          "mahle_behr": "Quality aftermarket"
+        }
+      }
+    },
+    "ignition_components": {
+      "spark_plugs": {
+        "oem_ngk": "SILZKBR8D8S (94201)",
+        "alternate_ngk": "SILZKBR8C8S (colder for tuned)",
+        "bosch": "ZR5TPP33S",
+        "all_n20_n26_compatible": true
+      },
+      "ignition_coils": {
+        "oem_part": "12-13-8-647-689",
+        "all_n20_n26_compatible": true,
+        "aftermarket": {
+          "eldor": "OEM supplier",
+          "delphi": "Quality aftermarket"
+        }
+      }
+    },
+    "oil_filter": {
+      "all_n20_n26_compatible": true,
+      "oem_part": "11-42-7-640-862",
+      "aftermarket": {
+        "mann": "HU 816 x",
+        "mahle": "OX 387D",
+        "bosch": "3477"
+      }
+    }
+  },
+
+  "upgrade_paths": {
+    "stage_1_tune": {
+      "description": "ECU flash tune - easiest power gain",
+      "power_gain_hp": "25-50",
+      "requirements": [
+        "ECU flash or piggyback tune",
+        "No hardware changes required (stock hardware capable)"
+      ],
+      "recommended_supporting_mods": [
+        "High-quality air filter",
+        "Addressed timing chain if early production"
+      ],
+      "tuners": {
+        "burger_tuning_jb4": {
+          "type": "Piggyback",
+          "hp_gain": "30-50",
+          "features": ["User adjustable", "Data logging", "Removable"],
+          "price_usd": "450-550"
+        },
+        "dinan": {
+          "type": "ECU flash",
+          "hp_gain": "30-40",
+          "features": ["Dealer-safe", "Warranty-inclusive"],
+          "price_usd": "600-900"
+        },
+        "bootmod3": {
+          "type": "ECU flash",
+          "hp_gain": "40-50",
+          "features": ["Custom maps", "Data logging", "Multiple maps"],
+          "price_usd": "500-700"
+        },
+        "mhd_flasher": {
+          "type": "ECU flash (phone-based)",
+          "hp_gain": "35-50",
+          "features": ["DIY flash", "Various stages", "E85 capable"],
+          "price_usd": "200-400"
+        },
+        "ecutek": {
+          "type": "ECU flash",
+          "hp_gain": "40-50",
+          "features": ["Professional tuning platform"],
+          "price_usd": "700-1000"
+        }
+      },
+      "expected_output": {
+        "n20b20b_base": "245 HP / 258 lb-ft",
+        "stage_1_tuned": "280-295 HP / 310-340 lb-ft"
+      }
+    },
+    "stage_2_tune": {
+      "description": "ECU tune with basic bolt-ons",
+      "power_gain_hp": "50-70",
+      "required_hardware": [
+        "Catless or high-flow catted downpipe",
+        "Upgraded intake or high-flow air filter"
+      ],
+      "recommended_hardware": [
+        "Upgraded intercooler",
+        "Aluminum charge pipe",
+        "Catch can"
+      ],
+      "prerequisite": "Timing chain addressed (especially early production)",
+      "expected_output": {
+        "base": "245 HP / 258 lb-ft",
+        "stage_2_tuned": "295-320 HP / 340-380 lb-ft"
+      },
+      "notes": "Stock turbo reaching efficiency limits at high end of Stage 2"
+    },
+    "stage_2_plus_full_bolt_ons": {
+      "description": "Maximum power on stock turbo",
+      "power_gain_hp": "70-100",
+      "required_hardware": [
+        "Catless downpipe",
+        "Large front-mount intercooler (FMIC)",
+        "Cold air intake",
+        "Aluminum charge pipe",
+        "Upgraded diverter valve"
+      ],
+      "recommended_hardware": [
+        "HPFP upgrade internals",
+        "Catch can",
+        "Oil cooler (if tracking)"
+      ],
+      "fuel": "Premium 93 octane or E30 blend",
+      "expected_output": {
+        "93_octane": "320-340 HP / 380-420 lb-ft",
+        "e30_blend": "340-360 HP / 400-440 lb-ft"
+      },
+      "notes": "Stock turbo maxed out - significant heat soak at this level"
+    },
+    "stage_3_turbo_upgrade": {
+      "description": "Upgraded turbocharger for big power",
+      "power_potential_hp": "380-450",
+      "turbo_options": {
+        "pure_turbos_stage_2": {
+          "description": "Upgraded K03 variant",
+          "hp_potential": "380-420",
+          "notes": "Drop-in replacement, retains OEM fitment",
+          "price_usd": "1500-2000"
+        },
+        "vargas_turbo_vtt_stg2": {
+          "description": "Upgraded turbo",
+          "hp_potential": "380-420",
+          "price_usd": "1400-1800"
+        },
+        "precision_turbo_kit": {
+          "description": "Full turbo kit with larger frame turbo",
+          "hp_potential": "450+",
+          "notes": "Requires custom manifold, extensive modification",
+          "price_usd": "3000-5000"
+        }
+      },
+      "required_supporting_mods": [
+        "Stage 2+ hardware (FMIC, downpipe, intake)",
+        "HPFP upgrade",
+        "Upgraded fuel injectors (if 450+ HP)",
+        "Upgraded low-pressure fuel pump (E85 builds)",
+        "Catch can",
+        "Custom tune"
+      ],
+      "fuel_system_considerations": {
+        "stock_hpfp_limit": "~400 HP on pump gas",
+        "upgraded_hpfp_limit": "~450 HP on pump gas",
+        "e85_requirements": [
+          "Upgraded LPFP",
+          "Flex fuel sensor",
+          "E85-compatible tune"
+        ]
+      },
+      "internals_considerations": {
+        "stock_rods_limit": "~450 HP (conservative)",
+        "forged_internals_recommended": ">450 HP builds",
+        "timing_chain": "MUST be addressed before turbo upgrade"
+      }
+    },
+    "built_engine_path": {
+      "description": "Fully built engine for maximum reliability at high power",
+      "power_potential_hp": "500-600+",
+      "required_components": {
+        "forged_pistons": {
+          "brands": ["JE Pistons", "CP Pistons", "Mahle Motorsport"],
+          "notes": "Lower compression (9.0:1) for boost headroom"
+        },
+        "forged_rods": {
+          "brands": ["Manley", "Pauter", "Integrated Engineering"],
+          "notes": "H-beam or I-beam design"
+        },
+        "arp_hardware": {
+          "items": ["Head studs", "Main studs", "Rod bolts"],
+          "notes": "Essential for high-boost reliability"
+        },
+        "upgraded_timing_chain": {
+          "notes": "Heavy-duty chain components"
+        },
+        "valve_springs": {
+          "brands": ["Supertech", "Brian Crower"],
+          "notes": "If using performance cams"
+        }
+      },
+      "typical_build_cost_usd": {
+        "parts_only": "3000-5000",
+        "machine_work": "1500-2500",
+        "labor": "2000-4000",
+        "total_estimate": "6500-11500"
+      }
+    }
+  },
+
+  "e85_flex_fuel_conversion": {
+    "overview": {
+      "benefit": "Higher octane allows more boost, significant power gains",
+      "power_gain_vs_93": "15-25%",
+      "fuel_consumption_increase": "30% (E85 has less energy density)"
+    },
+    "hardware_requirements": {
+      "lpfp_upgrade": {
+        "required": true,
+        "reason": "E85 requires ~30% more fuel flow",
+        "options": {
+          "deatschwerks": "DW300",
+          "walbro": "450 LPH",
+          "aem": "E85-compatible pump"
+        }
+      },
+      "flex_fuel_sensor": {
+        "required_for_flex": true,
+        "options": {
+          "continental": "OEM flex fuel sensor",
+          "prosport": "Flex fuel kit"
+        }
+      },
+      "hpfp_upgrade": {
+        "required_at_hp": ">400 HP on E85",
+        "options": [
+          "Autotech internals"
+        ]
+      },
+      "injector_upgrade": {
+        "required_at_hp": ">450 HP on E85",
+        "notes": "Stock injectors max out around 450 HP on E85"
+      }
+    },
+    "tune_requirements": {
+      "dedicated_e85_tune": "Works but requires consistent E85",
+      "flex_fuel_tune": "Adjusts timing/boost based on ethanol content sensor",
+      "tuners_supporting_flex": ["MHD", "Bootmod3", "EcuTek"]
+    },
+    "considerations": [
+      "E85 availability varies by region",
+      "Increased fuel consumption",
+      "Cold start issues in winter (use E50 or lower)",
+      "Check fuel system compatibility with ethanol"
+    ]
+  },
+
+  "compatibility_with_other_bmw_engines": {
+    "b48_successor": {
+      "relationship": "Direct replacement for N20 starting 2017",
+      "shared_components": {
+        "none_direct": true,
+        "notes": "B48 is modular design, different architecture"
+      },
+      "swap_feasibility": {
+        "b48_into_n20_car": {
+          "feasibility": "Possible with extensive work",
+          "challenges": [
+            "Different engine mounts",
+            "Different wiring harness",
+            "Different ECU",
+            "Transmission adapter may be needed"
+          ],
+          "benefit": "B48 more reliable, similar or better power",
+          "estimated_cost": "$8000-15000"
+        }
+      }
+    },
+    "n55_six_cylinder": {
+      "relationship": "Contemporary inline-6 turbo (larger displacement)",
+      "shared_components": {
+        "some_accessories": true,
+        "examples": [
+          "Similar starter motors",
+          "Similar alternators",
+          "Similar serpentine components"
+        ]
+      },
+      "swap_feasibility": {
+        "n55_into_n20_car": {
+          "feasibility": "Commonly done (F30 328i to 335i engine)",
+          "requirements": [
+            "N55 engine and transmission",
+            "N55 wiring harness",
+            "N55 ECU and coding",
+            "Modified engine mounts",
+            "Exhaust modification",
+            "Cooling system modifications",
+            "Driveshaft modification"
+          ],
+          "estimated_cost": "$10000-20000",
+          "notes": "Popular swap for significant power upgrade"
+        }
+      }
+    }
+  },
+
+  "oem_replacement_parts_sources": {
+    "dealer": {
+      "pros": ["Genuine BMW parts", "Warranty coverage", "Correct part guarantee"],
+      "cons": ["Highest cost", "Limited aftermarket selection"],
+      "best_for": "Warranty work, emissions components"
+    },
+    "online_bmw_specialists": {
+      "fcp_euro": {
+        "url": "fcpeuro.com",
+        "specialty": "Lifetime replacement guarantee on most parts",
+        "notes": "Excellent for maintenance items"
+      },
+      "ecs_tuning": {
+        "url": "ecstuning.com",
+        "specialty": "Wide selection, good DIY guides",
+        "notes": "Both OEM and aftermarket"
+      },
+      "pelican_parts": {
+        "url": "pelicanparts.com",
+        "specialty": "Extensive BMW parts inventory",
+        "notes": "Good tech articles"
+      },
+      "bimmerworld": {
+        "url": "bimmerworld.com",
+        "specialty": "Performance and racing parts",
+        "notes": "Good for track-focused builds"
+      },
+      "turner_motorsport": {
+        "url": "turnermotorsport.com",
+        "specialty": "Performance parts and OEM",
+        "notes": "Strong N20 support"
+      }
+    },
+    "aftermarket_specialists": {
+      "burger_tuning_bms": {
+        "specialty": "N20 tuning and performance parts"
+      },
+      "dinan": {
+        "specialty": "BMW performance, dealer-supported"
+      },
+      "active_autowerke": {
+        "specialty": "BMW performance parts and tunes"
+      }
+    }
+  },
+
+  "common_swap_and_upgrade_combinations": {
+    "reliability_focused": {
+      "description": "Address known issues, maintain stock power",
+      "components": [
+        "Updated timing chain kit (complete)",
+        "Water pump and thermostat",
+        "Valve cover gasket (updated)",
+        "Oil filter housing gasket",
+        "VANOS solenoid cleaning/replacement"
+      ],
+      "estimated_cost_usd": "2000-3500 (DIY parts)",
+      "result": "Reliable daily driver with factory performance"
+    },
+    "mild_street_performance": {
+      "description": "Stage 1 with reliability mods",
+      "components": [
+        "All reliability mods above",
+        "JB4 or Stage 1 tune",
+        "Drop-in performance air filter",
+        "Catch can"
+      ],
+      "estimated_cost_usd": "3000-4500",
+      "result": "~280-290 HP, reliable daily driver"
+    },
+    "aggressive_street": {
+      "description": "Stage 2 setup for spirited driving",
+      "components": [
+        "All reliability mods",
+        "Full catback exhaust or downpipe + tune",
+        "Large FMIC",
+        "Aluminum charge pipe",
+        "Cold air intake",
+        "Stage 2 tune"
+      ],
+      "estimated_cost_usd": "5000-8000",
+      "result": "~300-330 HP, excellent street performance"
+    },
+    "track_weekend_warrior": {
+      "description": "Maximum stock turbo power with cooling",
+      "components": [
+        "All Stage 2 mods",
+        "Oil cooler",
+        "Upgraded brake pads and fluid",
+        "Coilovers or sport springs",
+        "Catless downpipe with tune",
+        "HPFP internals"
+      ],
+      "estimated_cost_usd": "8000-12000",
+      "result": "~340-360 HP, track-capable"
+    },
+    "all_out_build": {
+      "description": "Turbo upgrade with supporting mods",
+      "components": [
+        "Built/forged internals (optional but recommended)",
+        "Upgraded turbo",
+        "Full fuel system upgrade",
+        "All bolt-ons",
+        "Custom tune",
+        "Upgraded clutch (manual) or transmission cooler (auto)"
+      ],
+      "estimated_cost_usd": "15000-25000",
+      "result": "400-450+ HP, serious performance build"
+    }
+  }
+}

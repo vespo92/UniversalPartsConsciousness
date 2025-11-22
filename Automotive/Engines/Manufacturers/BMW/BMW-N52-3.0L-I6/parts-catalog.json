@@ -1,0 +1,812 @@
+{
+  "metadata": {
+    "engine_family": "BMW N52",
+    "catalog_version": "1.0.0",
+    "last_updated": "2025-01-15",
+    "notes": "Part numbers may vary by production date and variant. Always verify with VIN decoder."
+  },
+  "short_block": {
+    "description": "Magnesium/aluminum composite crankcase with cast iron cylinder liners",
+    "components": {
+      "engine_block": {
+        "description": "Magnesium outer shell with aluminum inner housing",
+        "part_numbers": {
+          "N52B30": "11-11-0-396-206",
+          "N52B25": "11-11-0-396-207"
+        },
+        "material": "AJ62A Magnesium alloy (outer), AlSi17Cu4Mg aluminum (inner)",
+        "notes": "Block is not rebuildable in traditional sense due to composite construction"
+      },
+      "crankshaft": {
+        "description": "Forged steel crankshaft",
+        "part_numbers": {
+          "N52B30": "11-21-7-566-018",
+          "N52B25": "11-21-7-566-019"
+        },
+        "main_journal_diameter_mm": 60.0,
+        "rod_journal_diameter_mm": 50.0,
+        "stroke_mm": 88.0,
+        "counterweights": 8
+      },
+      "connecting_rods": {
+        "description": "Forged steel connecting rods with fractured cap",
+        "part_number": "11-24-7-574-831",
+        "length_mm": 135.0,
+        "material": "Forged steel",
+        "bolt_torque_nm": "35 + 90 degrees"
+      },
+      "pistons": {
+        "description": "Cast aluminum pistons",
+        "part_numbers": {
+          "N52B30_standard": "11-25-7-566-020",
+          "N52B25_standard": "11-25-7-566-021"
+        },
+        "compression_height_mm": 31.0,
+        "pin_diameter_mm": 21.0,
+        "ring_configuration": "1.2mm/1.5mm/2.0mm"
+      },
+      "piston_rings": {
+        "description": "Three-ring pack",
+        "part_number": "11-25-7-566-022",
+        "configuration": {
+          "top_ring": "1.2mm compression",
+          "second_ring": "1.5mm compression",
+          "oil_ring": "2.0mm three-piece"
+        }
+      },
+      "main_bearings": {
+        "description": "Bi-metal main bearings",
+        "part_numbers": {
+          "standard": "11-21-1-706-775",
+          "upper": "11-21-1-706-776",
+          "lower": "11-21-1-706-777"
+        },
+        "sizes_available": ["Standard", "+0.25mm", "+0.50mm"]
+      },
+      "rod_bearings": {
+        "description": "Bi-metal rod bearings",
+        "part_numbers": {
+          "standard": "11-24-1-706-780",
+          "upper": "11-24-1-706-781",
+          "lower": "11-24-1-706-782"
+        },
+        "sizes_available": ["Standard", "+0.25mm", "+0.50mm"]
+      },
+      "thrust_washers": {
+        "description": "Crankshaft thrust washers",
+        "part_number": "11-21-1-706-778",
+        "location": "Main bearing #4"
+      }
+    }
+  },
+  "cylinder_head": {
+    "description": "Aluminum DOHC 24-valve head with Valvetronic",
+    "components": {
+      "cylinder_head": {
+        "description": "Aluminum alloy cylinder head assembly",
+        "part_numbers": {
+          "complete_head": "11-12-7-566-286",
+          "bare_head": "11-12-7-566-287"
+        },
+        "material": "Aluminum alloy",
+        "combustion_chamber_volume_cc": 50.0
+      },
+      "head_gasket": {
+        "description": "Multi-layer steel head gasket",
+        "part_numbers": {
+          "N52B30": "11-12-7-548-921",
+          "N52B25": "11-12-7-548-922"
+        },
+        "compressed_thickness_mm": 0.7,
+        "bore_diameter_mm": 85.5
+      },
+      "intake_valves": {
+        "description": "Intake valves",
+        "part_number": "11-34-7-547-187",
+        "quantity": 12,
+        "head_diameter_mm": 31.0,
+        "stem_diameter_mm": 5.5,
+        "length_mm": 101.3,
+        "material": "Steel"
+      },
+      "exhaust_valves": {
+        "description": "Exhaust valves",
+        "part_number": "11-34-7-547-188",
+        "quantity": 12,
+        "head_diameter_mm": 27.5,
+        "stem_diameter_mm": 5.5,
+        "length_mm": 100.8,
+        "material": "Sodium-filled steel"
+      },
+      "valve_springs": {
+        "description": "Valve springs",
+        "part_numbers": {
+          "intake": "11-34-7-547-189",
+          "exhaust": "11-34-7-547-190"
+        },
+        "quantity_each": 12
+      },
+      "valve_stem_seals": {
+        "description": "Valve stem seals",
+        "part_numbers": {
+          "intake": "11-34-1-437-681",
+          "exhaust": "11-34-1-437-682"
+        },
+        "quantity_each": 12
+      },
+      "hydraulic_lifters": {
+        "description": "Hydraulic roller lifters",
+        "part_number": "11-33-7-566-485",
+        "quantity": 24
+      },
+      "roller_followers": {
+        "description": "Roller cam followers for Valvetronic",
+        "part_number": "11-33-7-589-916",
+        "quantity": 12
+      }
+    }
+  },
+  "camshafts_and_timing": {
+    "description": "DOHC camshafts with VANOS and chain drive",
+    "components": {
+      "intake_camshaft": {
+        "description": "Intake camshaft with VANOS",
+        "part_number": "11-31-7-566-990",
+        "lift_mm": 9.7,
+        "duration_degrees": 244
+      },
+      "exhaust_camshaft": {
+        "description": "Exhaust camshaft with VANOS",
+        "part_number": "11-31-7-566-991",
+        "lift_mm": 9.7,
+        "duration_degrees": 236
+      },
+      "timing_chain": {
+        "description": "Primary timing chain",
+        "part_number": "11-31-7-566-886",
+        "type": "Duplex roller chain",
+        "links": 132
+      },
+      "timing_chain_tensioner": {
+        "description": "Hydraulic chain tensioner",
+        "part_number": "11-31-7-566-987",
+        "type": "Hydraulic with ratchet lock"
+      },
+      "chain_guide_rail_upper": {
+        "description": "Upper timing chain guide",
+        "part_number": "11-31-7-566-988"
+      },
+      "chain_guide_rail_tensioner_side": {
+        "description": "Tensioner side chain guide",
+        "part_number": "11-31-7-566-989"
+      },
+      "timing_chain_sprocket_crankshaft": {
+        "description": "Crankshaft timing sprocket",
+        "part_number": "11-21-7-566-015"
+      },
+      "timing_chain_sprocket_intake": {
+        "description": "Intake camshaft sprocket (VANOS unit)",
+        "part_number": "11-36-7-566-095"
+      },
+      "timing_chain_sprocket_exhaust": {
+        "description": "Exhaust camshaft sprocket (VANOS unit)",
+        "part_number": "11-36-7-566-096"
+      }
+    }
+  },
+  "vanos_system": {
+    "description": "Double-VANOS variable valve timing system",
+    "components": {
+      "intake_vanos_unit": {
+        "description": "Intake VANOS adjuster unit",
+        "part_number": "11-36-7-566-095",
+        "adjustment_range_degrees": 50,
+        "type": "Vane-type hydraulic"
+      },
+      "exhaust_vanos_unit": {
+        "description": "Exhaust VANOS adjuster unit",
+        "part_number": "11-36-7-566-096",
+        "adjustment_range_degrees": 45,
+        "type": "Vane-type hydraulic"
+      },
+      "intake_vanos_solenoid": {
+        "description": "Intake VANOS control solenoid",
+        "part_numbers": {
+          "original": "11-36-7-585-425",
+          "updated": "11-36-7-560-462"
+        },
+        "location": "Cylinder head, intake side",
+        "resistance_ohms": "7.0-8.5"
+      },
+      "exhaust_vanos_solenoid": {
+        "description": "Exhaust VANOS control solenoid",
+        "part_numbers": {
+          "original": "11-36-7-585-426",
+          "updated": "11-36-7-560-463"
+        },
+        "location": "Cylinder head, exhaust side",
+        "resistance_ohms": "7.0-8.5"
+      },
+      "vanos_solenoid_filter": {
+        "description": "VANOS solenoid inlet filter screens",
+        "part_number": "11-36-7-546-379",
+        "quantity": 2,
+        "notes": "Often clogged, clean or replace during solenoid service"
+      }
+    }
+  },
+  "valvetronic_system": {
+    "description": "Valvetronic II variable valve lift system",
+    "components": {
+      "valvetronic_motor": {
+        "description": "Valvetronic actuator motor",
+        "part_number": "11-37-7-548-389",
+        "type": "DC servo motor",
+        "location": "Rear of cylinder head"
+      },
+      "eccentric_shaft": {
+        "description": "Valvetronic eccentric shaft",
+        "part_number": "11-37-7-502-589",
+        "material": "Steel",
+        "function": "Varies intake valve lift 0.2mm to 9.7mm"
+      },
+      "eccentric_shaft_sensor": {
+        "description": "Eccentric shaft position sensor",
+        "part_numbers": {
+          "early": "11-37-7-524-879",
+          "late_integrated": "11-12-7-582-245"
+        },
+        "type": "Hall effect",
+        "notes": "Later models integrated into valve cover"
+      },
+      "intermediate_levers": {
+        "description": "Valvetronic intermediate lever assembly",
+        "part_number": "11-33-7-589-915",
+        "quantity": 12,
+        "function": "Transfers eccentric shaft motion to roller followers"
+      },
+      "roller_followers": {
+        "description": "Roller cam followers",
+        "part_number": "11-33-7-589-916",
+        "quantity": 12,
+        "notes": "Contact cam lobe and intermediate lever"
+      },
+      "return_springs": {
+        "description": "Valvetronic return springs",
+        "part_number": "11-33-7-563-397",
+        "quantity": 12
+      },
+      "hydraulic_play_compensation": {
+        "description": "HVA - Hydraulic play compensating elements",
+        "part_number": "11-33-7-566-485",
+        "quantity": 12
+      }
+    }
+  },
+  "valve_cover_and_pcv": {
+    "description": "Valve cover with integrated PCV/CCV system",
+    "components": {
+      "valve_cover": {
+        "description": "Valve cover assembly with integrated CCV",
+        "part_numbers": {
+          "N52_early": "11-12-7-552-281",
+          "N52_late": "11-12-7-582-245",
+          "N52_sulev": "11-12-7-563-474"
+        },
+        "material": "Aluminum/Plastic composite",
+        "notes": "Includes integrated CCV system. Late models include eccentric shaft sensor."
+      },
+      "valve_cover_gasket": {
+        "description": "Valve cover gasket",
+        "part_numbers": {
+          "main_gasket": "11-12-7-566-286",
+          "spark_plug_tube_seals": "11-12-1-437-395"
+        },
+        "material": "Rubber",
+        "quantity_tube_seals": 6
+      },
+      "ccv_valve": {
+        "description": "Crankcase ventilation valve (integrated)",
+        "notes": "Integrated into valve cover, not separately serviceable on late models",
+        "part_number_early": "11-61-7-531-423"
+      },
+      "ccv_hose_to_intake": {
+        "description": "CCV hose to intake manifold",
+        "part_number": "11-61-7-563-476"
+      },
+      "oil_cap": {
+        "description": "Oil filler cap",
+        "part_number": "11-12-7-566-784"
+      }
+    }
+  },
+  "intake_system": {
+    "description": "Variable intake manifold with DISA",
+    "components": {
+      "intake_manifold": {
+        "description": "Plastic intake manifold with DISA",
+        "part_numbers": {
+          "N52B30": "11-61-7-559-523",
+          "N52B25": "11-61-7-559-524"
+        },
+        "material": "Composite plastic"
+      },
+      "disa_valve": {
+        "description": "DISA valve - Differentiated Intake System",
+        "part_number": "11-61-7-579-114",
+        "type": "Three-stage variable runner length",
+        "notes": "Controls intake runner length for optimal torque across RPM range"
+      },
+      "throttle_body": {
+        "description": "Electronic throttle body",
+        "part_numbers": {
+          "standard": "13-54-7-516-946",
+          "sulev": "13-54-7-528-179"
+        },
+        "bore_diameter_mm": 70
+      },
+      "air_filter_housing": {
+        "description": "Air filter housing assembly",
+        "part_number": "13-71-7-567-174"
+      },
+      "air_filter": {
+        "description": "Engine air filter",
+        "part_numbers": {
+          "oem": "13-71-7-521-033",
+          "mann": "C 29 150"
+        }
+      },
+      "mass_airflow_sensor": {
+        "description": "Hot-film MAF sensor",
+        "part_number": "13-62-7-566-984",
+        "type": "Hot-film",
+        "manufacturer": "Siemens/VDO"
+      },
+      "intake_boot": {
+        "description": "Air intake boot (MAF to throttle body)",
+        "part_number": "13-71-7-571-348"
+      }
+    }
+  },
+  "exhaust_system": {
+    "description": "Exhaust manifolds with catalytic converters",
+    "components": {
+      "exhaust_manifold_front": {
+        "description": "Front exhaust manifold (cylinders 1-3)",
+        "part_number": "11-62-7-566-495",
+        "includes_cat": true
+      },
+      "exhaust_manifold_rear": {
+        "description": "Rear exhaust manifold (cylinders 4-6)",
+        "part_number": "11-62-7-566-496",
+        "includes_cat": true
+      },
+      "exhaust_manifold_gasket_front": {
+        "description": "Front exhaust manifold gasket",
+        "part_number": "11-62-7-509-677",
+        "quantity": 3
+      },
+      "exhaust_manifold_gasket_rear": {
+        "description": "Rear exhaust manifold gasket",
+        "part_number": "11-62-7-509-678",
+        "quantity": 3
+      },
+      "catalytic_converter_front": {
+        "description": "Front catalytic converter (integrated)",
+        "part_number": "18-30-7-536-817",
+        "notes": "Integrated into exhaust manifold"
+      },
+      "catalytic_converter_rear": {
+        "description": "Rear catalytic converter (integrated)",
+        "part_number": "18-30-7-536-818",
+        "notes": "Integrated into exhaust manifold"
+      },
+      "oxygen_sensor_pre_cat_front": {
+        "description": "Front pre-cat O2 sensor (wideband)",
+        "part_number": "11-78-7-589-121",
+        "type": "Wideband (A/F ratio)"
+      },
+      "oxygen_sensor_pre_cat_rear": {
+        "description": "Rear pre-cat O2 sensor (wideband)",
+        "part_number": "11-78-7-589-122",
+        "type": "Wideband (A/F ratio)"
+      },
+      "oxygen_sensor_post_cat_front": {
+        "description": "Front post-cat O2 sensor",
+        "part_number": "11-78-7-576-673",
+        "type": "Narrowband (switching)"
+      },
+      "oxygen_sensor_post_cat_rear": {
+        "description": "Rear post-cat O2 sensor",
+        "part_number": "11-78-7-576-674",
+        "type": "Narrowband (switching)"
+      }
+    }
+  },
+  "fuel_system": {
+    "description": "Port fuel injection system",
+    "components": {
+      "fuel_injectors": {
+        "description": "Port fuel injectors",
+        "part_number": "13-53-7-531-634",
+        "quantity": 6,
+        "flow_rate_cc_min": 200,
+        "type": "Multi-hole",
+        "resistance_ohms": 12
+      },
+      "fuel_rail": {
+        "description": "Fuel rail assembly",
+        "part_number": "13-53-7-566-870",
+        "material": "Aluminum"
+      },
+      "fuel_pressure_regulator": {
+        "description": "Fuel pressure regulator (in-tank)",
+        "notes": "Integrated into fuel pump module",
+        "system_pressure_bar": 3.5
+      },
+      "fuel_pump_module": {
+        "description": "In-tank fuel pump and sender unit",
+        "part_numbers": {
+          "E90_standard": "16-14-6-765-820",
+          "E90_sulev": "16-14-6-765-821"
+        }
+      },
+      "fuel_filter": {
+        "description": "In-tank fuel filter",
+        "notes": "Integrated into fuel pump module, not separately serviceable"
+      },
+      "fuel_tank_breather_valve": {
+        "description": "Tank vent/breather valve",
+        "part_number": "16-13-7-193-479"
+      },
+      "charcoal_canister": {
+        "description": "EVAP charcoal canister",
+        "part_number": "16-13-7-162-350"
+      },
+      "purge_valve": {
+        "description": "EVAP purge valve",
+        "part_number": "11-61-7-544-806"
+      }
+    }
+  },
+  "ignition_system": {
+    "description": "Coil-on-plug direct ignition",
+    "components": {
+      "ignition_coils": {
+        "description": "Pencil-type ignition coils",
+        "part_numbers": {
+          "oem_bosch": "12-13-7-594-937",
+          "oem_delphi": "12-13-7-551-260"
+        },
+        "quantity": 6,
+        "type": "Coil-on-plug",
+        "primary_resistance_ohms": "0.5-0.7",
+        "secondary_resistance_kohms": "5.0-8.0"
+      },
+      "spark_plugs": {
+        "description": "Spark plugs",
+        "part_numbers": {
+          "oem_ngk": "12-12-0-037-607",
+          "ngk_plkr7a": "PLKR7A"
+        },
+        "quantity": 6,
+        "gap_mm": 0.8,
+        "heat_range": 7,
+        "type": "Platinum/Iridium",
+        "thread_size": "M12x1.25",
+        "reach_mm": 26.5
+      },
+      "ignition_wire_harness": {
+        "description": "Coil connector harness",
+        "part_number": "12-51-7-566-883"
+      }
+    }
+  },
+  "cooling_system": {
+    "description": "Electric water pump cooling system",
+    "components": {
+      "electric_water_pump": {
+        "description": "Electric water pump",
+        "part_numbers": {
+          "pierburg": "11-51-7-586-925",
+          "continental": "11-51-7-563-183"
+        },
+        "type": "Brushless DC motor",
+        "flow_rate_lpm": 250,
+        "max_pressure_bar": 0.8,
+        "notes": "First BMW production application of electric water pump"
+      },
+      "thermostat": {
+        "description": "Electronic map-controlled thermostat",
+        "part_numbers": {
+          "oem": "11-53-7-549-476",
+          "mahle_behr": "TM 14 97"
+        },
+        "opening_temp_c": 97,
+        "type": "Electronically controlled"
+      },
+      "thermostat_housing": {
+        "description": "Thermostat housing assembly",
+        "part_number": "11-53-7-549-476",
+        "notes": "Includes thermostat"
+      },
+      "radiator": {
+        "description": "Engine radiator",
+        "part_numbers": {
+          "E90_auto": "17-11-7-562-079",
+          "E90_manual": "17-11-7-562-080"
+        }
+      },
+      "radiator_hose_upper": {
+        "description": "Upper radiator hose",
+        "part_number": "17-12-7-548-221"
+      },
+      "radiator_hose_lower": {
+        "description": "Lower radiator hose",
+        "part_number": "17-12-7-548-222"
+      },
+      "expansion_tank": {
+        "description": "Coolant expansion tank",
+        "part_number": "17-13-7-543-003"
+      },
+      "expansion_tank_cap": {
+        "description": "Expansion tank pressure cap",
+        "part_number": "17-11-7-639-020",
+        "pressure_bar": 2.0
+      },
+      "coolant_level_sensor": {
+        "description": "Coolant level sensor",
+        "part_number": "17-13-7-524-812"
+      },
+      "coolant_temperature_sensor": {
+        "description": "Engine coolant temperature sensor",
+        "part_number": "13-62-1-433-077",
+        "location": "Thermostat housing"
+      },
+      "auxiliary_water_pump": {
+        "description": "Electric auxiliary coolant pump (heating)",
+        "part_number": "64-11-6-988-960",
+        "notes": "For cabin heating circulation"
+      }
+    }
+  },
+  "lubrication_system": {
+    "description": "Full-pressure lubrication with variable displacement pump",
+    "components": {
+      "oil_pump": {
+        "description": "Variable displacement oil pump",
+        "part_number": "11-41-7-566-830",
+        "type": "Vane-type variable displacement",
+        "drive": "Chain driven from crankshaft"
+      },
+      "oil_pump_chain": {
+        "description": "Oil pump drive chain",
+        "part_number": "11-41-7-566-831"
+      },
+      "oil_filter_housing": {
+        "description": "Oil filter housing with cooler",
+        "part_number": "11-42-7-525-334",
+        "includes_cooler": true
+      },
+      "oil_filter_housing_gasket": {
+        "description": "Oil filter housing gasket set",
+        "part_number": "11-42-7-525-335",
+        "notes": "Common leak point"
+      },
+      "oil_filter": {
+        "description": "Engine oil filter",
+        "part_numbers": {
+          "oem": "11-42-7-566-327",
+          "mann": "HU 816 x"
+        },
+        "type": "Cartridge"
+      },
+      "oil_pan": {
+        "description": "Engine oil pan",
+        "part_numbers": {
+          "E90_rwd": "11-13-7-566-474",
+          "E90_xdrive": "11-13-7-566-475"
+        },
+        "material": "Aluminum"
+      },
+      "oil_pan_gasket": {
+        "description": "Oil pan gasket",
+        "part_number": "11-13-7-566-476"
+      },
+      "oil_level_sensor": {
+        "description": "Oil level and temperature sensor",
+        "part_number": "12-61-7-567-723",
+        "location": "Oil pan"
+      },
+      "oil_pressure_sensor": {
+        "description": "Oil pressure sensor",
+        "part_number": "12-61-7-567-724"
+      },
+      "oil_drain_plug": {
+        "description": "Oil pan drain plug",
+        "part_number": "11-13-2-396-011",
+        "thread": "M18x1.5"
+      },
+      "oil_drain_plug_gasket": {
+        "description": "Drain plug seal ring",
+        "part_number": "11-13-7-546-275",
+        "material": "Aluminum"
+      }
+    }
+  },
+  "accessory_drive": {
+    "description": "Serpentine belt accessory drive system",
+    "components": {
+      "serpentine_belt": {
+        "description": "Accessory drive belt",
+        "part_numbers": {
+          "with_ac": "11-28-7-631-817",
+          "without_ac": "11-28-7-631-818"
+        },
+        "type": "Multi-rib (7PK)",
+        "length_mm": 1750
+      },
+      "belt_tensioner": {
+        "description": "Automatic belt tensioner",
+        "part_number": "11-28-7-571-015",
+        "type": "Spring-loaded automatic"
+      },
+      "idler_pulley": {
+        "description": "Idler pulley",
+        "part_number": "11-28-7-578-674"
+      },
+      "alternator": {
+        "description": "Alternator",
+        "part_numbers": {
+          "150a": "12-31-7-566-090",
+          "180a": "12-31-7-566-091"
+        },
+        "output_amps": "150-180",
+        "manufacturer": "Bosch/Valeo"
+      },
+      "ac_compressor": {
+        "description": "A/C compressor",
+        "part_numbers": {
+          "denso": "64-52-9-122-618",
+          "behr": "64-52-9-185-144"
+        },
+        "type": "Variable displacement"
+      },
+      "power_steering_pump": {
+        "description": "Power steering pump (if equipped)",
+        "part_number": "32-41-6-780-413",
+        "notes": "Some models have electric power steering (no pump)"
+      }
+    }
+  },
+  "sensors_and_electrical": {
+    "description": "Engine management sensors and electrical components",
+    "components": {
+      "crankshaft_position_sensor": {
+        "description": "Crankshaft position sensor",
+        "part_number": "13-62-7-566-987",
+        "type": "Hall effect",
+        "location": "Rear of engine block"
+      },
+      "camshaft_position_sensor_intake": {
+        "description": "Intake camshaft position sensor",
+        "part_number": "13-62-7-566-988",
+        "type": "Hall effect",
+        "location": "Front of cylinder head, intake side"
+      },
+      "camshaft_position_sensor_exhaust": {
+        "description": "Exhaust camshaft position sensor",
+        "part_number": "13-62-7-566-989",
+        "type": "Hall effect",
+        "location": "Front of cylinder head, exhaust side"
+      },
+      "knock_sensor_1": {
+        "description": "Knock sensor (cylinders 1-3)",
+        "part_number": "13-62-7-566-990",
+        "type": "Piezoelectric",
+        "location": "Engine block, front"
+      },
+      "knock_sensor_2": {
+        "description": "Knock sensor (cylinders 4-6)",
+        "part_number": "13-62-7-566-991",
+        "type": "Piezoelectric",
+        "location": "Engine block, rear"
+      },
+      "intake_air_temp_sensor": {
+        "description": "Intake air temperature sensor",
+        "notes": "Integrated into MAF sensor"
+      },
+      "engine_wiring_harness": {
+        "description": "Main engine wiring harness",
+        "part_number": "12-51-7-566-884"
+      },
+      "starter_motor": {
+        "description": "Starter motor",
+        "part_number": "12-41-7-566-092",
+        "type": "Permanent magnet gear reduction"
+      }
+    }
+  },
+  "engine_mounts": {
+    "description": "Engine and transmission mounting system",
+    "components": {
+      "engine_mount_left": {
+        "description": "Left engine mount (hydraulic)",
+        "part_numbers": {
+          "E90": "22-11-6-773-743",
+          "E60": "22-11-6-773-744"
+        },
+        "type": "Hydraulic"
+      },
+      "engine_mount_right": {
+        "description": "Right engine mount (hydraulic)",
+        "part_numbers": {
+          "E90": "22-11-6-773-745",
+          "E60": "22-11-6-773-746"
+        },
+        "type": "Hydraulic"
+      },
+      "transmission_mount": {
+        "description": "Transmission mount",
+        "part_numbers": {
+          "E90_manual": "22-31-6-773-740",
+          "E90_auto": "22-31-6-773-741"
+        }
+      }
+    }
+  },
+  "gasket_sets": {
+    "description": "Complete gasket and seal sets",
+    "components": {
+      "full_gasket_set": {
+        "description": "Complete engine gasket set",
+        "part_number": "11-12-7-566-299",
+        "includes": [
+          "Head gasket",
+          "Valve cover gasket",
+          "Intake manifold gaskets",
+          "Exhaust manifold gaskets",
+          "Timing cover gaskets",
+          "Oil pan gasket",
+          "Various seals"
+        ]
+      },
+      "head_gasket_set": {
+        "description": "Cylinder head gasket set",
+        "part_number": "11-12-7-566-300",
+        "includes": [
+          "Head gasket",
+          "Valve stem seals",
+          "Head bolts"
+        ]
+      },
+      "lower_gasket_set": {
+        "description": "Lower engine gasket set",
+        "part_number": "11-12-7-566-301",
+        "includes": [
+          "Oil pan gasket",
+          "Front cover seal",
+          "Rear main seal",
+          "Various O-rings"
+        ]
+      },
+      "valve_cover_gasket_set": {
+        "description": "Valve cover gasket set",
+        "part_number": "11-12-7-566-302",
+        "includes": [
+          "Valve cover gasket",
+          "Spark plug tube seals",
+          "Half moon seals"
+        ]
+      },
+      "front_crankshaft_seal": {
+        "description": "Front crankshaft oil seal",
+        "part_number": "11-14-7-566-303"
+      },
+      "rear_main_seal": {
+        "description": "Rear crankshaft oil seal",
+        "part_number": "11-14-7-566-304"
+      }
+    }
+  }
+}

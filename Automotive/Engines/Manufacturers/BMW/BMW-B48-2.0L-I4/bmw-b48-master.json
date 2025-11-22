@@ -1,0 +1,267 @@
+{
+  "engine_id": "BMW-B48-2.0L-I4-TURBO",
+  "common_names": ["B48", "B48A20", "B48B20", "BMW B48 TwinPower Turbo", "BMW 2.0T"],
+  "manufacturer": "BMW AG",
+  "engine_family": "BMW B Modular Engine Family (B38/B48/B58)",
+  "production_years": "2014-present",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {"liters": 1.998, "cc": 1998},
+    "bore": {"mm": 82.0},
+    "stroke": {"mm": 94.6},
+    "compression_ratio": "11.0:1",
+    "firing_order": "1-3-4-2",
+    "block_material": "Aluminum with cast iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves, Double VANOS, Valvetronic",
+    "forced_induction": {
+      "type": "Single Twin-Scroll Turbocharger",
+      "manufacturer": "Mitsubishi TD04",
+      "model_variants": {
+        "standard": "TD04-19T",
+        "high_output": "TD04-20T"
+      },
+      "boost_psi": {"stock_low": 8, "stock_high": 18, "max_safe": 26}
+    },
+    "fuel_system": {
+      "type": "Direct Injection",
+      "variants": {
+        "b48a20": "Direct Injection Only",
+        "b48b20_tu": "Combined Direct + Port Injection (2018+)"
+      },
+      "fuel_pressure_bar": 200
+    },
+    "redline_rpm": 7000,
+    "max_engine_speed": 7200,
+    "weight_kg": 140,
+    "length_mm": 545
+  },
+
+  "engine_variants": {
+    "b48a20o0": {
+      "designation": "B48A20O0",
+      "generation": "Gen 1",
+      "years": "2014-2016",
+      "power_hp": 184,
+      "torque_nm": 270,
+      "torque_lb_ft": 199,
+      "applications": ["MINI Cooper S (F56)"],
+      "notes": "Initial MINI variant"
+    },
+    "b48a20o1": {
+      "designation": "B48A20O1",
+      "generation": "Gen 1",
+      "years": "2015-2019",
+      "power_hp": 252,
+      "torque_nm": 350,
+      "torque_lb_ft": 258,
+      "applications": ["MINI JCW (F56)", "MINI Clubman JCW (F54)"],
+      "notes": "High-output MINI variant with revised turbo"
+    },
+    "b48a20m0": {
+      "designation": "B48A20M0",
+      "generation": "Gen 1",
+      "years": "2015-2019",
+      "power_hp": 184,
+      "torque_nm": 270,
+      "torque_lb_ft": 199,
+      "applications": ["F30 318i", "F20 118i"],
+      "notes": "Entry-level BMW variant"
+    },
+    "b48b20a": {
+      "designation": "B48B20A",
+      "generation": "Gen 1.5",
+      "years": "2016-2019",
+      "power_hp": 184,
+      "torque_nm": 290,
+      "torque_lb_ft": 214,
+      "applications": ["F30 320i", "F32 420i", "G30 520i", "F48 X1 sDrive20i"],
+      "notes": "Standard BMW output"
+    },
+    "b48b20b": {
+      "designation": "B48B20B",
+      "generation": "Gen 1.5",
+      "years": "2016-2019",
+      "power_hp": 252,
+      "torque_nm": 350,
+      "torque_lb_ft": 258,
+      "applications": ["F30 330i", "F32 430i", "G30 530i", "F48 X1 xDrive28i", "F25 X3 xDrive30i"],
+      "notes": "High-output variant"
+    },
+    "b48b20m0": {
+      "designation": "B48B20M0",
+      "generation": "Gen 2 (Technical Update)",
+      "years": "2018-present",
+      "power_hp": 184,
+      "torque_nm": 300,
+      "torque_lb_ft": 221,
+      "applications": ["G20 320i", "G22 420i", "G30 520i (LCI)"],
+      "injection": "Combined Direct + Port Injection",
+      "notes": "Technical update with dual injection"
+    },
+    "b48b20o1": {
+      "designation": "B48B20O1",
+      "generation": "Gen 2 (Technical Update)",
+      "years": "2019-present",
+      "power_hp": 258,
+      "torque_nm": 400,
+      "torque_lb_ft": 295,
+      "applications": ["G20 330i", "G22 430i", "G30 530i (LCI)", "G01 X3 sDrive30i", "G02 X4 xDrive30i"],
+      "injection": "Combined Direct + Port Injection",
+      "notes": "High-output Gen 2 with improved torque"
+    },
+    "b48b20o2": {
+      "designation": "B48B20O2",
+      "generation": "Gen 2 (Technical Update)",
+      "years": "2020-present",
+      "power_hp": 302,
+      "torque_nm": 450,
+      "torque_lb_ft": 332,
+      "applications": ["BMW Z4 sDrive30i (G29)", "Toyota Supra 2.0"],
+      "injection": "Combined Direct + Port Injection",
+      "notes": "Highest output B48 variant - shared with Toyota"
+    },
+    "b48a20t1": {
+      "designation": "B48A20T1",
+      "generation": "Gen 2 MINI",
+      "years": "2019-present",
+      "power_hp": 231,
+      "torque_nm": 350,
+      "torque_lb_ft": 258,
+      "applications": ["MINI Cooper S (F56 LCI)", "MINI Clubman S (F54 LCI)"],
+      "injection": "Combined Direct + Port Injection",
+      "notes": "Updated MINI high-output variant"
+    },
+    "b48a20t3": {
+      "designation": "B48A20T3",
+      "generation": "Gen 2 MINI JCW",
+      "years": "2020-present",
+      "power_hp": 306,
+      "torque_nm": 450,
+      "torque_lb_ft": 332,
+      "applications": ["MINI JCW GP3 (F56)", "MINI JCW Clubman (F54)"],
+      "injection": "Combined Direct + Port Injection",
+      "notes": "Highest output MINI variant - limited production"
+    }
+  },
+
+  "vehicle_applications": {
+    "bmw_f_series": {
+      "f20_f21_1_series": {"years": "2015-2019", "models": ["118i", "120i"], "power_hp": "136-184"},
+      "f22_f23_2_series": {"years": "2015-2021", "models": ["218i", "220i", "228i", "230i"], "power_hp": "136-252"},
+      "f30_f31_3_series": {"years": "2015-2019", "models": ["318i", "320i", "330i"], "power_hp": "136-252"},
+      "f32_f33_f36_4_series": {"years": "2016-2020", "models": ["420i", "428i", "430i"], "power_hp": "184-252"},
+      "f48_f49_x1": {"years": "2016-2022", "models": ["sDrive18i", "sDrive20i", "xDrive20i", "xDrive28i"], "power_hp": "136-231"},
+      "f39_x2": {"years": "2018-2023", "models": ["sDrive18i", "sDrive20i", "xDrive20i", "xDrive28i"], "power_hp": "136-231"},
+      "f25_x3": {"years": "2017-2018", "models": ["xDrive20i", "xDrive28i", "xDrive30i"], "power_hp": "184-252"}
+    },
+    "bmw_g_series": {
+      "g20_g21_3_series": {"years": "2019-present", "models": ["318i", "320i", "330i"], "power_hp": "156-258"},
+      "g22_g23_g26_4_series": {"years": "2020-present", "models": ["420i", "430i"], "power_hp": "184-258"},
+      "g30_g31_5_series": {"years": "2017-present", "models": ["520i", "530i"], "power_hp": "184-252"},
+      "g01_g02_x3_x4": {"years": "2018-present", "models": ["sDrive20i", "xDrive20i", "sDrive30i", "xDrive30i"], "power_hp": "184-258"},
+      "g29_z4": {"years": "2019-present", "models": ["sDrive20i", "sDrive30i"], "power_hp": "197-258"}
+    },
+    "toyota": {
+      "a90_supra_20t": {"years": "2020-present", "models": ["GR Supra 2.0"], "power_hp": 258, "notes": "B48B20O2 variant"}
+    },
+    "mini": {
+      "f56_cooper_s": {"years": "2014-present", "models": ["Cooper S", "JCW"], "power_hp": "192-306"},
+      "f54_clubman_s": {"years": "2015-present", "models": ["Cooper S Clubman", "JCW Clubman"], "power_hp": "192-306"},
+      "f60_countryman_s": {"years": "2017-present", "models": ["Cooper S Countryman", "JCW Countryman"], "power_hp": "192-306"}
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 5.25,
+      "capacity_quarts": 5.5,
+      "with_filter_liters": 5.5,
+      "viscosity_recommended": ["0W-20", "0W-30"],
+      "spec": "BMW LL-17FE+ or LL-14FE+",
+      "alternate_specs": ["ACEA C5", "API SP"]
+    },
+    "coolant": {
+      "capacity_liters": 6.0,
+      "type": "BMW Coolant (blue) or BMW-approved G48"
+    }
+  },
+
+  "tuning_potential": {
+    "stock_turbo_limit_hp": 380,
+    "stock_internals_limit_hp": 450,
+    "common_power_levels": {
+      "stage_1_tune": {"hp": "280-320", "requirements": ["Flash tune", "91-93 octane"]},
+      "stage_2_bolt_ons": {"hp": "320-380", "requirements": ["Downpipe", "Intake", "Stage 2 tune"]},
+      "upgraded_turbo": {"hp": "400-500", "requirements": ["Hybrid/upgraded turbo", "Supporting mods", "Custom tune"]}
+    },
+    "fuel_requirements": {
+      "stock": "91 octane minimum",
+      "tuned": "93 octane recommended",
+      "e85_blend": "E30-E50 for maximum power"
+    },
+    "weak_points_for_tuning": [
+      "Stock turbo maxes out around 350-380hp",
+      "Direct injection only models prone to carbon buildup",
+      "Stock charge pipe can fail under boost",
+      "Stock intercooler heat soaks quickly"
+    ],
+    "strong_points": [
+      "Shares architecture with B58 - proven platform",
+      "Good aftermarket support from B58 development",
+      "Strong bottom end for a 4-cylinder",
+      "Gen 2 dual injection eliminates carbon issues"
+    ]
+  },
+
+  "modular_architecture": {
+    "family_members": {
+      "b38": {"displacement": "1.5L", "cylinders": 3, "notes": "Same bore/stroke per cylinder"},
+      "b48": {"displacement": "2.0L", "cylinders": 4, "notes": "This engine"},
+      "b58": {"displacement": "3.0L", "cylinders": 6, "notes": "Adds two cylinders, same bore/stroke"}
+    },
+    "shared_components": [
+      "Bore spacing and bore diameter (82mm)",
+      "Stroke (94.6mm)",
+      "Cylinder head design philosophy",
+      "VANOS and Valvetronic systems",
+      "Direct injection system components",
+      "Many sensors and electronic components"
+    ],
+    "design_philosophy": "BMW's modular design uses identical cylinder dimensions across 3, 4, and 6-cylinder variants"
+  },
+
+  "notes": {
+    "heritage": "Part of BMW's B-series modular engine family. Replaced N20 turbocharged 4-cylinder.",
+    "reputation": "Reliable workhorse engine, good balance of efficiency and performance. Less exciting than B58 but solid.",
+    "key_improvements_over_n20": [
+      "Lighter weight through aluminum construction",
+      "Improved turbocharger response",
+      "Better NVH characteristics",
+      "More efficient combustion",
+      "Gen 2 adds port injection for carbon-free operation"
+    ],
+    "common_issues": [
+      "Carbon buildup on Gen 1 direct-injection-only models",
+      "Timing chain guides (less common than N20)",
+      "Water pump failures (electric pump)",
+      "Oil consumption in some early units",
+      "Charge pipe failures under boost"
+    ],
+    "strengths": [
+      "Excellent fuel efficiency for performance",
+      "Smooth and refined operation",
+      "Good low-end torque from twin-scroll turbo",
+      "Proven modular platform",
+      "Adequate aftermarket support",
+      "Gen 2 dual injection is very reliable"
+    ],
+    "comparison_to_competition": {
+      "vs_mercedes_m264": "Similar power, B48 slightly more tuneable",
+      "vs_audi_ea888_gen3": "EA888 has more aftermarket but B48 more refined",
+      "vs_honda_k20c": "K20C revvier and sportier, B48 more torquey and efficient"
+    },
+    "market_position": "BMW's mainstream 4-cylinder turbo for everything from base models to sporty variants. The B58's little brother."
+  }
+}

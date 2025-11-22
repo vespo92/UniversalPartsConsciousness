@@ -1,0 +1,795 @@
+{
+  "engine_id": "VAG-EA888-2.0L-TFSI-I4",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "systems": {
+    "short_block": {
+      "description": "Engine block, rotating assembly, and bottom end components",
+      "components": {
+        "engine_block": {
+          "part_id": "EA888-BLOCK",
+          "description": "Engine block (material varies by generation)",
+          "oem_part_numbers": {
+            "gen1_cast_iron": "06H103011AM",
+            "gen2_cast_iron": "06H103011BR",
+            "gen3_aluminum": "06K103011BR",
+            "gen3b_aluminum": "06K103011CM",
+            "gen4_closed_deck": "06L103011"
+          },
+          "specifications": {
+            "bore_mm": 82.5,
+            "gen1_gen2": {
+              "material": "Cast iron",
+              "deck_type": "Open"
+            },
+            "gen3_gen3b": {
+              "material": "Aluminum with Alusil liners",
+              "deck_type": "Open"
+            },
+            "gen4": {
+              "material": "Aluminum",
+              "deck_type": "Closed"
+            }
+          },
+          "notes": "Gen4 closed-deck block is strongest - handles 600+ hp"
+        },
+        "crankshaft": {
+          "part_id": "EA888-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H105101J",
+            "gen3": "06K105101AD",
+            "gen3b_gen4": "06K105101AF"
+          },
+          "specifications": {
+            "stroke_mm": 92.8,
+            "main_journal_mm": 54,
+            "rod_journal_mm": 48,
+            "material": "Forged steel",
+            "counterweights": 8
+          }
+        },
+        "connecting_rods": {
+          "part_id": "EA888-ROD",
+          "description": "Connecting rods",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H198401A",
+            "gen3": "06K198401A",
+            "gen3b_gen4": "06K198401D"
+          },
+          "specifications": {
+            "length_mm": 144.35,
+            "wrist_pin_mm": 21,
+            "material": "Forged steel (Gen3+) / Powder metal (Gen1-2)",
+            "weight_grams": 505
+          },
+          "quantity": 4,
+          "notes": "Gen3+ rods are stronger than Gen1-2"
+        },
+        "pistons": {
+          "part_id": "EA888-PISTON",
+          "description": "Forged aluminum pistons",
+          "oem_part_numbers": {
+            "gen1_210hp": "06H107065DL",
+            "gen2_220hp": "06H107065DQ",
+            "gen3_is20": "06K107065AB",
+            "gen3_is38": "06K107065AD",
+            "gen4": "06L107065"
+          },
+          "specifications": {
+            "diameter_mm": 82.5,
+            "compression_height_mm": 30,
+            "is20_compression": "9.6:1",
+            "is38_compression": "9.3:1",
+            "coating": "DLC anti-friction (Gen3+)"
+          },
+          "quantity": 4
+        },
+        "piston_rings": {
+          "part_id": "EA888-RINGS",
+          "description": "Three-ring piston ring set",
+          "oem_part_numbers": {
+            "standard": "06K198151"
+          },
+          "specifications": {
+            "top_ring_mm": 1.2,
+            "second_ring_mm": 1.5,
+            "oil_ring_mm": 2.0,
+            "material": "Low-friction coated steel"
+          },
+          "quantity": 4
+        },
+        "main_bearings": {
+          "part_id": "EA888-MAIN-BEARING",
+          "description": "Main crankshaft bearings",
+          "oem_part_numbers": {
+            "standard": "06K105591A",
+            "thrust": "06K105621A"
+          },
+          "specifications": {
+            "material": "Tri-metal with polymer overlay",
+            "clearance_mm": "0.020-0.050"
+          },
+          "quantity": 5,
+          "aftermarket": {
+            "ACL_Race": "5M2152H-STD",
+            "King_Racing": "MB5568AM"
+          }
+        },
+        "rod_bearings": {
+          "part_id": "EA888-ROD-BEARING",
+          "description": "Connecting rod bearings",
+          "oem_part_numbers": {
+            "standard": "06K105701D"
+          },
+          "specifications": {
+            "material": "Tri-metal",
+            "clearance_mm": "0.018-0.042"
+          },
+          "quantity": 4,
+          "aftermarket": {
+            "ACL_Race": "4B2152H-STD",
+            "King_Racing": "CR4624AM"
+          }
+        }
+      }
+    },
+    "cylinder_head": {
+      "description": "Cylinder head, camshafts, and valvetrain components",
+      "components": {
+        "cylinder_head": {
+          "part_id": "EA888-HEAD",
+          "description": "Aluminum cylinder head",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H103373K",
+            "gen3_is20": "06K103063H",
+            "gen3_is38": "06K103063J",
+            "gen4": "06L103063"
+          },
+          "specifications": {
+            "material": "Aluminum alloy",
+            "valves_per_cylinder": 4,
+            "gen3_plus": {
+              "integrated_exhaust_manifold": true,
+              "dual_injection_ports": true
+            }
+          }
+        },
+        "head_gasket": {
+          "part_id": "EA888-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H103383AD",
+            "gen3": "06K103383AD"
+          },
+          "specifications": {
+            "material": "Multi-layer steel (MLS)",
+            "thickness_mm": 1.2,
+            "bore_mm": 82.5
+          }
+        },
+        "intake_camshaft": {
+          "part_id": "EA888-CAM-INTAKE",
+          "description": "Intake camshaft with VVT",
+          "oem_part_numbers": {
+            "gen3_is20": "06K109101A",
+            "gen3_is38": "06K109101C",
+            "gen4": "06L109101"
+          },
+          "specifications": {
+            "duration_degrees": 260,
+            "lift_mm": 10.5,
+            "vvt_range_degrees": 60
+          }
+        },
+        "exhaust_camshaft": {
+          "part_id": "EA888-CAM-EXHAUST",
+          "description": "Exhaust camshaft with VVT",
+          "oem_part_numbers": {
+            "gen3_is20": "06K109102A",
+            "gen3_is38": "06K109102C",
+            "gen4": "06L109102"
+          },
+          "specifications": {
+            "duration_degrees": 252,
+            "lift_mm": 10.5,
+            "vvt_range_degrees": 40
+          }
+        },
+        "intake_valves": {
+          "part_id": "EA888-VALVE-INTAKE",
+          "description": "Intake valves",
+          "oem_part_numbers": {
+            "standard": "06K109601C"
+          },
+          "specifications": {
+            "head_diameter_mm": 34.0,
+            "stem_diameter_mm": 6.0,
+            "material": "Stainless steel"
+          },
+          "quantity": 8,
+          "aftermarket": {
+            "Supertech": "SIVW-3406",
+            "Ferrea": "F6040"
+          }
+        },
+        "exhaust_valves": {
+          "part_id": "EA888-VALVE-EXHAUST",
+          "description": "Sodium-filled exhaust valves",
+          "oem_part_numbers": {
+            "standard": "06K109611D"
+          },
+          "specifications": {
+            "head_diameter_mm": 28.0,
+            "stem_diameter_mm": 6.0,
+            "material": "Sodium-filled inconel"
+          },
+          "quantity": 8,
+          "aftermarket": {
+            "Supertech": "SEVE-2806",
+            "Ferrea": "F6041"
+          }
+        },
+        "valve_springs": {
+          "part_id": "EA888-VALVE-SPRING",
+          "description": "Dual valve springs",
+          "oem_part_numbers": {
+            "standard": "06K109623A"
+          },
+          "specifications": {
+            "free_length_mm": 45,
+            "installed_height_mm": 36,
+            "spring_rate_n_mm": 65
+          },
+          "quantity": 16,
+          "aftermarket": {
+            "Supertech": "SPR-VW20D-TS",
+            "Ferrea": "K10082"
+          }
+        },
+        "hydraulic_lifters": {
+          "part_id": "EA888-LIFTER",
+          "description": "Hydraulic valve lifters",
+          "oem_part_numbers": {
+            "standard": "06K109309AA"
+          },
+          "specifications": {
+            "type": "Hydraulic roller follower",
+            "diameter_mm": 32
+          },
+          "quantity": 16
+        },
+        "timing_chain": {
+          "part_id": "EA888-TIMING-CHAIN",
+          "description": "Timing chain",
+          "oem_part_numbers": {
+            "gen1_revised": "06K109158AD",
+            "gen3": "06K109158BK"
+          },
+          "specifications": {
+            "type": "Duplex roller chain",
+            "links": 148
+          }
+        },
+        "timing_chain_tensioner": {
+          "part_id": "EA888-TENSIONER",
+          "description": "Timing chain tensioner (critical part)",
+          "oem_part_numbers": {
+            "gen1_original": "06H109467N (problematic)",
+            "gen1_revised": "06K109467K (updated)",
+            "gen3": "06K109467L"
+          },
+          "notes": "ALWAYS use revised tensioner on Gen1/Gen2 engines"
+        },
+        "vvt_solenoids": {
+          "part_id": "EA888-VVT-SOLENOID",
+          "description": "Variable valve timing solenoids",
+          "oem_part_numbers": {
+            "intake": "06L906455A",
+            "exhaust": "06L906456A"
+          },
+          "quantity": 2
+        }
+      }
+    },
+    "turbo_system": {
+      "description": "Turbocharger and boost control components",
+      "components": {
+        "turbocharger_is20": {
+          "part_id": "EA888-TURBO-IS20",
+          "description": "IHI IS20 turbocharger (GTI/A3 applications)",
+          "oem_part_numbers": {
+            "standard": "06K145874L",
+            "revised": "06K145874M"
+          },
+          "specifications": {
+            "compressor_wheel_mm": 51,
+            "turbine_wheel_mm": 47,
+            "max_boost_bar": 1.5,
+            "wastegate": "Internal electronic",
+            "power_range_hp": "220-350 (tuned)"
+          },
+          "cross_reference": "../../../VAG/Shared-Components/turbo-is20.json"
+        },
+        "turbocharger_is38": {
+          "part_id": "EA888-TURBO-IS38",
+          "description": "IHI IS38 turbocharger (Golf R/S3 applications)",
+          "oem_part_numbers": {
+            "mk7_golf_r": "06K145874F",
+            "8v_s3": "06K145874G",
+            "gen3b": "06K145874H"
+          },
+          "specifications": {
+            "compressor_wheel_mm": 58,
+            "turbine_wheel_mm": 54,
+            "max_boost_bar": 1.8,
+            "wastegate": "Internal electronic",
+            "power_range_hp": "310-500 (tuned)"
+          },
+          "cross_reference": "../../../VAG/Shared-Components/turbo-is38.json"
+        },
+        "turbocharger_gen4_twin_scroll": {
+          "part_id": "EA888-TURBO-GEN4",
+          "description": "IHI twin-scroll turbocharger (Gen4)",
+          "oem_part_numbers": {
+            "golf_8_r": "06L145873K",
+            "8y_s3": "06L145873L"
+          },
+          "specifications": {
+            "type": "Twin-scroll",
+            "power_range_hp": "320-400+"
+          }
+        },
+        "wastegate_actuator": {
+          "part_id": "EA888-WASTEGATE",
+          "description": "Electronic wastegate actuator",
+          "oem_part_numbers": {
+            "is20": "06K145725B",
+            "is38": "06K145725C"
+          },
+          "specifications": {
+            "type": "Electronic",
+            "control": "ECU boost control"
+          }
+        },
+        "intercooler_gen3": {
+          "part_id": "EA888-INTERCOOLER-GEN3",
+          "description": "Water-to-air intercooler (integrated in intake manifold)",
+          "oem_part_numbers": {
+            "gti_a3": "06K129717A",
+            "golf_r_s3": "06K129717C"
+          },
+          "specifications": {
+            "type": "Water-to-air",
+            "location": "Integrated in intake manifold"
+          },
+          "notes": "Gen3+ uses water-to-air intercooler unlike air-to-air in Gen1-2"
+        },
+        "intercooler_pump": {
+          "part_id": "EA888-IC-PUMP",
+          "description": "Intercooler water pump",
+          "oem_part_numbers": {
+            "standard": "5Q0965567"
+          }
+        },
+        "diverter_valve": {
+          "part_id": "EA888-DV",
+          "description": "Electronic diverter valve",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H145710D",
+            "gen3": "06H145710G"
+          },
+          "aftermarket": {
+            "GFB_DV+": "T9351",
+            "Forge": "FMDVMK7A"
+          }
+        }
+      }
+    },
+    "fuel_system": {
+      "description": "Fuel delivery and injection components",
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "EA888-HPFP",
+          "description": "High-pressure fuel pump",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H127025Q",
+            "gen3_is20": "06K127025D",
+            "gen3_is38": "06K127025K"
+          },
+          "specifications": {
+            "max_pressure_bar": 200,
+            "drive": "Exhaust camshaft",
+            "manufacturer": "Hitachi/Continental"
+          },
+          "aftermarket": {
+            "Autotech": "10-127-1020k3",
+            "APR": "MS100183"
+          }
+        },
+        "fuel_rail_di": {
+          "part_id": "EA888-FUEL-RAIL-DI",
+          "description": "Direct injection fuel rail",
+          "oem_part_numbers": {
+            "gen3": "06K133317AT"
+          },
+          "specifications": {
+            "pressure_bar": 200
+          }
+        },
+        "fuel_rail_port": {
+          "part_id": "EA888-FUEL-RAIL-PORT",
+          "description": "Port injection fuel rail (Gen3+ only)",
+          "oem_part_numbers": {
+            "gen3": "06K133316AT"
+          },
+          "specifications": {
+            "pressure_bar": 4
+          },
+          "notes": "Gen3+ dual injection system"
+        },
+        "fuel_injectors_di": {
+          "part_id": "EA888-INJECTOR-DI",
+          "description": "Direct injection fuel injectors",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H906036H",
+            "gen3_is20": "06K906036C",
+            "gen3_is38": "06L906036J"
+          },
+          "specifications": {
+            "type": "High-pressure piezo",
+            "flow_cc_min": 450
+          },
+          "quantity": 4
+        },
+        "fuel_injectors_port": {
+          "part_id": "EA888-INJECTOR-PORT",
+          "description": "Port fuel injectors (Gen3+ only)",
+          "oem_part_numbers": {
+            "gen3": "06K906030B"
+          },
+          "specifications": {
+            "type": "Low-pressure EV14",
+            "flow_cc_min": 200
+          },
+          "quantity": 4,
+          "notes": "Supplemental port injection for Gen3+"
+        },
+        "low_pressure_fuel_pump": {
+          "part_id": "EA888-LPFP",
+          "description": "In-tank low-pressure fuel pump",
+          "oem_part_numbers": {
+            "gti_a3": "5Q0919051AC",
+            "golf_r_s3": "5Q0919051AS"
+          },
+          "specifications": {
+            "pressure_bar": 4.5,
+            "flow_lph": 200
+          },
+          "aftermarket": {
+            "Autotech": "LPFP_Kit_MQB",
+            "Walbro": "F90000295"
+          }
+        }
+      }
+    },
+    "intake_system": {
+      "description": "Air intake and throttle components",
+      "components": {
+        "air_filter_housing": {
+          "part_id": "EA888-AIRBOX",
+          "description": "Air filter housing",
+          "oem_part_numbers": {
+            "gti_a3": "5Q0129607AB",
+            "golf_r_s3": "5Q0129607AT"
+          }
+        },
+        "air_filter": {
+          "part_id": "EA888-FILTER",
+          "description": "Engine air filter",
+          "oem_part_numbers": {
+            "standard": "5Q0129620B"
+          },
+          "aftermarket": {
+            "K&N": "33-3005",
+            "BMC": "FB756/20"
+          }
+        },
+        "throttle_body": {
+          "part_id": "EA888-THROTTLE",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": {
+            "gen3_is20": "06K133062G",
+            "gen3_is38": "06K133062L"
+          },
+          "specifications": {
+            "bore_mm": 67,
+            "type": "Drive-by-wire"
+          }
+        },
+        "intake_manifold": {
+          "part_id": "EA888-INTAKE",
+          "description": "Intake manifold with integrated intercooler",
+          "oem_part_numbers": {
+            "gen3_is20": "06K129711AK",
+            "gen3_is38": "06K129711AM"
+          },
+          "specifications": {
+            "material": "Composite plastic",
+            "integrated_ic": true
+          }
+        },
+        "turbo_inlet_pipe": {
+          "part_id": "EA888-TURBO-INLET",
+          "description": "Turbo inlet pipe",
+          "oem_part_numbers": {
+            "is20": "06K145761C",
+            "is38": "06K145761F"
+          },
+          "aftermarket": {
+            "CTS": "CTS-IT-285",
+            "IE": "IEINCG1"
+          }
+        }
+      }
+    },
+    "exhaust_system": {
+      "description": "Exhaust and emissions components",
+      "components": {
+        "downpipe": {
+          "part_id": "EA888-DOWNPIPE",
+          "description": "Turbo downpipe with catalytic converter",
+          "oem_part_numbers": {
+            "gti_a3": "5Q0253059EP",
+            "golf_r_s3": "5Q0254500MX"
+          },
+          "specifications": {
+            "diameter_mm": 70,
+            "catalyst": "Close-coupled TWC"
+          },
+          "aftermarket": {
+            "CTS_catted": "CTS-EXH-DP-0015-CAT",
+            "IE_catted": "IEEXCK4",
+            "APR_catless": "Cast downpipe"
+          }
+        },
+        "front_oxygen_sensor": {
+          "part_id": "EA888-O2-FRONT",
+          "description": "Pre-catalyst wideband O2 sensor",
+          "oem_part_numbers": {
+            "standard": "06K906262N"
+          }
+        },
+        "rear_oxygen_sensor": {
+          "part_id": "EA888-O2-REAR",
+          "description": "Post-catalyst narrowband O2 sensor",
+          "oem_part_numbers": {
+            "standard": "06K906262P"
+          }
+        }
+      }
+    },
+    "cooling_system": {
+      "description": "Engine cooling components",
+      "components": {
+        "water_pump_thermostat": {
+          "part_id": "EA888-WATER-PUMP",
+          "description": "Water pump and thermostat assembly",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H121026DD",
+            "gen3": "06L121111J",
+            "gen4": "06L121111L"
+          },
+          "specifications": {
+            "type": "Integrated pump/thermostat",
+            "opening_temp_c": 87
+          },
+          "notes": "Common failure point - use OEM or quality aftermarket"
+        },
+        "coolant_temp_sensor": {
+          "part_id": "EA888-CTS",
+          "description": "Coolant temperature sensor",
+          "oem_part_numbers": {
+            "standard": "06A919501A"
+          }
+        },
+        "radiator": {
+          "part_id": "EA888-RADIATOR",
+          "description": "Engine radiator",
+          "oem_part_numbers": {
+            "gti_manual": "5Q0121251EQ",
+            "gti_dsg": "5Q0121251GK",
+            "golf_r": "5Q0121251L"
+          }
+        },
+        "intercooler_radiator": {
+          "part_id": "EA888-IC-RADIATOR",
+          "description": "Auxiliary intercooler radiator (for water-to-air IC)",
+          "oem_part_numbers": {
+            "standard": "5Q0145793H"
+          },
+          "notes": "Gen3+ water-to-air intercooler circuit"
+        }
+      }
+    },
+    "ignition_system": {
+      "description": "Ignition components",
+      "components": {
+        "ignition_coils": {
+          "part_id": "EA888-COIL",
+          "description": "Coil-on-plug ignition coils",
+          "oem_part_numbers": {
+            "gen1_gen2": "06E905115G",
+            "gen3": "06H905110Q"
+          },
+          "specifications": {
+            "type": "Coil-on-plug",
+            "output_kv": 45
+          },
+          "quantity": 4,
+          "aftermarket": {
+            "APR": "MS100192"
+          }
+        },
+        "spark_plugs": {
+          "part_id": "EA888-SPARK",
+          "description": "Spark plugs",
+          "oem_part_numbers": {
+            "gen1_gen2": "PFR7S8EG (NGK)",
+            "gen3_is20": "06K905601B",
+            "gen3_is38": "06K905601D"
+          },
+          "specifications": {
+            "gap_mm": 0.7,
+            "heat_range": 7
+          },
+          "quantity": 4,
+          "aftermarket": {
+            "NGK": "ILKAR8Q7G",
+            "Denso": "IKH24"
+          },
+          "notes": "1-step colder recommended for tuned applications"
+        }
+      }
+    },
+    "lubrication_system": {
+      "description": "Oil system components",
+      "components": {
+        "oil_pump": {
+          "part_id": "EA888-OIL-PUMP",
+          "description": "Variable displacement oil pump",
+          "oem_part_numbers": {
+            "gen3": "06K115105AK"
+          },
+          "specifications": {
+            "type": "Variable displacement",
+            "drive": "Chain driven from crankshaft"
+          }
+        },
+        "oil_filter_housing": {
+          "part_id": "EA888-OIL-FILTER-HOUSING",
+          "description": "Oil filter housing with cooler",
+          "oem_part_numbers": {
+            "gen3": "06K115397K"
+          }
+        },
+        "oil_filter": {
+          "part_id": "EA888-OIL-FILTER",
+          "description": "Oil filter element",
+          "oem_part_numbers": {
+            "standard": "06K115562"
+          },
+          "aftermarket": {
+            "Mann": "HU7020Z",
+            "Mahle": "OX787D"
+          }
+        },
+        "oil_pan": {
+          "part_id": "EA888-OIL-PAN",
+          "description": "Aluminum oil pan",
+          "oem_part_numbers": {
+            "gen3": "06K103600R"
+          },
+          "specifications": {
+            "material": "Cast aluminum",
+            "capacity_liters": 5.5
+          }
+        },
+        "pcv_valve": {
+          "part_id": "EA888-PCV",
+          "description": "PCV valve assembly",
+          "oem_part_numbers": {
+            "gen1_gen2": "06H103495AK (known failure)",
+            "gen3": "06K103495BL"
+          },
+          "notes": "Gen1/Gen2 PCV is common failure point"
+        }
+      }
+    },
+    "sensors_and_electronics": {
+      "description": "Engine sensors and electronic components",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "EA888-CPS",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": {
+            "standard": "06K906433B"
+          }
+        },
+        "camshaft_position_sensors": {
+          "part_id": "EA888-CAMSHAFT-SENSOR",
+          "description": "Camshaft position sensors",
+          "oem_part_numbers": {
+            "intake": "06K905163A",
+            "exhaust": "06K905163B"
+          },
+          "quantity": 2
+        },
+        "knock_sensors": {
+          "part_id": "EA888-KNOCK",
+          "description": "Knock sensors",
+          "oem_part_numbers": {
+            "standard": "06K905377A"
+          },
+          "quantity": 1
+        },
+        "boost_pressure_sensor": {
+          "part_id": "EA888-BOOST",
+          "description": "MAP/boost pressure sensor",
+          "oem_part_numbers": {
+            "standard": "03C906051J"
+          }
+        },
+        "ecu": {
+          "part_id": "EA888-ECU",
+          "description": "Engine control unit",
+          "oem_part_numbers": {
+            "gen3_bosch": "Bosch MG1CS011",
+            "gen3_siemens": "Siemens Simos 18"
+          },
+          "notes": "Extensively supported by aftermarket tuners"
+        }
+      }
+    },
+    "gaskets_and_seals": {
+      "description": "Gaskets, seals, and o-rings",
+      "components": {
+        "valve_cover_gasket": {
+          "part_id": "EA888-VC-GASKET",
+          "description": "Valve cover gasket",
+          "oem_part_numbers": {
+            "gen3": "06K103483Q"
+          }
+        },
+        "intake_manifold_gasket": {
+          "part_id": "EA888-INTAKE-GASKET",
+          "description": "Intake manifold gasket",
+          "oem_part_numbers": {
+            "gen3": "06K129717A"
+          }
+        },
+        "front_crank_seal": {
+          "part_id": "EA888-FRONT-SEAL",
+          "description": "Front crankshaft oil seal",
+          "oem_part_numbers": {
+            "standard": "06K103085P"
+          }
+        },
+        "rear_main_seal": {
+          "part_id": "EA888-RMS",
+          "description": "Rear main seal",
+          "oem_part_numbers": {
+            "standard": "06K103171A"
+          }
+        },
+        "turbo_gasket": {
+          "part_id": "EA888-TURBO-GASKET",
+          "description": "Turbo to manifold gasket",
+          "oem_part_numbers": {
+            "standard": "06K253039B"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,683 @@
+{
+  "engine_id": "BMW-S55-3.0L-I6-TWINTURBO",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "hand_tools": {
+      "wrenches_metric": {
+        "sizes_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+        "priority": "essential"
+      },
+      "sockets": {
+        "metric_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+        "deep_sockets_mm": [10, 12, 13, 14, 17, 19],
+        "e_torx": ["E8", "E10", "E12", "E14", "E16", "E18", "E20"],
+        "spark_plug": "14mm thin wall magnetic",
+        "swivel_sockets": ["10mm", "13mm"],
+        "priority": "essential"
+      },
+      "torx_and_hex": {
+        "torx": ["T20", "T25", "T27", "T30", "T40", "T45", "T50", "T55", "T60"],
+        "triple_square": ["M6", "M8", "M10", "M12"],
+        "hex_mm": [4, 5, 6, 8, 10, 12],
+        "priority": "essential"
+      },
+      "pliers_and_cutters": {
+        "types": ["Needle nose", "Snap ring (internal/external)", "Hose clamp pliers", "Wire cutters"],
+        "priority": "essential"
+      }
+    },
+    "specialty_tools": {
+      "vanos_timing_tools": {
+        "description": "S55/N55 camshaft and crankshaft locking tools",
+        "bmw_tool_numbers": {
+          "flywheel_lock": "11-2-300",
+          "cam_locking_tool": "11-3-240",
+          "vanos_alignment_pins": "11-3-290"
+        },
+        "aftermarket": "Schwaben S55 timing tool set",
+        "priority": "essential_for_timing_work"
+      },
+      "crank_hub_tool": {
+        "description": "Crankshaft hub holding tool for crank hub fix installation",
+        "options": ["BMW special tool", "IRP tool kit", "VAC tool kit"],
+        "priority": "essential_for_crank_hub_fix"
+      },
+      "turbo_oil_line_wrenches": {
+        "description": "Specialty wrenches for turbo oil feed banjo bolts",
+        "sizes": ["14mm crowfoot", "17mm line wrench"],
+        "priority": "essential_for_turbo_work"
+      },
+      "oil_filter_cap_wrench": {
+        "size": "86mm 16-flute",
+        "priority": "essential"
+      },
+      "fuel_line_disconnect_tool": {
+        "description": "Quick disconnect tool for fuel lines",
+        "sizes": ["5/16\"", "3/8\""],
+        "priority": "essential_for_fuel_work"
+      },
+      "bmw_scanner": {
+        "options": [
+          "BMW ISTA+ (dealer level)",
+          "ISTA-D diagnostic",
+          "Carly for BMW",
+          "BimmerLink / BimmerCode",
+          "MHD Flasher (tuning + diagnostics)",
+          "Bootmod3 (tuning + diagnostics)"
+        ],
+        "priority": "essential"
+      },
+      "coolant_evacuation_tool": {
+        "description": "Airlift style vacuum fill tool",
+        "notes": "Essential for proper coolant bleeding",
+        "priority": "highly_recommended"
+      },
+      "boost_leak_tester": {
+        "description": "Pressure tester for intake/charge pipe system",
+        "max_pressure_psi": 25,
+        "priority": "recommended"
+      },
+      "bearing_clearance_tools": {
+        "plastigage": "For checking bearing clearances",
+        "inside_micrometer": "For precise bore measurement",
+        "priority": "essential_for_engine_builds"
+      },
+      "torque_wrenches": {
+        "ranges": [
+          {"range_ft_lb": "5-50", "notes": "Small fasteners"},
+          {"range_ft_lb": "25-250", "notes": "Head bolts, main caps"},
+          {"inch_pound": "20-200", "notes": "Precision small fasteners"}
+        ],
+        "torque_angle_gauge": "Required for torque-to-yield fasteners",
+        "priority": "essential"
+      },
+      "engine_support_bar": {
+        "description": "Support bar for engine when removing mounts",
+        "priority": "essential_for_mount_work"
+      },
+      "spring_compressor": {
+        "description": "Valve spring compressor for head work",
+        "type": "Overhead style for in-car use",
+        "priority": "essential_for_head_work"
+      }
+    }
+  },
+
+  "torque_specifications": {
+    "cylinder_head": {
+      "head_bolts": {
+        "method": "Torque plus angle",
+        "step_1_nm": 30,
+        "step_2_angle": "90 degrees",
+        "step_3_angle": "90 degrees",
+        "notes": "Replace bolts after each use - torque to yield"
+      },
+      "valve_cover_bolts": {
+        "torque_nm": 10,
+        "notes": "Use new sealing washers"
+      },
+      "camshaft_bearing_caps": {
+        "torque_nm": 12,
+        "sequence": "Inside to outside"
+      },
+      "vanos_hub_bolts": {
+        "torque_nm": 20,
+        "angle": "60 degrees additional",
+        "notes": "Critical - failure causes timing issues"
+      },
+      "spark_plugs": {
+        "torque_nm": 22,
+        "notes": "Anti-seize not recommended on nickel-plated threads"
+      }
+    },
+    "short_block": {
+      "main_cap_bolts": {
+        "method": "Torque plus angle",
+        "step_1_nm": 25,
+        "step_2_angle": "70 degrees",
+        "step_3_angle": "70 degrees",
+        "notes": "Inner bolts first, then outer"
+      },
+      "connecting_rod_bolts": {
+        "method": "Torque plus angle",
+        "step_1_nm": 20,
+        "step_2_angle": "70 degrees",
+        "notes": "Replace bolts after each use"
+      },
+      "crank_pulley_bolt": {
+        "torque_nm": 60,
+        "angle": "360 degrees additional",
+        "notes": "Critical for crank hub - use proper holding tool"
+      },
+      "oil_pan_bolts": {
+        "torque_nm": 10,
+        "sequence": "Cross pattern from center"
+      },
+      "flywheel_bolts": {
+        "torque_nm": 100,
+        "notes": "Use thread locker"
+      }
+    },
+    "turbo_system": {
+      "turbo_to_exhaust_manifold": {
+        "torque_nm": 25,
+        "notes": "Use new gaskets"
+      },
+      "turbo_oil_feed_banjo": {
+        "torque_nm": 25,
+        "notes": "Use new crush washers"
+      },
+      "turbo_oil_return": {
+        "torque_nm": 10,
+        "notes": "Use new gasket"
+      },
+      "downpipe_to_turbo": {
+        "torque_nm": 25,
+        "notes": "Use new gaskets"
+      },
+      "wastegate_actuator": {
+        "torque_nm": 10
+      },
+      "charge_pipe_clamps": {
+        "torque_nm": 5,
+        "notes": "Do not overtighten - can crack plastic"
+      }
+    },
+    "fuel_system": {
+      "fuel_rail_bolts": {
+        "torque_nm": 10
+      },
+      "fuel_injector_hold_down": {
+        "torque_nm": 10
+      },
+      "hpfp_mounting": {
+        "torque_nm": 23
+      }
+    },
+    "accessories": {
+      "alternator_mounting": {
+        "torque_nm": 35
+      },
+      "water_pump_bolts": {
+        "torque_nm": 10
+      },
+      "thermostat_housing": {
+        "torque_nm": 10
+      },
+      "engine_mount_to_block": {
+        "torque_nm": 60
+      },
+      "engine_mount_to_subframe": {
+        "torque_nm": 100
+      }
+    },
+    "wheels_and_brakes": {
+      "wheel_bolts": {
+        "torque_nm": 140,
+        "notes": "M3/M4 specific - do not use impact"
+      },
+      "brake_caliper_carrier": {
+        "front_nm": 140,
+        "rear_nm": 110
+      }
+    }
+  },
+
+  "fluid_specifications": {
+    "engine_oil": {
+      "capacity_liters": 6.5,
+      "capacity_quarts": 6.9,
+      "recommended_viscosity": {
+        "street": "0W-40",
+        "track_summer": "10W-60",
+        "track_winter": "5W-50"
+      },
+      "bmw_spec": "BMW Longlife-01",
+      "approved_oils": [
+        {"brand": "BMW M TwinPower Turbo", "viscosity": "10W-60", "use_case": "Track/spirited driving"},
+        {"brand": "Castrol Edge", "viscosity": "0W-40", "use_case": "Street/daily"},
+        {"brand": "Mobil 1", "viscosity": "0W-40", "use_case": "Street/daily"},
+        {"brand": "Red Line", "viscosity": "10W-40", "use_case": "Performance"},
+        {"brand": "Liqui Moly", "viscosity": "10W-60", "use_case": "Track"}
+      ],
+      "change_interval": {
+        "bmw_recommended_miles": 10000,
+        "enthusiast_recommended_miles": 5000,
+        "track_use_miles": 3000
+      }
+    },
+    "coolant": {
+      "capacity_liters": 10.5,
+      "type": "BMW Antifreeze/Coolant (blue)",
+      "bmw_part_number": "82-14-2-209-769",
+      "mix_ratio": "50/50 with distilled water",
+      "alternatives": ["Zerex G48", "Pentosin NF"],
+      "change_interval_miles": 60000
+    },
+    "transmission_fluid": {
+      "manual_6mt": {
+        "capacity_liters": 1.7,
+        "type": "BMW MTF-LT-4",
+        "alternatives": ["Redline MTL", "Royal Purple Synchromax"],
+        "change_interval_miles": 60000
+      },
+      "dct_7speed": {
+        "capacity_liters": 9.0,
+        "type": "Pentosin FFL-4",
+        "bmw_part": "83-22-2-148-578",
+        "change_interval_miles": "Lifetime (recommended 60000)"
+      }
+    },
+    "differential_fluid": {
+      "capacity_liters": 1.2,
+      "type": "BMW SAF-XO 75W-140",
+      "alternatives": ["Royal Purple Max-Gear 75W-140", "Red Line 75W-140"],
+      "change_interval_miles": 60000
+    },
+    "brake_fluid": {
+      "type": "DOT 4",
+      "bmw_recommended": "BMW DOT 4 Low Viscosity",
+      "track_alternatives": ["Motul RBF 660", "Castrol SRF"],
+      "change_interval": {
+        "street_years": 2,
+        "track_events": "Every 2-3 track days"
+      }
+    },
+    "power_steering": {
+      "type": "Electric (no fluid)",
+      "notes": "S55 vehicles use electric power steering"
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 5000,
+        "bmw_interval_miles": 10000,
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools": [
+          "17mm socket or wrench",
+          "86mm oil filter wrench",
+          "8qt drain pan",
+          "Funnel",
+          "Torque wrench"
+        ],
+        "parts": [
+          "6.5L BMW LL-01 approved oil",
+          "Oil filter (Mann HU816X or equivalent)",
+          "Drain plug crush washer"
+        ],
+        "procedure": [
+          "1. Warm engine to operating temperature",
+          "2. Lift vehicle and secure on jack stands",
+          "3. Remove belly pan (if equipped)",
+          "4. Place drain pan under oil pan",
+          "5. Remove 17mm drain plug",
+          "6. While draining, remove oil filter cap with 86mm wrench",
+          "7. Replace filter element and O-rings",
+          "8. Install filter cap - torque to 25 Nm",
+          "9. Install drain plug with new washer - torque to 25 Nm",
+          "10. Fill with 6.5L oil",
+          "11. Check level with dipstick",
+          "12. Reset oil service indicator via iDrive"
+        ],
+        "torque_specs": {"drain_plug_nm": 25, "filter_cap_nm": 25}
+      },
+      "spark_plugs": {
+        "interval_miles": 30000,
+        "interval_tuned_miles": 15000,
+        "difficulty": "intermediate",
+        "time_minutes": 90,
+        "tools": [
+          "14mm thin wall magnetic spark plug socket",
+          "T30 Torx driver",
+          "6\" and 12\" extensions",
+          "Torque wrench (inch-pounds capable)",
+          "Compressed air"
+        ],
+        "parts": [
+          "6x NGK 94201 or one step colder for tuned",
+          "Dielectric grease"
+        ],
+        "procedure": [
+          "1. Remove engine cover",
+          "2. Disconnect ignition coil connectors",
+          "3. Remove coil hold-down bolts (T30)",
+          "4. Remove ignition coils",
+          "5. Use compressed air to clean spark plug wells",
+          "6. Remove spark plugs",
+          "7. Check gap on new plugs (0.7mm)",
+          "8. Install new plugs - hand thread first",
+          "9. Torque to 22 Nm",
+          "10. Apply dielectric grease to coil boots",
+          "11. Reinstall coils and connectors"
+        ],
+        "torque_specs": {"spark_plug_nm": 22}
+      },
+      "air_filter_replacement": {
+        "interval_miles": 30000,
+        "difficulty": "beginner",
+        "time_minutes": 20,
+        "tools": ["Flathead screwdriver or T25 Torx (depending on airbox)"],
+        "parts": ["2x panel air filters"],
+        "procedure": [
+          "1. Open airbox clips (2 airboxes - driver and passenger)",
+          "2. Remove old filters",
+          "3. Inspect airbox for debris",
+          "4. Install new filters with correct orientation",
+          "5. Close and secure airbox lids"
+        ]
+      },
+      "brake_fluid_flush": {
+        "interval_miles": 30000,
+        "interval_years": 2,
+        "difficulty": "intermediate",
+        "time_minutes": 60,
+        "tools": [
+          "Brake bleeder kit or assistant",
+          "11mm wrench for bleed nipples",
+          "Catch container",
+          "Fresh fluid (1L minimum)"
+        ],
+        "procedure": [
+          "1. Remove reservoir cap",
+          "2. Use turkey baster to remove old fluid from reservoir",
+          "3. Fill with fresh DOT 4 fluid",
+          "4. Bleed in sequence: RR, LR, RF, LF",
+          "5. For each corner: open bleeder, pump pedal, close bleeder",
+          "6. Continue until clear fluid with no bubbles",
+          "7. Top off reservoir",
+          "8. Test pedal feel"
+        ],
+        "notes": "DSC pump may need to be bled with BMW scanner"
+      },
+      "walnut_blasting": {
+        "interval_miles": 40000,
+        "difficulty": "advanced",
+        "time_hours": 4,
+        "tools": [
+          "Media blaster",
+          "Walnut shell media",
+          "Shop vacuum with adapter",
+          "Intake manifold removal tools",
+          "Borescope for inspection"
+        ],
+        "notes": [
+          "Direct injection causes carbon buildup on intake valves",
+          "Requires intake manifold removal",
+          "Professional service recommended",
+          "Catch-can installation helps reduce buildup"
+        ]
+      }
+    },
+    "critical_repairs": {
+      "crank_hub_fix": {
+        "urgency": "CRITICAL - Do before any power modifications",
+        "difficulty": "advanced",
+        "time_hours": 6,
+        "requires_engine_out": false,
+        "tools": [
+          "Crank hub tool kit (IRP/VAC/Atech specific)",
+          "Flywheel locking tool",
+          "Torque wrench with angle gauge",
+          "Impact wrench (for removal only)"
+        ],
+        "parts": [
+          "Crank hub fix kit (pins and dampener)",
+          "New crank bolt",
+          "Sealant"
+        ],
+        "vendors": ["IRP", "VAC Motorsports", "Atech Motorsports"],
+        "cost_range_usd": "1200-2500 installed",
+        "procedure_summary": [
+          "1. Remove accessories for access",
+          "2. Lock flywheel",
+          "3. Remove crank pulley bolt",
+          "4. Remove harmonic dampener",
+          "5. Install pinned or keyed hub per kit instructions",
+          "6. Reinstall with new bolt - torque to spec plus angle"
+        ],
+        "notes": "This repair prevents catastrophic engine failure from timing slip"
+      },
+      "rod_bearing_replacement": {
+        "urgency": "HIGH - Preventative at 60-80k miles",
+        "difficulty": "advanced",
+        "time_hours": 12,
+        "requires_engine_out": "Recommended but not always required",
+        "tools": [
+          "Engine hoist (if removing engine)",
+          "Complete socket/wrench set",
+          "Plastigage",
+          "Torque wrench with angle gauge",
+          "Assembly lube"
+        ],
+        "parts": [
+          "Rod bearing set (BE Bearings, ACL, or equivalent)",
+          "Rod bolt set (ARP recommended)",
+          "Oil",
+          "Gaskets as needed"
+        ],
+        "cost_range_usd": "2500-4000 installed",
+        "procedure_summary": [
+          "1. Drain oil",
+          "2. Remove oil pan or engine (depending on method)",
+          "3. Remove rod caps one at a time",
+          "4. Remove old bearings, inspect crank journals",
+          "5. Measure clearances with Plastigage",
+          "6. Install new bearings with assembly lube",
+          "7. Torque rod bolts to spec plus angle",
+          "8. Repeat for all 6 rods",
+          "9. Reassemble and fill with fresh oil"
+        ],
+        "notes": [
+          "Send old bearings for analysis",
+          "Measure crank journals for wear",
+          "Consider main bearings at same time"
+        ]
+      },
+      "charge_pipe_upgrade": {
+        "urgency": "MEDIUM - Upgrade before tuning",
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools": [
+          "Flathead screwdriver or 7mm socket for hose clamps",
+          "Pliers"
+        ],
+        "parts": ["Aluminum charge pipe kit"],
+        "vendors": ["VRSF", "Evolution Racewerks", "ARM"],
+        "cost_range_usd": "200-400",
+        "procedure": [
+          "1. Remove engine cover",
+          "2. Loosen clamps on OEM charge pipe",
+          "3. Disconnect charge pipe from intercooler and throttle body",
+          "4. Remove old pipe",
+          "5. Install new aluminum pipe with provided couplers",
+          "6. Tighten clamps evenly",
+          "7. Perform boost leak test"
+        ]
+      },
+      "turbo_replacement": {
+        "difficulty": "advanced",
+        "time_hours": 10,
+        "requires_lift": true,
+        "tools": [
+          "Complete socket/wrench set",
+          "Turbo oil line wrenches",
+          "O2 sensor socket",
+          "Heat shield removal tools"
+        ],
+        "parts": [
+          "Turbocharger(s)",
+          "Turbo gasket kit",
+          "Oil feed and return lines (recommended)",
+          "Coolant lines",
+          "New hardware"
+        ],
+        "procedure_summary": [
+          "1. Disconnect battery",
+          "2. Remove downpipes",
+          "3. Disconnect oil and coolant lines",
+          "4. Disconnect wastegate actuator electrical",
+          "5. Remove heat shielding",
+          "6. Support turbo, remove mounting fasteners",
+          "7. Remove turbo",
+          "8. Clean mating surfaces",
+          "9. Install new turbo with new gaskets",
+          "10. Reconnect all lines with new hardware",
+          "11. Prime oil system before starting"
+        ],
+        "notes": "Pre-fill turbos with oil before installation"
+      },
+      "water_pump_replacement": {
+        "difficulty": "intermediate",
+        "time_hours": 3,
+        "tools": [
+          "Socket set",
+          "Coolant catch pan",
+          "Vacuum fill tool"
+        ],
+        "parts": [
+          "Electric water pump",
+          "Thermostat (recommended)",
+          "Coolant",
+          "Gaskets/O-rings"
+        ],
+        "procedure_summary": [
+          "1. Drain coolant",
+          "2. Remove accessories for access",
+          "3. Disconnect electrical connector",
+          "4. Remove mounting bolts",
+          "5. Remove pump",
+          "6. Install new pump with new gasket",
+          "7. Reconnect electrical",
+          "8. Vacuum fill coolant system",
+          "9. Bleed air from system"
+        ],
+        "notes": "Replace thermostat at same time - common failure"
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "boost_leak_test": {
+      "tools": ["Boost leak tester", "Shop air (max 20 psi)"],
+      "procedure": [
+        "1. Attach tester to intake after MAF",
+        "2. Cap or plug all vacuum lines",
+        "3. Pressurize system to 15-20 psi",
+        "4. Listen and feel for leaks",
+        "5. Use soapy water on connections to find small leaks"
+      ],
+      "common_leak_points": [
+        "Charge pipe connections",
+        "Intercooler end tanks",
+        "Diverter valve seals",
+        "Intake manifold gasket",
+        "Throttle body gasket"
+      ]
+    },
+    "compression_test": {
+      "tools": ["Compression tester", "14mm adapter"],
+      "procedure": [
+        "1. Warm engine to operating temperature",
+        "2. Remove all spark plugs",
+        "3. Disable fuel system and ignition",
+        "4. Install compression gauge in cylinder 1",
+        "5. Crank engine for 5-6 compression strokes",
+        "6. Record reading",
+        "7. Repeat for all cylinders"
+      ],
+      "specifications": {
+        "minimum_bar": 10,
+        "minimum_psi": 145,
+        "max_variation_percent": 10
+      },
+      "interpretation": {
+        "low_all_cylinders": "Worn rings or timing issue",
+        "low_one_cylinder": "Valve or head gasket issue",
+        "low_adjacent_cylinders": "Head gasket failure between cylinders"
+      }
+    },
+    "oil_pressure_test": {
+      "tools": ["Mechanical oil pressure gauge", "Adapter for oil pressure sender port"],
+      "specifications": {
+        "idle_warm_bar": "1.0 minimum",
+        "3000rpm_bar": "3.0-5.0",
+        "redline_bar": "4.0-6.0"
+      },
+      "low_pressure_causes": [
+        "Worn bearings",
+        "Oil pump wear",
+        "Oil pump chain stretch",
+        "Wrong viscosity oil",
+        "Low oil level"
+      ]
+    },
+    "rod_bearing_inspection": {
+      "method": "Oil analysis",
+      "procedure": [
+        "1. Take oil sample at each oil change",
+        "2. Send to Blackstone Labs or equivalent",
+        "3. Monitor copper and lead levels",
+        "4. Elevated metals indicate bearing wear"
+      ],
+      "warning_levels": {
+        "copper_ppm": ">30 indicates concern",
+        "lead_ppm": ">15 indicates concern"
+      },
+      "notes": "Best way to catch bearing wear early"
+    },
+    "crank_hub_inspection": {
+      "symptoms_of_failure": [
+        "Intermittent no-start",
+        "Timing constantly changing",
+        "Multiple misfire codes",
+        "Strange engine noise/vibration"
+      ],
+      "inspection_method": [
+        "1. Mark crank pulley and timing cover",
+        "2. Run engine under load (dyno ideal)",
+        "3. Check if marks have moved",
+        "4. Any movement indicates slipped hub"
+      ],
+      "notes": "Fix preemptively - inspection often occurs after failure"
+    }
+  },
+
+  "special_procedures": {
+    "dme_coding_after_repairs": {
+      "when_required": [
+        "Injector replacement",
+        "Turbo replacement",
+        "MAF sensor replacement",
+        "Throttle body replacement",
+        "Major sensor replacement"
+      ],
+      "tools": ["BMW ISTA", "MHD/BM3 for some adaptations"],
+      "notes": "Some components require registration in DME"
+    },
+    "valvetronic_note": {
+      "description": "S55 does NOT have Valvetronic",
+      "notes": "Unlike N55, S55 uses conventional throttle body - no Valvetronic procedures needed"
+    },
+    "vanos_adaptation": {
+      "when_required": "After timing chain or VANOS service",
+      "procedure": "Use BMW ISTA to run VANOS adaptation routine",
+      "notes": "Ensures proper valve timing after service"
+    },
+    "throttle_adaptation": {
+      "when_required": "After throttle body cleaning or replacement",
+      "procedure": [
+        "1. Turn ignition on (don't start)",
+        "2. Wait 30 seconds",
+        "3. Turn ignition off",
+        "4. Wait 10 seconds",
+        "5. Start engine and let idle for 3 minutes",
+        "6. Drive normally - system will fully adapt"
+      ]
+    }
+  }
+}

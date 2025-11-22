@@ -1,0 +1,934 @@
+{
+  "metadata": {
+    "engine_family": "BMW N52",
+    "service_guide_version": "1.0.0",
+    "last_updated": "2025-01-15",
+    "disclaimer": "Always refer to official BMW TIS documentation for complete procedures. This guide is for reference only."
+  },
+  "special_tools": {
+    "bmw_specific_tools": [
+      {
+        "tool_number": "11-0-300",
+        "description": "Camshaft alignment tool set",
+        "usage": "Timing chain service, camshaft removal/installation",
+        "required_for": ["Timing chain replacement", "Camshaft service", "VANOS service"],
+        "alternatives": ["Assenmacher BMW119300", "Baum Tools B119300"]
+      },
+      {
+        "tool_number": "11-0-320",
+        "description": "Crankshaft locking pin",
+        "usage": "Locks crankshaft at TDC during timing service",
+        "required_for": ["Timing chain replacement", "Camshaft timing"],
+        "notes": "Insert through hole in bell housing"
+      },
+      {
+        "tool_number": "11-2-300",
+        "description": "Crankshaft seal installer",
+        "usage": "Front/rear crankshaft seal installation",
+        "required_for": ["Front seal replacement", "Rear main seal replacement"]
+      },
+      {
+        "tool_number": "11-3-450",
+        "description": "Valvetronic eccentric shaft tool",
+        "usage": "Eccentric shaft removal and installation",
+        "required_for": ["Valvetronic service", "Valve cover replacement with integrated sensor"]
+      },
+      {
+        "tool_number": "11-4-220",
+        "description": "Oil pump chain tensioner tool",
+        "usage": "Compresses oil pump chain tensioner for installation",
+        "required_for": ["Oil pump service", "Timing cover service"]
+      },
+      {
+        "tool_number": "11-4-430",
+        "description": "Crankshaft front seal guide sleeve",
+        "usage": "Guides front seal onto crankshaft without damage",
+        "required_for": ["Front seal replacement"]
+      },
+      {
+        "tool_number": "11-5-030",
+        "description": "Coolant system pressure tester adapter",
+        "usage": "Pressure testing cooling system",
+        "required_for": ["Cooling system diagnosis", "Leak testing"],
+        "pressure_spec": "1.5 bar max test pressure"
+      },
+      {
+        "tool_number": "11-8-630",
+        "description": "Crankshaft holding tool",
+        "usage": "Holds crankshaft during harmonic balancer removal",
+        "required_for": ["Harmonic balancer service", "Front seal replacement"]
+      },
+      {
+        "tool_number": "13-5-281",
+        "description": "Fuel injector removal tool",
+        "usage": "Safely removes fuel injectors from fuel rail",
+        "required_for": ["Injector service", "Intake manifold removal"]
+      },
+      {
+        "tool_number": "83-30-0-493-293",
+        "description": "BMW ISTA/ISTA+ diagnostic interface",
+        "usage": "Factory diagnostic system for fault reading and programming",
+        "required_for": ["ECU coding", "Adaptation resets", "VANOS relearn"]
+      }
+    ],
+    "generic_tools_required": [
+      {
+        "tool": "32mm socket (1/2\" drive)",
+        "usage": "Crankshaft pulley bolt removal",
+        "torque_spec": "See torque specifications"
+      },
+      {
+        "tool": "E-Torx socket set (E10-E24)",
+        "usage": "Various engine fasteners",
+        "common_sizes": ["E10", "E12", "E14", "E18"]
+      },
+      {
+        "tool": "Triple-square (XZN) socket set",
+        "usage": "Cylinder head bolts, various fasteners",
+        "common_sizes": ["M8", "M10", "M12"]
+      },
+      {
+        "tool": "T-handle hex key set (4mm-10mm)",
+        "usage": "Various engine covers and components"
+      },
+      {
+        "tool": "Torx socket set (T20-T60)",
+        "usage": "Various fasteners throughout engine"
+      },
+      {
+        "tool": "Digital torque wrench (10-200 Nm)",
+        "usage": "Critical fastener torquing"
+      },
+      {
+        "tool": "Angle gauge or torque-angle wrench",
+        "usage": "Torque-to-yield fasteners (head bolts, rod bolts)"
+      },
+      {
+        "tool": "Oil filter wrench (76mm, 14-flute)",
+        "usage": "Oil filter cap removal",
+        "alternatives": ["Generic 76mm cap wrench", "Strap wrench"]
+      },
+      {
+        "tool": "Coolant funnel/fill kit (spill-free)",
+        "usage": "Coolant system fill and bleed",
+        "recommended": "Lisle 24680 or equivalent"
+      },
+      {
+        "tool": "VANOS solenoid socket (Special thin-wall)",
+        "usage": "VANOS solenoid removal without damage"
+      }
+    ]
+  },
+  "torque_specifications": {
+    "cylinder_head": {
+      "head_bolts": {
+        "sequence": "Start from center, work outward in spiral pattern",
+        "steps": [
+          {"step": 1, "torque_nm": 30, "notes": "Initial torque all bolts"},
+          {"step": 2, "angle_degrees": 90, "notes": "First angle pass"},
+          {"step": 3, "angle_degrees": 90, "notes": "Second angle pass"},
+          {"step": 4, "angle_degrees": 45, "notes": "Final angle pass (some variants)"}
+        ],
+        "bolt_type": "Torque-to-yield (TTY)",
+        "reusable": false,
+        "notes": "Always use new bolts. Follow exact sequence."
+      },
+      "camshaft_bearing_caps": {
+        "torque_nm": 10,
+        "sequence": "Inside to outside, alternating",
+        "notes": "Tighten evenly to avoid camshaft bind"
+      },
+      "camshaft_sprocket_bolts": {
+        "torque_nm": 15,
+        "plus_angle": 50,
+        "notes": "Apply threadlocker"
+      }
+    },
+    "valvetronic": {
+      "eccentric_shaft_bearing_caps": {
+        "torque_nm": 10,
+        "notes": "Tighten evenly in sequence"
+      },
+      "valvetronic_motor_bolts": {
+        "torque_nm": 8
+      }
+    },
+    "valve_cover": {
+      "valve_cover_bolts": {
+        "torque_nm": 10,
+        "sequence": "Start from center, work outward",
+        "notes": "Do not overtorque - plastic components"
+      }
+    },
+    "timing_system": {
+      "timing_chain_tensioner": {
+        "torque_nm": 60
+      },
+      "chain_guide_bolts": {
+        "torque_nm": 10
+      },
+      "vanos_units": {
+        "central_bolt": {
+          "torque_nm": 15,
+          "plus_angle": 100,
+          "notes": "Torque-to-yield"
+        }
+      }
+    },
+    "crankshaft_and_block": {
+      "crankshaft_pulley_bolt": {
+        "torque_nm": 60,
+        "plus_angle": 360,
+        "notes": "Plus additional full turn. Use holding tool."
+      },
+      "main_bearing_cap_bolts": {
+        "torque_nm": 25,
+        "plus_angle": 70,
+        "notes": "Torque-to-yield"
+      },
+      "connecting_rod_bolts": {
+        "torque_nm": 35,
+        "plus_angle": 90,
+        "notes": "Torque-to-yield. Always replace."
+      },
+      "flywheel_bolts": {
+        "torque_nm": 60,
+        "plus_angle": 60,
+        "notes": "Apply threadlocker"
+      },
+      "oil_pan_bolts": {
+        "torque_nm": 10,
+        "sequence": "Start from center, work outward"
+      }
+    },
+    "intake_exhaust": {
+      "intake_manifold_bolts": {
+        "torque_nm": 10,
+        "sequence": "Inside to outside"
+      },
+      "exhaust_manifold_nuts": {
+        "torque_nm": 18,
+        "notes": "Replace copper sealing nuts if worn"
+      },
+      "throttle_body_bolts": {
+        "torque_nm": 8
+      }
+    },
+    "cooling_system": {
+      "water_pump_bolts": {
+        "torque_nm": 10
+      },
+      "thermostat_housing_bolts": {
+        "torque_nm": 10
+      }
+    },
+    "lubrication_system": {
+      "oil_drain_plug": {
+        "torque_nm": 25,
+        "notes": "Replace aluminum washer each time"
+      },
+      "oil_filter_housing_cap": {
+        "torque_nm": 25
+      },
+      "oil_pump_bolts": {
+        "torque_nm": 10
+      }
+    },
+    "ignition": {
+      "spark_plugs": {
+        "torque_nm": 25,
+        "notes": "Apply anti-seize to threads"
+      },
+      "ignition_coil_bolts": {
+        "torque_nm": 8
+      }
+    },
+    "sensors": {
+      "oxygen_sensors": {
+        "torque_nm": 45,
+        "notes": "Apply anti-seize to threads"
+      },
+      "knock_sensors": {
+        "torque_nm": 20
+      },
+      "crankshaft_position_sensor": {
+        "torque_nm": 8
+      }
+    },
+    "engine_mounts": {
+      "engine_mount_to_bracket": {
+        "torque_nm": 45
+      },
+      "engine_mount_to_subframe": {
+        "torque_nm": 68
+      },
+      "transmission_mount": {
+        "torque_nm": 45
+      }
+    },
+    "accessory_drive": {
+      "alternator_mounting_bolts": {
+        "torque_nm": 25
+      },
+      "ac_compressor_bolts": {
+        "torque_nm": 25
+      },
+      "idler_pulley_bolt": {
+        "torque_nm": 40
+      },
+      "tensioner_bolt": {
+        "torque_nm": 25
+      }
+    }
+  },
+  "fluid_specifications": {
+    "engine_oil": {
+      "specification": "BMW Longlife-01 (LL-01)",
+      "viscosity_primary": "0W-40",
+      "viscosity_alternate": "5W-40",
+      "capacity_with_filter_liters": 6.5,
+      "capacity_with_filter_quarts": 6.9,
+      "approved_oils": [
+        {
+          "brand": "Castrol",
+          "product": "Edge 0W-40 A3/B4",
+          "api": "SN Plus",
+          "notes": "BMW recommended"
+        },
+        {
+          "brand": "Mobil 1",
+          "product": "0W-40 European Car Formula",
+          "api": "SN Plus",
+          "notes": "LL-01 approved"
+        },
+        {
+          "brand": "Pennzoil",
+          "product": "Platinum Euro 0W-40",
+          "api": "SN Plus",
+          "notes": "LL-01 approved"
+        },
+        {
+          "brand": "Liqui Moly",
+          "product": "Synthoil Energy 0W-40",
+          "api": "SN",
+          "notes": "LL-01 approved, German quality"
+        },
+        {
+          "brand": "BMW",
+          "product": "TwinPower Turbo 0W-40",
+          "api": "SN Plus",
+          "notes": "Factory fill"
+        },
+        {
+          "brand": "Valvoline",
+          "product": "SynPower 0W-40",
+          "api": "SN Plus",
+          "notes": "LL-01 approved"
+        }
+      ],
+      "oil_change_interval": {
+        "bmw_condition_based": "Up to 15,000 miles / 24 months",
+        "recommended": "7,500 miles / 12 months",
+        "severe_service": "5,000 miles / 6 months"
+      }
+    },
+    "coolant": {
+      "type": "BMW Blue Coolant (G48 specification)",
+      "color": "Blue",
+      "mixture": "50/50 with distilled water",
+      "capacity_liters": 10.5,
+      "capacity_gallons": 2.8,
+      "approved_coolants": [
+        {
+          "brand": "BMW",
+          "product": "BMW Antifreeze/Coolant",
+          "part_number": "82-14-1-467-704"
+        },
+        {
+          "brand": "Zerex",
+          "product": "G-48 Formula",
+          "color": "Blue"
+        },
+        {
+          "brand": "Pentosin",
+          "product": "Pentofrost NF",
+          "color": "Blue"
+        }
+      ],
+      "change_interval": "4 years / 100,000 miles",
+      "warnings": [
+        "Do not mix with other coolant types",
+        "Do not use green (universal) coolant",
+        "Do not use Dex-Cool (orange)"
+      ]
+    },
+    "transmission_fluid": {
+      "manual_transmission": {
+        "type": "MTF-LT-2 or equivalent GL-4 75W-80",
+        "capacity_liters": 1.5,
+        "approved_fluids": [
+          {
+            "brand": "BMW",
+            "product": "MTF-LT-2",
+            "part_number": "83-22-0-309-031"
+          },
+          {
+            "brand": "Red Line",
+            "product": "MTL 75W80 GL-4"
+          },
+          {
+            "brand": "Liqui Moly",
+            "product": "GL4 75W-80"
+          }
+        ],
+        "change_interval": "Lifetime (recommend 60,000 miles)"
+      },
+      "automatic_transmission": {
+        "type": "ATF per ZF specification (Lifeguard 6)",
+        "capacity_total_liters": 9.0,
+        "capacity_pan_drop_liters": 4.0,
+        "approved_fluids": [
+          {
+            "brand": "ZF",
+            "product": "Lifeguard 6",
+            "part_number": "S671.090.255"
+          },
+          {
+            "brand": "Shell",
+            "product": "ATF M-1375.4"
+          },
+          {
+            "brand": "Pentosin",
+            "product": "ATF 1 LV"
+          }
+        ],
+        "change_interval": "Lifetime (recommend 60,000 miles)",
+        "notes": "Requires special fill procedure with temperature monitoring"
+      }
+    },
+    "power_steering_fluid": {
+      "type": "CHF 11S (Pentosin) or BMW equivalent",
+      "capacity_liters": 1.0,
+      "approved_fluids": [
+        {
+          "brand": "Pentosin",
+          "product": "CHF 11S",
+          "color": "Green"
+        },
+        {
+          "brand": "BMW",
+          "product": "Power Steering Fluid",
+          "part_number": "83-29-0-429-576"
+        }
+      ],
+      "change_interval": "Not required (inspect level)",
+      "notes": "Some models have electric power steering (no fluid)"
+    },
+    "brake_fluid": {
+      "type": "DOT 4 Low Viscosity",
+      "approved_fluids": [
+        {
+          "brand": "BMW",
+          "product": "DOT 4 Brake Fluid",
+          "part_number": "81-22-0-142-156"
+        },
+        {
+          "brand": "ATE",
+          "product": "TYP 200 DOT 4"
+        },
+        {
+          "brand": "Pentosin",
+          "product": "Super DOT 4"
+        }
+      ],
+      "change_interval": "2 years",
+      "boiling_point_dry_c": 260,
+      "boiling_point_wet_c": 165
+    },
+    "differential_fluid": {
+      "type": "BMW SAF-XO 75W-90",
+      "capacity_liters": 1.0,
+      "approved_fluids": [
+        {
+          "brand": "BMW",
+          "product": "SAF-XO",
+          "part_number": "83-22-0-306-816"
+        },
+        {
+          "brand": "Red Line",
+          "product": "75W-90 GL-5"
+        },
+        {
+          "brand": "Liqui Moly",
+          "product": "Hypoid GL-5 75W-90"
+        }
+      ],
+      "change_interval": "Lifetime (recommend 60,000 miles)"
+    }
+  },
+  "service_procedures": {
+    "oil_change": {
+      "procedure_name": "Engine Oil and Filter Change",
+      "difficulty": "Easy",
+      "time_estimate": "30-45 minutes",
+      "tools_required": [
+        "17mm socket or wrench",
+        "76mm oil filter wrench",
+        "Drain pan (8+ quart capacity)",
+        "Torque wrench",
+        "Funnel"
+      ],
+      "parts_required": [
+        "6.5L BMW LL-01 approved 0W-40 oil",
+        "Oil filter (Mann HU816x or equivalent)",
+        "Drain plug washer (aluminum)"
+      ],
+      "steps": [
+        "Warm engine to operating temperature (5 min drive)",
+        "Position vehicle on level surface, engage parking brake",
+        "Remove underbody panel if equipped",
+        "Position drain pan under oil pan",
+        "Remove drain plug (17mm) and allow oil to drain completely",
+        "Install new drain plug washer and reinstall plug (25 Nm)",
+        "Remove oil filter cap with filter wrench",
+        "Remove old filter element from cap",
+        "Install new filter element into cap, ensure O-rings are seated",
+        "Reinstall filter cap (25 Nm)",
+        "Add 6.0L oil through filler cap",
+        "Start engine, check for leaks",
+        "Stop engine, wait 2 minutes, check level",
+        "Add oil as needed to bring to full mark",
+        "Reset oil service indicator via iDrive or ISTA"
+      ],
+      "notes": [
+        "Do not overtorque drain plug - aluminum pan threads easily",
+        "Replace filter cap O-rings if damaged",
+        "Always verify oil level after running engine"
+      ]
+    },
+    "vanos_solenoid_replacement": {
+      "procedure_name": "VANOS Solenoid Replacement",
+      "difficulty": "Medium",
+      "time_estimate": "1-2 hours",
+      "tools_required": [
+        "E10 socket",
+        "Flathead screwdriver",
+        "Torque wrench",
+        "Shop rags"
+      ],
+      "parts_required": [
+        "Intake VANOS solenoid (11-36-7-560-462)",
+        "Exhaust VANOS solenoid (11-36-7-560-463)",
+        "New O-rings (included with quality solenoids)"
+      ],
+      "steps": [
+        "Remove engine cover (pull up at rear)",
+        "Disconnect negative battery terminal",
+        "Locate VANOS solenoids on front of cylinder head",
+        "Disconnect electrical connectors (press tab, pull)",
+        "Remove solenoid mounting bolt (E10)",
+        "Pull solenoid straight out - may require gentle prying",
+        "Inspect solenoid screen filter - clean or replace if clogged",
+        "Lubricate new O-ring with clean engine oil",
+        "Install new solenoid, ensure proper orientation",
+        "Install and torque mounting bolt (8 Nm)",
+        "Reconnect electrical connector until click",
+        "Repeat for other solenoid if needed",
+        "Reconnect battery",
+        "Start engine and verify smooth operation",
+        "Clear fault codes with ISTA/scan tool",
+        "Perform VANOS adaptation reset if available"
+      ],
+      "notes": [
+        "Solenoids can often be cleaned and reinstalled",
+        "Always inspect filter screens for debris",
+        "Replace both solenoids if one fails (preventive)"
+      ]
+    },
+    "valve_cover_gasket_replacement": {
+      "procedure_name": "Valve Cover Gasket Replacement",
+      "difficulty": "Medium-Hard",
+      "time_estimate": "3-5 hours",
+      "special_considerations": "Late model N52s have integrated eccentric shaft sensor",
+      "tools_required": [
+        "T30 Torx socket",
+        "E10 socket",
+        "10mm socket",
+        "Flathead screwdriver",
+        "Eccentric shaft tool (11-3-450) for late models",
+        "Torque wrench",
+        "RTV sealant"
+      ],
+      "parts_required": [
+        "Valve cover gasket set",
+        "Spark plug tube seals (6)",
+        "Half moon seals",
+        "New valve cover (if cracked/warped) or gasket kit"
+      ],
+      "steps": [
+        "Disconnect negative battery terminal",
+        "Remove engine cover",
+        "Remove ignition coils (E10 bolts, pull straight up)",
+        "Disconnect all electrical connectors from valve cover",
+        "Label and photograph connector locations",
+        "Disconnect VANOS solenoid connectors",
+        "Disconnect eccentric shaft sensor connector",
+        "Remove CCV hoses from valve cover",
+        "Remove valve cover bolts (T30) in reverse of torque sequence",
+        "Carefully lift valve cover - may be stuck from old gasket",
+        "Clean all gasket mating surfaces thoroughly",
+        "Inspect valve cover for cracks or warpage",
+        "Install new spark plug tube seals into valve cover",
+        "Install new main gasket into valve cover groove",
+        "Apply small bead of RTV at cam cap/head joints (half moons)",
+        "Position valve cover and hand-start all bolts",
+        "Torque bolts in sequence from center outward (10 Nm)",
+        "Reinstall all components in reverse order",
+        "Reconnect battery",
+        "Start engine, check for leaks",
+        "Perform eccentric shaft sensor adaptation if replaced"
+      ],
+      "notes": [
+        "Late models may require eccentric shaft position reset with ISTA",
+        "Do not overtorque valve cover bolts - will crack cover",
+        "Complete valve cover replacement often more reliable than gasket only"
+      ]
+    },
+    "water_pump_replacement": {
+      "procedure_name": "Electric Water Pump Replacement",
+      "difficulty": "Medium",
+      "time_estimate": "2-3 hours",
+      "tools_required": [
+        "T30 Torx socket",
+        "E10 socket",
+        "Flathead screwdriver",
+        "Coolant drain pan",
+        "Coolant fill funnel (spill-free type)",
+        "Torque wrench"
+      ],
+      "parts_required": [
+        "Electric water pump",
+        "New O-ring/gasket (usually included with pump)",
+        "Fresh BMW blue coolant (at least 4 liters)",
+        "Distilled water for mixing"
+      ],
+      "steps": [
+        "Allow engine to cool completely",
+        "Disconnect negative battery terminal",
+        "Remove underbody panel for access",
+        "Place drain pan under radiator",
+        "Open radiator drain cock or remove lower hose to drain coolant",
+        "Remove air intake duct for access",
+        "Disconnect electrical connector from water pump",
+        "Remove water pump mounting bolts (3x T30 or E10)",
+        "Carefully remove pump - coolant will drain",
+        "Clean mounting surface on engine",
+        "Install new O-ring, lightly lubricated with coolant",
+        "Install new pump, align correctly",
+        "Install and torque mounting bolts (10 Nm)",
+        "Reconnect electrical connector",
+        "Reinstall any removed components",
+        "Close radiator drain",
+        "Fill coolant system using spill-free funnel",
+        "Fill slowly, allowing air to escape",
+        "Start engine with cap off, continue filling",
+        "Cycle heater to full hot to bleed heater core",
+        "Monitor temperature, top off coolant as needed",
+        "Install expansion tank cap when system is full and bled",
+        "Reconnect battery",
+        "Test drive, monitor temperature gauge",
+        "Recheck coolant level when cold"
+      ],
+      "notes": [
+        "Electric pump may run with ignition on, engine off - this is normal",
+        "Bleed procedure critical - air pockets cause overheating",
+        "Consider replacing thermostat at same time (preventive)"
+      ]
+    },
+    "spark_plug_replacement": {
+      "procedure_name": "Spark Plug Replacement",
+      "difficulty": "Easy-Medium",
+      "time_estimate": "1-1.5 hours",
+      "tools_required": [
+        "E10 socket",
+        "14mm spark plug socket with rubber insert",
+        "12\" extension",
+        "Universal joint (helpful)",
+        "Torque wrench",
+        "Anti-seize compound",
+        "Compressed air"
+      ],
+      "parts_required": [
+        "6x NGK PLKR7A spark plugs (or equivalent)",
+        "Optional: 6x ignition coils if replacing"
+      ],
+      "steps": [
+        "Allow engine to cool (plugs easier to remove when cool)",
+        "Remove engine cover",
+        "Disconnect ignition coil connectors",
+        "Remove ignition coil mounting bolts (E10)",
+        "Pull ignition coils straight up and out",
+        "Use compressed air to blow debris from spark plug wells",
+        "Remove spark plugs using 14mm spark plug socket",
+        "Inspect old plugs for condition (wear, deposits, damage)",
+        "Gap new plugs to 0.8mm if not pre-gapped",
+        "Apply thin coat of anti-seize to plug threads",
+        "Install new plugs by hand first to avoid cross-threading",
+        "Torque plugs to 25 Nm",
+        "Reinstall ignition coils",
+        "Reconnect coil connectors",
+        "Reinstall engine cover",
+        "Start engine, verify smooth operation"
+      ],
+      "notes": [
+        "OEM plugs last 60,000 miles typically",
+        "Do not over-tighten - aluminum head threads easily",
+        "Replace coils if plug wells have oil (from bad tube seals)"
+      ]
+    },
+    "thermostat_replacement": {
+      "procedure_name": "Thermostat and Housing Replacement",
+      "difficulty": "Medium",
+      "time_estimate": "2-3 hours",
+      "tools_required": [
+        "T30, T40 Torx sockets",
+        "E10, E12 sockets",
+        "Flathead screwdriver",
+        "Drain pan",
+        "Coolant fill funnel",
+        "Torque wrench"
+      ],
+      "parts_required": [
+        "Thermostat with housing assembly",
+        "New coolant (4+ liters)",
+        "Hose clamps if replacing hoses"
+      ],
+      "steps": [
+        "Allow engine to cool completely",
+        "Disconnect negative battery terminal",
+        "Drain coolant via radiator drain or lower hose",
+        "Remove air intake duct for access",
+        "Disconnect electrical connector from thermostat housing",
+        "Remove coolant hoses from thermostat housing (mark positions)",
+        "Remove thermostat housing mounting bolts",
+        "Remove housing with thermostat",
+        "Clean mounting surface on cylinder head",
+        "Install new thermostat housing assembly",
+        "Torque mounting bolts (10 Nm)",
+        "Reconnect coolant hoses with new clamps if needed",
+        "Reconnect electrical connector",
+        "Refill and bleed cooling system (see water pump procedure)",
+        "Start engine, monitor for leaks and proper temperature operation"
+      ],
+      "notes": [
+        "Electronic thermostat requires proper operation for emissions",
+        "Fault codes may set if thermostat doesn't reach target temp",
+        "Often done with water pump as preventive maintenance"
+      ]
+    },
+    "oil_filter_housing_gasket": {
+      "procedure_name": "Oil Filter Housing Gasket Replacement",
+      "difficulty": "Medium",
+      "time_estimate": "2-3 hours",
+      "tools_required": [
+        "E10, E12 sockets",
+        "36mm socket (for oil cooler)",
+        "Torque wrench",
+        "Drain pan",
+        "Pick tool for O-rings"
+      ],
+      "parts_required": [
+        "Oil filter housing gasket set (includes all O-rings)",
+        "New oil filter",
+        "Engine oil for top-off"
+      ],
+      "steps": [
+        "Drain engine oil (or be prepared for spillage)",
+        "Disconnect negative battery terminal",
+        "Remove engine cover and air intake components for access",
+        "Remove oil filter cap and filter",
+        "Disconnect any sensors/lines attached to housing",
+        "Remove oil filter housing mounting bolts",
+        "Remove housing (may require wiggling due to O-ring seal)",
+        "Remove old gasket and all O-rings from housing and block",
+        "Clean all sealing surfaces thoroughly",
+        "Install new O-rings on housing (lubricate with oil)",
+        "Install new main gasket",
+        "Position housing and install mounting bolts",
+        "Torque bolts evenly (10 Nm)",
+        "Install new oil filter and cap",
+        "Reinstall all removed components",
+        "Top off oil to proper level",
+        "Start engine, check for leaks thoroughly",
+        "Recheck after heat cycle"
+      ],
+      "notes": [
+        "Common leak point - oil can drip onto alternator",
+        "Replace all O-rings in the kit",
+        "Check oil cooler lines for leaks as well"
+      ]
+    }
+  },
+  "diagnostic_procedures": {
+    "vanos_system_check": {
+      "procedure": "VANOS System Diagnosis",
+      "symptoms": ["Rough idle", "Loss of power", "VANOS fault codes"],
+      "common_codes": ["2A82", "2A87", "2A7A", "2A7F"],
+      "diagnostic_steps": [
+        "Read fault codes with BMW ISTA or compatible scanner",
+        "Check oil level and condition (low oil affects VANOS)",
+        "Inspect VANOS solenoid connectors for damage/corrosion",
+        "Check VANOS solenoid resistance (7-8.5 ohms)",
+        "Remove and inspect solenoid filter screens",
+        "With scanner, command VANOS advance/retard and monitor actual vs target",
+        "If solenoids pass electrical tests, internal wear may be issue",
+        "Check timing chain tension (excessive stretch affects VANOS operation)"
+      ]
+    },
+    "valvetronic_system_check": {
+      "procedure": "Valvetronic System Diagnosis",
+      "symptoms": ["Limp mode", "Rough idle", "Reduced power"],
+      "common_codes": ["2A67", "2A68", "2764", "2765"],
+      "diagnostic_steps": [
+        "Read fault codes with ISTA",
+        "Check eccentric shaft sensor connection",
+        "Perform eccentric shaft position test with ISTA",
+        "Check Valvetronic motor operation (listen for motor movement)",
+        "Verify motor electrical connection",
+        "Check for binding in eccentric shaft",
+        "With late models, verify valve cover is not cracked (sensor mount)"
+      ]
+    },
+    "cooling_system_diagnosis": {
+      "procedure": "Cooling System Diagnosis",
+      "symptoms": ["Overheating", "Coolant loss", "No heat"],
+      "common_codes": ["2E81", "2E82", "2E83", "2E84", "2E85", "2E8A", "2E8B"],
+      "diagnostic_steps": [
+        "Visual inspection for coolant leaks",
+        "Pressure test cooling system (1.5 bar max)",
+        "Check expansion tank cap seal",
+        "Verify water pump operation (scan tool can command pump on)",
+        "Check thermostat operation (monitor temp rise pattern)",
+        "Verify no air pockets (repeat bleed if necessary)",
+        "Inspect water pump electrical connector",
+        "Check temperature sensor readings vs actual (infrared thermometer)"
+      ]
+    },
+    "misfire_diagnosis": {
+      "procedure": "Engine Misfire Diagnosis",
+      "symptoms": ["Rough running", "Check engine light", "Power loss"],
+      "common_codes": ["29CC-29D1 (cylinder specific misfire)", "29E2 (random misfire)"],
+      "diagnostic_steps": [
+        "Read fault codes to identify affected cylinder(s)",
+        "Check spark plugs condition and gap",
+        "Test ignition coils (swap with known good)",
+        "Check fuel injector operation (resistance, spray pattern)",
+        "Compression test affected cylinder",
+        "Check for vacuum leaks (smoke test)",
+        "Verify MAF sensor readings",
+        "Check for intake manifold leaks (DISA valve area)"
+      ]
+    }
+  },
+  "reset_procedures": {
+    "oil_service_reset": {
+      "method_1_idrive": {
+        "description": "Reset via iDrive menu",
+        "steps": [
+          "Turn ignition to ON (do not start engine)",
+          "Navigate to Vehicle Information menu",
+          "Select Vehicle Status",
+          "Select Service Required",
+          "Select Reset",
+          "Confirm reset"
+        ]
+      },
+      "method_2_instrument_cluster": {
+        "description": "Reset via instrument cluster buttons",
+        "steps": [
+          "Turn ignition OFF",
+          "Press and hold odometer reset button",
+          "While holding, turn ignition to ON",
+          "Continue holding until service message appears",
+          "Release button, then press and hold again",
+          "Message will reset when held for several seconds"
+        ]
+      }
+    },
+    "battery_registration": {
+      "description": "Register new battery with vehicle computer",
+      "steps": [
+        "Connect BMW ISTA or compatible tool",
+        "Navigate to Service Functions > Battery",
+        "Select Register Battery Replacement",
+        "Enter new battery specifications (Ah rating, type)",
+        "Complete registration",
+        "Vehicle will adjust charging strategy for new battery"
+      ],
+      "notes": "Required to prevent overcharging or undercharging new battery"
+    },
+    "throttle_adaptation_reset": {
+      "description": "Reset throttle body adaptation values",
+      "steps": [
+        "Clear all adaptation values with ISTA",
+        "Turn ignition off for 10 seconds",
+        "Turn ignition on, do not start",
+        "Wait 60 seconds for adaptation",
+        "Start engine, let idle for 5 minutes",
+        "Drive vehicle through various RPM ranges"
+      ]
+    },
+    "vanos_adaptation": {
+      "description": "Reset VANOS adaptation after solenoid service",
+      "steps": [
+        "Connect ISTA diagnostic system",
+        "Navigate to Service Functions > Engine",
+        "Select VANOS Adaptation",
+        "Follow on-screen procedure",
+        "May require engine running test"
+      ],
+      "notes": "May clear on its own after several drive cycles"
+    }
+  },
+  "common_diagnostic_codes": {
+    "vanos_related": [
+      {"code": "2A82", "description": "Intake VANOS cold start position not reached"},
+      {"code": "2A87", "description": "Exhaust VANOS cold start position not reached"},
+      {"code": "2A7A", "description": "Intake VANOS position control - position not reached"},
+      {"code": "2A7F", "description": "Exhaust VANOS position control - position not reached"},
+      {"code": "2A85", "description": "Intake VANOS - stuck mechanical"},
+      {"code": "2A8A", "description": "Exhaust VANOS - stuck mechanical"}
+    ],
+    "valvetronic_related": [
+      {"code": "2A67", "description": "Valvetronic - control deviation"},
+      {"code": "2A68", "description": "Valvetronic - reference position not reached"},
+      {"code": "2764", "description": "Eccentric shaft sensor - signal implausible"},
+      {"code": "2765", "description": "Eccentric shaft sensor - no signal"},
+      {"code": "2767", "description": "Valvetronic motor - overcurrent"}
+    ],
+    "cooling_system_related": [
+      {"code": "2E81", "description": "Electric water pump - speed deviation"},
+      {"code": "2E82", "description": "Electric water pump - not activated"},
+      {"code": "2E83", "description": "Electric water pump - overcurrent"},
+      {"code": "2E84", "description": "Electric water pump - undercurrent"},
+      {"code": "2E85", "description": "Electric water pump - communication"},
+      {"code": "2E8A", "description": "Thermostat - activation malfunction"},
+      {"code": "2E8B", "description": "Thermostat - closing malfunction"}
+    ],
+    "misfire_related": [
+      {"code": "29CC", "description": "Misfire cylinder 1"},
+      {"code": "29CD", "description": "Misfire cylinder 2"},
+      {"code": "29CE", "description": "Misfire cylinder 3"},
+      {"code": "29CF", "description": "Misfire cylinder 4"},
+      {"code": "29D0", "description": "Misfire cylinder 5"},
+      {"code": "29D1", "description": "Misfire cylinder 6"},
+      {"code": "29E2", "description": "Random/multiple misfire detected"}
+    ],
+    "fuel_system_related": [
+      {"code": "2FC6", "description": "Fuel mixture too lean (bank 1)"},
+      {"code": "2FC7", "description": "Fuel mixture too lean (bank 2)"},
+      {"code": "2FC8", "description": "Fuel mixture too rich (bank 1)"},
+      {"code": "2FC9", "description": "Fuel mixture too rich (bank 2)"}
+    ]
+  }
+}

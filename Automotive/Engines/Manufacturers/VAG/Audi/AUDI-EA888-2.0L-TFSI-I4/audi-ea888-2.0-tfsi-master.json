@@ -1,0 +1,529 @@
+{
+  "engine_id": "VAG-EA888-2.0L-TFSI-I4",
+  "common_names": [
+    "EA888",
+    "2.0 TFSI",
+    "2.0 TSI",
+    "Gen1 TSI",
+    "Gen2 TSI",
+    "Gen3 TSI",
+    "Gen3B TSI",
+    "Gen4 TSI"
+  ],
+  "engine_family": "EA888",
+  "manufacturer": "Volkswagen AG",
+  "brand_applications": ["Audi", "Volkswagen", "SEAT", "Skoda", "Porsche", "Lamborghini"],
+  "production_years": "2008-present",
+  "engine_type": "Inline-4 Turbocharged Petrol",
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {
+      "liters": 1.984,
+      "cc": 1984,
+      "cubic_inches": 121.1
+    },
+    "bore": {
+      "mm": 82.5,
+      "inches": 3.248
+    },
+    "stroke": {
+      "mm": 92.8,
+      "inches": 3.654
+    },
+    "compression_ratio": "9.3:1 - 11.6:1 (varies by generation)",
+    "block_material": "Cast iron (Gen1-2) / Aluminum (Gen3+)",
+    "head_material": "Aluminum",
+    "valvetrain": {
+      "configuration": "DOHC",
+      "valves_per_cylinder": 4,
+      "total_valves": 16,
+      "variable_timing": "Dual VVT (intake and exhaust)",
+      "timing_drive": "Chain-driven"
+    },
+    "forced_induction": {
+      "type": "Single Turbocharger",
+      "models": {
+        "gen1_gen2": "K03/K04",
+        "gen3_is20": "IHI IS20",
+        "gen3_is38": "IHI IS38"
+      },
+      "boost_pressure_bar": "0.8-1.8 (variant dependent)",
+      "intercooler": "Air-to-air (Gen1-2) / Water-to-air (Gen3+)"
+    },
+    "fuel_system": {
+      "gen1": "Direct Injection only (FSI)",
+      "gen2": "Direct Injection only (TSI)",
+      "gen3_plus": "Combined Direct + Port Injection (MPI+FSI)",
+      "fuel_pressure_bar": 200,
+      "injector_type": "High-pressure piezo"
+    },
+    "ignition_system": {
+      "type": "Coil-on-plug",
+      "spark_plugs_gen1_2": "NGK PFR7S8EG",
+      "spark_plugs_gen3_plus": "NGK ILKAR8Q7G / Denso IKH24",
+      "spark_plug_gap_mm": 0.7
+    }
+  },
+  "generation_evolution": {
+    "gen1_ea888": {
+      "years": "2008-2012",
+      "internal_designation": "EA888.1",
+      "engine_codes": ["CCTA", "CBFA", "CAEB", "CDNC", "CETA"],
+      "block": "Cast iron",
+      "fuel_injection": "Direct injection only",
+      "turbo": "BorgWarner K03",
+      "timing": "Chain (known issues)",
+      "known_issues": [
+        "Timing chain tensioner failure",
+        "PCV diaphragm failure",
+        "Water pump failure",
+        "Carbon buildup (DI only)"
+      ],
+      "power_range_hp": "170-211"
+    },
+    "gen2_ea888": {
+      "years": "2013-2016",
+      "internal_designation": "EA888.2",
+      "engine_codes": ["CPMA", "CPMB", "CNCD", "CNCB"],
+      "block": "Cast iron",
+      "fuel_injection": "Direct injection only",
+      "turbo": "K03/K04",
+      "timing": "Revised chain tensioner",
+      "improvements": [
+        "Updated timing chain tensioner",
+        "Revised PCV system",
+        "Improved water pump"
+      ],
+      "power_range_hp": "180-220"
+    },
+    "gen3_ea888": {
+      "years": "2014-2020",
+      "internal_designation": "EA888.3",
+      "engine_codes": ["CXCA", "CXCB", "CYPA", "CYPB", "DKZA", "DLBA"],
+      "block": "Aluminum open-deck",
+      "fuel_injection": "Combined DI + Port Injection",
+      "turbo": {
+        "standard": "IHI IS20 (220hp)",
+        "performance": "IHI IS38 (310hp)"
+      },
+      "timing": "Robust chain system",
+      "major_improvements": [
+        "Aluminum block (lighter)",
+        "Dual injection (reduces carbon buildup)",
+        "More efficient turbo system",
+        "Higher power output",
+        "Much better reliability"
+      ],
+      "power_range_hp": "220-310"
+    },
+    "gen3b_ea888_evo": {
+      "years": "2017-2021",
+      "internal_designation": "EA888.3B / EA888 evo",
+      "engine_codes": ["DNUA", "DNUE", "DPFA", "DPGA"],
+      "block": "Aluminum open-deck (revised)",
+      "fuel_injection": "Combined DI + Port Injection",
+      "turbo": {
+        "standard": "IHI IS20",
+        "performance": "IHI IS38",
+        "rs3_derived": "Custom large frame"
+      },
+      "improvements": [
+        "Miller cycle variants",
+        "Variable valve lift (AVS)",
+        "Improved efficiency",
+        "Cylinder deactivation (ACT) on some"
+      ],
+      "power_range_hp": "245-400"
+    },
+    "gen4_ea888_evo4": {
+      "years": "2020-present",
+      "internal_designation": "EA888 evo4",
+      "engine_codes": ["DNPA", "DNPB", "DLSA"],
+      "block": "Aluminum closed-deck",
+      "fuel_injection": "Combined DI + Port Injection",
+      "turbo": "Twin-scroll IHI",
+      "major_improvements": [
+        "Closed-deck block (strongest yet)",
+        "Twin-scroll turbo",
+        "Even higher output potential",
+        "48V MHEV option",
+        "Optimized for emissions"
+      ],
+      "power_range_hp": "265-333",
+      "notes": "Found in Golf 8 R, 8Y S3, etc."
+    }
+  },
+  "power_output_by_variant": {
+    "A3_8V_2.0_TFSI_190hp": {
+      "code": "CXCA",
+      "generation": "Gen3",
+      "power_hp": 190,
+      "power_kw": 140,
+      "torque_nm": 320,
+      "torque_lb_ft": 236,
+      "redline_rpm": 6200,
+      "turbo": "IS20",
+      "production_years": "2014-2020"
+    },
+    "S3_8V_2.0_TFSI_310hp": {
+      "code": "CJXC/CJXG",
+      "generation": "Gen3",
+      "power_hp": 310,
+      "power_kw": 228,
+      "torque_nm": 400,
+      "torque_lb_ft": 295,
+      "redline_rpm": 6800,
+      "turbo": "IS38",
+      "production_years": "2014-2020"
+    },
+    "S3_8Y_2.0_TFSI_333hp": {
+      "code": "DNPA",
+      "generation": "Gen4",
+      "power_hp": 333,
+      "power_kw": 245,
+      "torque_nm": 420,
+      "torque_lb_ft": 310,
+      "redline_rpm": 6800,
+      "turbo": "IHI Twin-scroll",
+      "production_years": "2020-present"
+    },
+    "TT_RS_2.5_TFSI_400hp": {
+      "code": "DAZA",
+      "engine": "EA855 2.5L (5-cyl, related family)",
+      "power_hp": 400,
+      "power_kw": 294,
+      "torque_nm": 480,
+      "torque_lb_ft": 354,
+      "notes": "5-cylinder variant - separate database entry"
+    },
+    "Golf_GTI_MK7_2.0_TSI_220hp": {
+      "code": "CXCA",
+      "generation": "Gen3",
+      "power_hp": 220,
+      "power_kw": 162,
+      "torque_nm": 350,
+      "torque_lb_ft": 258,
+      "redline_rpm": 6200,
+      "turbo": "IS20",
+      "production_years": "2014-2020"
+    },
+    "Golf_GTI_MK7_Performance_2.0_TSI_245hp": {
+      "code": "DLBA",
+      "generation": "Gen3",
+      "power_hp": 245,
+      "power_kw": 180,
+      "torque_nm": 370,
+      "torque_lb_ft": 273,
+      "redline_rpm": 6500,
+      "turbo": "IS20 (higher boost map)"
+    },
+    "Golf_R_MK7_2.0_TSI_310hp": {
+      "code": "CJXG",
+      "generation": "Gen3",
+      "power_hp": 310,
+      "power_kw": 228,
+      "torque_nm": 400,
+      "torque_lb_ft": 295,
+      "redline_rpm": 6800,
+      "turbo": "IS38"
+    },
+    "Golf_R_MK8_2.0_TSI_320hp": {
+      "code": "DNUA",
+      "generation": "Gen4",
+      "power_hp": 320,
+      "power_kw": 235,
+      "torque_nm": 420,
+      "torque_lb_ft": 310,
+      "turbo": "IHI Twin-scroll"
+    }
+  },
+  "vehicle_applications": {
+    "audi": {
+      "A3_8V": {
+        "years": "2014-2020",
+        "variants": ["2.0 TFSI 190hp", "S3 310hp"],
+        "transmission_options": ["6-speed manual", "6/7-speed S tronic DSG"]
+      },
+      "A3_8Y": {
+        "years": "2020-present",
+        "variants": ["40 TFSI 190hp", "S3 333hp"],
+        "transmission_options": ["7-speed S tronic DSG"]
+      },
+      "A4_B8_B9": {
+        "years": "2008-present",
+        "variants": ["2.0 TFSI 190-252hp"],
+        "transmission_options": ["Manual", "S tronic", "Multitronic"]
+      },
+      "A5_B8_B9": {
+        "years": "2008-present",
+        "variants": ["2.0 TFSI 190-252hp"],
+        "transmission_options": ["Manual", "S tronic"]
+      },
+      "Q3_8U_F3": {
+        "years": "2012-present",
+        "variants": ["2.0 TFSI 180-230hp"],
+        "transmission_options": ["6-speed manual", "S tronic"]
+      },
+      "Q5_8R_FY": {
+        "years": "2008-present",
+        "variants": ["2.0 TFSI 211-252hp"],
+        "transmission_options": ["S tronic", "Tiptronic"]
+      },
+      "TT_8J_8S": {
+        "years": "2006-present",
+        "variants": ["2.0 TFSI 200-245hp", "TTS 272-310hp"],
+        "transmission_options": ["6-speed manual", "S tronic"]
+      }
+    },
+    "volkswagen": {
+      "Golf_GTI_MK6": {
+        "years": "2009-2013",
+        "variants": ["2.0 TSI 210hp"],
+        "generation": "Gen1/Gen2",
+        "transmission_options": ["6-speed manual", "6-speed DSG"]
+      },
+      "Golf_GTI_MK7": {
+        "years": "2014-2020",
+        "variants": ["2.0 TSI 220hp", "GTI Performance 245hp"],
+        "generation": "Gen3",
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Golf_GTI_MK8": {
+        "years": "2020-present",
+        "variants": ["2.0 TSI 245hp"],
+        "generation": "Gen4",
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Golf_R_MK6": {
+        "years": "2010-2013",
+        "variants": ["2.0 TSI 270hp"],
+        "transmission_options": ["6-speed manual", "6-speed DSG"]
+      },
+      "Golf_R_MK7": {
+        "years": "2014-2020",
+        "variants": ["2.0 TSI 310hp"],
+        "generation": "Gen3",
+        "transmission_options": ["6-speed manual", "7-speed DSG"]
+      },
+      "Golf_R_MK8": {
+        "years": "2021-present",
+        "variants": ["2.0 TSI 320hp"],
+        "generation": "Gen4",
+        "transmission_options": ["7-speed DSG"]
+      },
+      "Tiguan_5N_AD1": {
+        "years": "2007-present",
+        "variants": ["2.0 TSI 180-230hp"],
+        "transmission_options": ["Manual", "DSG", "Tiptronic"]
+      },
+      "Passat_B7_B8": {
+        "years": "2010-present",
+        "variants": ["2.0 TSI 210-280hp"],
+        "transmission_options": ["Manual", "DSG"]
+      },
+      "Arteon_3H": {
+        "years": "2017-present",
+        "variants": ["2.0 TSI 190-280hp"],
+        "transmission_options": ["7-speed DSG"]
+      }
+    },
+    "seat": {
+      "Leon_Cupra_5F": {
+        "years": "2014-2020",
+        "variants": ["2.0 TSI 280-310hp"],
+        "notes": "Same IS38 as Golf R"
+      },
+      "Ateca_Cupra": {
+        "years": "2018-present",
+        "variants": ["2.0 TSI 300hp"]
+      }
+    },
+    "skoda": {
+      "Octavia_RS_5E": {
+        "years": "2013-2020",
+        "variants": ["2.0 TSI 220-245hp"],
+        "notes": "GTI platform"
+      },
+      "Superb_3V": {
+        "years": "2015-present",
+        "variants": ["2.0 TSI 220-280hp"]
+      }
+    },
+    "porsche": {
+      "Macan_95B": {
+        "years": "2014-present",
+        "variants": ["2.0T 252hp"],
+        "notes": "Detuned EA888 variant for base Macan"
+      }
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "gen1_gen2": {
+        "capacity_liters": 4.6,
+        "capacity_with_filter_liters": 5.0,
+        "specification": "VW 502.00 or VW 504.00/507.00",
+        "viscosity": "5W-40 or 5W-30"
+      },
+      "gen3_plus": {
+        "capacity_liters": 5.5,
+        "capacity_with_filter_liters": 5.8,
+        "specification": "VW 504.00/507.00 or VW 508.00/509.00",
+        "viscosity": "5W-30 or 0W-20"
+      },
+      "recommended_brands": ["Castrol EDGE Professional", "Liqui Moly Leichtlauf", "Mobil 1 ESP"]
+    },
+    "coolant": {
+      "capacity_liters": 7.0,
+      "specification": "G13 or G12++",
+      "mixture": "50/50 with distilled water"
+    }
+  },
+  "service_intervals": {
+    "oil_change": {
+      "interval_miles": 10000,
+      "interval_km": 15000,
+      "time_months": 12,
+      "notes": "Use shorter intervals for tuned/tracked cars (5000 miles)"
+    },
+    "spark_plugs": {
+      "interval_miles": 40000,
+      "interval_km": 60000,
+      "notes": "Check gap more frequently on tuned engines"
+    },
+    "timing_chain": {
+      "gen1_gen2": {
+        "interval": "Check every 60k miles, replace if needed",
+        "notes": "Gen1 especially problematic - inspect for stretch"
+      },
+      "gen3_plus": {
+        "interval": "Lifetime (typically 150k+ miles)",
+        "notes": "Much improved, usually lasts engine life"
+      }
+    },
+    "dsg_service": {
+      "interval_miles": 40000,
+      "interval_km": 60000,
+      "notes": "Critical for DSG longevity"
+    }
+  },
+  "known_issues": {
+    "gen1_timing_chain": {
+      "severity": "Critical",
+      "affected": "Gen1 EA888 (2008-2013)",
+      "symptoms": ["Rattling on startup", "CEL", "Engine damage if ignored"],
+      "solution": "Replace tensioner and chain with updated parts",
+      "part_numbers": {
+        "tensioner": "06K109467K",
+        "chain": "06K109158AD"
+      },
+      "cost_usd": "1500-2500 (shop labor)"
+    },
+    "gen1_gen2_pcv_failure": {
+      "severity": "High",
+      "affected": "Gen1-2 EA888",
+      "symptoms": ["Rough idle", "Boost leaks", "Oil consumption"],
+      "solution": "Replace PCV valve/diaphragm",
+      "part_number": "06H103495AK"
+    },
+    "water_pump_thermostat": {
+      "severity": "Medium",
+      "affected": "All generations",
+      "symptoms": ["Coolant leak", "Overheating"],
+      "solution": "Replace water pump/thermostat assembly",
+      "part_numbers": {
+        "gen1_gen2": "06H121026DD",
+        "gen3": "06L121111J"
+      }
+    },
+    "carbon_buildup": {
+      "severity": "Medium",
+      "affected": "Gen1-2 (DI only)",
+      "symptoms": ["Rough idle", "Power loss", "Misfires"],
+      "solution": "Walnut blasting every 50-60k miles",
+      "notes": "Gen3+ dual injection significantly reduces this issue"
+    },
+    "diverter_valve_failure": {
+      "severity": "Low-Medium",
+      "affected": "All generations",
+      "symptoms": ["Boost leaks", "Lag", "Whooshing sound"],
+      "solution": "Replace with revised or aftermarket DV"
+    }
+  },
+  "tuning_potential": {
+    "gen3_is20_stage_1": {
+      "description": "ECU tune only (GTI platform)",
+      "power_hp": "280-300",
+      "torque_nm": "420-440",
+      "requirements": ["ECU tune"],
+      "estimated_cost_usd": 600
+    },
+    "gen3_is20_stage_2": {
+      "description": "ECU tune + downpipe + intake",
+      "power_hp": "320-340",
+      "torque_nm": "460-480",
+      "requirements": ["ECU tune", "Downpipe", "Intake", "Upgraded intercooler"],
+      "estimated_cost_usd": 2500
+    },
+    "gen3_is38_stage_1": {
+      "description": "ECU tune only (Golf R/S3 platform)",
+      "power_hp": "370-400",
+      "torque_nm": "500-520",
+      "requirements": ["ECU tune"],
+      "estimated_cost_usd": 700
+    },
+    "gen3_is38_stage_2": {
+      "description": "Full bolt-ons with IS38",
+      "power_hp": "420-450",
+      "torque_nm": "550-580",
+      "requirements": ["ECU tune", "Downpipe", "Intake", "Intercooler", "HPFP"],
+      "estimated_cost_usd": 4000
+    },
+    "is38_swap_on_is20_car": {
+      "description": "Golf R turbo on GTI",
+      "power_hp": "370-400",
+      "torque_nm": "500-530",
+      "requirements": ["IS38 turbo", "ECU tune", "Supporting mods"],
+      "estimated_cost_usd": 3500
+    },
+    "big_turbo_hybrid": {
+      "description": "Hybrid turbo build (TTE/Vargas)",
+      "power_hp": "500-600",
+      "torque_nm": "600-650",
+      "requirements": ["Hybrid turbo", "Forged internals recommended", "Upgraded fuel system", "Custom tune"],
+      "estimated_cost_usd": 10000
+    },
+    "big_turbo_frame": {
+      "description": "Full big turbo build (GTX/Precision)",
+      "power_hp": "600-800+",
+      "torque_nm": "700+",
+      "requirements": ["External turbo", "Built engine", "Complete fuel system", "Custom tune"],
+      "estimated_cost_usd": 20000
+    }
+  },
+  "cross_references": {
+    "shared_with_vw": "../../../VAG/Shared-Components/EA888-family.json",
+    "turbo_is20": "../../../VAG/Shared-Components/turbo-is20.json",
+    "turbo_is38": "../../../VAG/Shared-Components/turbo-is38.json"
+  },
+  "notes": {
+    "heritage": "Most successful VAG performance engine family, evolved through 4 generations",
+    "gen3_breakthrough": "Gen3 with dual injection solved most Gen1/2 issues while increasing power",
+    "aftermarket_support": "Arguably the best-supported 4-cylinder for aftermarket in the world",
+    "strengths": [
+      "Massive aftermarket support",
+      "Very tuneable (500+ hp achievable)",
+      "Gen3+ very reliable when maintained",
+      "Shared parts across many vehicles",
+      "Excellent power-to-displacement ratio"
+    ],
+    "weaknesses": [
+      "Gen1-2 timing chain issues",
+      "Gen1-2 carbon buildup",
+      "Gen1-2 PCV problems",
+      "Can consume oil at higher mileage",
+      "Gen3 open-deck block limits max power (~550whp safe)"
+    ],
+    "recommended_for": "Anyone wanting a powerful, tuneable 4-cylinder with excellent support"
+  }
+}

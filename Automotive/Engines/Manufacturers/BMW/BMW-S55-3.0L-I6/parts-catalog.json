@@ -1,0 +1,901 @@
+{
+  "engine_id": "BMW-S55-3.0L-I6-TWINTURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {
+    "year": 2017,
+    "make": "BMW",
+    "model": "M4 F82",
+    "engine": "S55B30"
+  },
+
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly - forged internals",
+      "components": {
+        "engine_block": {
+          "part_id": "S55-BLOCK",
+          "description": "Aluminum engine block with cast iron liners",
+          "oem_part_numbers": ["11112353861"],
+          "material": "Aluminum with Cast Iron Liners",
+          "weight_lbs": 115,
+          "specifications": {
+            "deck_height_mm": 210.0,
+            "bore_diameter_mm": 84.0,
+            "main_bearing_bores": 7,
+            "main_cap_bolts": "4-bolt all mains",
+            "bedplate": "Integrated lower crankcase girdle"
+          },
+          "interchangeability": {
+            "compatible_years": "2014-2020",
+            "notes": "Similar architecture to N55 but reinforced for higher output"
+          },
+          "wear_classification": "long_life"
+        },
+        "crankshaft": {
+          "part_id": "S55-CRANK",
+          "description": "Forged steel crankshaft - lightened and balanced",
+          "oem_part_numbers": ["11217848091"],
+          "material": "Forged Steel 4340",
+          "weight_lbs": 48,
+          "specifications": {
+            "stroke_mm": 89.6,
+            "main_journal_diameter_mm": 60.0,
+            "rod_journal_diameter_mm": 50.0,
+            "counterweights": 8,
+            "notes": "Lighter than N55 crank, optimized for high RPM"
+          },
+          "interchangeability": {
+            "notes": "S55 specific - NOT interchangeable with N55"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "crank_hub_dampener": {
+          "part_id": "S55-CRANK-HUB",
+          "description": "Crankshaft harmonic dampener and hub assembly",
+          "oem_part_numbers": ["11237838156"],
+          "critical_issue": {
+            "problem": "Hub keyway can wallow out causing timing slip",
+            "solution": "Aftermarket pinned or keyed hub upgrade",
+            "mandatory_for_tuned": true
+          },
+          "aftermarket_upgrades": {
+            "atech": "ATECH-S55-HUB",
+            "irp": "IRP-S55-CRANK-FIX",
+            "vac_motorsports": "VAC-S55-HUB"
+          },
+          "wear_classification": "consumable"
+        },
+        "connecting_rods": {
+          "part_id": "S55-CONROD",
+          "description": "Forged steel connecting rods with bushed small end (set of 6)",
+          "oem_part_numbers": ["11247848092"],
+          "aftermarket_options": {
+            "manley": "14086-6",
+            "cp_carrillo": "BMW-S55-65000H",
+            "pauter": "BMW-S55-650"
+          },
+          "material": "Forged 4340 Steel",
+          "quantity_per_engine": 6,
+          "specifications": {
+            "center_to_center_mm": 139.0,
+            "big_end_diameter_mm": 53.0,
+            "small_end_bushing": "Bronze bushed for wrist pin"
+          },
+          "wear_classification": "long_life"
+        },
+        "pistons": {
+          "part_id": "S55-PISTON",
+          "description": "Forged aluminum pistons with DLC coated skirts (set of 6)",
+          "oem_part_numbers": ["11257848093"],
+          "aftermarket_options": {
+            "mahle": "S55-FORGED-84",
+            "je_pistons": "361522",
+            "cp_pistons": "SC7490"
+          },
+          "material": "Forged Aluminum 2618",
+          "quantity_per_engine": 6,
+          "specifications": {
+            "bore_mm": 84.0,
+            "compression_height_mm": 30.5,
+            "pin_diameter_mm": 21.0,
+            "ring_pack": "1.2mm/1.5mm/2.0mm",
+            "coating": "DLC (Diamond-Like Carbon) skirt coating"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "piston_rings": {
+          "part_id": "S55-RINGS",
+          "description": "Piston ring set (set of 6 pistons)",
+          "oem_part_numbers": ["11257848094"],
+          "aftermarket_options": {
+            "total_seal": "S55-84MM",
+            "mahle": "41878CP"
+          },
+          "quantity_per_engine": 6,
+          "wear_classification": "consumable"
+        },
+        "wrist_pins": {
+          "part_id": "S55-WRISTPIN",
+          "description": "Floating wrist pins (set of 6)",
+          "oem_part_numbers": ["11257848095"],
+          "specifications": {
+            "diameter_mm": 21.0,
+            "type": "Full floating with circlips"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "main_bearings": {
+          "part_id": "S55-MAIN-BRG",
+          "description": "Main bearing set",
+          "oem_part_numbers": ["11217848096"],
+          "aftermarket_options": {
+            "acl": "7M2960H-STD",
+            "king": "MB4590AM-STD"
+          },
+          "quantity_per_engine": 7,
+          "wear_classification": "consumable"
+        },
+        "rod_bearings": {
+          "part_id": "S55-ROD-BRG",
+          "description": "Connecting rod bearing set - KNOWN WEAR ITEM",
+          "oem_part_numbers": ["11247848097"],
+          "aftermarket_options": {
+            "be_bearings": "BE-S55-RACE",
+            "acl": "6B2960H-STD",
+            "king": "CR4542AM-STD",
+            "clevite": "CB-1790HN"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "recommended_replacement_miles": 60000,
+            "oil_clearance_mm": "0.04-0.06"
+          },
+          "common_issues": ["Premature wear", "Requires inspection at 60k miles"],
+          "wear_classification": "consumable"
+        },
+        "thrust_bearings": {
+          "part_id": "S55-THRUST-BRG",
+          "description": "Crankshaft thrust bearing set",
+          "oem_part_numbers": ["11217848098"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "cylinder_head": {
+      "description": "DOHC aluminum cylinder head with Double VANOS (NO Valvetronic)",
+      "components": {
+        "cylinder_head": {
+          "part_id": "S55-HEAD",
+          "description": "Aluminum DOHC cylinder head - NO Valvetronic",
+          "oem_part_numbers": ["11127848100"],
+          "material": "Aluminum",
+          "specifications": {
+            "valve_count": 24,
+            "valves_per_cylinder": 4,
+            "intake_valve_diameter_mm": 31.5,
+            "exhaust_valve_diameter_mm": 28.0,
+            "valvetronic_equipped": false,
+            "combustion_chamber_cc": 51.2
+          },
+          "wear_classification": "long_life"
+        },
+        "head_gasket": {
+          "part_id": "S55-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": ["11127848101"],
+          "aftermarket_options": {
+            "cometic": "C4606-030",
+            "athena": "SCE-S55-MLS"
+          },
+          "specifications": {
+            "thickness_mm": 0.92,
+            "bore_mm": 85.0
+          },
+          "wear_classification": "consumable"
+        },
+        "intake_valves": {
+          "part_id": "S55-INTAKE-VALVE",
+          "description": "Intake valves (set of 12)",
+          "oem_part_numbers": ["11347848102"],
+          "aftermarket_options": {
+            "supertech": "SIVF-2001",
+            "ferrea": "F1375"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "diameter_mm": 31.5,
+            "material": "Stainless steel with chrome stem"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "exhaust_valves": {
+          "part_id": "S55-EXHAUST-VALVE",
+          "description": "Exhaust valves - sodium filled (set of 12)",
+          "oem_part_numbers": ["11347848103"],
+          "aftermarket_options": {
+            "supertech": "SEVF-2001",
+            "ferrea": "F1376"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "diameter_mm": 28.0,
+            "material": "Inconel with sodium fill for heat dissipation"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "valve_springs": {
+          "part_id": "S55-VALVE-SPRING",
+          "description": "Valve springs (set of 24)",
+          "oem_part_numbers": ["11347848104"],
+          "aftermarket_options": {
+            "supertech": "SPR-TS1015S",
+            "brian_crower": "BC0800S"
+          },
+          "quantity_per_engine": 24,
+          "specifications": {
+            "installed_height_mm": 34.0,
+            "seat_pressure_lbs": 165,
+            "open_pressure_lbs": 385
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "valve_retainers": {
+          "part_id": "S55-RETAINER",
+          "description": "Valve spring retainers (set of 24)",
+          "oem_part_numbers": ["11347848105"],
+          "aftermarket_options": {
+            "supertech": "RTTS-1015",
+            "titanium_upgrade": "RTTS-1015T"
+          },
+          "quantity_per_engine": 24,
+          "wear_classification": "rebuild_item"
+        },
+        "valve_keepers": {
+          "part_id": "S55-KEEPERS",
+          "description": "Valve keepers/collets (set of 48)",
+          "oem_part_numbers": ["11341748106"],
+          "quantity_per_engine": 48,
+          "wear_classification": "rebuild_item"
+        },
+        "valve_seals": {
+          "part_id": "S55-VALVE-SEALS",
+          "description": "Valve stem seals (set of 24)",
+          "oem_part_numbers": ["11347848107"],
+          "quantity_per_engine": 24,
+          "wear_classification": "consumable"
+        },
+        "camshafts": {
+          "part_id": "S55-CAMSHAFT-SET",
+          "description": "Intake and exhaust camshaft set (4 total)",
+          "oem_part_numbers": {
+            "intake_1": "11317848108",
+            "intake_2": "11317848109",
+            "exhaust_1": "11317848110",
+            "exhaust_2": "11317848111"
+          },
+          "aftermarket_options": {
+            "schrick": "S55-RACE-CAMS",
+            "kelford": "KELF-S55"
+          },
+          "quantity_per_engine": 4,
+          "specifications": {
+            "intake_duration": "252 degrees",
+            "exhaust_duration": "248 degrees",
+            "intake_lift_mm": 10.0,
+            "exhaust_lift_mm": 9.7
+          },
+          "wear_classification": "long_life"
+        },
+        "cam_bearings": {
+          "part_id": "S55-CAM-BRG",
+          "description": "Camshaft bearing caps - integrated into head",
+          "notes": "Bearings integrated into cylinder head - line bore if needed",
+          "wear_classification": "long_life"
+        },
+        "vanos_solenoids": {
+          "part_id": "S55-VANOS",
+          "description": "VANOS solenoid set",
+          "oem_part_numbers": {
+            "intake": "11367585425",
+            "exhaust": "11367585426"
+          },
+          "quantity_per_engine": 4,
+          "common_issues": ["Failure causes rough idle, reduced power"],
+          "wear_classification": "consumable"
+        },
+        "vanos_hubs": {
+          "part_id": "S55-VANOS-HUB",
+          "description": "VANOS cam gear hubs",
+          "oem_part_numbers": ["11367848112"],
+          "quantity_per_engine": 4,
+          "critical_notes": "Hub bolts must be properly torqued - can back out",
+          "aftermarket_options": {
+            "arp_bolts": "ARP-S55-VANOS"
+          },
+          "wear_classification": "long_life"
+        },
+        "timing_chain": {
+          "part_id": "S55-TIMING-CHAIN",
+          "description": "Primary timing chain",
+          "oem_part_numbers": ["11317848113"],
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 150000
+        },
+        "timing_chain_tensioner": {
+          "part_id": "S55-CHAIN-TENS",
+          "description": "Hydraulic timing chain tensioner",
+          "oem_part_numbers": ["11317848114"],
+          "wear_classification": "consumable"
+        },
+        "timing_chain_guides": {
+          "part_id": "S55-CHAIN-GUIDE",
+          "description": "Timing chain guide rails set",
+          "oem_part_numbers": ["11317848115", "11317848116"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "turbo_system": {
+      "description": "Twin parallel turbocharger system with air-to-water intercooler",
+      "components": {
+        "turbochargers": {
+          "part_id": "S55-TURBO-SET",
+          "description": "Twin parallel turbochargers",
+          "oem_part_numbers": {
+            "bank_1": "11657850317",
+            "bank_2": "11657850318"
+          },
+          "aftermarket_options": {
+            "pure_turbos_stage_1": "PURE-S55-STG1",
+            "pure_turbos_stage_2": "PURE-S55-STG2",
+            "vargas_stage_1": "VTT-S55-STG1",
+            "vargas_stage_2": "VTT-S55-STG2",
+            "ftp_motorsport": "FTP-S55-TURBO"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "type": "Twin parallel mono-scroll",
+            "manufacturer": "BorgWarner/BMW",
+            "compressor_wheel_diameter_mm": 44.0,
+            "turbine_wheel_diameter_mm": 40.0,
+            "max_boost_psi_stock": 18.1,
+            "flow_lbs_min": 42.0
+          },
+          "wear_classification": "consumable"
+        },
+        "wastegate_actuators": {
+          "part_id": "S55-WASTEGATE",
+          "description": "Electronic wastegate actuators (pair)",
+          "oem_part_numbers": ["11657850319", "11657850320"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "turbo_oil_lines": {
+          "part_id": "S55-TURBO-OIL",
+          "description": "Turbo oil feed and return lines",
+          "oem_part_numbers": {
+            "feed_1": "11657850321",
+            "feed_2": "11657850322",
+            "return_1": "11657850323",
+            "return_2": "11657850324"
+          },
+          "wear_classification": "consumable"
+        },
+        "turbo_coolant_lines": {
+          "part_id": "S55-TURBO-COOLANT",
+          "description": "Turbo coolant supply and return lines",
+          "oem_part_numbers": ["11657850325", "11657850326"],
+          "wear_classification": "consumable"
+        },
+        "charge_air_cooler": {
+          "part_id": "S55-CAC",
+          "description": "Air-to-water charge air cooler (intercooler)",
+          "oem_part_numbers": ["17517848127"],
+          "aftermarket_options": {
+            "csf": "CSF-S55-CAC",
+            "dinan": "D330-0020",
+            "vrsf": "VRSF-S55-IC"
+          },
+          "specifications": {
+            "type": "Air-to-water",
+            "location": "Intake manifold integrated",
+            "coolant_circuit": "Dedicated low-temp circuit"
+          },
+          "wear_classification": "long_life"
+        },
+        "charge_air_cooler_pump": {
+          "part_id": "S55-CAC-PUMP",
+          "description": "Electric coolant pump for charge air cooler",
+          "oem_part_numbers": ["11517848128"],
+          "wear_classification": "consumable"
+        },
+        "charge_air_cooler_radiator": {
+          "part_id": "S55-CAC-RAD",
+          "description": "Low-temperature radiator for charge air cooler circuit",
+          "oem_part_numbers": ["17117848129"],
+          "aftermarket_options": {
+            "csf": "CSF-S55-LTR",
+            "dinan": "D330-0021"
+          },
+          "wear_classification": "long_life"
+        },
+        "charge_pipes": {
+          "part_id": "S55-CHARGEPIPE",
+          "description": "Charge pipes (hot side) - KNOWN FAILURE POINT",
+          "oem_part_numbers": {
+            "passenger_side": "11657850330",
+            "driver_side": "11657850331"
+          },
+          "aftermarket_options": {
+            "vrsf": "VRSF-S55-CP",
+            "er": "ER-S55-CP",
+            "arm": "ARM-S55-CP",
+            "ftp": "FTP-S55-CP"
+          },
+          "common_issues": ["OEM plastic prone to cracking under boost"],
+          "recommended_upgrade": true,
+          "wear_classification": "consumable"
+        },
+        "inlet_pipes": {
+          "part_id": "S55-INLET",
+          "description": "Turbo inlet pipes (cold side)",
+          "oem_part_numbers": ["11657850332", "11657850333"],
+          "aftermarket_options": {
+            "vrsf": "VRSF-S55-INLET",
+            "eventuri": "EVENTURI-S55-INLET"
+          },
+          "wear_classification": "long_life"
+        },
+        "diverter_valves": {
+          "part_id": "S55-DV",
+          "description": "Diverter valves / Bypass valves (pair)",
+          "oem_part_numbers": ["11657850334", "11657850335"],
+          "aftermarket_options": {
+            "forge": "FMDV13-S55",
+            "turbosmart": "TS-0203-1069"
+          },
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "High pressure direct injection system",
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "S55-HPFP",
+          "description": "High pressure fuel pump (cam driven)",
+          "oem_part_numbers": ["13517848140"],
+          "aftermarket_options": {
+            "autotech": "HPFP-S55-STG2",
+            "sste": "SSTE-S55-LPFP"
+          },
+          "specifications": {
+            "max_pressure_bar": 200,
+            "flow_rate_cc_min": 290
+          },
+          "wear_classification": "consumable"
+        },
+        "fuel_injectors": {
+          "part_id": "S55-INJECTORS",
+          "description": "Direct injectors (set of 6)",
+          "oem_part_numbers": ["13537848141"],
+          "aftermarket_options": {
+            "bosch_motorsport": "0261500541",
+            "dw": "DW-S55-1300"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "Solenoid high pressure direct injection",
+            "flow_cc_min": 290
+          },
+          "wear_classification": "consumable"
+        },
+        "low_pressure_fuel_pump": {
+          "part_id": "S55-LPFP",
+          "description": "In-tank fuel pump",
+          "oem_part_numbers": ["16147848142"],
+          "aftermarket_options": {
+            "deatschwerks": "DW300M",
+            "walbro": "450LPH"
+          },
+          "wear_classification": "consumable"
+        },
+        "fuel_rail": {
+          "part_id": "S55-FUEL-RAIL",
+          "description": "High pressure fuel rail",
+          "oem_part_numbers": ["13537848143"],
+          "wear_classification": "long_life"
+        },
+        "fuel_pressure_sensor": {
+          "part_id": "S55-FPS",
+          "description": "High pressure fuel rail sensor",
+          "oem_part_numbers": ["13537848144"],
+          "wear_classification": "consumable"
+        },
+        "port_injection_kit": {
+          "part_id": "S55-PI-KIT",
+          "description": "Aftermarket port injection for high-power builds",
+          "options": {
+            "bms_pi": "BMS-S55-PI",
+            "sst_pi": "SST-S55-PORT",
+            "motiv_pi": "MOTIV-S55-PI"
+          },
+          "notes": "Required for 600+ whp builds to supplement DI",
+          "wear_classification": "upgrade"
+        }
+      }
+    },
+
+    "intake_system": {
+      "description": "Intake manifold and air delivery",
+      "components": {
+        "intake_manifold": {
+          "part_id": "S55-INTAKE-MANIFOLD",
+          "description": "Composite intake manifold with integrated charge air cooler",
+          "oem_part_numbers": ["11617848150"],
+          "specifications": {
+            "material": "Composite plastic",
+            "charge_cooler": "Integrated air-to-water",
+            "runner_length_mm": 320
+          },
+          "wear_classification": "long_life"
+        },
+        "throttle_body": {
+          "part_id": "S55-THROTTLE-BODY",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": ["13547848151"],
+          "specifications": {
+            "diameter_mm": 76.0,
+            "type": "Drive-by-wire"
+          },
+          "wear_classification": "long_life"
+        },
+        "air_filter": {
+          "part_id": "S55-AIR-FILTER",
+          "description": "Panel air filters (pair)",
+          "oem_part_numbers": ["13717848152", "13717848153"],
+          "aftermarket_options": {
+            "k_and_n": "33-5028",
+            "bms": "BMS-S55-FILTER"
+          },
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "air_box": {
+          "part_id": "S55-AIRBOX",
+          "description": "OEM air box assembly (pair)",
+          "oem_part_numbers": ["13717848154", "13717848155"],
+          "aftermarket_options": {
+            "eventuri": "EVENTURI-S55",
+            "dinan": "D760-0051",
+            "afe": "54-12202"
+          },
+          "quantity_per_engine": 2,
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "exhaust_system": {
+      "description": "Twin-turbo exhaust system components",
+      "components": {
+        "exhaust_manifolds": {
+          "part_id": "S55-EXHAUST-MANIFOLD",
+          "description": "Exhaust manifolds / turbo headers (integrated with turbos)",
+          "oem_part_numbers": ["11627848160", "11627848161"],
+          "notes": "Turbos mount directly to integrated exhaust manifolds",
+          "wear_classification": "long_life"
+        },
+        "downpipes": {
+          "part_id": "S55-DOWNPIPE",
+          "description": "Catalytic converter downpipes (pair)",
+          "oem_part_numbers": ["18327848162", "18327848163"],
+          "aftermarket_options": {
+            "vrsf_catless": "VRSF-S55-DP-CL",
+            "vrsf_catted": "VRSF-S55-DP-CAT",
+            "active_autowerke": "AA-S55-DP",
+            "er_catless": "ER-S55-DP",
+            "akrapovic": "DP-BM/SS/3"
+          },
+          "quantity_per_engine": 2,
+          "wear_classification": "long_life"
+        },
+        "midpipe": {
+          "part_id": "S55-MIDPIPE",
+          "description": "Mid section / X-pipe",
+          "oem_part_numbers": ["18327848164"],
+          "aftermarket_options": {
+            "akrapovic": "L-BM/SS/3",
+            "active_autowerke": "AA-S55-MP"
+          },
+          "wear_classification": "long_life"
+        },
+        "rear_mufflers": {
+          "part_id": "S55-MUFFLER",
+          "description": "Rear muffler assembly",
+          "oem_part_numbers": ["18307848165"],
+          "aftermarket_options": {
+            "akrapovic_titanium": "ME-BM/T/5",
+            "borla": "140734",
+            "remus": "089015",
+            "eisenmann": "B5432"
+          },
+          "wear_classification": "long_life"
+        },
+        "exhaust_tips": {
+          "part_id": "S55-TIPS",
+          "description": "Exhaust tips",
+          "oem_part_numbers": ["18307848166"],
+          "aftermarket_options": {
+            "akrapovic_carbon": "TP-CT/65",
+            "dinan": "D660-0065"
+          },
+          "quantity_per_engine": 4,
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "cooling_system": {
+      "description": "Engine cooling components - dual circuit system",
+      "components": {
+        "water_pump": {
+          "part_id": "S55-WATER-PUMP",
+          "description": "Electric water pump (main engine circuit)",
+          "oem_part_numbers": ["11517848170"],
+          "wear_classification": "consumable"
+        },
+        "thermostat": {
+          "part_id": "S55-THERMOSTAT",
+          "description": "Map-controlled thermostat",
+          "oem_part_numbers": ["11537848171"],
+          "specifications": {
+            "opens_at_c": 97,
+            "full_open_c": 110
+          },
+          "wear_classification": "consumable"
+        },
+        "radiator": {
+          "part_id": "S55-RADIATOR",
+          "description": "Main engine radiator",
+          "oem_part_numbers": ["17117848172"],
+          "aftermarket_options": {
+            "csf": "CSF-S55-RAD",
+            "mishimoto": "MMRAD-S55-15"
+          },
+          "wear_classification": "long_life"
+        },
+        "auxiliary_radiator": {
+          "part_id": "S55-AUX-RAD",
+          "description": "Auxiliary radiators (M3/M4 have additional cooling)",
+          "oem_part_numbers": ["17117848173", "17117848174"],
+          "wear_classification": "long_life"
+        },
+        "expansion_tank": {
+          "part_id": "S55-EXP-TANK",
+          "description": "Coolant expansion tank",
+          "oem_part_numbers": ["17137848175"],
+          "wear_classification": "consumable"
+        },
+        "hoses": {
+          "part_id": "S55-COOLANT-HOSES",
+          "description": "Coolant hose set",
+          "oem_part_numbers": ["Various"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "lubrication_system": {
+      "description": "Oil pump and lubrication - wet sump with integrated cooler",
+      "components": {
+        "oil_pump": {
+          "part_id": "S55-OIL-PUMP",
+          "description": "Variable displacement oil pump",
+          "oem_part_numbers": ["11417848180"],
+          "wear_classification": "long_life"
+        },
+        "oil_pump_chain": {
+          "part_id": "S55-OIL-CHAIN",
+          "description": "Oil pump drive chain",
+          "oem_part_numbers": ["11417848181"],
+          "common_issues": ["Can stretch at high mileage"],
+          "wear_classification": "consumable"
+        },
+        "oil_pump_tensioner": {
+          "part_id": "S55-OIL-TENS",
+          "description": "Oil pump chain tensioner",
+          "oem_part_numbers": ["11417848182"],
+          "wear_classification": "consumable"
+        },
+        "oil_pan": {
+          "part_id": "S55-OIL-PAN",
+          "description": "Aluminum oil pan with integrated cooler",
+          "oem_part_numbers": ["11137848183"],
+          "specifications": {
+            "oil_cooler": "Integrated oil-to-water cooler in sump"
+          },
+          "wear_classification": "long_life"
+        },
+        "oil_filter_housing": {
+          "part_id": "S55-OIL-FILTER-HOUSING",
+          "description": "Oil filter housing",
+          "oem_part_numbers": ["11427848184"],
+          "wear_classification": "long_life"
+        },
+        "oil_filter": {
+          "part_id": "S55-OIL-FILTER",
+          "description": "Cartridge oil filter",
+          "oem_part_numbers": ["11427848185"],
+          "aftermarket_options": {
+            "mann": "HU816X",
+            "mahle": "OX404D"
+          },
+          "wear_classification": "consumable"
+        },
+        "oil_cooler_thermostat": {
+          "part_id": "S55-OIL-THERMO",
+          "description": "Oil cooler thermostat valve",
+          "oem_part_numbers": ["11427848186"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "ignition_system": {
+      "description": "Coil-on-plug ignition system",
+      "components": {
+        "ignition_coils": {
+          "part_id": "S55-COILS",
+          "description": "Ignition coils (set of 6)",
+          "oem_part_numbers": ["12138616153"],
+          "aftermarket_options": {
+            "eldor": "Red Coils",
+            "dinan": "D650-0001"
+          },
+          "quantity_per_engine": 6,
+          "wear_classification": "consumable"
+        },
+        "spark_plugs": {
+          "part_id": "S55-SPARK-PLUGS",
+          "description": "Spark plugs (set of 6)",
+          "oem_part_numbers": ["12120039664"],
+          "aftermarket_options": {
+            "ngk_stock_heat": "SILZKGR8B8S (94201)",
+            "ngk_one_step_colder": "SILZKR8C8S (95770)",
+            "ngk_two_step_colder": "SILZKAR8B8S"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "gap_mm": 0.7,
+            "torque_nm": 22
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": {
+            "stock": 45000,
+            "tuned": 20000
+          }
+        }
+      }
+    },
+
+    "gaskets_and_seals": {
+      "description": "Gaskets and seals",
+      "components": {
+        "valve_cover_gasket": {
+          "part_id": "S55-VC-GASKET",
+          "description": "Valve cover gasket",
+          "oem_part_numbers": ["11127848190"],
+          "wear_classification": "consumable"
+        },
+        "oil_filter_housing_gasket": {
+          "part_id": "S55-OFHG",
+          "description": "Oil filter housing gasket set",
+          "oem_part_numbers": ["11427848191"],
+          "wear_classification": "consumable"
+        },
+        "oil_pan_gasket": {
+          "part_id": "S55-PAN-GASKET",
+          "description": "Oil pan gasket",
+          "oem_part_numbers": ["11137848192"],
+          "wear_classification": "consumable"
+        },
+        "front_main_seal": {
+          "part_id": "S55-FRONT-SEAL",
+          "description": "Front crankshaft seal",
+          "oem_part_numbers": ["11147848193"],
+          "wear_classification": "consumable"
+        },
+        "rear_main_seal": {
+          "part_id": "S55-REAR-SEAL",
+          "description": "Rear crankshaft seal",
+          "oem_part_numbers": ["11147848194"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "sensors": {
+      "description": "Engine management sensors",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "S55-CKP",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": ["13627848200"],
+          "wear_classification": "consumable"
+        },
+        "camshaft_position_sensors": {
+          "part_id": "S55-CMP",
+          "description": "Camshaft position sensors",
+          "oem_part_numbers": ["13627848201"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "oxygen_sensors": {
+          "part_id": "S55-O2",
+          "description": "Oxygen sensors",
+          "oem_part_numbers": {
+            "upstream_1": "11787848202",
+            "upstream_2": "11787848203",
+            "downstream_1": "11787848204",
+            "downstream_2": "11787848205"
+          },
+          "quantity_per_engine": 4,
+          "wear_classification": "consumable"
+        },
+        "knock_sensors": {
+          "part_id": "S55-KNOCK",
+          "description": "Knock sensors",
+          "oem_part_numbers": ["13627848206"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "boost_pressure_sensors": {
+          "part_id": "S55-MAP",
+          "description": "Manifold absolute pressure / boost sensors",
+          "oem_part_numbers": ["13627848207"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "mass_airflow_sensors": {
+          "part_id": "S55-MAF",
+          "description": "Mass airflow sensors",
+          "oem_part_numbers": ["13627848208", "13627848209"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "oil_pressure_sensor": {
+          "part_id": "S55-OPS",
+          "description": "Oil pressure sensor",
+          "oem_part_numbers": ["12617848210"],
+          "wear_classification": "consumable"
+        },
+        "oil_level_sensor": {
+          "part_id": "S55-OLS",
+          "description": "Oil level sensor",
+          "oem_part_numbers": ["12617848211"],
+          "wear_classification": "consumable"
+        },
+        "coolant_temperature_sensor": {
+          "part_id": "S55-CTS",
+          "description": "Coolant temperature sensor",
+          "oem_part_numbers": ["13627848212"],
+          "wear_classification": "consumable"
+        },
+        "charge_air_temperature_sensor": {
+          "part_id": "S55-IATS",
+          "description": "Charge air temperature sensors (in intercooler)",
+          "oem_part_numbers": ["13627848213"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        }
+      }
+    }
+  }
+}
