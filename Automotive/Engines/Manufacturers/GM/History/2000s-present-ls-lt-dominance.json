@@ -1,0 +1,474 @@
+{
+  "era_id": "GM_2000S_PRESENT_LS_LT",
+  "title": "LS Dominance and LT Evolution: 1997-Present",
+  "subtitle": "The Engine Swap King and Modern Masterpieces",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "era_overview": {
+    "description": "The LS engine family became the most popular swap engine in history, dominating everything from drag racing to drift cars. GM continued innovation with Gen IV LS engines, then the revolutionary Gen V LT series with direct injection. The flat-plane crank LT6 represents the pinnacle of naturally aspirated V8 development.",
+    "key_themes": [
+      "LS engine becomes universal swap engine",
+      "Gen IV LS adds VVT and AFM",
+      "LT direct injection technology",
+      "Supercharged LT4/LT5 power",
+      "LT6 flat-plane crank masterpiece"
+    ]
+  },
+
+  "gen_iii_ls_family": {
+    "production_years": "1997-2007",
+    "code_names": "Gen III Small Block",
+    "common_features": {
+      "block": "Deep-skirt design with cross-bolted mains",
+      "heads": "Cathedral port design",
+      "ignition": "Coil-near-plug (individual coils)",
+      "intake": "Composite (car) or aluminum (truck)"
+    },
+    "variants": {
+      "ls1": {
+        "years": "1997-2004",
+        "displacement_liters": 5.7,
+        "displacement_ci": 346,
+        "bore_mm": 99,
+        "stroke_mm": 92,
+        "horsepower": "305-350",
+        "applications": [
+          "1997-2004 Corvette",
+          "1998-2002 Camaro Z28/SS",
+          "1998-2002 Firebird Formula/Trans Am",
+          "2004-2006 Pontiac GTO",
+          "2005 Chevrolet SSR"
+        ],
+        "significance": "The engine that started the LS revolution"
+      },
+      "ls6": {
+        "years": "2001-2005",
+        "displacement_liters": 5.7,
+        "horsepower": "385-405",
+        "improvements_over_ls1": [
+          "Higher compression (10.5:1)",
+          "More aggressive cam",
+          "Better flowing heads",
+          "Revised intake manifold"
+        ],
+        "applications": [
+          "2001-2004 Corvette Z06",
+          "2004-2007 Cadillac CTS-V"
+        ],
+        "evolution": {
+          "2001": { "hp": 385 },
+          "2002_2004": { "hp": 405 }
+        }
+      },
+      "lq4_lq9": {
+        "years": "1999-2007",
+        "displacement_liters": 6.0,
+        "horsepower": "300-345",
+        "note": "Truck 6.0L - popular swap engines",
+        "applications": ["Silverado", "Sierra", "Tahoe", "Escalade"],
+        "swap_popularity": "Affordable, iron block, strong bottom end"
+      }
+    }
+  },
+
+  "gen_iv_ls_family": {
+    "production_years": "2005-2017",
+    "code_names": "Gen IV Small Block",
+    "improvements": [
+      "Variable valve timing (select engines)",
+      "Active fuel management (cylinder deactivation)",
+      "Rectangular port heads (performance variants)",
+      "Increased displacement options"
+    ],
+    "variants": {
+      "ls2": {
+        "years": "2005-2007",
+        "displacement_liters": 6.0,
+        "displacement_ci": 364,
+        "horsepower": 400,
+        "improvements": [
+          "Larger bore than LS1",
+          "Revised intake manifold",
+          "New cylinder heads"
+        ],
+        "applications": [
+          "2005-2007 Corvette",
+          "2005-2006 GTO",
+          "2006-2009 Trailblazer SS"
+        ]
+      },
+      "ls3": {
+        "years": "2008-2017",
+        "displacement_liters": 6.2,
+        "displacement_ci": 376,
+        "horsepower": "430-436",
+        "features": [
+          "Rectangular port heads",
+          "High-flow L92-style heads",
+          "Improved breathing"
+        ],
+        "applications": [
+          "2008-2013 Corvette",
+          "2010-2015 Camaro SS",
+          "Performance crate engine"
+        ],
+        "significance": "Most refined naturally aspirated LS"
+      },
+      "ls7": {
+        "years": "2006-2015",
+        "displacement_liters": 7.0,
+        "displacement_ci": 427,
+        "horsepower": 505,
+        "torque_lb_ft": 470,
+        "redline_rpm": 7000,
+        "features": [
+          "Hand-built at Wixom Performance Build Center",
+          "Titanium connecting rods",
+          "Titanium intake valves",
+          "Dry sump oiling",
+          "CNC-ported heads"
+        ],
+        "applications": ["2006-2013 Corvette Z06"],
+        "significance": "Largest displacement production LS ever"
+      },
+      "ls9": {
+        "years": "2009-2013",
+        "displacement_liters": 6.2,
+        "horsepower": 638,
+        "torque_lb_ft": 604,
+        "forced_induction": "Eaton TVS 2300 supercharger",
+        "boost_psi": 10.5,
+        "features": [
+          "Forged internals",
+          "Sixth-generation supercharger",
+          "Intercooled",
+          "9.1:1 compression"
+        ],
+        "applications": ["2009-2013 Corvette ZR1"],
+        "significance": "Most powerful production Corvette until C7 ZR1"
+      },
+      "lsa": {
+        "years": "2009-2019",
+        "displacement_liters": 6.2,
+        "horsepower": 556,
+        "torque_lb_ft": 551,
+        "forced_induction": "Eaton TVS 1900 supercharger",
+        "applications": [
+          "2009-2015 Cadillac CTS-V",
+          "2012-2015 Camaro ZL1"
+        ]
+      }
+    }
+  },
+
+  "ls_swap_phenomenon": {
+    "significance": "LS became the most popular swap engine in history",
+    "reasons": [
+      "Compact size - fits almost anywhere",
+      "Lightweight aluminum construction",
+      "Massive power potential",
+      "Abundant cheap cores (truck engines)",
+      "Incredible aftermarket support",
+      "Simple wiring compared to other modern engines"
+    ],
+    "common_swaps": {
+      "japanese_cars": ["240SX", "RX-7", "Miata", "350Z"],
+      "european_cars": ["E30/E36 BMW", "Porsche 944"],
+      "classics": ["1955-57 Chevy", "C10 trucks", "Muscle cars"],
+      "hot_rods": ["Street rods", "Pro touring builds"]
+    },
+    "aftermarket": {
+      "companies": ["Holley", "Texas Speed", "BTR", "GMPP"],
+      "swap_kit_availability": "Kits for almost any application",
+      "power_potential": "1000+ HP reliably achievable"
+    }
+  },
+
+  "gen_v_lt_family": {
+    "production_years": "2014-present",
+    "code_names": "Gen V Small Block",
+    "key_innovation": "Direct injection",
+    "common_features": {
+      "fuel_system": "Direct injection with high-pressure fuel pump",
+      "vvt": "Continuously variable valve timing both cams",
+      "afm": "Active fuel management (cylinder deactivation)",
+      "intake": "Composite intake manifold"
+    },
+    "variants": {
+      "lt1_gen_v": {
+        "years": "2014-present",
+        "displacement_liters": 6.2,
+        "displacement_ci": 376,
+        "specifications": {
+          "c7_corvette": { "hp": 455, "torque": 460 },
+          "c8_corvette": { "hp": 490, "torque": 470 },
+          "camaro_ss": { "hp": 455 }
+        },
+        "features": [
+          "Direct injection + port injection (C8)",
+          "Variable valve timing",
+          "Active fuel management"
+        ],
+        "applications": [
+          "2014-2019 Corvette Stingray",
+          "2020-present C8 Corvette",
+          "2016-present Camaro SS"
+        ]
+      },
+      "lt4": {
+        "years": "2015-present",
+        "displacement_liters": 6.2,
+        "horsepower": 650,
+        "torque_lb_ft": 650,
+        "forced_induction": "Eaton TVS R1740 supercharger",
+        "boost_psi": 9.4,
+        "features": [
+          "Forged internals",
+          "Titanium intake valves",
+          "Rotocast aluminum block"
+        ],
+        "applications": [
+          "2015-2019 Corvette Z06",
+          "2017-present Camaro ZL1",
+          "2016-present Cadillac CT5-V Blackwing"
+        ]
+      },
+      "lt5": {
+        "year": 2019,
+        "displacement_liters": 6.2,
+        "horsepower": 755,
+        "torque_lb_ft": 715,
+        "forced_induction": "Eaton TVS 2650 supercharger",
+        "boost_psi": 14,
+        "applications": ["2019 Corvette ZR1"],
+        "significance": "Most powerful Corvette ever (front-engine)"
+      },
+      "lt6": {
+        "years": "2023-present",
+        "displacement_liters": 5.5,
+        "displacement_ci": 336,
+        "horsepower": 670,
+        "torque_lb_ft": 460,
+        "redline_rpm": 8600,
+        "specific_output": "122 hp/liter",
+        "configuration": "Flat-plane crankshaft",
+        "features": [
+          "Hand-assembled at Performance Build Center",
+          "Titanium connecting rods",
+          "Forged aluminum pistons",
+          "Dry sump oiling",
+          "Individual throttle bodies"
+        ],
+        "applications": ["C8 Corvette Z06"],
+        "significance": "Highest specific output of any naturally aspirated production V8"
+      }
+    }
+  },
+
+  "c8_corvette_revolution": {
+    "significance": "First mid-engine Corvette in history",
+    "introduction": 2020,
+    "development": {
+      "project_name": "Zora",
+      "years_in_development": "20+ years of concepts",
+      "goal": "Finally realize Zora Duntov's vision"
+    },
+    "base_c8": {
+      "engine": "LT2 6.2L V8",
+      "horsepower": 490,
+      "torque_lb_ft": 470,
+      "0_60": "2.9 seconds",
+      "base_price": "$58,900 (2020)"
+    },
+    "z06_c8": {
+      "engine": "LT6 5.5L flat-plane V8",
+      "horsepower": 670,
+      "redline_rpm": 8600,
+      "0_60": "2.6 seconds",
+      "significance": "Brings exotic car performance to Corvette"
+    },
+    "e_ray_c8": {
+      "engine": "LT2 + electric front motor",
+      "combined_output": 655,
+      "drivetrain": "AWD (electric front, V8 rear)",
+      "0_60": "2.5 seconds",
+      "significance": "First electrified Corvette"
+    },
+    "zr1_c8": {
+      "status": "Coming 2025",
+      "engine": "Twin-turbo 5.5L LT7",
+      "horsepower": "1000+ expected",
+      "significance": "Most powerful Corvette ever"
+    }
+  },
+
+  "camaro_evolution": {
+    "fifth_generation_2010_2015": {
+      "significance": "Retro styling, modern performance",
+      "ss": {
+        "engine": "LS3 6.2L",
+        "horsepower": 426
+      },
+      "zl1_2012": {
+        "engine": "LSA supercharged 6.2L",
+        "horsepower": 580,
+        "0_60": "3.9 seconds"
+      },
+      "z28_2014": {
+        "engine": "LS7 7.0L",
+        "horsepower": 505,
+        "focus": "Track-focused, lighter weight",
+        "features": ["Carbon ceramic brakes", "No A/C option"]
+      }
+    },
+    "sixth_generation_2016_2024": {
+      "platform": "Alpha platform",
+      "improvements": ["Lighter", "Better handling", "Improved quality"],
+      "ss": {
+        "engine": "LT1 6.2L",
+        "horsepower": 455
+      },
+      "zl1_2017_present": {
+        "engine": "LT4 supercharged 6.2L",
+        "horsepower": 650,
+        "0_60": "3.5 seconds",
+        "1le_package": "Track-focused variant"
+      },
+      "discontinuation": {
+        "year": 2024,
+        "note": "Sixth generation ends, potential EV successor"
+      }
+    }
+  },
+
+  "cadillac_v_series": {
+    "significance": "Cadillac's return to performance",
+    "cts_v_generations": {
+      "first_gen_2004_2007": {
+        "engine": "LS6 5.7L",
+        "horsepower": 400
+      },
+      "second_gen_2009_2015": {
+        "engine": "LSA supercharged 6.2L",
+        "horsepower": 556,
+        "significance": "Beat BMW M5 in performance"
+      },
+      "cts_v_blackwing_2022": {
+        "status": "CT5-V Blackwing replaced CTS-V",
+        "engine": "LT4 supercharged 6.2L",
+        "horsepower": 668,
+        "0_60": "3.4 seconds"
+      }
+    },
+    "blackwing_v8": {
+      "engine": "Cadillac 4.2L twin-turbo DOHC V8",
+      "code": "LTA (Blackwing)",
+      "horsepower": 550,
+      "production_years": "2019-2020",
+      "applications": ["CT6-V"],
+      "note": "Hand-built, hot-V configuration",
+      "status": "Discontinued - CT5-V Blackwing uses LT4 instead"
+    }
+  },
+
+  "performance_truck_evolution": {
+    "syclone_typhoon": {
+      "years": "1991-1993",
+      "engine": "Turbo 4.3L V6",
+      "horsepower": 280,
+      "0_60": "4.3 seconds (Syclone)",
+      "significance": "Faster than Corvette"
+    },
+    "lightning_competitor_ss": {
+      "silverado_ss": {
+        "years": "2003-2007",
+        "engine": "LS2 6.0L (AWD) or L66 (RWD)",
+        "horsepower": "345-395"
+      }
+    },
+    "modern_performance": {
+      "colorado_zr2": {
+        "engine": "Duramax diesel or 3.6L V6",
+        "focus": "Off-road performance"
+      },
+      "silverado_zr2": {
+        "focus": "High-performance off-road truck"
+      }
+    }
+  },
+
+  "2009_bankruptcy_recovery": {
+    "events": {
+      "june_2009": "GM files Chapter 11 bankruptcy",
+      "july_2009": "New GM emerges from bankruptcy",
+      "brands_discontinued": ["Pontiac", "Saturn", "Hummer"],
+      "brands_sold": ["Saab"],
+      "government_bailout": "$49.5 billion"
+    },
+    "impact_on_performance": {
+      "camaro": "Continued successfully",
+      "corvette": "Development continued",
+      "cadillac_v": "Remained priority"
+    },
+    "recovery": {
+      "2010": "Profitable again",
+      "2014": "All government shares sold"
+    }
+  },
+
+  "electrification_era": {
+    "ultium_platform": {
+      "introduction": 2021,
+      "description": "GM's modular EV platform",
+      "battery_range": "Up to 450 miles"
+    },
+    "performance_evs": {
+      "hummer_ev": {
+        "introduction": 2022,
+        "power": "1000 HP",
+        "0_60": "3.0 seconds",
+        "torque": "11,500 lb-ft at wheels"
+      },
+      "corvette_e_ray": {
+        "introduction": 2024,
+        "system": "LT2 V8 + electric front axle",
+        "combined_hp": 655
+      },
+      "cadillac_celestiq": {
+        "type": "Ultra-luxury electric sedan",
+        "hand_built": true
+      }
+    },
+    "future_direction": {
+      "commitment": "All-electric by 2035",
+      "v8_future": "Continues for performance vehicles near-term"
+    }
+  },
+
+  "legacy": {
+    "ls_engine_impact": [
+      "Most swapped engine in automotive history",
+      "Dominated drag racing for 20+ years",
+      "Affordable performance for millions",
+      "Created massive aftermarket industry"
+    ],
+    "lt_engine_impact": [
+      "Direct injection raised efficiency",
+      "LT6 sets naturally aspirated standard",
+      "Supercharged variants exceed 750 HP"
+    ],
+    "current_status": {
+      "corvette": "World-class supercar at reasonable price",
+      "camaro": "Discontinued 2024, future uncertain",
+      "cadillac": "Performance luxury leader"
+    },
+    "collector_values": {
+      "c6_z06": "$40,000-70,000",
+      "c6_zr1": "$60,000-90,000",
+      "c7_z06": "$60,000-90,000",
+      "c7_zr1": "$120,000-180,000",
+      "c8_z06": "$100,000-150,000"
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "era_id": "GM_1970_PEAK_AND_DECLINE",
+  "title": "Peak Power and the Great Decline: 1970-1979",
+  "subtitle": "The End of Muscle and Birth of Malaise",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "era_overview": {
+    "description": "1970 marked the absolute peak of muscle car power, followed by a rapid decline. Insurance rates, emissions regulations, unleaded fuel mandates, and the 1973 oil crisis combined to devastate performance. By decade's end, the 'malaise era' was in full swing.",
+    "key_themes": [
+      "1970: Absolute peak of muscle car power",
+      "1971: Compression ratio drops begin",
+      "1973: Oil crisis changes everything",
+      "1975: Catalytic converters mandate unleaded fuel",
+      "1979: Performance reaches absolute nadir"
+    ],
+    "regulatory_impact": {
+      "1970_clean_air_act": "Set emission standards beginning 1975",
+      "1973_arab_oil_embargo": "Gas shortages, lines at pumps",
+      "1975_cafe_standards": "Corporate Average Fuel Economy begins"
+    }
+  },
+
+  "1970_peak_power": {
+    "significance": "The absolute zenith of factory muscle car power",
+    "chevrolet": {
+      "ls6_454": {
+        "engine": "LS6 454 V8",
+        "displacement_ci": 454,
+        "displacement_liters": 7.4,
+        "horsepower": 450,
+        "torque_lb_ft": 500,
+        "compression_ratio": "11.25:1",
+        "carburetor": "Holley 800 cfm",
+        "camshaft": "Solid lifter, 0.520\" lift",
+        "heads": "Closed chamber rectangular port",
+        "applications": ["Chevelle SS", "El Camino SS"],
+        "production_chevelle": 4475,
+        "significance": "Highest rated HP production Chevrolet ever"
+      },
+      "lt1_350": {
+        "engine": "LT-1 350 V8",
+        "displacement_ci": 350,
+        "horsepower": 370,
+        "compression_ratio": "11.0:1",
+        "camshaft": "Solid lifter",
+        "applications": ["Corvette", "Camaro Z28"],
+        "note": "Highest HP small block (gross ratings)"
+      },
+      "ls7_454": {
+        "engine": "LS7 454 (cancelled)",
+        "horsepower": 460,
+        "status": "Announced but cancelled",
+        "note": "Insurance pressure killed it before production"
+      }
+    },
+    "pontiac": {
+      "455_ho": {
+        "engine": "455 HO",
+        "displacement_ci": 455,
+        "horsepower": 360,
+        "torque_lb_ft": 500,
+        "note": "Massively underrated - dyno tests showed 400+ HP"
+      },
+      "ram_air_iv": {
+        "engine": "400 Ram Air IV",
+        "horsepower": 370,
+        "features": [
+          "Round port heads",
+          "Tunnel ram intake",
+          "Solid lifter cam"
+        ],
+        "applications": ["GTO", "Firebird", "Trans Am"]
+      }
+    },
+    "oldsmobile": {
+      "w30_455": {
+        "engine": "455 W-30",
+        "horsepower": 370,
+        "features": [
+          "W-30 forced air induction",
+          "Special cam",
+          "Aluminum intake"
+        ]
+      }
+    },
+    "buick": {
+      "stage_1_455": {
+        "engine": "455 Stage 1",
+        "horsepower": 360,
+        "torque_lb_ft": 510,
+        "compression_ratio": "10.5:1",
+        "significance": "Most torque of any muscle car",
+        "sleeper_status": "Often underestimated - devastated competition",
+        "car_and_driver_quote": "Fastest car we ever tested"
+      }
+    },
+    "cadillac": {
+      "500_ci": {
+        "introduction": 1970,
+        "displacement_ci": 500,
+        "displacement_liters": 8.2,
+        "horsepower": 400,
+        "torque_lb_ft": 550,
+        "significance": "Largest displacement production V8 ever made",
+        "applications": ["Eldorado", "Fleetwood"]
+      }
+    }
+  },
+
+  "1971_compression_drops": {
+    "reason": "Preparation for unleaded fuel and emissions",
+    "impact": {
+      "compression_change": "From 10-11:1 to 8-9:1",
+      "horsepower_drop": "10-20% across all engines",
+      "rating_change": "Switch from gross to net HP ratings"
+    },
+    "examples": {
+      "ls6_454": {
+        "1970": "450 hp (gross)",
+        "1971": "425 hp (gross), would become LS5"
+      },
+      "lt1_350": {
+        "1970": "370 hp (gross)",
+        "1971": "330 hp (gross)"
+      }
+    },
+    "net_vs_gross": {
+      "gross_rating": "Engine on stand with open headers, no accessories",
+      "net_rating": "As installed with all accessories, exhaust",
+      "difference": "Typically 20-25% lower numbers"
+    }
+  },
+
+  "1972_detuning_accelerates": {
+    "changes": [
+      "All horsepower now rated SAE net",
+      "Further compression ratio reductions",
+      "Cam timing retarded for emissions"
+    ],
+    "examples": {
+      "ls5_454": { "rating": "270 hp net" },
+      "lt1_350": { "rating": "255 hp net" },
+      "pontiac_455_ho": { "rating": "300 hp net" }
+    },
+    "perception_problem": "Numbers looked dramatically worse even when actual power wasn't much different"
+  },
+
+  "1973_final_muscle_cars": {
+    "significance": "Last year for several high-performance options",
+    "pontiac_super_duty_455": {
+      "engine": "455 Super Duty",
+      "horsepower": 310,
+      "actual_hp": "370+",
+      "features": [
+        "Forged pistons",
+        "Four-bolt mains",
+        "Dry sump oil system available",
+        "High-flow heads"
+      ],
+      "applications": ["Trans Am", "Firebird Formula"],
+      "production_trans_am": 252,
+      "production_formula": 43,
+      "significance": "Last great factory muscle engine",
+      "quarter_mile": "13.5 seconds factory stock"
+    },
+    "chevrolet_454": {
+      "ls4_454": {
+        "horsepower": 275,
+        "applications": ["Chevelle", "Monte Carlo"],
+        "note": "Last year for big block in intermediate"
+      }
+    },
+    "end_of_convertibles": "GM stops convertible production (until 1983)"
+  },
+
+  "1973_oil_crisis": {
+    "event": "Arab Oil Embargo (October 1973 - March 1974)",
+    "impact": [
+      "Gas prices tripled",
+      "Long lines at gas stations",
+      "55 mph national speed limit",
+      "Demand shift to smaller cars"
+    ],
+    "gm_response": [
+      "Accelerated small car development",
+      "Cancelled remaining performance programs",
+      "Focus shifted to fuel economy"
+    ],
+    "consumer_behavior": "Muscle car values crashed, many destroyed"
+  },
+
+  "1974_bumper_regulations": {
+    "requirement": "5 mph impact bumpers",
+    "impact": [
+      "Added 200+ lbs to vehicles",
+      "Styling compromises",
+      "Further performance reduction"
+    ],
+    "last_performance_options": {
+      "pontiac_455_sd": {
+        "continuation": "Final 1015 Super Duty Trans Ams",
+        "note": "Last hurrah of muscle era"
+      },
+      "corvette": {
+        "engine": "L82 350 (250 hp)",
+        "note": "Base 350 dropped to 195 hp"
+      }
+    }
+  },
+
+  "1975_catalytic_converters": {
+    "mandate": "Catalytic converters required on all new cars",
+    "fuel_requirement": "Unleaded gasoline mandatory",
+    "impact": [
+      "Final death blow to high compression",
+      "All engines under 9:1 compression",
+      "Further power reductions"
+    ],
+    "performance_nadir": {
+      "corvette": {
+        "base_350": { "hp": 165 },
+        "l82_350": { "hp": 205 }
+      },
+      "camaro_z28": "Discontinued (no Z28 1975-1976)",
+      "trans_am": {
+        "455": { "hp": 200 },
+        "note": "Embarrassingly slow for 7.5L engine"
+      }
+    }
+  },
+
+  "1976_1979_malaise_era": {
+    "description": "Performance reaches rock bottom",
+    "characteristics": [
+      "Engines strangled by emissions equipment",
+      "Heavy vehicles with anemic power",
+      "Poor build quality",
+      "Vinyl roofs and opera windows"
+    ],
+    "typical_specifications": {
+      "1977_camaro_z28": {
+        "engine": "350 V8",
+        "horsepower": 185,
+        "0_60": "9+ seconds",
+        "quarter_mile": "17+ seconds"
+      },
+      "1979_trans_am": {
+        "base_engine": "301 V8 (Pontiac)",
+        "horsepower": 140,
+        "optional": "403 Oldsmobile V8 (185 hp)"
+      },
+      "1979_corvette": {
+        "engine": "L82 350",
+        "horsepower": 225,
+        "note": "Best performance available"
+      }
+    },
+    "bright_spots": {
+      "trans_am_popularity": "Smokey and the Bandit (1977) boosted sales",
+      "corvette_sales": "Remained strong despite performance"
+    }
+  },
+
+  "1978_downsized_full_size": {
+    "significance": "Full-size cars shrunk dramatically",
+    "caprice_impala": {
+      "weight_reduction": "700-1000 lbs",
+      "length_reduction": "10-15 inches"
+    },
+    "cadillac": {
+      "deville_fleetwood": "Downsized for 1977",
+      "eldorado": "Downsized for 1979"
+    },
+    "engine_consolidation": {
+      "trend": "Chevrolet 350 becomes universal GM engine",
+      "end_of_division_engines": "Pontiac, Olds, Buick V8s phased out"
+    }
+  },
+
+  "engine_sharing_begins": {
+    "scandal_1977": {
+      "event": "Oldsmobile engine lawsuit",
+      "issue": "Customers discovered Chevrolet 350s in Oldsmobile cars",
+      "result": "Class action lawsuit, refunds offered",
+      "legacy": "GM required to disclose engine manufacturer"
+    },
+    "consolidation": {
+      "by_1980": [
+        "Chevrolet 350 universal V8",
+        "Buick 231 V6 universal",
+        "Oldsmobile 350 diesel only"
+      ]
+    }
+  },
+
+  "technological_developments": {
+    "emissions_technology": {
+      "1966": "Positive crankcase ventilation (PCV)",
+      "1968": "Air injection reaction (AIR pumps)",
+      "1973": "Exhaust gas recirculation (EGR)",
+      "1975": "Catalytic converters",
+      "1979": "Three-way catalysts"
+    },
+    "electronic_controls": {
+      "1975": "High Energy Ignition (HEI) distributor",
+      "1979": "First computer-controlled carburetor (CCC)"
+    },
+    "fuel_economy_efforts": [
+      "Lockup torque converters",
+      "Overdrive automatics",
+      "Lightweight materials",
+      "Aerodynamic improvements"
+    ]
+  },
+
+  "diesel_experiment": {
+    "1978_oldsmobile_diesel": {
+      "engine": "350 V8 diesel (LF9)",
+      "based_on": "Oldsmobile 350 gas engine",
+      "problems": [
+        "Head bolt failures",
+        "Gasket failures",
+        "Injection pump failures",
+        "Incompatible with American diesel fuel"
+      ],
+      "impact": "Destroyed diesel reputation in America for decades"
+    }
+  },
+
+  "division_changes": {
+    "pontiac": {
+      "1976": "Last Pontiac 455 produced",
+      "1979": "Pontiac V8 production ends (except 301)",
+      "1981": "Last Pontiac 301 produced"
+    },
+    "oldsmobile": {
+      "1977": "403 V8 introduced (last Olds big block)",
+      "1980": "Olds 350 gas production ends"
+    },
+    "buick": {
+      "1976": "455 production ends",
+      "1980": "Buick V8 production largely ends"
+    },
+    "chevrolet": {
+      "350": "Continues as universal GM V8",
+      "305": "Introduced 1976 as fuel economy V8"
+    }
+  },
+
+  "performance_preservation": {
+    "aftermarket_response": [
+      "Performance parts industry grows",
+      "Headers and free-flow exhaust",
+      "Carburetor upgrades",
+      "Camshaft changes"
+    ],
+    "hot_rodders": "Kept pre-1972 cars running",
+    "salvage_hunting": "Performance parts from junked cars valuable"
+  },
+
+  "legacy": {
+    "positive_outcomes": [
+      "Emissions technology development",
+      "Electronic controls foundation laid",
+      "Fuel economy improvements",
+      "Safer vehicles"
+    ],
+    "negative_outcomes": [
+      "Lost performance heritage temporarily",
+      "Muscle car values crashed (recovered later)",
+      "Quality problems increased",
+      "Import competition grew"
+    ],
+    "collector_impact": {
+      "pre_1972_cars": "Highly valued today",
+      "1973_1979_cars": "Generally less collectible",
+      "exceptions": ["1973-74 SD-455 Trans Am", "1978-79 L82 Corvette"]
+    },
+    "seeds_of_recovery": [
+      "Electronic fuel injection development",
+      "Computer control systems",
+      "Turbocharging experimentation"
+    ]
+  }
+}

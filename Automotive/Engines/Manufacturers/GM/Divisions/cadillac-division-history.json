@@ -1,0 +1,145 @@
+{
+  "division_id": "CADILLAC",
+  "name": "Cadillac Motor Car Division",
+  "founded": 1902,
+  "founder": "Henry Leland",
+  "acquired_by_gm": 1909,
+  "status": "Active",
+  "headquarters": "Detroit, Michigan",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "history": {
+    "origins": "Founded by Henry Leland from the remnants of the Henry Ford Company. Named after Antoine de la Mothe Cadillac, founder of Detroit.",
+    "timeline": {
+      "1902": "Cadillac Automobile Company founded",
+      "1908": "Dewar Trophy for interchangeable parts",
+      "1909": "Acquired by General Motors",
+      "1912": "First electric self-starter (Kettering)",
+      "1949": "First modern OHV V8",
+      "1970": "500 cubic inch V8 - largest ever",
+      "1993": "Northstar V8 introduced",
+      "2020": "EV leadership with Lyriq"
+    },
+    "brand_philosophy": "Standard of the World - American luxury flagship",
+    "innovations": [
+      "Electric self-starter (1912)",
+      "First synchromesh transmission (1928)",
+      "First production V16 (1930)",
+      "Largest production V8 ever (500ci, 1970)"
+    ]
+  },
+
+  "engine_legacy": {
+    "early_v8s": {
+      "v8_history": "Cadillac introduced the first production V8 in 1914",
+      "v16": {
+        "years": "1930-1940",
+        "significance": "Only production V16 in American history",
+        "displacement": "452 cubic inches",
+        "horsepower": 165
+      }
+    },
+    "ohv_v8s": {
+      "331_365_390": {
+        "years": "1949-1963",
+        "significance": "Pioneering OHV V8 alongside Oldsmobile"
+      }
+    },
+    "472_500": {
+      "significance": "Largest production V8 engines ever made",
+      "472": {
+        "years": "1968-1974",
+        "displacement_liters": 7.7,
+        "horsepower": 375
+      },
+      "500": {
+        "years": "1970-1976",
+        "displacement_liters": 8.2,
+        "displacement_ci": 500,
+        "horsepower": 400,
+        "torque_lb_ft": 550,
+        "significance": "Largest displacement production V8 ever"
+      }
+    },
+    "northstar": {
+      "years": "1993-2011",
+      "code": "L37/LD8/LC3",
+      "configuration": "DOHC 32-valve V8",
+      "displacements": [4.0, 4.4, 4.6],
+      "horsepower_range": "275-469",
+      "features": [
+        "All-aluminum construction",
+        "Four valves per cylinder",
+        "Variable valve timing"
+      ],
+      "issues": [
+        "Head gasket failures",
+        "Head bolt pull-through",
+        "Expensive repairs"
+      ],
+      "sts_v_supercharged": {
+        "horsepower": 469,
+        "significance": "Most powerful Northstar"
+      }
+    },
+    "blackwing_v8": {
+      "years": "2019-2020",
+      "code": "LTA",
+      "configuration": "Twin-turbo DOHC V8",
+      "displacement_liters": 4.2,
+      "horsepower": 550,
+      "torque_lb_ft": 627,
+      "features": [
+        "Hot-V configuration",
+        "Hand-built",
+        "10-speed automatic only"
+      ],
+      "application": "CT6-V only",
+      "status": "Discontinued"
+    }
+  },
+
+  "iconic_vehicles": {
+    "eldorado": {
+      "years": "1953-2002",
+      "significance": "Personal luxury icon, 500ci V8"
+    },
+    "deville": {
+      "years": "1959-2005",
+      "significance": "Full-size luxury standard"
+    },
+    "fleetwood": {
+      "years": "1976-1996",
+      "significance": "Ultimate full-size luxury"
+    },
+    "cts_v": {
+      "generations": [
+        { "years": "2004-2007", "engine": "LS6", "hp": 400 },
+        { "years": "2009-2015", "engine": "LSA", "hp": 556 }
+      ],
+      "significance": "Proved Cadillac could compete with BMW M"
+    },
+    "ct5_v_blackwing": {
+      "years": "2022-present",
+      "engine": "LT4 supercharged",
+      "horsepower": 668,
+      "significance": "Most powerful Cadillac sedan ever"
+    },
+    "escalade": {
+      "introduction": 1999,
+      "significance": "Full-size SUV icon, cultural phenomenon"
+    }
+  },
+
+  "current_status": {
+    "brand_direction": "Electric luxury leadership",
+    "ev_lineup": {
+      "lyriq": "First Cadillac EV SUV",
+      "celestiq": "Ultra-luxury hand-built EV sedan",
+      "optiq": "Compact luxury EV",
+      "escalade_iq": "Electric full-size SUV"
+    },
+    "v_series": "Performance division continues with LT4 power"
+  }
+}

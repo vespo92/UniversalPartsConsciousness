@@ -1,0 +1,133 @@
+{
+  "vehicle_id": "PONTIAC_GTO",
+  "name": "Pontiac GTO",
+  "introduction": 1964,
+  "nickname": "The Goat",
+  "significance": "Created the muscle car segment",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "overview": {
+    "origin": "The GTO was created by Pontiac engineers who bypassed GM's engine size limits by making the 389 V8 an option package rather than a model.",
+    "name_origin": "Gran Turismo Omologato - Italian for 'Grand Touring Homologated,' borrowed from Ferrari (Ferrari was not pleased)",
+    "architects": ["John DeLorean", "Jim Wangers", "Bill Collins"],
+    "impact": "The GTO's success forced every manufacturer to create muscle car competitors"
+  },
+
+  "generations": {
+    "first_gen_1964_1967": {
+      "platform": "A-body (Tempest/Le Mans)",
+      "years": "1964-1967",
+      "engines": {
+        "1964": {
+          "base": { "engine": "389", "hp": 325 },
+          "tri_power": { "engine": "389 Tri-Power", "hp": 348 }
+        },
+        "1965": {
+          "base": { "engine": "389", "hp": 335 },
+          "tri_power": { "engine": "389 Tri-Power", "hp": 360 }
+        },
+        "1966_1967": {
+          "base": { "engine": "389", "hp": 335 },
+          "tri_power": { "engine": "389 Tri-Power", "hp": 360 }
+        }
+      },
+      "sales_explosion": {
+        "1964_predicted": 5000,
+        "1964_actual": 32450,
+        "1965": 75352,
+        "1966": 96946
+      }
+    },
+    "second_gen_1968_1972": {
+      "platform": "A-body (restyled)",
+      "years": "1968-1972",
+      "styling": "Endura bumper nose, more muscular",
+      "engines": {
+        "1968_1969": {
+          "standard": { "engine": "400", "hp": 350 },
+          "ho": { "engine": "400 HO", "hp": 360 },
+          "ram_air_iii": { "engine": "400 Ram Air III", "hp": 366 },
+          "ram_air_iv": { "engine": "400 Ram Air IV", "hp": 370 }
+        },
+        "1970": {
+          "standard_455": { "engine": "455", "hp": 360 },
+          "455_ho": { "engine": "455 HO", "hp": 360 },
+          "ram_air_iii": { "engine": "400 RA III", "hp": 366 },
+          "ram_air_iv": { "engine": "400 RA IV", "hp": 370 }
+        },
+        "1971_1972": {
+          "455_ho": { "engine": "455 HO", "hp_range": "300-335" }
+        }
+      },
+      "the_judge": {
+        "years": "1969-1971",
+        "description": "High-performance package with spoiler and graphics",
+        "colors": ["Carousel Red", "Orbit Orange", "other GTO colors"],
+        "engine": "Ram Air III standard, IV optional",
+        "production": {
+          "1969": 6833,
+          "1970": 3797,
+          "1971": 374
+        }
+      }
+    },
+    "third_gen_1973_1974": {
+      "platform": "A-body Colonnade",
+      "years": "1973-1974",
+      "status": "Became option package on LeMans",
+      "engines": {
+        "1973": { "engine": "400/455", "hp_range": "230-310" },
+        "1974": { "engine": "350/400/455", "hp_range": "200-290" }
+      },
+      "decline": "Rising insurance rates and emissions killed sales",
+      "final_production_1974": "7,058"
+    },
+    "fourth_gen_2004_2006": {
+      "platform": "Holden Monaro (GM Australia)",
+      "years": "2004-2006",
+      "significance": "GTO nameplate revival",
+      "engines": {
+        "2004": { "engine": "LS1 5.7L", "hp": 350 },
+        "2005_2006": { "engine": "LS2 6.0L", "hp": 400 }
+      },
+      "styling": "Criticized as too understated",
+      "sales": "Disappointing due to anonymous styling",
+      "performance": {
+        "0_60": "4.7 seconds (LS2)",
+        "quarter_mile": "13.3 @ 107 mph"
+      }
+    }
+  },
+
+  "legendary_variants": {
+    "1964_tri_power": {
+      "significance": "First GTO, created the segment",
+      "engine": "389 Tri-Power",
+      "hp": 348
+    },
+    "1969_judge_ram_air_iv": {
+      "significance": "Peak muscle GTO",
+      "engine": "400 Ram Air IV",
+      "hp": 370
+    },
+    "1970_455_ho": {
+      "significance": "Massive torque",
+      "engine": "455 HO",
+      "torque": 500
+    }
+  },
+
+  "cultural_impact": {
+    "music": "Subject of multiple songs including 'Little GTO' by Ronny & The Daytonas",
+    "movies": ["Two Lane Blacktop", "XXX (2002)"],
+    "influence": "Directly caused creation of Chevelle SS, Road Runner, Boss 302, etc."
+  },
+
+  "collector_values": {
+    "1964_tri_power_convertible": "$75,000-150,000",
+    "1969_judge_ram_air_iv": "$100,000-200,000",
+    "1970_judge_convertible": "$150,000-300,000",
+    "2006_gto_manual": "$25,000-40,000"
+  }
+}

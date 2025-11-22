@@ -1,0 +1,166 @@
+{
+  "vehicle_id": "PONTIAC_TRANS_AM",
+  "name": "Pontiac Firebird Trans Am",
+  "introduction": 1969,
+  "discontinuation": 2002,
+  "platform": "F-body",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "overview": {
+    "origin": "The Trans Am was the high-performance variant of the Pontiac Firebird, named after the SCCA Trans-Am racing series.",
+    "name_licensing": "SCCA received $5 for each Trans Am sold",
+    "significance": "Became an American cultural icon through movies and TV"
+  },
+
+  "generations": {
+    "first_gen_1969": {
+      "years": "1969",
+      "introduction": "March 1969",
+      "styling": "White with blue stripes, rear spoiler",
+      "engine": {
+        "ram_air_iii": { "displacement": 400, "hp": 335 },
+        "ram_air_iv": { "displacement": 400, "hp": 345, "note": "Optional" }
+      },
+      "production": 697,
+      "significance": "Extremely rare first year"
+    },
+    "second_gen_1970_1981": {
+      "years": "1970-1981",
+      "styling": "Distinctive shaker hood, screaming chicken graphics",
+      "engines": {
+        "1970_1972": {
+          "400_ram_air": { "hp": 345 },
+          "455": { "hp": 335 },
+          "455_ho": { "hp": 335, "note": "Underrated" }
+        },
+        "1973_1974_super_duty": {
+          "455_sd": {
+            "hp": 310,
+            "actual_hp": "370+",
+            "significance": "Last great muscle engine"
+          }
+        },
+        "1975_1979": {
+          "400_455": { "hp_range": "155-220" },
+          "note": "Power severely reduced"
+        },
+        "1980_1981": {
+          "301_turbo": { "hp": 210 },
+          "note": "Turbo Pontiac V8"
+        }
+      },
+      "1977_special_edition": {
+        "significance": "Smokey and the Bandit car",
+        "color": "Black and gold",
+        "impact": "Became cultural icon"
+      },
+      "1979_10th_anniversary": {
+        "colors": "Silver and charcoal",
+        "production": 7500
+      }
+    },
+    "third_gen_1982_1992": {
+      "years": "1982-1992",
+      "platform": "F-body (new)",
+      "styling": "Modern wedge, ground effects",
+      "engines": {
+        "1982_1987": {
+          "305_tbi": { "hp_range": "145-190" },
+          "305_tpi": { "hp": 205 }
+        },
+        "1987_1992": {
+          "350_tpi": { "hp": 225, "note": "GTA" },
+          "305_tpi": { "hp": 190 }
+        }
+      },
+      "gta": {
+        "years": "1987-1992",
+        "engine": "350 TPI",
+        "hp": 225,
+        "features": "Best available T/A"
+      },
+      "1989_turbo_trans_am": {
+        "significance": "20th Anniversary",
+        "engine": "Buick 3.8L Turbo V6",
+        "hp": 250,
+        "production": 1555,
+        "controversy": "Pontiac purists disliked non-Pontiac engine"
+      }
+    },
+    "fourth_gen_1993_2002": {
+      "years": "1993-2002",
+      "platform": "F-body",
+      "engines": {
+        "1993_1997": {
+          "lt1": { "hp": 275 }
+        },
+        "1998_2002": {
+          "ls1": { "hp": "305-325" }
+        }
+      },
+      "ram_air": {
+        "years": "1996-2002",
+        "ls1_version": { "hp": 320 }
+      },
+      "ws6": {
+        "description": "Performance package",
+        "features": [
+          "17-inch wheels",
+          "Ram Air hood",
+          "Performance suspension"
+        ]
+      },
+      "2002_collector_edition": {
+        "significance": "Final Trans Am",
+        "colors": ["Black", "Yellow"],
+        "production": "Limited"
+      }
+    }
+  },
+
+  "cultural_impact": {
+    "smokey_and_the_bandit": {
+      "year": 1977,
+      "car": "1977 Trans Am Special Edition",
+      "driver": "Burt Reynolds",
+      "impact": "Created massive demand, became American icon"
+    },
+    "knight_rider": {
+      "years": "1982-1986",
+      "car": "1982 Trans Am (KITT)",
+      "impact": "Another generation introduced to Trans Am"
+    },
+    "movies": [
+      "Smokey and the Bandit I, II, III",
+      "Hooper (1978)"
+    ]
+  },
+
+  "special_editions": {
+    "special_edition_1976_1981": {
+      "colors": "Black and gold",
+      "significance": "Bandit car"
+    },
+    "10th_anniversary_1979": {
+      "colors": "Silver/charcoal",
+      "special_features": "Anniversary badges"
+    },
+    "15th_anniversary_1984": {
+      "colors": "White",
+      "production": 1500
+    },
+    "20th_anniversary_1989": {
+      "engine": "Turbo V6",
+      "colors": "White"
+    }
+  },
+
+  "collector_values": {
+    "1969_ram_air_iv": "$100,000-200,000",
+    "1973_super_duty_455": "$75,000-150,000",
+    "1977_special_edition": "$40,000-80,000",
+    "1989_turbo_20th": "$25,000-45,000",
+    "2002_collector_edition": "$25,000-40,000"
+  }
+}

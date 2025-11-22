@@ -1,0 +1,419 @@
+{
+  "manufacturer_id": "GENERAL_MOTORS",
+  "full_name": "General Motors Corporation",
+  "founded": 1908,
+  "founder": "William C. Durant",
+  "headquarters": "Detroit, Michigan, USA",
+  "overview_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "company_history": {
+    "founding": "General Motors was founded on September 16, 1908 by William C. Durant in Flint, Michigan. Durant had previously rescued Buick and used it as a foundation to acquire multiple automakers.",
+    "original_acquisitions": [
+      "Buick (1908 - founding member)",
+      "Oldsmobile (1908)",
+      "Cadillac (1909)",
+      "Oakland/Pontiac (1909)",
+      "Chevrolet (1918)"
+    ],
+    "philosophy": "Durant's vision was to offer 'a car for every purse and purpose' - a ladder of brands from entry-level to luxury.",
+    "major_milestones": [
+      { "year": 1908, "event": "General Motors founded with Buick as cornerstone" },
+      { "year": 1911, "event": "Charles Kettering invents electric self-starter for Cadillac" },
+      { "year": 1923, "event": "Alfred Sloan becomes president, introduces modern management" },
+      { "year": 1927, "event": "GM surpasses Ford as largest automaker" },
+      { "year": 1949, "event": "Oldsmobile Rocket 88 - first modern overhead valve V8" },
+      { "year": 1953, "event": "First Corvette produced" },
+      { "year": 1955, "event": "Chevrolet Small Block V8 debuts - most important V8 ever" },
+      { "year": 1964, "event": "Pontiac GTO creates muscle car segment" },
+      { "year": 1966, "event": "First Chevrolet Camaro produced" },
+      { "year": 1970, "event": "Peak muscle car era - LS6 454 (450hp)" },
+      { "year": 1984, "event": "NUMMI joint venture with Toyota begins" },
+      { "year": 1996, "event": "EV1 electric car introduced" },
+      { "year": 1997, "event": "LS1 engine revolutionizes V8 performance" },
+      { "year": 2009, "event": "Bankruptcy and government bailout" },
+      { "year": 2010, "event": "Pontiac, Saturn, Hummer discontinued" },
+      { "year": 2020, "event": "Ultium EV platform announced" },
+      { "year": 2023, "event": "LT6 flat-plane crank V8 in C8 Z06" }
+    ]
+  },
+
+  "brand_hierarchy": {
+    "sloan_ladder": {
+      "description": "Alfred Sloan's brand hierarchy - a car for every purse and purpose",
+      "original_order": [
+        { "position": 1, "brand": "Chevrolet", "role": "Entry-level, volume brand" },
+        { "position": 2, "brand": "Pontiac", "role": "Excitement and performance" },
+        { "position": 3, "brand": "Oldsmobile", "role": "Innovation and technology" },
+        { "position": 4, "brand": "Buick", "role": "Premium near-luxury" },
+        { "position": 5, "brand": "Cadillac", "role": "Luxury flagship" }
+      ]
+    },
+    "current_brands": {
+      "chevrolet": { "status": "Active", "role": "Volume brand, performance heritage" },
+      "buick": { "status": "Active", "role": "Premium brand, strong in China" },
+      "gmc": { "status": "Active", "role": "Premium trucks and SUVs" },
+      "cadillac": { "status": "Active", "role": "Luxury flagship, EV leader" }
+    },
+    "discontinued_brands": {
+      "pontiac": { "years": "1926-2010", "legacy": "Performance and excitement" },
+      "oldsmobile": { "years": "1897-2004", "legacy": "Innovation pioneer" },
+      "saturn": { "years": "1985-2010", "legacy": "Different kind of car company" },
+      "hummer": { "years": "1992-2010", "legacy": "Military-derived SUVs, revived as EV" }
+    }
+  },
+
+  "engine_philosophy": {
+    "division_engines": {
+      "description": "Until the 1970s, each GM division designed and manufactured its own engines",
+      "chevrolet": "Small Block and Big Block V8s - largest aftermarket",
+      "pontiac": "Unique Pontiac V8 with wide bore spacing",
+      "oldsmobile": "Rocket V8 - pioneered overhead valves",
+      "buick": "Nailhead V8 - vertical valves, torque",
+      "cadillac": "Largest displacement luxury V8s"
+    },
+    "consolidation": {
+      "1970s": "Oil crisis forced downsizing, engines shared across divisions",
+      "1980s": "Chevrolet 350 became universal GM V8",
+      "1990s": "LT1 shared across performance vehicles",
+      "1997_forward": "LS engine family unified all brands"
+    }
+  },
+
+  "engine_families": {
+    "small_block_chevrolet": {
+      "name": "Small Block Chevrolet (Gen I)",
+      "production_years": "1955-2003",
+      "significance": "Most produced V8 engine in history - over 100 million units",
+      "displacement_range_ci": "262-400",
+      "displacement_range_liters": "4.3-6.6",
+      "key_innovations": [
+        "Compact, lightweight design",
+        "Interchangeable components",
+        "Massive aftermarket support",
+        "Rochester fuel injection (1957)"
+      ],
+      "legendary_variants": {
+        "265": "1955-1957 - First SBC, started the revolution",
+        "283": "1957-1967 - First 1hp per cubic inch (FI)",
+        "302": "1967-1969 - Z/28 racing special",
+        "327": "1962-1969 - Corvette legend",
+        "350": "1967-2003 - Most produced variant ever",
+        "LT1_gen_i": "1970-1972 - 370hp solid lifter legend"
+      }
+    },
+    "big_block_chevrolet": {
+      "name": "Big Block Chevrolet (Mark IV)",
+      "production_years": "1965-2009",
+      "significance": "Muscle car icon, NASCAR dominance",
+      "displacement_range_ci": "396-572",
+      "key_innovations": [
+        "Canted valve design",
+        "Rectangular port heads",
+        "High flow capacity"
+      ],
+      "legendary_variants": {
+        "396": "1965-1969 - First Mark IV",
+        "427": "1966-1969 - L88 racing legend",
+        "454": "1970-1996 - LS6 muscle car peak",
+        "ZZ572": "Modern crate engine king"
+      }
+    },
+    "ls_series": {
+      "name": "LS Engine Family (Gen III/IV)",
+      "production_years": "1997-2017",
+      "significance": "Revolutionary aluminum V8, defined modern performance",
+      "key_innovations": [
+        "All-aluminum construction",
+        "Coil-near-plug ignition",
+        "Cathedral port heads (Gen III)",
+        "Rectangular port heads (Gen IV)",
+        "Variable valve timing (Gen IV)",
+        "Active fuel management"
+      ],
+      "legendary_variants": {
+        "ls1": "1997-2004 - Started the revolution",
+        "ls6": "2001-2005 - High-output Z06 engine",
+        "ls2": "2005-2007 - First Gen IV",
+        "ls3": "2008-2017 - Most refined LS",
+        "ls7": "2006-2015 - 7.0L hand-built masterpiece",
+        "ls9": "2009-2013 - 638hp supercharged ZR1",
+        "lsa": "2009-2019 - CTS-V supercharged"
+      }
+    },
+    "lt_series": {
+      "name": "LT Engine Family (Gen V)",
+      "production_years": "2014-present",
+      "significance": "Direct injection V8 platform",
+      "key_innovations": [
+        "Direct injection",
+        "Continuously variable valve timing",
+        "Active fuel management",
+        "Dry sump options"
+      ],
+      "legendary_variants": {
+        "lt1": "2014-present - 455-495hp base Corvette/Camaro",
+        "lt4": "2015-present - 650hp supercharged Z06/ZL1",
+        "lt5": "2019 - 755hp supercharged ZR1",
+        "lt6": "2023-present - 670hp flat-plane crank Z06"
+      }
+    },
+    "pontiac_v8": {
+      "name": "Pontiac V8 Family",
+      "production_years": "1955-1981",
+      "significance": "GTO muscle car legend, unique architecture",
+      "key_features": [
+        "Wide bore spacing (4.62\")",
+        "Excellent breathing potential",
+        "Ram Air induction systems"
+      ],
+      "legendary_variants": {
+        "389": "1959-1966 - Original GTO power",
+        "400": "1967-1979 - Ram Air legend",
+        "455_ho": "1970-1972 - 335hp underrated monster",
+        "455_sd": "1973-1974 - Last great muscle engine"
+      }
+    },
+    "oldsmobile_rocket": {
+      "name": "Oldsmobile Rocket V8",
+      "production_years": "1949-1990",
+      "significance": "First modern OHV V8, started the horsepower race",
+      "key_innovations": [
+        "First high-compression OHV V8",
+        "Started the hot rod V8 era",
+        "W-Machine performance variants"
+      ],
+      "legendary_variants": {
+        "303": "1949-1953 - Original Rocket",
+        "371": "1957-1958 - J-2 tri-power",
+        "455_w30": "1970-1972 - Ultimate Olds performance"
+      }
+    },
+    "buick_v8": {
+      "name": "Buick V8 Engines",
+      "production_years": "1953-1980",
+      "significance": "Nailhead torque, turbo V6 revolution",
+      "families": {
+        "nailhead": {
+          "years": "1953-1966",
+          "displacements_ci": [264, 322, 364, 401, 425],
+          "unique_feature": "Vertical valve design, massive torque"
+        },
+        "big_block": {
+          "years": "1967-1976",
+          "displacements_ci": [400, 430, 455],
+          "note": "GSX Stage 1 455 most powerful"
+        },
+        "turbo_v6": {
+          "years": "1978-1987",
+          "displacement_liters": 3.8,
+          "significance": "Grand National - faster than Corvette"
+        }
+      }
+    },
+    "cadillac_v8": {
+      "name": "Cadillac V8 Engines",
+      "production_years": "1949-present",
+      "significance": "Luxury performance, largest production V8s",
+      "families": {
+        "331_365_390": {
+          "years": "1949-1963",
+          "note": "Early Cadillac OHV V8s"
+        },
+        "472_500": {
+          "years": "1968-1976",
+          "note": "Largest production V8 engines ever (8.2L)"
+        },
+        "northstar": {
+          "years": "1993-2011",
+          "note": "DOHC 32-valve aluminum V8"
+        },
+        "blackwing": {
+          "years": "2019-2020",
+          "note": "Hand-built twin-turbo 4.2L DOHC"
+        }
+      }
+    }
+  },
+
+  "motorsport_heritage": {
+    "nascar": {
+      "championships": "Multiple manufacturer and driver championships",
+      "legendary_engines": ["427 Mystery Motor", "Mark IV Big Block", "SB2"],
+      "notable_drivers": ["Jeff Gordon", "Dale Earnhardt", "Jimmie Johnson"]
+    },
+    "trans_am": {
+      "significance": "Camaro Z/28 created for Trans-Am racing",
+      "championships": "Multiple SCCA Trans-Am titles",
+      "legendary_cars": ["1967-1969 Camaro Z/28", "1970-1973 Firebird Trans Am"]
+    },
+    "drag_racing": {
+      "significance": "GM V8s dominate drag racing history",
+      "legendary_racers": ["Bill Jenkins", "Grumpy Jenkins", "Warren Johnson"],
+      "notable_achievements": [
+        "First 6-second Pro Stock pass",
+        "Big Block Chevy dominance 1960s-1970s",
+        "LS-based Pro Mod dominance modern era"
+      ]
+    },
+    "le_mans": {
+      "corvette_racing": {
+        "years": "1999-present",
+        "class_wins": "Multiple GTE/GTLM championships",
+        "overall_wins": "2024 class victory"
+      }
+    },
+    "indycar": {
+      "ilmor_partnership": "Chevrolet V8 and twin-turbo V6",
+      "championships": "Multiple manufacturer championships"
+    }
+  },
+
+  "cultural_impact": {
+    "muscle_car_era": {
+      "significance": "GM brands defined the muscle car era",
+      "iconic_vehicles": [
+        "1964-1974 Pontiac GTO - created the segment",
+        "1967-2002 Chevrolet Camaro - pony car legend",
+        "1967-1969 Chevrolet Chevelle SS396/SS454",
+        "1970 Buick GSX Stage 1 - sleeper legend",
+        "1970 Oldsmobile 442 W-30 - overlooked gem"
+      ]
+    },
+    "corvette_legacy": {
+      "generations": {
+        "c1": "1953-1962 - America's first sports car",
+        "c2": "1963-1967 - Sting Ray, most beautiful",
+        "c3": "1968-1982 - Coke bottle curves",
+        "c4": "1984-1996 - Modern performance",
+        "c5": "1997-2004 - LS1 revolution",
+        "c6": "2005-2013 - LS3/LS7/LS9 perfection",
+        "c7": "2014-2019 - LT1/LT4/LT5 swan song",
+        "c8": "2020-present - Mid-engine revolution"
+      }
+    },
+    "truck_heritage": {
+      "chevrolet_trucks": "Best-selling vehicles for decades",
+      "suburban": "Longest-running nameplate in automotive history (1935-present)",
+      "silverado": "Perennial best-seller"
+    },
+    "pop_culture": {
+      "movies": [
+        "Smokey and the Bandit (Firebird Trans Am)",
+        "American Graffiti (1955 Chevy, Impala)",
+        "Two-Lane Blacktop (1955 Chevy)",
+        "Fast and Furious (various GM vehicles)"
+      ],
+      "television": [
+        "Knight Rider (1982 Trans Am)",
+        "The A-Team (GMC van)",
+        "Dukes of Hazzard (various Chevys)"
+      ]
+    }
+  },
+
+  "iconic_engines_summary": [
+    {
+      "engine": "Small Block 350",
+      "fame": "Most produced V8 in history",
+      "power_potential": "500+ HP NA, 1000+ HP boosted",
+      "vehicles": ["Corvette", "Camaro", "Chevelle", "Trucks"]
+    },
+    {
+      "engine": "Big Block 454 LS6",
+      "fame": "Peak muscle car power (450hp rated)",
+      "power_potential": "600+ HP NA, unlimited boosted",
+      "vehicles": ["Chevelle SS", "Corvette", "El Camino"]
+    },
+    {
+      "engine": "LS1",
+      "fame": "Revolutionary aluminum V8",
+      "power_potential": "400-450 HP NA, 800+ supercharged",
+      "vehicles": ["C5 Corvette", "F-body Camaro/Firebird", "GTO"]
+    },
+    {
+      "engine": "LS7 7.0L",
+      "fame": "Largest modern production V8, hand-built",
+      "power_potential": "505 HP stock, 600+ with cam",
+      "vehicles": ["C6 Z06"]
+    },
+    {
+      "engine": "LT6 5.5L FPC",
+      "fame": "Highest specific output NA V8 ever",
+      "power_potential": "670 HP stock (8600 RPM redline)",
+      "vehicles": ["C8 Z06"]
+    },
+    {
+      "engine": "Buick Turbo V6 3.8L",
+      "fame": "Faster than Corvette in 1987",
+      "power_potential": "300+ HP stock tune, 600+ HP built",
+      "vehicles": ["Grand National", "GNX", "Turbo T"]
+    },
+    {
+      "engine": "Pontiac 455 SD",
+      "fame": "Last great muscle engine",
+      "power_potential": "310 HP stock (underrated 370+)",
+      "vehicles": ["1973-74 Trans Am", "Super Duty Firebird"]
+    },
+    {
+      "engine": "Cadillac 500 8.2L",
+      "fame": "Largest production V8 ever made",
+      "power_potential": "400 HP NA, massive torque",
+      "vehicles": ["Eldorado", "Fleetwood"]
+    }
+  ],
+
+  "engineering_innovations": {
+    "fuel_injection": {
+      "1957": "Rochester mechanical fuel injection - first American FI",
+      "1982": "Cross-Fire Injection (throttle body)",
+      "1985": "Tuned Port Injection (TPI)",
+      "1992": "LT1 sequential fuel injection",
+      "2014": "LT1 direct injection"
+    },
+    "valvetrain": {
+      "1949": "Overhead valve V8 (Oldsmobile Rocket)",
+      "1993": "DOHC 32-valve (Northstar)",
+      "2005": "Variable valve timing (Gen IV LS)",
+      "2014": "Continuously variable valve timing (LT)"
+    },
+    "forced_induction": {
+      "1962": "Oldsmobile Jetfire turbo (first US production turbo)",
+      "1978": "Buick turbocharged V6",
+      "2009": "LS9 Eaton supercharger",
+      "2015": "LT4 supercharger"
+    },
+    "manufacturing": {
+      "1920s": "Alfred Sloan's divisional organization",
+      "1984": "NUMMI joint venture with Toyota",
+      "2000s": "Global manufacturing platform sharing"
+    }
+  },
+
+  "production_facilities": {
+    "engine_plants": [
+      { "name": "Tonawanda Engine Plant", "location": "Buffalo, NY", "products": "LS/LT engines" },
+      { "name": "Romulus Engine Plant", "location": "Romulus, MI", "products": "V8 engines" },
+      { "name": "Bowling Green Performance Build Center", "location": "Bowling Green, KY", "products": "LT6 hand-built engines" }
+    ],
+    "historic_facilities": [
+      { "name": "Flint Engine Operations", "note": "Original Buick/GM engine production" },
+      { "name": "Chevrolet Flint Assembly", "note": "Historic engine production" }
+    ]
+  },
+
+  "engines_in_this_database": [
+    { "engine_id": "CHEVY-SBC-350-5.7L-V8", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-BBC-454-7.4L-V8", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-LS1-5.7L-V8", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-LS3-6.2L-V8", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-LS7-7.0L-V8", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-LT1-6.2L-V8", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-LT4-6.2L-V8-SC", "status": "Complete documentation" },
+    { "engine_id": "CHEVY-LT6-5.5L-V8-FPC", "status": "Complete documentation" },
+    { "engine_id": "BUICK-TURBO-V6-3.8L-LC2", "status": "Complete documentation" },
+    { "engine_id": "PONTIAC-455-SD-7.5L-V8", "status": "Complete documentation" },
+    { "engine_id": "OLDS-455-ROCKET-7.5L-V8", "status": "Complete documentation" },
+    { "engine_id": "CADILLAC-500-8.2L-V8", "status": "Complete documentation" }
+  ]
+}

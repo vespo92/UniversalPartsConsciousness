@@ -1,0 +1,109 @@
+{
+  "division_id": "CHEVROLET",
+  "name": "Chevrolet Motor Division",
+  "founded": 1911,
+  "founder": "Louis Chevrolet, William C. Durant",
+  "acquired_by_gm": 1918,
+  "status": "Active",
+  "headquarters": "Detroit, Michigan",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "history": {
+    "founding": "Louis Chevrolet, a Swiss race car driver, partnered with William Durant (ousted from GM) to create a competitor to Ford. Durant used Chevrolet's success to regain control of GM in 1918.",
+    "name_origin": "Named after co-founder Louis Chevrolet, whose racing fame provided marketing appeal.",
+    "early_years": {
+      "1911": "First Chevrolet Classic Six produced",
+      "1914": "Royal Mail and Baby Grand models introduced",
+      "1918": "Acquired by GM, becomes volume brand"
+    },
+    "role_in_gm": "Entry-level volume brand, accessible performance"
+  },
+
+  "engine_legacy": {
+    "small_block_chevy": {
+      "years": "1955-2003",
+      "significance": "Most produced V8 engine in history - 100+ million units",
+      "key_variants": [
+        { "displacement": 265, "years": "1955-1957", "note": "First SBC" },
+        { "displacement": 283, "years": "1957-1967", "note": "First 1hp/ci" },
+        { "displacement": 302, "years": "1967-1969", "note": "Z/28 racing special" },
+        { "displacement": 327, "years": "1962-1969", "note": "Corvette favorite" },
+        { "displacement": 350, "years": "1967-2003", "note": "Most produced variant" },
+        { "displacement": 400, "years": "1970-1980", "note": "Largest SBC" }
+      ]
+    },
+    "big_block_chevy": {
+      "years": "1958-2009",
+      "families": {
+        "w_series": { "years": "1958-1965", "displacements": [348, 409] },
+        "mark_iv": { "years": "1965-1990", "displacements": [396, 427, 454, 502] },
+        "mark_v_vi": { "years": "1991-2009", "note": "Vortec truck engines" }
+      }
+    },
+    "ls_series": {
+      "years": "1997-2017",
+      "significance": "Revolutionary aluminum V8",
+      "variants": ["LS1", "LS2", "LS3", "LS6", "LS7", "LS9"]
+    },
+    "lt_series": {
+      "years": "2014-present",
+      "variants": ["LT1", "LT4", "LT5", "LT6"],
+      "significance": "Direct injection V8 platform"
+    }
+  },
+
+  "iconic_vehicles": {
+    "corvette": {
+      "introduction": 1953,
+      "generations": 8,
+      "significance": "America's Sports Car",
+      "current": "C8 mid-engine"
+    },
+    "camaro": {
+      "introduction": 1967,
+      "significance": "Pony car legend, Mustang rival",
+      "discontinuation": 2024
+    },
+    "chevelle": {
+      "years": "1964-1977",
+      "significance": "Muscle car icon, SS 454 legend"
+    },
+    "impala": {
+      "introduction": 1958,
+      "significance": "Full-size icon, SS 409 fame"
+    },
+    "nova": {
+      "years": "1962-1979",
+      "significance": "Compact muscle, drag racing favorite"
+    },
+    "silverado": {
+      "introduction": 1999,
+      "significance": "Best-selling full-size truck"
+    }
+  },
+
+  "motorsport": {
+    "nascar": {
+      "championships": "Multiple manufacturer titles",
+      "famous_drivers": ["Jeff Gordon", "Jimmie Johnson", "Dale Earnhardt Jr."]
+    },
+    "trans_am": {
+      "z28_success": "Created specifically for Trans-Am racing"
+    },
+    "drag_racing": {
+      "significance": "Small Block Chevy dominates NHRA Pro Stock"
+    },
+    "corvette_racing": {
+      "imsa": "Multiple GTLM championships",
+      "le_mans": "Class victories"
+    }
+  },
+
+  "current_lineup": {
+    "cars": ["Corvette", "Malibu"],
+    "trucks": ["Silverado", "Colorado"],
+    "suvs": ["Tahoe", "Suburban", "Traverse", "Equinox", "Blazer", "Trailblazer"],
+    "electric": ["Bolt", "Equinox EV", "Blazer EV", "Silverado EV"]
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "vehicle_id": "CHEVROLET_CORVETTE",
+  "name": "Chevrolet Corvette",
+  "introduction": 1953,
+  "status": "Active",
+  "nickname": "America's Sports Car",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "overview": {
+    "significance": "The Corvette is America's definitive sports car, continuously produced since 1953. It has evolved from a underpowered roadster to a world-class mid-engine supercar.",
+    "total_generations": 8,
+    "naming": "Zora Arkus-Duntov, the 'Father of the Corvette,' shaped its performance identity"
+  },
+
+  "generations": {
+    "c1": {
+      "years": "1953-1962",
+      "name": "First Generation",
+      "body_styles": ["Roadster"],
+      "engines": {
+        "1953_1954": { "engine": "Blue Flame Six 235", "hp": 150 },
+        "1955_1957": { "engine": "265/283 V8", "hp_range": "195-283" },
+        "1958_1962": { "engine": "283/327 V8", "hp_range": "230-360" }
+      },
+      "milestones": [
+        "1953: First Corvette produced",
+        "1955: V8 engine saves the program",
+        "1957: First fuel injection, 1hp/ci (283hp/283ci)",
+        "1962: Final year, 327/360hp available"
+      ],
+      "production_highlight": "1953 production: 300 units (all white/red)"
+    },
+    "c2": {
+      "years": "1963-1967",
+      "name": "Sting Ray",
+      "body_styles": ["Coupe", "Convertible"],
+      "styling": "Bill Mitchell design, inspired by XP-87 Sting Ray racer",
+      "engines": {
+        "small_block": { "displacements": [327], "hp_range": "250-375" },
+        "big_block": { "displacements": [396, 427], "hp_range": "390-435" }
+      },
+      "iconic_variants": {
+        "1963_split_window": {
+          "feature": "Split rear window (one year only)",
+          "value": "Most valuable C2"
+        },
+        "1967_l88": {
+          "engine": "427 L88",
+          "hp_rated": 430,
+          "hp_actual": "550+",
+          "production": 20,
+          "value_today": "$3+ million"
+        }
+      }
+    },
+    "c3": {
+      "years": "1968-1982",
+      "name": "Stingray (one word)",
+      "body_styles": ["Coupe (T-top)", "Convertible"],
+      "styling": "Mako Shark II inspired 'Coke bottle' design",
+      "engines": {
+        "small_block": { "displacements": [350], "hp_range": "165-370" },
+        "big_block": { "displacements": [427, 454], "hp_range": "390-460" }
+      },
+      "era_changes": {
+        "1968_1970": "Peak power years",
+        "1971_1972": "Compression drops, net ratings",
+        "1973_1975": "Performance nadir",
+        "1978_1982": "Recovery with better small blocks"
+      },
+      "notable_variants": {
+        "1970_lt1": { "engine": "LT-1 350", "hp": 370 },
+        "1970_zr1": { "engine": "LT-1 350", "package": "Racing package", "production": 25 },
+        "1971_ls6": { "engine": "LS6 454", "hp": 425, "production": 188 },
+        "1978_pace_car": { "production": 6502 },
+        "1978_l82": { "hp": 220, "note": "Best of late C3" }
+      }
+    },
+    "c4": {
+      "years": "1984-1996",
+      "name": "Fourth Generation",
+      "note": "No 1983 model year",
+      "body_styles": ["Coupe", "Convertible (1986+)"],
+      "engines": {
+        "l83_crossfire": { "years": "1984", "hp": 205 },
+        "l98_tpi": { "years": "1985-1991", "hp_range": "230-250" },
+        "lt1": { "years": "1992-1996", "hp": 300 },
+        "lt4": { "years": "1996", "hp": 330 },
+        "lt5_zr1": { "years": "1990-1995", "hp_range": "375-405" }
+      },
+      "iconic_variants": {
+        "zr1": {
+          "years": "1990-1995",
+          "engine": "LT5 DOHC",
+          "hp_range": "375-405",
+          "significance": "First true Corvette supercar"
+        },
+        "grand_sport_1996": {
+          "engine": "LT4",
+          "hp": 330,
+          "production": 1000,
+          "styling": "Admiral Blue, white stripe, red hash"
+        }
+      }
+    },
+    "c5": {
+      "years": "1997-2004",
+      "name": "Fifth Generation",
+      "body_styles": ["Coupe", "Convertible", "Hardtop (FRC)"],
+      "engines": {
+        "ls1": { "years": "1997-2004", "hp": 345 },
+        "ls6": { "years": "2001-2004", "hp_range": "385-405" }
+      },
+      "innovations": [
+        "Hydroformed frame rails",
+        "Transaxle (rear-mounted transmission)",
+        "LS1 aluminum V8"
+      ],
+      "iconic_variants": {
+        "z06": {
+          "years": "2001-2004",
+          "engine": "LS6",
+          "hp_range": "385-405",
+          "body": "Fixed Roof Coupe (FRC)",
+          "significance": "Lightweight track-focused model"
+        }
+      }
+    },
+    "c6": {
+      "years": "2005-2013",
+      "name": "Sixth Generation",
+      "body_styles": ["Coupe", "Convertible"],
+      "engines": {
+        "ls2": { "years": "2005-2007", "hp": 400 },
+        "ls3": { "years": "2008-2013", "hp": 430 },
+        "ls7": { "years": "2006-2013", "hp": 505 },
+        "ls9": { "years": "2009-2013", "hp": 638 }
+      },
+      "iconic_variants": {
+        "z06": {
+          "years": "2006-2013",
+          "engine": "LS7 7.0L",
+          "hp": 505,
+          "features": ["Dry sump", "Titanium internals", "Hand-built"]
+        },
+        "zr1": {
+          "years": "2009-2013",
+          "engine": "LS9 supercharged",
+          "hp": 638,
+          "significance": "Most powerful production Corvette at time"
+        },
+        "427_convertible": {
+          "year": 2013,
+          "engine": "LS7",
+          "significance": "Only convertible with LS7"
+        }
+      }
+    },
+    "c7": {
+      "years": "2014-2019",
+      "name": "Seventh Generation",
+      "body_styles": ["Coupe", "Convertible"],
+      "engines": {
+        "lt1": { "years": "2014-2019", "hp": 455 },
+        "lt4": { "years": "2015-2019", "hp": 650 },
+        "lt5": { "year": 2019, "hp": 755 }
+      },
+      "innovations": [
+        "Direct injection (Gen V)",
+        "Magnetic ride control",
+        "Carbon fiber removable roof"
+      ],
+      "iconic_variants": {
+        "z06": {
+          "years": "2015-2019",
+          "engine": "LT4 supercharged",
+          "hp": 650
+        },
+        "zr1": {
+          "year": 2019,
+          "engine": "LT5 supercharged",
+          "hp": 755,
+          "significance": "Most powerful front-engine Corvette ever"
+        },
+        "grand_sport": {
+          "years": "2017-2019",
+          "engine": "LT1",
+          "body": "Z06 widebody, Stingray engine"
+        }
+      }
+    },
+    "c8": {
+      "years": "2020-present",
+      "name": "Eighth Generation",
+      "significance": "First mid-engine Corvette",
+      "body_styles": ["Coupe", "Convertible"],
+      "engines": {
+        "lt2": { "years": "2020-present", "hp": 490, "note": "DI + port injection" },
+        "lt6": { "years": "2023-present", "hp": 670, "note": "Flat-plane crank" }
+      },
+      "variants": {
+        "stingray": {
+          "engine": "LT2",
+          "hp": 490,
+          "0_60": "2.9 seconds"
+        },
+        "z06": {
+          "engine": "LT6 flat-plane crank",
+          "hp": 670,
+          "redline": 8600,
+          "0_60": "2.6 seconds"
+        },
+        "e_ray": {
+          "engine": "LT2 + electric front axle",
+          "combined_hp": 655,
+          "drivetrain": "AWD",
+          "0_60": "2.5 seconds"
+        },
+        "zr1": {
+          "status": "Coming 2025",
+          "engine": "LT7 twin-turbo",
+          "hp_expected": "1000+"
+        }
+      }
+    }
+  },
+
+  "production_milestones": {
+    "1953": "First Corvette",
+    "1992": "1,000,000th Corvette",
+    "2009": "1,500,000th Corvette",
+    "2019": "Last front-engine Corvette"
+  },
+
+  "racing_heritage": {
+    "le_mans": "Multiple class victories",
+    "imsa": "Dominant in GTLM class",
+    "trans_am": "Competitive throughout history",
+    "scca": "Successful amateur racing"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "division_id": "BUICK",
+  "name": "Buick Motor Division",
+  "founded": 1899,
+  "founder": "David Dunbar Buick",
+  "gm_founding_member": true,
+  "status": "Active",
+  "headquarters": "Detroit, Michigan",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "history": {
+    "origins": "Buick was the foundation of General Motors. William Durant used Buick's success to create GM in 1908.",
+    "timeline": {
+      "1899": "Buick Auto-Vim and Power Company founded",
+      "1903": "Becomes Buick Motor Company",
+      "1904": "William Durant takes control",
+      "1908": "Forms foundation of General Motors",
+      "1953": "Nailhead V8 introduced",
+      "1984": "Grand National turbo V6 shocks the world"
+    },
+    "brand_philosophy": "Premium near-luxury, refined performance",
+    "slogan": "Wouldn't You Really Rather Have a Buick?"
+  },
+
+  "engine_legacy": {
+    "nailhead_v8": {
+      "years": "1953-1966",
+      "significance": "Unique vertical valve design, massive torque",
+      "name_origin": "Small vertical valves resembled nail heads",
+      "variants": [
+        { "displacement": 264, "years": "1954", "hp": 143 },
+        { "displacement": 322, "years": "1953-1956", "hp_range": "143-255" },
+        { "displacement": 364, "years": "1957-1958", "hp_range": "250-300" },
+        { "displacement": 401, "years": "1959-1966", "hp_range": "265-325" },
+        { "displacement": 425, "years": "1963-1966", "hp": 340 }
+      ],
+      "characteristics": [
+        "Exceptional low-end torque",
+        "Smooth, quiet operation",
+        "Limited high-RPM breathing"
+      ]
+    },
+    "buick_big_block": {
+      "years": "1967-1976",
+      "displacements": [400, 430, 455],
+      "stage_1_455": {
+        "horsepower": 360,
+        "torque_lb_ft": 510,
+        "significance": "Most torque of any muscle car",
+        "reputation": "Sleeper that destroyed competition"
+      }
+    },
+    "turbo_v6": {
+      "years": "1978-1987",
+      "displacement_liters": 3.8,
+      "significance": "Proved turbo could beat V8",
+      "evolution": [
+        { "year": 1978, "hp": 150, "note": "First production turbo V6" },
+        { "year": 1984, "hp": 200, "note": "Sequential injection" },
+        { "year": 1987, "hp": 245, "note": "Grand National peak" },
+        { "year": 1987, "hp": 276, "note": "GNX (actual 300+)" }
+      ]
+    },
+    "v6_legacy": {
+      "buick_231": {
+        "displacement": 3.8,
+        "years": "1975-2008",
+        "significance": "Most widespread GM V6",
+        "applications": "Used across all GM divisions"
+      }
+    }
+  },
+
+  "iconic_vehicles": {
+    "grand_national": {
+      "years": "1982-1987",
+      "significance": "Turbo V6 that outran Corvettes",
+      "cultural_impact": "Created turbo performance legend"
+    },
+    "gnx": {
+      "year": 1987,
+      "production": 547,
+      "partnership": "ASC/McLaren",
+      "significance": "Most valuable 1980s American car"
+    },
+    "gsx": {
+      "years": "1970-1972",
+      "engine": "455 Stage 1",
+      "significance": "Overlooked muscle car masterpiece"
+    },
+    "riviera": {
+      "years": "1963-1999",
+      "significance": "Personal luxury pioneer"
+    },
+    "skylark_gs": {
+      "years": "1965-1972",
+      "significance": "Mid-size muscle contender"
+    },
+    "roadmaster": {
+      "years": "1991-1996",
+      "significance": "Full-size rear-drive with LT1"
+    },
+    "regal": {
+      "years": "1973-2020",
+      "significance": "Mid-size workhorse, turbo platform"
+    }
+  },
+
+  "current_status": {
+    "market_position": "Premium SUV/crossover brand",
+    "china_market": "Extremely successful - outsells US",
+    "current_lineup": ["Enclave", "Encore", "Envision", "Envista"]
+  }
+}

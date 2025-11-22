@@ -1,0 +1,119 @@
+{
+  "division_id": "PONTIAC",
+  "name": "Pontiac Motor Division",
+  "founded": 1926,
+  "predecessor": "Oakland Motor Company (1909)",
+  "discontinued": 2010,
+  "status": "Discontinued",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "history": {
+    "origins": "Pontiac began as a companion brand to Oakland (acquired by GM in 1909). Named after the Ottawa chief Pontiac and Pontiac, Michigan.",
+    "timeline": {
+      "1909": "Oakland Motor Company acquired by GM",
+      "1926": "Pontiac brand introduced as Oakland companion",
+      "1932": "Oakland discontinued, Pontiac continues",
+      "1956": "Bunkie Knudsen transforms brand image",
+      "1964": "GTO creates muscle car segment",
+      "2010": "Brand discontinued following bankruptcy"
+    },
+    "brand_philosophy": "Excitement and performance - 'We Build Excitement'"
+  },
+
+  "engine_legacy": {
+    "pontiac_v8": {
+      "years": "1955-1981",
+      "significance": "Unique architecture with wide bore spacing",
+      "bore_spacing": "4.62 inches (largest GM)",
+      "key_variants": [
+        { "displacement": 287, "years": "1955-1957", "note": "First Pontiac V8" },
+        { "displacement": 389, "years": "1959-1966", "note": "Original GTO power" },
+        { "displacement": 400, "years": "1967-1979", "note": "Ram Air legend" },
+        { "displacement": 421, "years": "1963-1966", "note": "Super Duty racing" },
+        { "displacement": 455, "years": "1970-1976", "note": "Super Duty last muscle" }
+      ]
+    },
+    "ram_air_engines": {
+      "significance": "Functional cold air induction systems",
+      "variants": [
+        { "name": "Ram Air I", "years": "1965-1967" },
+        { "name": "Ram Air II", "years": "1968" },
+        { "name": "Ram Air III", "years": "1969-1970", "hp": 335 },
+        { "name": "Ram Air IV", "years": "1969-1970", "hp": 370 },
+        { "name": "Ram Air V", "status": "Prototype only" }
+      ]
+    },
+    "super_duty_455": {
+      "years": "1973-1974",
+      "horsepower": 310,
+      "actual_hp": "370+",
+      "significance": "Last great factory muscle engine",
+      "features": [
+        "Forged pistons",
+        "Four-bolt mains",
+        "High-flow heads"
+      ]
+    }
+  },
+
+  "iconic_vehicles": {
+    "gto": {
+      "years": "1964-1974, 2004-2006",
+      "significance": "Created the muscle car segment",
+      "name_origin": "Gran Turismo Omologato (Ferrari tribute)",
+      "notable_years": {
+        "1964": "First year, 389 Tri-Power",
+        "1968": "Most valuable year",
+        "1969": "The Judge special edition",
+        "2004": "Revival on Holden platform"
+      }
+    },
+    "firebird_trans_am": {
+      "years": "1967-2002",
+      "significance": "F-body pony car with Pontiac personality",
+      "cultural_impact": "Smokey and the Bandit, Knight Rider"
+    },
+    "grand_prix": {
+      "years": "1962-2008",
+      "significance": "Personal luxury, SLP special editions"
+    },
+    "bonneville": {
+      "years": "1957-2005",
+      "significance": "Full-size flagship"
+    },
+    "fiero": {
+      "years": "1984-1988",
+      "significance": "First American mid-engine production car"
+    },
+    "g8": {
+      "years": "2008-2009",
+      "significance": "Final Pontiac performance car, Holden-based"
+    }
+  },
+
+  "performance_heritage": {
+    "john_delorean": {
+      "role": "Chief Engineer, then General Manager",
+      "contributions": [
+        "GTO creation",
+        "Firebird development",
+        "Performance image transformation"
+      ]
+    },
+    "jim_wangers": {
+      "role": "Marketing and promotion",
+      "contributions": [
+        "GTO marketing genius",
+        "Performance car advertising pioneer"
+      ]
+    }
+  },
+
+  "discontinuation": {
+    "date": "October 31, 2010",
+    "reason": "GM bankruptcy restructuring",
+    "final_vehicle": "2010 G6 sedan",
+    "legacy": "Remembered for GTO, Firebird, Trans Am"
+  }
+}

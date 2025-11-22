@@ -1,0 +1,360 @@
+{
+  "era_id": "GM_1950S_JET_AGE",
+  "title": "The Jet Age and V8 Revolution: 1949-1959",
+  "subtitle": "When GM Created the Modern American V8",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "era_overview": {
+    "description": "The 1950s represented GM's golden age of innovation. The decade began with Oldsmobile's revolutionary Rocket V8 and culminated with the iconic 1959 tailfins. Every GM division introduced overhead valve V8 engines, forever changing the automotive landscape.",
+    "key_themes": [
+      "Overhead valve V8 engines replace flatheads",
+      "Jet-age styling with chrome and tailfins",
+      "Post-war prosperity drives innovation",
+      "Harley Earl's design revolution",
+      "Birth of the Small Block Chevrolet"
+    ],
+    "market_position": "GM dominated American automotive sales, capturing over 50% market share by mid-decade"
+  },
+
+  "1949_rocket_revolution": {
+    "significance": "The birth of the modern American V8",
+    "oldsmobile_rocket_88": {
+      "introduction": "1949",
+      "engine": {
+        "name": "Rocket V8",
+        "displacement_ci": 303,
+        "displacement_liters": 5.0,
+        "horsepower": 135,
+        "torque_lb_ft": 253,
+        "compression_ratio": "7.25:1",
+        "configuration": "OHV V8"
+      },
+      "innovations": [
+        "First mass-produced high-compression OHV V8",
+        "Oversquare bore/stroke for high RPM",
+        "Wedge combustion chambers",
+        "Compact, lightweight design"
+      ],
+      "racing_success": "Won 6 of 9 NASCAR races in 1949, started the 'Win on Sunday, Sell on Monday' era",
+      "legacy": "The Rocket 88 is often credited as the first muscle car"
+    },
+    "cadillac_331": {
+      "introduction": "1949",
+      "engine": {
+        "name": "Cadillac 331 OHV V8",
+        "displacement_ci": 331,
+        "horsepower": 160,
+        "torque_lb_ft": 312
+      },
+      "significance": "Established Cadillac's performance luxury formula"
+    }
+  },
+
+  "1953_corvette_introduction": {
+    "significance": "Birth of America's Sports Car",
+    "first_corvette": {
+      "year": 1953,
+      "production": 300,
+      "assembly": "Flint, Michigan (hand-assembled)",
+      "engine": {
+        "name": "Blue Flame Six",
+        "displacement_ci": 235,
+        "horsepower": 150,
+        "carburetors": "Triple Carter sidedraft"
+      },
+      "body": "Fiberglass - first mass-produced fiberglass car",
+      "transmission": "2-speed Powerglide automatic only",
+      "price": "$3,498"
+    },
+    "early_challenges": "Six-cylinder and automatic-only limited performance appeal",
+    "salvation": "The Small Block V8 would transform the Corvette in 1955"
+  },
+
+  "1953_buick_nailhead": {
+    "introduction": "Buick introduces unique vertical-valve V8",
+    "engine": {
+      "name": "Buick Nailhead V8",
+      "first_displacement_ci": 322,
+      "horsepower": 188,
+      "unique_feature": "Vertical valve arrangement",
+      "nickname_origin": "Small, vertically-oriented valves resembled nail heads"
+    },
+    "characteristics": [
+      "Exceptional low-end torque",
+      "Smooth, quiet operation",
+      "Limited high-RPM breathing (vertical valves)",
+      "Perfect for luxury/cruising applications"
+    ],
+    "variants": [
+      { "year": 1953, "ci": 322, "hp": 188 },
+      { "year": 1957, "ci": 364, "hp": 250 },
+      { "year": 1959, "ci": 401, "hp": 325 },
+      { "year": 1963, "ci": 425, "hp": 340 }
+    ]
+  },
+
+  "1955_small_block_chevrolet": {
+    "significance": "THE most important V8 engine ever produced",
+    "introduction": "The Turbo-Fire 265 V8",
+    "development": {
+      "lead_engineer": "Ed Cole",
+      "design_goals": [
+        "Compact and lightweight",
+        "High power-to-weight ratio",
+        "Easy manufacturing",
+        "Excellent serviceability"
+      ],
+      "innovations": [
+        "Stamped steel rocker arms (not expensive forged)",
+        "Hollow pushrods carrying oil to rockers",
+        "Ball-stud rocker arm pivot",
+        "Interchangeable cylinder heads",
+        "Press-fit rocker arm studs (later screw-in)"
+      ]
+    },
+    "first_engine": {
+      "name": "Turbo-Fire 265",
+      "displacement_ci": 265,
+      "displacement_liters": 4.3,
+      "bore": 3.75,
+      "stroke": 3.0,
+      "horsepower_range": "162-195",
+      "variants": [
+        { "version": "Base", "hp": 162, "carburetor": "2-barrel" },
+        { "version": "Power Pack", "hp": 180, "carburetor": "4-barrel" },
+        { "version": "Super Power Pack", "hp": 195, "carburetor": "4-barrel", "dual_exhaust": true }
+      ]
+    },
+    "immediate_impact": [
+      "Transformed Corvette from failure to legend",
+      "Made Chevrolet performance competitive",
+      "Established pattern for 100 million+ engines",
+      "Created the hot rod V8 standard"
+    ]
+  },
+
+  "1955_pontiac_v8": {
+    "introduction": "Pontiac replaces straight-8 with modern V8",
+    "engine": {
+      "name": "Strato-Streak V8",
+      "displacement_ci": 287,
+      "horsepower": 180,
+      "unique_features": [
+        "Wide bore spacing (4.62\")",
+        "Room for larger bores",
+        "Excellent breathing potential"
+      ]
+    },
+    "significance": "Foundation for legendary GTO 389, 400, and 455 engines",
+    "growth_path": [
+      { "year": 1955, "ci": 287 },
+      { "year": 1957, "ci": 347 },
+      { "year": 1959, "ci": 389 },
+      { "year": 1967, "ci": 400 },
+      { "year": 1970, "ci": 455 }
+    ]
+  },
+
+  "1957_fuel_injection": {
+    "significance": "First American fuel injection system",
+    "rochester_ramjet": {
+      "name": "Rochester Ramjet Fuel Injection",
+      "type": "Continuous mechanical injection",
+      "achievement": "First 1 horsepower per cubic inch",
+      "engine": {
+        "name": "283 Fuelie",
+        "displacement_ci": 283,
+        "horsepower": 283,
+        "note": "283 HP from 283 cubic inches - 1hp/ci"
+      },
+      "applications": [
+        "1957-1959 Corvette",
+        "1957-1959 Chevrolet passenger cars"
+      ],
+      "rarity": "Only 1,530 Corvettes received FI in 1957",
+      "challenges": [
+        "Complex maintenance",
+        "Finicky operation",
+        "Expensive option ($484 - more than base V8)",
+        "Required skilled mechanics"
+      ]
+    }
+  },
+
+  "1958_big_block_origins": {
+    "w_series_engines": {
+      "name": "Chevrolet W-Series Big Block",
+      "years": "1958-1965",
+      "displacements_ci": [348, 409],
+      "significance": "Predecessor to Mark IV Big Block",
+      "variants": {
+        "348": {
+          "years": "1958-1961",
+          "horsepower_range": "250-350",
+          "note": "Wedge combustion chamber"
+        },
+        "409": {
+          "years": "1961-1965",
+          "horsepower_range": "360-425",
+          "fame": "Beach Boys song '409'",
+          "drag_racing": "Early drag strip dominator"
+        }
+      }
+    }
+  },
+
+  "styling_evolution": {
+    "harley_earl_era": {
+      "designer": "Harley Earl - VP of Design",
+      "influence": "Father of automotive styling",
+      "innovations": [
+        "Wrap-around windshields",
+        "Two-tone paint",
+        "Chrome accents",
+        "Tailfins (inspired by P-38 Lightning)"
+      ]
+    },
+    "tailfin_progression": {
+      "1948": "First subtle fins on Cadillac",
+      "1955": "Fins grow across GM brands",
+      "1957": "Dramatic fins become standard",
+      "1959": "Peak fin height (Cadillac fins over 42\" high)",
+      "1960s": "Fins begin to recede"
+    },
+    "iconic_1950s_designs": [
+      {
+        "year": 1955,
+        "model": "Chevrolet Bel Air",
+        "significance": "Defined post-war styling, 'Shoebox' hot rod favorite"
+      },
+      {
+        "year": 1957,
+        "model": "Chevrolet Bel Air",
+        "significance": "Most collectible Chevy, iconic 1950s design"
+      },
+      {
+        "year": 1959,
+        "model": "Cadillac Eldorado",
+        "significance": "Peak tailfin design, bullet taillights"
+      }
+    ]
+  },
+
+  "division_developments": {
+    "chevrolet": {
+      "transformation": "From 'stodgy' to performance leader",
+      "key_developments": [
+        "1955: Small Block V8 debuts",
+        "1955: V8 Corvette saves the program",
+        "1957: Fuel injection, 283hp '283'",
+        "1958: Impala nameplate introduced"
+      ]
+    },
+    "pontiac": {
+      "transformation": "From old-man's car to performance brand",
+      "key_figure": "Bunkie Knudsen (general manager 1956)",
+      "developments": [
+        "1955: First Pontiac V8",
+        "1957: Tri-Power (3x2 carbs) option",
+        "1959: Wide-Track advertising campaign"
+      ]
+    },
+    "oldsmobile": {
+      "status": "Innovation leader",
+      "developments": [
+        "1949: Rocket V8 changes everything",
+        "1957: J-2 triple carburetor setup",
+        "1958: 371 Rocket V8"
+      ]
+    },
+    "buick": {
+      "status": "Premium performance",
+      "developments": [
+        "1953: Nailhead V8 debuts",
+        "1957: Century - original 'banker's hot rod'",
+        "1959: 401 Nailhead power"
+      ]
+    },
+    "cadillac": {
+      "status": "Standard of the World",
+      "developments": [
+        "1949: OHV V8 debuts",
+        "1953: 331 V8 powers Le Mans contender",
+        "1957: Eldorado Brougham luxury pinnacle"
+      ]
+    }
+  },
+
+  "racing_achievements": {
+    "nascar": {
+      "oldsmobile_rocket_88": {
+        "year": 1949,
+        "wins": "6 of 9 races",
+        "significance": "Established 'Win on Sunday, Sell on Monday'"
+      },
+      "hudson_hornet_rivalry": "Oldsmobile vs Hudson defined early NASCAR"
+    },
+    "corvette_racing": {
+      "1956_sebring": {
+        "result": "First and second in class",
+        "significance": "Established Corvette racing heritage"
+      }
+    },
+    "drag_racing": {
+      "emergence": "Small Block Chevy becomes hot rod favorite",
+      "advantages": [
+        "Compact and lightweight",
+        "Interchangeable parts",
+        "Easy to modify",
+        "Affordable and available"
+      ]
+    }
+  },
+
+  "technological_milestones": {
+    "1949": "First modern OHV V8 (Oldsmobile)",
+    "1953": "First production fiberglass body (Corvette)",
+    "1955": "Small Block Chevrolet V8 debuts",
+    "1957": "First American fuel injection (Rochester)",
+    "1957": "First 1 HP per cubic inch (283 Fuelie)",
+    "1958": "First American quad headlights"
+  },
+
+  "production_numbers": {
+    "small_block_chevy": {
+      "1955": "First year production",
+      "significance": "Would eventually exceed 100 million units"
+    },
+    "corvette": {
+      "1953": 300,
+      "1954": 3640,
+      "1955": 700,
+      "1956": 3467,
+      "1957": 6339,
+      "1958": 9168,
+      "1959": 9670
+    }
+  },
+
+  "legacy": {
+    "engine_impact": [
+      "Established overhead valve V8 as American standard",
+      "Small Block Chevy became most produced engine ever",
+      "Created the performance V8 aftermarket industry",
+      "Defined hot rod and muscle car foundations"
+    ],
+    "cultural_impact": [
+      "1957 Chevy became automotive icon",
+      "Corvette established as American sports car",
+      "GM styling influenced entire industry",
+      "V8 power became American identity"
+    ],
+    "lasting_influence": [
+      "Small Block architecture lasted until 2003",
+      "Established GM performance reputation",
+      "Created collector car values (1955-1957 Chevys)",
+      "Fuel injection paved way for EFI era"
+    ]
+  }
+}

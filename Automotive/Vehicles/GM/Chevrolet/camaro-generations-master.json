@@ -1,0 +1,203 @@
+{
+  "vehicle_id": "CHEVROLET_CAMARO",
+  "name": "Chevrolet Camaro",
+  "introduction": 1967,
+  "discontinuation": 2024,
+  "platform": "F-body (1967-2002), Zeta (2010-2015), Alpha (2016-2024)",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "overview": {
+    "significance": "The Camaro was Chevrolet's answer to the Ford Mustang, becoming one of the most iconic American pony/muscle cars.",
+    "rivalry": "Mustang vs Camaro rivalry spans over 55 years",
+    "total_generations": 6
+  },
+
+  "generations": {
+    "first_gen": {
+      "years": "1967-1969",
+      "platform": "F-body",
+      "body_styles": ["Coupe", "Convertible"],
+      "significance": "Launched Camaro legend, Z/28 racing heritage",
+      "engines": {
+        "base_6": { "displacement": 230, "hp": 140 },
+        "small_block": {
+          "302_z28": { "hp": 290, "note": "Trans-Am racing" },
+          "327": { "hp_range": "210-275" },
+          "350": { "hp": 295 }
+        },
+        "big_block": {
+          "396": { "hp_range": "325-375" },
+          "427_copo": { "hp": "425-430" }
+        }
+      },
+      "iconic_variants": {
+        "z28_1967_1969": {
+          "engine": "302 DZ",
+          "purpose": "SCCA Trans-Am homologation",
+          "racing": "Won 1968, 1969 championships"
+        },
+        "copo_9560": {
+          "engine": "427 L72",
+          "hp": 425,
+          "production": 1015
+        },
+        "copo_9561_zl1": {
+          "engine": "427 ZL1 aluminum",
+          "hp_actual": "500+",
+          "production": 69,
+          "value_today": "$500,000+"
+        },
+        "1969_ss_396": {
+          "engine": "L78 396",
+          "hp": 375
+        }
+      }
+    },
+    "second_gen": {
+      "years": "1970-1981",
+      "platform": "F-body",
+      "styling": "European-inspired, longer hood",
+      "engines": {
+        "small_block": {
+          "307": { "hp_range": "130-145" },
+          "350": { "hp_range": "145-360" }
+        },
+        "big_block": {
+          "396_402": { "hp_range": "300-375", "note": "Through 1972" }
+        }
+      },
+      "era_changes": {
+        "1970_1972": "Peak power, LT-1 350 (360hp)",
+        "1973_1974": "Power decline, last big blocks",
+        "1975_1976": "No Z28 offered",
+        "1977_1981": "Z28 returns, power slowly recovers"
+      },
+      "iconic_variants": {
+        "z28_1970_1971": {
+          "engine": "LT-1 350",
+          "hp": 360,
+          "note": "Best second-gen performance"
+        }
+      }
+    },
+    "third_gen": {
+      "years": "1982-1992",
+      "platform": "F-body (new)",
+      "styling": "Modern wedge design, glass hatch",
+      "significance": "Computer controls, fuel injection revival",
+      "engines": {
+        "iron_duke": { "displacement": 2.5, "hp": 90 },
+        "v6": { "displacement": 2.8, "hp": 102 },
+        "305_v8": { "hp_range": "145-220" },
+        "350_tpi": { "hp_range": "225-245" }
+      },
+      "key_developments": {
+        "1982": "Cross-Fire Injection",
+        "1985": "IROC-Z with TPI",
+        "1987": "350 TPI available",
+        "1992": "25th Anniversary"
+      },
+      "iconic_variants": {
+        "iroc_z": {
+          "years": "1985-1990",
+          "engine": "305/350 TPI",
+          "significance": "Restored performance credibility"
+        },
+        "1le": {
+          "purpose": "Showroom Stock racing",
+          "features": "Track suspension, Corvette brakes"
+        }
+      }
+    },
+    "fourth_gen": {
+      "years": "1993-2002",
+      "platform": "F-body",
+      "styling": "Rounded, aerodynamic",
+      "significance": "LT1/LS1 power, best handling F-body",
+      "engines": {
+        "v6_3800": { "hp": 160 },
+        "lt1_350": { "hp": 275 },
+        "ls1_350": { "hp": "305-325" }
+      },
+      "iconic_variants": {
+        "z28": {
+          "engines": ["LT1", "LS1"],
+          "hp_range": "275-325"
+        },
+        "ss": {
+          "partnership": "SLP Engineering",
+          "engines": ["LT1 (330hp)", "LS1 (320-325hp)"],
+          "features": "Ram Air hood, suspension"
+        }
+      },
+      "discontinuation": "2002 - F-body production ends"
+    },
+    "fifth_gen": {
+      "years": "2010-2015",
+      "platform": "Zeta (GM Global)",
+      "styling": "Retro-inspired, heritage design",
+      "significance": "Camaro revival after 8-year hiatus",
+      "engines": {
+        "v6_3.6": { "hp": "304-323" },
+        "ls3_6.2": { "hp": 426 },
+        "lsa_6.2_sc": { "hp": 580 },
+        "ls7_7.0": { "hp": 505, "note": "Z/28 only" }
+      },
+      "iconic_variants": {
+        "ss": { "engine": "LS3", "hp": 426 },
+        "zl1_2012_2015": {
+          "engine": "LSA supercharged",
+          "hp": 580,
+          "0_60": "3.9 seconds"
+        },
+        "z28_2014": {
+          "engine": "LS7 7.0L",
+          "hp": 505,
+          "focus": "Track-only, no A/C option",
+          "significance": "Nurburgring killer"
+        }
+      }
+    },
+    "sixth_gen": {
+      "years": "2016-2024",
+      "platform": "Alpha (shared with Cadillac ATS/CTS)",
+      "significance": "Lighter, better handling, final generation",
+      "engines": {
+        "turbo_4": { "displacement": 2.0, "hp": 275 },
+        "v6_3.6": { "hp": 335 },
+        "lt1_6.2": { "hp": 455 },
+        "lt4_6.2_sc": { "hp": 650 }
+      },
+      "iconic_variants": {
+        "ss": { "engine": "LT1", "hp": 455 },
+        "zl1": {
+          "engine": "LT4 supercharged",
+          "hp": 650,
+          "0_60": "3.5 seconds",
+          "1le": "Track package available"
+        }
+      },
+      "discontinuation": {
+        "year": 2024,
+        "final_edition": "Collector's Edition package",
+        "future": "Possible EV successor"
+      }
+    }
+  },
+
+  "racing_heritage": {
+    "trans_am": {
+      "championships": "1968, 1969 (Z/28)",
+      "drivers": ["Mark Donohue", "Roger Penske team"]
+    },
+    "nascar": "Limited use in modern era",
+    "drag_racing": "NHRA Pro Stock, Sportsman classes",
+    "grand_am": "GT class competitive"
+  },
+
+  "cultural_impact": {
+    "movies": ["Transformers (Bumblebee)", "Fast & Furious series"],
+    "rivalry": "Mustang vs Camaro defines American pony car segment"
+  }
+}

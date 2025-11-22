@@ -1,0 +1,381 @@
+{
+  "era_id": "GM_1990S_LT_REVOLUTION",
+  "title": "The LT1 and LT5 Revolution: 1990-1997",
+  "subtitle": "Small Block Reborn for the Modern Age",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "era_overview": {
+    "description": "The early 1990s marked a dramatic return to serious performance. The exotic LT5 powered the legendary ZR-1, while the revolutionary LT1 brought modern fuel injection and 300+ horsepower to the masses. This era set the stage for the LS revolution.",
+    "key_themes": [
+      "LT5 DOHC V8 in ZR-1 supercar",
+      "LT1 reverse-flow cooling technology",
+      "300+ HP returns to mainstream",
+      "Fourth-generation F-body",
+      "Final years of Gen I Small Block"
+    ]
+  },
+
+  "1990_zr1_lt5": {
+    "significance": "GM's first true supercar since the original Corvette",
+    "development": {
+      "partnership": "GM and Lotus Engineering",
+      "lead_engineers": ["Tony Rudd (Lotus)", "David Whitehead"],
+      "goal": "Create world-class sports car to compete with Ferrari/Porsche"
+    },
+    "lt5_engine": {
+      "code": "LT5",
+      "design": "DOHC 32-valve V8",
+      "displacement_liters": 5.7,
+      "displacement_ci": 350,
+      "block": "All-aluminum Chevrolet",
+      "heads": "Lotus-designed DOHC",
+      "bore_mm": 99,
+      "stroke_mm": 93,
+      "specifications": {
+        "1990_1992": {
+          "horsepower": 375,
+          "torque_lb_ft": 370,
+          "redline_rpm": 7000,
+          "compression_ratio": "11.0:1"
+        },
+        "1993_1995": {
+          "horsepower": 405,
+          "torque_lb_ft": 385,
+          "changes": [
+            "Revised camshafts",
+            "New exhaust manifolds",
+            "Improved engine management"
+          ]
+        }
+      },
+      "unique_features": [
+        "Three-stage intake manifold",
+        "Valet key limits to 4 cylinders",
+        "Chain-driven DOHC per bank",
+        "Premium materials throughout"
+      ]
+    },
+    "zr1_specifications": {
+      "0_60_mph": "4.4 seconds",
+      "quarter_mile": "12.3 @ 111 mph",
+      "top_speed": "180 mph",
+      "price": "$58,995 (1990)"
+    },
+    "identification": {
+      "exterior": [
+        "Wider rear body (3 inches)",
+        "Convex rear fascia",
+        "Square taillights",
+        "Unique wheels"
+      ],
+      "underhood": "DOHC valve covers immediately visible"
+    },
+    "production": {
+      "1990": 3049,
+      "1991": 2044,
+      "1992": 502,
+      "1993": 448,
+      "1994": 448,
+      "1995": 448,
+      "total": 6939
+    },
+    "legacy": {
+      "achievements": [
+        "World record: 24 hours at 175.885 mph average (1990)",
+        "Multiple land speed records",
+        "Established Corvette as world-class supercar"
+      ],
+      "collector_value": "$40,000-80,000 today"
+    }
+  },
+
+  "1992_lt1_introduction": {
+    "significance": "Modern Small Block for the masses",
+    "development": {
+      "goal": "Replace L98 TPI with more powerful, efficient engine",
+      "key_innovation": "Reverse-flow cooling"
+    },
+    "lt1_engine": {
+      "code": "LT1",
+      "design": "OHV pushrod V8",
+      "displacement_liters": 5.7,
+      "displacement_ci": 350,
+      "block": "Cast iron (aluminum 1996 Corvette)",
+      "specifications": {
+        "corvette_1992": {
+          "horsepower": 300,
+          "torque_lb_ft": 330,
+          "compression_ratio": "10.5:1"
+        },
+        "f_body_1993": {
+          "horsepower": 275,
+          "torque_lb_ft": 325,
+          "note": "Slightly detuned for F-body"
+        },
+        "1996_corvette_lt1": {
+          "horsepower": 300,
+          "block": "Aluminum",
+          "note": "Aluminum block option"
+        }
+      }
+    },
+    "reverse_flow_cooling": {
+      "innovation": "Coolant flows to heads first, then block",
+      "benefits": [
+        "Cooler heads allow higher compression",
+        "More consistent cylinder head temperatures",
+        "Improved detonation resistance"
+      ]
+    },
+    "fuel_system": {
+      "type": "Sequential multi-port injection",
+      "mass_airflow": "Speed density system",
+      "throttle_body": "Single blade"
+    },
+    "ignition_system": {
+      "type": "Optispark distributor",
+      "location": "Front of engine, behind water pump",
+      "advantage": "Precise timing, high energy",
+      "disadvantage": "Moisture intrusion problems"
+    },
+    "applications": {
+      "1992": ["Corvette"],
+      "1993": ["Corvette", "Camaro Z28", "Firebird Formula/Trans Am"],
+      "1994_1996": ["Same plus Impala SS", "Caprice 9C1", "Roadmaster", "Fleetwood"]
+    }
+  },
+
+  "1993_fourth_gen_f_body": {
+    "significance": "Best-handling F-body ever",
+    "development": {
+      "platform": "New F-body",
+      "improvements": [
+        "Much stiffer structure",
+        "Modern suspension",
+        "Aerodynamic body"
+      ]
+    },
+    "camaro": {
+      "z28": {
+        "engine": "LT1 350",
+        "horsepower": 275,
+        "0_60": "5.3 seconds",
+        "features": [
+          "T-top available",
+          "6-speed manual or 4L60E auto"
+        ]
+      },
+      "1994_rs": {
+        "engine": "3.4L V6",
+        "horsepower": 160
+      }
+    },
+    "firebird": {
+      "formula": {
+        "engine": "LT1 350",
+        "horsepower": 275
+      },
+      "trans_am": {
+        "engine": "LT1 350",
+        "horsepower": 275,
+        "features": [
+          "WS6 Ram Air package",
+          "Hood scoops",
+          "Performance suspension"
+        ]
+      }
+    },
+    "handling_improvement": {
+      "road_and_track": "Best-handling American car available",
+      "comparisons": "Competitive with European sports cars"
+    }
+  },
+
+  "1994_impala_ss": {
+    "significance": "Return of the legendary SS badge",
+    "vehicle": {
+      "base": "Caprice Classic",
+      "engine": "LT1 350",
+      "horsepower": 260,
+      "torque_lb_ft": 330,
+      "transmission": "4L60E 4-speed automatic"
+    },
+    "specifications": {
+      "0_60": "6.5 seconds",
+      "quarter_mile": "15.0 @ 92 mph"
+    },
+    "features": [
+      "17-inch wheels",
+      "Lowered suspension",
+      "De Ville rear disc brakes",
+      "Monochromatic black (1994-1995) or green/maroon"
+    ],
+    "production": {
+      "1994": 6303,
+      "1995": 21434,
+      "1996": 42000
+    },
+    "legacy": "Created V8 sedan segment, beloved by enthusiasts"
+  },
+
+  "1996_lt4": {
+    "significance": "Most powerful Gen I Small Block ever",
+    "development": {
+      "purpose": "Commemorate final year of C4 Corvette",
+      "exclusivity": "Grand Sport and Collector Edition only"
+    },
+    "lt4_engine": {
+      "code": "LT4",
+      "horsepower": 330,
+      "torque_lb_ft": 340,
+      "redline_rpm": 6300,
+      "improvements_over_lt1": [
+        "Higher-lift cam",
+        "Revised heads (larger valves)",
+        "Aluminum block",
+        "Roller rockers",
+        "6000+ RPM capability"
+      ]
+    },
+    "applications": {
+      "1996_grand_sport": {
+        "exterior": "Admiral Blue with white stripe and red hash marks",
+        "production": 1000
+      },
+      "1996_collector_edition": {
+        "exterior": "Sebring Silver",
+        "production": 5412
+      },
+      "1997_camaro_z28_ss": {
+        "partnership": "SLP Engineering",
+        "horsepower": 330,
+        "note": "Carried over to 1997 SS Camaro"
+      }
+    }
+  },
+
+  "1997_ls1_introduction": {
+    "significance": "Complete engine revolution - new from the ground up",
+    "context": {
+      "problem": "Gen I Small Block at limits of development",
+      "solution": "All-new architecture optimized for modern manufacturing"
+    },
+    "ls1_engine": {
+      "code": "LS1",
+      "design": "All-new Gen III V8",
+      "displacement_liters": 5.7,
+      "displacement_ci": 346,
+      "block": "Deep-skirt aluminum",
+      "heads": "Cathedral port aluminum"
+    },
+    "specifications": {
+      "1997_corvette": {
+        "horsepower": 345,
+        "torque_lb_ft": 350,
+        "compression_ratio": "10.1:1",
+        "weight": "450 lbs (195 lbs less than iron LT1)"
+      }
+    },
+    "design_innovations": [
+      "All-aluminum construction standard",
+      "Coil-near-plug ignition (no distributor)",
+      "Electronic throttle control available",
+      "Deep-skirt block with cross-bolted mains",
+      "Composite intake manifold",
+      "Simplified accessory drive"
+    ],
+    "performance": {
+      "0_60": "4.7 seconds",
+      "quarter_mile": "13.2 @ 108 mph",
+      "improvement": "Power up, weight down dramatically"
+    },
+    "legacy_preview": "Beginning of the legendary LS era"
+  },
+
+  "c5_corvette_1997": {
+    "significance": "Most advanced Corvette ever built",
+    "development": {
+      "goals": [
+        "World-class performance",
+        "Improved quality",
+        "Better value"
+      ]
+    },
+    "chassis": {
+      "frame": "Hydroformed perimeter frame rails",
+      "floor": "Flat underbody for aerodynamics",
+      "structure": "Dramatically stiffer than C4"
+    },
+    "specifications": {
+      "engine": "LS1",
+      "horsepower": 345,
+      "0_60": "4.7 seconds",
+      "skidpad": "0.93g",
+      "braking_60_0": "120 feet"
+    },
+    "improvements_over_c4": [
+      "Larger interior",
+      "Improved trunk space",
+      "Better visibility",
+      "Superior ride quality"
+    ],
+    "pricing": {
+      "base": "$37,495",
+      "comparison": "Less than many European competitors with half the performance"
+    }
+  },
+
+  "technology_milestones": {
+    "1990": "LT5 DOHC V8 - most advanced GM engine ever",
+    "1992": "LT1 reverse-flow cooling",
+    "1992": "OBD-I standardized diagnostics",
+    "1994": "Returnless fuel systems introduced",
+    "1996": "OBD-II federal mandate compliance",
+    "1996": "Aluminum LT1 block in Corvette",
+    "1997": "LS1 coil-near-plug ignition",
+    "1997": "Electronic throttle control option"
+  },
+
+  "end_of_gen_i_small_block": {
+    "final_year": 1998,
+    "application": "Chevrolet/GMC trucks",
+    "total_production": "Over 100 million units",
+    "variants": [
+      "265 (1955-1957)",
+      "283 (1957-1967)",
+      "302 (1967-1969)",
+      "305 (1976-1998)",
+      "307 (1968-1973)",
+      "327 (1962-1969)",
+      "350 (1967-1998)",
+      "400 (1970-1980)"
+    ],
+    "legacy": "Most successful engine family in automotive history"
+  },
+
+  "legacy": {
+    "lt1_impact": [
+      "Brought 300+ HP back to mainstream",
+      "Reverse-flow cooling adopted industry-wide",
+      "Created new performance car segment",
+      "Impala SS revived V8 sedan market"
+    ],
+    "lt5_impact": [
+      "Proved American engineering could match Europe",
+      "ZR-1 established Corvette as supercar",
+      "Technology influenced future development"
+    ],
+    "ls1_impact": [
+      "Started the LS revolution",
+      "All-aluminum V8 became benchmark",
+      "Foundation for 20+ years of development"
+    ],
+    "collector_value": {
+      "1995_zr1": "$40,000-80,000",
+      "1996_grand_sport": "$60,000-90,000",
+      "1994_impala_ss": "$15,000-30,000",
+      "1997_corvette_c5": "$15,000-25,000"
+    }
+  }
+}

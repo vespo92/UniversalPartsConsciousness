@@ -1,0 +1,113 @@
+{
+  "division_id": "OLDSMOBILE",
+  "name": "Oldsmobile Division",
+  "founded": 1897,
+  "founder": "Ransom E. Olds",
+  "acquired_by_gm": 1908,
+  "discontinued": 2004,
+  "status": "Discontinued",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "history": {
+    "origins": "One of America's oldest automobile brands, founded by Ransom E. Olds in Lansing, Michigan. The Curved Dash Oldsmobile (1901) was the first mass-produced American car.",
+    "timeline": {
+      "1897": "Olds Motor Vehicle Company founded",
+      "1901": "Curved Dash - first mass-produced American car",
+      "1908": "Acquired by General Motors",
+      "1949": "Rocket V8 launches modern muscle era",
+      "1966": "Toronado - first American FWD since 1930s",
+      "2004": "Brand discontinued after 107 years"
+    },
+    "brand_philosophy": "Innovation and technology leadership"
+  },
+
+  "engine_legacy": {
+    "rocket_v8": {
+      "significance": "First modern overhead valve V8 - started the muscle car era",
+      "introduction": 1949,
+      "innovation": "High-compression OHV design that outperformed flathead V8s",
+      "variants": [
+        { "displacement": 303, "years": "1949-1953", "note": "Original Rocket" },
+        { "displacement": 324, "years": "1954-1956" },
+        { "displacement": 371, "years": "1957-1958", "note": "J-2 tri-power" },
+        { "displacement": 394, "years": "1959-1966" },
+        { "displacement": 400, "years": "1965-1969" },
+        { "displacement": 455, "years": "1968-1976", "note": "W-30 peak" }
+      ]
+    },
+    "w_machine_performance": {
+      "w30": {
+        "significance": "Ultimate Oldsmobile performance package",
+        "features": [
+          "Force-air induction",
+          "Special camshaft",
+          "High-flow heads",
+          "Red plastic inner fenders"
+        ]
+      },
+      "w31": "Small block performance package"
+    },
+    "diesel_disaster": {
+      "years": "1978-1985",
+      "engine": "350 diesel (LF9)",
+      "problems": [
+        "Based on gas engine block (inadequate)",
+        "Head bolt failures",
+        "Injection pump failures"
+      ],
+      "legacy": "Damaged diesel reputation in America for decades"
+    }
+  },
+
+  "iconic_vehicles": {
+    "rocket_88": {
+      "years": "1949-1999",
+      "significance": "First muscle car - NASCAR dominator",
+      "1949_racing": "Won 6 of 9 NASCAR races"
+    },
+    "442": {
+      "years": "1964-1980, 1985-1987",
+      "name_origin": "4-barrel, 4-speed, dual exhaust",
+      "significance": "Oldsmobile's muscle car answer to GTO"
+    },
+    "toronado": {
+      "years": "1966-1992",
+      "significance": "First American FWD car since Cord 810",
+      "innovation": "Pioneered chain-driven FWD system"
+    },
+    "cutlass": {
+      "years": "1961-1999",
+      "significance": "Best-selling car in America 1976-1986"
+    },
+    "hurst_olds": {
+      "years": "1968-1984",
+      "partnership": "Hurst Performance",
+      "significance": "Factory-built performance variants"
+    }
+  },
+
+  "innovations": {
+    "firsts": [
+      "First fully automatic transmission (Hydra-Matic, 1940)",
+      "First modern OHV V8 (Rocket, 1949)",
+      "First front-wheel drive (post-war, Toronado 1966)",
+      "First production turbo (Jetfire, 1962)"
+    ],
+    "jetfire_1962": {
+      "engine": "Turbo Rocket V8",
+      "displacement": 215,
+      "horsepower": 215,
+      "significance": "First American production turbo",
+      "challenges": "Required water/methanol injection"
+    }
+  },
+
+  "discontinuation": {
+    "date": "April 29, 2004",
+    "reason": "Declining sales, overlapping with other GM brands",
+    "final_vehicle": "2004 Alero",
+    "years_in_production": 107,
+    "legacy": "Innovation pioneer, Rocket V8 legend"
+  }
+}

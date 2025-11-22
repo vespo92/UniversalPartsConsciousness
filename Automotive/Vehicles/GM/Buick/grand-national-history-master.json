@@ -1,0 +1,169 @@
+{
+  "vehicle_id": "BUICK_GRAND_NATIONAL",
+  "name": "Buick Grand National / GNX",
+  "introduction": 1982,
+  "discontinuation": 1987,
+  "platform": "G-body",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "overview": {
+    "significance": "The Grand National proved that a turbocharged V6 could outperform V8 muscle cars, including the Corvette.",
+    "name_origin": "Named after Buick's 1981 and 1982 NASCAR Winston Cup championship",
+    "legacy": "Created a cult following that persists to this day"
+  },
+
+  "timeline": {
+    "1978_turbo_introduction": {
+      "vehicle": "Buick Regal Turbo",
+      "engine": "LC2 3.8L Turbo V6",
+      "horsepower": 150,
+      "significance": "First production turbocharged V6"
+    },
+    "1982_grand_national": {
+      "occasion": "NASCAR Winston Cup championship celebration",
+      "production": 215,
+      "engine": { "displacement": 4.1, "type": "V6", "hp": 125 },
+      "note": "This year used different engine, not the turbo"
+    },
+    "1984_grand_national_return": {
+      "engine": "LC2 3.8L Turbo V6",
+      "horsepower": 200,
+      "torque_lb_ft": 300,
+      "improvements": "Sequential fuel injection"
+    },
+    "1986_grand_national": {
+      "engine": "LC2 3.8L Turbo V6",
+      "horsepower": 235,
+      "torque_lb_ft": 330,
+      "intercooler": true,
+      "performance": {
+        "0_60": "5.5 seconds",
+        "quarter_mile": "14.0 @ 99 mph"
+      }
+    },
+    "1987_grand_national": {
+      "engine": "LC2 3.8L Turbo V6",
+      "horsepower": 245,
+      "torque_lb_ft": 355,
+      "performance": {
+        "0_60": "4.9 seconds",
+        "quarter_mile": "13.4 @ 102 mph"
+      },
+      "significance": "Faster than Corvette",
+      "production": 20193
+    }
+  },
+
+  "gnx_1987": {
+    "name": "GNX (Grand National Experimental)",
+    "partnership": "ASC/McLaren",
+    "production": 547,
+    "purpose": "Send-off for G-body platform",
+    "modifications": {
+      "turbo": {
+        "type": "Garrett T3",
+        "impeller": "Ceramic",
+        "improvements": "Faster spool, higher flow"
+      },
+      "intercooler": "Larger, more efficient",
+      "fuel_system": "Higher flow injectors",
+      "exhaust": "Less restrictive",
+      "transmission": "Modified 200-4R with special converter"
+    },
+    "specifications": {
+      "horsepower_rated": 276,
+      "horsepower_actual": "300+",
+      "torque_lb_ft": 360,
+      "0_60": "4.6 seconds",
+      "quarter_mile": "12.7 @ 113 mph"
+    },
+    "unique_features": [
+      "Unique fender vents",
+      "GNX badges",
+      "Special wheels",
+      "Numbered plaque"
+    ],
+    "magazine_tests": {
+      "car_and_driver": "Fastest American car tested",
+      "motor_trend": "Beat Ferrari 308, Corvette"
+    }
+  },
+
+  "related_models": {
+    "turbo_t": {
+      "years": "1986-1987",
+      "description": "Grand National without appearance package",
+      "advantage": "Lighter weight, same performance"
+    },
+    "regal_t_type": {
+      "years": "1984-1987",
+      "description": "Turbo Regal without GN trim"
+    },
+    "limited_turbo": {
+      "years": "1987",
+      "description": "Luxury Regal with turbo available"
+    }
+  },
+
+  "engine_specifications": {
+    "lc2_turbo_v6": {
+      "displacement_liters": 3.8,
+      "displacement_ci": 231,
+      "configuration": "90-degree V6",
+      "block": "Cast iron",
+      "heads": "Cast iron",
+      "valvetrain": "OHV, 2 valves per cylinder",
+      "turbo": "Garrett T3/T4",
+      "intercooler": "Air-to-air (1986+)",
+      "injection": "Sequential fuel injection",
+      "compression_ratio": "8.0:1"
+    }
+  },
+
+  "aftermarket_legacy": {
+    "power_potential": {
+      "stock_internals": "400-500 HP",
+      "built_engine": "700-1000+ HP",
+      "record_passes": "7-second quarter miles"
+    },
+    "popular_upgrades": [
+      "Larger turbo (T5, T6, T76)",
+      "Ported heads",
+      "Forged internals",
+      "E85 fuel",
+      "Aftermarket ECU"
+    ],
+    "support": {
+      "vendors": ["RJC Racing", "Full Throttle Speed", "GBody Parts"],
+      "community": "Extremely active enthusiast community"
+    }
+  },
+
+  "production_numbers": {
+    "1982": 215,
+    "1984": 2000,
+    "1985": 2102,
+    "1986": 5512,
+    "1987": 20193,
+    "gnx_1987": 547
+  },
+
+  "collector_values": {
+    "1987_gnx": "$100,000-150,000",
+    "1987_grand_national": "$40,000-80,000",
+    "1986_grand_national": "$25,000-50,000",
+    "1987_turbo_t": "$20,000-35,000"
+  },
+
+  "cultural_impact": {
+    "significance": [
+      "Proved turbo could match displacement",
+      "Revived Buick performance image",
+      "Created cult following",
+      "Influenced modern turbo development"
+    ],
+    "movies": "Appeared in various films including 'Black Rain'",
+    "racing": "Popular in drag racing, especially bracket racing"
+  }
+}

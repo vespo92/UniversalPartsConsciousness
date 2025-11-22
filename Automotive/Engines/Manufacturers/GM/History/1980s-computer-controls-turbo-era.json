@@ -1,0 +1,408 @@
+{
+  "era_id": "GM_1980S_COMPUTER_TURBO",
+  "title": "Computer Controls and the Turbo Renaissance: 1980-1989",
+  "subtitle": "Technology Brings Performance Back",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "era_overview": {
+    "description": "The 1980s saw GM recover from the malaise era through technology. Electronic fuel injection, computer controls, and turbocharging restored performance while meeting emissions standards. The decade culminated with the legendary Buick Grand National outrunning Corvettes.",
+    "key_themes": [
+      "Electronic fuel injection replaces carburetors",
+      "Computer engine management debuts",
+      "Turbocharging as performance solution",
+      "Third-generation Camaro/Firebird revival",
+      "Grand National turbo V6 phenomenon"
+    ],
+    "technology_milestones": {
+      "1980": "Computer Command Control (CCC)",
+      "1982": "Cross-Fire Injection (throttle body)",
+      "1985": "Tuned Port Injection (TPI)",
+      "1987": "Sequential fuel injection"
+    }
+  },
+
+  "1982_camaro_rebirth": {
+    "significance": "Third generation F-body revives performance",
+    "development": {
+      "platform": "F-body (new for 1982)",
+      "styling": "Modern wedge shape, glass hatch"
+    },
+    "initial_engines": {
+      "iron_duke_i4": {
+        "displacement": 2.5,
+        "horsepower": 90,
+        "note": "Base engine, penalty box"
+      },
+      "lc1_v6": {
+        "displacement": 2.8,
+        "horsepower": 102
+      },
+      "l69_305": {
+        "displacement": 5.0,
+        "horsepower": 145,
+        "note": "4-barrel, most popular"
+      },
+      "lto_305_cfi": {
+        "displacement": 5.0,
+        "horsepower": 165,
+        "fuel_system": "Cross-Fire Injection",
+        "note": "Two TBI units on intake"
+      }
+    },
+    "z28_return": {
+      "year": 1982,
+      "engine": "L69 305 or Cross-Fire 305",
+      "horsepower_range": "145-165",
+      "improvement": "Better than anything since 1971"
+    },
+    "1983_1984_improvements": {
+      "l69_ho_305": {
+        "horsepower": 190,
+        "features": ["High-output cam", "Aluminum intake"]
+      }
+    },
+    "1985_iroc_z": {
+      "introduction": "IROC-Z package",
+      "name_origin": "International Race of Champions",
+      "engine": "LB9 305 TPI",
+      "features": [
+        "Tuned Port Injection",
+        "Ground effects",
+        "16\" wheels",
+        "Performance suspension"
+      ]
+    }
+  },
+
+  "1985_tuned_port_injection": {
+    "significance": "Modern EFI arrives on Small Block",
+    "development": {
+      "name": "Tuned Port Injection (TPI)",
+      "type": "Multi-port fuel injection",
+      "design": "Long runner intake manifold"
+    },
+    "technical_details": {
+      "manifold": "Aluminum plenum with individual runners",
+      "runner_length": "Tuned for low-end torque",
+      "throttle_body": "Single blade",
+      "fuel_delivery": "Individual injectors per cylinder"
+    },
+    "applications_1985": {
+      "corvette": {
+        "engine": "L98 350",
+        "horsepower": 230,
+        "note": "First Corvette multiport EFI"
+      },
+      "camaro_firebird": {
+        "engine": "LB9 305",
+        "horsepower": 215,
+        "note": "305 with TPI"
+      }
+    },
+    "evolution": {
+      "1987_l98": { "hp": 240 },
+      "1988_l98": { "hp": 245 },
+      "1989_l98": { "hp": 245 },
+      "1990_l98": { "hp": 245 },
+      "1991_l98": { "hp": 250 }
+    }
+  },
+
+  "1984_corvette_c4": {
+    "significance": "First all-new Corvette in 21 years",
+    "development": {
+      "years_in_development": 7,
+      "platform": "Y-body (unique to Corvette)"
+    },
+    "specifications": {
+      "engine": "L83 Cross-Fire 350",
+      "horsepower": 205,
+      "0_60": "7.0 seconds",
+      "transmission": ["4+3 manual (Doug Nash)", "4-speed automatic"]
+    },
+    "chassis_innovations": [
+      "Aluminum frame rails",
+      "Fiberglass transverse leaf springs",
+      "Clamshell hood",
+      "Electronic dashboard"
+    ],
+    "1985_improvements": {
+      "engine": "L98 TPI 350",
+      "horsepower": 230,
+      "improvement": "25 more HP, much better drivability"
+    },
+    "z51_performance": {
+      "suspension": "Heavy duty Z51 package",
+      "features": [
+        "Bilstein shocks",
+        "Larger sway bars",
+        "Performance gearing"
+      ]
+    },
+    "1988_35th_anniversary": {
+      "special_edition": "White with black roof",
+      "suspension": "Z52 option"
+    },
+    "1989_zr1_preview": "ZR-1 development underway with LT5"
+  },
+
+  "buick_grand_national_turbo": {
+    "significance": "The car that proved turbo V6 could beat V8",
+    "background": {
+      "engine_origin": "Buick 231 V6 (3.8L)",
+      "turbo_introduction": 1978,
+      "evolution": "Continuous development through 1987"
+    },
+    "timeline": {
+      "1978_turbo_v6": {
+        "engine": "LC2 turbo 3.8L",
+        "horsepower": 150,
+        "note": "First production turbo V6"
+      },
+      "1982_grand_national": {
+        "introduction": "Black-themed performance package",
+        "engine": "LC2 turbo 3.8L",
+        "horsepower": 175,
+        "note": "NASCAR Winston Cup championship edition"
+      },
+      "1984_grand_national": {
+        "engine": "LC2 turbo 3.8L",
+        "horsepower": 200,
+        "improvements": [
+          "Sequential fuel injection",
+          "Improved turbo",
+          "Better intercooling"
+        ]
+      },
+      "1986_grand_national": {
+        "engine": "LC2 turbo 3.8L",
+        "horsepower": 235,
+        "torque_lb_ft": 330,
+        "0_60": "5.5 seconds",
+        "quarter_mile": "14.0 @ 99 mph"
+      },
+      "1987_grand_national": {
+        "engine": "LC2 turbo 3.8L",
+        "horsepower": 245,
+        "torque_lb_ft": 355,
+        "0_60": "4.9 seconds",
+        "quarter_mile": "13.4 @ 102 mph",
+        "significance": "Faster than Corvette"
+      }
+    },
+    "1987_gnx": {
+      "name": "GNX (Grand National Experimental)",
+      "partnership": "ASC/McLaren",
+      "production": 547,
+      "modifications": {
+        "turbo": "Garrett T3 with ceramic impeller",
+        "intercooler": "Larger, more efficient",
+        "fuel_system": "Higher flow injectors",
+        "transmission": "Modified 200-4R",
+        "suspension": "Revised"
+      },
+      "specifications": {
+        "horsepower": 276,
+        "actual_hp": "300+",
+        "torque_lb_ft": 360,
+        "0_60": "4.6 seconds",
+        "quarter_mile": "12.7 @ 113 mph"
+      },
+      "value_today": "$100,000-150,000"
+    },
+    "legacy": {
+      "impact": [
+        "Proved turbo could match displacement",
+        "Revived Buick performance image",
+        "Created cult following",
+        "Influenced modern turbo V6 development"
+      ],
+      "aftermarket": "Strong aftermarket support for 500+ HP builds"
+    }
+  },
+
+  "turbo_regal_variants": {
+    "1987_turbo_t": {
+      "description": "Grand National without trim",
+      "engine": "Same LC2 turbo",
+      "features": "Lighter without GN appearance package"
+    },
+    "1987_limited": {
+      "description": "Luxury Regal with turbo available",
+      "note": "Sleeper potential"
+    }
+  },
+
+  "1987_syclone_typhoon_preview": {
+    "development": "GMC trucks with turbo power in development",
+    "release": "1991 Syclone, 1992 Typhoon"
+  },
+
+  "1988_1500_ss": {
+    "significance": "Performance truck revival",
+    "engine": "350 TBI",
+    "horsepower": 210,
+    "features": [
+      "Lowered suspension",
+      "Sport appearance",
+      "Quick ratio steering"
+    ]
+  },
+
+  "third_gen_trans_am": {
+    "1982_introduction": {
+      "platform": "F-body shared with Camaro",
+      "differentiation": [
+        "Pontiac styling",
+        "Different interior",
+        "WS6 performance package"
+      ]
+    },
+    "engine_evolution": {
+      "1982": { "engine": "305 Crossfire", "hp": 165 },
+      "1985": { "engine": "305 TPI", "hp": 205 },
+      "1987": { "engine": "350 TPI", "hp": 225 },
+      "1989_gta": { "engine": "350 TPI", "hp": 240 }
+    },
+    "1989_turbo_trans_am": {
+      "significance": "20th anniversary edition",
+      "engine": "Buick 3.8L turbo V6",
+      "horsepower": 250,
+      "production": 1555,
+      "controversy": "Pontiac purists disliked Buick engine"
+    }
+  },
+
+  "olds_442_w41": {
+    "1985_revival": {
+      "platform": "G-body Cutlass",
+      "engine": "307 Olds V8",
+      "horsepower": 180,
+      "note": "Last true Olds V8 performance"
+    },
+    "challenges": "Limited power, emissions constraints"
+  },
+
+  "monte_carlo_ss": {
+    "1983_introduction": {
+      "engine": "305 4-barrel",
+      "horsepower": 180,
+      "styling": ["Aero nose", "NASCAR heritage"]
+    },
+    "nascar_heritage": {
+      "significance": "Aerodynamic body for stock car racing",
+      "championships": "Multiple NASCAR wins"
+    },
+    "1987_aerocoupe": {
+      "feature": "Sloped rear window",
+      "purpose": "NASCAR aerodynamics",
+      "production": 6052
+    }
+  },
+
+  "electronic_controls_development": {
+    "computer_command_control_ccc": {
+      "introduction": 1980,
+      "components": [
+        "Electronic Control Module (ECM)",
+        "Oxygen sensor",
+        "Mixture control solenoid (carburetor)"
+      ],
+      "purpose": "Closed-loop fuel control for emissions"
+    },
+    "cross_fire_injection": {
+      "years": "1982-1984",
+      "type": "Dual throttle body injection",
+      "issues": [
+        "Poor throttle response",
+        "Complex vacuum routing",
+        "Reliability problems"
+      ],
+      "note": "Quickly replaced by TPI"
+    },
+    "tuned_port_injection_tpi": {
+      "years": "1985-1992",
+      "type": "Multi-port fuel injection",
+      "benefits": [
+        "Better low-end torque",
+        "Improved drivability",
+        "More precise fuel control"
+      ]
+    },
+    "sequential_fuel_injection": {
+      "introduction": 1987,
+      "benefit": "Individual cylinder timing for better response"
+    }
+  },
+
+  "1989_performance_summary": {
+    "corvette": {
+      "base": { "engine": "L98 350", "hp": 245 },
+      "zr1": { "status": "Coming 1990", "engine": "LT5 350", "hp": 375 }
+    },
+    "camaro": {
+      "iroc_z": { "engine": "350 TPI", "hp": 240 }
+    },
+    "trans_am": {
+      "gta": { "engine": "350 TPI", "hp": 240 }
+    },
+    "grand_national": {
+      "status": "Discontinued after 1987",
+      "legacy": "Set turbo V6 standard"
+    }
+  },
+
+  "division_consolidation": {
+    "engine_sharing": {
+      "trend": "All divisions now use Chevrolet engines",
+      "exceptions": [
+        "Oldsmobile diesel (dying)",
+        "Buick turbo V6",
+        "Pontiac 2.5L Iron Duke"
+      ]
+    },
+    "platform_sharing": {
+      "g_body": "Monte Carlo, Grand Prix, Cutlass, Regal",
+      "f_body": "Camaro, Firebird",
+      "y_body": "Corvette only"
+    }
+  },
+
+  "racing_activities": {
+    "nascar": {
+      "monte_carlo": "Dominant aerodynamic platform",
+      "drivers": ["Dale Earnhardt", "Darrell Waltrip"]
+    },
+    "imsa_gto_gtp": {
+      "corvette": "Competition in IMSA series",
+      "engines": "Small block based race engines"
+    },
+    "scca": {
+      "camaro": "Trans-Am series competition"
+    }
+  },
+
+  "legacy": {
+    "technological_foundation": [
+      "EFI mastery established",
+      "Computer controls refined",
+      "Turbo technology proven"
+    ],
+    "performance_recovery": [
+      "Corvette regained credibility",
+      "Camaro/Firebird competitive again",
+      "Grand National created turbo legend"
+    ],
+    "collector_value": {
+      "1987_gnx": "$100,000-150,000",
+      "1987_grand_national": "$40,000-80,000",
+      "1989_turbo_trans_am": "$25,000-40,000"
+    },
+    "stage_set": [
+      "LT5 coming for ZR-1",
+      "LT1 development underway",
+      "Foundation for LS engines"
+    ]
+  }
+}
