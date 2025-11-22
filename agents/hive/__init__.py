@@ -34,14 +34,25 @@ from .models import (
     PropagationResult,
 )
 
-from .hive_agent import HiveAgent
+from .hive_agent import HiveAgent, HiveConfig, create_hive_agent
 
-__version__ = "0.1.0"
+# Visualization components
+from .visualization import (
+    SwarmGraphVisualizer,
+    LearningFlowVisualizer,
+    ActivityHeatmapGenerator,
+)
+
+__version__ = "1.0.0"
 __codename__ = "HIVE"
 __agent_id__ = 5
 
 __all__ = [
+    # Core Agent
     "HiveAgent",
+    "HiveConfig",
+    "create_hive_agent",
+    # Data Models
     "Swarm",
     "SwarmTier",
     "SwarmMembership",
@@ -53,4 +64,8 @@ __all__ = [
     "SwarmMessage",
     "SwarmHealth",
     "PropagationResult",
+    # Visualization
+    "SwarmGraphVisualizer",
+    "LearningFlowVisualizer",
+    "ActivityHeatmapGenerator",
 ]
