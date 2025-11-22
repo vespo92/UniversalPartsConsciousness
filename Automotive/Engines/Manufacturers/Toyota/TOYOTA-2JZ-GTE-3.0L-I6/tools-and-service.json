@@ -1,0 +1,270 @@
+{
+  "engine_id": "TOYOTA-2JZ-GTE-3.0L-I6-TWINTURBO",
+  "tools_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "special_tools": {
+    "timing_belt_service": {
+      "camshaft_lock_tool": {
+        "description": "Holds camshafts in position during timing belt service",
+        "oem_number": "09960-10010",
+        "aftermarket": "CTA Tools 2897",
+        "required_for": "Timing belt replacement"
+      },
+      "crankshaft_pulley_holder": {
+        "description": "Holds crankshaft pulley for bolt removal",
+        "oem_number": "09213-70010",
+        "aftermarket": "Various universal holders",
+        "notes": "Crank bolt is 350+ ft-lbs"
+      },
+      "timing_belt_tensioner_tool": {
+        "description": "Compresses tensioner for installation",
+        "notes": "Can use large C-clamp carefully"
+      }
+    },
+    "engine_assembly": {
+      "piston_ring_compressor": {
+        "description": "Compresses piston rings for installation",
+        "size": "86mm bore",
+        "notes": "Universal adjustable type works"
+      },
+      "rod_bearing_installation_tool": {
+        "description": "Protects rod journals during piston installation",
+        "notes": "Cut sections of rubber hose work as alternative"
+      },
+      "cam_seal_installer": {
+        "description": "Installs cam seals without damage",
+        "size": "Appropriate for 2JZ cam seal diameter"
+      },
+      "head_bolt_stretch_gauge": {
+        "description": "Measures head bolt stretch for TTY bolts",
+        "notes": "2JZ can use ARP studs which are torque-to-spec"
+      }
+    },
+    "turbo_service": {
+      "turbo_inlet_compressor_tool": {
+        "description": "Clears access for CT26 turbo removal",
+        "notes": "Access is tight - patience required"
+      },
+      "wastegate_actuator_tool": {
+        "description": "Adjusts wastegate rod length",
+        "notes": "For boost adjustment"
+      },
+      "boost_leak_tester": {
+        "description": "Pressurizes intake system to find leaks",
+        "aftermarket": "Universal boost leak tester ~$50"
+      }
+    },
+    "fuel_system": {
+      "fuel_pressure_gauge": {
+        "description": "Measures fuel system pressure",
+        "specs": "0-100 PSI gauge",
+        "notes": "Essential for diagnosing fuel issues"
+      },
+      "injector_seal_installer": {
+        "description": "Installs injector o-rings without damage"
+      }
+    }
+  },
+
+  "torque_specifications": {
+    "cylinder_head": {
+      "head_bolts_oem": {
+        "method": "3-step torque + angle",
+        "step_1": "29 ft-lbs",
+        "step_2": "Plus 90 degrees",
+        "step_3": "Plus 90 degrees",
+        "notes": "TTY (Torque To Yield) - replace after use"
+      },
+      "head_studs_arp": {
+        "torque": "75 ft-lbs",
+        "lubricant": "ARP moly assembly lube",
+        "notes": "Reusable - follow ARP torque sequence"
+      },
+      "valve_cover_bolts": {
+        "torque": "52 in-lbs (4.3 ft-lbs)",
+        "notes": "Very light - easy to strip"
+      },
+      "camshaft_caps": {
+        "torque": "14 ft-lbs",
+        "sequence": "Inside to outside"
+      }
+    },
+    "bottom_end": {
+      "main_bearing_cap_bolts": {
+        "torque": "33 ft-lbs + 90 degrees",
+        "notes": "TTY bolts"
+      },
+      "main_studs_arp": {
+        "torque": "65 ft-lbs",
+        "lubricant": "ARP moly assembly lube"
+      },
+      "connecting_rod_bolts_oem": {
+        "torque": "29 ft-lbs + 90 degrees",
+        "notes": "TTY bolts - replace if reusing rods"
+      },
+      "connecting_rod_bolts_arp": {
+        "torque": "45 ft-lbs",
+        "lubricant": "ARP moly assembly lube"
+      },
+      "crankshaft_pulley_bolt": {
+        "torque": "217 ft-lbs",
+        "notes": "Very high torque - requires impact or holder tool"
+      },
+      "flywheel_bolts": {
+        "torque": "54 ft-lbs",
+        "notes": "Use threadlocker"
+      },
+      "oil_pan_bolts": {
+        "torque": "52 in-lbs",
+        "notes": "Light torque, easy to strip"
+      },
+      "oil_drain_plug": {
+        "torque": "30 ft-lbs",
+        "notes": "Use new crush washer"
+      }
+    },
+    "timing_system": {
+      "timing_belt_tensioner": {
+        "torque": "20 ft-lbs"
+      },
+      "timing_belt_idler": {
+        "torque": "25 ft-lbs"
+      },
+      "cam_gears": {
+        "torque": "59 ft-lbs",
+        "notes": "Hold cam with holder tool"
+      }
+    },
+    "turbo_system": {
+      "turbo_to_manifold": {
+        "torque": "33 ft-lbs"
+      },
+      "turbo_oil_lines": {
+        "torque": "20 ft-lbs",
+        "notes": "Use new crush washers"
+      },
+      "exhaust_manifold_nuts": {
+        "torque": "29 ft-lbs"
+      }
+    },
+    "intake_and_accessories": {
+      "intake_manifold": {
+        "torque": "14 ft-lbs"
+      },
+      "throttle_body": {
+        "torque": "14 ft-lbs"
+      },
+      "spark_plugs": {
+        "torque": "14 ft-lbs",
+        "notes": "Anti-seize recommended"
+      }
+    }
+  },
+
+  "service_procedures": {
+    "timing_belt_replacement": {
+      "interval": "60,000 miles",
+      "time_estimate": "6-8 hours",
+      "difficulty": "Moderate to Advanced",
+      "steps": [
+        "Remove accessories and belts",
+        "Remove timing belt covers",
+        "Set engine to TDC",
+        "Lock camshafts with tool",
+        "Remove tensioner and idlers",
+        "Remove old timing belt",
+        "Inspect and replace water pump (recommended)",
+        "Install new idlers and tensioner",
+        "Install new timing belt with proper tension",
+        "Verify timing marks",
+        "Reassemble"
+      ],
+      "critical_notes": [
+        "INTERFERENCE ENGINE - timing belt failure = engine damage",
+        "Always replace tensioner and idlers with belt",
+        "Water pump replacement strongly recommended",
+        "Verify TDC multiple times before/after"
+      ]
+    },
+    "valve_adjustment": {
+      "interval": "Not required - hydraulic lifters",
+      "notes": "2JZ uses hydraulic lash adjusters"
+    },
+    "spark_plug_replacement": {
+      "interval": "30,000 miles",
+      "time_estimate": "1 hour",
+      "difficulty": "Easy",
+      "plug_gap": "1.1mm (0.043 inch)",
+      "recommended_plugs": [
+        "NGK BKR6E (stock heat range)",
+        "NGK BKR7E (one step colder for boost)",
+        "Denso IK20"
+      ]
+    },
+    "oil_change": {
+      "interval": "3,000-5,000 miles (boosted applications)",
+      "capacity": "5.5 quarts with filter",
+      "filter": "Toyota 90915-20003 or equivalent",
+      "time_estimate": "30 minutes",
+      "notes": "Use quality synthetic oil for turbo applications"
+    },
+    "coolant_flush": {
+      "interval": "100,000 miles or 5 years",
+      "capacity": "9.0 liters",
+      "type": "Toyota Super Long Life Coolant (red)",
+      "notes": "Do not mix coolant types"
+    }
+  },
+
+  "common_repairs": {
+    "head_gasket_replacement": {
+      "symptoms": ["Overheating", "White smoke", "Coolant loss"],
+      "time_estimate": "15-20 hours",
+      "difficulty": "Advanced",
+      "recommended_upgrades": [
+        "ARP head studs (prevent future failures)",
+        "Cometic MLS head gasket",
+        "New head bolts if not using studs"
+      ]
+    },
+    "turbo_replacement": {
+      "symptoms": ["Blue smoke", "Loss of power", "Excessive shaft play"],
+      "time_estimate": "8-12 hours",
+      "difficulty": "Moderate to Advanced",
+      "notes": "Good opportunity to upgrade turbos"
+    },
+    "water_pump_replacement": {
+      "symptoms": ["Weep hole leak", "Squeaking", "Overheating"],
+      "time_estimate": "6-8 hours (with timing belt)",
+      "difficulty": "Moderate",
+      "notes": "Always replace with timing belt service"
+    }
+  },
+
+  "diagnostic_procedures": {
+    "compression_test": {
+      "spec": "142-185 PSI",
+      "maximum_variance": "14 PSI between cylinders",
+      "notes": "Test with engine warm, throttle open"
+    },
+    "leak_down_test": {
+      "acceptable": "Less than 10% leakage",
+      "notes": "More accurate than compression test"
+    },
+    "oil_pressure": {
+      "at_idle": "14 PSI minimum",
+      "at_3000_rpm": "35-75 PSI"
+    },
+    "boost_test": {
+      "stock_boost": "10-14.7 PSI",
+      "test_method": "Boost gauge, full throttle acceleration",
+      "low_boost_causes": [
+        "Boost leak",
+        "Wastegate stuck open",
+        "Turbo wear",
+        "Vacuum line issues"
+      ]
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "engine_id": "TOYOTA-22R-E-2.4L-I4-NA",
+  "common_names": [
+    "22R-E",
+    "22RE",
+    "22R",
+    "Toyota Truck Engine",
+    "Hilux Engine",
+    "The Million Mile Engine"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota R Series",
+  "production_years": "1983-1995 (22R-E), 1981-1984 (22R)",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {
+      "liters": 2.366,
+      "cubic_inches": 144.4,
+      "cc": 2366
+    },
+    "bore": {
+      "inches": 3.62,
+      "mm": 92.0
+    },
+    "stroke": {
+      "inches": 3.50,
+      "mm": 89.0
+    },
+    "compression_ratio": "9.0:1",
+    "firing_order": "1-3-4-2",
+    "cylinder_numbering": "1 at timing chain end",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum (early 22R had iron head)",
+    "valvetrain": "SOHC, 8 valves (2 per cylinder)",
+    "fuel_system": {
+      "22r": "Carburetor",
+      "22r_e": "Electronic Fuel Injection (EFI)",
+      "22r_te": "EFI with Turbocharger"
+    },
+    "ignition_system": "Distributor with electronic ignition"
+  },
+
+  "variants": {
+    "22r_1981_1984": {
+      "description": "Carbureted version",
+      "horsepower": 97,
+      "hp_rpm": 4800,
+      "torque_lb_ft": 129,
+      "torque_rpm": 2800,
+      "fuel_system": "Carburetor"
+    },
+    "22r_e_1983_1995": {
+      "description": "Electronic Fuel Injection version",
+      "horsepower": 114,
+      "hp_rpm": 4800,
+      "torque_lb_ft": 140,
+      "torque_rpm": 2800,
+      "fuel_system": "Multipoint EFI"
+    },
+    "22r_te_1985_1988": {
+      "description": "Turbocharged EFI version",
+      "horsepower": 135,
+      "hp_rpm": 4800,
+      "torque_lb_ft": 173,
+      "torque_rpm": 2800,
+      "forced_induction": "CT20 turbocharger",
+      "applications": ["Toyota Pickup 4x4 Turbo", "4Runner Turbo"]
+    }
+  },
+
+  "vehicle_applications": {
+    "rn50_rn60_rn80_pickup": {
+      "years": "1983-1995",
+      "chassis_code": "RN50/RN60/RN80/RN90",
+      "notes": "Toyota Pickup (Hilux in other markets)"
+    },
+    "rn60_rn65_4runner": {
+      "years": "1984-1989",
+      "chassis_code": "RN60/RN65",
+      "notes": "First generation 4Runner"
+    },
+    "vn60_4runner": {
+      "years": "1990-1995",
+      "chassis_code": "VZN85/VZN90/VZN95",
+      "notes": "Second generation 4Runner"
+    },
+    "hilux": {
+      "years": "1983-1997",
+      "notes": "International market Hilux - legendary reliability"
+    },
+    "celica": {
+      "years": "1981-1985",
+      "chassis_code": "RA61/RA64/RA65",
+      "notes": "Celica with 22R-E"
+    },
+    "van_wagon": {
+      "years": "1984-1989",
+      "chassis_code": "YR22",
+      "notes": "Toyota Van/Wagon (mid-engine)"
+    }
+  },
+
+  "related_engines": {
+    "20r": {
+      "displacement_cc": 2189,
+      "years": "1975-1980",
+      "notes": "Predecessor to 22R, 2.2L version"
+    },
+    "22r": {
+      "displacement_cc": 2366,
+      "years": "1981-1984",
+      "notes": "Carbureted predecessor to 22R-E"
+    },
+    "22r_te": {
+      "displacement_cc": 2366,
+      "years": "1985-1988",
+      "notes": "Turbocharged version (135 HP)"
+    },
+    "22r_ec": {
+      "displacement_cc": 2366,
+      "years": "1987-1989",
+      "notes": "California emissions version"
+    },
+    "3rz_fe": {
+      "displacement_cc": 2694,
+      "years": "1995-2004",
+      "notes": "Successor to 22R-E, aluminum block"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 4.5,
+      "capacity_liters": 4.3,
+      "with_filter": true,
+      "recommended_viscosity": ["10W-30", "10W-40", "15W-40"]
+    },
+    "coolant": {
+      "capacity_quarts": 9.0,
+      "capacity_liters": 8.5,
+      "type": "Ethylene glycol antifreeze/coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 226.0,
+    "main_bearing_journal_diameter_mm": 58.0,
+    "rod_bearing_journal_diameter_mm": 48.0,
+    "cylinder_bore_diameter_mm": 92.0,
+    "connecting_rod_length_mm": 155.0,
+    "crankshaft_stroke_mm": 89.0
+  },
+
+  "timing_chain_system": {
+    "description": "Single timing chain driving camshaft",
+    "chain_type": "Single roller timing chain with guides",
+    "common_issues": [
+      "Timing chain stretch (150k+ miles)",
+      "Guide and tensioner wear",
+      "Rattle on startup when worn"
+    ],
+    "service_interval": "Inspect at 100,000 miles, replace guides proactively",
+    "rebuild_kits_available": true
+  },
+
+  "head_gasket_issue": {
+    "description": "Early 22R-E engines had head gasket concerns",
+    "affected_years": "1985-1995",
+    "symptoms": [
+      "Coolant loss",
+      "Overheating",
+      "Oil/coolant mixing"
+    ],
+    "cause": "Thermal expansion differences between aluminum head and iron block",
+    "solution": {
+      "prevention": "Maintain cooling system, avoid overheating",
+      "repair": "Quality MLS head gasket, proper torque sequence",
+      "upgrade": "Felpro or OEM revised gasket design"
+    }
+  },
+
+  "notes": {
+    "heritage": "The 22R-E is Toyota's legendary truck engine. It built Toyota's reputation for indestructible reliability in the North American truck market. Stories of 300,000+ mile examples are common, earning it the nickname 'Million Mile Engine'.",
+    "reputation": "LEGENDARY reliability. The 22R-E set the standard for Toyota truck durability. Simple design, easy to work on, and nearly impossible to kill with proper maintenance. Many examples still running with 400,000+ miles.",
+    "common_issues": [
+      "Timing chain stretch and guide wear (expected at high mileage)",
+      "Head gasket failures (can be prevented with maintenance)",
+      "Exhaust manifold cracks (common, not critical)",
+      "Fuel injector wear and clogging",
+      "Cold start valve issues",
+      "AFM (Air Flow Meter) failures"
+    ],
+    "strengths": [
+      "Legendary reliability and longevity",
+      "Simple SOHC design easy to work on",
+      "Parts readily available and affordable",
+      "Robust iron block construction",
+      "Excellent low-end torque for truck use",
+      "Well-documented maintenance procedures"
+    ],
+    "maintenance_critical": [
+      "Timing chain inspection at 100,000 miles",
+      "Timing chain guides replacement (proactive)",
+      "Valve adjustment every 60,000 miles",
+      "Cooling system maintenance to prevent head gasket issues",
+      "Oil changes every 3,000-5,000 miles"
+    ],
+    "cultural_significance": "The 22R-E powered Toyota's invasion of the North American truck market. It's the engine that made 'Toyota Truck' synonymous with reliability. The simple design and bulletproof nature made it a favorite of mechanics and overlanders alike.",
+    "rebuild_market": {
+      "description": "Strong rebuild market exists",
+      "options": [
+        "Factory rebuild kits",
+        "LC Engineering performance rebuilds",
+        "Engnbldr high-performance builds"
+      ],
+      "typical_rebuild_cost": "$2000-3500 for complete rebuild",
+      "notes": "Many specialists still dedicated to 22R platform"
+    },
+    "turbo_notes": {
+      "22r_te": "Factory turbo version available 1985-1988",
+      "aftermarket_turbo": "Can be added to 22R-E with proper supporting mods",
+      "power_potential": "200+ HP achievable with turbo",
+      "considerations": "Head gasket strength becomes critical with boost"
+    }
+  }
+}

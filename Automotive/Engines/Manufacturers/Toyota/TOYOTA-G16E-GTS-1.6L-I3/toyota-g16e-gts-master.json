@@ -1,0 +1,206 @@
+{
+  "engine_id": "TOYOTA-G16E-GTS-1.6L-I3-TURBO",
+  "common_names": [
+    "G16E-GTS",
+    "GR Engine",
+    "GR Yaris Engine",
+    "GR Corolla Engine",
+    "World's Most Powerful 3-Cylinder"
+  ],
+  "manufacturer": "Toyota Motor Corporation / GAZOO Racing",
+  "engine_family": "Toyota Dynamic Force G-series",
+  "production_years": "2020-present",
+
+  "base_specifications": {
+    "configuration": "Inline 3-cylinder",
+    "displacement": {
+      "liters": 1.618,
+      "cubic_inches": 98.7,
+      "cc": 1618
+    },
+    "bore": {
+      "inches": 3.46,
+      "mm": 87.5
+    },
+    "stroke": {
+      "inches": 3.46,
+      "mm": 89.7
+    },
+    "compression_ratio": "10.5:1",
+    "firing_order": "1-2-3",
+    "cylinder_numbering": "1 at timing chain end",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Die-cast aluminum",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 12 valves (4 per cylinder), Dual VVT-iE",
+    "forced_induction": {
+      "type": "Single Turbocharger",
+      "turbo_model": "Ball-bearing turbo (similar to IHI)",
+      "boost_pressure_psi": {
+        "standard": 26,
+        "morizo_edition": 28
+      },
+      "wastegate_type": "Electronic"
+    },
+    "fuel_system": {
+      "type": "D-4S Direct Injection + Port Injection",
+      "fuel_pressure_bar": {
+        "direct_injection": 200,
+        "port_injection": 4
+      },
+      "injector_type": "Direct + Port combined"
+    },
+    "ignition_system": "Coil-on-plug"
+  },
+
+  "power_output_by_variant": {
+    "gr_yaris_standard": {
+      "horsepower": 257,
+      "hp_rpm": 6500,
+      "torque_lb_ft": 266,
+      "torque_rpm": "3000-4600",
+      "notes": "European/Asian market GR Yaris"
+    },
+    "gr_yaris_circuit_edition": {
+      "horsepower": 268,
+      "hp_rpm": 6500,
+      "torque_lb_ft": 273,
+      "torque_rpm": "3000-4600",
+      "notes": "Enhanced tune on Circuit Edition"
+    },
+    "gr_corolla_core": {
+      "horsepower": 300,
+      "hp_rpm": 6500,
+      "torque_lb_ft": 273,
+      "torque_rpm": "3000-5500",
+      "notes": "North American GR Corolla"
+    },
+    "gr_corolla_morizo_edition": {
+      "horsepower": 300,
+      "hp_rpm": 6500,
+      "torque_lb_ft": 295,
+      "torque_rpm": "3000-5500",
+      "notes": "Morizo Edition with enhanced tune and torque"
+    }
+  },
+
+  "vehicle_applications": {
+    "gxpa16_gr_yaris": {
+      "years": "2020-present",
+      "chassis_code": "GXPA16",
+      "notes": "Homologation special for WRC, not sold in USA",
+      "markets": ["Europe", "Japan", "Australia", "UK"]
+    },
+    "gzea14_gr_corolla": {
+      "years": "2023-present",
+      "chassis_code": "GZEA14",
+      "notes": "North American GR hot hatch",
+      "markets": ["USA", "Canada"]
+    },
+    "gr_corolla_morizo_edition": {
+      "years": "2023-present",
+      "chassis_code": "GZEA14",
+      "notes": "Lightweight 2-seater version, limited production"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.0,
+      "capacity_liters": 4.7,
+      "with_filter": true,
+      "recommended_viscosity": ["0W-20 (Toyota specification)"],
+      "approved_oils": ["Toyota Genuine 0W-20", "Mobil 1 0W-20"]
+    },
+    "coolant": {
+      "capacity_quarts": 7.0,
+      "capacity_liters": 6.6,
+      "type": "Toyota Super Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 189.0,
+    "main_bearing_journal_diameter_mm": 52.0,
+    "rod_bearing_journal_diameter_mm": 45.0,
+    "cylinder_bore_diameter_mm": 87.5,
+    "connecting_rod_length_mm": 145.0,
+    "crankshaft_stroke_mm": 89.7
+  },
+
+  "advanced_technology": {
+    "d4s_injection": {
+      "description": "Combines direct injection and port injection",
+      "benefits": [
+        "High efficiency under all conditions",
+        "Reduced carbon buildup vs pure DI",
+        "Excellent power and efficiency balance"
+      ]
+    },
+    "vvt_ie": {
+      "description": "Dual Variable Valve Timing with intelligence (electric)",
+      "intake_adjustment_degrees": 75,
+      "exhaust_adjustment_degrees": 35,
+      "benefits": "Electric motor driven for faster response than hydraulic"
+    },
+    "turbo_system": {
+      "description": "Ball-bearing turbo with electric wastegate",
+      "benefits": [
+        "Quick spool (boost by 2000 RPM)",
+        "Precise boost control",
+        "Durable ball-bearing design"
+      ]
+    },
+    "wrc_development": {
+      "description": "Engine developed with WRC rally homologation in mind",
+      "features": [
+        "Robust internals for high boost",
+        "Thermal management for rally conditions",
+        "High power density (185+ HP/liter)"
+      ]
+    }
+  },
+
+  "notes": {
+    "heritage": "The G16E-GTS was developed by GAZOO Racing specifically for the GR Yaris WRC homologation special. It represents Toyota's return to high-performance turbocharged engines and the spiritual successor to engines like the 4A-GE and 3S-GTE. Akio Toyoda (Morizo) personally championed this project.",
+    "reputation": "The most powerful production 3-cylinder engine ever made. Toyota proved that a 3-cylinder can deliver thrilling performance while maintaining the brand's reliability reputation. Early reviews praise its linear power delivery and eager character.",
+    "engineering_philosophy": "Rather than fitting an existing engine, Toyota designed the G16E-GTS from scratch for performance. Every aspect was optimized for power density and response.",
+    "common_issues": [
+      "New engine - limited long-term data available",
+      "High-strung nature requires premium fuel",
+      "Documented oil consumption in some early units",
+      "Turbo heat soak during aggressive driving"
+    ],
+    "strengths": [
+      "World-record power density for 3-cylinder",
+      "D-4S injection prevents carbon buildup",
+      "Excellent throttle response for turbo",
+      "Rally-bred durability",
+      "Linear power delivery",
+      "AWD system designed to handle the power"
+    ],
+    "maintenance_critical": [
+      "Premium fuel (91+ octane) required",
+      "Oil change every 5,000 miles (essential with turbo)",
+      "Follow Toyota's maintenance schedule strictly",
+      "Break-in procedure important for new engines"
+    ],
+    "aftermarket_potential": {
+      "description": "Early aftermarket development shows strong potential",
+      "current_products": [
+        "ECU tunes (gains of 30-50HP reported)",
+        "Intake systems",
+        "Downpipes and exhaust",
+        "Intercooler upgrades"
+      ],
+      "estimated_potential": "350-400HP on stock turbo with supporting mods, 450+ with turbo upgrade",
+      "considerations": "New platform - long-term reliability data for modified engines still developing"
+    },
+    "wrc_connection": {
+      "description": "Direct connection to Toyota GAZOO Racing WRC program",
+      "wrc_version_output": "500+ HP in competition trim",
+      "homologation_purpose": "GR Yaris exists to homologate components for WRC",
+      "rally_dna": "Suspension, AWD system, and engine all derived from rally program"
+    }
+  }
+}

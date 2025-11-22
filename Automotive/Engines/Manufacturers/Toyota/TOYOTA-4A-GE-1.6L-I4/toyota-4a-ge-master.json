@@ -1,0 +1,245 @@
+{
+  "engine_id": "TOYOTA-4A-GE-1.6L-I4-NA",
+  "common_names": [
+    "4A-GE",
+    "4AGE",
+    "AE86 Engine",
+    "Silvertop",
+    "Blacktop",
+    "Redtop",
+    "Bluetop",
+    "20V 4AGE"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota A Series",
+  "production_years": "1983-2002",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {
+      "liters": 1.587,
+      "cubic_inches": 96.9,
+      "cc": 1587
+    },
+    "bore": {
+      "inches": 3.19,
+      "mm": 81.0
+    },
+    "stroke": {
+      "inches": 3.03,
+      "mm": 77.0
+    },
+    "firing_order": "1-3-4-2",
+    "cylinder_numbering": "1 at timing belt end",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain_by_generation": {
+      "16v_gen1_gen2_gen3": "DOHC, 16 valves (4 per cylinder)",
+      "20v_gen4_gen5": "DOHC, 20 valves (5 per cylinder)"
+    },
+    "fuel_system": {
+      "type": "Electronic Fuel Injection (EFI) or Carbureted (very early)",
+      "fuel_pressure_bar": 2.5
+    },
+    "ignition_system": "Distributor (early) / Distributorless (later 20V)"
+  },
+
+  "generations": {
+    "gen1_1983_1987_16v_bigport": {
+      "nickname": "Bluetop/Bigport",
+      "years": "1983-1987",
+      "compression_ratio": "9.4:1",
+      "horsepower": 130,
+      "hp_rpm": 6600,
+      "torque_lb_ft": 105,
+      "torque_rpm": 5200,
+      "features": "Large intake ports, T-VIS (Toyota Variable Induction System)",
+      "head_color": "Blue cam covers",
+      "applications": ["AE86 Corolla GT-S", "AW11 MR2"]
+    },
+    "gen2_1987_1991_16v_smallport": {
+      "nickname": "Redtop/Smallport",
+      "years": "1987-1991",
+      "compression_ratio": "9.4:1",
+      "horsepower": 135,
+      "hp_rpm": 6600,
+      "torque_lb_ft": 110,
+      "torque_rpm": 5200,
+      "features": "Smaller intake ports for better velocity, revised T-VIS",
+      "head_color": "Red/Orange cam covers",
+      "applications": ["Late AE86", "AW11 MR2 Supercharged base"]
+    },
+    "gen3_1991_1995_16v_revised": {
+      "nickname": "Redtop",
+      "years": "1991-1995",
+      "compression_ratio": "10.3:1",
+      "horsepower": 140,
+      "hp_rpm": 7400,
+      "torque_lb_ft": 110,
+      "torque_rpm": 5200,
+      "features": "Higher compression, revised timing",
+      "head_color": "Red cam covers",
+      "applications": ["AE92 Corolla", "AE101 Corolla"]
+    },
+    "gen4_1991_1995_20v_silvertop": {
+      "nickname": "Silvertop 20V",
+      "years": "1991-1995",
+      "compression_ratio": "10.5:1",
+      "horsepower": 160,
+      "hp_rpm": 7400,
+      "torque_lb_ft": 117,
+      "torque_rpm": 5200,
+      "valves": 20,
+      "features": "5 valves per cylinder (3 intake, 2 exhaust), individual throttle bodies",
+      "head_color": "Silver cam covers",
+      "applications": ["AE101 Corolla Levin/Trueno (JDM)"]
+    },
+    "gen5_1995_2002_20v_blacktop": {
+      "nickname": "Blacktop 20V",
+      "years": "1995-2002",
+      "compression_ratio": "11.0:1",
+      "horsepower": 165,
+      "hp_rpm": 7800,
+      "torque_lb_ft": 119,
+      "torque_rpm": 5600,
+      "valves": 20,
+      "features": "VVT (Variable Valve Timing) on intake cam, highest output 4AGE",
+      "head_color": "Black cam covers",
+      "applications": ["AE111 Corolla Levin/Trueno (JDM)", "AE115 Sprinter (JDM)"]
+    }
+  },
+
+  "vehicle_applications": {
+    "ae86_corolla_gts": {
+      "years": "1983-1987",
+      "chassis_code": "AE86",
+      "engine_version": "16V Bigport/Smallport",
+      "notes": "THE legendary drift car - Initial D fame"
+    },
+    "aw11_mr2": {
+      "years": "1984-1989",
+      "chassis_code": "AW11",
+      "engine_version": "16V",
+      "notes": "Mid-engine sports car"
+    },
+    "ae92_corolla": {
+      "years": "1987-1991",
+      "chassis_code": "AE92",
+      "engine_version": "16V Gen2/Gen3",
+      "notes": "FWD Corolla GT-S"
+    },
+    "ae101_corolla_levin_trueno": {
+      "years": "1991-1995",
+      "chassis_code": "AE101",
+      "engine_version": "16V or 20V Silvertop",
+      "notes": "JDM legend, 20V version highly sought after"
+    },
+    "ae111_corolla_levin_trueno": {
+      "years": "1995-2000",
+      "chassis_code": "AE111",
+      "engine_version": "20V Blacktop",
+      "notes": "Final 4AGE application, highest output"
+    },
+    "at180_corona_exiv": {
+      "years": "1989-1993",
+      "chassis_code": "AT180",
+      "engine_version": "16V",
+      "notes": "JDM Corona"
+    },
+    "ae82_corolla": {
+      "years": "1984-1987",
+      "chassis_code": "AE82",
+      "engine_version": "16V Bigport",
+      "notes": "FWD Corolla GT-S (US)"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 3.7,
+      "capacity_liters": 3.5,
+      "with_filter": true,
+      "recommended_viscosity": ["10W-30", "10W-40", "15W-50"],
+      "notes": "High-revving engines benefit from slightly heavier oil"
+    },
+    "coolant": {
+      "capacity_quarts": 6.3,
+      "capacity_liters": 6.0,
+      "type": "Toyota Super Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 200.0,
+    "main_bearing_journal_diameter_mm": 48.0,
+    "rod_bearing_journal_diameter_mm": 40.0,
+    "cylinder_bore_diameter_mm": 81.0,
+    "connecting_rod_length_mm": 121.9,
+    "crankshaft_stroke_mm": 77.0,
+    "valve_configuration_20v": {
+      "intake_valves_per_cylinder": 3,
+      "exhaust_valves_per_cylinder": 2,
+      "intake_valve_diameter_mm": 23.4,
+      "exhaust_valve_diameter_mm": 26.5
+    }
+  },
+
+  "individual_throttle_bodies": {
+    "description": "The 20V 4AGE uses individual throttle bodies (ITBs)",
+    "specifications": {
+      "throttle_body_size_mm": 42,
+      "type": "4-barrel individual throttle bodies"
+    },
+    "aftermarket_options": {
+      "toda_racing": "45mm ITB kit",
+      "jenvey": "45mm/48mm DCOE-style",
+      "oe_20v_itb": "Often used on 16V engines with adapter"
+    },
+    "benefits": [
+      "Improved throttle response",
+      "Better high-RPM breathing",
+      "Incredible induction sound"
+    ]
+  },
+
+  "notes": {
+    "heritage": "The 4A-GE is Toyota's legendary high-revving naturally aspirated engine. Made famous by the AE86 Corolla (star of Initial D), it represents Toyota's commitment to driver engagement. The engine evolved through five generations, culminating in the 165HP 20V Blacktop.",
+    "reputation": "A true enthusiast engine - designed to rev and reward skilled driving. The 4AGE responds exceptionally well to modifications despite its small displacement. The 20V versions with individual throttle bodies are particularly prized.",
+    "common_issues": [
+      "Oil consumption on high-mileage engines",
+      "Timing belt critical (interference engine)",
+      "Distributor failures on 16V versions",
+      "Water pump and thermostat failures",
+      "Head gasket failures if overheated",
+      "Rod bearings wear on high-mileage/abused engines"
+    ],
+    "strengths": [
+      "Loves to rev - designed for high RPM",
+      "Lightweight compact design",
+      "Excellent throttle response",
+      "Strong aftermarket support",
+      "20V versions with ITBs are exceptional",
+      "Robust iron block",
+      "Great for track and autocross"
+    ],
+    "maintenance_critical": [
+      "Timing belt every 60,000 miles (CRITICAL - interference engine)",
+      "Valve adjustment every 60,000 miles (16V - 20V have hydraulic lifters)",
+      "Oil changes every 3,000 miles (high-revving usage)",
+      "Spark plugs every 20,000 miles"
+    ],
+    "cultural_significance": "The AE86 with its 4A-GE engine became a cultural icon through Initial D anime/manga. It established the template for the affordable, lightweight, RWD sports car that Toyota later revived with the GT86/GR86.",
+    "20v_swap_notes": {
+      "description": "The 20V engines are popular swaps into earlier AE86 chassis",
+      "considerations": [
+        "Different engine mounts may be required",
+        "Wiring harness modification needed",
+        "ECU compatibility (standalone recommended)",
+        "ITB setup requires tuning",
+        "Oil pan may need modification for RWD"
+      ],
+      "blacktop_vs_silvertop": "Blacktop is preferred due to VVT and higher output"
+    }
+  }
+}

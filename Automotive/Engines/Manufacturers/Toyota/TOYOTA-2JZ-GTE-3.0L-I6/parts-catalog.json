@@ -1,0 +1,959 @@
+{
+  "engine_id": "TOYOTA-2JZ-GTE-3.0L-I6-TWINTURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {
+    "year": 1994,
+    "make": "Toyota",
+    "model": "Supra Turbo",
+    "engine": "2JZ-GTE"
+  },
+
+  "systems": {
+    "short_block": {
+      "description": "Iron block engine with forged internals",
+      "components": {
+        "engine_block": {
+          "part_id": "2JZ-BLOCK",
+          "description": "Cast iron closed-deck engine block",
+          "oem_part_numbers": ["11401-49625", "11401-49626"],
+          "material": "Cast Iron",
+          "weight_lbs": 155,
+          "specifications": {
+            "deck_height_mm": 220.0,
+            "bore_diameter_mm": 86.0,
+            "main_bearing_bores": 7,
+            "main_cap_bolts": "6-bolt all mains",
+            "cylinder_bore_spacing_mm": 96.0,
+            "deck_type": "Closed deck"
+          },
+          "interchangeability": {
+            "compatible_engines": ["2JZ-GE", "2JZ-GTE non-VVTi", "2JZ-GTE VVTi"],
+            "notes": "All 2JZ blocks are identical. GTE oil squirters can be added to GE block."
+          },
+          "wear_classification": "long_life",
+          "typical_lifespan_miles": 500000
+        },
+
+        "crankshaft": {
+          "part_id": "2JZ-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["13401-46030", "13401-46031"],
+          "material": "Forged Steel",
+          "weight_lbs": 52,
+          "specifications": {
+            "stroke_mm": 86.0,
+            "main_journal_diameter_mm": 62.0,
+            "rod_journal_diameter_mm": 52.0,
+            "counterweight_count": 8,
+            "reluctor_wheel_teeth": 36
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2002",
+            "notes": "All 2JZ crankshafts identical. Forged construction supports 2000+ HP."
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "connecting_rods": {
+          "part_id": "2JZ-CONROD",
+          "description": "Forged steel connecting rods (set of 6)",
+          "oem_part_numbers": ["13201-46030", "13201-46031"],
+          "aftermarket_options": {
+            "brian_crower": "BC6139",
+            "manley": "14024-6",
+            "carrillo": "TOY-2JZT-65000H",
+            "eagle": "CRS5751T3D"
+          },
+          "material": "Forged Steel",
+          "weight_grams_each": 595,
+          "quantity_per_engine": 6,
+          "specifications": {
+            "center_to_center_mm": 142.0,
+            "big_end_bore_mm": 55.0,
+            "small_end_bore_mm": 23.0,
+            "rod_bolt_type": "3/8 inch ARP2000 equivalent",
+            "rod_bolt_torque_nm": 61
+          },
+          "interchangeability": {
+            "compatible_years": "1991-2002",
+            "notes": "Stock rods reliable to 650-700 HP. Upgrade recommended above 700 HP."
+          },
+          "wear_classification": "long_life"
+        },
+
+        "pistons": {
+          "part_id": "2JZ-GTE-PISTON",
+          "description": "Forged aluminum pistons (set of 6)",
+          "oem_part_numbers": ["13101-46040", "13101-46041"],
+          "aftermarket_options": {
+            "wiseco": "K613M86",
+            "je_pistons": "323691",
+            "cp_pistons": "SC7473",
+            "ross": "99889"
+          },
+          "material": "Forged Aluminum",
+          "weight_grams_each": 365,
+          "quantity_per_engine": 6,
+          "specifications": {
+            "diameter_mm": 85.95,
+            "compression_height_mm": 32.8,
+            "pin_bore_diameter_mm": 23.0,
+            "ring_groove_count": 3,
+            "dome_type": "Dished for low compression"
+          },
+          "interchangeability": {
+            "notes": "GTE pistons have lower compression than GE. Custom pistons available for various compression ratios."
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "piston_rings": {
+          "part_id": "2JZ-RINGS",
+          "description": "Piston ring set (all 6 cylinders)",
+          "oem_part_numbers": ["13011-46060"],
+          "aftermarket_options": {
+            "total_seal": "M2712-40",
+            "hastings": "2M4838"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bore_size_mm": 86.0,
+            "top_ring_thickness_mm": 1.2,
+            "second_ring_thickness_mm": 1.5,
+            "oil_ring_thickness_mm": 3.0
+          },
+          "wear_classification": "consumable"
+        },
+
+        "main_bearings": {
+          "part_id": "2JZ-MAIN-BRG",
+          "description": "Main bearing set (7 pairs)",
+          "oem_part_numbers": ["11701-46020", "11702-46020", "11703-46020"],
+          "aftermarket_options": {
+            "acl": "6M8103H-STD (Race Series)",
+            "king": "MB5758AM",
+            "clevite": "MS-2016H"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 7,
+            "journal_diameter_mm": 62.0,
+            "material": "Tri-metal"
+          },
+          "sizes_available": ["STD", "-0.25", "-0.50", "-0.75"],
+          "wear_classification": "consumable"
+        },
+
+        "rod_bearings": {
+          "part_id": "2JZ-ROD-BRG",
+          "description": "Connecting rod bearing set (6 pairs)",
+          "oem_part_numbers": ["13041-46030"],
+          "aftermarket_options": {
+            "acl": "6B8100H-STD (Race Series)",
+            "king": "CR5758AM",
+            "clevite": "CB-1442H"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 6,
+            "journal_diameter_mm": 52.0,
+            "material": "Tri-metal"
+          },
+          "sizes_available": ["STD", "-0.25", "-0.50", "-0.75"],
+          "wear_classification": "consumable"
+        },
+
+        "oil_squirters": {
+          "part_id": "2JZ-OIL-SQUIRT",
+          "description": "Piston oil cooling squirters (set of 6)",
+          "oem_part_numbers": ["15161-46010"],
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "Check valve actuated",
+            "oil_pressure_activation_psi": 25
+          },
+          "notes": "Critical for cooling pistons under boost. GTE exclusive part.",
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "cylinder_head": {
+      "description": "Aluminum DOHC cylinder head",
+      "components": {
+        "cylinder_head": {
+          "part_id": "2JZ-GTE-HEAD",
+          "description": "Aluminum DOHC cylinder head",
+          "oem_part_numbers": {
+            "non_vvti": "11101-49375",
+            "vvti": "11101-49556"
+          },
+          "material": "Aluminum",
+          "weight_lbs": 48,
+          "specifications": {
+            "combustion_chamber_volume_cc": 50.2,
+            "valve_count": 24,
+            "valves_per_cylinder": 4,
+            "intake_valve_diameter_mm": 33.0,
+            "exhaust_valve_diameter_mm": 29.0,
+            "valve_stem_diameter_mm": 6.0,
+            "cam_bearing_count": 14,
+            "vvti_equipped": "1997+ models only"
+          },
+          "interchangeability": {
+            "notes": "Non-VVTi and VVTi heads have different exhaust cam journals. VVTi requires VVTi exhaust cam."
+          },
+          "wear_classification": "long_life"
+        },
+
+        "head_gasket": {
+          "part_id": "2JZ-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": ["11115-46052", "11115-46053"],
+          "aftermarket_options": {
+            "cometic": "C4276-051 (0.051\")",
+            "hks": "2301-RT032",
+            "tomei": "TA4070-TY02A"
+          },
+          "specifications": {
+            "type": "Multi-Layer Steel (MLS)",
+            "compressed_thickness_mm": {
+              "stock": 1.3,
+              "aftermarket_options": [1.0, 1.2, 1.5, 2.0]
+            },
+            "bore_diameter_mm": 87.5,
+            "layers": 3
+          },
+          "notes": "Thicker gaskets used to lower compression for high boost builds",
+          "wear_classification": "consumable"
+        },
+
+        "intake_valves": {
+          "part_id": "2JZ-INTAKE-VALVE",
+          "description": "Intake valves (set of 12)",
+          "oem_part_numbers": ["13711-46030"],
+          "aftermarket_options": {
+            "supertech": "INTV-1061",
+            "ferrea": "F1453P",
+            "brian_crower": "BC3200"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "head_diameter_mm": 33.0,
+            "stem_diameter_mm": 6.0,
+            "overall_length_mm": 106.25,
+            "material": "Stainless Steel"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "exhaust_valves": {
+          "part_id": "2JZ-EXHAUST-VALVE",
+          "description": "Exhaust valves (set of 12)",
+          "oem_part_numbers": ["13715-46040"],
+          "aftermarket_options": {
+            "supertech": "EXHV-1061",
+            "ferrea": "F1454P",
+            "brian_crower": "BC3201"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "head_diameter_mm": 29.0,
+            "stem_diameter_mm": 6.0,
+            "overall_length_mm": 105.4,
+            "material": "Inconel"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "valve_springs": {
+          "part_id": "2JZ-VALVE-SPRING",
+          "description": "Valve springs (set of 24)",
+          "oem_part_numbers": ["13702-46020"],
+          "aftermarket_options": {
+            "brian_crower": "BC0070",
+            "supertech": "SPR-TS1012-BE",
+            "kelford": "KVS2JZ"
+          },
+          "quantity_per_engine": 24,
+          "specifications": {
+            "free_length_mm": 44.0,
+            "installed_height_mm": 37.5,
+            "seat_pressure_kg": 38,
+            "type": "Single with damper"
+          },
+          "notes": "Upgrade required for high-RPM or high-boost applications",
+          "wear_classification": "rebuild_item"
+        },
+
+        "camshafts": {
+          "part_id": "2JZ-GTE-CAMSHAFT-SET",
+          "description": "Intake and exhaust camshaft set",
+          "oem_part_numbers": {
+            "intake_non_vvti": "13501-46050",
+            "exhaust_non_vvti": "13502-46040",
+            "intake_vvti": "13501-46080",
+            "exhaust_vvti": "13502-46080"
+          },
+          "aftermarket_options": {
+            "hks": "2202-RT084 (264°)",
+            "brian_crower": "BC0331 (272°)",
+            "kelford": "213-B (272°)",
+            "tomei": "TA301A-TY02A (270°)"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "intake_duration_degrees": 232,
+            "exhaust_duration_degrees": 236,
+            "intake_lift_mm": 8.25,
+            "exhaust_lift_mm": 7.8,
+            "lobe_separation_degrees": 110
+          },
+          "wear_classification": "long_life"
+        },
+
+        "cam_gears": {
+          "part_id": "2JZ-CAM-GEARS",
+          "description": "Adjustable cam gears",
+          "aftermarket_options": {
+            "hks": "22004-AT003",
+            "brian_crower": "BC8850",
+            "xtreme_gears": "XCG-2JZGTE",
+            "gates_racing": "Custom"
+          },
+          "notes": "Required for proper cam timing with aftermarket cams",
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "turbo_system": {
+      "description": "Sequential twin turbocharger system",
+      "components": {
+        "turbochargers": {
+          "part_id": "2JZ-TURBO-SET",
+          "description": "CT20A Sequential Twin Turbochargers",
+          "oem_part_numbers": {
+            "primary": "17201-46040",
+            "secondary": "17201-46041"
+          },
+          "aftermarket_options": {
+            "garrett_single": "GTX3582R Gen II",
+            "precision_single": "6466 CEA",
+            "borg_warner_single": "S362 SX-E",
+            "hks_single": "GT3240",
+            "sp_engineering_twins": "500R",
+            "doc_race_twins": "DR500"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "compressor_wheel_mm": {
+              "primary": 47,
+              "secondary": 52
+            },
+            "max_boost_stock_psi": 14.7,
+            "max_flow_lbs_min": 25,
+            "wastegate_type": "Internal"
+          },
+          "common_issues": [
+            "Ceramic exhaust wheel shattering",
+            "Shaft play from high mileage",
+            "Sequential valve failure"
+          ],
+          "wear_classification": "consumable",
+          "typical_lifespan_miles": 100000
+        },
+
+        "turbo_manifold": {
+          "part_id": "2JZ-TURBO-MANIFOLD",
+          "description": "Exhaust manifold with turbo mounts",
+          "oem_part_numbers": ["17141-46030"],
+          "aftermarket_options": {
+            "full_race": "2JZ ProStreet",
+            "doc_race": "DR-2JZ-T4",
+            "jmf": "Twin Scroll T4",
+            "hks": "14009-AT005"
+          },
+          "notes": "Single turbo conversions require aftermarket manifold",
+          "wear_classification": "long_life"
+        },
+
+        "intercooler": {
+          "part_id": "2JZ-INTERCOOLER",
+          "description": "Top-mount air-to-air intercooler",
+          "oem_part_numbers": ["17940-46100"],
+          "aftermarket_options": {
+            "hks": "13001-AT006",
+            "greddy": "12020479",
+            "mishimoto": "MMINT-SUP-93T",
+            "cxracing": "IC-SUP-2JZGTE"
+          },
+          "specifications": {
+            "type": "Bar and plate",
+            "location": "Top mount (stock) / Front mount (aftermarket)",
+            "core_volume_liters": 4.5
+          },
+          "notes": "Front mount intercooler conversion highly recommended for 400+ HP",
+          "wear_classification": "long_life"
+        },
+
+        "wastegate": {
+          "part_id": "2JZ-WASTEGATE",
+          "description": "External wastegate (for single turbo conversions)",
+          "aftermarket_options": {
+            "tial_mvr": "MVR 44mm",
+            "precision": "PW46",
+            "turbosmart": "Hypergate45"
+          },
+          "notes": "Stock turbos use internal wastegates. External required for big single.",
+          "wear_classification": "consumable"
+        },
+
+        "blow_off_valve": {
+          "part_id": "2JZ-BOV",
+          "description": "Blow-off valve / Bypass valve",
+          "oem_part_numbers": ["25600-46060"],
+          "aftermarket_options": {
+            "greddy": "Type-RS",
+            "hks": "SSQV4",
+            "tial_q": "50mm Q BOV",
+            "turbosmart": "Vee Port Pro"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Recirculating (stock) / Atmospheric (aftermarket)"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "Electronic fuel injection system",
+      "components": {
+        "fuel_injectors": {
+          "part_id": "2JZ-INJECTORS",
+          "description": "Fuel injectors (set of 6)",
+          "oem_part_numbers": ["23250-46070"],
+          "aftermarket_options": {
+            "deatschwerks": "16S-07-0550-6 (550cc)",
+            "id1050x": "1050.48.14.14.6",
+            "bosch": "0280158040 (550cc)",
+            "sard": "850cc"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "Side-feed high impedance",
+            "flow_rate_cc_min": 440,
+            "resistance_ohms": 13.8,
+            "connector_type": "Toyota OEM"
+          },
+          "notes": "Stock injectors max at ~450 HP. Upgrade essential for more power.",
+          "wear_classification": "consumable"
+        },
+
+        "fuel_pump": {
+          "part_id": "2JZ-FUEL-PUMP",
+          "description": "In-tank fuel pump",
+          "oem_part_numbers": ["23221-46070"],
+          "aftermarket_options": {
+            "walbro": "GSS342 (255 LPH)",
+            "aem": "50-1000 (320 LPH)",
+            "deatschwerks": "DW300 (340 LPH)",
+            "aeromotive": "340 Stealth"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Electric in-tank",
+            "flow_rate_lph": 180,
+            "pressure_psi": 43
+          },
+          "notes": "Dual pump setup common for 800+ HP",
+          "wear_classification": "consumable"
+        },
+
+        "fuel_rail": {
+          "part_id": "2JZ-FUEL-RAIL",
+          "description": "Fuel rail assembly",
+          "oem_part_numbers": ["23807-46080"],
+          "aftermarket_options": {
+            "ross_machine_racing": "RMR-2JZ",
+            "grams_performance": "G2-5000-0400",
+            "aem": "25-110"
+          },
+          "specifications": {
+            "material": "Aluminum",
+            "injector_type": "Side-feed (stock) / Top-feed (aftermarket)",
+            "fuel_pressure_rating_psi": 60
+          },
+          "notes": "Top-feed conversion recommended for 600+ HP",
+          "wear_classification": "long_life"
+        },
+
+        "fuel_pressure_regulator": {
+          "part_id": "2JZ-FPR",
+          "description": "Fuel pressure regulator",
+          "oem_part_numbers": ["23280-46010"],
+          "aftermarket_options": {
+            "aeromotive": "13109 (1:1 Ratio)",
+            "aem": "25-302BK",
+            "tomei": "185002"
+          },
+          "specifications": {
+            "type": "Vacuum referenced",
+            "base_pressure_psi": 43,
+            "boost_rise_ratio": "1:1"
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "intake_system": {
+      "description": "Intake manifold and air delivery",
+      "components": {
+        "intake_manifold": {
+          "part_id": "2JZ-INTAKE-MANIFOLD",
+          "description": "Aluminum intake manifold",
+          "oem_part_numbers": ["17109-46030"],
+          "aftermarket_options": {
+            "hypertune": "2JZ-GTE",
+            "ross_machine_racing": "RMR-2JZIM",
+            "jmf": "Single Throttle Body",
+            "plazmaman": "Pro Series"
+          },
+          "material": "Cast Aluminum",
+          "specifications": {
+            "runner_length_mm": 200,
+            "plenum_volume_liters": 4.0,
+            "throttle_body_size_mm": 80
+          },
+          "notes": "Aftermarket manifolds can flow 1200+ HP",
+          "wear_classification": "long_life"
+        },
+
+        "throttle_body": {
+          "part_id": "2JZ-THROTTLE-BODY",
+          "description": "Throttle body assembly",
+          "oem_part_numbers": ["22210-46070"],
+          "aftermarket_options": {
+            "blox": "90mm",
+            "skunk2": "90mm Ultra",
+            "hypertune": "102mm"
+          },
+          "specifications": {
+            "bore_diameter_mm": 80,
+            "type": "Cable operated (non-VVTi) / Electronic (VVTi)"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "air_filter": {
+          "part_id": "2JZ-AIR-FILTER",
+          "description": "Air filter element",
+          "oem_part_numbers": ["17801-46080"],
+          "aftermarket_options": {
+            "k_and_n": "33-2054",
+            "hks": "70017-AT105",
+            "apexi": "Power Intake"
+          },
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 30000
+        },
+
+        "mass_airflow_sensor": {
+          "part_id": "2JZ-MAF",
+          "description": "Mass airflow sensor",
+          "oem_part_numbers": ["22204-46020"],
+          "aftermarket_options": {
+            "speed_density": "MAP sensor conversion",
+            "gm_maf": "LS2 MAF (larger diameter)"
+          },
+          "specifications": {
+            "type": "Hot-wire",
+            "max_flow_grams_sec": 150
+          },
+          "notes": "Stock MAF limits flow at ~500 HP. Speed density or larger MAF required.",
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "exhaust_system": {
+      "description": "Exhaust manifold and downpipe",
+      "components": {
+        "downpipe": {
+          "part_id": "2JZ-DOWNPIPE",
+          "description": "Turbo downpipe",
+          "oem_part_numbers": ["17410-46150"],
+          "aftermarket_options": {
+            "hks": "3\" Stainless",
+            "tomei": "Ti Racing",
+            "full_race": "4\" V-band"
+          },
+          "specifications": {
+            "diameter_mm": {
+              "stock": 70,
+              "aftermarket": 76.2
+            },
+            "material": "Stainless Steel"
+          },
+          "notes": "3\"+ downpipe essential for power. Single turbo uses larger 4\" downpipe.",
+          "wear_classification": "long_life"
+        },
+
+        "catalytic_converter": {
+          "part_id": "2JZ-CAT",
+          "description": "Catalytic converter",
+          "oem_part_numbers": ["17420-46140"],
+          "aftermarket_options": {
+            "high_flow": "Vibrant 200 cell metallic",
+            "test_pipe": "Straight through (off-road only)"
+          },
+          "specifications": {
+            "substrate": "Ceramic",
+            "cell_density_cpsi": 400
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "cooling_system": {
+      "description": "Engine cooling components",
+      "components": {
+        "water_pump": {
+          "part_id": "2JZ-WATER-PUMP",
+          "description": "Belt-driven water pump",
+          "oem_part_numbers": ["16100-49847", "16100-49848"],
+          "aftermarket_options": {
+            "gates": "43544",
+            "gmb": "170-1960"
+          },
+          "specifications": {
+            "type": "Belt driven",
+            "drive": "Timing belt driven"
+          },
+          "notes": "Always replace with timing belt service",
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        },
+
+        "thermostat": {
+          "part_id": "2JZ-THERMOSTAT",
+          "description": "Cooling system thermostat",
+          "oem_part_numbers": ["90916-03089"],
+          "aftermarket_options": {
+            "nismo": "Low temp (70°C)",
+            "trd": "Low temp (68°C)"
+          },
+          "specifications": {
+            "opening_temp_c": 82,
+            "full_open_temp_c": 95
+          },
+          "wear_classification": "consumable"
+        },
+
+        "radiator": {
+          "part_id": "2JZ-RADIATOR",
+          "description": "Aluminum core radiator",
+          "oem_part_numbers": ["16400-46330"],
+          "aftermarket_options": {
+            "mishimoto": "MMRAD-SUP-93T",
+            "csf": "7042",
+            "koyo": "HH010681"
+          },
+          "specifications": {
+            "type": "Cross-flow aluminum",
+            "core_rows": 2
+          },
+          "notes": "Aluminum radiator recommended for track use",
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "timing_system": {
+      "description": "Timing belt and related components",
+      "components": {
+        "timing_belt": {
+          "part_id": "2JZ-TIMING-BELT",
+          "description": "Timing belt",
+          "oem_part_numbers": ["13568-49036"],
+          "aftermarket_options": {
+            "gates_racing": "T215RB",
+            "continental": "TB215"
+          },
+          "specifications": {
+            "type": "HNBR rubber compound",
+            "teeth": 215,
+            "width_mm": 28.5
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        },
+
+        "timing_belt_tensioner": {
+          "part_id": "2JZ-TENSIONER",
+          "description": "Timing belt tensioner assembly",
+          "oem_part_numbers": ["13505-46041"],
+          "specifications": {
+            "type": "Hydraulic automatic"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        },
+
+        "timing_belt_idler": {
+          "part_id": "2JZ-IDLER",
+          "description": "Timing belt idler pulleys (set)",
+          "oem_part_numbers": ["13503-46030", "13505-46020"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 60000
+        }
+      }
+    },
+
+    "ignition_system": {
+      "description": "Ignition system components",
+      "components": {
+        "ignition_coils": {
+          "part_id": "2JZ-COILS",
+          "description": "Ignition coils",
+          "oem_part_numbers": {
+            "non_vvti_igniter": "89620-30030",
+            "vvti_cop": "90919-02213"
+          },
+          "aftermarket_options": {
+            "hks_ignition_amp": "4609-RA002",
+            "aem_smart_coils": "30-2853",
+            "ls_coil_conversion": "D585 or LS2"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": {
+              "non_vvti": "Distributorless with wasted spark igniter",
+              "vvti": "Coil-on-plug"
+            },
+            "output_kv": 35
+          },
+          "notes": "VVTi coil-on-plug much better for high power. LS coil conversion popular.",
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "spark_plugs": {
+          "part_id": "2JZ-SPARK-PLUGS",
+          "description": "Spark plugs (set of 6)",
+          "oem_part_numbers": ["90919-01164"],
+          "aftermarket_options": {
+            "ngk_copper": "BKR6E (stock heat)",
+            "ngk_iridium": "BKR6EIX",
+            "ngk_colder": "BKR7E or BKR8E (boosted)",
+            "denso_iridium": "IK20"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "thread_size": "14mm x 1.25",
+            "reach_mm": 19,
+            "gap_mm": 1.1,
+            "heat_range": "6 (stock), 7-8 (high boost)"
+          },
+          "notes": "Run colder plugs (7-8 range) on boosted applications to prevent detonation",
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 30000
+        }
+      }
+    },
+
+    "lubrication_system": {
+      "description": "Oil pump and lubrication components",
+      "components": {
+        "oil_pump": {
+          "part_id": "2JZ-OIL-PUMP",
+          "description": "Internal gear oil pump",
+          "oem_part_numbers": ["15100-46052"],
+          "aftermarket_options": {
+            "boundary": "2JZ Billet",
+            "titan": "High Volume"
+          },
+          "specifications": {
+            "type": "Internal gear, crankshaft driven",
+            "pressure_psi": {
+              "idle": 14,
+              "max": 72
+            }
+          },
+          "wear_classification": "long_life"
+        },
+
+        "oil_filter": {
+          "part_id": "2JZ-OIL-FILTER",
+          "description": "Oil filter",
+          "oem_part_numbers": ["90915-20003"],
+          "aftermarket_options": {
+            "wix": "51348",
+            "mann": "W 712/83",
+            "k_and_n": "HP-1004"
+          },
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 5000
+        },
+
+        "oil_pan": {
+          "part_id": "2JZ-OIL-PAN",
+          "description": "Aluminum oil pan",
+          "oem_part_numbers": ["12102-46030"],
+          "aftermarket_options": {
+            "moroso": "20965",
+            "greddy": "Baffled",
+            "tomei": "Baffled"
+          },
+          "material": "Cast Aluminum",
+          "specifications": {
+            "capacity_liters": 5.0,
+            "drain_plug_thread": "M18x1.5",
+            "baffle": "OEM has minimal baffling"
+          },
+          "notes": "Baffled pan essential for track use to prevent oil starvation",
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "gaskets_and_seals": {
+      "description": "Complete gasket and seal inventory",
+      "components": {
+        "valve_cover_gaskets": {
+          "part_id": "2JZ-VC-GASKET",
+          "description": "Valve cover gasket set",
+          "oem_part_numbers": ["11213-46040", "11214-46020"],
+          "aftermarket_options": {
+            "fel_pro": "VS50524R"
+          },
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+
+        "cam_seals": {
+          "part_id": "2JZ-CAM-SEAL",
+          "description": "Camshaft oil seals (set of 2)",
+          "oem_part_numbers": ["90311-38020", "90311-38021"],
+          "quantity_per_engine": 2,
+          "notes": "Inspect and replace with timing belt service",
+          "wear_classification": "consumable"
+        },
+
+        "front_main_seal": {
+          "part_id": "2JZ-FRONT-SEAL",
+          "description": "Crankshaft front oil seal",
+          "oem_part_numbers": ["90311-40022"],
+          "quantity_per_engine": 1,
+          "notes": "Replace with timing belt service",
+          "wear_classification": "consumable"
+        },
+
+        "rear_main_seal": {
+          "part_id": "2JZ-REAR-SEAL",
+          "description": "Crankshaft rear oil seal",
+          "oem_part_numbers": ["90311-86001"],
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable"
+        },
+
+        "full_engine_gasket_set": {
+          "part_id": "2JZ-GASKET-SET",
+          "description": "Complete engine gasket and seal set",
+          "oem_part_numbers": ["04111-46064", "04111-46065"],
+          "aftermarket_options": {
+            "cometic": "PRO2005T",
+            "tomei": "TA4070-TY02B"
+          },
+          "notes": "Includes all gaskets and seals for complete rebuild",
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "sensors_and_electronics": {
+      "description": "Engine management sensors",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "2JZ-CKP",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": ["90919-05017"],
+          "specifications": {
+            "type": "Magnetic pickup",
+            "signal": "36 pulse per revolution"
+          },
+          "common_issues": ["Heat soak failure", "Connector corrosion"],
+          "wear_classification": "consumable"
+        },
+
+        "camshaft_position_sensor": {
+          "part_id": "2JZ-CMP",
+          "description": "Camshaft position sensor",
+          "oem_part_numbers": ["90919-05012"],
+          "specifications": {
+            "type": "Hall effect"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "knock_sensors": {
+          "part_id": "2JZ-KNOCK",
+          "description": "Knock sensors (set of 2)",
+          "oem_part_numbers": ["89615-20010"],
+          "quantity_per_engine": 2,
+          "specifications": {
+            "type": "Piezoelectric",
+            "frequency_khz": "6-8"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "coolant_temperature_sensor": {
+          "part_id": "2JZ-CTS",
+          "description": "Engine coolant temperature sensor",
+          "oem_part_numbers": ["89422-20010"],
+          "specifications": {
+            "type": "NTC thermistor",
+            "thread": "M12x1.5"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "oxygen_sensors": {
+          "part_id": "2JZ-O2",
+          "description": "Oxygen sensors (front and rear)",
+          "oem_part_numbers": {
+            "upstream": "89465-30350",
+            "downstream": "89465-30360"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "type": "Narrowband (stock) / Wideband (aftermarket)"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "throttle_position_sensor": {
+          "part_id": "2JZ-TPS",
+          "description": "Throttle position sensor",
+          "oem_part_numbers": ["89452-22080"],
+          "specifications": {
+            "type": "Potentiometer",
+            "voltage_range": "0.5-4.5V"
+          },
+          "common_issues": ["Worn spots causing hesitation"],
+          "wear_classification": "consumable"
+        }
+      }
+    }
+  }
+}

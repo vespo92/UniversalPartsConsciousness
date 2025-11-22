@@ -1,0 +1,230 @@
+{
+  "engine_id": "TOYOTA-1GR-FE-4.0L-V6-NA",
+  "common_names": [
+    "1GR-FE",
+    "1GR",
+    "Toyota 4.0 V6",
+    "Tacoma V6",
+    "4Runner V6",
+    "GR V6"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota GR Series",
+  "production_years": "2002-present",
+
+  "base_specifications": {
+    "configuration": "V6 (60-degree)",
+    "displacement": {
+      "liters": 3.956,
+      "cubic_inches": 241.4,
+      "cc": 3956
+    },
+    "bore": {
+      "inches": 3.70,
+      "mm": 94.0
+    },
+    "stroke": {
+      "inches": 3.74,
+      "mm": 95.0
+    },
+    "compression_ratio": "10.0:1",
+    "firing_order": "1-2-3-4-5-6",
+    "cylinder_numbering": "Bank 1: 1-3-5 (passenger), Bank 2: 2-4-6 (driver)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Die-cast aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), Dual VVT-i",
+    "fuel_system": {
+      "type": "Sequential Multi-port Fuel Injection",
+      "fuel_pressure_bar": 3.5,
+      "injector_type": "Top-feed"
+    },
+    "ignition_system": "Coil-on-plug (DIS)"
+  },
+
+  "power_output_by_year": {
+    "2003_2004": {
+      "horsepower": 245,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 283,
+      "torque_rpm": 3800,
+      "notes": "Initial production"
+    },
+    "2005_2009": {
+      "horsepower": 236,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 266,
+      "torque_rpm": 4000,
+      "notes": "Revised for different applications"
+    },
+    "2010_present": {
+      "horsepower": 270,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 278,
+      "torque_rpm": 4400,
+      "notes": "Updated with improved VVT-i"
+    },
+    "tundra_application": {
+      "horsepower": 236,
+      "hp_rpm": 5200,
+      "torque_lb_ft": 266,
+      "torque_rpm": 4000,
+      "notes": "First-gen Tundra 4.0L option"
+    }
+  },
+
+  "vehicle_applications": {
+    "grn210_tacoma": {
+      "years": "2005-2015",
+      "chassis_code": "GRN210/GRN245/GRN250",
+      "notes": "2nd gen Tacoma - extremely popular"
+    },
+    "grn280_grn305_tacoma": {
+      "years": "2016-2023",
+      "chassis_code": "GRN280/GRN305",
+      "notes": "3rd gen Tacoma"
+    },
+    "grn210_4runner": {
+      "years": "2003-2009",
+      "chassis_code": "GRN210/GRN215",
+      "notes": "4th gen 4Runner"
+    },
+    "grn280_4runner": {
+      "years": "2010-present",
+      "chassis_code": "GRN280/GRN285",
+      "notes": "5th gen 4Runner - very popular"
+    },
+    "grn285_fj_cruiser": {
+      "years": "2007-2014",
+      "chassis_code": "GSJ15",
+      "notes": "Retro-styled off-roader"
+    },
+    "grn50_tundra": {
+      "years": "2005-2006",
+      "chassis_code": "GRN50",
+      "notes": "First-gen Tundra V6 option"
+    },
+    "grj120_land_cruiser_prado": {
+      "years": "2002-2009",
+      "chassis_code": "GRJ120/GRJ125",
+      "notes": "International market Prado"
+    },
+    "grj150_land_cruiser_prado": {
+      "years": "2009-present",
+      "chassis_code": "GRJ150/GRJ151",
+      "notes": "Current Prado in many markets"
+    },
+    "grs195_hilux_surf": {
+      "years": "2002-2009",
+      "chassis_code": "GRN215",
+      "notes": "JDM market"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.5,
+      "capacity_liters": 5.2,
+      "with_filter": true,
+      "recommended_viscosity": ["0W-20", "5W-30"]
+    },
+    "coolant": {
+      "capacity_quarts": 11.0,
+      "capacity_liters": 10.4,
+      "type": "Toyota Super Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 165.0,
+    "main_bearing_journal_diameter_mm": 60.0,
+    "rod_bearing_journal_diameter_mm": 52.0,
+    "cylinder_bore_diameter_mm": 94.0,
+    "connecting_rod_length_mm": 150.0,
+    "crankshaft_stroke_mm": 95.0,
+    "bank_angle_degrees": 60
+  },
+
+  "timing_chain_system": {
+    "description": "Dual overhead camshaft with timing chain",
+    "chain_type": "Double roller timing chain",
+    "service_interval": "No scheduled replacement - inspect at high mileage",
+    "components": [
+      "Primary timing chain",
+      "Secondary timing chains (2)",
+      "Chain tensioners (3)",
+      "Chain guides"
+    ],
+    "common_issues": [
+      "Timing chain stretch on high-mileage engines",
+      "Tensioner failure symptoms: rattle on cold start",
+      "VVT actuator noise when worn"
+    ]
+  },
+
+  "off_road_considerations": {
+    "description": "The 1GR-FE is extensively used in off-road vehicles",
+    "features": {
+      "torque_curve": "Flat torque curve ideal for low-speed crawling",
+      "reliability": "Proven in extreme conditions worldwide",
+      "simplicity": "Naturally aspirated - no turbo heat issues"
+    },
+    "modifications_for_off_road": {
+      "snorkel": "Common addition for water crossings",
+      "header_wrap": "Heat protection for dusty/extreme conditions",
+      "secondary_air_filter": "Pre-filter for dusty environments"
+    },
+    "expedition_proven": "Used in Land Cruiser Prado worldwide - proven in extreme overland conditions"
+  },
+
+  "notes": {
+    "heritage": "The 1GR-FE was developed as Toyota's modern truck/SUV V6, designed for torque, reliability, and durability in demanding conditions. It represents Toyota's commitment to the truck market with proven reliability.",
+    "reputation": "Rock-solid reliability. The 1GR-FE has earned a reputation as one of the most reliable modern truck engines. It's the backbone of Toyota's mid-size truck and SUV lineup and has proven itself in extreme conditions worldwide.",
+    "common_issues": [
+      "Secondary air injection system failures (emissions related)",
+      "Water pump failures (weep hole leak)",
+      "Timing chain tensioner noise on cold start (high mileage)",
+      "VVT actuator rattle (can be rebuilt)",
+      "Exhaust manifold cracking on early models"
+    ],
+    "strengths": [
+      "Exceptional reliability and longevity",
+      "Good torque for off-road and towing",
+      "Timing chain (no belt replacement)",
+      "Simple naturally aspirated design",
+      "Proven in extreme worldwide conditions",
+      "Excellent parts availability"
+    ],
+    "maintenance_critical": [
+      "Oil changes every 5,000-10,000 miles",
+      "Coolant flush every 100,000 miles",
+      "Spark plugs every 120,000 miles (iridium)",
+      "Inspect timing chain/tensioner at 150,000+ miles",
+      "Secondary air injection system check"
+    ],
+    "supercharger_options": {
+      "description": "Limited but available supercharger options",
+      "kits": [
+        "TRD supercharger (discontinued, rare)",
+        "Magnuson supercharger kit",
+        "URD (Underdog Racing Development) supercharger"
+      ],
+      "power_gains": "300-400HP achievable",
+      "notes": "Most owners prefer reliability of NA setup"
+    },
+    "vs_v8_comparison": {
+      "description": "Comparison to 2UZ-FE and 3UR-FE V8 options",
+      "advantages_of_1gr": [
+        "Better fuel economy",
+        "Lower weight",
+        "Lower cost",
+        "Simpler maintenance"
+      ],
+      "advantages_of_v8": [
+        "More torque",
+        "Better for heavy towing",
+        "Smoother operation"
+      ]
+    }
+  }
+}

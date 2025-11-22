@@ -1,0 +1,245 @@
+{
+  "engine_id": "TOYOTA-1UZ-FE-4.0L-V8-NA",
+  "common_names": [
+    "1UZ-FE",
+    "1UZ",
+    "Lexus V8",
+    "LS400 Engine",
+    "Toyota V8",
+    "The Quiet Giant"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota UZ Series",
+  "production_years": "1989-2006",
+
+  "base_specifications": {
+    "configuration": "V8 (90-degree)",
+    "displacement": {
+      "liters": 3.969,
+      "cubic_inches": 242.2,
+      "cc": 3969
+    },
+    "bore": {
+      "inches": 3.44,
+      "mm": 87.5
+    },
+    "stroke": {
+      "inches": 3.25,
+      "mm": 82.5
+    },
+    "compression_ratio": "10.0:1 (non-VVTi) / 10.5:1 (VVTi)",
+    "firing_order": "1-8-4-3-6-5-7-2",
+    "cylinder_numbering": "Bank 1: 1-3-5-7 (driver side), Bank 2: 2-4-6-8 (passenger)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Aluminum with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 32 valves (4 per cylinder), VVTi on 1997+ models",
+    "fuel_system": {
+      "type": "Sequential Multi-port Fuel Injection",
+      "fuel_pressure_bar": 3.0,
+      "injector_type": "Top-feed"
+    },
+    "ignition_system": "Distributorless Ignition System (DIS), Coil-on-plug"
+  },
+
+  "power_output_by_year": {
+    "1990_1994_non_vvti": {
+      "horsepower": 250,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 260,
+      "torque_rpm": 4400,
+      "notes": "Initial production, no VVTi"
+    },
+    "1995_1997_revised": {
+      "horsepower": 260,
+      "hp_rpm": 5400,
+      "torque_lb_ft": 270,
+      "torque_rpm": 4400,
+      "notes": "Improved intake and exhaust"
+    },
+    "1998_2000_vvti": {
+      "horsepower": 290,
+      "hp_rpm": 5900,
+      "torque_lb_ft": 300,
+      "torque_rpm": 4100,
+      "notes": "VVTi added, significant improvement"
+    },
+    "jdm_celsior": {
+      "horsepower": 280,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 295,
+      "torque_rpm": 4400,
+      "notes": "JDM spec (gentleman's agreement limit)"
+    }
+  },
+
+  "vehicle_applications": {
+    "ucf10_lexus_ls400": {
+      "years": "1990-1994",
+      "chassis_code": "UCF10",
+      "notes": "Original Lexus flagship, launched the brand"
+    },
+    "ucf20_lexus_ls400": {
+      "years": "1995-2000",
+      "chassis_code": "UCF20",
+      "notes": "Second generation LS400, VVTi from 1998"
+    },
+    "ucf10_toyota_celsior": {
+      "years": "1989-1994",
+      "chassis_code": "UCF10",
+      "notes": "JDM version of LS400"
+    },
+    "ucf20_ucf21_toyota_celsior": {
+      "years": "1994-2000",
+      "chassis_code": "UCF20/UCF21",
+      "notes": "JDM second gen Celsior"
+    },
+    "uzz31_lexus_sc400": {
+      "years": "1991-2000",
+      "chassis_code": "UZZ31",
+      "notes": "Lexus SC400 sport coupe"
+    },
+    "uzz30_toyota_soarer": {
+      "years": "1991-2000",
+      "chassis_code": "UZZ30",
+      "notes": "JDM Toyota Soarer"
+    },
+    "uzj100_lexus_lx470": {
+      "years": "1998-2007",
+      "chassis_code": "UZJ100",
+      "notes": "Lexus LX470 SUV (with 2UZ-FE variant)"
+    },
+    "uzs143_toyota_crown_majesta": {
+      "years": "1991-1995",
+      "chassis_code": "UZS143",
+      "notes": "JDM luxury sedan"
+    },
+    "uzs155_toyota_crown_majesta": {
+      "years": "1995-1999",
+      "chassis_code": "UZS155",
+      "notes": "JDM luxury sedan 2nd gen"
+    },
+    "uzs171_toyota_crown_majesta": {
+      "years": "1999-2004",
+      "chassis_code": "UZS171",
+      "notes": "JDM luxury sedan 3rd gen"
+    },
+    "uzn215_toyota_4runner": {
+      "years": "2003-2009",
+      "chassis_code": "UZN215",
+      "notes": "4Runner V8 (with 2UZ-FE variant)"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.5,
+      "capacity_liters": 5.2,
+      "with_filter": true,
+      "recommended_viscosity": ["5W-30", "10W-30"]
+    },
+    "coolant": {
+      "capacity_quarts": 11.0,
+      "capacity_liters": 10.4,
+      "type": "Toyota Super Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 180.0,
+    "main_bearing_journal_diameter_mm": 64.0,
+    "rod_bearing_journal_diameter_mm": 52.0,
+    "cylinder_bore_diameter_mm": 87.5,
+    "connecting_rod_length_mm": 146.0,
+    "crankshaft_stroke_mm": 82.5,
+    "block_design": "Open deck aluminum with pressed iron sleeves",
+    "bank_angle_degrees": 90
+  },
+
+  "related_engines": {
+    "2uz_fe": {
+      "displacement_cc": 4664,
+      "bore_mm": 94.0,
+      "stroke_mm": 84.0,
+      "applications": ["Land Cruiser 100", "Tundra", "Sequoia", "LX470", "GX470"],
+      "notes": "Larger bore, iron block version for truck applications"
+    },
+    "3uz_fe": {
+      "displacement_cc": 4293,
+      "bore_mm": 91.0,
+      "stroke_mm": 82.5,
+      "applications": ["Lexus GS430", "Lexus LS430", "Lexus SC430"],
+      "notes": "Larger displacement 1UZ replacement"
+    }
+  },
+
+  "engineering_achievements": {
+    "description": "The 1UZ-FE was revolutionary when introduced",
+    "innovations": [
+      "First mass-produced Japanese V8 with DOHC and 4 valves per cylinder",
+      "Aluminum block with pressed-in iron liners (lightweight)",
+      "Individual throttle-body-style intakes for each cylinder bank",
+      "Advanced engine management for its era",
+      "NVH levels that redefined luxury car standards"
+    ],
+    "reliability": "Renowned for exceptional reliability - 300,000+ miles common with basic maintenance",
+    "quiet_operation": "Famous for being nearly silent at idle - 'can't tell if it's running'"
+  },
+
+  "notes": {
+    "heritage": "The 1UZ-FE was Toyota's answer to German V8s and revolutionized the luxury car market. It helped establish Lexus as a legitimate luxury brand and set new standards for smoothness, refinement, and reliability that competitors struggled to match.",
+    "reputation": "Legendary reliability and refinement. The 1UZ-FE is known for 300,000+ mile lifespans with basic maintenance. Its combination of power, smoothness, and durability makes it a popular swap choice for many applications.",
+    "common_issues": [
+      "Timing belt service critical (interference engine on some versions)",
+      "Starter motor failures (position makes them run hot)",
+      "Valve cover gasket leaks on high-mileage engines",
+      "Oil pressure sensor leaks",
+      "PS pump and alternator failures",
+      "ECU capacitor failures on early models"
+    ],
+    "strengths": [
+      "Exceptional reliability and longevity",
+      "Smooth and refined power delivery",
+      "Lightweight aluminum construction",
+      "Relatively simple and serviceable",
+      "Strong aftermarket for forced induction",
+      "Popular V8 swap candidate"
+    ],
+    "maintenance_critical": [
+      "Timing belt every 90,000 miles",
+      "Water pump with timing belt",
+      "Regular oil changes (5,000 mile intervals)",
+      "Coolant flush every 100,000 miles"
+    ],
+    "supercharger_and_turbo_notes": {
+      "description": "The 1UZ-FE responds well to forced induction",
+      "popular_kits": [
+        "TRD/Eaton M90 supercharger (OEM option on some SC400)",
+        "Vortech centrifugal supercharger",
+        "Custom twin turbo setups"
+      ],
+      "power_potential": "400-500HP achievable with supercharger, 600+ with turbo on stock internals",
+      "considerations": [
+        "Non-VVTi version preferred for boost (lower compression)",
+        "Head studs recommended above 500HP",
+        "Fuel system upgrade essential"
+      ]
+    },
+    "swap_popularity": {
+      "description": "Popular V8 swap choice due to compact size and reliability",
+      "common_swaps": [
+        "Lexus IS300 (V8 IS300 project cars)",
+        "Toyota 86/Subaru BRZ",
+        "Mazda RX-7",
+        "Nissan 240SX",
+        "Various kit cars and race cars"
+      ],
+      "swap_advantages": [
+        "Compact for a V8",
+        "Relatively lightweight (under 400 lbs)",
+        "Excellent reliability",
+        "Good power potential with forced induction"
+      ]
+    }
+  }
+}

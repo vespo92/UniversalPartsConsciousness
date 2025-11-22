@@ -1,0 +1,199 @@
+{
+  "engine_id": "TOYOTA-7M-GTE-3.0L-I6-TURBO",
+  "common_names": [
+    "7M-GTE",
+    "7MGTE",
+    "7M",
+    "MK3 Supra Engine",
+    "A70 Engine"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota M Series",
+  "production_years": "1986-1992",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.954,
+      "cubic_inches": 180.3,
+      "cc": 2954
+    },
+    "bore": {
+      "inches": 3.27,
+      "mm": 83.0
+    },
+    "stroke": {
+      "inches": 3.58,
+      "mm": 91.0
+    },
+    "compression_ratio": "8.4:1",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at timing belt end",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder)",
+    "forced_induction": {
+      "type": "Single Turbocharger",
+      "turbo_model": "CT26",
+      "boost_pressure_psi": 7,
+      "wastegate_type": "Internal"
+    },
+    "fuel_system": {
+      "type": "Electronic Fuel Injection (EFI)",
+      "fuel_pressure_bar": 2.5,
+      "injector_type": "Top-feed 350cc"
+    },
+    "ignition_system": "Distributorless ignition system (DIS)"
+  },
+
+  "power_output_by_year": {
+    "1987_1989_us": {
+      "horsepower": 230,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 246,
+      "torque_rpm": 3200,
+      "notes": "US market A70 Supra Turbo"
+    },
+    "1987_1992_jdm": {
+      "horsepower": 235,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 253,
+      "torque_rpm": 3200,
+      "notes": "JDM Supra A70 Turbo"
+    },
+    "1989_1992_us_revised": {
+      "horsepower": 232,
+      "hp_rpm": 5600,
+      "torque_lb_ft": 254,
+      "torque_rpm": 3200,
+      "notes": "Revised ECU programming"
+    }
+  },
+
+  "vehicle_applications": {
+    "a70_supra_turbo": {
+      "years": "1987-1992",
+      "chassis_code": "MA70",
+      "notes": "MK3 Supra Turbo - primary application"
+    },
+    "a70_supra_turbo_targa": {
+      "years": "1987-1992",
+      "chassis_code": "MA70",
+      "notes": "MK3 Supra Turbo with removable targa top"
+    }
+  },
+
+  "related_engines": {
+    "7m_ge": {
+      "displacement_cc": 2954,
+      "horsepower": 200,
+      "configuration": "Naturally aspirated",
+      "applications": ["Supra NA", "Cressida"],
+      "notes": "Non-turbo variant with higher compression"
+    },
+    "6m_ge": {
+      "displacement_cc": 2759,
+      "horsepower": 185,
+      "configuration": "Naturally aspirated",
+      "applications": ["MA61 Supra"],
+      "notes": "Predecessor to 7M"
+    },
+    "5m_ge": {
+      "displacement_cc": 2759,
+      "horsepower": 145,
+      "configuration": "Naturally aspirated",
+      "applications": ["MA61 Supra", "Cressida"],
+      "notes": "Earlier M-series variant"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.5,
+      "capacity_liters": 5.2,
+      "with_filter": true,
+      "recommended_viscosity": ["10W-30", "10W-40"]
+    },
+    "coolant": {
+      "capacity_quarts": 10.0,
+      "capacity_liters": 9.5,
+      "type": "Toyota Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 215.0,
+    "main_bearing_journal_diameter_mm": 65.0,
+    "rod_bearing_journal_diameter_mm": 51.0,
+    "cylinder_bore_diameter_mm": 83.0,
+    "connecting_rod_length_mm": 148.0,
+    "crankshaft_stroke_mm": 91.0
+  },
+
+  "head_gasket_issue": {
+    "description": "The 7M-GTE is infamous for head gasket failures",
+    "root_cause": "Factory head bolt torque specification was too low (58 ft-lbs)",
+    "symptoms": [
+      "Overheating",
+      "White smoke from exhaust",
+      "Coolant loss with no visible leak",
+      "Oil/coolant mixing",
+      "Compression loss between cylinders"
+    ],
+    "solution": {
+      "retorque_specs": {
+        "revised_torque_ft_lbs": 72,
+        "sequence": "Factory sequence, 3-stage torque",
+        "notes": "This is the 'magic fix' - retorque to 72 ft-lbs"
+      },
+      "additional_upgrades": [
+        "ARP head studs (recommended)",
+        "Cometic MLS head gasket",
+        "Proper coolant system maintenance"
+      ]
+    },
+    "prevalence": "Very common on unmodified engines - essential maintenance item",
+    "urban_legend": "Many 7Ms were unfairly labeled as 'unreliable' when the simple fix prevents the issue"
+  },
+
+  "notes": {
+    "heritage": "The 7M-GTE was Toyota's flagship inline-6 before the legendary 2JZ-GTE. It powered the iconic MK3 Supra and represented the peak of Toyota's M-series development. Despite its reputation for head gasket issues, properly maintained 7Ms are durable engines.",
+    "reputation": "Mixed - suffered from widespread head gasket failures due to factory torque specs, giving it an undeserved 'unreliable' label. When properly torqued and maintained, the 7M-GTE is a capable engine with good tuning potential.",
+    "common_issues": [
+      "HEAD GASKET FAILURE (see dedicated section above)",
+      "CT26 turbo failure (ceramic wheel version)",
+      "Oil leaks from cam seals",
+      "AFM (Airflow Meter) failures",
+      "Distributor-less ignition issues",
+      "Fuel injector clogging"
+    ],
+    "strengths": [
+      "Robust iron block",
+      "Good torque characteristics",
+      "Relatively simple design",
+      "Responds well to basic mods",
+      "CT26 can be upgraded or replaced",
+      "Easier to work on than 2JZ"
+    ],
+    "maintenance_critical": [
+      "HEAD BOLT RETORQUE to 72 ft-lbs (CRITICAL)",
+      "Timing belt every 60,000 miles",
+      "Regular coolant system maintenance",
+      "Oil changes every 3,000-5,000 miles"
+    ],
+    "tuning_potential": {
+      "stock_turbo_limit": "~350HP with supporting mods",
+      "turbo_upgrade": "500HP+ achievable with larger turbo",
+      "common_upgrades": [
+        "ARP head studs",
+        "Bigger turbo (Garrett T3/T4, CT27)",
+        "Larger injectors (550cc+)",
+        "Aftermarket ECU or piggyback",
+        "Free-flow exhaust"
+      ]
+    },
+    "2jz_swap_consideration": "Due to head gasket concerns and the 2JZ's superior reputation, many MK3 Supra owners swap to the 2JZ-GTE. However, a properly built 7M can be a reliable and powerful engine at lower cost.",
+    "cultural_significance": "The A70 Supra with 7M-GTE was featured in Gran Turismo games and represents the transition era between Toyota's classic and modern sports car eras."
+  }
+}

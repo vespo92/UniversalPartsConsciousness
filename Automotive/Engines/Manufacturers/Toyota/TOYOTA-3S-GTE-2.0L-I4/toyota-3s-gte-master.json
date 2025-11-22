@@ -1,0 +1,218 @@
+{
+  "engine_id": "TOYOTA-3S-GTE-2.0L-I4-TURBO",
+  "common_names": [
+    "3S-GTE",
+    "3SGTE",
+    "MR2 Turbo Engine",
+    "Celica GT-Four Engine",
+    "Rally Engine"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota S Series",
+  "production_years": "1986-2007",
+
+  "base_specifications": {
+    "configuration": "Inline 4-cylinder",
+    "displacement": {
+      "liters": 1.998,
+      "cubic_inches": 121.9,
+      "cc": 1998
+    },
+    "bore": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "stroke": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "compression_ratio": "8.8:1 (Gen 1-3) / 9.0:1 (Gen 4)",
+    "firing_order": "1-3-4-2",
+    "cylinder_numbering": "1 at timing belt end",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 16 valves (4 per cylinder)",
+    "forced_induction": {
+      "type": "Single Turbocharger",
+      "turbo_model_by_generation": {
+        "gen1": "CT26",
+        "gen2": "CT20B",
+        "gen3": "CT20B",
+        "gen4": "CT20B"
+      }
+    },
+    "fuel_system": {
+      "type": "Electronic Fuel Injection (EFI)",
+      "fuel_pressure_bar": 3.0,
+      "injector_type": "Top-feed 440cc (Gen3/4) / 360cc (Gen1/2)"
+    },
+    "ignition_system": "Distributor (Gen1/2) / Distributorless (Gen3/4)"
+  },
+
+  "generations": {
+    "gen1_1986_1989": {
+      "nickname": "Gen 1",
+      "years": "1986-1989",
+      "compression_ratio": "8.0:1",
+      "horsepower": 185,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 184,
+      "torque_rpm": 3200,
+      "turbo": "CT26",
+      "head_color": "Gray",
+      "applications": ["ST165 Celica GT-Four"],
+      "features": "First 3S-GTE, T-VIS intake system"
+    },
+    "gen2_1990_1993": {
+      "nickname": "Gen 2",
+      "years": "1990-1993",
+      "compression_ratio": "8.8:1",
+      "horsepower": 225,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 200,
+      "torque_rpm": 3200,
+      "turbo": "CT26",
+      "head_color": "Gray/Black",
+      "applications": ["SW20 MR2 Turbo", "ST185 Celica GT-Four"],
+      "features": "Improved head, better turbo"
+    },
+    "gen3_1994_1999": {
+      "nickname": "Gen 3",
+      "years": "1994-1999",
+      "compression_ratio": "8.8:1",
+      "horsepower": 245,
+      "hp_rpm": 6000,
+      "torque_lb_ft": 224,
+      "torque_rpm": 4000,
+      "turbo": "CT20B",
+      "head_color": "Black",
+      "applications": ["SW20 MR2 Turbo (late)", "ST205 Celica GT-Four WRC"],
+      "features": "Larger CT20B turbo, improved flow, WRC homologation"
+    },
+    "gen4_1999_2007": {
+      "nickname": "Gen 4",
+      "years": "1999-2007",
+      "compression_ratio": "9.0:1",
+      "horsepower": 260,
+      "hp_rpm": 6200,
+      "torque_lb_ft": 240,
+      "torque_rpm": 4400,
+      "turbo": "CT20B (revised)",
+      "head_color": "Black",
+      "applications": ["ST215 Caldina GT-Four (JDM)", "MR-S TRD (JDM)"],
+      "features": "VVTi, highest output 3S-GTE, most desirable for swaps"
+    }
+  },
+
+  "vehicle_applications": {
+    "st165_celica_gt_four": {
+      "years": "1986-1989",
+      "chassis_code": "ST165",
+      "engine_version": "Gen 1",
+      "notes": "First Celica GT-Four, WRC Group A champion"
+    },
+    "st185_celica_gt_four": {
+      "years": "1990-1993",
+      "chassis_code": "ST185",
+      "engine_version": "Gen 2",
+      "notes": "Carlos Sainz WRC championship car"
+    },
+    "st205_celica_gt_four": {
+      "years": "1994-1999",
+      "chassis_code": "ST205",
+      "engine_version": "Gen 3",
+      "notes": "Final Celica GT-Four, WRC homologation special"
+    },
+    "sw20_mr2_turbo": {
+      "years": "1990-1999",
+      "chassis_code": "SW20",
+      "engine_version": "Gen 2 (1990-1993) / Gen 3 (1994-1999)",
+      "notes": "Mid-engine sports car, snap oversteer reputation"
+    },
+    "st215_caldina_gt_four": {
+      "years": "1997-2002",
+      "chassis_code": "ST215",
+      "engine_version": "Gen 4",
+      "notes": "JDM only turbo wagon, Gen 4 engine very desirable"
+    },
+    "zzw30_mr_s_trd": {
+      "years": "2000-2007",
+      "chassis_code": "ZZW30",
+      "engine_version": "Gen 4",
+      "notes": "Limited TRD turbo kit for MR-S (JDM)"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 4.5,
+      "capacity_liters": 4.3,
+      "with_filter": true,
+      "recommended_viscosity": ["5W-30", "10W-40"]
+    },
+    "coolant": {
+      "capacity_quarts": 7.4,
+      "capacity_liters": 7.0,
+      "type": "Toyota Super Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 195.0,
+    "main_bearing_journal_diameter_mm": 55.0,
+    "rod_bearing_journal_diameter_mm": 45.0,
+    "cylinder_bore_diameter_mm": 86.0,
+    "connecting_rod_length_mm": 138.0,
+    "crankshaft_stroke_mm": 86.0
+  },
+
+  "wrc_heritage": {
+    "description": "The 3S-GTE powered Toyota's WRC efforts in Group A",
+    "championships": [
+      "1990 WRC Drivers Championship (Carlos Sainz, ST185)",
+      "1992 WRC Constructors Championship",
+      "1993 WRC Constructors Championship",
+      "1994 WRC Constructors Championship"
+    ],
+    "homologation_specials": {
+      "st185_carlos_sainz_limited": {
+        "production": "5000 units for homologation",
+        "features": "Revised engine, Limited Slip Differential"
+      },
+      "st205_wrc": {
+        "production": "2500 units",
+        "features": "Most aggressive 3S-GTE, water spray intercooler"
+      }
+    },
+    "controversy": "Toyota was banned from WRC for 1 year (1995) for using an illegal restrictor bypass on the ST205"
+  },
+
+  "notes": {
+    "heritage": "The 3S-GTE is Toyota's most successful turbocharged 4-cylinder, with multiple WRC championships. It represents the peak of Toyota's 1990s turbo technology and remains highly sought after for swaps.",
+    "reputation": "Known for strong power potential and rally heritage. The Gen 4 engine with VVTi is particularly prized. Stock internals can handle 400+ HP with proper supporting mods.",
+    "common_issues": [
+      "Timing belt critical maintenance (interference engine)",
+      "Head gasket failures if overheated",
+      "Oil pump failures on high-mileage engines",
+      "CT26 turbo oil seal failures",
+      "Crankshaft position sensor failures",
+      "Water pump failures"
+    ],
+    "strengths": [
+      "Proven WRC heritage and durability",
+      "Strong iron block handles significant power",
+      "Stock internals good to 400+ HP",
+      "Excellent aftermarket support",
+      "Gen 4 VVTi version is exceptional",
+      "Relatively compact for easy swaps"
+    ],
+    "maintenance_critical": [
+      "Timing belt every 60,000 miles (CRITICAL)",
+      "Water pump with timing belt",
+      "Inspect oil pump at every timing belt service",
+      "Oil changes every 3,000 miles under boost"
+    ],
+    "swap_popularity": "The 3S-GTE is popular for swapping into Celica, MR2 NA, Corolla, and other Toyota platforms. Gen 4 is most desirable for its VVTi and higher output."
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "engine_id": "TOYOTA-1JZ-GTE-2.5L-I6-TWINTURBO",
+  "common_names": [
+    "1JZ-GTE",
+    "1JZ",
+    "1J",
+    "Little 2JZ",
+    "JZX Engine"
+  ],
+  "manufacturer": "Toyota Motor Corporation",
+  "engine_family": "Toyota JZ",
+  "production_years": "1990-2007",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.492,
+      "cubic_inches": 152.1,
+      "cc": 2492
+    },
+    "bore": {
+      "inches": 3.39,
+      "mm": 86.0
+    },
+    "stroke": {
+      "inches": 2.87,
+      "mm": 71.5
+    },
+    "compression_ratio": "8.5:1",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (timing belt end)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "Cast iron",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), VVTi on 1996+ models",
+    "forced_induction": {
+      "non_vvti": {
+        "type": "Parallel Twin Turbochargers",
+        "turbo_model": "CT12A",
+        "boost_pressure_psi": 10
+      },
+      "vvti": {
+        "type": "Single Turbocharger",
+        "turbo_model": "CT15B",
+        "boost_pressure_psi": 12
+      }
+    },
+    "fuel_system": {
+      "type": "Electronic Fuel Injection (EFI)",
+      "fuel_pressure_bar": 3.0,
+      "injector_type": "Side-feed 380cc"
+    },
+    "ignition_system": "Distributorless ignition (DIS) / Coil-on-plug (VVTi)"
+  },
+
+  "power_output_by_year": {
+    "1990_1995_twin_turbo": {
+      "horsepower": 280,
+      "hp_rpm": 6200,
+      "torque_lb_ft": 268,
+      "torque_rpm": 4800,
+      "notes": "Parallel twin turbo setup (CT12A x2)"
+    },
+    "1996_2007_vvti_single_turbo": {
+      "horsepower": 280,
+      "hp_rpm": 6200,
+      "torque_lb_ft": 280,
+      "torque_rpm": 2400,
+      "notes": "VVTi with single CT15B turbo - better torque curve"
+    }
+  },
+
+  "vehicle_applications": {
+    "jzx81_mark2_chaser_cresta": {
+      "years": "1990-1992",
+      "chassis_code": "JZX81",
+      "notes": "Mark II/Chaser/Cresta 2.5GT Twin Turbo (JDM)"
+    },
+    "jzx90_mark2_chaser_cresta": {
+      "years": "1992-1996",
+      "chassis_code": "JZX90",
+      "notes": "Mark II/Chaser/Cresta Tourer V (JDM) - Very popular"
+    },
+    "jzx100_mark2_chaser_cresta": {
+      "years": "1996-2001",
+      "chassis_code": "JZX100",
+      "notes": "Mark II/Chaser/Cresta Tourer V VVTi (JDM) - Drift legend"
+    },
+    "jzx110_mark2": {
+      "years": "2000-2004",
+      "chassis_code": "JZX110",
+      "notes": "Mark II iR-V (JDM)"
+    },
+    "jzz30_soarer_25gt": {
+      "years": "1991-2000",
+      "chassis_code": "JZZ30",
+      "notes": "Toyota Soarer 2.5GT-T (JDM)"
+    },
+    "jza70_supra_25": {
+      "years": "1990-1993",
+      "chassis_code": "JZA70",
+      "notes": "MK3 Supra 2.5 Twin Turbo R (JDM)"
+    },
+    "jzs171_crown_athlete_v": {
+      "years": "1999-2003",
+      "chassis_code": "JZS171",
+      "notes": "Toyota Crown Athlete V (JDM)"
+    },
+    "jzs155_crown_majesta": {
+      "years": "1995-1999",
+      "chassis_code": "JZS155",
+      "notes": "Toyota Crown Majesta (JDM)"
+    },
+    "jzx90_verossa": {
+      "years": "2001-2004",
+      "chassis_code": "JZX110",
+      "notes": "Toyota Verossa VR25 (JDM)"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5.0,
+      "capacity_liters": 4.7,
+      "with_filter": true,
+      "recommended_viscosity": ["5W-30", "10W-30"]
+    },
+    "coolant": {
+      "capacity_quarts": 8.5,
+      "capacity_liters": 8.0,
+      "type": "Toyota Super Long Life Coolant"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 200.0,
+    "main_bearing_journal_diameter_mm": 62.0,
+    "rod_bearing_journal_diameter_mm": 48.0,
+    "cylinder_bore_diameter_mm": 86.0,
+    "connecting_rod_length_mm": 128.0,
+    "crankshaft_stroke_mm": 71.5
+  },
+
+  "comparison_to_2jz_gte": {
+    "displacement": "500cc smaller (2.5L vs 3.0L)",
+    "stroke": "Shorter stroke (71.5mm vs 86mm) - higher revving potential",
+    "deck_height": "Shorter block (200mm vs 220mm)",
+    "rod_journals": "Smaller rod journals (48mm vs 52mm)",
+    "turbo_system": "Different - parallel twins (early) or single (VVTi)",
+    "max_reliable_power": "550-600HP on stock internals vs 700-800HP for 2JZ",
+    "advantages": [
+      "Lighter weight",
+      "Higher revving capability due to shorter stroke",
+      "Fits in smaller engine bays",
+      "VVTi version has excellent single turbo setup"
+    ]
+  },
+
+  "notes": {
+    "heritage": "The 1JZ-GTE preceded the 2JZ-GTE and was Toyota's first modern twin-turbo inline-6. It established the JZ family's reputation for reliability and tuning potential. The VVTi version with single turbo is highly regarded for its power delivery.",
+    "reputation": "The 'little 2JZ' - shares many characteristics with its larger sibling but in a more compact package. The JZX100 Chaser/Mark II Tourer V is legendary in Japanese drift culture. VVTi version particularly prized.",
+    "common_issues": [
+      "Twin turbo models: vacuum line complexity and boost control issues",
+      "CT12A turbos have ceramic exhaust wheels (can shatter)",
+      "Oil leaks from cam seals and valve covers",
+      "VVTi gear noise on high-mileage engines",
+      "Timing belt critical maintenance"
+    ],
+    "strengths": [
+      "Robust iron block construction",
+      "Excellent power potential for displacement",
+      "Lighter and more compact than 2JZ",
+      "VVTi single turbo version spools quickly",
+      "Strong aftermarket support",
+      "Great for drift and grip builds"
+    ],
+    "swap_popularity": "The 1JZ-GTE is a popular swap choice for smaller chassis where the 2JZ won't fit. Common in Nissan S-chassis, AE86, and smaller Toyota platforms.",
+    "vvti_vs_non_vvti": {
+      "vvti_advantages": [
+        "Single larger turbo (CT15B) for better response",
+        "VVTi provides better low-end torque",
+        "Coil-on-plug ignition",
+        "More refined power delivery"
+      ],
+      "non_vvti_advantages": [
+        "Parallel twin turbos have unique character",
+        "Higher factory redline",
+        "No VVTi system complexity"
+      ]
+    }
+  }
+}
