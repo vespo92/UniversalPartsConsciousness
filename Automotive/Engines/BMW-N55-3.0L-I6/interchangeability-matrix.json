@@ -1,0 +1,130 @@
+{
+  "engine_id": "BMW-N55-3.0L-I6-TWINSCROLL",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "E90_LCI": {"name": "3 Series Late", "years": "2010-2011", "models": ["335i"]},
+    "F30": {"name": "3 Series Sedan", "years": "2012-2015", "models": ["335i", "335xi"]},
+    "F32": {"name": "4 Series Coupe", "years": "2014-2016", "models": ["435i"]},
+    "F22": {"name": "2 Series Coupe", "years": "2014-2016", "models": ["M235i"]},
+    "F87": {"name": "M2", "years": "2016-2018", "models": ["M2"]},
+    "F10": {"name": "5 Series Sedan", "years": "2011-2016", "models": ["535i"]},
+    "F15": {"name": "X5", "years": "2014-2018", "models": ["35i"]},
+    "F16": {"name": "X6", "years": "2015-2019", "models": ["35i"]}
+  },
+
+  "era_classifications": {
+    "early_n55": {
+      "years": "2009-2012",
+      "ecu": "MSD85",
+      "valve_cover": "Gen 1 (prone to cracking)",
+      "notes": "First generation - some early issues"
+    },
+    "mid_n55": {
+      "years": "2013-2015",
+      "ecu": "MEVD17.2",
+      "valve_cover": "Gen 2 (revised)",
+      "notes": "Improved valve cover design"
+    },
+    "late_n55_m2": {
+      "years": "2016-2019",
+      "ecu": "MEVD17.2",
+      "notes": "M2 applications - highest output"
+    }
+  },
+
+  "interchangeability_groups": {
+    "universal_all_n55": {
+      "description": "Parts that interchange across ALL N55 engines",
+      "parts": [
+        {"part_id": "N55-BLOCK", "notes": "All blocks identical"},
+        {"part_id": "N55-CRANK", "notes": "Identical to N54 crankshaft"},
+        {"part_id": "N55-CONROD", "notes": "All rods identical"},
+        {"part_id": "N55-PISTON", "notes": "All pistons identical"},
+        {"part_id": "N55-OIL-PUMP", "notes": "All oil pumps identical"},
+        {"part_id": "N55-OIL-FILTER", "notes": "Universal filter"},
+        {"part_id": "N55-SPARK-PLUGS", "notes": "Same plugs all years"}
+      ]
+    },
+    "valve_cover_compatibility": {
+      "description": "Valve cover versions",
+      "gen1": {
+        "years": "2009-2012",
+        "part_number": "11127570292",
+        "issues": "Cracking around PCV valve area"
+      },
+      "gen2": {
+        "years": "2013+",
+        "part_number": "11127588412",
+        "notes": "Revised design - addresses cracking"
+      },
+      "upgrade_path": "Gen 2 cover can replace Gen 1"
+    }
+  },
+
+  "cross_engine_compatibility": {
+    "n55_to_n54": {
+      "shared_parts": [
+        "Crankshaft",
+        "Connecting rods",
+        "Pistons (with modification)",
+        "Main bearings",
+        "Rod bearings",
+        "Oil filter"
+      ],
+      "not_compatible": [
+        "Cylinder head (N55 has Valvetronic)",
+        "Turbochargers (single vs twin)",
+        "Intake manifold",
+        "Fuel injectors (solenoid vs piezo)",
+        "ECU"
+      ]
+    },
+    "n55_to_b58": {
+      "shared_parts": ["Oil filter (some)", "Basic architecture concept"],
+      "not_compatible": ["Most parts - B58 is new design with closed deck"]
+    }
+  },
+
+  "common_swaps_and_upgrades": {
+    "stage_1": {
+      "name": "ECU Tune",
+      "power_hp": "360-380",
+      "requirements": ["ECU flash", "91+ octane"]
+    },
+    "stage_2": {
+      "name": "Downpipe + Tune",
+      "power_hp": "400-420",
+      "requirements": ["Downpipe", "Stage 2 tune", "Upgraded intercooler recommended"]
+    },
+    "stage_2_plus": {
+      "name": "Full Bolt-On",
+      "power_hp": "450-480",
+      "requirements": ["All Stage 2", "Inlet pipe", "Charge pipe", "E30+ fuel"]
+    },
+    "hybrid_turbo": {
+      "name": "Upgraded Turbo",
+      "power_hp": "500-600",
+      "requirements": ["Pure/Vargas hybrid turbo", "HPFP upgrade", "Custom tune"]
+    }
+  },
+
+  "known_failure_points": {
+    "valve_cover_cracking": {
+      "affected_years": "2009-2012",
+      "solution": "Replace with revised Gen 2 cover"
+    },
+    "vanos_solenoid_failure": {
+      "symptoms": ["Rough idle", "Reduced power", "Fault codes"],
+      "solution": "Replace VANOS solenoids"
+    },
+    "charge_pipe_cracking": {
+      "solution": "Upgrade to aluminum charge pipe"
+    },
+    "water_pump_failure": {
+      "typical_mileage": "60,000-80,000",
+      "solution": "Replace preventatively"
+    }
+  }
+}

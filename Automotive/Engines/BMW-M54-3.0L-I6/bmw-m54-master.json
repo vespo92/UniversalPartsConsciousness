@@ -1,0 +1,88 @@
+{
+  "engine_id": "BMW-M54B30-I6-NA",
+  "common_names": ["M54", "M54B30", "330i Engine", "BMW 3.0L Six"],
+  "manufacturer": "BMW AG",
+  "engine_family": "BMW M54",
+  "production_years": "2000-2006",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {"liters": 2.979, "cc": 2979},
+    "bore": {"mm": 84.0},
+    "stroke": {"mm": 89.6},
+    "compression_ratio": "10.2:1",
+    "firing_order": "1-5-3-6-2-4",
+    "block_material": "Aluminum with Alusil bore coating",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), Double VANOS",
+    "forced_induction": "Naturally Aspirated",
+    "fuel_system": {"type": "Sequential Multi-Point Fuel Injection (Siemens MS43/MS45)"},
+    "ignition_system": "Coil-on-plug"
+  },
+
+  "variants": {
+    "m54b22": {"displacement_cc": 2171, "hp": 170, "torque_nm": 210, "applications": "320i, 520i, Z4 2.2i"},
+    "m54b25": {"displacement_cc": 2494, "hp": 192, "torque_nm": 245, "applications": "325i, 525i, Z4 2.5i, X3 2.5i"},
+    "m54b30": {"displacement_cc": 2979, "hp": 231, "torque_nm": 300, "applications": "330i, 530i, Z4 3.0i, X3 3.0i, X5 3.0i"}
+  },
+
+  "power_output_by_variant": {
+    "m54b30_standard": {"hp": 231, "hp_rpm": 5900, "torque_nm": 300, "torque_rpm": 3500},
+    "m54b30_sulev": {"hp": 225, "hp_rpm": 5900, "torque_nm": 295, "torque_rpm": 3500, "notes": "SULEV emissions (California)"}
+  },
+
+  "vehicle_applications": {
+    "e46_330i": {"years": "2001-2006", "notes": "3 Series sedan/coupe/wagon - most common"},
+    "e46_330ci": {"years": "2001-2006", "notes": "3 Series Coupe"},
+    "e39_530i": {"years": "2001-2003", "notes": "5 Series"},
+    "e60_530i": {"years": "2004-2005", "notes": "5 Series (early E60)"},
+    "e53_x5_30i": {"years": "2001-2006", "notes": "X5 3.0i"},
+    "e83_x3_30i": {"years": "2004-2006", "notes": "X3 3.0i"},
+    "e85_z4_30i": {"years": "2003-2006", "notes": "Z4 3.0i"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 6.5, "viscosity": ["5W-30", "5W-40"], "spec": "BMW Longlife-98 or LL-01"},
+    "coolant": {"liters": 10.5}
+  },
+
+  "critical_dimensions": {
+    "bore_mm": 84.0,
+    "stroke_mm": 89.6,
+    "connecting_rod_length_mm": 135.0,
+    "main_bearing_journal_mm": 60.0,
+    "rod_bearing_journal_mm": 48.0
+  },
+
+  "electronic_systems": {
+    "engine_management": "Siemens MS43 (2001-2002) / MS45 (2003-2006)",
+    "vanos_control": "Double VANOS (stepless intake and exhaust timing)",
+    "throttle_control": "Drive-by-wire (MS45 only)"
+  },
+
+  "notes": {
+    "heritage": "Evolution of M52TU. Part of the legendary BMW inline-6 lineage.",
+    "reputation": "One of the most reliable engines BMW has produced. Known for smooth power delivery and longevity.",
+    "common_issues": [
+      "Cooling system failures (expansion tank, water pump, thermostat)",
+      "VANOS seals hardening",
+      "Valve cover gasket leaks",
+      "CCV (Crankcase Ventilation) failure",
+      "DISA valve failure",
+      "Oil filter housing gasket leak"
+    ],
+    "strengths": [
+      "Extremely reliable with proper maintenance",
+      "Smooth, linear power delivery",
+      "200,000+ mile lifespan common",
+      "Excellent parts availability",
+      "Simple design compared to modern turbo engines",
+      "Great platform for supercharger builds"
+    ],
+    "maintenance_critical": [
+      "Cooling system refresh every 80k miles (water pump, thermostat, hoses, expansion tank)",
+      "VANOS seals at 100k miles",
+      "CCV valve at 100k miles"
+    ]
+  }
+}

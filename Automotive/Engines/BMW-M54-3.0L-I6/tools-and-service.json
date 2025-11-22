@@ -1,0 +1,94 @@
+{
+  "engine_id": "BMW-M54B30-I6-NA",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "essential_tools": {
+      "metric_sockets_mm": [8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+      "e_torx": ["E8", "E10", "E12", "E14"],
+      "torx": ["T25", "T30", "T40", "T45", "T50"],
+      "oil_filter_cap_wrench": "86mm 16-flute"
+    },
+    "specialty_tools": {
+      "vanos_timing_tools": "M50/M52/M54 camshaft locking tools",
+      "fan_clutch_wrench": "32mm thin wrench (or special tool)",
+      "coolant_bleeding_funnel": "Spill-free funnel recommended"
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 7500,
+        "oil_spec": "BMW LL-01 (5W-30 or 5W-40)",
+        "capacity_liters": 6.5,
+        "filter": "Mann HU925/4X",
+        "drain_plug_nm": 25
+      },
+      "spark_plugs": {
+        "interval_miles": 60000,
+        "part": "NGK BKR6EQUP",
+        "gap_mm": 0.8,
+        "torque_nm": 22
+      },
+      "coolant_system_refresh": {
+        "interval_miles": 80000,
+        "description": "Replace water pump, thermostat, expansion tank, hoses, coolant",
+        "time_hours": 4,
+        "difficulty": "intermediate",
+        "critical_note": "M54 cooling systems fail catastrophically - do not skip this service"
+      },
+      "vanos_seal_refresh": {
+        "interval_miles": 100000,
+        "parts": ["Beisan Systems BS032 or Dr. VANOS seal kit"],
+        "time_hours": 4,
+        "difficulty": "advanced"
+      },
+      "ccv_valve_replacement": {
+        "interval_miles": 100000,
+        "symptoms": ["Rough idle", "Whistling noise", "Oil leaks"],
+        "time_hours": 2,
+        "difficulty": "intermediate"
+      }
+    },
+    "common_repairs": {
+      "valve_cover_gasket": {
+        "symptoms": ["Oil smell", "Smoke from exhaust manifold area"],
+        "time_hours": 2,
+        "parts": ["Valve cover gasket", "Grommets"]
+      },
+      "oil_filter_housing_gasket": {
+        "symptoms": ["Oil leak on passenger side"],
+        "time_hours": 1.5
+      },
+      "disa_valve_inspection": {
+        "symptoms": ["Rough idle", "Rattling noise in intake"],
+        "notes": "Inspect for broken flap - can get ingested into engine"
+      },
+      "water_pump_replacement": {
+        "symptoms": ["Coolant leak", "Overheating"],
+        "time_hours": 2,
+        "notes": "Always replace thermostat at same time"
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "vanos_test": {
+      "symptoms": ["Rough idle", "Loss of power at certain RPM", "Engine codes"],
+      "diagnosis": "Check VANOS solenoid function and seal condition"
+    },
+    "ccv_test": {
+      "procedure": "Remove oil cap at idle - should be slight vacuum. Strong vacuum = CCV failed"
+    },
+    "compression_test": {
+      "spec_bar": {"minimum": 10, "max_variation": 1}
+    },
+    "cooling_system_pressure_test": {
+      "pressure_bar": 2.0,
+      "hold_time_minutes": 15,
+      "notes": "Critical for finding hidden leaks"
+    }
+  }
+}

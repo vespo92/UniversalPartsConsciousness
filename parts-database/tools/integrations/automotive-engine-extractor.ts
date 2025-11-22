@@ -33,6 +33,39 @@ const supabase = supabaseUrl && supabaseKey
 const ENGINE_DATA_DIR = path.join(__dirname, '../../../Automotive/Engines')
 
 /**
+ * Find master file with flexible naming (handles different naming conventions)
+ */
+function findMasterFile(engineDir: string, engineId: string): string | null {
+  const possibleNames = [
+    `${engineId.toLowerCase()}-master.json`,
+    `${engineId.toLowerCase().replace(/-/g, '_')}-master.json`,
+    // Handle BMW naming: BMW-N54-3.0L-I6 -> bmw-n54-master.json
+    engineId.toLowerCase().split('-').slice(0, 2).join('-') + '-master.json',
+    // Try finding any *-master.json file
+  ]
+
+  for (const name of possibleNames) {
+    const fullPath = path.join(engineDir, name)
+    if (fs.existsSync(fullPath)) {
+      return fullPath
+    }
+  }
+
+  // Fallback: find any -master.json file in directory
+  try {
+    const files = fs.readdirSync(engineDir)
+    const masterFile = files.find(f => f.endsWith('-master.json'))
+    if (masterFile) {
+      return path.join(engineDir, masterFile)
+    }
+  } catch {
+    // ignore
+  }
+
+  return null
+}
+
+/**
  * Load engine data from JSON files
  */
 function loadEngineData(engineId: string): {
@@ -48,14 +81,14 @@ function loadEngineData(engineId: string): {
     return null
   }
 
-  const masterPath = path.join(engineDir, `${engineId.toLowerCase()}-master.json`)
+  const masterPath = findMasterFile(engineDir, engineId)
   const partsPath = path.join(engineDir, 'parts-catalog.json')
   const interchangePath = path.join(engineDir, 'interchangeability-matrix.json')
   const toolsPath = path.join(engineDir, 'tools-and-service.json')
 
   try {
     return {
-      master: fs.existsSync(masterPath) ? JSON.parse(fs.readFileSync(masterPath, 'utf-8')) : null,
+      master: masterPath ? JSON.parse(fs.readFileSync(masterPath, 'utf-8')) : null,
       parts: fs.existsSync(partsPath) ? JSON.parse(fs.readFileSync(partsPath, 'utf-8')) : null,
       interchangeability: fs.existsSync(interchangePath) ? JSON.parse(fs.readFileSync(interchangePath, 'utf-8')) : null,
       tools: fs.existsSync(toolsPath) ? JSON.parse(fs.readFileSync(toolsPath, 'utf-8')) : null,
@@ -94,14 +127,18 @@ function listEngines(): void {
   console.log(`${'─'.repeat(60)}`)
 
   for (const engineDir of engines) {
-    const masterPath = path.join(ENGINE_DATA_DIR, engineDir, `${engineDir.toLowerCase()}-master.json`)
-    if (fs.existsSync(masterPath)) {
+    const masterPath = findMasterFile(path.join(ENGINE_DATA_DIR, engineDir), engineDir)
+    if (masterPath) {
       try {
         const master = JSON.parse(fs.readFileSync(masterPath, 'utf-8'))
+        const displacement = master.base_specifications?.displacement?.liters ||
+                            (master.base_specifications?.displacement?.cc ? (master.base_specifications.displacement.cc / 1000).toFixed(1) : 'N/A')
+        const turbo = master.base_specifications?.forced_induction
+        const turboStr = turbo && turbo !== 'Naturally Aspirated' ? ' (Turbo)' : ''
         console.log(`  ${engineDir}`)
         console.log(`    ├─ Name: ${master.common_names?.[0] || master.engine_id}`)
         console.log(`    ├─ Years: ${master.production_years}`)
-        console.log(`    ├─ Displacement: ${master.base_specifications?.displacement?.liters}L`)
+        console.log(`    ├─ Displacement: ${displacement}L${turboStr}`)
         console.log(`    └─ Configuration: ${master.base_specifications?.configuration}`)
         console.log()
       } catch {
@@ -561,6 +598,20 @@ COMMANDS:
 AVAILABLE ENGINES:
   AMC-4.0L-I6               AMC/Jeep 4.0L Inline-6 (1987-2006)
                             "The Indestructible Six"
+
+  BMW STRAIGHT-6 ENGINES:
+  BMW-N54-3.0L-I6           BMW N54 Twin-Turbo (2006-2016)
+                            "The Legend" - 335i, 535i, 135i
+  BMW-N55-3.0L-I6           BMW N55 Single-Turbo (2009-2019)
+                            TwinPower Turbo with Valvetronic
+  BMW-B58-3.0L-I6           BMW B58 Turbo (2015-present)
+                            Current gen - M340i, Supra
+  BMW-M54-3.0L-I6           BMW M54 NA (2000-2006)
+                            330i, 530i, X5 - bulletproof
+  BMW-M52-2.8L-I6           BMW M52 NA (1994-2000)
+                            328i, 528i, Z3 - classic
+  BMW-S54-3.2L-I6           BMW S54 M3 Engine (2000-2006)
+                            E46 M3 - legendary NA I6
 
 EXAMPLES:
   # List all engines

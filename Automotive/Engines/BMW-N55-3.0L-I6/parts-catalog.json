@@ -1,0 +1,441 @@
+{
+  "engine_id": "BMW-N55-3.0L-I6-TWINSCROLL",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {
+    "year": 2013,
+    "make": "BMW",
+    "model": "335i F30",
+    "engine": "N55B30"
+  },
+
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": {
+        "engine_block": {
+          "part_id": "N55-BLOCK",
+          "description": "Aluminum engine block with cast iron liners",
+          "oem_part_numbers": ["11112295992"],
+          "material": "Aluminum with Cast Iron Liners",
+          "weight_lbs": 110,
+          "specifications": {
+            "deck_height_mm": 210.0,
+            "bore_diameter_mm": 84.0,
+            "main_bearing_bores": 7,
+            "main_cap_bolts": "4-bolt all mains"
+          },
+          "interchangeability": {
+            "compatible_years": "2009-2019",
+            "notes": "Shared architecture with N54"
+          },
+          "wear_classification": "long_life"
+        },
+        "crankshaft": {
+          "part_id": "N55-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["11217584106"],
+          "material": "Forged Steel 4340",
+          "weight_lbs": 52,
+          "specifications": {
+            "stroke_mm": 89.6,
+            "main_journal_diameter_mm": 60.0,
+            "rod_journal_diameter_mm": 50.0
+          },
+          "interchangeability": {
+            "notes": "Identical to N54 crankshaft"
+          },
+          "wear_classification": "rebuild_item"
+        },
+        "connecting_rods": {
+          "part_id": "N55-CONROD",
+          "description": "Forged steel connecting rods (set of 6)",
+          "oem_part_numbers": ["11247605338"],
+          "aftermarket_options": {
+            "manley": "14084-6",
+            "cp_carrillo": "BMW-N55-65000H"
+          },
+          "material": "Forged Steel",
+          "quantity_per_engine": 6,
+          "specifications": {
+            "center_to_center_mm": 139.0
+          },
+          "wear_classification": "long_life"
+        },
+        "pistons": {
+          "part_id": "N55-PISTON",
+          "description": "Forged aluminum pistons (set of 6)",
+          "oem_part_numbers": ["11257610296"],
+          "aftermarket_options": {
+            "mahle": "197203806",
+            "je_pistons": "353842"
+          },
+          "material": "Forged Aluminum",
+          "quantity_per_engine": 6,
+          "wear_classification": "rebuild_item"
+        },
+        "main_bearings": {
+          "part_id": "N55-MAIN-BRG",
+          "description": "Main bearing set",
+          "oem_part_numbers": ["11217584107"],
+          "aftermarket_options": {
+            "acl": "6B2960H"
+          },
+          "wear_classification": "consumable"
+        },
+        "rod_bearings": {
+          "part_id": "N55-ROD-BRG",
+          "description": "Connecting rod bearing set",
+          "oem_part_numbers": ["11247605339"],
+          "aftermarket_options": {
+            "acl": "6B2960HX",
+            "be_bearings": "N55-ROD-COATED"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "cylinder_head": {
+      "description": "DOHC aluminum cylinder head with Valvetronic",
+      "components": {
+        "cylinder_head": {
+          "part_id": "N55-HEAD",
+          "description": "Aluminum DOHC cylinder head with Valvetronic",
+          "oem_part_numbers": ["11127603137"],
+          "material": "Aluminum",
+          "specifications": {
+            "valve_count": 24,
+            "valves_per_cylinder": 4,
+            "intake_valve_diameter_mm": 31.0,
+            "exhaust_valve_diameter_mm": 27.0,
+            "valvetronic_equipped": true
+          },
+          "wear_classification": "long_life"
+        },
+        "head_gasket": {
+          "part_id": "N55-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": ["11127599212"],
+          "wear_classification": "consumable"
+        },
+        "intake_valves": {
+          "part_id": "N55-INTAKE-VALVE",
+          "description": "Intake valves (set of 12)",
+          "oem_part_numbers": ["11347595697"],
+          "quantity_per_engine": 12,
+          "wear_classification": "rebuild_item"
+        },
+        "exhaust_valves": {
+          "part_id": "N55-EXHAUST-VALVE",
+          "description": "Exhaust valves (set of 12)",
+          "oem_part_numbers": ["11347595698"],
+          "quantity_per_engine": 12,
+          "wear_classification": "rebuild_item"
+        },
+        "valve_springs": {
+          "part_id": "N55-VALVE-SPRING",
+          "description": "Valve springs (set of 24)",
+          "oem_part_numbers": ["11347595699"],
+          "quantity_per_engine": 24,
+          "wear_classification": "rebuild_item"
+        },
+        "camshafts": {
+          "part_id": "N55-CAMSHAFT-SET",
+          "description": "Intake and exhaust camshaft set",
+          "oem_part_numbers": {
+            "intake": "11317598711",
+            "exhaust": "11317598712"
+          },
+          "quantity_per_engine": 4,
+          "wear_classification": "long_life"
+        },
+        "eccentric_shaft": {
+          "part_id": "N55-ECCENTRIC-SHAFT",
+          "description": "Valvetronic eccentric shaft",
+          "oem_part_numbers": ["11377589883"],
+          "quantity_per_engine": 1,
+          "specifications": {
+            "function": "Controls valve lift via intermediate levers",
+            "sensor": "Position sensor integrated"
+          },
+          "wear_classification": "long_life"
+        },
+        "valvetronic_motor": {
+          "part_id": "N55-VVT-MOTOR",
+          "description": "Valvetronic servo motor",
+          "oem_part_numbers": ["11377603979"],
+          "specifications": {
+            "type": "DC servo motor with worm gear",
+            "function": "Drives eccentric shaft"
+          },
+          "wear_classification": "consumable"
+        },
+        "vanos_solenoids": {
+          "part_id": "N55-VANOS",
+          "description": "VANOS solenoid set",
+          "oem_part_numbers": {
+            "intake": "11367585425",
+            "exhaust": "11367585426"
+          },
+          "quantity_per_engine": 4,
+          "common_issues": ["Failure causes rough idle, reduced power"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "turbo_system": {
+      "description": "Single twin-scroll turbocharger system",
+      "components": {
+        "turbocharger": {
+          "part_id": "N55-TURBO",
+          "description": "Single twin-scroll turbocharger",
+          "oem_part_numbers": ["11657595351", "11657642469"],
+          "aftermarket_options": {
+            "pure_turbos": "PURE Stage 2 N55",
+            "vargas_turbo": "VTT GC N55"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Twin-scroll single turbo",
+            "model": "Mitsubishi TD04HL / Borg Warner B03",
+            "compressor_wheel_mm": 48.0,
+            "turbine_wheel_mm": 43.0,
+            "max_boost_psi": 17.4
+          },
+          "interchangeability": {
+            "notes": "Several revisions - check part number"
+          },
+          "wear_classification": "consumable"
+        },
+        "wastegate_actuator": {
+          "part_id": "N55-WASTEGATE",
+          "description": "Electronic wastegate actuator",
+          "oem_part_numbers": ["11657638783"],
+          "wear_classification": "consumable"
+        },
+        "intercooler": {
+          "part_id": "N55-INTERCOOLER",
+          "description": "Front-mount intercooler",
+          "oem_part_numbers": ["17517600532"],
+          "aftermarket_options": {
+            "wagner": "200001066",
+            "vrsf": "N55-FMIC"
+          },
+          "wear_classification": "long_life"
+        },
+        "charge_pipe": {
+          "part_id": "N55-CHARGEPIPE",
+          "description": "Charge pipe (hot side)",
+          "oem_part_numbers": ["11617607866"],
+          "aftermarket_options": {
+            "bms": "BMS-CP-N55",
+            "vrsf": "VRSF-CP-N55"
+          },
+          "common_issues": ["OEM plastic prone to cracking"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "High pressure direct injection",
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "N55-HPFP",
+          "description": "High pressure fuel pump",
+          "oem_part_numbers": ["13517616170"],
+          "aftermarket_options": {
+            "autotech": "HPFP N55"
+          },
+          "specifications": {
+            "max_pressure_bar": 200,
+            "note": "More reliable than N54 HPFP"
+          },
+          "wear_classification": "consumable"
+        },
+        "fuel_injectors": {
+          "part_id": "N55-INJECTORS",
+          "description": "Solenoid direct injectors (set of 6)",
+          "oem_part_numbers": ["13647597870"],
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "Solenoid high pressure",
+            "note": "More reliable than N54 piezoelectric"
+          },
+          "wear_classification": "consumable"
+        },
+        "low_pressure_fuel_pump": {
+          "part_id": "N55-LPFP",
+          "description": "In-tank fuel pump",
+          "oem_part_numbers": ["16147163298"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "intake_system": {
+      "description": "Intake manifold and air delivery",
+      "components": {
+        "intake_manifold": {
+          "part_id": "N55-INTAKE-MANIFOLD",
+          "description": "Plastic intake manifold",
+          "oem_part_numbers": ["11617595354"],
+          "wear_classification": "long_life"
+        },
+        "throttle_body": {
+          "part_id": "N55-THROTTLE-BODY",
+          "description": "Electronic throttle body (emergency use)",
+          "oem_part_numbers": ["13547556118"],
+          "notes": "Valvetronic controls airflow - throttle body is backup",
+          "wear_classification": "long_life"
+        },
+        "air_filter": {
+          "part_id": "N55-AIR-FILTER",
+          "description": "Panel air filter",
+          "oem_part_numbers": ["13718507320"],
+          "aftermarket_options": {
+            "k_and_n": "33-2997"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "cooling_system": {
+      "description": "Engine cooling components",
+      "components": {
+        "water_pump": {
+          "part_id": "N55-WATER-PUMP",
+          "description": "Electric water pump",
+          "oem_part_numbers": ["11517632426"],
+          "common_issues": ["Failure common at 60-80k miles"],
+          "wear_classification": "consumable"
+        },
+        "thermostat": {
+          "part_id": "N55-THERMOSTAT",
+          "description": "Map-controlled thermostat",
+          "oem_part_numbers": ["11537601159"],
+          "wear_classification": "consumable"
+        },
+        "radiator": {
+          "part_id": "N55-RADIATOR",
+          "description": "Aluminum radiator",
+          "oem_part_numbers": ["17118615426"],
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "ignition_system": {
+      "description": "Coil-on-plug ignition",
+      "components": {
+        "ignition_coils": {
+          "part_id": "N55-COILS",
+          "description": "Ignition coils (set of 6)",
+          "oem_part_numbers": ["12138616153"],
+          "aftermarket_options": {
+            "eldor": "Red Coils"
+          },
+          "quantity_per_engine": 6,
+          "wear_classification": "consumable"
+        },
+        "spark_plugs": {
+          "part_id": "N55-SPARK-PLUGS",
+          "description": "Spark plugs (set of 6)",
+          "oem_part_numbers": ["12120039664"],
+          "aftermarket_options": {
+            "ngk": "SILZKGR8B8S (94201)",
+            "one_step_colder": "NGK SILZKR8C8S"
+          },
+          "quantity_per_engine": 6,
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "lubrication_system": {
+      "description": "Oil pump and lubrication",
+      "components": {
+        "oil_pump": {
+          "part_id": "N55-OIL-PUMP",
+          "description": "Variable displacement oil pump",
+          "oem_part_numbers": ["11417616534"],
+          "wear_classification": "long_life"
+        },
+        "oil_filter_housing": {
+          "part_id": "N55-OIL-FILTER-HOUSING",
+          "description": "Oil filter housing with cooler",
+          "oem_part_numbers": ["11427525334"],
+          "common_issues": ["Gasket leaks"],
+          "wear_classification": "long_life"
+        },
+        "oil_filter": {
+          "part_id": "N55-OIL-FILTER",
+          "description": "Cartridge oil filter",
+          "oem_part_numbers": ["11427953129"],
+          "aftermarket_options": {
+            "mann": "HU816X",
+            "mahle": "OX404D"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "gaskets_and_seals": {
+      "description": "Gaskets and seals",
+      "components": {
+        "valve_cover_gasket": {
+          "part_id": "N55-VC-GASKET",
+          "description": "Valve cover gasket",
+          "oem_part_numbers": ["11127570292"],
+          "notes": "Early covers prone to cracking - check for revised part",
+          "wear_classification": "consumable"
+        },
+        "oil_filter_housing_gasket": {
+          "part_id": "N55-OFHG",
+          "description": "Oil filter housing gasket set",
+          "oem_part_numbers": ["11427508971"],
+          "common_issues": ["Very common leak"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "sensors": {
+      "description": "Engine management sensors",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "N55-CKP",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": ["13627558518"],
+          "wear_classification": "consumable"
+        },
+        "camshaft_position_sensors": {
+          "part_id": "N55-CMP",
+          "description": "Camshaft position sensors",
+          "oem_part_numbers": ["13627558518"],
+          "quantity_per_engine": 2,
+          "wear_classification": "consumable"
+        },
+        "oxygen_sensors": {
+          "part_id": "N55-O2",
+          "description": "Oxygen sensors (set of 2)",
+          "oem_part_numbers": {
+            "upstream": "11787595353",
+            "downstream": "11787595354"
+          },
+          "wear_classification": "consumable"
+        },
+        "eccentric_shaft_sensor": {
+          "part_id": "N55-ECC-SENSOR",
+          "description": "Valvetronic eccentric shaft position sensor",
+          "oem_part_numbers": ["11377524879"],
+          "wear_classification": "consumable"
+        }
+      }
+    }
+  }
+}

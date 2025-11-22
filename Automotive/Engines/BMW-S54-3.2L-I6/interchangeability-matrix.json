@@ -1,0 +1,68 @@
+{
+  "engine_id": "BMW-S54B32-I6-NA",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "E46_M3": {"name": "M3 Coupe/Convertible", "years": "2001-2006"},
+    "E46_M3_CSL": {"name": "M3 CSL", "years": "2003", "notes": "Lightweight - 360 HP"},
+    "E85_Z4M": {"name": "Z4 M Roadster", "years": "2006-2008"},
+    "E86_Z4M": {"name": "Z4 M Coupe", "years": "2006-2008"}
+  },
+
+  "interchangeability_groups": {
+    "universal_s54": {
+      "parts": [
+        {"part_id": "S54-CRANK", "notes": "All S54 crankshafts identical"},
+        {"part_id": "S54-CONROD", "notes": "All connecting rods identical"},
+        {"part_id": "S54-HEAD", "notes": "All heads interchange"},
+        {"part_id": "S54-OIL-FILTER", "notes": "Universal"},
+        {"part_id": "S54-SPARK-PLUGS", "notes": "Universal"}
+      ]
+    },
+    "csl_differences": {
+      "description": "M3 CSL specific parts",
+      "different": ["Pistons (higher compression)", "Camshafts (different profile)", "ECU tune"],
+      "shared_with_standard": ["Block", "Head", "Most accessories"]
+    }
+  },
+
+  "rod_bearing_upgrade": {
+    "critical_information": true,
+    "description": "Rod bearing preventative replacement is MANDATORY for S54 ownership",
+    "recommended_parts": {
+      "be_bearings": {"part": "BE S54 Rod Bearing Kit", "notes": "Coated, improved clearances - best option"},
+      "acl_race": {"part": "ACL 5M1144H-STD", "notes": "Good alternative"}
+    },
+    "service_interval_miles": 60000,
+    "do_at_purchase": true,
+    "consequences_of_failure": "Catastrophic engine failure, spun bearing, destroyed crankshaft"
+  },
+
+  "common_swaps": {
+    "s54_swap": {
+      "into_e30": {"description": "Legendary swap - S54 into E30 3 Series", "requirements": ["Subframe modification", "Custom mounts", "Wiring", "ECU"]},
+      "into_e36": {"description": "S54 into E36", "requirements": ["Motor mounts", "Subframe", "Wiring"]}
+    }
+  },
+
+  "performance_upgrades": {
+    "headers": {
+      "options": ["Supersprint", "Active Autowerke", "Akrapovic"],
+      "power_gain_hp": "15-25"
+    },
+    "intake": {
+      "options": ["Gruppe M", "AFE", "K&N"],
+      "power_gain_hp": "5-10"
+    },
+    "ecu_tune": {
+      "options": ["Active Autowerke", "Dinan", "VF Engineering"],
+      "power_gain_hp": "10-20"
+    },
+    "supercharger": {
+      "options": ["ESS VT2", "Active Autowerke", "VF Engineering"],
+      "power_hp": "450-550",
+      "notes": "Popular upgrade - S54 handles boost well with proper bearings"
+    }
+  }
+}

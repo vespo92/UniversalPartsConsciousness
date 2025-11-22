@@ -1,0 +1,132 @@
+{
+  "engine_id": "BMW-B58-3.0L-I6-TURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2020, "make": "BMW", "model": "340i G20", "engine": "B58B30O1"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "B58-BLOCK",
+          "description": "Closed-deck aluminum block with iron liners",
+          "oem_part_numbers": ["11112456097"],
+          "specifications": {"bore_mm": 82.0, "deck_type": "Closed-deck"},
+          "notes": "Strongest BMW inline-6 block - handles 1000+ HP"
+        },
+        "crankshaft": {
+          "part_id": "B58-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["11217640165"],
+          "specifications": {"stroke_mm": 94.6, "material": "Forged Steel"},
+          "notes": "Reliable to extreme power levels"
+        },
+        "connecting_rods": {
+          "part_id": "B58-CONROD",
+          "description": "Forged steel connecting rods (set of 6)",
+          "oem_part_numbers": ["11247640166"],
+          "aftermarket": {"manley": "14090-6", "cp_carrillo": "BMW-B58-65000H"},
+          "specifications": {"length_mm": 145.0}
+        },
+        "pistons": {
+          "part_id": "B58-PISTON",
+          "description": "Forged aluminum pistons (set of 6)",
+          "oem_part_numbers": ["11257640167"],
+          "aftermarket": {"je_pistons": "357442", "mahle": "B58-FORGED"}
+        },
+        "main_bearings": {"part_id": "B58-MAIN-BRG", "oem_part_numbers": ["11217640168"]},
+        "rod_bearings": {"part_id": "B58-ROD-BRG", "oem_part_numbers": ["11247640169"], "aftermarket": {"acl": "6B2980H"}}
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "B58-HEAD",
+          "description": "Aluminum DOHC head with integrated exhaust manifold",
+          "oem_part_numbers": ["11128580529"],
+          "specifications": {"valves": 24, "valvetronic": "IV", "integrated_exhaust": true}
+        },
+        "camshafts": {"part_id": "B58-CAMSHAFT-SET", "oem_part_numbers": {"intake": "11318580530", "exhaust": "11318580531"}},
+        "valvetronic_motor": {"part_id": "B58-VVT-MOTOR", "oem_part_numbers": ["11377618015"]}
+      }
+    },
+    "turbo_system": {
+      "components": {
+        "turbocharger": {
+          "part_id": "B58-TURBO",
+          "description": "Single twin-scroll turbocharger",
+          "oem_part_numbers": ["11658631700"],
+          "aftermarket": {"pure_turbos": "Pure800", "vargas_turbo": "VTT GC B58"},
+          "specifications": {"type": "Twin-scroll", "max_power_stock_turbo_hp": 550}
+        },
+        "intercooler": {
+          "part_id": "B58-INTERCOOLER",
+          "description": "Air-to-water intercooler (charge air cooler)",
+          "oem_part_numbers": ["17118631701"],
+          "aftermarket": {"csf": "CSF-B58-CAC", "bms": "BMS-CAC-B58"}
+        },
+        "charge_pipe": {
+          "part_id": "B58-CHARGEPIPE",
+          "oem_part_numbers": ["11618631702"],
+          "aftermarket": {"vrsf": "VRSF-CP-B58", "burger": "BMS-CP-B58"}
+        }
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "B58-HPFP",
+          "oem_part_numbers": ["13518631703"],
+          "specifications": {"pressure_bar": 350, "note": "Higher pressure than N54/N55"}
+        },
+        "direct_injectors": {
+          "part_id": "B58-DI-INJECTORS",
+          "description": "Direct injectors (set of 6)",
+          "oem_part_numbers": ["13538631704"],
+          "specifications": {"type": "Solenoid", "pressure_bar": 350}
+        },
+        "port_injectors": {
+          "part_id": "B58-PI-INJECTORS",
+          "description": "Port fuel injectors (set of 6)",
+          "oem_part_numbers": ["13538631705"],
+          "notes": "Combined injection eliminates carbon buildup"
+        }
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {
+          "part_id": "B58-WATER-PUMP",
+          "oem_part_numbers": ["11517632426"],
+          "notes": "Electric water pump - same design as N55"
+        },
+        "thermostat": {"part_id": "B58-THERMOSTAT", "oem_part_numbers": ["11538631706"]}
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "B58-COILS",
+          "oem_part_numbers": ["12138643360"],
+          "quantity": 6
+        },
+        "spark_plugs": {
+          "part_id": "B58-SPARK-PLUGS",
+          "oem_part_numbers": ["12122473343"],
+          "aftermarket": {"ngk": "DILKAR7G11HS"},
+          "quantity": 6,
+          "gap_mm": 0.7
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_filter": {
+          "part_id": "B58-OIL-FILTER",
+          "oem_part_numbers": ["11428583898"],
+          "aftermarket": {"mann": "HU6004X"}
+        }
+      }
+    }
+  }
+}

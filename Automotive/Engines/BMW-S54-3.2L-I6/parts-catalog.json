@@ -1,0 +1,162 @@
+{
+  "engine_id": "BMW-S54B32-I6-NA",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2004, "make": "BMW", "model": "M3 E46", "engine": "S54B32"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "S54-BLOCK",
+          "description": "Aluminum block with iron cylinder sleeves",
+          "oem_part_numbers": ["11110029370"],
+          "specifications": {"bore_mm": 87.0, "sleeves": "Cast iron pressed-in"}
+        },
+        "crankshaft": {
+          "part_id": "S54-CRANK",
+          "description": "Forged steel lightweight crankshaft",
+          "oem_part_numbers": ["11217831917"],
+          "specifications": {"stroke_mm": 91.0, "material": "Forged Steel"},
+          "notes": "Lightweight forged design for high RPM"
+        },
+        "connecting_rods": {
+          "part_id": "S54-CONROD",
+          "description": "Forged steel H-beam connecting rods (set of 6)",
+          "oem_part_numbers": ["11247831919"],
+          "aftermarket": {"manley": "14024-6", "cp_carrillo": "BMW-S54-65000H"},
+          "specifications": {"length_mm": 139.0, "type": "H-beam forged"}
+        },
+        "pistons": {
+          "part_id": "S54-PISTON",
+          "description": "Forged aluminum pistons (set of 6)",
+          "oem_part_numbers": ["11257831920"],
+          "aftermarket": {"je_pistons": "S54-87mm", "mahle": "S54-FORGED"},
+          "specifications": {"compression_ratio": "11.5:1"}
+        },
+        "main_bearings": {
+          "part_id": "S54-MAIN-BRG",
+          "oem_part_numbers": ["11217831918"],
+          "aftermarket": {"acl": "Race bearings"}
+        },
+        "rod_bearings": {
+          "part_id": "S54-ROD-BRG",
+          "description": "CRITICAL: Rod bearing set",
+          "oem_part_numbers": ["11247831921"],
+          "aftermarket": {
+            "be_bearings": "BE S54 (HIGHLY RECOMMENDED)",
+            "acl": "5M1144H-STD"
+          },
+          "critical_note": "Replace preventatively every 60k miles - OEM bearings prone to failure"
+        }
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "S54-HEAD",
+          "description": "Aluminum DOHC cylinder head",
+          "oem_part_numbers": ["11127831922"],
+          "specifications": {"valves": 24, "intake_valve_mm": 34.0, "exhaust_valve_mm": 29.5}
+        },
+        "head_gasket": {"part_id": "S54-HEAD-GASKET", "oem_part_numbers": ["11127831923"]},
+        "intake_valves": {"part_id": "S54-INTAKE-VALVE", "oem_part_numbers": ["11347831924"], "quantity": 12},
+        "exhaust_valves": {"part_id": "S54-EXHAUST-VALVE", "oem_part_numbers": ["11347831925"], "quantity": 12},
+        "valve_springs": {
+          "part_id": "S54-VALVE-SPRING",
+          "oem_part_numbers": ["11347831926"],
+          "aftermarket": {"supertech": "SPR-S54-DS"},
+          "quantity": 24
+        },
+        "camshafts": {
+          "part_id": "S54-CAMSHAFT-SET",
+          "description": "High-lift motorsport camshafts",
+          "oem_part_numbers": {"intake": "11317831927", "exhaust": "11317831928"},
+          "specifications": {"intake_duration": 260, "exhaust_duration": 260, "lift_mm": 12.0}
+        },
+        "vanos_units": {
+          "part_id": "S54-VANOS",
+          "description": "Double VANOS adjustment units",
+          "oem_part_numbers": {"intake": "11367831929", "exhaust": "11367831930"},
+          "aftermarket": {"beisan_systems": "S54 VANOS rebuild kit"},
+          "common_issues": "Seals harden, units wear - rebuild at 100k miles"
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "individual_throttle_bodies": {
+          "part_id": "S54-ITB",
+          "description": "Individual throttle body assembly (6 throttles)",
+          "oem_part_numbers": ["13541437162"],
+          "specifications": {"bore_mm": 46.0, "type": "Cable operated"},
+          "notes": "Provides instant throttle response - signature S54 feature"
+        },
+        "throttle_actuator": {
+          "part_id": "S54-THROTTLE-ACTUATOR",
+          "description": "Throttle actuator/motor",
+          "oem_part_numbers": ["13627831931"],
+          "common_issues": "Can fail - causes limp mode"
+        },
+        "intake_manifold": {"part_id": "S54-INTAKE-MANIFOLD", "oem_part_numbers": ["11617831932"]},
+        "air_filter": {"part_id": "S54-AIR-FILTER", "oem_part_numbers": ["13721726916"], "aftermarket": {"k_and_n": "33-2255"}}
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "fuel_injectors": {
+          "part_id": "S54-INJECTORS",
+          "description": "Port fuel injectors (set of 6)",
+          "oem_part_numbers": ["13641437474"],
+          "quantity": 6
+        },
+        "fuel_rail": {"part_id": "S54-FUEL-RAIL", "oem_part_numbers": ["13537831933"]}
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {"part_id": "S54-WATER-PUMP", "oem_part_numbers": ["11517831934"]},
+        "thermostat": {"part_id": "S54-THERMOSTAT", "oem_part_numbers": ["11537831935"]},
+        "expansion_tank": {"part_id": "S54-EXPANSION-TANK", "oem_part_numbers": ["17137831936"]},
+        "radiator": {"part_id": "S54-RADIATOR", "oem_part_numbers": ["17117831937"]}
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "S54-COILS",
+          "oem_part_numbers": ["12131712219"],
+          "quantity": 6
+        },
+        "spark_plugs": {
+          "part_id": "S54-SPARK-PLUGS",
+          "oem_part_numbers": ["12129064619"],
+          "aftermarket": {"ngk": "BKR7EQUP"},
+          "quantity": 6,
+          "gap_mm": 0.7
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {"part_id": "S54-OIL-PUMP", "oem_part_numbers": ["11417831938"]},
+        "oil_filter": {
+          "part_id": "S54-OIL-FILTER",
+          "oem_part_numbers": ["11427831939"],
+          "aftermarket": {"mann": "HU925/4X"}
+        },
+        "oil_pan": {
+          "part_id": "S54-OIL-PAN",
+          "oem_part_numbers": ["11137831940"],
+          "notes": "Baffled for high-G cornering"
+        }
+      }
+    },
+    "gaskets_and_seals": {
+      "components": {
+        "valve_cover_gasket": {"part_id": "S54-VC-GASKET", "oem_part_numbers": ["11127831941"]},
+        "oil_pan_gasket": {"part_id": "S54-PAN-GASKET", "oem_part_numbers": ["11137831942"]}
+      }
+    }
+  }
+}

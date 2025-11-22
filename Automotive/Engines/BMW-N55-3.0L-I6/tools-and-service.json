@@ -1,0 +1,125 @@
+{
+  "engine_id": "BMW-N55-3.0L-I6-TWINSCROLL",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "hand_tools": {
+      "wrenches_metric": {
+        "sizes_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+        "priority": "essential"
+      },
+      "sockets": {
+        "metric_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24],
+        "e_torx": ["E8", "E10", "E12", "E14", "E16", "E18", "E20"],
+        "spark_plug": "14mm thin wall",
+        "priority": "essential"
+      },
+      "torx_and_hex": {
+        "torx": ["T20", "T25", "T27", "T30", "T40", "T45", "T50", "T55", "T60"],
+        "triple_square": ["M6", "M8", "M10", "M12"],
+        "hex_mm": [4, 5, 6, 8, 10],
+        "priority": "essential"
+      }
+    },
+    "specialty_tools": {
+      "vanos_timing_tools": {
+        "description": "N55 camshaft and crankshaft locking tools",
+        "aftermarket": "Schwaben N55 timing tool set",
+        "priority": "essential_for_timing"
+      },
+      "oil_filter_cap_wrench": {
+        "size": "86mm 16-flute",
+        "priority": "essential"
+      },
+      "bmw_scanner": {
+        "options": ["BMW ISTA+", "Carly", "BimmerLink", "INPA"],
+        "priority": "essential"
+      },
+      "coolant_evacuation_tool": {
+        "description": "Airlift style for bleeding",
+        "priority": "recommended"
+      }
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 10000,
+        "recommended_miles": 7500,
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools": ["17mm socket", "86mm filter wrench", "8qt drain pan"],
+        "parts": ["BMW LL-01 oil 6.5L", "Filter HU816X", "Crush washer"],
+        "torque_specs": {"drain_plug_nm": 25, "filter_cap_nm": 25}
+      },
+      "spark_plugs": {
+        "interval_miles": 45000,
+        "interval_tuned_miles": 25000,
+        "difficulty": "intermediate",
+        "time_minutes": 90,
+        "tools": ["14mm spark plug socket", "T30 Torx", "Torque wrench"],
+        "parts": ["NGK SILZKGR8B8S x6"],
+        "torque_specs": {"spark_plug_nm": 22}
+      },
+      "walnut_blasting": {
+        "interval_miles": 50000,
+        "difficulty": "advanced",
+        "time_hours": 4,
+        "notes": "Direct injection - carbon buildup on intake valves"
+      }
+    },
+    "repairs": {
+      "water_pump_replacement": {
+        "symptoms": ["Overheating", "Coolant warning"],
+        "difficulty": "intermediate",
+        "time_hours": 3,
+        "parts": ["Water pump", "Thermostat", "Coolant"],
+        "notes": "Replace thermostat at same time"
+      },
+      "valve_cover_gasket": {
+        "symptoms": ["Oil smell", "Oil in plug wells"],
+        "difficulty": "intermediate",
+        "time_hours": 2,
+        "parts": ["Valve cover gasket", "Bolt seals"],
+        "notes": "Check for cracking on Gen 1 covers - may need full replacement"
+      },
+      "vanos_solenoid_replacement": {
+        "symptoms": ["Rough idle", "Reduced power", "VANOS faults"],
+        "difficulty": "intermediate",
+        "time_hours": 1,
+        "parts": ["VANOS solenoids x4"],
+        "notes": "Replace all 4 at once"
+      },
+      "charge_pipe_replacement": {
+        "symptoms": ["Boost loss", "Hissing sound"],
+        "difficulty": "beginner",
+        "time_minutes": 30,
+        "parts": ["Aluminum charge pipe (upgrade)"]
+      },
+      "turbo_replacement": {
+        "difficulty": "advanced",
+        "time_hours": 6,
+        "parts": ["Turbocharger", "Gasket kit", "Oil lines"],
+        "notes": "Single turbo - easier than N54 twin turbo replacement"
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "boost_leak_test": {
+      "tools": ["Boost leak tester", "Shop air 15psi max"],
+      "common_leak_points": ["Charge pipe", "Intercooler boots", "BOV"]
+    },
+    "compression_test": {
+      "tools": ["Compression tester", "14mm adapter"],
+      "spec_bar": {"minimum": 10, "max_variation": 1}
+    },
+    "valvetronic_diagnosis": {
+      "symptoms": ["Rough idle", "Check engine light", "Reduced power"],
+      "common_causes": ["Eccentric shaft sensor", "Valvetronic motor", "Eccentric shaft wear"],
+      "diagnosis_tool": "BMW scanner with Valvetronic adaptation"
+    }
+  }
+}

@@ -1,0 +1,933 @@
+{
+  "engine_id": "BMW-N54-3.0L-I6-TWINTURBO",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {
+    "year": 2008,
+    "make": "BMW",
+    "model": "335i E92",
+    "engine": "N54B30"
+  },
+
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": {
+        "engine_block": {
+          "part_id": "N54-BLOCK",
+          "description": "Aluminum engine block with cast iron liners",
+          "oem_part_numbers": ["11110392999", "11112210797"],
+          "material": "Aluminum with Cast Iron Liners",
+          "weight_lbs": 110,
+          "specifications": {
+            "deck_height_mm": 210.0,
+            "bore_diameter_mm": 84.0,
+            "main_bearing_bores": 7,
+            "main_cap_bolts": "4-bolt all mains",
+            "cylinder_bore_spacing_mm": 91.0,
+            "liner_type": "Cast iron pressed-in"
+          },
+          "interchangeability": {
+            "compatible_years": "2007-2016",
+            "notes": "All N54 blocks are identical. Check for cracks around main bearing saddles on high-mileage units."
+          },
+          "wear_classification": "long_life",
+          "typical_lifespan_miles": 250000
+        },
+
+        "crankshaft": {
+          "part_id": "N54-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["11217568710", "11217580687"],
+          "material": "Forged Steel 4340",
+          "weight_lbs": 52,
+          "specifications": {
+            "stroke_mm": 89.6,
+            "main_journal_diameter_mm": 60.0,
+            "rod_journal_diameter_mm": 50.0,
+            "counterweight_count": 8,
+            "reluctor_wheel_teeth": 60
+          },
+          "interchangeability": {
+            "compatible_years": "2007-2016",
+            "notes": "All N54 crankshafts identical. Forged construction handles 800+ HP."
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "connecting_rods": {
+          "part_id": "N54-CONROD",
+          "description": "Forged steel connecting rods (set of 6)",
+          "oem_part_numbers": ["11247568714", "11247580699"],
+          "aftermarket_options": {
+            "manley": "14084-6 (H-Beam)",
+            "cp_carrillo": "BMW-N54-65000H",
+            "brian_crower": "BC6251"
+          },
+          "material": "Forged Steel",
+          "weight_grams_each": 565,
+          "quantity_per_engine": 6,
+          "specifications": {
+            "center_to_center_mm": 139.0,
+            "big_end_bore_mm": 53.0,
+            "small_end_bore_mm": 22.0,
+            "rod_bolt_type": "ARP2000 equivalent",
+            "rod_bolt_torque_nm": 45
+          },
+          "interchangeability": {
+            "compatible_years": "2007-2016",
+            "notes": "Stock rods reliable to 550 HP. Upgrade recommended above 600 HP."
+          },
+          "wear_classification": "long_life"
+        },
+
+        "pistons": {
+          "part_id": "N54-PISTON",
+          "description": "Forged aluminum pistons (set of 6)",
+          "oem_part_numbers": ["11257566478", "11257580688"],
+          "aftermarket_options": {
+            "mahle": "197203706",
+            "je_pistons": "353742",
+            "cp_pistons": "SC7515"
+          },
+          "material": "Forged Aluminum",
+          "weight_grams_each": 385,
+          "quantity_per_engine": 6,
+          "specifications": {
+            "diameter_mm": 83.98,
+            "compression_height_mm": 31.4,
+            "pin_bore_diameter_mm": 22.0,
+            "ring_groove_count": 3,
+            "dome_type": "Dished for direct injection"
+          },
+          "interchangeability": {
+            "compatible_years": "2007-2016"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "piston_rings": {
+          "part_id": "N54-RINGS",
+          "description": "Piston ring set (all 6 cylinders)",
+          "oem_part_numbers": ["11257580690"],
+          "aftermarket_options": {
+            "mahle": "41939CP",
+            "total_seal": "TS1-84.0-N54"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bore_size_mm": 84.0,
+            "top_ring_thickness_mm": 1.2,
+            "second_ring_thickness_mm": 1.5,
+            "oil_ring_thickness_mm": 2.0
+          },
+          "wear_classification": "consumable"
+        },
+
+        "main_bearings": {
+          "part_id": "N54-MAIN-BRG",
+          "description": "Main bearing set (7 pairs)",
+          "oem_part_numbers": ["11217568713"],
+          "aftermarket_options": {
+            "acl": "6B2960H (Race Series)",
+            "king": "MB5792AM"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 7,
+            "journal_diameter_mm": 60.0,
+            "material": "Tri-metal"
+          },
+          "sizes_available": ["STD", "-0.25", "-0.50"],
+          "wear_classification": "consumable"
+        },
+
+        "rod_bearings": {
+          "part_id": "N54-ROD-BRG",
+          "description": "Connecting rod bearing set (6 pairs)",
+          "oem_part_numbers": ["11247568715"],
+          "aftermarket_options": {
+            "acl": "6B2960HX (Race Series)",
+            "king": "CR5792AM",
+            "be_bearings": "N54-ROD-COATED"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "bearing_count": 6,
+            "journal_diameter_mm": 50.0,
+            "material": "Tri-metal"
+          },
+          "maintenance_note": "Replace every 60,000 miles preventatively on high-performance builds",
+          "sizes_available": ["STD", "-0.25", "-0.50"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "cylinder_head": {
+      "description": "DOHC aluminum cylinder head and valvetrain",
+      "components": {
+        "cylinder_head": {
+          "part_id": "N54-HEAD",
+          "description": "Aluminum DOHC cylinder head",
+          "oem_part_numbers": ["11127565714", "11127582245"],
+          "material": "Aluminum",
+          "weight_lbs": 55,
+          "specifications": {
+            "combustion_chamber_volume_cc": 48.0,
+            "valve_count": 24,
+            "valves_per_cylinder": 4,
+            "intake_valve_diameter_mm": 31.0,
+            "exhaust_valve_diameter_mm": 27.0,
+            "valve_stem_diameter_mm": 6.0,
+            "cam_bearing_count": 14,
+            "vanos_equipped": true
+          },
+          "interchangeability": {
+            "compatible_years": "2007-2016",
+            "notes": "All N54 heads interchange. Requires VANOS units."
+          },
+          "wear_classification": "long_life"
+        },
+
+        "head_gasket": {
+          "part_id": "N54-HEAD-GASKET",
+          "description": "Multi-layer steel head gasket",
+          "oem_part_numbers": ["11127565712"],
+          "aftermarket_options": {
+            "victor_reinz": "613624000",
+            "athena": "N54-MLS-RACE"
+          },
+          "specifications": {
+            "type": "Multi-Layer Steel (MLS)",
+            "compressed_thickness_mm": 1.2,
+            "bore_diameter_mm": 85.0,
+            "layers": 3
+          },
+          "wear_classification": "consumable"
+        },
+
+        "intake_valves": {
+          "part_id": "N54-INTAKE-VALVE",
+          "description": "Intake valves (set of 12)",
+          "oem_part_numbers": ["11347589698"],
+          "aftermarket_options": {
+            "supertech": "SIVW-1121F-N54",
+            "ferrea": "F6114P-N54"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "head_diameter_mm": 31.0,
+            "stem_diameter_mm": 6.0,
+            "overall_length_mm": 102.5,
+            "material": "Stainless Steel"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "exhaust_valves": {
+          "part_id": "N54-EXHAUST-VALVE",
+          "description": "Exhaust valves (set of 12)",
+          "oem_part_numbers": ["11347589699"],
+          "aftermarket_options": {
+            "supertech": "SEVA-1095F-N54",
+            "ferrea": "F6115P-N54"
+          },
+          "quantity_per_engine": 12,
+          "specifications": {
+            "head_diameter_mm": 27.0,
+            "stem_diameter_mm": 6.0,
+            "overall_length_mm": 101.5,
+            "material": "Inconel"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "valve_springs": {
+          "part_id": "N54-VALVE-SPRING",
+          "description": "Valve springs (set of 24)",
+          "oem_part_numbers": ["11347589700"],
+          "aftermarket_options": {
+            "supertech": "SPR-N54-DS",
+            "brian_crower": "BC0950"
+          },
+          "quantity_per_engine": 24,
+          "specifications": {
+            "free_length_mm": 42.0,
+            "installed_height_mm": 35.0,
+            "seat_pressure_kg": 45,
+            "type": "Beehive single"
+          },
+          "wear_classification": "rebuild_item"
+        },
+
+        "camshafts": {
+          "part_id": "N54-CAMSHAFT-SET",
+          "description": "Intake and exhaust camshaft set (4 total)",
+          "oem_part_numbers": {
+            "intake": "11317586936",
+            "exhaust": "11317586937"
+          },
+          "aftermarket_options": {
+            "schrick": "N54-272-272",
+            "cat_cams": "N54-STAGE2"
+          },
+          "quantity_per_engine": 4,
+          "specifications": {
+            "intake_duration_degrees": 240,
+            "exhaust_duration_degrees": 232,
+            "intake_lift_mm": 9.9,
+            "exhaust_lift_mm": 9.7,
+            "lobe_separation_degrees": 115,
+            "vanos_adjustment_range_degrees": 60
+          },
+          "wear_classification": "long_life"
+        },
+
+        "vanos_units": {
+          "part_id": "N54-VANOS",
+          "description": "Double VANOS solenoid and actuator assembly",
+          "oem_part_numbers": {
+            "intake_solenoid": "11367585425",
+            "exhaust_solenoid": "11367585426"
+          },
+          "quantity_per_engine": 4,
+          "specifications": {
+            "type": "Oil pressure actuated",
+            "adjustment_range_degrees": 60,
+            "response_time_ms": 50
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "hydraulic_lifters": {
+          "part_id": "N54-LIFTER",
+          "description": "Hydraulic valve lifters (set of 24)",
+          "oem_part_numbers": ["11337589499"],
+          "aftermarket_options": {
+            "ina": "N54-HVA-24"
+          },
+          "quantity_per_engine": 24,
+          "specifications": {
+            "type": "Hydraulic roller follower",
+            "diameter_mm": 31.0
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "turbo_system": {
+      "description": "Twin turbocharger system",
+      "components": {
+        "turbochargers": {
+          "part_id": "N54-TURBO-PAIR",
+          "description": "Mitsubishi TD03-07G turbochargers (pair)",
+          "oem_part_numbers": {
+            "front_turbo": "11657649290",
+            "rear_turbo": "11657649289"
+          },
+          "aftermarket_options": {
+            "pure_turbos": "PURE600 (drop-in upgrade)",
+            "vargas_turbo": "VTT Stage 1",
+            "precision": "6266 (single turbo conversion)"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "compressor_wheel_mm": 44.0,
+            "turbine_wheel_mm": 40.0,
+            "max_boost_stock_psi": 11.6,
+            "max_flow_lbs_min": 32,
+            "wastegate_type": "Internal electronic"
+          },
+          "interchangeability": {
+            "compatible_years": "2007-2016",
+            "notes": "Front and rear turbos are mirror image. Not interchangeable with each other."
+          },
+          "wear_classification": "consumable",
+          "typical_lifespan_miles": 120000
+        },
+
+        "wastegate_actuators": {
+          "part_id": "N54-WASTEGATE",
+          "description": "Electronic wastegate actuators (pair)",
+          "oem_part_numbers": {
+            "front": "11657601058",
+            "rear": "11657601057"
+          },
+          "aftermarket_options": {
+            "vargas": "VTT-WGA-UPGRADED"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "type": "Electronic vacuum actuated",
+            "boost_control": "PWM solenoid"
+          },
+          "common_issues": ["Wastegate rattle at idle - worn pivot arms"],
+          "wear_classification": "consumable"
+        },
+
+        "intercooler": {
+          "part_id": "N54-INTERCOOLER",
+          "description": "Front-mount air-to-air intercooler",
+          "oem_part_numbers": ["17517540035"],
+          "aftermarket_options": {
+            "wagner": "200001024",
+            "er": "ER-IC-N54",
+            "vrsf": "N54-FMIC"
+          },
+          "specifications": {
+            "type": "Bar and plate",
+            "core_volume_liters": 5.2,
+            "efficiency_percent": 70
+          },
+          "upgrade_note": "Aftermarket FMIC highly recommended for any tune above Stage 1",
+          "wear_classification": "long_life"
+        },
+
+        "charge_pipe": {
+          "part_id": "N54-CHARGEPIPE",
+          "description": "Aluminum charge pipe (hot side)",
+          "oem_part_numbers": ["11617533399"],
+          "aftermarket_options": {
+            "bms": "BMS-CP-N54",
+            "er": "ER-CP-N54",
+            "vrsf": "VRSF-CP-N54"
+          },
+          "specifications": {
+            "material_oem": "Plastic",
+            "material_upgrade": "Aluminum",
+            "inside_diameter_mm": 50
+          },
+          "common_issues": ["OEM plastic cracks under increased boost"],
+          "wear_classification": "consumable"
+        },
+
+        "blow_off_valve": {
+          "part_id": "N54-BOV",
+          "description": "Diverter/Blow-off valve",
+          "oem_part_numbers": ["11617544806"],
+          "aftermarket_options": {
+            "tial": "Q-BOV",
+            "forge": "FMDV1",
+            "turbosmart": "TS-0203-1061"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Recirculating",
+            "actuation": "Vacuum"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "High pressure direct injection fuel system",
+      "components": {
+        "high_pressure_fuel_pump": {
+          "part_id": "N54-HPFP",
+          "description": "High pressure fuel pump",
+          "oem_part_numbers": {
+            "original": "13517573436",
+            "revised": "13517616170"
+          },
+          "aftermarket_options": {
+            "autotech": "HPFP Internals (Stage 2)",
+            "nostrum": "N54-HPFP-STAGE2"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Cam-driven piston pump",
+            "max_pressure_bar": 200,
+            "flow_rate_liters_hour": 120
+          },
+          "common_issues": ["Early production pumps prone to failure - recall/extended warranty"],
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "fuel_injectors": {
+          "part_id": "N54-INJECTORS",
+          "description": "Piezoelectric direct injectors (set of 6)",
+          "oem_part_numbers": ["13537565137", "13537585261"],
+          "aftermarket_options": {
+            "bosch": "Index 12 (latest revision)"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "Piezoelectric high pressure",
+            "flow_rate_cc_min": 285,
+            "spray_pattern": "Multi-hole",
+            "operating_pressure_bar": 200,
+            "injector_index": "Index 12 is latest (check for lower indices)"
+          },
+          "common_issues": ["Lower index injectors prone to failure"],
+          "index_info": {
+            "index_1_7": "Early production - prone to failure",
+            "index_8_10": "Improved reliability",
+            "index_11_12": "Current production - most reliable"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "low_pressure_fuel_pump": {
+          "part_id": "N54-LPFP",
+          "description": "In-tank low pressure fuel pump",
+          "oem_part_numbers": ["16147163298"],
+          "aftermarket_options": {
+            "walbro": "F90000274",
+            "deatschwerks": "DW400"
+          },
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Electric in-tank",
+            "pressure_bar": 5,
+            "flow_rate_liters_hour": 180
+          },
+          "wear_classification": "consumable"
+        },
+
+        "fuel_rail": {
+          "part_id": "N54-FUEL-RAIL",
+          "description": "High pressure fuel rail",
+          "oem_part_numbers": ["13537541092"],
+          "specifications": {
+            "material": "Steel",
+            "pressure_rating_bar": 200,
+            "volume_cc": 35
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "intake_system": {
+      "description": "Intake manifold and air delivery",
+      "components": {
+        "intake_manifold": {
+          "part_id": "N54-INTAKE-MANIFOLD",
+          "description": "Plastic intake manifold with integrated throttle body",
+          "oem_part_numbers": ["11617547242"],
+          "aftermarket_options": {
+            "burger_motorsports": "BMS Port Injection",
+            "phoenix_racing": "PR-IM-N54"
+          },
+          "material": "Reinforced Plastic",
+          "specifications": {
+            "runner_length_mm": 180,
+            "plenum_volume_liters": 3.5
+          },
+          "carbon_buildup_note": "Direct injection causes carbon buildup on valves - walnut blast every 50k miles",
+          "wear_classification": "long_life"
+        },
+
+        "throttle_body": {
+          "part_id": "N54-THROTTLE-BODY",
+          "description": "Electronic throttle body",
+          "oem_part_numbers": ["13547556118"],
+          "specifications": {
+            "bore_diameter_mm": 60,
+            "type": "Electronic drive-by-wire"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "air_filter": {
+          "part_id": "N54-AIR-FILTER",
+          "description": "Panel air filter",
+          "oem_part_numbers": ["13717556961"],
+          "aftermarket_options": {
+            "k_and_n": "33-2367",
+            "afe": "31-10145",
+            "bms": "BMS-DCI"
+          },
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 30000
+        },
+
+        "mass_airflow_sensor": {
+          "part_id": "N54-MAF",
+          "description": "Hot-film mass airflow sensor",
+          "oem_part_numbers": ["13627551638"],
+          "specifications": {
+            "type": "Hot-film",
+            "output": "Analog voltage",
+            "max_flow_kg_hr": 800
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "exhaust_system": {
+      "description": "Exhaust manifolds and downpipes",
+      "components": {
+        "exhaust_manifolds": {
+          "part_id": "N54-EXHAUST-MANIFOLD",
+          "description": "Cast iron exhaust manifolds with integrated turbo flanges",
+          "oem_part_numbers": {
+            "front_bank": "11627558906",
+            "rear_bank": "11627558907"
+          },
+          "material": "Cast Iron",
+          "specifications": {
+            "port_count": 3,
+            "turbo_flange": "Integrated"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "catalytic_converters": {
+          "part_id": "N54-CATS",
+          "description": "Primary catalytic converters (pair)",
+          "oem_part_numbers": ["18307556982"],
+          "aftermarket_options": {
+            "catless_downpipes": "Various (off-road use only)",
+            "high_flow_cats": "ER-HFCD-N54"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "substrate": "Metallic",
+            "cell_density_cpsi": 400
+          },
+          "wear_classification": "long_life"
+        },
+
+        "downpipes": {
+          "part_id": "N54-DOWNPIPES",
+          "description": "Turbo downpipes (pair)",
+          "oem_part_numbers": ["18307556983"],
+          "aftermarket_options": {
+            "vrsf": "VRSF-DP-N54",
+            "evolution_racewerks": "ER-DP-N54",
+            "active_autowerke": "AA-DP-N54"
+          },
+          "quantity_per_engine": 2,
+          "specifications": {
+            "diameter_mm": 63.5,
+            "material": "Stainless Steel"
+          },
+          "upgrade_note": "Catless or high-flow downpipes provide significant power gains",
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "cooling_system": {
+      "description": "Engine cooling components",
+      "components": {
+        "water_pump": {
+          "part_id": "N54-WATER-PUMP",
+          "description": "Electric water pump",
+          "oem_part_numbers": ["11517563659", "11517586925"],
+          "aftermarket_options": {
+            "graf": "PA1092"
+          },
+          "specifications": {
+            "type": "Electric motor driven",
+            "flow_rate_liters_min": 180,
+            "voltage": 12
+          },
+          "common_issues": ["Failure common around 80k miles"],
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 80000
+        },
+
+        "thermostat": {
+          "part_id": "N54-THERMOSTAT",
+          "description": "Map-controlled thermostat",
+          "oem_part_numbers": ["11537549476"],
+          "specifications": {
+            "type": "Electrically controlled",
+            "opening_temp_c": 97,
+            "full_open_temp_c": 110
+          },
+          "common_issues": ["Failure causes overheating or overcooling"],
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 80000
+        },
+
+        "radiator": {
+          "part_id": "N54-RADIATOR",
+          "description": "Aluminum core radiator",
+          "oem_part_numbers": ["17117562079"],
+          "aftermarket_options": {
+            "csf": "CSF-N54-RAD"
+          },
+          "specifications": {
+            "type": "Cross-flow aluminum",
+            "core_rows": 2
+          },
+          "wear_classification": "long_life"
+        },
+
+        "expansion_tank": {
+          "part_id": "N54-EXPANSION-TANK",
+          "description": "Coolant expansion tank with integrated level sensor",
+          "oem_part_numbers": ["17137552546"],
+          "specifications": {
+            "material": "Plastic",
+            "pressure_cap_bar": 2.0
+          },
+          "common_issues": ["Cracking over time"],
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "ignition_system": {
+      "description": "Coil-on-plug ignition system",
+      "components": {
+        "ignition_coils": {
+          "part_id": "N54-COILS",
+          "description": "Ignition coils (set of 6)",
+          "oem_part_numbers": ["12137594937", "12137594596"],
+          "aftermarket_options": {
+            "eldor": "red_coils",
+            "dinan": "N54-COIL-SET"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "type": "Coil-on-plug with ion sensing",
+            "primary_resistance_ohms": 0.5,
+            "output_kv": 40
+          },
+          "common_issues": ["Failure causes misfires - replace preventatively"],
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 75000
+        },
+
+        "spark_plugs": {
+          "part_id": "N54-SPARK-PLUGS",
+          "description": "Iridium spark plugs (set of 6)",
+          "oem_part_numbers": ["12122158253"],
+          "aftermarket_options": {
+            "ngk": "97506 (SILZKBR8D8S)",
+            "bosch": "ZR5TPP33",
+            "one_step_colder": "NGK 95770 (tuned cars)"
+          },
+          "quantity_per_engine": 6,
+          "specifications": {
+            "thread_size": "12mm x 1.25",
+            "reach_mm": 26.5,
+            "gap_mm": 0.8,
+            "heat_range": "8 (stock), 9 (tuned)"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 30000
+        }
+      }
+    },
+
+    "lubrication_system": {
+      "description": "Oil pump and lubrication components",
+      "components": {
+        "oil_pump": {
+          "part_id": "N54-OIL-PUMP",
+          "description": "Variable displacement oil pump",
+          "oem_part_numbers": ["11417584765"],
+          "specifications": {
+            "type": "Variable displacement vane",
+            "drive": "Chain driven from crankshaft",
+            "pressure_bar": {
+              "idle": 1.5,
+              "max": 6.0
+            }
+          },
+          "wear_classification": "long_life"
+        },
+
+        "oil_filter_housing": {
+          "part_id": "N54-OIL-FILTER-HOUSING",
+          "description": "Oil filter housing with cooler",
+          "oem_part_numbers": ["11427525334"],
+          "specifications": {
+            "type": "Cartridge filter housing",
+            "cooler_type": "Water-to-oil integrated"
+          },
+          "common_issues": ["Gasket leaks common"],
+          "wear_classification": "long_life"
+        },
+
+        "oil_filter_housing_gasket": {
+          "part_id": "N54-OFHG",
+          "description": "Oil filter housing gasket set",
+          "oem_part_numbers": ["11427508971"],
+          "aftermarket_options": {
+            "victor_reinz": "11-42-7-525-335"
+          },
+          "quantity_per_engine": 1,
+          "common_issues": ["Very common leak point"],
+          "wear_classification": "consumable"
+        },
+
+        "oil_filter": {
+          "part_id": "N54-OIL-FILTER",
+          "description": "Cartridge oil filter",
+          "oem_part_numbers": ["11427566327"],
+          "aftermarket_options": {
+            "mann": "HU816X",
+            "mahle": "OX387D"
+          },
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 10000
+        },
+
+        "oil_pan": {
+          "part_id": "N54-OIL-PAN",
+          "description": "Aluminum oil pan",
+          "oem_part_numbers": ["11137570869"],
+          "material": "Cast Aluminum",
+          "specifications": {
+            "capacity_liters": 6.5,
+            "drain_plug_thread": "M22x1.5",
+            "baffle": "Internal windage tray"
+          },
+          "wear_classification": "long_life"
+        }
+      }
+    },
+
+    "gaskets_and_seals": {
+      "description": "Complete gasket and seal inventory",
+      "components": {
+        "valve_cover_gasket": {
+          "part_id": "N54-VC-GASKET",
+          "description": "Valve cover gasket set",
+          "oem_part_numbers": ["11127565286"],
+          "aftermarket_options": {
+            "victor_reinz": "11-12-7-565-286"
+          },
+          "quantity_per_engine": 1,
+          "common_issues": ["Oil leaks common after 60k miles"],
+          "wear_classification": "consumable"
+        },
+
+        "intake_manifold_gasket": {
+          "part_id": "N54-IM-GASKET",
+          "description": "Intake manifold gasket set",
+          "oem_part_numbers": ["11617547243"],
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable"
+        },
+
+        "turbo_gaskets": {
+          "part_id": "N54-TURBO-GASKET-KIT",
+          "description": "Turbo installation gasket kit",
+          "oem_part_numbers": ["11657649291"],
+          "quantity_per_engine": 1,
+          "contents": [
+            "Turbo to manifold gaskets (2)",
+            "Turbo to downpipe gaskets (2)",
+            "Oil feed line crush washers",
+            "Coolant line o-rings"
+          ],
+          "wear_classification": "consumable"
+        },
+
+        "oil_pan_gasket": {
+          "part_id": "N54-PAN-GASKET",
+          "description": "Oil pan gasket",
+          "oem_part_numbers": ["11137570871"],
+          "quantity_per_engine": 1,
+          "wear_classification": "consumable"
+        }
+      }
+    },
+
+    "sensors_and_electronics": {
+      "description": "Engine management sensors",
+      "components": {
+        "crankshaft_position_sensor": {
+          "part_id": "N54-CKP",
+          "description": "Crankshaft position sensor",
+          "oem_part_numbers": ["13627556971"],
+          "specifications": {
+            "type": "Hall effect",
+            "signal": "Digital square wave",
+            "reluctor_teeth": 60
+          },
+          "wear_classification": "consumable"
+        },
+
+        "camshaft_position_sensors": {
+          "part_id": "N54-CMP",
+          "description": "Camshaft position sensors (set of 2)",
+          "oem_part_numbers": ["13627558518"],
+          "quantity_per_engine": 2,
+          "specifications": {
+            "type": "Hall effect",
+            "location": "Intake camshaft sprockets"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "oxygen_sensors": {
+          "part_id": "N54-O2",
+          "description": "Wideband oxygen sensors (set of 4)",
+          "oem_part_numbers": {
+            "upstream": "11787545075",
+            "downstream": "11787545076"
+          },
+          "quantity_per_engine": 4,
+          "specifications": {
+            "type": "Wideband LSU 4.9",
+            "heater": "Integrated"
+          },
+          "wear_classification": "consumable",
+          "replacement_interval_miles": 100000
+        },
+
+        "boost_pressure_sensors": {
+          "part_id": "N54-MAP",
+          "description": "Manifold pressure sensor",
+          "oem_part_numbers": ["13627599042"],
+          "quantity_per_engine": 1,
+          "specifications": {
+            "type": "Absolute pressure",
+            "range_bar": "0-3"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "knock_sensors": {
+          "part_id": "N54-KNOCK",
+          "description": "Knock sensors (set of 2)",
+          "oem_part_numbers": ["13627566787"],
+          "quantity_per_engine": 2,
+          "specifications": {
+            "type": "Piezoelectric",
+            "frequency_khz": "6-8"
+          },
+          "wear_classification": "long_life"
+        },
+
+        "coolant_temperature_sensor": {
+          "part_id": "N54-CTS",
+          "description": "Engine coolant temperature sensor",
+          "oem_part_numbers": ["13621433077"],
+          "specifications": {
+            "type": "NTC thermistor",
+            "thread": "M12x1.5"
+          },
+          "wear_classification": "consumable"
+        },
+
+        "oil_temperature_sensor": {
+          "part_id": "N54-OTS",
+          "description": "Oil temperature sensor",
+          "oem_part_numbers": ["12617508003"],
+          "specifications": {
+            "type": "NTC thermistor",
+            "location": "Oil pan"
+          },
+          "wear_classification": "consumable"
+        }
+      }
+    }
+  }
+}

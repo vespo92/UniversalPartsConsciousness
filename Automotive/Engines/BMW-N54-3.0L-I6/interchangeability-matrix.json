@@ -1,0 +1,424 @@
+{
+  "engine_id": "BMW-N54-3.0L-I6-TWINTURBO",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "E82": {
+      "name": "BMW 1 Series Coupe",
+      "years": "2008-2013",
+      "models": ["135i", "1M"]
+    },
+    "E88": {
+      "name": "BMW 1 Series Convertible",
+      "years": "2008-2013",
+      "models": ["135i"]
+    },
+    "E90": {
+      "name": "BMW 3 Series Sedan",
+      "years": "2007-2011",
+      "models": ["335i", "335xi"]
+    },
+    "E91": {
+      "name": "BMW 3 Series Touring",
+      "years": "2007-2011",
+      "models": ["335i", "335xi"]
+    },
+    "E92": {
+      "name": "BMW 3 Series Coupe",
+      "years": "2007-2013",
+      "models": ["335i", "335is", "335xi"]
+    },
+    "E93": {
+      "name": "BMW 3 Series Convertible",
+      "years": "2007-2013",
+      "models": ["335i", "335is"]
+    },
+    "E60": {
+      "name": "BMW 5 Series Sedan",
+      "years": "2008-2010",
+      "models": ["535i", "535xi"]
+    },
+    "E89": {
+      "name": "BMW Z4 Roadster",
+      "years": "2009-2016",
+      "models": ["Z4 sDrive35i", "Z4 sDrive35is"]
+    },
+    "F01": {
+      "name": "BMW 7 Series",
+      "years": "2009-2012",
+      "models": ["740i (select markets)"]
+    },
+    "E70": {
+      "name": "BMW X5",
+      "years": "2008-2010",
+      "models": ["X5 xDrive35i (early)"]
+    },
+    "E71": {
+      "name": "BMW X6",
+      "years": "2008-2010",
+      "models": ["X6 xDrive35i"]
+    }
+  },
+
+  "era_classifications": {
+    "early_n54": {
+      "years": "2007-2009",
+      "ecu": "MSD80",
+      "hpfp_generation": "Gen 1 (problematic)",
+      "injector_index": "1-7 (early)",
+      "notes": "Early production - most common HPFP issues"
+    },
+    "mid_n54": {
+      "years": "2010-2012",
+      "ecu": "MSD81",
+      "hpfp_generation": "Gen 2 (improved)",
+      "injector_index": "8-10 (improved)",
+      "notes": "Updated HPFP, improved reliability"
+    },
+    "late_n54": {
+      "years": "2013-2016",
+      "ecu": "MSD81",
+      "hpfp_generation": "Gen 2",
+      "injector_index": "11-12 (current)",
+      "notes": "Z4 only - most refined N54"
+    }
+  },
+
+  "interchangeability_groups": {
+    "universal_all_n54": {
+      "description": "Parts that interchange across ALL N54 engines (2007-2016)",
+      "compatibility_score": 100,
+      "parts": [
+        {
+          "part_id": "N54-BLOCK",
+          "notes": "All N54 blocks identical"
+        },
+        {
+          "part_id": "N54-CRANK",
+          "notes": "All crankshafts identical - forged steel"
+        },
+        {
+          "part_id": "N54-CONROD",
+          "notes": "All connecting rods identical"
+        },
+        {
+          "part_id": "N54-PISTON",
+          "notes": "All pistons identical"
+        },
+        {
+          "part_id": "N54-RINGS",
+          "notes": "All ring sets identical"
+        },
+        {
+          "part_id": "N54-HEAD",
+          "notes": "All cylinder heads identical"
+        },
+        {
+          "part_id": "N54-CAMSHAFT-SET",
+          "notes": "All camshafts identical"
+        },
+        {
+          "part_id": "N54-INTAKE-MANIFOLD",
+          "notes": "All intake manifolds identical"
+        },
+        {
+          "part_id": "N54-EXHAUST-MANIFOLD",
+          "notes": "All exhaust manifolds identical"
+        },
+        {
+          "part_id": "N54-TURBO-PAIR",
+          "notes": "All turbos identical - front/rear not interchangeable"
+        },
+        {
+          "part_id": "N54-WATER-PUMP",
+          "notes": "All electric water pumps identical"
+        },
+        {
+          "part_id": "N54-THERMOSTAT",
+          "notes": "All thermostats identical"
+        },
+        {
+          "part_id": "N54-OIL-PUMP",
+          "notes": "All oil pumps identical"
+        },
+        {
+          "part_id": "N54-SPARK-PLUGS",
+          "notes": "All spark plugs identical"
+        },
+        {
+          "part_id": "N54-COILS",
+          "notes": "All ignition coils identical"
+        }
+      ]
+    },
+
+    "hpfp_compatibility": {
+      "description": "High Pressure Fuel Pump interchange information",
+      "groups": {
+        "gen1_problematic": {
+          "years": "2007-2009",
+          "part_numbers": ["13517573436", "13517562473"],
+          "known_issues": "High failure rate - extended warranty",
+          "recommendation": "Replace with Gen 2"
+        },
+        "gen2_improved": {
+          "years": "2010-2016",
+          "part_numbers": ["13517616170", "13517616446"],
+          "known_issues": "Much improved reliability",
+          "notes": "Direct replacement for Gen 1"
+        }
+      },
+      "upgrade_path": {
+        "autotech_internals": {
+          "flow_increase_percent": 40,
+          "supports_power_hp": 500,
+          "notes": "Upgraded piston and spring"
+        },
+        "nostrum_hpfp": {
+          "flow_increase_percent": 60,
+          "supports_power_hp": 600,
+          "notes": "Full pump replacement"
+        }
+      }
+    },
+
+    "injector_compatibility": {
+      "description": "Fuel injector index compatibility",
+      "injector_indices": {
+        "index_1_to_7": {
+          "years": "2007-2009",
+          "reliability": "Poor - prone to failure",
+          "recommendation": "Upgrade to Index 11 or 12"
+        },
+        "index_8_to_10": {
+          "years": "2009-2011",
+          "reliability": "Improved",
+          "notes": "Better but still not optimal"
+        },
+        "index_11_to_12": {
+          "years": "2012-2016",
+          "reliability": "Excellent",
+          "recommendation": "Current production - use for all replacements"
+        }
+      },
+      "mixing_indices": {
+        "allowed": true,
+        "notes": "Indices can be mixed but recommend matching all 6. ECU will adapt."
+      }
+    },
+
+    "ecu_compatibility": {
+      "description": "Engine control unit versions",
+      "groups": {
+        "msd80": {
+          "years": "2007-2009",
+          "flash_compatible": true,
+          "tuning_support": "Excellent - most aftermarket support"
+        },
+        "msd81": {
+          "years": "2010-2016",
+          "flash_compatible": true,
+          "tuning_support": "Excellent - same tuning platforms as MSD80"
+        }
+      },
+      "tuning_platforms": [
+        "COBB Accessport",
+        "MHD Flasher (phone-based)",
+        "Bootmod3",
+        "Dinan",
+        "ESS Tuning"
+      ]
+    },
+
+    "turbo_compatibility": {
+      "description": "Turbocharger interchange information",
+      "stock_turbos": {
+        "model": "Mitsubishi TD03-07G",
+        "max_power_hp": 400,
+        "notes": "Stock turbos are reliable but have limited flow"
+      },
+      "upgrade_options": {
+        "hybrid_td04": {
+          "compressor_upgrade": "TD04-HL 16T",
+          "max_power_hp": 500,
+          "spool_impact": "Minimal",
+          "notes": "Drop-in hybrid upgrade"
+        },
+        "pure_stage_2": {
+          "type": "Billet compressor upgrade",
+          "max_power_hp": 600,
+          "notes": "Popular enthusiast upgrade"
+        },
+        "single_turbo_conversion": {
+          "common_turbos": ["Precision 6266", "BorgWarner EFR 7163"],
+          "max_power_hp": "800+",
+          "notes": "Requires custom manifold and tuning"
+        }
+      },
+      "front_rear_interchange": {
+        "interchangeable": false,
+        "notes": "Front and rear turbos are mirror images - oil/coolant connections differ"
+      }
+    }
+  },
+
+  "cross_engine_compatibility": {
+    "n54_to_n55": {
+      "description": "Parts sharing between N54 and N55",
+      "shared_parts": [
+        "Pistons (with modification)",
+        "Connecting rods",
+        "Valve springs",
+        "Oil filter",
+        "Coolant expansion tank"
+      ],
+      "not_compatible": [
+        "Cylinder head (N55 has Valvetronic)",
+        "Intake manifold",
+        "Turbochargers (N55 is single turbo)",
+        "HPFP (different cam profile)",
+        "Injectors (different type)"
+      ]
+    },
+    "n54_to_s55": {
+      "description": "Parts sharing between N54 and S55 (M3/M4)",
+      "shared_parts": [
+        "Basic engine architecture only"
+      ],
+      "notes": "S55 is significantly different - closed deck block, forged internals, different turbos"
+    }
+  },
+
+  "common_swaps_and_upgrades": {
+    "stage_1_tune": {
+      "name": "Basic ECU Tune",
+      "power_gain_hp": "50-80",
+      "torque_gain_lb_ft": "80-100",
+      "requirements": [
+        "ECU flash (COBB, MHD, or Bootmod3)",
+        "91+ octane fuel"
+      ],
+      "supporting_mods_recommended": [
+        "Intake (BMS or similar)",
+        "Charge pipe (aluminum upgrade)"
+      ],
+      "notes": "Safe on stock hardware"
+    },
+    "stage_2_tune": {
+      "name": "Downpipe + Tune",
+      "power_gain_hp": "80-120",
+      "torque_gain_lb_ft": "100-140",
+      "requirements": [
+        "Catless or high-flow downpipes",
+        "Stage 2 ECU tune",
+        "93 octane or E30 blend"
+      ],
+      "supporting_mods_required": [
+        "Upgraded intercooler (FMIC)",
+        "Aluminum charge pipe",
+        "Inlet pipes"
+      ],
+      "notes": "Reliable daily driver setup"
+    },
+    "stage_2_plus": {
+      "name": "Full Bolt-On",
+      "power_gain_hp": "150-180",
+      "torque_gain_lb_ft": "150-200",
+      "requirements": [
+        "All Stage 2 modifications",
+        "Upgraded HPFP internals",
+        "One-step colder spark plugs",
+        "Methanol injection OR E50+ fuel"
+      ],
+      "power_output_hp": "450-480",
+      "notes": "Pushing stock turbos to their limit"
+    },
+    "upgraded_turbo_build": {
+      "name": "Hybrid Turbo Build",
+      "power_output_hp": "500-600",
+      "requirements": [
+        "Upgraded hybrid turbos (Pure, Vargas, etc.)",
+        "HPFP upgrade or port injection",
+        "Upgraded fuel system (LPFP, possibly E85)",
+        "Custom tune",
+        "Upgraded clutch (manual) or trans cooler (auto)"
+      ],
+      "supporting_mods_recommended": [
+        "Upgraded intercooler",
+        "Upgraded oil cooler",
+        "Methanol injection"
+      ],
+      "notes": "Popular enthusiast build level"
+    },
+    "single_turbo_conversion": {
+      "name": "Single Turbo Build",
+      "power_output_hp": "700-900+",
+      "requirements": [
+        "Single turbo kit",
+        "Upgraded fuel system (port injection required)",
+        "Built engine (rods, pistons recommended above 700 HP)",
+        "Custom tune",
+        "Upgraded transmission/clutch",
+        "Upgraded axles and differential"
+      ],
+      "notes": "Professional build - requires extensive modification"
+    }
+  },
+
+  "known_failure_points": {
+    "hpfp_failure": {
+      "symptoms": ["Long crank", "Limp mode", "P0087 code"],
+      "affected_years": "2007-2010 (most common)",
+      "solution": "Replace with revised pump",
+      "extended_warranty": "Yes - 10 years/120k miles"
+    },
+    "wastegate_rattle": {
+      "symptoms": ["Rattle at idle", "Rattle under light load"],
+      "cause": "Worn wastegate actuator arms",
+      "solution": "Replace actuators or upgrade to aftermarket"
+    },
+    "carbon_buildup": {
+      "symptoms": ["Rough idle", "Power loss", "Misfires"],
+      "cause": "Direct injection - no fuel washing intake valves",
+      "solution": "Walnut blasting every 50k miles",
+      "prevention": "Port injection kit, catch can"
+    },
+    "water_pump_failure": {
+      "symptoms": ["Overheating", "Coolant warning"],
+      "typical_mileage": 80000,
+      "solution": "Replace with OEM or Graf unit"
+    },
+    "oil_filter_housing_gasket": {
+      "symptoms": ["Oil leak on passenger side of engine"],
+      "typical_mileage": 60000,
+      "solution": "Replace gasket set"
+    },
+    "valve_cover_gasket": {
+      "symptoms": ["Oil smell", "Oil around spark plug wells"],
+      "typical_mileage": 60000,
+      "solution": "Replace valve cover gasket"
+    }
+  },
+
+  "donor_vehicle_recommendations": {
+    "best_donors": [
+      {
+        "vehicle": "2011+ E92 335i/335is",
+        "reason": "Latest N54 updates, improved HPFP, best injectors",
+        "common_pull_parts": ["Complete engine", "Turbos", "HPFP"]
+      },
+      {
+        "vehicle": "E89 Z4 35is",
+        "reason": "Highest output N54, latest updates",
+        "common_pull_parts": ["ECU", "Injectors", "Engine"]
+      }
+    ],
+    "avoid_as_donors": [
+      {
+        "vehicle": "2007-2009 335i with unknown HPFP history",
+        "reason": "Likely to have Gen 1 HPFP with failure risk"
+      }
+    ]
+  }
+}

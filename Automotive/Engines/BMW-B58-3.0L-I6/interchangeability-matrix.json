@@ -1,0 +1,41 @@
+{
+  "engine_id": "BMW-B58-3.0L-I6-TURBO",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "G20_G21": {"name": "3 Series", "years": "2019-present", "models": ["340i", "M340i"]},
+    "G22_G23": {"name": "4 Series", "years": "2021-present", "models": ["440i", "M440i"]},
+    "G30_G31": {"name": "5 Series", "years": "2017-present", "models": ["540i"]},
+    "G01_G02": {"name": "X3/X4", "years": "2018-present", "models": ["M40i"]},
+    "G05_G06": {"name": "X5/X6", "years": "2019-present", "models": ["40i"]},
+    "J29": {"name": "Toyota Supra", "years": "2020-present", "models": ["GR Supra 3.0"]}
+  },
+
+  "era_classifications": {
+    "gen1_b58": {"years": "2015-2018", "code": "B58B30O0", "hp": 335},
+    "gen2_b58": {"years": "2019-present", "code": "B58B30O1", "hp": 382, "notes": "Revised for higher output"}
+  },
+
+  "cross_platform_compatibility": {
+    "bmw_to_supra": {
+      "description": "BMW B58 parts in Toyota Supra",
+      "compatible": ["Engine internals", "Turbo", "Most sensors", "Fuel system"],
+      "different": ["ECU (Toyota/Denso)", "Some accessories", "Intake design"],
+      "notes": "Supra uses same B58 - parts largely interchangeable"
+    }
+  },
+
+  "common_swaps_and_upgrades": {
+    "stage_1": {"name": "ECU Tune", "power_hp": "420-450", "requirements": ["Flash tune", "93 octane"]},
+    "stage_2": {"name": "Downpipe + Tune", "power_hp": "480-520", "requirements": ["Catless DP", "Stage 2 tune"]},
+    "stage_2_plus": {"name": "Full Bolt-On", "power_hp": "520-560", "requirements": ["DP", "Intake", "Charge pipe", "FMIC/CAC upgrade", "E30 fuel"]},
+    "big_turbo": {"name": "Pure800/Vargas Turbo", "power_hp": "700-800", "requirements": ["Upgraded turbo", "Port injection kit", "Built trans recommended"]}
+  },
+
+  "tuning_notes": {
+    "flash_platforms": ["MHD", "Bootmod3", "xHP (transmission)"],
+    "safe_limits_stock_turbo": "550 HP",
+    "stock_internals_limit": "800+ HP (closed deck extremely strong)"
+  }
+}
