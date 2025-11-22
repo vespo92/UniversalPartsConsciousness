@@ -1,0 +1,359 @@
+{
+  "engine_id": "SUBARU-EJ207-H4T",
+  "manufacturer": "Subaru (Fuji Heavy Industries / Subaru Corporation)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ207",
+  "production_years": {
+    "start": 1999,
+    "end": 2021
+  },
+  "overview": {
+    "description": "The EJ207 is the legendary JDM-only 2.0L turbocharged boxer engine that powered the Impreza WRX STI for over two decades. Known for its high-revving character, legendary exhaust note, and immense tuning potential, the EJ207 is considered one of the greatest turbocharged four-cylinder engines ever produced.",
+    "heritage": "The Heart of STI - Rally Legend",
+    "significance": "Powered 3 WRC championships, defines Subaru's performance legacy"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1994,
+      "liters": 2.0
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 75.0
+    },
+    "compression_ratio": {
+      "early": "8.0:1",
+      "late": "8.2:1"
+    },
+    "valvetrain": "DOHC, 4 valves per cylinder, belt-driven with AVCS (2001+)",
+    "aspiration": "Turbocharged with intercooler",
+    "cooling_system": "Water-cooled with oil cooler",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Premium unleaded (98+ RON)"
+  },
+  "power_output_by_variant": {
+    "ej207_ver_v_vi": {
+      "years": "1999-2000",
+      "power_ps": 280,
+      "power_hp": 276,
+      "power_kw": 206,
+      "power_rpm": 6500,
+      "torque_nm": 363,
+      "torque_lb_ft": 268,
+      "torque_rpm": 4000,
+      "boost_bar": 0.95,
+      "turbo": "IHI VF28"
+    },
+    "ej207_ver_vii": {
+      "years": "2001-2002",
+      "power_ps": 280,
+      "power_hp": 276,
+      "power_kw": 206,
+      "power_rpm": 6500,
+      "torque_nm": 373,
+      "torque_lb_ft": 275,
+      "torque_rpm": 4000,
+      "boost_bar": 1.0,
+      "turbo": "IHI VF30",
+      "notes": "First AVCS (Active Valve Control System) on EJ207"
+    },
+    "ej207_spec_c": {
+      "years": "2003-2007",
+      "power_ps": 280,
+      "power_hp": 276,
+      "power_kw": 206,
+      "power_rpm": 6400,
+      "torque_nm": 392,
+      "torque_lb_ft": 289,
+      "torque_rpm": 4400,
+      "boost_bar": 1.15,
+      "turbo": "IHI VF36/VF37",
+      "notes": "Lightened version, ball bearing turbo"
+    },
+    "ej207_grb": {
+      "years": "2007-2014",
+      "power_ps": 308,
+      "power_hp": 304,
+      "power_kw": 227,
+      "power_rpm": 6400,
+      "torque_nm": 422,
+      "torque_lb_ft": 311,
+      "torque_rpm": 4400,
+      "boost_bar": 1.2,
+      "turbo": "IHI VF48",
+      "notes": "Twin-scroll turbo, highest factory output"
+    },
+    "ej207_vab": {
+      "years": "2014-2021",
+      "power_ps": 308,
+      "power_hp": 304,
+      "power_kw": 227,
+      "power_rpm": 6400,
+      "torque_nm": 422,
+      "torque_lb_ft": 311,
+      "torque_rpm": 4400,
+      "boost_bar": 1.2,
+      "turbo": "IHI VF50/VF52",
+      "notes": "Final evolution with refinements"
+    },
+    "ej207_s208": {
+      "years": "2017",
+      "power_ps": 329,
+      "power_hp": 324,
+      "power_kw": 242,
+      "power_rpm": 7200,
+      "torque_nm": 432,
+      "torque_lb_ft": 319,
+      "torque_rpm": 3600,
+      "boost_bar": 1.3,
+      "notes": "Limited edition with hand-built engines"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Impreza WRX STI (GC8)",
+      "chassis_code": "GC8",
+      "years": "1999-2000",
+      "body_styles": ["4-door sedan", "2-door coupe"],
+      "market": "JDM",
+      "versions": ["Version V", "Version VI", "RA", "S201"]
+    },
+    {
+      "model": "Subaru Impreza WRX STI (GDB)",
+      "chassis_code": "GDB",
+      "years": "2000-2007",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "JDM",
+      "versions": ["Version VII-IX", "Spec C", "S202", "S203", "S204"]
+    },
+    {
+      "model": "Subaru Impreza WRX STI (GRB/GVB)",
+      "chassis_code": "GRB/GVB",
+      "years": "2007-2014",
+      "body_styles": ["5-door hatchback", "4-door sedan"],
+      "market": "JDM",
+      "versions": ["A-Line", "Spec C", "S206"]
+    },
+    {
+      "model": "Subaru WRX STI (VAB)",
+      "chassis_code": "VAB",
+      "years": "2014-2021",
+      "body_styles": ["4-door sedan"],
+      "market": "JDM",
+      "versions": ["STI", "S207", "S208", "Final Edition"]
+    },
+    {
+      "model": "Subaru Forester STI (SG9)",
+      "chassis_code": "SG9",
+      "years": "2004-2008",
+      "body_styles": ["5-door wagon"],
+      "market": "JDM",
+      "notes": "Special STI version with EJ207"
+    }
+  ],
+  "turbo_system": {
+    "variants": {
+      "vf28": {
+        "years": "1999-2000",
+        "type": "Single-scroll, journal bearing",
+        "power_limit_hp": 350,
+        "notes": "Version V-VI turbo"
+      },
+      "vf30": {
+        "years": "2001-2002",
+        "type": "Single-scroll, journal bearing",
+        "power_limit_hp": 380,
+        "notes": "Version VII turbo with improved compressor"
+      },
+      "vf36_vf37": {
+        "years": "2003-2007",
+        "type": "Single-scroll, ball bearing",
+        "power_limit_hp": 400,
+        "notes": "Spec C turbos, faster spool"
+      },
+      "vf48": {
+        "years": "2007-2014",
+        "type": "Twin-scroll, ball bearing",
+        "power_limit_hp": 420,
+        "notes": "GRB hatchback turbo, excellent response"
+      },
+      "vf50_vf52": {
+        "years": "2014-2021",
+        "type": "Twin-scroll, ball bearing",
+        "power_limit_hp": 450,
+        "notes": "VAB turbo, refined version of VF48"
+      }
+    },
+    "intercooler": {
+      "type": "Air-to-air",
+      "location": "Top-mount",
+      "core_dimensions": {
+        "width_mm": 525,
+        "height_mm": 210,
+        "depth_mm": 65
+      }
+    },
+    "wastegate": {
+      "type": "Internal",
+      "boost_control": "ECU-controlled solenoid"
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.5,
+      "capacity_with_filter_liters": 5.0,
+      "specification": "5W-30 or 5W-40 full synthetic",
+      "recommended": "Motul 300V, Castrol Edge, Red Line",
+      "change_interval_km": 5000
+    },
+    "coolant": {
+      "capacity_liters": 7.5,
+      "specification": "Subaru Super Coolant (Blue)"
+    },
+    "gearbox_oil": {
+      "capacity_liters": 3.7,
+      "specification": "Subaru Extra-S 75W-90"
+    },
+    "front_diff": {
+      "capacity_liters": 1.0,
+      "specification": "Subaru Gear Oil 75W-90"
+    },
+    "rear_diff": {
+      "capacity_liters": 0.8,
+      "specification": "Subaru Gear Oil LSD 75W-90"
+    },
+    "dccd_center_diff": {
+      "capacity_liters": 0.5,
+      "specification": "Subaru Gear Oil LSD"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 165,
+    "redline_rpm": 8000,
+    "max_rpm": 8500,
+    "bore_mm": 92.0,
+    "stroke_mm": 75.0,
+    "rod_length_mm": 130.5,
+    "deck_height_mm": 201.0,
+    "main_journal_mm": 52.0,
+    "rod_journal_mm": 48.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II compliant (JDM spec)",
+      "features": [
+        "AVCS control (2001+)",
+        "Boost control",
+        "Knock sensing",
+        "Closed-loop fueling",
+        "DCCD control"
+      ]
+    },
+    "ignition": {
+      "type": "Direct ignition with individual coil packs",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "type": "NGK ILFR6B or equivalent",
+        "gap_mm": 0.8,
+        "quantity": 4,
+        "heat_range": "6"
+      }
+    },
+    "fuel_system": {
+      "injection": "Sequential multi-point fuel injection",
+      "fuel_pump": "In-tank electric (Denso)",
+      "fuel_pressure_bar": 3.0,
+      "injectors": {
+        "type": "Top-feed, 565cc (GRB+)",
+        "impedance": "High impedance"
+      }
+    },
+    "avcs": {
+      "description": "Active Valve Control System - variable intake cam timing",
+      "range_degrees": 35,
+      "years": "2001+"
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_km": 100000,
+    "replacement_interval_miles": 60000,
+    "interference_engine": "Yes",
+    "components_to_replace": [
+      "Timing belt",
+      "Idler pulleys (2)",
+      "Tensioner",
+      "Hydraulic tensioner",
+      "Water pump",
+      "Cam seals (4)",
+      "Crank seal"
+    ],
+    "notes": "Use genuine Subaru or Gates timing kit. Timing belt failure causes catastrophic valve damage."
+  },
+  "notes": {
+    "heritage": "The EJ207 is the most celebrated engine in Subaru's history. Born from WRC homologation requirements, it powered Subaru to three consecutive Manufacturers' Championships (1995-1997) and multiple Drivers' titles.",
+    "jdm_only": "The EJ207 was only available in Japan. USDM STI models received the EJ257 2.5L instead.",
+    "high_revving": "Unlike the torque-focused EJ257, the EJ207 is designed for high RPM power. The 8000+ RPM redline and characteristic boxer rumble define the driving experience.",
+    "wrc_lineage": "Rally-derived technologies include semi-closed deck blocks, sodium-filled exhaust valves, and DCCD center differentials.",
+    "common_issues": [
+      {
+        "issue": "Spun rod bearings",
+        "severity": "Critical",
+        "cause": "Oil starvation under hard cornering, high-RPM stress",
+        "prevention": "ACL Race bearings, oil pickup modification, regular oil changes"
+      },
+      {
+        "issue": "Ringland failure",
+        "severity": "Critical",
+        "cause": "Detonation from improper tuning or poor fuel",
+        "prevention": "Professional tuning, high-quality fuel, forged pistons for high boost"
+      },
+      {
+        "issue": "Turbo failure",
+        "severity": "High",
+        "cause": "Oil starvation, overspin, age",
+        "prevention": "Proper warm-up/cool-down, turbo timer, regular oil changes"
+      },
+      {
+        "issue": "AVCS solenoid failure",
+        "severity": "Medium",
+        "cause": "Normal wear, oil contamination",
+        "prevention": "Regular oil changes with quality oil"
+      }
+    ],
+    "tuning_potential": {
+      "stage_1": {
+        "power_hp": 320,
+        "mods": ["ECU tune", "Exhaust"],
+        "notes": "Stock turbo, stock internals"
+      },
+      "stage_2": {
+        "power_hp": 380,
+        "mods": ["Downpipe", "Intake", "EBCS", "Tune"],
+        "notes": "Stock turbo limit approaching"
+      },
+      "turbo_upgrade": {
+        "power_hp": "450-550",
+        "mods": ["VF34/VF39 turbo", "Fuel system", "Tune"],
+        "notes": "Stock internals limit, forged recommended"
+      },
+      "built_engine": {
+        "power_hp": "600-1000+",
+        "mods": ["Forged internals", "Stroker kit", "Big turbo", "E85"],
+        "notes": "Reliable high power builds common"
+      }
+    },
+    "legendary_variants": {
+      "s201": "Limited edition (300 units), hand-built engine, 296PS",
+      "s202": "300 units, 320PS, rally-inspired",
+      "spec_c": "Lightweight competition variant",
+      "s206": "Limited to 300 units, carbon roof",
+      "s208": "450 units, 329PS, final GRB-based special"
+    }
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

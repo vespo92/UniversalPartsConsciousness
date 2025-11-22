@@ -1,0 +1,211 @@
+{
+  "engine_id": "SUBARU-EZ30-H6-NA",
+  "manufacturer": "Subaru (Subaru Corporation)",
+  "engine_family": "EZ Series",
+  "engine_code": "EZ30",
+  "production_years": {
+    "start": 1999,
+    "end": 2009
+  },
+  "overview": {
+    "description": "The EZ30 is Subaru's first production flat-six engine, offering smooth power delivery and premium character for flagship models. Later revised as the EZ30R with improved performance, it powered the Outback H6, Legacy GT, and Tribeca.",
+    "heritage": "Subaru's Flagship Six-Cylinder",
+    "significance": "First production Subaru H6, premium positioning"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 6-cylinder (H6/Boxer)",
+    "displacement": {
+      "cc": 2999,
+      "liters": 3.0
+    },
+    "bore": {
+      "mm": 89.2
+    },
+    "stroke": {
+      "mm": 80.0
+    },
+    "compression_ratio": {
+      "ez30": "10.7:1",
+      "ez30r": "10.7:1"
+    },
+    "valvetrain": "DOHC, 4 valves per cylinder (24V), chain-driven with AVCS",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Sequential multi-point fuel injection",
+    "fuel_type": "Premium unleaded (91+ octane)"
+  },
+  "power_output_by_variant": {
+    "ez30_legacy_outback": {
+      "years": "2000-2004",
+      "power_hp": 212,
+      "power_kw": 158,
+      "power_rpm": 6000,
+      "torque_nm": 282,
+      "torque_lb_ft": 210,
+      "torque_rpm": 4400,
+      "notes": "Original EZ30, belt-driven accessories"
+    },
+    "ez30r_legacy": {
+      "years": "2003-2009",
+      "power_hp": 245,
+      "power_kw": 183,
+      "power_rpm": 6600,
+      "torque_nm": 297,
+      "torque_lb_ft": 215,
+      "torque_rpm": 4200,
+      "notes": "Revised with higher compression and AVCS"
+    },
+    "ez30r_tribeca": {
+      "years": "2006-2007",
+      "power_hp": 250,
+      "power_kw": 186,
+      "power_rpm": 6600,
+      "torque_nm": 297,
+      "torque_lb_ft": 219,
+      "torque_rpm": 4200,
+      "notes": "First-year Tribeca"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Outback H6-3.0",
+      "chassis_code": "BH/BP",
+      "years": "2001-2009",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM/Global",
+      "notes": "Premium Outback trim with VDC"
+    },
+    {
+      "model": "Subaru Legacy H6-3.0",
+      "chassis_code": "BH/BE/BL/BP",
+      "years": "2000-2009",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "USDM/Global",
+      "notes": "Top-tier Legacy"
+    },
+    {
+      "model": "Subaru Legacy 3.0R Spec.B",
+      "chassis_code": "BL/BP",
+      "years": "2007-2009",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM",
+      "notes": "Sport sedan with 6-speed manual"
+    },
+    {
+      "model": "Subaru B9 Tribeca",
+      "chassis_code": "WX",
+      "years": "2006-2007",
+      "body_styles": ["5-door SUV"],
+      "market": "USDM",
+      "notes": "First year with 3.0L before 3.6L upgrade"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 5.5,
+      "capacity_with_filter_liters": 6.0,
+      "specification": "5W-30 synthetic",
+      "change_interval_km": 6000
+    },
+    "coolant": {
+      "capacity_liters": 9.2,
+      "specification": "Subaru Super Coolant"
+    },
+    "gearbox_oil": {
+      "auto_5eat_liters": 10.5,
+      "manual_6mt_liters": 3.7,
+      "specification_auto": "ATF HP",
+      "specification_manual": "75W-90"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 195,
+    "redline_rpm": 6500,
+    "max_rpm": 7000,
+    "bore_mm": 89.2,
+    "stroke_mm": 80.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II"
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-6-3-2-5-4",
+      "spark_plugs": {
+        "type": "NGK ILFR6B",
+        "gap_mm": 1.0,
+        "quantity": 6
+      }
+    },
+    "avcs": {
+      "description": "Active Valve Control System",
+      "years": "2003+ (EZ30R)",
+      "type": "Intake cams only"
+    },
+    "vdc": {
+      "description": "Vehicle Dynamics Control",
+      "notes": "Standard on most H6 models"
+    }
+  },
+  "timing_system": {
+    "type": "Timing chain",
+    "service_interval": "Lifetime (inspect at 150,000 miles)",
+    "components": [
+      "Primary timing chains (2)",
+      "Secondary timing chains (2)",
+      "Chain guides",
+      "Tensioners"
+    ],
+    "notes": "Chain-driven - no belt replacement needed, but guides can wear"
+  },
+  "notes": {
+    "heritage": "The EZ30 represented Subaru's move upmarket. Its smooth six-cylinder power and sophisticated design positioned Subaru against premium competitors.",
+    "ez30_vs_ez30r": {
+      "ez30": "Original design with lower output, belt-driven water pump",
+      "ez30r": "Revised with AVCS, higher compression, improved intake, 33hp increase"
+    },
+    "common_issues": [
+      {
+        "issue": "Oil consumption",
+        "severity": "Medium",
+        "cause": "Valve seal wear, PCV issues",
+        "prevention": "Regular oil checks, quality synthetic oil"
+      },
+      {
+        "issue": "Timing chain guide wear",
+        "severity": "Medium-High",
+        "cause": "High mileage, oil neglect",
+        "symptoms": ["Rattle on cold start", "Timing codes"],
+        "prevention": "Regular oil changes, quality oil"
+      },
+      {
+        "issue": "Air pump failure",
+        "severity": "Low",
+        "cause": "Normal wear, causes check engine light",
+        "prevention": "None - replace when failed or delete if legal"
+      },
+      {
+        "issue": "Ignition coil failure",
+        "severity": "Low",
+        "cause": "Heat, age",
+        "prevention": "Replace in sets when one fails"
+      }
+    ],
+    "reliability": "The EZ30 is generally reliable when maintained. Chain-driven timing eliminates major service intervals, but oil quality and level are critical.",
+    "tuning_notes": {
+      "potential": "Limited aftermarket support compared to EJ series",
+      "common_mods": [
+        "Headers (for better exhaust flow)",
+        "Cold air intake",
+        "Exhaust",
+        "ECU tune"
+      ],
+      "power_gains": "Modest - 15-25hp with bolt-ons"
+    },
+    "driving_character": "Smooth, linear power delivery. The flat-six note is distinctive and more refined than the boxer-four rumble. Excellent highway cruiser."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

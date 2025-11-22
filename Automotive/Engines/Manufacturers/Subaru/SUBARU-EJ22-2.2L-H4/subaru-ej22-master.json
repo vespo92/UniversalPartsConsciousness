@@ -1,0 +1,195 @@
+{
+  "engine_id": "SUBARU-EJ22-H4-NA",
+  "manufacturer": "Subaru (Fuji Heavy Industries)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ22",
+  "production_years": {
+    "start": 1990,
+    "end": 2001
+  },
+  "overview": {
+    "description": "The EJ22 is the 2.2-liter naturally aspirated boxer that served as the workhorse engine for Subaru's US lineup in the 1990s. Known for its reliability and smooth power delivery, the EJ22 powered everything from the Legacy to the Impreza, establishing Subaru's reputation in North America.",
+    "heritage": "The Reliable Foundation",
+    "significance": "Built Subaru's reliability reputation in North America"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 2212,
+      "liters": 2.2
+    },
+    "bore": {
+      "mm": 96.9
+    },
+    "stroke": {
+      "mm": 75.0
+    },
+    "compression_ratio": "9.5:1",
+    "valvetrain": {
+      "sohc": "SOHC, 2 valves per cylinder (EJ22E)",
+      "dohc": "DOHC, 4 valves per cylinder (EJ22G)"
+    },
+    "aspiration": "Naturally Aspirated (or Turbocharged for EJ22G)",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Regular unleaded (87 octane)"
+  },
+  "power_output_by_variant": {
+    "ej22e_sohc": {
+      "years": "1990-2001",
+      "power_hp": 130,
+      "power_kw": 97,
+      "power_rpm": 5600,
+      "torque_nm": 196,
+      "torque_lb_ft": 145,
+      "torque_rpm": 4400,
+      "notes": "Standard SOHC variant, most common"
+    },
+    "ej22e_phase_ii": {
+      "years": "1996-2001",
+      "power_hp": 137,
+      "power_kw": 102,
+      "power_rpm": 5500,
+      "torque_nm": 200,
+      "torque_lb_ft": 148,
+      "torque_rpm": 4000,
+      "notes": "Phase II improvements"
+    },
+    "ej22g_dohc_turbo": {
+      "years": "1992-1997",
+      "power_hp": 160,
+      "power_kw": 119,
+      "power_rpm": 5600,
+      "torque_nm": 260,
+      "torque_lb_ft": 192,
+      "torque_rpm": 3600,
+      "notes": "JDM Legacy GT, SVX-related applications"
+    },
+    "ej22_impreza_rs": {
+      "years": "1998-2001",
+      "power_hp": 165,
+      "power_kw": 123,
+      "power_rpm": 5800,
+      "torque_nm": 214,
+      "torque_lb_ft": 158,
+      "torque_rpm": 4400,
+      "notes": "DOHC variant for Impreza RS coupe"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Legacy",
+      "chassis_code": "BC/BJ/BD/BG",
+      "years": "1990-1999",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "USDM",
+      "notes": "Primary Legacy engine in US"
+    },
+    {
+      "model": "Subaru Impreza",
+      "chassis_code": "GC/GF/GM",
+      "years": "1993-2001",
+      "body_styles": ["4-door sedan", "2-door coupe", "5-door wagon"],
+      "market": "USDM",
+      "notes": "Non-turbo Impreza"
+    },
+    {
+      "model": "Subaru Impreza RS",
+      "chassis_code": "GC/GM",
+      "years": "1998-2001",
+      "body_styles": ["2-door coupe", "4-door sedan"],
+      "market": "USDM",
+      "notes": "Sport model with 165hp DOHC"
+    },
+    {
+      "model": "Subaru Outback",
+      "chassis_code": "BD/BG/BK",
+      "years": "1995-1999",
+      "body_styles": ["5-door wagon", "4-door sedan"],
+      "market": "USDM",
+      "notes": "First Outback model"
+    },
+    {
+      "model": "Subaru Forester",
+      "chassis_code": "SF",
+      "years": "1998-2001",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "Base Forester engine"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.0,
+      "capacity_with_filter_liters": 4.3,
+      "specification": "5W-30 or 10W-30",
+      "change_interval_km": 6000
+    },
+    "coolant": {
+      "capacity_liters": 6.8,
+      "specification": "Subaru Super Coolant or equivalent"
+    },
+    "gearbox_oil": {
+      "manual_liters": 3.5,
+      "auto_liters": 9.0,
+      "specification_manual": "75W-90 GL-4",
+      "specification_auto": "Dexron III"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 145,
+    "redline_rpm": 6500,
+    "bore_mm": 96.9,
+    "stroke_mm": 75.0,
+    "rod_length_mm": 130.5
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Hitachi/Denso",
+      "type": "OBD-I (1990-1995), OBD-II (1996+)"
+    },
+    "ignition": {
+      "type": "Distributor (early), Direct (late)",
+      "firing_order": "1-3-2-4"
+    },
+    "fuel_system": {
+      "injection": "Multi-point fuel injection",
+      "injectors_cc": 265
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_km": 160000,
+    "replacement_interval_miles": 100000,
+    "interference_engine": "No (Phase I), Yes (Phase II)",
+    "notes": "Non-interference on most variants makes timing belt failure less catastrophic"
+  },
+  "notes": {
+    "heritage": "The EJ22 established Subaru's reputation for durability in the North American market. Many EJ22-powered vehicles exceeded 300,000 miles with basic maintenance.",
+    "reliability_legend": "The EJ22 is considered one of Subaru's most reliable engines. Its simpler design (compared to later EJ25s) avoided many common issues.",
+    "22b_connection": "The legendary Impreza 22B STI uses a stroked version of the EJ22 block, using its larger bore to achieve 2.2L displacement from the EJ20 architecture.",
+    "common_issues": [
+      {
+        "issue": "Head gasket failure",
+        "severity": "Medium",
+        "cause": "Age, overheating (less common than EJ25)",
+        "prevention": "Regular coolant changes, monitor temperature"
+      },
+      {
+        "issue": "Oil leaks",
+        "severity": "Low",
+        "cause": "Aging gaskets and seals",
+        "prevention": "Regular inspection and replacement"
+      },
+      {
+        "issue": "Valve cover gasket leaks",
+        "severity": "Low",
+        "cause": "Heat cycling, age",
+        "prevention": "Replace every 60,000 miles or as needed"
+      }
+    ],
+    "swap_popularity": "The EJ22 is a popular swap into earlier Subaru vehicles. Its simple design and reliability make it excellent for restored classics and off-road builds.",
+    "comparison_to_ej25": "While the EJ25 offers more displacement, the EJ22 is often considered more reliable due to its closed-deck design and thicker cylinder walls. Many enthusiasts prefer EJ22 engines for builds."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

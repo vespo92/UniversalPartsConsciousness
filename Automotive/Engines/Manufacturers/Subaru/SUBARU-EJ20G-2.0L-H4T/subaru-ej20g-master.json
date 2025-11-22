@@ -1,0 +1,285 @@
+{
+  "engine_id": "SUBARU-EJ20G-H4T",
+  "manufacturer": "Subaru (Fuji Heavy Industries)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ20G/EJ20K",
+  "production_years": {
+    "start": 1992,
+    "end": 1999
+  },
+  "overview": {
+    "description": "The EJ20G is the original turbocharged 2.0L boxer that launched the WRX legend. Later evolving into the EJ20K, these engines powered the first-generation Impreza WRX and early STI models, establishing Subaru's reputation for accessible turbocharged performance.",
+    "heritage": "Birth of the WRX Legend",
+    "significance": "First turbocharged Impreza engine, foundation of WRX dynasty"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1994,
+      "liters": 2.0
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 75.0
+    },
+    "compression_ratio": "8.0:1",
+    "valvetrain": "DOHC, 4 valves per cylinder, belt-driven",
+    "aspiration": "Turbocharged with intercooler",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Premium unleaded (95+ RON)"
+  },
+  "power_output_by_variant": {
+    "ej20g_wrx_gc8a": {
+      "years": "1992-1993",
+      "power_ps": 240,
+      "power_hp": 237,
+      "power_kw": 177,
+      "power_rpm": 6000,
+      "torque_nm": 304,
+      "torque_lb_ft": 224,
+      "torque_rpm": 5000,
+      "boost_bar": 0.75,
+      "turbo": "IHI VF20",
+      "notes": "Original WRX"
+    },
+    "ej20g_sti_ver_i_ii": {
+      "years": "1994-1995",
+      "power_ps": 250,
+      "power_hp": 247,
+      "power_kw": 184,
+      "power_rpm": 6000,
+      "torque_nm": 309,
+      "torque_lb_ft": 228,
+      "torque_rpm": 4500,
+      "boost_bar": 0.85,
+      "turbo": "IHI VF22",
+      "notes": "STI Version I and II"
+    },
+    "ej20g_sti_ver_iii": {
+      "years": "1996",
+      "power_ps": 275,
+      "power_hp": 271,
+      "power_kw": 202,
+      "power_rpm": 6500,
+      "torque_nm": 319,
+      "torque_lb_ft": 235,
+      "torque_rpm": 4000,
+      "boost_bar": 0.90,
+      "turbo": "IHI VF23",
+      "notes": "Version III with improved turbo"
+    },
+    "ej20k_sti_ver_iv": {
+      "years": "1997-1998",
+      "power_ps": 280,
+      "power_hp": 276,
+      "power_kw": 206,
+      "power_rpm": 6500,
+      "torque_nm": 333,
+      "torque_lb_ft": 246,
+      "torque_rpm": 4000,
+      "boost_bar": 0.95,
+      "turbo": "IHI VF24",
+      "notes": "First EJ20K, improved internals"
+    },
+    "ej20k_wrx_sti_ver_v_vi": {
+      "years": "1998-1999",
+      "power_ps": 280,
+      "power_hp": 276,
+      "power_kw": 206,
+      "power_rpm": 6500,
+      "torque_nm": 343,
+      "torque_lb_ft": 253,
+      "torque_rpm": 4000,
+      "boost_bar": 0.95,
+      "turbo": "IHI VF28",
+      "notes": "Final EJ20K evolution, transition to EJ207"
+    },
+    "ej20g_ra": {
+      "years": "1994-1997",
+      "power_ps": 275,
+      "power_hp": 271,
+      "power_kw": 202,
+      "power_rpm": 6500,
+      "torque_nm": 343,
+      "torque_lb_ft": 253,
+      "torque_rpm": 4000,
+      "boost_bar": 0.95,
+      "notes": "Lightweight rally-spec version"
+    },
+    "ej20g_22b": {
+      "years": "1998",
+      "power_ps": 280,
+      "power_hp": 276,
+      "power_kw": 206,
+      "power_rpm": 6000,
+      "torque_nm": 363,
+      "torque_lb_ft": 268,
+      "torque_rpm": 3200,
+      "turbo": "IHI VF28",
+      "displacement_cc": 2212,
+      "bore_mm": 96.9,
+      "notes": "Legendary 22B STI - 2.2L stroker, only 400 produced"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Impreza WRX (GC8)",
+      "chassis_code": "GC8",
+      "years": "1992-2000",
+      "body_styles": ["4-door sedan", "2-door coupe", "5-door wagon"],
+      "market": "JDM",
+      "notes": "First-generation WRX"
+    },
+    {
+      "model": "Subaru Impreza WRX STI (GC8)",
+      "chassis_code": "GC8",
+      "years": "1994-1999",
+      "body_styles": ["4-door sedan", "2-door coupe"],
+      "market": "JDM",
+      "notes": "Versions I through VI"
+    },
+    {
+      "model": "Subaru Impreza 22B STI",
+      "chassis_code": "GC8",
+      "years": "1998",
+      "body_styles": ["2-door coupe"],
+      "market": "JDM (mostly)",
+      "notes": "Only 400 units, WRC championship tribute"
+    },
+    {
+      "model": "Subaru Legacy GT",
+      "chassis_code": "BD/BG",
+      "years": "1993-1998",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "JDM",
+      "notes": "EJ20G powered Legacy twin-turbo variants"
+    },
+    {
+      "model": "Subaru Forester S-Turbo",
+      "chassis_code": "SF5",
+      "years": "1997-1999",
+      "body_styles": ["5-door wagon"],
+      "market": "JDM",
+      "notes": "Original turbo Forester"
+    }
+  ],
+  "turbo_system": {
+    "turbo_evolution": {
+      "vf20": {
+        "years": "1992-1993",
+        "type": "Journal bearing, small",
+        "power_limit_hp": 280,
+        "notes": "Original WRX turbo"
+      },
+      "vf22": {
+        "years": "1994-1995",
+        "type": "Journal bearing",
+        "power_limit_hp": 300,
+        "notes": "STI Ver I-II turbo"
+      },
+      "vf23": {
+        "years": "1996",
+        "type": "Journal bearing, improved flow",
+        "power_limit_hp": 320,
+        "notes": "Ver III turbo"
+      },
+      "vf24": {
+        "years": "1997-1998",
+        "type": "Journal bearing",
+        "power_limit_hp": 340,
+        "notes": "Ver IV turbo with improved compressor"
+      },
+      "vf28": {
+        "years": "1998-1999",
+        "type": "Journal bearing",
+        "power_limit_hp": 360,
+        "notes": "Ver V-VI turbo, continued on early EJ207"
+      }
+    },
+    "intercooler": {
+      "type": "Air-to-air",
+      "location": "Top-mount under hood scoop"
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.2,
+      "capacity_with_filter_liters": 4.5,
+      "specification": "10W-40 or 5W-40 synthetic",
+      "change_interval_km": 5000
+    },
+    "coolant": {
+      "capacity_liters": 7.0,
+      "specification": "Subaru Super Coolant"
+    },
+    "gearbox_oil": {
+      "capacity_liters": 3.5,
+      "specification": "75W-90 GL-4"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 160,
+    "redline_rpm": 7500,
+    "max_rpm": 8000,
+    "bore_mm": 92.0,
+    "stroke_mm": 75.0,
+    "rod_length_mm": 130.5,
+    "deck_height_mm": 201.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-I (early), OBD-II (1996+)",
+      "features": ["Boost control", "Knock retard", "Fuel enrichment"]
+    },
+    "ignition": {
+      "type": "Distributor-based with coil pack (early), Direct ignition (late)",
+      "firing_order": "1-3-2-4"
+    },
+    "fuel_system": {
+      "injection": "Multi-point sequential",
+      "injectors_cc": 460
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_km": 100000,
+    "replacement_interval_miles": 60000,
+    "interference_engine": "Yes"
+  },
+  "notes": {
+    "heritage": "The EJ20G marked Subaru's entry into serious performance car manufacturing. From humble beginnings with 240ps, the engine evolved rapidly through the STI versions to reach the JDM 'gentleman's agreement' limit of 280ps.",
+    "22b_legend": "The 22B STI is the holy grail of Subaru collecting. Its 2.2L stroker motor, wide-body, and limited production make it one of the most valuable Japanese cars of the 1990s.",
+    "wrc_connection": "These engines directly benefited from Subaru's WRC program. Technologies developed for the rally cars filtered down to production vehicles.",
+    "common_issues": [
+      {
+        "issue": "Turbo failure",
+        "severity": "High",
+        "cause": "Age, oil starvation",
+        "prevention": "Turbo timer, proper warm-up/cool-down"
+      },
+      {
+        "issue": "Cracked exhaust manifolds",
+        "severity": "Medium",
+        "cause": "Thermal cycling, age",
+        "prevention": "Equal-length headers upgrade"
+      },
+      {
+        "issue": "ECU capacitor failure (early models)",
+        "severity": "High",
+        "cause": "Age, capacitor drying out",
+        "prevention": "ECU capacitor recap service"
+      }
+    ],
+    "tuning_potential": {
+      "stock_turbo_max": 350,
+      "mild_turbo_upgrade": 400,
+      "big_turbo": "500-700hp",
+      "notes": "Strong internals, good platform for power"
+    }
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

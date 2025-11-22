@@ -1,0 +1,242 @@
+{
+  "engine_id": "SUBARU-EJ205-H4T",
+  "manufacturer": "Subaru (Fuji Heavy Industries / Subaru Corporation)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ205",
+  "production_years": {
+    "start": 1999,
+    "end": 2005
+  },
+  "overview": {
+    "description": "The EJ205 is the 2.0L turbocharged engine that powered the USDM WRX when it finally arrived in America in 2002. Known for its characteristic unequal-length header rumble and accessible power, the EJ205 introduced American enthusiasts to the WRX phenomenon.",
+    "heritage": "America's First WRX Engine",
+    "significance": "Brought WRX to US market, massive aftermarket development"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1994,
+      "liters": 2.0
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 75.0
+    },
+    "compression_ratio": "8.0:1",
+    "valvetrain": "DOHC, 4 valves per cylinder, belt-driven",
+    "aspiration": "Turbocharged with top-mount intercooler",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Premium unleaded (91+ octane)"
+  },
+  "power_output_by_variant": {
+    "ej205_usdm_wrx": {
+      "years": "2002-2005",
+      "power_hp": 227,
+      "power_kw": 169,
+      "power_rpm": 6000,
+      "torque_nm": 292,
+      "torque_lb_ft": 217,
+      "torque_rpm": 4000,
+      "boost_psi": 13.5,
+      "turbo": "Mitsubishi TD04",
+      "notes": "Standard USDM WRX"
+    },
+    "ej205_jdm_wrx": {
+      "years": "1999-2005",
+      "power_ps": 250,
+      "power_hp": 247,
+      "power_kw": 184,
+      "power_rpm": 6000,
+      "torque_nm": 333,
+      "torque_lb_ft": 246,
+      "torque_rpm": 3600,
+      "boost_psi": 14.5,
+      "turbo": "IHI VF34",
+      "notes": "JDM spec with more power"
+    },
+    "ej205_forester_xt": {
+      "years": "2004-2005",
+      "power_hp": 210,
+      "power_kw": 157,
+      "power_rpm": 5600,
+      "torque_nm": 319,
+      "torque_lb_ft": 235,
+      "torque_rpm": 3600,
+      "boost_psi": 12.0,
+      "turbo": "TD04",
+      "notes": "Slightly detuned for Forester application"
+    },
+    "ej205_saab_9_2x": {
+      "years": "2005-2006",
+      "power_hp": 227,
+      "power_kw": 169,
+      "power_rpm": 6000,
+      "torque_nm": 292,
+      "torque_lb_ft": 217,
+      "torque_rpm": 4000,
+      "notes": "Saab-badged Impreza WRX"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Impreza WRX",
+      "chassis_code": "GDA/GGA",
+      "years": "2002-2005",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "USDM",
+      "notes": "Bug-eye (2002-2003), Blob-eye (2004-2005)"
+    },
+    {
+      "model": "Subaru Impreza WRX (JDM)",
+      "chassis_code": "GDA/GGA",
+      "years": "1999-2005",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "JDM",
+      "notes": "Higher output JDM variants"
+    },
+    {
+      "model": "Subaru Forester XT",
+      "chassis_code": "SG5",
+      "years": "2004-2005",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "First turbo Forester in US"
+    },
+    {
+      "model": "Subaru Baja Turbo",
+      "chassis_code": "BT",
+      "years": "2004-2006",
+      "body_styles": ["4-door pickup"],
+      "market": "USDM",
+      "notes": "Turbo Baja utility vehicle"
+    },
+    {
+      "model": "Saab 9-2X Aero",
+      "chassis_code": "GDA",
+      "years": "2005-2006",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "Rebadged WRX wagon"
+    }
+  ],
+  "turbo_system": {
+    "stock_turbo": {
+      "manufacturer": "Mitsubishi",
+      "model": "TD04-13T",
+      "specs": {
+        "compressor_inducer_mm": 40,
+        "turbine_exducer_mm": 47
+      },
+      "power_limit_hp": 300,
+      "notes": "Small, responsive, but limited top-end"
+    },
+    "popular_upgrades": {
+      "td04_16t": {
+        "power_hp": "280-320",
+        "notes": "Drop-in upgrade, better top-end"
+      },
+      "vf39_vf43_vf52": {
+        "power_hp": "300-380",
+        "notes": "STI turbo swaps, very popular"
+      },
+      "td05_16g_18g_20g": {
+        "power_hp": "350-500",
+        "notes": "Popular upgrade path"
+      },
+      "fp_green_blue": {
+        "power_hp": "400-550",
+        "notes": "Forced Performance rotated options"
+      }
+    },
+    "intercooler": {
+      "type": "Air-to-air, top-mount",
+      "notes": "Prone to heat soak in traffic"
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.0,
+      "capacity_with_filter_liters": 4.5,
+      "specification": "5W-30 synthetic",
+      "change_interval_km": 6000
+    },
+    "coolant": {
+      "capacity_liters": 7.2,
+      "specification": "Subaru Super Coolant"
+    },
+    "gearbox_oil": {
+      "capacity_liters": 3.7,
+      "specification": "75W-90"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 160,
+    "redline_rpm": 7000,
+    "max_rpm": 7500,
+    "bore_mm": 92.0,
+    "stroke_mm": 75.0,
+    "rod_length_mm": 130.5
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II",
+      "tuning": ["Cobb Accessport", "EcuTek", "OpenSource"]
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-3-2-4"
+    },
+    "fuel_system": {
+      "injection": "Multi-point, top-feed",
+      "stock_injectors_cc": 440
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_miles": 105000,
+    "interference_engine": "Yes"
+  },
+  "notes": {
+    "heritage": "The EJ205 brought Subaru's rally heritage to American driveways. Though detuned compared to JDM specs, it still delivered impressive performance at a reasonable price point.",
+    "iconic_sound": "The unequal-length headers create the famous Subaru boxer rumble that became a defining characteristic of the brand.",
+    "common_issues": [
+      {
+        "issue": "Boost creep",
+        "severity": "Medium",
+        "cause": "Internal wastegate flow limitations",
+        "prevention": "External wastegate, boost controller"
+      },
+      {
+        "issue": "Ringland failure",
+        "severity": "High",
+        "cause": "Detonation from poor tune/fuel",
+        "prevention": "Quality tune, premium fuel"
+      },
+      {
+        "issue": "Turbo inlet hose failure",
+        "severity": "Low-Medium",
+        "cause": "Heat and age",
+        "prevention": "Replace with silicone"
+      }
+    ],
+    "tuning_stages": {
+      "stage_1": {
+        "power_hp": 280,
+        "mods": ["ECU tune", "Exhaust"]
+      },
+      "stage_2": {
+        "power_hp": 300,
+        "mods": ["Downpipe", "Up-pipe", "Intake", "Tune"]
+      },
+      "turbo_upgrade": {
+        "power_hp": "350-500",
+        "notes": "VF swap or TD05 series recommended"
+      }
+    }
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

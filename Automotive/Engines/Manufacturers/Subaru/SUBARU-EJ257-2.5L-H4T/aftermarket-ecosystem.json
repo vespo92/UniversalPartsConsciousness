@@ -1,0 +1,220 @@
+{
+  "ecosystem_id": "SUBARU-EJ257-AFTERMARKET",
+  "engine_reference": "SUBARU-EJ257-H4T",
+  "version": "1.0",
+  "last_updated": "2025-11-22",
+  "market_overview": {
+    "popularity": "Extremely High",
+    "tuning_potential": "Legendary",
+    "community_size": "One of the largest in automotive aftermarket",
+    "notes": "The EJ257 has one of the most developed aftermarket ecosystems of any engine. Nearly every conceivable modification is available."
+  },
+  "tuning_companies": {
+    "cobb_tuning": {
+      "url": "https://www.cobbtuning.com",
+      "specialty": "ECU tuning hardware and maps",
+      "key_products": [
+        "Accessport V3",
+        "SF Intake System",
+        "Flex Fuel Kit"
+      ],
+      "power_packages": {
+        "stage_1": "340hp / 350tq (tune only)",
+        "stage_2": "400hp / 380tq (downpipe + tune)",
+        "stage_2_plus": "430hp (turbo-back + tune)"
+      }
+    },
+    "ecutek": {
+      "url": "https://www.ecutek.com",
+      "specialty": "Professional ROM tuning",
+      "key_features": [
+        "Full ROM editing",
+        "Live tuning capability",
+        "Advanced features (anti-lag, launch control)"
+      ]
+    },
+    "maperformance": {
+      "url": "https://www.maperformance.com",
+      "specialty": "Parts packages and custom tuning",
+      "key_products": [
+        "Stage 1-3 packages",
+        "Custom dyno tunes",
+        "E85 flex fuel setups"
+      ]
+    },
+    "delicious_tuning": {
+      "url": "https://www.delicioustuning.com",
+      "specialty": "E85 and flex fuel specialization",
+      "key_products": [
+        "Flex Fuel Kit",
+        "E85 tunes",
+        "EJ dyno tuning"
+      ]
+    }
+  },
+  "parts_vendors": {
+    "primary_vendors": {
+      "rallysport_direct": {
+        "url": "https://www.rallysportdirect.com",
+        "specialty": "Subaru-specific parts retailer",
+        "notes": "Largest Subaru parts selection"
+      },
+      "import_image_racing": {
+        "url": "https://www.importimageracing.com",
+        "specialty": "Performance parts",
+        "notes": "Wide selection, good pricing"
+      },
+      "iag_performance": {
+        "url": "https://www.iagperformance.com",
+        "specialty": "Engine building, blocks, oil system",
+        "notes": "Premier EJ builder, closed deck blocks"
+      },
+      "killer_b_motorsport": {
+        "url": "https://www.killerbmotorsport.com",
+        "specialty": "Oil system solutions",
+        "notes": "ESSENTIAL oil pickup and baffle kits"
+      }
+    },
+    "specialized_vendors": {
+      "forced_performance": {
+        "url": "https://www.forcedperformance.net",
+        "specialty": "Turbochargers",
+        "products": ["FP Blue", "FP Green", "FP Black", "FP HTA series"]
+      },
+      "blouch_turbo": {
+        "url": "https://www.blouch.com",
+        "specialty": "Bolt-on turbo upgrades",
+        "products": ["20G-XT", "Dominator 2.5 XTR"]
+      },
+      "grimmspeed": {
+        "url": "https://www.grimmspeed.com",
+        "specialty": "Performance parts and accessories"
+      },
+      "perrin_performance": {
+        "url": "https://www.perrin.com",
+        "specialty": "Chassis and intake parts"
+      }
+    }
+  },
+  "turbo_upgrades": {
+    "bolt_on_options": {
+      "under_400hp": [
+        {"name": "VF39 swap", "power": "350hp", "notes": "GD STI turbo, inexpensive"},
+        {"name": "TD05-16G", "power": "350-380hp", "notes": "Popular budget upgrade"}
+      ],
+      "400_500hp": [
+        {"name": "Blouch 20G-XT", "power": "450hp", "notes": "Excellent response"},
+        {"name": "FP Blue", "power": "450hp", "notes": "Journal bearing, budget-friendly"},
+        {"name": "FP Green", "power": "500-550hp", "notes": "Ball bearing, best value"}
+      ],
+      "500_700hp": [
+        {"name": "FP Black", "power": "550-650hp", "notes": "Approaching stock location limits"},
+        {"name": "Blouch Dominator 2.5 XTR", "power": "550-700hp", "notes": "Max stock location"}
+      ]
+    },
+    "rotated_turbo": {
+      "description": "Relocates turbo to front of engine for better packaging and larger turbo options",
+      "popular_options": [
+        {"name": "Garrett GTX3076R Gen II", "power": "550-700hp"},
+        {"name": "Precision 6266 CEA", "power": "600-800hp"},
+        {"name": "BorgWarner EFR 8374", "power": "700-900hp"},
+        {"name": "Precision 6466", "power": "750-1000hp"}
+      ],
+      "kit_providers": [
+        "Full-Race",
+        "ATP Turbo",
+        "STM"
+      ]
+    }
+  },
+  "engine_builders": {
+    "iag_performance": {
+      "location": "Baltimore, MD",
+      "specialty": "Complete engine builds, closed deck blocks",
+      "packages": [
+        "Stage 2 Short Block (500hp capable)",
+        "Stage 2.5 Tuff Block (800hp capable)",
+        "Stage 3 Extreme (1000+hp capable)"
+      ]
+    },
+    "outfront_motorsports": {
+      "location": "Portland, OR",
+      "specialty": "Complete engine building and head work",
+      "services": ["Engine builds", "Head porting", "Sleeving"]
+    },
+    "crawford_performance": {
+      "location": "Sacramento, CA",
+      "specialty": "High-performance builds",
+      "notes": "Turbo kit development"
+    }
+  },
+  "flex_fuel_e85": {
+    "benefits": [
+      "15-20% more power than pump gas",
+      "Cooler combustion temperatures",
+      "More knock resistant",
+      "Can run higher boost safely"
+    ],
+    "required_components": [
+      "Ethanol content sensor",
+      "Larger fuel injectors (1000cc+)",
+      "High-flow fuel pump (DW300+)",
+      "Flex fuel tune"
+    ],
+    "kit_options": [
+      "COBB Flex Fuel Kit",
+      "Delicious Tuning Flex Fuel",
+      "MaperformanceGroup E85 Kit"
+    ],
+    "power_example": {
+      "stage_2_pump_gas": "400hp",
+      "stage_2_e85": "480hp"
+    }
+  },
+  "community_resources": {
+    "forums": [
+      {"name": "NASIOC", "url": "https://forums.nasioc.com", "notes": "Largest Subaru forum"},
+      {"name": "IWSTI", "url": "https://www.iwsti.com", "notes": "STI focused"},
+      {"name": "ClubWRX", "url": "https://www.clubwrx.net", "notes": "WRX community"}
+    ],
+    "facebook_groups": [
+      "Subaru Impreza WRX STI Owners",
+      "EJ25 Tech & Build",
+      "Subaru Performance Tuning"
+    ],
+    "youtube_channels": [
+      "Engineering Explained (technical)",
+      "Mighty Car Mods (builds)",
+      "TheSmokingTire (reviews)"
+    ],
+    "technical_resources": [
+      "NASIOC Engine Building Wiki",
+      "Open Source ROM definition files",
+      "EcuTek training materials"
+    ]
+  },
+  "competition_use": {
+    "autocross": {
+      "class": "Typically STU or prepared classes",
+      "popular_mods": ["Suspension", "Brakes", "Light tune"]
+    },
+    "time_attack": {
+      "notes": "Very popular platform",
+      "power_levels": "400-800hp typical"
+    },
+    "drag_racing": {
+      "notes": "Popular in import classes",
+      "power_levels": "800-1500hp",
+      "records": "Several 8-second quarter mile STIs"
+    },
+    "rally": {
+      "notes": "WRC heritage",
+      "sanctioning_bodies": ["Rally America", "ARA"],
+      "popular_builders": ["Vermont SportsCar", "Subaru Motorsports USA"]
+    },
+    "drifting": {
+      "notes": "Unique with AWD platform",
+      "conversions": "RWD conversion popular for serious drifting"
+    }
+  }
+}

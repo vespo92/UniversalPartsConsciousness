@@ -1,0 +1,177 @@
+{
+  "engine_id": "SUBARU-FB20-H4-NA",
+  "manufacturer": "Subaru Corporation",
+  "engine_family": "FB Series",
+  "engine_code": "FB20",
+  "production_years": {
+    "start": 2010,
+    "end": "Present"
+  },
+  "overview": {
+    "description": "The FB20 is Subaru's modern 2.0L naturally aspirated boxer engine, designed with efficiency and refinement as primary goals. Featuring a square bore/stroke design, chain-driven timing, and dual AVCS, it powers the Impreza, Crosstrek, and serves as the base for hybrid applications.",
+    "heritage": "The Modern Economy Boxer",
+    "significance": "Foundation of Subaru's modern efficient boxer lineup"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1995,
+      "liters": 2.0
+    },
+    "bore": {
+      "mm": 84.0
+    },
+    "stroke": {
+      "mm": 90.0
+    },
+    "compression_ratio": "10.5:1",
+    "valvetrain": "DOHC, 4 valves per cylinder, chain-driven with Dual AVCS",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Regular unleaded (87 octane)"
+  },
+  "power_output_by_variant": {
+    "fb20_impreza": {
+      "years": "2012-Present",
+      "power_hp": 152,
+      "power_kw": 113,
+      "power_rpm": 6000,
+      "torque_nm": 196,
+      "torque_lb_ft": 145,
+      "torque_rpm": 4000,
+      "notes": "Standard Impreza engine"
+    },
+    "fb20_crosstrek": {
+      "years": "2013-Present",
+      "power_hp": 152,
+      "power_kw": 113,
+      "power_rpm": 6000,
+      "torque_nm": 196,
+      "torque_lb_ft": 145,
+      "torque_rpm": 4000,
+      "notes": "XV Crosstrek application"
+    },
+    "fb20_hybrid": {
+      "years": "2014-Present",
+      "power_hp": 148,
+      "power_kw": 110,
+      "power_rpm": 6000,
+      "torque_nm": 196,
+      "torque_lb_ft": 145,
+      "torque_rpm": 4000,
+      "notes": "Slightly reduced for hybrid system",
+      "combined_hybrid_hp": 165
+    },
+    "fb20di": {
+      "years": "2017-Present",
+      "power_hp": 152,
+      "power_kw": 113,
+      "power_rpm": 6000,
+      "torque_nm": 197,
+      "torque_lb_ft": 145,
+      "torque_rpm": 4000,
+      "notes": "Direct injection variant"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Impreza",
+      "chassis_code": "GJ/GP/GT/GK",
+      "years": "2012-Present",
+      "body_styles": ["4-door sedan", "5-door hatchback"],
+      "market": "Global"
+    },
+    {
+      "model": "Subaru XV Crosstrek",
+      "chassis_code": "GP/GT",
+      "years": "2013-Present",
+      "body_styles": ["5-door crossover"],
+      "market": "Global"
+    },
+    {
+      "model": "Subaru Crosstrek Hybrid",
+      "chassis_code": "GT",
+      "years": "2019-Present",
+      "body_styles": ["5-door crossover"],
+      "market": "USDM",
+      "notes": "Plug-in hybrid with e-boxer"
+    },
+    {
+      "model": "Subaru Forester (Base)",
+      "chassis_code": "SJ/SK",
+      "years": "2014-2018",
+      "body_styles": ["5-door SUV"],
+      "market": "Select markets"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.4,
+      "capacity_with_filter_liters": 4.8,
+      "specification": "0W-20 synthetic",
+      "change_interval_km": 10000,
+      "change_interval_miles": 6000
+    },
+    "coolant": {
+      "capacity_liters": 6.0,
+      "specification": "Subaru Super Coolant"
+    },
+    "cvt_fluid": {
+      "capacity_liters": 11.0,
+      "specification": "Subaru Lineartronic CVT Fluid"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 145,
+    "redline_rpm": 6500,
+    "bore_mm": 84.0,
+    "stroke_mm": 90.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II"
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-3-2-4"
+    },
+    "avcs": {
+      "description": "Dual Active Valve Control System",
+      "type": "Intake and exhaust cam timing"
+    },
+    "stop_start": {
+      "description": "Auto start-stop system",
+      "years": "2017+"
+    }
+  },
+  "timing_system": {
+    "type": "Timing chain",
+    "service_interval": "Lifetime maintenance-free"
+  },
+  "notes": {
+    "heritage": "The FB20 represents Subaru's commitment to efficiency without abandoning the boxer layout. It replaced the EJ20 NA in economy applications.",
+    "design_philosophy": "Long-stroke design (undersquare) for better low-end torque and fuel economy. Combined with CVT for optimal efficiency.",
+    "common_issues": [
+      {
+        "issue": "Oil consumption",
+        "severity": "Medium",
+        "cause": "Piston ring design in some early production",
+        "prevention": "Regular oil checks, extended warranty coverage for affected VINs"
+      },
+      {
+        "issue": "Valve spring recall",
+        "severity": "High (recalled)",
+        "years": "2012-2013",
+        "cause": "Manufacturing defect",
+        "prevention": "Verify recall completion"
+      }
+    ],
+    "reliability": "Generally reliable when oil consumption is monitored. Chain-driven timing eliminates major service intervals.",
+    "tuning_potential": "Limited - these are economy engines. Intake and exhaust provide minimal gains. Most owners keep them stock.",
+    "hybrid_integration": "The FB20 works with Subaru's e-BOXER hybrid system, pairing with an electric motor for improved city fuel economy."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

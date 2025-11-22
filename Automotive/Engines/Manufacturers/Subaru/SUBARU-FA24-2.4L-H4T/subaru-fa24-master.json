@@ -1,0 +1,293 @@
+{
+  "engine_id": "SUBARU-FA24-H4T",
+  "manufacturer": "Subaru Corporation",
+  "engine_family": "FA Series",
+  "engine_code": "FA24",
+  "production_years": {
+    "start": 2019,
+    "end": "Present"
+  },
+  "overview": {
+    "description": "The FA24 is Subaru's modern 2.4L turbocharged boxer engine, replacing both the aging EJ turbo engines and the EZ36 flat-six. Featuring direct injection, dual AVCS, and efficient turbocharging, it represents Subaru's next-generation performance platform.",
+    "heritage": "The New Generation",
+    "significance": "Successor to legendary EJ series, powers new WRX and Ascent"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 2387,
+      "liters": 2.4
+    },
+    "bore": {
+      "mm": 94.0
+    },
+    "stroke": {
+      "mm": 86.0
+    },
+    "compression_ratio": {
+      "turbo": "10.6:1"
+    },
+    "valvetrain": "DOHC, 4 valves per cylinder, chain-driven with Dual AVCS",
+    "aspiration": "Turbocharged with electronically-controlled wastegate",
+    "fuel_injection": "Direct injection",
+    "cooling_system": "Water-cooled with integrated exhaust manifold",
+    "fuel_type": "Premium unleaded (93 octane recommended)"
+  },
+  "power_output_by_variant": {
+    "fa24f_ascent": {
+      "years": "2019-Present",
+      "power_hp": 260,
+      "power_kw": 194,
+      "power_rpm": 5600,
+      "torque_nm": 376,
+      "torque_lb_ft": 277,
+      "torque_rpm": 2000,
+      "boost_psi": 15.5,
+      "notes": "Ascent, Outback XT, Legacy XT"
+    },
+    "fa24f_wrx": {
+      "years": "2022-Present",
+      "power_hp": 271,
+      "power_kw": 202,
+      "power_rpm": 5600,
+      "torque_nm": 350,
+      "torque_lb_ft": 258,
+      "torque_rpm": 2000,
+      "boost_psi": 16.0,
+      "notes": "2022+ WRX"
+    },
+    "fa24_brz": {
+      "years": "2022-Present",
+      "power_hp": 228,
+      "power_kw": 170,
+      "power_rpm": 7000,
+      "torque_nm": 249,
+      "torque_lb_ft": 184,
+      "torque_rpm": 3700,
+      "notes": "Naturally aspirated version for second-gen BRZ",
+      "compression_ratio": "12.5:1",
+      "aspiration": "Naturally Aspirated"
+    },
+    "fa24_wrx_tr": {
+      "years": "2024-Present",
+      "power_hp": 271,
+      "power_kw": 202,
+      "power_rpm": 5600,
+      "torque_nm": 350,
+      "torque_lb_ft": 258,
+      "torque_rpm": 2000,
+      "notes": "WRX TR with 6-speed manual only"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Ascent",
+      "chassis_code": "WM",
+      "years": "2019-Present",
+      "body_styles": ["5-door SUV"],
+      "market": "USDM",
+      "notes": "3-row SUV, FA24's first application"
+    },
+    {
+      "model": "Subaru Outback XT",
+      "chassis_code": "BT",
+      "years": "2020-Present",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "Return of turbo Outback"
+    },
+    {
+      "model": "Subaru Legacy XT",
+      "chassis_code": "BN",
+      "years": "2020-Present",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM",
+      "notes": "Turbo Legacy returns"
+    },
+    {
+      "model": "Subaru WRX",
+      "chassis_code": "VB",
+      "years": "2022-Present",
+      "body_styles": ["4-door sedan"],
+      "market": "Global",
+      "notes": "Replaced EJ257, new era WRX"
+    },
+    {
+      "model": "Subaru BRZ",
+      "chassis_code": "ZD8",
+      "years": "2022-Present",
+      "body_styles": ["2-door coupe"],
+      "market": "Global",
+      "notes": "Second-gen BRZ with NA FA24"
+    },
+    {
+      "model": "Toyota GR86",
+      "chassis_code": "ZN8",
+      "years": "2022-Present",
+      "body_styles": ["2-door coupe"],
+      "market": "Global",
+      "notes": "Toyota twin with NA FA24"
+    },
+    {
+      "model": "Subaru Forester Sport/Touring XT",
+      "chassis_code": "SK",
+      "years": "2024-Present",
+      "body_styles": ["5-door SUV"],
+      "market": "USDM",
+      "notes": "Turbo Forester returns"
+    }
+  ],
+  "turbo_system": {
+    "turbocharger": {
+      "manufacturer": "IHI",
+      "model": "Unknown OEM designation",
+      "type": "Twin-scroll with electronic wastegate",
+      "features": [
+        "Electronically-controlled wastegate",
+        "Integrated exhaust manifold",
+        "Water-cooled center section"
+      ]
+    },
+    "intercooler": {
+      "type": "Air-to-air",
+      "location": "Top-mount (WRX) / Front-mount (Ascent/Outback)"
+    },
+    "boost_pressure": {
+      "stock_psi": 16.0,
+      "max_safe_psi": 22.0
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 5.1,
+      "capacity_with_filter_liters": 5.4,
+      "specification": "0W-20 synthetic (Ascent/Outback) or 5W-30 (WRX)",
+      "change_interval_km": 10000,
+      "change_interval_miles": 6000
+    },
+    "coolant": {
+      "capacity_liters": 7.5,
+      "specification": "Subaru Super Coolant (Blue)"
+    },
+    "transmission": {
+      "spt_cvt_liters": 12.5,
+      "manual_liters": 2.3,
+      "specification_cvt": "Subaru CVT Fluid"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 158,
+    "redline_rpm": {
+      "turbo": 6000,
+      "na": 7400
+    },
+    "bore_mm": 94.0,
+    "stroke_mm": 86.0,
+    "rod_length_mm": 136.5
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II",
+      "features": [
+        "Dual AVCS control",
+        "Electronic wastegate control",
+        "Direct injection control",
+        "Cylinder deactivation (some variants)"
+      ],
+      "tuning_support": [
+        "Cobb Accessport (limited early support)",
+        "EcuTek",
+        "MAPERFORMANCE"
+      ]
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "type": "NGK ILKAR8H6",
+        "gap_mm": 0.7,
+        "quantity": 4
+      }
+    },
+    "fuel_system": {
+      "injection": "Direct injection only",
+      "fuel_pressure_bar": 200,
+      "injectors_cc": 450
+    },
+    "avcs": {
+      "description": "Dual Active Valve Control System",
+      "type": "Intake and exhaust cam timing",
+      "range_degrees": 40
+    }
+  },
+  "timing_system": {
+    "type": "Timing chain",
+    "service_interval": "Lifetime maintenance-free",
+    "notes": "No timing belt service required"
+  },
+  "notes": {
+    "heritage": "The FA24 represents Subaru's commitment to modernizing while maintaining their boxer identity. It combines modern efficiency (direct injection, electronic wastegate) with traditional Subaru character.",
+    "vs_ej257": {
+      "advantages": [
+        "More modern emissions compliance",
+        "Better fuel economy",
+        "Timing chain vs belt",
+        "Less prone to ring land failure",
+        "Equal length exhaust (less rumble but better performance)"
+      ],
+      "disadvantages": [
+        "Less proven aftermarket (for now)",
+        "No characteristic boxer rumble",
+        "More complex systems",
+        "Early tuning support limited"
+      ]
+    },
+    "common_issues": [
+      {
+        "issue": "Carbon buildup",
+        "severity": "Medium",
+        "cause": "Direct injection design",
+        "prevention": "Walnut blast cleaning every 40-50k miles"
+      },
+      {
+        "issue": "CVT concerns",
+        "severity": "Medium",
+        "cause": "CVT reliability in high-torque application",
+        "prevention": "Regular CVT fluid changes, avoid sustained hard driving"
+      },
+      {
+        "issue": "Intake valve deposits",
+        "severity": "Low-Medium",
+        "cause": "No port injection to clean valves",
+        "prevention": "Regular walnut blasting"
+      }
+    ],
+    "tuning_potential": {
+      "stage_1": {
+        "power_hp": "320-340",
+        "mods": ["ECU tune", "Intake"],
+        "notes": "Safe power increase"
+      },
+      "stage_2": {
+        "power_hp": "380-400",
+        "mods": ["Downpipe", "EBCS", "Intake", "Tune"],
+        "notes": "Approaching stock turbo limits"
+      },
+      "e85": {
+        "power_hp": "420-450",
+        "mods": ["E85 tune", "Larger injectors", "Fuel pump"],
+        "notes": "Significant power gain with flex fuel"
+      },
+      "turbo_upgrade": {
+        "power_hp": "500+",
+        "mods": ["Upgraded turbo", "Full fuel system", "Built engine recommended"],
+        "notes": "Still early days for FA24 turbo builds"
+      }
+    },
+    "new_wrx_reception": "The VB WRX received mixed reviews due to styling changes and lack of STI variant. However, the FA24 engine itself is praised for its smooth power delivery and modern character, even if enthusiasts miss the EJ rumble.",
+    "aftermarket_development": "As of 2024, aftermarket support is growing rapidly. Major tuning companies have released support, and turbo upgrades are becoming available."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

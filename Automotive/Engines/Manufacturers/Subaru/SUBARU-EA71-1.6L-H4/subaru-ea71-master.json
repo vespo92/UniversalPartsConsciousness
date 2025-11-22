@@ -1,0 +1,187 @@
+{
+  "engine_id": "SUBARU-EA71-H4-NA",
+  "manufacturer": "Subaru (Fuji Heavy Industries)",
+  "engine_family": "EA Series",
+  "engine_code": "EA71",
+  "production_years": {
+    "start": 1975,
+    "end": 1984
+  },
+  "overview": {
+    "description": "The EA71 is a 1.6L horizontally-opposed four-cylinder engine that powered the second-generation Leone and the iconic BRAT pickup. It represented Subaru's expansion into larger displacement engines and introduced their 4WD system to the US market.",
+    "heritage": "Foundation of Subaru's AWD Legacy",
+    "significance": "Powered first Subaru 4WD vehicles sold in North America"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1595,
+      "liters": 1.6
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 60.0
+    },
+    "compression_ratio": "8.5:1",
+    "valvetrain": "OHV, 2 valves per cylinder, pushrod operated",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled with crossflow radiator",
+    "fuel_system": "Single 2-barrel carburetor or fuel injection",
+    "fuel_type": "Regular unleaded gasoline"
+  },
+  "power_output_by_variant": {
+    "ea71_carbureted_usa": {
+      "years": "1975-1979",
+      "power_hp": 67,
+      "power_kw": 50,
+      "power_rpm": 5200,
+      "torque_nm": 114,
+      "torque_lb_ft": 84,
+      "torque_rpm": 2400,
+      "notes": "US emissions equipment reduced power"
+    },
+    "ea71_carbureted_jdm": {
+      "years": "1975-1979",
+      "power_hp": 80,
+      "power_kw": 60,
+      "power_rpm": 5600,
+      "torque_nm": 127,
+      "torque_lb_ft": 94,
+      "torque_rpm": 3200
+    },
+    "ea71_ems_fuel_injected": {
+      "years": "1980-1984",
+      "power_hp": 73,
+      "power_kw": 54,
+      "power_rpm": 5200,
+      "torque_nm": 119,
+      "torque_lb_ft": 88,
+      "torque_rpm": 2800,
+      "notes": "Bosch L-Jetronic fuel injection (California/high altitude)"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Leone",
+      "chassis_code": "AB",
+      "years": "1975-1979",
+      "body_styles": ["4-door sedan", "2-door hardtop", "station wagon"],
+      "market": "Global",
+      "drivetrain": "FWD or Part-time 4WD"
+    },
+    {
+      "model": "Subaru DL/GL",
+      "chassis_code": "AB",
+      "years": "1975-1984",
+      "body_styles": ["4-door sedan", "station wagon", "2-door hardtop"],
+      "market": "USDM",
+      "notes": "US market name for Leone"
+    },
+    {
+      "model": "Subaru BRAT",
+      "chassis_code": "AB",
+      "years": "1978-1981",
+      "body_styles": ["Pickup/Coupe utility"],
+      "market": "USDM",
+      "notes": "Bi-drive Recreational All-terrain Transporter - iconic small truck with jump seats"
+    },
+    {
+      "model": "Subaru Leone Wagon 4WD",
+      "chassis_code": "AB",
+      "years": "1975-1979",
+      "body_styles": ["Station wagon"],
+      "market": "Global",
+      "notes": "First mass-market AWD passenger wagon"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 3.7,
+      "capacity_with_filter_liters": 4.0,
+      "specification": "SAE 10W-30, 10W-40",
+      "change_interval_km": 5000
+    },
+    "coolant": {
+      "capacity_liters": 6.5,
+      "specification": "Ethylene glycol 50/50"
+    },
+    "gearbox_oil": {
+      "manual_4spd_liters": 1.4,
+      "specification": "SAE 75W-90 GL-4"
+    },
+    "transfer_case": {
+      "capacity_liters": 0.7,
+      "specification": "SAE 75W-90 GL-4"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 125,
+    "redline_rpm": 6000,
+    "max_rpm": 6500,
+    "bore_mm": 92.0,
+    "stroke_mm": 60.0,
+    "rod_length_mm": 130.5,
+    "deck_height_mm": 186.5
+  },
+  "electronic_systems": {
+    "ignition": {
+      "type": "Points ignition (early) / Electronic ignition (1980+)",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "type": "NGK BPR5ES",
+        "gap_mm": 0.8,
+        "quantity": 4
+      },
+      "timing": {
+        "initial_btdc": 8,
+        "vacuum_advance": "Yes",
+        "centrifugal_advance": "Yes"
+      }
+    },
+    "fuel_system": {
+      "carburetor": "Hitachi DCH340 2-barrel (most models)",
+      "fuel_injection": "Bosch L-Jetronic (California/1980+)",
+      "fuel_pump": "Mechanical (carb) / Electric (EFI)"
+    },
+    "emissions": {
+      "usa": ["EGR", "Air injection", "Catalytic converter (1975+)"],
+      "jdm": "Minimal emissions equipment"
+    }
+  },
+  "notes": {
+    "heritage": "The EA71 established Subaru's reputation for building practical, capable vehicles. The combination of the flat-four engine with the part-time 4WD system created a niche that Subaru would dominate for decades.",
+    "iconic_vehicles": "The BRAT became a cult classic in the USA. Its jump seats in the bed (to classify as a passenger vehicle and avoid the 'Chicken Tax' on imported trucks) became legendary.",
+    "4wd_system": "The part-time 4WD system used a simple transfer case with 2WD/4WD lever selection. Not designed for dry pavement 4WD operation.",
+    "common_issues": [
+      {
+        "issue": "Valve guide wear",
+        "severity": "Medium",
+        "cause": "Normal wear, oil burning",
+        "prevention": "Regular valve adjustments, quality oil"
+      },
+      {
+        "issue": "Carburetor issues",
+        "severity": "Medium",
+        "cause": "Complex emissions carburetors prone to issues",
+        "prevention": "Rebuild or replace with Weber 32/36 conversion"
+      },
+      {
+        "issue": "Clutch cable breakage",
+        "severity": "Medium",
+        "cause": "Fatigue from repeated use",
+        "prevention": "Carry spare cable, lubricate regularly"
+      },
+      {
+        "issue": "Head gasket seepage",
+        "severity": "Low-Medium",
+        "cause": "Age and thermal cycling",
+        "prevention": "Retorque heads, monitor coolant level"
+      }
+    ],
+    "modification_notes": "Popular modifications include Weber 32/36 DGEV carburetor conversion for improved reliability and performance. Electronic ignition upgrades eliminate points maintenance. These engines respond well to mild porting and compression increases."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

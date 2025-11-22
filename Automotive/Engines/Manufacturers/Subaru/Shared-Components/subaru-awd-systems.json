@@ -1,0 +1,190 @@
+{
+  "component_id": "SUBARU-AWD-SYSTEMS",
+  "version": "1.0",
+  "last_updated": "2025-11-22",
+  "overview": {
+    "description": "Subaru's Symmetrical All-Wheel Drive is a core brand identity. Various AWD systems have been used across different model lines and eras, from part-time 4WD to sophisticated electronically-controlled differentials.",
+    "heritage": "Subaru was the first manufacturer to offer AWD as standard across their entire lineup"
+  },
+  "awd_systems_by_era": {
+    "part_time_4wd": {
+      "years": "1972-1989",
+      "description": "Driver-selectable 2WD/4WD system",
+      "applications": ["Leone", "BRAT", "GL"],
+      "operation": "Manual lever or button to engage 4WD",
+      "notes": "Not for use on dry pavement in 4WD mode"
+    },
+    "dual_range_4wd": {
+      "years": "1980-1994",
+      "description": "Part-time 4WD with low range",
+      "applications": ["Leone wagon", "Loyale"],
+      "features": [
+        "2WD mode for normal driving",
+        "4WD High for slippery conditions",
+        "4WD Low for off-road/extreme conditions"
+      ],
+      "notes": "Popular for off-road use due to low range gearing"
+    },
+    "full_time_awd": {
+      "years": "1987-present",
+      "description": "Continuous all-wheel drive, no driver intervention",
+      "subtypes": {
+        "viscous_coupling": {
+          "description": "Passive torque transfer via viscous coupler",
+          "applications": ["Early Legacy", "Early Impreza"],
+          "torque_split": "90/10 front bias normally"
+        },
+        "active_torque_split": {
+          "description": "Electronically-controlled torque distribution",
+          "applications": ["Modern Subaru AWD models"],
+          "torque_split": "60/40 to 50/50 depending on conditions"
+        }
+      }
+    }
+  },
+  "center_differential_types": {
+    "viscous_lsd": {
+      "description": "Viscous coupling center differential",
+      "applications": ["Manual transmission Subarus"],
+      "torque_split": "50/50 base",
+      "notes": "Simple, reliable, predictable"
+    },
+    "vcd": {
+      "name": "Variable Torque Distribution",
+      "description": "Electronic multi-plate clutch pack",
+      "applications": ["CVT and automatic Subarus"],
+      "torque_split": "60/40 front bias, up to 50/50 under slip",
+      "notes": "Can send more torque rearward as needed"
+    },
+    "dccd": {
+      "name": "Driver Controlled Center Differential",
+      "description": "WRC-derived adjustable center diff",
+      "applications": ["WRX STI only"],
+      "features": [
+        "Adjustable locking ratio (6 settings)",
+        "Auto mode for computer control",
+        "Manual mode for driver preference",
+        "Can be fully locked for competition"
+      ],
+      "torque_split": "41/59 rear bias (STI)",
+      "notes": "Most sophisticated Subaru AWD system"
+    },
+    "x_mode": {
+      "name": "X-MODE",
+      "description": "Enhanced traction control for off-road",
+      "applications": ["Outback", "Forester", "Crosstrek"],
+      "modes": ["Snow/Dirt", "Deep Snow/Mud"],
+      "features": [
+        "Hill descent control",
+        "Modified throttle response",
+        "Enhanced traction control"
+      ]
+    }
+  },
+  "rear_differentials": {
+    "open_diff": {
+      "description": "Standard open differential",
+      "applications": ["Base models"],
+      "notes": "Relies on traction control for slip management"
+    },
+    "viscous_lsd": {
+      "description": "Viscous-type limited slip differential",
+      "applications": ["WRX (some years)", "Legacy GT"],
+      "notes": "Passive slip limiting"
+    },
+    "torsen": {
+      "description": "Torque-sensing mechanical LSD",
+      "applications": ["STI rear differential"],
+      "type": "Type-2 Torsen",
+      "notes": "Excellent grip, no maintenance"
+    },
+    "electronic_lsd": {
+      "description": "Brake-based torque vectoring",
+      "applications": ["Modern Subarus with VDC"],
+      "notes": "Uses brakes to simulate LSD function"
+    }
+  },
+  "transmission_awd_integration": {
+    "manual_transmission": {
+      "center_diff": "Viscous coupling LSD",
+      "torque_split": "50/50",
+      "notes": "True symmetric AWD"
+    },
+    "automatic_4eat_5eat": {
+      "center_diff": "Multi-plate clutch pack",
+      "torque_split": "60/40 front bias variable",
+      "control": "ECU-controlled based on slip"
+    },
+    "cvt_lineartronic": {
+      "center_diff": "Multi-plate clutch pack",
+      "torque_split": "60/40 front bias variable",
+      "features": ["Active Torque Vectoring available"],
+      "notes": "Integrated with Vehicle Dynamics Control"
+    },
+    "sti_6mt": {
+      "center_diff": "DCCD",
+      "torque_split": "41/59 rear bias",
+      "rear_diff": "Torsen LSD",
+      "notes": "Most capable Subaru drivetrain"
+    }
+  },
+  "common_components": {
+    "front_differential": {
+      "description": "Integrated with transmission",
+      "type": "Open or helical LSD (depending on model)"
+    },
+    "driveshaft": {
+      "description": "Single-piece (sedan) or two-piece (wagon/SUV)",
+      "notes": "Carrier bearing on two-piece units"
+    },
+    "cv_axles": {
+      "front": "Constant velocity half shafts",
+      "rear": "CV axles to rear hubs"
+    },
+    "fluids": {
+      "front_diff": "Shared with transmission oil",
+      "rear_diff": "Subaru Gear Oil (75W-90) or LSD oil",
+      "center_diff": "Varies by type"
+    }
+  },
+  "performance_upgrades": {
+    "limited_slip_upgrades": {
+      "rear_lsd_options": [
+        {"name": "KAAZ 2-way LSD", "notes": "Aggressive, for competition"},
+        {"name": "CUSCO RS LSD", "notes": "1.5-way, good street/track balance"},
+        {"name": "Quaife ATB", "notes": "Torque biasing, quiet"}
+      ]
+    },
+    "center_diff_upgrades": {
+      "dccd_controllers": ["COBB Accessport maps", "Standalone DCCD controllers"],
+      "notes": "STI DCCD can be tuned via ECU"
+    },
+    "drivetrain_strengthening": {
+      "components": [
+        "STI R180 rear diff swap (5x114.3 hubs)",
+        "Chromoly axles",
+        "Upgraded CV joints",
+        "Differential bushings"
+      ]
+    }
+  },
+  "common_issues": {
+    "rear_differential_whine": {
+      "cause": "Low fluid, worn bearings, or gear wear",
+      "prevention": "Regular fluid changes with correct LSD oil"
+    },
+    "center_diff_binding": {
+      "cause": "Mismatched tire circumference",
+      "prevention": "Always use matching tires, rotate regularly"
+    },
+    "cv_axle_failure": {
+      "cause": "Boot tears leading to contamination",
+      "prevention": "Inspect boots regularly, replace torn boots immediately"
+    },
+    "viscous_coupler_wear": {
+      "cause": "Age and heat cycles break down fluid",
+      "symptoms": "Binding in turns, AWD warning light",
+      "notes": "Common on high-mileage vehicles"
+    }
+  }
+}

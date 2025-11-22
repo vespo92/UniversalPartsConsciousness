@@ -1,0 +1,218 @@
+{
+  "component_id": "SUBARU-TURBO-SYSTEMS",
+  "version": "1.0",
+  "last_updated": "2025-11-22",
+  "overview": {
+    "description": "Subaru turbocharged engines use IHI and Mitsubishi turbochargers across their lineup. Many turbo components interchange between EJ and FA series engines with modifications.",
+    "note": "This document covers OEM and popular aftermarket turbo options for Subaru boxer engines"
+  },
+  "oem_turbochargers": {
+    "ej_series_turbos": {
+      "td04": {
+        "manufacturer": "Mitsubishi",
+        "applications": ["EJ205 USDM WRX", "EJ255 WRX 2006-2007"],
+        "specifications": {
+          "compressor_inducer_mm": 40,
+          "turbine_exducer_mm": 47
+        },
+        "power_limit_hp": 300,
+        "notes": "Small, responsive, limited top-end"
+      },
+      "td04hl_19t": {
+        "manufacturer": "Mitsubishi",
+        "applications": ["EJ255 WRX 2008-2014"],
+        "specifications": {
+          "compressor_inducer_mm": 44,
+          "turbine_exducer_mm": 49
+        },
+        "power_limit_hp": 350
+      },
+      "vf_series": {
+        "vf39": {
+          "manufacturer": "IHI",
+          "applications": ["EJ257 STI 2004-2007 (GD)"],
+          "type": "Ball bearing",
+          "power_limit_hp": 400
+        },
+        "vf48": {
+          "manufacturer": "IHI",
+          "applications": ["EJ257 STI 2008-2014 (GR/GV)", "EJ207 GRB STI"],
+          "type": "Twin-scroll, ball bearing",
+          "power_limit_hp": 420,
+          "notes": "Best OEM STI turbo"
+        },
+        "vf52": {
+          "manufacturer": "IHI",
+          "applications": ["EJ257 STI 2015-2019 (VA)"],
+          "type": "Twin-scroll, ball bearing",
+          "power_limit_hp": 450
+        }
+      }
+    },
+    "fa_series_turbos": {
+      "fa24_turbo": {
+        "manufacturer": "IHI",
+        "applications": ["FA24 WRX", "FA24 Ascent", "FA24 Outback XT"],
+        "type": "Twin-scroll with electronic wastegate",
+        "power_limit_hp": 400,
+        "notes": "Integrated exhaust manifold design"
+      }
+    }
+  },
+  "turbo_interchangeability": {
+    "ej_series": {
+      "universal_turbo_flange": {
+        "description": "All EJ turbo engines use the same turbo flange pattern",
+        "swappable_turbos": [
+          "VF39 into EJ205 WRX (popular upgrade)",
+          "VF48 into any EJ turbo (requires tuning)",
+          "TD04 replacement with larger TD04 variants"
+        ]
+      },
+      "inlet_outlet": {
+        "inlet_diameter_mm": 53,
+        "outlet_diameter_mm": 63
+      }
+    },
+    "cross_generation": {
+      "ej_to_fa": "Not compatible - different mounting, flanges, and feed lines",
+      "notes": "FA24 uses integrated exhaust manifold, completely different design"
+    }
+  },
+  "aftermarket_turbo_options": {
+    "stock_location_bolt_on": {
+      "description": "Turbos that bolt to stock exhaust manifold",
+      "options": [
+        {
+          "name": "Blouch 20G-XT",
+          "power_range_hp": "400-500",
+          "type": "Ball bearing",
+          "notes": "Excellent response, popular choice"
+        },
+        {
+          "name": "Forced Performance Blue",
+          "power_range_hp": "400-450",
+          "type": "Journal bearing",
+          "notes": "Budget-friendly"
+        },
+        {
+          "name": "Forced Performance Green",
+          "power_range_hp": "450-550",
+          "type": "Ball bearing",
+          "notes": "Best value for power"
+        },
+        {
+          "name": "Forced Performance Black",
+          "power_range_hp": "550-650",
+          "type": "Ball bearing",
+          "notes": "Max stock location"
+        },
+        {
+          "name": "Blouch Dominator 2.5 XTR",
+          "power_range_hp": "550-700",
+          "type": "Ball bearing",
+          "notes": "Largest stock location option"
+        }
+      ]
+    },
+    "rotated_turbo_kits": {
+      "description": "Relocates turbo to front of engine for larger options",
+      "kit_manufacturers": [
+        "Full-Race",
+        "ATP Turbo",
+        "STM Tuned",
+        "AMS Performance"
+      ],
+      "popular_turbos": [
+        {
+          "name": "Garrett GTX3071R Gen II",
+          "power_range_hp": "500-650",
+          "notes": "Great response"
+        },
+        {
+          "name": "Garrett GTX3076R Gen II",
+          "power_range_hp": "550-700",
+          "notes": "Best all-around"
+        },
+        {
+          "name": "Precision 6266 CEA",
+          "power_range_hp": "600-800",
+          "notes": "Popular choice"
+        },
+        {
+          "name": "BorgWarner EFR 8374",
+          "power_range_hp": "700-900",
+          "notes": "Excellent technology"
+        },
+        {
+          "name": "Precision 6466",
+          "power_range_hp": "750-1000",
+          "notes": "Large frame"
+        }
+      ],
+      "requirements": [
+        "Rotated manifold",
+        "Custom intercooler piping",
+        "Relocated turbo inlet",
+        "Custom oil feed/drain",
+        "Often requires front-mount intercooler"
+      ]
+    }
+  },
+  "turbo_support_components": {
+    "oil_feed": {
+      "description": "Turbo oil feed line",
+      "restrictor_required": "Yes for ball bearing turbos",
+      "restrictor_size_mm": 0.9
+    },
+    "oil_drain": {
+      "description": "Turbo oil return line",
+      "min_id_mm": 16,
+      "notes": "Gravity drain, no restrictions"
+    },
+    "coolant_lines": {
+      "description": "Water-cooled turbos require coolant feed/return",
+      "notes": "All modern Subaru turbos are water-cooled"
+    },
+    "boost_control": {
+      "external_wastegate": {
+        "description": "Required for rotated setups, optional for stock location",
+        "popular_options": [
+          "TiAL MVS 38mm",
+          "TiAL MVR 44mm",
+          "Precision PW46"
+        ]
+      },
+      "ebcs": {
+        "description": "Electronic Boost Control Solenoid",
+        "popular_options": [
+          "COBB 3-Port EBCS",
+          "GrimmSpeed EBCS"
+        ],
+        "notes": "Required for accurate boost control with tuning"
+      }
+    }
+  },
+  "intercooler_systems": {
+    "top_mount": {
+      "description": "Stock location above engine",
+      "advantages": ["Shorter piping", "Quick spool", "Easy install"],
+      "disadvantages": ["Heat soak", "Limited size"],
+      "upgrades": [
+        "Process West Verticooler",
+        "Mishimoto TMIC",
+        "GrimmSpeed TMIC"
+      ]
+    },
+    "front_mount": {
+      "description": "Large intercooler in front of radiator",
+      "advantages": ["Better cooling", "More consistent temps", "Larger cores"],
+      "disadvantages": ["Longer piping", "More lag", "More complex install"],
+      "popular_kits": [
+        "AMS Front Mount Kit",
+        "ETS Front Mount Kit",
+        "Process West Front Mount"
+      ]
+    }
+  }
+}

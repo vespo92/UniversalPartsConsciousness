@@ -1,0 +1,227 @@
+{
+  "engine_id": "SUBARU-EJ255-H4T",
+  "manufacturer": "Subaru (Subaru Corporation)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ255",
+  "production_years": {
+    "start": 2005,
+    "end": 2014
+  },
+  "overview": {
+    "description": "The EJ255 is the turbocharged 2.5L boxer engine that powered the WRX (non-STI), Legacy GT, Outback XT, and Forester XT. Positioned below the EJ257, it offered strong performance with slightly milder tuning, making it popular for daily-driven performance vehicles.",
+    "heritage": "Everyday Turbo Performance",
+    "significance": "Broadened turbo Subaru lineup beyond STI"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 2457,
+      "liters": 2.5
+    },
+    "bore": {
+      "mm": 99.5
+    },
+    "stroke": {
+      "mm": 79.0
+    },
+    "compression_ratio": "8.4:1",
+    "valvetrain": "DOHC, 4 valves per cylinder, belt-driven with AVCS",
+    "aspiration": "Turbocharged with intercooler",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Premium unleaded (91+ octane)"
+  },
+  "power_output_by_variant": {
+    "ej255_wrx": {
+      "years": "2006-2007",
+      "power_hp": 224,
+      "power_kw": 167,
+      "power_rpm": 5200,
+      "torque_nm": 319,
+      "torque_lb_ft": 235,
+      "torque_rpm": 3600,
+      "boost_psi": 11.6,
+      "turbo": "TD04",
+      "notes": "First 2.5T WRX, Hawkeye chassis"
+    },
+    "ej255_wrx_08_14": {
+      "years": "2008-2014",
+      "power_hp": 265,
+      "power_kw": 198,
+      "power_rpm": 6000,
+      "torque_nm": 334,
+      "torque_lb_ft": 244,
+      "torque_rpm": 4000,
+      "boost_psi": 14.2,
+      "turbo": "TD04HL-19T",
+      "notes": "Improved power, hatchback and sedan"
+    },
+    "ej255_legacy_gt": {
+      "years": "2005-2012",
+      "power_hp": 243,
+      "power_kw": 181,
+      "power_rpm": 6000,
+      "torque_nm": 320,
+      "torque_lb_ft": 241,
+      "torque_rpm": 4400,
+      "boost_psi": 12.5,
+      "turbo": "VF40/VF46",
+      "notes": "Legacy/Outback GT applications"
+    },
+    "ej255_forester_xt": {
+      "years": "2006-2013",
+      "power_hp": 224,
+      "power_kw": 167,
+      "power_rpm": 5200,
+      "torque_nm": 319,
+      "torque_lb_ft": 235,
+      "torque_rpm": 3600,
+      "boost_psi": 11.6,
+      "turbo": "TD04",
+      "notes": "Forester XT, slightly detuned"
+    },
+    "ej255_outback_xt": {
+      "years": "2005-2009",
+      "power_hp": 250,
+      "power_kw": 186,
+      "power_rpm": 6000,
+      "torque_nm": 320,
+      "torque_lb_ft": 250,
+      "torque_rpm": 3600,
+      "turbo": "VF40",
+      "notes": "Outback XT, wagon turbo"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Impreza WRX",
+      "chassis_code": "GDA/GE/GH",
+      "years": "2006-2014",
+      "body_styles": ["4-door sedan", "5-door hatchback"],
+      "market": "USDM/EDM",
+      "notes": "Hawkeye, narrow body, hatch eras"
+    },
+    {
+      "model": "Subaru Legacy GT",
+      "chassis_code": "BL/BP/BM/BR",
+      "years": "2005-2012",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "USDM",
+      "notes": "Sport sedan/wagon"
+    },
+    {
+      "model": "Subaru Outback XT",
+      "chassis_code": "BP",
+      "years": "2005-2009",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "Turbo wagon, rare"
+    },
+    {
+      "model": "Subaru Forester XT",
+      "chassis_code": "SG/SH",
+      "years": "2006-2013",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM"
+    },
+    {
+      "model": "Subaru Baja Turbo",
+      "chassis_code": "BT",
+      "years": "2006",
+      "body_styles": ["4-door pickup"],
+      "market": "USDM",
+      "notes": "Final year Baja"
+    }
+  ],
+  "turbo_system": {
+    "turbo_variants": {
+      "td04": {
+        "applications": ["WRX 2006-2007", "Forester XT"],
+        "power_limit_hp": 300
+      },
+      "td04hl_19t": {
+        "applications": ["WRX 2008-2014"],
+        "power_limit_hp": 350,
+        "notes": "Larger, better flowing"
+      },
+      "vf40": {
+        "applications": ["Legacy GT", "Outback XT"],
+        "power_limit_hp": 370,
+        "notes": "IHI turbo, better top-end"
+      },
+      "vf46": {
+        "applications": ["Legacy GT Spec.B"],
+        "power_limit_hp": 380
+      }
+    },
+    "intercooler": {
+      "wrx": "Top-mount, hood scoop fed",
+      "legacy": "Front-mount or top-mount depending on year"
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.4,
+      "capacity_with_filter_liters": 4.8,
+      "specification": "5W-30 synthetic",
+      "change_interval_km": 6000
+    },
+    "coolant": {
+      "capacity_liters": 7.8,
+      "specification": "Subaru Super Coolant"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 170,
+    "redline_rpm": 6500,
+    "bore_mm": 99.5,
+    "stroke_mm": 79.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II",
+      "tuning": ["Cobb Accessport", "EcuTek", "OpenSource"]
+    },
+    "avcs": {
+      "description": "Active Valve Control System",
+      "type": "Intake only"
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_miles": 105000,
+    "interference_engine": "Yes"
+  },
+  "notes": {
+    "heritage": "The EJ255 democratized turbocharged Subaru performance, making it accessible in vehicles beyond the WRX/STI.",
+    "vs_ej257": "Compared to the STI's EJ257, the EJ255 has lower compression, slightly milder cams, and generally lower boost levels, but shares the same block architecture.",
+    "common_issues": [
+      {
+        "issue": "Ringland failure",
+        "severity": "High",
+        "cause": "Same as EJ257 - detonation",
+        "prevention": "Quality tune, premium fuel"
+      },
+      {
+        "issue": "Turbo failure",
+        "severity": "Medium",
+        "cause": "Aging stock turbos",
+        "prevention": "Proper maintenance, upgrade when increasing power"
+      },
+      {
+        "issue": "Oil consumption",
+        "severity": "Medium",
+        "cause": "PCV issues, worn valve seals",
+        "prevention": "PCV catch can, check oil frequently"
+      }
+    ],
+    "tuning_potential": {
+      "stage_1": {"power_hp": 290, "notes": "Basic tune and exhaust"},
+      "stage_2": {"power_hp": 330, "notes": "Full bolt-ons"},
+      "turbo_upgrade": {"power_hp": "400-550", "notes": "VF turbo or aftermarket"},
+      "built_engine": {"power_hp": "600+", "notes": "Forged internals"}
+    }
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}
