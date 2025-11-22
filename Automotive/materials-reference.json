@@ -1,0 +1,430 @@
+{
+  "_schema_version": "1.0.0",
+  "_description": "Universal Parts Consciousness - Engine Materials Reference Library",
+  "_purpose": "Material consciousness for understanding thermal, mechanical, and compatibility properties between different materials used in engine construction",
+
+  "aluminum_alloys": {
+    "A356.0-T6": {
+      "common_names": ["A356", "LM25", "AlSi7Mg"],
+      "description": "Primary aluminum casting alloy for engine blocks and heads - excellent castability and good strength",
+      "applications": ["engine_blocks", "cylinder_heads", "intake_manifolds", "oil_pans"],
+      "composition_percent": {
+        "aluminum": "balance",
+        "silicon": "6.5-7.5",
+        "magnesium": "0.25-0.45",
+        "iron": "<0.20",
+        "copper": "<0.20",
+        "manganese": "<0.10",
+        "zinc": "<0.10",
+        "titanium": "<0.20"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 21.4,
+        "thermal_conductivity_w_mk": 151,
+        "melting_range_c": { "solidus": 555, "liquidus": 615 },
+        "specific_heat_j_kg_k": 963
+      },
+      "mechanical_properties_t6": {
+        "tensile_strength_mpa": 262,
+        "yield_strength_mpa": 186,
+        "elongation_percent": 5,
+        "hardness_hb": 80,
+        "fatigue_strength_mpa": 90,
+        "elastic_modulus_gpa": 72.4
+      },
+      "processing": {
+        "typical_methods": ["permanent_mold", "sand_casting", "low_pressure_die_cast"],
+        "heat_treatment": "T6 (Solution heat treat + Artificial aging)"
+      },
+      "oem_usage": ["BMW N54/N55/B58 blocks", "GM LS blocks", "Toyota 2JZ blocks"]
+    },
+
+    "A380.0": {
+      "common_names": ["A380", "ASTM A380", "Die Cast Aluminum"],
+      "description": "High-pressure die casting alloy - good for complex shapes, moderate strength",
+      "applications": ["transmission_cases", "accessory_brackets", "valve_covers"],
+      "composition_percent": {
+        "aluminum": "balance",
+        "silicon": "7.5-9.5",
+        "copper": "3.0-4.0",
+        "iron": "<1.3",
+        "magnesium": "<0.10",
+        "zinc": "<3.0"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 21.1,
+        "thermal_conductivity_w_mk": 96,
+        "melting_range_c": { "solidus": 538, "liquidus": 593 }
+      },
+      "mechanical_properties": {
+        "tensile_strength_mpa": 317,
+        "yield_strength_mpa": 159,
+        "elongation_percent": 3.5,
+        "hardness_hb": 80
+      }
+    },
+
+    "4032-T6": {
+      "common_names": ["4032", "Hypereutectic piston alloy"],
+      "description": "High-silicon aluminum for pistons - low thermal expansion matches cylinder bore better",
+      "applications": ["pistons", "hypereutectic_pistons"],
+      "composition_percent": {
+        "aluminum": "balance",
+        "silicon": "11.0-13.5",
+        "magnesium": "0.8-1.3",
+        "copper": "0.50-1.3",
+        "nickel": "<0.10"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 19.4,
+        "thermal_conductivity_w_mk": 138
+      },
+      "mechanical_properties_t6": {
+        "tensile_strength_mpa": 379,
+        "yield_strength_mpa": 317,
+        "elongation_percent": 9,
+        "hardness_hb": 120
+      },
+      "note": "Low expansion coefficient critical for piston-to-wall clearance in aluminum bore engines"
+    },
+
+    "2618-T6": {
+      "common_names": ["2618", "Forged piston alloy"],
+      "description": "High-strength forged aluminum for performance pistons - superior fatigue resistance",
+      "applications": ["forged_pistons", "high_performance_pistons"],
+      "composition_percent": {
+        "aluminum": "balance",
+        "copper": "1.9-2.7",
+        "magnesium": "1.3-1.8",
+        "iron": "0.9-1.3",
+        "nickel": "0.9-1.2",
+        "silicon": "0.10-0.25"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 22.3,
+        "thermal_conductivity_w_mk": 147
+      },
+      "mechanical_properties_t6": {
+        "tensile_strength_mpa": 440,
+        "yield_strength_mpa": 372,
+        "elongation_percent": 10,
+        "hardness_hb": 115,
+        "fatigue_strength_mpa": 125
+      },
+      "note": "Higher expansion than 4032 requires larger piston-to-wall clearance but superior strength under extreme loads"
+    }
+  },
+
+  "cast_irons": {
+    "gray_cast_iron_class_30": {
+      "common_names": ["Gray Iron", "GG25", "FC250", "Class 30 Gray Iron"],
+      "description": "Traditional engine block material - excellent vibration damping, good machinability",
+      "applications": ["engine_blocks", "cylinder_heads", "exhaust_manifolds", "flywheels"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "3.0-3.5",
+        "silicon": "1.8-2.4",
+        "manganese": "0.6-0.9",
+        "phosphorus": "<0.10",
+        "sulfur": "<0.15"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 10.8,
+        "thermal_conductivity_w_mk": 46,
+        "melting_range_c": { "solidus": 1140, "liquidus": 1260 }
+      },
+      "mechanical_properties": {
+        "tensile_strength_mpa": 207,
+        "compressive_strength_mpa": 752,
+        "hardness_hb": "187-241",
+        "elastic_modulus_gpa": 100
+      },
+      "special_properties": {
+        "vibration_damping": "excellent",
+        "machinability": "excellent",
+        "wear_resistance": "good"
+      },
+      "oem_usage": ["AMC 4.0L I6", "Chrysler 5.7L Hemi", "older muscle car engines"]
+    },
+
+    "compacted_graphite_iron": {
+      "common_names": ["CGI", "GJV", "Vermicular Iron", "SiMo CGI"],
+      "description": "Modern high-strength cast iron for performance diesel and high-output gasoline engines",
+      "applications": ["high_performance_blocks", "diesel_blocks", "turbo_engine_blocks"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "3.5-4.0",
+        "silicon": "2.0-3.0",
+        "manganese": "0.1-0.6",
+        "magnesium": "0.015-0.035"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 11.5,
+        "thermal_conductivity_w_mk": 36
+      },
+      "mechanical_properties": {
+        "tensile_strength_mpa": 450,
+        "yield_strength_mpa": 315,
+        "elongation_percent": 2,
+        "hardness_hb": "207-269",
+        "fatigue_strength_mpa": 190
+      },
+      "special_properties": {
+        "strength_vs_gray_iron": "75% stronger",
+        "stiffness_vs_gray_iron": "45% stiffer",
+        "weight_savings": "allows thinner walls"
+      },
+      "oem_usage": ["Ford 6.7L Power Stroke", "Audi V8 TDI", "Jaguar AJ-V8"]
+    },
+
+    "ductile_iron_80_55_06": {
+      "common_names": ["Ductile Iron", "Nodular Iron", "SG Iron", "80-55-06"],
+      "description": "Spheroidal graphite iron - combines strength of steel with castability of iron",
+      "applications": ["crankshafts", "camshafts", "connecting_rods_economy"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "3.5-3.9",
+        "silicon": "2.2-2.8",
+        "manganese": "<0.40",
+        "magnesium": "0.03-0.06"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 11.2,
+        "thermal_conductivity_w_mk": 36
+      },
+      "mechanical_properties": {
+        "tensile_strength_mpa": 552,
+        "yield_strength_mpa": 379,
+        "elongation_percent": 6,
+        "hardness_hb": "187-255"
+      }
+    },
+
+    "cylinder_liner_iron": {
+      "common_names": ["Liner Iron", "Pearlitic Gray Iron", "Centrifugally Cast Liner"],
+      "description": "Specialized cast iron for press-fit cylinder liners in aluminum blocks",
+      "applications": ["cylinder_liners", "dry_sleeves", "wet_sleeves"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "3.0-3.4",
+        "silicon": "2.0-2.4",
+        "manganese": "0.5-0.8",
+        "chromium": "0.2-0.4",
+        "phosphorus": "0.1-0.4"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 11.0,
+        "thermal_conductivity_w_mk": 48
+      },
+      "mechanical_properties": {
+        "tensile_strength_mpa": 250,
+        "hardness_hb": "200-260",
+        "bore_surface_hardness_hv": "240-280"
+      },
+      "surface_finish": {
+        "cross_hatch_angle_degrees": "22-32",
+        "ra_microns": "0.4-0.8",
+        "plateau_ratio_percent": "70-80"
+      }
+    }
+  },
+
+  "steels": {
+    "4340_forged": {
+      "common_names": ["4340", "AISI 4340", "AMS 6414"],
+      "description": "Premium nickel-chrome-moly alloy steel for crankshafts and connecting rods",
+      "applications": ["crankshafts", "connecting_rods", "high_performance_fasteners"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "0.38-0.43",
+        "nickel": "1.65-2.00",
+        "chromium": "0.70-0.90",
+        "molybdenum": "0.20-0.30",
+        "manganese": "0.60-0.80"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 12.3,
+        "thermal_conductivity_w_mk": 44.5
+      },
+      "mechanical_properties_heat_treated": {
+        "tensile_strength_mpa": 1080,
+        "yield_strength_mpa": 930,
+        "elongation_percent": 13,
+        "hardness_hrc": "30-35",
+        "fatigue_strength_mpa": 490
+      },
+      "oem_usage": ["BMW N54/N55 crankshafts", "Chevrolet LS crankshafts"]
+    },
+
+    "5140_forged": {
+      "common_names": ["5140", "AISI 5140"],
+      "description": "Chrome alloy steel - common for OEM crankshafts and high-stress components",
+      "applications": ["crankshafts_oem", "axle_shafts", "connecting_rods"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "0.38-0.43",
+        "chromium": "0.70-0.90",
+        "manganese": "0.70-0.90"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 12.2,
+        "thermal_conductivity_w_mk": 46
+      },
+      "mechanical_properties_heat_treated": {
+        "tensile_strength_mpa": 930,
+        "yield_strength_mpa": 793,
+        "elongation_percent": 12,
+        "hardness_hrc": "28-32"
+      }
+    },
+
+    "8620_carburizing": {
+      "common_names": ["8620", "AISI 8620", "Case hardening steel"],
+      "description": "Nickel-chrome-moly case hardening steel for gears and cams",
+      "applications": ["camshafts", "timing_gears", "transmission_gears", "lifters"],
+      "composition_percent": {
+        "iron": "balance",
+        "carbon": "0.18-0.23",
+        "nickel": "0.40-0.70",
+        "chromium": "0.40-0.60",
+        "molybdenum": "0.15-0.25"
+      },
+      "mechanical_properties_carburized": {
+        "case_hardness_hrc": "58-62",
+        "core_hardness_hrc": "25-35",
+        "case_depth_mm": "0.5-1.5"
+      }
+    },
+
+    "mls_head_gasket_steel": {
+      "common_names": ["Spring Steel", "301 Stainless", "Multi-Layer Steel"],
+      "description": "Precision spring steel for multi-layer head gaskets",
+      "applications": ["head_gaskets_mls"],
+      "typical_construction": {
+        "layers": "3-5",
+        "outer_layer": "Embossed spring steel with rubber coating",
+        "inner_layers": "Flat spring steel spacers",
+        "stopper_layer": "Folded steel around combustion opening"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 16.0
+      },
+      "mechanical_properties": {
+        "spring_rate": "Matched to head lift characteristics",
+        "recovery": ">95% after thermal cycling"
+      }
+    }
+  },
+
+  "specialty_alloys": {
+    "inconel_751": {
+      "common_names": ["Inconel 751", "Nimonic alloy"],
+      "description": "Nickel-based superalloy for exhaust valves - extreme high temperature strength",
+      "applications": ["exhaust_valves", "turbo_hot_side_components"],
+      "composition_percent": {
+        "nickel": "70-75",
+        "chromium": "14-17",
+        "iron": "5-9",
+        "titanium": "2.0-2.6",
+        "aluminum": "0.9-1.5"
+      },
+      "thermal_properties": {
+        "coefficient_of_thermal_expansion_ppm_k": 12.8,
+        "max_service_temperature_c": 870,
+        "thermal_conductivity_w_mk": 12
+      },
+      "mechanical_properties_at_temp": {
+        "tensile_strength_mpa_at_650c": 862,
+        "yield_strength_mpa_at_650c": 690
+      }
+    },
+
+    "stellite_f": {
+      "common_names": ["Stellite F", "Valve seat alloy"],
+      "description": "Cobalt-based alloy for valve seat inserts - extreme wear and temperature resistance",
+      "applications": ["valve_seat_inserts", "valve_facing"],
+      "composition_percent": {
+        "cobalt": "balance",
+        "chromium": "25",
+        "tungsten": "12",
+        "carbon": "1.75",
+        "nickel": "22"
+      },
+      "mechanical_properties": {
+        "hardness_hrc": "38-44"
+      }
+    },
+
+    "beryllium_copper": {
+      "common_names": ["BeCu", "Beryllium Bronze", "Alloy 25"],
+      "description": "High-conductivity copper alloy for valve guides and seats in high-performance heads",
+      "applications": ["valve_guides", "valve_seats_performance"],
+      "thermal_properties": {
+        "thermal_conductivity_w_mk": 115,
+        "coefficient_of_thermal_expansion_ppm_k": 17.8
+      },
+      "mechanical_properties": {
+        "tensile_strength_mpa": 1100,
+        "hardness_hrc": "36-42"
+      },
+      "note": "3x thermal conductivity of cast iron guides - reduces valve temperatures significantly"
+    }
+  },
+
+  "bore_coatings": {
+    "nikasil": {
+      "full_name": "Nickel Silicon Carbide",
+      "description": "Electroplated nickel matrix with silicon carbide particles for cylinder bore coating",
+      "applications": ["aluminum_block_bore_coating"],
+      "properties": {
+        "hardness_hv": "450-550",
+        "thickness_microns": "75-100",
+        "coefficient_of_friction": 0.08,
+        "wear_rate": "Very low"
+      },
+      "compatibility": {
+        "fuel_sulfur_sensitivity": "High - early failures with high-sulfur fuel",
+        "recommended_ring_type": "Chrome or moly-faced"
+      },
+      "oem_usage": ["BMW M52 (early)", "Porsche air-cooled", "Many motorcycle engines"],
+      "note": "Sensitive to high sulfur content in fuel - caused widespread failures in 1990s"
+    },
+
+    "alusil": {
+      "full_name": "Aluminum Silicon Alloy",
+      "description": "Hypereutectic aluminum-silicon alloy exposed by chemical etching for wear surface",
+      "applications": ["aluminum_block_bore_surface"],
+      "properties": {
+        "silicon_content_percent": "17",
+        "hardness_hv": "130-150",
+        "primary_silicon_crystal_hardness_hv": "800-1000"
+      },
+      "surface_preparation": {
+        "method": "Chemical etch to expose silicon crystals",
+        "plateau_honing": true
+      },
+      "compatibility": {
+        "ring_type": "Ferrous or moly-faced required"
+      },
+      "oem_usage": ["BMW M62", "Audi V8", "Mercedes M113/M273"]
+    },
+
+    "plasma_transferred_wire_arc": {
+      "full_name": "PTWA / Plasma Spray Coating",
+      "description": "Thermal spray coating of steel wire onto aluminum bore surface",
+      "applications": ["aluminum_block_bore_coating"],
+      "properties": {
+        "coating_material": "Low carbon steel wire",
+        "thickness_microns": "150-300",
+        "hardness_hv": "250-350",
+        "porosity_percent": "2-5"
+      },
+      "advantages": [
+        "Weight savings vs iron liners",
+        "Better heat transfer than liners",
+        "Consistent bore geometry"
+      ],
+      "oem_usage": ["Ford Eco-Boost", "GM LT1/LT4", "Nissan VR30"]
+    }
+  }
+}
