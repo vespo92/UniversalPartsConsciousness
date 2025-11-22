@@ -23,7 +23,15 @@ from .mcmaster_scraper import (
     search_mcmaster,
 )
 
+from .grainger_scraper import (
+    GraingerScraper,
+    GraingerCategory,
+    scrape_grainger_product,
+    search_grainger,
+)
+
 __all__ = [
+    # Base framework
     "BaseScraper",
     "ScrapedPart",
     "ScrapeResult",
@@ -33,8 +41,14 @@ __all__ = [
     "RetryConfig",
     "ScraperTier",
     "ScraperRegistry",
+    # McMaster-Carr
     "McMasterScraper",
     "McMasterCategory",
     "scrape_mcmaster_product",
     "search_mcmaster",
+    # Grainger
+    "GraingerScraper",
+    "GraingerCategory",
+    "scrape_grainger_product",
+    "search_grainger",
 ]

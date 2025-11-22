@@ -2,11 +2,23 @@
 Agent_1 Storage Module
 ======================
 Data persistence and caching systems.
+
+"Every part deserves a permanent home. The Archivist provides."
 """
 
-# Storage components to be implemented:
-# - part_repository.py: Core part data access layer
-# - archive_manager.py: Historical/discontinued parts
-# - cache_manager.py: High-performance caching
+from .part_repository import (
+    StorageConfig,
+    StoredPart,
+    PartRepository,
+    FileRepository,
+    create_repository,
+)
 
-__all__ = []
+
+__all__ = [
+    "StorageConfig",
+    "StoredPart",
+    "PartRepository",
+    "FileRepository",
+    "create_repository",
+]

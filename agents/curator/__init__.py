@@ -20,15 +20,29 @@ Core Responsibilities:
 4. Duplicate Detection Algorithm
 
 Usage:
-    from agents.curator import IngestionPipeline, McMasterScraper
+    from agents.curator import CuratorAgent
 
     async def main():
-        pipeline = IngestionPipeline()
-        pipeline.add_scraper(McMasterScraper())
-        result = await pipeline.run(categories=["socket_head_cap_screws"])
+        agent = CuratorAgent()
+        result = await agent.ingest(categories=["socket_head_cap_screws"])
         print(f"Ingested {result.total_parts_accepted} parts")
+        await agent.shutdown()
+
+    # Or use the convenience function:
+    from agents.curator import run_curator
+    result = await run_curator(categories=["socket_head_cap_screws"])
 """
 
+# Core agent
+from .curator_agent import (
+    CuratorAgent,
+    CuratorConfig,
+    AgentState,
+    AgentMetrics,
+    run_curator,
+)
+
+# Scraper framework
 from .scrapers.base_scraper import (
     BaseScraper,
     ScrapedPart,
@@ -41,11 +55,38 @@ from .scrapers.base_scraper import (
     ScraperRegistry,
 )
 
+# Tier 1 Scrapers
 from .scrapers.mcmaster_scraper import (
     McMasterScraper,
     McMasterCategory,
 )
 
+from .scrapers.grainger_scraper import (
+    GraingerScraper,
+    GraingerCategory,
+)
+
+# Normalizers
+from .normalizers.thread_normalizer import (
+    ThreadNormalizer,
+    NormalizedThread,
+    ThreadStandard,
+    ThreadType,
+    normalize_thread,
+    threads_compatible,
+)
+
+from .normalizers.material_normalizer import (
+    MaterialNormalizer,
+    NormalizedMaterial,
+    MaterialCategory,
+    MaterialProperties,
+    FinishType,
+    normalize_material,
+    materials_equivalent,
+)
+
+# Quality scoring
 from .quality.scorer import (
     PartQualityScorer,
     QualityScore,
@@ -57,6 +98,7 @@ from .quality.scorer import (
     calculate_batch_statistics,
 )
 
+# Duplicate detection
 from .quality.duplicate_detector import (
     DuplicateDetector,
     DuplicateMatch,
@@ -67,6 +109,7 @@ from .quality.duplicate_detector import (
     group_duplicates,
 )
 
+# Pipeline
 from .pipelines.ingestion_pipeline import (
     IngestionPipeline,
     PipelineConfig,
@@ -77,14 +120,29 @@ from .pipelines.ingestion_pipeline import (
     run_ingestion,
 )
 
+# Storage
+from .storage.part_repository import (
+    StorageConfig,
+    StoredPart,
+    PartRepository,
+    FileRepository,
+    create_repository,
+)
 
-__version__ = "0.1.0"
+
+__version__ = "1.0.0"
 __agent_id__ = "Agent_1"
 __agent_name__ = "Data Curator"
 __agent_codename__ = "ARCHIVIST"
 
 __all__ = [
-    # Core scraper framework
+    # Core agent
+    "CuratorAgent",
+    "CuratorConfig",
+    "AgentState",
+    "AgentMetrics",
+    "run_curator",
+    # Scraper framework
     "BaseScraper",
     "ScrapedPart",
     "ScrapeResult",
@@ -94,9 +152,26 @@ __all__ = [
     "RetryConfig",
     "ScraperTier",
     "ScraperRegistry",
-    # McMaster scraper
+    # Tier 1 scrapers
     "McMasterScraper",
     "McMasterCategory",
+    "GraingerScraper",
+    "GraingerCategory",
+    # Thread normalization
+    "ThreadNormalizer",
+    "NormalizedThread",
+    "ThreadStandard",
+    "ThreadType",
+    "normalize_thread",
+    "threads_compatible",
+    # Material normalization
+    "MaterialNormalizer",
+    "NormalizedMaterial",
+    "MaterialCategory",
+    "MaterialProperties",
+    "FinishType",
+    "normalize_material",
+    "materials_equivalent",
     # Quality scoring
     "PartQualityScorer",
     "QualityScore",
@@ -122,4 +197,10 @@ __all__ = [
     "PipelineStatus",
     "StageResult",
     "run_ingestion",
+    # Storage
+    "StorageConfig",
+    "StoredPart",
+    "PartRepository",
+    "FileRepository",
+    "create_repository",
 ]
