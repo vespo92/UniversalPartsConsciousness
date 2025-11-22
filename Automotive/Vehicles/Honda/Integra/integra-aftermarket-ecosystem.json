@@ -1,0 +1,365 @@
+{
+  "vehicle_id": "HONDA-ACURA-INTEGRA",
+  "ecosystem_version": "1.0.0",
+
+  "dc2_integra_1994_2001": {
+    "description": "Third generation Integra - the most modified and sought after",
+
+    "engine_b18c1_gsr": {
+      "bolt_ons": {
+        "intake": {
+          "cold_air": ["AEM V2", "Injen RD", "DC Sports CAI"],
+          "short_ram": ["Skunk2", "DC Sports"]
+        },
+        "exhaust": {
+          "header": ["DC Sports 4-2-1", "Skunk2 Alpha", "Mugen"],
+          "cat_back": ["Mugen Twin Loop", "Greddy SP2", "Tanabe Medallion"]
+        },
+        "gains": "165-185hp with intake, header, exhaust, tune"
+      },
+      "head_work": {
+        "cams": {
+          "mild": "Skunk2 Stage 1, Toda A",
+          "aggressive": "Skunk2 Stage 2, Toda B, Crower 404"
+        },
+        "valve_springs": ["Skunk2 Alpha", "Supertech dual"],
+        "retainers": "Titanium recommended for high RPM",
+        "port_work": "15-20hp gain from quality port job"
+      },
+      "forced_induction": {
+        "turbo": {
+          "kits": ["Full-Race", "Greddy", "Rev9"],
+          "turbo_size": "GT28RS for 350hp, GT3076R for 450hp+",
+          "supporting_mods": ["Hondata S300", "RC 550cc+ injectors", "Walbro 255"]
+        },
+        "supercharger": {
+          "kits": ["CT Engineering", "Jackson Racing"],
+          "power": "240-280hp"
+        }
+      }
+    },
+
+    "engine_b18c5_type_r": {
+      "bolt_ons": {
+        "intake": {
+          "oem_upgrade": "Stock ITR intake flows well",
+          "cold_air": ["AEM V2", "Comptech"],
+          "notes": "Gains are modest - engine is well developed from factory"
+        },
+        "exhaust": {
+          "header": ["Toda", "Spoon 4-2-1", "DC Sports ceramic"],
+          "cat_back": ["Spoon N1", "Mugen Twin Loop", "J's Racing"]
+        },
+        "gains": "200-215hp with bolt-ons"
+      },
+      "head_work": {
+        "cams": {
+          "street": "Skunk2 Stage 2 Tuner",
+          "track": "Toda C, Crower 404/420"
+        },
+        "valvetrain": {
+          "springs": "Skunk2 Alpha, Supertech dual",
+          "titanium_retainers": "Required for 9000+ RPM",
+          "oversize_valves": "36mm intake, 31mm exhaust"
+        },
+        "port_work": {
+          "providers": ["Endyn", "Portflow", "Various local"],
+          "gains": "15-25hp"
+        }
+      },
+      "all_motor_builds": {
+        "mild_220hp": {
+          "mods": "Cams, springs, header, exhaust, tune",
+          "result": "215-225hp"
+        },
+        "aggressive_240hp": {
+          "mods": "+ Port work, ITBs or ported manifold",
+          "result": "235-250hp"
+        },
+        "full_build_260hp": {
+          "mods": "+ Pistons, rods, bore/stroke, high comp",
+          "result": "255-270hp N/A"
+        }
+      },
+      "itbs": {
+        "kits": ["TWM", "Jenvey", "OEM S2000 with adapter"],
+        "gains": "15-25hp with proper tune",
+        "notes": "Requires standalone ECU or Hondata"
+      }
+    },
+
+    "suspension": {
+      "coilovers": {
+        "budget": {
+          "bc_racing_br": "Good value, adjustable",
+          "tein_street_basis": "Basic damper adjustment"
+        },
+        "mid_range": {
+          "tein_flex_z": "Good balance of comfort and performance",
+          "kw_v1": "German quality, conservative damping",
+          "progress_cs2": "Proven track setup"
+        },
+        "high_end": {
+          "kw_v3": "Separate rebound/compression",
+          "ohlins_dfv": "Excellent street/track balance",
+          "fortune_auto_500": "Great custom valving options"
+        },
+        "track": {
+          "mcs_2way": "Professional level adjustability",
+          "jrz_rs_pro": "World Time Attack standard",
+          "penske": "Custom built race dampers"
+        }
+      },
+      "springs_only": {
+        "brands": ["Eibach Pro-Kit", "H&R Sport", "Tein S-Tech"],
+        "drop": "1.5-2.0 inches typical",
+        "notes": "Combine with Koni Yellow shocks for budget setup"
+      },
+      "sway_bars": {
+        "front": ["Progress 28mm", "ST 28mm", "Whiteline"],
+        "rear": ["Progress 22mm", "ST 22mm"],
+        "type_r_oem": "24mm front / 18mm rear"
+      },
+      "bushings": {
+        "polyurethane": ["Energy Suspension", "Prothane"],
+        "spherical": ["Hardrace", "ASR", "J's Racing"],
+        "compliance_bushings": "Replace with poly/spherical for precision"
+      },
+      "alignment": {
+        "street": {
+          "front_camber": "-1.5 to -2.0 degrees",
+          "rear_camber": "-1.0 to -1.5 degrees",
+          "front_toe": "Slight toe-out",
+          "rear_toe": "Slight toe-in"
+        },
+        "track": {
+          "front_camber": "-2.5 to -3.5 degrees",
+          "rear_camber": "-2.0 to -2.5 degrees"
+        }
+      },
+      "camber_kits": {
+        "front": ["Skunk2 Pro", "Ingalls", "SPC"],
+        "rear": ["Skunk2 Pro", "SPC EZ Cam"]
+      }
+    },
+
+    "brakes": {
+      "oem_upgrades": {
+        "type_r_swap": {
+          "description": "Swap ITR front calipers and rotors",
+          "size": "282mm front",
+          "notes": "Bolt-on upgrade for non-Type R"
+        },
+        "nsx_rear": "NSX rear brakes fit with adapter brackets"
+      },
+      "big_brake_kits": {
+        "entry": {
+          "wilwood_dynapro": "4-piston, 280mm rotors"
+        },
+        "mid": {
+          "stoptech_st40": "4-piston, 328mm rotors"
+        },
+        "high_end": {
+          "ap_racing": "4 or 6-piston options",
+          "brembo": "4-piston GT kit"
+        }
+      },
+      "pads": {
+        "street": ["Hawk HPS", "EBC Redstuff"],
+        "street_track": ["Hawk HP+", "Ferodo DS2500"],
+        "track": ["Carbotech XP10", "Hawk DTC-60"]
+      },
+      "fluid": {
+        "street": "Motul DOT 4",
+        "track": "Motul RBF 600, Castrol SRF"
+      }
+    },
+
+    "wheels_tires": {
+      "bolt_pattern": "5x114.3",
+      "hub_bore": "64.1mm",
+      "oem_sizes": {
+        "ls_gs": "15x6 +50",
+        "gsr": "15x6 +50",
+        "type_r": "15x6 +50 (lighter)"
+      },
+      "popular_sizes": {
+        "street": ["15x7 +40", "16x7 +42", "17x7 +42"],
+        "track": ["15x8 +35", "15x9 +36"]
+      },
+      "iconic_wheels": {
+        "jdm_classics": ["Mugen MF10", "Spoon SW388", "Rays TE37"],
+        "modern": ["Enkei RPF1", "Konig Hypergram", "Titan7 TS5"],
+        "authentic": ["Volk TE37", "Rays CE28N", "Mugen GP"]
+      },
+      "tires": {
+        "street": {
+          "ultra_high_perf": ["Michelin PS4S", "Continental ECS"],
+          "max_perf_summer": ["Pilot Sport Cup 2"]
+        },
+        "track": {
+          "200tw": ["Bridgestone RE-71R", "Yokohama A052"],
+          "100tw": ["Toyo R888R", "Nitto NT01"],
+          "slicks": ["Hoosier A7", "Toyo RR"]
+        }
+      }
+    },
+
+    "exterior": {
+      "body_kits": {
+        "oem_style": {
+          "type_r_lip": "OEM ITR front lip",
+          "mugen_kit": "Full Mugen body kit"
+        },
+        "aftermarket": {
+          "jdm_conversion": "Convert USDM to JDM front end",
+          "widebody": ["Pandem/Rocket Bunny", "Kansai Service"]
+        }
+      },
+      "lips_spoilers": {
+        "front_lip": ["OEM ITR", "Mugen", "Spoon"],
+        "side_skirts": ["OEM ITR", "Mugen"],
+        "rear_lip": ["OEM ITR", "Mugen"]
+      },
+      "wings": {
+        "oem": "Type R wing (blade style)",
+        "aftermarket": ["Mugen Gen 1", "APR GTC-200", "Voltex"]
+      },
+      "hoods": {
+        "carbon_fiber": ["Seibon", "Vis Racing"],
+        "vented": ["J's Racing style", "Spoon style"]
+      }
+    },
+
+    "interior": {
+      "seats": {
+        "oem_upgrade": {
+          "type_r_recaros": "DC2 ITR Recaro seats - highly collectible",
+          "confetti_recaros": "JDM ITR pattern - very rare"
+        },
+        "aftermarket": {
+          "bucket": ["Bride ZETA III", "Sparco Sprint", "Recaro Profi"],
+          "reclining": ["Bride GIAS", "Sparco R100"]
+        }
+      },
+      "steering_wheels": {
+        "oem": "Type R MOMO wheel",
+        "aftermarket": {
+          "wheels": ["Momo Prototipo", "Nardi Classic", "Personal Neo Grinta"],
+          "hub": "Works Bell Rapfix, NRG short hub"
+        }
+      },
+      "shift_knob": {
+        "oem": "Titanium Type R shift knob",
+        "aftermarket": ["Skunk2 weighted", "Mugen", "Spoon duracon"]
+      },
+      "harness_bar": ["ASR", "NRG", "Cusco"],
+      "roll_cage": {
+        "bolt_in": ["Autopower bolt-in", "Kirk Racing"],
+        "weld_in": ["Matter", "Custom chromoly"]
+      }
+    },
+
+    "drivetrain": {
+      "clutch": {
+        "street": ["Exedy Stage 1", "ACT Street"],
+        "street_track": ["ACT HD", "Competition Clutch Stage 2"],
+        "track": ["ACT 6-puck", "OS Giken"]
+      },
+      "flywheel": {
+        "aluminum": ["Fidanza", "ACT Prolite"],
+        "chromoly": ["Competition Clutch", "Exedy"]
+      },
+      "lsd": {
+        "oem": "Type R helical LSD",
+        "aftermarket": {
+          "helical": ["Quaife", "Wavetrac"],
+          "clutch_type": ["Cusco", "OS Giken"]
+        }
+      },
+      "short_shifter": {
+        "brands": ["Hybrid Racing", "Skunk2", "K-Tuned"],
+        "bushings": ["Energy Suspension", "Hybrid Racing"]
+      }
+    },
+
+    "ecu_tuning": {
+      "obd1_tuning": {
+        "hondata_s300": {
+          "description": "Gold standard for OBD1 Honda tuning",
+          "features": ["Real-time tuning", "Datalogging", "VTEC control"]
+        },
+        "neptune_rtp": "Budget alternative"
+      },
+      "base_maps": {
+        "p72_ecu": "OEM GS-R ECU - common reflash base",
+        "p73_ecu": "OEM Type R ECU"
+      },
+      "conversion": {
+        "obd2_to_obd1": "Convert 1996+ cars to OBD1 for tuning flexibility"
+      }
+    }
+  },
+
+  "dc5_rsx_2002_2006": {
+    "engine_k20a2_type_s": {
+      "bolt_ons": {
+        "intake": ["AEM V2", "Injen RD", "Skunk2"],
+        "header": ["PLM", "Skunk2 Alpha", "DC Sports 4-2-1"],
+        "exhaust": ["Invidia Q300", "Greddy SP2", "Skunk2"],
+        "intake_manifold": {
+          "rbc_swap": "2005-06 Type S manifold (larger runners)",
+          "aftermarket": ["Skunk2 Ultra Street", "Blox"]
+        },
+        "gains": "210-230hp with full bolt-ons and tune"
+      },
+      "head_work": {
+        "cams": ["Skunk2 Stage 2", "Toda", "Brian Crower"],
+        "k20a_head_swap": {
+          "description": "Swap JDM K20A head for more power",
+          "gains": "20-30hp over K20A2"
+        }
+      },
+      "forced_induction": {
+        "supercharger": {
+          "ct_engineering": "260-300hp",
+          "kraftwerks": "300-350hp"
+        },
+        "turbo": {
+          "kits": ["Full-Race", "Rev9"],
+          "power": "350-500hp on stock internals"
+        }
+      }
+    },
+
+    "suspension": {
+      "coilovers": {
+        "budget": ["BC Racing BR", "Tein Street Basis"],
+        "mid": ["KW V1", "Tein Flex A"],
+        "high_end": ["KW V3", "Ohlins DFV"]
+      }
+    },
+
+    "brakes": {
+      "05_06_brembo_swap": "Fits earlier DC5 with minor modification",
+      "bbk": ["StopTech ST-40", "Wilwood"]
+    },
+
+    "wheels": {
+      "bolt_pattern": "5x114.3",
+      "oem_size": "17x7",
+      "popular": ["17x8 +35", "18x8 +35"]
+    },
+
+    "ecu": {
+      "kpro": "Hondata K-Pro for full tuning capability",
+      "reflash": ["Hondata FlashPro", "KTuner"]
+    }
+  },
+
+  "trusted_vendors": {
+    "performance": ["King Motorsports", "Evasive Motorsports", "Inline Pro"],
+    "oem_parts": ["Majestic Honda", "Acura OEM"],
+    "jdm_parts": ["RHDJapan", "Nengun", "Yahoo Japan Auctions"]
+  }
+}

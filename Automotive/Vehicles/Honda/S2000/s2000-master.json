@@ -1,0 +1,259 @@
+{
+  "vehicle_id": "HONDA-S2000",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1999-2009",
+  "body_styles": ["2-door roadster"],
+  "historical_significance": "Honda's celebration of 50th anniversary. Highest specific output naturally aspirated engine ever in a production car (F20C). Pure driver's car with near-perfect 50/50 weight distribution.",
+
+  "generations": {
+    "ap1": {
+      "chassis_code": "AP1",
+      "years": "1999-2003",
+      "engine": {
+        "code": "F20C",
+        "displacement_cc": 1997,
+        "bore_mm": 87.0,
+        "stroke_mm": 84.0,
+        "configuration": "Inline 4-cylinder",
+        "valvetrain": "DOHC VTEC, 16 valves",
+        "power_hp": 240,
+        "power_ps": 250,
+        "rpm_at_peak_power": 8300,
+        "torque_lb_ft": 153,
+        "rpm_at_peak_torque": 7500,
+        "redline_rpm": 9000,
+        "rev_limiter": 9200,
+        "compression_ratio": "11.7:1",
+        "specific_output_hp_per_liter": 120,
+        "notes": "Highest specific output N/A production engine ever"
+      },
+      "transmission": {
+        "type": "6-speed manual only",
+        "ratios": {
+          "1st": 3.133,
+          "2nd": 2.045,
+          "3rd": 1.481,
+          "4th": 1.161,
+          "5th": 0.971,
+          "6th": 0.811,
+          "final_drive": 4.10
+        }
+      },
+      "chassis": {
+        "construction": "X-bone frame with high-tensile steel",
+        "front_suspension": "Double wishbone",
+        "rear_suspension": "Double wishbone",
+        "front_brakes": "300mm ventilated disc",
+        "rear_brakes": "282mm ventilated disc",
+        "weight_kg": 1260,
+        "weight_distribution": "50/50"
+      },
+      "variants": {
+        "base": {
+          "features": ["Cloth soft top", "6-speed manual"]
+        },
+        "ap1_type_v_jdm": {
+          "features": ["Hard top available", "Different suspension tune"],
+          "markets": "JDM only"
+        }
+      },
+      "model_year_changes": {
+        "2000": "Launch year for USDM",
+        "2001": "Glass rear window replaces plastic",
+        "2002": "Drive-by-wire throttle",
+        "2003": "Final AP1 year"
+      },
+      "driving_characteristics": {
+        "strengths": [
+          "Razor-sharp handling",
+          "Incredible high-RPM response",
+          "9000 RPM redline",
+          "Pure mechanical connection"
+        ],
+        "challenges": [
+          "Snap oversteer on lift-off",
+          "Requires skill to extract maximum",
+          "Low torque below VTEC engagement"
+        ]
+      }
+    },
+    "ap2": {
+      "chassis_code": "AP2",
+      "years": "2004-2009",
+      "engine": {
+        "code": "F22C1",
+        "displacement_cc": 2157,
+        "bore_mm": 87.0,
+        "stroke_mm": 90.7,
+        "configuration": "Inline 4-cylinder",
+        "valvetrain": "DOHC VTEC, 16 valves",
+        "power_hp": 237,
+        "rpm_at_peak_power": 7800,
+        "torque_lb_ft": 162,
+        "rpm_at_peak_torque": 6500,
+        "redline_rpm": 8000,
+        "rev_limiter": 8200,
+        "compression_ratio": "11.1:1",
+        "notes": "More displacement, more torque, lower redline"
+      },
+      "transmission": {
+        "type": "6-speed manual only",
+        "ratios": {
+          "final_drive": 4.10,
+          "notes": "Slightly different gear ratios for more torque"
+        }
+      },
+      "chassis": {
+        "front_suspension": "Double wishbone (revised geometry)",
+        "rear_suspension": "Double wishbone (revised geometry, longer toe links)",
+        "front_brakes": "300mm ventilated disc",
+        "rear_brakes": "282mm ventilated disc",
+        "weight_kg": 1270,
+        "changes_from_ap1": [
+          "17-inch wheels standard",
+          "Revised suspension geometry",
+          "More compliant ride",
+          "Improved stability at limit"
+        ]
+      },
+      "variants": {
+        "base": {
+          "features": ["Cloth soft top", "New front fascia", "17-inch wheels"]
+        },
+        "cr_club_racer": {
+          "years": "2008-2009",
+          "production": "2000 units for US market",
+          "features": [
+            "Hardtop only (no soft top)",
+            "Aluminum hardtop",
+            "Stiffer springs (+8% front, +6% rear)",
+            "Larger front sway bar",
+            "Removed A/C, stereo, soft top (optional reinstall)",
+            "Special Apex Blue Pearl color"
+          ],
+          "weight_kg": 1230,
+          "notes": "Factory track-focused S2000. Highly collectible"
+        },
+        "type_s_jdm": {
+          "markets": "JDM",
+          "features": ["Hardtop", "BBK", "Suspension upgrades"]
+        }
+      },
+      "model_year_changes": {
+        "2004": "New AP2 with F22C1",
+        "2006": "Minor interior updates",
+        "2008": "CR model introduced",
+        "2009": "Final year, special GPW color"
+      },
+      "driving_characteristics": {
+        "changes_from_ap1": [
+          "More forgiving at limit",
+          "Better torque curve for daily driving",
+          "Less 'knife edge' handling",
+          "Easier to extract performance"
+        ]
+      }
+    }
+  },
+
+  "f20c_vs_f22c1": {
+    "f20c_advantages": [
+      "9000 RPM redline (more exciting)",
+      "Higher specific output",
+      "More raw driving experience"
+    ],
+    "f22c1_advantages": [
+      "More mid-range torque",
+      "Easier to drive fast",
+      "Better daily drivability",
+      "Improved reliability (some argue)"
+    ],
+    "popular_opinion": "AP1 for purists, AP2 for track consistency"
+  },
+
+  "aftermarket": {
+    "engine": {
+      "bolt_ons": {
+        "intake": ["AEM V2", "Injen"],
+        "header": ["Toda 4-2-1", "J's Racing", "Amuse"],
+        "exhaust": ["Toda", "J's Racing", "Spoon"],
+        "gains": "250-260hp with bolt-ons and tune"
+      },
+      "head_work": {
+        "cams": ["Toda A/B/C", "BC Stage 2/3"],
+        "valvetrain": ["Supertech", "Ferrea"],
+        "port_work": "Significant gains but expensive",
+        "gains": "270-290hp N/A"
+      },
+      "forced_induction": {
+        "supercharger": {
+          "kits": ["Kraftwerks", "CT Engineering", "Science of Speed"],
+          "power": "350-400hp"
+        },
+        "turbo": {
+          "kits": ["Full-Race", "Inline Pro", "SOS"],
+          "power": "400-600hp (built motor for 500+)"
+        }
+      }
+    },
+    "suspension": {
+      "coilovers": {
+        "street": ["Ohlins DFV", "KW V3", "Tein Flex Z"],
+        "track": ["JRZ RS Pro", "MCS 2-way", "Penske"],
+        "popular": "Ohlins DFV is the community standard"
+      },
+      "sway_bars": ["Progress", "Whiteline", "Spoon"],
+      "alignment": {
+        "street": "-2.5° front / -2.0° rear",
+        "track": "-3.5° front / -3.0° rear"
+      }
+    },
+    "brakes": {
+      "pads": {
+        "street": ["Hawk HPS", "EBC Yellowstuff"],
+        "track": ["Hawk DTC-60", "Carbotech XP10"]
+      },
+      "bbk": ["AP Racing", "Stoptech", "Wilwood"],
+      "notes": "Stock brakes are good - upgrade pads/fluid first"
+    },
+    "hardtop": {
+      "oem": "Honda OEM hardtop - extremely expensive ($3000-5000 used)",
+      "aftermarket": ["Mugen", "ASM", "Rockstar Garage"],
+      "benefits": "Rigidity, weather protection, looks"
+    },
+    "wheels": {
+      "bolt_pattern": "5x114.3",
+      "oem_size": {
+        "ap1": "16x6.5 front / 16x7.5 rear",
+        "ap2": "17x7 front / 17x8.5 rear"
+      },
+      "popular_upgrades": {
+        "street": "17x8/17x9 or 18x8/18x9",
+        "track": "17x9/17x10"
+      },
+      "iconic": ["TE37", "CE28N", "RPF1", "Advan RG-D2"]
+    }
+  },
+
+  "common_issues": {
+    "clutch_master_cylinder": "Known failure point - upgrade to S2KI CMC",
+    "soft_top": "Rear windows crack over time",
+    "timing_chain_tensioner": "Can fail on high-mileage F20C",
+    "diff_chatter": "Limited slip can develop chatter",
+    "snap_oversteer": "Driver induced - technique issue, not car fault"
+  },
+
+  "collectibility": {
+    "ap1_values": "Rising rapidly - $25,000-50,000+ for clean examples",
+    "ap2_values": "Similar to AP1, CR commands premium",
+    "cr_values": "$50,000-80,000 for clean examples",
+    "color_premiums": ["GPW (Grand Prix White)", "NFR (New Formula Red)", "Apex Blue (CR)"],
+    "concerns": ["Accident history", "Previous mods", "High revs = wear"]
+  },
+
+  "community": {
+    "forums": ["S2KI.com (largest)", "S2000.com"],
+    "facebook_groups": "Multiple active groups",
+    "events": ["S2000 Homecoming", "Local meets nationwide"]
+  }
+}

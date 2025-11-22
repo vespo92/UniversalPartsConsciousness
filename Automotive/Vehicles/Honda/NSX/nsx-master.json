@@ -1,0 +1,308 @@
+{
+  "vehicle_id": "HONDA-ACURA-NSX",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "brand": "Acura (North America) / Honda (Global)",
+  "production_years": "1990-2005 (NA1/NA2), 2016-2022 (NC1)",
+  "body_styles": ["2-door coupe", "2-door targa"],
+  "historical_significance": "Japan's first supercar. Proved that a daily-drivable supercar was possible. Influenced the development of modern supercars including Ferrari.",
+
+  "generations": {
+    "first_gen_na1_na2": {
+      "chassis_codes": ["NA1", "NA2"],
+      "years": "1990-2005",
+      "nickname": "Original NSX",
+      "design_team": "Shigeru Uehara (chief engineer), Ayrton Senna (suspension consultant)",
+      "engines": {
+        "c30a": {
+          "chassis_code": "NA1",
+          "displacement_cc": 2977,
+          "bore_mm": 90.0,
+          "stroke_mm": 78.0,
+          "configuration": "V6 90-degree",
+          "valvetrain": "DOHC VTEC, 24 valves",
+          "power_hp": 270,
+          "power_ps": 280,
+          "rpm_at_peak_power": 7300,
+          "torque_lb_ft": 210,
+          "redline_rpm": 8000,
+          "compression_ratio": "10.2:1",
+          "materials": {
+            "block": "Aluminum with FRM sleeves",
+            "heads": "Aluminum",
+            "connecting_rods": "Titanium"
+          },
+          "years": "1990-1997",
+          "notes": "First production car with titanium connecting rods"
+        },
+        "c32b": {
+          "chassis_code": "NA2",
+          "displacement_cc": 3179,
+          "bore_mm": 93.0,
+          "stroke_mm": 78.0,
+          "configuration": "V6 90-degree",
+          "valvetrain": "DOHC VTEC, 24 valves",
+          "power_hp": 290,
+          "power_ps": 280,
+          "rpm_at_peak_power": 7100,
+          "torque_lb_ft": 224,
+          "redline_rpm": 7600,
+          "compression_ratio": "10.2:1",
+          "years": "1997-2005",
+          "notes": "Larger bore for increased displacement"
+        }
+      },
+      "transmission": {
+        "manual": {
+          "5_speed": "1990-1997",
+          "6_speed": "1997-2005 (standard on NA2)"
+        },
+        "automatic": "4-speed with Sport mode (optional)"
+      },
+      "chassis": {
+        "construction": "All-aluminum monocoque - first production car",
+        "weight_kg": {
+          "na1_coupe": 1370,
+          "na1_targa": 1410,
+          "na2_coupe": 1340
+        },
+        "weight_distribution": "42/58 front/rear",
+        "suspension": {
+          "front": "Double wishbone with compliance pivot",
+          "rear": "Double wishbone"
+        },
+        "brakes": {
+          "front": "282mm ventilated disc",
+          "rear": "303mm ventilated disc"
+        }
+      },
+      "variants": {
+        "nsx_coupe": {
+          "years": "1990-2005",
+          "roof": "Fixed coupe",
+          "notes": "Stiffer chassis"
+        },
+        "nsx_targa": {
+          "years": "1995-2005",
+          "roof": "Removable targa top",
+          "weight_penalty": "+40kg"
+        },
+        "nsx_type_r_na1": {
+          "years": "1992-1995",
+          "chassis_code": "NA1",
+          "engine": "C30A",
+          "power_hp": 274,
+          "weight_kg": 1230,
+          "production": "483 units",
+          "features": [
+            "120kg weight reduction",
+            "No A/C, stereo, spare tire",
+            "Single pane glass",
+            "Hand-balanced engine",
+            "Stiffer suspension",
+            "Recaro seats"
+          ],
+          "colors": "Championship White only (initially)",
+          "notes": "One of the rarest and most valuable NSX variants"
+        },
+        "nsx_type_s": {
+          "years": "1997-2001",
+          "chassis_code": "NA2",
+          "engine": "C32B",
+          "power_hp": 290,
+          "weight_kg": 1320,
+          "features": [
+            "Sport suspension",
+            "MOMO steering wheel",
+            "BBS wheels",
+            "Weight reduction over standard"
+          ]
+        },
+        "nsx_type_s_zero": {
+          "years": "1997-2001",
+          "production": "Limited",
+          "features": [
+            "Further weight reduction",
+            "No A/C option",
+            "Fixed headlights (some markets)"
+          ],
+          "notes": "Track-focused variant"
+        },
+        "nsx_type_r_na2": {
+          "years": "2002-2005",
+          "chassis_code": "NA2",
+          "engine": "C32B (tuned)",
+          "power_hp": 290,
+          "weight_kg": 1270,
+          "production": "140 units",
+          "features": [
+            "Fixed headlights",
+            "Carbon fiber components",
+            "Titanium shift knob",
+            "Championship White exclusive"
+          ],
+          "notes": "Final and most extreme NA NSX. Values exceed $500,000"
+        }
+      },
+      "model_year_changes": {
+        "1991": "Launch year (1990 in Japan)",
+        "1995": "Targa roof option added, F-Matic auto trans",
+        "1997": "NA2: 3.2L C32B, 6-speed manual, new lights",
+        "2002": "Fixed headlights, final updates"
+      }
+    },
+    "second_gen_nc1": {
+      "chassis_codes": ["NC1"],
+      "years": "2016-2022",
+      "nickname": "Second Gen NSX",
+      "brand_name": "Acura NSX",
+      "powertrain": {
+        "engine": {
+          "code": "JNC1",
+          "displacement_cc": 3493,
+          "configuration": "V6 75-degree Twin-Turbo",
+          "valvetrain": "DOHC, 24 valves",
+          "power_hp": 500,
+          "rpm_at_peak_power": 6500,
+          "torque_lb_ft": 406,
+          "materials": "Aluminum block and heads"
+        },
+        "electric_motors": {
+          "front": "Two motors (36hp each) providing torque vectoring AWD",
+          "rear": "One motor (47hp) integrated with transmission"
+        },
+        "total_system_output": {
+          "power_hp": 573,
+          "torque_lb_ft": 476
+        }
+      },
+      "transmission": "9-speed DCT",
+      "chassis": {
+        "construction": "Multi-material space frame (aluminum, steel, carbon fiber)",
+        "weight_kg": 1725,
+        "weight_distribution": "42/58 front/rear",
+        "suspension": {
+          "front": "Double wishbone with adaptive dampers",
+          "rear": "Multi-link with adaptive dampers"
+        },
+        "brakes": {
+          "front": "370mm carbon ceramic",
+          "rear": "370mm carbon ceramic"
+        }
+      },
+      "variants": {
+        "nsx_base": {
+          "power_hp": 573,
+          "features": ["Sport Hybrid SH-AWD", "Adaptive dampers"]
+        },
+        "nsx_type_s": {
+          "years": "2022",
+          "production": "350 units",
+          "power_hp": 600,
+          "features": [
+            "+27hp over standard",
+            "Larger turbochargers",
+            "Stiffer suspension",
+            "Carbon fiber roof",
+            "GT3-derived aero"
+          ],
+          "notes": "Final production NSX"
+        }
+      },
+      "driving_modes": ["Quiet", "Sport", "Sport+", "Track"],
+      "notes": "Hybrid supercar competing with McLaren and Ferrari. Built in Ohio, USA"
+    }
+  },
+
+  "aftermarket_na1_na2": {
+    "engine": {
+      "bolt_ons": {
+        "intake": ["Comptech", "RM Racing"],
+        "header": ["Mugen", "Taitec", "Comptech"],
+        "exhaust": ["Taitec", "Mugen", "Sorcery"]
+      },
+      "head_work": {
+        "cams": ["CT Engineering", "Science of Speed"],
+        "port_work": "Significant gains available"
+      },
+      "forced_induction": {
+        "supercharger": {
+          "kits": ["CT Engineering", "Science of Speed", "Comptech"],
+          "power": "350-400hp"
+        },
+        "turbo": {
+          "kits": ["Greddy", "HKS", "SOS"],
+          "power": "450-600hp"
+        }
+      },
+      "displacement": {
+        "3_2l_conversion": "NA1 can be converted to 3.2L with C32B",
+        "stroker_kits": "Available for larger displacement"
+      }
+    },
+    "suspension": {
+      "coilovers": {
+        "street": ["Ohlins", "KW V3", "JRZ"],
+        "track": ["Moton", "Penske", "Öhlins TTX"]
+      },
+      "sway_bars": ["Dali Racing", "Comptech"],
+      "bushings": ["Energy Suspension", "Hardrace"]
+    },
+    "brakes": {
+      "oem_plus": "StopTech or Brembo pads/rotors",
+      "bbk": ["AP Racing", "StopTech", "Brembo GT"],
+      "notes": "Stock brakes are good - pads first"
+    },
+    "wheels": {
+      "bolt_pattern": "5x114.3",
+      "oem_sizes": {
+        "front": "16x7 (NA1) / 17x7 (NA2)",
+        "rear": "17x8.5 (NA1) / 17x9 (NA2)"
+      },
+      "popular_upgrades": {
+        "street": "18x8 front / 18x10 rear",
+        "track": "17x9 front / 18x10 rear (lighter)"
+      },
+      "iconic": ["Mugen MF10", "Enkei NT03", "TE37"]
+    },
+    "aero": {
+      "factory": ["Type R wing", "NSX-R front lip"],
+      "aftermarket": ["Downforce", "Sorcery", "Varis"]
+    }
+  },
+
+  "collectibility": {
+    "na1_values": {
+      "standard": "$70,000-120,000",
+      "type_r": "$300,000-500,000+"
+    },
+    "na2_values": {
+      "standard": "$80,000-150,000",
+      "type_s": "$120,000-200,000",
+      "type_r": "$500,000+"
+    },
+    "nc1_values": {
+      "standard": "$100,000-150,000",
+      "type_s": "$200,000+"
+    },
+    "factors": [
+      "Mileage (low-mile commands premium)",
+      "Color (Championship White, Berlina Black)",
+      "Service history (snap ring recall critical)",
+      "Manual vs automatic"
+    ]
+  },
+
+  "common_issues_na": {
+    "snap_ring_failure": "Critical recall - verify service history",
+    "timing_belt": "Every 90,000 miles - expensive service",
+    "clutch_delay_valve": "Commonly removed for better feel",
+    "climate_control": "LCD display failure",
+    "targa_seals": "Can leak with age"
+  },
+
+  "community": {
+    "forums": ["NSXPrime.com", "NSX Club of America"],
+    "events": ["NSXPO (annual)", "Regional meets"],
+    "specialists": ["Science of Speed", "Comptech", "SOS Racing"]
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "component_category": "Suspension and Chassis",
+  "last_updated": "2024-11-22",
+
+  "coilover_brands": {
+    "budget_tier": {
+      "bc_racing": {
+        "series": ["BR", "DS", "ER"],
+        "price_range": "$800-1500",
+        "warranty": "1 year",
+        "features": ["32-way damping", "Adjustable ride height"],
+        "pros": ["Good value", "Rebuildable", "Wide application range"],
+        "cons": ["Basic valving", "May need revalve for track"],
+        "best_for": "Street, occasional spirited driving"
+      },
+      "tein": {
+        "series": ["Street Basis Z", "Street Advance Z", "Flex Z", "Flex A"],
+        "price_range": "$800-1800",
+        "warranty": "1 year",
+        "features": ["Japanese quality", "EDFC compatibility (Flex)"],
+        "pros": ["Proven reliability", "Good ride quality"],
+        "cons": ["Less adjustable than competitors"],
+        "best_for": "Street, comfort-oriented"
+      },
+      "megan_racing": {
+        "price_range": "$600-1000",
+        "notes": "Entry-level option"
+      }
+    },
+    "mid_tier": {
+      "kw_suspensions": {
+        "series": ["V1", "V2", "V3"],
+        "price_range": "$1500-3500",
+        "warranty": "2 years",
+        "features": ["German engineering", "Stainless steel construction"],
+        "pros": ["Excellent build quality", "Great street comfort", "TÜV approved"],
+        "cons": ["Conservative valving for some tastes"],
+        "best_for": "Daily driver + occasional track"
+      },
+      "fortune_auto": {
+        "series": ["500", "510", "Dreadnought"],
+        "price_range": "$1400-2500",
+        "warranty": "Lifetime on body",
+        "features": ["Custom valving available", "Swift springs"],
+        "pros": ["Excellent value", "Great customer service", "Custom valving"],
+        "cons": ["Less known brand"],
+        "best_for": "Street + track days"
+      },
+      "progress": {
+        "series": ["CS2", "Competition"],
+        "price_range": "$1500-2000",
+        "features": ["Race-proven"],
+        "best_for": "Track-focused street cars"
+      }
+    },
+    "high_tier": {
+      "ohlins": {
+        "series": ["Road & Track", "DFV", "TTX"],
+        "price_range": "$2500-5000+",
+        "warranty": "2 years",
+        "features": ["DFV technology", "Rebuildable"],
+        "pros": ["Industry benchmark", "Exceptional ride quality", "Rebuildable"],
+        "cons": ["Expensive", "May need custom valving"],
+        "best_for": "Serious enthusiasts, track + street"
+      },
+      "jrz": {
+        "series": ["RS One", "RS Pro", "RS Tour"],
+        "price_range": "$3000-6000",
+        "features": ["Custom built to order", "Remote reservoirs available"],
+        "pros": ["Bespoke valving", "Excellent quality"],
+        "cons": ["Long lead times", "Expensive"],
+        "best_for": "Track-focused builds"
+      },
+      "mcs": {
+        "series": ["TT1", "2-Way", "3-Way"],
+        "price_range": "$4000-8000",
+        "features": ["Remote reservoirs", "Rebound/compression independent"],
+        "pros": ["Time Attack standard", "Highly adjustable"],
+        "cons": ["Complex setup", "Expensive"],
+        "best_for": "Serious track, time attack"
+      },
+      "penske": {
+        "series": ["Custom built"],
+        "price_range": "$5000-10000+",
+        "features": ["Full custom valving", "Professional race standard"],
+        "best_for": "Professional racing"
+      }
+    }
+  },
+
+  "sway_bars": {
+    "manufacturers": {
+      "progress": {
+        "description": "Most popular Honda sway bar brand",
+        "sizes_available": ["22mm-32mm front", "16mm-24mm rear"],
+        "notes": "Proven, affordable, great quality"
+      },
+      "whiteline": {
+        "description": "Australian brand, excellent quality",
+        "features": ["Adjustable end links", "Multiple stiffness settings"],
+        "notes": "Premium option"
+      },
+      "suspension_techniques": {
+        "description": "Budget-friendly option",
+        "notes": "Good value for street use"
+      },
+      "spoon_sports": {
+        "description": "JDM premium brand",
+        "notes": "Higher price, race-proven"
+      }
+    },
+    "sizing_guide": {
+      "front": {
+        "stock_upgrade": "26-28mm for most Hondas",
+        "track": "28-32mm depending on chassis"
+      },
+      "rear": {
+        "adding_rear": "Essential mod for handling balance",
+        "typical_size": "20-24mm"
+      }
+    }
+  },
+
+  "control_arms_and_links": {
+    "adjustable_options": {
+      "skunk2_pro_series": {
+        "type": "Spherical bearing",
+        "components": ["Front upper", "Front lower", "Rear upper", "Rear lower", "Toe links"],
+        "pros": ["Full adjustability", "Increased caster/camber range"],
+        "cons": ["NVH increase", "Maintenance required"],
+        "best_for": "Track, aggressive alignment"
+      },
+      "hardrace": {
+        "type": "Spherical or rubber",
+        "components": "Full range available",
+        "pros": ["Good value", "Multiple bushing options"],
+        "best_for": "Street + track"
+      },
+      "spc": {
+        "type": "Adjustable camber kits",
+        "components": ["EZ Cam bolts", "Adjustable arms"],
+        "pros": ["Easy install", "Maintain OEM feel"],
+        "best_for": "Mild alignment changes"
+      },
+      "ingalls": {
+        "type": "Adjustable camber kits",
+        "notes": "OEM supplier quality"
+      }
+    }
+  },
+
+  "bushings": {
+    "polyurethane": {
+      "energy_suspension": {
+        "description": "Most complete line of poly bushings",
+        "pros": ["Improved response", "Durability", "Full kits available"],
+        "cons": ["Increased NVH", "May squeak if not lubricated"],
+        "hardness": "Varies by application"
+      },
+      "prothane": {
+        "description": "Alternative to Energy Suspension",
+        "notes": "Similar performance"
+      }
+    },
+    "spherical": {
+      "description": "Metal-on-metal bearings for maximum precision",
+      "applications": ["Control arms", "Tie rods", "Sway bar end links"],
+      "pros": ["Zero deflection", "Maximum feedback"],
+      "cons": ["Significant NVH", "Maintenance required", "Not street-friendly"],
+      "best_for": "Track-only or dedicated builds"
+    },
+    "delrin_igus": {
+      "description": "Self-lubricating polymer bearings",
+      "pros": ["Less NVH than spherical", "No maintenance"],
+      "cons": ["Less precise than spherical"],
+      "best_for": "Street + track compromise"
+    }
+  },
+
+  "chassis_bracing": {
+    "strut_bars": {
+      "front": {
+        "purpose": "Reduce chassis flex, improve turn-in",
+        "brands": ["DC Sports", "Cusco", "Spoon", "Ultra Racing"],
+        "types": ["Single point", "Multi-point", "Fender braces"]
+      },
+      "rear": {
+        "purpose": "Improve rear stability",
+        "brands": ["ASR", "Password JDM", "Cusco"]
+      }
+    },
+    "lower_tie_bars": {
+      "front": {
+        "brands": ["Skunk2", "ASR", "DC Sports"],
+        "effect": "Stiffen front subframe"
+      },
+      "rear": {
+        "brands": ["ASR", "Skunk2", "Cusco"],
+        "effect": "Stiffen rear subframe"
+      }
+    },
+    "subframe_braces": {
+      "description": "Connect subframe to chassis",
+      "brands": ["ASR", "Function7", "Megan Racing"],
+      "importance": "Critical for lowered cars to prevent subframe stress"
+    },
+    "roll_cages": {
+      "bolt_in": {
+        "brands": ["Autopower", "Kirk Racing"],
+        "pros": ["Removable", "No welding"],
+        "cons": ["Less rigid than weld-in"]
+      },
+      "weld_in": {
+        "brands": ["Matter", "Custom chromoly shops"],
+        "material": "DOM chromoly tubing",
+        "notes": "Required for most racing sanctioning bodies"
+      }
+    }
+  },
+
+  "alignment_specifications": {
+    "street_performance": {
+      "front_camber": "-1.5° to -2.0°",
+      "rear_camber": "-1.0° to -1.5°",
+      "front_toe": "Slight toe-out (1/16\" out total)",
+      "rear_toe": "Slight toe-in (1/8\" in total)",
+      "caster": "Maximum available"
+    },
+    "track_aggressive": {
+      "front_camber": "-2.5° to -3.5°",
+      "rear_camber": "-2.0° to -2.5°",
+      "front_toe": "Zero to slight toe-out",
+      "rear_toe": "Zero to slight toe-in",
+      "notes": "Will wear tires faster on street"
+    },
+    "by_chassis": {
+      "ef_eg_ek_civic": {
+        "notes": "Double wishbone allows significant camber range",
+        "max_camber_achievable": "-4°+ with adjustable arms"
+      },
+      "dc2_integra": {
+        "notes": "Similar to Civic - excellent adjustability"
+      },
+      "s2000": {
+        "notes": "AP1 needs more rear camber than AP2"
+      }
+    }
+  },
+
+  "wheel_specs_by_chassis": {
+    "ef_civic_crx": {"bolt_pattern": "4x100", "hub_bore": "56.1mm"},
+    "eg_civic": {"bolt_pattern": "4x100", "hub_bore": "56.1mm"},
+    "ek_civic": {"bolt_pattern": "4x100", "hub_bore": "56.1mm"},
+    "dc2_integra": {"bolt_pattern": "5x114.3", "hub_bore": "64.1mm"},
+    "dc5_rsx": {"bolt_pattern": "5x114.3", "hub_bore": "64.1mm"},
+    "s2000": {"bolt_pattern": "5x114.3", "hub_bore": "64.1mm"},
+    "8th_gen_civic": {"bolt_pattern": "5x114.3", "hub_bore": "64.1mm"},
+    "fk8_type_r": {"bolt_pattern": "5x120", "hub_bore": "64.1mm"},
+    "fl5_type_r": {"bolt_pattern": "5x120", "hub_bore": "64.1mm"}
+  },
+
+  "trusted_vendors": {
+    "suspension_specialists": [
+      "Suspension.com",
+      "Tire Rack",
+      "Evasive Motorsports",
+      "King Motorsports"
+    ],
+    "honda_specific": [
+      "King Motorsports",
+      "Jhpusa",
+      "ICB Motorsport",
+      "Inline Pro"
+    ],
+    "jdm_parts": [
+      "RHDJapan",
+      "Nengun",
+      "Yahoo Japan Auctions"
+    ]
+  }
+}

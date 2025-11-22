@@ -1,0 +1,297 @@
+{
+  "vehicle_id": "HONDA-ACURA-INTEGRA",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "brand": "Acura (North America) / Honda (Global)",
+  "production_years": "1985-2006, 2023-present",
+  "body_styles": ["3-door hatchback", "4-door sedan", "5-door liftback"],
+  "historical_significance": "Flagship Honda sport compact. The Type R variant is considered one of the greatest FWD cars ever made.",
+
+  "generations": {
+    "first_gen_da1_da3": {
+      "chassis_codes": ["DA1", "DA2", "DA3", "DA4"],
+      "years": "1985-1989",
+      "nickname": "DA Integra (First Gen)",
+      "platform": "Honda Quint platform",
+      "engines": {
+        "d16a1": {"displacement": "1.6L", "power_hp": 113, "notes": "DOHC 16-valve - first 16v Honda in US"},
+        "d16a3": {"displacement": "1.6L", "power_hp": 118, "notes": "PGM-FI version"}
+      },
+      "body_styles": ["3-door hatchback", "4-door sedan"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "suspension": {
+        "front": "MacPherson strut",
+        "rear": "Independent semi-trailing arm"
+      },
+      "weight_kg": 1040,
+      "variants": {
+        "integra_rs": "Base 3-door",
+        "integra_ls": "Well-equipped 3-door/sedan",
+        "integra_special_edition": "Leather, sunroof"
+      },
+      "notes": "Launched Acura brand in US. Set template for sport compact segment",
+      "collectibility": "Moderate - fewer survivors than later gens"
+    },
+    "second_gen_da5_da9": {
+      "chassis_codes": ["DA5", "DA6", "DA7", "DA8", "DA9", "DB1", "DB2"],
+      "years": "1990-1993",
+      "nickname": "DA Integra (Second Gen)",
+      "engines": {
+        "b18a1": {"displacement": "1.8L", "power_hp": 130, "notes": "DOHC non-VTEC"},
+        "b17a1": {"displacement": "1.7L", "power_hp": 160, "notes": "DOHC VTEC (GS-R only)"}
+      },
+      "body_styles": ["3-door hatchback", "4-door sedan"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2570,
+      "suspension": {
+        "front": "MacPherson strut with lower A-arm",
+        "rear": "Independent double wishbone"
+      },
+      "weight_kg": {"hatchback": 1120, "sedan": 1160},
+      "variants": {
+        "integra_rs": {
+          "engine": "B18A1",
+          "power_hp": 130,
+          "features": "Base 3-door, manual trans only"
+        },
+        "integra_ls": {
+          "engine": "B18A1",
+          "power_hp": 130,
+          "features": "Power windows, A/C, nicer interior"
+        },
+        "integra_gs": {
+          "engine": "B18A1",
+          "power_hp": 130,
+          "features": "4-door sedan, leather available"
+        },
+        "integra_gs_r": {
+          "chassis_code": "DB2",
+          "engine": "B17A1 VTEC",
+          "power_hp": 160,
+          "redline": 8000,
+          "features": ["LSD", "Sport suspension", "4-wheel disc"],
+          "notes": "First VTEC Integra in US. Only 1.7L VTEC ever made"
+        }
+      },
+      "aftermarket_focus": "B18A popular for LS/VTEC builds",
+      "collectibility": "GS-R highly sought after"
+    },
+    "third_gen_dc2_dc4_db8": {
+      "chassis_codes": ["DC2", "DC4", "DB6", "DB7", "DB8"],
+      "years": "1994-2001",
+      "nickname": "DC2 Integra",
+      "platform": "Honda Global Compact platform",
+      "engines": {
+        "b18b1": {"displacement": "1.8L", "power_hp": 142, "notes": "DOHC non-VTEC"},
+        "b18c1": {"displacement": "1.8L", "power_hp": 170, "notes": "GS-R DOHC VTEC"},
+        "b18c5": {"displacement": "1.8L", "power_hp": 195, "notes": "Type R USDM"},
+        "b18c_spec_r": {"displacement": "1.8L", "power_hp": 200, "notes": "Type R JDM"}
+      },
+      "body_styles": ["3-door hatchback (DC2)", "4-door sedan (DC4/DB8)"],
+      "transmission": {
+        "manual": "5-speed (non-Type R) / Close-ratio 5-speed (Type R)",
+        "automatic": "4-speed"
+      },
+      "wheelbase_mm": 2570,
+      "suspension": {
+        "front": "MacPherson strut with lower wishbone",
+        "rear": "Independent double wishbone",
+        "type_r": "Stiffer springs, Showa dampers, thicker sway bars"
+      },
+      "weight_kg": {"hatchback": 1120, "type_r": 1080},
+      "brakes": {
+        "standard": "Front: 260mm disc, Rear: 239mm disc",
+        "type_r": "Front: 282mm disc, Rear: 260mm disc"
+      },
+      "variants": {
+        "integra_rs": {
+          "chassis_code": "DC4",
+          "engine": "B18B1",
+          "power_hp": 142,
+          "features": "Base model, 3-door only, stripped"
+        },
+        "integra_ls": {
+          "chassis_code": "DC4",
+          "engine": "B18B1",
+          "power_hp": 142,
+          "features": "3-door or sedan, power features"
+        },
+        "integra_gs": {
+          "chassis_code": "DC4",
+          "engine": "B18B1",
+          "power_hp": 142,
+          "features": "Sedan, leather/sunroof available"
+        },
+        "integra_gs_r": {
+          "chassis_code": "DC2",
+          "engine": "B18C1 VTEC",
+          "power_hp": 170,
+          "redline": 8100,
+          "features": ["LSD", "Sport suspension", "Leather Recaros"],
+          "notes": "Daily driver's choice for VTEC. Practical and quick"
+        },
+        "integra_type_r_usdm": {
+          "chassis_code": "DC2",
+          "engine": "B18C5",
+          "power_hp": 195,
+          "redline": 8400,
+          "weight_kg": 1120,
+          "years": "1997-2001",
+          "production": {
+            "1997": 320,
+            "1998": 1500,
+            "1999": 900,
+            "2000": 1200,
+            "2001": 700
+          },
+          "colors": ["Championship White", "Phoenix Yellow (2000-01)"],
+          "features": [
+            "Hand-ported intake manifold",
+            "Close-ratio 5-speed",
+            "Helical LSD",
+            "4-wheel disc brakes",
+            "Recaro seats",
+            "MOMO steering wheel",
+            "Strut tower bar",
+            "Seam-welded chassis"
+          ],
+          "notes": "Most stolen car in America for years. One of the greatest FWD cars ever"
+        },
+        "integra_type_r_jdm": {
+          "chassis_code": "DC2",
+          "engine": "B18C Spec R",
+          "power_hp": 200,
+          "redline": 8600,
+          "weight_kg": 1060,
+          "features": [
+            "96-spec: Fixed headlights",
+            "98-spec: Projector headlights",
+            "Hand-ported everything",
+            "ITB intake available (00-spec)"
+          ],
+          "variants": {
+            "96_spec": "Pop-up headlights, 200hp",
+            "98_spec": "Projector headlights, updated interior",
+            "00_spec": "Minor updates, last JDM ITR"
+          },
+          "notes": "Lighter and more powerful than USDM. The holy grail of B-series"
+        },
+        "integra_sir_jdm": {
+          "chassis_code": "DB8",
+          "engine": "B18C",
+          "power_hp": 180,
+          "notes": "4-door sedan with VTEC. JDM only"
+        }
+      },
+      "aftermarket_focus": "Massive aftermarket. Engine bay compatible with B16, B18, B20. Perfect swap platform",
+      "collectibility": "Type R values have skyrocketed. Clean examples command $50,000+"
+    },
+    "fourth_gen_dc5": {
+      "chassis_codes": ["DC5"],
+      "years": "2002-2006",
+      "nickname": "DC5 Integra / RSX",
+      "platform": "Honda Global Compact platform",
+      "brand_name": {
+        "north_america": "Acura RSX",
+        "global": "Honda Integra"
+      },
+      "engines": {
+        "k20a3": {"displacement": "2.0L", "power_hp": 160, "notes": "Base i-VTEC"},
+        "k20a2": {"displacement": "2.0L", "power_hp": 200, "notes": "Type S i-VTEC"},
+        "k20a": {"displacement": "2.0L", "power_hp": 220, "notes": "Type R JDM"}
+      },
+      "body_styles": ["3-door hatchback only"],
+      "transmission": {
+        "manual": "5-speed (base) / 6-speed (Type S/R)",
+        "automatic": "5-speed"
+      },
+      "wheelbase_mm": 2570,
+      "suspension": {
+        "front": "MacPherson strut with lower A-arm",
+        "rear": "Independent double wishbone"
+      },
+      "weight_kg": {"base": 1200, "type_s": 1220, "type_r": 1180},
+      "variants": {
+        "rsx_base": {
+          "engine": "K20A3",
+          "power_hp": 160,
+          "features": "Well-equipped base, auto available"
+        },
+        "rsx_type_s": {
+          "engine": "K20A2",
+          "power_hp": 200,
+          "redline": 8100,
+          "transmission": "6-speed manual only",
+          "features": ["LSD (2005+)", "Sport suspension", "Brembo brakes (2005+)"],
+          "notes": "K20A2 is highly sought after swap engine"
+        },
+        "integra_type_r_dc5_jdm": {
+          "chassis_code": "DC5",
+          "engine": "K20A",
+          "power_hp": 220,
+          "redline": 8400,
+          "weight_kg": 1180,
+          "features": [
+            "Hand-ported intake",
+            "6-speed close-ratio",
+            "Helical LSD",
+            "Brembo brakes",
+            "Recaro seats",
+            "Carbon fiber interior trim"
+          ],
+          "notes": "JDM Type R. Never sold in US. K20A is the ultimate K-series"
+        }
+      },
+      "facelift": {
+        "years": "2005-2006",
+        "changes": ["New front fascia", "Brembo brakes (Type S)", "LSD (Type S)", "HID headlights"]
+      },
+      "aftermarket_focus": "K-series platform. 6-speed trans is best K-series gearbox. Popular swap donor"
+    },
+    "fifth_gen_de1": {
+      "chassis_codes": ["DE1", "DE4"],
+      "years": "2023-present",
+      "nickname": "New Integra",
+      "platform": "Honda Global Compact platform",
+      "brand_name": "Acura",
+      "engines": {
+        "l15ca": {"displacement": "1.5L Turbo", "power_hp": 200, "notes": "Base"},
+        "k20c1": {"displacement": "2.0L Turbo", "power_hp": 320, "notes": "Type S"}
+      },
+      "body_styles": ["5-door liftback"],
+      "transmission": {
+        "base": "CVT or 6-speed manual",
+        "type_s": "6-speed manual only"
+      },
+      "wheelbase_mm": 2735,
+      "suspension": {
+        "front": "MacPherson strut",
+        "rear": "Multi-link"
+      },
+      "weight_kg": {"base": 1400, "type_s": 1430},
+      "variants": {
+        "integra_base_a_spec": {
+          "engine": "L15CA Turbo",
+          "power_hp": 200,
+          "torque_lb_ft": 192,
+          "notes": "Same powertrain as Civic Si"
+        },
+        "integra_type_s": {
+          "chassis_code": "DE4",
+          "engine": "K20C1 Turbo",
+          "power_hp": 320,
+          "torque_lb_ft": 310,
+          "redline": 7000,
+          "transmission": "6-speed manual only",
+          "features": [
+            "Helical LSD",
+            "Brembo brakes",
+            "Adaptive dampers",
+            "Alcantara interior"
+          ],
+          "notes": "Same K20C1 as FK8 Type R with slight tune increase"
+        }
+      },
+      "aftermarket_focus": "Growing - shares platform with Civic. FK8/FL5 parts largely compatible for Type S"
+    }
+  }
+}

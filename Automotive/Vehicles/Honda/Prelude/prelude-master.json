@@ -1,0 +1,228 @@
+{
+  "vehicle_id": "HONDA-PRELUDE",
+  "manufacturer": "Honda Motor Co., Ltd.",
+  "production_years": "1978-2001",
+  "body_styles": ["2-door coupe"],
+  "historical_significance": "Honda's sports coupe flagship. Known for advanced technology including 4-wheel steering and VTEC. The H22A was the most powerful Honda 4-cylinder of its era.",
+
+  "generations": {
+    "first_gen_sn": {
+      "chassis_codes": ["SN"],
+      "years": "1978-1982",
+      "engines": {
+        "ek1_1751": {"displacement": "1.8L", "power_hp": 72, "notes": "CVCC"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "Hondamatic"],
+      "features": ["Power moonroof standard", "Digital clock"],
+      "notes": "First Japanese production car with power moonroof standard. Simple, lightweight sports coupe",
+      "weight_kg": 960
+    },
+    "second_gen_ab_ba": {
+      "chassis_codes": ["AB", "BA1", "BA2", "BA3"],
+      "years": "1983-1987",
+      "engines": {
+        "a18a": {"displacement": "1.8L", "power_hp": 100, "notes": "Carbureted"},
+        "b20a": {"displacement": "2.0L", "power_hp": 110, "notes": "Fuel injected (Si)"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "features": {
+        "standard": ["Pop-up headlights", "Double wishbone front suspension"],
+        "si": ["Fuel injection", "Sport suspension"]
+      },
+      "wheelbase_mm": 2450,
+      "weight_kg": 1060,
+      "variants": {
+        "prelude_base": "A18A carbureted",
+        "prelude_si": "B20A fuel injected, upgraded interior"
+      },
+      "notes": "Introduced pop-up headlights. Clean, angular design"
+    },
+    "third_gen_ba4_ba5": {
+      "chassis_codes": ["BA4", "BA5", "BA7"],
+      "years": "1988-1991",
+      "nickname": "3rd Gen Prelude",
+      "engines": {
+        "b20a5": {"displacement": "2.0L", "power_hp": 104, "notes": "S model"},
+        "b20a": {"displacement": "2.0L", "power_hp": 135, "notes": "Si (carb)"},
+        "b20a1": {"displacement": "2.0L", "power_hp": 140, "notes": "Si (FI)"},
+        "b21a1": {"displacement": "2.1L", "power_hp": 145, "notes": "Si 4WS"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2550,
+      "suspension": {
+        "front": "Double wishbone",
+        "rear": "Double wishbone",
+        "4ws": "Mechanical 4-wheel steering (Si 4WS)"
+      },
+      "weight_kg": 1200,
+      "variants": {
+        "prelude_s": {
+          "engine": "B20A5",
+          "power_hp": 104,
+          "features": "Base model"
+        },
+        "prelude_si": {
+          "engine": "B20A / B20A1",
+          "power_hp": 135,
+          "features": ["Sport suspension", "Leather option"]
+        },
+        "prelude_si_4ws": {
+          "engine": "B21A1",
+          "power_hp": 145,
+          "features": ["Mechanical 4-wheel steering", "World's first 4WS production car"],
+          "notes": "4WS turns rear wheels opposite direction at low speed, same direction at high speed"
+        }
+      },
+      "notes": "First production car with mechanical 4-wheel steering. Set design standard for 90s Japanese sports coupes"
+    },
+    "fourth_gen_bb1_bb2_bb4": {
+      "chassis_codes": ["BB1", "BB2", "BB4"],
+      "years": "1992-1996",
+      "nickname": "4th Gen Prelude / BB",
+      "engines": {
+        "h23a1": {"displacement": "2.3L", "power_hp": 160, "notes": "DOHC non-VTEC (Si)"},
+        "h22a1": {"displacement": "2.2L", "power_hp": 190, "notes": "DOHC VTEC (VTEC)"},
+        "h22a_jdm": {"displacement": "2.2L", "power_hp": 200, "notes": "JDM Si VTEC"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "4-speed automatic"],
+      "wheelbase_mm": 2550,
+      "suspension": {
+        "front": "Double wishbone",
+        "rear": "Double wishbone"
+      },
+      "weight_kg": {"si": 1280, "vtec": 1300},
+      "brakes": {
+        "front": "282mm ventilated disc",
+        "rear": "260mm solid disc"
+      },
+      "variants": {
+        "prelude_s": {
+          "chassis_code": "BB2",
+          "engine": "F22A (early) / H23A3 (late)",
+          "power_hp": 135,
+          "features": "Base model, no ABS"
+        },
+        "prelude_si": {
+          "chassis_code": "BB2",
+          "engine": "H23A1",
+          "power_hp": 160,
+          "features": ["ABS", "Leather option"],
+          "notes": "More torque than VTEC at low RPM"
+        },
+        "prelude_si_4ws": {
+          "chassis_code": "BB4",
+          "engine": "H23A1",
+          "power_hp": 160,
+          "features": ["Electronic 4-wheel steering", "ABS"]
+        },
+        "prelude_vtec": {
+          "chassis_code": "BB1",
+          "engine": "H22A1",
+          "power_hp": 190,
+          "redline": 7200,
+          "features": ["VTEC", "LSD", "Sport suspension"],
+          "notes": "Most powerful Honda 4-cylinder in North America"
+        },
+        "prelude_si_vtec_jdm": {
+          "chassis_code": "BB1/BB4",
+          "engine": "H22A",
+          "power_hp": 200,
+          "redline": 7600,
+          "notes": "JDM spec with higher output"
+        }
+      },
+      "aftermarket_focus": "H22A is highly sought after swap engine. Very popular for Accord/Civic swaps"
+    },
+    "fifth_gen_bb5_bb6_bb8_bb9": {
+      "chassis_codes": ["BB5", "BB6", "BB7", "BB8", "BB9"],
+      "years": "1997-2001",
+      "nickname": "5th Gen Prelude",
+      "engines": {
+        "h22a4": {"displacement": "2.2L", "power_hp": 195, "notes": "DOHC VTEC (US base)"},
+        "h22a4_sh": {"displacement": "2.2L", "power_hp": 200, "notes": "Type SH with ATTS"},
+        "h22a_euro_r": {"displacement": "2.2L", "power_hp": 220, "notes": "JDM Type S/Euro R"}
+      },
+      "body_styles": ["2-door coupe"],
+      "transmission": ["5-speed manual", "4-speed automatic (non-SH)"],
+      "wheelbase_mm": 2590,
+      "suspension": {
+        "front": "Double wishbone",
+        "rear": "Double wishbone",
+        "sh": "ATTS Active Torque Transfer System"
+      },
+      "weight_kg": {"base": 1310, "sh": 1340},
+      "brakes": {
+        "front": "282mm ventilated disc",
+        "rear": "260mm solid disc"
+      },
+      "variants": {
+        "prelude_base": {
+          "chassis_code": "BB6",
+          "engine": "H22A4",
+          "power_hp": 195,
+          "features": "Well-equipped base, leather option"
+        },
+        "prelude_type_sh": {
+          "chassis_code": "BB6",
+          "engine": "H22A4",
+          "power_hp": 200,
+          "features": {
+            "atts": {
+              "description": "Active Torque Transfer System",
+              "function": "Transfers up to 80% torque to outer wheel in corners",
+              "benefit": "Dramatically reduces understeer"
+            },
+            "other": ["Sport suspension", "5-speed manual only"]
+          },
+          "notes": "Mechanical limited-slip torque vectoring before it was common"
+        },
+        "prelude_type_s_jdm": {
+          "chassis_code": "BB8",
+          "engine": "H22A (Euro R spec)",
+          "power_hp": 220,
+          "redline": 8000,
+          "features": [
+            "Hand-ported intake",
+            "Higher compression",
+            "Sport cams"
+          ],
+          "notes": "JDM flagship Prelude. Red valve cover H22A"
+        },
+        "prelude_sir_jdm": {
+          "engine": "H22A",
+          "power_hp": 200,
+          "notes": "Standard JDM H22A spec"
+        }
+      },
+      "colors_notable": ["Electron Blue Pearl (EBP)", "Milan Red"],
+      "aftermarket_focus": "Last Prelude. H22A4 still very popular for swaps",
+      "notes": "Final generation. ATTS was revolutionary but Honda discontinued the nameplate"
+    }
+  },
+
+  "h22a_swap_info": {
+    "description": "H22A swap guide for other Honda chassis",
+    "donor_vehicle": "1992-2001 Prelude VTEC",
+    "swap_targets": {
+      "accord_cb_cd": {
+        "compatibility": "Near bolt-in with Hasport mounts",
+        "transmission": "H22 trans or F-series with adapter"
+      },
+      "civic_eg_ek": {
+        "compatibility": "Requires custom mounts, axles, wiring",
+        "mounts": ["Hasport", "Innovative"],
+        "notes": "Heavy for Civic but very popular"
+      }
+    },
+    "h22a_variants": {
+      "h22a1_usdm": "190hp - common US swap",
+      "h22a4_usdm": "195-200hp - 5th gen US",
+      "h22a_jdm": "200hp - JDM black top",
+      "h22a_euro_r": "220hp - JDM red top (most sought after)"
+    }
+  }
+}
