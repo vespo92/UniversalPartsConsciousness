@@ -73,6 +73,7 @@ function loadEngineData(engineId: string): {
   parts: any
   interchangeability: any
   tools: any
+  aftermarket: any
 } | null {
   const engineDir = path.join(ENGINE_DATA_DIR, engineId)
 
@@ -85,6 +86,7 @@ function loadEngineData(engineId: string): {
   const partsPath = path.join(engineDir, 'parts-catalog.json')
   const interchangePath = path.join(engineDir, 'interchangeability-matrix.json')
   const toolsPath = path.join(engineDir, 'tools-and-service.json')
+  const aftermarketPath = path.join(engineDir, 'aftermarket-ecosystem.json')
 
   try {
     return {
@@ -92,6 +94,7 @@ function loadEngineData(engineId: string): {
       parts: fs.existsSync(partsPath) ? JSON.parse(fs.readFileSync(partsPath, 'utf-8')) : null,
       interchangeability: fs.existsSync(interchangePath) ? JSON.parse(fs.readFileSync(interchangePath, 'utf-8')) : null,
       tools: fs.existsSync(toolsPath) ? JSON.parse(fs.readFileSync(toolsPath, 'utf-8')) : null,
+      aftermarket: fs.existsSync(aftermarketPath) ? JSON.parse(fs.readFileSync(aftermarketPath, 'utf-8')) : null,
     }
   } catch (err) {
     console.error(`Error loading engine data:`, err)
@@ -452,6 +455,179 @@ function displayToolsAndService(engineId: string): void {
 }
 
 /**
+ * Display aftermarket ecosystem information
+ */
+function displayAftermarket(engineId: string): void {
+  const data = loadEngineData(engineId)
+  if (!data || !data.aftermarket) {
+    console.error(`No aftermarket ecosystem data for ${engineId}`)
+    return
+  }
+
+  const { aftermarket } = data
+
+  console.log(`
+╔════════════════════════════════════════════════════════════╗
+║  AFTERMARKET ECOSYSTEM: ${(aftermarket.engine_id || engineId).padEnd(33)}║
+╚════════════════════════════════════════════════════════════╝
+`)
+
+  // Vendors and Retailers
+  if (aftermarket.vendors_and_retailers) {
+    console.log(`\n${'═'.repeat(60)}`)
+    console.log(`  VENDORS & RETAILERS`)
+    console.log(`${'═'.repeat(60)}`)
+
+    const vendors = aftermarket.vendors_and_retailers
+
+    if (vendors.oem_parts) {
+      console.log(`\n  OEM Parts Sources:`)
+      for (const [key, vendor] of Object.entries(vendors.oem_parts)) {
+        const v = vendor as any
+        console.log(`    • ${key.replace(/_/g, ' ').toUpperCase()}: ${v.url || 'N/A'}`)
+        console.log(`      └─ ${v.specialty}`)
+      }
+    }
+
+    if (vendors.performance_parts) {
+      console.log(`\n  Performance Parts:`)
+      for (const [key, vendor] of Object.entries(vendors.performance_parts)) {
+        const v = vendor as any
+        console.log(`    • ${v.name || key}: ${v.url || 'N/A'}`)
+        console.log(`      └─ ${v.specialty}`)
+      }
+    }
+
+    if (vendors.tuning_software) {
+      console.log(`\n  Tuning Software:`)
+      for (const [key, vendor] of Object.entries(vendors.tuning_software)) {
+        const v = vendor as any
+        console.log(`    • ${v.name || key}: ${v.cost || 'N/A'}`)
+        if (v.platforms) console.log(`      └─ Platforms: ${v.platforms.join(', ')}`)
+      }
+    }
+  }
+
+  // Aftermarket Parts by Category
+  if (aftermarket.aftermarket_parts) {
+    console.log(`\n${'═'.repeat(60)}`)
+    console.log(`  AFTERMARKET PARTS CATALOG`)
+    console.log(`${'═'.repeat(60)}`)
+
+    const parts = aftermarket.aftermarket_parts
+
+    for (const [category, categoryData] of Object.entries(parts)) {
+      console.log(`\n  ${category.toUpperCase().replace(/_/g, ' ')}:`)
+      console.log(`  ${'─'.repeat(50)}`)
+
+      const catData = categoryData as any
+
+      // Handle nested structures (like turbo_upgrades with sub-options)
+      for (const [partName, partData] of Object.entries(catData)) {
+        const part = partData as any
+
+        if (part.part_number) {
+          // Direct part entry
+          const price = part.price_usd ? `$${part.price_usd}` : 'N/A'
+          const gain = part.power_gain || part.power_potential || part.power_output || ''
+          console.log(`    ${partName.replace(/_/g, ' ')}`)
+          console.log(`      Part#: ${part.part_number} | Price: ${price}${gain ? ` | Power: ${gain}` : ''}`)
+          if (part.notes) console.log(`      Note: ${part.notes}`)
+        } else if (typeof part === 'object') {
+          // Nested category (e.g., pistons under engine_internals)
+          console.log(`    ${partName.replace(/_/g, ' ').toUpperCase()}:`)
+          for (const [subName, subPart] of Object.entries(part)) {
+            const sp = subPart as any
+            if (sp.part_number) {
+              const price = sp.price_usd ? `$${sp.price_usd}` : 'N/A'
+              console.log(`      • ${subName}: ${sp.part_number} (${price})`)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Build Packages
+  if (aftermarket.build_packages) {
+    console.log(`\n${'═'.repeat(60)}`)
+    console.log(`  BUILD PACKAGES`)
+    console.log(`${'═'.repeat(60)}`)
+
+    for (const [stage, stageData] of Object.entries(aftermarket.build_packages)) {
+      const s = stageData as any
+      console.log(`\n  ${s.name || stage.toUpperCase()}`)
+      console.log(`  ${'─'.repeat(50)}`)
+      console.log(`    Power Target: ${s.power_target}`)
+      console.log(`    Total Cost: $${s.total_cost_usd}`)
+
+      if (s.parts) {
+        console.log(`    Parts:`)
+        for (const part of s.parts) {
+          console.log(`      • ${part.part} - $${part.price_usd}`)
+        }
+      }
+
+      if (s.notes) console.log(`    📝 ${s.notes}`)
+      if (s.prerequisites) {
+        console.log(`    ⚠️  Prerequisites: ${s.prerequisites.join(', ')}`)
+      }
+    }
+  }
+
+  // Maintenance Kits
+  if (aftermarket.maintenance_kits) {
+    console.log(`\n${'═'.repeat(60)}`)
+    console.log(`  MAINTENANCE KITS`)
+    console.log(`${'═'.repeat(60)}`)
+
+    for (const [kitName, kitData] of Object.entries(aftermarket.maintenance_kits)) {
+      const kit = kitData as any
+      console.log(`\n  ${kitName.replace(/_/g, ' ').toUpperCase()}:`)
+
+      if (kit.parts) {
+        console.log(`    Parts: ${Array.isArray(kit.parts) ? kit.parts.slice(0, 3).join(', ') : kit.parts}`)
+      }
+      if (kit.price_usd) console.log(`    Price: $${kit.price_usd}`)
+      if (kit.interval_miles) console.log(`    Interval: ${kit.interval_miles} miles`)
+      if (kit.source) console.log(`    Source: ${kit.source}`)
+      if (kit.critical_note) console.log(`    ⚠️  ${kit.critical_note}`)
+    }
+  }
+
+  // Quality Tiers
+  if (aftermarket.quality_tiers) {
+    console.log(`\n${'═'.repeat(60)}`)
+    console.log(`  QUALITY TIERS GUIDE`)
+    console.log(`${'═'.repeat(60)}`)
+
+    for (const [tier, tierData] of Object.entries(aftermarket.quality_tiers)) {
+      const t = tierData as any
+      console.log(`\n  ${tier.toUpperCase()}:`)
+      console.log(`    ${t.description}`)
+      if (t.brands) console.log(`    Brands: ${t.brands.join(', ')}`)
+    }
+  }
+
+  // Critical Notes (if any)
+  const criticalNotesKey = Object.keys(aftermarket).find(k => k.includes('critical') || k.includes('notes'))
+  if (criticalNotesKey && typeof aftermarket[criticalNotesKey] === 'object') {
+    console.log(`\n${'═'.repeat(60)}`)
+    console.log(`  ⚠️  CRITICAL NOTES`)
+    console.log(`${'═'.repeat(60)}`)
+
+    for (const [note, value] of Object.entries(aftermarket[criticalNotesKey])) {
+      if (typeof value === 'string') {
+        console.log(`\n  ${note.replace(/_/g, ' ').toUpperCase()}:`)
+        console.log(`    ${value}`)
+      }
+    }
+  }
+
+  console.log(`\n${'═'.repeat(60)}\n`)
+}
+
+/**
  * Import engine parts to Supabase database
  */
 async function importEngineToDatabase(engineId: string): Promise<void> {
@@ -592,6 +768,7 @@ COMMANDS:
   bom-<engine-id>            Display Bill of Materials
   interchange-<engine-id>    Show interchangeability data
   tools-<engine-id>          Show tools and service info
+  aftermarket-<engine-id>    Show aftermarket ecosystem (vendors, parts, build packages)
   import-<engine-id>         Import to Supabase database
   <engine-id>                Full info + import (if Supabase configured)
 
@@ -626,6 +803,9 @@ EXAMPLES:
   # View tools and service procedures
   bun tools/integrations/automotive-engine-extractor.ts tools-AMC-4.0L-I6
 
+  # View aftermarket ecosystem (vendors, parts, build packages)
+  bun tools/integrations/automotive-engine-extractor.ts aftermarket-BMW-N54-3.0L-I6
+
   # Import to database
   bun tools/integrations/automotive-engine-extractor.ts import-AMC-4.0L-I6
 
@@ -658,6 +838,9 @@ if (!command || command === '--help' || command === '-h') {
     } else if (command.startsWith('tools-')) {
       const engineId = command.replace('tools-', '')
       displayToolsAndService(engineId)
+    } else if (command.startsWith('aftermarket-')) {
+      const engineId = command.replace('aftermarket-', '')
+      displayAftermarket(engineId)
     } else if (command.startsWith('import-')) {
       const engineId = command.replace('import-', '')
       await importEngineToDatabase(engineId)
@@ -675,6 +858,7 @@ if (!command || command === '--help' || command === '-h') {
       displayBOM(engineId)
       displayInterchangeability(engineId)
       displayToolsAndService(engineId)
+      displayAftermarket(engineId)
       await importEngineToDatabase(engineId)
     }
   } catch (err) {

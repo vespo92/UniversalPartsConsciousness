@@ -1,0 +1,301 @@
+{
+  "engine_id": "BMW-S54B32-I6-NA",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {"url": "https://www.fcpeuro.com", "specialty": "OEM/OE parts, lifetime warranty", "ships_from": "USA"},
+      "ecs_tuning": {"url": "https://www.ecstuning.com", "specialty": "OEM and performance parts", "ships_from": "USA"},
+      "getbmwparts": {"url": "https://www.getbmwparts.com", "specialty": "Genuine BMW parts", "ships_from": "USA"},
+      "realoem": {"url": "https://www.realoem.com", "specialty": "BMW parts diagrams/lookup", "type": "reference"},
+      "turner_motorsport": {"url": "https://www.turnermotorsport.com", "specialty": "M3 specialist", "ships_from": "USA"}
+    },
+    "rod_bearing_specialists": {
+      "be_bearings": {"name": "BE Bearings", "url": "https://www.bebearings.net", "specialty": "BEST S54 rod bearings - coated, proper clearances", "notes": "THE recommended bearing for S54"},
+      "acl": {"name": "ACL Race Bearings", "url": "https://www.aclrace.com", "specialty": "Race bearings"}
+    },
+    "performance_parts": {
+      "active_autowerke": {"name": "Active Autowerke", "url": "https://www.activeautowerke.com", "specialty": "Headers, exhaust, superchargers"},
+      "ess_tuning": {"name": "ESS Tuning", "url": "https://www.esstuning.com", "specialty": "Supercharger kits - premium choice"},
+      "vf_engineering": {"name": "VF Engineering", "url": "https://www.vf-engineering.com", "specialty": "Supercharger kits"},
+      "dinan": {"name": "Dinan", "url": "https://www.dinancars.com", "specialty": "Complete performance packages"},
+      "supersprint": {"name": "Supersprint", "url": "https://www.supersprint.com", "specialty": "Exhaust systems"},
+      "akrapovic": {"name": "Akrapovic", "url": "https://www.akrapovic.com", "specialty": "Premium titanium exhaust"},
+      "gruppe_m": {"name": "Gruppe M", "url": "https://www.gruppem.jp", "specialty": "Carbon fiber intakes"}
+    },
+    "vanos_specialists": {
+      "beisan_systems": {"name": "Beisan Systems", "url": "https://www.beisansystems.com", "specialty": "VANOS rebuild kits - very thorough guides"},
+      "dr_vanos": {"name": "Dr. VANOS", "url": "https://www.drvanos.com", "specialty": "VANOS parts and rebuild kits"}
+    },
+    "internal_engine": {
+      "cp_carrillo": {"url": "https://www.cp-carrillo.com", "specialty": "Pistons, rods"},
+      "manley": {"url": "https://www.manleyperformance.com", "specialty": "Forged internals"},
+      "arp": {"url": "https://www.arp-bolts.com", "specialty": "Fasteners"},
+      "supertech": {"url": "https://www.supertechperformance.com", "specialty": "Valvetrain"}
+    }
+  },
+
+  "critical_maintenance": {
+    "rod_bearing_replacement": {
+      "criticality": "MANDATORY - DO THIS FIRST ON ANY S54",
+      "description": "OEM rod bearings are known to fail prematurely, causing catastrophic engine failure",
+      "symptoms_of_failure": [
+        "Knocking sound (by then it's too late)",
+        "Metal particles in oil (send oil sample to Blackstone)",
+        "Low oil pressure",
+        "Engine vibration"
+      ],
+      "recommended_parts": {
+        "be_bearings": {
+          "part_number": "BE-S54-ROD",
+          "type": "Coated Rod Bearings",
+          "price_usd": 249,
+          "notes": "HIGHLY RECOMMENDED - Proper clearances, coated surface, designed specifically for S54"
+        },
+        "acl_race": {
+          "part_number": "5M1144H-STD",
+          "type": "Race Series",
+          "price_usd": 129,
+          "notes": "Good alternative to BE"
+        }
+      },
+      "service_interval": {
+        "conservative": "Every 60,000 miles",
+        "track_use": "Every 30,000 miles",
+        "at_purchase": "IMMEDIATELY if history unknown"
+      },
+      "labor_cost_usd": "800-1200",
+      "diy_difficulty": "Advanced - engine must be dropped for proper service"
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "gruppe_m": {"part_number": "FR-0109", "type": "Carbon Fiber Intake", "price_usd": 1299, "power_gain": "8-12hp", "notes": "The best S54 intake - works with ITBs"},
+      "afe": {"part_number": "51-10601", "type": "Cold Air Intake", "price_usd": 349, "power_gain": "5-8hp"},
+      "eventuri": {"part_number": "EVE-E46M3", "type": "Carbon Intake", "price_usd": 999, "power_gain": "8-12hp"},
+      "dinan": {"part_number": "D760-0305", "type": "Carbon Intake", "price_usd": 799, "power_gain": "6-10hp"},
+      "csl_airbox": {
+        "description": "CSL carbon fiber airbox - OEM BMW part from M3 CSL",
+        "part_number": "13717833497",
+        "price_usd": 2500,
+        "power_gain": "10-15hp",
+        "notes": "Factory BMW carbon airbox - rare and expensive"
+      }
+    },
+    "exhaust_headers": {
+      "supersprint_stepped": {"part_number": "788701", "type": "Stepped Headers", "price_usd": 2199, "power_gain": "18-25hp", "notes": "Excellent quality"},
+      "active_autowerke": {"part_number": "AA-E46M3-HDR", "type": "Long Tube Headers", "price_usd": 1599, "power_gain": "15-22hp"},
+      "akrapovic": {"part_number": "E-BM/SS/2", "type": "Stainless Headers", "price_usd": 3499, "power_gain": "20-28hp"}
+    },
+    "exhaust_systems": {
+      "akrapovic_evolution": {"part_number": "M-BM/T/3", "type": "Titanium System", "price_usd": 5995, "weight_savings_lbs": 24, "notes": "Incredible sound"},
+      "supersprint": {"part_number": "788811", "type": "Full Cat-Back", "price_usd": 2299},
+      "eisenmann": {"part_number": "B5319.00000", "type": "Race Exhaust", "price_usd": 2499},
+      "borla": {"part_number": "140256", "type": "Cat-Back", "price_usd": 1899},
+      "dinan": {"part_number": "D660-3325", "type": "Free Flow Exhaust", "price_usd": 2699}
+    },
+    "ecu_tuning": {
+      "active_autowerke_tune": {"part_number": "AA-S54-TUNE", "type": "ECU Flash", "price_usd": 699, "power_gain": "12-18hp"},
+      "dinan_software": {"part_number": "D900-S54", "type": "Performance Software", "price_usd": 799, "power_gain": "10-15hp"},
+      "ess_software": {"part_number": "ESS-S54-SW", "type": "Performance Tune", "price_usd": 599, "power_gain": "10-15hp"},
+      "shark_injector": {"part_number": "SHARK-S54", "type": "Handheld Flash", "price_usd": 449, "power_gain": "8-12hp"}
+    },
+    "forced_induction": {
+      "supercharger_kits": {
+        "ess_vt2": {
+          "part_number": "ESS-VT2-625",
+          "type": "Centrifugal Supercharger",
+          "price_usd": 7999,
+          "power_output": "500-550hp",
+          "notes": "Best supercharger for S54 - very reliable, excellent power delivery"
+        },
+        "ess_vt1": {
+          "part_number": "ESS-VT1-550",
+          "type": "Centrifugal Supercharger",
+          "price_usd": 5999,
+          "power_output": "425-450hp"
+        },
+        "vf_engineering": {
+          "part_number": "VF-E46-S54",
+          "type": "Centrifugal Supercharger",
+          "price_usd": 6499,
+          "power_output": "450-500hp"
+        },
+        "active_autowerke": {
+          "part_number": "AA-E46M3-SC",
+          "type": "Supercharger Kit",
+          "price_usd": 6999,
+          "power_output": "450-500hp"
+        }
+      },
+      "turbo_kits": {
+        "doc_race": {
+          "part_number": "DOC-S54-TURBO",
+          "type": "Turbo Kit",
+          "price_usd": 5999,
+          "power_potential": "500-800hp",
+          "notes": "Requires extensive supporting mods and custom tuning"
+        }
+      }
+    },
+    "vanos_rebuild": {
+      "beisan_complete_kit": {
+        "part_number": "BEISAN-S54-FULL",
+        "type": "Complete VANOS Rebuild",
+        "price_usd": 299,
+        "notes": "Includes all seals, o-rings, rattle fix"
+      },
+      "dr_vanos_kit": {
+        "part_number": "DRV-S54-KIT",
+        "type": "VANOS Rebuild Kit",
+        "price_usd": 249
+      }
+    },
+    "engine_internals": {
+      "connecting_rods": {
+        "cp_carrillo": {"part_number": "BMW-S54-65000H", "type": "H-Beam Forged", "price_usd": 1499},
+        "manley_turbo_tuff": {"part_number": "14024-6", "type": "Turbo Tuff", "price_usd": 1199}
+      },
+      "pistons": {
+        "cp_pistons": {"part_number": "SC7100", "type": "Forged Pistons", "price_usd": 899, "compression": "10.5:1", "notes": "For boost builds"},
+        "je_pistons": {"part_number": "JE-S54-87", "type": "Forged Pistons", "price_usd": 799}
+      },
+      "head_studs": {
+        "arp": {"part_number": "201-4303", "type": "Head Stud Kit", "price_usd": 449, "notes": "Required for boost applications"}
+      },
+      "valve_springs": {
+        "supertech": {"part_number": "SPR-S54-DS", "type": "Dual Valve Springs", "price_usd": 349, "notes": "For boost or high RPM"}
+      }
+    },
+    "cooling_upgrades": {
+      "csf_radiator": {"part_number": "CSF-7054", "type": "High Performance Radiator", "price_usd": 549},
+      "mishimoto_radiator": {"part_number": "MMRAD-E46-01", "type": "Aluminum Radiator", "price_usd": 449},
+      "oil_cooler": {
+        "mocal": {"part_number": "MOCAL-S54", "type": "Oil Cooler Kit", "price_usd": 599, "notes": "Highly recommended for track use"},
+        "csf": {"part_number": "CSF-S54-OC", "type": "Oil Cooler", "price_usd": 799}
+      }
+    },
+    "throttle_actuator": {
+      "description": "S54 throttle actuator is known failure point",
+      "oem_replacement": {"part_number": "13627831931", "price_usd": 450, "source": "FCP Euro"},
+      "notes": "Causes limp mode when failed - common issue"
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Breathing Mods + Tune",
+      "power_target": "355-375hp",
+      "parts": [
+        {"part": "Performance Intake", "price_usd": 349},
+        {"part": "Cat-Back Exhaust", "price_usd": 1899},
+        {"part": "ECU Tune", "price_usd": 599}
+      ],
+      "total_cost_usd": "2800-3500",
+      "notes": "Improved sound and response, modest power gains",
+      "prerequisites": ["ROD BEARINGS - Replace if unknown history"]
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full Exhaust",
+      "power_target": "380-400hp",
+      "parts": [
+        {"part": "Gruppe M or Eventuri Intake", "price_usd": 1099},
+        {"part": "Headers", "price_usd": 1599},
+        {"part": "High Flow Cats", "price_usd": 499},
+        {"part": "Premium Cat-Back Exhaust", "price_usd": 2299},
+        {"part": "Professional ECU Tune", "price_usd": 799}
+      ],
+      "total_cost_usd": "6500-8000",
+      "notes": "Maximum NA potential",
+      "prerequisites": ["ROD BEARINGS", "VANOS service"]
+    },
+    "stage_3": {
+      "name": "Stage 3 - Supercharged",
+      "power_target": "500-550hp",
+      "parts": [
+        {"part": "ESS VT2 Supercharger", "price_usd": 7999},
+        {"part": "Upgraded Clutch (Manual)", "price_usd": 999},
+        {"part": "Oil Cooler", "price_usd": 599},
+        {"part": "Upgraded Radiator", "price_usd": 449},
+        {"part": "BE Rod Bearings (fresh)", "price_usd": 249}
+      ],
+      "total_cost_usd": "11000-14000",
+      "notes": "Reliable, streetable power - S54 handles boost well with proper bearings",
+      "prerequisites": ["ROD BEARINGS - MANDATORY", "Clutch upgrade", "Fresh VANOS"]
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["7L BMW TWS 10W-60 (REQUIRED)", "Mann HU925/4X Oil Filter", "Drain Plug Gasket"],
+      "price_usd": 110,
+      "source": "FCP Euro - Lifetime Warranty",
+      "interval_miles": 5000,
+      "critical_note": "MUST USE 10W-60 - Other viscosities have been linked to bearing failures"
+    },
+    "rod_bearing_kit": {
+      "parts": ["BE Bearings S54 Set", "Rod Bolts (if needed)", "Gaskets"],
+      "price_usd": 300,
+      "interval_miles": 60000,
+      "critical_note": "THE MOST IMPORTANT S54 MAINTENANCE"
+    },
+    "vanos_rebuild_kit": {
+      "parts": ["Complete Beisan VANOS Kit", "All Seals and O-rings"],
+      "price_usd": 299,
+      "interval_miles": 100000,
+      "source": "Beisan Systems"
+    },
+    "valve_adjustment": {
+      "description": "S54 requires periodic valve adjustment (solid lifters)",
+      "interval_miles": 30000,
+      "labor_cost_usd": 400,
+      "notes": "Critical for proper performance - shim-over-bucket design"
+    },
+    "spark_plug_kit": {
+      "parts": ["6x NGK BKR7EQUP or Bosch equivalent"],
+      "price_usd": 50,
+      "gap_mm": 0.7,
+      "interval_miles": 30000
+    },
+    "ignition_coil_kit": {
+      "parts": ["6x Bosch Ignition Coils"],
+      "price_usd": 180,
+      "source": "FCP Euro"
+    },
+    "cooling_system_refresh": {
+      "parts": ["Water Pump", "Thermostat", "Expansion Tank", "Hoses", "Coolant"],
+      "price_usd": 500,
+      "interval_miles": 100000
+    }
+  },
+
+  "quality_tiers": {
+    "budget": {
+      "description": "Entry level - acceptable for daily driver",
+      "brands": ["aFe", "Borla", "ACL (bearings)"]
+    },
+    "mid_tier": {
+      "description": "Quality upgrades",
+      "brands": ["Mishimoto", "Dinan", "Beisan"]
+    },
+    "premium": {
+      "description": "High-end street/track",
+      "brands": ["Supersprint", "Eventuri", "ESS Tuning", "BE Bearings"]
+    },
+    "race": {
+      "description": "Competition grade",
+      "brands": ["Akrapovic", "Gruppe M", "CP-Carrillo", "Manley"]
+    }
+  },
+
+  "s54_critical_notes": {
+    "rod_bearings": "REPLACE ROD BEARINGS ON ANY S54 WITH UNKNOWN HISTORY. This is non-negotiable. BE Bearings are the best option.",
+    "oil_specification": "ONLY USE 10W-60 OIL - BMW TWS or Castrol TWS 10W-60. Other viscosities have caused bearing failures.",
+    "vanos": "VANOS units wear over time - rebuild at 100k miles using Beisan Systems kit",
+    "valve_adjustment": "S54 uses solid lifters - requires adjustment every 30k miles",
+    "throttle_actuator": "Common failure - causes limp mode",
+    "heritage": "One of the greatest naturally aspirated inline-6 engines ever made. Worth the maintenance requirements."
+  }
+}
