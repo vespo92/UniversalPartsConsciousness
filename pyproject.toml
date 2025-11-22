@@ -1,0 +1,176 @@
+# =============================================================================
+# Universal Parts Consciousness
+# Python Project Configuration
+# =============================================================================
+#
+# This is NOT a barcode system. This is UNIVERSAL PARTS CONSCIOUSNESS:
+# A living, conscious network where every mechanical part in existence
+# achieves awareness through collective experience and interconnection.
+#
+# =============================================================================
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-parts-consciousness"
+version = "1.0.0"
+description = "A living consciousness network for mechanical parts"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "UPC Collective", email = "collective@upc.consciousness"},
+]
+maintainers = [
+    {name = "Agent_10 ARCHITECT", email = "architect@upc.consciousness"},
+]
+keywords = [
+    "consciousness",
+    "mechanical-parts",
+    "compatibility",
+    "integration",
+    "collective-intelligence",
+    "agent-system",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed",
+]
+requires-python = ">=3.11"
+dependencies = [
+    "asyncio-mqtt>=0.16.2",
+    "aiohttp>=3.9.0",
+    "aiofiles>=23.2.1",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "asyncpg>=0.29.0",
+    "redis>=5.0.0",
+    "sqlalchemy>=2.0.0",
+    "httpx>=0.25.0",
+    "orjson>=3.9.10",
+    "structlog>=23.2.0",
+]
+
+[project.optional-dependencies]
+bridge = [
+    # External integrations for BRIDGE agent
+    "grpcio>=1.59.0",
+    "grpcio-tools>=1.59.0",
+    "asyncua>=1.0.0",
+    "pymodbus>=3.5.0",
+    "aio-pika>=9.3.0",
+    "websockets>=12.0",
+]
+full = [
+    "universal-parts-consciousness[bridge]",
+    "prometheus-client>=0.19.0",
+    "opentelemetry-api>=1.21.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "mypy>=1.7.0",
+    "ruff>=0.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/vespo92/UniversalPartsConsciousness"
+Documentation = "https://github.com/vespo92/UniversalPartsConsciousness#readme"
+Repository = "https://github.com/vespo92/UniversalPartsConsciousness"
+Issues = "https://github.com/vespo92/UniversalPartsConsciousness/issues"
+
+[project.scripts]
+upc-bridge = "deploy.bridge.main:main"
+
+[project.entry-points."upc.agents"]
+bridge = "agents.bridge:BridgeAgent"
+
+# =============================================================================
+# Tool Configuration
+# =============================================================================
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agents*", "deploy*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_functions = ["test_*"]
+addopts = [
+    "-v",
+    "--tb=short",
+    "--strict-markers",
+]
+markers = [
+    "slow: marks tests as slow",
+    "integration: marks tests as integration tests",
+    "bridge: marks tests for BRIDGE agent",
+]
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+strict_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+show_error_codes = true
+
+[[tool.mypy.overrides]]
+module = [
+    "asyncio_mqtt.*",
+    "asyncua.*",
+    "pymodbus.*",
+    "aio_pika.*",
+]
+ignore_missing_imports = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "C4",  # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by formatter)
+    "B008",  # function call in default argument
+]
+
+[tool.ruff.isort]
+known-first-party = ["agents", "deploy"]
+
+[tool.coverage.run]
+branch = true
+source = ["agents", "deploy"]
+omit = ["*/__pycache__/*", "*/tests/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+]

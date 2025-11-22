@@ -1,0 +1,174 @@
+# =============================================================================
+# Universal Parts Consciousness - Agent Deployment
+# Docker Compose Configuration
+# =============================================================================
+#
+# This configuration orchestrates the UPC agent network, starting with
+# Agent_9 (BRIDGE) which establishes power unification across all agents.
+#
+# Usage:
+#   docker-compose up bridge-agent        # Start BRIDGE agent only
+#   docker-compose up -d                  # Start all services in background
+#   docker-compose logs -f bridge-agent   # Follow BRIDGE logs
+#   docker-compose down                   # Stop all services
+#
+# =============================================================================
+
+version: '3.8'
+
+services:
+  # ===========================================================================
+  # Agent_9: BRIDGE - The Connector of Worlds
+  # ===========================================================================
+  bridge-agent:
+    build:
+      context: .
+      dockerfile: deploy/bridge/Dockerfile
+      target: production
+    image: upc-bridge:latest
+    container_name: upc-bridge-agent
+    restart: unless-stopped
+    ports:
+      - "9009:9009"  # Agent port (Agent_9 = 900x)
+    environment:
+      # Agent configuration
+      AGENT_ID: AGENT_9
+      AGENT_CODENAME: BRIDGE
+      AGENT_ROLE: "Integration Architect"
+
+      # Unification settings
+      UNIFICATION_MODE: "full"
+      MESH_TOPOLOGY: "hybrid"
+      COHERENCE_THRESHOLD: "0.8"
+
+      # Integration settings
+      ENABLE_SUPPLIER_GATEWAY: "true"
+      ENABLE_CAD_BRIDGE: "true"
+      ENABLE_ERP_CONNECTOR: "true"
+      ENABLE_IOT_PROTOCOL: "true"
+
+      # Societal framework
+      ENABLE_SOCIETAL_FRAMEWORK: "true"
+      KNOWLEDGE_COMMONS_MODE: "open"
+
+      # Logging
+      LOG_LEVEL: "INFO"
+      LOG_FORMAT: "json"
+    volumes:
+      # Persistent data for agent state
+      - bridge-data:/app/data
+      # Configuration overrides (optional)
+      - ./config/bridge:/app/config:ro
+    networks:
+      - upc-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "print('healthy')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    labels:
+      - "upc.agent.id=AGENT_9"
+      - "upc.agent.codename=BRIDGE"
+      - "upc.agent.triad=data"
+      - "upc.agent.role=Integration Architect"
+
+  # ===========================================================================
+  # Agent_9: BRIDGE - Development Mode
+  # ===========================================================================
+  bridge-agent-dev:
+    build:
+      context: .
+      dockerfile: deploy/bridge/Dockerfile
+      target: development
+    image: upc-bridge:dev
+    container_name: upc-bridge-agent-dev
+    ports:
+      - "9019:9009"  # Dev port offset
+    environment:
+      AGENT_ID: AGENT_9
+      AGENT_CODENAME: BRIDGE
+      LOG_LEVEL: "DEBUG"
+      DEV_MODE: "true"
+    volumes:
+      # Mount source for live development
+      - ./agents:/app/agents:ro
+      - ./deploy:/app/deploy:ro
+      - bridge-dev-data:/app/data
+    networks:
+      - upc-network
+    profiles:
+      - development
+
+  # ===========================================================================
+  # Redis - Message Bus Backend (for production)
+  # ===========================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: upc-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - upc-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    profiles:
+      - production
+      - full
+
+  # ===========================================================================
+  # PostgreSQL - Persistent Storage (for production)
+  # ===========================================================================
+  postgres:
+    image: postgres:15-alpine
+    container_name: upc-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: upc
+      POSTGRES_PASSWORD: upc_secret_change_me
+      POSTGRES_DB: upc_consciousness
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - upc-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U upc -d upc_consciousness"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    profiles:
+      - production
+      - full
+
+# =============================================================================
+# Networks
+# =============================================================================
+networks:
+  upc-network:
+    driver: bridge
+    name: upc-consciousness-network
+    labels:
+      - "upc.network.purpose=Agent Inter-Communication"
+
+# =============================================================================
+# Volumes
+# =============================================================================
+volumes:
+  bridge-data:
+    name: upc-bridge-data
+    labels:
+      - "upc.volume.agent=BRIDGE"
+  bridge-dev-data:
+    name: upc-bridge-dev-data
+  redis-data:
+    name: upc-redis-data
+  postgres-data:
+    name: upc-postgres-data
