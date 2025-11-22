@@ -1,0 +1,366 @@
+{
+  "engine_id": "FORD-WINDSOR-SBF",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Windsor Small Block",
+  "common_names": [
+    "Small Block Ford",
+    "Windsor V8",
+    "289/302/351W",
+    "5.0 HO",
+    "Boss 302",
+    "Shelby 289"
+  ],
+  "production_years": "1962-2001",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's legendary small block V8 family, produced for nearly 40 years. Named after the Windsor, Ontario assembly plant. Known for lightweight construction, excellent throttle response, and massive aftermarket support. Powered everything from Mustangs to F-150 trucks.",
+  "heritage": {
+    "significance": "One of the most significant American V8 engine families, defining the pony car era and providing reliable power for millions of vehicles",
+    "innovations": [
+      "Thin-wall casting for lightweight design",
+      "90-degree V8 with excellent balance",
+      "Roller hydraulic lifters (1985+)",
+      "Electronic fuel injection (1986+)",
+      "Boss 302 high-revving design"
+    ],
+    "racing_heritage": {
+      "trans_am": "Boss 302 dominated Trans-Am series 1969-1970",
+      "scca": "Shelby GT350 legendary in SCCA racing",
+      "nhra": "Popular in sportsman and bracket racing",
+      "nascar": "Used in modified and late model racing"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron (Aluminum available)",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder",
+    "bore_spacing_inches": 4.380,
+    "deck_height_inches": {
+      "289_302": 8.206,
+      "351W": 9.503
+    },
+    "main_bearings": 5,
+    "rod_journal_diameter_inches": 2.1228,
+    "main_journal_diameter_inches": 2.2482,
+    "fuel_system": "Carburetor (early), Electronic Fuel Injection (1986+)",
+    "ignition_system": "Points (early), Electronic (1975+), EEC-IV (1986+)",
+    "cooling_system": "Pressurized water cooling with crossflow design",
+    "oiling_system": "Full pressure with gear-driven oil pump"
+  },
+  "variants": [
+    {
+      "variant_id": "SBF-221",
+      "displacement_ci": 221,
+      "displacement_liters": 3.6,
+      "bore_inches": 3.50,
+      "stroke_inches": 2.87,
+      "compression_ratio": "8.4:1",
+      "horsepower": 145,
+      "horsepower_rpm": 4400,
+      "torque_lb_ft": 216,
+      "torque_rpm": 2200,
+      "production_years": "1962-1963",
+      "notes": "First small block Ford, Fairlane introduction"
+    },
+    {
+      "variant_id": "SBF-260",
+      "displacement_ci": 260,
+      "displacement_liters": 4.3,
+      "bore_inches": 3.80,
+      "stroke_inches": 2.87,
+      "compression_ratio": "8.8:1",
+      "horsepower": 164,
+      "horsepower_rpm": 4400,
+      "torque_lb_ft": 258,
+      "torque_rpm": 2200,
+      "production_years": "1962-1964",
+      "notes": "First Mustang V8 option (1964.5)"
+    },
+    {
+      "variant_id": "SBF-289-2V",
+      "displacement_ci": 289,
+      "displacement_liters": 4.7,
+      "bore_inches": 4.00,
+      "stroke_inches": 2.87,
+      "compression_ratio": "9.3:1",
+      "horsepower": 200,
+      "horsepower_rpm": 4400,
+      "torque_lb_ft": 282,
+      "torque_rpm": 2400,
+      "production_years": "1963-1968",
+      "notes": "Standard 2-barrel version"
+    },
+    {
+      "variant_id": "SBF-289-4V",
+      "displacement_ci": 289,
+      "displacement_liters": 4.7,
+      "bore_inches": 4.00,
+      "stroke_inches": 2.87,
+      "compression_ratio": "10.0:1",
+      "horsepower": 225,
+      "horsepower_rpm": 4800,
+      "torque_lb_ft": 305,
+      "torque_rpm": 3200,
+      "production_years": "1963-1968",
+      "notes": "A-Code 4-barrel version"
+    },
+    {
+      "variant_id": "SBF-289-HiPo",
+      "displacement_ci": 289,
+      "displacement_liters": 4.7,
+      "bore_inches": 4.00,
+      "stroke_inches": 2.87,
+      "compression_ratio": "10.5:1",
+      "horsepower": 271,
+      "horsepower_rpm": 6000,
+      "torque_lb_ft": 312,
+      "torque_rpm": 3400,
+      "production_years": "1963-1967",
+      "notes": "K-Code High Performance, solid cam, screw-in studs, Shelby GT350"
+    },
+    {
+      "variant_id": "SBF-302-2V",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.00,
+      "compression_ratio": "9.5:1",
+      "horsepower": 220,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 300,
+      "torque_rpm": 2600,
+      "production_years": "1968-1985",
+      "notes": "Standard 2-barrel, stroked 289"
+    },
+    {
+      "variant_id": "SBF-302-4V",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.00,
+      "compression_ratio": "10.0:1",
+      "horsepower": 230,
+      "horsepower_rpm": 4800,
+      "torque_lb_ft": 310,
+      "torque_rpm": 2800,
+      "production_years": "1968-1970",
+      "notes": "J-Code 4-barrel performance version"
+    },
+    {
+      "variant_id": "SBF-BOSS-302",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.00,
+      "compression_ratio": "10.5:1",
+      "horsepower": 290,
+      "horsepower_rpm": 5800,
+      "torque_lb_ft": 290,
+      "torque_rpm": 4300,
+      "production_years": "1969-1970",
+      "notes": "Trans-Am racing engine, canted-valve Cleveland-style heads on Windsor block"
+    },
+    {
+      "variant_id": "SBF-302-HO",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.00,
+      "compression_ratio": "9.0:1",
+      "horsepower": 225,
+      "horsepower_rpm": 4200,
+      "torque_lb_ft": 300,
+      "torque_rpm": 3200,
+      "production_years": "1982-1995",
+      "notes": "High Output 5.0L, roller cam, EFI (1986+), Mustang GT legend"
+    },
+    {
+      "variant_id": "SBF-351W-2V",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "9.5:1",
+      "horsepower": 250,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 355,
+      "torque_rpm": 2600,
+      "production_years": "1969-1996",
+      "notes": "Tall-deck Windsor with increased stroke"
+    },
+    {
+      "variant_id": "SBF-351W-4V",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "10.7:1",
+      "horsepower": 300,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 380,
+      "torque_rpm": 3400,
+      "production_years": "1969-1974",
+      "notes": "High performance 4-barrel version"
+    },
+    {
+      "variant_id": "SBF-351W-HO",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "8.8:1",
+      "horsepower": 210,
+      "horsepower_rpm": 4000,
+      "torque_lb_ft": 315,
+      "torque_rpm": 2800,
+      "production_years": "1994-1997",
+      "notes": "F-150 Lightning truck engine"
+    }
+  ],
+  "firing_order": {
+    "289_302": "1-5-4-2-6-3-7-8",
+    "351W": "1-3-7-2-6-5-4-8",
+    "notes": "351W uses different firing order than 289/302"
+  },
+  "cylinder_numbering": {
+    "passenger_side_bank": [1, 2, 3, 4],
+    "driver_side_bank": [5, 6, 7, 8],
+    "convention": "Ford standard V8 numbering"
+  },
+  "vehicle_applications": [
+    {
+      "years": "1964-2004",
+      "models": ["Ford Mustang"],
+      "notes": "Mustang's heart for 40 years - 289, 302, Boss 302, 5.0 HO"
+    },
+    {
+      "years": "1965-1970",
+      "models": ["Shelby GT350", "Shelby GT350R"],
+      "notes": "289 HiPo-based Shelby legend"
+    },
+    {
+      "years": "1966-1996",
+      "models": ["Ford Bronco"],
+      "notes": "302 and 351W in full-size Bronco"
+    },
+    {
+      "years": "1965-2001",
+      "models": ["Ford F-150", "Ford F-250"],
+      "notes": "Standard V8 power for F-Series trucks"
+    },
+    {
+      "years": "1962-1970",
+      "models": ["Ford Fairlane", "Ford Falcon"],
+      "notes": "Original small block applications"
+    },
+    {
+      "years": "1967-1976",
+      "models": ["Mercury Cougar"],
+      "notes": "289 and 302 in Mercury pony car"
+    },
+    {
+      "years": "1984-2004",
+      "models": ["Ford Crown Victoria", "Mercury Grand Marquis"],
+      "notes": "5.0L police interceptor applications"
+    },
+    {
+      "years": "1992-2003",
+      "models": ["Ford Explorer"],
+      "notes": "5.0L V8 option in Explorer SUV"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": {
+        "289_302": 5,
+        "351W": 6
+      },
+      "oil_specification": "5W-30 (EFI), 10W-40 or 20W-50 (Carb with flat tappet)",
+      "filter_required": "FL-1A or equivalent"
+    },
+    "coolant": {
+      "capacity_quarts": {
+        "289_302": 14,
+        "351W": 16
+      },
+      "coolant_type": "50/50 ethylene glycol",
+      "notes": "Capacity varies by vehicle application"
+    }
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": {
+      "289_302": 70,
+      "351W": 105
+    },
+    "main_cap_bolts_ft_lbs": 80,
+    "rod_cap_bolts_ft_lbs": 25,
+    "intake_manifold_bolts_ft_lbs": 25,
+    "exhaust_manifold_bolts_ft_lbs": 25,
+    "spark_plugs_ft_lbs": 15,
+    "flywheel_bolts_ft_lbs": 85,
+    "harmonic_balancer_bolt_ft_lbs": {
+      "289_302": 85,
+      "351W": 70
+    }
+  },
+  "block_differences": {
+    "289_302_block": {
+      "deck_height_inches": 8.206,
+      "bellhousing_pattern": "Small block Ford",
+      "notes": "Shorter deck, lighter weight"
+    },
+    "351W_block": {
+      "deck_height_inches": 9.503,
+      "bellhousing_pattern": "351W specific (wider bolt pattern)",
+      "notes": "Taller deck for increased stroke, different bellhousing bolt pattern"
+    },
+    "roller_vs_flat_tappet": {
+      "flat_tappet": "1962-1984 (most)",
+      "roller_tappet": "1985-2001",
+      "notes": "Roller cam blocks have provisions for spider and hold-downs"
+    }
+  },
+  "common_issues": [
+    {
+      "issue": "Timing chain stretch",
+      "description": "Factory timing sets wear causing retarded timing",
+      "solution": "Double roller timing set upgrade"
+    },
+    {
+      "issue": "Intake manifold gasket failure",
+      "description": "Coolant leaks at water crossover passages",
+      "solution": "Premium gasket set with proper sealer"
+    },
+    {
+      "issue": "Valve guide wear (flat tappet engines)",
+      "description": "Oil consumption due to guide wear",
+      "solution": "Bronze guide liners or new guides"
+    },
+    {
+      "issue": "Oil pan gasket leaks",
+      "description": "Common on 2-piece gasket designs",
+      "solution": "One-piece rubber gasket conversion"
+    },
+    {
+      "issue": "Distributor gear wear (roller cam engines)",
+      "description": "Steel roller cam requires bronze distributor gear",
+      "solution": "Bronze or composite distributor gear"
+    }
+  ],
+  "strengths": [
+    "Lightweight and compact design",
+    "Excellent throttle response",
+    "Massive aftermarket support",
+    "Easy to work on",
+    "Reliable with proper maintenance",
+    "Good power-to-weight ratio",
+    "Parts readily available and affordable",
+    "Bolt-on performance potential is excellent"
+  ],
+  "notes": {
+    "historical_context": "The Windsor small block transformed Ford's performance image. The 289 HiPo powered Shelby's racing efforts, the Boss 302 dominated Trans-Am, and the 5.0 HO became the affordable performance car of the 1980s-90s.",
+    "5.0_mustang_culture": "The 1986-1993 5.0 Mustang created a tuning culture that persists today. These cars were affordable, reliable, and responded incredibly well to modifications.",
+    "collectibility": "K-Code 289 HiPo and Boss 302 engines are highly collectible. Numbers-matching cars command significant premiums."
+  }
+}

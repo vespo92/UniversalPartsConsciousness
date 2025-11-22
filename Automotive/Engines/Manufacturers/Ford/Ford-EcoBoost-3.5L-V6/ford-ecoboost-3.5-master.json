@@ -1,0 +1,141 @@
+{
+  "engine_id": "FORD-ECOBOOST-3.5L-V6",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "EcoBoost",
+  "common_names": ["3.5 EcoBoost", "3.5L Twin-Turbo", "F-150 EcoBoost", "Raptor Engine", "Ford GT Engine"],
+  "production_years": "2010-present",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's flagship EcoBoost engine, a twin-turbocharged 3.5L V6 that has become the most popular engine in the F-150. Available in various states of tune from 365 HP in trucks to 647 HP in the Ford GT supercar. Demonstrates that displacement is no substitute for boost.",
+  "heritage": {
+    "significance": "Changed perception of V6 engines in trucks, became F-150's best-selling engine",
+    "innovations": [
+      "Twin turbochargers (one per bank)",
+      "Direct injection with port injection (Gen 2)",
+      "Plasma transferred wire arc cylinder coating",
+      "Dual variable cam timing"
+    ],
+    "racing_heritage": {
+      "ford_gt": "Twin-turbo 3.5L EcoBoost powers Ford GT to Le Mans victory (2016)",
+      "imsa": "Powers Ford GT in IMSA competition",
+      "sema_builds": "Popular in SEMA show trucks"
+    }
+  },
+  "base_specifications": {
+    "configuration": "60-degree V6, twin-turbocharged",
+    "block_material": "Aluminum",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 4 valves per cylinder",
+    "main_bearings": 4,
+    "fuel_system": "Direct injection (+ port injection Gen 2)",
+    "forced_induction": "Twin turbochargers"
+  },
+  "variants": [
+    {
+      "variant_id": "ECOBOOST-3.5-GEN1",
+      "displacement_ci": 213,
+      "displacement_liters": 3.5,
+      "bore_inches": 3.64,
+      "stroke_inches": 3.41,
+      "compression_ratio": "10.0:1",
+      "horsepower": 365,
+      "horsepower_rpm": 5000,
+      "torque_lb_ft": 420,
+      "torque_rpm": 2500,
+      "boost_psi": 15,
+      "production_years": "2010-2016",
+      "notes": "Original F-150 EcoBoost, direct injection only"
+    },
+    {
+      "variant_id": "ECOBOOST-3.5-GEN2",
+      "displacement_ci": 213,
+      "displacement_liters": 3.5,
+      "bore_inches": 3.64,
+      "stroke_inches": 3.41,
+      "compression_ratio": "10.5:1",
+      "horsepower": 375,
+      "horsepower_rpm": 5000,
+      "torque_lb_ft": 470,
+      "torque_rpm": 2500,
+      "boost_psi": 16,
+      "production_years": "2017-present",
+      "notes": "Second generation with port injection added"
+    },
+    {
+      "variant_id": "ECOBOOST-3.5-RAPTOR",
+      "displacement_ci": 213,
+      "displacement_liters": 3.5,
+      "bore_inches": 3.64,
+      "stroke_inches": 3.41,
+      "compression_ratio": "10.5:1",
+      "horsepower": 450,
+      "horsepower_rpm": 5000,
+      "torque_lb_ft": 510,
+      "torque_rpm": 3500,
+      "boost_psi": 18,
+      "production_years": "2017-present",
+      "notes": "Raptor high-output version with upgraded turbos"
+    },
+    {
+      "variant_id": "ECOBOOST-3.5-LIMITED",
+      "displacement_ci": 213,
+      "displacement_liters": 3.5,
+      "bore_inches": 3.64,
+      "stroke_inches": 3.41,
+      "compression_ratio": "10.5:1",
+      "horsepower": 450,
+      "horsepower_rpm": 5500,
+      "torque_lb_ft": 510,
+      "torque_rpm": 3500,
+      "boost_psi": 18,
+      "production_years": "2019-present",
+      "notes": "F-150 Limited with Raptor engine"
+    },
+    {
+      "variant_id": "ECOBOOST-3.5-FORD-GT",
+      "displacement_ci": 213,
+      "displacement_liters": 3.5,
+      "bore_inches": 3.64,
+      "stroke_inches": 3.41,
+      "compression_ratio": "9.0:1",
+      "horsepower": 647,
+      "horsepower_rpm": 6250,
+      "torque_lb_ft": 550,
+      "torque_rpm": 5900,
+      "boost_psi": 24,
+      "production_years": "2016-present",
+      "notes": "Hand-built Ford GT supercar engine, dry sump, titanium connecting rods"
+    }
+  ],
+  "firing_order": "1-4-2-5-3-6",
+  "vehicle_applications": [
+    {"years": "2010-present", "models": ["Ford F-150"]},
+    {"years": "2017-present", "models": ["Ford F-150 Raptor"]},
+    {"years": "2016-present", "models": ["Ford GT supercar"]},
+    {"years": "2013-2019", "models": ["Ford Taurus SHO"]},
+    {"years": "2013-2019", "models": ["Ford Flex EcoBoost"]},
+    {"years": "2013-2020", "models": ["Lincoln Navigator", "Lincoln Continental"]},
+    {"years": "2020-present", "models": ["Ford Explorer ST"]}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 6, "oil_specification": "5W-30"},
+    "coolant": {"capacity_quarts": 16, "coolant_type": "Motorcraft Orange"}
+  },
+  "common_issues": [
+    {"issue": "Timing chain stretch (Gen 1)", "solution": "Updated tensioners and chains, service interval important"},
+    {"issue": "Carbon buildup (Gen 1)", "solution": "Walnut blast cleaning, catch can, Gen 2 adds port injection"},
+    {"issue": "Turbo wastegate rattle", "solution": "Ford service bulletin, wastegate actuator upgrade"}
+  ],
+  "strengths": [
+    "Exceptional power-to-displacement ratio",
+    "Outstanding towing capability",
+    "Better fuel economy than comparable V8s",
+    "Proven reliability in millions of trucks",
+    "Strong aftermarket tuning support"
+  ],
+  "notes": {
+    "f150_success": "The 3.5 EcoBoost has become the F-150's most popular engine, outselling both the V8 and naturally aspirated V6 options.",
+    "ford_gt_racing": "The Ford GT's 3.5 EcoBoost won its class at Le Mans in 2016, proving the technology on the world stage.",
+    "tuning": "With tune only, 450+ HP in truck applications. With supporting mods, 600+ HP is achievable on stock turbos."
+  }
+}

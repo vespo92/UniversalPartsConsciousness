@@ -1,0 +1,91 @@
+{
+  "engine_id": "FORD-PREDATOR-5.2L-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Predator",
+  "common_names": ["Predator", "5.2L Supercharged", "GT500 Engine"],
+  "production_years": "2019-present",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's most powerful production engine ever, the supercharged 5.2L Predator powers the Shelby GT500. Unlike the flat-plane Voodoo, the Predator uses a cross-plane crankshaft optimized for forced induction. At 760 HP and 625 lb-ft of torque, it's the most powerful street-legal Ford ever produced.",
+  "heritage": {
+    "significance": "Most powerful production Ford engine ever built",
+    "innovations": [
+      "2.65L Eaton TVS R2650 supercharger",
+      "Inverted supercharger for lower center of gravity",
+      "Cross-plane crankshaft optimized for boost",
+      "Charge air cooler integral to supercharger",
+      "Forged components throughout"
+    ],
+    "performance_achievements": {
+      "0_60_mph": "3.3 seconds",
+      "quarter_mile": "10.7 seconds at 132 mph",
+      "top_speed": "180+ mph (electronically limited)"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8 with 90-degree (cross-plane) crankshaft",
+    "block_material": "Aluminum",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 4 valves per cylinder",
+    "bore_spacing_mm": 94.5,
+    "main_bearings": 5,
+    "fuel_system": "Dual fuel injection (port + direct)",
+    "forced_induction": "Eaton TVS R2650 Roots-type supercharger"
+  },
+  "variants": [
+    {
+      "variant_id": "PREDATOR-GT500",
+      "displacement_ci": 315,
+      "displacement_liters": 5.2,
+      "bore_inches": 3.70,
+      "stroke_inches": 3.66,
+      "compression_ratio": "9.5:1",
+      "boost_psi": 12,
+      "horsepower": 760,
+      "horsepower_rpm": 7300,
+      "torque_lb_ft": 625,
+      "torque_rpm": 5000,
+      "redline_rpm": 7500,
+      "production_years": "2019-present",
+      "notes": "Standard GT500 configuration"
+    }
+  ],
+  "firing_order": "1-3-7-2-6-5-4-8",
+  "supercharger_specifications": {
+    "type": "Eaton TVS R2650 Roots-type twin-screw",
+    "displacement_liters": 2.65,
+    "boost_psi": 12,
+    "intercooler": "Air-to-liquid charge air cooler integrated into supercharger",
+    "drive": "Belt-driven",
+    "orientation": "Inverted for lower center of gravity"
+  },
+  "vehicle_applications": [
+    {"years": "2019-present", "models": ["Ford Mustang Shelby GT500"]}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 10, "oil_specification": "5W-50 Motorcraft"},
+    "coolant": {"capacity_quarts": 15, "coolant_type": "Motorcraft Orange"},
+    "supercharger_intercooler": {"capacity_quarts": 3, "fluid_type": "Motorcraft VC-8"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts": "Multi-step torque-to-yield",
+    "main_cap_bolts_ft_lbs": 80,
+    "rod_cap_bolts_ft_lbs": 35
+  },
+  "common_issues": [
+    {"issue": "Heat soak on track", "description": "Intercooler heat soak reduces power on extended track sessions", "solution": "Ford Performance heat exchanger upgrade, ice in coolant tank"},
+    {"issue": "Transmission heat (DCT)", "solution": "Transmission cooler upgrade for sustained track use"}
+  ],
+  "strengths": [
+    "760 HP - most powerful production Ford ever",
+    "Exceptional low-end torque from supercharger",
+    "Factory forged internals handle power well",
+    "Proven platform from Coyote/Voodoo development",
+    "Impressive straight-line and road course capability"
+  ],
+  "notes": {
+    "predator_vs_voodoo": "While the Voodoo (GT350) uses a flat-plane crank for NA high-RPM performance, the Predator uses a traditional cross-plane crank that's better suited for supercharging. Different tools for different purposes.",
+    "modification_potential": "With pulley upgrades and tune, 900+ HP is achievable. The forged internals handle significant power increases.",
+    "cooling_critical": "The supercharged design generates significant heat. Intercooler and transmission cooling are critical for sustained high-performance use."
+  }
+}

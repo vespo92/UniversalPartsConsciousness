@@ -1,0 +1,688 @@
+{
+  "catalog_id": "FORD-WINDSOR-PARTS",
+  "engine_family": "Ford Windsor Small Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly",
+      "components": [
+        {
+          "part_id": "SBF-BLOCK-302",
+          "name": "Engine Block - 302/5.0L",
+          "description": "Cast iron small block with 8.206\" deck height",
+          "oem_part_numbers": ["E7TE-6015-BA (roller)", "D0OE-6015-AA (flat tappet)"],
+          "specifications": {
+            "bore_inches": 4.00,
+            "deck_height_inches": 8.206,
+            "main_caps": 5,
+            "material": "Cast Iron"
+          },
+          "quantity": 1,
+          "notes": "1987+ roller blocks preferred for builds"
+        },
+        {
+          "part_id": "SBF-BLOCK-351W",
+          "name": "Engine Block - 351W/5.8L",
+          "description": "Cast iron tall-deck small block",
+          "oem_part_numbers": ["E8TE-6015-AA"],
+          "specifications": {
+            "bore_inches": 4.00,
+            "deck_height_inches": 9.503,
+            "main_caps": 5,
+            "material": "Cast Iron"
+          },
+          "quantity": 1,
+          "notes": "Excellent stroker platform"
+        },
+        {
+          "part_id": "SBF-CRANK-302",
+          "name": "Crankshaft - 302",
+          "description": "Cast or forged crankshaft with 3.00\" stroke",
+          "oem_part_numbers": ["D0OE-6303-A"],
+          "specifications": {
+            "stroke_inches": 3.00,
+            "main_journal_inches": 2.2482,
+            "rod_journal_inches": 2.1228,
+            "material": "Cast nodular iron (stock), Forged steel (performance)",
+            "balance": "28.2 oz-in external"
+          },
+          "quantity": 1,
+          "notes": "5.0 HO uses better quality crank"
+        },
+        {
+          "part_id": "SBF-CRANK-351W",
+          "name": "Crankshaft - 351W",
+          "description": "Forged steel crankshaft with 3.50\" stroke",
+          "oem_part_numbers": ["D1AE-6303-AA"],
+          "specifications": {
+            "stroke_inches": 3.50,
+            "main_journal_inches": 3.00,
+            "rod_journal_inches": 2.3107,
+            "material": "Forged Steel",
+            "balance": "28.2 oz-in external"
+          },
+          "quantity": 1,
+          "notes": "351W uses larger main journals than 302"
+        },
+        {
+          "part_id": "SBF-RODS-302",
+          "name": "Connecting Rods - 302",
+          "description": "Forged steel I-beam rods",
+          "oem_part_numbers": ["D0OE-6200-A"],
+          "specifications": {
+            "length_inches": 5.090,
+            "big_end_bore_inches": 2.1228,
+            "small_end_bore_inches": 0.912,
+            "material": "Forged Steel",
+            "bolt_size": "3/8\""
+          },
+          "quantity": 8,
+          "notes": "5.0 HO rods are better quality"
+        },
+        {
+          "part_id": "SBF-RODS-351W",
+          "name": "Connecting Rods - 351W",
+          "description": "Forged steel I-beam rods",
+          "oem_part_numbers": ["D1AE-6200-AA"],
+          "specifications": {
+            "length_inches": 5.956,
+            "big_end_bore_inches": 2.3107,
+            "small_end_bore_inches": 0.912,
+            "material": "Forged Steel",
+            "bolt_size": "3/8\""
+          },
+          "quantity": 8,
+          "notes": "Longer rod for taller deck"
+        },
+        {
+          "part_id": "SBF-PISTONS-302-DISH",
+          "name": "Piston Set - 302 Dished",
+          "description": "Hypereutectic pistons with valve reliefs",
+          "specifications": {
+            "bore_inches": 4.00,
+            "compression_height_inches": 1.595,
+            "pin_diameter_inches": 0.912,
+            "dish_cc": 10
+          },
+          "quantity": 8,
+          "notes": "Standard compression for EFI applications"
+        },
+        {
+          "part_id": "SBF-PISTONS-302-FLAT",
+          "name": "Piston Set - 302 Flat Top",
+          "description": "Forged aluminum flat top pistons",
+          "specifications": {
+            "bore_inches": 4.00,
+            "compression_height_inches": 1.595,
+            "pin_diameter_inches": 0.912
+          },
+          "quantity": 8,
+          "notes": "For performance builds with proper heads"
+        },
+        {
+          "part_id": "SBF-RINGS",
+          "name": "Piston Ring Set",
+          "description": "Moly top ring set",
+          "specifications": {
+            "top_ring": "1/16\" moly",
+            "second_ring": "1/16\" cast iron",
+            "oil_ring": "3/16\" 3-piece"
+          },
+          "quantity": 8,
+          "notes": "Total Seal or Hastings recommended"
+        },
+        {
+          "part_id": "SBF-MAIN-BEARINGS",
+          "name": "Main Bearing Set - 302",
+          "description": "Tri-metal main bearings",
+          "oem_part_numbers": ["Clevite MS963P"],
+          "specifications": {
+            "material": "Tri-metal",
+            "journal_diameter": 2.2482
+          },
+          "quantity": 5,
+          "notes": "Clevite P series for performance"
+        },
+        {
+          "part_id": "SBF-ROD-BEARINGS",
+          "name": "Rod Bearing Set",
+          "description": "Tri-metal rod bearings",
+          "oem_part_numbers": ["Clevite CB634P"],
+          "specifications": {
+            "material": "Tri-metal",
+            "journal_diameter": 2.1228
+          },
+          "quantity": 8,
+          "notes": "Clevite P series for performance"
+        }
+      ]
+    },
+    "cylinder_head": {
+      "description": "Cylinder heads and valvetrain",
+      "components": [
+        {
+          "part_id": "SBF-HEAD-E7TE",
+          "name": "Cylinder Head - E7TE (Stock 5.0)",
+          "description": "Factory 5.0 HO cylinder head",
+          "oem_part_numbers": ["E7TE"],
+          "specifications": {
+            "material": "Cast Iron",
+            "combustion_chamber_cc": 61,
+            "intake_valve_diameter_inches": 1.78,
+            "exhaust_valve_diameter_inches": 1.46,
+            "flow_cfm_at_28_intake": 165
+          },
+          "quantity": 2,
+          "notes": "Common starting point for porting"
+        },
+        {
+          "part_id": "SBF-HEAD-GT40P",
+          "name": "Cylinder Head - GT40P",
+          "description": "Explorer/Mountaineer performance head",
+          "oem_part_numbers": ["F77E"],
+          "specifications": {
+            "material": "Cast Iron",
+            "combustion_chamber_cc": 64,
+            "intake_valve_diameter_inches": 1.85,
+            "exhaust_valve_diameter_inches": 1.54,
+            "flow_cfm_at_28_intake": 195
+          },
+          "quantity": 2,
+          "notes": "Best factory head, requires header adapters"
+        },
+        {
+          "part_id": "SBF-HEAD-AFR165",
+          "name": "Cylinder Head - AFR 165cc",
+          "description": "Aluminum performance head",
+          "aftermarket_sources": ["AFR 1402"],
+          "specifications": {
+            "material": "Aluminum",
+            "combustion_chamber_cc": 58,
+            "intake_valve_diameter_inches": 2.02,
+            "exhaust_valve_diameter_inches": 1.60,
+            "flow_cfm_at_28_intake": 265
+          },
+          "quantity": 2,
+          "notes": "Premium street/strip head"
+        },
+        {
+          "part_id": "SBF-HEAD-TW170",
+          "name": "Cylinder Head - Trick Flow Twisted Wedge 170",
+          "description": "Aluminum street performance head",
+          "aftermarket_sources": ["Trick Flow TFS-51410002"],
+          "specifications": {
+            "material": "Aluminum",
+            "combustion_chamber_cc": 61,
+            "intake_valve_diameter_inches": 2.02,
+            "exhaust_valve_diameter_inches": 1.60,
+            "flow_cfm_at_28_intake": 250
+          },
+          "quantity": 2,
+          "notes": "Excellent street head with improved port design"
+        },
+        {
+          "part_id": "SBF-HEAD-GASKET",
+          "name": "Head Gasket Set",
+          "description": "MLS head gaskets",
+          "oem_part_numbers": ["Fel-Pro 1011-2"],
+          "specifications": {
+            "material": "Multi-layer steel",
+            "bore_inches": 4.100,
+            "compressed_thickness_inches": 0.041
+          },
+          "quantity": 2,
+          "notes": "MLS preferred for performance"
+        },
+        {
+          "part_id": "SBF-INTAKE-VALVES",
+          "name": "Intake Valve Set",
+          "description": "Stainless steel intake valves",
+          "specifications": {
+            "head_diameter_inches": 1.94,
+            "stem_diameter_inches": 0.3415,
+            "length_inches": 4.930
+          },
+          "quantity": 8,
+          "notes": "Size varies by head application"
+        },
+        {
+          "part_id": "SBF-EXHAUST-VALVES",
+          "name": "Exhaust Valve Set",
+          "description": "Stainless steel exhaust valves",
+          "specifications": {
+            "head_diameter_inches": 1.60,
+            "stem_diameter_inches": 0.3415,
+            "length_inches": 4.930
+          },
+          "quantity": 8,
+          "notes": "Inconel for turbo applications"
+        },
+        {
+          "part_id": "SBF-VALVE-SPRINGS",
+          "name": "Valve Spring Set",
+          "description": "Single spring with damper",
+          "specifications": {
+            "installed_height_inches": 1.78,
+            "seat_pressure_lbs": 90,
+            "open_pressure_lbs": 260
+          },
+          "quantity": 16,
+          "notes": "Upgrade for aftermarket cam"
+        },
+        {
+          "part_id": "SBF-ROCKER-ARMS",
+          "name": "Rocker Arm Set - Roller",
+          "description": "Aluminum roller rocker arms",
+          "aftermarket_sources": ["Comp Cams 1.6:1", "Scorpion"],
+          "specifications": {
+            "ratio": "1.6:1 (stock) or 1.7:1 (performance)",
+            "material": "Aluminum",
+            "type": "Stud mount roller tip"
+          },
+          "quantity": 16,
+          "notes": "1.7:1 ratio for increased lift"
+        },
+        {
+          "part_id": "SBF-PUSHRODS",
+          "name": "Pushrod Set",
+          "description": "Chrome moly pushrods",
+          "specifications": {
+            "length_inches": 6.80,
+            "diameter_inches": 0.3125,
+            "wall_inches": 0.080
+          },
+          "quantity": 16,
+          "notes": "Length varies by application"
+        },
+        {
+          "part_id": "SBF-LIFTERS-ROLLER",
+          "name": "Hydraulic Roller Lifter Set",
+          "description": "OEM-style roller lifters",
+          "oem_part_numbers": ["Motorcraft CM-4940"],
+          "specifications": {
+            "type": "Hydraulic roller",
+            "diameter_inches": 0.842,
+            "travel_inches": 0.300
+          },
+          "quantity": 16,
+          "notes": "Requires spider and hold-downs"
+        },
+        {
+          "part_id": "SBF-LIFTERS-FLAT",
+          "name": "Hydraulic Flat Tappet Lifter Set",
+          "description": "Flat tappet lifters for pre-1985",
+          "specifications": {
+            "type": "Hydraulic flat tappet",
+            "diameter_inches": 0.842
+          },
+          "quantity": 16,
+          "notes": "ZDDP oil required"
+        }
+      ]
+    },
+    "camshaft_and_timing": {
+      "description": "Camshaft and timing components",
+      "components": [
+        {
+          "part_id": "SBF-CAM-E303",
+          "name": "Camshaft - Ford E303",
+          "description": "Factory Ford Motorsport performance cam",
+          "oem_part_numbers": ["M-6250-E303"],
+          "specifications": {
+            "type": "Hydraulic roller",
+            "duration_at_050_intake": 220,
+            "duration_at_050_exhaust": 222,
+            "lift_intake_inches": 0.498,
+            "lift_exhaust_inches": 0.498,
+            "lobe_separation": 112
+          },
+          "quantity": 1,
+          "notes": "Classic 5.0 street performance cam"
+        },
+        {
+          "part_id": "SBF-CAM-COMP-XE262",
+          "name": "Camshaft - Comp XE262HR",
+          "description": "Comp Cams street performance roller cam",
+          "aftermarket_sources": ["Comp Cams 35-514-8"],
+          "specifications": {
+            "type": "Hydraulic roller",
+            "duration_at_050_intake": 212,
+            "duration_at_050_exhaust": 218,
+            "lift_intake_inches": 0.480,
+            "lift_exhaust_inches": 0.480,
+            "lobe_separation": 110
+          },
+          "quantity": 1,
+          "notes": "Excellent street cam with good idle"
+        },
+        {
+          "part_id": "SBF-TIMING-SET",
+          "name": "Timing Chain Set - Double Roller",
+          "description": "Heavy-duty timing set",
+          "aftermarket_sources": ["Cloyes 9-1135", "Comp Cams 2110"],
+          "specifications": {
+            "chain_type": "Double roller",
+            "material": "Billet steel gears"
+          },
+          "quantity": 1,
+          "notes": "Essential upgrade from factory single roller"
+        },
+        {
+          "part_id": "SBF-TIMING-COVER",
+          "name": "Timing Chain Cover",
+          "description": "Steel timing cover",
+          "oem_part_numbers": ["E7TE-6059-AA"],
+          "specifications": {
+            "material": "Stamped steel or cast aluminum"
+          },
+          "quantity": 1,
+          "notes": "Check for water pump bolt damage"
+        }
+      ]
+    },
+    "intake_system": {
+      "description": "Intake manifold and fuel delivery",
+      "components": [
+        {
+          "part_id": "SBF-INTAKE-GT40",
+          "name": "Intake Manifold - GT40",
+          "description": "Factory aluminum intake manifold",
+          "oem_part_numbers": ["F3ZE-9425-CA"],
+          "specifications": {
+            "material": "Aluminum",
+            "runners": 8,
+            "type": "Dual-plane EFI"
+          },
+          "quantity": 1,
+          "notes": "Explorer/Cobra intake, EFI"
+        },
+        {
+          "part_id": "SBF-INTAKE-EDELBROCK-PERFORMER",
+          "name": "Intake Manifold - Edelbrock Performer",
+          "description": "Aluminum dual-plane intake",
+          "aftermarket_sources": ["Edelbrock 2121 (carb)", "Edelbrock 3821 (EFI)"],
+          "specifications": {
+            "material": "Aluminum",
+            "type": "Dual-plane",
+            "runner_length": "Long"
+          },
+          "quantity": 1,
+          "notes": "Excellent street torque manifold"
+        },
+        {
+          "part_id": "SBF-INTAKE-TRICK-FLOW-STREET",
+          "name": "Intake Manifold - Trick Flow Street Burner",
+          "description": "Aluminum EFI intake for GT40/TW heads",
+          "aftermarket_sources": ["TFS-51500005"],
+          "specifications": {
+            "material": "Aluminum",
+            "type": "Single-plane style EFI"
+          },
+          "quantity": 1,
+          "notes": "Designed for TW heads"
+        },
+        {
+          "part_id": "SBF-TB-65MM",
+          "name": "Throttle Body - 65mm",
+          "description": "Performance throttle body",
+          "aftermarket_sources": ["BBK", "Accufab"],
+          "specifications": {
+            "bore_mm": 65,
+            "type": "Single blade"
+          },
+          "quantity": 1,
+          "notes": "Factory is 60mm, 65mm is good upgrade"
+        },
+        {
+          "part_id": "SBF-MAF-PRO-M",
+          "name": "Mass Air Flow Meter - Pro-M",
+          "description": "Aftermarket calibrated MAF",
+          "aftermarket_sources": ["Pro-M", "C&L"],
+          "specifications": {
+            "type": "Blow-through compatible",
+            "calibration": "19 lb, 24 lb, 30 lb injector options"
+          },
+          "quantity": 1,
+          "notes": "Required for injector upgrades"
+        },
+        {
+          "part_id": "SBF-INJECTORS-24LB",
+          "name": "Fuel Injector Set - 24 lb/hr",
+          "description": "High-flow fuel injectors",
+          "specifications": {
+            "flow_rate_lbs_hr": 24,
+            "type": "High impedance"
+          },
+          "quantity": 8,
+          "notes": "Supports 300+ HP naturally aspirated"
+        }
+      ]
+    },
+    "exhaust_system": {
+      "description": "Exhaust manifolds and headers",
+      "components": [
+        {
+          "part_id": "SBF-HEADERS-SHORTY",
+          "name": "Headers - Shorty",
+          "description": "Shorty tubular headers",
+          "aftermarket_sources": ["BBK", "MAC", "Flowmaster"],
+          "specifications": {
+            "primary_diameter_inches": 1.625,
+            "collector_diameter_inches": 2.5
+          },
+          "quantity": 1,
+          "notes": "Easy installation, good power gains"
+        },
+        {
+          "part_id": "SBF-HEADERS-LONG",
+          "name": "Headers - Long Tube",
+          "description": "Full-length tubular headers",
+          "aftermarket_sources": ["Kooks", "American Racing"],
+          "specifications": {
+            "primary_diameter_inches": 1.75,
+            "collector_diameter_inches": 3.0
+          },
+          "quantity": 1,
+          "notes": "Best power, requires modifications"
+        },
+        {
+          "part_id": "SBF-HPIPE",
+          "name": "H-Pipe or X-Pipe",
+          "description": "Exhaust crossover pipe",
+          "aftermarket_sources": ["BBK", "Flowmaster", "MAC"],
+          "specifications": {
+            "diameter_inches": 2.5,
+            "type": "Catted or off-road"
+          },
+          "quantity": 1,
+          "notes": "Improves exhaust scavenging"
+        }
+      ]
+    },
+    "ignition_system": {
+      "description": "Distributor and ignition components",
+      "components": [
+        {
+          "part_id": "SBF-DISTRIBUTOR-TFI",
+          "name": "Distributor - TFI",
+          "description": "Factory TFI distributor",
+          "oem_part_numbers": ["E7AE-12127-BA"],
+          "specifications": {
+            "type": "Electronic TFI",
+            "pickup": "Hall effect"
+          },
+          "quantity": 1,
+          "notes": "1986-1995 5.0 standard"
+        },
+        {
+          "part_id": "SBF-DISTRIBUTOR-MSD",
+          "name": "Distributor - MSD Pro-Billet",
+          "description": "Performance electronic distributor",
+          "aftermarket_sources": ["MSD 8456"],
+          "specifications": {
+            "type": "Electronic with adjustable timing"
+          },
+          "quantity": 1,
+          "notes": "Works with factory TFI or MSD box"
+        },
+        {
+          "part_id": "SBF-COIL",
+          "name": "Ignition Coil - E-Core",
+          "description": "High-output ignition coil",
+          "aftermarket_sources": ["MSD Blaster", "Accel"],
+          "specifications": {
+            "output_kv": 40,
+            "type": "E-core"
+          },
+          "quantity": 1,
+          "notes": "Factory TFI coil is adequate for most builds"
+        },
+        {
+          "part_id": "SBF-PLUG-WIRES",
+          "name": "Spark Plug Wire Set",
+          "description": "Performance ignition wires",
+          "aftermarket_sources": ["Taylor", "MSD", "Ford Racing"],
+          "specifications": {
+            "diameter_mm": 8.8,
+            "type": "Spiral wound"
+          },
+          "quantity": 1,
+          "notes": "9mm wires recommended"
+        },
+        {
+          "part_id": "SBF-SPARK-PLUGS",
+          "name": "Spark Plug Set",
+          "description": "Copper core spark plugs",
+          "oem_part_numbers": ["Motorcraft ASF42C", "NGK TR55"],
+          "specifications": {
+            "thread_size": "14mm",
+            "reach_inches": 0.460,
+            "gap_inches": 0.054
+          },
+          "quantity": 8,
+          "notes": "Gap to 0.054\" for EFI"
+        }
+      ]
+    },
+    "cooling_system": {
+      "description": "Cooling system components",
+      "components": [
+        {
+          "part_id": "SBF-WATER-PUMP",
+          "name": "Water Pump - High Flow",
+          "description": "Performance water pump",
+          "aftermarket_sources": ["Edelbrock 8842", "Stewart"],
+          "specifications": {
+            "type": "Reverse rotation (5.0 Mustang)",
+            "flow_increase_percent": 20
+          },
+          "quantity": 1,
+          "notes": "5.0 Mustang uses reverse rotation pump"
+        },
+        {
+          "part_id": "SBF-THERMOSTAT",
+          "name": "Thermostat - 180°F",
+          "description": "High-flow thermostat",
+          "oem_part_numbers": ["Motorcraft RT1091"],
+          "specifications": {
+            "opening_temp_f": 180
+          },
+          "quantity": 1,
+          "notes": "180°F recommended for performance"
+        }
+      ]
+    },
+    "lubrication_system": {
+      "description": "Oil system components",
+      "components": [
+        {
+          "part_id": "SBF-OIL-PUMP-STD",
+          "name": "Oil Pump - Standard Volume",
+          "description": "Standard replacement pump",
+          "oem_part_numbers": ["Melling M68"],
+          "specifications": {
+            "type": "Gear driven",
+            "pressure_psi": 40
+          },
+          "quantity": 1,
+          "notes": "Adequate for street builds"
+        },
+        {
+          "part_id": "SBF-OIL-PUMP-HV",
+          "name": "Oil Pump - High Volume",
+          "description": "High-volume oil pump",
+          "aftermarket_sources": ["Melling M68HV"],
+          "specifications": {
+            "volume_increase_percent": 25,
+            "pressure_psi": 60
+          },
+          "quantity": 1,
+          "notes": "Recommended for performance builds"
+        },
+        {
+          "part_id": "SBF-OIL-PAN",
+          "name": "Oil Pan - Stock",
+          "description": "Factory stamped steel pan",
+          "oem_part_numbers": ["F4ZZ-6675-A"],
+          "specifications": {
+            "capacity_quarts": 5,
+            "depth_inches": 4.0
+          },
+          "quantity": 1,
+          "notes": "Fox body pan fits 79-93 Mustang"
+        },
+        {
+          "part_id": "SBF-OIL-PAN-CANTON",
+          "name": "Oil Pan - Performance",
+          "description": "Baffled performance pan",
+          "aftermarket_sources": ["Canton 15-670", "Moroso"],
+          "specifications": {
+            "capacity_quarts": 7,
+            "baffle": "Trap door"
+          },
+          "quantity": 1,
+          "notes": "Required for road racing"
+        }
+      ]
+    },
+    "gaskets_and_seals": {
+      "description": "Gasket and seal components",
+      "components": [
+        {
+          "part_id": "SBF-GASKET-SET",
+          "name": "Full Gasket Set",
+          "description": "Complete overhaul gasket set",
+          "oem_part_numbers": ["Fel-Pro KS2308"],
+          "specifications": {
+            "includes": ["Head gaskets", "Intake", "Exhaust", "Valve cover", "Oil pan", "Timing cover", "Seals"]
+          },
+          "quantity": 1,
+          "notes": "Fel-Pro recommended"
+        },
+        {
+          "part_id": "SBF-VALVE-COVER-GASKETS",
+          "name": "Valve Cover Gaskets",
+          "description": "Rubber valve cover gaskets",
+          "oem_part_numbers": ["Fel-Pro VS50374R"],
+          "specifications": {
+            "material": "Rubber"
+          },
+          "quantity": 2,
+          "notes": "Permaseal or rubber preferred"
+        },
+        {
+          "part_id": "SBF-REAR-MAIN",
+          "name": "Rear Main Seal",
+          "description": "One-piece rear main seal (1982+)",
+          "oem_part_numbers": ["Fel-Pro BS40656"],
+          "specifications": {
+            "type": "One-piece (1982+) or Two-piece (earlier)"
+          },
+          "quantity": 1,
+          "notes": "One-piece seal retrofit available for early blocks"
+        }
+      ]
+    }
+  }
+}

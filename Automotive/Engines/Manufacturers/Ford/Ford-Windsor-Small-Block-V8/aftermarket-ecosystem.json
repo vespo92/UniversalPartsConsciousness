@@ -1,0 +1,511 @@
+{
+  "engine_family": "Ford Windsor Small Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "vendors_and_retailers": {
+    "ford_performance_specialists": [
+      {
+        "name": "Ford Performance",
+        "specialty": "Official Ford crate engines and parts",
+        "url": "http://performanceparts.ford.com",
+        "notes": "Crate engines, cams, heads, all official Ford parts"
+      },
+      {
+        "name": "Anderson Ford Motorsport",
+        "specialty": "5.0 Mustang specialist",
+        "url": "http://andersonfordmotorsport.com",
+        "notes": "5.0 Mustang performance pioneer"
+      },
+      {
+        "name": "Trick Flow Specialties",
+        "specialty": "Cylinder heads and intake manifolds",
+        "url": "http://trickflow.com",
+        "notes": "Twisted Wedge head designers"
+      },
+      {
+        "name": "AFR (Air Flow Research)",
+        "specialty": "High-performance cylinder heads",
+        "url": "http://airflowresearch.com",
+        "notes": "Premium aluminum heads"
+      }
+    ],
+    "mustang_specialists": [
+      {
+        "name": "LMR (Late Model Restoration)",
+        "specialty": "Mustang parts 1979-2004",
+        "url": "http://lmr.com",
+        "notes": "Huge 5.0 Mustang inventory"
+      },
+      {
+        "name": "American Muscle",
+        "specialty": "Mustang performance and styling",
+        "url": "http://americanmuscle.com",
+        "notes": "Excellent 5.0 selection"
+      },
+      {
+        "name": "CJ Pony Parts",
+        "specialty": "Mustang restoration and performance",
+        "url": "http://cjponyparts.com",
+        "notes": "Classic and late model Mustang"
+      },
+      {
+        "name": "National Parts Depot",
+        "specialty": "Mustang restoration parts",
+        "url": "http://npdlink.com",
+        "notes": "OEM and reproduction parts"
+      }
+    ],
+    "general_performance": [
+      {
+        "name": "Summit Racing",
+        "specialty": "Performance parts superstore",
+        "url": "http://summitracing.com",
+        "notes": "Massive small block Ford selection"
+      },
+      {
+        "name": "JEGS",
+        "specialty": "Performance parts",
+        "url": "http://jegs.com",
+        "notes": "Good SBF inventory"
+      },
+      {
+        "name": "Speedway Motors",
+        "specialty": "Hot rod and racing parts",
+        "url": "http://speedwaymotors.com",
+        "notes": "SBF swap components"
+      }
+    ]
+  },
+  "aftermarket_parts": {
+    "cylinder_heads": [
+      {
+        "manufacturer": "Trick Flow",
+        "part_number": "TFS-51400003",
+        "part_name": "Twisted Wedge 170",
+        "description": "Street/strip aluminum heads",
+        "specifications": {
+          "material": "Aluminum",
+          "intake_port_cc": 170,
+          "chamber_cc": 61,
+          "intake_valve_inches": 2.02,
+          "exhaust_valve_inches": 1.60,
+          "flow_cfm_at_28": 250
+        },
+        "price_range_usd": "1600-1800 pair",
+        "notes": "Excellent street head, top and bottom mount installation"
+      },
+      {
+        "manufacturer": "AFR",
+        "part_number": "1388",
+        "part_name": "165cc Street Heads",
+        "description": "Race-proven aluminum heads",
+        "specifications": {
+          "material": "Aluminum",
+          "intake_port_cc": 165,
+          "chamber_cc": 58,
+          "intake_valve_inches": 2.02,
+          "exhaust_valve_inches": 1.60,
+          "flow_cfm_at_28": 265
+        },
+        "price_range_usd": "2200-2500 pair",
+        "notes": "Premium heads with CNC chambers"
+      },
+      {
+        "manufacturer": "Edelbrock",
+        "part_number": "60259",
+        "part_name": "Performer RPM",
+        "description": "Budget-friendly aluminum heads",
+        "specifications": {
+          "material": "Aluminum",
+          "intake_port_cc": 190,
+          "chamber_cc": 60,
+          "flow_cfm_at_28": 215
+        },
+        "price_range_usd": "1400-1600 pair",
+        "notes": "Good budget performance option"
+      }
+    ],
+    "camshafts": [
+      {
+        "manufacturer": "Ford Racing",
+        "part_number": "M-6250-B303",
+        "part_name": "B303 Cam",
+        "description": "Classic 5.0 street cam",
+        "specifications": {
+          "type": "Hydraulic roller",
+          "duration_at_050_intake": 218,
+          "duration_at_050_exhaust": 224,
+          "lift_intake_inches": 0.480,
+          "lift_exhaust_inches": 0.480,
+          "lobe_separation": 112
+        },
+        "notes": "Slightly more aggressive than E303"
+      },
+      {
+        "manufacturer": "Comp Cams",
+        "part_number": "35-518-8",
+        "part_name": "XE270HR",
+        "description": "Street/strip roller cam",
+        "specifications": {
+          "type": "Hydraulic roller",
+          "duration_at_050_intake": 224,
+          "duration_at_050_exhaust": 230,
+          "lift_intake_inches": 0.544,
+          "lift_exhaust_inches": 0.544,
+          "lobe_separation": 110
+        },
+        "notes": "Lumpy idle, great top end"
+      },
+      {
+        "manufacturer": "Lunati",
+        "part_number": "51020HR",
+        "part_name": "Voodoo Street",
+        "description": "Aggressive street cam",
+        "specifications": {
+          "type": "Hydraulic roller",
+          "duration_at_050_intake": 219,
+          "duration_at_050_exhaust": 227,
+          "lift_intake_inches": 0.512,
+          "lift_exhaust_inches": 0.512,
+          "lobe_separation": 110
+        },
+        "notes": "Great sound and performance"
+      }
+    ],
+    "intake_manifolds": [
+      {
+        "manufacturer": "Edelbrock",
+        "part_number": "7121",
+        "part_name": "Performer RPM II",
+        "description": "Aluminum dual-plane carb intake",
+        "specifications": {
+          "material": "Aluminum",
+          "type": "Dual-plane"
+        },
+        "price_range_usd": "350-400",
+        "notes": "Great 1500-6500 RPM range"
+      },
+      {
+        "manufacturer": "Trick Flow",
+        "part_number": "TFS-51500005",
+        "part_name": "Street Burner EFI",
+        "description": "EFI intake for TW heads",
+        "specifications": {
+          "material": "Aluminum",
+          "type": "EFI plenum"
+        },
+        "price_range_usd": "400-450",
+        "notes": "Designed for Twisted Wedge heads"
+      },
+      {
+        "manufacturer": "Professional Products",
+        "part_number": "54024",
+        "part_name": "Typhoon",
+        "description": "EFI upper/lower intake",
+        "specifications": {
+          "material": "Aluminum",
+          "type": "Modular EFI"
+        },
+        "price_range_usd": "500-550",
+        "notes": "Popular 5.0 EFI upgrade"
+      },
+      {
+        "manufacturer": "Holley",
+        "part_number": "300-72S",
+        "part_name": "Systemax II",
+        "description": "High-flow EFI intake",
+        "specifications": {
+          "material": "Aluminum",
+          "type": "EFI"
+        },
+        "price_range_usd": "700-800",
+        "notes": "Premium EFI performance intake"
+      }
+    ],
+    "headers_and_exhaust": [
+      {
+        "manufacturer": "BBK",
+        "part_number": "1515",
+        "part_name": "1-5/8\" Shorty Headers",
+        "description": "Chrome shorty headers for Mustang",
+        "specifications": {
+          "primary_inches": 1.625,
+          "collector_inches": 2.5,
+          "material": "Steel chrome"
+        },
+        "price_range_usd": "250-300",
+        "notes": "Easy bolt-on, good power gains"
+      },
+      {
+        "manufacturer": "Kooks",
+        "part_number": "11412400",
+        "part_name": "Long Tube Headers",
+        "description": "Stainless long tubes",
+        "specifications": {
+          "primary_inches": 1.75,
+          "collector_inches": 3.0,
+          "material": "304 stainless"
+        },
+        "price_range_usd": "1200-1500",
+        "notes": "Premium quality, maximum power"
+      },
+      {
+        "manufacturer": "MAC",
+        "part_name": "Prochamber",
+        "description": "Chambered exhaust mid-pipe",
+        "specifications": {
+          "diameter_inches": 2.5
+        },
+        "price_range_usd": "250-300",
+        "notes": "Great sound without rasp"
+      }
+    ],
+    "stroker_kits": [
+      {
+        "manufacturer": "Scat",
+        "part_name": "331 Stroker Kit",
+        "description": "Stroker rotating assembly",
+        "specifications": {
+          "stroke_inches": 3.25,
+          "displacement_ci": 331,
+          "includes": ["Crankshaft", "Rods", "Pistons", "Bearings", "Rings"]
+        },
+        "price_range_usd": "2000-2500",
+        "notes": "Popular mild stroker, uses stock rods with offset ground crank"
+      },
+      {
+        "manufacturer": "Scat",
+        "part_name": "347 Stroker Kit",
+        "description": "Maximum displacement stroker",
+        "specifications": {
+          "stroke_inches": 3.40,
+          "displacement_ci": 347,
+          "includes": ["Crankshaft", "Rods", "Pistons", "Bearings", "Rings"]
+        },
+        "price_range_usd": "2500-3500",
+        "notes": "Maximum displacement in 302 block"
+      },
+      {
+        "manufacturer": "Eagle",
+        "part_name": "393W Stroker Kit",
+        "description": "351W based stroker",
+        "specifications": {
+          "stroke_inches": 3.85,
+          "displacement_ci": 393
+        },
+        "price_range_usd": "3000-4000",
+        "notes": "Big torque from 351W platform"
+      },
+      {
+        "manufacturer": "Custom Build",
+        "part_name": "427W Stroker",
+        "description": "Maximum 351W displacement",
+        "specifications": {
+          "bore_inches": 4.125,
+          "stroke_inches": 4.00,
+          "displacement_ci": 427
+        },
+        "price_range_usd": "4500-6000",
+        "notes": "Maximum streetable 351W build"
+      }
+    ],
+    "fuel_system": [
+      {
+        "manufacturer": "BBK",
+        "part_number": "1503",
+        "part_name": "65mm Throttle Body",
+        "description": "Performance throttle body",
+        "specifications": {
+          "bore_mm": 65
+        },
+        "price_range_usd": "175-200",
+        "notes": "Direct bolt-on upgrade"
+      },
+      {
+        "manufacturer": "Accufab",
+        "part_name": "70mm Throttle Body",
+        "description": "Large bore throttle body",
+        "specifications": {
+          "bore_mm": 70
+        },
+        "price_range_usd": "250-300",
+        "notes": "For modified intake"
+      },
+      {
+        "manufacturer": "Ford Racing",
+        "part_number": "M-9000-A46",
+        "part_name": "30 lb/hr Injectors",
+        "description": "High-flow fuel injectors",
+        "specifications": {
+          "flow_rate": "30 lb/hr"
+        },
+        "price_range_usd": "200-250 set",
+        "notes": "Requires matched MAF calibration"
+      },
+      {
+        "manufacturer": "Walbro",
+        "part_number": "255 LPH",
+        "part_name": "High Flow Fuel Pump",
+        "description": "In-tank fuel pump",
+        "specifications": {
+          "flow_lph": 255
+        },
+        "price_range_usd": "100-125",
+        "notes": "Essential for 300+ HP builds"
+      }
+    ],
+    "forced_induction": [
+      {
+        "manufacturer": "Vortech",
+        "part_name": "V-3 Si Supercharger",
+        "description": "Centrifugal supercharger kit",
+        "specifications": {
+          "type": "Centrifugal",
+          "boost_psi": "8-10"
+        },
+        "price_range_usd": "3500-4500",
+        "notes": "Classic 5.0 blower kit"
+      },
+      {
+        "manufacturer": "Paxton",
+        "part_name": "NOVI 1200",
+        "description": "Centrifugal supercharger",
+        "specifications": {
+          "type": "Centrifugal",
+          "boost_psi": "6-8"
+        },
+        "price_range_usd": "3500-4000",
+        "notes": "Good entry-level blower"
+      },
+      {
+        "manufacturer": "On 3 Performance",
+        "part_name": "Twin Turbo Kit",
+        "description": "Complete twin turbo system",
+        "specifications": {
+          "turbos": "Twin",
+          "boost_psi": "6-15"
+        },
+        "price_range_usd": "3000-4500",
+        "notes": "Aggressive power option"
+      }
+    ]
+  },
+  "build_packages": {
+    "stage_1_bolt_ons": {
+      "name": "Stage 1 - Bolt-Ons",
+      "target_horsepower": "260-280",
+      "description": "Basic bolt-on modifications",
+      "parts_list": [
+        "Cold air intake",
+        "65mm throttle body",
+        "24 lb injectors with matched MAF",
+        "Shorty headers",
+        "Off-road H-pipe",
+        "Cat-back exhaust"
+      ],
+      "estimated_cost_usd": "1500-2000",
+      "notes": "Maintains reliability, adds 40-50 HP"
+    },
+    "stage_2_cam_and_heads": {
+      "name": "Stage 2 - Top End",
+      "target_horsepower": "320-350",
+      "description": "Heads and cam package",
+      "parts_list": [
+        "GT40P or aluminum heads",
+        "E303 or B303 cam",
+        "1.7 roller rockers",
+        "Upgraded intake manifold",
+        "Long tube headers",
+        "30 lb injectors with MAF",
+        "Walbro 255 fuel pump"
+      ],
+      "estimated_cost_usd": "3500-5000",
+      "notes": "Major power increase, still daily drivable"
+    },
+    "stage_3_stroker": {
+      "name": "Stage 3 - 331/347 Stroker",
+      "target_horsepower": "400-450",
+      "description": "Complete stroker build",
+      "parts_list": [
+        "347 stroker rotating assembly",
+        "Aftermarket aluminum heads (TW or AFR)",
+        "Aggressive cam",
+        "Upgraded fuel system",
+        "Long tube headers",
+        "High-volume oil pump",
+        "Performance intake"
+      ],
+      "estimated_cost_usd": "8000-12000",
+      "notes": "Serious street/strip power"
+    },
+    "stage_4_forced_induction": {
+      "name": "Stage 4 - Supercharged 347",
+      "target_horsepower": "550-650",
+      "description": "Blown stroker build",
+      "parts_list": [
+        "Forged 347 stroker assembly",
+        "Low compression forged pistons",
+        "Vortech or Paxton supercharger",
+        "Intercooler",
+        "Large injectors (42 lb+)",
+        "Upgraded fuel system",
+        "Tuned EFI"
+      ],
+      "estimated_cost_usd": "15000-20000",
+      "notes": "Maximum streetable power"
+    }
+  },
+  "maintenance_kits": {
+    "5_0_tune_up": {
+      "name": "5.0 Tune-Up Kit",
+      "parts": [
+        {"item": "Spark plugs (8)", "part_number": "Motorcraft ASF42C"},
+        {"item": "Spark plug wires", "part_number": "Taylor 9mm"},
+        {"item": "Distributor cap and rotor", "part_number": "MSD"},
+        {"item": "Air filter", "part_number": "K&N"},
+        {"item": "PCV valve", "part_number": "Motorcraft"}
+      ],
+      "estimated_cost_usd": "150-200",
+      "notes": "Annual tune-up for EFI 5.0"
+    },
+    "oil_change": {
+      "name": "Oil Change Kit",
+      "parts": [
+        {"item": "Motor oil (5 qts)", "specification": "5W-30 synthetic"},
+        {"item": "Oil filter", "part_number": "Motorcraft FL-820S"}
+      ],
+      "estimated_cost_usd": "40-60",
+      "notes": "5W-30 for EFI, ZDDP for flat tappet"
+    },
+    "cooling_refresh": {
+      "name": "Cooling System Refresh",
+      "parts": [
+        {"item": "Thermostat 180°F", "part_number": "Motorcraft RT1091"},
+        {"item": "Upper radiator hose", "part_number": "Gates"},
+        {"item": "Lower radiator hose", "part_number": "Gates"},
+        {"item": "Heater hoses", "part_number": "Gates"},
+        {"item": "Coolant", "specification": "Green ethylene glycol"}
+      ],
+      "estimated_cost_usd": "75-100",
+      "notes": "Complete cooling system refresh"
+    }
+  },
+  "quality_tiers": {
+    "budget": {
+      "brands": ["Sealed Power", "Pioneer", "Hastings"],
+      "notes": "Basic rebuilds and drivers"
+    },
+    "mid_tier": {
+      "brands": ["Fel-Pro", "Clevite", "Ford Racing", "BBK"],
+      "notes": "Quality street performance"
+    },
+    "premium": {
+      "brands": ["Trick Flow", "AFR", "Eagle", "Scat", "Comp Cams"],
+      "notes": "High-performance builds"
+    },
+    "race": {
+      "brands": ["JE Pistons", "Carrillo", "Manley", "Kooks"],
+      "notes": "Competition builds"
+    }
+  }
+}

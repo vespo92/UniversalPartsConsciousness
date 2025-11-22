@@ -1,0 +1,803 @@
+{
+  "catalog_id": "FORD-FE-PARTS",
+  "engine_family": "Ford FE V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "systems": {
+    "short_block": {
+      "description": "Engine block and rotating assembly components",
+      "components": [
+        {
+          "part_id": "FE-BLOCK-390-TOP",
+          "name": "Engine Block - 390 Top Oiler",
+          "description": "Cast iron block with standard top-oiler system",
+          "oem_part_numbers": ["C6AE-6015-A", "C7AE-6015-B"],
+          "specifications": {
+            "bore_inches": 4.05,
+            "deck_height_inches": 10.170,
+            "main_caps": 5,
+            "material": "Cast Iron",
+            "oiling": "Top oiler"
+          },
+          "quantity": 1,
+          "notes": "Most common FE block, excellent for street builds"
+        },
+        {
+          "part_id": "FE-BLOCK-427-SIDE",
+          "name": "Engine Block - 427 Side Oiler",
+          "description": "Cast iron block with priority main bearing oiling",
+          "oem_part_numbers": ["C5AE-6015-E", "C6AE-6015-G"],
+          "specifications": {
+            "bore_inches": 4.2328,
+            "deck_height_inches": 10.170,
+            "main_caps": 5,
+            "main_cap_bolts": "Cross-bolted",
+            "material": "Cast Iron",
+            "oiling": "Side oiler"
+          },
+          "quantity": 1,
+          "notes": "Premium racing block, essential for high-RPM use"
+        },
+        {
+          "part_id": "FE-BLOCK-428",
+          "name": "Engine Block - 428",
+          "description": "Cast iron block for 428 applications",
+          "oem_part_numbers": ["C8AE-6015-A"],
+          "specifications": {
+            "bore_inches": 4.13,
+            "deck_height_inches": 10.170,
+            "main_caps": 5,
+            "material": "Cast Iron",
+            "oiling": "Top oiler (standard), Cross-bolt (SCJ)"
+          },
+          "quantity": 1,
+          "notes": "Stroked version of 406 block, Cobra Jet versions have cross-bolts"
+        },
+        {
+          "part_id": "FE-CRANK-390",
+          "name": "Crankshaft - 390",
+          "description": "Forged steel crankshaft with 3.785\" stroke",
+          "oem_part_numbers": ["C3AE-6303-B"],
+          "specifications": {
+            "stroke_inches": 3.785,
+            "main_journal_inches": 2.7485,
+            "rod_journal_inches": 2.4380,
+            "material": "Forged Steel",
+            "counterweights": "Internal balance (28.2 oz-in)"
+          },
+          "quantity": 1,
+          "notes": "Also used in 352, 406, 427"
+        },
+        {
+          "part_id": "FE-CRANK-428",
+          "name": "Crankshaft - 428",
+          "description": "Forged steel crankshaft with 3.98\" stroke",
+          "oem_part_numbers": ["C6AE-6303-A"],
+          "specifications": {
+            "stroke_inches": 3.980,
+            "main_journal_inches": 2.7485,
+            "rod_journal_inches": 2.4380,
+            "material": "Forged Steel",
+            "counterweights": "Internal balance (28.2 oz-in)"
+          },
+          "quantity": 1,
+          "notes": "Longer stroke for torque, used in 410 and 428"
+        },
+        {
+          "part_id": "FE-RODS-STD",
+          "name": "Connecting Rods - Standard",
+          "description": "Forged steel connecting rods",
+          "oem_part_numbers": ["C3AE-6200-A"],
+          "specifications": {
+            "length_inches": 6.540,
+            "big_end_bore_inches": 2.6230,
+            "small_end_bore_inches": 0.9752,
+            "material": "Forged Steel",
+            "bolt_type": "3/8\" bolts"
+          },
+          "quantity": 8,
+          "notes": "Standard production rods"
+        },
+        {
+          "part_id": "FE-RODS-LEMANS",
+          "name": "Connecting Rods - LeMans/SCJ",
+          "description": "Heavy-duty forged steel rods with caps and bolts",
+          "oem_part_numbers": ["C7AE-6200-A"],
+          "specifications": {
+            "length_inches": 6.540,
+            "big_end_bore_inches": 2.6230,
+            "small_end_bore_inches": 0.9752,
+            "material": "Forged Steel",
+            "bolt_type": "7/16\" bolts"
+          },
+          "quantity": 8,
+          "notes": "Premium racing rods used in SCJ and racing engines"
+        },
+        {
+          "part_id": "FE-PISTONS-390",
+          "name": "Piston Set - 390",
+          "description": "Cast aluminum pistons",
+          "oem_part_numbers": ["C3AZ-6108-A"],
+          "specifications": {
+            "bore_inches": 4.05,
+            "compression_height_inches": 1.925,
+            "pin_diameter_inches": 0.9752,
+            "ring_grooves": "3"
+          },
+          "quantity": 8,
+          "notes": "Standard street pistons"
+        },
+        {
+          "part_id": "FE-PISTONS-427",
+          "name": "Piston Set - 427",
+          "description": "Forged aluminum pistons for racing",
+          "oem_part_numbers": ["C6AE-6108-A"],
+          "specifications": {
+            "bore_inches": 4.2328,
+            "compression_height_inches": 1.925,
+            "pin_diameter_inches": 0.9752,
+            "ring_grooves": "3"
+          },
+          "quantity": 8,
+          "notes": "Forged for high-performance applications"
+        },
+        {
+          "part_id": "FE-PISTONS-428CJ",
+          "name": "Piston Set - 428 Cobra Jet",
+          "description": "Forged aluminum pistons with valve reliefs",
+          "oem_part_numbers": ["C8AE-6108-B"],
+          "specifications": {
+            "bore_inches": 4.13,
+            "compression_height_inches": 1.925,
+            "pin_diameter_inches": 0.9752,
+            "ring_grooves": "3",
+            "valve_reliefs": "Yes"
+          },
+          "quantity": 8,
+          "notes": "Designed for 427 low-riser heads"
+        },
+        {
+          "part_id": "FE-RINGS",
+          "name": "Piston Ring Set",
+          "description": "3-ring piston ring set",
+          "specifications": {
+            "top_ring": "5/64\" moly",
+            "second_ring": "5/64\" cast iron",
+            "oil_ring": "3/16\" 3-piece"
+          },
+          "quantity": 8,
+          "notes": "Total Seal or Hastings recommended"
+        },
+        {
+          "part_id": "FE-MAIN-BEARINGS",
+          "name": "Main Bearing Set",
+          "description": "Tri-metal main bearings",
+          "oem_part_numbers": ["Clevite MS829P"],
+          "specifications": {
+            "material": "Tri-metal copper-lead-tin",
+            "journal_diameter": 2.7485,
+            "oil_clearance_inches": "0.0015-0.003"
+          },
+          "quantity": 5,
+          "notes": "Clevite P series for performance"
+        },
+        {
+          "part_id": "FE-ROD-BEARINGS",
+          "name": "Rod Bearing Set",
+          "description": "Tri-metal rod bearings",
+          "oem_part_numbers": ["Clevite CB745P"],
+          "specifications": {
+            "material": "Tri-metal copper-lead-tin",
+            "journal_diameter": 2.4380,
+            "oil_clearance_inches": "0.001-0.003"
+          },
+          "quantity": 8,
+          "notes": "Clevite P series for performance"
+        }
+      ]
+    },
+    "cylinder_head": {
+      "description": "Cylinder heads and valvetrain components",
+      "components": [
+        {
+          "part_id": "FE-HEAD-390-LR",
+          "name": "Cylinder Head - 390 Low Riser",
+          "description": "Cast iron OHV head with low port design",
+          "oem_part_numbers": ["C6AE-C", "C7AE-B"],
+          "specifications": {
+            "material": "Cast Iron",
+            "combustion_chamber_cc": 76,
+            "intake_valve_diameter_inches": 2.03,
+            "exhaust_valve_diameter_inches": 1.56,
+            "port_volume_intake_cc": 175,
+            "flow_cfm_at_28": 260
+          },
+          "quantity": 2,
+          "notes": "Standard street heads"
+        },
+        {
+          "part_id": "FE-HEAD-427-MR",
+          "name": "Cylinder Head - 427 Medium Riser",
+          "description": "Cast iron performance head with raised ports",
+          "oem_part_numbers": ["C6AE-H", "C6AE-K"],
+          "specifications": {
+            "material": "Cast Iron",
+            "combustion_chamber_cc": 72,
+            "intake_valve_diameter_inches": 2.09,
+            "exhaust_valve_diameter_inches": 1.66,
+            "port_volume_intake_cc": 200,
+            "flow_cfm_at_28": 290
+          },
+          "quantity": 2,
+          "notes": "GT40 race heads, excellent performance"
+        },
+        {
+          "part_id": "FE-HEAD-427-HR",
+          "name": "Cylinder Head - 427 High Riser",
+          "description": "Cast iron racing head with maximum port height",
+          "oem_part_numbers": ["C5AE-H", "C7AE-J"],
+          "specifications": {
+            "material": "Cast Iron",
+            "combustion_chamber_cc": 68,
+            "intake_valve_diameter_inches": 2.195,
+            "exhaust_valve_diameter_inches": 1.73,
+            "port_volume_intake_cc": 225,
+            "flow_cfm_at_28": 320
+          },
+          "quantity": 2,
+          "notes": "NASCAR racing heads, requires special intake"
+        },
+        {
+          "part_id": "FE-HEAD-TUNNEL-PORT",
+          "name": "Cylinder Head - Tunnel Port",
+          "description": "Cast iron racing head with pushrods through ports",
+          "oem_part_numbers": ["C7AE-R"],
+          "specifications": {
+            "material": "Cast Iron",
+            "combustion_chamber_cc": 64,
+            "intake_valve_diameter_inches": 2.25,
+            "exhaust_valve_diameter_inches": 1.73,
+            "port_volume_intake_cc": 270,
+            "flow_cfm_at_28": 380
+          },
+          "quantity": 2,
+          "notes": "Extreme racing design, pushrods run through intake ports"
+        },
+        {
+          "part_id": "FE-HEAD-GASKET",
+          "name": "Head Gasket Set",
+          "description": "Composite or MLS head gaskets",
+          "oem_part_numbers": ["Fel-Pro 8548PT"],
+          "specifications": {
+            "material": "MLS multi-layer steel",
+            "compressed_thickness_inches": 0.041,
+            "bore_inches": 4.250
+          },
+          "quantity": 2,
+          "notes": "MLS gaskets preferred for performance"
+        },
+        {
+          "part_id": "FE-INTAKE-VALVES",
+          "name": "Intake Valve Set - Performance",
+          "description": "Stainless steel intake valves",
+          "specifications": {
+            "head_diameter_inches": 2.09,
+            "stem_diameter_inches": 0.3415,
+            "length_inches": 5.290,
+            "material": "Stainless steel"
+          },
+          "quantity": 8,
+          "notes": "Size varies by head type"
+        },
+        {
+          "part_id": "FE-EXHAUST-VALVES",
+          "name": "Exhaust Valve Set - Performance",
+          "description": "Inconel exhaust valves",
+          "specifications": {
+            "head_diameter_inches": 1.66,
+            "stem_diameter_inches": 0.3415,
+            "length_inches": 5.290,
+            "material": "Inconel"
+          },
+          "quantity": 8,
+          "notes": "Inconel for durability at high temp"
+        },
+        {
+          "part_id": "FE-VALVE-SPRINGS",
+          "name": "Valve Spring Set - Performance",
+          "description": "Dual valve springs with damper",
+          "specifications": {
+            "installed_height_inches": 1.875,
+            "seat_pressure_lbs": 130,
+            "open_pressure_lbs": 340,
+            "max_lift_inches": 0.600
+          },
+          "quantity": 16,
+          "notes": "Comp Cams or similar performance springs"
+        },
+        {
+          "part_id": "FE-ROCKER-ARMS",
+          "name": "Rocker Arm Set - Adjustable",
+          "description": "Aluminum roller rocker arms",
+          "specifications": {
+            "ratio": "1.73:1",
+            "material": "Aluminum with roller tip",
+            "type": "Shaft mount"
+          },
+          "quantity": 16,
+          "notes": "FE uses shaft-mounted rockers"
+        },
+        {
+          "part_id": "FE-PUSHRODS",
+          "name": "Pushrod Set - Chrome Moly",
+          "description": "Hardened chrome moly pushrods",
+          "specifications": {
+            "length_inches": 9.150,
+            "diameter_inches": 0.375,
+            "wall_thickness_inches": 0.080,
+            "material": "Chrome moly"
+          },
+          "quantity": 16,
+          "notes": "Length varies by head/cam combination"
+        },
+        {
+          "part_id": "FE-LIFTERS",
+          "name": "Hydraulic Lifter Set",
+          "description": "Hydraulic flat tappet lifters",
+          "oem_part_numbers": ["C3AZ-6500-A"],
+          "specifications": {
+            "type": "Hydraulic flat tappet",
+            "diameter_inches": 0.874,
+            "length_inches": 2.190
+          },
+          "quantity": 16,
+          "notes": "ZDDP oil required for flat tappet protection"
+        },
+        {
+          "part_id": "FE-LIFTERS-SOLID",
+          "name": "Solid Lifter Set",
+          "description": "Solid/mechanical flat tappet lifters",
+          "specifications": {
+            "type": "Solid flat tappet",
+            "diameter_inches": 0.874,
+            "length_inches": 2.190
+          },
+          "quantity": 16,
+          "notes": "Used in performance and racing applications"
+        }
+      ]
+    },
+    "camshaft_and_timing": {
+      "description": "Camshaft and timing chain components",
+      "components": [
+        {
+          "part_id": "FE-CAMSHAFT-STOCK",
+          "name": "Camshaft - Stock 390",
+          "description": "Factory hydraulic camshaft",
+          "oem_part_numbers": ["C6AZ-6250-A"],
+          "specifications": {
+            "type": "Flat tappet hydraulic",
+            "duration_intake_degrees": 270,
+            "duration_exhaust_degrees": 270,
+            "lift_intake_inches": 0.450,
+            "lift_exhaust_inches": 0.450,
+            "lobe_separation_degrees": 112
+          },
+          "quantity": 1,
+          "notes": "Standard street cam"
+        },
+        {
+          "part_id": "FE-CAMSHAFT-428CJ",
+          "name": "Camshaft - 428 Cobra Jet",
+          "description": "Factory performance hydraulic camshaft",
+          "oem_part_numbers": ["C8AE-6250-A"],
+          "specifications": {
+            "type": "Flat tappet hydraulic",
+            "duration_intake_degrees": 282,
+            "duration_exhaust_degrees": 296,
+            "lift_intake_inches": 0.481,
+            "lift_exhaust_inches": 0.490,
+            "lobe_separation_degrees": 114
+          },
+          "quantity": 1,
+          "notes": "OEM Cobra Jet profile, good street/strip"
+        },
+        {
+          "part_id": "FE-TIMING-SET",
+          "name": "Timing Chain Set - Double Roller",
+          "description": "Heavy-duty double roller timing set",
+          "aftermarket_sources": ["Cloyes 9-3100", "Comp Cams 3100"],
+          "specifications": {
+            "chain_type": "Double roller",
+            "crank_gear_material": "Steel billet",
+            "cam_gear_material": "Billet steel"
+          },
+          "quantity": 1,
+          "notes": "Essential upgrade over factory single roller"
+        },
+        {
+          "part_id": "FE-TIMING-COVER",
+          "name": "Timing Chain Cover",
+          "description": "Cast aluminum timing cover",
+          "oem_part_numbers": ["C7AZ-6019-A"],
+          "specifications": {
+            "material": "Cast aluminum",
+            "timing_pointer": "Integral"
+          },
+          "quantity": 1,
+          "notes": "Check for cracks and corrosion"
+        }
+      ]
+    },
+    "intake_system": {
+      "description": "Intake manifold and fuel delivery",
+      "components": [
+        {
+          "part_id": "FE-INTAKE-390-2V",
+          "name": "Intake Manifold - 390 2-Barrel",
+          "description": "Cast iron dual-plane intake for 2-barrel carb",
+          "oem_part_numbers": ["C6AE-9424-B"],
+          "specifications": {
+            "material": "Cast Iron",
+            "runners": 8,
+            "carburetor_flange": "Autolite 2100"
+          },
+          "quantity": 1,
+          "notes": "Base engine manifold"
+        },
+        {
+          "part_id": "FE-INTAKE-428CJ",
+          "name": "Intake Manifold - 428 Cobra Jet",
+          "description": "Cast iron performance intake",
+          "oem_part_numbers": ["C8OE-9424-B"],
+          "specifications": {
+            "material": "Cast Iron",
+            "runners": 8,
+            "carburetor_flange": "Holley 4150"
+          },
+          "quantity": 1,
+          "notes": "OEM Cobra Jet manifold, works with 427 low-riser heads"
+        },
+        {
+          "part_id": "FE-INTAKE-427-MEDIUM",
+          "name": "Intake Manifold - 427 Medium Riser",
+          "description": "Cast aluminum performance intake",
+          "oem_part_numbers": ["C6AE-9425-G"],
+          "specifications": {
+            "material": "Cast Aluminum",
+            "runners": 8,
+            "carburetor_flange": "Dual Holley 4150"
+          },
+          "quantity": 1,
+          "notes": "GT40 race manifold, dual 4-barrel setup"
+        },
+        {
+          "part_id": "FE-INTAKE-TUNNEL-PORT",
+          "name": "Intake Manifold - Tunnel Port",
+          "description": "Cast aluminum tunnel port racing intake",
+          "oem_part_numbers": ["C7AE-9425-R"],
+          "specifications": {
+            "material": "Cast Aluminum",
+            "runners": 8,
+            "carburetor_flange": "Dual Holley 4500",
+            "special": "Pushrods pass through intake runners"
+          },
+          "quantity": 1,
+          "notes": "Racing only, maximum airflow design"
+        },
+        {
+          "part_id": "FE-CARB-780-CJ",
+          "name": "Carburetor - Holley 4150 780 CFM",
+          "description": "Factory Cobra Jet carburetor",
+          "oem_part_numbers": ["C8OF-9510-AA"],
+          "specifications": {
+            "type": "4-barrel downdraft",
+            "cfm": 780,
+            "choke": "Vacuum secondary",
+            "list_number": "4280"
+          },
+          "quantity": 1,
+          "notes": "OEM Cobra Jet carburetor"
+        },
+        {
+          "part_id": "FE-CARB-715-DUAL",
+          "name": "Carburetor Kit - Dual 4-Barrel 715 CFM",
+          "description": "Dual Holley 4150 center pivot setup",
+          "specifications": {
+            "type": "Dual 4-barrel",
+            "cfm": "1430 total",
+            "linkage": "Center pivot"
+          },
+          "quantity": 2,
+          "notes": "427 racing setup"
+        },
+        {
+          "part_id": "FE-AIR-CLEANER-OVAL",
+          "name": "Air Cleaner - Cobra Jet Oval",
+          "description": "Factory oval air cleaner for CJ applications",
+          "oem_part_numbers": ["C8OZ-9600-A"],
+          "specifications": {
+            "type": "Oval open element",
+            "element": "Paper"
+          },
+          "quantity": 1,
+          "notes": "Ram Air hood scoop compatible"
+        }
+      ]
+    },
+    "exhaust_system": {
+      "description": "Exhaust manifolds and related components",
+      "components": [
+        {
+          "part_id": "FE-EXHAUST-MANIFOLD-L",
+          "name": "Exhaust Manifold - Left",
+          "description": "Cast iron exhaust manifold, driver side",
+          "oem_part_numbers": ["C6AE-9431-A"],
+          "specifications": {
+            "material": "Cast Iron",
+            "outlet_diameter_inches": 2.25
+          },
+          "quantity": 1,
+          "notes": "Standard production manifold"
+        },
+        {
+          "part_id": "FE-EXHAUST-MANIFOLD-R",
+          "name": "Exhaust Manifold - Right",
+          "description": "Cast iron exhaust manifold, passenger side",
+          "oem_part_numbers": ["C6AE-9430-A"],
+          "specifications": {
+            "material": "Cast Iron",
+            "outlet_diameter_inches": 2.25
+          },
+          "quantity": 1,
+          "notes": "Standard production manifold"
+        },
+        {
+          "part_id": "FE-HEADERS-SHORTY",
+          "name": "Headers - Shorty",
+          "description": "Tubular shorty headers",
+          "aftermarket_sources": ["Hooker", "Hedman"],
+          "specifications": {
+            "primary_diameter_inches": 1.75,
+            "collector_diameter_inches": 2.5,
+            "material": "Mild steel"
+          },
+          "quantity": 1,
+          "notes": "Easier installation than long tubes"
+        },
+        {
+          "part_id": "FE-HEADERS-LONG",
+          "name": "Headers - Long Tube",
+          "description": "Full-length tubular headers",
+          "aftermarket_sources": ["TTI", "Hooker"],
+          "specifications": {
+            "primary_diameter_inches": 2.0,
+            "collector_diameter_inches": 3.0,
+            "material": "Mild steel or stainless"
+          },
+          "quantity": 1,
+          "notes": "Maximum performance, difficult installation"
+        }
+      ]
+    },
+    "ignition_system": {
+      "description": "Distributor and ignition components",
+      "components": [
+        {
+          "part_id": "FE-DISTRIBUTOR",
+          "name": "Distributor - Single Point",
+          "description": "Standard points-type distributor",
+          "oem_part_numbers": ["C6TF-12127-B"],
+          "specifications": {
+            "type": "Single point",
+            "drive": "Gear driven",
+            "advance": "Centrifugal and vacuum"
+          },
+          "quantity": 1,
+          "notes": "Electronic conversion available"
+        },
+        {
+          "part_id": "FE-DISTRIBUTOR-DUAL",
+          "name": "Distributor - Dual Point",
+          "description": "High-performance dual-point distributor",
+          "oem_part_numbers": ["C6TF-12127-G"],
+          "specifications": {
+            "type": "Dual point",
+            "drive": "Gear driven",
+            "advance": "Centrifugal only"
+          },
+          "quantity": 1,
+          "notes": "Racing distributor, no vacuum advance"
+        },
+        {
+          "part_id": "FE-DISTRIBUTOR-MSD",
+          "name": "Distributor - MSD Pro-Billet",
+          "description": "Aftermarket electronic distributor",
+          "aftermarket_sources": ["MSD 8352"],
+          "specifications": {
+            "type": "Electronic",
+            "drive": "Gear driven",
+            "advance": "Adjustable mechanical"
+          },
+          "quantity": 1,
+          "notes": "Premium electronic ignition upgrade"
+        },
+        {
+          "part_id": "FE-SPARK-PLUGS",
+          "name": "Spark Plug Set",
+          "description": "Copper core spark plugs",
+          "oem_part_numbers": ["Autolite 45", "Motorcraft AGSF-52C"],
+          "specifications": {
+            "thread_size": "14mm",
+            "reach_inches": 0.460,
+            "gap_inches": 0.035,
+            "heat_range": "Medium"
+          },
+          "quantity": 8,
+          "notes": "Gap depends on ignition system"
+        },
+        {
+          "part_id": "FE-PLUG-WIRES",
+          "name": "Spark Plug Wire Set",
+          "description": "Performance ignition wires",
+          "aftermarket_sources": ["Taylor", "MSD"],
+          "specifications": {
+            "conductor": "Spiral wound",
+            "resistance_per_foot_ohms": 50,
+            "insulation": "Silicone"
+          },
+          "quantity": 1,
+          "notes": "8.5mm or larger for performance"
+        }
+      ]
+    },
+    "cooling_system": {
+      "description": "Water pump and cooling components",
+      "components": [
+        {
+          "part_id": "FE-WATER-PUMP",
+          "name": "Water Pump - High Flow",
+          "description": "Cast iron high-flow water pump",
+          "oem_part_numbers": ["C7AZ-8501-A"],
+          "specifications": {
+            "impeller_material": "Cast iron",
+            "bearing": "Double sealed",
+            "flow_gpm": 30
+          },
+          "quantity": 1,
+          "notes": "High-performance pump available from Stewart"
+        },
+        {
+          "part_id": "FE-THERMOSTAT",
+          "name": "Thermostat - 180°F",
+          "description": "High-flow thermostat",
+          "oem_part_numbers": ["Stant 45359"],
+          "specifications": {
+            "opening_temp_f": 180,
+            "diameter_inches": 2.125
+          },
+          "quantity": 1,
+          "notes": "180°F recommended for performance"
+        },
+        {
+          "part_id": "FE-FAN-CLUTCH",
+          "name": "Fan Clutch - Thermal",
+          "description": "Thermostatic fan clutch",
+          "oem_part_numbers": ["C6AZ-8A616-A"],
+          "specifications": {
+            "type": "Thermal clutch",
+            "engagement_temp_f": 180
+          },
+          "quantity": 1,
+          "notes": "Standard on most applications"
+        }
+      ]
+    },
+    "lubrication_system": {
+      "description": "Oil pump and lubrication components",
+      "components": [
+        {
+          "part_id": "FE-OIL-PUMP-STD",
+          "name": "Oil Pump - Standard Volume",
+          "description": "Standard gear-type oil pump",
+          "oem_part_numbers": ["C3AZ-6600-A"],
+          "specifications": {
+            "type": "Gear driven",
+            "pressure_psi": 40,
+            "drive": "Distributor shaft"
+          },
+          "quantity": 1,
+          "notes": "Adequate for stock applications"
+        },
+        {
+          "part_id": "FE-OIL-PUMP-HV",
+          "name": "Oil Pump - High Volume",
+          "description": "High-volume/high-pressure oil pump",
+          "aftermarket_sources": ["Melling M57HV"],
+          "specifications": {
+            "type": "Gear driven",
+            "pressure_psi": 60,
+            "volume_increase_percent": 25
+          },
+          "quantity": 1,
+          "notes": "Recommended for performance builds"
+        },
+        {
+          "part_id": "FE-OIL-PAN-STD",
+          "name": "Oil Pan - Standard",
+          "description": "Stamped steel oil pan",
+          "oem_part_numbers": ["C6AZ-6675-A"],
+          "specifications": {
+            "capacity_quarts": 6,
+            "material": "Stamped steel"
+          },
+          "quantity": 1,
+          "notes": "Depth varies by vehicle application"
+        },
+        {
+          "part_id": "FE-OIL-PAN-DRAG",
+          "name": "Oil Pan - Drag Race",
+          "description": "Deep sump drag racing oil pan",
+          "aftermarket_sources": ["Moroso", "Canton"],
+          "specifications": {
+            "capacity_quarts": 9,
+            "material": "Steel",
+            "baffle": "Trap door anti-slosh"
+          },
+          "quantity": 1,
+          "notes": "For drag racing applications"
+        },
+        {
+          "part_id": "FE-OIL-FILTER",
+          "name": "Oil Filter",
+          "description": "Spin-on oil filter",
+          "oem_part_numbers": ["Motorcraft FL-1A", "Wix 51515"],
+          "specifications": {
+            "type": "Spin-on",
+            "thread": "3/4-16"
+          },
+          "quantity": 1,
+          "notes": "High-quality filter essential"
+        }
+      ]
+    },
+    "gaskets_and_seals": {
+      "description": "Complete gasket and seal components",
+      "components": [
+        {
+          "part_id": "FE-GASKET-SET-FULL",
+          "name": "Full Gasket Set",
+          "description": "Complete engine gasket set for overhaul",
+          "oem_part_numbers": ["Fel-Pro KS2312"],
+          "specifications": {
+            "includes": ["Head gaskets", "Intake gaskets", "Exhaust gaskets", "Valve cover gaskets", "Oil pan gasket", "Timing cover gasket", "Front seal", "Rear seal"]
+          },
+          "quantity": 1,
+          "notes": "Fel-Pro recommended for rebuilds"
+        },
+        {
+          "part_id": "FE-VALVE-COVER-GASKETS",
+          "name": "Valve Cover Gasket Set",
+          "description": "Rubber valve cover gaskets",
+          "oem_part_numbers": ["Fel-Pro VS50156R"],
+          "specifications": {
+            "material": "Rubber/steel composite"
+          },
+          "quantity": 2,
+          "notes": "Steel core gaskets recommended"
+        },
+        {
+          "part_id": "FE-REAR-MAIN-SEAL",
+          "name": "Rear Main Seal",
+          "description": "One-piece or two-piece rear main seal",
+          "oem_part_numbers": ["Fel-Pro BS40527"],
+          "specifications": {
+            "type": "Two-piece rope (OEM) or neoprene upgrade"
+          },
+          "quantity": 1,
+          "notes": "Neoprene conversion highly recommended"
+        }
+      ]
+    }
+  }
+}

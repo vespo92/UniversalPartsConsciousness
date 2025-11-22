@@ -1,0 +1,397 @@
+{
+  "engine_id": "FORD-FE-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "FE Series",
+  "common_names": [
+    "FE Big Block",
+    "Ford FE",
+    "Interceptor V8",
+    "Cobra Jet",
+    "Super Cobra Jet",
+    "Tunnel Port",
+    "SOHC Cammer"
+  ],
+  "production_years": "1958-1976",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's legendary big block V8 engine family that dominated motorsports in the 1960s. The FE powered everything from family sedans to Le Mans-winning GT40s, Shelby Cobras, and NASCAR stockers. Known for exceptional reliability and tremendous power potential.",
+  "heritage": {
+    "significance": "One of the most successful racing engines in history, winning 4 consecutive Le Mans 24-hour races (1966-1969), multiple NASCAR championships, and NHRA titles",
+    "innovations": [
+      "Canted valve cylinder heads for improved flow",
+      "Cross-bolted main caps on high-performance versions",
+      "Tunnel Port intake for maximum airflow",
+      "SOHC (Cammer) overhead cam variant",
+      "Side-oiler block for improved lubrication"
+    ],
+    "racing_heritage": {
+      "le_mans": "4 consecutive wins 1966-1969 with GT40 and Mark IV",
+      "nascar": "Multiple championships throughout 1960s",
+      "nhra": "427 SOHC 'Cammer' dominated drag racing",
+      "scca": "Cobra 427 dominated sports car racing",
+      "trans_am": "Boss 302 predecessor technology"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron (Aluminum for racing)",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder (SOHC variant: 2 valves per cylinder overhead cam)",
+    "bore_spacing_inches": 4.630,
+    "deck_height_inches": 10.170,
+    "main_bearings": 5,
+    "rod_journal_diameter_inches": 2.4380,
+    "main_journal_diameter_inches": 2.7485,
+    "fuel_system": "Carburetor (2-barrel, 4-barrel, 2x4-barrel, 3x2-barrel)",
+    "ignition_system": "Points-based distributor ignition, dual-point on performance versions",
+    "cooling_system": "Pressurized water cooling",
+    "oiling_system": "Full pressure with gear-driven oil pump, side-oiler on performance blocks"
+  },
+  "variants": [
+    {
+      "variant_id": "FE-332",
+      "displacement_ci": 332,
+      "displacement_liters": 5.4,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.30,
+      "compression_ratio": "9.5:1",
+      "horsepower": 240,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 332,
+      "torque_rpm": 2800,
+      "production_years": "1958",
+      "notes": "First FE engine, transitional from Y-Block"
+    },
+    {
+      "variant_id": "FE-352",
+      "displacement_ci": 352,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "9.6:1",
+      "horsepower": 300,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 380,
+      "torque_rpm": 2800,
+      "production_years": "1958-1966",
+      "notes": "Police Interceptor versions available with higher output"
+    },
+    {
+      "variant_id": "FE-360",
+      "displacement_ci": 360,
+      "displacement_liters": 5.9,
+      "bore_inches": 4.05,
+      "stroke_inches": 3.50,
+      "compression_ratio": "8.4:1",
+      "horsepower": 215,
+      "horsepower_rpm": 4400,
+      "torque_lb_ft": 327,
+      "torque_rpm": 2400,
+      "production_years": "1968-1976",
+      "notes": "Truck engine variant, continued late FE production"
+    },
+    {
+      "variant_id": "FE-390",
+      "displacement_ci": 390,
+      "displacement_liters": 6.4,
+      "bore_inches": 4.05,
+      "stroke_inches": 3.785,
+      "compression_ratio": "10.5:1",
+      "horsepower": 335,
+      "horsepower_rpm": 4800,
+      "torque_lb_ft": 427,
+      "torque_rpm": 3200,
+      "production_years": "1961-1971",
+      "notes": "Most common FE displacement, GT version in Mustang"
+    },
+    {
+      "variant_id": "FE-406",
+      "displacement_ci": 406,
+      "displacement_liters": 6.7,
+      "bore_inches": 4.13,
+      "stroke_inches": 3.785,
+      "compression_ratio": "11.4:1",
+      "horsepower": 405,
+      "horsepower_rpm": 5800,
+      "torque_lb_ft": 448,
+      "torque_rpm": 3400,
+      "production_years": "1962-1963",
+      "notes": "Tri-Power version, precursor to 427"
+    },
+    {
+      "variant_id": "FE-410",
+      "displacement_ci": 410,
+      "displacement_liters": 6.7,
+      "bore_inches": 4.05,
+      "stroke_inches": 3.980,
+      "compression_ratio": "10.0:1",
+      "horsepower": 330,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 444,
+      "torque_rpm": 2800,
+      "production_years": "1966-1968",
+      "notes": "Mercury exclusive, stroked 390"
+    },
+    {
+      "variant_id": "FE-427-WEDGE",
+      "displacement_ci": 427,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.2328,
+      "stroke_inches": 3.785,
+      "compression_ratio": "11.1:1",
+      "horsepower": 425,
+      "horsepower_rpm": 6000,
+      "torque_lb_ft": 480,
+      "torque_rpm": 3700,
+      "production_years": "1963-1968",
+      "notes": "Street performance version with wedge heads, dual 4-barrel"
+    },
+    {
+      "variant_id": "FE-427-TUNNEL-PORT",
+      "displacement_ci": 427,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.2328,
+      "stroke_inches": 3.785,
+      "compression_ratio": "12.5:1",
+      "horsepower": 500,
+      "horsepower_rpm": 6500,
+      "torque_lb_ft": 480,
+      "torque_rpm": 4800,
+      "production_years": "1965-1967",
+      "notes": "Racing version with tunnel port heads, pushrods through intake ports"
+    },
+    {
+      "variant_id": "FE-427-SOHC-CAMMER",
+      "displacement_ci": 427,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.2328,
+      "stroke_inches": 3.785,
+      "compression_ratio": "12.0:1",
+      "horsepower": 616,
+      "horsepower_rpm": 7000,
+      "torque_lb_ft": 515,
+      "torque_rpm": 5600,
+      "production_years": "1964-1967",
+      "forced_induction": "None (supercharged drag versions made 1500+ HP)",
+      "notes": "Single overhead cam per bank, chain-driven, NASCAR banned, NHRA legend"
+    },
+    {
+      "variant_id": "FE-428",
+      "displacement_ci": 428,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.13,
+      "stroke_inches": 3.980,
+      "compression_ratio": "10.5:1",
+      "horsepower": 345,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 462,
+      "torque_rpm": 2800,
+      "production_years": "1966-1970",
+      "notes": "High-torque street engine, longer stroke than 427"
+    },
+    {
+      "variant_id": "FE-428-COBRA-JET",
+      "displacement_ci": 428,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.13,
+      "stroke_inches": 3.980,
+      "compression_ratio": "10.6:1",
+      "horsepower": 335,
+      "horsepower_rpm": 5200,
+      "torque_lb_ft": 440,
+      "torque_rpm": 3400,
+      "production_years": "1968-1970",
+      "notes": "Underrated at 335HP, actually made 400+ HP. Used 427 LR heads."
+    },
+    {
+      "variant_id": "FE-428-SUPER-COBRA-JET",
+      "displacement_ci": 428,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.13,
+      "stroke_inches": 3.980,
+      "compression_ratio": "10.6:1",
+      "horsepower": 360,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 459,
+      "torque_rpm": 3400,
+      "production_years": "1969-1970",
+      "notes": "Ram Air version with improved oiling, LeMans rods, external oil cooler option"
+    }
+  ],
+  "firing_order": "1-5-4-2-6-3-7-8",
+  "cylinder_numbering": {
+    "passenger_side_bank": [1, 2, 3, 4],
+    "driver_side_bank": [5, 6, 7, 8],
+    "convention": "Ford standard V8 numbering"
+  },
+  "vehicle_applications": [
+    {
+      "years": "1964-1970",
+      "models": ["Ford Mustang"],
+      "notes": "390 GT, 428 Cobra Jet, 428 Super Cobra Jet"
+    },
+    {
+      "years": "1965-1970",
+      "models": ["Shelby GT350", "Shelby GT500"],
+      "notes": "GT500 used 428 Police Interceptor and Cobra Jet"
+    },
+    {
+      "years": "1963-1967",
+      "models": ["Ford Galaxie 500", "Ford Galaxie 500 XL"],
+      "notes": "427 Lightweight, racing homologation specials"
+    },
+    {
+      "years": "1966-1967",
+      "models": ["Ford GT40", "Ford Mark II", "Ford Mark IV"],
+      "notes": "Le Mans winning cars with 427 medium-riser and tunnel port"
+    },
+    {
+      "years": "1962-1967",
+      "models": ["Shelby Cobra 427"],
+      "notes": "427 side-oiler, legendary sports car"
+    },
+    {
+      "years": "1967-1970",
+      "models": ["Ford Fairlane", "Ford Torino"],
+      "notes": "428 Cobra Jet, Torino Talladega"
+    },
+    {
+      "years": "1969-1970",
+      "models": ["Mercury Cougar Eliminator"],
+      "notes": "428 Cobra Jet"
+    },
+    {
+      "years": "1958-1976",
+      "models": ["Ford F-Series", "Ford Econoline"],
+      "notes": "352, 360, 390 in truck applications"
+    },
+    {
+      "years": "1958-1971",
+      "models": ["Lincoln Continental"],
+      "notes": "430 and 462 Lincoln-specific variants"
+    },
+    {
+      "years": "1961-1971",
+      "models": ["Ford Thunderbird"],
+      "notes": "390 and 428 in personal luxury applications"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 6,
+      "capacity_liters": 5.7,
+      "oil_specification": "SAE 10W-40 or 20W-50 ZDDP-enhanced",
+      "filter_required": "Spin-on filter, FL-1A or equivalent"
+    },
+    "coolant": {
+      "capacity_quarts": 20,
+      "capacity_liters": 19,
+      "coolant_type": "Ethylene glycol antifreeze, green formula",
+      "notes": "Capacity varies by vehicle application"
+    }
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": {
+      "standard": 80,
+      "sequence": "Specific pattern from center outward"
+    },
+    "main_cap_bolts_ft_lbs": {
+      "inner": 100,
+      "cross_bolts": 40
+    },
+    "rod_cap_bolts_ft_lbs": 55,
+    "intake_manifold_bolts_ft_lbs": 35,
+    "exhaust_manifold_bolts_ft_lbs": 30,
+    "spark_plugs_ft_lbs": 25,
+    "flywheel_bolts_ft_lbs": 85,
+    "harmonic_balancer_bolt_ft_lbs": 70
+  },
+  "block_types": {
+    "top_oiler": {
+      "description": "Standard oiling system with priority to top end",
+      "applications": "352, 390, most 428 engines",
+      "identification": "Oil filter pad in standard location",
+      "notes": "Adequate for street applications"
+    },
+    "side_oiler": {
+      "description": "Priority oiling to main bearings via external gallery",
+      "applications": "427, racing 428 SCJ",
+      "identification": "External oil gallery on driver side, different oil filter location",
+      "notes": "Essential for high-RPM racing use"
+    },
+    "cross_bolted_mains": {
+      "description": "Additional horizontal bolts through main webs",
+      "applications": "427, 428 SCJ",
+      "identification": "4 bolts at each main cap (2 vertical, 2 horizontal)",
+      "notes": "Prevents main cap walk at high RPM"
+    }
+  },
+  "cylinder_head_types": {
+    "low_riser": {
+      "port_height": "Low",
+      "flow_cfm": 260,
+      "application": "390, 352, street engines",
+      "casting_numbers": ["C6AE-C", "C7AE-B"]
+    },
+    "medium_riser": {
+      "port_height": "Medium",
+      "flow_cfm": 290,
+      "application": "427 street, GT40",
+      "casting_numbers": ["C6AE-H", "C6AE-K"]
+    },
+    "high_riser": {
+      "port_height": "High",
+      "flow_cfm": 320,
+      "application": "427 racing, NASCAR",
+      "casting_numbers": ["C5AE-H", "C7AE-J"]
+    },
+    "tunnel_port": {
+      "port_height": "Maximum",
+      "flow_cfm": 380,
+      "application": "Racing only, pushrods run through ports",
+      "casting_numbers": ["C7AE-R"],
+      "notes": "Requires special manifold and pushrods"
+    }
+  },
+  "common_issues": [
+    {
+      "issue": "Timing chain stretch",
+      "description": "Factory timing sets wear causing retarded timing",
+      "solution": "Double roller timing set upgrade"
+    },
+    {
+      "issue": "Oiling at high RPM (top-oiler blocks)",
+      "description": "Top-oiler design starves mains at high RPM",
+      "solution": "Side-oiler block conversion or improved oil pump"
+    },
+    {
+      "issue": "Exhaust manifold cracking",
+      "description": "Cast iron manifolds prone to thermal stress cracks",
+      "solution": "Headers or heavy-duty replacement manifolds"
+    },
+    {
+      "issue": "Valve guide wear",
+      "description": "Cast iron guides wear causing oil consumption",
+      "solution": "Bronze guide liners or replacement"
+    },
+    {
+      "issue": "Carburetor sync (dual-quad setups)",
+      "description": "Dual 4-barrel carbs require precise synchronization",
+      "solution": "Proper linkage adjustment and balancing"
+    }
+  ],
+  "strengths": [
+    "Legendary reliability proven in endurance racing",
+    "Massive power potential - SOHC made 1500+ HP",
+    "Excellent bottom-end strength with cross-bolted mains",
+    "Strong aftermarket support still available",
+    "Side-oiler design excellent for racing",
+    "Outstanding torque production",
+    "Proven in every form of motorsport"
+  ],
+  "notes": {
+    "historical_context": "The FE series represents Ford's 'Total Performance' era, dominating NASCAR, Le Mans, NHRA, and SCCA. The 427 SOHC 'Cammer' was so dominant it was banned from NASCAR, becoming a drag racing legend instead.",
+    "collectibility": "Original 427 SOHC Cammer engines are worth $100,000+. Cobra Jet cars command premium prices. Original GT40 race engines are priceless.",
+    "restoration_notes": "Reproduction parts widely available. Date-coded components important for concours restoration. Side-oiler vs. top-oiler distinction critical for authenticity."
+  }
+}

@@ -1,0 +1,424 @@
+{
+  "engine_family": "Ford Y-Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "vendors_and_retailers": {
+    "specialty_y_block_suppliers": [
+      {
+        "name": "Mummert Y-Block V-8 Parts",
+        "specialty": "Y-Block performance parts and rebuilding",
+        "url": "http://mummert.com",
+        "notes": "Premier Y-Block specialist, performance heads and cams"
+      },
+      {
+        "name": "Y-Block Magazine/Registry",
+        "specialty": "Y-Block community and parts locating",
+        "url": "http://yblockmagazine.com",
+        "notes": "Community resource for rare parts"
+      },
+      {
+        "name": "Power+Plus Performance",
+        "specialty": "Y-Block stroker kits and machine work",
+        "notes": "Custom stroker assemblies"
+      }
+    ],
+    "general_classic_ford_suppliers": [
+      {
+        "name": "Dennis Carpenter Ford Restoration Parts",
+        "specialty": "NOS and reproduction Ford parts",
+        "url": "http://dennis-carpenter.com",
+        "notes": "Extensive Y-Block restoration parts"
+      },
+      {
+        "name": "MACs Auto Parts",
+        "specialty": "Classic Ford parts 1949-1972",
+        "url": "http://macsautoparts.com",
+        "notes": "Good selection of Y-Block parts"
+      },
+      {
+        "name": "Dearborn Classics",
+        "specialty": "1955-57 Ford & Thunderbird parts",
+        "url": "http://dearbornclassics.com",
+        "notes": "Excellent for T-Bird applications"
+      },
+      {
+        "name": "National Parts Depot",
+        "specialty": "Classic Ford restoration parts",
+        "url": "http://npdlink.com",
+        "notes": "Major distributor of reproduction parts"
+      }
+    ],
+    "engine_rebuilding_suppliers": [
+      {
+        "name": "Summit Racing",
+        "specialty": "Performance parts and engine components",
+        "url": "http://summitracing.com",
+        "notes": "Bearings, gaskets, timing sets"
+      },
+      {
+        "name": "JEGS",
+        "specialty": "Performance parts and tools",
+        "url": "http://jegs.com",
+        "notes": "Good selection of rebuild components"
+      },
+      {
+        "name": "Speedway Motors",
+        "specialty": "Hot rod and vintage performance",
+        "url": "http://speedwaymotors.com",
+        "notes": "Y-Block swap parts and accessories"
+      }
+    ]
+  },
+  "aftermarket_parts": {
+    "performance_cylinder_heads": [
+      {
+        "manufacturer": "Mummert",
+        "part_name": "Stage 1 Ported Heads",
+        "description": "CNC ported factory heads with larger valves",
+        "specifications": {
+          "intake_valve_inches": 1.94,
+          "exhaust_valve_inches": 1.60,
+          "port_flow_cfm_intake": 180,
+          "chamber_cc": 55
+        },
+        "price_range_usd": "1500-2000",
+        "notes": "Best bolt-on head upgrade available"
+      },
+      {
+        "manufacturer": "Mummert",
+        "part_name": "Stage 2 Pro Heads",
+        "description": "Fully ported and polished with custom valves",
+        "specifications": {
+          "intake_valve_inches": 2.02,
+          "exhaust_valve_inches": 1.625,
+          "port_flow_cfm_intake": 210,
+          "chamber_cc": 52
+        },
+        "price_range_usd": "2500-3500",
+        "notes": "Maximum NA performance heads"
+      }
+    ],
+    "camshafts": [
+      {
+        "manufacturer": "Comp Cams",
+        "part_number": "Custom grind available",
+        "profile": "Street performance",
+        "specifications": {
+          "duration_at_050_intake": 204,
+          "duration_at_050_exhaust": 212,
+          "lift_intake_inches": 0.440,
+          "lift_exhaust_inches": 0.455,
+          "lobe_separation": 110
+        },
+        "application": "Street/Strip",
+        "notes": "Requires custom grind order"
+      },
+      {
+        "manufacturer": "Isky",
+        "part_name": "Y-Block Street Cam",
+        "profile": "Mild street performance",
+        "specifications": {
+          "duration_at_050_intake": 195,
+          "duration_at_050_exhaust": 205,
+          "lift_intake_inches": 0.420,
+          "lift_exhaust_inches": 0.435
+        },
+        "application": "Street driver",
+        "notes": "Good idle quality, improved top end"
+      }
+    ],
+    "intake_manifolds": [
+      {
+        "manufacturer": "Edelbrock (vintage)",
+        "part_name": "Y-Block Performer",
+        "description": "Dual-plane aluminum intake manifold",
+        "specifications": {
+          "material": "Aluminum",
+          "carburetor_flange": "Square bore 4-barrel",
+          "runner_length_inches": 8.5
+        },
+        "price_range_usd": "400-600 (used)",
+        "notes": "No longer in production, sought after"
+      },
+      {
+        "manufacturer": "Offenhauser",
+        "part_name": "3x2 Intake",
+        "description": "Triple carburetor intake manifold",
+        "specifications": {
+          "carburetors": "3x Stromberg 97",
+          "material": "Aluminum"
+        },
+        "price_range_usd": "1000-1500 (used)",
+        "notes": "Classic hot rod setup, very rare"
+      },
+      {
+        "manufacturer": "Weiand (vintage)",
+        "part_name": "Drag Star",
+        "description": "Single 4-barrel performance intake",
+        "specifications": {
+          "material": "Aluminum",
+          "carburetor_flange": "Square bore 4-barrel"
+        },
+        "price_range_usd": "300-500 (used)",
+        "notes": "Good used market availability"
+      }
+    ],
+    "headers": [
+      {
+        "manufacturer": "Hedman (vintage/custom)",
+        "part_name": "Y-Block Headers",
+        "description": "Tubular steel headers",
+        "specifications": {
+          "primary_diameter_inches": 1.625,
+          "collector_diameter_inches": 2.5,
+          "material": "Mild steel"
+        },
+        "price_range_usd": "400-600",
+        "notes": "Limited availability, custom fabrication often required"
+      },
+      {
+        "manufacturer": "Custom Fabrication",
+        "part_name": "Custom Headers",
+        "description": "Custom-built tubular headers",
+        "specifications": {
+          "primary_diameter_inches": "1.50-1.75",
+          "collector_diameter_inches": "2.5-3.0"
+        },
+        "price_range_usd": "800-1500",
+        "notes": "Best option for specific applications"
+      }
+    ],
+    "stroker_kits": [
+      {
+        "manufacturer": "Power+Plus Performance",
+        "part_name": "312 Stroker Kit for 292 Block",
+        "description": "Increases 292 to 312 displacement",
+        "specifications": {
+          "stroke_inches": 3.44,
+          "displacement_ci": 312,
+          "includes": ["Crankshaft", "Rods", "Pistons", "Bearings", "Rings"]
+        },
+        "price_range_usd": "2500-3500",
+        "notes": "Most popular stroker conversion"
+      },
+      {
+        "manufacturer": "Custom Build",
+        "part_name": "341 Stroker Build",
+        "description": "Maximum displacement Y-Block",
+        "specifications": {
+          "bore_inches": 4.00,
+          "stroke_inches": 3.40,
+          "displacement_ci": 341
+        },
+        "price_range_usd": "4000-6000",
+        "notes": "Requires sleeved or overbored 312 block"
+      }
+    ],
+    "ignition_upgrades": [
+      {
+        "manufacturer": "Pertronix",
+        "part_number": "1281",
+        "part_name": "Ignitor Electronic Ignition",
+        "description": "Electronic ignition conversion for stock distributor",
+        "specifications": {
+          "type": "Points replacement module",
+          "voltage": "12V negative ground"
+        },
+        "price_range_usd": "90-120",
+        "notes": "Essential upgrade for reliability"
+      },
+      {
+        "manufacturer": "Pertronix",
+        "part_number": "40011",
+        "part_name": "Flame-Thrower Coil",
+        "description": "High-output ignition coil",
+        "specifications": {
+          "output_volts": 40000,
+          "primary_resistance_ohms": 1.5
+        },
+        "price_range_usd": "35-50",
+        "notes": "Pair with Ignitor for best results"
+      },
+      {
+        "manufacturer": "MSD",
+        "part_name": "Street Fire HEI",
+        "description": "Complete ignition system upgrade",
+        "specifications": {
+          "type": "Full electronic",
+          "advance": "Adjustable mechanical and vacuum"
+        },
+        "price_range_usd": "300-400",
+        "notes": "Requires custom distributor adaptation"
+      }
+    ],
+    "carburetor_upgrades": [
+      {
+        "manufacturer": "Holley",
+        "part_number": "0-80457S",
+        "part_name": "600 CFM 4-Barrel",
+        "description": "Vacuum secondary 4-barrel carburetor",
+        "specifications": {
+          "cfm": 600,
+          "type": "Vacuum secondary",
+          "choke": "Electric"
+        },
+        "price_range_usd": "350-450",
+        "notes": "Ideal size for Y-Block performance"
+      },
+      {
+        "manufacturer": "Edelbrock",
+        "part_number": "1406",
+        "part_name": "Performer 600 CFM",
+        "description": "Electric choke 4-barrel carburetor",
+        "specifications": {
+          "cfm": 600,
+          "type": "Vacuum secondary",
+          "choke": "Electric"
+        },
+        "price_range_usd": "350-400",
+        "notes": "Excellent street manners, easy tuning"
+      }
+    ],
+    "oiling_system_upgrades": [
+      {
+        "manufacturer": "Melling",
+        "part_name": "High Volume Oil Pump",
+        "description": "Increased capacity oil pump",
+        "specifications": {
+          "volume_increase_percent": 25,
+          "pressure_psi": 60
+        },
+        "price_range_usd": "60-80",
+        "notes": "Recommended for performance builds"
+      },
+      {
+        "manufacturer": "Canton",
+        "part_name": "Baffled Oil Pan",
+        "description": "Performance oil pan with trap doors",
+        "specifications": {
+          "capacity_quarts": 7,
+          "baffle_type": "Trap door",
+          "material": "Steel"
+        },
+        "price_range_usd": "250-350",
+        "notes": "Essential for performance/racing use"
+      }
+    ]
+  },
+  "build_packages": {
+    "stage_1_street_performance": {
+      "name": "Stage 1 - Street Performance",
+      "target_horsepower": "225-250",
+      "description": "Reliable street driver with improved performance",
+      "parts_list": [
+        "4-barrel intake manifold",
+        "600 CFM Holley or Edelbrock carburetor",
+        "Mild performance cam",
+        "Pertronix electronic ignition",
+        "Tubular headers",
+        "Dual exhaust"
+      ],
+      "estimated_cost_usd": "1500-2500",
+      "notes": "Maintains reliability while improving performance"
+    },
+    "stage_2_hot_street": {
+      "name": "Stage 2 - Hot Street",
+      "target_horsepower": "275-300",
+      "description": "Strong street car with race capability",
+      "parts_list": [
+        "Ported and polished heads",
+        "Aluminum intake manifold",
+        "750 CFM carburetor",
+        "Performance cam with solid lifters",
+        "Long tube headers",
+        "High-volume oil pump",
+        "Forged pistons"
+      ],
+      "estimated_cost_usd": "4000-6000",
+      "notes": "Requires machine shop work"
+    },
+    "stage_3_all_out_performance": {
+      "name": "Stage 3 - Maximum Performance",
+      "target_horsepower": "350-400",
+      "description": "Maximum Y-Block power potential",
+      "parts_list": [
+        "CNC ported high-flow heads",
+        "Stroker kit (341+ CI)",
+        "Aggressive solid roller cam",
+        "Tunnel ram or high-rise intake",
+        "2x 4-barrel carburetors",
+        "Custom headers",
+        "Full racing ignition",
+        "Dry sump oiling"
+      ],
+      "estimated_cost_usd": "12000-20000",
+      "notes": "Full race engine, limited street use"
+    }
+  },
+  "maintenance_kits": {
+    "basic_tune_up_kit": {
+      "name": "Basic Tune-Up Kit",
+      "parts": [
+        {"item": "Spark plugs (8)", "part_number": "Autolite 45"},
+        {"item": "Points and condenser", "part_number": "Standard DR-1629"},
+        {"item": "Distributor cap", "part_number": "Standard DR-470"},
+        {"item": "Rotor", "part_number": "Standard DR-318"},
+        {"item": "Spark plug wires", "part_number": "Standard 7mm copper"}
+      ],
+      "estimated_cost_usd": "75-100",
+      "notes": "Annual tune-up kit"
+    },
+    "oil_change_kit": {
+      "name": "Oil Change Kit",
+      "parts": [
+        {"item": "Motor oil (5 qts)", "specification": "20W-50 ZDDP-enhanced"},
+        {"item": "Oil filter element", "part_number": "Varies by filter housing"},
+        {"item": "Drain plug gasket", "part_number": "Copper crush washer"}
+      ],
+      "estimated_cost_usd": "40-60",
+      "notes": "Use ZDDP-enhanced oil for flat tappet cam"
+    },
+    "cooling_system_refresh_kit": {
+      "name": "Cooling System Refresh",
+      "parts": [
+        {"item": "Thermostat 180°F", "part_number": "Stant 13359"},
+        {"item": "Thermostat gasket", "part_number": "Fel-Pro 35047"},
+        {"item": "Upper radiator hose", "part_number": "Gates varies"},
+        {"item": "Lower radiator hose", "part_number": "Gates varies"},
+        {"item": "Heater hose (6 ft)", "part_number": "Gates 5/8\""},
+        {"item": "Hose clamps (8)", "part_number": "Constant torque"}
+      ],
+      "estimated_cost_usd": "50-80",
+      "notes": "Inspect water pump during service"
+    },
+    "gasket_refresh_kit": {
+      "name": "Top-End Gasket Refresh",
+      "parts": [
+        {"item": "Valve cover gaskets (2)", "part_number": "Fel-Pro VS50130"},
+        {"item": "Intake manifold gasket set", "part_number": "Fel-Pro MS9801"},
+        {"item": "Exhaust manifold gaskets", "part_number": "Fel-Pro MS9812"},
+        {"item": "Thermostat gasket", "part_number": "Fel-Pro 35047"}
+      ],
+      "estimated_cost_usd": "60-80",
+      "notes": "Address common oil leak points"
+    }
+  },
+  "quality_tiers": {
+    "budget": {
+      "brands": ["Sealed Power", "Melling", "Pioneer", "DNJ"],
+      "notes": "Suitable for basic rebuilds and drivers"
+    },
+    "mid_tier": {
+      "brands": ["Fel-Pro", "Clevite 77", "Comp Cams", "Pertronix"],
+      "notes": "Recommended for quality street engines"
+    },
+    "premium": {
+      "brands": ["Mummert", "Custom grind", "JE Pistons", "Eagle"],
+      "notes": "Performance applications"
+    },
+    "race": {
+      "brands": ["Custom machining", "Pro-built assemblies"],
+      "notes": "Purpose-built competition engines"
+    }
+  }
+}

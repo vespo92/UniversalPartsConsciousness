@@ -1,0 +1,114 @@
+{
+  "engine_id": "FORD-VOODOO-5.2L-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Voodoo",
+  "common_names": ["Voodoo", "5.2L Flat-Plane", "GT350 Engine"],
+  "production_years": "2015-present",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's exotic flat-plane crank V8 engine, designed specifically for the Shelby GT350. Features a 180-degree crankshaft like a Ferrari or McLaren, allowing it to rev to 8,250 RPM. The most powerful naturally aspirated production V8 Ford has ever produced, delivering 526 HP at 7,500 RPM.",
+  "heritage": {
+    "significance": "First American production flat-plane crank V8, highest-revving Ford production engine",
+    "innovations": [
+      "180-degree flat-plane crankshaft",
+      "8,250 RPM redline - highest of any Ford production engine",
+      "Plasma transferred wire arc cylinder coating",
+      "Unique firing order for flat-plane configuration",
+      "Hand-built engine with signed plaque"
+    ],
+    "racing_heritage": {
+      "road_racing": "Developed specifically for road course performance",
+      "scca": "GT350R competes in SCCA and other racing series",
+      "character": "Sounds more like a European exotic than American muscle"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8 with 180-degree (flat-plane) crankshaft",
+    "block_material": "Aluminum with PTWA coating",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 4 valves per cylinder, roller finger followers",
+    "bore_spacing_mm": 94.5,
+    "deck_height_mm": 227,
+    "main_bearings": 5,
+    "fuel_system": "Port fuel injection",
+    "crankshaft_type": "180-degree flat-plane forged steel"
+  },
+  "variants": [
+    {
+      "variant_id": "VOODOO-GT350",
+      "displacement_ci": 315,
+      "displacement_liters": 5.2,
+      "bore_inches": 3.70,
+      "stroke_inches": 3.66,
+      "compression_ratio": "12.0:1",
+      "horsepower": 526,
+      "horsepower_rpm": 7500,
+      "torque_lb_ft": 429,
+      "torque_rpm": 4750,
+      "redline_rpm": 8250,
+      "production_years": "2015-present",
+      "notes": "Standard GT350 engine"
+    },
+    {
+      "variant_id": "VOODOO-GT350R",
+      "displacement_ci": 315,
+      "displacement_liters": 5.2,
+      "bore_inches": 3.70,
+      "stroke_inches": 3.66,
+      "compression_ratio": "12.0:1",
+      "horsepower": 526,
+      "horsepower_rpm": 7500,
+      "torque_lb_ft": 429,
+      "torque_rpm": 4750,
+      "redline_rpm": 8250,
+      "production_years": "2015-present",
+      "notes": "Same engine as GT350, R model has chassis and aero improvements"
+    }
+  ],
+  "firing_order": "1-5-4-8-3-7-2-6",
+  "crankshaft_design": {
+    "type": "Flat-plane (180-degree)",
+    "description": "Unlike traditional V8 cross-plane cranks (90-degree), the flat-plane crank has throws 180 degrees apart",
+    "benefits": [
+      "Higher RPM capability",
+      "More linear power delivery",
+      "Lighter rotating assembly",
+      "Distinctive exhaust note"
+    ],
+    "tradeoffs": [
+      "More vibration than cross-plane",
+      "Less low-end torque character",
+      "More expensive to manufacture"
+    ]
+  },
+  "vehicle_applications": [
+    {"years": "2015-present", "models": ["Ford Mustang Shelby GT350"]},
+    {"years": "2015-present", "models": ["Ford Mustang Shelby GT350R"]}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 10, "oil_specification": "5W-50 Motorcraft"},
+    "coolant": {"capacity_quarts": 13, "coolant_type": "Motorcraft Orange"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts": "Multi-step torque-to-yield",
+    "main_cap_bolts_ft_lbs": 80,
+    "rod_cap_bolts_ft_lbs": 35
+  },
+  "common_issues": [
+    {"issue": "Oil consumption at high RPM", "solution": "Normal for high-revving engine, check level frequently"},
+    {"issue": "Heat management on track", "description": "Engine runs hot under sustained track use", "solution": "Upgraded oil cooler, track day maintenance protocol"}
+  ],
+  "strengths": [
+    "526 HP naturally aspirated - best-in-class",
+    "8,250 RPM redline",
+    "Exotic flat-plane crank exhaust note",
+    "Hand-built quality",
+    "Excellent throttle response",
+    "Lightweight rotating assembly"
+  ],
+  "notes": {
+    "sound": "The flat-plane crank produces a distinctive exhaust note that's often compared to European exotics like Ferrari rather than traditional American V8s.",
+    "track_focus": "This engine was designed for road course performance. It excels at high-RPM operation and responds to driver inputs like a European sports car.",
+    "not_for_boost": "Ford specifically designed this as a NA-only engine. The Predator (supercharged) uses a cross-plane crank for boost compatibility."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "engine_id": "FORD-240-300-I6",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Ford Inline Six",
+  "common_names": ["Ford 300 Six", "Ford Big Six", "Ford 4.9L", "Ford 240", "Truck Six"],
+  "production_years": "1965-1996",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's legendary truck inline-6 engine, renowned for exceptional reliability and torque. The 300 cubic inch version is considered one of the most durable engines ever produced, commonly running 300,000+ miles with basic maintenance. A workhorse engine that powered millions of F-Series trucks.",
+  "heritage": {
+    "significance": "The quintessential American truck engine, known for indestructible reliability",
+    "innovations": ["Seven main bearing crankshaft", "Cross-flow head design", "Fuel injection option (1987+)"],
+    "reputation": "Will outlast the truck it's in - legendary durability"
+  },
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder",
+    "main_bearings": 7,
+    "fuel_system": "Carburetor (1965-1986), EFI (1987-1996)",
+    "ignition_system": "Points (early), Electronic (1975+), EEC-IV (1987+)"
+  },
+  "variants": [
+    {
+      "variant_id": "I6-240",
+      "displacement_ci": 240,
+      "displacement_liters": 3.9,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.18,
+      "compression_ratio": "8.5:1",
+      "horsepower": 150,
+      "horsepower_rpm": 4000,
+      "torque_lb_ft": 230,
+      "torque_rpm": 1600,
+      "production_years": "1965-1972",
+      "notes": "Smaller displacement version"
+    },
+    {
+      "variant_id": "I6-300-CARB",
+      "displacement_ci": 300,
+      "displacement_liters": 4.9,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.98,
+      "compression_ratio": "8.8:1",
+      "horsepower": 150,
+      "horsepower_rpm": 3400,
+      "torque_lb_ft": 265,
+      "torque_rpm": 2000,
+      "production_years": "1965-1986",
+      "notes": "Carbureted version, most common"
+    },
+    {
+      "variant_id": "I6-300-EFI",
+      "displacement_ci": 300,
+      "displacement_liters": 4.9,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.98,
+      "compression_ratio": "8.8:1",
+      "horsepower": 145,
+      "horsepower_rpm": 3400,
+      "torque_lb_ft": 265,
+      "torque_rpm": 2000,
+      "production_years": "1987-1996",
+      "notes": "Fuel injected, improved emissions and driveability"
+    }
+  ],
+  "firing_order": "1-5-3-6-2-4",
+  "vehicle_applications": [
+    {"years": "1965-1996", "models": ["Ford F-100", "Ford F-150", "Ford F-250", "Ford F-350"]},
+    {"years": "1966-1996", "models": ["Ford Bronco"]},
+    {"years": "1965-1991", "models": ["Ford E-Series Econoline"]},
+    {"years": "1965-1979", "models": ["Ford Mustang", "Ford Falcon", "Ford Fairlane"]}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 6, "oil_specification": "10W-40 or 5W-30"},
+    "coolant": {"capacity_quarts": 14, "coolant_type": "Green ethylene glycol"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": 75,
+    "main_cap_bolts_ft_lbs": 65,
+    "rod_cap_bolts_ft_lbs": 45,
+    "intake_manifold_bolts_ft_lbs": 25,
+    "exhaust_manifold_bolts_ft_lbs": 25
+  },
+  "common_issues": [
+    {"issue": "Cracked exhaust manifold", "solution": "Replace with heavy-duty aftermarket or headers"},
+    {"issue": "Timing cover leak", "solution": "Replace timing cover gasket and front seal"},
+    {"issue": "Carburetor wear", "solution": "Rebuild or replace with Weber or Holley"}
+  ],
+  "strengths": [
+    "Legendary reliability - 300,000+ mile life common",
+    "Exceptional low-end torque",
+    "Simple design - easy to work on",
+    "Parts widely available and inexpensive",
+    "Seven main bearing crankshaft for strength"
+  ],
+  "notes": {
+    "legendary_durability": "The Ford 300 Six is considered one of the most reliable engines ever produced. Fleet operators regularly report 400,000+ mile service life.",
+    "performance_potential": "While not designed for performance, turbocharging the 300 has become popular in recent years."
+  }
+}

@@ -1,0 +1,650 @@
+{
+  "engine_family": "Ford Y-Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "tool_inventory": {
+    "essential_hand_tools": [
+      {
+        "tool": "Socket Set - SAE",
+        "sizes": ["3/8\"", "7/16\"", "1/2\"", "9/16\"", "5/8\"", "11/16\"", "3/4\"", "7/8\""],
+        "drive": "1/2\" and 3/8\"",
+        "notes": "Y-Block era uses SAE fasteners throughout"
+      },
+      {
+        "tool": "Combination Wrench Set - SAE",
+        "sizes": ["3/8\" through 1\""],
+        "notes": "Box end preferred for tight spaces"
+      },
+      {
+        "tool": "Torque Wrench",
+        "range": "10-150 ft-lbs",
+        "type": "Click-type or beam",
+        "notes": "Essential for proper fastener torque"
+      },
+      {
+        "tool": "Screwdriver Set",
+        "types": ["Flat blade (various)", "Phillips #2, #3"],
+        "notes": "Flat blade more common on 1950s hardware"
+      },
+      {
+        "tool": "Pliers Assortment",
+        "types": ["Needle nose", "Channel lock", "Snap ring pliers"],
+        "notes": "Snap ring pliers needed for wrist pins"
+      }
+    ],
+    "specialty_tools": [
+      {
+        "tool": "Harmonic Balancer Puller",
+        "description": "3-jaw puller for crankshaft damper removal",
+        "usage": "Required for front seal or timing cover service",
+        "notes": "Do not pry on balancer"
+      },
+      {
+        "tool": "Harmonic Balancer Installer",
+        "description": "Threaded installer to press on damper",
+        "usage": "Install crankshaft damper without damage",
+        "notes": "Never hammer on damper"
+      },
+      {
+        "tool": "Camshaft Bearing Installation Tool",
+        "description": "Driver set for cam bearing installation",
+        "usage": "Install cam bearings during rebuild",
+        "notes": "Universal Ford cam bearing tool works"
+      },
+      {
+        "tool": "Valve Spring Compressor",
+        "description": "Lever-type or C-clamp style compressor",
+        "usage": "Compress valve springs for removal/installation",
+        "notes": "C-clamp type preferred for head-on work"
+      },
+      {
+        "tool": "Distributor Wrench",
+        "description": "Offset wrench for distributor hold-down bolt",
+        "size": "1/2\"",
+        "usage": "Adjust ignition timing",
+        "notes": "Standard offset distributor wrench"
+      },
+      {
+        "tool": "Timing Light",
+        "description": "Inductive timing light",
+        "usage": "Set ignition timing",
+        "notes": "Dial-back type useful for initial timing"
+      },
+      {
+        "tool": "Dwell/Tach Meter",
+        "description": "Points dwell angle and RPM meter",
+        "usage": "Set points gap and verify timing",
+        "notes": "Still useful with electronic ignition for tach function"
+      },
+      {
+        "tool": "Compression Tester",
+        "description": "Screw-in type compression gauge",
+        "usage": "Test cylinder compression",
+        "specifications": "14mm thread, 0-300 PSI gauge",
+        "notes": "Essential diagnostic tool"
+      },
+      {
+        "tool": "Leakdown Tester",
+        "description": "Cylinder leakdown test equipment",
+        "usage": "Diagnose ring, valve, or head gasket issues",
+        "notes": "More accurate than compression test for diagnosis"
+      },
+      {
+        "tool": "Vacuum Gauge",
+        "description": "Engine vacuum gauge",
+        "range": "0-30 in-Hg",
+        "usage": "Diagnose engine health and tune carburetor",
+        "notes": "Invaluable for Y-Block diagnostics"
+      },
+      {
+        "tool": "Oil Pressure Test Gauge",
+        "description": "Mechanical oil pressure gauge",
+        "range": "0-100 PSI",
+        "usage": "Verify oil pressure at all RPM ranges",
+        "notes": "More accurate than dash gauge"
+      },
+      {
+        "tool": "Piston Ring Compressor",
+        "description": "Adjustable ring compressor",
+        "size": "3.50\" - 4.00\"",
+        "usage": "Compress piston rings for installation",
+        "notes": "Match to bore size"
+      },
+      {
+        "tool": "Plastigage",
+        "description": "Bearing clearance measurement strips",
+        "sizes": ["Green (0.001-0.003\")", "Red (0.002-0.006\")"],
+        "usage": "Verify bearing clearances during assembly",
+        "notes": "Essential for precision engine building"
+      },
+      {
+        "tool": "Dial Bore Gauge",
+        "description": "Precision bore measurement tool",
+        "usage": "Measure cylinder bore diameter and taper",
+        "notes": "For serious rebuilds only, machine shop typically provides"
+      },
+      {
+        "tool": "Feeler Gauge Set",
+        "description": "Blade feeler gauges",
+        "range": "0.002\" - 0.035\"",
+        "usage": "Set valve lash, check clearances",
+        "notes": "SAE gauges for Y-Block"
+      }
+    ],
+    "lifting_and_support_equipment": [
+      {
+        "tool": "Engine Hoist",
+        "capacity": "1-2 ton",
+        "notes": "Cherry picker style, foldable for storage"
+      },
+      {
+        "tool": "Engine Stand",
+        "capacity": "1000 lbs",
+        "mount": "Ford V8 pattern",
+        "notes": "Rotating type preferred for rebuilds"
+      },
+      {
+        "tool": "Engine Leveler",
+        "description": "Adjustable lifting bracket for angle control",
+        "notes": "Makes installation much easier"
+      },
+      {
+        "tool": "Jack Stands",
+        "capacity": "3 ton minimum",
+        "quantity": 4,
+        "notes": "Never work under car on jack alone"
+      }
+    ]
+  },
+  "service_operations": {
+    "routine_maintenance": [
+      {
+        "operation": "Oil Change",
+        "interval": "3,000 miles or 3 months",
+        "time_estimate": "30 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Position drain pan under oil pan drain plug",
+          "Remove drain plug (1/2-20 thread)",
+          "Allow oil to drain completely (10 minutes)",
+          "Replace drain plug with new copper washer",
+          "Remove and replace oil filter element (canister type)",
+          "Add 5 quarts of 20W-50 or 10W-40 oil with ZDDP",
+          "Start engine and check for leaks",
+          "Verify oil level on dipstick"
+        ],
+        "notes": "Use ZDDP-enhanced oil for flat tappet camshaft protection"
+      },
+      {
+        "operation": "Spark Plug Replacement",
+        "interval": "10,000 miles",
+        "time_estimate": "1 hour",
+        "difficulty": "Easy",
+        "procedure": [
+          "Allow engine to cool completely",
+          "Remove spark plug wires one at a time (note firing order)",
+          "Use 13/16\" spark plug socket to remove plugs",
+          "Inspect old plugs for condition (reading)",
+          "Gap new plugs to 0.035\"",
+          "Install new plugs hand-tight, then torque to 25 ft-lbs",
+          "Reinstall wires in correct firing order",
+          "Start engine and check for misfires"
+        ],
+        "notes": "Autolite 45 or equivalent recommended"
+      },
+      {
+        "operation": "Points and Condenser Replacement",
+        "interval": "10,000 miles or as needed",
+        "time_estimate": "45 minutes",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Remove distributor cap (2 spring clips)",
+          "Note rotor position for reassembly",
+          "Remove rotor",
+          "Disconnect points wire from terminal",
+          "Remove point hold-down screw",
+          "Remove old points and condenser",
+          "Install new condenser",
+          "Install new points, loosely tighten hold-down screw",
+          "Set point gap to 0.017\" using feeler gauge",
+          "Tighten hold-down screw",
+          "Reinstall rotor and cap",
+          "Set timing to specification (varies by application)"
+        ],
+        "notes": "Consider Pertronix electronic conversion to eliminate this maintenance"
+      },
+      {
+        "operation": "Ignition Timing Adjustment",
+        "interval": "Annual or after points service",
+        "time_estimate": "15 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Connect timing light to #1 spark plug wire",
+          "Locate timing marks on harmonic balancer and timing cover",
+          "Start engine and set to idle (500-600 RPM)",
+          "Disconnect and plug vacuum advance line",
+          "Aim timing light at timing marks",
+          "Loosen distributor hold-down bolt",
+          "Rotate distributor to set initial timing (varies 4-10° BTDC)",
+          "Tighten hold-down bolt",
+          "Reconnect vacuum advance",
+          "Verify timing and no detonation at part throttle"
+        ],
+        "notes": "Timing specifications vary by year and application"
+      },
+      {
+        "operation": "Valve Adjustment (Solid Cam)",
+        "interval": "10,000 miles for solid cam engines",
+        "time_estimate": "2 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Remove valve covers",
+          "Rotate engine to TDC #1 cylinder (firing stroke)",
+          "Adjust intake and exhaust valves on cylinders 1, 4, 5, 8",
+          "Rotate engine 360 degrees",
+          "Adjust intake and exhaust valves on cylinders 2, 3, 6, 7",
+          "Valve lash: Intake 0.015\", Exhaust 0.018\" (cold)",
+          "Reinstall valve covers with new gaskets"
+        ],
+        "notes": "Hydraulic cam engines are self-adjusting"
+      },
+      {
+        "operation": "Cooling System Service",
+        "interval": "2 years",
+        "time_estimate": "2 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Allow engine to cool completely",
+          "Position drain pan under radiator petcock",
+          "Open petcock and drain coolant",
+          "Remove thermostat housing and thermostat",
+          "Inspect thermostat (test in hot water if reusing)",
+          "Install new thermostat (jiggle valve up)",
+          "Install new thermostat housing gasket",
+          "Close petcock",
+          "Fill system with 50/50 coolant mix (18 quarts total)",
+          "Run engine with heater on until thermostat opens",
+          "Top off coolant as air bleeds out",
+          "Install radiator cap and verify no leaks"
+        ],
+        "notes": "Use green ethylene glycol coolant for cast iron engines"
+      }
+    ],
+    "common_repairs": [
+      {
+        "operation": "Water Pump Replacement",
+        "time_estimate": "2-3 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Drain cooling system",
+          "Remove fan belt(s)",
+          "Remove fan and fan spacer",
+          "Remove water pump pulley",
+          "Remove water pump bolts",
+          "Remove water pump and gasket",
+          "Clean gasket surfaces on block",
+          "Install new gasket with sealer",
+          "Install new water pump",
+          "Torque bolts to 15 ft-lbs",
+          "Reinstall pulley, fan, and belts",
+          "Refill cooling system",
+          "Run engine and check for leaks"
+        ],
+        "parts_required": ["Water pump", "Gasket", "Coolant"],
+        "notes": "Inspect thermostat while cooling system is drained"
+      },
+      {
+        "operation": "Valve Cover Gasket Replacement",
+        "time_estimate": "1 hour",
+        "difficulty": "Easy",
+        "procedure": [
+          "Remove breather assembly",
+          "Remove valve cover bolts",
+          "Remove valve covers (may require light tapping)",
+          "Clean old gasket material from covers and heads",
+          "Install new gaskets (cork or rubber)",
+          "Reinstall valve covers",
+          "Torque bolts to 3-4 ft-lbs (do not overtorque)",
+          "Reinstall breather assembly",
+          "Start engine and check for leaks"
+        ],
+        "parts_required": ["Valve cover gaskets (2)"],
+        "notes": "Rubber gaskets are more durable than cork"
+      },
+      {
+        "operation": "Carburetor Rebuild",
+        "time_estimate": "3-4 hours",
+        "difficulty": "Moderate to Advanced",
+        "procedure": [
+          "Remove air cleaner assembly",
+          "Disconnect fuel line, throttle linkage, choke linkage",
+          "Remove carburetor mounting bolts",
+          "Remove carburetor and intake manifold gasket",
+          "Disassemble carburetor, noting all positions",
+          "Clean all metal parts in carburetor cleaner",
+          "Replace all gaskets, needle and seat, accelerator pump",
+          "Set float level per specifications",
+          "Reassemble carburetor",
+          "Install carburetor with new gasket",
+          "Reconnect all linkages and fuel line",
+          "Adjust idle mixture screws (1.5 turns out from seated)",
+          "Start engine and adjust idle speed and mixture"
+        ],
+        "parts_required": ["Carburetor rebuild kit"],
+        "notes": "Holley and Carter kits widely available"
+      },
+      {
+        "operation": "Exhaust Manifold Replacement",
+        "time_estimate": "3-4 hours per side",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Apply penetrating oil to manifold bolts (let soak)",
+          "Disconnect exhaust pipe at manifold flange",
+          "Remove exhaust manifold bolts (work from center out)",
+          "Remove exhaust manifold (may require significant force)",
+          "Clean gasket surfaces on head",
+          "Install new gaskets (apply anti-seize to studs)",
+          "Install manifold and torque bolts to 25 ft-lbs",
+          "Reconnect exhaust pipe",
+          "Start engine and check for exhaust leaks"
+        ],
+        "parts_required": ["Exhaust manifold gaskets", "New hardware if damaged"],
+        "notes": "Broken bolts are common - plan for extraction if needed"
+      },
+      {
+        "operation": "Rear Main Seal Replacement (Neoprene Conversion)",
+        "time_estimate": "8-12 hours (transmission out)",
+        "difficulty": "Advanced",
+        "procedure": [
+          "Remove transmission (automatic) or transmission and clutch (manual)",
+          "Remove flywheel/flexplate",
+          "Remove oil pan",
+          "Remove rear main cap",
+          "Remove old rope seal from cap and block",
+          "Clean seal groove thoroughly",
+          "Install neoprene seal conversion kit per instructions",
+          "Apply assembly lube to seal surface",
+          "Reinstall rear main cap, torque to 95 ft-lbs",
+          "Reinstall oil pan with new gasket",
+          "Reinstall flywheel/flexplate",
+          "Reinstall transmission"
+        ],
+        "parts_required": ["Rear main seal kit (neoprene conversion)", "Oil pan gasket", "Rear main cap bolts"],
+        "notes": "Neoprene conversion is far superior to original rope seal"
+      },
+      {
+        "operation": "Electronic Ignition Conversion (Pertronix)",
+        "time_estimate": "1-2 hours",
+        "difficulty": "Easy",
+        "procedure": [
+          "Disconnect battery",
+          "Remove distributor cap",
+          "Remove rotor",
+          "Remove points and condenser",
+          "Install Pertronix magnetic ring on distributor shaft",
+          "Install Pertronix module in place of points",
+          "Route wires per instructions",
+          "Connect red wire to ignition-on 12V source",
+          "Connect black wire to coil negative terminal",
+          "Verify no interference with rotating components",
+          "Reinstall rotor and cap",
+          "Reconnect battery",
+          "Start engine and verify operation",
+          "Set timing (may need readjustment)"
+        ],
+        "parts_required": ["Pertronix Ignitor kit (1281 for Y-Block)", "Flame-Thrower coil (optional but recommended)"],
+        "notes": "Eliminates point maintenance, improves starting and idle"
+      },
+      {
+        "operation": "12-Volt Alternator Conversion",
+        "time_estimate": "4-6 hours",
+        "difficulty": "Moderate to Advanced",
+        "procedure": [
+          "Disconnect and remove battery",
+          "Remove generator and voltage regulator",
+          "Install alternator mounting bracket",
+          "Install alternator (63+ amp recommended)",
+          "Route new wiring per kit instructions",
+          "Convert ignition system to 12V if needed",
+          "Convert lighting and accessories to 12V if needed",
+          "Install 12V battery",
+          "Connect all wiring per diagram",
+          "Start engine and verify charging (13.8-14.5V)",
+          "Load test charging system"
+        ],
+        "parts_required": ["Alternator conversion kit", "12V battery", "12V accessories as needed"],
+        "notes": "Essential upgrade for reliable electrical system"
+      }
+    ],
+    "major_overhaul_procedures": [
+      {
+        "operation": "Complete Engine Rebuild",
+        "time_estimate": "40-60 hours (plus machine shop time)",
+        "difficulty": "Expert",
+        "general_sequence": [
+          "Engine removal and disassembly",
+          "Cleaning and inspection of all components",
+          "Crankshaft grinding (if needed) and Magnaflux",
+          "Block boring and honing",
+          "Cylinder head reconditioning (valve job, surfacing)",
+          "Assembly with new bearings, rings, gaskets",
+          "Break-in procedure"
+        ],
+        "machine_shop_operations": [
+          "Block cleaning and Magnaflux",
+          "Boring and honing cylinders",
+          "Deck surfacing if needed",
+          "Main bore align honing if needed",
+          "Crankshaft grinding and polishing",
+          "Connecting rod reconditioning",
+          "Cylinder head valve job",
+          "Head surfacing"
+        ],
+        "notes": "Allow 2-4 weeks for machine shop work"
+      }
+    ]
+  },
+  "specifications_and_torque_values": {
+    "fastener_torque_specifications": {
+      "cylinder_head_bolts": {
+        "torque_ft_lbs": 75,
+        "sequence": "Center out, alternating pattern",
+        "notes": "Use thread sealant on bolts entering water jacket"
+      },
+      "main_bearing_cap_bolts": {
+        "torque_ft_lbs": 95,
+        "notes": "Clean threads, use assembly lube"
+      },
+      "connecting_rod_bolts": {
+        "torque_ft_lbs": 45,
+        "notes": "Use assembly lube, verify stretch if specified"
+      },
+      "flywheel_bolts": {
+        "torque_ft_lbs": 85,
+        "notes": "Use thread locker"
+      },
+      "harmonic_balancer_bolt": {
+        "torque_ft_lbs": 95,
+        "notes": "Use thread locker"
+      },
+      "intake_manifold_bolts": {
+        "torque_ft_lbs": 25,
+        "sequence": "Center out, in steps"
+      },
+      "exhaust_manifold_bolts": {
+        "torque_ft_lbs": 25,
+        "notes": "Use anti-seize"
+      },
+      "rocker_arm_studs": {
+        "torque_ft_lbs": 25,
+        "notes": "If adjustable, set valve lash first"
+      },
+      "valve_cover_bolts": {
+        "torque_ft_lbs": 4,
+        "notes": "Do not overtorque"
+      },
+      "oil_pan_bolts": {
+        "torque_ft_lbs": 12,
+        "notes": "Snug uniformly"
+      },
+      "water_pump_bolts": {
+        "torque_ft_lbs": 15
+      },
+      "thermostat_housing_bolts": {
+        "torque_ft_lbs": 15
+      },
+      "spark_plugs": {
+        "torque_ft_lbs": 25
+      }
+    },
+    "clearance_specifications": {
+      "main_bearing_clearance": {
+        "specification_inches": "0.001-0.003",
+        "notes": "Verify with Plastigage"
+      },
+      "rod_bearing_clearance": {
+        "specification_inches": "0.0008-0.0026",
+        "notes": "Verify with Plastigage"
+      },
+      "crankshaft_end_play": {
+        "specification_inches": "0.004-0.008",
+        "notes": "Measured with dial indicator"
+      },
+      "piston_to_bore_clearance": {
+        "specification_inches": "0.0015-0.003",
+        "notes": "Measure at thrust faces"
+      },
+      "ring_end_gap": {
+        "top_ring_inches": "0.010-0.020",
+        "second_ring_inches": "0.010-0.020",
+        "oil_ring_inches": "0.015-0.055",
+        "notes": "File fit to bore size"
+      },
+      "valve_stem_to_guide_clearance": {
+        "intake_inches": "0.001-0.003",
+        "exhaust_inches": "0.002-0.004",
+        "notes": "Measure with dial indicator"
+      }
+    },
+    "timing_specifications": {
+      "initial_timing_btdc_degrees": {
+        "stock": "4-8",
+        "performance": "10-14",
+        "notes": "Varies by compression and cam"
+      },
+      "total_timing_btdc_degrees": {
+        "stock": "32-36",
+        "performance": "34-38",
+        "notes": "All in by 2500-3000 RPM"
+      },
+      "point_dwell_degrees": 28,
+      "point_gap_inches": 0.017
+    }
+  },
+  "diagnostic_procedures": {
+    "engine_performance_diagnostics": [
+      {
+        "symptom": "Engine runs rough at idle",
+        "possible_causes": [
+          "Points out of adjustment",
+          "Vacuum leak",
+          "Carburetor needs rebuild",
+          "Valve adjustment needed",
+          "Worn distributor shaft"
+        ],
+        "diagnostic_steps": [
+          "Check and adjust point dwell",
+          "Spray carburetor cleaner around intake gasket to detect vacuum leaks",
+          "Verify timing at idle",
+          "Check compression",
+          "Adjust valves if solid cam"
+        ]
+      },
+      {
+        "symptom": "Low oil pressure",
+        "possible_causes": [
+          "Worn main or rod bearings",
+          "Worn oil pump",
+          "Clogged oil pickup screen",
+          "Oil too thin or low"
+        ],
+        "diagnostic_steps": [
+          "Verify oil level and viscosity",
+          "Install mechanical oil pressure gauge",
+          "Check pressure at idle and 2000 RPM",
+          "If low, suspect bearings or pump"
+        ]
+      },
+      {
+        "symptom": "Engine overheating",
+        "possible_causes": [
+          "Thermostat stuck closed",
+          "Water pump failing",
+          "Clogged radiator",
+          "Blown head gasket",
+          "Ignition timing too advanced"
+        ],
+        "diagnostic_steps": [
+          "Check thermostat operation",
+          "Verify water pump is circulating",
+          "Check for coolant flow through radiator",
+          "Test for combustion gases in coolant",
+          "Verify timing"
+        ]
+      },
+      {
+        "symptom": "Blue smoke from exhaust",
+        "possible_causes": [
+          "Worn valve guides",
+          "Worn piston rings",
+          "PCV system not functioning"
+        ],
+        "diagnostic_steps": [
+          "Perform compression test",
+          "Perform leakdown test",
+          "Check for smoke at startup vs. under load",
+          "Inspect spark plugs for oil fouling"
+        ]
+      },
+      {
+        "symptom": "Engine knock or rattle",
+        "possible_causes": [
+          "Detonation (ping)",
+          "Rod bearing knock",
+          "Main bearing knock",
+          "Piston slap",
+          "Loose flywheel"
+        ],
+        "diagnostic_steps": [
+          "Identify if knock is related to load (detonation)",
+          "Use stethoscope to locate knock",
+          "Check timing advance",
+          "Pull spark plug wires one at a time to isolate cylinder"
+        ]
+      }
+    ],
+    "oil_analysis_guidelines": {
+      "recommended_interval": "Every other oil change",
+      "key_wear_metals": {
+        "iron": "Cylinder/ring wear",
+        "aluminum": "Piston/bearing wear",
+        "copper": "Bearing overlay wear",
+        "lead": "Bearing wear"
+      },
+      "notes": "Useful for tracking engine health over time"
+    }
+  },
+  "safety_precautions": [
+    "Always disconnect battery before electrical work",
+    "Use jack stands - never rely on hydraulic jack alone",
+    "Allow engine to cool before cooling system work",
+    "Wear safety glasses when under vehicle or grinding",
+    "Use proper lifting techniques for heavy components",
+    "Keep fire extinguisher nearby when working with fuel",
+    "Properly dispose of used oil and coolant",
+    "Ventilate work area when engine is running",
+    "Use carbon monoxide detector in enclosed spaces"
+  ]
+}

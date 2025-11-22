@@ -1,0 +1,551 @@
+{
+  "engine_family": "Ford FE V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "tool_inventory": {
+    "essential_hand_tools": [
+      {
+        "tool": "Socket Set - SAE",
+        "sizes": ["3/8\"", "7/16\"", "1/2\"", "9/16\"", "5/8\"", "11/16\"", "3/4\"", "13/16\"", "7/8\"", "15/16\"", "1\""],
+        "drive": "1/2\" and 3/8\"",
+        "notes": "FE uses SAE fasteners throughout"
+      },
+      {
+        "tool": "Combination Wrench Set - SAE",
+        "sizes": ["3/8\" through 1-1/4\""],
+        "notes": "Line wrenches for fuel and brake lines"
+      },
+      {
+        "tool": "Torque Wrench - Large",
+        "range": "10-200 ft-lbs",
+        "type": "Click-type",
+        "notes": "Essential for head bolts and main caps"
+      },
+      {
+        "tool": "Torque Wrench - Small",
+        "range": "10-75 ft-lbs",
+        "type": "Click-type",
+        "notes": "For manifolds and accessories"
+      }
+    ],
+    "specialty_tools": [
+      {
+        "tool": "FE Harmonic Balancer Puller",
+        "description": "Specific puller for FE balancer",
+        "usage": "Required for timing cover or front seal service",
+        "notes": "Universal 3-jaw puller works with correct bolts"
+      },
+      {
+        "tool": "Harmonic Balancer Installer",
+        "description": "Threaded installer for FE damper",
+        "usage": "Install crankshaft damper without damage",
+        "notes": "Never hammer on damper"
+      },
+      {
+        "tool": "Valve Spring Compressor - FE Specific",
+        "description": "Compressor designed for FE head geometry",
+        "usage": "Compress valve springs on assembled heads",
+        "notes": "Some universal tools work with adapters"
+      },
+      {
+        "tool": "Rocker Arm Shaft Compressor",
+        "description": "Tool to compress rocker shaft springs during assembly",
+        "usage": "FE uses shaft-mounted rocker arms",
+        "notes": "Essential for rocker arm service"
+      },
+      {
+        "tool": "Camshaft Bearing Installation Tool",
+        "description": "Driver set for FE cam bearings",
+        "usage": "Install cam bearings during rebuild",
+        "notes": "Universal Ford cam bearing tool works"
+      },
+      {
+        "tool": "Dial Bore Gauge",
+        "description": "Precision bore measurement tool",
+        "range": "4.0\" - 4.5\"",
+        "usage": "Measure cylinder bore for wear and taper",
+        "notes": "Required for determining overbore size"
+      },
+      {
+        "tool": "Distributor Wrench",
+        "description": "Offset wrench for distributor hold-down",
+        "size": "1/2\"",
+        "usage": "Adjust ignition timing"
+      },
+      {
+        "tool": "Timing Light",
+        "description": "Inductive or dial-back timing light",
+        "usage": "Set ignition timing",
+        "notes": "Dial-back useful for total timing check"
+      },
+      {
+        "tool": "Compression Tester",
+        "description": "Screw-in compression gauge",
+        "usage": "Test cylinder compression",
+        "specifications": "14mm thread, 0-300 PSI gauge"
+      },
+      {
+        "tool": "Leakdown Tester",
+        "description": "Cylinder leakdown test kit",
+        "usage": "Diagnose ring, valve, or head gasket issues",
+        "notes": "More accurate than compression test"
+      },
+      {
+        "tool": "Piston Ring Compressor",
+        "description": "Adjustable ring compressor",
+        "size": "4.0\" - 4.5\"",
+        "usage": "Compress rings for piston installation",
+        "notes": "Match to specific bore size"
+      },
+      {
+        "tool": "Plastigage",
+        "description": "Bearing clearance measurement strips",
+        "sizes": ["Green (0.001-0.003\")", "Red (0.002-0.006\")"],
+        "usage": "Verify bearing clearances during assembly"
+      },
+      {
+        "tool": "Oil Pressure Test Gauge",
+        "description": "Mechanical oil pressure gauge",
+        "range": "0-100 PSI",
+        "usage": "Verify oil pressure"
+      },
+      {
+        "tool": "Fuel Pressure Gauge",
+        "description": "Low pressure fuel gauge",
+        "range": "0-15 PSI",
+        "usage": "Verify mechanical fuel pump operation"
+      }
+    ],
+    "lifting_equipment": [
+      {
+        "tool": "Engine Hoist",
+        "capacity": "2 ton minimum",
+        "notes": "FE is heavy (650+ lbs), ensure adequate capacity"
+      },
+      {
+        "tool": "Engine Stand",
+        "capacity": "1500 lbs",
+        "mount": "Ford FE pattern",
+        "notes": "Rotating type essential for rebuild work"
+      },
+      {
+        "tool": "Engine Leveler",
+        "description": "Adjustable lifting bracket",
+        "notes": "Critical for FE installation due to weight"
+      },
+      {
+        "tool": "Transmission Jack",
+        "capacity": "500 lbs",
+        "notes": "C6 transmission is heavy"
+      }
+    ]
+  },
+  "service_operations": {
+    "routine_maintenance": [
+      {
+        "operation": "Oil Change",
+        "interval": "3,000 miles or 3 months",
+        "time_estimate": "30 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Position drain pan under oil pan drain plug",
+          "Remove drain plug (1/2-20 thread)",
+          "Allow complete drainage (10 minutes)",
+          "Replace drain plug with new gasket",
+          "Remove and replace spin-on oil filter",
+          "Add 6 quarts of ZDDP-enhanced oil (10W-40 or 20W-50)",
+          "Start engine, check for leaks",
+          "Verify oil level on dipstick"
+        ],
+        "notes": "ZDDP oil essential for flat tappet cam protection"
+      },
+      {
+        "operation": "Spark Plug Replacement",
+        "interval": "10,000 miles",
+        "time_estimate": "1 hour",
+        "difficulty": "Easy",
+        "procedure": [
+          "Allow engine to cool",
+          "Remove spark plug wires one at a time",
+          "Use 13/16\" spark plug socket",
+          "Inspect old plugs for condition",
+          "Gap new plugs to 0.035\"",
+          "Install plugs, torque to 25 ft-lbs",
+          "Reinstall wires in correct firing order"
+        ],
+        "notes": "Firing order: 1-5-4-2-6-3-7-8"
+      },
+      {
+        "operation": "Points and Condenser",
+        "interval": "10,000 miles",
+        "time_estimate": "45 minutes",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Remove distributor cap",
+          "Remove rotor",
+          "Disconnect points wire",
+          "Remove points hold-down screw",
+          "Install new points and condenser",
+          "Set point gap to 0.017\"",
+          "Set dwell to 26-28 degrees",
+          "Set timing per specifications"
+        ],
+        "notes": "Consider Pertronix electronic conversion"
+      },
+      {
+        "operation": "Valve Adjustment (Solid Cam)",
+        "interval": "10,000 miles for solid cam",
+        "time_estimate": "2-3 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Remove valve covers",
+          "Remove rocker arm shaft assemblies",
+          "Rotate engine to TDC #1 firing",
+          "FE uses shaft-mounted adjustable rockers",
+          "Adjust lash: Intake 0.018\", Exhaust 0.020\" (cold)",
+          "Reassemble rocker shafts",
+          "Reinstall valve covers"
+        ],
+        "notes": "Hydraulic cam engines are self-adjusting"
+      },
+      {
+        "operation": "Cooling System Service",
+        "interval": "2 years",
+        "time_estimate": "2 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Allow engine to cool completely",
+          "Drain radiator and block",
+          "Remove thermostat and inspect",
+          "Install new thermostat (jiggle valve up)",
+          "Close drains",
+          "Fill with 50/50 coolant mix",
+          "Run engine until thermostat opens",
+          "Top off and bleed air"
+        ],
+        "notes": "Total capacity approximately 20 quarts"
+      }
+    ],
+    "common_repairs": [
+      {
+        "operation": "Water Pump Replacement",
+        "time_estimate": "2-3 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Drain cooling system",
+          "Remove fan, spacer, and belts",
+          "Remove fan shroud if equipped",
+          "Remove water pump pulley",
+          "Remove water pump bolts",
+          "Remove water pump",
+          "Clean gasket surfaces",
+          "Install new gasket with sealer",
+          "Install new water pump",
+          "Torque bolts to 15 ft-lbs",
+          "Reassemble and refill"
+        ],
+        "parts_required": ["Water pump", "Gasket", "Coolant"]
+      },
+      {
+        "operation": "Intake Manifold Gasket Replacement",
+        "time_estimate": "4-5 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Drain cooling system partially",
+          "Remove air cleaner and carburetor",
+          "Disconnect all hoses and linkages",
+          "Remove distributor",
+          "Remove intake manifold bolts",
+          "Remove intake manifold",
+          "Clean all gasket surfaces thoroughly",
+          "Install new gaskets with sealer at water ports",
+          "Reinstall manifold and torque to 35 ft-lbs in sequence",
+          "Reinstall all components",
+          "Set timing and adjust carburetor"
+        ],
+        "parts_required": ["Intake gasket set", "Thermostat gasket", "Coolant"],
+        "notes": "FE intake gaskets commonly fail at water ports"
+      },
+      {
+        "operation": "Rocker Arm Shaft Rebuild",
+        "time_estimate": "4-5 hours",
+        "difficulty": "Moderate to Advanced",
+        "procedure": [
+          "Remove valve covers",
+          "Remove rocker shaft bolts in sequence",
+          "Remove rocker shaft assemblies",
+          "Disassemble shafts, noting positions",
+          "Inspect rocker arms, shafts, bushings",
+          "Replace worn components",
+          "Reassemble with new springs and clips",
+          "Install shafts and torque to 40 ft-lbs",
+          "Adjust valves if solid cam",
+          "Reinstall valve covers"
+        ],
+        "parts_required": ["Rocker shaft rebuild kit"],
+        "notes": "FE uses unique shaft-mounted rocker system"
+      },
+      {
+        "operation": "Timing Chain Replacement",
+        "time_estimate": "5-6 hours",
+        "difficulty": "Moderate to Advanced",
+        "procedure": [
+          "Drain coolant",
+          "Remove radiator and fan",
+          "Remove harmonic balancer",
+          "Remove timing cover",
+          "Remove camshaft gear bolt",
+          "Remove timing chain and gears",
+          "Install new gears and chain aligned",
+          "Verify timing marks aligned",
+          "Reinstall cover with new gasket",
+          "Reinstall balancer",
+          "Reassemble and refill"
+        ],
+        "parts_required": ["Timing chain set (double roller recommended)", "Timing cover gasket", "Front seal"],
+        "notes": "Double roller timing set essential for performance"
+      },
+      {
+        "operation": "Carburetor Rebuild",
+        "time_estimate": "3-4 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Remove air cleaner",
+          "Disconnect fuel line and linkages",
+          "Remove carburetor",
+          "Disassemble completely",
+          "Clean all parts in carb cleaner",
+          "Replace all gaskets and wear items",
+          "Set float level per specs",
+          "Reassemble",
+          "Install and adjust"
+        ],
+        "parts_required": ["Carburetor rebuild kit"],
+        "notes": "Holley 4150 series common on performance FE"
+      },
+      {
+        "operation": "Electronic Ignition Conversion",
+        "time_estimate": "1-2 hours",
+        "difficulty": "Easy",
+        "procedure": [
+          "Disconnect battery",
+          "Remove distributor cap and rotor",
+          "Remove points and condenser",
+          "Install Pertronix module and magnet sleeve",
+          "Route wiring per instructions",
+          "Connect to coil per instructions",
+          "Reinstall rotor and cap",
+          "Reconnect battery",
+          "Set timing"
+        ],
+        "parts_required": ["Pertronix Ignitor kit", "Optional: Flame-Thrower coil"],
+        "notes": "MSD complete distributor also excellent upgrade"
+      }
+    ],
+    "major_overhaul_procedures": [
+      {
+        "operation": "Complete Engine Rebuild",
+        "time_estimate": "60-80 hours (plus machine shop)",
+        "difficulty": "Expert",
+        "general_sequence": [
+          "Engine removal and complete disassembly",
+          "Cleaning and Magnaflux inspection",
+          "Machine shop operations",
+          "Assembly with new components",
+          "Initial break-in and tuning"
+        ],
+        "machine_shop_operations": [
+          "Block hot tank cleaning and inspection",
+          "Boring and honing cylinders",
+          "Deck surfacing",
+          "Main bore align honing",
+          "Crankshaft grinding and polishing",
+          "Rod reconditioning",
+          "Balancing rotating assembly",
+          "Cylinder head valve job and surfacing"
+        ],
+        "notes": "Allow 3-4 weeks for machine shop work"
+      },
+      {
+        "operation": "Side-Oiler Block Conversion",
+        "time_estimate": "Additional 8-10 hours",
+        "difficulty": "Expert",
+        "requirements": [
+          "Locate side-oiler block",
+          "May require different oil pan",
+          "Different oil filter adapter location",
+          "External oil gallery on driver side"
+        ],
+        "notes": "Required for serious racing applications"
+      }
+    ]
+  },
+  "specifications_and_torque_values": {
+    "fastener_torque_specifications": {
+      "cylinder_head_bolts": {
+        "torque_ft_lbs": 80,
+        "sequence": "Center out, 3-step process (40-60-80)",
+        "notes": "Use thread sealant on bolts entering water jacket"
+      },
+      "main_bearing_cap_bolts": {
+        "inner_bolts_ft_lbs": 100,
+        "cross_bolts_ft_lbs": 40,
+        "notes": "Apply assembly lube to threads and under heads"
+      },
+      "connecting_rod_bolts": {
+        "standard_ft_lbs": 45,
+        "lemans_rods_ft_lbs": 55,
+        "notes": "Torque-to-yield on some aftermarket rods"
+      },
+      "intake_manifold_bolts": {
+        "torque_ft_lbs": 35,
+        "sequence": "Center out, 2-step process"
+      },
+      "exhaust_manifold_bolts": {
+        "torque_ft_lbs": 30,
+        "notes": "Use anti-seize compound"
+      },
+      "rocker_shaft_bolts": {
+        "torque_ft_lbs": 40
+      },
+      "harmonic_balancer_bolt": {
+        "torque_ft_lbs": 70,
+        "notes": "Use thread locker"
+      },
+      "flywheel_bolts": {
+        "torque_ft_lbs": 85,
+        "notes": "Use thread locker"
+      },
+      "spark_plugs": {
+        "torque_ft_lbs": 25
+      }
+    },
+    "clearance_specifications": {
+      "main_bearing_clearance": {
+        "specification_inches": "0.0015-0.003",
+        "notes": "Tighter for performance"
+      },
+      "rod_bearing_clearance": {
+        "specification_inches": "0.001-0.003"
+      },
+      "crankshaft_end_play": {
+        "specification_inches": "0.004-0.008"
+      },
+      "piston_to_bore_clearance": {
+        "specification_inches": "0.002-0.003",
+        "notes": "Forged pistons require more clearance"
+      },
+      "ring_end_gap": {
+        "top_ring_inches": "0.016-0.022",
+        "second_ring_inches": "0.012-0.018",
+        "oil_ring_inches": "0.015-0.055"
+      },
+      "valve_stem_clearance": {
+        "intake_inches": "0.001-0.003",
+        "exhaust_inches": "0.002-0.004"
+      }
+    },
+    "timing_specifications": {
+      "initial_timing_btdc_degrees": {
+        "stock_390": 6,
+        "stock_428CJ": 10,
+        "performance": "10-14"
+      },
+      "total_timing_btdc_degrees": {
+        "stock": 34,
+        "performance": "36-38"
+      },
+      "point_dwell_degrees": "26-28",
+      "point_gap_inches": 0.017
+    }
+  },
+  "diagnostic_procedures": {
+    "engine_performance_diagnostics": [
+      {
+        "symptom": "Low oil pressure at idle when hot",
+        "possible_causes": [
+          "Worn main or rod bearings",
+          "Weak oil pump",
+          "Oil too thin",
+          "Pickup screen clogged"
+        ],
+        "diagnostic_steps": [
+          "Install mechanical gauge to verify",
+          "Check at idle and 2500 RPM",
+          "If low at both, suspect bearings or pump",
+          "Check oil level and viscosity"
+        ]
+      },
+      {
+        "symptom": "Valve train noise (FE specific)",
+        "possible_causes": [
+          "Rocker shaft wear",
+          "Rocker arm bushing wear",
+          "Pushrod bent or worn",
+          "Lifter worn or collapsed"
+        ],
+        "diagnostic_steps": [
+          "Remove valve covers",
+          "Check rocker shaft for grooves",
+          "Check rocker arm bushings for play",
+          "Inspect pushrods for straightness",
+          "Check lifter preload"
+        ]
+      },
+      {
+        "symptom": "Overheating",
+        "possible_causes": [
+          "Thermostat stuck",
+          "Water pump impeller worn",
+          "Clogged radiator",
+          "Head gasket failure",
+          "Timing too advanced"
+        ],
+        "diagnostic_steps": [
+          "Check thermostat operation",
+          "Verify water pump flow",
+          "Check for bubbles in coolant (head gasket)",
+          "Verify timing"
+        ]
+      },
+      {
+        "symptom": "Missing at high RPM",
+        "possible_causes": [
+          "Ignition breakdown",
+          "Carburetor too small",
+          "Fuel delivery inadequate",
+          "Valve float"
+        ],
+        "diagnostic_steps": [
+          "Check plug wires and cap for arcing",
+          "Verify fuel pressure at WOT",
+          "Check spark plug condition",
+          "Verify valve spring pressure"
+        ]
+      }
+    ],
+    "compression_test_specifications": {
+      "healthy_engine_psi": "150-180 (varies by compression ratio)",
+      "maximum_variation_psi": 15,
+      "wet_vs_dry_test": "If compression rises significantly when oil is added, rings are worn",
+      "notes": "Compare cylinders rather than absolute values"
+    }
+  },
+  "safety_precautions": [
+    "FE engines weigh 650+ lbs - use adequate lifting equipment",
+    "Always disconnect battery before electrical work",
+    "Use jack stands rated for vehicle weight",
+    "Allow engine to cool before cooling system work",
+    "Wear safety glasses when working under vehicle",
+    "Keep fire extinguisher nearby for fuel work",
+    "Dispose of fluids properly",
+    "Carbon monoxide: ventilate when engine running"
+  ],
+  "special_notes": {
+    "side_oiler_vs_top_oiler": "Side-oiler blocks have external oil gallery on driver side and different filter location. Essential for racing applications.",
+    "cross_bolt_mains": "427 and 428 SCJ blocks have horizontal cross-bolts through main webs. Provides additional strength for high-RPM use.",
+    "rocker_arm_system": "FE uses shaft-mounted rockers unique to this engine family. Shaft wear is common - inspect carefully during rebuild.",
+    "head_port_matching": "Low, medium, high riser, and tunnel port heads each require matching intake manifolds. Not interchangeable."
+  }
+}
