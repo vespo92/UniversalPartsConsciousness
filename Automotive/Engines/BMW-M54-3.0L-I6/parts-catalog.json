@@ -1,0 +1,188 @@
+{
+  "engine_id": "BMW-M54B30-I6-NA",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 2004, "make": "BMW", "model": "330i E46", "engine": "M54B30"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "M54-BLOCK",
+          "description": "Aluminum block with Alusil bore coating",
+          "oem_part_numbers": ["11000302246"],
+          "specifications": {"bore_mm": 84.0, "bore_coating": "Alusil (silicon aluminum alloy)"},
+          "notes": "Alusil coating allows aluminum pistons to run directly on bore"
+        },
+        "crankshaft": {
+          "part_id": "M54-CRANK",
+          "description": "Forged steel crankshaft",
+          "oem_part_numbers": ["11217502895"],
+          "specifications": {"stroke_mm": 89.6, "main_journals_mm": 60.0}
+        },
+        "connecting_rods": {
+          "part_id": "M54-CONROD",
+          "description": "Forged steel connecting rods (set of 6)",
+          "oem_part_numbers": ["11240018624"],
+          "aftermarket": {"eagle": "CRS5967B3D"},
+          "specifications": {"length_mm": 135.0}
+        },
+        "pistons": {
+          "part_id": "M54-PISTON",
+          "description": "Forged aluminum pistons (set of 6)",
+          "oem_part_numbers": ["11251436603"],
+          "aftermarket": {"je_pistons": "M54-84mm", "mahle": "M54-FORGED"}
+        },
+        "piston_rings": {"part_id": "M54-RINGS", "oem_part_numbers": ["11251436604"]},
+        "main_bearings": {"part_id": "M54-MAIN-BRG", "oem_part_numbers": ["11217502896"], "aftermarket": {"acl": "5M1144H"}},
+        "rod_bearings": {"part_id": "M54-ROD-BRG", "oem_part_numbers": ["11241407321"], "aftermarket": {"acl": "5M1144A"}}
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {
+          "part_id": "M54-HEAD",
+          "description": "Aluminum DOHC cylinder head",
+          "oem_part_numbers": ["11121707032"],
+          "specifications": {"valves": 24, "intake_valve_mm": 32.0, "exhaust_valve_mm": 28.0}
+        },
+        "head_gasket": {"part_id": "M54-HEAD-GASKET", "oem_part_numbers": ["11127501304"], "aftermarket": {"victor_reinz": "613571500"}},
+        "intake_valves": {"part_id": "M54-INTAKE-VALVE", "oem_part_numbers": ["11341438909"], "quantity": 12},
+        "exhaust_valves": {"part_id": "M54-EXHAUST-VALVE", "oem_part_numbers": ["11341438910"], "quantity": 12},
+        "valve_springs": {"part_id": "M54-VALVE-SPRING", "oem_part_numbers": ["11341438911"], "quantity": 24},
+        "camshafts": {
+          "part_id": "M54-CAMSHAFT-SET",
+          "oem_part_numbers": {"intake": "11311435027", "exhaust": "11311435028"},
+          "specifications": {"intake_duration": 240, "exhaust_duration": 228}
+        },
+        "vanos_units": {
+          "part_id": "M54-VANOS",
+          "description": "Double VANOS adjustment units",
+          "oem_part_numbers": {"intake": "11367500032", "exhaust": "11361438694"},
+          "common_issues": "Seals harden over time - rebuild kits available"
+        },
+        "vanos_seals": {
+          "part_id": "M54-VANOS-SEALS",
+          "description": "VANOS seal rebuild kit",
+          "aftermarket": {"beisan_systems": "BS032", "dr_vanos": "DV-M54-SEAL"},
+          "notes": "Replace every 100k miles"
+        },
+        "hydraulic_lifters": {"part_id": "M54-LIFTER", "oem_part_numbers": ["11321432523"], "quantity": 24}
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {
+          "part_id": "M54-INTAKE-MANIFOLD",
+          "description": "Composite intake manifold with DISA valve",
+          "oem_part_numbers": ["11617502269"]
+        },
+        "disa_valve": {
+          "part_id": "M54-DISA",
+          "description": "Differentiated Intake System Adjuster",
+          "oem_part_numbers": ["11617544806"],
+          "common_issues": "Flap can break and get ingested - inspect regularly"
+        },
+        "throttle_body": {"part_id": "M54-THROTTLE-BODY", "oem_part_numbers": ["13541439580"]},
+        "air_filter": {"part_id": "M54-AIR-FILTER", "oem_part_numbers": ["13721730946"], "aftermarket": {"k_and_n": "33-2231"}},
+        "mass_airflow_sensor": {"part_id": "M54-MAF", "oem_part_numbers": ["13621438871"]}
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "fuel_injectors": {
+          "part_id": "M54-INJECTORS",
+          "description": "Port fuel injectors (set of 6)",
+          "oem_part_numbers": ["13641437474"],
+          "aftermarket": {"bosch": "0280155885"},
+          "quantity": 6
+        },
+        "fuel_rail": {"part_id": "M54-FUEL-RAIL", "oem_part_numbers": ["13537502243"]},
+        "fuel_pump": {"part_id": "M54-FUEL-PUMP", "oem_part_numbers": ["16146752368"]}
+      }
+    },
+    "cooling_system": {
+      "description": "CRITICAL - Most common failure area on M54",
+      "components": {
+        "water_pump": {
+          "part_id": "M54-WATER-PUMP",
+          "oem_part_numbers": ["11517527910"],
+          "aftermarket": {"graf": "PA932", "saleri": "PA937"},
+          "notes": "Replace every 80k miles with cooling system refresh"
+        },
+        "thermostat": {
+          "part_id": "M54-THERMOSTAT",
+          "oem_part_numbers": ["11537509227"],
+          "aftermarket": {"wahler": "4326.87D"},
+          "notes": "Map-controlled"
+        },
+        "expansion_tank": {
+          "part_id": "M54-EXPANSION-TANK",
+          "oem_part_numbers": ["17137509072"],
+          "common_issues": "Plastic cracks - replace every 80k miles"
+        },
+        "radiator": {"part_id": "M54-RADIATOR", "oem_part_numbers": ["17117510911"]},
+        "coolant_hoses": {
+          "part_id": "M54-COOLANT-HOSES",
+          "description": "Upper and lower radiator hoses",
+          "oem_part_numbers": {"upper": "11531436408", "lower": "11531436410"},
+          "notes": "Replace all coolant hoses with cooling system refresh"
+        }
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {
+          "part_id": "M54-COILS",
+          "oem_part_numbers": ["12131712219"],
+          "aftermarket": {"bosch": "0221504029"},
+          "quantity": 6
+        },
+        "spark_plugs": {
+          "part_id": "M54-SPARK-PLUGS",
+          "oem_part_numbers": ["12129069048"],
+          "aftermarket": {"ngk": "BKR6EQUP", "bosch": "FGR7DQP"},
+          "quantity": 6,
+          "gap_mm": 0.8
+        }
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {"part_id": "M54-OIL-PUMP", "oem_part_numbers": ["11411435200"]},
+        "oil_filter": {
+          "part_id": "M54-OIL-FILTER",
+          "oem_part_numbers": ["11421709865"],
+          "aftermarket": {"mann": "HU925/4X", "mahle": "OX154/1D"}
+        },
+        "oil_filter_housing_gasket": {
+          "part_id": "M54-OFHG",
+          "oem_part_numbers": ["11421719855"],
+          "common_issues": "Leaks common"
+        }
+      }
+    },
+    "crankcase_ventilation": {
+      "components": {
+        "ccv_valve": {
+          "part_id": "M54-CCV",
+          "description": "Crankcase Ventilation Valve",
+          "oem_part_numbers": ["11617501566"],
+          "common_issues": "Diaphragm fails - causes rough idle, oil leaks",
+          "notes": "Replace at 100k miles"
+        }
+      }
+    },
+    "gaskets_and_seals": {
+      "components": {
+        "valve_cover_gasket": {
+          "part_id": "M54-VC-GASKET",
+          "oem_part_numbers": ["11120030496"],
+          "aftermarket": {"elring": "389.260"},
+          "common_issues": "Leaks oil onto exhaust - fire hazard"
+        },
+        "oil_pan_gasket": {"part_id": "M54-PAN-GASKET", "oem_part_numbers": ["11137511224"]}
+      }
+    }
+  }
+}

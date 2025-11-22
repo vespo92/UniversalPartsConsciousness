@@ -1,0 +1,80 @@
+{
+  "engine_id": "BMW-M52B28-I6-NA",
+  "catalog_version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "target_vehicle": {"year": 1998, "make": "BMW", "model": "328i E36", "engine": "M52B28"},
+
+  "systems": {
+    "short_block": {
+      "components": {
+        "engine_block": {
+          "part_id": "M52-BLOCK",
+          "description": "Aluminum block with Nikasil/Alusil coating",
+          "oem_part_numbers": ["11001714525"],
+          "notes": "Early blocks used Nikasil (sulfur sensitive), later Alusil"
+        },
+        "crankshaft": {"part_id": "M52-CRANK", "oem_part_numbers": ["11211432455"], "specifications": {"stroke_mm": 84.0}},
+        "connecting_rods": {"part_id": "M52-CONROD", "oem_part_numbers": ["11240018615"], "quantity": 6},
+        "pistons": {"part_id": "M52-PISTON", "oem_part_numbers": ["11251713192"], "quantity": 6},
+        "main_bearings": {"part_id": "M52-MAIN-BRG", "oem_part_numbers": ["11211714510"]},
+        "rod_bearings": {"part_id": "M52-ROD-BRG", "oem_part_numbers": ["11241714526"]}
+      }
+    },
+    "cylinder_head": {
+      "components": {
+        "cylinder_head": {"part_id": "M52-HEAD", "oem_part_numbers": ["11121702373"]},
+        "head_gasket": {"part_id": "M52-HEAD-GASKET", "oem_part_numbers": ["11121726619"]},
+        "intake_valves": {"part_id": "M52-INTAKE-VALVE", "oem_part_numbers": ["11341738608"], "quantity": 12},
+        "exhaust_valves": {"part_id": "M52-EXHAUST-VALVE", "oem_part_numbers": ["11341738609"], "quantity": 12},
+        "valve_springs": {"part_id": "M52-VALVE-SPRING", "quantity": 24},
+        "camshafts": {"part_id": "M52-CAMSHAFT-SET", "oem_part_numbers": {"intake": "11311703883", "exhaust": "11311703884"}},
+        "vanos_unit": {
+          "part_id": "M52-VANOS",
+          "description": "Single VANOS (intake camshaft only)",
+          "oem_part_numbers": ["11361738473"],
+          "notes": "M52TU has Double VANOS"
+        }
+      }
+    },
+    "intake_system": {
+      "components": {
+        "intake_manifold": {"part_id": "M52-INTAKE-MANIFOLD", "oem_part_numbers": ["11611437084"]},
+        "throttle_body": {"part_id": "M52-THROTTLE-BODY", "oem_part_numbers": ["13411433626"]},
+        "air_filter": {"part_id": "M52-AIR-FILTER", "oem_part_numbers": ["13721730946"]},
+        "mass_airflow_sensor": {"part_id": "M52-MAF", "oem_part_numbers": ["13621433566"]}
+      }
+    },
+    "fuel_system": {
+      "components": {
+        "fuel_injectors": {"part_id": "M52-INJECTORS", "oem_part_numbers": ["13641703819"], "quantity": 6},
+        "fuel_pump": {"part_id": "M52-FUEL-PUMP", "oem_part_numbers": ["16141180118"]}
+      }
+    },
+    "cooling_system": {
+      "components": {
+        "water_pump": {"part_id": "M52-WATER-PUMP", "oem_part_numbers": ["11510393340"]},
+        "thermostat": {"part_id": "M52-THERMOSTAT", "oem_part_numbers": ["11531713040"]},
+        "expansion_tank": {"part_id": "M52-EXPANSION-TANK", "oem_part_numbers": ["17111723520"]},
+        "radiator": {"part_id": "M52-RADIATOR", "oem_part_numbers": ["17111723898"]}
+      }
+    },
+    "ignition_system": {
+      "components": {
+        "ignition_coils": {"part_id": "M52-COILS", "oem_part_numbers": ["12131726177"], "quantity": 6},
+        "spark_plugs": {"part_id": "M52-SPARK-PLUGS", "oem_part_numbers": ["12129064619"], "aftermarket": {"ngk": "BKR6EK"}, "quantity": 6}
+      }
+    },
+    "lubrication_system": {
+      "components": {
+        "oil_pump": {"part_id": "M52-OIL-PUMP", "oem_part_numbers": ["11411405102"]},
+        "oil_filter": {"part_id": "M52-OIL-FILTER", "oem_part_numbers": ["11421730389"], "aftermarket": {"mann": "HU925/4X"}}
+      }
+    },
+    "gaskets_and_seals": {
+      "components": {
+        "valve_cover_gasket": {"part_id": "M52-VC-GASKET", "oem_part_numbers": ["11121726537"]},
+        "oil_pan_gasket": {"part_id": "M52-PAN-GASKET", "oem_part_numbers": ["11131437237"]}
+      }
+    }
+  }
+}

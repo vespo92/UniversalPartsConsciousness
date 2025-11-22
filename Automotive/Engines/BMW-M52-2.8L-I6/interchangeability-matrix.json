@@ -1,0 +1,41 @@
+{
+  "engine_id": "BMW-M52B28-I6-NA",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "E36": {"name": "3 Series", "years": "1995-1999", "models": ["328i", "328is", "328ic"]},
+    "E39": {"name": "5 Series", "years": "1997-2000", "models": ["528i"]},
+    "E36_7": {"name": "Z3", "years": "1997-2000", "models": ["Z3 2.8"]},
+    "E46_early": {"name": "3 Series", "years": "1999-2000", "models": ["328i (M52TU)"]}
+  },
+
+  "interchangeability_groups": {
+    "m52_to_m52tu": {
+      "description": "M52 vs M52 Technical Update",
+      "differences": [
+        "M52TU has Double VANOS (intake and exhaust)",
+        "M52TU block uses Alusil (no Nikasil)",
+        "Different ECU (MS42 vs MS41)"
+      ],
+      "shared": ["Crankshaft", "Connecting rods", "Pistons", "Many gaskets"]
+    },
+    "m52_to_m54": {
+      "description": "M52 to M54 upgrade path",
+      "notes": "M54 is evolution of M52TU - different intake, ECU, some accessories"
+    }
+  },
+
+  "nikasil_compatibility": {
+    "description": "Block bore coating compatibility",
+    "nikasil_blocks": {"years": "1994-1996 (some 1997)", "issue": "Damaged by high-sulfur fuel", "symptoms": ["Scoring", "Compression loss", "Blue smoke"]},
+    "alusil_blocks": {"years": "1997+ (replacement blocks)", "notes": "No sulfur sensitivity"}
+  },
+
+  "common_swaps": {
+    "m52_swap": {
+      "into_e30": {"description": "Popular swap into E30 3 Series", "requirements": ["Motor mounts", "Oil pan", "Wiring harness", "ECU"]},
+      "into_e28": {"description": "Swap into E28 5 Series"}
+    }
+  }
+}

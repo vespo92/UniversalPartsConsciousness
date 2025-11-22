@@ -1,0 +1,238 @@
+{
+  "engine_id": "BMW-N54-3.0L-I6-TWINTURBO",
+  "common_names": [
+    "N54",
+    "N54B30",
+    "BMW Twin Turbo",
+    "335i Engine",
+    "The Legend"
+  ],
+  "manufacturer": "BMW AG",
+  "engine_family": "BMW N54",
+  "production_years": "2006-2016",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.979,
+      "cubic_inches": 181.8,
+      "cc": 2979
+    },
+    "bore": {
+      "inches": 3.307,
+      "mm": 84.0
+    },
+    "stroke": {
+      "inches": 3.524,
+      "mm": 89.6
+    },
+    "compression_ratio": "10.2:1",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (near radiator)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "aluminum_with_iron_liners",
+    "head_material": "aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), Double VANOS",
+    "forced_induction": {
+      "type": "Twin Turbochargers",
+      "turbo_model": "Mitsubishi TD03-07G",
+      "boost_pressure_psi": {
+        "stock": 8.7,
+        "max_stock": 11.6,
+        "overboost": 13.0
+      },
+      "wastegate_type": "Internal electronic"
+    },
+    "fuel_system": {
+      "type": "High Pressure Direct Injection (HPI)",
+      "fuel_pressure_bar": {
+        "low_pressure": 5,
+        "high_pressure": 200
+      },
+      "injector_type": "Piezoelectric"
+    },
+    "ignition_system": "Coil-on-plug with ion sensing"
+  },
+
+  "power_output_by_year": {
+    "2007-2010_standard": {
+      "horsepower": 300,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 300,
+      "torque_rpm": "1400-5000",
+      "notes": "Initial production spec"
+    },
+    "2007-2010_overboost": {
+      "horsepower": 300,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 332,
+      "torque_rpm": 1400,
+      "notes": "Overboost function engaged (10 seconds max)"
+    },
+    "2011-2016_updated": {
+      "horsepower": 306,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 295,
+      "torque_rpm": "1200-5000",
+      "notes": "Revised tune, smoother power delivery"
+    },
+    "1m_coupe_2011": {
+      "horsepower": 335,
+      "hp_rpm": 5900,
+      "torque_lb_ft": 332,
+      "torque_rpm": "1500-4500",
+      "notes": "Special 1M Coupe tune - highest factory N54 output"
+    },
+    "z4_35is_2010_2016": {
+      "horsepower": 335,
+      "hp_rpm": 5900,
+      "torque_lb_ft": 332,
+      "torque_rpm": "1500-4500",
+      "notes": "Z4 sDrive35is spec"
+    }
+  },
+
+  "vehicle_applications": {
+    "e82_135i": {
+      "years": "2008-2010",
+      "notes": "1 Series Coupe, rear-wheel drive"
+    },
+    "e88_135i": {
+      "years": "2008-2010",
+      "notes": "1 Series Convertible"
+    },
+    "e82_1m": {
+      "years": "2011",
+      "notes": "Limited production M car, 335 HP tune"
+    },
+    "e90_335i_sedan": {
+      "years": "2007-2010",
+      "notes": "3 Series Sedan"
+    },
+    "e91_335i_touring": {
+      "years": "2007-2010",
+      "notes": "3 Series Wagon (Europe)"
+    },
+    "e92_335i_coupe": {
+      "years": "2007-2010",
+      "notes": "3 Series Coupe - most popular application"
+    },
+    "e93_335i_convertible": {
+      "years": "2007-2010",
+      "notes": "3 Series Convertible"
+    },
+    "e60_535i": {
+      "years": "2008-2010",
+      "notes": "5 Series Sedan"
+    },
+    "e89_z4_35i": {
+      "years": "2009-2016",
+      "notes": "Z4 sDrive35i"
+    },
+    "e89_z4_35is": {
+      "years": "2010-2016",
+      "notes": "Z4 sDrive35is - highest output N54"
+    },
+    "f01_740i": {
+      "years": "2009-2012",
+      "notes": "7 Series (select markets)"
+    },
+    "e71_x6_35i": {
+      "years": "2008-2010",
+      "notes": "X6 xDrive35i SAC"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 6.9,
+      "capacity_liters": 6.5,
+      "with_filter": true,
+      "recommended_viscosity": ["0W-30", "5W-30"],
+      "bmw_ll_rating": "BMW Longlife-01",
+      "approved_oils": ["Castrol Edge 0W-30", "BMW TwinPower Turbo 5W-30", "Mobil 1 0W-40"]
+    },
+    "coolant": {
+      "capacity_quarts": 11.6,
+      "capacity_liters": 11.0,
+      "type": "BMW Antifreeze/Coolant (blue)",
+      "bmw_part": "82-14-2-209-769"
+    },
+    "transmission_manual_gs6_53bz": {
+      "capacity_liters": 1.7,
+      "type": "MTF-LT-5 (GETRAG)",
+      "bmw_part": "83-22-2-339-219"
+    },
+    "transmission_auto_zf6hp21": {
+      "capacity_liters": 9.0,
+      "type": "ZF Lifeguard 6",
+      "bmw_part": "83-22-2-152-426"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 210.0,
+    "main_bearing_journal_diameter_mm": 60.0,
+    "rod_bearing_journal_diameter_mm": 50.0,
+    "cylinder_bore_diameter_mm": 84.0,
+    "piston_to_wall_clearance_mm": {
+      "min": 0.02,
+      "max": 0.04
+    },
+    "connecting_rod_length_mm": 139.0,
+    "crankshaft_stroke_mm": 89.6,
+    "valve_lift_mm": {
+      "intake": 9.9,
+      "exhaust": 9.7
+    },
+    "camshaft_duration_degrees": {
+      "intake": 240,
+      "exhaust": 232
+    }
+  },
+
+  "electronic_systems": {
+    "engine_management": "Siemens MSD80 / MSD81",
+    "vanos_control": "Double VANOS (intake and exhaust variable valve timing)",
+    "valvetronic": false,
+    "throttle_control": "Electronic throttle (drive-by-wire)",
+    "knock_sensors": 2,
+    "oxygen_sensors": {
+      "pre_cat": 2,
+      "post_cat": 2
+    },
+    "mass_airflow_sensors": 1,
+    "can_bus": "BMW PT-CAN / K-CAN"
+  },
+
+  "notes": {
+    "heritage": "First BMW production twin-turbo inline-6 since the E23 745i (M102). Replaced the naturally aspirated N52 in performance applications.",
+    "reputation": "Legendary tuning potential - known to easily reach 400+ HP with bolt-ons, 600+ HP with upgraded turbos. Often called the best tuner engine of its era.",
+    "common_issues": [
+      "High Pressure Fuel Pump (HPFP) failure - extended warranty issued",
+      "Wastegate rattle at idle - worn actuator arms",
+      "Carbon buildup on intake valves (direct injection issue)",
+      "Water pump and thermostat failure",
+      "Charge pipe cracking under boost",
+      "Oil filter housing gasket leak",
+      "Valve cover gasket leak",
+      "Ignition coil failure",
+      "Injector failure (piezoelectric)"
+    ],
+    "strengths": [
+      "Exceptional power potential - responds extremely well to tuning",
+      "Robust forged crankshaft",
+      "Strong connecting rods handle 600+ HP",
+      "Twin turbo setup provides quick spool",
+      "Iron cylinder liners handle boost well",
+      "Excellent aftermarket support",
+      "Direct injection provides efficiency"
+    ],
+    "maintenance_critical": [
+      "Walnut blast intake valves every 50k miles",
+      "Replace spark plugs every 30k miles (NGK 97506)",
+      "Replace ignition coils preventatively at 75k miles",
+      "Index injectors if misfires occur"
+    ]
+  }
+}

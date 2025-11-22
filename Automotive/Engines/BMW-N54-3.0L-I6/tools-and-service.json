@@ -1,0 +1,574 @@
+{
+  "engine_id": "BMW-N54-3.0L-I6-TWINTURBO",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "hand_tools": {
+      "wrenches": {
+        "combination_wrenches_metric": {
+          "sizes_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+          "priority": "essential",
+          "usage": "BMW uses exclusively metric fasteners"
+        },
+        "flare_nut_wrenches": {
+          "sizes_mm": [14, 17, 19],
+          "priority": "recommended",
+          "usage": "Fuel lines, coolant fittings"
+        }
+      },
+      "sockets": {
+        "metric_shallow": {
+          "sizes_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24],
+          "drives": ["1/4", "3/8", "1/2"],
+          "priority": "essential"
+        },
+        "metric_deep": {
+          "sizes_mm": [10, 12, 13, 14, 16, 17, 18, 19, 21, 24],
+          "drives": ["3/8", "1/2"],
+          "priority": "essential"
+        },
+        "spark_plug_socket": {
+          "size": "14mm thin wall",
+          "type": "Deep with rubber insert",
+          "drive": "3/8",
+          "priority": "essential"
+        },
+        "e_torx_sockets": {
+          "sizes": ["E8", "E10", "E12", "E14", "E16", "E18", "E20"],
+          "priority": "essential",
+          "usage": "BMW uses E-Torx extensively"
+        }
+      },
+      "torx_and_specialty": {
+        "torx_bits": {
+          "sizes": ["T20", "T25", "T27", "T30", "T40", "T45", "T50", "T55", "T60"],
+          "priority": "essential"
+        },
+        "triple_square_bits": {
+          "sizes": ["M6", "M8", "M10", "M12"],
+          "priority": "essential",
+          "usage": "Axle bolts, driveshaft, trans bolts"
+        },
+        "hex_bits": {
+          "sizes_mm": [4, 5, 6, 8, 10],
+          "priority": "essential"
+        }
+      },
+      "pliers": {
+        "types": [
+          "Needle nose",
+          "Hose clamp pliers (BMW style)",
+          "Locking pliers",
+          "Snap ring pliers (internal/external)"
+        ],
+        "priority": "essential"
+      }
+    },
+
+    "torque_tools": {
+      "torque_wrench_click_type": {
+        "ranges": [
+          {"drive": "1/4", "range_nm": "5-25", "usage": "Small fasteners, sensors"},
+          {"drive": "3/8", "range_nm": "10-80", "usage": "Valve cover, intake, general"},
+          {"drive": "1/2", "range_nm": "40-200", "usage": "Head bolts, main caps, suspension"}
+        ],
+        "priority": "essential",
+        "note": "BMW specs are always in Nm"
+      },
+      "torque_angle_gauge": {
+        "usage": "Torque-to-yield (TTY) fasteners - head bolts, rod bolts",
+        "priority": "essential"
+      }
+    },
+
+    "specialty_tools": {
+      "bmw_specific": {
+        "vanos_timing_tool_kit": {
+          "description": "Camshaft and crankshaft locking tools for N54",
+          "bmw_tool_numbers": ["2 249 140", "2 249 141"],
+          "aftermarket": "Schwaben N54 timing tool set",
+          "priority": "essential_for_timing",
+          "usage": "Timing chain, VANOS service, head gasket"
+        },
+        "fuel_line_disconnect_tool": {
+          "description": "Quick-disconnect tool for high-pressure fuel lines",
+          "size_mm": 16,
+          "priority": "essential_for_fuel_system"
+        },
+        "injector_removal_tool": {
+          "description": "Slide hammer for stuck injectors",
+          "priority": "recommended",
+          "usage": "Direct injection causes carbon bonding"
+        },
+        "turbo_oil_line_tool": {
+          "description": "Banjo bolt wrench for turbo oil lines",
+          "size_mm": 14,
+          "priority": "essential_for_turbo_work"
+        },
+        "coolant_evacuation_tool": {
+          "description": "Airlift-style coolant fill tool",
+          "priority": "recommended",
+          "usage": "BMW cooling systems difficult to bleed"
+        },
+        "oil_filter_cap_wrench": {
+          "description": "86mm 16-flute oil filter housing cap wrench",
+          "priority": "essential"
+        }
+      },
+
+      "diagnostic_tools": {
+        "bmw_scanner": {
+          "description": "BMW-specific diagnostic scanner",
+          "options": [
+            {"name": "BMW ISTA+", "type": "Dealer software", "capability": "Full"},
+            {"name": "Carly for BMW", "type": "Phone app", "capability": "Good"},
+            {"name": "BimmerLink", "type": "Phone app", "capability": "Good"},
+            {"name": "INPA/EDIABAS", "type": "Laptop software", "capability": "Full"}
+          ],
+          "priority": "essential",
+          "note": "Generic OBD2 scanners provide limited functionality on BMW"
+        },
+        "boost_leak_tester": {
+          "description": "Pressure tester for charge pipe system",
+          "priority": "recommended",
+          "usage": "Find boost leaks in intercooler/charge pipes"
+        },
+        "fuel_pressure_gauge": {
+          "description": "High pressure fuel system tester",
+          "range_bar": "0-200",
+          "priority": "recommended_for_diagnosis"
+        }
+      },
+
+      "engine_service": {
+        "valve_spring_compressor": {
+          "description": "Overhead cam valve spring compressor",
+          "type": "On-car style for DOHC",
+          "priority": "required_for_valvetrain"
+        },
+        "piston_ring_compressor": {
+          "description": "Adjustable ring compressor",
+          "bore_size_mm": 84,
+          "priority": "required_for_rebuild"
+        },
+        "dial_bore_gauge": {
+          "range_mm": "50-150",
+          "resolution_mm": 0.01,
+          "priority": "required_for_rebuild"
+        },
+        "outside_micrometer_set": {
+          "range_mm": "0-100",
+          "resolution_mm": 0.01,
+          "priority": "required_for_rebuild"
+        },
+        "plastigage": {
+          "colors": ["Green (0.025-0.076mm)", "Red (0.051-0.152mm)"],
+          "priority": "essential_for_rebuild"
+        }
+      }
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "description": "Engine oil and filter replacement",
+        "interval": {
+          "miles": 10000,
+          "months": 12,
+          "bmw_cbs": "Condition Based Service indicator",
+          "recommended": 7500
+        },
+        "difficulty": "beginner",
+        "time_minutes": 45,
+        "tools_required": [
+          {"tool": "17mm socket", "usage": "Drain plug"},
+          {"tool": "86mm oil filter cap wrench", "usage": "Filter housing"},
+          {"tool": "Drain pan (8 qt)", "usage": "Catch oil"},
+          {"tool": "Funnel with extension", "usage": "Oil fill at rear of engine"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-OIL-FILTER", "quantity": 1},
+          {"part": "BMW LL-01 Approved Oil 0W-30 or 5W-30", "quantity_liters": 7},
+          {"part": "Drain plug crush washer 24mm", "quantity": 1}
+        ],
+        "torque_specs": {
+          "drain_plug_nm": 25,
+          "filter_housing_cap_nm": 25
+        },
+        "procedure_notes": [
+          "Oil fill is at REAR of engine bay - use extension funnel",
+          "Check level on iDrive or dipstick after running engine",
+          "BMW specifies oil level between MIN and MAX on dipstick",
+          "Reset CBS (Condition Based Service) in iDrive after service"
+        ]
+      },
+
+      "spark_plug_replacement": {
+        "description": "Replace all 6 spark plugs",
+        "interval": {
+          "miles_stock": 45000,
+          "miles_tuned": 25000,
+          "miles_high_boost": 15000
+        },
+        "difficulty": "intermediate",
+        "time_minutes": 90,
+        "tools_required": [
+          {"tool": "14mm thin-wall spark plug socket", "usage": "Plug removal/install"},
+          {"tool": "6 inch extension", "usage": "Access"},
+          {"tool": "Torque wrench 3/8", "usage": "Final torque"},
+          {"tool": "T30 Torx", "usage": "Coil hold-downs"},
+          {"tool": "10mm socket", "usage": "Engine cover"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-SPARK-PLUGS", "quantity": 6, "oem": "NGK 97506 SILZKBR8D8S"},
+          {"part": "One-step colder (tuned)", "optional": true, "oem": "NGK 95770 SILZKR7B8DS"}
+        ],
+        "torque_specs": {
+          "spark_plug_nm": 22,
+          "coil_hold_down_nm": 9
+        },
+        "procedure_notes": [
+          "Remove engine cover (10mm nuts)",
+          "Remove coil connectors and T30 bolts",
+          "Use compressed air to blow out plug wells before removal",
+          "Inspect old plugs - check electrode wear and color",
+          "Gap is preset - do not adjust NGK plugs",
+          "Hand-thread plugs to prevent cross-threading",
+          "Install coils with light coating of dielectric grease on boots"
+        ]
+      },
+
+      "ignition_coil_replacement": {
+        "description": "Replace ignition coils (preventative or failure)",
+        "interval": {
+          "miles": 75000,
+          "notes": "Replace preventatively to avoid misfires"
+        },
+        "difficulty": "beginner",
+        "time_minutes": 30,
+        "tools_required": [
+          {"tool": "T30 Torx", "usage": "Coil hold-downs"},
+          {"tool": "10mm socket", "usage": "Engine cover"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-COILS", "quantity": 6}
+        ],
+        "procedure_notes": [
+          "Replace all 6 at once - labor is the same",
+          "Transfer index numbers from old coils to new if indexing",
+          "Apply dielectric grease to boots"
+        ]
+      },
+
+      "walnut_blasting": {
+        "description": "Clean carbon deposits from intake valves",
+        "interval": {
+          "miles": 50000,
+          "notes": "Direct injection engines require periodic valve cleaning"
+        },
+        "difficulty": "advanced",
+        "time_hours": 4,
+        "tools_required": [
+          {"tool": "Intake manifold gasket set", "usage": "Replace on reinstall"},
+          {"tool": "Walnut shell blasting media", "usage": "Cleaning media"},
+          {"tool": "Shop vacuum with adapter", "usage": "Media collection"},
+          {"tool": "Inspection camera", "usage": "Verify cleaning"},
+          {"tool": "10mm, 13mm sockets", "usage": "Manifold removal"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-IM-GASKET", "quantity": 1},
+          {"part": "Walnut shell media (fine)", "quantity_lbs": 5}
+        ],
+        "procedure_notes": [
+          "Remove intake manifold",
+          "Rotate engine to close valves on cylinder being cleaned",
+          "Blast each intake port - 2 per cylinder",
+          "Vacuum media thoroughly",
+          "Use camera to verify all carbon removed",
+          "Reinstall with new gaskets"
+        ]
+      },
+
+      "coolant_flush": {
+        "description": "Drain and refill cooling system",
+        "interval": {
+          "miles": 60000,
+          "years": 4
+        },
+        "difficulty": "intermediate",
+        "time_hours": 1.5,
+        "tools_required": [
+          {"tool": "Large drain pan (3 gal)", "usage": "Catch coolant"},
+          {"tool": "Coolant evacuation tool (airlift)", "usage": "No-mess fill"},
+          {"tool": "T45 Torx", "usage": "Drain plugs"},
+          {"tool": "19mm socket", "usage": "Radiator drain"}
+        ],
+        "parts_required": [
+          {"part": "BMW Antifreeze (blue)", "quantity_liters": 11},
+          {"part": "Distilled water", "quantity_liters": 11}
+        ],
+        "procedure_notes": [
+          "BMW cooling systems are notoriously difficult to bleed",
+          "Use airlift tool or run heater on high with cap off",
+          "Bleed screws on thermostat housing and expansion tank",
+          "Check level multiple times over next week"
+        ]
+      }
+    },
+
+    "repairs": {
+      "hpfp_replacement": {
+        "description": "Replace high pressure fuel pump",
+        "symptoms": ["Long crank", "P0087 low fuel pressure", "Limp mode"],
+        "difficulty": "intermediate",
+        "time_hours": 2,
+        "tools_required": [
+          {"tool": "10mm socket", "usage": "Engine cover"},
+          {"tool": "5mm hex", "usage": "HPFP bolts"},
+          {"tool": "Fuel line disconnect tool", "usage": "High pressure line"},
+          {"tool": "T30 Torx", "usage": "Various"},
+          {"tool": "Fuel pressure gauge (optional)", "usage": "Verify repair"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-HPFP", "quantity": 1},
+          {"part": "High pressure fuel line o-rings", "quantity": 1}
+        ],
+        "torque_specs": {
+          "hpfp_bolts_nm": 10,
+          "fuel_line_fitting_nm": 22
+        },
+        "procedure_notes": [
+          "Relieve fuel pressure before disconnecting lines",
+          "Note orientation of pump before removal",
+          "Replace o-rings on all fuel connections",
+          "Prime system before starting - cycle ignition 3-5 times",
+          "Check for leaks with engine running"
+        ]
+      },
+
+      "water_pump_thermostat_replacement": {
+        "description": "Replace electric water pump and thermostat",
+        "symptoms": ["Overheating", "Coolant warning light", "Pump noise"],
+        "difficulty": "intermediate",
+        "time_hours": 3,
+        "tools_required": [
+          {"tool": "T45 Torx", "usage": "Water pump bolts"},
+          {"tool": "E10, E12 E-Torx", "usage": "Various"},
+          {"tool": "10mm socket", "usage": "Hose clamps"},
+          {"tool": "Coolant evacuation tool", "usage": "Refill"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-WATER-PUMP", "quantity": 1},
+          {"part_id": "N54-THERMOSTAT", "quantity": 1},
+          {"part": "Thermostat housing o-ring", "quantity": 1},
+          {"part": "Coolant", "quantity_liters": 11}
+        ],
+        "torque_specs": {
+          "water_pump_bolts_nm": 10,
+          "thermostat_housing_bolts_nm": 10
+        },
+        "procedure_notes": [
+          "Drain coolant before removal",
+          "Water pump is electric - disconnect battery or pump connector",
+          "Replace thermostat at same time - labor overlap",
+          "Bleed system thoroughly after refill"
+        ]
+      },
+
+      "valve_cover_gasket_replacement": {
+        "description": "Replace leaking valve cover gasket",
+        "symptoms": ["Oil smell", "Oil around coil wells", "Smoke on exhaust manifold"],
+        "difficulty": "intermediate",
+        "time_hours": 2,
+        "tools_required": [
+          {"tool": "E10 E-Torx", "usage": "Valve cover bolts"},
+          {"tool": "T30, T40 Torx", "usage": "Various"},
+          {"tool": "10mm socket", "usage": "Accessories"},
+          {"tool": "Plastic scraper", "usage": "Gasket removal"},
+          {"tool": "Brake cleaner", "usage": "Surface cleaning"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-VC-GASKET", "quantity": 1},
+          {"part": "Valve cover bolt seals (15)", "quantity": 1}
+        ],
+        "torque_specs": {
+          "valve_cover_bolts_nm": 10,
+          "sequence": "Inside-out pattern"
+        },
+        "procedure_notes": [
+          "Remove coils and wiring harness",
+          "Note positions of all wiring and hoses",
+          "Clean all surfaces thoroughly",
+          "Replace eccentric shaft sensor seal if equipped",
+          "Torque in sequence - do not overtighten"
+        ]
+      },
+
+      "oil_filter_housing_gasket": {
+        "description": "Replace oil filter housing gasket",
+        "symptoms": ["Oil leak on passenger side of engine"],
+        "difficulty": "intermediate",
+        "time_hours": 1.5,
+        "tools_required": [
+          {"tool": "86mm oil filter cap wrench", "usage": "Filter housing cap"},
+          {"tool": "E10 E-Torx", "usage": "Housing bolts"},
+          {"tool": "Pick set", "usage": "O-ring removal"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-OFHG", "quantity": 1}
+        ],
+        "procedure_notes": [
+          "Drain oil first - housing is full",
+          "Remove coolant hoses from housing",
+          "Note o-ring positions - multiple sizes",
+          "Lubricate new o-rings with oil before install"
+        ]
+      },
+
+      "turbo_replacement": {
+        "description": "Replace turbocharger(s)",
+        "difficulty": "advanced",
+        "time_hours": 8,
+        "tools_required": [
+          {"tool": "E10, E12, E14 E-Torx", "usage": "Various"},
+          {"tool": "14mm banjo bolt wrench", "usage": "Oil lines"},
+          {"tool": "T30, T40 Torx", "usage": "Heat shields"},
+          {"tool": "O2 sensor socket (22mm)", "usage": "O2 sensors"},
+          {"tool": "Exhaust manifold socket set", "usage": "Manifold nuts"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-TURBO-PAIR", "quantity": 1},
+          {"part_id": "N54-TURBO-GASKET-KIT", "quantity": 1},
+          {"part": "Turbo oil feed lines (new)", "quantity": 2},
+          {"part": "Turbo coolant lines", "quantity": 4},
+          {"part": "Turbo studs (new recommended)", "quantity": 1}
+        ],
+        "torque_specs": {
+          "turbo_to_manifold_nm": 18,
+          "manifold_to_head_nm": 18,
+          "oil_banjo_bolt_nm": 22
+        },
+        "procedure_notes": [
+          "Remove exhaust system from turbos back",
+          "Remove heat shields - many are one-time use",
+          "Disconnect all oil and coolant lines to turbos",
+          "Front turbo is easier to access than rear",
+          "Pre-oil turbos before first start",
+          "Let turbos idle 3 minutes before high RPM"
+        ]
+      },
+
+      "charge_pipe_replacement": {
+        "description": "Replace cracked charge pipe",
+        "symptoms": ["Boost leak", "Power loss", "Hissing under boost"],
+        "difficulty": "beginner",
+        "time_minutes": 30,
+        "tools_required": [
+          {"tool": "Flathead screwdriver", "usage": "Hose clamps"},
+          {"tool": "10mm socket", "usage": "Bracket bolts"}
+        ],
+        "parts_required": [
+          {"part_id": "N54-CHARGEPIPE", "quantity": 1, "recommend_upgrade": "Aluminum aftermarket"}
+        ],
+        "procedure_notes": [
+          "Loosen clamps at intercooler and throttle body",
+          "Remove any brackets",
+          "Install new pipe with proper clamp orientation",
+          "Pressure test system after install"
+        ]
+      }
+    },
+
+    "engine_rebuild": {
+      "complete_rebuild": {
+        "description": "Full N54 engine rebuild",
+        "difficulty": "expert",
+        "time_hours": 50,
+        "special_considerations": [
+          "N54 is complex DOHC turbo engine - not a beginner rebuild",
+          "VANOS timing is critical - use proper tools",
+          "Direct injection system requires specialized knowledge",
+          "Consider upgrading to forged internals if rebuilding"
+        ],
+        "critical_measurements": [
+          {
+            "measurement": "Cylinder bore diameter",
+            "specification_mm": 84.0,
+            "max_wear_mm": 0.05
+          },
+          {
+            "measurement": "Main bearing clearance",
+            "specification_mm": "0.02-0.04"
+          },
+          {
+            "measurement": "Rod bearing clearance",
+            "specification_mm": "0.02-0.04"
+          },
+          {
+            "measurement": "Crankshaft end play",
+            "specification_mm": "0.07-0.24"
+          },
+          {
+            "measurement": "Piston ring end gap",
+            "specification_mm": "0.20-0.40"
+          }
+        ]
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "boost_leak_test": {
+      "description": "Test charge pipe system for leaks",
+      "tools_required": ["Boost leak tester", "Shop air (15 psi max)"],
+      "procedure": [
+        "Remove intake filter",
+        "Install boost leak tester at turbo inlet",
+        "Pressurize to 15 psi",
+        "Listen for hissing - spray soapy water on connections",
+        "Check intercooler, charge pipes, BOV, throttle body"
+      ]
+    },
+    "fuel_pressure_test": {
+      "description": "Test high pressure fuel system",
+      "tools_required": ["BMW scanner with live data", "Fuel pressure gauge (optional)"],
+      "specifications": {
+        "low_pressure_bar": "5.0",
+        "high_pressure_idle_bar": "50-80",
+        "high_pressure_wot_bar": "100-200"
+      },
+      "diagnosis": {
+        "low_hp_pressure": "HPFP failure or cam follower wear",
+        "fluctuating_pressure": "Injector leak or sensor issue",
+        "no_pressure": "HPFP or LPFP failure"
+      }
+    },
+    "compression_test": {
+      "description": "Measure cylinder compression",
+      "tools_required": ["Compression tester", "14mm spark plug socket"],
+      "specifications": {
+        "minimum_bar": 10,
+        "variation_max_bar": 1
+      }
+    },
+    "misfire_diagnosis": {
+      "description": "Diagnose cylinder misfires",
+      "common_causes": [
+        {"cause": "Spark plugs", "solution": "Replace plugs"},
+        {"cause": "Ignition coils", "solution": "Swap coils to identify failed unit"},
+        {"cause": "Carbon buildup", "solution": "Walnut blast"},
+        {"cause": "Injector failure", "solution": "Replace/index injectors"},
+        {"cause": "Low fuel pressure", "solution": "Replace HPFP"}
+      ],
+      "procedure": [
+        "Read fault codes for misfire cylinder",
+        "Swap coil from misfiring cylinder to known good",
+        "Clear codes and test drive",
+        "If misfire follows coil - replace coil",
+        "If misfire stays - check plug, then injector, then compression"
+      ]
+    }
+  }
+}

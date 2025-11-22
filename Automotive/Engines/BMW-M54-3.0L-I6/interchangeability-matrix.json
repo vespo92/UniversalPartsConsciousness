@@ -1,0 +1,89 @@
+{
+  "engine_id": "BMW-M54B30-I6-NA",
+  "matrix_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vehicle_platforms": {
+    "E46": {"name": "3 Series", "years": "2001-2006", "models": ["330i", "330ci", "330xi"]},
+    "E39": {"name": "5 Series", "years": "2001-2003", "models": ["530i"]},
+    "E60_early": {"name": "5 Series", "years": "2004-2005", "models": ["530i"]},
+    "E53": {"name": "X5", "years": "2001-2006", "models": ["X5 3.0i"]},
+    "E83": {"name": "X3", "years": "2004-2006", "models": ["X3 3.0i"]},
+    "E85": {"name": "Z4", "years": "2003-2006", "models": ["Z4 3.0i"]}
+  },
+
+  "era_classifications": {
+    "ms43_era": {"years": "2001-2002", "ecu": "Siemens MS43", "throttle": "Cable"},
+    "ms45_era": {"years": "2003-2006", "ecu": "Siemens MS45", "throttle": "Drive-by-wire"}
+  },
+
+  "interchangeability_groups": {
+    "universal_m54": {
+      "parts": [
+        {"part_id": "M54-BLOCK", "notes": "All M54B30 blocks identical"},
+        {"part_id": "M54-CRANK", "notes": "All crankshafts identical"},
+        {"part_id": "M54-HEAD", "notes": "All heads interchange"},
+        {"part_id": "M54-CAMSHAFT-SET", "notes": "All camshafts identical"},
+        {"part_id": "M54-SPARK-PLUGS", "notes": "Universal"},
+        {"part_id": "M54-OIL-FILTER", "notes": "Universal"}
+      ]
+    },
+    "m54_variant_interchange": {
+      "description": "Parts shared across M54B22, M54B25, M54B30",
+      "shared": ["Cylinder head", "Camshafts", "Timing components", "Valve train"],
+      "different": ["Block (bore differs)", "Pistons", "Crankshaft (stroke differs on B22)"]
+    }
+  },
+
+  "cross_engine_compatibility": {
+    "m54_to_m52tu": {
+      "description": "M54 evolved from M52TU",
+      "shared": ["General architecture", "Some gaskets", "Oil filter"],
+      "different": ["Block (M54 is Alusil)", "VANOS design improved", "Intake manifold"]
+    },
+    "m54_to_n52": {
+      "description": "M54 replaced by N52",
+      "shared": ["None directly - completely different design"],
+      "notes": "N52 is magnesium/aluminum, Valvetronic equipped"
+    }
+  },
+
+  "common_swaps_and_upgrades": {
+    "performance_intake": {
+      "name": "Cold Air Intake",
+      "power_gain_hp": "5-10",
+      "options": ["AFE", "K&N", "Active Autowerke"]
+    },
+    "exhaust": {
+      "name": "Headers + Exhaust",
+      "power_gain_hp": "15-25",
+      "options": ["Supersprint", "Dinan", "Active Autowerke"]
+    },
+    "ecu_tune": {
+      "name": "MS45 Tune",
+      "power_gain_hp": "10-15",
+      "notes": "MS45 only (drive-by-wire)"
+    },
+    "supercharger": {
+      "name": "Centrifugal Supercharger",
+      "power_hp": "350-400",
+      "options": ["VF Engineering", "ESS Tuning", "Active Autowerke"],
+      "notes": "Popular upgrade - M54 handles boost well with stock internals to ~8 PSI"
+    }
+  },
+
+  "cooling_system_refresh_kit": {
+    "description": "CRITICAL maintenance - replace all at once",
+    "interval_miles": 80000,
+    "components": [
+      "Water pump",
+      "Thermostat",
+      "Expansion tank with cap",
+      "Upper radiator hose",
+      "Lower radiator hose",
+      "Thermostat housing hoses",
+      "Coolant"
+    ],
+    "estimated_cost_usd": "300-400 (parts)"
+  }
+}

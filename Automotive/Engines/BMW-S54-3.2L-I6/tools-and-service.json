@@ -1,0 +1,103 @@
+{
+  "engine_id": "BMW-S54B32-I6-NA",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "essential_tools": {
+      "metric_sockets_mm": [8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+      "e_torx": ["E8", "E10", "E12", "E14"],
+      "torx": ["T25", "T30", "T40", "T45", "T50"],
+      "valve_adjustment_tools": "Feeler gauges (metric)"
+    },
+    "specialty_tools": {
+      "vanos_timing_tools": "S54/S50 camshaft locking tools",
+      "valve_spring_compressor": "Required for valve adjustment access",
+      "plastigage": "For rod bearing clearance verification"
+    }
+  },
+
+  "service_operations": {
+    "critical_maintenance": {
+      "rod_bearing_replacement": {
+        "interval_miles": 60000,
+        "at_purchase": "HIGHLY RECOMMENDED",
+        "difficulty": "advanced",
+        "time_hours": 8,
+        "parts": ["BE Bearings S54 kit or ACL race bearings"],
+        "procedure_notes": [
+          "Oil pan removal required",
+          "Measure all bearing clearances with Plastigage",
+          "Replace rod bolts",
+          "Torque to spec with angle gauge"
+        ],
+        "critical_warning": "FAILURE TO REPLACE BEARINGS CAN RESULT IN CATASTROPHIC ENGINE FAILURE"
+      },
+      "valve_adjustment": {
+        "interval_miles": 30000,
+        "difficulty": "advanced",
+        "time_hours": 3,
+        "procedure_notes": ["S54 uses bucket-type lifters - shims required for adjustment"]
+      }
+    },
+    "regular_maintenance": {
+      "oil_change": {
+        "interval_miles": 5000,
+        "oil_spec": "BMW 10W-60 ONLY",
+        "capacity_liters": 5.0,
+        "critical_warning": "DO NOT use any oil other than 10W-60 - lower viscosity causes bearing wear"
+      },
+      "spark_plugs": {
+        "interval_miles": 30000,
+        "part": "NGK BKR7EQUP",
+        "gap_mm": 0.7
+      },
+      "vanos_service": {
+        "interval_miles": 100000,
+        "parts": ["Beisan Systems S54 rebuild kit"],
+        "difficulty": "advanced"
+      },
+      "cooling_system_refresh": {
+        "interval_miles": 80000,
+        "components": ["Water pump", "Thermostat", "Expansion tank", "Hoses"]
+      }
+    },
+    "common_repairs": {
+      "vanos_rebuild": {
+        "symptoms": ["Rough idle", "Loss of power at certain RPM", "Fault codes"],
+        "time_hours": 4
+      },
+      "throttle_actuator_replacement": {
+        "symptoms": ["Limp mode", "Throttle not responding"],
+        "time_hours": 2
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "rod_bearing_health_check": {
+      "procedure": [
+        "Cut open oil filter and inspect for metal particles",
+        "Send oil sample for analysis (Blackstone Labs)",
+        "Listen for any knocking sounds at idle and under load",
+        "Check oil pressure with mechanical gauge"
+      ],
+      "warning_signs": ["Metal flakes in filter", "High lead/copper in oil analysis", "Low oil pressure", "Any knock sound"]
+    },
+    "compression_test": {
+      "spec_bar": {"minimum": 12, "max_variation": 1},
+      "notes": "High compression engine - should test high"
+    },
+    "vanos_test": {
+      "symptoms": ["Rough idle", "Power loss", "Fault codes"],
+      "diagnosis": "Check VANOS operation with BMW scanner"
+    }
+  },
+
+  "oil_requirements": {
+    "specification": "BMW 10W-60 ONLY",
+    "approved_oils": ["Castrol TWS 10W-60", "BMW M 10W-60"],
+    "critical_note": "S54 is designed for 10W-60 viscosity. Using lower viscosity oil (5W-30, etc.) has been linked to rod bearing failures. The oil film is too thin at operating temperature.",
+    "change_interval_miles": 5000
+  }
+}

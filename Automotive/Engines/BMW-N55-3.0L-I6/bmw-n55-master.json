@@ -1,0 +1,203 @@
+{
+  "engine_id": "BMW-N55-3.0L-I6-TWINSCROLL",
+  "common_names": [
+    "N55",
+    "N55B30",
+    "BMW TwinPower Turbo",
+    "335i Engine (2011+)",
+    "Single Turbo Six"
+  ],
+  "manufacturer": "BMW AG",
+  "engine_family": "BMW N55",
+  "production_years": "2009-2019",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {
+      "liters": 2.979,
+      "cubic_inches": 181.8,
+      "cc": 2979
+    },
+    "bore": {
+      "inches": 3.307,
+      "mm": 84.0
+    },
+    "stroke": {
+      "inches": 3.524,
+      "mm": 89.6
+    },
+    "compression_ratio": "10.2:1",
+    "firing_order": "1-5-3-6-2-4",
+    "cylinder_numbering": "1 at front (near radiator)",
+    "rotation": "clockwise (viewed from front)",
+    "block_material": "aluminum_with_iron_liners",
+    "head_material": "aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), Double VANOS, Valvetronic III",
+    "forced_induction": {
+      "type": "Single Twin-Scroll Turbocharger",
+      "turbo_model": "Mitsubishi TD04HL / BorgWarner EFR (later)",
+      "boost_pressure_psi": {
+        "stock": 8.5,
+        "max_stock": 17.4,
+        "overboost": 19.0
+      },
+      "wastegate_type": "Electronic"
+    },
+    "fuel_system": {
+      "type": "High Pressure Direct Injection (HPI)",
+      "fuel_pressure_bar": {
+        "low_pressure": 5,
+        "high_pressure": 200
+      },
+      "injector_type": "Solenoid (not piezoelectric)"
+    },
+    "ignition_system": "Coil-on-plug",
+    "valvetronic": {
+      "equipped": true,
+      "generation": "III",
+      "function": "Variable valve lift replaces conventional throttle"
+    }
+  },
+
+  "power_output_by_year": {
+    "2010-2015_standard": {
+      "horsepower": 300,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 300,
+      "torque_rpm": "1200-5000",
+      "notes": "Standard 335i/435i/535i spec"
+    },
+    "2010-2015_overboost": {
+      "horsepower": 300,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 330,
+      "torque_rpm": 1500,
+      "notes": "Overboost function engaged"
+    },
+    "x5_x6_35i": {
+      "horsepower": 300,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 300,
+      "torque_rpm": "1200-5000",
+      "notes": "SUV applications"
+    },
+    "m235i_m2": {
+      "horsepower": 320,
+      "hp_rpm": 5800,
+      "torque_lb_ft": 330,
+      "torque_rpm": "1300-4500",
+      "notes": "Performance variants"
+    },
+    "m2_special": {
+      "horsepower": 365,
+      "hp_rpm": 6500,
+      "torque_lb_ft": 343,
+      "torque_rpm": "1450-4750",
+      "notes": "M2 Coupe (F87) - highest N55 output"
+    }
+  },
+
+  "vehicle_applications": {
+    "f20_f21_m135i": {
+      "years": "2012-2016",
+      "notes": "1 Series hatchback (Europe/ROW)"
+    },
+    "f22_m235i": {
+      "years": "2014-2016",
+      "notes": "2 Series Coupe"
+    },
+    "f23_m235i": {
+      "years": "2015-2016",
+      "notes": "2 Series Convertible"
+    },
+    "f87_m2": {
+      "years": "2016-2018",
+      "notes": "M2 Coupe - highest output N55"
+    },
+    "e90_335i": {
+      "years": "2010-2011",
+      "notes": "Late E90 3 Series"
+    },
+    "f30_335i": {
+      "years": "2012-2015",
+      "notes": "F30 3 Series Sedan"
+    },
+    "f32_435i": {
+      "years": "2014-2016",
+      "notes": "4 Series Coupe"
+    },
+    "f10_535i": {
+      "years": "2011-2016",
+      "notes": "5 Series Sedan"
+    },
+    "f15_x5_35i": {
+      "years": "2014-2018",
+      "notes": "X5 xDrive35i"
+    },
+    "f16_x6_35i": {
+      "years": "2015-2019",
+      "notes": "X6 xDrive35i"
+    }
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 6.9,
+      "capacity_liters": 6.5,
+      "with_filter": true,
+      "recommended_viscosity": ["0W-30", "0W-40"],
+      "bmw_ll_rating": "BMW Longlife-01",
+      "approved_oils": ["Castrol Edge 0W-30", "BMW TwinPower Turbo 0W-30", "Mobil 1 0W-40"]
+    },
+    "coolant": {
+      "capacity_liters": 9.5,
+      "type": "BMW Antifreeze/Coolant (blue)",
+      "bmw_part": "82-14-2-209-769"
+    }
+  },
+
+  "critical_dimensions": {
+    "deck_height_mm": 210.0,
+    "main_bearing_journal_diameter_mm": 60.0,
+    "rod_bearing_journal_diameter_mm": 50.0,
+    "cylinder_bore_diameter_mm": 84.0,
+    "connecting_rod_length_mm": 139.0,
+    "valve_lift_mm": {
+      "intake_max": 9.9,
+      "intake_min": 0.3,
+      "exhaust": 9.7
+    }
+  },
+
+  "electronic_systems": {
+    "engine_management": "Siemens MSD85 / MEVD17.2",
+    "vanos_control": "Double VANOS (intake and exhaust)",
+    "valvetronic": "Valvetronic III with eccentric shaft",
+    "throttle_control": "Valvetronic (throttle body used only for emergency)",
+    "boost_control": "Electronic wastegate"
+  },
+
+  "notes": {
+    "heritage": "Evolution of N54 - single twin-scroll turbo replaced twin turbos, added Valvetronic III",
+    "reputation": "More reliable than N54 due to simpler fuel system and single turbo. Excellent tuning potential.",
+    "common_issues": [
+      "Valve cover/gasket cracking (early production)",
+      "VANOS solenoid failure",
+      "Charge pipe cracking (same as N54)",
+      "Water pump failure",
+      "Oil filter housing gasket leak"
+    ],
+    "strengths": [
+      "Improved HPFP reliability over N54",
+      "Solenoid injectors more reliable than N54 piezo",
+      "Single turbo simpler and cheaper to maintain",
+      "Valvetronic improves efficiency and response",
+      "Still excellent tuning potential (450+ HP on stock turbo)",
+      "Forged crankshaft handles 800+ HP"
+    ],
+    "vs_n54": [
+      "Pros: Better fuel economy, improved reliability, faster spool (twin-scroll)",
+      "Cons: Slightly less tuning headroom, Valvetronic adds complexity"
+    ]
+  }
+}

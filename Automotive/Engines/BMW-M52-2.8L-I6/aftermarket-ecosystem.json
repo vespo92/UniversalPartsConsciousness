@@ -1,0 +1,240 @@
+{
+  "engine_id": "BMW-M52B28-I6-NA",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {"url": "https://www.fcpeuro.com", "specialty": "OEM/OE parts, lifetime warranty", "ships_from": "USA"},
+      "ecs_tuning": {"url": "https://www.ecstuning.com", "specialty": "OEM and performance parts", "ships_from": "USA"},
+      "pelican_parts": {"url": "https://www.pelicanparts.com", "specialty": "BMW parts and guides", "ships_from": "USA"},
+      "bavauto": {"url": "https://www.bavauto.com", "specialty": "BMW specialty parts", "ships_from": "USA"},
+      "realoem": {"url": "https://www.realoem.com", "specialty": "BMW parts diagrams/lookup", "type": "reference"}
+    },
+    "performance_parts": {
+      "turner_motorsport": {"name": "Turner Motorsport", "url": "https://www.turnermotorsport.com", "specialty": "BMW performance and racing"},
+      "dinan": {"name": "Dinan", "url": "https://www.dinancars.com", "specialty": "Complete performance packages"},
+      "supersprint": {"name": "Supersprint", "url": "https://www.supersprint.com", "specialty": "Exhaust systems"},
+      "active_autowerke": {"name": "Active Autowerke", "url": "https://www.activeautowerke.com", "specialty": "Headers, exhaust"},
+      "ireland_engineering": {"name": "Ireland Engineering", "url": "https://www.ireland-engineering.com", "specialty": "Classic BMW parts"}
+    },
+    "nikasil_specialists": {
+      "note": "Early M52 blocks with Nikasil bore coating can fail with high-sulfur fuel",
+      "cylinder_solutions": {"url": "https://www.cylindersolutions.com", "specialty": "Cylinder sleeving/resleeve"},
+      "la_sleeve": {"url": "https://www.lasleeve.com", "specialty": "Cylinder sleeving"}
+    },
+    "internal_engine": {
+      "cp_carrillo": {"url": "https://www.cp-carrillo.com", "specialty": "Pistons, rods"},
+      "arp": {"url": "https://www.arp-bolts.com", "specialty": "Fasteners"},
+      "supertech": {"url": "https://www.supertechperformance.com", "specialty": "Valvetrain"},
+      "schrick": {"url": "https://www.schrick.com", "specialty": "Camshafts"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "k_and_n_fipk": {"part_number": "57-1000", "type": "FIPK Intake", "price_usd": 229, "power_gain": "5-8hp"},
+      "afe_stage_2": {"part_number": "51-10471", "type": "Pro Dry S Intake", "price_usd": 279, "power_gain": "6-10hp"},
+      "dinan_intake": {"part_number": "D760-0300", "type": "Cold Air Intake", "price_usd": 449, "power_gain": "8-12hp"},
+      "m50_manifold_swap": {
+        "description": "Popular upgrade - M50 non-VANOS intake manifold",
+        "parts_needed": ["M50 Manifold", "Throttle Body", "Adapter", "Tune"],
+        "price_usd": 400,
+        "power_gain": "15-20hp",
+        "notes": "Removes secondary throttle butterflies for better flow"
+      }
+    },
+    "exhaust_headers": {
+      "supersprint_manifold": {"part_number": "788301", "type": "Stepped Headers", "price_usd": 1399, "power_gain": "15-20hp"},
+      "active_autowerke": {"part_number": "AA-E36-HDR", "type": "Long Tube Headers", "price_usd": 1199, "power_gain": "12-18hp"},
+      "schmiedmann": {"part_number": "SCH-E36-HDR", "type": "Sport Manifold", "price_usd": 899, "power_gain": "10-15hp"}
+    },
+    "exhaust_systems": {
+      "supersprint": {"part_number": "787603", "type": "Full Cat-Back", "price_usd": 1699},
+      "borla": {"part_number": "140067", "type": "Cat-Back System", "price_usd": 1299},
+      "stromung": {"part_number": "STROM-E36", "type": "Cat-Back", "price_usd": 999, "notes": "Great sound, quality"},
+      "magnaflow": {"part_number": "16707", "type": "Cat-Back", "price_usd": 799, "notes": "Good value"}
+    },
+    "ecu_tuning": {
+      "turner_chip": {"part_number": "TMS-M52-CHIP", "type": "ECU Software", "price_usd": 399, "power_gain": "8-12hp"},
+      "shark_injector": {"part_number": "SHARK-M52", "type": "Handheld Programmer", "price_usd": 349, "power_gain": "8-12hp"},
+      "jim_conforti_chip": {"part_number": "JC-M52", "type": "Performance Chip", "price_usd": 299, "power_gain": "6-10hp", "notes": "Classic tuning option"}
+    },
+    "vanos_upgrades": {
+      "single_vanos_rebuild": {
+        "beisan_kit": {"part_number": "BEISAN-M52", "type": "VANOS Rebuild Kit", "price_usd": 149},
+        "dr_vanos": {"part_number": "DRV-M52", "type": "VANOS Rebuild", "price_usd": 129}
+      }
+    },
+    "cooling_system": {
+      "aluminum_radiator": {
+        "mishimoto": {"part_number": "MMRAD-E36-92", "type": "Aluminum Radiator", "price_usd": 349, "cooling_improvement": "25%"},
+        "csf": {"part_number": "CSF-7002", "type": "High Performance Radiator", "price_usd": 449, "cooling_improvement": "30%"}
+      },
+      "water_pump": {
+        "graf": {"part_number": "PA608", "type": "Metal Impeller Pump", "price_usd": 99, "notes": "Much better than OEM plastic"},
+        "stewart_ew": {"part_number": "STEW-E36", "type": "Electric Water Pump", "price_usd": 599, "notes": "Track/race application"}
+      },
+      "thermostat": {
+        "wahler": {"part_number": "4174.80D", "type": "OEM Spec Thermostat", "price_usd": 35},
+        "lower_temp": {"part_number": "WAH-E36-LOWTEMP", "type": "Lower Temp Thermostat", "price_usd": 45, "notes": "Opens earlier for track use"}
+      },
+      "silicone_hose_kit": {
+        "mishimoto": {"part_number": "MMHOSE-E36-92", "type": "Silicone Coolant Hoses", "price_usd": 189}
+      }
+    },
+    "engine_internals": {
+      "pistons": {
+        "cp_pistons": {"part_number": "SC7010", "type": "Forged Pistons", "price_usd": 699, "notes": "For boost applications"}
+      },
+      "connecting_rods": {
+        "eagle": {"part_number": "CRS5313B3D", "type": "H-Beam Forged Rods", "price_usd": 599}
+      },
+      "head_studs": {
+        "arp": {"part_number": "201-4701", "type": "Head Stud Kit", "price_usd": 349}
+      },
+      "camshafts": {
+        "schrick": {"part_number": "SCHRICK-M52-276", "type": "Performance Cams", "price_usd": 1199, "power_gain": "15-20hp"}
+      },
+      "valve_springs": {
+        "supertech": {"part_number": "SPR-M52", "type": "Dual Valve Springs", "price_usd": 249}
+      }
+    },
+    "nikasil_bore_solutions": {
+      "description": "Early M52 blocks (1996-1998) may have Nikasil bore wear issues with sulfur in fuel",
+      "symptoms": ["Hard starting when warm", "Loss of compression", "Blue smoke"],
+      "solutions": {
+        "cylinder_sleeving": {
+          "vendor": "LA Sleeve / Cylinder Solutions",
+          "cost_usd": 1500,
+          "notes": "Engine must be removed and sleeved"
+        },
+        "block_replacement": {
+          "description": "Later M52TU or M54 block swap",
+          "cost_usd": 2000,
+          "notes": "M54 block is common swap donor"
+        }
+      },
+      "identification": "Check production date - pre-1999 blocks are at risk"
+    },
+    "stroker_kit": {
+      "description": "M52 to 3.0L or 3.2L stroker using M54 or S52 components",
+      "m54_crank_swap": {
+        "parts": ["M54 Crankshaft", "M54 Rods", "Custom Pistons"],
+        "displacement": "3.0L",
+        "cost_usd": 2500,
+        "power_gain": "25-35hp"
+      }
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Basic Bolt-Ons",
+      "power_target": "205-220hp",
+      "parts": [
+        {"part": "Cold Air Intake", "price_usd": 279},
+        {"part": "Cat-Back Exhaust", "price_usd": 799},
+        {"part": "Performance Chip", "price_usd": 349}
+      ],
+      "total_cost_usd": "1400-1800",
+      "notes": "Simple upgrades, improved throttle response and sound"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full Exhaust + M50 Manifold",
+      "power_target": "220-245hp",
+      "parts": [
+        {"part": "M50 Intake Manifold Swap", "price_usd": 400},
+        {"part": "Headers", "price_usd": 1199},
+        {"part": "High Flow Cats", "price_usd": 299},
+        {"part": "Cat-Back Exhaust", "price_usd": 799},
+        {"part": "Custom Tune", "price_usd": 499}
+      ],
+      "total_cost_usd": "3200-4000",
+      "notes": "Near max NA potential for M52"
+    },
+    "stage_3": {
+      "name": "Stage 3 - Head Work + Cams",
+      "power_target": "250-280hp",
+      "parts": [
+        {"part": "Stage 2 Components", "price_usd": 3500},
+        {"part": "Schrick Camshafts", "price_usd": 1199},
+        {"part": "Valve Springs", "price_usd": 249},
+        {"part": "Head Porting", "price_usd": 800},
+        {"part": "Custom Tune", "price_usd": 599}
+      ],
+      "total_cost_usd": "6500-8000",
+      "notes": "Maximum NA potential - requires professional tuning"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["6L Castrol Syntec 5W-40", "Mann HU926/4X Oil Filter", "Drain Plug Gasket"],
+      "price_usd": 50,
+      "source": "FCP Euro - Lifetime Warranty",
+      "interval_miles": 5000
+    },
+    "cooling_system_refresh": {
+      "description": "M52 cooling systems fail with age - refresh everything",
+      "parts": [
+        "Water Pump (Graf metal impeller)",
+        "Thermostat (Wahler)",
+        "Expansion Tank",
+        "Upper + Lower Radiator Hoses",
+        "Thermostat Housing O-ring",
+        "Coolant"
+      ],
+      "price_usd": 350,
+      "source": "FCP Euro",
+      "notes": "Replace as a complete system"
+    },
+    "vanos_rebuild_kit": {
+      "parts": ["VANOS Seals", "O-rings"],
+      "price_usd": 129,
+      "source": "Beisan Systems or Dr. VANOS",
+      "interval_miles": 100000
+    },
+    "spark_plug_kit": {
+      "parts": ["6x NGK BKR6EQUP"],
+      "price_usd": 36,
+      "interval_miles": 30000
+    },
+    "ignition_coil_kit": {
+      "parts": ["6x Bosch Ignition Coils"],
+      "price_usd": 110,
+      "source": "FCP Euro"
+    },
+    "ccv_valve": {
+      "parts": ["CCV/PCV Valve", "Hoses"],
+      "price_usd": 80,
+      "interval_miles": 80000
+    }
+  },
+
+  "quality_tiers": {
+    "budget": {
+      "description": "Entry-level parts",
+      "brands": ["K&N", "Magnaflow", "OBX"]
+    },
+    "mid_tier": {
+      "description": "Quality replacement and upgrade",
+      "brands": ["Mishimoto", "Graf", "Wahler", "aFe"]
+    },
+    "premium": {
+      "description": "High-end street/track",
+      "brands": ["Supersprint", "Dinan", "Schrick", "CSF"]
+    },
+    "race": {
+      "description": "Competition grade",
+      "brands": ["CP-Carrillo", "ARP", "Supertech", "Stewart"]
+    }
+  },
+
+  "m52_notes": {
+    "nikasil_warning": "1996-1998 engines may have Nikasil bore coating that wears with high-sulfur fuel. Check compression before buying.",
+    "reliability": "When properly maintained and no Nikasil issues, extremely reliable engine",
+    "parts_availability": "Excellent parts availability, shares many components with M50 and M54",
+    "swap_potential": "Popular engine for E30 and other swaps"
+  }
+}

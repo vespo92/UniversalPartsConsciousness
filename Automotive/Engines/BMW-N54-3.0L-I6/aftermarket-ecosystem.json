@@ -1,0 +1,1065 @@
+{
+  "engine_id": "BMW-N54-3.0L-I6-TWINTURBO",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors": {
+    "specialty_bmw": {
+      "fcp_euro": {
+        "name": "FCP Euro",
+        "url": "https://www.fcpeuro.com",
+        "specialty": "OEM & Quality Aftermarket",
+        "warranty": "Lifetime replacement",
+        "shipping": "Free over $49",
+        "notes": "Best for maintenance parts, lifetime warranty on everything"
+      },
+      "ecs_tuning": {
+        "name": "ECS Tuning",
+        "url": "https://www.ecstuning.com",
+        "specialty": "OEM, Aftermarket, Performance",
+        "notes": "Large selection, house brand parts available"
+      },
+      "turner_motorsport": {
+        "name": "Turner Motorsport",
+        "url": "https://www.turnermotorsport.com",
+        "specialty": "Performance & Track",
+        "notes": "Racing focus, quality curated selection"
+      },
+      "bimmerworld": {
+        "name": "BimmerWorld",
+        "url": "https://www.bimmerworld.com",
+        "specialty": "Racing & Performance",
+        "notes": "Track-focused, motorsport expertise"
+      }
+    },
+    "performance_specialists": {
+      "burger_motorsports": {
+        "name": "Burger Motorsports (BMS)",
+        "url": "https://www.burgertuning.com",
+        "specialty": "N54/N55/B58 Performance",
+        "products": ["Intakes", "JB4 Tuner", "Downpipes", "Charge Pipes"],
+        "notes": "JB4 piggyback tune pioneer"
+      },
+      "vargas_turbo": {
+        "name": "Vargas Turbo Technologies (VTT)",
+        "url": "https://www.vaboracing.com",
+        "specialty": "Turbo Upgrades",
+        "products": ["Hybrid Turbos", "Single Turbo Kits"],
+        "notes": "Industry leader in N54 turbo upgrades"
+      },
+      "pure_turbos": {
+        "name": "Pure Turbos",
+        "url": "https://www.pureturbos.com",
+        "specialty": "Turbo Upgrades",
+        "products": ["PURE Stage 2", "PURE 600", "PURE 800"],
+        "notes": "Drop-in turbo upgrades, excellent quality"
+      },
+      "evolution_racewerks": {
+        "name": "Evolution Racewerks (ER)",
+        "url": "https://www.vaboracing.com",
+        "specialty": "Intercoolers, Charge Pipes, Downpipes",
+        "notes": "Competition-grade cooling solutions"
+      },
+      "vrsf": {
+        "name": "VRSF",
+        "url": "https://www.vr-speed.com",
+        "specialty": "Intercoolers, Downpipes, Intakes",
+        "notes": "Value-oriented performance parts"
+      },
+      "active_autowerke": {
+        "name": "Active Autowerke",
+        "url": "https://www.activeautowerke.com",
+        "specialty": "Superchargers, Exhausts, Tunes",
+        "notes": "Full builds and supercharger kits"
+      },
+      "dinan": {
+        "name": "Dinan",
+        "url": "https://www.dinancars.com",
+        "specialty": "OEM+ Performance",
+        "notes": "BMW-approved tuner, warranty-safe options"
+      }
+    },
+    "tuning_software": {
+      "mhd_flasher": {
+        "name": "MHD Flasher",
+        "url": "https://www.mhdtuning.com",
+        "type": "Flash Tune (Phone-based)",
+        "cost_range": "$100-200 for license",
+        "features": ["Full flash", "Logging", "Custom maps"],
+        "notes": "Most popular DIY flash solution"
+      },
+      "bootmod3": {
+        "name": "Bootmod3 (BM3)",
+        "url": "https://www.protuningfreaks.com",
+        "type": "Flash Tune",
+        "cost_range": "$400-600",
+        "features": ["OTS maps", "Custom tuning", "Flex fuel"],
+        "notes": "Premium flash platform"
+      },
+      "cobb_accessport": {
+        "name": "COBB Accessport",
+        "url": "https://www.cobbtuning.com",
+        "type": "Flash Tune (Hardware)",
+        "cost_range": "$650-800",
+        "features": ["Handheld device", "OTS maps", "Custom maps"],
+        "notes": "Industry standard, resellable"
+      },
+      "jb4": {
+        "name": "Burger JB4",
+        "url": "https://www.burgertuning.com",
+        "type": "Piggyback Tune",
+        "cost_range": "$400-500",
+        "features": ["No flash required", "Stackable with flash", "Bluetooth app"],
+        "notes": "Piggyback - leaves no trace, stackable"
+      }
+    },
+    "internal_engine": {
+      "cp_carrillo": {
+        "name": "CP-Carrillo",
+        "url": "https://www.cp-carrillo.com",
+        "specialty": "Pistons & Connecting Rods",
+        "notes": "Race-proven, custom options available"
+      },
+      "manley": {
+        "name": "Manley Performance",
+        "url": "https://www.manleyperformance.com",
+        "specialty": "Pistons, Rods, Valvetrain",
+        "notes": "OEM supplier, extensive BMW catalog"
+      },
+      "je_pistons": {
+        "name": "JE Pistons",
+        "url": "https://www.jepistons.com",
+        "specialty": "Forged Pistons",
+        "notes": "Custom compression ratios available"
+      },
+      "supertech": {
+        "name": "Supertech Performance",
+        "url": "https://www.supertechperformance.com",
+        "specialty": "Valves, Springs, Retainers",
+        "notes": "Complete valvetrain solutions"
+      },
+      "brian_crower": {
+        "name": "Brian Crower",
+        "url": "https://www.briancrower.com",
+        "specialty": "Camshafts, Rods, Valvetrain",
+        "notes": "Performance camshaft profiles"
+      },
+      "arp": {
+        "name": "ARP (Automotive Racing Products)",
+        "url": "https://www.arp-bolts.com",
+        "specialty": "Fasteners (Head Studs, Rod Bolts, Main Studs)",
+        "notes": "Industry standard for high-performance fasteners"
+      },
+      "acl": {
+        "name": "ACL Race Bearings",
+        "url": "https://www.aclraceseries.com",
+        "specialty": "Main & Rod Bearings",
+        "notes": "Race series bearings with coatings"
+      },
+      "be_bearings": {
+        "name": "BE Bearings",
+        "url": "https://bebearings.net",
+        "specialty": "BMW Rod Bearings",
+        "notes": "Coated bearings specifically for BMW - HIGHLY recommended for N54/S54"
+      },
+      "king_bearings": {
+        "name": "King Engine Bearings",
+        "url": "https://www.kingbearings.com",
+        "specialty": "Main & Rod Bearings",
+        "notes": "pMax coating available"
+      }
+    },
+    "fuel_system": {
+      "deatschwerks": {
+        "name": "DeatschWerks",
+        "url": "https://www.deatschwerks.com",
+        "specialty": "Fuel Pumps, Injectors",
+        "notes": "E85 and high-flow solutions"
+      },
+      "walbro": {
+        "name": "Walbro",
+        "url": "https://www.walbro.com",
+        "specialty": "In-Tank Fuel Pumps",
+        "notes": "OEM supplier, performance options"
+      },
+      "autotech": {
+        "name": "Autotech High Volume",
+        "url": "Multiple vendors",
+        "specialty": "HPFP Internals",
+        "notes": "Industry standard N54 HPFP upgrade"
+      },
+      "nostrum": {
+        "name": "Nostrum Energy",
+        "url": "https://www.nostrumenergy.com",
+        "specialty": "HPFP Upgrades",
+        "notes": "High-flow HPFP solutions"
+      }
+    },
+    "general_performance": {
+      "mishimoto": {
+        "name": "Mishimoto",
+        "url": "https://www.mishimoto.com",
+        "specialty": "Cooling, Intercoolers, Catch Cans",
+        "notes": "Lifetime warranty"
+      },
+      "wagner_tuning": {
+        "name": "Wagner Tuning",
+        "url": "https://www.wagner-tuning.de",
+        "specialty": "Intercoolers",
+        "notes": "German engineering, competition intercoolers"
+      },
+      "csf": {
+        "name": "CSF Radiators",
+        "url": "https://www.csfrace.com",
+        "specialty": "Radiators, Oil Coolers, Charge Air Coolers",
+        "notes": "OEM+ quality aluminum radiators"
+      },
+      "tial": {
+        "name": "TiAL Sport",
+        "url": "https://www.tialsport.com",
+        "specialty": "Wastegates, BOVs",
+        "notes": "Premium external wastegates"
+      },
+      "turbosmart": {
+        "name": "Turbosmart",
+        "url": "https://www.turbosmart.com",
+        "specialty": "BOVs, Wastegates, Boost Controllers",
+        "notes": "Extensive turbo accessories"
+      }
+    }
+  },
+
+  "aftermarket_parts_by_category": {
+    "head_studs_and_bolts": {
+      "description": "Critical fasteners for high-boost applications",
+      "when_needed": "Any build over 450 HP, head gasket replacement on tuned car",
+      "options": {
+        "arp_head_studs": {
+          "manufacturer": "ARP",
+          "part_number": "201-4303",
+          "type": "Head Stud Kit",
+          "material": "ARP2000",
+          "clamp_load_increase": "+25%",
+          "price_range_usd": "280-350",
+          "sources": ["FCP Euro", "ECS Tuning", "Turner Motorsport"],
+          "notes": "Industry standard upgrade, reusable"
+        },
+        "arp_main_studs": {
+          "manufacturer": "ARP",
+          "part_number": "201-5001",
+          "type": "Main Stud Kit",
+          "material": "ARP2000",
+          "price_range_usd": "200-280",
+          "sources": ["Turner Motorsport", "BimmerWorld"],
+          "when_needed": "Engine rebuild, 600+ HP builds"
+        },
+        "arp_rod_bolts": {
+          "manufacturer": "ARP",
+          "part_number": "201-6102",
+          "type": "Rod Bolt Kit",
+          "material": "ARP2000",
+          "price_range_usd": "100-140",
+          "sources": ["FCP Euro", "ECS Tuning"],
+          "notes": "Recommended with any rod bearing service"
+        }
+      }
+    },
+
+    "intake_manifolds": {
+      "description": "Performance intake manifolds for improved flow",
+      "when_needed": "600+ HP builds, port injection addition",
+      "options": {
+        "phoenix_racing_intake": {
+          "manufacturer": "Phoenix Racing",
+          "part_number": "PR-IM-N54",
+          "type": "Billet Aluminum Intake Manifold",
+          "flow_improvement": "+20%",
+          "price_range_usd": "1800-2200",
+          "sources": ["Phoenix Racing direct"],
+          "features": ["Billet aluminum", "Port injection bungs", "Larger plenum"]
+        },
+        "bms_port_injection": {
+          "manufacturer": "Burger Motorsports",
+          "part_number": "BMS-PI-N54",
+          "type": "Port Injection Kit",
+          "price_range_usd": "1200-1500",
+          "sources": ["Burger Motorsports direct", "ECS Tuning"],
+          "features": ["Adds port injection to existing manifold", "E85 capable"],
+          "notes": "Required for 600+ HP on E85"
+        },
+        "docrace_intake": {
+          "manufacturer": "Doc Race",
+          "part_number": "DR-N54-IM",
+          "type": "Cast Aluminum Intake Manifold",
+          "price_range_usd": "800-1000",
+          "sources": ["Doc Race direct"],
+          "features": ["Larger runners", "Port injection ready"]
+        }
+      }
+    },
+
+    "turbochargers": {
+      "description": "Turbo upgrade options from bolt-on to full single turbo",
+      "options": {
+        "pure_stage_2": {
+          "manufacturer": "Pure Turbos",
+          "part_number": "PURE-STAGE2-N54",
+          "type": "Hybrid Twin Turbo",
+          "max_power_hp": 600,
+          "price_range_usd": "2200-2600",
+          "sources": ["Pure Turbos direct", "N54 Tuning"],
+          "features": ["Billet compressor wheels", "Drop-in install"],
+          "install_time_hours": 8,
+          "notes": "Most popular upgrade, excellent spool"
+        },
+        "vargas_stage_1": {
+          "manufacturer": "Vargas Turbo Technologies",
+          "part_number": "VTT-GC-S1-N54",
+          "type": "Hybrid Twin Turbo",
+          "max_power_hp": 550,
+          "price_range_usd": "1800-2200",
+          "sources": ["VTT direct"]
+        },
+        "vargas_stage_2": {
+          "manufacturer": "Vargas Turbo Technologies",
+          "part_number": "VTT-GC-S2-N54",
+          "type": "Hybrid Twin Turbo",
+          "max_power_hp": 650,
+          "price_range_usd": "2400-2800",
+          "sources": ["VTT direct"]
+        },
+        "precision_6266_single": {
+          "manufacturer": "Precision Turbo",
+          "part_number": "PT6266",
+          "type": "Single Turbo Conversion",
+          "max_power_hp": 850,
+          "price_range_usd": "4500-6000",
+          "sources": ["Various - requires kit"],
+          "additional_required": ["Single turbo manifold", "Custom downpipe", "Oil lines"],
+          "notes": "Requires significant fabrication or kit purchase"
+        },
+        "doc_race_single_kit": {
+          "manufacturer": "Doc Race",
+          "part_number": "DR-ST-N54-6466",
+          "type": "Complete Single Turbo Kit",
+          "max_power_hp": 900,
+          "price_range_usd": "5500-7000",
+          "includes": ["Manifold", "Turbo", "Downpipe", "Oil lines", "Intercooler piping"],
+          "sources": ["Doc Race direct"]
+        }
+      }
+    },
+
+    "intercoolers": {
+      "description": "Front-mount intercooler upgrades",
+      "when_needed": "Stage 2+ tune, any build over 380 HP",
+      "options": {
+        "wagner_competition": {
+          "manufacturer": "Wagner Tuning",
+          "part_number": "200001024",
+          "type": "Front Mount Intercooler",
+          "core_volume_increase": "+100%",
+          "price_range_usd": "900-1100",
+          "sources": ["ECS Tuning", "FCP Euro", "Turner"],
+          "notes": "Best overall quality, German made"
+        },
+        "vrsf_race": {
+          "manufacturer": "VRSF",
+          "part_number": "VRSF-FMIC-N54",
+          "type": "Front Mount Intercooler",
+          "price_range_usd": "600-750",
+          "sources": ["VRSF direct", "ECS Tuning"],
+          "notes": "Great value option"
+        },
+        "evolution_racewerks": {
+          "manufacturer": "Evolution Racewerks",
+          "part_number": "ER-IC-N54",
+          "type": "Front Mount Intercooler",
+          "price_range_usd": "750-900",
+          "sources": ["ER direct", "Turner"],
+          "notes": "Competition proven"
+        },
+        "csf_race": {
+          "manufacturer": "CSF",
+          "part_number": "CSF-8082",
+          "type": "Front Mount Intercooler",
+          "price_range_usd": "1100-1300",
+          "sources": ["CSF direct", "Turner"],
+          "notes": "Premium option, excellent cooling"
+        }
+      }
+    },
+
+    "downpipes": {
+      "description": "Turbo-back exhaust starting point",
+      "when_needed": "Stage 2+ tune",
+      "legal_note": "Catless for off-road/track use only. High-flow cats available.",
+      "options": {
+        "vrsf_catless": {
+          "manufacturer": "VRSF",
+          "part_number": "VRSF-DP-N54",
+          "type": "Catless Downpipes",
+          "price_range_usd": "350-450",
+          "sources": ["VRSF direct", "ECS Tuning"],
+          "notes": "Budget option, good quality"
+        },
+        "er_catless": {
+          "manufacturer": "Evolution Racewerks",
+          "part_number": "ER-DP-N54",
+          "type": "Catless Downpipes",
+          "price_range_usd": "500-650",
+          "sources": ["ER direct", "Turner"]
+        },
+        "er_high_flow_cat": {
+          "manufacturer": "Evolution Racewerks",
+          "part_number": "ER-HFCD-N54",
+          "type": "High Flow Catted Downpipes",
+          "price_range_usd": "900-1100",
+          "sources": ["ER direct", "Turner"],
+          "notes": "Street legal option"
+        },
+        "active_autowerke": {
+          "manufacturer": "Active Autowerke",
+          "part_number": "AA-DP-N54",
+          "type": "Catless Downpipes",
+          "price_range_usd": "600-750",
+          "sources": ["Active Autowerke direct"]
+        }
+      }
+    },
+
+    "charge_pipes": {
+      "description": "Replace failure-prone OEM plastic charge pipe",
+      "when_needed": "Any tune - OEM plastic cracks under boost",
+      "options": {
+        "bms_aluminum": {
+          "manufacturer": "Burger Motorsports",
+          "part_number": "BMS-CP-N54",
+          "type": "Aluminum Charge Pipe",
+          "price_range_usd": "180-220",
+          "sources": ["BMS direct", "ECS Tuning"],
+          "notes": "Great value, proven design"
+        },
+        "vrsf_aluminum": {
+          "manufacturer": "VRSF",
+          "part_number": "VRSF-CP-N54",
+          "type": "Aluminum Charge Pipe",
+          "price_range_usd": "150-200",
+          "sources": ["VRSF direct", "ECS Tuning"]
+        },
+        "er_aluminum": {
+          "manufacturer": "Evolution Racewerks",
+          "part_number": "ER-CP-N54",
+          "type": "Aluminum Charge Pipe",
+          "price_range_usd": "200-250",
+          "sources": ["ER direct", "Turner"]
+        }
+      }
+    },
+
+    "intakes": {
+      "description": "Cold air intake systems",
+      "options": {
+        "bms_dci": {
+          "manufacturer": "Burger Motorsports",
+          "part_number": "BMS-DCI-N54",
+          "type": "Dual Cone Intake",
+          "price_range_usd": "300-380",
+          "sources": ["BMS direct", "ECS Tuning"],
+          "features": ["Dual cone filters", "Heat shield"],
+          "notes": "Great sound, solid performance"
+        },
+        "afe_momentum": {
+          "manufacturer": "aFe Power",
+          "part_number": "54-76306",
+          "type": "Enclosed Intake",
+          "price_range_usd": "350-420",
+          "sources": ["aFe direct", "Amazon", "ECS"],
+          "features": ["Sealed airbox", "Oiled filter"]
+        },
+        "eventuri": {
+          "manufacturer": "Eventuri",
+          "part_number": "EVE-N54-INT",
+          "type": "Carbon Fiber Intake",
+          "price_range_usd": "900-1100",
+          "sources": ["Eventuri direct", "Turner"],
+          "features": ["Carbon fiber", "Premium design"],
+          "notes": "Premium option, excellent looks and performance"
+        },
+        "arma_speed": {
+          "manufacturer": "ARMA Speed",
+          "part_number": "ARMA-N54",
+          "type": "Carbon Fiber Intake",
+          "price_range_usd": "700-850",
+          "sources": ["Various importers"]
+        }
+      }
+    },
+
+    "fuel_system": {
+      "description": "Fuel system upgrades for E85 and high power",
+      "options": {
+        "autotech_hpfp_internals": {
+          "manufacturer": "Autotech",
+          "part_number": "ATHPFP-N54",
+          "type": "HPFP Piston & Spring Upgrade",
+          "flow_increase": "+40%",
+          "price_range_usd": "350-450",
+          "sources": ["ECS Tuning", "FCP Euro", "Turner"],
+          "supports_power_hp": 500,
+          "notes": "Most common upgrade, install in existing pump"
+        },
+        "nostrum_stage_3": {
+          "manufacturer": "Nostrum Energy",
+          "part_number": "NOST-N54-S3",
+          "type": "Complete HPFP Upgrade",
+          "flow_increase": "+60%",
+          "price_range_usd": "800-1000",
+          "sources": ["Nostrum direct"],
+          "supports_power_hp": 600
+        },
+        "dw_lpfp": {
+          "manufacturer": "DeatschWerks",
+          "part_number": "DW400",
+          "type": "In-Tank Low Pressure Fuel Pump",
+          "flow_rate_lph": 415,
+          "price_range_usd": "180-220",
+          "sources": ["DeatschWerks", "ECS", "Amazon"],
+          "notes": "Required for E85 builds"
+        },
+        "walbro_lpfp": {
+          "manufacturer": "Walbro",
+          "part_number": "F90000274",
+          "type": "In-Tank Low Pressure Fuel Pump",
+          "flow_rate_lph": 450,
+          "price_range_usd": "120-160",
+          "sources": ["Various"],
+          "notes": "Budget E85 option"
+        }
+      }
+    },
+
+    "oil_coolers": {
+      "description": "Oil temperature management for track/performance use",
+      "when_needed": "Track use, hot climates, sustained high-boost driving",
+      "options": {
+        "burger_oil_cooler": {
+          "manufacturer": "Burger Motorsports",
+          "part_number": "BMS-OC-N54",
+          "type": "Bolt-On Oil Cooler Kit",
+          "price_range_usd": "600-750",
+          "sources": ["BMS direct"],
+          "notes": "Maintains proper oil temps at track"
+        },
+        "mishimoto_oil_cooler": {
+          "manufacturer": "Mishimoto",
+          "part_number": "MMOC-N54",
+          "type": "Oil Cooler Kit",
+          "price_range_usd": "500-650",
+          "sources": ["Mishimoto", "ECS", "Amazon"]
+        }
+      }
+    },
+
+    "catch_cans": {
+      "description": "Prevent oil blow-by from contaminating intake",
+      "options": {
+        "burger_occ": {
+          "manufacturer": "Burger Motorsports",
+          "part_number": "BMS-OCC-N54",
+          "type": "Oil Catch Can Kit",
+          "price_range_usd": "200-280",
+          "sources": ["BMS direct", "ECS"]
+        },
+        "mishimoto_occ": {
+          "manufacturer": "Mishimoto",
+          "part_number": "MMOCC-N54",
+          "type": "Oil Catch Can Kit",
+          "price_range_usd": "180-250",
+          "sources": ["Mishimoto", "Amazon"]
+        }
+      }
+    },
+
+    "valvetrain": {
+      "description": "Upgraded valve springs, retainers, valves for high RPM",
+      "when_needed": "High-boost builds, aggressive cam profiles",
+      "options": {
+        "supertech_valve_springs": {
+          "manufacturer": "Supertech",
+          "part_number": "SPR-N54-DS",
+          "type": "Dual Valve Spring Kit",
+          "price_range_usd": "400-500",
+          "sources": ["Supertech direct", "VAC Motorsports"],
+          "notes": "Required for aggressive cams"
+        },
+        "supertech_valves": {
+          "manufacturer": "Supertech",
+          "part_number": "SIVW-N54 / SEVA-N54",
+          "type": "Stainless/Inconel Valves",
+          "price_range_usd": "500-700",
+          "sources": ["Supertech", "VAC Motorsports"],
+          "notes": "Upgraded for high boost/heat"
+        },
+        "ferrea_valves": {
+          "manufacturer": "Ferrea",
+          "part_number": "F6114P / F6115P",
+          "type": "Racing Valves",
+          "price_range_usd": "600-800",
+          "sources": ["Ferrea direct", "VAC Motorsports"]
+        }
+      }
+    },
+
+    "pistons_and_rods": {
+      "description": "Forged internals for high-power builds",
+      "when_needed": "600+ HP, high boost, E85",
+      "options": {
+        "cp_carrillo_pistons": {
+          "manufacturer": "CP-Carrillo",
+          "part_number": "SC7515",
+          "type": "Forged Pistons (set of 6)",
+          "price_range_usd": "1200-1500",
+          "compression_options": ["9.0:1", "9.5:1", "10.0:1"],
+          "sources": ["CP-Carrillo", "VAC Motorsports"]
+        },
+        "je_pistons": {
+          "manufacturer": "JE Pistons",
+          "part_number": "353742",
+          "type": "Forged Pistons (set of 6)",
+          "price_range_usd": "900-1200",
+          "sources": ["JE direct", "VAC Motorsports"]
+        },
+        "mahle_pistons": {
+          "manufacturer": "Mahle",
+          "part_number": "197203706",
+          "type": "Forged Pistons (set of 6)",
+          "price_range_usd": "800-1000",
+          "sources": ["Mahle", "FCP Euro"]
+        },
+        "manley_h_beam_rods": {
+          "manufacturer": "Manley",
+          "part_number": "14084-6",
+          "type": "H-Beam Connecting Rods",
+          "price_range_usd": "900-1100",
+          "sources": ["Manley", "VAC Motorsports"],
+          "notes": "Good to 900+ HP"
+        },
+        "cp_carrillo_rods": {
+          "manufacturer": "CP-Carrillo",
+          "part_number": "BMW-N54-65000H",
+          "type": "H-Beam Connecting Rods",
+          "price_range_usd": "1400-1700",
+          "sources": ["CP-Carrillo direct"],
+          "notes": "Premium option, 1000+ HP capable"
+        }
+      }
+    },
+
+    "bearings": {
+      "description": "Main and rod bearings",
+      "options": {
+        "acl_race_main": {
+          "manufacturer": "ACL",
+          "part_number": "6B2960H",
+          "type": "Race Series Main Bearings",
+          "price_range_usd": "150-200",
+          "sources": ["ACL", "VAC Motorsports", "ECS"]
+        },
+        "acl_race_rod": {
+          "manufacturer": "ACL",
+          "part_number": "6B2960HX",
+          "type": "Race Series Rod Bearings",
+          "price_range_usd": "120-160",
+          "sources": ["ACL", "VAC Motorsports", "ECS"]
+        },
+        "be_rod_bearings": {
+          "manufacturer": "BE Bearings",
+          "part_number": "BE-N54-ROD",
+          "type": "Coated Rod Bearings",
+          "price_range_usd": "280-350",
+          "sources": ["BE Bearings direct", "VAC Motorsports"],
+          "notes": "HIGHLY RECOMMENDED - coated for extra protection"
+        },
+        "king_rod_bearings": {
+          "manufacturer": "King",
+          "part_number": "CR5792AM",
+          "type": "Rod Bearings",
+          "price_range_usd": "100-140",
+          "sources": ["King", "FCP Euro"]
+        }
+      }
+    }
+  },
+
+  "build_packages": {
+    "stage_1_daily": {
+      "name": "Stage 1 - Daily Driver",
+      "target_power_hp": "380-420",
+      "target_torque_lb_ft": "420-480",
+      "total_cost_estimate_usd": "800-1200",
+      "description": "Safe daily driver tune with reliability focus",
+      "required_parts": [
+        {
+          "category": "Tune",
+          "options": ["MHD Stage 1", "Bootmod3 Stage 1", "JB4 Map 1"],
+          "cost_range": "100-500"
+        },
+        {
+          "category": "Charge Pipe",
+          "options": ["BMS Aluminum", "VRSF Aluminum"],
+          "cost_range": "150-220",
+          "reason": "OEM plastic will crack"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Intake",
+          "options": ["BMS DCI", "aFe"],
+          "cost_range": "300-400"
+        },
+        {
+          "category": "Spark Plugs",
+          "options": ["NGK 97506 (stock heat range)"],
+          "cost_range": "80-100"
+        }
+      ],
+      "fuel_requirement": "91 octane minimum, 93 recommended",
+      "notes": "Safe on completely stock engine internals. No supporting mods truly required beyond charge pipe."
+    },
+
+    "stage_2_street": {
+      "name": "Stage 2 - Street Performance",
+      "target_power_hp": "440-480",
+      "target_torque_lb_ft": "500-550",
+      "total_cost_estimate_usd": "2500-4000",
+      "description": "Significant power increase, still daily driveable",
+      "required_parts": [
+        {
+          "category": "Tune",
+          "options": ["MHD Stage 2+", "Bootmod3 Stage 2", "COBB Stage 2"],
+          "cost_range": "100-700"
+        },
+        {
+          "category": "Downpipes",
+          "options": ["VRSF Catless", "ER Catless", "ER High-Flow Cat"],
+          "cost_range": "350-1100"
+        },
+        {
+          "category": "Charge Pipe",
+          "options": ["BMS", "VRSF", "ER"],
+          "cost_range": "150-250"
+        },
+        {
+          "category": "Intercooler",
+          "options": ["Wagner Competition", "VRSF Race", "ER"],
+          "cost_range": "600-1100",
+          "reason": "Stock IC heat soaks quickly at this power"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Intake",
+          "options": ["BMS DCI", "Eventuri"],
+          "cost_range": "300-1100"
+        },
+        {
+          "category": "Inlet Pipes",
+          "options": ["BMS", "VRSF"],
+          "cost_range": "200-300"
+        },
+        {
+          "category": "Spark Plugs",
+          "options": ["NGK 95770 (one step colder)"],
+          "cost_range": "80-100",
+          "reason": "Colder plugs prevent detonation"
+        },
+        {
+          "category": "Oil Catch Can",
+          "options": ["BMS", "Mishimoto"],
+          "cost_range": "180-280"
+        }
+      ],
+      "fuel_requirement": "93 octane or E30 blend recommended",
+      "notes": "Most popular build level. Great balance of power and reliability."
+    },
+
+    "stage_2_plus_e85": {
+      "name": "Stage 2+ E85",
+      "target_power_hp": "520-580",
+      "target_torque_lb_ft": "580-650",
+      "total_cost_estimate_usd": "4500-7000",
+      "description": "Maximum stock turbo power with E85",
+      "required_parts": [
+        {
+          "category": "Tune",
+          "options": ["MHD E85 Map", "Bootmod3 E85", "Custom tune"],
+          "cost_range": "200-800"
+        },
+        {
+          "category": "HPFP Upgrade",
+          "options": ["Autotech Internals", "Nostrum Stage 3"],
+          "cost_range": "350-1000",
+          "reason": "E85 requires more fuel flow"
+        },
+        {
+          "category": "LPFP Upgrade",
+          "options": ["DW400", "Walbro 450"],
+          "cost_range": "120-220"
+        },
+        {
+          "category": "Downpipes",
+          "options": ["VRSF", "ER"],
+          "cost_range": "350-650"
+        },
+        {
+          "category": "Intercooler",
+          "options": ["Wagner", "CSF"],
+          "cost_range": "900-1300"
+        },
+        {
+          "category": "Charge Pipe",
+          "options": ["Aluminum - any brand"],
+          "cost_range": "150-250"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Intake",
+          "options": ["Eventuri", "BMS DCI"],
+          "cost_range": "300-1100"
+        },
+        {
+          "category": "Methanol Injection",
+          "options": ["AEM Water/Meth", "Snow Performance"],
+          "cost_range": "400-700",
+          "reason": "Additional cooling and octane for max power"
+        },
+        {
+          "category": "Spark Plugs",
+          "options": ["NGK 95770 or colder"],
+          "cost_range": "80-120"
+        }
+      ],
+      "fuel_requirement": "E50-E85",
+      "notes": "Pushing stock turbos to absolute limit. This is max power before turbo upgrade."
+    },
+
+    "stage_3_hybrid_turbo": {
+      "name": "Stage 3 - Hybrid Turbo",
+      "target_power_hp": "550-650",
+      "target_torque_lb_ft": "600-700",
+      "total_cost_estimate_usd": "8000-14000",
+      "description": "Upgraded turbos, serious street/track build",
+      "required_parts": [
+        {
+          "category": "Turbochargers",
+          "options": ["Pure Stage 2", "VTT Stage 2", "Pure 600"],
+          "cost_range": "2200-3000"
+        },
+        {
+          "category": "Custom Tune",
+          "options": ["Custom tune from reputable tuner"],
+          "cost_range": "500-1000"
+        },
+        {
+          "category": "HPFP Upgrade",
+          "options": ["Nostrum", "Autotech"],
+          "cost_range": "350-1000"
+        },
+        {
+          "category": "LPFP Upgrade",
+          "options": ["DW400", "Dual pump setup"],
+          "cost_range": "120-500"
+        },
+        {
+          "category": "Port Injection",
+          "options": ["BMS Port Injection Kit"],
+          "cost_range": "1200-1500",
+          "reason": "Required for E85 at this power level"
+        },
+        {
+          "category": "Intercooler",
+          "options": ["Wagner", "CSF"],
+          "cost_range": "900-1300"
+        },
+        {
+          "category": "All Stage 2 Parts",
+          "options": ["Downpipes, charge pipe, intake, inlet"],
+          "cost_range": "1000-2000"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Oil Cooler",
+          "options": ["BMS", "Mishimoto"],
+          "cost_range": "500-750"
+        },
+        {
+          "category": "Clutch/Trans Upgrade",
+          "options": ["South Bend Stage 3", "JB Racing"],
+          "cost_range": "1200-2000",
+          "reason": "Stock clutch will slip at this power (manual)"
+        },
+        {
+          "category": "Trans Cooler",
+          "options": ["External trans cooler"],
+          "cost_range": "400-600",
+          "reason": "For automatic transmissions"
+        }
+      ],
+      "fuel_requirement": "E50-E85 recommended",
+      "notes": "Excellent street/track build. Still great spool, huge power."
+    },
+
+    "stage_4_built_engine": {
+      "name": "Stage 4 - Built Engine",
+      "target_power_hp": "700-900+",
+      "target_torque_lb_ft": "750-900+",
+      "total_cost_estimate_usd": "25000-45000+",
+      "description": "Fully built engine for maximum power",
+      "required_parts": [
+        {
+          "category": "Forged Pistons",
+          "options": ["CP-Carrillo", "JE Pistons"],
+          "cost_range": "900-1500"
+        },
+        {
+          "category": "Forged Rods",
+          "options": ["Manley H-Beam", "CP-Carrillo"],
+          "cost_range": "900-1700"
+        },
+        {
+          "category": "ARP Head Studs",
+          "options": ["ARP 201-4303"],
+          "cost_range": "280-350"
+        },
+        {
+          "category": "ARP Main Studs",
+          "options": ["ARP 201-5001"],
+          "cost_range": "200-280"
+        },
+        {
+          "category": "Race Bearings",
+          "options": ["ACL Race", "King"],
+          "cost_range": "250-400"
+        },
+        {
+          "category": "Big Turbo Setup",
+          "options": ["Single turbo kit", "Large hybrid twins"],
+          "cost_range": "5000-10000"
+        },
+        {
+          "category": "Full Fuel System",
+          "options": ["Port injection", "Dual HPFP", "Return system"],
+          "cost_range": "3000-5000"
+        },
+        {
+          "category": "Machine Work",
+          "options": ["Bore, hone, deck, balance"],
+          "cost_range": "2000-4000"
+        },
+        {
+          "category": "Labor",
+          "options": ["Engine build labor"],
+          "cost_range": "5000-10000"
+        }
+      ],
+      "recommended_parts": [
+        {
+          "category": "Built Transmission",
+          "options": ["Built DCT", "Built manual"],
+          "cost_range": "5000-15000"
+        },
+        {
+          "category": "Upgraded Axles",
+          "options": ["Driveshaft Shop"],
+          "cost_range": "1500-2500"
+        },
+        {
+          "category": "Differential",
+          "options": ["OS Giken LSD", "Built diff"],
+          "cost_range": "2000-4000"
+        }
+      ],
+      "fuel_requirement": "E85 or race fuel",
+      "notes": "Professional build required. Competition-level power."
+    }
+  },
+
+  "maintenance_kits": {
+    "cooling_refresh": {
+      "name": "Cooling System Refresh Kit",
+      "interval_miles": 80000,
+      "cost_range_usd": "400-600",
+      "sources": ["FCP Euro (lifetime warranty)", "ECS Tuning"],
+      "contents": [
+        "Electric water pump",
+        "Thermostat",
+        "Expansion tank",
+        "Upper radiator hose",
+        "Lower radiator hose",
+        "Thermostat housing hoses",
+        "Coolant"
+      ],
+      "fcp_euro_note": "Buy from FCP Euro - lifetime warranty means free replacements forever"
+    },
+    "spark_plug_coil_kit": {
+      "name": "Ignition Refresh Kit",
+      "interval_miles": 45000,
+      "cost_range_usd": "350-500",
+      "contents": [
+        "Spark plugs x6 (NGK 97506 or 95770)",
+        "Ignition coils x6 (Bosch or OEM)"
+      ]
+    },
+    "oil_service_kit": {
+      "name": "Oil Change Kit",
+      "interval_miles": 7500,
+      "cost_range_usd": "80-120",
+      "contents": [
+        "7 liters BMW LL-01 0W-30 or 5W-30",
+        "Oil filter (Mann HU816X)",
+        "Drain plug crush washer"
+      ]
+    },
+    "hpfp_recall_kit": {
+      "name": "HPFP Preventative Replacement",
+      "when": "If original Gen 1 pump, or at any major service",
+      "cost_range_usd": "500-700",
+      "contents": [
+        "Revised HPFP (13517616170)",
+        "Cam follower"
+      ],
+      "upgrade_option": "Autotech internals (+$350)"
+    }
+  },
+
+  "part_quality_tiers": {
+    "description": "Guide to choosing between price points",
+    "budget": {
+      "brands": ["VRSF", "Generic/eBay"],
+      "pros": "Low cost, gets the job done",
+      "cons": "May not last as long, less testing",
+      "best_for": "Budget builds, temporary parts"
+    },
+    "mid_tier": {
+      "brands": ["BMS", "aFe", "Mishimoto"],
+      "pros": "Good value, proven quality",
+      "cons": "Not premium materials",
+      "best_for": "Street builds, daily drivers"
+    },
+    "premium": {
+      "brands": ["Wagner", "CSF", "Eventuri", "Active Autowerke"],
+      "pros": "Best materials, extensive testing, often best performance",
+      "cons": "Higher cost",
+      "best_for": "Track cars, show cars, long-term builds"
+    },
+    "race": {
+      "brands": ["CP-Carrillo", "Manley", "ARP", "Supertech"],
+      "pros": "Competition-proven, highest strength",
+      "cons": "Highest cost, may be overkill for street",
+      "best_for": "High-power builds, racing"
+    }
+  }
+}

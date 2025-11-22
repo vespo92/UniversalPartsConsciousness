@@ -1,0 +1,77 @@
+{
+  "engine_id": "BMW-B58-3.0L-I6-TURBO",
+  "common_names": ["B58", "B58B30", "BMW B58 TwinPower Turbo", "Supra Engine"],
+  "manufacturer": "BMW AG",
+  "engine_family": "BMW B58 Modular",
+  "production_years": "2015-present",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {"liters": 2.998, "cc": 2998},
+    "bore": {"mm": 82.0},
+    "stroke": {"mm": 94.6},
+    "compression_ratio": "11.0:1",
+    "firing_order": "1-5-3-6-2-4",
+    "block_material": "Aluminum closed-deck with iron liners",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves, Double VANOS, Valvetronic IV",
+    "forced_induction": {
+      "type": "Single Twin-Scroll Turbocharger",
+      "model": "BorgWarner B58",
+      "boost_psi": {"stock": 12, "max": 22}
+    },
+    "fuel_system": {
+      "type": "Combined Direct + Port Injection",
+      "note": "Dual injection eliminates carbon buildup"
+    }
+  },
+
+  "power_output_by_variant": {
+    "b58_standard": {"hp": 335, "torque_lb_ft": 369, "notes": "340i, 440i, 540i, X3/X4 M40i"},
+    "b58_m340i": {"hp": 382, "torque_lb_ft": 369, "notes": "M340i, M440i (2020+)"},
+    "b58_supra": {"hp": 382, "torque_lb_ft": 368, "notes": "Toyota Supra GR"},
+    "b58_supra_2021": {"hp": 382, "torque_lb_ft": 368, "notes": "2021+ Supra manual"},
+    "s58_m3_m4": {"hp": 473, "torque_lb_ft": 406, "notes": "S58 variant for M3/M4 (twin turbo)"}
+  },
+
+  "vehicle_applications": {
+    "g20_340i": {"years": "2019-present", "notes": "3 Series"},
+    "g22_440i": {"years": "2021-present", "notes": "4 Series"},
+    "g30_540i": {"years": "2017-present", "notes": "5 Series"},
+    "g05_x5_40i": {"years": "2019-present", "notes": "X5"},
+    "g01_x3_m40i": {"years": "2018-present", "notes": "X3 M40i"},
+    "j29_supra": {"years": "2020-present", "notes": "Toyota GR Supra"},
+    "g80_m3": {"years": "2021-present", "notes": "M3 (S58 variant)"},
+    "g87_m2": {"years": "2023-present", "notes": "M2 (S58 variant)"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 6.5, "viscosity": ["0W-20", "0W-30"], "spec": "BMW LL-17FE+"},
+    "coolant": {"liters": 8.5}
+  },
+
+  "notes": {
+    "heritage": "Part of BMW's modular engine family (B38/B48/B58). Successor to N55.",
+    "reputation": "Considered one of BMW's best engines. Exceptional reliability, power, and tunability.",
+    "key_improvements_over_n55": [
+      "Closed-deck block for rigidity",
+      "Combined port and direct injection (no carbon buildup)",
+      "Improved cooling with integrated exhaust manifold",
+      "Higher compression ratio for efficiency",
+      "Stronger internals"
+    ],
+    "common_issues": [
+      "Coolant loss (minor seepage in early models)",
+      "Oil consumption in some units",
+      "Water pump (same design as N55)"
+    ],
+    "strengths": [
+      "Incredibly strong closed-deck block handles 1000+ HP",
+      "Dual injection eliminates walnut blasting",
+      "Excellent factory tune - 500+ HP with tune alone",
+      "Forged crankshaft",
+      "Strong aftermarket support"
+    ],
+    "tuning_notes": "Stock turbo flows to ~550 HP. Upgraded turbo builds regularly achieve 700+ HP."
+  }
+}

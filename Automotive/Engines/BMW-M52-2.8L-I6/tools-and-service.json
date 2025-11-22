@@ -1,0 +1,49 @@
+{
+  "engine_id": "BMW-M52B28-I6-NA",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "essential_tools": {
+      "metric_sockets_mm": [8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24, 27, 30, 32],
+      "e_torx": ["E8", "E10", "E12", "E14"],
+      "torx": ["T25", "T30", "T40", "T45", "T50"],
+      "fan_clutch_wrench": "32mm thin wrench"
+    },
+    "specialty_tools": {
+      "vanos_tools": "M50/M52 camshaft locking tools",
+      "coolant_system_pressure_tester": "For leak diagnosis"
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 5000,
+        "oil_spec": "5W-30 or 10W-40",
+        "capacity_liters": 6.5,
+        "filter": "Mann HU925/4X"
+      },
+      "spark_plugs": {
+        "interval_miles": 60000,
+        "part": "NGK BKR6EK",
+        "gap_mm": 0.8
+      },
+      "cooling_system_refresh": {
+        "interval_miles": 80000,
+        "components": ["Water pump", "Thermostat", "Expansion tank", "Hoses"]
+      }
+    },
+    "common_repairs": {
+      "valve_cover_gasket": {"time_hours": 2},
+      "vanos_seal_replacement": {"time_hours": 3, "difficulty": "advanced"},
+      "cooling_system_repair": {"notes": "Same issues as M54 - plastic components fail"}
+    }
+  },
+
+  "nikasil_diagnosis": {
+    "symptoms": ["Blue smoke at startup", "Oil consumption", "Compression loss"],
+    "test": "Compression test - should be even across all cylinders",
+    "affected_years": "1994-1996 primarily"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "engine_id": "BMW-N55B30-I6-TT",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {"url": "https://www.fcpeuro.com", "specialty": "OEM/OE parts, lifetime warranty", "ships_from": "USA"},
+      "ecs_tuning": {"url": "https://www.ecstuning.com", "specialty": "OEM and performance parts", "ships_from": "USA"},
+      "getbmwparts": {"url": "https://www.getbmwparts.com", "specialty": "Genuine BMW parts", "ships_from": "USA"},
+      "realoem": {"url": "https://www.realoem.com", "specialty": "BMW parts diagrams/lookup", "type": "reference"}
+    },
+    "performance_parts": {
+      "bms": {"name": "Burger Motorsports", "url": "https://www.burgertuning.com", "specialty": "JB4, intakes, BOVs"},
+      "vrsf": {"name": "VRSF", "url": "https://www.vrsf.com", "specialty": "Intercoolers, downpipes, charge pipes"},
+      "afe_power": {"name": "aFe Power", "url": "https://www.afepower.com", "specialty": "Intakes, filters"},
+      "evolution_racewerks": {"name": "Evolution Racewerks", "url": "https://www.evolutionracewerks.com", "specialty": "Intercoolers, charge pipes"},
+      "arm_motorsports": {"name": "ARM Motorsports", "url": "https://www.armmotorsports.com", "specialty": "Performance parts"},
+      "cpe": {"name": "CP-E", "url": "https://www.cp-e.com", "specialty": "Exhaust components"},
+      "dinan": {"name": "Dinan", "url": "https://www.dinancars.com", "specialty": "Complete performance packages"}
+    },
+    "tuning_software": {
+      "mhd": {"name": "MHD Flasher", "url": "https://www.mhdtuning.com", "platforms": ["iOS", "Android"], "cost": "$99-299"},
+      "bootmod3": {"name": "Bootmod3", "url": "https://www.protuningfreaks.com", "platforms": ["iOS", "Android", "Windows"], "cost": "$100-350"},
+      "jb4": {"name": "Burger JB4", "url": "https://www.burgertuning.com", "type": "Piggyback", "cost": "$429-499"}
+    },
+    "internal_engine": {
+      "cp_carrillo": {"url": "https://www.cp-carrillo.com", "specialty": "Pistons, rods"},
+      "manley": {"url": "https://www.manleyperformance.com", "specialty": "Forged internals"},
+      "arp": {"url": "https://www.arp-bolts.com", "specialty": "Fasteners"},
+      "cometic": {"url": "https://www.cometic.com", "specialty": "Head gaskets"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "afe_magnum_force": {"part_number": "54-82202", "type": "Cold Air Intake", "price_usd": 339, "power_gain": "10-15hp"},
+      "bms_intake": {"part_number": "BMS-N55-INT", "type": "Performance Intake", "price_usd": 299, "power_gain": "8-12hp"},
+      "injen_intake": {"part_number": "SP1121P", "type": "Cold Air Intake", "price_usd": 329, "power_gain": "10-15hp"},
+      "eventuri": {"part_number": "EVE-N55", "type": "Carbon Fiber Intake", "price_usd": 899, "power_gain": "12-18hp", "notes": "Premium option"}
+    },
+    "charge_pipes": {
+      "vrsf_charge_pipe": {"part_number": "10901010", "type": "Aluminum Charge Pipe", "price_usd": 149, "notes": "Replaces plastic OEM"},
+      "arm_charge_pipe": {"part_number": "ARM-N55-CP", "type": "Aluminum Charge Pipe", "price_usd": 169},
+      "evolution_racewerks_cp": {"part_number": "ER-N55CP", "type": "Charge Pipe Kit", "price_usd": 189}
+    },
+    "intercoolers": {
+      "vrsf_fmic": {"part_number": "10303010", "type": "Front Mount Intercooler", "price_usd": 599, "cooling_improvement": "40%"},
+      "evolution_racewerks_fmic": {"part_number": "ER-N55IC", "type": "FMIC", "price_usd": 649, "cooling_improvement": "45%"},
+      "csl_performance_fmic": {"part_number": "CSL-N55-FMIC", "type": "Competition FMIC", "price_usd": 799, "cooling_improvement": "50%"}
+    },
+    "downpipes": {
+      "vrsf_catless": {"part_number": "10201010", "type": "Catless Downpipe", "price_usd": 299, "power_gain": "15-25hp", "notes": "Off-road only"},
+      "active_autowerke_catted": {"part_number": "AA-N55-DP", "type": "High-Flow Catted", "price_usd": 599, "power_gain": "12-18hp"},
+      "bms_downpipe": {"part_number": "BMS-N55-DP", "type": "Catless", "price_usd": 279, "power_gain": "15-25hp", "notes": "Off-road only"}
+    },
+    "exhaust_systems": {
+      "akrapovic": {"part_number": "ME-BM/T/2H", "type": "Titanium Cat-Back", "price_usd": 4995, "weight_savings_lbs": 22},
+      "borla_atak": {"part_number": "140580", "type": "Cat-Back Exhaust", "price_usd": 1899},
+      "remus": {"part_number": "088014", "type": "Sport Exhaust", "price_usd": 2499},
+      "active_autowerke": {"part_number": "AA-N55-EXH", "type": "Performance Exhaust", "price_usd": 1599}
+    },
+    "blow_off_valves": {
+      "bms_bov": {"part_number": "BMS-N55-BOV", "type": "Blow Off Valve", "price_usd": 149, "notes": "Atmospheric or recirculating"},
+      "forge_bov": {"part_number": "FMDVF56A", "type": "Dual Piston BOV", "price_usd": 299}
+    },
+    "oil_catch_cans": {
+      "bms_occ": {"part_number": "BMS-N55-OCC", "type": "Oil Catch Can Kit", "price_usd": 199},
+      "mishimoto_occ": {"part_number": "MMBCC-N55-15", "type": "Baffled Oil Catch Can", "price_usd": 249}
+    },
+    "valve_cover": {
+      "description": "N55 valve covers are prone to cracking - upgraded options available",
+      "oem_replacement": {"part_number": "11127570292", "price_usd": 450, "source": "FCP Euro"},
+      "aluminum_upgrade": {"vendor": "CSF", "part_number": "CSF-N55-VC", "price_usd": 699, "notes": "Prevents cracking"}
+    },
+    "engine_internals": {
+      "pistons": {
+        "cp_pistons": {"part_number": "SC7450", "type": "Forged Pistons", "price_usd": 899, "compression": "10.0:1"},
+        "mahle_motorsport": {"part_number": "N55-FORGED", "type": "Forged Pistons", "price_usd": 799}
+      },
+      "connecting_rods": {
+        "cp_carrillo": {"part_number": "BMW-N55-65000H", "type": "H-Beam Forged", "price_usd": 1299},
+        "manley_turbo_tuff": {"part_number": "14434-6", "type": "Turbo Tuff I-Beam", "price_usd": 999}
+      },
+      "head_studs": {
+        "arp": {"part_number": "201-4305", "type": "Head Stud Kit", "price_usd": 499, "notes": "Required for high boost"}
+      },
+      "head_gasket": {
+        "cometic_mls": {"part_number": "C4481-030", "type": "MLS Head Gasket", "price_usd": 189},
+        "athena_cut_ring": {"part_number": "N55-CR", "type": "Cut Ring Gasket", "price_usd": 299, "notes": "For extreme boost"}
+      }
+    },
+    "turbo_upgrades": {
+      "pure_stage_2": {"part_number": "PURE-N55-S2", "type": "Upgraded Turbo", "price_usd": 1899, "power_potential": "450-500whp"},
+      "vargas_stage_1": {"vendor": "Vargas Turbo", "part_number": "VTT-N55-S1", "type": "Upgraded Turbo", "price_usd": 1599, "power_potential": "400-450whp"},
+      "fbo_hybrid_turbo": {"part_number": "FBO-N55-HYBRID", "type": "Hybrid Turbo", "price_usd": 2499, "power_potential": "500-550whp"}
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Bolt-Ons + Tune",
+      "power_target": "380-420whp",
+      "parts": [
+        {"part": "MHD Stage 1 Tune", "price_usd": 99},
+        {"part": "BMS Intake", "price_usd": 299},
+        {"part": "VRSF Charge Pipe", "price_usd": 149},
+        {"part": "VRSF Catless Downpipe", "price_usd": 299}
+      ],
+      "total_cost_usd": "850-1000",
+      "notes": "Best value performance upgrade"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full Bolt-Ons",
+      "power_target": "420-480whp",
+      "parts": [
+        {"part": "MHD Stage 2 Tune", "price_usd": 199},
+        {"part": "Eventuri Intake", "price_usd": 899},
+        {"part": "VRSF FMIC", "price_usd": 599},
+        {"part": "Catless Downpipe", "price_usd": 299},
+        {"part": "Upgraded Charge Pipe", "price_usd": 169},
+        {"part": "Oil Catch Can", "price_usd": 199},
+        {"part": "Upgraded BOV", "price_usd": 149}
+      ],
+      "total_cost_usd": "2500-3500",
+      "notes": "Near turbo limit on stock turbo"
+    },
+    "stage_3": {
+      "name": "Stage 3 - Turbo Upgrade",
+      "power_target": "500-600whp",
+      "parts": [
+        {"part": "Pure Stage 2 Turbo", "price_usd": 1899},
+        {"part": "Custom Tune", "price_usd": 500},
+        {"part": "Port Injection Kit", "price_usd": 1499},
+        {"part": "Upgraded FMIC", "price_usd": 799},
+        {"part": "3.5\" Downpipe", "price_usd": 399},
+        {"part": "Upgraded Fuel Pump", "price_usd": 299},
+        {"part": "Catch Can System", "price_usd": 249}
+      ],
+      "total_cost_usd": "6000-8000",
+      "notes": "Requires clutch upgrade on manual cars"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["7L Castrol TWS 10W-60 or 0W-40", "Mann HU816X Oil Filter", "Drain Plug Gasket"],
+      "price_usd": 75,
+      "source": "FCP Euro - Lifetime Warranty"
+    },
+    "spark_plug_kit": {
+      "parts": ["6x NGK 94201 or Bosch ZR5TPP33S"],
+      "price_usd": 60,
+      "interval_miles": 45000
+    },
+    "ignition_coil_kit": {
+      "parts": ["6x Eldor/Bosch Ignition Coils"],
+      "price_usd": 180,
+      "source": "FCP Euro"
+    },
+    "valve_cover_gasket_kit": {
+      "parts": ["Valve Cover Gasket", "Bolts", "Eccentric Shaft Sensor Seal"],
+      "price_usd": 120,
+      "notes": "Common leak point"
+    },
+    "vanos_service_kit": {
+      "parts": ["VANOS Solenoids (2x)", "Seals"],
+      "price_usd": 250,
+      "interval_miles": 100000
+    },
+    "valve_cover_replacement": {
+      "description": "N55 plastic valve covers crack - replacement needed",
+      "oem_part": "11127570292",
+      "price_usd": 450,
+      "notes": "Very common issue - inspect regularly"
+    }
+  },
+
+  "quality_tiers": {
+    "budget": {
+      "description": "Affordable entry-level upgrades",
+      "brands": ["BMS", "VRSF", "ARM"]
+    },
+    "mid_tier": {
+      "description": "Balance of price and quality",
+      "brands": ["aFe", "Evolution Racewerks", "Injen", "Mishimoto"]
+    },
+    "premium": {
+      "description": "High-end street/track parts",
+      "brands": ["Eventuri", "Akrapovic", "Dinan", "CSF"]
+    },
+    "race": {
+      "description": "Competition-grade components",
+      "brands": ["CP-Carrillo", "Manley", "ARP", "Pure Turbos"]
+    }
+  }
+}

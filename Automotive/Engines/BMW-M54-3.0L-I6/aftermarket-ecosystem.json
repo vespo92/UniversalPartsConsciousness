@@ -1,0 +1,229 @@
+{
+  "engine_id": "BMW-M54B30-I6-NA",
+  "ecosystem_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "vendors_and_retailers": {
+    "oem_parts": {
+      "fcp_euro": {"url": "https://www.fcpeuro.com", "specialty": "OEM/OE parts, lifetime warranty", "ships_from": "USA"},
+      "ecs_tuning": {"url": "https://www.ecstuning.com", "specialty": "OEM and performance parts", "ships_from": "USA"},
+      "pelican_parts": {"url": "https://www.pelicanparts.com", "specialty": "BMW parts and guides", "ships_from": "USA"},
+      "bavauto": {"url": "https://www.bavauto.com", "specialty": "BMW specialty parts", "ships_from": "USA"},
+      "realoem": {"url": "https://www.realoem.com", "specialty": "BMW parts diagrams/lookup", "type": "reference"}
+    },
+    "performance_parts": {
+      "afe_power": {"name": "aFe Power", "url": "https://www.afepower.com", "specialty": "Intakes, exhaust"},
+      "active_autowerke": {"name": "Active Autowerke", "url": "https://www.activeautowerke.com", "specialty": "Headers, exhaust, superchargers"},
+      "dinan": {"name": "Dinan", "url": "https://www.dinancars.com", "specialty": "Complete performance packages"},
+      "supersprint": {"name": "Supersprint", "url": "https://www.supersprint.com", "specialty": "Exhaust systems"},
+      "ess_tuning": {"name": "ESS Tuning", "url": "https://www.esstuning.com", "specialty": "Supercharger kits"},
+      "turner_motorsport": {"name": "Turner Motorsport", "url": "https://www.turnermotorsport.com", "specialty": "BMW performance"}
+    },
+    "cooling_specialists": {
+      "mishimoto": {"url": "https://www.mishimoto.com", "specialty": "Cooling system upgrades"},
+      "csf": {"url": "https://www.csfrace.com", "specialty": "High-performance radiators"},
+      "zionsville": {"url": "https://www.zionsvilleautosport.com", "specialty": "Aluminum radiators"}
+    },
+    "internal_engine": {
+      "cp_carrillo": {"url": "https://www.cp-carrillo.com", "specialty": "Pistons, rods"},
+      "arp": {"url": "https://www.arp-bolts.com", "specialty": "Fasteners"},
+      "cometic": {"url": "https://www.cometic.com", "specialty": "Head gaskets"},
+      "supertech": {"url": "https://www.supertechperformance.com", "specialty": "Valvetrain"}
+    }
+  },
+
+  "aftermarket_parts": {
+    "intake_systems": {
+      "afe_magnum_force": {"part_number": "54-10471", "type": "Cold Air Intake", "price_usd": 299, "power_gain": "8-12hp"},
+      "injen_intake": {"part_number": "SP1105P", "type": "Cold Air Intake", "price_usd": 279, "power_gain": "8-10hp"},
+      "k_and_n_fipk": {"part_number": "57-1001", "type": "FIPK Intake", "price_usd": 249, "power_gain": "6-10hp"},
+      "gruppe_m": {"part_number": "FR-0102", "type": "Carbon Fiber Intake", "price_usd": 899, "power_gain": "12-15hp", "notes": "Premium option"}
+    },
+    "exhaust_headers": {
+      "active_autowerke": {"part_number": "AA-E46-HDR", "type": "Long Tube Headers", "price_usd": 1299, "power_gain": "15-20hp"},
+      "supersprint_manifold": {"part_number": "788601", "type": "Stepped Headers", "price_usd": 1599, "power_gain": "18-25hp"},
+      "obx_headers": {"part_number": "OBX-M54", "type": "Budget Headers", "price_usd": 399, "power_gain": "10-15hp", "notes": "Entry level"}
+    },
+    "exhaust_systems": {
+      "supersprint": {"part_number": "787803", "type": "Full Cat-Back", "price_usd": 1899, "notes": "Great sound"},
+      "borla": {"part_number": "140085", "type": "Cat-Back System", "price_usd": 1499},
+      "remus": {"part_number": "085500", "type": "Sport Exhaust", "price_usd": 1799},
+      "magnaflow": {"part_number": "15883", "type": "Cat-Back", "price_usd": 999, "notes": "Good value"}
+    },
+    "ecu_tuning": {
+      "turner_chip": {"part_number": "TMS-M54-CHIP", "type": "ECU Software", "price_usd": 499, "power_gain": "10-15hp"},
+      "active_autowerke_tune": {"part_number": "AA-M54-TUNE", "type": "Performance Software", "price_usd": 599, "power_gain": "12-18hp"},
+      "shark_injector": {"part_number": "SHARK-M54", "type": "Handheld Programmer", "price_usd": 399, "power_gain": "10-15hp"}
+    },
+    "forced_induction": {
+      "ess_supercharger": {
+        "vt1": {"part_number": "ESS-VT1-550", "type": "Centrifugal Supercharger", "price_usd": 5999, "power_output": "380-400hp"},
+        "vt2": {"part_number": "ESS-VT2-625", "type": "Centrifugal Supercharger", "price_usd": 7499, "power_output": "450-480hp"}
+      },
+      "active_autowerke_supercharger": {"part_number": "AA-M54-SC", "type": "Supercharger Kit", "price_usd": 6499, "power_output": "400-420hp"},
+      "turbo_kits": {
+        "doc_race": {"part_number": "DOC-M54-TURBO", "type": "Top Mount Turbo Kit", "price_usd": 3999, "power_potential": "400-600hp", "notes": "Custom tuning required"}
+      }
+    },
+    "cooling_system_upgrades": {
+      "description": "M54 cooling system components have finite lifespan - upgrade with quality parts",
+      "aluminum_radiator": {
+        "mishimoto": {"part_number": "MMRAD-E46-01", "type": "Aluminum Radiator", "price_usd": 399, "cooling_improvement": "25%"},
+        "csf": {"part_number": "CSF-7001", "type": "High Performance Radiator", "price_usd": 499, "cooling_improvement": "30%"},
+        "zionsville": {"part_number": "ZV-E46-RAD", "type": "Racing Radiator", "price_usd": 599, "cooling_improvement": "40%"}
+      },
+      "water_pump": {
+        "graf": {"part_number": "PA659", "type": "Metal Impeller Water Pump", "price_usd": 129, "notes": "Highly recommended"},
+        "stewart_components": {"part_number": "STEW-M54", "type": "High Flow Pump", "price_usd": 299, "notes": "Racing application"}
+      },
+      "electric_fan_conversion": {
+        "spal": {"part_number": "SPAL-E46", "type": "Electric Fan Kit", "price_usd": 499, "notes": "Frees up HP, better cooling control"}
+      },
+      "silicone_hose_kit": {
+        "mishimoto": {"part_number": "MMHOSE-E46-01", "type": "Silicone Coolant Hose Kit", "price_usd": 249, "notes": "Lifetime replacement"}
+      }
+    },
+    "engine_internals": {
+      "pistons": {
+        "cp_pistons": {"part_number": "SC7070", "type": "Forged Pistons", "price_usd": 799, "notes": "For supercharged applications"},
+        "je_pistons": {"part_number": "JE-M54", "type": "Forged Pistons", "price_usd": 699}
+      },
+      "connecting_rods": {
+        "manley": {"part_number": "14025-6", "type": "H-Beam Forged", "price_usd": 899}
+      },
+      "head_studs": {
+        "arp": {"part_number": "201-4301", "type": "Head Stud Kit", "price_usd": 399, "notes": "Required for boost applications"}
+      },
+      "valve_springs": {
+        "supertech": {"part_number": "SPR-M54", "type": "Dual Valve Springs", "price_usd": 299, "notes": "For cams or boost"}
+      },
+      "camshafts": {
+        "schrick": {"part_number": "SCHRICK-M54-284", "type": "Performance Camshafts", "price_usd": 1299, "power_gain": "15-25hp"}
+      }
+    },
+    "differential_upgrades": {
+      "lsd_conversion": {
+        "os_giken": {"part_number": "OS-E46-LSD", "type": "Super Lock LSD", "price_usd": 2499},
+        "mfactory": {"part_number": "MF-E46-LSD", "type": "Helical LSD", "price_usd": 899},
+        "wavetrac": {"part_number": "WAVE-E46", "type": "Wavetrac LSD", "price_usd": 1299}
+      }
+    }
+  },
+
+  "build_packages": {
+    "stage_1": {
+      "name": "Stage 1 - Breathing Mods",
+      "power_target": "215-235hp",
+      "parts": [
+        {"part": "Cold Air Intake", "price_usd": 279},
+        {"part": "Cat-Back Exhaust", "price_usd": 999},
+        {"part": "ECU Tune", "price_usd": 399}
+      ],
+      "total_cost_usd": "1700-2200",
+      "notes": "Modest gains, improved sound and response"
+    },
+    "stage_2": {
+      "name": "Stage 2 - Full Exhaust",
+      "power_target": "235-260hp",
+      "parts": [
+        {"part": "Cold Air Intake", "price_usd": 279},
+        {"part": "Long Tube Headers", "price_usd": 1299},
+        {"part": "High Flow Cats", "price_usd": 399},
+        {"part": "Cat-Back Exhaust", "price_usd": 999},
+        {"part": "Performance Tune", "price_usd": 599}
+      ],
+      "total_cost_usd": "3500-4500",
+      "notes": "Full breathing mods, near max NA potential"
+    },
+    "stage_3_supercharged": {
+      "name": "Stage 3 - Supercharged",
+      "power_target": "380-480hp",
+      "parts": [
+        {"part": "ESS VT1 or VT2 Supercharger Kit", "price_usd": 6000},
+        {"part": "Upgraded Fuel Injectors", "price_usd": 399},
+        {"part": "Upgraded Fuel Pump", "price_usd": 199},
+        {"part": "Aluminum Radiator", "price_usd": 399},
+        {"part": "Oil Cooler", "price_usd": 499}
+      ],
+      "total_cost_usd": "8000-12000",
+      "notes": "Very reliable power - M54 handles boost well"
+    }
+  },
+
+  "maintenance_kits": {
+    "oil_change_kit": {
+      "parts": ["7L Castrol Syntec 0W-30 or 5W-40", "Mann HU925/4X Oil Filter", "Drain Plug Gasket"],
+      "price_usd": 60,
+      "source": "FCP Euro - Lifetime Warranty",
+      "interval_miles": 7500
+    },
+    "cooling_system_refresh": {
+      "description": "CRITICAL - Cooling system components fail with age, not mileage",
+      "parts": [
+        "Water Pump (Graf metal impeller)",
+        "Thermostat (Wahler 87C)",
+        "Expansion Tank with Cap",
+        "Upper + Lower Radiator Hoses",
+        "Heater Hoses",
+        "All O-rings and Gaskets",
+        "Coolant (2 gallons BMW blue)"
+      ],
+      "price_usd": 450,
+      "source": "FCP Euro - Lifetime Warranty",
+      "notes": "Do complete refresh, not individual parts"
+    },
+    "vanos_rebuild_kit": {
+      "parts": ["VANOS Seals", "O-rings", "Oil Line O-rings"],
+      "price_usd": 149,
+      "source": "Beisan Systems",
+      "notes": "Required at 100k+ miles"
+    },
+    "ccv_refresh": {
+      "description": "Crankcase Ventilation System",
+      "parts": ["CCV Valve", "Hoses", "Oil Separator"],
+      "price_usd": 120,
+      "interval_miles": 100000
+    },
+    "spark_plug_kit": {
+      "parts": ["6x NGK BKR6EQUP"],
+      "price_usd": 40,
+      "interval_miles": 60000
+    },
+    "ignition_coil_kit": {
+      "parts": ["6x Bosch Ignition Coils"],
+      "price_usd": 120,
+      "source": "FCP Euro"
+    }
+  },
+
+  "quality_tiers": {
+    "budget": {
+      "description": "Entry-level aftermarket",
+      "brands": ["OBX", "K&N", "Magnaflow"]
+    },
+    "mid_tier": {
+      "description": "Quality street/occasional track",
+      "brands": ["Mishimoto", "aFe", "Graf", "Wahler"]
+    },
+    "premium": {
+      "description": "High-end upgrades",
+      "brands": ["Gruppe M", "Supersprint", "CSF", "Dinan"]
+    },
+    "race": {
+      "description": "Track and competition",
+      "brands": ["ESS Tuning", "CP-Carrillo", "Stewart Components", "OS Giken"]
+    }
+  },
+
+  "m54_notes": {
+    "cooling_critical": "REPLACE ENTIRE COOLING SYSTEM - These components fail with age. A $450 refresh prevents $5000+ engine replacement.",
+    "reliability": "Extremely reliable when properly maintained",
+    "supercharger_friendly": "One of the best NA BMW engines for forced induction - very strong internals",
+    "common_failures": [
+      "Cooling system (all plastic components)",
+      "VANOS seals",
+      "CCV system",
+      "DISA valve"
+    ]
+  }
+}

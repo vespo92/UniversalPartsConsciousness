@@ -1,0 +1,64 @@
+{
+  "engine_id": "BMW-B58-3.0L-I6-TURBO",
+  "document_version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "tool_inventory": {
+    "essential_tools": {
+      "metric_sockets_mm": [6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 24],
+      "e_torx": ["E8", "E10", "E12", "E14", "E16", "E18", "E20"],
+      "torx": ["T20", "T25", "T30", "T40", "T45", "T50", "T55"],
+      "oil_filter_cap_wrench": "76mm 14-flute (different from N54/N55)"
+    },
+    "specialty_tools": {
+      "timing_tools": "B58 specific locking tools",
+      "bmw_scanner": ["ISTA+", "Carly", "BimmerLink"]
+    }
+  },
+
+  "service_operations": {
+    "maintenance": {
+      "oil_change": {
+        "interval_miles": 10000,
+        "recommended_miles": 7500,
+        "oil_spec": "BMW LL-17FE+ (0W-20 or 0W-30)",
+        "capacity_liters": 6.5,
+        "filter": "HU6004X",
+        "drain_plug_nm": 25,
+        "filter_cap_nm": 22
+      },
+      "spark_plugs": {
+        "interval_miles": 60000,
+        "part": "NGK DILKAR7G11HS",
+        "torque_nm": 22
+      },
+      "coolant_flush": {
+        "interval_miles": 100000,
+        "notes": "Improved cooling design - longer intervals than N55"
+      }
+    },
+    "common_repairs": {
+      "water_pump": {
+        "symptoms": ["Overheating", "Coolant warning"],
+        "typical_failure_miles": 80000,
+        "notes": "Same electric pump design as N55"
+      },
+      "charge_pipe": {
+        "symptoms": ["Boost loss"],
+        "notes": "Upgrade to aluminum recommended for tuned cars"
+      }
+    }
+  },
+
+  "diagnostic_procedures": {
+    "boost_leak_test": {
+      "max_pressure_psi": 20,
+      "common_leak_points": ["Charge pipe", "CAC connections"]
+    }
+  },
+
+  "special_notes": {
+    "no_walnut_blasting": "Dual injection (port + direct) eliminates carbon buildup - no walnut blasting needed",
+    "integrated_exhaust_manifold": "Exhaust manifold is integrated into head - cannot be replaced separately"
+  }
+}

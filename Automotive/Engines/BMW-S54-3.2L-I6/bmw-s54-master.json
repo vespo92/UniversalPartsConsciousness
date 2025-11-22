@@ -1,0 +1,97 @@
+{
+  "engine_id": "BMW-S54B32-I6-NA",
+  "common_names": ["S54", "S54B32", "M3 Engine", "The Best NA I6"],
+  "manufacturer": "BMW M GmbH",
+  "engine_family": "BMW S54",
+  "production_years": "2000-2006",
+
+  "base_specifications": {
+    "configuration": "Inline 6-cylinder",
+    "displacement": {"liters": 3.246, "cc": 3246},
+    "bore": {"mm": 87.0},
+    "stroke": {"mm": 91.0},
+    "compression_ratio": "11.5:1",
+    "firing_order": "1-5-3-6-2-4",
+    "block_material": "Aluminum with iron cylinder sleeves",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 24 valves (4 per cylinder), Individual Throttle Bodies (ITB), Double VANOS",
+    "forced_induction": "Naturally Aspirated",
+    "fuel_system": {"type": "Sequential Multi-Point Fuel Injection (Siemens MSS54)"},
+    "individual_throttle_bodies": {
+      "description": "6 individual throttle bodies for instant response",
+      "bore_mm": 46.0
+    }
+  },
+
+  "power_output_by_variant": {
+    "e46_m3_us": {"hp": 333, "hp_rpm": 7900, "torque_nm": 355, "torque_rpm": 4900, "redline": 8000},
+    "e46_m3_euro": {"hp": 343, "hp_rpm": 7900, "torque_nm": 365, "torque_rpm": 4900, "notes": "European spec - higher output"},
+    "e46_m3_csl": {"hp": 360, "hp_rpm": 7900, "torque_nm": 370, "torque_rpm": 4900, "notes": "M3 CSL - lightweight, higher compression"}
+  },
+
+  "vehicle_applications": {
+    "e46_m3_coupe": {"years": "2001-2006", "notes": "M3 Coupe - primary application"},
+    "e46_m3_convertible": {"years": "2001-2006", "notes": "M3 Convertible"},
+    "e46_m3_csl": {"years": "2003", "notes": "M3 CSL - Coupe Sport Lightweight"},
+    "e85_z4_m_roadster": {"years": "2006-2008", "notes": "Z4 M Roadster"},
+    "e86_z4_m_coupe": {"years": "2006-2008", "notes": "Z4 M Coupe"},
+    "wiesmann_gt_mf3": {"years": "2003-2013", "notes": "Wiesmann GT MF3 (third party)"}
+  },
+
+  "fluid_capacities": {
+    "engine_oil": {"liters": 5.0, "viscosity": ["10W-60"], "spec": "BMW M Specific 10W-60 REQUIRED"},
+    "coolant": {"liters": 10.5}
+  },
+
+  "critical_dimensions": {
+    "bore_mm": 87.0,
+    "stroke_mm": 91.0,
+    "connecting_rod_length_mm": 139.0,
+    "main_bearing_journal_mm": 60.0,
+    "rod_bearing_journal_mm": 48.0,
+    "redline_rpm": 8000,
+    "max_rpm": 8250
+  },
+
+  "electronic_systems": {
+    "engine_management": "Siemens MSS54",
+    "vanos_control": "Double VANOS (stepless intake and exhaust)",
+    "drive_by_wire": false,
+    "throttle_control": "Cable operated individual throttle bodies"
+  },
+
+  "notes": {
+    "heritage": "High-revving masterpiece derived from S50/S52. Considered one of the greatest naturally aspirated inline-6 engines ever made.",
+    "reputation": "The benchmark for NA inline-6 performance. Incredible sound, rev-happy character, motorsport derived.",
+    "common_issues": [
+      "Rod bearing failure - CRITICAL: Replace preventatively",
+      "VANOS failure (timing units and solenoids)",
+      "Throttle actuator failure",
+      "Subframe cracking (E46 chassis issue, not engine)",
+      "SMG pump failure (SMG cars)",
+      "Valve adjustment required"
+    ],
+    "rod_bearing_issue": {
+      "description": "Factory bearings prone to premature wear/failure",
+      "cause": "Inadequate oil clearances and bearing material",
+      "prevention": "Replace with BE Bearings or ACL bearings every 60k miles or at purchase",
+      "symptoms": ["Knocking sound", "Metal in oil", "Low oil pressure"],
+      "failure_consequence": "Catastrophic engine failure"
+    },
+    "strengths": [
+      "Individual throttle bodies - instant response",
+      "High-revving (8000 RPM redline)",
+      "Incredible exhaust note",
+      "Hand-built by BMW M",
+      "Excellent aftermarket support",
+      "Strong internals (with proper bearings)"
+    ],
+    "maintenance_critical": [
+      "Rod bearing replacement REQUIRED - every 60k miles or at purchase",
+      "Use ONLY BMW 10W-60 oil - other weights cause bearing issues",
+      "VANOS service at 100k miles",
+      "Valve adjustment every 30k miles"
+    ],
+    "oil_requirement": "MUST use BMW 10W-60 - lower viscosity oils have caused bearing failures"
+  }
+}
