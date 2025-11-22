@@ -1,0 +1,292 @@
+{
+  "document_type": "Rotary Engine Technical Architecture",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "fundamental_differences_from_piston": {
+    "motion_type": {
+      "piston": "Reciprocating linear motion converted to rotation",
+      "rotary": "Direct rotational motion - no conversion needed"
+    },
+    "combustion_chamber": {
+      "piston": "Fixed chamber in cylinder head, piston varies volume",
+      "rotary": "Chamber moves with rotor, housing stationary"
+    },
+    "power_pulses": {
+      "4_cyl_piston": "2 power strokes per crankshaft revolution",
+      "twin_rotor_13b": "3 power strokes per eccentric shaft revolution (6 total faces)",
+      "result": "Smoother power delivery in rotary"
+    },
+    "valvetrain": {
+      "piston": "Poppet valves, camshafts, timing chains/belts, springs, lifters",
+      "rotary": "Ports in housing - NO VALVES, NO CAMSHAFTS, NO TIMING"
+    },
+    "parts_count": {
+      "typical_4_cyl": "250+ moving parts",
+      "13b_rotary": "~50 moving parts",
+      "reduction": "~80% fewer parts"
+    }
+  },
+
+  "wankel_geometry": {
+    "housing_shape": {
+      "type": "Epitrochoid",
+      "description": "Two-lobed figure traced by a point on a circle rolling around another circle",
+      "mathematical_formula": "x = e*cos(3θ) + R*cos(θ), y = e*sin(3θ) + R*sin(θ)",
+      "where": {
+        "e": "Eccentricity",
+        "R": "Rotor generating radius",
+        "θ": "Eccentric shaft angle"
+      }
+    },
+    "rotor_shape": {
+      "type": "Reuleaux triangle",
+      "description": "Triangle with curved sides of constant width",
+      "faces": 3,
+      "apex_count": 3
+    },
+    "gear_ratio": {
+      "rotor_to_shaft": "3:1",
+      "explanation": "Eccentric shaft rotates 3 times for each rotor rotation"
+    }
+  },
+
+  "major_components": {
+    "rotor": {
+      "function": "Primary rotating element - creates combustion chambers",
+      "material": "Cast iron with hard-anodized surface",
+      "features": [
+        "Triangular Reuleaux shape",
+        "Internal ring gear (stationary gear engagement)",
+        "Three apex seal grooves",
+        "Six side seal grooves",
+        "Six corner seal locations",
+        "Oil sealing grooves",
+        "Counterweights for balance"
+      ],
+      "weight_kg": {"12a": 3.8, "13b": 4.2}
+    },
+    "rotor_housing": {
+      "alternate_names": ["Trochoid housing", "Center housing"],
+      "function": "Contains rotor, forms combustion chamber walls",
+      "material": "Aluminum casting with chrome-molybdenum plating",
+      "plating_types": {
+        "thermal_spray": "Used in early engines",
+        "chrome_plating": "Standard since late 1970s",
+        "nikasil": "Some variants"
+      },
+      "features": [
+        "Epitrochoid inner surface",
+        "Intake and exhaust ports",
+        "Spark plug holes (leading and trailing)",
+        "Coolant passages",
+        "Lubrication passages"
+      ]
+    },
+    "side_housings": {
+      "types": ["Front side housing", "Intermediate housing", "Rear side housing"],
+      "function": "Seal combustion chambers axially, contain bearings",
+      "material": "Cast iron (contact area) in aluminum casting",
+      "features": [
+        "Intake ports (some designs)",
+        "Exhaust ports (Renesis only)",
+        "Eccentric shaft bearings",
+        "Stationary gear mounting"
+      ]
+    },
+    "eccentric_shaft": {
+      "alternate_name": "E-shaft",
+      "function": "Rotary equivalent of crankshaft - converts rotor motion to output",
+      "material": "Forged steel",
+      "features": [
+        "Eccentric lobes (one per rotor, 180° apart for twin-rotor)",
+        "Counterweights for balance",
+        "Oil passages for rotor bearing lubrication",
+        "Front and rear bearing journals"
+      ],
+      "eccentricity": {
+        "13b": "15mm",
+        "12a": "15mm",
+        "description": "Offset distance from shaft center to lobe center"
+      }
+    },
+    "stationary_gear": {
+      "function": "Fixed gear that rotor's internal gear meshes with",
+      "location": "Mounted in side housing",
+      "ratio": "2:3 (rotor gear to stationary gear)",
+      "result": "Rotor rotates once for every three shaft rotations"
+    }
+  },
+
+  "sealing_system": {
+    "critical_importance": "Sealing is THE critical challenge of rotary engines",
+    "seal_types": {
+      "apex_seals": {
+        "function": "Seal between adjacent combustion chambers at rotor tips",
+        "location": "Each of three rotor apexes",
+        "quantity_per_engine": "6 (3 per rotor in twin-rotor)",
+        "design": {
+          "type": "Multi-piece with springs",
+          "standard": "2-piece or 3-piece",
+          "material": "Carbon-aluminum composite, chrome-molybdenum steel",
+          "spring": "Coil spring provides outward pressure"
+        },
+        "dimensions_13b": {
+          "width_mm": 2.0,
+          "height_mm": 8.6,
+          "notes": "3mm racing seals available"
+        },
+        "failure_modes": [
+          "Wear - normal over time",
+          "Chipping - from detonation",
+          "Scoring - from debris",
+          "Spring fatigue"
+        ],
+        "service_life": {
+          "street": "100,000-150,000 miles (maintained properly)",
+          "race": "Rebuild between events"
+        }
+      },
+      "side_seals": {
+        "function": "Seal between rotor faces and side housings",
+        "location": "Six grooves per rotor face (3 inner, 3 outer rings)",
+        "quantity_per_engine": "24 (12 per rotor)",
+        "material": "Cast iron or steel"
+      },
+      "corner_seals": {
+        "function": "Seal intersection of apex and side seals",
+        "location": "Each corner of apex seal groove",
+        "quantity_per_engine": "12 (6 per rotor)",
+        "design": "Button-type seal"
+      },
+      "oil_seals": {
+        "function": "Control oil metering to combustion area",
+        "types": ["Inner oil seal", "Outer oil seal"],
+        "note": "Rotaries consume oil BY DESIGN - it lubricates apex seals"
+      }
+    },
+    "oil_consumption": {
+      "normal_rate": "1 quart per 3000-5000 miles",
+      "reason": "Metering oil pump injects oil directly to apex seals",
+      "misconception": "This is NOT a defect - it's required for seal lubrication"
+    }
+  },
+
+  "port_configurations": {
+    "peripheral_port": {
+      "description": "Intake and exhaust ports in rotor housing",
+      "advantages": ["Maximum flow", "Highest power"],
+      "disadvantages": ["Port overlap causes emissions issues", "Rough idle"],
+      "applications": ["12A", "13B", "13B-REW", "Racing engines"],
+      "timing_control": "Determined by port size and location"
+    },
+    "side_port": {
+      "description": "Ports in side housings instead of rotor housing",
+      "advantages": ["Reduced port overlap", "Cleaner emissions", "Smoother idle"],
+      "disadvantages": ["Reduced flow at high RPM", "Lower peak power"],
+      "applications": ["Renesis (13B-MSP)"],
+      "note": "Exhaust exits through side housing - unique to Renesis"
+    },
+    "porting_modifications": {
+      "street_port": {
+        "description": "Mild enlargement of stock peripheral ports",
+        "power_gain": "15-25hp",
+        "idle_quality": "Minimal impact",
+        "difficulty": "Moderate"
+      },
+      "bridge_port": {
+        "description": "Connecting intake ports with bridge in housing",
+        "power_gain": "30-50hp",
+        "idle_quality": "Rougher, requires higher idle RPM",
+        "difficulty": "Advanced"
+      },
+      "peripheral_port_conversion": {
+        "description": "Converting side-port to full peripheral port",
+        "power_gain": "50-80hp",
+        "idle_quality": "Rough, often requires carburetion or ITBs",
+        "difficulty": "Expert only",
+        "applications": "Race engines"
+      }
+    }
+  },
+
+  "ignition_system": {
+    "why_different": "Long, narrow combustion chamber requires different ignition strategy",
+    "dual_spark_plugs": {
+      "reason": "Flame must travel further than piston chamber",
+      "leading_plug": {
+        "location": "Near trailing edge of exhaust port",
+        "fires": "First - initiates combustion",
+        "gap_mm": 0.8,
+        "heat_range": "Colder (higher number)"
+      },
+      "trailing_plug": {
+        "location": "Further into chamber",
+        "fires": "10-20° after leading",
+        "gap_mm": 1.1,
+        "heat_range": "Slightly warmer"
+      }
+    },
+    "timing_considerations": {
+      "total_advance": "Much higher than piston engines (up to 40° BTDC)",
+      "reason": "Slower flame propagation in elongated chamber",
+      "split": "Leading and trailing timing separately adjustable in tuning"
+    }
+  },
+
+  "lubrication_system": {
+    "oil_pump": {
+      "type": "Trochoid pump (inner and outer rotor)",
+      "irony": "Oil pump uses same principle as engine itself"
+    },
+    "metering_oil_pump": {
+      "abbreviation": "MOP",
+      "function": "Injects precise amount of oil into combustion chambers",
+      "purpose": "Lubricates apex seals during operation",
+      "rate": "Varies with RPM and load",
+      "deletion_warning": "DO NOT DELETE - apex seal failure will result"
+    },
+    "premix": {
+      "description": "Adding 2-stroke oil to fuel tank",
+      "ratio": "1:100 to 1:150",
+      "purpose": "Supplemental apex seal lubrication",
+      "recommendation": "Highly recommended for forced induction",
+      "oils": ["Idemitsu Racing Rotary", "Motul 800", "Redline 2-Stroke"]
+    }
+  },
+
+  "cooling_challenges": {
+    "unique_issues": [
+      "Combustion chamber is always exposed to flame (no cooling stroke)",
+      "Exhaust port sees constant flow of hot gases",
+      "Peripheral exhaust ports create hot spots"
+    ],
+    "solutions": {
+      "extensive_water_jackets": "Rotor and side housings heavily cooled",
+      "oil_cooler": "Standard equipment - oil carries significant heat",
+      "rotor_oil_jets": "Oil sprayed onto rotor interior for cooling"
+    }
+  },
+
+  "efficiency_and_emissions": {
+    "thermal_efficiency": {
+      "limitation": "Elongated chamber has high surface-to-volume ratio",
+      "result": "Heat loss to chamber walls is proportionally higher",
+      "typical_thermal_efficiency": "~30% vs ~35% for modern piston"
+    },
+    "hydrocarbon_emissions": {
+      "cause": "Unburned fuel trapped in port overlaps and apex seal gaps",
+      "solutions_over_time": [
+        "Thermal reactors (burn HCs in exhaust)",
+        "Air injection systems",
+        "Catalytic converters",
+        "Side exhaust ports (Renesis)"
+      ]
+    },
+    "skyactiv_r_future": {
+      "goal": "Apply Skyactiv high-compression principles to rotary",
+      "patents": "Mazda has filed patents for direct-injection rotary",
+      "speculation": "Future rotary may achieve piston-like efficiency"
+    }
+  }
+}

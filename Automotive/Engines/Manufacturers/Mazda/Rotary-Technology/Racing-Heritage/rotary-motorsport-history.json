@@ -1,0 +1,301 @@
+{
+  "document_type": "Complete Rotary Motorsport History",
+  "manufacturer": "Mazda",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "overview": {
+    "summary": "Rotary engines dominated multiple racing series despite being unconventional",
+    "key_achievements": [
+      "Only rotary Le Mans overall victory (1991)",
+      "Over 100 Japanese touring car wins with RX-3",
+      "Multiple IMSA GTU/GTO championships",
+      "BTCC competitiveness through 1980s",
+      "Numerous hillclimb and time attack records"
+    ]
+  },
+
+  "japanese_touring_car": {
+    "series": "All Japan Touring Car Championship (Group 2)",
+    "era": "1970-1980",
+    "primary_car": "Savanna RX-3",
+    "engine": "12A",
+    "dominance": {
+      "total_wins": "Over 100",
+      "season_records": [
+        {"year": 1972, "wins": "Multiple", "note": "Dominant force"},
+        {"year": 1973, "wins": "Season championship", "note": "Beat GT-R"},
+        {"year": 1974, "wins": "Championship defense", "note": "Continued dominance"},
+        {"year": 1975, "wins": "Championship", "note": "Third consecutive"},
+        {"year": 1976, "wins": "Multiple", "note": "Regulations changed"}
+      ],
+      "rivals_beaten": ["Nissan Skyline GT-R", "Toyota Celica", "Honda"],
+      "gt_r_rivalry": "RX-3 ended Skyline GT-R's 50-race winning streak"
+    },
+    "technical_specifications": {
+      "engine": "12A peripheral port",
+      "power_hp": "180-220",
+      "weight_kg": 900,
+      "advantage": "Lighter weight, higher RPM capability"
+    }
+  },
+
+  "imsa_gto_gtu": {
+    "series": "IMSA GT Championship",
+    "era": "1979-1992",
+    "primary_car": "RX-7",
+    "significance": "Established RX-7 as legitimate performance car in America",
+    "achievements": {
+      "gtu_championships": 5,
+      "gto_championships": 3,
+      "24h_daytona_class_wins": "Multiple",
+      "12h_sebring_class_wins": "Multiple"
+    },
+    "notable_teams": [
+      "Mazda Motorsports",
+      "Clayton Cunningham Racing",
+      "IMSA Racing"
+    ],
+    "notable_drivers": [
+      "Pete Halsmer",
+      "Jim Downing",
+      "Roger Mandeville",
+      "Amos Johnson"
+    ],
+    "engine_evolution": {
+      "early_years": "12A naturally aspirated",
+      "mid_years": "13B naturally aspirated",
+      "late_years": "13B turbocharged",
+      "power_progression": "150hp (12A NA) to 350hp (13B Turbo)"
+    }
+  },
+
+  "btcc_british_touring_car": {
+    "series": "British Touring Car Championship",
+    "era": "1980-1990",
+    "primary_cars": ["323", "RX-7"],
+    "engine": "12A, 13B",
+    "results": {
+      "race_wins": "Multiple",
+      "championship_challenges": "Top 5 finishes",
+      "notable_seasons": [1980, 1981, 1982]
+    },
+    "teams": ["TWR", "WIN Percy Racing"],
+    "drivers": ["Win Percy", "Pete Lovett"]
+  },
+
+  "world_endurance_championship": {
+    "series": "FIA World Endurance Championship / Group C",
+    "era": "1983-1991",
+    "progression": {
+      "717c_1983": {
+        "engine": "13B twin-turbo",
+        "power_hp": 390,
+        "best_result": "DNF (development year)"
+      },
+      "727c_1984": {
+        "engine": "13B twin-turbo",
+        "power_hp": 420,
+        "best_result": "10th at Le Mans"
+      },
+      "757_1986": {
+        "engine": "13G (3-rotor)",
+        "power_hp": 450,
+        "best_result": "7th at Le Mans"
+      },
+      "767_1988": {
+        "engine": "13J (4-rotor)",
+        "power_hp": 550,
+        "best_result": "Multiple top-10s"
+      },
+      "767b_1989": {
+        "engine": "13J (4-rotor)",
+        "power_hp": 630,
+        "best_result": "7th at Le Mans"
+      },
+      "787_1990": {
+        "engine": "R26B (4-rotor)",
+        "power_hp": 700,
+        "best_result": "20th at Le Mans"
+      },
+      "787b_1991": {
+        "engine": "R26B (4-rotor)",
+        "power_hp": 700,
+        "best_result": "OVERALL WIN AT LE MANS"
+      }
+    }
+  },
+
+  "american_road_racing": {
+    "scca": {
+      "series": "Sports Car Club of America",
+      "classes": ["GT1", "GT2", "GT3", "EP", "FP"],
+      "primary_cars": ["RX-7 (all generations)", "RX-8"],
+      "national_championships": "Numerous",
+      "note": "RX-7 became one of most raced cars in SCCA history"
+    },
+    "nasa": {
+      "series": "National Auto Sport Association",
+      "primary_cars": ["RX-7", "RX-8", "Miata with rotary swap"],
+      "popularity": "High due to competitive parity with piston cars"
+    },
+    "spec_rx7": {
+      "concept": "Spec series using identical FC or FD RX-7s",
+      "status": "Regional series exist"
+    }
+  },
+
+  "time_attack_hillclimb": {
+    "bonneville": {
+      "notable_cars": "Various RX-7 builds",
+      "records": "Multiple class records",
+      "speeds": "200+ mph in modified classes"
+    },
+    "pikes_peak": {
+      "notable_entries": "Rotary-powered entries in Unlimited class",
+      "results": "Top 10 finishes"
+    },
+    "tsukuba": {
+      "series": "Time Attack (Japan)",
+      "records": "Multiple class records held by rotary cars",
+      "notable_builds": "RE Amemiya, Scoot, Feed racing"
+    },
+    "wtac": {
+      "series": "World Time Attack Challenge (Australia)",
+      "notable_entries": "MCA Suspension RX-7, others",
+      "competitiveness": "Among quickest overall"
+    }
+  },
+
+  "drag_racing": {
+    "importance": "Rotary has proven capable in straight-line competition",
+    "quarter_mile_records": {
+      "naturally_aspirated": {
+        "12a": "11s",
+        "13b": "10s",
+        "20b": "9s"
+      },
+      "turbocharged": {
+        "13b_single": "8s",
+        "13b_big_single": "7s",
+        "20b_turbo": "6s",
+        "4_rotor": "5s (pro builds)"
+      }
+    },
+    "notable_builds": {
+      "pac_performance": {
+        "location": "Australia",
+        "achievement": "World's quickest rotary - 5 second 1/4 mile",
+        "power_hp": "2000+"
+      },
+      "rob_dahm": {
+        "location": "USA",
+        "build": "4-rotor RX-7 with AWD",
+        "power_hp": "1000+ on pump gas",
+        "youtube": "Documented build series"
+      }
+    }
+  },
+
+  "drifting": {
+    "series": ["Formula D", "D1 Grand Prix", "BDC", "Various regional"],
+    "popularity": "RX-7 (especially FD) is iconic drift platform",
+    "advantages": [
+      "50/50 weight distribution",
+      "Light front end",
+      "High-revving powerband",
+      "Compact engine allows V8 swap OR rotary power"
+    ],
+    "notable_drivers": {
+      "rhys_millen": "FD RX-7 in early Formula D",
+      "kyle_mohan": "Multiple rotary-powered drift cars",
+      "various_japanese": "Countless D1GP competitors"
+    }
+  },
+
+  "rally": {
+    "wrc": {
+      "era": "1999-2002",
+      "car": "323 WRC (Familia WRC)",
+      "engine": "NOT ROTARY - used KJ-ZEM V6",
+      "note": "Mazda's only WRC factory effort was not rotary-powered"
+    },
+    "other_rally": {
+      "rx7_rally": "Privateers competed with RX-7 in Group A",
+      "323_group_a": "Familia competed in national series",
+      "results": "Moderate success at national levels"
+    }
+  },
+
+  "current_racing": {
+    "global_mx5_cup": {
+      "note": "Not rotary - but Mazda's largest racing program uses Miata",
+      "entries": "Largest single-make series in the world"
+    },
+    "amateur_racing": {
+      "rx7_popularity": "Still one of most-raced cars in amateur motorsport",
+      "rx8_popularity": "Growing presence in spec series",
+      "rotary_swaps": "Common in various chassis"
+    },
+    "professional": {
+      "status": "Limited factory support",
+      "privateer": "Strong presence in various series",
+      "future": "Unclear if Mazda will return to rotary racing"
+    }
+  },
+
+  "racing_engine_specifications": {
+    "competition_12a": {
+      "displacement_cc": 1146,
+      "power_hp": {"street_port": 150, "bridge_port": 180, "peripheral": 220},
+      "rpm_limit": 10000,
+      "applications": "RX-3, early RX-7 racing"
+    },
+    "competition_13b_na": {
+      "displacement_cc": 1308,
+      "power_hp": {"street_port": 180, "bridge_port": 230, "peripheral": 280},
+      "rpm_limit": 10500,
+      "applications": "IMSA, SCCA, endurance"
+    },
+    "competition_13b_turbo": {
+      "displacement_cc": 1308,
+      "power_hp": {"mild": 350, "moderate": 450, "race": 600},
+      "boost_psi": {"mild": 14, "moderate": 20, "race": 30},
+      "applications": "IMSA GTO, drag, time attack"
+    },
+    "13g_3_rotor": {
+      "displacement_cc": 1962,
+      "power_hp": 450,
+      "applications": "757 Le Mans prototype"
+    },
+    "13j_4_rotor": {
+      "displacement_cc": 2622,
+      "power_hp": {"early": 550, "developed": 630},
+      "applications": "767/767B Le Mans prototypes"
+    },
+    "r26b_4_rotor": {
+      "displacement_cc": 2622,
+      "power_hp": 700,
+      "rpm_limit": 10500,
+      "applications": "787/787B Le Mans - THE WINNER"
+    }
+  },
+
+  "why_rotary_racing_works": {
+    "advantages": [
+      "Power-to-weight ratio superior to most piston engines",
+      "Compact size allows optimal chassis packaging",
+      "High-RPM capability suits racing applications",
+      "Smooth power delivery through corners",
+      "No valve float concerns at high RPM",
+      "Simpler engine (fewer parts to fail)",
+      "Distinctive sound attracts fans"
+    ],
+    "challenges": [
+      "Fuel consumption higher than equivalent piston",
+      "Apex seal reliability at sustained high loads",
+      "Thermal management critical",
+      "Fewer qualified builders than piston engines"
+    ]
+  }
+}

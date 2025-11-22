@@ -1,0 +1,179 @@
+{
+  "engine_id": "MAZDA-8C-SINGLE-ROTOR",
+  "common_names": ["8C", "Rotary Range Extender", "MX-30 Rotary", "e-Skyactiv R"],
+  "manufacturer": "Mazda Motor Corporation",
+  "engine_family": "Mazda Wankel Rotary - Modern Era",
+  "production_years": "2021-present",
+  "significance": "Return of the rotary after 9-year production hiatus",
+
+  "base_specifications": {
+    "configuration": "Single-Rotor Wankel",
+    "displacement": {"liters": 0.830, "cc": 830, "equivalent_displacement_cc": 1660},
+    "rotor_dimensions": {
+      "rotor_width_mm": 76,
+      "rotor_radius_mm": 105,
+      "eccentricity_mm": 15
+    },
+    "compression_ratio": "11.9:1",
+    "housing_material": "Aluminum with advanced coating",
+    "rotor_material": "Cast aluminum alloy (lighter than iron)",
+    "fuel_system": {
+      "type": "Direct injection",
+      "pressure_bar": 200
+    },
+    "aspiration": "Naturally aspirated",
+    "purpose": "Electric generator - NOT direct propulsion",
+    "operating_rpm_range": "1500-4500 RPM (narrow band for efficiency)",
+    "continuous_power_kw": 55,
+    "peak_power_kw": 75
+  },
+
+  "power_output": {
+    "generator_output": {
+      "continuous_kw": 55,
+      "peak_kw": 75,
+      "hp_equivalent": "74 HP continuous / 101 HP peak"
+    },
+    "note": "Power goes to generator, not wheels directly"
+  },
+
+  "vehicle_applications": {
+    "mx30_r_ev": {
+      "model": "Mazda MX-30 R-EV",
+      "years": "2023-present",
+      "body": "Compact crossover with freestyle doors",
+      "drivetrain": "Series hybrid (rotary charges battery, electric motors drive)",
+      "battery_kwh": 17.8,
+      "electric_motor_kw": 125,
+      "total_system_hp": 170,
+      "electric_range_km": 85,
+      "total_range_km": 600,
+      "markets": ["Europe", "Japan", "Australia", "UK"],
+      "not_available": ["USA", "Canada"]
+    }
+  },
+
+  "why_rotary_for_range_extender": {
+    "advantages": [
+      {
+        "factor": "Compact size",
+        "explanation": "Single rotor fits in space smaller than any piston alternative"
+      },
+      {
+        "factor": "Light weight",
+        "explanation": "Doesn't add significant mass to EV platform"
+      },
+      {
+        "factor": "Low vibration",
+        "explanation": "No reciprocating mass - smooth operation as generator"
+      },
+      {
+        "factor": "Quiet operation",
+        "explanation": "Rotary's smooth combustion produces less NVH"
+      },
+      {
+        "factor": "Steady-state efficiency",
+        "explanation": "Operating at constant RPM allows optimization"
+      },
+      {
+        "factor": "Brand identity",
+        "explanation": "Rotary is uniquely Mazda - differentiator in EV market"
+      }
+    ],
+    "negatives_mitigated": {
+      "fuel_consumption": "Operating at ideal RPM band maximizes efficiency",
+      "apex_seal_wear": "Constant RPM is gentler than variable speed driving",
+      "emissions": "Modern DI and catalytic treatment addresses HC concerns"
+    }
+  },
+
+  "technical_innovations": {
+    "direct_injection": {
+      "first": "First production rotary with direct injection",
+      "benefit": "Improved fuel atomization and combustion control"
+    },
+    "aluminum_rotor": {
+      "material": "Aluminum alloy (not traditional cast iron)",
+      "benefit": "Reduced rotating mass, faster warm-up"
+    },
+    "narrow_rpm_band": {
+      "range": "1500-4500 RPM",
+      "strategy": "Optimize for specific operating conditions",
+      "result": "Better thermal efficiency than wide-range operation"
+    },
+    "integrated_cooling": {
+      "design": "Water-cooled housing with electric coolant pump",
+      "note": "Shared cooling with electric motor and inverter"
+    }
+  },
+
+  "operation_modes": {
+    "ev_mode": {
+      "description": "Pure electric drive, rotary off",
+      "range_km": 85
+    },
+    "normal_mode": {
+      "description": "Rotary activates when battery depletes",
+      "operation": "Rotary generates electricity to extend range"
+    },
+    "charge_mode": {
+      "description": "Rotary actively charges battery",
+      "use_case": "Preparing for highway driving or high-demand situations"
+    }
+  },
+
+  "fuel_and_maintenance": {
+    "fuel_type": "Regular unleaded gasoline",
+    "fuel_tank_liters": 50,
+    "oil_consumption": "Minimal - still injects oil to apex seals",
+    "maintenance_interval": "Per Mazda schedule (specific intervals TBD)",
+    "expected_longevity": "Designed for high durability at steady-state operation"
+  },
+
+  "significance_to_rotary_legacy": {
+    "symbolism": [
+      "Proves Mazda never abandoned rotary R&D",
+      "Demonstrates rotary has modern applications",
+      "Opens door for future rotary development",
+      "Introduces rotary to new generation of buyers"
+    ],
+    "future_possibilities": {
+      "hydrogen_fuel": "Rotary well-suited to hydrogen combustion",
+      "performance_application": "Could return to sports car use",
+      "larger_displacement": "Multi-rotor generators possible"
+    }
+  },
+
+  "comparison_to_previous_rotaries": {
+    "vs_renesis": {
+      "displacement": "830cc vs 1308cc (-36%)",
+      "rotors": "1 vs 2",
+      "output": "75kW vs 177kW",
+      "purpose": "Generator vs direct propulsion"
+    },
+    "vs_13b_rew": {
+      "displacement": "830cc vs 1308cc",
+      "rotors": "1 vs 2",
+      "output": "75kW vs 206kW",
+      "purpose": "Efficiency vs performance"
+    }
+  },
+
+  "availability": {
+    "markets": {
+      "europe": "Available 2023+",
+      "japan": "Available 2023+",
+      "australia": "Available 2023+",
+      "uk": "Available 2023+",
+      "usa": "NOT AVAILABLE",
+      "canada": "NOT AVAILABLE"
+    },
+    "us_absence_reason": "Market strategy, emissions certification, EV focus"
+  },
+
+  "collector_interest": {
+    "future_value": "Likely to be collectible as first modern rotary",
+    "limited_markets": "Rarity in some regions will increase value",
+    "historical_significance": "Marks rotary's adaptation to electric era"
+  }
+}

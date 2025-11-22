@@ -1,0 +1,323 @@
+{
+  "document_type": "Comprehensive Rotary Engine Rebuild Guide",
+  "engine_focus": "13B (all variants)",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+  "disclaimer": "This guide is for educational purposes. Professional rebuild is recommended for reliability.",
+
+  "when_to_rebuild": {
+    "symptoms": [
+      "Compression below 85 PSI on any face",
+      "More than 15% compression variation between faces",
+      "Hard hot starts (flooding)",
+      "Excessive blue/white smoke at all temps",
+      "Coolant loss without external leak",
+      "Metal in oil",
+      "Severe power loss"
+    ],
+    "compression_specs": {
+      "healthy": "100-130 PSI per face",
+      "marginal": "85-100 PSI",
+      "rebuild_required": "Below 85 PSI or >15% variance"
+    },
+    "compression_test_notes": {
+      "tool_required": "ROTARY-SPECIFIC compression tester (not piston type)",
+      "procedure": "Warm engine, remove all plugs, test each leading plug hole",
+      "reading_interpretation": "3 readings per rotor (6 total for twin-rotor)"
+    }
+  },
+
+  "rebuild_types": {
+    "oem_refresh": {
+      "description": "Replace wear items with OEM-spec parts",
+      "parts": "OEM seals, bearings, gaskets",
+      "cost_range": "$2,500-3,500",
+      "power_level": "Stock",
+      "longevity": "100,000+ miles if maintained"
+    },
+    "street_port": {
+      "description": "Refreshed engine with mild port enlargement",
+      "parts": "OEM seals, ported housings",
+      "cost_range": "$3,500-5,000",
+      "power_gain": "+15-25 HP",
+      "longevity": "80,000+ miles"
+    },
+    "bridge_port": {
+      "description": "Aggressive porting for significant power gains",
+      "parts": "Quality aftermarket seals, ported housings",
+      "cost_range": "$5,000-7,000",
+      "power_gain": "+30-50 HP",
+      "longevity": "50,000-80,000 miles",
+      "notes": "Rougher idle, may require higher idle RPM"
+    },
+    "peripheral_port": {
+      "description": "Race-only full peripheral porting",
+      "parts": "Race seals, heavily ported housings",
+      "cost_range": "$8,000-15,000",
+      "power_gain": "+50-80 HP",
+      "longevity": "Race rebuild intervals",
+      "notes": "Requires carburetor or ITBs, not street-friendly"
+    }
+  },
+
+  "required_tools": {
+    "specialty_tools": [
+      {
+        "tool": "Rotary compression tester",
+        "purpose": "Pre/post rebuild compression verification",
+        "source": "Atkins Rotary, specialty suppliers"
+      },
+      {
+        "tool": "Apex seal installer",
+        "purpose": "Safely install apex seals without damage",
+        "source": "OEM Mazda tool or aftermarket"
+      },
+      {
+        "tool": "Rotor holder/turner",
+        "purpose": "Safely manipulate rotors during assembly",
+        "source": "Fabricate or purchase"
+      },
+      {
+        "tool": "Housing alignment pins",
+        "purpose": "Prevent seal damage during housing installation",
+        "source": "OEM Mazda tool set"
+      },
+      {
+        "tool": "Tension bolt torque wrench",
+        "purpose": "Accurate tension bolt torquing",
+        "source": "Quality 1/2\" drive torque wrench"
+      }
+    ],
+    "standard_tools": [
+      "Complete metric socket and wrench set",
+      "Torque wrenches (ft-lb and in-lb)",
+      "Pry bars and pullers",
+      "Micrometers and calipers",
+      "Plastigage for bearing clearance",
+      "Seal picks and installation tools",
+      "Clean workspace with assembly table"
+    ]
+  },
+
+  "critical_parts": {
+    "apex_seals": {
+      "quantity": "6 per engine (3 per rotor)",
+      "types": {
+        "oem_2mm": "Stock replacement, proven reliability",
+        "aftermarket_2mm": "Goopy, Atkins - street performance",
+        "aftermarket_3mm": "Race application, requires housing modification"
+      },
+      "springs": "Replace with seals - one per apex seal",
+      "inspection": "Measure height - replace if below 8.4mm"
+    },
+    "side_seals": {
+      "quantity": "24 per engine (12 per rotor)",
+      "types": "OEM or quality aftermarket",
+      "inspection": "Check for cracks, wear"
+    },
+    "corner_seals": {
+      "quantity": "12 per engine (6 per rotor)",
+      "note": "Must match corner seal springs"
+    },
+    "oil_seals": {
+      "quantity": "16 per engine",
+      "types": "Inner and outer oil seals"
+    },
+    "rotor_bearings": {
+      "quantity": "4 per engine (2 per rotor)",
+      "inspection": "Check for play, scoring"
+    },
+    "eccentric_shaft_bearings": {
+      "main_bearings": "Front, center, rear",
+      "inspection": "Plastigage for clearance check"
+    },
+    "coolant_seals": {
+      "o_rings": "All water passage O-rings",
+      "critical": "Failure causes coolant in combustion chamber"
+    },
+    "gaskets": {
+      "complete_kit": "All gaskets and seals in one package",
+      "sources": "Atkins, Mazdatrix, OEM"
+    }
+  },
+
+  "disassembly_procedure": {
+    "step_1": "Remove engine from vehicle",
+    "step_2": "Drain all fluids",
+    "step_3": "Remove accessories (alternator, AC, PS pump)",
+    "step_4": "Remove intake and exhaust manifolds",
+    "step_5": "Remove front cover and eccentric shaft pulley",
+    "step_6": "Remove rear housing and stationary gear",
+    "step_7": "Remove rear rotor carefully",
+    "step_8": "Remove intermediate housing",
+    "step_9": "Remove front rotor carefully",
+    "step_10": "Remove front side housing",
+    "step_11": "Remove eccentric shaft",
+    "step_12": "Document everything with photos"
+  },
+
+  "inspection_and_measurement": {
+    "rotor_housings": {
+      "check_for": ["Scoring", "Chatter marks", "Chrome wear", "Coolant passage corrosion"],
+      "measurement": "Check for warpage with straight edge",
+      "tolerance": "0.05mm maximum warpage"
+    },
+    "side_housings": {
+      "check_for": ["Wear marks from side seals", "Corrosion", "Warpage"],
+      "bearing_bores": "Check for wear"
+    },
+    "rotors": {
+      "check_for": ["Apex seal groove wear", "Side seal groove wear", "Bearing journal wear"],
+      "measurements": {
+        "apex_seal_groove_width": "Check against spec",
+        "side_seal_groove_depth": "Check against spec"
+      }
+    },
+    "eccentric_shaft": {
+      "check_for": ["Journal wear", "Lobe wear", "Straightness"],
+      "runout": "Maximum 0.03mm"
+    }
+  },
+
+  "assembly_procedure": {
+    "cleanliness": "CRITICAL - any debris will cause failure",
+    "lubrication": "Use assembly lube on all seals and bearings",
+    "step_1": {
+      "action": "Install eccentric shaft in front side housing",
+      "note": "Ensure bearings are properly lubed"
+    },
+    "step_2": {
+      "action": "Install all seals in front rotor",
+      "critical": "Apex seals last, use installer tool"
+    },
+    "step_3": {
+      "action": "Install front rotor onto eccentric shaft",
+      "note": "Use alignment pins to protect seals"
+    },
+    "step_4": {
+      "action": "Install front rotor housing",
+      "note": "Use dowel pins, lower carefully"
+    },
+    "step_5": {
+      "action": "Install intermediate housing",
+      "note": "Stationary gear must be properly aligned"
+    },
+    "step_6": {
+      "action": "Install seals in rear rotor"
+    },
+    "step_7": {
+      "action": "Install rear rotor - 180° from front rotor",
+      "note": "Counterweights must be opposite"
+    },
+    "step_8": {
+      "action": "Install rear rotor housing"
+    },
+    "step_9": {
+      "action": "Install rear side housing with stationary gear"
+    },
+    "step_10": {
+      "action": "Install and torque tension bolts",
+      "torque": "25 ft-lb in star pattern from center",
+      "note": "Multiple passes, work outward"
+    },
+    "step_11": {
+      "action": "Verify free rotation",
+      "note": "Engine should rotate smoothly by hand"
+    },
+    "step_12": {
+      "action": "Install front cover and pulley"
+    }
+  },
+
+  "tension_bolt_sequence": {
+    "pattern": "Star pattern from center outward",
+    "passes": "At least 3 passes to final torque",
+    "torque": {
+      "pass_1": "10 ft-lb",
+      "pass_2": "18 ft-lb",
+      "final": "25 ft-lb (23-26 ft-lb range)"
+    },
+    "bolt_count": 19,
+    "warning": "Uneven torque causes seal failure"
+  },
+
+  "break_in_procedure": {
+    "first_start": {
+      "action": "Prime oil system before first start",
+      "run": "Idle for 3-5 minutes, check for leaks",
+      "rpms": "Vary between 2000-4000 RPM for 20 minutes"
+    },
+    "first_50_miles": {
+      "oil": "Use conventional oil (not synthetic)",
+      "rpms": "Vary RPM constantly, no sustained speeds",
+      "load": "Light to moderate throttle only"
+    },
+    "first_500_miles": {
+      "driving": "Continue varying RPM and load",
+      "avoid": "No full throttle, no high boost if turbo"
+    },
+    "after_500_miles": {
+      "action": "Change oil to synthetic",
+      "compression_test": "Verify proper seal seating",
+      "driving": "Normal operation can begin"
+    }
+  },
+
+  "common_rebuild_mistakes": {
+    "mistakes": [
+      {
+        "mistake": "Contamination during assembly",
+        "result": "Rapid seal failure",
+        "prevention": "Spotless clean room conditions"
+      },
+      {
+        "mistake": "Incorrect apex seal installation",
+        "result": "Seal damage, immediate failure",
+        "prevention": "Use proper installer tool"
+      },
+      {
+        "mistake": "Uneven tension bolt torque",
+        "result": "Housing distortion, seal failure",
+        "prevention": "Follow sequence, use calibrated wrench"
+      },
+      {
+        "mistake": "Forgetting coolant seals",
+        "result": "Coolant in combustion chamber",
+        "prevention": "Complete gasket kit, checklist"
+      },
+      {
+        "mistake": "Wrong rotor orientation",
+        "result": "Counterweight imbalance, vibration",
+        "prevention": "Mark rotors before disassembly, verify 180°"
+      },
+      {
+        "mistake": "Synthetic oil on break-in",
+        "result": "Seals don't seat properly",
+        "prevention": "Conventional oil for first 500 miles"
+      }
+    ]
+  },
+
+  "rebuild_specialists": {
+    "usa": [
+      {"name": "Atkins Rotary", "location": "Ohio", "specialty": "All levels"},
+      {"name": "Pineapple Racing", "location": "Maryland", "specialty": "Race engines"},
+      {"name": "Rotary Performance", "location": "Florida", "specialty": "Street/track"},
+      {"name": "Defined Autoworks", "location": "Washington", "specialty": "Full builds"},
+      {"name": "Race Rotary Development", "location": "California", "specialty": "Pro race"}
+    ],
+    "international": [
+      {"name": "PAC Performance", "location": "Australia", "specialty": "World record builds"},
+      {"name": "RE Amemiya", "location": "Japan", "specialty": "Iconic tuner"},
+      {"name": "Rotary Works", "location": "Japan", "specialty": "OEM+ quality"}
+    ]
+  },
+
+  "costs_summary": {
+    "diy_parts_only": "$1,500-2,500",
+    "professional_basic": "$2,500-4,000",
+    "professional_street_port": "$4,000-6,000",
+    "professional_bridge_port": "$6,000-8,000",
+    "professional_race": "$10,000+"
+  }
+}

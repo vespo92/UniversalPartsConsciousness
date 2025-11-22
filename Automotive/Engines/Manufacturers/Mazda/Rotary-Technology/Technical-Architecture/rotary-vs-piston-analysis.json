@@ -1,0 +1,205 @@
+{
+  "document_type": "Rotary vs Piston Engine Technical Analysis",
+  "purpose": "Comprehensive comparison of Wankel rotary and reciprocating piston engines",
+  "version": "1.0.0",
+  "last_updated": "2024-11-22",
+
+  "fundamental_operating_principles": {
+    "piston_engine": {
+      "motion": "Reciprocating (linear back-and-forth)",
+      "conversion": "Connecting rod converts linear to rotational via crankshaft",
+      "combustion": "Fixed chamber in cylinder head",
+      "valvetrain": "Camshaft-operated poppet valves",
+      "power_cycles": "4-stroke: intake, compression, combustion, exhaust"
+    },
+    "rotary_engine": {
+      "motion": "Continuous rotation (epitrochoidal)",
+      "conversion": "Direct - rotor orbits eccentric shaft",
+      "combustion": "Moving chamber travels with rotor",
+      "valvetrain": "NONE - ports exposed by rotor position",
+      "power_cycles": "Same 4-stroke cycle, but 3 chambers operating simultaneously"
+    }
+  },
+
+  "detailed_comparison": {
+    "power_density": {
+      "rotary_advantage": true,
+      "comparison": {
+        "13b_rew": {"displacement": "1.3L", "power": "280 HP", "hp_per_liter": 215},
+        "2jz_gte": {"displacement": "3.0L", "power": "280 HP", "hp_per_liter": 93},
+        "ratio": "Rotary produces 2.3x more power per liter"
+      },
+      "reason": "Three power pulses per rotor revolution vs one per two revolutions (4-cyl)"
+    },
+    "weight": {
+      "rotary_advantage": true,
+      "comparison": {
+        "13b_rew_complete": {"weight_kg": 136, "power": "280 HP", "kg_per_hp": 0.49},
+        "rb26dett_complete": {"weight_kg": 250, "power": "280 HP", "kg_per_hp": 0.89},
+        "ratio": "Rotary is 45% lighter for equivalent power"
+      },
+      "reason": "Far fewer parts, no reciprocating mass, compact design"
+    },
+    "physical_size": {
+      "rotary_advantage": true,
+      "comparison": {
+        "13b": {"length_mm": 560, "width_mm": 510, "height_mm": 560},
+        "sr20det": {"length_mm": 650, "width_mm": 600, "height_mm": 700},
+        "note": "Rotary fits in spaces piston engines cannot"
+      },
+      "reason": "No reciprocating motion requires no tall deck height"
+    },
+    "smoothness": {
+      "rotary_advantage": true,
+      "details": {
+        "vibration_source_piston": "Pistons reversing direction creates primary/secondary imbalance",
+        "vibration_source_rotary": "Only eccentric mass - minimal and easily balanced",
+        "result": "Rotary idles smoother than most piston engines"
+      },
+      "reason": "No reciprocating mass means no reciprocating vibration"
+    },
+    "high_rpm_capability": {
+      "rotary_advantage": true,
+      "comparison": {
+        "renesis_redline": "9000 RPM",
+        "s2000_redline": "9000 RPM",
+        "note": "Rotary achieves this with no valve float concerns"
+      },
+      "reason": "No valves to float, no pistons decelerating at TDC/BDC"
+    },
+    "parts_count": {
+      "rotary_advantage": true,
+      "comparison": {
+        "13b_moving_parts": "~50",
+        "inline_4_moving_parts": "~250+",
+        "v8_moving_parts": "~400+"
+      },
+      "reason": "No camshaft, valves, lifters, timing components"
+    },
+    "fuel_economy": {
+      "rotary_advantage": false,
+      "comparison": {
+        "fd_rx7_mpg": "15-18 combined",
+        "comparable_sports_car_mpg": "22-25 combined"
+      },
+      "reason": "Long combustion chamber, high surface-to-volume ratio, apex seal leakage"
+    },
+    "emissions": {
+      "rotary_advantage": false,
+      "issues": [
+        "Higher unburned hydrocarbons (HC)",
+        "Port overlap causes charge contamination",
+        "Apex seal gaps allow unburned fuel passage"
+      ],
+      "reason": "Combustion chamber geometry and sealing inherently produce more HCs"
+    },
+    "thermal_efficiency": {
+      "rotary_advantage": false,
+      "comparison": {
+        "typical_rotary": "~30%",
+        "typical_modern_piston": "~35-40%"
+      },
+      "reason": "Heat loss through larger chamber surface area"
+    },
+    "low_speed_torque": {
+      "rotary_advantage": false,
+      "characteristic": "Rotary power band favors high RPM",
+      "solution": "Forced induction compensates effectively"
+    },
+    "maintenance_requirements": {
+      "rotary_advantage": "depends on perspective",
+      "rotary_specific": [
+        "More frequent oil changes (3000 miles)",
+        "Oil consumption is normal (must top up)",
+        "Compression tests required periodically",
+        "Apex seal replacement is eventual necessity"
+      ],
+      "piston_specific": [
+        "Timing belt/chain service",
+        "Valve adjustment (some engines)",
+        "More components that can fail individually"
+      ]
+    },
+    "rebuild_complexity": {
+      "rotary_advantage": "mixed",
+      "rotary_rebuild": {
+        "parts_count": "Lower",
+        "tolerances": "Very tight",
+        "expertise_required": "Specialized knowledge essential",
+        "cost": "Similar to piston rebuild"
+      },
+      "piston_rebuild": {
+        "parts_count": "Higher",
+        "tolerances": "Well understood",
+        "expertise_required": "More mechanics available",
+        "cost": "Varies widely"
+      }
+    }
+  },
+
+  "ideal_applications": {
+    "rotary_excels": [
+      "Sports cars (power-to-weight priority)",
+      "Racing (high RPM, smooth power)",
+      "Compact packaging requirements",
+      "Generator/range extender duty (constant RPM)",
+      "Applications where character matters over efficiency"
+    ],
+    "piston_excels": [
+      "Economy vehicles (fuel efficiency priority)",
+      "Heavy-duty/towing (low-end torque)",
+      "Applications requiring extreme longevity",
+      "Cold climate operation",
+      "Situations requiring wide service network"
+    ]
+  },
+
+  "engineering_compromises": {
+    "rotary_accepts": [
+      "Higher fuel consumption",
+      "More maintenance attention",
+      "Specialized service requirements",
+      "Higher emissions (mitigated over time)"
+    ],
+    "rotary_gains": [
+      "Incredible power density",
+      "Minimal weight",
+      "Extreme compactness",
+      "Smooth operation",
+      "High RPM capability",
+      "Unique character"
+    ],
+    "summary": "Rotary trades efficiency for power density and character"
+  },
+
+  "misconceptions_addressed": {
+    "rotaries_are_unreliable": {
+      "reality": "Different maintenance, not inherently unreliable",
+      "context": "Owner neglect causes most failures"
+    },
+    "rotaries_always_burn_oil": {
+      "reality": "Yes - by design. This lubricates apex seals. It's not a defect."
+    },
+    "rotaries_cant_make_torque": {
+      "reality": "Turbo rotaries make excellent torque - just at higher RPM",
+      "example": "13B-REW makes 231 lb-ft - respectable for 1.3L"
+    },
+    "rotaries_are_outdated": {
+      "reality": "8C in MX-30 shows continued development",
+      "context": "Rotary advantages still relevant in specific applications"
+    }
+  },
+
+  "the_ultimate_question": {
+    "question": "Why would anyone choose a rotary over a piston engine?",
+    "answer": "Because some things cannot be measured on a spreadsheet",
+    "factors_beyond_specs": [
+      "The sound at 8000 RPM",
+      "The surgical smoothness",
+      "The feeling of something different",
+      "The connection to a unique engineering legacy",
+      "The membership in a passionate community",
+      "The satisfaction of understanding something others don't"
+    ]
+  }
+}
