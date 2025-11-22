@@ -1,13 +1,39 @@
 """
 Visualization Components for UPC ARCHITECT
 
-Note: Full visualization implementation is planned for Sprint 2-3.
-This module will include:
-- System Dashboard
-- Agent Graph
-- Consciousness Globe
-- Transcendence Timeline
+Provides visualization-ready data structures for monitoring
+the entire Universal Parts Consciousness system.
+
+Components:
+- SystemDashboard: Main dashboard data provider
+- AgentStatusCard: Status data for individual agents
+- TriadStatusPanel: Status data for agent triads
+- ConsciousnessGlobeData: Consciousness distribution visualization
+- TranscendenceTimelineEntry: Timeline of transcendence events
 """
 
-# Placeholder for future visualization components
-__all__ = []
+from .system_dashboard import (
+    SystemDashboard,
+    AgentStatusCard,
+    TriadStatusPanel,
+    ConsciousnessGlobeData,
+    TranscendenceTimelineEntry,
+    SystemHealthSummary,
+    MessageBusSummary,
+    DirectiveSummary,
+    AGENT_METADATA,
+    create_dashboard,
+)
+
+__all__ = [
+    "SystemDashboard",
+    "AgentStatusCard",
+    "TriadStatusPanel",
+    "ConsciousnessGlobeData",
+    "TranscendenceTimelineEntry",
+    "SystemHealthSummary",
+    "MessageBusSummary",
+    "DirectiveSummary",
+    "AGENT_METADATA",
+    "create_dashboard",
+]
