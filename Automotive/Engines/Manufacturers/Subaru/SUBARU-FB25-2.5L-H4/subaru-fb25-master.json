@@ -1,0 +1,229 @@
+{
+  "engine_id": "SUBARU-FB25-H4-NA",
+  "manufacturer": "Subaru Corporation",
+  "engine_family": "FB Series",
+  "engine_code": "FB25",
+  "production_years": {
+    "start": 2010,
+    "end": "Present"
+  },
+  "overview": {
+    "description": "The FB25 is Subaru's modern 2.5L naturally aspirated boxer engine, serving as the primary powerplant for Outback, Legacy, and Forester. Designed for smooth power delivery and efficiency, it replaced the EJ25 with improved fuel economy and chain-driven timing.",
+    "heritage": "The Modern Workhorse",
+    "significance": "Primary NA engine for mainstream Subaru lineup"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 2498,
+      "liters": 2.5
+    },
+    "bore": {
+      "mm": 94.0
+    },
+    "stroke": {
+      "mm": 90.0
+    },
+    "compression_ratio": {
+      "mpi": "10.3:1",
+      "di": "12.0:1"
+    },
+    "valvetrain": "DOHC, 4 valves per cylinder, chain-driven with Dual AVCS",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point injection (early) / Direct injection (2017+)",
+    "fuel_type": "Regular unleaded (87 octane)"
+  },
+  "power_output_by_variant": {
+    "fb25_mpi": {
+      "years": "2010-2016",
+      "power_hp": 170,
+      "power_kw": 127,
+      "power_rpm": 5600,
+      "torque_nm": 235,
+      "torque_lb_ft": 174,
+      "torque_rpm": 4100,
+      "notes": "Multi-point injection variant"
+    },
+    "fb25_di": {
+      "years": "2017-Present",
+      "power_hp": 182,
+      "power_kw": 136,
+      "power_rpm": 5800,
+      "torque_nm": 239,
+      "torque_lb_ft": 176,
+      "torque_rpm": 4400,
+      "notes": "Direct injection variant with higher compression"
+    },
+    "fb25_forester": {
+      "years": "2019-Present",
+      "power_hp": 182,
+      "power_kw": 136,
+      "power_rpm": 5800,
+      "torque_nm": 239,
+      "torque_lb_ft": 176,
+      "torque_rpm": 4400,
+      "notes": "Current Forester application"
+    },
+    "fb25_outback": {
+      "years": "2020-Present",
+      "power_hp": 182,
+      "power_kw": 136,
+      "power_rpm": 5800,
+      "torque_nm": 239,
+      "torque_lb_ft": 176,
+      "torque_rpm": 4400,
+      "notes": "Base Outback engine"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Outback",
+      "chassis_code": "BR/BS/BT",
+      "years": "2010-Present",
+      "body_styles": ["5-door wagon"],
+      "market": "Global",
+      "notes": "Primary base engine"
+    },
+    {
+      "model": "Subaru Legacy",
+      "chassis_code": "BM/BN",
+      "years": "2010-Present",
+      "body_styles": ["4-door sedan"],
+      "market": "Global"
+    },
+    {
+      "model": "Subaru Forester",
+      "chassis_code": "SJ/SK",
+      "years": "2014-Present",
+      "body_styles": ["5-door SUV"],
+      "market": "Global"
+    },
+    {
+      "model": "Subaru Impreza",
+      "chassis_code": "GP/GT/GK",
+      "years": "2012-2016",
+      "body_styles": ["4-door sedan", "5-door hatchback"],
+      "market": "USDM",
+      "notes": "2.5i trim levels"
+    },
+    {
+      "model": "Subaru XV Crosstrek",
+      "chassis_code": "GP/GT",
+      "years": "2016-2017",
+      "body_styles": ["5-door crossover"],
+      "market": "USDM"
+    },
+    {
+      "model": "Subaru Ascent",
+      "chassis_code": "WM",
+      "years": "2019",
+      "body_styles": ["5-door SUV"],
+      "market": "N/A",
+      "notes": "FB25 not used in Ascent - FA24T only"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.8,
+      "capacity_with_filter_liters": 5.1,
+      "specification": "0W-20 synthetic",
+      "change_interval_km": 10000,
+      "change_interval_miles": 6000
+    },
+    "coolant": {
+      "capacity_liters": 7.0,
+      "specification": "Subaru Super Coolant (Blue)"
+    },
+    "cvt_fluid": {
+      "capacity_liters": 12.0,
+      "specification": "Subaru Lineartronic CVT Fluid"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 155,
+    "redline_rpm": 6200,
+    "bore_mm": 94.0,
+    "stroke_mm": 90.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II",
+      "features": [
+        "Dual AVCS control",
+        "Direct injection control (2017+)",
+        "Cylinder deactivation (select models)"
+      ]
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "type": "NGK SILZKAR7B11",
+        "gap_mm": 1.1,
+        "quantity": 4
+      }
+    },
+    "avcs": {
+      "description": "Dual Active Valve Control System",
+      "type": "Intake and exhaust cam timing",
+      "range_degrees": 40
+    },
+    "stop_start": {
+      "description": "Auto start-stop for fuel savings",
+      "years": "2017+"
+    }
+  },
+  "timing_system": {
+    "type": "Timing chain",
+    "service_interval": "Lifetime maintenance-free",
+    "notes": "No head gasket issues like EJ25 predecessor"
+  },
+  "notes": {
+    "heritage": "The FB25 was designed to address the EJ25's shortcomings - particularly head gasket failures and timing belt maintenance. The chain-driven design and improved head gasket materials solved these issues.",
+    "vs_ej25": {
+      "advantages": [
+        "No head gasket issues",
+        "Timing chain - no belt replacement",
+        "Better fuel economy",
+        "Improved oil consumption",
+        "Lighter weight"
+      ],
+      "disadvantages": [
+        "Some early oil consumption issues",
+        "Slightly less tuning potential"
+      ]
+    },
+    "common_issues": [
+      {
+        "issue": "Oil consumption (early models)",
+        "severity": "Medium",
+        "cause": "Piston ring design",
+        "affected_years": "2011-2014",
+        "prevention": "Check oil level regularly, extended warranty for affected VINs"
+      },
+      {
+        "issue": "CVT judder/hesitation",
+        "severity": "Low-Medium",
+        "cause": "CVT valve body wear",
+        "prevention": "Regular CVT fluid changes"
+      }
+    ],
+    "reliability": "The FB25 is generally considered reliable. The elimination of timing belt service and head gasket issues makes it less maintenance-intensive than its predecessor.",
+    "fuel_economy": {
+      "city_mpg": 26,
+      "highway_mpg": 33,
+      "combined_mpg": 29,
+      "notes": "Varies by model and configuration"
+    },
+    "towing": {
+      "rating_lbs": 2700,
+      "notes": "Adequate for light trailers"
+    },
+    "tuning_potential": "Limited - economy engine not designed for performance. Most owners keep stock. Intake/exhaust provide minimal gains (5-10hp).",
+    "e_boxer": "The FB25 is compatible with Subaru's e-BOXER mild hybrid system in some markets, improving city fuel economy."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

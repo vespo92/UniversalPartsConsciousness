@@ -1,0 +1,268 @@
+{
+  "engine_id": "SUBARU-EA82-H4-NA-T",
+  "manufacturer": "Subaru (Fuji Heavy Industries)",
+  "engine_family": "EA Series",
+  "engine_code": "EA82",
+  "production_years": {
+    "start": 1984,
+    "end": 1994
+  },
+  "overview": {
+    "description": "The EA82 is Subaru's first SOHC boxer engine, featuring overhead camshafts and a more modern design than the pushrod EA81. Available in naturally aspirated and turbocharged variants, it powered the XT sports coupe and represented Subaru's move toward more sophisticated powertrains.",
+    "heritage": "First Turbocharged Subaru Boxer",
+    "significance": "Introduced SOHC design and turbocharging to Subaru lineup"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1781,
+      "liters": 1.8
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 67.0
+    },
+    "compression_ratio": {
+      "na": "9.5:1",
+      "turbo": "7.7:1"
+    },
+    "valvetrain": "SOHC, 2 valves per cylinder, belt-driven",
+    "aspiration": "Naturally Aspirated or Turbocharged",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Regular unleaded (NA), Premium recommended (Turbo)"
+  },
+  "power_output_by_variant": {
+    "ea82_na_carb": {
+      "years": "1984-1986",
+      "power_hp": 84,
+      "power_kw": 63,
+      "power_rpm": 5200,
+      "torque_nm": 145,
+      "torque_lb_ft": 107,
+      "torque_rpm": 2800,
+      "notes": "Carbureted base model"
+    },
+    "ea82_na_mpfi": {
+      "years": "1987-1994",
+      "power_hp": 97,
+      "power_kw": 72,
+      "power_rpm": 5200,
+      "torque_nm": 152,
+      "torque_lb_ft": 112,
+      "torque_rpm": 3200,
+      "notes": "Multi-point fuel injected"
+    },
+    "ea82t_turbo": {
+      "years": "1985-1991",
+      "power_hp": 111,
+      "power_kw": 83,
+      "power_rpm": 5200,
+      "torque_nm": 193,
+      "torque_lb_ft": 142,
+      "torque_rpm": 2800,
+      "boost_psi": 7.0,
+      "notes": "Single turbo with intercooler"
+    },
+    "ea82t_xt6_turbo": {
+      "years": "1988-1991",
+      "power_hp": 145,
+      "power_kw": 108,
+      "power_rpm": 5600,
+      "torque_nm": 230,
+      "torque_lb_ft": 170,
+      "torque_rpm": 2800,
+      "boost_psi": 9.5,
+      "notes": "Higher boost XT6 variant"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru XT",
+      "chassis_code": "AX",
+      "years": "1985-1991",
+      "body_styles": ["2-door coupe"],
+      "market": "Global",
+      "notes": "Wedge-shaped sports coupe with digital dash and air suspension"
+    },
+    {
+      "model": "Subaru XT Turbo",
+      "chassis_code": "AX",
+      "years": "1985-1991",
+      "body_styles": ["2-door coupe"],
+      "market": "Global",
+      "notes": "Turbocharged variant with all-wheel drive"
+    },
+    {
+      "model": "Subaru Leone/GL",
+      "chassis_code": "AG/AJ",
+      "years": "1985-1989",
+      "body_styles": ["4-door sedan", "station wagon"],
+      "market": "Global"
+    },
+    {
+      "model": "Subaru RX",
+      "chassis_code": "AJ",
+      "years": "1986-1989",
+      "body_styles": ["4-door sedan", "station wagon"],
+      "market": "USDM",
+      "notes": "Sport model with turbo option"
+    },
+    {
+      "model": "Subaru Loyale",
+      "chassis_code": "AJ/AF",
+      "years": "1990-1994",
+      "body_styles": ["4-door sedan", "station wagon"],
+      "market": "USDM",
+      "notes": "Budget model continuation"
+    }
+  ],
+  "turbo_system": {
+    "turbocharger": {
+      "manufacturer": "IHI",
+      "model": "VF12",
+      "specifications": {
+        "compressor_wheel_mm": 42,
+        "turbine_wheel_mm": 47,
+        "bearing_type": "Journal bearing"
+      }
+    },
+    "intercooler": {
+      "type": "Air-to-air",
+      "location": "Top-mount",
+      "core_volume_liters": 2.8
+    },
+    "wastegate": {
+      "type": "Internal",
+      "boost_control": "Mechanical/Vacuum"
+    },
+    "boost_pressure": {
+      "stock_psi": 7.0,
+      "max_safe_psi": 12.0
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.0,
+      "capacity_with_filter_liters": 4.5,
+      "specification": "SAE 10W-30 (NA), 10W-40 (Turbo)",
+      "change_interval_km": 5000
+    },
+    "coolant": {
+      "capacity_liters": 7.2,
+      "specification": "Subaru Super Coolant or equivalent"
+    },
+    "gearbox_oil": {
+      "manual_5spd_liters": 2.4,
+      "auto_4spd_liters": 8.5,
+      "specification_manual": "SAE 75W-90 GL-4",
+      "specification_auto": "Dexron II/III"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 145,
+    "redline_rpm": 6500,
+    "max_rpm": 7000,
+    "bore_mm": 92.0,
+    "stroke_mm": 67.0,
+    "rod_length_mm": 130.5,
+    "main_journal_mm": 52.0,
+    "rod_journal_mm": 45.0
+  },
+  "electronic_systems": {
+    "ignition": {
+      "type": "Electronic ignition with knock sensor (turbo)",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "type_na": "NGK BPR5ES-11",
+        "type_turbo": "NGK BPR6ES-11",
+        "gap_mm": 0.8,
+        "quantity": 4
+      }
+    },
+    "ecu": {
+      "manufacturer": "Hitachi",
+      "type": "Early OBD (pre-OBD-II)",
+      "features": ["Knock sensing (turbo)", "Boost control", "Fuel enrichment"]
+    },
+    "fuel_system": {
+      "injection": "Multi-point fuel injection",
+      "fuel_pump": "Electric in-tank",
+      "fuel_pressure_bar": 2.5,
+      "injectors": "Low-impedance, 240cc"
+    },
+    "boost_control": {
+      "type": "ECU-controlled wastegate",
+      "overboost_protection": "Yes"
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_km": 96000,
+    "replacement_interval_miles": 60000,
+    "interference_engine": "Yes (turbo), No (NA)",
+    "components_to_replace": [
+      "Timing belt",
+      "Idler pulleys",
+      "Tensioner",
+      "Water pump (recommended)",
+      "Cam seals",
+      "Crank seal"
+    ]
+  },
+  "notes": {
+    "heritage": "The EA82 represented a significant modernization of Subaru's boxer engine. The switch to SOHC and the introduction of turbocharging showed Subaru's ambition to compete with more powerful sports cars.",
+    "xt_coupe": "The Subaru XT was ahead of its time with its wedge shape, digital dashboard, height-adjustable air suspension, and turbocharged AWD. It's now a sought-after collectible.",
+    "common_issues": [
+      {
+        "issue": "Head gasket failure",
+        "severity": "High",
+        "cause": "Early composite head gaskets prone to failure",
+        "prevention": "Replace with MLS (multi-layer steel) gaskets, use proper torque sequence"
+      },
+      {
+        "issue": "Timing belt failure",
+        "severity": "Critical",
+        "cause": "Normal wear, missed maintenance",
+        "prevention": "Replace every 60,000 miles with all components"
+      },
+      {
+        "issue": "Turbo oil seal failure",
+        "severity": "Medium",
+        "cause": "Age, improper shutdown procedure",
+        "prevention": "Let turbo idle to cool before shutdown, use turbo timer"
+      },
+      {
+        "issue": "Boost control solenoid failure",
+        "severity": "Medium",
+        "cause": "Normal wear",
+        "prevention": "Monitor boost levels, replace solenoid preventatively"
+      }
+    ],
+    "turbo_care": {
+      "warm_up": "Allow 30 seconds of idle before driving",
+      "cool_down": "Idle 1-2 minutes before shutdown",
+      "oil": "Use quality synthetic 10W-40 for turbo models"
+    },
+    "modification_potential": {
+      "stage_1": {
+        "boost_psi": 10,
+        "power_hp": 130,
+        "mods": ["Boost controller", "Exhaust"]
+      },
+      "stage_2": {
+        "boost_psi": 12,
+        "power_hp": 150,
+        "mods": ["Larger intercooler", "Fuel system upgrades"]
+      },
+      "max_safe_stock_turbo": {
+        "boost_psi": 14,
+        "power_hp": 170,
+        "notes": "Internal modifications recommended beyond this"
+      }
+    }
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

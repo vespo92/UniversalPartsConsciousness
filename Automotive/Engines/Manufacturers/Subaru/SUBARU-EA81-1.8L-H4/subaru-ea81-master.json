@@ -1,0 +1,222 @@
+{
+  "engine_id": "SUBARU-EA81-H4-NA",
+  "manufacturer": "Subaru (Fuji Heavy Industries)",
+  "engine_family": "EA Series",
+  "engine_code": "EA81",
+  "production_years": {
+    "start": 1979,
+    "end": 1989
+  },
+  "overview": {
+    "description": "The EA81 is the final evolution of Subaru's first-generation OHV boxer engine family. Displacing 1.8 liters, it powered the third-generation Leone and became renowned for its durability and off-road capability. The EA81 is beloved by off-road enthusiasts for its simplicity and reliability.",
+    "heritage": "The Workhorse Boxer",
+    "significance": "Peak of OHV boxer development, legendary reliability"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 1781,
+      "liters": 1.8
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 67.0
+    },
+    "compression_ratio": "8.7:1",
+    "valvetrain": "OHV, 2 valves per cylinder, pushrod operated",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Carburetor or fuel injection",
+    "fuel_type": "Regular unleaded gasoline"
+  },
+  "power_output_by_variant": {
+    "ea81_carbureted_usa": {
+      "years": "1980-1984",
+      "power_hp": 73,
+      "power_kw": 54,
+      "power_rpm": 4800,
+      "torque_nm": 132,
+      "torque_lb_ft": 97,
+      "torque_rpm": 2400
+    },
+    "ea81_spfi": {
+      "years": "1984-1989",
+      "power_hp": 84,
+      "power_kw": 63,
+      "power_rpm": 5200,
+      "torque_nm": 140,
+      "torque_lb_ft": 103,
+      "torque_rpm": 2800,
+      "notes": "Single-point fuel injection"
+    },
+    "ea81_mpfi": {
+      "years": "1987-1989",
+      "power_hp": 90,
+      "power_kw": 67,
+      "power_rpm": 5200,
+      "torque_nm": 145,
+      "torque_lb_ft": 107,
+      "torque_rpm": 3200,
+      "notes": "Multi-point fuel injection"
+    },
+    "ea81_jdm": {
+      "years": "1979-1989",
+      "power_hp": 100,
+      "power_kw": 75,
+      "power_rpm": 5600,
+      "torque_nm": 152,
+      "torque_lb_ft": 112,
+      "torque_rpm": 3600,
+      "notes": "JDM spec without emissions restrictions"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Leone/DL/GL",
+      "chassis_code": "AA",
+      "years": "1979-1984",
+      "body_styles": ["4-door sedan", "2-door hardtop", "station wagon"],
+      "market": "Global",
+      "drivetrain": "FWD or Part-time 4WD"
+    },
+    {
+      "model": "Subaru Leone/GL/DL",
+      "chassis_code": "AG/AJ",
+      "years": "1984-1989",
+      "body_styles": ["4-door sedan", "station wagon"],
+      "market": "Global",
+      "drivetrain": "FWD or Full-time 4WD"
+    },
+    {
+      "model": "Subaru BRAT",
+      "chassis_code": "AA/AL",
+      "years": "1981-1987",
+      "body_styles": ["Coupe utility"],
+      "market": "USDM",
+      "notes": "Final years of BRAT production"
+    },
+    {
+      "model": "Subaru GL-10/RX",
+      "chassis_code": "AJ",
+      "years": "1985-1989",
+      "body_styles": ["4-door sedan", "station wagon"],
+      "market": "USDM",
+      "notes": "Upmarket trim with MPFI"
+    },
+    {
+      "model": "Subaru Loyale",
+      "chassis_code": "AJ",
+      "years": "1990-1994",
+      "body_styles": ["4-door sedan", "station wagon"],
+      "market": "USDM",
+      "notes": "Continued EA81 production as budget model alongside EA82"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 3.7,
+      "capacity_with_filter_liters": 4.2,
+      "specification": "SAE 10W-30, 10W-40",
+      "change_interval_km": 5000
+    },
+    "coolant": {
+      "capacity_liters": 6.8,
+      "specification": "Subaru Super Coolant or equivalent ethylene glycol"
+    },
+    "gearbox_oil": {
+      "manual_4spd_liters": 1.6,
+      "manual_5spd_liters": 2.1,
+      "dual_range_liters": 2.5,
+      "specification": "SAE 75W-90 GL-4"
+    },
+    "transfer_case": {
+      "capacity_liters": 1.1,
+      "specification": "ATF Dexron II"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 132,
+    "redline_rpm": 6000,
+    "max_rpm": 6500,
+    "bore_mm": 92.0,
+    "stroke_mm": 67.0,
+    "rod_length_mm": 130.5,
+    "deck_height_mm": 186.5,
+    "main_journal_mm": 52.0,
+    "rod_journal_mm": 45.0
+  },
+  "electronic_systems": {
+    "ignition": {
+      "type": "Electronic ignition (breakerless)",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "type": "NGK BPR5ES-11",
+        "gap_mm": 1.0,
+        "quantity": 4
+      },
+      "timing": {
+        "initial_btdc": 8,
+        "vacuum_advance": "Yes",
+        "centrifugal_advance": "Yes"
+      }
+    },
+    "fuel_system": {
+      "carburetor": "Hitachi DCH340 2-barrel (1980-1984)",
+      "spfi": "Hitachi single-point TBI (1984-1987)",
+      "mpfi": "Hitachi multi-point injection (1987-1989)",
+      "fuel_pump_carb": "Mechanical diaphragm",
+      "fuel_pump_efi": "Electric in-tank"
+    },
+    "emissions": {
+      "usa": ["EGR", "AIR injection", "Three-way catalytic converter"],
+      "california": ["Enhanced evaporative system"]
+    }
+  },
+  "notes": {
+    "heritage": "The EA81 represents the pinnacle of Subaru's pushrod boxer development. Its simple design and robust construction made it ideal for off-road and harsh-duty applications. Many EA81-powered vehicles have exceeded 300,000 miles with basic maintenance.",
+    "off_road_legend": "The EA81 is revered in the off-road community. Its low center of gravity, simple mechanicals, and excellent parts availability make it a favorite for trail builds and rural work vehicles.",
+    "dual_range_4wd": "The dual-range 4WD system offered low-range gearing, making these vehicles surprisingly capable off-road despite modest power.",
+    "common_issues": [
+      {
+        "issue": "Oil leaks at various seals",
+        "severity": "Low-Medium",
+        "cause": "Age-related seal degradation",
+        "prevention": "Regular seal replacement during services"
+      },
+      {
+        "issue": "Valve adjustment needed",
+        "severity": "Low",
+        "cause": "Mechanical valve train requires periodic adjustment",
+        "prevention": "Adjust valves every 24,000 km"
+      },
+      {
+        "issue": "Carburetor altitude compensation",
+        "severity": "Low",
+        "cause": "Carbureted models run rich at altitude",
+        "prevention": "Re-jet for altitude or convert to Weber"
+      },
+      {
+        "issue": "Rust in cooling passages",
+        "severity": "Medium",
+        "cause": "Infrequent coolant changes",
+        "prevention": "Flush cooling system every 2 years"
+      }
+    ],
+    "modification_community": {
+      "popular_mods": [
+        "Weber 32/36 DGEV carburetor conversion",
+        "Electronic ignition upgrade (Pertronix)",
+        "2-inch lift kits",
+        "All-terrain tires (30-31 inch)",
+        "Locking differentials",
+        "Dual-range transfer case swaps"
+      ],
+      "engine_swaps": "EA81 engines are commonly swapped into earlier Subaru vehicles and non-Subaru applications due to their compact size and reliability."
+    },
+    "longevity": "Well-maintained EA81 engines routinely exceed 200,000 miles. The simple design with no timing belt (timing gears) and robust internals contributes to this longevity."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

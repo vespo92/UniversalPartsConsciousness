@@ -1,0 +1,216 @@
+{
+  "engine_id": "SUBARU-EJ253-H4-NA",
+  "manufacturer": "Subaru (Subaru Corporation)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ25 (EJ251/EJ252/EJ253)",
+  "production_years": {
+    "start": 1996,
+    "end": 2012
+  },
+  "overview": {
+    "description": "The EJ25 series (EJ251/EJ252/EJ253) are the 2.5-liter naturally aspirated boxer engines that became Subaru's primary powerplant in North America. While known for head gasket issues, these engines power millions of reliable Subaru vehicles when properly maintained.",
+    "heritage": "The Ubiquitous Subaru Engine",
+    "significance": "Most common Subaru engine in North America"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 2457,
+      "liters": 2.5
+    },
+    "bore": {
+      "mm": 99.5
+    },
+    "stroke": {
+      "mm": 79.0
+    },
+    "compression_ratio": "10.0:1",
+    "valvetrain": "SOHC, 4 valves per cylinder (most common)",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Regular unleaded (87 octane)"
+  },
+  "power_output_by_variant": {
+    "ej251": {
+      "years": "1996-1999",
+      "power_hp": 155,
+      "power_kw": 116,
+      "power_rpm": 5600,
+      "torque_nm": 220,
+      "torque_lb_ft": 162,
+      "torque_rpm": 4000,
+      "notes": "First 2.5L, single-port heads"
+    },
+    "ej252": {
+      "years": "1999-2005",
+      "power_hp": 165,
+      "power_kw": 123,
+      "power_rpm": 5600,
+      "torque_nm": 226,
+      "torque_lb_ft": 166,
+      "torque_rpm": 4000,
+      "notes": "Improved Phase II design"
+    },
+    "ej253": {
+      "years": "2006-2012",
+      "power_hp": 170,
+      "power_kw": 127,
+      "power_rpm": 6000,
+      "torque_nm": 229,
+      "torque_lb_ft": 170,
+      "torque_rpm": 4400,
+      "notes": "Final evolution with AVCS"
+    },
+    "ej253_outback": {
+      "years": "2010-2012",
+      "power_hp": 175,
+      "power_kw": 131,
+      "power_rpm": 6000,
+      "torque_nm": 235,
+      "torque_lb_ft": 174,
+      "torque_rpm": 4000,
+      "notes": "Outback with dual-AVCS"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Legacy",
+      "chassis_code": "BD/BG/BH/BE/BL/BP",
+      "years": "1996-2009",
+      "body_styles": ["4-door sedan", "5-door wagon"],
+      "market": "USDM"
+    },
+    {
+      "model": "Subaru Outback",
+      "chassis_code": "BG/BH/BP/BR",
+      "years": "1996-2014",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM"
+    },
+    {
+      "model": "Subaru Forester",
+      "chassis_code": "SF/SG/SH",
+      "years": "1998-2013",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM"
+    },
+    {
+      "model": "Subaru Impreza",
+      "chassis_code": "GD/GE/GH",
+      "years": "2004-2011",
+      "body_styles": ["4-door sedan", "5-door hatchback"],
+      "market": "USDM",
+      "notes": "2.5i trim levels"
+    },
+    {
+      "model": "Subaru Baja",
+      "chassis_code": "BT",
+      "years": "2003-2006",
+      "body_styles": ["4-door pickup"],
+      "market": "USDM"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.2,
+      "capacity_with_filter_liters": 4.7,
+      "specification": "5W-30 conventional or synthetic",
+      "change_interval_km": 6000
+    },
+    "coolant": {
+      "capacity_liters": 7.0,
+      "specification": "Subaru Super Coolant"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 165,
+    "redline_rpm": 6500,
+    "bore_mm": 99.5,
+    "stroke_mm": 79.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II"
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-3-2-4"
+    },
+    "avcs": {
+      "description": "Active Valve Control System",
+      "years": "2006+",
+      "type": "Intake cam only (EJ253), Dual AVCS (late Outback)"
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_miles": 105000,
+    "interference_engine": "Yes",
+    "critical": "Must replace with water pump"
+  },
+  "notes": {
+    "heritage": "The EJ25 NA series became synonymous with Subaru in America. Despite known issues, millions of these engines provide reliable transportation.",
+    "head_gasket_issue": {
+      "description": "The EJ25 is notorious for head gasket failure, particularly in 1996-2004 models",
+      "symptoms": [
+        "External coolant leak at head/block mating surface",
+        "Oil contamination in coolant (milky oil cap)",
+        "Overheating",
+        "Coolant loss without visible leak"
+      ],
+      "causes": [
+        "Composite (graphite) head gasket material prone to failure",
+        "Open-deck block design allows cylinder flex",
+        "Thermal cycling stress"
+      ],
+      "prevention": [
+        "Use Subaru Coolant Conditioner",
+        "Regular coolant changes",
+        "Fix immediately when symptoms appear"
+      ],
+      "repair_options": [
+        "OEM replacement (may fail again)",
+        "MLS (Multi-Layer Steel) gaskets with ARP head studs (preferred)",
+        "Six Star gaskets (improved composite)"
+      ],
+      "repair_cost_usd": "1500-2500"
+    },
+    "common_issues": [
+      {
+        "issue": "Head gasket failure",
+        "severity": "High",
+        "cause": "Design/materials",
+        "prevention": "Coolant conditioner, monitor for symptoms"
+      },
+      {
+        "issue": "Oil consumption",
+        "severity": "Medium",
+        "cause": "Worn valve seals, piston rings",
+        "prevention": "Regular oil checks, use quality oil"
+      },
+      {
+        "issue": "Timing belt tensioner failure",
+        "severity": "High",
+        "cause": "Age, wear",
+        "prevention": "Replace with genuine Subaru or Gates parts"
+      },
+      {
+        "issue": "PCV valve issues",
+        "severity": "Low",
+        "cause": "Normal wear",
+        "prevention": "Replace with timing belt service"
+      }
+    ],
+    "maintenance_tips": [
+      "Never use universal/green coolant - Subaru Super Coolant only",
+      "Add Subaru Coolant Conditioner at each coolant change",
+      "Check oil level frequently - some consumption is normal",
+      "Replace timing belt at 105k miles or 7 years",
+      "Fix head gasket issues immediately to prevent engine damage"
+    ],
+    "reliability_when_maintained": "When properly maintained with quality coolant and regular service, EJ25 engines can exceed 200,000 miles. Many head gasket failures occur due to neglected maintenance."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

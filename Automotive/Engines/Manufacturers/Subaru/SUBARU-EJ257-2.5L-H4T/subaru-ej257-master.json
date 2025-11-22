@@ -1,0 +1,392 @@
+{
+  "engine_id": "SUBARU-EJ257-H4T",
+  "manufacturer": "Subaru (Subaru Corporation)",
+  "engine_family": "EJ Series",
+  "engine_code": "EJ257",
+  "production_years": {
+    "start": 2004,
+    "end": 2021
+  },
+  "overview": {
+    "description": "The EJ257 is the 2.5-liter turbocharged boxer engine that powered the USDM (US Domestic Market) Subaru WRX STI. Known for its massive low-end torque, iconic rumble, and legendary tuning potential, the EJ257 became the heart of American Subaru performance culture.",
+    "heritage": "The American STI Heart",
+    "significance": "Defined USDM STI experience, massive aftermarket support"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 4-cylinder (H4/Boxer)",
+    "displacement": {
+      "cc": 2457,
+      "liters": 2.5
+    },
+    "bore": {
+      "mm": 99.5
+    },
+    "stroke": {
+      "mm": 79.0
+    },
+    "compression_ratio": "8.2:1",
+    "valvetrain": "DOHC, 4 valves per cylinder, belt-driven with AVCS",
+    "aspiration": "Turbocharged with top-mount intercooler",
+    "cooling_system": "Water-cooled with oil cooler",
+    "fuel_system": "Multi-point fuel injection",
+    "fuel_type": "Premium unleaded (91+ octane, 93 recommended)"
+  },
+  "power_output_by_variant": {
+    "ej257_gd": {
+      "years": "2004-2007",
+      "power_hp": 300,
+      "power_kw": 224,
+      "power_rpm": 6000,
+      "torque_nm": 407,
+      "torque_lb_ft": 300,
+      "torque_rpm": 4000,
+      "boost_psi": 14.7,
+      "turbo": "IHI VF39",
+      "chassis": "GD"
+    },
+    "ej257_gr_gv": {
+      "years": "2008-2014",
+      "power_hp": 305,
+      "power_kw": 227,
+      "power_rpm": 6000,
+      "torque_nm": 407,
+      "torque_lb_ft": 290,
+      "torque_rpm": 4000,
+      "boost_psi": 14.7,
+      "turbo": "IHI VF48",
+      "chassis": "GR/GV",
+      "notes": "Hatchback and sedan variants"
+    },
+    "ej257_va": {
+      "years": "2015-2021",
+      "power_hp": 310,
+      "power_kw": 231,
+      "power_rpm": 6000,
+      "torque_nm": 393,
+      "torque_lb_ft": 290,
+      "torque_rpm": 4000,
+      "boost_psi": 16.2,
+      "turbo": "IHI VF48 (early) / Twin-scroll (late)",
+      "chassis": "VA",
+      "notes": "Final evolution with FA20DIT technology influences"
+    },
+    "ej257_s209": {
+      "years": "2019",
+      "power_hp": 341,
+      "power_kw": 254,
+      "power_rpm": 6400,
+      "torque_nm": 461,
+      "torque_lb_ft": 330,
+      "torque_rpm": 3600,
+      "boost_psi": 18.0,
+      "turbo": "HKS",
+      "notes": "First S-line STI for USA, limited to 209 units, hand-built engine"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Impreza WRX STI",
+      "chassis_code": "GDB (USDM)",
+      "years": "2004-2007",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM/AUDM",
+      "notes": "Blob-eye, hawk-eye eras"
+    },
+    {
+      "model": "Subaru Impreza WRX STI",
+      "chassis_code": "GRB/GVB (USDM)",
+      "years": "2008-2014",
+      "body_styles": ["5-door hatchback", "4-door sedan"],
+      "market": "USDM/AUDM/EDM"
+    },
+    {
+      "model": "Subaru WRX STI",
+      "chassis_code": "VAB (USDM)",
+      "years": "2015-2021",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM/AUDM/EDM",
+      "notes": "Final EJ-powered STI"
+    },
+    {
+      "model": "Subaru WRX STI S209",
+      "chassis_code": "VAB",
+      "years": "2019",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM only",
+      "notes": "209 units, $64,880 MSRP"
+    },
+    {
+      "model": "Subaru WRX STI Type RA",
+      "chassis_code": "VAB",
+      "years": "2018",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM",
+      "notes": "500 units, carbon roof, +5hp"
+    }
+  ],
+  "turbo_system": {
+    "stock_turbos": {
+      "vf39": {
+        "years": "2004-2007",
+        "type": "Single-scroll, ball bearing",
+        "specs": {
+          "compressor_inducer_mm": 47,
+          "turbine_exducer_mm": 56
+        },
+        "power_limit_hp": 400
+      },
+      "vf48": {
+        "years": "2008-2019",
+        "type": "Twin-scroll, ball bearing",
+        "specs": {
+          "compressor_inducer_mm": 48,
+          "turbine_exducer_mm": 55
+        },
+        "power_limit_hp": 420,
+        "notes": "Better spool than VF39"
+      }
+    },
+    "popular_upgrades": {
+      "fp_blue": {
+        "power_range_hp": "400-450",
+        "type": "Journal bearing, single-scroll",
+        "notes": "Budget-friendly upgrade"
+      },
+      "fp_green": {
+        "power_range_hp": "450-550",
+        "type": "Ball bearing, single-scroll",
+        "notes": "Excellent mid-range turbo"
+      },
+      "blouch_dominator": {
+        "power_range_hp": "500-700",
+        "type": "Ball bearing, various sizes",
+        "notes": "Popular for big power builds"
+      },
+      "garrett_gtx3076r": {
+        "power_range_hp": "550-700",
+        "type": "Ball bearing, twin-scroll",
+        "notes": "Excellent response and power"
+      },
+      "precision_6266": {
+        "power_range_hp": "600-850",
+        "type": "Ball bearing, billet",
+        "notes": "High power, larger frame"
+      },
+      "borg_warner_efr_8374": {
+        "power_range_hp": "700-1000",
+        "type": "Ball bearing, Gamma-Ti",
+        "notes": "Top-tier performance turbo"
+      }
+    },
+    "intercooler": {
+      "stock": {
+        "type": "Air-to-air, top-mount",
+        "core_volume_liters": 4.5,
+        "notes": "Heat soaks easily in traffic"
+      },
+      "upgrade_options": [
+        "Process West verticooler (top-mount)",
+        "Front-mount intercooler conversion",
+        "AMS front-mount kit",
+        "STM/ETS front-mount"
+      ]
+    }
+  },
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 4.4,
+      "capacity_with_filter_liters": 4.8,
+      "specification": "5W-30 or 5W-40 full synthetic",
+      "recommended_brands": ["Motul 300V", "Rotella T6", "Pennzoil Platinum", "Red Line"],
+      "change_interval_km": 5000,
+      "change_interval_miles": 3000,
+      "notes": "Frequent oil changes critical for turbo longevity"
+    },
+    "coolant": {
+      "capacity_liters": 8.0,
+      "specification": "Subaru Super Coolant or equivalent"
+    },
+    "gearbox_oil": {
+      "capacity_liters": 3.7,
+      "specification": "Subaru Extra-S 75W-90 or Motul Gear 300"
+    },
+    "front_diff": {
+      "capacity_liters": 1.1,
+      "specification": "75W-90 GL-5"
+    },
+    "rear_diff": {
+      "capacity_liters": 0.8,
+      "specification": "75W-90 LSD oil"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 175,
+    "redline_rpm": 6700,
+    "max_rpm": 7200,
+    "bore_mm": 99.5,
+    "stroke_mm": 79.0,
+    "rod_length_mm": 130.5,
+    "deck_height_mm": 201.0,
+    "main_journal_mm": 52.0,
+    "rod_journal_mm": 48.0,
+    "piston_pin_mm": 22.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II compliant",
+      "oem_software": "ROM-tunable via Cobb Accessport, EcuTek, OpenSource",
+      "features": [
+        "AVCS control",
+        "Boost control",
+        "Knock sensing (4 sensors)",
+        "Closed-loop fueling (wideband O2)",
+        "DCCD control (2008+)"
+      ]
+    },
+    "popular_tuning_platforms": {
+      "cobb_accessport": {
+        "description": "Most popular flash tuning device",
+        "features": ["Off-the-shelf maps", "Datalogging", "Custom tuning support"]
+      },
+      "ecutek": {
+        "description": "Professional-grade tuning software",
+        "features": ["Full ROM editing", "Live tuning", "Anti-lag/launch control"]
+      },
+      "opensource": {
+        "description": "Free ROM editing software",
+        "features": ["Community-developed", "Full access", "Steep learning curve"]
+      }
+    },
+    "ignition": {
+      "type": "Direct ignition, individual coil-on-plug",
+      "firing_order": "1-3-2-4",
+      "spark_plugs": {
+        "stock": "NGK ILFR6B",
+        "one_step_colder": "NGK LFR7AIX",
+        "two_step_colder": "NGK LFR8AIX",
+        "gap_mm": 0.7,
+        "quantity": 4
+      }
+    },
+    "fuel_system": {
+      "injection": "Sequential multi-point, top-feed injectors",
+      "stock_injectors": {
+        "size_cc": 565,
+        "impedance": "High impedance"
+      },
+      "fuel_pump": {
+        "stock": "255 lph in-tank",
+        "upgrade": "DW300, AEM 340, Walbro 450"
+      },
+      "e85_considerations": [
+        "Larger injectors required (1000cc+)",
+        "High-flow fuel pump required",
+        "Flex fuel sensor for variable ethanol content",
+        "15-20% power increase over gasoline"
+      ]
+    }
+  },
+  "timing_belt": {
+    "replacement_interval_km": 169000,
+    "replacement_interval_miles": 105000,
+    "interference_engine": "Yes",
+    "failure_consequence": "Catastrophic valve/piston damage",
+    "components_to_replace": [
+      "Timing belt (Gates T328)",
+      "Idler pulleys (3)",
+      "Hydraulic tensioner",
+      "Belt tensioner",
+      "Water pump",
+      "Thermostat",
+      "All cam seals",
+      "Crank seal"
+    ],
+    "quality_brands": ["Gates", "Continental", "Aisin"],
+    "notes": "Many replace at 60,000 miles for peace of mind. Always replace water pump during timing belt service."
+  },
+  "notes": {
+    "heritage": "The EJ257 brought STI performance to American shores. While JDM received the high-revving 2.0L EJ207, the US got the torque-monster 2.5L, better suited to American driving conditions and fuel quality.",
+    "aftermarket_dominance": "The EJ257 enjoys arguably the largest aftermarket support of any engine. From basic bolt-ons to 1500hp drag builds, every conceivable modification is available.",
+    "common_issues": [
+      {
+        "issue": "Ringland failure",
+        "severity": "Critical",
+        "cause": "Detonation (knock) from improper tuning, poor fuel, or boost spikes",
+        "prevention": "Professional tune, quality fuel, knock monitoring, forged pistons for high boost",
+        "notes": "The #1 killer of EJ257 engines"
+      },
+      {
+        "issue": "Spun rod bearing",
+        "severity": "Critical",
+        "cause": "Oil starvation (hard cornering), high RPM stress, bearing clearances",
+        "prevention": "ACL Race bearings, oil pickup baffle, Killer B pickup/baffle, ARP rod bolts"
+      },
+      {
+        "issue": "Head gasket failure",
+        "severity": "High",
+        "cause": "Uneven torquing, overheating, high boost",
+        "prevention": "MLS head gaskets, ARP head studs, proper torque sequence"
+      },
+      {
+        "issue": "Cracked exhaust manifold",
+        "severity": "Medium",
+        "cause": "Thermal cycling stress on OEM unequal length headers",
+        "prevention": "Equal length headers, quality materials"
+      },
+      {
+        "issue": "AVCS solenoid failure",
+        "severity": "Medium",
+        "cause": "Oil contamination, wear",
+        "prevention": "Regular oil changes with quality synthetic"
+      },
+      {
+        "issue": "Boost leak",
+        "severity": "Medium",
+        "cause": "Cracked charge pipes, loose couplers, BPV failure",
+        "prevention": "Regular inspection, quality silicone couplers"
+      }
+    ],
+    "tuning_stages": {
+      "stage_1": {
+        "power_hp": 340,
+        "torque_lb_ft": 350,
+        "modifications": ["Accessport tune", "Catback exhaust"],
+        "notes": "Safest power increase on stock internals"
+      },
+      "stage_2": {
+        "power_hp": 400,
+        "torque_lb_ft": 380,
+        "modifications": ["Downpipe", "Up-pipe", "Intake", "EBCS", "Tune"],
+        "notes": "Stock turbo max, approaching internal limits"
+      },
+      "stage_2_plus": {
+        "power_hp": 430,
+        "torque_lb_ft": 420,
+        "modifications": ["Upgraded turbo inlet", "FMIC", "Fuel pump"],
+        "notes": "Max stock turbo, internal upgrades recommended"
+      },
+      "turbo_upgrade_stock_block": {
+        "power_hp": 500,
+        "torque_lb_ft": 450,
+        "modifications": ["FP Green/Blue", "Fuel system", "FMIC", "Tune"],
+        "notes": "Risk of failure increases, quality tune essential"
+      },
+      "built_engine": {
+        "power_hp": "600-1200+",
+        "torque_lb_ft": "500-900+",
+        "modifications": ["Forged internals", "Closed deck", "Big turbo", "E85"],
+        "notes": "Reliable high power with proper build"
+      }
+    },
+    "essential_supporting_mods": {
+      "oil_system": ["Killer B oil pickup", "Killer B baffle", "External oil cooler"],
+      "cooling": ["Mishimoto radiator", "Hood scoop splitter"],
+      "fuel": ["DW300 fuel pump", "ID1050x injectors for E85"],
+      "tuning": ["Cobb Accessport", "Wideband O2 sensor"]
+    },
+    "end_of_era": "2021 marked the end of the EJ257's production run. The FA24 now powers the new WRX, ending a 30+ year legacy of EJ engines in Subaru performance vehicles."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

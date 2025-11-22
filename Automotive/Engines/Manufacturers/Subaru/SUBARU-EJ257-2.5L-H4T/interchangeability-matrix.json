@@ -1,0 +1,217 @@
+{
+  "matrix_id": "SUBARU-EJ257-INTERCHANGE",
+  "engine_reference": "SUBARU-EJ257-H4T",
+  "version": "1.0",
+  "last_updated": "2025-11-22",
+  "vehicle_platforms": {
+    "gdb_usdm": {
+      "chassis_code": "GDB (USDM)",
+      "years": "2004-2007",
+      "body_styles": ["Sedan"],
+      "notes": "Blob-eye and Hawk-eye"
+    },
+    "grb_gvb": {
+      "chassis_code": "GRB/GVB",
+      "years": "2008-2014",
+      "body_styles": ["Hatchback (GRB)", "Sedan (GVB)"]
+    },
+    "vab": {
+      "chassis_code": "VAB",
+      "years": "2015-2021",
+      "body_styles": ["Sedan"],
+      "notes": "Final EJ-powered STI"
+    }
+  },
+  "engine_interchangeability": {
+    "ej257_variants": {
+      "description": "All EJ257 engines share core architecture",
+      "differences_by_year": {
+        "2004_2006": {
+          "turbo": "VF39",
+          "intake_manifold": "TGV equipped",
+          "avcs": "Intake only"
+        },
+        "2008_2014": {
+          "turbo": "VF48",
+          "intake_manifold": "Revised TGV",
+          "avcs": "Intake only"
+        },
+        "2015_2021": {
+          "turbo": "VF48/Twin-scroll",
+          "intake_manifold": "TGV delete in some markets",
+          "avcs": "Dual AVCS (intake + exhaust)"
+        }
+      }
+    },
+    "ej207_crossover": {
+      "description": "JDM EJ207 parts compatibility with EJ257",
+      "interchangeable": [
+        "Crankshaft (with different counterweights)",
+        "Connecting rods (same design)",
+        "Valve train components",
+        "Most timing components"
+      ],
+      "not_interchangeable": [
+        "Pistons (different bore: 92mm vs 99.5mm)",
+        "Cylinder sleeves",
+        "Head gaskets (different bore size)"
+      ]
+    },
+    "ej255_crossover": {
+      "description": "EJ255 parts compatibility",
+      "interchangeable": [
+        "Short block components (same bore/stroke)",
+        "Head gaskets",
+        "Pistons (same bore)",
+        "Connecting rods"
+      ],
+      "differences": [
+        "EJ255 has lower compression pistons",
+        "Different camshafts",
+        "Different turbo configurations"
+      ]
+    }
+  },
+  "turbo_interchangeability": {
+    "compatible_turbos": [
+      {
+        "turbo": "VF39",
+        "from": "GD STI (2004-2007)",
+        "fit": "Direct bolt-on",
+        "notes": "Smaller than VF48"
+      },
+      {
+        "turbo": "VF48",
+        "from": "GR STI (2008-2014)",
+        "fit": "Direct bolt-on",
+        "notes": "Twin-scroll, OEM upgrade for GD"
+      },
+      {
+        "turbo": "VF52",
+        "from": "VA STI (2015-2021)",
+        "fit": "Direct bolt-on",
+        "notes": "Latest evolution"
+      },
+      {
+        "turbo": "VF34",
+        "from": "JDM EJ207",
+        "fit": "Direct bolt-on",
+        "notes": "Ball bearing, good upgrade"
+      }
+    ],
+    "aftermarket_bolt_on": [
+      "Blouch 20G-XT (direct bolt-on)",
+      "Forced Performance Blue/Green/Black",
+      "Garrett OEM replacement upgrades"
+    ]
+  },
+  "drivetrain_compatibility": {
+    "transmission_options": {
+      "sti_6mt": {
+        "description": "STI 6-speed manual transmission",
+        "variants": ["GD (pull-type)", "GR/VA (push-type)"],
+        "notes": "GD and GR/VA clutches not interchangeable"
+      },
+      "upgrades": {
+        "transmissions": [
+          "SPEC Stage 2+ clutch",
+          "ACT Heavy Duty",
+          "Exedy Stage 2"
+        ],
+        "gears": [
+          "PPG Dog Box",
+          "OS Giken Sequential"
+        ]
+      }
+    },
+    "differential_compatibility": {
+      "rear_diff": {
+        "type": "R180 with Torsen LSD",
+        "notes": "Same across all STI years",
+        "upgrade_path": "KAAZ, CUSCO, Quaife LSD options"
+      },
+      "dccd": {
+        "type": "Driver Controlled Center Differential",
+        "notes": "Unique to STI, not present on WRX"
+      }
+    }
+  },
+  "head_components": {
+    "cylinder_heads": {
+      "compatibility": "All EJ257 heads interchange",
+      "upgrade_options": [
+        "Ported stock heads",
+        "CNC ported heads from specialists"
+      ],
+      "ej207_heads": {
+        "fit": "Will physically fit EJ257 block",
+        "issues": "Different bore size requires custom gaskets",
+        "notes": "Not recommended - use EJ257 specific heads"
+      }
+    },
+    "camshafts": {
+      "avcs_compatibility": {
+        "non_avcs": "Will not fit AVCS equipped engines",
+        "intake_avcs": "2004-2014 compatible",
+        "dual_avcs": "2015+ different exhaust cam design"
+      },
+      "aftermarket": "Most aftermarket cams available for all variants"
+    }
+  },
+  "fuel_system_interchange": {
+    "injectors": {
+      "stock_size": "565cc",
+      "upgrade_options": [
+        "850cc (Stage 2)",
+        "1000cc (E85 capable)",
+        "1300cc (Big turbo E85)"
+      ],
+      "notes": "All use top-feed design, direct swap"
+    },
+    "fuel_rails": {
+      "compatibility": "All EJ257 use same fuel rail pattern",
+      "upgrade": "DeatschWerks, AEM high-flow rails"
+    },
+    "fuel_pump": {
+      "compatibility": "Same fuel pump fits all years",
+      "upgrade": "DW300, Walbro 450, DW400"
+    }
+  },
+  "common_swaps": {
+    "ej257_into_wrx": {
+      "description": "STI engine into WRX chassis",
+      "required_components": [
+        "STI engine",
+        "STI wiring harness or harness modification",
+        "STI ECU or retune WRX ECU",
+        "STI intercooler and piping",
+        "Transmission swap (optional but recommended)"
+      ],
+      "notes": "Popular upgrade path for GD WRX owners"
+    },
+    "ej257_into_legacy_forester": {
+      "description": "STI engine into other Subaru platforms",
+      "notes": "Common swap, requires custom mounting and wiring"
+    }
+  },
+  "version_specific_notes": {
+    "gd_2004_2007": {
+      "clutch_type": "Pull-type",
+      "tgv": "Equipped",
+      "turbo": "VF39 single-scroll"
+    },
+    "gr_gv_2008_2014": {
+      "clutch_type": "Push-type",
+      "tgv": "Equipped",
+      "turbo": "VF48 twin-scroll",
+      "notes": "Improved oiling system"
+    },
+    "va_2015_2021": {
+      "clutch_type": "Push-type",
+      "tgv": "Deleted (some markets)",
+      "turbo": "Twin-scroll variants",
+      "avcs": "Dual AVCS",
+      "notes": "Final EJ evolution, most refined"
+    }
+  }
+}

@@ -1,0 +1,482 @@
+{
+  "catalog_id": "SUBARU-EJ257-PARTS",
+  "engine_reference": "SUBARU-EJ257-H4T",
+  "catalog_version": "1.0",
+  "last_updated": "2025-11-22",
+  "short_block": {
+    "block": {
+      "part_id": "EJ257-BLOCK",
+      "description": "Semi-closed deck aluminum block",
+      "oem_part_numbers": ["11008AB500", "11008AB501"],
+      "specifications": {
+        "material": "Cast aluminum",
+        "deck_type": "Semi-closed",
+        "bore_mm": 99.5,
+        "cylinder_spacing_mm": 127
+      },
+      "aftermarket": {
+        "iag_stage_2": "IAG Stage 2 Tuff Block (closed deck)",
+        "iag_stage_2.5": "IAG Stage 2.5 Extreme Block",
+        "outfront": "Outfront Motorsports Sleeved Block"
+      },
+      "notes": "Stock semi-closed deck reliable to ~500hp, closed deck recommended above"
+    },
+    "crankshaft": {
+      "part_id": "EJ257-CRANK",
+      "description": "Forged steel crankshaft",
+      "oem_part_numbers": ["12200AA430"],
+      "specifications": {
+        "material": "Forged steel",
+        "stroke_mm": 79.0,
+        "main_journal_mm": 52.0,
+        "rod_journal_mm": 48.0
+      },
+      "aftermarket": {
+        "manley": "Manley 4340 Billet Crankshaft",
+        "brian_crower": "Brian Crower BC5229",
+        "cosworth": "Cosworth Billet 79mm"
+      },
+      "notes": "Stock crank good to 600hp+, upgrade for extreme builds"
+    },
+    "connecting_rods": {
+      "part_id": "EJ257-CONROD",
+      "description": "Forged connecting rods",
+      "oem_part_numbers": ["12100AA470"],
+      "specifications": {
+        "material": "Forged steel",
+        "length_mm": 130.5,
+        "pin_diameter_mm": 22.0,
+        "big_end_width_mm": 22.0
+      },
+      "aftermarket": {
+        "manley_h_beam": "Manley H-Beam 14024-4",
+        "manley_h_tuff": "Manley H-Tuff 14424-4",
+        "brian_crower": "Brian Crower ProH2K",
+        "pauter": "Pauter 4340 X-Beam",
+        "carrillo": "Carrillo Pro-H"
+      },
+      "quantity": 4,
+      "notes": "Upgrade recommended above 400hp. Manley H-Tuff most popular choice."
+    },
+    "pistons": {
+      "part_id": "EJ257-PISTON",
+      "description": "Cast aluminum pistons",
+      "oem_part_numbers": ["12006AA500"],
+      "specifications": {
+        "material": "Cast aluminum",
+        "diameter_mm": 99.5,
+        "compression_height_mm": 32.5,
+        "pin_diameter_mm": 22.0
+      },
+      "aftermarket": {
+        "cp_carrillo": "CP Carrillo SC7417",
+        "wiseco": "Wiseco K620M995",
+        "je_pistons": "JE Pistons 317266",
+        "mahle": "Mahle PowerPak",
+        "manley": "Manley Platinum Series"
+      },
+      "notes": "CRITICAL: Stock pistons prone to ringland failure. Forged pistons essential for reliability above Stage 1."
+    },
+    "rod_bearings": {
+      "part_id": "EJ257-ROD-BRG",
+      "description": "Rod bearing set",
+      "oem_part_numbers": ["12108AA170"],
+      "aftermarket": {
+        "acl_race": "ACL 4B8296H-STD (Race Series)",
+        "king_racing": "King Racing CR4125XP",
+        "clevite": "Clevite CB-1443H"
+      },
+      "critical_note": "Upgraded rod bearings recommended. ACL Race most popular for reliability.",
+      "notes": "Replace with every engine build. Never reuse bearings."
+    },
+    "main_bearings": {
+      "part_id": "EJ257-MAIN-BRG",
+      "description": "Main bearing set",
+      "oem_part_numbers": ["12109AA091"],
+      "aftermarket": {
+        "acl_race": "ACL 5M8309H-STD",
+        "king_racing": "King Racing MB5758XP"
+      },
+      "quantity": "5 pairs + thrust"
+    }
+  },
+  "cylinder_head": {
+    "heads": {
+      "part_id": "EJ257-HEAD",
+      "description": "DOHC aluminum cylinder heads (pair)",
+      "oem_part_numbers": ["11039AB780 (LH)", "11039AB790 (RH)"],
+      "specifications": {
+        "material": "Cast aluminum",
+        "valves_per_cylinder": 4,
+        "intake_valve_mm": 34.0,
+        "exhaust_valve_mm": 30.0,
+        "combustion_chamber_cc": 54
+      },
+      "porting_services": [
+        "GSC Power-Division",
+        "Tomei",
+        "Outfront Motorsports"
+      ]
+    },
+    "head_gaskets": {
+      "part_id": "EJ257-HEADGASKET",
+      "description": "Multi-layer steel head gaskets",
+      "oem_part_numbers": ["11044AA642", "11044AA652"],
+      "aftermarket": {
+        "cometic": "Cometic C4264-040 (.040\" 101mm)",
+        "tomei": "Tomei TA4070-SB01A",
+        "grimmspeed": "GrimmSpeed MLS"
+      },
+      "critical_note": "MLS gaskets with head studs required for boost increases.",
+      "notes": "Measure bore before ordering - 100mm, 101mm, or 101.3mm options"
+    },
+    "head_studs": {
+      "part_id": "EJ257-HEADSTUDS",
+      "description": "Head stud kit",
+      "oem": "Factory uses bolts",
+      "aftermarket": {
+        "arp_625": "ARP 260-4701 (625+ material)",
+        "arp_ca625": "ARP 260-4704 (CA625+)",
+        "arp_custom_age": "ARP Custom Age 625+"
+      },
+      "critical_note": "Head studs essential for any power build. ARP 625+ most popular.",
+      "torque_specs": {
+        "arp_625_ft_lbs": 75,
+        "lubricant": "ARP Ultra-Torque"
+      }
+    },
+    "valves": {
+      "intake": {
+        "part_id": "EJ257-INTAKE-VALVE",
+        "oem_part_numbers": ["13201AA450"],
+        "aftermarket": {
+          "supertech": "Supertech SIVS-1020",
+          "ferrea": "Ferrea F1420P",
+          "gsc": "GSC Power-Division Titanium"
+        }
+      },
+      "exhaust": {
+        "part_id": "EJ257-EXHAUST-VALVE",
+        "oem_part_numbers": ["13202AA380"],
+        "aftermarket": {
+          "supertech": "Supertech SEVS-1015",
+          "ferrea": "Ferrea F1422P Inconel"
+        },
+        "notes": "Sodium-filled stock exhaust valves are durable"
+      }
+    },
+    "valve_springs": {
+      "part_id": "EJ257-VALVESPR",
+      "description": "Valve spring set",
+      "oem_part_numbers": ["13207AA081"],
+      "aftermarket": {
+        "gsc": "GSC S1 or S2 Beehive Springs",
+        "brian_crower": "Brian Crower BC0600",
+        "supertech": "Supertech Dual Springs"
+      },
+      "notes": "Upgraded springs required for aggressive cams"
+    },
+    "camshafts": {
+      "part_id": "EJ257-CAMS",
+      "description": "AVCS camshaft set (4 cams)",
+      "oem_part_numbers": ["13034AA881 (IN)", "13035AA851 (EX)"],
+      "aftermarket": {
+        "gsc_s1": "GSC Power S1 (street/daily)",
+        "gsc_s2": "GSC Power S2 (performance)",
+        "brian_crower": "Brian Crower Stage 2/3",
+        "kelford": "Kelford 199-A/B/C/D",
+        "tomei": "Tomei Poncam Type-B"
+      },
+      "specs": {
+        "gsc_s2_intake": "272° duration, 10.8mm lift",
+        "gsc_s2_exhaust": "272° duration, 10.8mm lift"
+      }
+    }
+  },
+  "turbo_system": {
+    "stock_turbo": {
+      "part_id": "EJ257-TURBO-STOCK",
+      "manufacturer": "IHI",
+      "model": "VF48 / VF52",
+      "oem_part_numbers": ["14411AA700", "14411AA710"],
+      "power_limit_hp": 400
+    },
+    "turbo_upgrades": {
+      "bolt_on": {
+        "blouch_20g_xt": "Blouch 20G-XT (450hp)",
+        "fp_blue": "Forced Performance Blue (450hp)",
+        "fp_green": "Forced Performance Green (550hp)",
+        "fp_black": "Forced Performance Black (650hp)"
+      },
+      "rotated": {
+        "garrett_gtx3076r": "Garrett GTX3076R Gen II",
+        "precision_6266": "Precision 6266 CEA",
+        "borg_warner_efr_8374": "BorgWarner EFR 8374",
+        "xona_rotor": "Xona Rotor 7868S"
+      }
+    },
+    "up_pipe": {
+      "part_id": "EJ257-UPPIPE",
+      "description": "Turbo up-pipe",
+      "aftermarket": {
+        "grimmspeed": "GrimmSpeed Catless",
+        "iag": "IAG Performance",
+        "cobb": "COBB Catless"
+      }
+    },
+    "downpipe": {
+      "part_id": "EJ257-DOWNPIPE",
+      "description": "Turbo downpipe",
+      "aftermarket": {
+        "invidia": "Invidia Catted/Catless",
+        "cobb": "COBB Catted",
+        "grimmspeed": "GrimmSpeed"
+      }
+    },
+    "intercooler": {
+      "part_id": "EJ257-INTERCOOLER",
+      "description": "Top-mount intercooler",
+      "oem_part_numbers": ["21821AA181"],
+      "aftermarket": {
+        "process_west_tmic": "Process West Verticooler TMIC",
+        "ams_fmic": "AMS Front-Mount Kit",
+        "ets_fmic": "ETS Front-Mount Kit",
+        "mishimoto_tmic": "Mishimoto TMIC"
+      }
+    }
+  },
+  "fuel_system": {
+    "fuel_injectors": {
+      "part_id": "EJ257-INJECTORS",
+      "description": "Top-feed fuel injectors",
+      "oem": {
+        "size_cc": 565,
+        "part_numbers": ["16611AA720"]
+      },
+      "aftermarket": {
+        "dw_850cc": "DeatschWerks 850cc 17U-01-0850-4",
+        "id_1050x": "Injector Dynamics ID1050x",
+        "id_1300x": "Injector Dynamics ID1300x",
+        "id_1700x": "Injector Dynamics ID1700x (E85)"
+      },
+      "notes": "1000cc+ required for E85 at 400+hp"
+    },
+    "fuel_pump": {
+      "part_id": "EJ257-FUELPUMP",
+      "description": "In-tank fuel pump",
+      "oem_part_numbers": ["42021AG000"],
+      "aftermarket": {
+        "dw300": "DeatschWerks DW300 (300 lph)",
+        "aem_340": "AEM 50-1000 (340 lph)",
+        "walbro_450": "Walbro F90000267 (450 lph)",
+        "dw400": "DeatschWerks DW400 (415 lph)"
+      }
+    },
+    "fuel_rails": {
+      "part_id": "EJ257-FUELRAILS",
+      "description": "Fuel rail set",
+      "aftermarket": {
+        "dw": "DeatschWerks Top Feed",
+        "aem": "AEM High Volume"
+      }
+    },
+    "fuel_pressure_regulator": {
+      "part_id": "EJ257-FPR",
+      "description": "Fuel pressure regulator",
+      "aftermarket": {
+        "aem": "AEM Adjustable FPR",
+        "tomei": "Tomei Type-S"
+      }
+    }
+  },
+  "intake_exhaust": {
+    "intake": {
+      "part_id": "EJ257-INTAKE",
+      "description": "Cold air intake",
+      "aftermarket": {
+        "cobb": "COBB SF Intake",
+        "grimmspeed": "GrimmSpeed StealthBox",
+        "mishimoto": "Mishimoto Race Intake"
+      }
+    },
+    "headers": {
+      "part_id": "EJ257-HEADERS",
+      "description": "Exhaust manifold/headers",
+      "oem": "Unequal length for signature rumble",
+      "aftermarket": {
+        "tomei_el": "Tomei Equal Length (eliminates rumble, +10-15hp)",
+        "iag_el": "IAG Equal Length",
+        "killer_b": "Killer B Equal Length"
+      }
+    },
+    "catback": {
+      "part_id": "EJ257-CATBACK",
+      "description": "Cat-back exhaust system",
+      "aftermarket": {
+        "invidia_n1": "Invidia N1 (loud)",
+        "invidia_q300": "Invidia Q300 (quiet)",
+        "borla": "Borla S-Type",
+        "ets": "ETS Extreme/Quiet"
+      }
+    }
+  },
+  "oil_system": {
+    "oil_pump": {
+      "part_id": "EJ257-OILPUMP",
+      "description": "Engine oil pump",
+      "oem_part_numbers": ["15010AA360"],
+      "aftermarket": {
+        "cosworth": "Cosworth High Pressure",
+        "iag": "IAG Competition Series"
+      }
+    },
+    "oil_pickup": {
+      "part_id": "EJ257-OILPICKUP",
+      "description": "Oil pickup tube and baffle",
+      "critical_note": "ESSENTIAL for reliability. Stock pickup starves under hard cornering.",
+      "aftermarket": {
+        "killer_b_pickup": "Killer B Oil Pickup (REQUIRED)",
+        "killer_b_baffle": "Killer B Oil Baffle",
+        "iag": "IAG Pickup and Baffle"
+      }
+    },
+    "oil_pan": {
+      "part_id": "EJ257-OILPAN",
+      "description": "Oil pan",
+      "aftermarket": {
+        "killer_b": "Killer B 3-Quart Extension",
+        "iag": "IAG Extended Sump"
+      }
+    },
+    "oil_cooler": {
+      "part_id": "EJ257-OILCOOLER",
+      "description": "External oil cooler",
+      "aftermarket": {
+        "mishimoto": "Mishimoto Oil Cooler Kit",
+        "jackson_racing": "Jackson Racing Oil Cooler",
+        "setrab": "Setrab with Mocal Sandwich Plate"
+      }
+    }
+  },
+  "cooling_system": {
+    "radiator": {
+      "part_id": "EJ257-RADIATOR",
+      "description": "Aluminum radiator",
+      "oem_part_numbers": ["45111FE010"],
+      "aftermarket": {
+        "mishimoto": "Mishimoto MMRAD-STI-08",
+        "koyo": "Koyo VH091672",
+        "csf": "CSF 7026"
+      }
+    },
+    "water_pump": {
+      "part_id": "EJ257-WATERPUMP",
+      "description": "Engine water pump",
+      "oem_part_numbers": ["21111AA380"],
+      "aftermarket": {
+        "gates": "Gates 43557"
+      }
+    },
+    "thermostat": {
+      "part_id": "EJ257-THERMOSTAT",
+      "description": "Engine thermostat",
+      "aftermarket": {
+        "mishimoto_low_temp": "Mishimoto Racing (154°F)"
+      }
+    }
+  },
+  "ignition": {
+    "coil_packs": {
+      "part_id": "EJ257-COILPACKS",
+      "description": "Ignition coil pack set",
+      "oem_part_numbers": ["22433AA580"],
+      "aftermarket": {
+        "splitfire": "SplitFire SuperDirect",
+        "okada": "Okada Projects Plasma Direct"
+      },
+      "quantity": 4
+    },
+    "spark_plugs": {
+      "part_id": "EJ257-SPARKPLUGS",
+      "description": "Spark plugs",
+      "stock": "NGK ILFR6B",
+      "aftermarket": {
+        "one_step_colder": "NGK LFR7AIX",
+        "two_step_colder": "NGK LFR8AIX"
+      },
+      "quantity": 4,
+      "gap_mm": 0.7,
+      "notes": "Gap to 0.028\" for high boost applications"
+    }
+  },
+  "gaskets_and_seals": {
+    "full_gasket_set": {
+      "part_id": "EJ257-GASKETKIT",
+      "description": "Complete engine gasket set",
+      "aftermarket": {
+        "oem": "Subaru OEM gasket kit",
+        "cometic": "Cometic PRO2033C",
+        "fel_pro": "Fel-Pro Full Set"
+      }
+    }
+  },
+  "build_packages": {
+    "stage_1_reliable": {
+      "description": "Stage 1 reliability build (350-400hp)",
+      "components": [
+        "Killer B oil pickup and baffle",
+        "ACL Race rod bearings",
+        "ARP head studs",
+        "MLS head gaskets"
+      ],
+      "estimated_cost_usd": 1500
+    },
+    "stage_2_street": {
+      "description": "Stage 2 street build (450-500hp)",
+      "components": [
+        "All Stage 1 components",
+        "Forged pistons (CP or Wiseco)",
+        "Manley H-Tuff rods",
+        "GSC S1 cams",
+        "Upgraded valve springs",
+        "FP Blue turbo",
+        "850cc injectors",
+        "DW300 fuel pump"
+      ],
+      "estimated_cost_usd": 8000
+    },
+    "stage_3_track": {
+      "description": "Stage 3 track/street (600-700hp)",
+      "components": [
+        "IAG closed deck block",
+        "Manley stroker kit",
+        "GSC S2 cams",
+        "Big turbo (GTX3076R or similar)",
+        "1000cc+ injectors",
+        "FMIC kit",
+        "External oil cooler"
+      ],
+      "estimated_cost_usd": 20000
+    }
+  },
+  "vendor_sources": {
+    "oem_parts": [
+      "Subaru Dealers",
+      "Import Image Racing",
+      "RallySport Direct"
+    ],
+    "performance_parts": [
+      "IAG Performance",
+      "RallySport Direct",
+      "Import Image Racing",
+      "COBB Tuning",
+      "Killer B Motorsport",
+      "MaperformanceGroup"
+    ],
+    "machine_shops": [
+      "Outfront Motorsports",
+      "IAG Performance",
+      "TurboXS"
+    ]
+  }
+}

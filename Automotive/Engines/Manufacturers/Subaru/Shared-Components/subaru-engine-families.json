@@ -1,0 +1,245 @@
+{
+  "document_id": "SUBARU-ENGINE-FAMILIES",
+  "version": "1.0",
+  "last_updated": "2025-11-22",
+  "overview": {
+    "description": "Complete overview of all Subaru engine families from 1958 to present",
+    "boxer_philosophy": "Subaru is the only manufacturer to use horizontally-opposed (boxer) engines exclusively in their passenger car lineup. This configuration provides a low center of gravity and natural balance."
+  },
+  "engine_families": {
+    "ek_series": {
+      "name": "EK Series - Two-Cylinder",
+      "years": "1958-1972",
+      "configuration": "Inline-2, air-cooled, two-stroke",
+      "displacement_range": "356cc",
+      "applications": ["Subaru 360", "Sambar", "Rex"],
+      "significance": "First Subaru automobile engines",
+      "engines": ["EK31", "EK32", "EK33"]
+    },
+    "ea_series_ohv": {
+      "name": "EA Series - OHV Boxer",
+      "years": "1966-1994",
+      "configuration": "H4, water-cooled, OHV (pushrod)",
+      "displacement_range": "977cc - 1.8L",
+      "significance": "First Subaru boxer engines, established brand identity",
+      "sub_families": {
+        "ea52": {
+          "displacement": "977cc-1.1L",
+          "years": "1966-1972",
+          "notes": "First boxer, first Japanese FWD car"
+        },
+        "ea63_ea71": {
+          "displacement": "1.3L-1.6L",
+          "years": "1972-1984",
+          "notes": "Leone/BRAT engines, introduced 4WD"
+        },
+        "ea81": {
+          "displacement": "1.8L",
+          "years": "1979-1994",
+          "notes": "Final OHV boxer, legendary reliability"
+        },
+        "ea82": {
+          "displacement": "1.8L",
+          "years": "1984-1994",
+          "notes": "SOHC design, first turbo boxer"
+        }
+      }
+    },
+    "ej_series": {
+      "name": "EJ Series - The Legendary Boxers",
+      "years": "1989-2021",
+      "configuration": "H4, SOHC/DOHC, belt-driven",
+      "displacement_range": "1.5L - 2.5L",
+      "significance": "Most successful Subaru engines, WRC champions",
+      "sub_families": {
+        "ej15_ej16_ej18": {
+          "displacement": "1.5L-1.8L",
+          "applications": ["JDM Impreza", "Early Legacy"],
+          "notes": "Base engines for JDM market"
+        },
+        "ej20_na": {
+          "codes": ["EJ20E", "EJ201", "EJ202", "EJ203", "EJ204"],
+          "displacement": "2.0L",
+          "power_range": "125-155hp",
+          "notes": "SOHC and DOHC naturally aspirated"
+        },
+        "ej20_turbo": {
+          "codes": ["EJ20G", "EJ20K", "EJ205", "EJ207"],
+          "displacement": "2.0L",
+          "power_range": "227-320hp",
+          "notes": "WRX and STI powerplants, WRC heritage"
+        },
+        "ej22": {
+          "displacement": "2.2L",
+          "years": "1990-2001",
+          "power_range": "130-165hp",
+          "notes": "Primary USDM engine, very reliable"
+        },
+        "ej25_na": {
+          "codes": ["EJ251", "EJ252", "EJ253"],
+          "displacement": "2.5L",
+          "power_range": "155-175hp",
+          "notes": "Most common USDM engine, head gasket issues"
+        },
+        "ej25_turbo": {
+          "codes": ["EJ255", "EJ257"],
+          "displacement": "2.5L",
+          "power_range": "224-341hp",
+          "notes": "WRX and STI, massive aftermarket"
+        }
+      },
+      "common_issues": [
+        "Head gasket failure (especially NA 2.5L)",
+        "Ringland failure (turbo models)",
+        "Timing belt maintenance required"
+      ]
+    },
+    "ez_series": {
+      "name": "EZ Series - Flat-6",
+      "years": "1999-2019",
+      "configuration": "H6, DOHC, chain-driven",
+      "displacement_range": "3.0L - 3.6L",
+      "significance": "Premium flagship engines",
+      "engines": {
+        "ez30": {
+          "displacement": "3.0L",
+          "years": "1999-2009",
+          "power": "212-245hp"
+        },
+        "ez36": {
+          "displacement": "3.6L",
+          "years": "2008-2019",
+          "power": "256hp"
+        }
+      },
+      "notes": "Smooth, reliable, chain-driven timing"
+    },
+    "en_series": {
+      "name": "EN Series - Kei Car Engines",
+      "years": "1971-2012",
+      "configuration": "I4, SOHC/DOHC",
+      "displacement_range": "544cc - 658cc",
+      "applications": ["Sambar", "Vivio", "R2"],
+      "notable_variant": "EN07X supercharged (Vivio RX-R) - 64hp from 658cc"
+    },
+    "fb_series": {
+      "name": "FB Series - Modern NA Boxers",
+      "years": "2010-present",
+      "configuration": "H4, DOHC, chain-driven",
+      "displacement_range": "1.6L - 2.5L",
+      "significance": "Replaced EJ series for NA applications",
+      "engines": {
+        "fb16": {
+          "displacement": "1.6L",
+          "applications": ["JDM Impreza"],
+          "power": "115hp"
+        },
+        "fb20": {
+          "displacement": "2.0L",
+          "applications": ["Impreza", "Crosstrek"],
+          "power": "148-152hp"
+        },
+        "fb25": {
+          "displacement": "2.5L",
+          "applications": ["Outback", "Legacy", "Forester"],
+          "power": "170-182hp"
+        }
+      },
+      "improvements_over_ej": [
+        "Timing chain (no belt replacement)",
+        "Improved head gasket design",
+        "Better fuel economy"
+      ]
+    },
+    "fa_series": {
+      "name": "FA Series - Modern Performance",
+      "years": "2012-present",
+      "configuration": "H4, DOHC, chain-driven, direct injection",
+      "displacement_range": "2.0L - 2.4L",
+      "significance": "Current performance engine platform",
+      "engines": {
+        "fa20_na": {
+          "displacement": "2.0L",
+          "applications": ["BRZ", "Toyota 86"],
+          "power": "200-205hp",
+          "notes": "Co-developed with Toyota"
+        },
+        "fa20dit": {
+          "displacement": "2.0L",
+          "applications": ["JDM Levorg", "JDM WRX"],
+          "power": "268-300hp",
+          "notes": "Turbocharged version"
+        },
+        "fa24_na": {
+          "displacement": "2.4L",
+          "applications": ["BRZ 2022+", "GR86 2022+"],
+          "power": "228hp"
+        },
+        "fa24_turbo": {
+          "displacement": "2.4L",
+          "applications": ["WRX 2022+", "Ascent", "Outback XT"],
+          "power": "260-271hp",
+          "notes": "Replacement for EJ25T"
+        }
+      }
+    }
+  },
+  "technology_evolution": {
+    "fuel_injection": {
+      "carburetor": "1958-1985",
+      "single_point_injection": "1984-1989",
+      "multi_point_injection": "1987-present",
+      "direct_injection": "2012-present"
+    },
+    "valvetrain": {
+      "ohv": "1966-1994 (EA series)",
+      "sohc": "1984-present",
+      "dohc": "1989-present"
+    },
+    "timing": {
+      "gears": "EA81 and earlier OHV",
+      "belt": "EA82, all EJ series",
+      "chain": "EZ, FB, FA series"
+    },
+    "variable_timing": {
+      "avcs_intake": "1999-present (EJ207 first)",
+      "dual_avcs": "2006-present"
+    },
+    "forced_induction": {
+      "first_turbo": "1983 (EA82T)",
+      "first_intercooled_turbo": "1985 (XT Turbo)",
+      "twin_scroll_turbo": "2007-present"
+    }
+  },
+  "production_statistics": {
+    "total_boxer_engines_produced": "17+ million",
+    "most_produced": "EJ25 series",
+    "longest_production": "EJ20 (1989-2021, 32 years)",
+    "wrc_championships": {
+      "manufacturers": 3,
+      "drivers": 3
+    }
+  },
+  "cross_references": {
+    "database_entries": {
+      "ek31": "../SUBARU-EK31-356cc-I2/",
+      "ea52": "../SUBARU-EA52-1.0L-H4/",
+      "ea71": "../SUBARU-EA71-1.6L-H4/",
+      "ea81": "../SUBARU-EA81-1.8L-H4/",
+      "ea82": "../SUBARU-EA82-1.8L-H4/",
+      "ej20g": "../SUBARU-EJ20G-2.0L-H4T/",
+      "ej205": "../SUBARU-EJ205-2.0L-H4T/",
+      "ej207": "../SUBARU-EJ207-2.0L-H4T/",
+      "ej22": "../SUBARU-EJ22-2.2L-H4/",
+      "ej253": "../SUBARU-EJ253-2.5L-H4/",
+      "ej255": "../SUBARU-EJ255-2.5L-H4T/",
+      "ej257": "../SUBARU-EJ257-2.5L-H4T/",
+      "ez30": "../SUBARU-EZ30-3.0L-H6/",
+      "ez36": "../SUBARU-EZ36-3.6L-H6/",
+      "fa20": "../SUBARU-FA20-2.0L-H4/",
+      "fa24": "../SUBARU-FA24-2.4L-H4T/",
+      "fb20": "../SUBARU-FB20-2.0L-H4/",
+      "fb25": "../SUBARU-FB25-2.5L-H4/"
+    }
+  }
+}

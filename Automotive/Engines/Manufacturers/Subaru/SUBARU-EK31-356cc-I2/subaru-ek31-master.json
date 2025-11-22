@@ -1,0 +1,185 @@
+{
+  "engine_id": "SUBARU-EK31-I2-AIR",
+  "manufacturer": "Subaru (Fuji Heavy Industries)",
+  "engine_family": "EK Series",
+  "engine_code": "EK31",
+  "production_years": {
+    "start": 1958,
+    "end": 1971
+  },
+  "overview": {
+    "description": "The EK31 is Subaru's first mass-production automobile engine, powering the iconic Subaru 360 'Ladybug' - Japan's first true people's car. This air-cooled two-stroke twin-cylinder engine was revolutionary for its compact size and efficiency.",
+    "heritage": "Pioneer of Japanese Automotive Industry",
+    "significance": "First mass-produced Subaru car engine, enabled Japanese car ownership for the masses"
+  },
+  "base_specifications": {
+    "configuration": "Inline-2 (I2)",
+    "displacement": {
+      "cc": 356,
+      "liters": 0.356
+    },
+    "bore": {
+      "mm": 61.0
+    },
+    "stroke": {
+      "mm": 61.0
+    },
+    "compression_ratio": "6.5:1",
+    "valvetrain": "Two-stroke (port controlled)",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Air-cooled with forced air fan",
+    "fuel_system": "Single carburetor, premix oil/fuel",
+    "fuel_type": "Gasoline with 2-stroke oil premix (25:1)"
+  },
+  "power_output_by_variant": {
+    "ek31_standard": {
+      "years": "1958-1966",
+      "power_hp": 16,
+      "power_kw": 11.9,
+      "power_rpm": 4500,
+      "torque_nm": 28,
+      "torque_lb_ft": 20.7,
+      "torque_rpm": 3000
+    },
+    "ek31_improved": {
+      "years": "1966-1968",
+      "power_hp": 20,
+      "power_kw": 14.9,
+      "power_rpm": 5000,
+      "torque_nm": 32,
+      "torque_lb_ft": 23.6,
+      "torque_rpm": 3500
+    },
+    "ek32_young_ss": {
+      "years": "1968-1970",
+      "power_hp": 25,
+      "power_kw": 18.6,
+      "power_rpm": 5500,
+      "torque_nm": 36,
+      "torque_lb_ft": 26.6,
+      "torque_rpm": 4000,
+      "notes": "Sport variant with twin carburetors"
+    },
+    "ek33_rex": {
+      "years": "1970-1972",
+      "power_hp": 30,
+      "power_kw": 22.4,
+      "power_rpm": 6000,
+      "torque_nm": 38,
+      "torque_lb_ft": 28.0,
+      "torque_rpm": 4500,
+      "notes": "Final evolution, used in Rex"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru 360",
+      "chassis_code": "K111",
+      "years": "1958-1971",
+      "body_styles": ["2-door sedan", "2-door convertible", "2-door van"],
+      "market": "JDM/USDM",
+      "notes": "Original application, over 392,000 units produced"
+    },
+    {
+      "model": "Subaru 360 Custom",
+      "chassis_code": "K112",
+      "years": "1963-1970",
+      "body_styles": ["Station wagon"],
+      "market": "JDM"
+    },
+    {
+      "model": "Subaru 360 Young SS",
+      "chassis_code": "K114",
+      "years": "1968-1970",
+      "body_styles": ["2-door coupe"],
+      "market": "JDM",
+      "notes": "Sport model with enhanced EK32 engine"
+    },
+    {
+      "model": "Subaru Sambar",
+      "chassis_code": "K77",
+      "years": "1961-1966",
+      "body_styles": ["Van", "Truck"],
+      "market": "JDM",
+      "notes": "Commercial kei vehicle"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": "N/A - Two-stroke premix",
+      "premix_ratio": "25:1 (fuel to oil)",
+      "specification": "Two-stroke oil, FC or FD rated"
+    },
+    "gearbox_oil": {
+      "capacity_liters": 0.8,
+      "specification": "SAE 90 gear oil"
+    },
+    "fuel_tank": {
+      "capacity_liters": 20
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 42,
+    "engine_length_mm": 380,
+    "engine_width_mm": 340,
+    "engine_height_mm": 420,
+    "redline_rpm": 6000,
+    "max_rpm": 6500,
+    "bore_mm": 61.0,
+    "stroke_mm": 61.0,
+    "deck_height_mm": 95
+  },
+  "electronic_systems": {
+    "ignition": {
+      "type": "Magneto ignition",
+      "firing_order": "1-2",
+      "spark_plugs": {
+        "type": "NGK B7HS or equivalent",
+        "gap_mm": 0.6,
+        "quantity": 2
+      }
+    },
+    "fuel_system": {
+      "carburetor": "Hitachi single-barrel",
+      "choke": "Manual cable-operated"
+    },
+    "electrical": {
+      "battery": "6V system (early), 12V (later)",
+      "generator": "Dynamo"
+    }
+  },
+  "notes": {
+    "heritage": "The EK31 engine represents Subaru's entry into automobile manufacturing. Drawing from Fuji Heavy Industries' aircraft heritage (formerly Nakajima Aircraft), the engine was designed to be lightweight and efficient. The Subaru 360 became known as the 'Ladybug' due to its rounded shape and helped mobilize post-war Japan.",
+    "design_philosophy": "Maximum efficiency from minimum displacement - the 360 was designed to meet Japan's Kei car regulations (360cc maximum displacement) while providing practical transportation for families.",
+    "reputation": "Despite its small size, the EK31 proved remarkably durable. Many Subaru 360s accumulated over 100,000 km with basic maintenance. The two-stroke design meant simple servicing but required premix fuel.",
+    "common_issues": [
+      {
+        "issue": "Crankshaft bearing wear",
+        "severity": "Medium",
+        "cause": "Normal wear, especially with improper oil mixture",
+        "prevention": "Use correct oil premix ratio, quality two-stroke oil"
+      },
+      {
+        "issue": "Carburetor jetting",
+        "severity": "Low",
+        "cause": "Altitude and temperature changes affect mixture",
+        "prevention": "Re-jet carburetor for local conditions"
+      },
+      {
+        "issue": "Cooling fan belt wear",
+        "severity": "Medium",
+        "cause": "Normal wear, critical for air-cooled engine",
+        "prevention": "Regular inspection, replace every 20,000 km"
+      },
+      {
+        "issue": "Exhaust port carbon buildup",
+        "severity": "Medium",
+        "cause": "Two-stroke combustion byproduct",
+        "prevention": "Periodic decarbonization, use quality oil"
+      }
+    ],
+    "maintenance_notes": "Two-stroke maintenance differs from modern engines. Always use fresh premix fuel, never store premixed fuel for more than 30 days. Spark plug condition indicates mixture accuracy - light tan coloring is ideal."
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}

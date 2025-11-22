@@ -1,0 +1,325 @@
+{
+  "service_id": "SUBARU-EJ257-SERVICE",
+  "engine_reference": "SUBARU-EJ257-H4T",
+  "version": "1.0",
+  "last_updated": "2025-11-22",
+  "tool_inventory": {
+    "essential_hand_tools": {
+      "socket_sets": [
+        "3/8\" drive metric socket set (8-19mm)",
+        "1/2\" drive metric socket set (10-24mm)",
+        "1/4\" drive metric socket set (4-14mm)"
+      ],
+      "wrenches": [
+        "Metric combination wrench set (8-19mm)",
+        "Metric flare nut wrench set",
+        "Adjustable wrenches"
+      ],
+      "screwdrivers": [
+        "Phillips set (#1, #2, #3)",
+        "Flathead set",
+        "JIS screwdrivers (Japanese specification)"
+      ],
+      "pliers": [
+        "Needle nose pliers",
+        "Snap ring pliers (internal and external)",
+        "Hose clamp pliers"
+      ],
+      "hex_keys": [
+        "Metric Allen key set (2-10mm)",
+        "Torx bit set"
+      ]
+    },
+    "specialty_subaru_tools": {
+      "camshaft_tools": {
+        "cam_lock_tool": {
+          "part_number": "Subaru 499207400",
+          "description": "Locks cams for timing belt service",
+          "alternatives": ["Schwaben cam lock tool", "Generic EJ cam locks"]
+        },
+        "cam_sprocket_holder": {
+          "description": "Holds sprocket while removing bolt",
+          "notes": "Can use impact wrench instead"
+        }
+      },
+      "crankshaft_tools": {
+        "crank_pulley_holder": {
+          "part_number": "Subaru 499977100",
+          "description": "Holds crank pulley for bolt removal",
+          "alternatives": ["Impact wrench method"]
+        },
+        "crank_socket": {
+          "size": "22mm",
+          "type": "1/2\" drive deep socket",
+          "notes": "For crank bolt removal"
+        }
+      },
+      "oil_filter_wrench": {
+        "type": "74mm 14-flute cap wrench",
+        "part_numbers": ["NAPA 3422", "OTC 6904"],
+        "notes": "Required for Subaru cartridge-style filter"
+      },
+      "timing_belt_tensioner_tool": {
+        "description": "For compressing hydraulic tensioner",
+        "notes": "Can use C-clamp with appropriate adapters"
+      },
+      "head_stud_alignment_tool": {
+        "description": "Guides head gasket onto studs",
+        "notes": "DIY with long bolts works"
+      }
+    },
+    "diagnostic_tools": {
+      "obd2_scanner": {
+        "basic": "Generic OBD-II scanner for codes",
+        "recommended": "Tactrix OpenPort 2.0 with ECUFlash/RomRaider"
+      },
+      "subaru_select_monitor": {
+        "description": "Factory Subaru diagnostic tool",
+        "features": ["All module communication", "Live data", "Initialization"]
+      },
+      "accessport": {
+        "manufacturer": "COBB",
+        "model": "Accessport V3",
+        "features": [
+          "ECU flashing",
+          "Live data logging",
+          "Trouble code reading",
+          "Gauge display"
+        ]
+      },
+      "wideband_o2": {
+        "description": "Air-fuel ratio monitoring",
+        "recommended": ["AEM X-Series", "Innovate MTX-L", "PLX Devices"]
+      },
+      "boost_gauge": {
+        "description": "Manifold pressure monitoring",
+        "recommended": ["AEM Digital", "ProSport", "Defi"]
+      }
+    },
+    "tuning_tools": {
+      "tactrix_openport": {
+        "description": "ECU communication interface",
+        "software": ["ECUFlash", "RomRaider", "OpenSource"]
+      },
+      "cobb_accessport": {
+        "description": "Plug-and-play ECU tuning",
+        "features": ["OTS maps", "Custom tune support"]
+      },
+      "ecutek": {
+        "description": "Professional tuning solution",
+        "features": ["Full ROM editing", "ProECU software"]
+      }
+    }
+  },
+  "service_procedures": {
+    "oil_change": {
+      "interval": "3000-5000 miles",
+      "capacity_with_filter_liters": 4.8,
+      "oil_specification": "5W-30 or 5W-40 full synthetic",
+      "drain_plug_torque_nm": 44,
+      "filter_torque": "Hand tight + 3/4 turn",
+      "recommended_oils": [
+        "Motul 300V 5W-40",
+        "Rotella T6 5W-40",
+        "Pennzoil Platinum 5W-30",
+        "Red Line 5W-40"
+      ],
+      "procedure": [
+        "Warm engine to operating temperature",
+        "Lift vehicle and support securely",
+        "Remove undertray",
+        "Position drain pan, remove drain plug",
+        "While draining, remove oil filter cap (74mm)",
+        "Replace filter element and o-rings",
+        "Install new crush washer on drain plug",
+        "Reinstall drain plug to spec",
+        "Install oil filter cap",
+        "Add specified oil quantity",
+        "Start engine, check for leaks",
+        "Verify oil level on dipstick"
+      ]
+    },
+    "spark_plug_replacement": {
+      "interval": "30,000 miles (sooner if tuned)",
+      "specifications": {
+        "stock": "NGK ILFR6B",
+        "colder_1_step": "NGK LFR7AIX",
+        "colder_2_step": "NGK LFR8AIX",
+        "gap_mm": 0.7,
+        "torque_nm": 20
+      },
+      "procedure": [
+        "Remove engine cover",
+        "Disconnect ignition coil connectors",
+        "Remove coil pack bolts (10mm)",
+        "Remove coil packs",
+        "Use spark plug socket with extension",
+        "Remove old plugs",
+        "Check and adjust gap if needed",
+        "Install new plugs hand-tight, then torque",
+        "Reinstall coil packs and connectors"
+      ],
+      "notes": "Access is tight - magnetic spark plug socket helps"
+    },
+    "timing_belt_replacement": {
+      "interval": "105,000 miles or 7 years",
+      "critical": "Interference engine - belt failure causes valve damage",
+      "components_to_replace": [
+        "Timing belt",
+        "Belt tensioner",
+        "Hydraulic tensioner",
+        "Idler pulleys (3)",
+        "Water pump",
+        "Thermostat",
+        "Cam seals (4)",
+        "Crank seal"
+      ],
+      "torque_specs": {
+        "cam_sprocket_bolts_nm": 54,
+        "crank_bolt_nm": 181,
+        "idler_bolts_nm": 39,
+        "tensioner_bolt_nm": 24,
+        "water_pump_bolts_nm": 12
+      },
+      "special_notes": [
+        "Use genuine Subaru or Gates timing kit",
+        "Rotate engine by hand twice after installation",
+        "Verify timing marks align after rotation",
+        "Hydraulic tensioner must be compressed and pinned"
+      ]
+    },
+    "head_gasket_replacement": {
+      "complexity": "High - requires engine removal or significant disassembly",
+      "recommended_upgrades": [
+        "MLS head gaskets (Cometic or Tomei)",
+        "ARP head studs",
+        "New head bolts (if not using studs)",
+        "New valve stem seals",
+        "New timing belt kit"
+      ],
+      "torque_sequence": {
+        "head_studs_arp": {
+          "step_1": "30 ft-lbs",
+          "step_2": "45 ft-lbs",
+          "step_3": "75 ft-lbs",
+          "lubricant": "ARP Ultra-Torque"
+        },
+        "pattern": "Inside to outside, alternating"
+      },
+      "notes": "Deck surfaces must be checked for flatness and refinished if needed"
+    }
+  },
+  "diagnostic_procedures": {
+    "boost_leak_test": {
+      "description": "Pressurize intake system to find leaks",
+      "procedure": [
+        "Remove intake hose at turbo inlet",
+        "Install boost leak tester",
+        "Pressurize to 15-20 psi",
+        "Listen/spray soapy water for leaks",
+        "Common leak points: BOV, intercooler couplers, throttle body"
+      ]
+    },
+    "compression_test": {
+      "description": "Verify cylinder sealing",
+      "specifications": {
+        "minimum_psi": 120,
+        "maximum_variation_psi": 15,
+        "notes": "All cylinders should be within 15% of each other"
+      },
+      "procedure": [
+        "Warm engine to operating temperature",
+        "Remove all spark plugs",
+        "Disable fuel and ignition",
+        "Install compression tester",
+        "Crank engine 5-7 revolutions",
+        "Record reading, repeat for all cylinders"
+      ]
+    },
+    "leakdown_test": {
+      "description": "Pinpoint compression loss location",
+      "specifications": {
+        "acceptable_leakage": "Less than 10%",
+        "concerning_leakage": "10-20%",
+        "failure": "Over 20%"
+      },
+      "leak_locations": {
+        "intake_valve": "Air heard at intake",
+        "exhaust_valve": "Air heard at exhaust",
+        "head_gasket": "Bubbles in coolant",
+        "piston_rings": "Air at oil fill cap"
+      }
+    }
+  },
+  "torque_specifications": {
+    "engine": {
+      "head_studs_arp_ft_lbs": 75,
+      "cam_sprocket_nm": 54,
+      "crank_bolt_nm": 181,
+      "main_bearing_caps_nm": 56,
+      "rod_bolts_nm": 43,
+      "oil_drain_plug_nm": 44,
+      "spark_plugs_nm": 20
+    },
+    "turbo": {
+      "turbo_to_exhaust_manifold_nm": 52,
+      "oil_feed_line_nm": 35,
+      "oil_drain_nm": 23
+    },
+    "exhaust": {
+      "exhaust_manifold_to_head_nm": 25,
+      "downpipe_to_turbo_nm": 40,
+      "catback_connections_nm": 30
+    }
+  },
+  "fluid_specifications": {
+    "engine_oil": {
+      "specification": "API SN or higher",
+      "viscosity": "5W-30 or 5W-40 synthetic",
+      "capacity_liters": 4.8,
+      "change_interval_km": 5000
+    },
+    "coolant": {
+      "type": "Subaru Super Coolant (Blue) or equivalent",
+      "capacity_liters": 8.0,
+      "change_interval_years": 5
+    },
+    "transmission": {
+      "type": "Subaru Extra-S 75W-90 or equivalent",
+      "capacity_liters": 3.7,
+      "change_interval_km": 50000
+    },
+    "brake_fluid": {
+      "type": "DOT 3 or DOT 4",
+      "change_interval_years": 2
+    }
+  },
+  "maintenance_schedule": {
+    "every_5000_miles": [
+      "Oil and filter change",
+      "Tire rotation",
+      "Visual inspection"
+    ],
+    "every_15000_miles": [
+      "Air filter inspection",
+      "Cabin filter replacement",
+      "Brake inspection"
+    ],
+    "every_30000_miles": [
+      "Spark plug replacement",
+      "Transmission fluid change",
+      "Differential fluid change",
+      "Coolant inspection"
+    ],
+    "every_60000_miles": [
+      "Brake fluid flush",
+      "Coolant flush",
+      "Power steering fluid flush"
+    ],
+    "every_105000_miles": [
+      "Timing belt replacement",
+      "Water pump replacement",
+      "All accessory drive belts"
+    ]
+  }
+}

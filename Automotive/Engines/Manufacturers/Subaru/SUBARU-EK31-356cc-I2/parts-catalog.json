@@ -1,0 +1,298 @@
+{
+  "catalog_id": "SUBARU-EK31-PARTS",
+  "engine_reference": "SUBARU-EK31-I2-AIR",
+  "catalog_version": "1.0",
+  "last_updated": "2025-11-22",
+  "note": "Parts availability for EK31 is extremely limited. Most components must be sourced from donor vehicles, specialty restoration suppliers in Japan, or fabricated custom.",
+  "short_block": {
+    "crankcase": {
+      "part_id": "EK31-CASE",
+      "description": "Two-piece aluminum crankcase with integrated cylinder barrels",
+      "oem_part_numbers": ["800200010"],
+      "specifications": {
+        "material": "Cast aluminum alloy",
+        "bearing_type": "Ball and roller bearings",
+        "notes": "Cases matched at factory, should be kept as pairs"
+      },
+      "restoration_sources": ["Japanese specialty importers", "Subaru 360 clubs"]
+    },
+    "crankshaft": {
+      "part_id": "EK31-CRANK",
+      "description": "Pressed-up crankshaft assembly with roller bearings",
+      "oem_part_numbers": ["800310010"],
+      "specifications": {
+        "type": "Built-up crankshaft",
+        "bearings": "Caged roller bearings",
+        "balance": "Static balanced at factory"
+      },
+      "notes": "Two-stroke crankshafts are pressed assemblies, rebuild requires specialized knowledge"
+    },
+    "connecting_rods": {
+      "part_id": "EK31-CONROD",
+      "description": "Forged steel connecting rods with roller small end",
+      "oem_part_numbers": ["800320010"],
+      "specifications": {
+        "big_end": "Caged roller bearing",
+        "small_end": "Needle roller bearing",
+        "material": "Forged steel"
+      },
+      "quantity": 2
+    },
+    "pistons": {
+      "part_id": "EK31-PISTON",
+      "description": "Aluminum alloy pistons with two piston rings",
+      "oem_part_numbers": ["800330010"],
+      "specifications": {
+        "diameter_mm": 61.0,
+        "material": "Cast aluminum",
+        "rings": "2 compression rings (no oil ring - two-stroke)",
+        "pin_diameter_mm": 14.0
+      },
+      "oversize_options": ["+0.25mm", "+0.50mm", "+0.75mm", "+1.00mm"]
+    },
+    "piston_rings": {
+      "part_id": "EK31-RINGS",
+      "description": "Piston ring set for one piston",
+      "oem_part_numbers": ["800340010"],
+      "specifications": {
+        "top_ring": "Chrome compression ring",
+        "second_ring": "Cast iron compression ring",
+        "ring_gap_mm": "0.15-0.30"
+      }
+    }
+  },
+  "cylinder_assembly": {
+    "cylinders": {
+      "part_id": "EK31-CYL",
+      "description": "Cast iron cylinder barrels (pair)",
+      "oem_part_numbers": ["800210010"],
+      "specifications": {
+        "material": "Cast iron with aluminum cooling fins",
+        "bore_mm": 61.0,
+        "hone_finish": "Cross-hatch pattern for two-stroke"
+      },
+      "rebore_options": ["+0.25mm", "+0.50mm", "+0.75mm", "+1.00mm"]
+    },
+    "cylinder_head": {
+      "part_id": "EK31-HEAD",
+      "description": "Aluminum cylinder head with integral cooling fins",
+      "oem_part_numbers": ["800220010"],
+      "specifications": {
+        "material": "Cast aluminum",
+        "combustion_chamber_cc": 27,
+        "spark_plug_thread": "14mm x 1.25"
+      }
+    },
+    "head_gasket": {
+      "part_id": "EK31-HEADGASKET",
+      "description": "Copper head gasket",
+      "oem_part_numbers": ["800250010"],
+      "specifications": {
+        "material": "Solid copper",
+        "thickness_mm": 0.8
+      },
+      "notes": "Can be annealed and reused, or source new copper blanks"
+    }
+  },
+  "fuel_system": {
+    "carburetor": {
+      "part_id": "EK31-CARB",
+      "description": "Hitachi single-barrel downdraft carburetor",
+      "oem_part_numbers": ["800610010"],
+      "specifications": {
+        "type": "Single barrel downdraft",
+        "venturi_mm": 22,
+        "main_jet": "#82 (sea level)"
+      },
+      "rebuild_kits": {
+        "gaskets": "Available from carburetor specialty suppliers",
+        "jets": "Keihin or Mikuni jets can be adapted"
+      }
+    },
+    "fuel_pump": {
+      "part_id": "EK31-FUELPUMP",
+      "description": "Mechanical diaphragm fuel pump",
+      "oem_part_numbers": ["800620010"],
+      "specifications": {
+        "type": "Diaphragm pump, crankcase pulsed",
+        "flow_rate_lph": 15
+      },
+      "aftermarket": {
+        "rebuild_diaphragm": "Generic two-stroke fuel pump diaphragm kit"
+      }
+    },
+    "fuel_filter": {
+      "part_id": "EK31-FUELFILTER",
+      "description": "Inline fuel filter",
+      "notes": "Universal inline filters with 6mm fittings work"
+    },
+    "fuel_tank": {
+      "part_id": "EK31-TANK",
+      "description": "Steel fuel tank with sender unit",
+      "oem_part_numbers": ["800630010"],
+      "capacity_liters": 20
+    }
+  },
+  "ignition_system": {
+    "magneto": {
+      "part_id": "EK31-MAG",
+      "description": "Flywheel magneto ignition assembly",
+      "oem_part_numbers": ["800710010"],
+      "specifications": {
+        "type": "Flywheel magneto",
+        "timing_btdc": "23 degrees",
+        "advance": "Fixed timing"
+      }
+    },
+    "ignition_coil": {
+      "part_id": "EK31-COIL",
+      "description": "High tension ignition coil",
+      "oem_part_numbers": ["800720010"],
+      "specifications": {
+        "primary_resistance_ohms": 3.5,
+        "secondary_resistance_ohms": 8500
+      }
+    },
+    "spark_plugs": {
+      "part_id": "EK31-SPARK",
+      "description": "Spark plug set (2)",
+      "oem_equivalent": "NGK B7HS",
+      "alternatives": ["Denso W22FS", "Champion L86C"],
+      "specifications": {
+        "thread": "14mm x 1.25 x 12.7mm reach",
+        "gap_mm": 0.6,
+        "heat_range": "7 (NGK scale)"
+      }
+    },
+    "points": {
+      "part_id": "EK31-POINTS",
+      "description": "Ignition contact points",
+      "oem_part_numbers": ["800730010"],
+      "gap_mm": 0.35,
+      "notes": "Upgrade to electronic ignition recommended for reliability"
+    },
+    "condenser": {
+      "part_id": "EK31-CONDENSER",
+      "description": "Ignition condenser/capacitor",
+      "oem_part_numbers": ["800740010"],
+      "specifications": {
+        "capacitance_uf": 0.22
+      }
+    }
+  },
+  "cooling_system": {
+    "fan": {
+      "part_id": "EK31-FAN",
+      "description": "Engine cooling fan (belt-driven)",
+      "oem_part_numbers": ["800810010"],
+      "specifications": {
+        "type": "Centrifugal blower",
+        "material": "Sheet steel"
+      },
+      "notes": "Critical component - air-cooled engine depends on fan operation"
+    },
+    "fan_belt": {
+      "part_id": "EK31-FANBELT",
+      "description": "Cooling fan drive belt",
+      "oem_part_numbers": ["800820010"],
+      "specifications": {
+        "type": "V-belt",
+        "length_mm": 580,
+        "width_mm": 10
+      },
+      "service_interval_km": 20000
+    },
+    "shrouding": {
+      "part_id": "EK31-SHROUD",
+      "description": "Engine cooling shroud/ducting set",
+      "oem_part_numbers": ["800830010"],
+      "notes": "All shrouding must be intact for proper cooling"
+    },
+    "thermostat": {
+      "part_id": "EK31-THERMO",
+      "description": "Cooling air thermostat/flap",
+      "oem_part_numbers": ["800840010"],
+      "specifications": {
+        "type": "Wax-element thermostat controlling air flaps",
+        "opening_temp_c": 60
+      }
+    }
+  },
+  "exhaust_system": {
+    "exhaust_manifold": {
+      "part_id": "EK31-EXHMAN",
+      "description": "Exhaust header/manifold",
+      "oem_part_numbers": ["800910010"],
+      "material": "Cast iron"
+    },
+    "expansion_chamber": {
+      "part_id": "EK31-EXPCHAMBER",
+      "description": "Two-stroke expansion chamber/muffler",
+      "oem_part_numbers": ["800920010"],
+      "notes": "Expansion chamber design critical for two-stroke performance"
+    },
+    "exhaust_gaskets": {
+      "part_id": "EK31-EXHGASKET",
+      "description": "Exhaust manifold gaskets (set of 2)",
+      "oem_part_numbers": ["800930010"],
+      "material": "Aluminum or copper"
+    }
+  },
+  "transmission_related": {
+    "clutch_assembly": {
+      "part_id": "EK31-CLUTCH",
+      "description": "Wet clutch pack assembly",
+      "oem_part_numbers": ["801010010"],
+      "specifications": {
+        "type": "Multi-plate wet clutch",
+        "plates": 4,
+        "operation": "Cable operated"
+      }
+    },
+    "primary_gear": {
+      "part_id": "EK31-PRIMARY",
+      "description": "Primary drive gear set",
+      "oem_part_numbers": ["801020010"]
+    }
+  },
+  "gaskets_and_seals": {
+    "full_gasket_set": {
+      "part_id": "EK31-GASKETKIT",
+      "description": "Complete engine gasket set",
+      "oem_part_numbers": ["800990010"],
+      "includes": [
+        "Crankcase gasket",
+        "Cylinder base gaskets (2)",
+        "Cylinder head gaskets (2)",
+        "Exhaust gaskets",
+        "Various o-rings and seals"
+      ]
+    },
+    "crankshaft_seals": {
+      "part_id": "EK31-CRANKSEALS",
+      "description": "Crankshaft main seals (pair)",
+      "oem_part_numbers": ["800350010"],
+      "specifications": {
+        "left_seal_od_mm": 42,
+        "right_seal_od_mm": 35
+      },
+      "notes": "Critical - crankcase must be sealed for two-stroke to function"
+    }
+  },
+  "restoration_notes": {
+    "parts_availability": "Very limited. Most parts must be sourced from:",
+    "sources": [
+      "Japanese auction sites (Yahoo Auctions Japan)",
+      "Subaru 360 clubs and registries",
+      "Specialty importers (Japan-based)",
+      "Custom fabrication",
+      "Donor vehicles"
+    ],
+    "clubs_and_resources": [
+      "Subaru 360 Drivers Club (USA)",
+      "Subaru 360 Registry",
+      "Japanese vintage Subaru clubs"
+    ],
+    "fabrication_notes": "Many components can be fabricated by skilled machinists. Gaskets can be made from appropriate gasket material. Some ignition components can be upgraded to modern electronic ignition systems."
+  }
+}

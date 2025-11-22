@@ -1,0 +1,215 @@
+{
+  "engine_id": "SUBARU-EZ36-H6-NA",
+  "manufacturer": "Subaru (Subaru Corporation)",
+  "engine_family": "EZ Series",
+  "engine_code": "EZ36",
+  "production_years": {
+    "start": 2008,
+    "end": 2019
+  },
+  "overview": {
+    "description": "The EZ36 is the enlarged 3.6-liter version of Subaru's flat-six, providing effortless power for the Outback, Legacy, and Tribeca. Known for its smooth, torquey character and premium feel, it served as Subaru's range-topping powerplant until being replaced by the FA24 turbo.",
+    "heritage": "Ultimate Naturally Aspirated Subaru",
+    "significance": "Final and most powerful naturally aspirated Subaru engine"
+  },
+  "base_specifications": {
+    "configuration": "Horizontally-opposed 6-cylinder (H6/Boxer)",
+    "displacement": {
+      "cc": 3630,
+      "liters": 3.6
+    },
+    "bore": {
+      "mm": 92.0
+    },
+    "stroke": {
+      "mm": 91.0
+    },
+    "compression_ratio": "10.5:1",
+    "valvetrain": "DOHC, 4 valves per cylinder (24V), chain-driven with Dual AVCS",
+    "aspiration": "Naturally Aspirated",
+    "cooling_system": "Water-cooled",
+    "fuel_system": "Sequential multi-point fuel injection",
+    "fuel_type": "Premium unleaded (91+ octane)"
+  },
+  "power_output_by_variant": {
+    "ez36_tribeca": {
+      "years": "2008-2014",
+      "power_hp": 256,
+      "power_kw": 191,
+      "power_rpm": 6000,
+      "torque_nm": 335,
+      "torque_lb_ft": 247,
+      "torque_rpm": 4400,
+      "notes": "Tribeca application"
+    },
+    "ez36_legacy_outback": {
+      "years": "2010-2019",
+      "power_hp": 256,
+      "power_kw": 191,
+      "power_rpm": 6000,
+      "torque_nm": 335,
+      "torque_lb_ft": 247,
+      "torque_rpm": 4400,
+      "notes": "Legacy and Outback 3.6R"
+    },
+    "ez36_final": {
+      "years": "2015-2019",
+      "power_hp": 256,
+      "power_kw": 191,
+      "power_rpm": 6000,
+      "torque_nm": 335,
+      "torque_lb_ft": 247,
+      "torque_rpm": 4400,
+      "notes": "Updated emissions calibration, same power"
+    }
+  },
+  "vehicle_applications": [
+    {
+      "model": "Subaru Tribeca",
+      "chassis_code": "WX",
+      "years": "2008-2014",
+      "body_styles": ["5-door SUV"],
+      "market": "USDM",
+      "notes": "Upgraded from 3.0L"
+    },
+    {
+      "model": "Subaru Outback 3.6R",
+      "chassis_code": "BR/BS",
+      "years": "2010-2019",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "Premium Outback with luxury features"
+    },
+    {
+      "model": "Subaru Legacy 3.6R",
+      "chassis_code": "BM/BN",
+      "years": "2010-2019",
+      "body_styles": ["4-door sedan"],
+      "market": "USDM",
+      "notes": "Flagship Legacy sedan"
+    },
+    {
+      "model": "Subaru Outback 3.6R Limited/Touring",
+      "chassis_code": "BS",
+      "years": "2015-2019",
+      "body_styles": ["5-door wagon"],
+      "market": "USDM",
+      "notes": "Final EZ36 applications, HK audio, EyeSight"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_liters": 6.0,
+      "capacity_with_filter_liters": 6.5,
+      "specification": "0W-20 synthetic",
+      "change_interval_km": 10000,
+      "change_interval_miles": 6000
+    },
+    "coolant": {
+      "capacity_liters": 9.5,
+      "specification": "Subaru Super Coolant"
+    },
+    "transmission": {
+      "cvt_liters": 12.0,
+      "specification": "Subaru CVT Fluid (CVTF)"
+    }
+  },
+  "critical_dimensions": {
+    "engine_weight_kg": 205,
+    "redline_rpm": 6200,
+    "max_rpm": 6500,
+    "bore_mm": 92.0,
+    "stroke_mm": 91.0
+  },
+  "electronic_systems": {
+    "ecu": {
+      "manufacturer": "Denso",
+      "type": "OBD-II",
+      "features": ["Dual AVCS control", "DBW throttle", "Variable intake manifold"]
+    },
+    "ignition": {
+      "type": "Direct ignition, coil-on-plug",
+      "firing_order": "1-6-3-2-5-4",
+      "spark_plugs": {
+        "type": "NGK SILZKAR7B11",
+        "gap_mm": 1.1,
+        "quantity": 6,
+        "notes": "Iridium long-life plugs"
+      }
+    },
+    "avcs": {
+      "description": "Dual Active Valve Control System",
+      "type": "Both intake and exhaust cam timing",
+      "range_degrees": 40
+    },
+    "x_mode": {
+      "description": "Enhanced AWD traction control",
+      "years": "2015+",
+      "notes": "Available on Outback models"
+    }
+  },
+  "timing_system": {
+    "type": "Timing chain",
+    "service_interval": "Lifetime maintenance-free under normal conditions",
+    "components": [
+      "Primary timing chains (2)",
+      "Secondary timing chains (2)",
+      "Chain guides (6)",
+      "Hydraulic tensioners (4)"
+    ],
+    "notes": "No scheduled replacement, but inspect for noise/stretch at high mileage"
+  },
+  "notes": {
+    "heritage": "The EZ36 represented the pinnacle of Subaru's naturally aspirated development. Its 256hp from 3.6L displacement provided effortless power without turbo complexity.",
+    "end_of_na_era": "The EZ36 was discontinued after 2019 as Subaru moved to turbocharged four-cylinders (FA24) for performance applications, ending the era of NA six-cylinders.",
+    "common_issues": [
+      {
+        "issue": "Oil consumption",
+        "severity": "Low-Medium",
+        "cause": "Some units consume oil between changes",
+        "prevention": "Check oil regularly, use specified 0W-20"
+      },
+      {
+        "issue": "Secondary air injection failure",
+        "severity": "Low",
+        "cause": "Pump or valve failure, emissions-related",
+        "symptoms": ["Check engine light", "P2440/P2442 codes"],
+        "prevention": "None - replace when failed"
+      },
+      {
+        "issue": "CVT issues",
+        "severity": "Medium",
+        "cause": "Not engine-related but common pairing",
+        "prevention": "Regular CVT fluid changes every 30k miles"
+      }
+    ],
+    "reliability": "The EZ36 is considered highly reliable. Chain-driven timing, dual AVCS, and conservative tuning contribute to longevity. Many exceed 200,000 miles.",
+    "vs_fa24_turbo": {
+      "ez36_advantages": [
+        "Smoother power delivery",
+        "No turbo lag",
+        "Simpler maintenance",
+        "Proven reliability"
+      ],
+      "fa24_advantages": [
+        "More peak power (260-311hp)",
+        "Better fuel economy",
+        "More torque at low RPM",
+        "Modern emissions"
+      ]
+    },
+    "driving_character": "The EZ36 is the gentleman's Subaru engine. Smooth, quiet, and torquey, it provides effortless highway passing and a refined driving experience. The flat-six exhaust note is subdued but distinctive.",
+    "towing": {
+      "rating_lbs": 3000,
+      "notes": "Popular for light towing due to torque and smooth power delivery"
+    },
+    "fuel_economy": {
+      "city_mpg": 20,
+      "highway_mpg": 28,
+      "combined_mpg": 23,
+      "notes": "Respectable for a 3.6L H6"
+    }
+  },
+  "version": "1.0",
+  "last_updated": "2025-11-22"
+}
