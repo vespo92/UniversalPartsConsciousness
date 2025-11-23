@@ -1,12 +1,23 @@
 """
-Agent_1 Storage Module
-======================
-Data persistence and caching systems.
+Agent_1 (ARCHIVIST) - Storage Module
+=====================================
+"Nothing is forgotten. Everything is accessible."
+
+Data persistence and caching systems for the Universal Parts Consciousness.
+
+Components:
+- PartRepository: Core part data access layer with indexing and search
 """
 
-# Storage components to be implemented:
-# - part_repository.py: Core part data access layer
-# - archive_manager.py: Historical/discontinued parts
-# - cache_manager.py: High-performance caching
+from .part_repository import (
+    PartRepository,
+    PartIndex,
+    RepositoryStats,
+)
 
-__all__ = []
+
+__all__ = [
+    "PartRepository",
+    "PartIndex",
+    "RepositoryStats",
+]
