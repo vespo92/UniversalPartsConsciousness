@@ -61,6 +61,13 @@ from agents import (
     CoherenceLevel,
 )
 
+# Import ORACLE for direct compatibility commands
+from agents.oracle.deploy import (
+    deploy_oracle,
+    quick_thread_check,
+    quick_galvanic_check,
+)
+
 
 # =============================================================================
 # Logging Configuration
@@ -190,6 +197,162 @@ async def cmd_agents(args: argparse.Namespace) -> int:
     return 0
 
 
+# =============================================================================
+# ORACLE Commands - Direct Compatibility Access
+# =============================================================================
+
+async def cmd_oracle(args: argparse.Namespace) -> int:
+    """ORACLE - The Compatibility Oracle (Agent_2)."""
+    print()
+    print("=" * 70)
+    print(" ORACLE - THE COMPATIBILITY ORACLE (Agent_2)")
+    print(" \"Will it fit? Will it hold? Will it fail?\"")
+    print("=" * 70)
+    print()
+
+    oracle = deploy_oracle()
+    status = oracle.get_status()
+
+    print(f"Status: {status['status']}")
+    print(f"Version: {status['version']}")
+    print()
+    print("Capabilities:")
+    for cap in status['capabilities']:
+        print(f"  - {cap}")
+    print()
+
+    if args.json:
+        print(json.dumps(status, indent=2))
+
+    return 0
+
+
+async def cmd_oracle_thread(args: argparse.Namespace) -> int:
+    """Check thread compatibility via ORACLE."""
+    print()
+    print("=" * 70)
+    print(" ORACLE - Thread Compatibility Check")
+    print("=" * 70)
+    print()
+
+    diameter = args.diameter
+    pitch = args.pitch
+
+    result = quick_thread_check(diameter, pitch)
+
+    print(f"Thread: M{diameter}x{pitch}")
+    print("-" * 50)
+    print()
+    print(f"  Compatible:          {result['is_compatible']}")
+    print(f"  Engagement Quality:  {result['engagement_quality'].upper()}")
+    print(f"  Pitch Match:         {result['pitch_match']}")
+    print(f"  Diameter Match:      {result['diameter_match']}")
+    print(f"  Direction Match:     {result['direction_match']}")
+    print()
+    print(f"  Clearance (min):     {result['clearance_min_mm']:.4f} mm")
+    print(f"  Clearance (max):     {result['clearance_max_mm']:.4f} mm")
+    print()
+
+    if result['warnings']:
+        print("  Warnings:")
+        for w in result['warnings']:
+            print(f"    - {w}")
+        print()
+
+    # Oracle verdict
+    print("-" * 50)
+    if result['is_compatible']:
+        print(f"ORACLE VERDICT: COMPATIBLE ({result['engagement_quality']})")
+    else:
+        print("ORACLE VERDICT: INCOMPATIBLE")
+    print()
+
+    if args.json:
+        print(json.dumps(result, indent=2))
+
+    return 0
+
+
+async def cmd_oracle_galvanic(args: argparse.Namespace) -> int:
+    """Check galvanic corrosion risk via ORACLE."""
+    print()
+    print("=" * 70)
+    print(" ORACLE - Galvanic Corrosion Risk Assessment")
+    print("=" * 70)
+    print()
+
+    mat_a = args.material_a
+    mat_b = args.material_b
+    env = args.environment
+
+    result = quick_galvanic_check(mat_a, mat_b, env)
+
+    print(f"Materials: {mat_a} + {mat_b}")
+    print(f"Environment: {env}")
+    print("-" * 50)
+    print()
+    print(f"  Risk Level:     {result['risk_level']}")
+    print(f"  Description:    {result['description']}")
+    print(f"  Recommendation: {result['recommendation']}")
+    print()
+
+    # Oracle verdict with risk indicator
+    print("-" * 50)
+    risk_indicators = {
+        "SAFE": "[====] SAFE - No action needed",
+        "LOW": "[=== ] LOW - Monitor",
+        "MODERATE": "[==  ] MODERATE - Isolate recommended",
+        "SEVERE": "[=   ] SEVERE - Avoid or isolate",
+    }
+    print(f"ORACLE VERDICT: {risk_indicators.get(result['risk_level'], result['risk_level'])}")
+    print()
+
+    if args.json:
+        print(json.dumps(result, indent=2))
+
+    return 0
+
+
+async def cmd_oracle_safety(args: argparse.Namespace) -> int:
+    """Calculate safety factor via ORACLE."""
+    print()
+    print("=" * 70)
+    print(" ORACLE - Safety Factor Calculation")
+    print("=" * 70)
+    print()
+
+    oracle = deploy_oracle()
+    result = oracle.calculate_safety_factor(
+        args.proof_load,
+        args.applied_load,
+        args.load_type
+    )
+
+    print(f"Proof Load:    {result['proof_load_kn']} kN")
+    print(f"Applied Load:  {result['applied_load_kn']} kN")
+    print(f"Load Type:     {result['load_type']}")
+    print("-" * 50)
+    print()
+    print(f"  Safety Factor:     {result['safety_factor']}")
+    print(f"  Minimum Required:  {result['minimum_required']}")
+    print(f"  Is Adequate:       {result['is_adequate']}")
+    print(f"  Margin:            {result['margin_percent']}%")
+    print()
+
+    # Oracle verdict
+    print("-" * 50)
+    if result['is_adequate']:
+        print(f"ORACLE VERDICT: ADEQUATE (SF = {result['safety_factor']}, margin +{result['margin_percent']}%)")
+    else:
+        print(f"ORACLE VERDICT: INSUFFICIENT (SF = {result['safety_factor']}, {result['margin_percent']}% below minimum)")
+    print()
+
+    if args.json:
+        print(json.dumps(result, indent=2))
+
+    return 0
+
+
 async def interactive_mode(upc: UniversalPartsConsciousness) -> None:
     """Interactive mode for exploring UPC."""
     print()
@@ -286,6 +449,40 @@ The Decalogue awaits your command.
     # Agents command
     subparsers.add_parser("agents", help="List all agents")
 
+    # ORACLE commands
+    oracle_parser = subparsers.add_parser("oracle", help="ORACLE - Compatibility Oracle")
+    oracle_parser.add_argument("--json", action="store_true", help="Output as JSON")
+
+    # ORACLE thread check
+    oracle_thread = subparsers.add_parser("oracle-thread", help="Check thread compatibility")
+    oracle_thread.add_argument("diameter", type=float, help="Nominal diameter in mm (e.g., 8)")
+    oracle_thread.add_argument("pitch", type=float, help="Thread pitch in mm (e.g., 1.25)")
+    oracle_thread.add_argument("--json", action="store_true", help="Output as JSON")
+
+    # ORACLE galvanic check
+    oracle_galvanic = subparsers.add_parser("oracle-galvanic", help="Check galvanic corrosion risk")
+    oracle_galvanic.add_argument("material_a", help="First material (e.g., steel)")
+    oracle_galvanic.add_argument("material_b", help="Second material (e.g., aluminum)")
+    oracle_galvanic.add_argument(
+        "--environment", "-e",
+        default="indoor",
+        choices=["indoor", "outdoor", "marine", "chemical"],
+        help="Operating environment"
+    )
+    oracle_galvanic.add_argument("--json", action="store_true", help="Output as JSON")
+
+    # ORACLE safety factor
+    oracle_safety = subparsers.add_parser("oracle-safety", help="Calculate safety factor")
+    oracle_safety.add_argument("proof_load", type=float, help="Proof load in kN")
+    oracle_safety.add_argument("applied_load", type=float, help="Applied load in kN")
+    oracle_safety.add_argument(
+        "--load-type", "-t",
+        default="static",
+        choices=["static", "cyclic", "impact"],
+        help="Type of loading"
+    )
+    oracle_safety.add_argument("--json", action="store_true", help="Output as JSON")
+
     args = parser.parse_args()
 
     # Setup logging
@@ -304,6 +501,14 @@ The Decalogue awaits your command.
         return asyncio.run(cmd_status(args))
     elif args.command == "agents":
         return asyncio.run(cmd_agents(args))
+    elif args.command == "oracle":
+        return asyncio.run(cmd_oracle(args))
+    elif args.command == "oracle-thread":
+        return asyncio.run(cmd_oracle_thread(args))
+    elif args.command == "oracle-galvanic":
+        return asyncio.run(cmd_oracle_galvanic(args))
+    elif args.command == "oracle-safety":
+        return asyncio.run(cmd_oracle_safety(args))
     else:
         parser.print_help()
         return 1
