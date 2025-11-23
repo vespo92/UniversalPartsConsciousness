@@ -1,0 +1,98 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-parts-consciousness"
+version = "0.1.0"
+description = "A living, breathing consciousness of all mechanical things"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "UPC Team"}
+]
+keywords = [
+    "mechanical",
+    "parts",
+    "consciousness",
+    "automotive",
+    "engineering",
+    "ai",
+    "agents",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "asyncio-mqtt>=0.16.0",
+    "pydantic>=2.0.0",
+    "aiohttp>=3.9.0",
+    "redis>=5.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+web = [
+    "fastapi>=0.104.0",
+    "uvicorn>=0.24.0",
+]
+database = [
+    "asyncpg>=0.29.0",
+    "sqlalchemy>=2.0.0",
+    "alembic>=1.12.0",
+]
+all = [
+    "universal-parts-consciousness[dev,web,database]",
+]
+
+[project.scripts]
+upc = "upc:main"
+
+[project.urls]
+Homepage = "https://github.com/vespo92/UniversalPartsConsciousness"
+Documentation = "https://github.com/vespo92/UniversalPartsConsciousness#readme"
+Repository = "https://github.com/vespo92/UniversalPartsConsciousness.git"
+Issues = "https://github.com/vespo92/UniversalPartsConsciousness/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agents*", "parts_database*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
