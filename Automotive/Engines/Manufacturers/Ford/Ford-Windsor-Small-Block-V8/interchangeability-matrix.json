@@ -1,0 +1,349 @@
+{
+  "engine_family": "Ford Windsor Small Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "vehicle_platforms": {
+    "ford_mustang": {
+      "years": "1964-2004",
+      "models": [
+        {"model": "Mustang 260", "years": "1964-1965", "engines": ["260"]},
+        {"model": "Mustang 289", "years": "1965-1968", "engines": ["289 2V", "289 4V", "289 HiPo"]},
+        {"model": "Mustang 302", "years": "1968-1973", "engines": ["302 2V", "302 4V", "Boss 302"]},
+        {"model": "Mustang 5.0", "years": "1979-1995", "engines": ["302 5.0", "302 5.0 HO"]},
+        {"model": "Mustang GT", "years": "1996-2004", "engines": ["4.6 (not Windsor)"]}
+      ],
+      "notes": "5.0 Mustang (1979-1995) is most popular Windsor platform"
+    },
+    "shelby": {
+      "years": "1965-1970",
+      "models": [
+        {"model": "GT350", "years": "1965-1967", "engines": ["289 HiPo"]},
+        {"model": "GT350", "years": "1968-1970", "engines": ["302 4V"]},
+        {"model": "GT350R", "years": "1965", "engines": ["289 HiPo race-prep"]}
+      ],
+      "notes": "Original Shelby GT350 used modified 289 HiPo"
+    },
+    "ford_bronco": {
+      "years": "1966-1996",
+      "models": [
+        {"model": "Bronco", "years": "1966-1977", "engines": ["289", "302"]},
+        {"model": "Bronco", "years": "1978-1996", "engines": ["302", "351W"]}
+      ],
+      "notes": "351W popular swap for early Broncos"
+    },
+    "ford_f_series": {
+      "years": "1965-2001",
+      "models": [
+        {"model": "F-100/F-150", "years": "1965-1996", "engines": ["289", "302", "351W"]},
+        {"model": "F-250", "years": "1965-1997", "engines": ["302", "351W"]},
+        {"model": "F-350", "years": "1965-1997", "engines": ["351W"]}
+      ],
+      "notes": "5.0L and 5.8L remained in trucks until late 1990s"
+    },
+    "mercury_cougar": {
+      "years": "1967-1976",
+      "models": [
+        {"model": "Cougar", "years": "1967-1970", "engines": ["289", "302", "351W"]},
+        {"model": "Cougar XR-7", "years": "1967-1976", "engines": ["302", "351W"]}
+      ],
+      "notes": "Mercury pony car used Windsor V8s"
+    },
+    "ford_fairlane_torino": {
+      "years": "1962-1976",
+      "models": [
+        {"model": "Fairlane", "years": "1962-1970", "engines": ["221", "260", "289", "302"]},
+        {"model": "Torino", "years": "1968-1976", "engines": ["302", "351W"]}
+      ],
+      "notes": "Mid-size Ford platforms"
+    },
+    "ford_explorer": {
+      "years": "1991-2003",
+      "models": [
+        {"model": "Explorer", "years": "1996-2001", "engines": ["5.0 GT40P heads"]},
+        {"model": "Mountaineer", "years": "1998-2001", "engines": ["5.0 GT40P heads"]}
+      ],
+      "notes": "Explorer 5.0 had GT40P heads, excellent donor engines"
+    },
+    "crown_vic_panther": {
+      "years": "1992-2004",
+      "models": [
+        {"model": "Crown Victoria", "years": "1992-1997", "engines": ["5.0L"]},
+        {"model": "Grand Marquis", "years": "1992-1997", "engines": ["5.0L"]},
+        {"model": "Town Car", "years": "1992-1997", "engines": ["5.0L"]}
+      ],
+      "notes": "Police Interceptor versions available"
+    }
+  },
+  "interchangeability_groups": {
+    "displacement_families": {
+      "small_bore": {
+        "engines": ["221", "260"],
+        "bore_inches": "3.50-3.80",
+        "notes": "Early engines, limited parts availability"
+      },
+      "standard_bore": {
+        "engines": ["289", "302", "Boss 302"],
+        "bore_inches": 4.00,
+        "deck_height_inches": 8.206,
+        "notes": "Standard small block dimensions"
+      },
+      "tall_deck": {
+        "engines": ["351W"],
+        "bore_inches": 4.00,
+        "deck_height_inches": 9.503,
+        "notes": "Taller deck, different bellhousing pattern"
+      }
+    },
+    "camshaft_types": {
+      "flat_tappet": {
+        "years": "1962-1984",
+        "block_features": "No roller cam provisions",
+        "notes": "Requires ZDDP oil for cam protection"
+      },
+      "roller_tappet": {
+        "years": "1985-2001",
+        "block_features": "Spider hold-downs, roller lifter provisions",
+        "notes": "E7TE and later blocks are roller blocks"
+      }
+    },
+    "oiling_systems": {
+      "front_sump": {
+        "applications": "Mustang, most passenger cars",
+        "notes": "Standard configuration"
+      },
+      "rear_sump": {
+        "applications": "F-Series trucks",
+        "notes": "Different oil pan and pickup"
+      },
+      "dual_sump": {
+        "applications": "Racing",
+        "notes": "Aftermarket deep sump pans"
+      }
+    }
+  },
+  "component_interchangeability": {
+    "cylinder_heads": {
+      "289_302_heads": {
+        "interchangeable": true,
+        "bolt_pattern": "Same for all 289/302",
+        "pushrod_length": "Same"
+      },
+      "351W_heads": {
+        "interchangeable_with_302": "Yes, with spacers or 351W intake",
+        "chamber_size": "Larger than 302 heads",
+        "notes": "351W heads on 302 raises compression, requires manifold work"
+      },
+      "gt40_gt40p_heads": {
+        "gt40": {
+          "casting": "F3ZE",
+          "exhaust_pattern": "Standard",
+          "spark_plug": "Standard 45-degree"
+        },
+        "gt40p": {
+          "casting": "F77E",
+          "exhaust_pattern": "Non-standard (requires adapters)",
+          "spark_plug": "90-degree angle",
+          "flow": "Better than GT40",
+          "notes": "GT40P has excellent flow but requires header adapters"
+        }
+      },
+      "aftermarket_heads": {
+        "notes": "Most aftermarket heads fit all 289/302 blocks",
+        "exceptions": "Check for distributor clearance on tall-runner designs"
+      }
+    },
+    "intake_manifolds": {
+      "289_302_manifolds": {
+        "interchangeable": true,
+        "bolt_pattern": "Same",
+        "notes": "All 289/302 manifolds interchange"
+      },
+      "351W_manifolds": {
+        "interchangeable_with_302": "No - taller ports",
+        "notes": "351W has higher ports, requires specific manifold"
+      },
+      "efi_vs_carb": {
+        "notes": "EFI manifolds have provisions for throttle body, IAC, sensors"
+      }
+    },
+    "crankshafts": {
+      "289_crank_in_302": {
+        "possible": true,
+        "result": "Creates 283 CI displacement",
+        "notes": "Rarely done"
+      },
+      "302_crank": {
+        "stroke_inches": 3.00,
+        "balance": "28.2 oz-in external",
+        "notes": "Standard 302 rotating assembly"
+      },
+      "stroker_cranks": {
+        "331_stroke": "3.25\" (offset ground 302 crank)",
+        "347_stroke": "3.40\" (new forged crank)",
+        "notes": "347 is maximum safe stroke in 302 block"
+      },
+      "351W_crank": {
+        "stroke_inches": 3.50,
+        "main_journals": "3.00\" (larger than 302)",
+        "notes": "Not interchangeable with 302"
+      }
+    },
+    "connecting_rods": {
+      "289_302_rods": {
+        "length_inches": 5.090,
+        "big_end": 2.1228,
+        "notes": "All 289/302 rods interchange"
+      },
+      "5_0_ho_rods": {
+        "notes": "Better quality forgings than earlier rods"
+      },
+      "351W_rods": {
+        "length_inches": 5.956,
+        "big_end": 2.3107,
+        "notes": "Longer rod for taller deck, not interchangeable with 302"
+      }
+    },
+    "camshafts": {
+      "289_302_cams": {
+        "interchangeable": true,
+        "firing_order": "1-5-4-2-6-3-7-8",
+        "notes": "All 289/302 flat tappet cams interchange"
+      },
+      "351W_cams": {
+        "interchangeable": false,
+        "firing_order": "1-3-7-2-6-5-4-8",
+        "notes": "Different firing order, not interchangeable"
+      },
+      "roller_vs_flat": {
+        "notes": "Roller cams require roller lifter provisions in block"
+      }
+    },
+    "timing_components": {
+      "289_302_timing": {
+        "interchangeable": true,
+        "notes": "All 289/302 use same timing set"
+      },
+      "351W_timing": {
+        "interchangeable": false,
+        "notes": "Different timing set for taller deck"
+      }
+    },
+    "oil_pumps": {
+      "289_302_pump": {
+        "interchangeable": true,
+        "notes": "Same pump for all 289/302"
+      },
+      "351W_pump": {
+        "interchangeable": false,
+        "notes": "Larger pump for larger engine"
+      }
+    },
+    "distributors": {
+      "289_302_distributor": {
+        "interchangeable": true,
+        "firing_order": "1-5-4-2-6-3-7-8"
+      },
+      "351W_distributor": {
+        "interchangeable": false,
+        "firing_order": "1-3-7-2-6-5-4-8",
+        "notes": "Different firing order requires different distributor"
+      },
+      "tfi_modules": {
+        "gray_module": "Timing controlled by module (1985-1987)",
+        "gray_later": "Timing controlled by EEC (1988+)",
+        "notes": "Module failure is common issue"
+      }
+    }
+  },
+  "transmission_compatibility": {
+    "bellhousing_patterns": {
+      "289_302": {
+        "pattern": "Small block Ford",
+        "notes": "Standard bellhousing pattern"
+      },
+      "351W": {
+        "pattern": "351W specific (wider pattern)",
+        "notes": "Different bolt spacing than 302"
+      }
+    },
+    "compatible_transmissions": [
+      {
+        "transmission": "C4",
+        "type": "Automatic 3-speed",
+        "notes": "Light duty, common behind 289/302"
+      },
+      {
+        "transmission": "AOD/AODE",
+        "type": "Automatic 4-speed overdrive",
+        "notes": "1980+ overdrive automatic, common in 5.0 Mustangs"
+      },
+      {
+        "transmission": "T5",
+        "type": "Manual 5-speed",
+        "notes": "Standard 5.0 Mustang 5-speed"
+      },
+      {
+        "transmission": "Tremec TKO 500/600",
+        "type": "Manual 5-speed",
+        "notes": "Aftermarket heavy-duty 5-speed"
+      },
+      {
+        "transmission": "Toploader",
+        "type": "Manual 4-speed",
+        "notes": "Classic 4-speed for vintage applications"
+      },
+      {
+        "transmission": "T45/T56",
+        "type": "Manual 6-speed",
+        "notes": "Modern 6-speed conversions available"
+      }
+    ]
+  },
+  "swap_compatibility": {
+    "302_into_351W_equipped": {
+      "considerations": [
+        "Different bellhousing pattern",
+        "Different motor mounts",
+        "Different oil pan",
+        "Shorter engine - hood clearance gained"
+      ],
+      "notes": "302 is lighter, easier swap than 351W"
+    },
+    "351W_into_302_equipped": {
+      "considerations": [
+        "Taller deck - check hood clearance",
+        "Different bellhousing - adapter or transmission swap",
+        "Different motor mounts - fabrication required",
+        "Different accessories layout"
+      ],
+      "notes": "Popular swap for increased power"
+    },
+    "sbf_into_other_vehicles": {
+      "popular_swaps": [
+        "Early Ford trucks with flathead or Y-Block",
+        "Jeep CJ/Wrangler",
+        "Street rods",
+        "Kit cars (Cobra replicas)"
+      ],
+      "notes": "Small block Ford is popular swap engine"
+    }
+  },
+  "oem_part_number_cross_reference": {
+    "casting_number_locations": {
+      "block": "Driver side above oil pan rail",
+      "heads": "Under valve cover or intake surface",
+      "intake": "Plenum or runner surface"
+    },
+    "common_head_castings": {
+      "E7TE": "1987-1995 5.0 HO - most common, 165 CFM",
+      "F3ZE": "GT40 - Cobra/Explorer 1993-1997",
+      "F77E": "GT40P - Explorer/Mountaineer 1997-2001",
+      "C9OE": "Boss 302 heads - valuable collector"
+    },
+    "desirable_blocks": {
+      "E7TE-6015-BA": "1987+ roller block",
+      "M-6010-A351W": "Ford Racing Sportsman block",
+      "D0OE-6015-A": "1970 Boss 302 block"
+    }
+  }
+}

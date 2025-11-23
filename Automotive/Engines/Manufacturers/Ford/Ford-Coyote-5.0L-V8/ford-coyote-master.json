@@ -1,0 +1,171 @@
+{
+  "engine_id": "FORD-COYOTE-5.0L-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Coyote",
+  "common_names": ["Coyote", "5.0L Ti-VCT", "Gen 1/2/3 Coyote", "Aluminator", "Road Runner"],
+  "production_years": "2011-present",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's modern high-performance DOHC V8, designed as the spiritual successor to the legendary 5.0L Windsor. Features dual overhead cams, 4 valves per cylinder, and variable cam timing. Revived the '5.0' badge and became instantly popular with enthusiasts for its high-revving nature and impressive naturally aspirated power.",
+  "heritage": {
+    "significance": "Revival of the 5.0 badge with modern technology, created new performance benchmark",
+    "innovations": [
+      "Twin Independent Variable Cam Timing (Ti-VCT)",
+      "Composite intake manifold with charge motion control valves",
+      "Plasma transferred wire arc (PTWA) cylinder coating",
+      "High-flow cylinder heads with 4 valves per cylinder",
+      "7,500 RPM redline (Gen 3)"
+    ],
+    "racing_heritage": {
+      "nascar": "FR9 race engine derived from Coyote architecture",
+      "road_racing": "Powers Ford Performance Mustang racing programs",
+      "drag_racing": "Very popular in sportsman and NMRA racing"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8",
+    "block_material": "Aluminum with PTWA coating",
+    "head_material": "Aluminum",
+    "valvetrain": "DOHC, 4 valves per cylinder, roller finger followers",
+    "bore_spacing_mm": 94.5,
+    "deck_height_mm": 227,
+    "main_bearings": 5,
+    "fuel_system": "Sequential Multi-Port EFI (Gen 1/2), Direct Injection + Port Injection (Gen 3)"
+  },
+  "variants": [
+    {
+      "variant_id": "COYOTE-GEN1",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 3.63,
+      "stroke_inches": 3.65,
+      "compression_ratio": "11.0:1",
+      "horsepower": 412,
+      "horsepower_rpm": 6500,
+      "torque_lb_ft": 390,
+      "torque_rpm": 4250,
+      "production_years": "2011-2014",
+      "notes": "Original Coyote, port injection only"
+    },
+    {
+      "variant_id": "COYOTE-GEN2",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 3.63,
+      "stroke_inches": 3.65,
+      "compression_ratio": "11.0:1",
+      "horsepower": 435,
+      "horsepower_rpm": 6500,
+      "torque_lb_ft": 400,
+      "torque_rpm": 4250,
+      "production_years": "2015-2017",
+      "notes": "Revised heads and intake for improved power"
+    },
+    {
+      "variant_id": "COYOTE-GEN3",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 3.63,
+      "stroke_inches": 3.65,
+      "compression_ratio": "12.0:1",
+      "horsepower": 460,
+      "horsepower_rpm": 7000,
+      "torque_lb_ft": 420,
+      "torque_rpm": 4600,
+      "production_years": "2018-present",
+      "notes": "Direct injection + port injection, higher compression, 7500 RPM redline"
+    },
+    {
+      "variant_id": "COYOTE-GEN3-MACH1",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 3.63,
+      "stroke_inches": 3.65,
+      "compression_ratio": "12.0:1",
+      "horsepower": 480,
+      "horsepower_rpm": 7000,
+      "torque_lb_ft": 420,
+      "torque_rpm": 4600,
+      "production_years": "2021-present",
+      "notes": "Mach 1 version with GT350 intake manifold and improved oil cooling"
+    },
+    {
+      "variant_id": "COYOTE-ALUMINATOR-NA",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 3.63,
+      "stroke_inches": 3.65,
+      "compression_ratio": "11.0:1",
+      "horsepower": 460,
+      "horsepower_rpm": 7000,
+      "torque_lb_ft": 420,
+      "torque_rpm": 4600,
+      "production_years": "2015-present",
+      "notes": "Ford Performance crate engine with forged internals for NA use"
+    },
+    {
+      "variant_id": "COYOTE-ALUMINATOR-XS",
+      "displacement_ci": 302,
+      "displacement_liters": 5.0,
+      "bore_inches": 3.63,
+      "stroke_inches": 3.65,
+      "compression_ratio": "9.5:1",
+      "horsepower": 460,
+      "horsepower_rpm": 7000,
+      "torque_lb_ft": 420,
+      "torque_rpm": 4600,
+      "production_years": "2015-present",
+      "forced_induction_capable": true,
+      "notes": "Ford Performance crate engine with forged internals for forced induction"
+    },
+    {
+      "variant_id": "ROADRUNNER-5.2",
+      "displacement_ci": 315,
+      "displacement_liters": 5.2,
+      "bore_inches": 3.70,
+      "stroke_inches": 3.65,
+      "compression_ratio": "12.0:1",
+      "horsepower": 580,
+      "horsepower_rpm": 7500,
+      "torque_lb_ft": 445,
+      "torque_rpm": 4750,
+      "production_years": "2020-present",
+      "notes": "Ford Performance 5.2L crate engine based on Coyote/Voodoo architecture"
+    }
+  ],
+  "firing_order": "1-5-4-8-3-7-2-6",
+  "vehicle_applications": [
+    {"years": "2011-present", "models": ["Ford Mustang GT"], "notes": "Primary application"},
+    {"years": "2011-2014", "models": ["Ford F-150 (limited)"], "notes": "Gen 1 in F-150"},
+    {"years": "2021-present", "models": ["Ford Mustang Mach 1"], "notes": "Gen 3 with GT350 intake"},
+    {"years": "2020-present", "models": ["Ford Bronco"], "notes": "Optional engine in new Bronco"}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 8.5, "oil_specification": "5W-20 or 5W-30 (performance)"},
+    "coolant": {"capacity_quarts": 13, "coolant_type": "Motorcraft Orange"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts": "Multi-step torque-to-yield procedure",
+    "main_cap_bolts_ft_lbs": 80,
+    "rod_cap_bolts_ft_lbs": 35,
+    "spark_plugs_ft_lbs": 10
+  },
+  "common_issues": [
+    {"issue": "Oil consumption (Gen 1)", "solution": "PCV update, oil separator catch can"},
+    {"issue": "Tick noise at startup", "description": "Cam phaser or lash adjuster noise", "solution": "Usually normal, check oil level and quality"},
+    {"issue": "Timing chain wear (high mileage)", "solution": "Replace timing components as a set"}
+  ],
+  "strengths": [
+    "Excellent naturally aspirated power (460+ HP stock)",
+    "7,000-7,500 RPM capability",
+    "Responds extremely well to modifications",
+    "Aluminum construction keeps weight down",
+    "Strong aftermarket support",
+    "Crate engine program makes swaps easy"
+  ],
+  "notes": {
+    "gen1_vs_gen2_vs_gen3": "Gen 2 improved heads and intake over Gen 1. Gen 3 added direct injection for higher compression and better fuel economy while increasing power.",
+    "swappability": "Very popular swap engine. Ford Performance offers complete crate engine and control pack for simplified installation.",
+    "forced_induction": "With Aluminator XS crate engine or built internals, Coyotes regularly make 700-1000+ HP with superchargers."
+  }
+}

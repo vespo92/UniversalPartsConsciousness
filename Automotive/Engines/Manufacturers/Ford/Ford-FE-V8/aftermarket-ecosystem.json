@@ -1,0 +1,542 @@
+{
+  "engine_family": "Ford FE V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "vendors_and_retailers": {
+    "specialty_fe_suppliers": [
+      {
+        "name": "FE Power",
+        "specialty": "Complete FE engine builds and parts",
+        "url": "http://fepower.net",
+        "notes": "Premier FE specialist, custom builds and components"
+      },
+      {
+        "name": "Dove Enterprises",
+        "specialty": "FE cylinder heads and machine work",
+        "notes": "High-performance FE heads"
+      },
+      {
+        "name": "Cobra Automotive",
+        "specialty": "427 Cobra and FE racing parts",
+        "notes": "Authentic reproduction and racing parts"
+      },
+      {
+        "name": "Jim's Performance FE",
+        "specialty": "FE intake manifolds and performance parts",
+        "notes": "Custom FE intake work"
+      }
+    ],
+    "general_ford_performance": [
+      {
+        "name": "Summit Racing",
+        "specialty": "Performance parts superstore",
+        "url": "http://summitracing.com",
+        "notes": "Wide FE parts selection"
+      },
+      {
+        "name": "JEGS",
+        "specialty": "Performance parts",
+        "url": "http://jegs.com",
+        "notes": "Good FE inventory"
+      },
+      {
+        "name": "Speedway Motors",
+        "specialty": "Hot rod and vintage performance",
+        "url": "http://speedwaymotors.com",
+        "notes": "FE swap components"
+      }
+    ],
+    "classic_ford_restoration": [
+      {
+        "name": "Dennis Carpenter",
+        "specialty": "Ford restoration parts",
+        "url": "http://dennis-carpenter.com",
+        "notes": "OEM reproduction parts"
+      },
+      {
+        "name": "NPD (National Parts Depot)",
+        "specialty": "Mustang and classic Ford parts",
+        "url": "http://npdlink.com",
+        "notes": "Cobra Jet and FE parts"
+      },
+      {
+        "name": "Mustangs Unlimited",
+        "specialty": "Mustang parts 1964-1973",
+        "url": "http://mustangsunlimited.com",
+        "notes": "FE Mustang applications"
+      },
+      {
+        "name": "Virginia Classic Mustang",
+        "specialty": "Shelby and Mustang parts",
+        "notes": "GT500 FE parts"
+      }
+    ],
+    "racing_specialists": [
+      {
+        "name": "Holman-Moody Performance",
+        "specialty": "Historic NASCAR FE racing components",
+        "notes": "Legendary racing heritage"
+      },
+      {
+        "name": "Roush",
+        "specialty": "Ford performance engineering",
+        "url": "http://roush.com",
+        "notes": "High-end Ford performance"
+      }
+    ]
+  },
+  "aftermarket_parts": {
+    "performance_cylinder_heads": [
+      {
+        "manufacturer": "Edelbrock",
+        "part_number": "60069",
+        "part_name": "FE Victor Jr. Heads",
+        "description": "Aluminum performance cylinder heads",
+        "specifications": {
+          "material": "Aluminum",
+          "intake_valve_inches": 2.09,
+          "exhaust_valve_inches": 1.66,
+          "chamber_cc": 72,
+          "intake_port_cc": 210,
+          "flow_cfm_at_28": 295
+        },
+        "price_range_usd": "2500-3000",
+        "notes": "Excellent bolt-on aluminum heads"
+      },
+      {
+        "manufacturer": "Dove Enterprises",
+        "part_name": "CNC Ported Heads",
+        "description": "CNC ported factory or aftermarket heads",
+        "specifications": {
+          "flow_cfm_at_28": "320+"
+        },
+        "price_range_usd": "3000-5000",
+        "notes": "Maximum FE head flow"
+      },
+      {
+        "manufacturer": "Blue Thunder",
+        "part_name": "Aluminum FE Heads",
+        "description": "As-cast aluminum FE heads",
+        "specifications": {
+          "material": "Aluminum",
+          "chamber_cc": 76,
+          "flow_cfm_at_28": 280
+        },
+        "price_range_usd": "2000-2500",
+        "notes": "Good street performance heads"
+      }
+    ],
+    "camshafts": [
+      {
+        "manufacturer": "Comp Cams",
+        "part_number": "31-226-4",
+        "profile": "Xtreme Energy 268H",
+        "specifications": {
+          "duration_at_050_intake": 218,
+          "duration_at_050_exhaust": 224,
+          "lift_intake_inches": 0.509,
+          "lift_exhaust_inches": 0.512,
+          "lobe_separation": 110
+        },
+        "application": "Street/Strip",
+        "notes": "Excellent street performance cam"
+      },
+      {
+        "manufacturer": "Comp Cams",
+        "part_number": "31-234-3",
+        "profile": "Magnum 280H",
+        "specifications": {
+          "duration_at_050_intake": 230,
+          "duration_at_050_exhaust": 230,
+          "lift_intake_inches": 0.520,
+          "lift_exhaust_inches": 0.520,
+          "lobe_separation": 110
+        },
+        "application": "Hot Street/Strip",
+        "notes": "Lumpy idle, strong top end"
+      },
+      {
+        "manufacturer": "Crane Cams",
+        "part_name": "FE Solid Roller",
+        "profile": "Racing solid roller",
+        "specifications": {
+          "duration_at_050_intake": 248,
+          "duration_at_050_exhaust": 254,
+          "lift_intake_inches": 0.625,
+          "lift_exhaust_inches": 0.630
+        },
+        "application": "Racing",
+        "notes": "Requires solid roller lifters"
+      }
+    ],
+    "intake_manifolds": [
+      {
+        "manufacturer": "Edelbrock",
+        "part_number": "2105",
+        "part_name": "Performer RPM FE",
+        "description": "Aluminum dual-plane intake manifold",
+        "specifications": {
+          "material": "Aluminum",
+          "carburetor_flange": "4150 square bore",
+          "port_match": "Low-riser heads"
+        },
+        "price_range_usd": "350-400",
+        "notes": "Excellent street manifold"
+      },
+      {
+        "manufacturer": "Edelbrock",
+        "part_number": "2967",
+        "part_name": "Victor Jr. FE",
+        "description": "Aluminum single-plane racing manifold",
+        "specifications": {
+          "material": "Aluminum",
+          "carburetor_flange": "4150 or 4500",
+          "port_match": "Victor heads"
+        },
+        "price_range_usd": "500-550",
+        "notes": "Racing manifold, 3500+ RPM"
+      },
+      {
+        "manufacturer": "Weiand",
+        "part_number": "8018",
+        "part_name": "Team G FE",
+        "description": "Aluminum dual-plane intake",
+        "specifications": {
+          "material": "Aluminum",
+          "carburetor_flange": "4150"
+        },
+        "price_range_usd": "300-350",
+        "notes": "Good budget performance manifold"
+      },
+      {
+        "manufacturer": "FE Power",
+        "part_name": "Tunnel Ram",
+        "description": "Dual 4-barrel tunnel ram intake",
+        "specifications": {
+          "material": "Aluminum",
+          "carburetors": "Dual 4150",
+          "runner_length": "Maximum"
+        },
+        "price_range_usd": "1200-1500",
+        "notes": "Racing only, requires hood clearance"
+      }
+    ],
+    "headers": [
+      {
+        "manufacturer": "Hooker",
+        "part_number": "6115",
+        "part_name": "FE Competition Headers",
+        "description": "Full-length competition headers",
+        "specifications": {
+          "primary_diameter_inches": 1.875,
+          "collector_diameter_inches": 3.0,
+          "material": "16 gauge steel"
+        },
+        "price_range_usd": "400-500",
+        "notes": "Good fit for Mustang/Galaxie"
+      },
+      {
+        "manufacturer": "TTI",
+        "part_name": "Cobra FE Headers",
+        "description": "Cobra replica headers",
+        "specifications": {
+          "primary_diameter_inches": 2.0,
+          "collector_diameter_inches": 3.5,
+          "material": "Stainless steel"
+        },
+        "price_range_usd": "800-1200",
+        "notes": "Premium Cobra application headers"
+      },
+      {
+        "manufacturer": "Hedman",
+        "part_number": "69010",
+        "part_name": "Hedders",
+        "description": "Standard FE headers",
+        "specifications": {
+          "primary_diameter_inches": 1.75,
+          "collector_diameter_inches": 2.5
+        },
+        "price_range_usd": "300-400",
+        "notes": "Budget-friendly option"
+      }
+    ],
+    "stroker_kits": [
+      {
+        "manufacturer": "SCAT",
+        "part_name": "454 Stroker Kit",
+        "description": "Stroker kit for 390 block",
+        "specifications": {
+          "stroke_inches": 4.250,
+          "displacement_ci": 454,
+          "includes": ["Crankshaft", "Rods", "Pistons", "Bearings", "Rings"]
+        },
+        "price_range_usd": "3500-4500",
+        "notes": "Creates big-block displacement from 390"
+      },
+      {
+        "manufacturer": "Eagle",
+        "part_name": "445 Stroker Kit",
+        "description": "Stroker kit for 428 block",
+        "specifications": {
+          "stroke_inches": 4.125,
+          "displacement_ci": 445
+        },
+        "price_range_usd": "3000-4000",
+        "notes": "Mild stroke for 428 platform"
+      },
+      {
+        "manufacturer": "Custom Build",
+        "part_name": "482 Stroker",
+        "description": "Maximum displacement FE",
+        "specifications": {
+          "bore_inches": 4.280,
+          "stroke_inches": 4.250,
+          "displacement_ci": 482
+        },
+        "price_range_usd": "5000-7000",
+        "notes": "Maximum streetable FE displacement"
+      }
+    ],
+    "ignition_upgrades": [
+      {
+        "manufacturer": "MSD",
+        "part_number": "8352",
+        "part_name": "Pro-Billet Distributor",
+        "description": "Electronic racing distributor",
+        "specifications": {
+          "type": "Electronic with adjustable timing"
+        },
+        "price_range_usd": "300-350",
+        "notes": "Premium electronic ignition"
+      },
+      {
+        "manufacturer": "Pertronix",
+        "part_number": "1283",
+        "part_name": "Ignitor Electronic Ignition",
+        "description": "Points replacement module",
+        "specifications": {
+          "type": "Points replacement"
+        },
+        "price_range_usd": "90-120",
+        "notes": "Retains stock appearance"
+      },
+      {
+        "manufacturer": "MSD",
+        "part_number": "6A",
+        "part_name": "6A Ignition Box",
+        "description": "Capacitive discharge ignition box",
+        "specifications": {
+          "type": "CDI multiple spark"
+        },
+        "price_range_usd": "200-250",
+        "notes": "Add to any distributor for better spark"
+      }
+    ],
+    "carburetor_upgrades": [
+      {
+        "manufacturer": "Holley",
+        "part_number": "0-80508S",
+        "part_name": "Street HP 750",
+        "description": "750 CFM mechanical secondary carb",
+        "specifications": {
+          "cfm": 750,
+          "type": "Mechanical secondary",
+          "choke": "Manual"
+        },
+        "price_range_usd": "500-550",
+        "notes": "Excellent for street/strip"
+      },
+      {
+        "manufacturer": "Holley",
+        "part_number": "0-80186",
+        "part_name": "Dominator 850",
+        "description": "850 CFM performance carb",
+        "specifications": {
+          "cfm": 850,
+          "type": "Mechanical secondary"
+        },
+        "price_range_usd": "600-700",
+        "notes": "For larger displacement builds"
+      },
+      {
+        "manufacturer": "Quick Fuel",
+        "part_number": "SS-830",
+        "part_name": "SS Series 830",
+        "description": "830 CFM race carburetor",
+        "specifications": {
+          "cfm": 830,
+          "type": "Mechanical secondary"
+        },
+        "price_range_usd": "700-800",
+        "notes": "Premium race carburetor"
+      }
+    ],
+    "oiling_system_upgrades": [
+      {
+        "manufacturer": "Melling",
+        "part_number": "M57HV",
+        "part_name": "High Volume Oil Pump",
+        "description": "25% increased volume oil pump",
+        "specifications": {
+          "volume_increase_percent": 25,
+          "pressure_psi": 60
+        },
+        "price_range_usd": "60-80",
+        "notes": "Essential for performance builds"
+      },
+      {
+        "manufacturer": "Canton",
+        "part_number": "15-620",
+        "part_name": "Road Race Oil Pan",
+        "description": "Baffled road race pan",
+        "specifications": {
+          "capacity_quarts": 8,
+          "baffle": "Trap door system"
+        },
+        "price_range_usd": "400-500",
+        "notes": "For road racing applications"
+      },
+      {
+        "manufacturer": "Moroso",
+        "part_number": "20532",
+        "part_name": "Drag Race Pan",
+        "description": "Deep sump drag racing pan",
+        "specifications": {
+          "capacity_quarts": 9,
+          "pickup": "Extended"
+        },
+        "price_range_usd": "350-450",
+        "notes": "For drag racing"
+      }
+    ]
+  },
+  "build_packages": {
+    "stage_1_street_performance": {
+      "name": "Stage 1 - Street Performance",
+      "target_horsepower": "350-400",
+      "description": "Reliable street performance with excellent driveability",
+      "parts_list": [
+        "Edelbrock Performer RPM intake manifold",
+        "Holley 750 CFM carburetor",
+        "Comp Cams 268H camshaft",
+        "MSD electronic ignition",
+        "Shorty headers",
+        "2.5\" dual exhaust"
+      ],
+      "estimated_cost_usd": "2500-3500",
+      "notes": "Excellent street combo, reliable daily driver"
+    },
+    "stage_2_hot_street": {
+      "name": "Stage 2 - Hot Street",
+      "target_horsepower": "425-475",
+      "description": "Strong street car with strip capability",
+      "parts_list": [
+        "Aluminum cylinder heads",
+        "Edelbrock Victor Jr. intake",
+        "Holley 800 CFM carburetor",
+        "Performance cam with solid lifters",
+        "Long tube headers",
+        "High-volume oil pump",
+        "Forged pistons"
+      ],
+      "estimated_cost_usd": "6000-8000",
+      "notes": "Requires machine shop work"
+    },
+    "stage_3_racing": {
+      "name": "Stage 3 - Full Race",
+      "target_horsepower": "550-650",
+      "description": "Maximum FE power for racing",
+      "parts_list": [
+        "CNC ported aluminum heads",
+        "Stroker kit (454+ CI)",
+        "Solid roller cam",
+        "Tunnel ram or single 4-barrel race intake",
+        "1000+ CFM carburetor",
+        "Custom headers",
+        "Dry sump oiling",
+        "Aluminum flywheel"
+      ],
+      "estimated_cost_usd": "15000-25000",
+      "notes": "Full race engine, limited street use"
+    },
+    "cobra_jet_clone": {
+      "name": "Cobra Jet Clone Build",
+      "target_horsepower": "400-425",
+      "description": "Reproduction of factory 428 Cobra Jet specs",
+      "parts_list": [
+        "428 block with cross-bolted mains",
+        "427 low-riser heads",
+        "428 CJ camshaft",
+        "428 CJ intake manifold",
+        "Holley 780 CFM carburetor",
+        "LeMans connecting rods",
+        "Ram Air hood scoop (optional)"
+      ],
+      "estimated_cost_usd": "8000-12000",
+      "notes": "Factory-correct muscle car power"
+    }
+  },
+  "maintenance_kits": {
+    "basic_tune_up_kit": {
+      "name": "Basic Tune-Up Kit",
+      "parts": [
+        {"item": "Spark plugs (8)", "part_number": "Autolite 45 or Motorcraft AGSF-52C"},
+        {"item": "Points and condenser", "part_number": "Standard"},
+        {"item": "Distributor cap", "part_number": "Standard"},
+        {"item": "Rotor", "part_number": "Standard"},
+        {"item": "Spark plug wires", "part_number": "Taylor 8mm"}
+      ],
+      "estimated_cost_usd": "100-150",
+      "notes": "Annual tune-up kit"
+    },
+    "oil_change_kit": {
+      "name": "Oil Change Kit",
+      "parts": [
+        {"item": "Motor oil (6 qts)", "specification": "10W-40 ZDDP-enhanced"},
+        {"item": "Oil filter", "part_number": "Motorcraft FL-1A"}
+      ],
+      "estimated_cost_usd": "50-70",
+      "notes": "Use ZDDP-enhanced oil for flat tappet cam"
+    },
+    "valve_train_refresh": {
+      "name": "Valve Train Refresh",
+      "parts": [
+        {"item": "Valve cover gaskets (2)", "part_number": "Fel-Pro"},
+        {"item": "Rocker arm shaft gaskets", "part_number": "Fel-Pro"},
+        {"item": "Pushrod guide plates", "part_number": "Check for wear"}
+      ],
+      "estimated_cost_usd": "75-100",
+      "notes": "Address oil leaks and valvetrain noise"
+    },
+    "cooling_system_refresh": {
+      "name": "Cooling System Refresh",
+      "parts": [
+        {"item": "Thermostat 180°F", "part_number": "Stant 45359"},
+        {"item": "Thermostat housing gasket", "part_number": "Fel-Pro"},
+        {"item": "Upper and lower radiator hoses", "part_number": "Gates"},
+        {"item": "Heater hose (8 ft)", "part_number": "Gates 3/4\""},
+        {"item": "Bypass hose", "part_number": "Gates"}
+      ],
+      "estimated_cost_usd": "75-100",
+      "notes": "Complete cooling system refresh"
+    }
+  },
+  "quality_tiers": {
+    "budget": {
+      "brands": ["Sealed Power", "Melling", "Pioneer", "DNJ"],
+      "notes": "Suitable for basic rebuilds"
+    },
+    "mid_tier": {
+      "brands": ["Fel-Pro", "Clevite 77", "Comp Cams", "Holley"],
+      "notes": "Recommended for quality street engines"
+    },
+    "premium": {
+      "brands": ["Edelbrock", "MSD", "JE Pistons", "Eagle", "SCAT"],
+      "notes": "High-performance applications"
+    },
+    "race": {
+      "brands": ["Custom machining", "Pro-built assemblies", "FE Power"],
+      "notes": "Purpose-built competition engines"
+    }
+  }
+}

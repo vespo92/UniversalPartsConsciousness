@@ -1,0 +1,152 @@
+{
+  "engine_id": "FORD-385-SERIES-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "385 Series Big Block",
+  "common_names": ["429", "460", "Lima Big Block", "Ford Big Block", "Boss 429", "7.5L"],
+  "production_years": "1968-1997",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's large displacement big block V8 family, named after the Lima, Ohio engine plant. Produced in 429 and 460 cubic inch versions. The Boss 429 racing variant is one of the most collectible American engines ever produced. The 460 became Ford's workhorse big block for trucks and large vehicles.",
+  "heritage": {
+    "significance": "Ford's answer to big block competition, produced legendary Boss 429 NASCAR engine",
+    "innovations": ["Thin-wall casting for reduced weight", "Cross-bolted main caps (Boss 429)", "Semi-hemispherical combustion chambers (Boss 429)"],
+    "racing_heritage": {
+      "nascar": "Boss 429 developed for NASCAR homologation",
+      "drag_racing": "429 Super Cobra Jet popular in muscle car era"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron (Aluminum on Boss 429)",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder",
+    "bore_spacing_inches": 4.90,
+    "deck_height_inches": 10.322,
+    "main_bearings": 5,
+    "fuel_system": "Carburetor (1968-1986), EFI (1988-1997)"
+  },
+  "variants": [
+    {
+      "variant_id": "385-429-4V",
+      "displacement_ci": 429,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.36,
+      "stroke_inches": 3.59,
+      "compression_ratio": "10.5:1",
+      "horsepower": 360,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 480,
+      "torque_rpm": 2800,
+      "production_years": "1968-1973",
+      "notes": "Standard performance version"
+    },
+    {
+      "variant_id": "385-429-CJ",
+      "displacement_ci": 429,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.36,
+      "stroke_inches": 3.59,
+      "compression_ratio": "11.3:1",
+      "horsepower": 370,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 450,
+      "torque_rpm": 3400,
+      "production_years": "1969-1971",
+      "notes": "Cobra Jet version with performance upgrades"
+    },
+    {
+      "variant_id": "385-429-SCJ",
+      "displacement_ci": 429,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.36,
+      "stroke_inches": 3.59,
+      "compression_ratio": "11.3:1",
+      "horsepower": 375,
+      "horsepower_rpm": 5600,
+      "torque_lb_ft": 450,
+      "torque_rpm": 3800,
+      "production_years": "1969-1970",
+      "notes": "Super Cobra Jet with drag pack and forged internals"
+    },
+    {
+      "variant_id": "385-BOSS-429",
+      "displacement_ci": 429,
+      "displacement_liters": 7.0,
+      "bore_inches": 4.36,
+      "stroke_inches": 3.59,
+      "compression_ratio": "10.5:1",
+      "horsepower": 375,
+      "horsepower_rpm": 5200,
+      "torque_lb_ft": 450,
+      "torque_rpm": 3400,
+      "production_years": "1969-1970",
+      "notes": "NASCAR homologation engine, aluminum semi-hemi heads, one of the rarest Ford engines"
+    },
+    {
+      "variant_id": "385-460-4V",
+      "displacement_ci": 460,
+      "displacement_liters": 7.5,
+      "bore_inches": 4.36,
+      "stroke_inches": 3.85,
+      "compression_ratio": "10.0:1",
+      "horsepower": 365,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 485,
+      "torque_rpm": 2800,
+      "production_years": "1968-1978",
+      "notes": "High-performance 460, Lincoln and performance applications"
+    },
+    {
+      "variant_id": "385-460-TRUCK",
+      "displacement_ci": 460,
+      "displacement_liters": 7.5,
+      "bore_inches": 4.36,
+      "stroke_inches": 3.85,
+      "compression_ratio": "8.0:1",
+      "horsepower": 245,
+      "horsepower_rpm": 4000,
+      "torque_lb_ft": 380,
+      "torque_rpm": 2200,
+      "production_years": "1973-1997",
+      "notes": "Long-running truck version, EFI 1988+"
+    }
+  ],
+  "firing_order": "1-5-4-2-6-3-7-8",
+  "vehicle_applications": [
+    {"years": "1969-1970", "models": ["Ford Mustang Boss 429"], "notes": "859 units built"},
+    {"years": "1969-1971", "models": ["Ford Torino", "Mercury Cyclone"], "notes": "429 CJ and SCJ"},
+    {"years": "1968-1979", "models": ["Lincoln Continental", "Lincoln Mark III/IV/V"]},
+    {"years": "1973-1997", "models": ["Ford F-250", "Ford F-350", "Ford F-Super Duty"]},
+    {"years": "1975-1991", "models": ["Ford E-350", "Ford E-450 Econoline"]},
+    {"years": "1978-1997", "models": ["Ford Bronco (limited)"]},
+    {"years": "1988-1997", "models": ["Ford F-Series", "Ford Econoline"], "notes": "EFI version"}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 6, "oil_specification": "10W-40 or 15W-40"},
+    "coolant": {"capacity_quarts": 22, "coolant_type": "Green ethylene glycol"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": 140,
+    "main_cap_bolts_ft_lbs": 100,
+    "rod_cap_bolts_ft_lbs": 55,
+    "intake_manifold_bolts_ft_lbs": 30,
+    "exhaust_manifold_bolts_ft_lbs": 30
+  },
+  "common_issues": [
+    {"issue": "Timing chain stretch", "solution": "Double roller timing set"},
+    {"issue": "Oil leaks from rear main", "solution": "Neoprene seal conversion"},
+    {"issue": "Head gasket failure (high mileage)", "solution": "MLS gaskets"},
+    {"issue": "Valve seal wear", "solution": "Replace valve seals"}
+  ],
+  "strengths": [
+    "Massive torque production",
+    "Very strong bottom end",
+    "Excellent towing capability",
+    "Good aftermarket support",
+    "Capable of 500+ HP with basic modifications"
+  ],
+  "notes": {
+    "boss_429_collectibility": "Original Boss 429 engines and cars are among the most valuable Ford collectibles. Complete engines can sell for $50,000+.",
+    "stroker_potential": "460 blocks can be stroked to 514+ cubic inches for massive power potential."
+  }
+}

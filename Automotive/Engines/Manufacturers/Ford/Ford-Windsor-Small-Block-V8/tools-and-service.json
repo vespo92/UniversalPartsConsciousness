@@ -1,0 +1,550 @@
+{
+  "engine_family": "Ford Windsor Small Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "tool_inventory": {
+    "essential_hand_tools": [
+      {
+        "tool": "Socket Set - SAE and Metric",
+        "sizes_sae": ["3/8\"", "7/16\"", "1/2\"", "9/16\"", "5/8\"", "11/16\"", "3/4\""],
+        "sizes_metric": ["8mm", "10mm", "12mm", "13mm", "15mm", "17mm", "19mm"],
+        "notes": "EFI engines use mix of SAE and metric"
+      },
+      {
+        "tool": "Torque Wrench",
+        "range": "10-150 ft-lbs",
+        "type": "Click-type",
+        "notes": "Essential for proper fastener torque"
+      },
+      {
+        "tool": "3/8\" Drive Torque Wrench",
+        "range": "10-75 ft-lbs",
+        "notes": "For smaller fasteners and manifolds"
+      }
+    ],
+    "specialty_tools": [
+      {
+        "tool": "Harmonic Balancer Puller",
+        "description": "3-bolt puller for Ford balancer",
+        "usage": "Front seal or timing cover service",
+        "notes": "Do not pry on damper"
+      },
+      {
+        "tool": "Harmonic Balancer Installer",
+        "description": "Threaded installer",
+        "usage": "Install damper without damage"
+      },
+      {
+        "tool": "Valve Spring Compressor",
+        "description": "Lever-style for OHV engines",
+        "usage": "Compress springs with head on or off"
+      },
+      {
+        "tool": "Cam Bearing Installation Tool",
+        "description": "Universal Ford cam bearing driver",
+        "usage": "Install cam bearings"
+      },
+      {
+        "tool": "TFI Module Puller",
+        "description": "Plastic tool to remove TFI module",
+        "usage": "Remove ignition module from distributor",
+        "notes": "Prevents module damage"
+      },
+      {
+        "tool": "EEC-IV Code Reader",
+        "description": "OBDI code scanner",
+        "usage": "Read diagnostic trouble codes",
+        "notes": "Required for EFI diagnostics"
+      },
+      {
+        "tool": "Fuel Pressure Gauge",
+        "description": "EFI fuel pressure test gauge",
+        "range": "0-100 PSI",
+        "usage": "Verify fuel system pressure"
+      },
+      {
+        "tool": "Compression Tester",
+        "description": "Screw-in compression gauge",
+        "specifications": "14mm thread, 0-300 PSI"
+      },
+      {
+        "tool": "Leakdown Tester",
+        "description": "Cylinder leakdown test kit"
+      },
+      {
+        "tool": "Timing Light",
+        "description": "Inductive timing light",
+        "notes": "Dial-back type useful for verification"
+      },
+      {
+        "tool": "Spark Plug Socket",
+        "sizes": ["5/8\" (standard)", "13/16\" (certain heads)"],
+        "notes": "5/8\" for most applications"
+      },
+      {
+        "tool": "Distributor Wrench",
+        "size": "1/2\"",
+        "usage": "Loosen distributor hold-down"
+      }
+    ],
+    "efi_specific_tools": [
+      {
+        "tool": "Fuel Line Disconnect Tool",
+        "description": "Spring-lock fuel line tool set",
+        "sizes": ["3/8\"", "1/2\"", "5/8\""],
+        "usage": "Disconnect EFI fuel lines"
+      },
+      {
+        "tool": "IAC Valve Socket",
+        "description": "Deep socket for IAC valve",
+        "size": "1-1/8\"",
+        "usage": "Remove idle air control valve"
+      },
+      {
+        "tool": "EGR Valve Socket",
+        "description": "Special socket for EGR valve",
+        "usage": "Remove EGR valve"
+      },
+      {
+        "tool": "MAF Sensor Tool",
+        "description": "Tamper-proof Torx bit",
+        "size": "T20",
+        "usage": "Remove MAF sensor screws"
+      }
+    ],
+    "lifting_equipment": [
+      {
+        "tool": "Engine Hoist",
+        "capacity": "1-2 ton",
+        "notes": "302 weighs about 450 lbs"
+      },
+      {
+        "tool": "Engine Stand",
+        "capacity": "1000 lbs",
+        "mount": "Small block Ford pattern"
+      },
+      {
+        "tool": "Engine Leveler",
+        "description": "Adjustable lifting bracket"
+      }
+    ]
+  },
+  "service_operations": {
+    "routine_maintenance": [
+      {
+        "operation": "Oil Change",
+        "interval": "3,000-5,000 miles",
+        "time_estimate": "30 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Remove drain plug and drain oil",
+          "Replace oil filter (FL-820S or equivalent)",
+          "Replace drain plug",
+          "Add 5 quarts of oil (5W-30 for EFI)",
+          "Start engine and check for leaks",
+          "Verify oil level"
+        ],
+        "notes": "Synthetic oil recommended for performance"
+      },
+      {
+        "operation": "Spark Plug Replacement",
+        "interval": "30,000 miles (platinum) or as needed",
+        "time_estimate": "1 hour",
+        "difficulty": "Easy",
+        "procedure": [
+          "Allow engine to cool",
+          "Remove spark plug wires one at a time",
+          "Remove plugs with 5/8\" socket",
+          "Gap new plugs to 0.054\" (EFI)",
+          "Install plugs, torque to 15 ft-lbs",
+          "Reinstall wires"
+        ],
+        "notes": "Motorcraft ASF42C or equivalent"
+      },
+      {
+        "operation": "Air Filter Replacement",
+        "interval": "15,000-30,000 miles",
+        "time_estimate": "10 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Remove air filter housing lid",
+          "Remove old filter",
+          "Clean housing if dirty",
+          "Install new filter",
+          "Replace lid"
+        ]
+      },
+      {
+        "operation": "Fuel Filter Replacement",
+        "interval": "30,000 miles",
+        "time_estimate": "30 minutes",
+        "difficulty": "Easy to Moderate",
+        "procedure": [
+          "Relieve fuel system pressure",
+          "Locate fuel filter (frame rail)",
+          "Use disconnect tools to remove lines",
+          "Replace filter (note flow direction)",
+          "Reconnect lines until they click"
+        ],
+        "notes": "Always relieve fuel pressure first"
+      },
+      {
+        "operation": "PCV Valve Replacement",
+        "interval": "30,000 miles",
+        "time_estimate": "5 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Locate PCV valve in valve cover grommet",
+          "Pull out old valve",
+          "Push in new valve",
+          "Verify hose connection"
+        ]
+      },
+      {
+        "operation": "Cooling System Flush",
+        "interval": "30,000 miles or 2 years",
+        "time_estimate": "1-2 hours",
+        "difficulty": "Easy",
+        "procedure": [
+          "Allow engine to cool",
+          "Drain radiator via petcock",
+          "Remove thermostat housing and thermostat",
+          "Flush system with water",
+          "Install new thermostat (jiggle valve up)",
+          "Close petcock",
+          "Fill with 50/50 coolant mix",
+          "Run engine and bleed air",
+          "Top off coolant"
+        ],
+        "notes": "14 quarts total capacity for 302"
+      }
+    ],
+    "common_repairs": [
+      {
+        "operation": "Thermostat Replacement",
+        "time_estimate": "45 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Drain some coolant",
+          "Remove upper radiator hose from housing",
+          "Remove thermostat housing bolts",
+          "Remove housing and old thermostat",
+          "Clean gasket surfaces",
+          "Install new thermostat (jiggle valve up)",
+          "Install new gasket and housing",
+          "Refill coolant"
+        ],
+        "parts_required": ["Thermostat", "Gasket", "Coolant"]
+      },
+      {
+        "operation": "Intake Manifold Gasket Replacement",
+        "time_estimate": "4-6 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Drain coolant",
+          "Remove throttle body and upper intake",
+          "Disconnect fuel lines (EFI)",
+          "Remove lower intake manifold",
+          "Clean all gasket surfaces",
+          "Install new gaskets with proper sealer",
+          "Torque intake bolts to 25 ft-lbs in sequence",
+          "Reassemble"
+        ],
+        "parts_required": ["Intake gasket set", "RTV sealer"],
+        "notes": "Front and rear must be sealed properly"
+      },
+      {
+        "operation": "Valve Cover Gasket Replacement",
+        "time_estimate": "1-2 hours",
+        "difficulty": "Easy",
+        "procedure": [
+          "Remove accessories as needed for access",
+          "Remove valve cover bolts",
+          "Remove valve covers",
+          "Clean gasket surfaces",
+          "Install new gaskets",
+          "Reinstall covers, torque to 4-6 ft-lbs"
+        ],
+        "parts_required": ["Valve cover gaskets"],
+        "notes": "Rubber gaskets preferred over cork"
+      },
+      {
+        "operation": "Water Pump Replacement",
+        "time_estimate": "2-3 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Drain coolant",
+          "Remove drive belts",
+          "Remove fan and fan shroud",
+          "Remove pulley from water pump",
+          "Remove water pump bolts",
+          "Remove water pump",
+          "Clean gasket surface",
+          "Install new gasket and pump",
+          "Reassemble and refill"
+        ],
+        "parts_required": ["Water pump", "Gasket", "Coolant"],
+        "notes": "5.0 Mustang uses reverse rotation pump"
+      },
+      {
+        "operation": "TFI Module Replacement",
+        "time_estimate": "30 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Disconnect battery",
+          "Remove distributor cap",
+          "Disconnect TFI module wiring",
+          "Remove module mounting screws",
+          "Use TFI puller to remove module",
+          "Apply new dielectric grease",
+          "Install new module",
+          "Reconnect wiring and cap"
+        ],
+        "parts_required": ["TFI module", "Dielectric grease"],
+        "notes": "Common failure item on EFI engines"
+      },
+      {
+        "operation": "Timing Chain Replacement",
+        "time_estimate": "4-5 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Drain coolant",
+          "Remove accessories",
+          "Remove harmonic balancer",
+          "Remove timing cover",
+          "Remove camshaft gear bolt",
+          "Remove timing chain and gears",
+          "Install new gears and chain aligned",
+          "Verify timing marks aligned",
+          "Reinstall cover",
+          "Reinstall balancer"
+        ],
+        "parts_required": ["Timing set", "Cover gasket", "Front seal"],
+        "notes": "Double roller set recommended"
+      },
+      {
+        "operation": "Camshaft Replacement",
+        "time_estimate": "8-12 hours",
+        "difficulty": "Advanced",
+        "procedure": [
+          "Remove intake manifold",
+          "Remove valve covers and rocker assemblies",
+          "Remove pushrods (keep in order)",
+          "Remove lifters (keep in order)",
+          "Remove timing cover and chain",
+          "Carefully remove camshaft",
+          "Pre-lube new cam",
+          "Install new cam",
+          "Install timing set aligned",
+          "Install lifters and pushrods",
+          "Reassemble"
+        ],
+        "parts_required": ["Camshaft", "Lifters (if upgrading)", "Timing set", "Assembly lube"],
+        "notes": "Always replace lifters with new cam"
+      },
+      {
+        "operation": "Fuel Injector Replacement",
+        "time_estimate": "2-3 hours",
+        "difficulty": "Moderate",
+        "procedure": [
+          "Relieve fuel pressure",
+          "Disconnect battery",
+          "Remove upper intake/fuel rail",
+          "Disconnect injector connectors",
+          "Remove fuel rail with injectors",
+          "Replace O-rings on new injectors",
+          "Install injectors and fuel rail",
+          "Reassemble"
+        ],
+        "parts_required": ["Fuel injectors", "O-rings"],
+        "notes": "Must calibrate MAF for different size injectors"
+      },
+      {
+        "operation": "MAF Sensor Replacement",
+        "time_estimate": "15 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Disconnect battery",
+          "Disconnect MAF electrical connector",
+          "Remove MAF sensor from housing",
+          "Install new sensor",
+          "Reconnect"
+        ],
+        "parts_required": ["MAF sensor"],
+        "notes": "Clean MAF before assuming it needs replacement"
+      }
+    ],
+    "efi_diagnostics": [
+      {
+        "operation": "Read Trouble Codes (EEC-IV)",
+        "time_estimate": "15 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Locate diagnostic connector (driver side fenderwell)",
+          "Connect code reader or jumper wire",
+          "Turn key to RUN position",
+          "Record codes",
+          "Reference code definitions"
+        ],
+        "notes": "KOEO and KOER tests available"
+      },
+      {
+        "operation": "Fuel Pressure Test",
+        "time_estimate": "15 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Connect gauge to fuel rail Schrader valve",
+          "Turn key to RUN (pump runs)",
+          "Verify 35-45 PSI at idle",
+          "Verify pressure holds when pump stops"
+        ],
+        "specifications": {
+          "key_on_engine_off_psi": "35-45",
+          "idle_psi": "30-40",
+          "notes": "Should hold pressure when key off"
+        }
+      },
+      {
+        "operation": "Base Idle Reset",
+        "time_estimate": "15 minutes",
+        "difficulty": "Easy",
+        "procedure": [
+          "Warm engine to operating temperature",
+          "Turn off all accessories",
+          "Disconnect IAC valve connector",
+          "Set idle to 650 RPM using throttle stop screw",
+          "Turn off engine",
+          "Reconnect IAC valve"
+        ],
+        "notes": "Required after IAC cleaning or replacement"
+      }
+    ]
+  },
+  "specifications_and_torque_values": {
+    "fastener_torque_specifications": {
+      "cylinder_head_bolts": {
+        "302_ft_lbs": 70,
+        "351W_ft_lbs": 105,
+        "sequence": "Center outward, 3-step process"
+      },
+      "main_cap_bolts_ft_lbs": 80,
+      "connecting_rod_bolts_ft_lbs": 25,
+      "intake_manifold_bolts_ft_lbs": 25,
+      "exhaust_manifold_bolts_ft_lbs": 25,
+      "valve_cover_bolts_ft_lbs": 5,
+      "rocker_arm_nuts_ft_lbs": 20,
+      "harmonic_balancer_ft_lbs": 85,
+      "flywheel_bolts_ft_lbs": 85,
+      "spark_plugs_ft_lbs": 15
+    },
+    "clearance_specifications": {
+      "main_bearing_clearance_inches": "0.001-0.003",
+      "rod_bearing_clearance_inches": "0.001-0.003",
+      "crankshaft_end_play_inches": "0.004-0.008",
+      "piston_to_bore_clearance_inches": "0.001-0.002",
+      "ring_end_gap_top_inches": "0.010-0.020",
+      "ring_end_gap_second_inches": "0.010-0.020",
+      "valve_stem_clearance_intake_inches": "0.001-0.003",
+      "valve_stem_clearance_exhaust_inches": "0.0015-0.0035"
+    },
+    "timing_specifications": {
+      "initial_timing_btdc_degrees": {
+        "carbureted": 6,
+        "efi_1986_1987": 10,
+        "efi_1988_plus": "Computer controlled"
+      },
+      "notes": "1988+ EFI requires SPOUT connector removal to set base timing"
+    },
+    "fuel_system_specifications": {
+      "fuel_pressure_psi": {
+        "key_on": "35-45",
+        "idle": "30-40",
+        "wot": "35-45"
+      },
+      "injector_flow_rates": {
+        "stock_lb_hr": 19,
+        "upgrade_options": [24, 30, 36, 42]
+      }
+    }
+  },
+  "diagnostic_procedures": {
+    "common_problems": [
+      {
+        "symptom": "Engine idles rough or stalls",
+        "possible_causes": [
+          "Dirty/failed IAC valve",
+          "Vacuum leak",
+          "Failed TFI module",
+          "Dirty MAF sensor",
+          "Low fuel pressure"
+        ],
+        "diagnostic_steps": [
+          "Check for vacuum leaks with carb cleaner",
+          "Clean IAC valve and reset base idle",
+          "Check fuel pressure",
+          "Check for codes",
+          "Clean MAF sensor"
+        ]
+      },
+      {
+        "symptom": "No start condition",
+        "possible_causes": [
+          "Failed TFI module",
+          "No fuel pressure",
+          "Failed fuel pump",
+          "Failed ignition coil",
+          "Inertia switch tripped"
+        ],
+        "diagnostic_steps": [
+          "Check for spark at plug",
+          "Check fuel pressure",
+          "Check inertia switch (trunk/hatch area)",
+          "Check TFI module",
+          "Check for codes"
+        ]
+      },
+      {
+        "symptom": "Engine runs hot",
+        "possible_causes": [
+          "Thermostat stuck closed",
+          "Low coolant",
+          "Failed water pump",
+          "Clogged radiator",
+          "Failed cooling fan"
+        ],
+        "diagnostic_steps": [
+          "Check coolant level",
+          "Verify thermostat opening",
+          "Check cooling fan operation",
+          "Verify water pump circulation"
+        ]
+      },
+      {
+        "symptom": "Oil consumption",
+        "possible_causes": [
+          "Worn valve seals",
+          "Worn valve guides",
+          "Worn piston rings",
+          "PCV system failure"
+        ],
+        "diagnostic_steps": [
+          "Perform compression test",
+          "Perform leakdown test",
+          "Check PCV valve operation",
+          "Inspect spark plugs for oil fouling"
+        ]
+      }
+    ]
+  },
+  "safety_precautions": [
+    "Disconnect battery before electrical work",
+    "Relieve fuel pressure before fuel system work",
+    "Use jack stands - never rely on jack alone",
+    "Allow engine to cool before cooling system work",
+    "Wear safety glasses",
+    "Keep fire extinguisher nearby",
+    "Properly dispose of fluids",
+    "Ventilate when running engine indoors"
+  ]
+}

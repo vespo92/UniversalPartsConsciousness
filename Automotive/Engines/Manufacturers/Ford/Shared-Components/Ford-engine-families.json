@@ -1,0 +1,231 @@
+{
+  "manufacturer": "Ford Motor Company",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Comprehensive documentation of Ford engine families from the 1950s to present day",
+  "engine_families": {
+    "classic_era_1950s_1970s": {
+      "y_block": {
+        "name": "Y-Block V8",
+        "years": "1954-1964",
+        "displacements_ci": [239, 256, 272, 292, 312],
+        "architecture": "OHV V8, deep-skirt block design",
+        "significance": "First Ford OHV V8, replaced Flathead",
+        "vehicles": ["1955-57 Thunderbird", "1950s Ford passenger cars", "F-Series trucks"]
+      },
+      "fe_series": {
+        "name": "FE Big Block V8",
+        "years": "1958-1976",
+        "displacements_ci": [332, 352, 360, 390, 406, 410, 427, 428],
+        "architecture": "OHV V8, available with side-oiler or top-oiler block",
+        "significance": "Le Mans winner, iconic muscle car engine",
+        "notable_variants": ["427 SOHC Cammer", "428 Cobra Jet", "GT40 racing engine"],
+        "vehicles": ["Mustang", "Shelby GT500", "Ford GT40", "Cobra 427", "Galaxie"]
+      },
+      "windsor_small_block": {
+        "name": "Windsor Small Block V8",
+        "years": "1962-2001",
+        "displacements_ci": [221, 260, 289, 302, 351],
+        "architecture": "OHV V8, compact lightweight design",
+        "significance": "The definitive Ford performance small block",
+        "notable_variants": ["289 HiPo (K-Code)", "Boss 302", "5.0 HO"],
+        "vehicles": ["Mustang", "Shelby GT350", "F-Series trucks", "Bronco"]
+      },
+      "cleveland_335_series": {
+        "name": "351 Cleveland / 335 Series",
+        "years": "1969-1982",
+        "displacements_ci": [351, 400],
+        "architecture": "OHV V8, canted valve heads, dry deck design",
+        "significance": "Purpose-built performance engine with excellent heads",
+        "notable_variants": ["Boss 351", "351C 4V", "351M/400M"],
+        "vehicles": ["Mustang Boss 351", "Torino", "Pantera"]
+      },
+      "385_series_big_block": {
+        "name": "385 Series Big Block",
+        "years": "1968-1997",
+        "displacements_ci": [429, 460],
+        "architecture": "OHV V8, large displacement, thin-wall casting",
+        "significance": "Ford's large displacement big block, Boss 429 racing legend",
+        "notable_variants": ["Boss 429", "429 Super Cobra Jet", "460 truck engine"],
+        "vehicles": ["Mustang Boss 429", "Lincoln Continental", "F-Series trucks"]
+      },
+      "inline_six": {
+        "name": "Ford Inline-6",
+        "years": "1965-1996",
+        "displacements_ci": [240, 300],
+        "architecture": "OHV inline-6, seven main bearings",
+        "significance": "Legendary truck engine known for extreme durability",
+        "vehicles": ["F-Series trucks", "Bronco", "Econoline"]
+      }
+    },
+    "modern_ohc_era_1990s_2010s": {
+      "modular_v8": {
+        "name": "Modular V8",
+        "years": "1991-2014",
+        "displacements_liters": [4.6, 5.4],
+        "architecture": "SOHC or DOHC V8, overhead cam",
+        "significance": "First modern Ford OHC V8, 20+ year production run",
+        "notable_variants": ["4.6L 4V Cobra", "Terminator 4.6 supercharged", "5.4L GT500", "Ford GT 5.4L"],
+        "vehicles": ["Mustang", "Crown Victoria", "F-150", "Ford GT"]
+      }
+    },
+    "current_era_2010s_present": {
+      "coyote": {
+        "name": "Coyote 5.0L V8",
+        "years": "2011-present",
+        "displacements_liters": [5.0],
+        "architecture": "DOHC V8, 4 valves per cylinder, Ti-VCT",
+        "significance": "Revival of 5.0 badge with modern DOHC technology",
+        "notable_variants": ["Gen 1", "Gen 2", "Gen 3 with direct injection", "Aluminator crate engines"],
+        "vehicles": ["Mustang GT", "F-150", "Bronco"]
+      },
+      "voodoo": {
+        "name": "Voodoo 5.2L V8",
+        "years": "2015-present",
+        "displacements_liters": [5.2],
+        "architecture": "DOHC V8, flat-plane crank, 8250 RPM redline",
+        "significance": "First American flat-plane production V8",
+        "vehicles": ["Shelby GT350", "GT350R"]
+      },
+      "predator": {
+        "name": "Predator 5.2L V8",
+        "years": "2019-present",
+        "displacements_liters": [5.2],
+        "architecture": "DOHC V8, supercharged, cross-plane crank",
+        "significance": "Most powerful Ford production engine at 760 HP",
+        "vehicles": ["Shelby GT500"]
+      },
+      "godzilla": {
+        "name": "Godzilla 7.3L V8",
+        "years": "2020-present",
+        "displacements_liters": [7.3],
+        "architecture": "OHV pushrod V8, cam-in-block",
+        "significance": "First new Ford pushrod V8 design since 385 series",
+        "notable_variants": ["Truck version", "Megazilla crate engine (615 HP)"],
+        "vehicles": ["Super Duty trucks", "E-Series"]
+      },
+      "ecoboost": {
+        "name": "EcoBoost Family",
+        "years": "2009-present",
+        "displacements_liters": [1.0, 1.5, 1.6, 2.0, 2.3, 2.7, 3.5],
+        "architecture": "Turbocharged, direct injection, various configurations",
+        "significance": "Downsized turbo engines replacing larger NA engines",
+        "notable_variants": {
+          "2.3L_I4": "Mustang EcoBoost, Focus RS (350 HP)",
+          "2.7L_V6": "F-150 mid-range option",
+          "3.5L_V6": "F-150 most popular engine, Raptor (450 HP), Ford GT (647 HP)"
+        },
+        "vehicles": ["F-150", "Mustang", "Focus RS", "Ford GT", "Ranger", "Bronco", "Explorer"]
+      }
+    }
+  },
+  "transmission_compatibility": {
+    "classic_bellhousing_patterns": {
+      "y_block_pattern": {
+        "engines": ["Y-Block V8"],
+        "notes": "Early Ford pattern, adapters available"
+      },
+      "fe_pattern": {
+        "engines": ["FE V8 family"],
+        "transmissions": ["C6 auto", "Toploader 4-speed"]
+      },
+      "small_block_ford_pattern": {
+        "engines": ["289", "302", "5.0"],
+        "transmissions": ["C4", "AOD", "T5", "Tremec TKO"]
+      },
+      "351W_pattern": {
+        "engines": ["351 Windsor"],
+        "notes": "Wider bolt pattern than 302"
+      },
+      "351C_pattern": {
+        "engines": ["351 Cleveland", "351M", "400M"],
+        "notes": "Same as FE pattern"
+      },
+      "385_pattern": {
+        "engines": ["429", "460"],
+        "transmissions": ["C6", "E4OD"]
+      }
+    },
+    "modern_patterns": {
+      "modular_pattern": {
+        "engines": ["4.6L", "5.4L Modular"],
+        "transmissions": ["4R70W", "TR-3650", "T56"]
+      },
+      "coyote_pattern": {
+        "engines": ["Coyote 5.0", "Voodoo 5.2", "Predator 5.2"],
+        "transmissions": ["MT-82", "Tremec 3160/6060", "10R80"]
+      }
+    }
+  },
+  "firing_orders": {
+    "ford_standard_v8": {
+      "pattern": "1-5-4-2-6-3-7-8",
+      "engines": ["Y-Block", "FE", "289/302", "385 series"]
+    },
+    "351W_v8": {
+      "pattern": "1-3-7-2-6-5-4-8",
+      "engines": ["351 Windsor"],
+      "notes": "Different from 302"
+    },
+    "cleveland_v8": {
+      "pattern": "1-3-7-2-6-5-4-8",
+      "engines": ["351C", "351M", "400M"],
+      "notes": "Same as 351W"
+    },
+    "modular_v8": {
+      "pattern": "1-3-7-2-6-5-4-8",
+      "engines": ["4.6L", "5.4L Modular"]
+    },
+    "coyote_v8": {
+      "pattern": "1-5-4-8-3-7-2-6",
+      "engines": ["Coyote", "Voodoo", "Predator"]
+    },
+    "godzilla_v8": {
+      "pattern": "1-5-4-8-6-3-7-2",
+      "engines": ["7.3L Godzilla"]
+    },
+    "inline_six": {
+      "pattern": "1-5-3-6-2-4",
+      "engines": ["240", "300 I6"]
+    }
+  },
+  "cross_reference_parts": {
+    "commonly_shared_components": {
+      "oil_filters": {
+        "FL_1A": "Most classic Ford V8s",
+        "FL_820S": "Modular V8, Coyote"
+      },
+      "spark_plugs": {
+        "autolite_45": "Classic V8s",
+        "motorcraft_sp_493": "Modular 2V",
+        "motorcraft_sp_515": "Coyote"
+      }
+    }
+  },
+  "chronological_overview": {
+    "1950s": ["Y-Block replaces Flathead (1954)"],
+    "1960s": ["FE introduced (1958)", "Small Block Windsor (1962)", "289 HiPo (1963)", "427 SOHC Cammer (1964)", "385 series (1968)", "Boss 302/429 (1969)", "351 Cleveland (1969)"],
+    "1970s": ["Muscle car era ends with emissions regulations", "351M/400 introduced (1975)"],
+    "1980s": ["5.0 HO Mustang revival (1982)", "Roller cam blocks (1985)", "EFI 5.0 (1986)"],
+    "1990s": ["Modular V8 introduced (1991)", "Modular replaces 5.0 in Mustang (1996)"],
+    "2000s": ["Terminator Cobra (2003)", "Ford GT supercar (2005)"],
+    "2010s": ["Coyote 5.0 introduced (2011)", "EcoBoost proliferation", "Voodoo flat-plane (2015)", "Predator 760 HP (2019)"],
+    "2020s": ["Godzilla 7.3L (2020)", "Megazilla crate engine (2023)"]
+  },
+  "performance_comparison": {
+    "naturally_aspirated_peak_hp": {
+      "1960s": {"engine": "427 SOHC Cammer", "hp": 616},
+      "1970s": {"engine": "Boss 351", "hp": 330},
+      "1980s": {"engine": "5.0 HO", "hp": 225},
+      "1990s": {"engine": "4.6 4V Cobra", "hp": 305},
+      "2000s": {"engine": "4.6 4V Mach 1", "hp": 305},
+      "2010s": {"engine": "Voodoo 5.2", "hp": 526},
+      "2020s": {"engine": "Megazilla 7.3", "hp": 615}
+    },
+    "forced_induction_peak_hp": {
+      "2000s": {"engine": "Terminator 4.6 SC", "hp": 390},
+      "2010s": {"engine": "GT500 5.4 SC", "hp": 662},
+      "2020s": {"engine": "Predator 5.2 SC", "hp": 760}
+    }
+  }
+}

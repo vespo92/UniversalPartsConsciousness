@@ -1,0 +1,264 @@
+{
+  "engine_family": "Ford Y-Block V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "vehicle_platforms": {
+    "ford_passenger_cars": {
+      "years": "1954-1962",
+      "models": [
+        {"model": "Ford Customline", "years": "1954-1956", "engines": ["239", "272"]},
+        {"model": "Ford Fairlane", "years": "1955-1958", "engines": ["272", "292", "312"]},
+        {"model": "Ford Crown Victoria", "years": "1955-1958", "engines": ["272", "292", "312"]},
+        {"model": "Ford Skyliner", "years": "1957-1959", "engines": ["292", "312"]},
+        {"model": "Ford Galaxie", "years": "1959-1960", "engines": ["292", "312"]}
+      ],
+      "notes": "Y-Block was standard in full-size Fords through 1958"
+    },
+    "ford_thunderbird": {
+      "years": "1955-1957",
+      "models": [
+        {"model": "Thunderbird", "years": "1955", "engines": ["292"]},
+        {"model": "Thunderbird", "years": "1956-1957", "engines": ["292", "312", "312SC"]}
+      ],
+      "notes": "Original two-seat Thunderbird, most desirable Y-Block application"
+    },
+    "mercury_passenger_cars": {
+      "years": "1954-1960",
+      "models": [
+        {"model": "Mercury Monterey", "years": "1954-1958", "engines": ["256", "292", "312"]},
+        {"model": "Mercury Montclair", "years": "1955-1958", "engines": ["292", "312"]},
+        {"model": "Mercury Park Lane", "years": "1958-1960", "engines": ["312", "332", "352"]}
+      ],
+      "notes": "Mercury often received larger Y-Block variants"
+    },
+    "ford_trucks": {
+      "years": "1954-1964",
+      "models": [
+        {"model": "F-100", "years": "1954-1964", "engines": ["239", "272", "292"]},
+        {"model": "F-250", "years": "1954-1964", "engines": ["272", "292"]},
+        {"model": "F-350", "years": "1954-1964", "engines": ["292"]}
+      ],
+      "notes": "292 Y-Block remained in truck production through 1964"
+    },
+    "edsel": {
+      "years": "1958",
+      "models": [
+        {"model": "Edsel Ranger", "years": "1958", "engines": ["292", "332"]},
+        {"model": "Edsel Pacer", "years": "1958", "engines": ["332"]}
+      ],
+      "notes": "Transitional year with Y-Block based 332"
+    }
+  },
+  "interchangeability_groups": {
+    "small_y_blocks": {
+      "engines": ["239", "256", "272"],
+      "shared_components": [
+        "Crankshaft (stroke)",
+        "Connecting rods",
+        "Camshaft",
+        "Timing components",
+        "Oil pump",
+        "Cylinder heads (with modifications)"
+      ],
+      "differences": {
+        "bore_sizes": ["239: 3.50\"", "256: 3.625\"", "272: 3.625\""],
+        "deck_heights": "All same 9.515\"",
+        "crankshaft": "239/256 use 3.10\" stroke, 272 uses 3.30\" stroke"
+      }
+    },
+    "medium_y_blocks": {
+      "engines": ["272", "292"],
+      "shared_components": [
+        "Crankshaft (same stroke)",
+        "Connecting rods",
+        "Camshaft",
+        "Timing components",
+        "Oil pump",
+        "Cylinder heads (with matching bore)",
+        "Intake manifolds",
+        "Exhaust manifolds"
+      ],
+      "differences": {
+        "bore_sizes": ["272: 3.625\"", "292: 3.75\""]
+      },
+      "upgrade_path": "272 block can be bored to 292 specifications"
+    },
+    "large_y_blocks": {
+      "engines": ["292", "312"],
+      "shared_components": [
+        "Block architecture",
+        "Connecting rods",
+        "Camshaft",
+        "Timing components",
+        "Oil pump",
+        "Most accessories"
+      ],
+      "differences": {
+        "bore_sizes": ["292: 3.75\"", "312: 3.80\""],
+        "crankshaft_stroke": ["292: 3.30\"", "312: 3.44\""]
+      },
+      "upgrade_path": "312 crank can be installed in 292 block for 'stroker' build"
+    },
+    "transitional_engines": {
+      "engines": ["332", "352"],
+      "notes": "These engines share some Y-Block characteristics but are transitional to FE series",
+      "shared_with_y_block": [
+        "Bellhousing pattern",
+        "Some accessory drives"
+      ],
+      "shared_with_fe": [
+        "Larger bore spacing",
+        "FE-style oiling"
+      ]
+    }
+  },
+  "component_interchangeability": {
+    "cylinder_heads": {
+      "interchangeable_within": ["All Y-Block engines with matching bore"],
+      "upgrades": {
+        "small_to_large": "272/292 heads can be installed on 312 with gasket matching",
+        "performance_heads": "312 HP heads can be used on 292 engines"
+      },
+      "cautions": [
+        "Chamber volume affects compression ratio",
+        "Port sizes differ between standard and HP heads",
+        "Combustion chamber must match bore diameter"
+      ]
+    },
+    "intake_manifolds": {
+      "interchangeable_within": ["All V8 Y-Blocks"],
+      "notes": "Port matching may be required for optimal flow",
+      "upgrades": {
+        "2_barrel_to_4_barrel": "Any Y-Block can accept 4-barrel manifold",
+        "triple_carb": "3x2 manifolds available for all Y-Blocks"
+      }
+    },
+    "exhaust_manifolds": {
+      "interchangeable_within": ["All Y-Block engines"],
+      "notes": "Some variation in outlet position for different chassis",
+      "upgrades": "Headers generally require custom fitting"
+    },
+    "crankshafts": {
+      "interchangeable_within": {
+        "short_stroke_group": ["239", "256", "272 early"],
+        "long_stroke_group": ["272 late", "292", "312"]
+      },
+      "upgrades": {
+        "stroker": "312 crankshaft in 292 block for increased displacement",
+        "custom": "Aftermarket crankshafts available for maximum stroke"
+      }
+    },
+    "connecting_rods": {
+      "interchangeable_within": ["All Y-Block engines"],
+      "notes": "Rod length is 6.528\" for all applications",
+      "upgrades": "Aftermarket H-beam rods available"
+    },
+    "camshafts": {
+      "interchangeable_within": ["All Y-Block engines"],
+      "notes": "Firing order and cam gear pitch are consistent",
+      "upgrades": "Performance grinds from Comp Cams, Isky (custom order)"
+    },
+    "timing_components": {
+      "interchangeable_within": ["All Y-Block engines"],
+      "upgrades": "Double roller timing sets recommended"
+    },
+    "oil_pumps": {
+      "interchangeable_within": ["All Y-Block engines"],
+      "upgrades": "High-volume pumps available from Melling"
+    },
+    "distributors": {
+      "interchangeable_within": ["All Y-Block engines"],
+      "notes": "Various advance curves for different applications",
+      "upgrades": "Pertronix electronic conversion fits all distributors"
+    }
+  },
+  "transmission_compatibility": {
+    "bellhousing_pattern": "Ford Y-Block pattern",
+    "compatible_transmissions": [
+      {
+        "transmission": "Ford-O-Matic",
+        "type": "Automatic 2-speed",
+        "years": "1954-1964"
+      },
+      {
+        "transmission": "Cruise-O-Matic",
+        "type": "Automatic 3-speed",
+        "years": "1958-1964"
+      },
+      {
+        "transmission": "Ford 3-speed manual",
+        "type": "Manual 3-speed",
+        "years": "1954-1964"
+      },
+      {
+        "transmission": "Ford 3-speed w/overdrive",
+        "type": "Manual 3-speed + OD",
+        "years": "1954-1960"
+      }
+    ],
+    "adapter_availability": {
+      "to_small_block_ford": "Adapters available for Windsor bellhousing pattern",
+      "to_fe_series": "Some adapters exist but require careful selection",
+      "to_modern_transmissions": "Custom adapters required"
+    }
+  },
+  "swap_compatibility": {
+    "y_block_into_earlier_vehicles": {
+      "ford_flathead_equipped": {
+        "years": "1949-1953",
+        "difficulty": "Moderate",
+        "requirements": [
+          "Motor mount fabrication",
+          "New transmission (or adapter)",
+          "Updated wiring",
+          "Radiator modification"
+        ],
+        "common_swaps": ["1949-51 Ford shoebox", "1932-40 Ford hot rods"]
+      }
+    },
+    "y_block_into_later_vehicles": {
+      "notes": "Y-Block swaps into later vehicles are uncommon but possible",
+      "considerations": [
+        "FE or Windsor generally preferred for post-1962 applications",
+        "Y-Block offers vintage appeal for period-correct builds"
+      ]
+    },
+    "y_block_replacement_options": {
+      "fe_series": {
+        "compatibility": "Different bellhousing pattern",
+        "requirements": "New motor mounts, transmission adapter",
+        "benefits": "More power potential, better parts availability"
+      },
+      "small_block_windsor": {
+        "compatibility": "Different bellhousing pattern",
+        "requirements": "New motor mounts, transmission adapter",
+        "benefits": "Modern reliability, excellent parts support"
+      }
+    }
+  },
+  "oem_part_number_cross_reference": {
+    "notes": "Y-Block parts use various Ford casting and part number systems",
+    "decoding": {
+      "prefix": {
+        "B5A": "1955 Ford passenger car",
+        "B6A": "1956 Ford passenger car",
+        "B7A": "1957 Ford passenger car",
+        "C1A": "1961 Ford truck",
+        "FAC": "Ford Autolite electrical",
+        "FAE": "Ford Autolite electrical"
+      }
+    },
+    "common_casting_numbers": {
+      "blocks": {
+        "B5A-6010-A": "1955 272 block",
+        "B6A-6010-B": "1956 292 block",
+        "B7A-6010-A": "1957 312 block"
+      },
+      "heads": {
+        "B5A-6049-A": "Standard 272/292 head",
+        "B7A-6049-B": "312 E-code performance head",
+        "B7A-6049-C": "312 F-code supercharged head"
+      }
+    }
+  }
+}

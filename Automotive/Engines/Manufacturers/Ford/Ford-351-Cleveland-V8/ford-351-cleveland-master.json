@@ -1,0 +1,212 @@
+{
+  "engine_id": "FORD-351-CLEVELAND-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "335 Series Cleveland",
+  "common_names": ["351C", "351 Cleveland", "Boss 351", "351M", "400M", "335 Series"],
+  "production_years": "1969-1974 (351C), 1975-1982 (351M/400)",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's high-performance mid-size V8 designed as a clean-sheet performance engine. Known for its excellent-flowing cylinder heads (especially 4V versions), the Cleveland was designed to compete with Chevrolet's LT-1 and Chrysler's 340. The Boss 351 version is considered one of the finest factory performance engines of the muscle car era.",
+  "heritage": {
+    "significance": "Purpose-built performance engine with some of the best-flowing factory heads of the era",
+    "innovations": [
+      "Canted valve cylinder heads for improved flow",
+      "Dry-deck design (no water crossover in intake)",
+      "Large intake and exhaust ports (4V heads)",
+      "Polylock rocker arm adjusters"
+    ],
+    "racing_heritage": {
+      "trans_am": "Boss 351 competed successfully in 1971",
+      "nascar": "Used in various racing applications",
+      "drag_racing": "Popular in bracket and sportsman racing"
+    }
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder, canted valves",
+    "bore_spacing_inches": 4.380,
+    "deck_height_inches": 9.206,
+    "main_bearings": 5,
+    "fuel_system": "Carburetor"
+  },
+  "variants": [
+    {
+      "variant_id": "351C-2V",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "9.0:1",
+      "horsepower": 240,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 350,
+      "torque_rpm": 2600,
+      "production_years": "1969-1974",
+      "head_type": "2V Open Chamber",
+      "notes": "Base engine with smaller ports, excellent street manners"
+    },
+    {
+      "variant_id": "351C-4V",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "10.7:1",
+      "horsepower": 285,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 370,
+      "torque_rpm": 3400,
+      "production_years": "1969-1971",
+      "head_type": "4V Closed Chamber",
+      "notes": "High-performance version with legendary 4V heads"
+    },
+    {
+      "variant_id": "351C-CJ",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "11.0:1",
+      "horsepower": 280,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 345,
+      "torque_rpm": 3800,
+      "production_years": "1971",
+      "head_type": "4V Closed Chamber",
+      "notes": "Cobra Jet variant with improved internals"
+    },
+    {
+      "variant_id": "351C-HO",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "11.0:1",
+      "horsepower": 275,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 286,
+      "torque_rpm": 3800,
+      "production_years": "1972-1974",
+      "head_type": "4V Quench Chamber",
+      "notes": "Final high-performance 4V variant"
+    },
+    {
+      "variant_id": "BOSS-351",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "11.0:1",
+      "horsepower": 330,
+      "horsepower_rpm": 5400,
+      "torque_lb_ft": 370,
+      "torque_rpm": 4000,
+      "production_years": "1971",
+      "head_type": "4V Quench Chamber",
+      "notes": "Ultimate factory 351C - solid lifter cam, forged pistons, 4-bolt mains"
+    },
+    {
+      "variant_id": "351M",
+      "displacement_ci": 351,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "8.0:1",
+      "horsepower": 161,
+      "horsepower_rpm": 3600,
+      "torque_lb_ft": 285,
+      "torque_rpm": 1800,
+      "production_years": "1975-1982",
+      "notes": "Modified Cleveland with raised deck, used in trucks and large cars"
+    },
+    {
+      "variant_id": "400M",
+      "displacement_ci": 400,
+      "displacement_liters": 6.6,
+      "bore_inches": 4.00,
+      "stroke_inches": 4.00,
+      "compression_ratio": "8.0:1",
+      "horsepower": 173,
+      "horsepower_rpm": 3800,
+      "torque_lb_ft": 326,
+      "torque_rpm": 1600,
+      "production_years": "1971-1982",
+      "notes": "Stroked Cleveland for trucks and large vehicles"
+    }
+  ],
+  "firing_order": "1-3-7-2-6-5-4-8",
+  "cylinder_numbering": {
+    "passenger_side_bank": [1, 2, 3, 4],
+    "driver_side_bank": [5, 6, 7, 8]
+  },
+  "head_types": {
+    "2V_open_chamber": {
+      "chamber_cc": 77,
+      "intake_port_cc": 195,
+      "exhaust_port_cc": 70,
+      "intake_valve_inches": 2.04,
+      "exhaust_valve_inches": 1.65,
+      "flow_cfm_intake": 200,
+      "applications": "Base 351C, excellent street heads when ported"
+    },
+    "4V_closed_chamber": {
+      "chamber_cc": 62,
+      "intake_port_cc": 280,
+      "exhaust_port_cc": 100,
+      "intake_valve_inches": 2.19,
+      "exhaust_valve_inches": 1.71,
+      "flow_cfm_intake": 285,
+      "applications": "1969-1970 performance engines, huge ports"
+    },
+    "4V_quench_chamber": {
+      "chamber_cc": 72,
+      "intake_port_cc": 260,
+      "exhaust_port_cc": 90,
+      "intake_valve_inches": 2.19,
+      "exhaust_valve_inches": 1.71,
+      "flow_cfm_intake": 275,
+      "applications": "1971+ 4V engines, Boss 351"
+    }
+  },
+  "vehicle_applications": [
+    {"years": "1969-1974", "models": ["Ford Mustang"], "notes": "Most desirable Cleveland application"},
+    {"years": "1971", "models": ["Ford Mustang Boss 351"], "notes": "One year only, highly collectible"},
+    {"years": "1970-1974", "models": ["Ford Torino", "Mercury Montego", "Mercury Cougar"]},
+    {"years": "1969-1974", "models": ["Ford Ranchero"]},
+    {"years": "1971-1974", "models": ["Ford Maverick (Grabber)"]},
+    {"years": "1972-1976", "models": ["Ford Gran Torino Sport"]},
+    {"years": "1975-1982", "models": ["Ford F-150", "Ford Bronco"], "notes": "351M/400M"}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 6, "oil_specification": "10W-40 or 20W-50"},
+    "coolant": {"capacity_quarts": 16, "coolant_type": "Green ethylene glycol"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": 105,
+    "main_cap_bolts_ft_lbs": 100,
+    "rod_cap_bolts_ft_lbs": 45,
+    "intake_manifold_bolts_ft_lbs": 25,
+    "exhaust_manifold_bolts_ft_lbs": 25
+  },
+  "common_issues": [
+    {"issue": "Valve float at high RPM (4V heads)", "description": "Large ports don't work well at low RPM", "solution": "Use 2V heads for street or install velocity stacks"},
+    {"issue": "Overheating", "description": "Dry deck design can run hot", "solution": "Water pump upgrade, high-flow thermostat"},
+    {"issue": "Timing chain stretch", "solution": "Double roller timing set"},
+    {"issue": "Oil consumption", "solution": "Valve seal replacement, check guides"}
+  ],
+  "strengths": [
+    "Excellent cylinder head flow (especially 4V)",
+    "Strong bottom end design",
+    "Canted valve design for improved breathing",
+    "Good aftermarket support",
+    "Lighter than 429/460",
+    "Boss 351 is a turnkey performance engine"
+  ],
+  "notes": {
+    "4V_vs_2V": "4V heads are high-performance but their large ports are better suited for high-RPM use. 2V heads work better for street applications and respond well to porting.",
+    "351C_vs_351W": "Cleveland is a completely different engine from the Windsor despite similar displacement. Different bellhousing, different firing order, different everything.",
+    "boss_351_value": "Original Boss 351 Mustangs are highly collectible. Only 1,806 built in 1971."
+  }
+}

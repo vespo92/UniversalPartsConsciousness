@@ -1,0 +1,354 @@
+{
+  "engine_family": "Ford FE V8",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "vehicle_platforms": {
+    "ford_mustang": {
+      "years": "1964-1970",
+      "models": [
+        {"model": "Mustang GT", "years": "1966-1969", "engines": ["390"]},
+        {"model": "Mustang Mach 1", "years": "1969-1970", "engines": ["390", "428CJ", "428SCJ"]},
+        {"model": "Mustang Boss 429", "years": "1969-1970", "engines": ["429 (385 series, not FE)"]}
+      ],
+      "notes": "FE was primary Mustang big block until 429 intro"
+    },
+    "shelby": {
+      "years": "1965-1970",
+      "models": [
+        {"model": "Shelby GT350", "years": "1965-1970", "engines": ["289 (not FE)"]},
+        {"model": "Shelby GT500", "years": "1967-1969", "engines": ["428 PI", "428CJ"]},
+        {"model": "Shelby GT500 KR", "years": "1968", "engines": ["428CJ"]}
+      ],
+      "notes": "GT500 used 428 Police Interceptor and Cobra Jet"
+    },
+    "ford_galaxie": {
+      "years": "1958-1971",
+      "models": [
+        {"model": "Galaxie 500", "years": "1962-1967", "engines": ["352", "390", "406", "427"]},
+        {"model": "Galaxie 500 XL", "years": "1962-1967", "engines": ["390", "406", "427"]},
+        {"model": "Galaxie 500 Lightweight", "years": "1963-1964", "engines": ["427"]}
+      ],
+      "notes": "NASCAR homologation platform for 427"
+    },
+    "ford_fairlane_torino": {
+      "years": "1962-1970",
+      "models": [
+        {"model": "Fairlane 500", "years": "1962-1970", "engines": ["352", "390", "427", "428CJ"]},
+        {"model": "Torino GT", "years": "1968-1970", "engines": ["390", "428CJ"]},
+        {"model": "Torino Cobra", "years": "1969-1970", "engines": ["428CJ", "428SCJ"]},
+        {"model": "Torino Talladega", "years": "1969", "engines": ["428CJ"]}
+      ],
+      "notes": "Mid-size platform with FE power"
+    },
+    "ford_thunderbird": {
+      "years": "1958-1971",
+      "models": [
+        {"model": "Thunderbird", "years": "1958-1971", "engines": ["352", "390", "428"]}
+      ],
+      "notes": "Personal luxury with FE power"
+    },
+    "mercury_cougar": {
+      "years": "1967-1970",
+      "models": [
+        {"model": "Cougar GT", "years": "1967-1970", "engines": ["390"]},
+        {"model": "Cougar Eliminator", "years": "1969-1970", "engines": ["390", "428CJ"]}
+      ],
+      "notes": "Mercury pony car platform"
+    },
+    "ford_trucks": {
+      "years": "1958-1976",
+      "models": [
+        {"model": "F-100", "years": "1958-1976", "engines": ["352", "360", "390"]},
+        {"model": "F-250", "years": "1958-1976", "engines": ["360", "390"]},
+        {"model": "F-350", "years": "1958-1976", "engines": ["360", "390"]}
+      ],
+      "notes": "360 continued in trucks until 1976"
+    },
+    "shelby_cobra": {
+      "years": "1962-1967",
+      "models": [
+        {"model": "Cobra 260/289", "years": "1962-1965", "engines": ["260", "289 (not FE)"]},
+        {"model": "Cobra 427", "years": "1965-1967", "engines": ["427 side-oiler"]},
+        {"model": "Cobra 428", "years": "1968", "engines": ["428"]}
+      ],
+      "notes": "Legendary sports car with 427 side-oiler"
+    },
+    "ford_gt40": {
+      "years": "1964-1969",
+      "models": [
+        {"model": "GT40 Mark I", "years": "1964-1965", "engines": ["289 (not FE)"]},
+        {"model": "GT40 Mark II", "years": "1965-1966", "engines": ["427 medium riser"]},
+        {"model": "GT40 Mark IV", "years": "1967", "engines": ["427 tunnel port"]},
+        {"model": "GT40 Mark IIB", "years": "1968-1969", "engines": ["427"]}
+      ],
+      "notes": "Le Mans winning race cars"
+    }
+  },
+  "interchangeability_groups": {
+    "block_bore_families": {
+      "small_bore": {
+        "engines": ["332", "352", "360"],
+        "bore_inches": "4.00-4.05",
+        "notes": "4.00\" bore, can be overbored to 4.05\""
+      },
+      "medium_bore": {
+        "engines": ["390", "406", "410", "427", "428"],
+        "bore_inches": "4.05-4.23",
+        "notes": "All share same basic block architecture"
+      }
+    },
+    "stroke_families": {
+      "short_stroke": {
+        "engines": ["332", "352", "360"],
+        "stroke_inches": 3.30,
+        "notes": "Short stroke for high RPM"
+      },
+      "medium_stroke": {
+        "engines": ["390", "406", "427"],
+        "stroke_inches": 3.785,
+        "notes": "Standard FE stroke, excellent balance"
+      },
+      "long_stroke": {
+        "engines": ["410", "428"],
+        "stroke_inches": 3.98,
+        "notes": "Maximum torque stroke"
+      }
+    },
+    "oiling_system_types": {
+      "top_oiler": {
+        "engines": ["332", "352", "360", "390", "410", "most 428"],
+        "identification": "Oil filter pad on right front of block",
+        "notes": "Priority to top end, adequate for street use"
+      },
+      "side_oiler": {
+        "engines": ["427", "some 428 SCJ"],
+        "identification": "External oil gallery on driver side, different filter location",
+        "notes": "Priority to main bearings, essential for racing"
+      }
+    },
+    "main_cap_types": {
+      "standard_2_bolt": {
+        "engines": ["332", "352", "360", "390", "410", "most 428"],
+        "notes": "Standard production blocks"
+      },
+      "cross_bolted_4_bolt": {
+        "engines": ["427", "428 SCJ"],
+        "identification": "Horizontal bolts through main webs",
+        "notes": "Racing strength, prevents main cap walk"
+      }
+    }
+  },
+  "component_interchangeability": {
+    "cylinder_heads": {
+      "head_types": {
+        "low_riser": {
+          "casting_numbers": ["C6AE-C", "C7AE-B", "C8OE"],
+          "port_height": "Standard",
+          "flow_cfm": 260,
+          "compatible_intakes": ["All 2V and 4V low-riser intakes"],
+          "applications": ["352", "360", "390", "428 CJ"],
+          "notes": "Most common heads, good street performance"
+        },
+        "medium_riser": {
+          "casting_numbers": ["C6AE-H", "C6AE-K"],
+          "port_height": "Raised 0.250\"",
+          "flow_cfm": 290,
+          "compatible_intakes": ["Medium riser manifolds only"],
+          "applications": ["427 street", "GT40 race"],
+          "notes": "Requires specific intake manifold"
+        },
+        "high_riser": {
+          "casting_numbers": ["C5AE-H", "C7AE-J"],
+          "port_height": "Raised 0.500\"",
+          "flow_cfm": 320,
+          "compatible_intakes": ["High riser manifolds only"],
+          "applications": ["427 NASCAR", "drag racing"],
+          "notes": "Racing heads, not for street use"
+        },
+        "tunnel_port": {
+          "casting_numbers": ["C7AE-R"],
+          "port_height": "Maximum",
+          "flow_cfm": 380,
+          "compatible_intakes": ["Tunnel port manifold only"],
+          "applications": ["Racing only"],
+          "notes": "Pushrods pass through ports, requires special manifold and pushrods"
+        }
+      },
+      "chamber_sizes": {
+        "small_chamber": {
+          "volume_cc": "64-68",
+          "applications": "High compression racing",
+          "notes": "High compression with flat top pistons"
+        },
+        "medium_chamber": {
+          "volume_cc": "72-76",
+          "applications": "Performance street",
+          "notes": "Good compression with standard pistons"
+        },
+        "large_chamber": {
+          "volume_cc": "78-82",
+          "applications": "Low compression smog era",
+          "notes": "For 1971+ low compression engines"
+        }
+      }
+    },
+    "intake_manifolds": {
+      "interchangeable_within": ["Low-riser heads share common intake bolt pattern"],
+      "upgrades": {
+        "2V_to_4V": "Any low-riser block can accept 4-barrel manifold",
+        "aluminum_upgrade": "Edelbrock and other aluminum intakes fit stock heads"
+      },
+      "cautions": [
+        "Medium-riser heads require medium-riser intake",
+        "High-riser heads require high-riser intake",
+        "Tunnel port requires specific tunnel port intake",
+        "Port size must match head port size"
+      ]
+    },
+    "exhaust_manifolds": {
+      "interchangeable_within": ["All FE engines use same exhaust bolt pattern"],
+      "notes": "Some variation in outlet position for different chassis",
+      "upgrades": "Headers generally require chassis-specific application"
+    },
+    "crankshafts": {
+      "interchangeable_within": {
+        "390_stroke": ["390", "406", "427 - all use 3.785\" stroke"],
+        "428_stroke": ["410", "428 - all use 3.98\" stroke"]
+      },
+      "stroker_options": {
+        "428_crank_in_390_block": "Creates 410 displacement",
+        "custom_stroker": "4.25\" stroke creates 454+ displacement"
+      }
+    },
+    "connecting_rods": {
+      "interchangeable_within": ["All FE engines use same rod length (6.540\")"],
+      "upgrades": {
+        "LeMans_rods": "Heavy-duty 7/16\" bolt rods for high-performance",
+        "aftermarket_H_beam": "Eagle, Scat, Manley options"
+      }
+    },
+    "camshafts": {
+      "interchangeable_within": ["All FE engines"],
+      "notes": "Firing order and cam gear pitch are consistent across FE family",
+      "exceptions": ["SOHC Cammer uses completely different camshaft system"]
+    },
+    "timing_components": {
+      "interchangeable_within": ["All FE engines (except SOHC)"],
+      "upgrades": "Double roller timing sets from Cloyes, Comp Cams"
+    },
+    "oil_pumps": {
+      "interchangeable_within": ["All top-oiler blocks share same pump"],
+      "notes": "Side-oiler blocks use different pump location",
+      "upgrades": "Melling high-volume pumps available"
+    },
+    "distributors": {
+      "interchangeable_within": ["All FE engines use same distributor"],
+      "notes": "Various advance curves for different applications",
+      "upgrades": "MSD, Pertronix electronic conversions"
+    }
+  },
+  "transmission_compatibility": {
+    "bellhousing_pattern": "Ford FE pattern",
+    "compatible_transmissions": [
+      {
+        "transmission": "Ford Cruise-O-Matic (C6)",
+        "type": "Automatic 3-speed",
+        "years": "1966-1996",
+        "notes": "Most common FE automatic, very strong"
+      },
+      {
+        "transmission": "Ford FMX",
+        "type": "Automatic 3-speed",
+        "years": "1968-1981",
+        "notes": "Medium duty automatic"
+      },
+      {
+        "transmission": "Ford Toploader",
+        "type": "Manual 4-speed",
+        "years": "1964-1973",
+        "notes": "Legendary strength, wide ratio and close ratio available"
+      },
+      {
+        "transmission": "Ford T&C (Borg-Warner)",
+        "type": "Manual 4-speed",
+        "years": "1964-1967",
+        "notes": "Earlier 4-speed option"
+      },
+      {
+        "transmission": "Tremec TKO 500/600",
+        "type": "Manual 5-speed",
+        "years": "Aftermarket",
+        "notes": "Modern overdrive 5-speed retrofit"
+      }
+    ],
+    "adapter_availability": {
+      "to_small_block_ford": "Adapters available but uncommon",
+      "to_351C": "Different bellhousing pattern, adapters exist",
+      "to_modern_transmissions": "Transmission adapter plates available (Quicktime, Lakewood)"
+    }
+  },
+  "swap_compatibility": {
+    "fe_into_earlier_vehicles": {
+      "y_block_equipped": {
+        "years": "1954-1964",
+        "difficulty": "Moderate",
+        "requirements": [
+          "Motor mount fabrication",
+          "New transmission or adapter",
+          "Upgraded cooling system",
+          "Updated wiring"
+        ],
+        "common_swaps": ["1955-57 T-Bird", "1949-54 Ford shoebox"]
+      }
+    },
+    "fe_into_later_vehicles": {
+      "notes": "FE swaps into later vehicles are popular for hot rods",
+      "considerations": [
+        "Weight distribution (FE is heavy)",
+        "Hood clearance for tunnel ram setups",
+        "Transmission compatibility"
+      ]
+    },
+    "fe_replacement_options": {
+      "385_series_429_460": {
+        "compatibility": "Different bellhousing pattern and dimensions",
+        "requirements": "Complete swap with mounts, trans adapter",
+        "benefits": "More displacement potential, better parts availability"
+      },
+      "modular_4_6_5_4": {
+        "compatibility": "Completely different architecture",
+        "requirements": "Complete custom swap",
+        "benefits": "Modern technology, fuel injection"
+      }
+    }
+  },
+  "oem_part_number_cross_reference": {
+    "notes": "FE parts use Ford engineering numbering system",
+    "decoding": {
+      "prefix": {
+        "C3AE": "1963 Ford passenger car engine",
+        "C6AE": "1966 Ford passenger car engine",
+        "C7AE": "1967 Ford passenger car engine",
+        "C8AE": "1968 Ford passenger car engine",
+        "C8OE": "1968 Ford Fairlane/Torino engine"
+      }
+    },
+    "common_casting_numbers": {
+      "blocks": {
+        "C6AE-6015-A": "390 top oiler block",
+        "C5AE-6015-E": "427 side-oiler block",
+        "C8AE-6015-A": "428 block"
+      },
+      "heads": {
+        "C6AE-C": "390 low-riser head",
+        "C6AE-H": "427 medium-riser head",
+        "C7AE-J": "427 high-riser head",
+        "C8OE-N": "428 Cobra Jet head (uses 427 LR castings)"
+      },
+      "crankshafts": {
+        "C3AE-6303-B": "390/427 crankshaft (3.785\" stroke)",
+        "C6AE-6303-A": "428 crankshaft (3.98\" stroke)"
+      }
+    }
+  }
+}

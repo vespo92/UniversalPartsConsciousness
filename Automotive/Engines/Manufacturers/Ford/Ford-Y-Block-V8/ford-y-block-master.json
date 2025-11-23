@@ -1,0 +1,250 @@
+{
+  "engine_id": "FORD-Y-BLOCK-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Y-Block",
+  "common_names": [
+    "Y-Block",
+    "Ford Y-Block V8",
+    "Deep Skirt V8",
+    "Overhead Valve V8"
+  ],
+  "production_years": "1954-1964",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's first modern overhead valve V8 engine, replacing the venerable Flathead V8. Named 'Y-Block' for its deep-skirted block design that extended well below the crankshaft centerline, creating a Y-shaped cross-section for exceptional rigidity.",
+  "heritage": {
+    "significance": "Revolutionary design that replaced the legendary Flathead V8 and established Ford's V8 dominance for decades",
+    "innovations": [
+      "Deep-skirt block design for enhanced rigidity",
+      "Full-pressure lubrication system",
+      "Overhead valve architecture",
+      "Cross-bolted main caps on performance versions"
+    ],
+    "racing_heritage": "Powered early stock car racing efforts and was the basis for Ford's Thunderbird engines"
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8",
+    "block_material": "Cast Iron",
+    "head_material": "Cast Iron",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder",
+    "bore_spacing_inches": 4.44,
+    "deck_height_inches": 9.515,
+    "main_bearings": 5,
+    "rod_journal_diameter_inches": 2.1882,
+    "main_journal_diameter_inches": 2.6378,
+    "fuel_system": "Carburetor (2-barrel, 4-barrel on performance versions)",
+    "ignition_system": "Points-based distributor ignition",
+    "cooling_system": "Pressurized water cooling with crossflow design",
+    "oiling_system": "Full pressure with gear-driven oil pump"
+  },
+  "variants": [
+    {
+      "variant_id": "Y-BLOCK-239",
+      "displacement_ci": 239,
+      "displacement_liters": 3.9,
+      "bore_inches": 3.50,
+      "stroke_inches": 3.10,
+      "compression_ratio": "7.2:1",
+      "horsepower": 130,
+      "horsepower_rpm": 4200,
+      "torque_lb_ft": 214,
+      "torque_rpm": 2200,
+      "production_years": "1954-1955",
+      "notes": "Initial displacement, replaced the 239 Flathead"
+    },
+    {
+      "variant_id": "Y-BLOCK-256",
+      "displacement_ci": 256,
+      "displacement_liters": 4.2,
+      "bore_inches": 3.625,
+      "stroke_inches": 3.10,
+      "compression_ratio": "7.6:1",
+      "horsepower": 162,
+      "horsepower_rpm": 4400,
+      "torque_lb_ft": 238,
+      "torque_rpm": 2500,
+      "production_years": "1954-1955",
+      "notes": "Mercury exclusive variant"
+    },
+    {
+      "variant_id": "Y-BLOCK-272",
+      "displacement_ci": 272,
+      "displacement_liters": 4.5,
+      "bore_inches": 3.625,
+      "stroke_inches": 3.30,
+      "compression_ratio": "8.0:1",
+      "horsepower": 172,
+      "horsepower_rpm": 4400,
+      "torque_lb_ft": 260,
+      "torque_rpm": 2500,
+      "production_years": "1955-1957",
+      "notes": "Introduced for 1955, popular in full-size Fords"
+    },
+    {
+      "variant_id": "Y-BLOCK-292",
+      "displacement_ci": 292,
+      "displacement_liters": 4.8,
+      "bore_inches": 3.75,
+      "stroke_inches": 3.30,
+      "compression_ratio": "8.4:1",
+      "horsepower": 200,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 285,
+      "torque_rpm": 2800,
+      "production_years": "1955-1962",
+      "notes": "Thunderbird Special version produced 212 HP. Long-lived truck engine variant continued through 1962"
+    },
+    {
+      "variant_id": "Y-BLOCK-312",
+      "displacement_ci": 312,
+      "displacement_liters": 5.1,
+      "bore_inches": 3.80,
+      "stroke_inches": 3.44,
+      "compression_ratio": "9.0:1",
+      "horsepower": 225,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 317,
+      "torque_rpm": 2600,
+      "production_years": "1956-1960",
+      "notes": "Largest Y-Block displacement. Supercharged version produced 300+ HP"
+    },
+    {
+      "variant_id": "Y-BLOCK-312-SC",
+      "displacement_ci": 312,
+      "displacement_liters": 5.1,
+      "bore_inches": 3.80,
+      "stroke_inches": 3.44,
+      "compression_ratio": "8.5:1",
+      "horsepower": 300,
+      "horsepower_rpm": 4800,
+      "torque_lb_ft": 340,
+      "torque_rpm": 2800,
+      "production_years": "1957",
+      "forced_induction": "Paxton/McCulloch centrifugal supercharger",
+      "notes": "F-Code Supercharged version, dominated NASCAR in 1957 until factory involvement ban"
+    },
+    {
+      "variant_id": "Y-BLOCK-332",
+      "displacement_ci": 332,
+      "displacement_liters": 5.4,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.30,
+      "compression_ratio": "9.5:1",
+      "horsepower": 240,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 332,
+      "torque_rpm": 2800,
+      "production_years": "1958",
+      "notes": "One-year transitional engine before FE series. Shares characteristics with both Y-Block and FE"
+    },
+    {
+      "variant_id": "Y-BLOCK-352",
+      "displacement_ci": 352,
+      "displacement_liters": 5.8,
+      "bore_inches": 4.00,
+      "stroke_inches": 3.50,
+      "compression_ratio": "9.6:1",
+      "horsepower": 300,
+      "horsepower_rpm": 4600,
+      "torque_lb_ft": 380,
+      "torque_rpm": 2800,
+      "production_years": "1958",
+      "notes": "Final evolution before FE series took over. Bridge to FE architecture"
+    }
+  ],
+  "firing_order": "1-5-4-8-6-3-7-2",
+  "cylinder_numbering": {
+    "passenger_side_bank": [1, 2, 3, 4],
+    "driver_side_bank": [5, 6, 7, 8],
+    "convention": "Ford standard V8 numbering"
+  },
+  "vehicle_applications": [
+    {
+      "years": "1954-1956",
+      "models": ["Ford Customline", "Ford Fairlane", "Ford Sunliner"],
+      "notes": "First generation Y-Block installations"
+    },
+    {
+      "years": "1955-1957",
+      "models": ["Ford Thunderbird"],
+      "notes": "Original Thunderbird power, 292 and 312 variants"
+    },
+    {
+      "years": "1955-1962",
+      "models": ["Ford F-100", "Ford F-250"],
+      "notes": "Truck applications, primarily 292 variant"
+    },
+    {
+      "years": "1954-1960",
+      "models": ["Mercury Montclair", "Mercury Monterey", "Mercury Park Lane"],
+      "notes": "Mercury received larger displacement variants"
+    },
+    {
+      "years": "1956-1958",
+      "models": ["Ford Crown Victoria", "Ford Skyliner"],
+      "notes": "Premium Ford sedans and retractable hardtop"
+    }
+  ],
+  "fluid_capacities": {
+    "engine_oil": {
+      "capacity_quarts": 5,
+      "capacity_liters": 4.7,
+      "oil_specification": "SAE 20W-50 recommended (period correct), modern 10W-40 acceptable",
+      "filter_required": "Cartridge type, various applications"
+    },
+    "coolant": {
+      "capacity_quarts": 18,
+      "capacity_liters": 17,
+      "coolant_type": "Ethylene glycol antifreeze, green formula",
+      "notes": "Large capacity due to full-size vehicle radiators"
+    }
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": 75,
+    "main_cap_bolts_ft_lbs": 95,
+    "rod_cap_bolts_ft_lbs": 45,
+    "intake_manifold_bolts_ft_lbs": 25,
+    "exhaust_manifold_bolts_ft_lbs": 25,
+    "spark_plugs_ft_lbs": 25,
+    "flywheel_bolts_ft_lbs": 85
+  },
+  "common_issues": [
+    {
+      "issue": "Oil leaks from rear main seal",
+      "description": "Rope-style rear main seal notorious for leaking",
+      "solution": "Modern neoprene seal conversions available"
+    },
+    {
+      "issue": "Valve guide wear",
+      "description": "Cast iron guides wear over time causing oil consumption",
+      "solution": "Bronze valve guide liners or knurling"
+    },
+    {
+      "issue": "Cracked exhaust manifolds",
+      "description": "Cast iron manifolds prone to cracking from thermal cycling",
+      "solution": "Headers or aftermarket replacements"
+    },
+    {
+      "issue": "Generator/charging system issues",
+      "description": "Original generators have limited output",
+      "solution": "Alternator conversion kits widely available"
+    },
+    {
+      "issue": "Distributor wear",
+      "description": "Points ignition requires regular maintenance",
+      "solution": "Electronic ignition conversion (Pertronix)"
+    }
+  ],
+  "strengths": [
+    "Extremely robust bottom end with deep-skirt design",
+    "Smooth power delivery",
+    "Good parts availability for popular variants",
+    "Strong aftermarket support",
+    "Classic American V8 sound and character"
+  ],
+  "notes": {
+    "historical_context": "The Y-Block represented Ford's answer to the overhead valve revolution started by Oldsmobile Rocket 88 and Cadillac V8 engines in 1949. It was a clean-sheet design that set the template for all future Ford V8 engines.",
+    "collectibility": "Supercharged 312 F-Code engines are highly collectible. Original Thunderbird engines command premium prices.",
+    "restoration_notes": "Many components are shared with later Ford engines, easing restoration. However, some Y-Block specific parts are becoming scarce."
+  }
+}

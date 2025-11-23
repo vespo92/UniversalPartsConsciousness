@@ -1,0 +1,110 @@
+{
+  "engine_id": "FORD-GODZILLA-7.3L-V8",
+  "manufacturer": "Ford Motor Company",
+  "engine_family": "Godzilla",
+  "common_names": ["Godzilla", "7.3L", "7.3L Gas V8", "Super Duty V8"],
+  "production_years": "2020-present",
+  "catalog_version": "1.0.0",
+  "last_updated": "2025-01-15",
+  "description": "Ford's massive pushrod V8 designed for heavy-duty truck applications. At 7.3 liters (445 cubic inches), it's the largest displacement gasoline engine Ford currently produces. Despite its truck origins, the Godzilla has become incredibly popular in the performance community for its massive displacement and modification potential.",
+  "heritage": {
+    "significance": "First new pushrod Ford V8 design since the 385 series, designed for ultimate durability",
+    "innovations": [
+      "Variable displacement oil pump",
+      "Cam-in-block OHV design for maximum torque",
+      "Port fuel injection for durability",
+      "Cast iron block for strength",
+      "Sodium-filled exhaust valves"
+    ],
+    "design_philosophy": "Built for work truck durability with 250,000+ mile service life in mind"
+  },
+  "base_specifications": {
+    "configuration": "90-degree V8, cam-in-block (pushrod)",
+    "block_material": "Cast Iron",
+    "head_material": "Aluminum",
+    "valvetrain": "OHV Pushrod, 2 valves per cylinder",
+    "bore_spacing_mm": 108,
+    "deck_height_inches": 10.322,
+    "main_bearings": 6,
+    "fuel_system": "Port Fuel Injection",
+    "ignition_system": "Coil-on-plug"
+  },
+  "variants": [
+    {
+      "variant_id": "GODZILLA-TRUCK",
+      "displacement_ci": 445,
+      "displacement_liters": 7.3,
+      "bore_inches": 4.22,
+      "stroke_inches": 3.98,
+      "compression_ratio": "10.5:1",
+      "horsepower": 430,
+      "horsepower_rpm": 5500,
+      "torque_lb_ft": 475,
+      "torque_rpm": 4000,
+      "production_years": "2020-present",
+      "notes": "Standard Super Duty truck configuration"
+    },
+    {
+      "variant_id": "GODZILLA-MEGAZILLA",
+      "displacement_ci": 445,
+      "displacement_liters": 7.3,
+      "bore_inches": 4.22,
+      "stroke_inches": 3.98,
+      "compression_ratio": "10.5:1",
+      "horsepower": 615,
+      "horsepower_rpm": 6200,
+      "torque_lb_ft": 640,
+      "torque_rpm": 4600,
+      "production_years": "2023-present",
+      "notes": "Ford Performance 'Megazilla' crate engine with ported heads and aggressive cam"
+    }
+  ],
+  "firing_order": "1-5-4-8-6-3-7-2",
+  "cylinder_numbering": {
+    "passenger_side_bank": [1, 2, 3, 4],
+    "driver_side_bank": [5, 6, 7, 8]
+  },
+  "vehicle_applications": [
+    {"years": "2020-present", "models": ["Ford F-250", "Ford F-350", "Ford F-450", "Ford F-550"]},
+    {"years": "2020-present", "models": ["Ford E-Series Cutaway", "Ford F-650", "Ford F-750"]},
+    {"years": "2020-present", "models": ["Ford Performance crate engine"]}
+  ],
+  "fluid_capacities": {
+    "engine_oil": {"capacity_quarts": 8, "oil_specification": "5W-30"},
+    "coolant": {"capacity_quarts": 22, "coolant_type": "Motorcraft Orange"}
+  },
+  "torque_specifications": {
+    "cylinder_head_bolts_ft_lbs": 140,
+    "main_cap_bolts_ft_lbs": 100,
+    "rod_cap_bolts_ft_lbs": 55,
+    "intake_manifold_bolts_ft_lbs": 25
+  },
+  "common_issues": [
+    {"issue": "None significant yet", "description": "Engine is relatively new with no widespread issues reported", "notes": "Designed for commercial durability"}
+  ],
+  "strengths": [
+    "Massive 7.3L displacement",
+    "Simple pushrod design - easy to work on",
+    "Exceptional low-end torque",
+    "Cast iron block handles abuse",
+    "Excellent modification potential",
+    "Port injection for reliability"
+  ],
+  "aftermarket_potential": {
+    "naturally_aspirated": {
+      "bolt_ons": "Intake, headers, cam swap can yield 500+ HP",
+      "ported_heads": "With ported heads and cam (Megazilla-style), 600+ HP possible",
+      "notes": "Very responsive to traditional V8 modifications"
+    },
+    "forced_induction": {
+      "supercharger": "Whipple and other manufacturers offer kits for 700-1000+ HP",
+      "turbo": "Twin turbo kits available, 800-1200+ HP possible",
+      "notes": "Factory internals handle moderate boost well"
+    }
+  },
+  "notes": {
+    "swap_popularity": "The Godzilla has become extremely popular for engine swaps into classic trucks, hot rods, and even Broncos. Ford Performance offers a crate engine and control pack.",
+    "traditional_v8_feel": "Despite being modern, the pushrod design gives the Godzilla traditional American V8 character that many enthusiasts appreciate.",
+    "megazilla": "Ford Performance's Megazilla crate engine comes ready to make 615 HP with no forced induction - impressive for a naturally aspirated pushrod engine."
+  }
+}
