@@ -1,0 +1,362 @@
+{
+  "$schema": "../schemas/swap_ecosystem.json",
+  "showcase_id": "SHOWCASE-002",
+  "title": "LS Engine Swap Ecosystem",
+  "description": "The largest grassroots engine swap compatibility database in automotive history",
+  "engine_family": {
+    "name": "GM LS/Gen III-IV Small Block",
+    "production_years": [1997, 2024],
+    "variants": [
+      {"code": "LS1", "displacement_L": 5.7, "years": "1997-2004", "hp_range": "305-350"},
+      {"code": "LS2", "displacement_L": 6.0, "years": "2005-2007", "hp_range": "400"},
+      {"code": "LS3", "displacement_L": 6.2, "years": "2008-2017", "hp_range": "426-436"},
+      {"code": "LS6", "displacement_L": 5.7, "years": "2001-2004", "hp_range": "385-405"},
+      {"code": "LS7", "displacement_L": 7.0, "years": "2006-2015", "hp_range": "505"},
+      {"code": "LS9", "displacement_L": 6.2, "years": "2009-2015", "hp_range": "638", "forced_induction": "supercharged"},
+      {"code": "L99", "displacement_L": 6.2, "years": "2010-2015", "hp_range": "400", "notes": "AFM equipped"},
+      {"code": "LQ4", "displacement_L": 6.0, "years": "1999-2007", "hp_range": "300-325", "notes": "Truck iron block"},
+      {"code": "LQ9", "displacement_L": 6.0, "years": "2002-2007", "hp_range": "345", "notes": "Truck aluminum heads"},
+      {"code": "L92", "displacement_L": 6.2, "years": "2007-2009", "hp_range": "403", "notes": "Rectangle port heads"},
+      {"code": "L76", "displacement_L": 6.0, "years": "2007-2009", "hp_range": "361", "notes": "AFM, DOD"}
+    ]
+  },
+  "transmission_compatibility": {
+    "direct_bolt_on": [
+      {
+        "trans_code": "T56",
+        "type": "6-speed manual",
+        "bellhousing": "LS pattern",
+        "input_shaft": "26-spline",
+        "notes": "Factory option, most common swap trans"
+      },
+      {
+        "trans_code": "TR-6060",
+        "type": "6-speed manual",
+        "bellhousing": "LS pattern",
+        "input_shaft": "26-spline",
+        "notes": "Heavy duty T56 replacement"
+      },
+      {
+        "trans_code": "4L60E",
+        "type": "4-speed auto",
+        "bellhousing": "LS pattern",
+        "torque_capacity_ftlb": 360,
+        "notes": "Most common auto option"
+      },
+      {
+        "trans_code": "4L80E",
+        "type": "4-speed auto",
+        "bellhousing": "LS pattern with adapter",
+        "torque_capacity_ftlb": 500,
+        "adapter_required": "IAG-001 or equivalent",
+        "notes": "Stronger, heavier, requires trans tunnel work"
+      }
+    ],
+    "adapter_required": [
+      {
+        "trans_code": "CD009 (Nissan 350Z)",
+        "adapter_manufacturer": "Collins Adapter",
+        "adapter_pn": "CD009-LS",
+        "price_usd": 1800,
+        "additional_parts": [
+          {"part": "Pilot bearing", "spec": "6203-2RS", "price_usd": 8},
+          {"part": "Flywheel", "spec": "168-tooth LS + CD009 input", "price_usd": 350},
+          {"part": "Clutch", "spec": "Any 11-inch LS clutch", "price_usd": 300}
+        ],
+        "notes": "Popular for drift builds, handles 700+ HP",
+        "community_success_rate": 0.97
+      },
+      {
+        "trans_code": "BMW GS6-53DZ (E46 M3)",
+        "adapter_manufacturer": "PMC Motorsport",
+        "adapter_pn": "BMW-LS-6SP",
+        "price_usd": 2200,
+        "additional_parts": [
+          {"part": "Input shaft swap", "spec": "LS pilot bushing conversion", "price_usd": 150},
+          {"part": "Flywheel", "spec": "Custom billet", "price_usd": 600}
+        ],
+        "notes": "Shifter linkage can bind, requires custom solution",
+        "community_success_rate": 0.89
+      },
+      {
+        "trans_code": "T-5 (Ford/GM)",
+        "adapter_manufacturer": "Various",
+        "adapter_pn": "Multiple options",
+        "price_usd": 400,
+        "additional_parts": [
+          {"part": "Pilot bushing", "spec": "T5-LS conversion", "price_usd": 35}
+        ],
+        "notes": "Budget option, limited to ~350 HP",
+        "community_success_rate": 0.85
+      }
+    ]
+  },
+  "vehicle_swap_database": [
+    {
+      "vehicle": "Mazda Miata NA (1990-1997)",
+      "difficulty": "intermediate",
+      "popularity_rank": 1,
+      "verified_builds": 147,
+      "success_rate": 0.94,
+      "avg_build_time_months": 6,
+      "avg_cost_usd": 12000,
+      "swap_kit_manufacturers": [
+        {"name": "V8 Roadsters", "kit_price_usd": 3500, "url": "v8roadsters.com"},
+        {"name": "Sikky Manufacturing", "kit_price_usd": 2800, "url": "sikky.com"},
+        {"name": "ISR Performance", "kit_price_usd": 2200, "url": "isrperformance.com"}
+      ],
+      "required_modifications": [
+        {"mod": "Motor mounts", "source": "Kit", "custom_fab": false},
+        {"mod": "Oil pan", "source": "Kit or custom", "notes": "Must clear steering rack"},
+        {"mod": "Headers", "source": "Kit or custom", "notes": "Sikky, ISR, or DIY"},
+        {"mod": "Transmission tunnel", "source": "DIY", "notes": "Cut and weld required"},
+        {"mod": "Driveshaft", "source": "Custom", "notes": "2-piece recommended"},
+        {"mod": "Rear end", "source": "Ford 8.8 swap", "notes": "Miata diff can't handle torque"}
+      ],
+      "critical_measurements": {
+        "engine_setback_inches": 0,
+        "engine_drop_inches": 2.5,
+        "transmission_angle_degrees": 3.5
+      },
+      "fastener_requirements": [
+        {
+          "location": "Engine mounts to frame",
+          "spec": "7/16\"-14 Grade 8",
+          "length_inches": 2.5,
+          "qty": 4,
+          "torque_ftlb": 55
+        },
+        {
+          "location": "Trans mount to tunnel",
+          "spec": "M10x1.5-10.9",
+          "length_mm": 60,
+          "qty": 4,
+          "torque_nm": 50
+        },
+        {
+          "location": "Header to head",
+          "spec": "M8x1.25-8.8",
+          "length_mm": 25,
+          "qty": 16,
+          "torque_ftlb": 18
+        },
+        {
+          "location": "Oil pan to block",
+          "spec": "M6x1.0-8.8",
+          "length_mm": 12,
+          "qty": 20,
+          "torque_ftlb": 10
+        }
+      ],
+      "common_failures": [
+        {"issue": "Driveshaft angle vibration", "occurrence_rate": 0.23, "solution": "Use 2-piece shaft with carrier bearing"},
+        {"issue": "Cooling system undersized", "occurrence_rate": 0.18, "solution": "Upgrade to aluminum radiator + dual fans"},
+        {"issue": "Header to steering interference", "occurrence_rate": 0.15, "solution": "Use shorter steering shaft or reroute"},
+        {"issue": "Oil pan ground clearance", "occurrence_rate": 0.12, "solution": "LS2 pan sits higher than LS1"}
+      ],
+      "community_tips": [
+        "Use 98+ Camaro accessories bracket - clears frame rail better",
+        "LS2 oil pan fits better than LS1 in most swap applications",
+        "Don't cheap out on motor mounts - engine twist during torque kills headers",
+        "Weld in subframe connectors before the swap - chassis flex is a problem"
+      ]
+    },
+    {
+      "vehicle": "BMW E36 (1992-1999)",
+      "difficulty": "intermediate",
+      "popularity_rank": 2,
+      "verified_builds": 89,
+      "success_rate": 0.91,
+      "avg_build_time_months": 8,
+      "avg_cost_usd": 15000,
+      "swap_kit_manufacturers": [
+        {"name": "Sikky Manufacturing", "kit_price_usd": 3200, "url": "sikky.com"},
+        {"name": "Weddle Industries", "kit_price_usd": 2900, "url": "weddleindustries.com"}
+      ],
+      "required_modifications": [
+        {"mod": "Motor mounts", "source": "Kit", "custom_fab": false},
+        {"mod": "Oil pan", "source": "Sikky or custom", "notes": "Clears front subframe"},
+        {"mod": "Transmission crossmember", "source": "Kit", "notes": "Required for T56"},
+        {"mod": "Driveshaft", "source": "Custom", "notes": "BMW rear yoke to LS trans"},
+        {"mod": "Wiring", "source": "Standalone ECU or factory harness", "notes": "LS1 PCM integrates best"}
+      ]
+    },
+    {
+      "vehicle": "Nissan 240SX S13/S14 (1989-1998)",
+      "difficulty": "beginner",
+      "popularity_rank": 3,
+      "verified_builds": 234,
+      "success_rate": 0.96,
+      "notes": "Most common drift car LS swap platform",
+      "avg_build_time_months": 4,
+      "avg_cost_usd": 10000
+    },
+    {
+      "vehicle": "Porsche 944 (1982-1991)",
+      "difficulty": "advanced",
+      "popularity_rank": 8,
+      "verified_builds": 42,
+      "success_rate": 0.87,
+      "notes": "Requires transaxle conversion or custom bellhousing"
+    },
+    {
+      "vehicle": "Boeing Stearman PT-17 (Aircraft)",
+      "difficulty": "extreme",
+      "popularity_rank": "specialty",
+      "verified_builds": 3,
+      "notes": "Yes, people have put LS engines in biplanes. FAA Experimental category."
+    }
+  ],
+  "engine_fastener_database": {
+    "cylinder_head_bolts": {
+      "ls1_ls6_aluminum_heads": {
+        "spec": "M11x2.0-10.9 TTY",
+        "torque_sequence": ["22 ft-lb initial", "+90 degrees", "+90 degrees", "+50 degrees"],
+        "reusable": false,
+        "thread_sealer": "none",
+        "notes": "TTY = Torque To Yield, stretches permanently"
+      },
+      "ls7_titanium_rod": {
+        "spec": "M11x2.0-12.9 TTY",
+        "torque_sequence": ["22 ft-lb initial", "+80 degrees", "+80 degrees"],
+        "thread_locker": "Loctite 242 (medium strength, removable)",
+        "reusable": false
+      },
+      "ls9_supercharged": {
+        "aftermarket_standard": "ARP 234-3711",
+        "torque": "85 ft-lb",
+        "reusable": true,
+        "lubricant": "ARP moly lube required",
+        "notes": "Aftermarket studs preferred for boost applications"
+      }
+    },
+    "intake_manifold": {
+      "spec": "M6x1.0-8.8",
+      "length_mm": 40,
+      "qty": 10,
+      "torque_inlb": 89,
+      "torque_sequence": "center-out, 3 passes",
+      "warning": "Plastic manifold cracks if over-torqued. Use inch-pounds NOT ft-lbs!"
+    },
+    "exhaust_manifold": {
+      "spec": "M8x1.25-8.8",
+      "length_mm": 25,
+      "qty": 16,
+      "torque_ftlb": 18,
+      "notes": "Use anti-seize if you ever want them out again"
+    },
+    "oil_pan": {
+      "ls1_ls2": {
+        "spec": "M8x1.25-8.8",
+        "length_mm": 10,
+        "qty": 16,
+        "torque_ftlb": 18
+      },
+      "ls3": {
+        "spec": "M8x1.25-8.8",
+        "length_mm": 12,
+        "qty": 18,
+        "torque_ftlb": 18
+      },
+      "ls7_dry_sump": {
+        "spec": "M6x1.0-10.9",
+        "length_mm": 20,
+        "qty": 24,
+        "torque_ftlb": 10
+      }
+    },
+    "bell_housing": {
+      "spec": "M10x1.5-10.9",
+      "length_mm": 35,
+      "qty": 6,
+      "torque_ftlb": 37,
+      "pattern": "LS bellhousing pattern is unique to Gen III/IV"
+    },
+    "flywheel": {
+      "spec": "M10x1.5-12.9 TTY",
+      "qty": 6,
+      "torque_sequence": ["15 ft-lb initial", "+50 degrees"],
+      "notes": "DO NOT reuse flywheel bolts. They stretch."
+    }
+  },
+  "accessory_drive_compatibility": {
+    "note": "LS accessory brackets vary significantly by year and application",
+    "common_setups": [
+      {
+        "name": "1998-2002 Camaro F-body bracket",
+        "notes": "Most common for swaps, clears most chassis",
+        "components": ["Alternator", "A/C compressor", "Power steering pump"]
+      },
+      {
+        "name": "2004-2006 GTO bracket",
+        "notes": "Lower profile, used in tight engine bays",
+        "components": ["Alternator", "A/C compressor", "Power steering pump"]
+      },
+      {
+        "name": "Truck (LQ4/LQ9) bracket",
+        "notes": "Widest, may not fit all applications",
+        "components": ["Alternator", "A/C compressor", "Power steering pump", "Air pump"]
+      },
+      {
+        "name": "Delete kits",
+        "options": [
+          {"manufacturer": "ICT Billet", "type": "A/C delete", "price_usd": 85},
+          {"manufacturer": "Holley", "type": "Power steering delete", "price_usd": 95}
+        ]
+      }
+    ]
+  },
+  "wiring_solutions": [
+    {
+      "type": "Factory PCM + standalone harness",
+      "difficulty": "intermediate",
+      "cost_usd": 500,
+      "pros": ["OBD2 compliant", "Emission legal", "Drive by wire capable"],
+      "cons": ["Complex", "Requires tuning software"],
+      "popular_harness_kits": ["Speartech", "PSI Conversion"]
+    },
+    {
+      "type": "Standalone ECU (Holley, FAST, MSD)",
+      "difficulty": "intermediate",
+      "cost_usd": 1500,
+      "pros": ["Full tunability", "Simplified wiring", "No vehicle security issues"],
+      "cons": ["Not emission legal", "More expensive"]
+    },
+    {
+      "type": "Carbureted conversion",
+      "difficulty": "advanced",
+      "cost_usd": 800,
+      "pros": ["No electronics", "Simple troubleshooting"],
+      "cons": ["Lose 50+ HP", "Poor driveability", "Not recommended"]
+    }
+  ],
+  "community_qualia_aggregated": {
+    "total_forum_posts_analyzed": 15420,
+    "builds_documented": 892,
+    "failure_reports": 234,
+    "top_recommendations": [
+      {
+        "topic": "Best transmission for street/strip",
+        "consensus": "T56 Magnum or TR-6060",
+        "agreement_rate": 0.87
+      },
+      {
+        "topic": "Best bang-for-buck LS engine",
+        "consensus": "LQ4/LQ9 truck engine, add cam and heads",
+        "agreement_rate": 0.82
+      },
+      {
+        "topic": "Avoid this mistake",
+        "consensus": "Don't reuse TTY head bolts",
+        "agreement_rate": 0.98
+      }
+    ]
+  },
+  "lessons_for_upc": [
+    "Community-sourced compatibility data is incredibly valuable",
+    "Success rates and failure modes should be tracked per swap combination",
+    "Fastener specifications are critical but often undocumented",
+    "Cost tracking helps users make informed decisions",
+    "Adapter/kit ecosystem enables compatibility that doesn't exist natively"
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "$schema": "../schemas/vehicle_compatibility.json",
+  "showcase_id": "SHOWCASE-001",
+  "title": "Tesla Roadster / Lotus Elise Parts Compatibility",
+  "description": "Cross-platform parts sharing between Tesla's first EV and its donor Lotus platform",
+  "platforms": {
+    "donor": {
+      "manufacturer": "Lotus",
+      "model": "Elise",
+      "years": [2005, 2006, 2007],
+      "generation": "Series 2",
+      "production_location": ["UK", "Malaysia"]
+    },
+    "recipient": {
+      "manufacturer": "Tesla",
+      "model": "Roadster",
+      "years": [2008, 2009, 2010, 2011, 2012],
+      "generation": "1.0, 1.5, 2.0, 2.5",
+      "production_location": ["UK"]
+    }
+  },
+  "overall_compatibility": {
+    "chassis_commonality": 0.68,
+    "suspension_commonality": 0.94,
+    "interior_commonality": 0.45,
+    "fastener_commonality": 0.89
+  },
+  "component_groups": [
+    {
+      "group": "Front Suspension",
+      "compatibility_score": 0.96,
+      "components": [
+        {
+          "part_name": "Front Upper A-Arm",
+          "lotus_pn": "A117C0035F",
+          "tesla_pn": "TR-SUS-001",
+          "interchangeable": true,
+          "notes": "Direct fit, no modifications",
+          "fasteners": [
+            {
+              "location": "Inner pivot",
+              "spec": "M10x1.5-10.9",
+              "length_mm": 45,
+              "qty": 2,
+              "torque_nm": 75
+            },
+            {
+              "location": "Outer ball joint",
+              "spec": "M12x1.75-10.9",
+              "length_mm": 35,
+              "qty": 1,
+              "torque_nm": 90
+            }
+          ]
+        },
+        {
+          "part_name": "Front Lower A-Arm",
+          "lotus_pn": "A117C0034F",
+          "tesla_pn": "TR-SUS-002",
+          "interchangeable": true,
+          "notes": "Direct fit",
+          "fasteners": [
+            {
+              "location": "Inner pivot front",
+              "spec": "M10x1.5-10.9",
+              "length_mm": 50,
+              "qty": 1,
+              "torque_nm": 75
+            },
+            {
+              "location": "Inner pivot rear",
+              "spec": "M10x1.5-10.9",
+              "length_mm": 55,
+              "qty": 1,
+              "torque_nm": 75
+            }
+          ]
+        },
+        {
+          "part_name": "Front Upright",
+          "lotus_pn": "A117D0047F",
+          "tesla_pn": "TR-SUS-003",
+          "interchangeable": "partial",
+          "notes": "Brake caliper mount modified for Tesla brakes",
+          "modifications_required": ["Caliper mounting holes re-drilled for larger rotor"]
+        },
+        {
+          "part_name": "Front Anti-Roll Bar",
+          "lotus_pn": "A117C0025F",
+          "tesla_pn": "TR-SUS-004",
+          "interchangeable": true,
+          "diameter_mm": 22,
+          "notes": "Identical part"
+        }
+      ]
+    },
+    {
+      "group": "Rear Suspension",
+      "compatibility_score": 0.92,
+      "components": [
+        {
+          "part_name": "Rear Upper A-Arm",
+          "lotus_pn": "A117C0037F",
+          "tesla_pn": "TR-SUS-011",
+          "interchangeable": true,
+          "notes": "Toe link attachment point same"
+        },
+        {
+          "part_name": "Rear Lower A-Arm",
+          "lotus_pn": "A117C0036F",
+          "tesla_pn": "TR-SUS-012",
+          "interchangeable": "partial",
+          "notes": "Pickup points relocated 15mm for battery clearance",
+          "modifications_required": ["Bushing bore offset by 15mm"]
+        },
+        {
+          "part_name": "Rear Toe Link",
+          "lotus_pn": "A117C0068F",
+          "tesla_pn": "TR-SUS-013",
+          "interchangeable": false,
+          "notes": "Tesla uses longer toe link due to wheelbase extension"
+        }
+      ]
+    },
+    {
+      "group": "Shock Absorbers",
+      "compatibility_score": 0.80,
+      "components": [
+        {
+          "part_name": "Front Shock (Bilstein B6)",
+          "lotus_pn": "A117D0049F",
+          "tesla_pn": "TR-SUS-020",
+          "interchangeable": true,
+          "notes": "Same Bilstein B6 damper unit",
+          "aftermarket_alternatives": [
+            {"brand": "Bilstein", "pn": "24-146425", "notes": "OEM equivalent"},
+            {"brand": "Koni", "pn": "8610-1400", "notes": "Adjustable upgrade"},
+            {"brand": "Ohlins", "pn": "SES MO 10", "notes": "Track-oriented"}
+          ],
+          "fasteners": [
+            {
+              "location": "Upper mount",
+              "spec": "M10x1.5-8.8",
+              "length_mm": 30,
+              "qty": 3,
+              "torque_nm": 45
+            },
+            {
+              "location": "Lower eyelet",
+              "spec": "M12x1.75-10.9",
+              "length_mm": 65,
+              "qty": 1,
+              "torque_nm": 100
+            }
+          ]
+        },
+        {
+          "part_name": "Rear Shock",
+          "lotus_pn": "A117D0050F",
+          "tesla_pn": "TR-SUS-021",
+          "interchangeable": "partial",
+          "notes": "Tesla uses stiffer spring rate due to battery weight (+200kg rear)"
+        }
+      ]
+    },
+    {
+      "group": "Chassis Mounting",
+      "compatibility_score": 0.55,
+      "components": [
+        {
+          "part_name": "Front Subframe",
+          "lotus_pn": "A117B0011F",
+          "tesla_pn": "TR-CHS-001",
+          "interchangeable": true,
+          "notes": "Identical extruded aluminum structure",
+          "fasteners": [
+            {
+              "location": "Main chassis mount",
+              "spec": "M12x1.75-10.9",
+              "length_mm": 80,
+              "qty": 8,
+              "torque_nm": 115
+            }
+          ]
+        },
+        {
+          "part_name": "Rear Subframe",
+          "lotus_pn": "A117B0012F",
+          "tesla_pn": "TR-CHS-002",
+          "interchangeable": false,
+          "notes": "Complete redesign for battery mounting and motor integration",
+          "fasteners": [
+            {
+              "location": "Main chassis mount (Tesla)",
+              "spec": "M14x2.0-12.9",
+              "length_mm": 85,
+              "qty": 8,
+              "torque_nm": 180,
+              "notes": "Upgraded due to motor torque and battery loads"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Interior Hardware",
+      "compatibility_score": 0.45,
+      "components": [
+        {
+          "part_name": "Door Hinge Assembly",
+          "lotus_pn": "A117W0015F",
+          "tesla_pn": "TR-INT-001",
+          "interchangeable": true,
+          "notes": "Identical piano hinge design"
+        },
+        {
+          "part_name": "Window Regulator",
+          "lotus_pn": "A117W0022F",
+          "tesla_pn": "TR-INT-002",
+          "interchangeable": true,
+          "notes": "Same cable-driven mechanism"
+        },
+        {
+          "part_name": "Door Latch Mechanism",
+          "lotus_pn": "A117W0023F",
+          "tesla_pn": "TR-INT-003",
+          "interchangeable": true,
+          "notes": "Source: Inteva Products UK",
+          "supplier_info": {
+            "primary": "Inteva Products (UK)",
+            "secondary": "Kiekert AG (Germany)"
+          }
+        }
+      ]
+    }
+  ],
+  "manufacturing_variations": {
+    "issue": "Production tolerance variation discovered by Tesla",
+    "part": "Front A-arm bushing bore",
+    "variations": [
+      {
+        "production_source": "UK 2004",
+        "dimension_mm": 25.00,
+        "tolerance_plus": 0.05,
+        "tolerance_minus": 0.00,
+        "notes": "Original spec"
+      },
+      {
+        "production_source": "UK 2005",
+        "dimension_mm": 25.00,
+        "tolerance_plus": 0.02,
+        "tolerance_minus": 0.02,
+        "notes": "Tightened tolerance"
+      },
+      {
+        "production_source": "Malaysia",
+        "dimension_mm": 25.00,
+        "tolerance_plus": 0.08,
+        "tolerance_minus": 0.00,
+        "notes": "Looser tolerance, caused fitment issues"
+      }
+    ],
+    "resolution": "Tesla implemented incoming inspection for all bushing bores",
+    "lesson_learned": "Same part number does NOT guarantee same tolerance"
+  },
+  "community_qualia": [
+    {
+      "source": "teslamotorsclub.com",
+      "date": "2015-03-14",
+      "user": "roadster_restorer",
+      "content": "Lotus Elise shocks work perfect on 2008 Roadster 1.0",
+      "verified": true,
+      "upvotes": 47
+    },
+    {
+      "source": "teslamotorsclub.com",
+      "date": "2018-07-22",
+      "user": "ev_mechanic",
+      "content": "A-arms are identical. Don't pay Tesla prices, source from Lotus dealers",
+      "verified": true,
+      "upvotes": 89
+    },
+    {
+      "source": "lotustalk.com",
+      "date": "2019-11-03",
+      "user": "elise_owner_uk",
+      "content": "Tesla upright fits but you need to drill for bigger brakes",
+      "verified": true,
+      "upvotes": 23
+    }
+  ],
+  "economic_analysis": {
+    "front_upper_a_arm": {
+      "tesla_price_usd": 485,
+      "lotus_price_usd": 320,
+      "aftermarket_price_usd": 195,
+      "savings_percent": 60
+    },
+    "shock_absorber_front": {
+      "tesla_price_usd": 280,
+      "lotus_price_usd": 180,
+      "bilstein_direct_price_usd": 120,
+      "savings_percent": 57
+    }
+  },
+  "lessons_for_upc": [
+    "Cross-platform parts sharing is common but poorly documented",
+    "Manufacturing tolerance variations exist within same part numbers",
+    "Supplier information is valuable but often hidden",
+    "Community knowledge fills gaps manufacturers won't share",
+    "Price arbitrage opportunities exist between OEM sources"
+  ]
+}

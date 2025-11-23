@@ -1,0 +1,325 @@
+{
+  "$schema": "../schemas/cross_reference.json",
+  "showcase_id": "SHOWCASE-003",
+  "title": "Aviation Fastener Cross-Reference Database",
+  "description": "Aircraft fasteners where UPC could prevent accidents by ensuring proper substitution",
+  "critical_notice": "Aviation fasteners are life-safety critical. NEVER substitute without proper authorization from an A&P mechanic and adherence to AC 43.13-1B.",
+  "standards_reference": {
+    "AN": "Air Force-Navy Aeronautical Standard",
+    "MS": "Military Standard",
+    "NAS": "National Aerospace Standard",
+    "AS": "Aerospace Standard (SAE)",
+    "BACB": "Boeing Aircraft Company",
+    "NASM": "National Aerospace Standard Metric"
+  },
+  "fastener_families": [
+    {
+      "family": "AN Bolts",
+      "description": "Standard aircraft bolts, cadmium-plated steel",
+      "specifications": {
+        "material": "SAE 4037 or 8740 steel",
+        "tensile_strength_ksi": 125,
+        "finish": "Cadmium plate per QQ-P-416",
+        "head_marking": "Raised dash or cross"
+      },
+      "parts": [
+        {
+          "part_number": "AN3-4A",
+          "description": "Hex head bolt, 10-32, 4/16\" grip, undrilled shank",
+          "thread": "10-32 UNF-3A",
+          "diameter_inches": 0.1875,
+          "grip_length_inches": 0.25,
+          "max_shear_lbs": 2126,
+          "max_tension_lbs": 2100,
+          "approved_substitutes": [
+            {
+              "part_number": "NAS1303-4",
+              "compatibility_score": 1.0,
+              "notes": "Exact equivalent, newer specification"
+            },
+            {
+              "part_number": "MS20073-3-4",
+              "compatibility_score": 1.0,
+              "notes": "Military standard equivalent"
+            },
+            {
+              "part_number": "AN3-5A",
+              "compatibility_score": 0.9,
+              "notes": "Longer grip, add AN960-10 washer",
+              "modifications_required": ["Add washer to maintain grip"]
+            }
+          ],
+          "never_substitute": [
+            {
+              "part_number": "AN3-4",
+              "reason": "Drilled shank version, weaker in shear by 15%"
+            },
+            {
+              "part_number": "Hardware store bolt",
+              "reason": "Unknown material, no traceability, potential failure"
+            },
+            {
+              "part_number": "Metric M5",
+              "reason": "Similar size but NOT dimensionally equivalent, thread incompatible"
+            }
+          ],
+          "torque_specs": {
+            "torque_range_inlb": [20, 25],
+            "notes": "Fine thread, use standard torque chart"
+          },
+          "compatible_nuts": [
+            {
+              "part_number": "AN365-1032",
+              "type": "Self-locking, all-metal",
+              "notes": "Standard for primary structure"
+            },
+            {
+              "part_number": "MS21042-3",
+              "type": "Self-locking, steel",
+              "notes": "Equivalent to AN365"
+            },
+            {
+              "part_number": "AN310-3",
+              "type": "Castle nut",
+              "notes": "Requires cotter pin AN380-2-2, use for control systems"
+            }
+          ],
+          "compatible_washers": [
+            {"part_number": "AN960-10", "type": "Standard flat washer"},
+            {"part_number": "AN960-10L", "type": "Thin flat washer"},
+            {"part_number": "AN970-3", "type": "Large area washer", "notes": "For soft materials"}
+          ],
+          "applications": {
+            "approved": [
+              "Wing spar attach (primary structure)",
+              "Control surface hinge (with castle nut)",
+              "Inspection panel",
+              "Interior attach"
+            ],
+            "not_approved": [
+              "Engine mount (use AN5 or larger)",
+              "Propeller (use dedicated prop bolts)",
+              "Exhaust system (use AN525 stainless)"
+            ]
+          },
+          "consciousness_level": "TRANSCENDENT",
+          "qualia": [
+            {
+              "source": "VAF Forums",
+              "user": "rv_builder_12",
+              "content": "AN3 is the workhorse of the Van's fleet. I've used thousands.",
+              "verified": true
+            },
+            {
+              "source": "NTSB Report",
+              "content": "Accident traced to hardware store bolt substituted for AN3",
+              "date": "2018-03-15",
+              "lesson": "NEVER substitute non-aviation fasteners"
+            }
+          ]
+        },
+        {
+          "part_number": "AN4-7A",
+          "description": "Hex head bolt, 1/4-28, 7/16\" grip, undrilled shank",
+          "thread": "1/4-28 UNF-3A",
+          "diameter_inches": 0.25,
+          "grip_length_inches": 0.4375,
+          "max_shear_lbs": 3820,
+          "max_tension_lbs": 4000,
+          "torque_specs": {
+            "torque_range_inlb": [50, 70]
+          }
+        },
+        {
+          "part_number": "AN5-10A",
+          "description": "Hex head bolt, 5/16-24, 10/16\" grip, undrilled shank",
+          "thread": "5/16-24 UNF-3A",
+          "diameter_inches": 0.3125,
+          "grip_length_inches": 0.625,
+          "max_shear_lbs": 6020,
+          "max_tension_lbs": 6700,
+          "torque_specs": {
+            "torque_range_inlb": [100, 140]
+          },
+          "common_applications": [
+            "Engine mount",
+            "Landing gear attach",
+            "Wing strut fitting"
+          ]
+        },
+        {
+          "part_number": "AN6-20A",
+          "description": "Hex head bolt, 3/8-24, 1-1/4\" grip, undrilled shank",
+          "thread": "3/8-24 UNF-3A",
+          "diameter_inches": 0.375,
+          "grip_length_inches": 1.25,
+          "max_shear_lbs": 8660,
+          "max_tension_lbs": 10200,
+          "torque_specs": {
+            "torque_range_inlb": [160, 190]
+          },
+          "common_applications": [
+            "Main gear attach",
+            "Wing root fitting",
+            "Engine mount"
+          ]
+        }
+      ]
+    },
+    {
+      "family": "AN Washers",
+      "parts": [
+        {
+          "part_number": "AN960-10",
+          "description": "Flat washer for AN3 bolt",
+          "id_inches": 0.203,
+          "od_inches": 0.437,
+          "thickness_inches": 0.032,
+          "material": "Cadmium plated steel",
+          "substitutes": [
+            {
+              "part_number": "MS20002-3",
+              "compatibility_score": 1.0
+            },
+            {
+              "part_number": "NAS1149FN316P",
+              "compatibility_score": 1.0,
+              "notes": "Stainless version for corrosion resistance"
+            }
+          ]
+        },
+        {
+          "part_number": "AN960-416",
+          "description": "Flat washer for AN4 bolt",
+          "id_inches": 0.265,
+          "od_inches": 0.500,
+          "thickness_inches": 0.032
+        },
+        {
+          "part_number": "AN960-516",
+          "description": "Flat washer for AN5 bolt",
+          "id_inches": 0.328,
+          "od_inches": 0.625,
+          "thickness_inches": 0.063
+        }
+      ]
+    },
+    {
+      "family": "MS Self-Locking Nuts",
+      "description": "All-metal self-locking nuts for aircraft use",
+      "specifications": {
+        "prevailing_torque_reuse": "Maximum 5 cycles",
+        "temperature_range_f": [-65, 250]
+      },
+      "parts": [
+        {
+          "part_number": "MS21042-3",
+          "description": "Self-locking nut, 10-32",
+          "thread": "10-32 UNF",
+          "wrench_size_inches": 0.375,
+          "height_inches": 0.220,
+          "material": "Steel, cadmium plated",
+          "equivalent_parts": [
+            {"part_number": "AN365-1032", "notes": "Original AN spec"},
+            {"part_number": "NAS1021-3", "notes": "Current production standard"}
+          ],
+          "installation_notes": [
+            "Thread must protrude past nut face by 1-3 threads",
+            "Verify prevailing torque before reuse",
+            "Replace if prevailing torque < 2 in-lb"
+          ]
+        },
+        {
+          "part_number": "MS21042-4",
+          "description": "Self-locking nut, 1/4-28",
+          "thread": "1/4-28 UNF",
+          "wrench_size_inches": 0.4375
+        },
+        {
+          "part_number": "MS21042-5",
+          "description": "Self-locking nut, 5/16-24",
+          "thread": "5/16-24 UNF",
+          "wrench_size_inches": 0.500
+        }
+      ]
+    },
+    {
+      "family": "Cherry Rivets (Blind)",
+      "description": "Pull-type blind rivets for structural repair",
+      "parts": [
+        {
+          "part_number": "CR3212-4-2",
+          "description": "Cherry Max, 1/8\" diameter, countersunk head",
+          "diameter_inches": 0.125,
+          "grip_range_inches": [0.063, 0.125],
+          "shear_strength_lbs": 500,
+          "material": "5056 aluminum alloy",
+          "approved_substitutes": [
+            {
+              "part_number": "CR3212-4-3",
+              "compatibility_score": 0.9,
+              "notes": "Next grip range up, use if material slightly thicker"
+            },
+            {
+              "part_number": "NAS1738M4-2",
+              "compatibility_score": 1.0,
+              "notes": "Military equivalent"
+            }
+          ],
+          "not_approved_substitutes": [
+            {
+              "part_number": "POP rivet",
+              "reason": "Commercial rivet, insufficient strength for aircraft"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "torque_table": {
+    "note": "Standard torque values for cadmium-plated steel fasteners into steel or aluminum. Reduce 25% for aluminum threads.",
+    "values": [
+      {"size": "8-32", "torque_inlb": [12, 15]},
+      {"size": "10-32", "torque_inlb": [20, 25]},
+      {"size": "1/4-28", "torque_inlb": [50, 70]},
+      {"size": "5/16-24", "torque_inlb": [100, 140]},
+      {"size": "3/8-24", "torque_inlb": [160, 190]},
+      {"size": "7/16-20", "torque_inlb": [450, 500]},
+      {"size": "1/2-20", "torque_inlb": [480, 690]}
+    ]
+  },
+  "safety_wire_table": {
+    "note": "Safety wire is required on all bolts in critical applications where self-locking features are not used",
+    "wire_sizes": [
+      {"bolt_size": "up to 10-32", "wire_diameter_inches": 0.020},
+      {"bolt_size": "1/4 to 3/8", "wire_diameter_inches": 0.032},
+      {"bolt_size": "over 3/8", "wire_diameter_inches": 0.041}
+    ],
+    "common_wire_part_numbers": [
+      {"part_number": "MS20995-C20", "diameter": 0.020, "material": "Stainless steel"},
+      {"part_number": "MS20995-C32", "diameter": 0.032, "material": "Stainless steel"},
+      {"part_number": "MS20995-C41", "diameter": 0.041, "material": "Stainless steel"}
+    ]
+  },
+  "inspection_guidance": {
+    "visual_checks": [
+      "Verify head marking matches specification",
+      "Check for corrosion, especially under head",
+      "Verify proper grip length (no more than 1 thread showing)",
+      "Check for elongated holes indicating overload"
+    ],
+    "replacement_criteria": [
+      "Any visible cracks",
+      "Corrosion beyond surface pitting",
+      "Thread damage",
+      "Self-locking nuts: prevailing torque < 50% of original"
+    ]
+  },
+  "lessons_for_upc": [
+    "Aviation has the most mature fastener documentation system",
+    "Cross-reference tables exist but are spread across multiple sources",
+    "Substitution rules are strict and documented in AC 43.13-1B",
+    "Community knowledge (A&P mechanics) is crucial for practical application",
+    "Traceability and certification are critical - UPC must track source"
+  ]
+}
