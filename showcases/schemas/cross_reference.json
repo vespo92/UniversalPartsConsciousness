@@ -1,0 +1,317 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://upc.consciousness/schemas/cross_reference.json",
+  "title": "UPC Cross-Reference Schema",
+  "description": "Schema for documenting parts compatibility across different manufacturers, platforms, and applications",
+  "type": "object",
+  "required": ["cross_reference_id", "source_part", "target_parts"],
+  "properties": {
+    "cross_reference_id": {
+      "type": "string",
+      "pattern": "^XREF-[A-Z0-9]{8}$",
+      "description": "Unique identifier for this cross-reference"
+    },
+    "source_part": {
+      "$ref": "#/definitions/partReference"
+    },
+    "target_parts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/compatiblePart"
+      },
+      "minItems": 1
+    },
+    "verification_level": {
+      "type": "string",
+      "enum": ["unverified", "community_tested", "expert_verified", "manufacturer_confirmed", "standard_compliant"],
+      "description": "Level of verification for this cross-reference"
+    },
+    "qualia": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/qualiaEntry"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "definitions": {
+    "partReference": {
+      "type": "object",
+      "required": ["part_number", "manufacturer"],
+      "properties": {
+        "part_number": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": ["fastener", "bearing", "seal", "electrical", "hydraulic", "structural", "powertrain", "suspension", "other"]
+        },
+        "specifications": {
+          "$ref": "#/definitions/specifications"
+        }
+      }
+    },
+    "compatiblePart": {
+      "type": "object",
+      "required": ["part_number", "manufacturer", "compatibility_score"],
+      "properties": {
+        "part_number": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "compatibility_score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "1.0 = direct drop-in, lower values indicate modifications needed"
+        },
+        "compatibility_type": {
+          "type": "string",
+          "enum": ["direct_replacement", "functional_equivalent", "upgrade", "downgrade", "requires_adapter", "requires_modification", "emergency_substitute"]
+        },
+        "modifications_required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "adapter_parts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/partReference"
+          }
+        },
+        "price_comparison": {
+          "$ref": "#/definitions/priceComparison"
+        },
+        "reliability_factor": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2,
+          "description": "1.0 = same reliability, >1 = better, <1 = worse"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "success_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of verified successful uses"
+        },
+        "failure_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "specifications": {
+      "type": "object",
+      "properties": {
+        "thread": {
+          "$ref": "#/definitions/threadSpec"
+        },
+        "dimensions": {
+          "$ref": "#/definitions/dimensions"
+        },
+        "material": {
+          "$ref": "#/definitions/material"
+        },
+        "strength": {
+          "$ref": "#/definitions/strength"
+        },
+        "electrical": {
+          "$ref": "#/definitions/electricalSpec"
+        }
+      }
+    },
+    "threadSpec": {
+      "type": "object",
+      "properties": {
+        "standard": {
+          "type": "string",
+          "enum": ["ISO", "UNC", "UNF", "BSW", "BSF", "JIS", "DIN"]
+        },
+        "designation": {
+          "type": "string",
+          "description": "e.g., M8x1.25, 5/16-18, etc."
+        },
+        "nominal_diameter_mm": {
+          "type": "number"
+        },
+        "pitch_mm": {
+          "type": "number"
+        },
+        "thread_class": {
+          "type": "string"
+        }
+      }
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "length_mm": {
+          "type": "number"
+        },
+        "width_mm": {
+          "type": "number"
+        },
+        "height_mm": {
+          "type": "number"
+        },
+        "diameter_mm": {
+          "type": "number"
+        },
+        "tolerances": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "nominal": {"type": "number"},
+              "plus": {"type": "number"},
+              "minus": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "material": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "grade": {
+          "type": "string"
+        },
+        "finish": {
+          "type": "string"
+        },
+        "heat_treatment": {
+          "type": "string"
+        }
+      }
+    },
+    "strength": {
+      "type": "object",
+      "properties": {
+        "property_class": {
+          "type": "string",
+          "description": "e.g., 8.8, 10.9, 12.9, Grade 5, Grade 8"
+        },
+        "tensile_strength_mpa": {
+          "type": "number"
+        },
+        "yield_strength_mpa": {
+          "type": "number"
+        },
+        "proof_load_kn": {
+          "type": "number"
+        },
+        "hardness_hrc": {
+          "type": "string"
+        }
+      }
+    },
+    "electricalSpec": {
+      "type": "object",
+      "properties": {
+        "voltage_rating": {
+          "type": "number"
+        },
+        "current_rating_amps": {
+          "type": "number"
+        },
+        "resistance_ohms": {
+          "type": "number"
+        },
+        "capacitance_uf": {
+          "type": "number"
+        }
+      }
+    },
+    "priceComparison": {
+      "type": "object",
+      "properties": {
+        "source_price_usd": {
+          "type": "number"
+        },
+        "target_price_usd": {
+          "type": "number"
+        },
+        "savings_percent": {
+          "type": "number"
+        },
+        "price_date": {
+          "type": "string",
+          "format": "date"
+        },
+        "suppliers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "price_usd": {"type": "number"},
+              "url": {"type": "string", "format": "uri"},
+              "availability": {"type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "qualiaEntry": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "Where this experience came from (forum, shop, manufacturer)"
+        },
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "user": {
+          "type": "string"
+        },
+        "content": {
+          "type": "string"
+        },
+        "sentiment": {
+          "type": "string",
+          "enum": ["positive", "neutral", "negative", "warning"]
+        },
+        "verified": {
+          "type": "boolean"
+        },
+        "upvotes": {
+          "type": "integer"
+        },
+        "application_context": {
+          "type": "string",
+          "description": "What vehicle/machine/assembly this was used in"
+        }
+      }
+    }
+  }
+}
