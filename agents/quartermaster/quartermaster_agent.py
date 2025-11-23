@@ -135,7 +135,40 @@ class QuartermasterAgent:
     3. Lead time prediction
     4. Sourcing optimization
     5. Supplier qualification
+
+    Message Bus Integration:
+    - Subscribes to sourcing queries from other agents
+    - Publishes inventory status and sourcing recommendations
     """
+
+    AGENT_ID = "AGENT_19"
+    AGENT_NAME = "Supply Chain & Sourcing Intelligence"
+    AGENT_ALIAS = "QUARTERMASTER"
+
+    # Message bus topics this agent subscribes to
+    SUBSCRIBED_TOPICS = [
+        "upc.sourcing.query",           # Incoming sourcing requests
+        "upc.counterfeit.check",        # Counterfeit verification requests
+        "upc.leadtime.query",           # Lead time prediction requests
+        "upc.bom.optimize",             # BOM optimization requests
+        "upc.supplier.qualify",         # Supplier qualification requests
+        "upc.inventory.alert",          # Low inventory alerts from other systems
+        "upc.oracle.compatibility",     # Parts from Agent_2 needing sourcing
+        "upc.antiquarian.obsolete",     # Obsolete parts from Agent_16
+        "upc.machinist.custom",         # Custom parts from Agent_13
+    ]
+
+    # Message bus topics this agent publishes to
+    PUBLISHED_TOPICS = [
+        "upc.sourcing.result",          # Sourcing search results
+        "upc.counterfeit.assessment",   # Counterfeit risk assessments
+        "upc.leadtime.prediction",      # Lead time predictions
+        "upc.bom.optimized",            # Optimized BOM sourcing
+        "upc.supplier.rated",           # Supplier qualification results
+        "upc.price.alert",              # Price anomaly alerts
+        "upc.stock.critical",           # Critical stock notifications
+        "upc.sourcing.recommendation",  # Proactive sourcing recommendations
+    ]
 
     def __init__(self):
         self.suppliers = self._initialize_suppliers()
@@ -224,6 +257,119 @@ class QuartermasterAgent:
                 accepts_credit_card=True,
                 certifications=["ISO 9001"],
                 authorized_for=[]
+            ),
+            # Additional distributors for broader coverage
+            "mouser": SupplierProfile(
+                name="Mouser Electronics",
+                tier=SupplierTier.AUTHORIZED,
+                website="mouser.com",
+                locations=["USA", "Global"],
+                specializations=["electronics", "semiconductors", "connectors", "passives"],
+                reliability_rating=0.97,
+                quality_rating=0.98,
+                delivery_rating=0.96,
+                minimum_order=None,
+                ships_international=True,
+                same_day_shipping=True,
+                accepts_credit_card=True,
+                certifications=["ISO 9001", "AS9120", "ANSI/ESD S20.20"],
+                authorized_for=["TI", "Microchip", "ON Semi", "Infineon", "NXP"]
+            ),
+            "msc_industrial": SupplierProfile(
+                name="MSC Industrial Direct",
+                tier=SupplierTier.FRANCHISE,
+                website="mscdirect.com",
+                locations=["USA"],
+                specializations=["metalworking", "fasteners", "cutting_tools", "abrasives"],
+                reliability_rating=0.95,
+                quality_rating=0.96,
+                delivery_rating=0.94,
+                minimum_order=Decimal("25"),
+                ships_international=False,
+                same_day_shipping=True,
+                accepts_credit_card=True,
+                certifications=["ISO 9001"],
+                authorized_for=[]
+            ),
+            "arrow": SupplierProfile(
+                name="Arrow Electronics",
+                tier=SupplierTier.AUTHORIZED,
+                website="arrow.com",
+                locations=["USA", "Europe", "Asia"],
+                specializations=["electronics", "semiconductors", "embedded"],
+                reliability_rating=0.96,
+                quality_rating=0.97,
+                delivery_rating=0.93,
+                minimum_order=None,
+                ships_international=True,
+                same_day_shipping=False,
+                accepts_credit_card=True,
+                certifications=["ISO 9001", "AS9120", "ITAR"],
+                authorized_for=["Intel", "AMD", "Xilinx", "Broadcom"]
+            ),
+            "applied_industrial": SupplierProfile(
+                name="Applied Industrial Technologies",
+                tier=SupplierTier.AUTHORIZED,
+                website="applied.com",
+                locations=["USA", "Canada", "Mexico"],
+                specializations=["bearings", "power_transmission", "fluid_power", "automation"],
+                reliability_rating=0.95,
+                quality_rating=0.96,
+                delivery_rating=0.92,
+                minimum_order=Decimal("50"),
+                ships_international=False,
+                same_day_shipping=True,
+                accepts_credit_card=True,
+                certifications=["ISO 9001"],
+                authorized_for=["SKF", "Timken", "Gates", "Parker"]
+            ),
+            "xometry": SupplierProfile(
+                name="Xometry",
+                tier=SupplierTier.INDEPENDENT,
+                website="xometry.com",
+                locations=["USA", "Global Network"],
+                specializations=["cnc_machining", "3d_printing", "sheet_metal", "injection_molding"],
+                reliability_rating=0.92,
+                quality_rating=0.94,
+                delivery_rating=0.90,
+                minimum_order=None,
+                ships_international=True,
+                same_day_shipping=False,
+                accepts_credit_card=True,
+                certifications=["ISO 9001", "AS9100D", "ITAR"],
+                authorized_for=[]
+            ),
+            "protolabs": SupplierProfile(
+                name="Protolabs",
+                tier=SupplierTier.INDEPENDENT,
+                website="protolabs.com",
+                locations=["USA", "Europe", "Japan"],
+                specializations=["cnc_machining", "3d_printing", "injection_molding"],
+                reliability_rating=0.93,
+                quality_rating=0.95,
+                delivery_rating=0.91,
+                minimum_order=None,
+                ships_international=True,
+                same_day_shipping=False,
+                accepts_credit_card=True,
+                certifications=["ISO 9001", "ISO 13485"],
+                authorized_for=[]
+            ),
+            "kaman": SupplierProfile(
+                name="Kaman Distribution",
+                tier=SupplierTier.AUTHORIZED,
+                website="kamandirect.com",
+                locations=["USA", "Canada"],
+                specializations=["bearings", "power_transmission", "electrical", "fluid_power"],
+                reliability_rating=0.94,
+                quality_rating=0.95,
+                delivery_rating=0.91,
+                minimum_order=Decimal("25"),
+                ships_international=False,
+                same_day_shipping=True,
+                accepts_credit_card=True,
+                certifications=["ISO 9001"],
+                authorized_for=["SKF", "Rexnord", "Dodge", "Martin"]
             ),
         }
 
@@ -565,6 +711,277 @@ class QuartermasterAgent:
             warnings=warnings
         )
 
+    def qualify_supplier(
+        self,
+        supplier_name: str,
+        category: str
+    ) -> Dict:
+        """
+        Qualify a supplier for a specific category of parts.
+
+        Args:
+            supplier_name: Name of supplier to qualify
+            category: Part category (bearings, fasteners, electronics, etc.)
+
+        Returns:
+            Qualification assessment with scores and recommendations
+        """
+        supplier_key = supplier_name.lower().replace(" ", "_").replace("-", "_")
+        profile = self.suppliers.get(supplier_key)
+
+        if not profile:
+            return {
+                "qualified": False,
+                "supplier": supplier_name,
+                "reason": "Supplier not in verified database",
+                "recommendation": "Request qualification documentation",
+                "alternative_suppliers": self._get_category_suppliers(category)
+            }
+
+        # Check if supplier specializes in category
+        category_match = any(
+            cat in category.lower() or category.lower() in cat
+            for cat in profile.specializations
+        )
+
+        # Calculate overall score
+        overall_score = (
+            profile.reliability_rating * 0.3 +
+            profile.quality_rating * 0.4 +
+            profile.delivery_rating * 0.3
+        )
+
+        qualified = overall_score >= 0.85 and (
+            category_match or profile.tier in [SupplierTier.MANUFACTURER, SupplierTier.AUTHORIZED]
+        )
+
+        return {
+            "qualified": qualified,
+            "supplier": supplier_name,
+            "tier": profile.tier.value,
+            "overall_score": round(overall_score, 2),
+            "category_specialist": category_match,
+            "scores": {
+                "reliability": profile.reliability_rating,
+                "quality": profile.quality_rating,
+                "delivery": profile.delivery_rating
+            },
+            "certifications": profile.certifications,
+            "authorized_brands": profile.authorized_for,
+            "recommendation": "Approved for use" if qualified else "Seek alternative supplier",
+            "alternative_suppliers": [] if qualified else self._get_category_suppliers(category)
+        }
+
+    def _get_category_suppliers(self, category: str) -> List[str]:
+        """Get suppliers specializing in a category"""
+        matching = []
+        for key, profile in self.suppliers.items():
+            if any(cat in category.lower() or category.lower() in cat
+                   for cat in profile.specializations):
+                matching.append(profile.name)
+        return matching[:5]  # Top 5
+
+    def track_price(
+        self,
+        part_number: str,
+        supplier: str,
+        price: Decimal,
+        quantity: int
+    ) -> Dict:
+        """
+        Track price history for market analysis and anomaly detection.
+
+        Args:
+            part_number: Part number being tracked
+            supplier: Supplier offering the price
+            price: Current price
+            quantity: Quantity for this price
+
+        Returns:
+            Price analysis with trend and anomaly detection
+        """
+        key = f"{part_number}:{supplier}"
+
+        # Initialize history if needed
+        if key not in self.price_history:
+            self.price_history[key] = []
+
+        # Add new price point
+        self.price_history[key].append({
+            "price": float(price),
+            "quantity": quantity,
+            "timestamp": datetime.now().isoformat()
+        })
+
+        # Analyze trend
+        history = self.price_history[key]
+        if len(history) < 2:
+            trend = "INSUFFICIENT_DATA"
+            anomaly = False
+        else:
+            prices = [h["price"] for h in history[-10:]]  # Last 10 prices
+            avg_price = sum(prices) / len(prices)
+            current_price = float(price)
+
+            if current_price < avg_price * 0.7:
+                trend = "SUSPICIOUS_DROP"
+                anomaly = True
+            elif current_price < avg_price * 0.9:
+                trend = "DECREASING"
+                anomaly = False
+            elif current_price > avg_price * 1.3:
+                trend = "SIGNIFICANT_INCREASE"
+                anomaly = True
+            elif current_price > avg_price * 1.1:
+                trend = "INCREASING"
+                anomaly = False
+            else:
+                trend = "STABLE"
+                anomaly = False
+
+        return {
+            "part_number": part_number,
+            "supplier": supplier,
+            "current_price": float(price),
+            "trend": trend,
+            "anomaly_detected": anomaly,
+            "data_points": len(history),
+            "alert": "Price significantly below market - verify authenticity" if anomaly and trend == "SUSPICIOUS_DROP" else None
+        }
+
+    def find_alternative_sources(
+        self,
+        part_spec: str,
+        excluding_suppliers: List[str] = None
+    ) -> List[Dict]:
+        """
+        Find alternative sources for a part, useful for supply chain resilience.
+
+        Args:
+            part_spec: Part specification
+            excluding_suppliers: Suppliers to exclude (e.g., current problematic supplier)
+
+        Returns:
+            List of alternative sourcing options
+        """
+        excluding = excluding_suppliers or []
+        alternatives = []
+
+        for key, profile in self.suppliers.items():
+            if profile.name in excluding:
+                continue
+
+            # Check if supplier might have this part
+            relevance = 0
+            part_lower = part_spec.lower()
+
+            for spec in profile.specializations:
+                if spec in part_lower or any(
+                    keyword in part_lower
+                    for keyword in ["fastener", "bolt", "screw", "nut"]
+                    if "fastener" in spec
+                ):
+                    relevance += 1
+
+            if relevance > 0 or profile.tier in [SupplierTier.FRANCHISE]:
+                alternatives.append({
+                    "supplier": profile.name,
+                    "tier": profile.tier.value,
+                    "website": profile.website,
+                    "relevance_score": relevance,
+                    "quality_rating": profile.quality_rating,
+                    "same_day_shipping": profile.same_day_shipping,
+                    "certifications": profile.certifications
+                })
+
+        # Sort by relevance and quality
+        alternatives.sort(key=lambda x: (x["relevance_score"], x["quality_rating"]), reverse=True)
+        return alternatives[:10]
+
+    # Inter-agent communication methods
+    def handle_oracle_request(self, part_data: Dict) -> Dict:
+        """
+        Handle sourcing request from Agent_2 (ORACLE) for compatible parts.
+
+        Called when ORACLE finds compatible parts and needs sourcing info.
+        """
+        return {
+            "agent": self.AGENT_ID,
+            "request_type": "oracle_sourcing",
+            "inventory": self.search_inventory(
+                part_data.get("part_spec", ""),
+                part_data.get("quantity", 1),
+                part_data.get("location", "USA"),
+                part_data.get("max_lead_days", 7)
+            ),
+            "timestamp": datetime.now().isoformat()
+        }
+
+    def handle_antiquarian_request(self, obsolete_part: Dict) -> Dict:
+        """
+        Handle sourcing request from Agent_16 (ANTIQUARIAN) for obsolete parts.
+
+        Obsolete parts require special sourcing strategies.
+        """
+        # Check brokers and independent sources for obsolete parts
+        potential_sources = [
+            s for s in self.suppliers.values()
+            if s.tier in [SupplierTier.BROKER, SupplierTier.INDEPENDENT]
+        ]
+
+        return {
+            "agent": self.AGENT_ID,
+            "request_type": "obsolete_sourcing",
+            "part": obsolete_part.get("part_number"),
+            "special_sources": [s.name for s in potential_sources],
+            "recommendation": "Contact brokers for obsolete/NLA parts",
+            "counterfeit_warning": "HIGH - Obsolete parts are prime counterfeit targets",
+            "timestamp": datetime.now().isoformat()
+        }
+
+    def handle_machinist_request(self, custom_part: Dict) -> Dict:
+        """
+        Handle custom machining request from Agent_13 (MACHINIST).
+
+        Routes to appropriate custom manufacturing suppliers.
+        """
+        custom_suppliers = [
+            s for s in self.suppliers.values()
+            if any(spec in ["cnc_machining", "3d_printing", "sheet_metal"]
+                   for spec in s.specializations)
+        ]
+
+        lead_time = self.predict_lead_time(
+            custom_part.get("part_type", "custom machined"),
+            custom_part.get("quantity", 1),
+            custom_part.get("customization")
+        )
+
+        return {
+            "agent": self.AGENT_ID,
+            "request_type": "custom_manufacturing",
+            "suppliers": [{"name": s.name, "website": s.website} for s in custom_suppliers],
+            "lead_time": {
+                "min_days": lead_time.estimated_days_min,
+                "max_days": lead_time.estimated_days_max,
+                "rush_available": lead_time.rush_available
+            },
+            "timestamp": datetime.now().isoformat()
+        }
+
+    def get_status(self) -> Dict:
+        """Return agent status for health monitoring"""
+        return {
+            "agent_id": self.AGENT_ID,
+            "agent_name": self.AGENT_NAME,
+            "agent_alias": self.AGENT_ALIAS,
+            "status": "OPERATIONAL",
+            "suppliers_tracked": len(self.suppliers),
+            "price_history_entries": len(self.price_history),
+            "subscribed_topics": self.SUBSCRIBED_TOPICS,
+            "published_topics": self.PUBLISHED_TOPICS
+        }
+
 
 # Demo usage
 if __name__ == "__main__":
@@ -618,3 +1035,43 @@ if __name__ == "__main__":
     print("Factors:")
     for factor in prediction.factors:
         print(f"  - {factor}")
+
+    # Test supplier qualification
+    print("\n--- Supplier Qualification ---")
+    qualification = agent.qualify_supplier("Motion Industries", "bearings")
+    print(f"Supplier: {qualification['supplier']}")
+    print(f"Qualified: {qualification['qualified']}")
+    print(f"Overall Score: {qualification['overall_score']}")
+    print(f"Certifications: {', '.join(qualification['certifications'])}")
+
+    # Test alternative sources
+    print("\n--- Alternative Sources ---")
+    alternatives = agent.find_alternative_sources(
+        "M10x1.5 Hex Bolt Grade 10.9",
+        excluding_suppliers=["McMaster-Carr"]
+    )
+    print(f"Found {len(alternatives)} alternative sources:")
+    for alt in alternatives[:3]:
+        print(f"  - {alt['supplier']} ({alt['tier']})")
+
+    # Test BOM optimization
+    print("\n--- BOM Optimization ---")
+    test_bom = [
+        {"part": "M8 Bolt", "qty": 100, "spec": "M8x1.25 Socket Head"},
+        {"part": "Bearing", "qty": 4, "spec": "6205-2RS bearing"},
+        {"part": "O-Ring", "qty": 10, "spec": "Viton O-ring 25mm ID"}
+    ]
+    optimization = agent.optimize_sourcing(
+        test_bom,
+        priorities={"cost": 0.5, "speed": 0.3, "quality": 0.2}
+    )
+    print(f"Strategy: {optimization.strategy}")
+    print(f"Total Cost: ${optimization.total_cost:.2f}")
+    print(f"Max Lead Time: {optimization.total_lead_days} days")
+
+    # Test agent status
+    print("\n--- Agent Status ---")
+    status = agent.get_status()
+    print(f"Agent: {status['agent_alias']} ({status['agent_id']})")
+    print(f"Status: {status['status']}")
+    print(f"Suppliers tracked: {status['suppliers_tracked']}")
