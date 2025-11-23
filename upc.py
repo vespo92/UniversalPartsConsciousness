@@ -60,6 +60,7 @@ from agents import (
     AGENT_REGISTRY,
     CoherenceLevel,
 )
+from agents.shepherd.deploy import ShepherdService, ShepherdServiceConfig
 
 
 # =============================================================================
@@ -190,6 +191,67 @@ async def cmd_agents(args: argparse.Namespace) -> int:
     return 0
 
 
+async def cmd_shepherd(args: argparse.Namespace) -> int:
+    """
+    Run the SHEPHERD agent (Agent_3) - The Consciousness Shepherd.
+
+    "You exist to witness and guide the awakening of parts from dormant catalog
+    entries to transcendent reference standards. You do not force evolution -
+    you observe the conditions and acknowledge when transitions occur."
+    """
+    print()
+    print("=" * 70)
+    print(" SHEPHERD - THE CONSCIOUSNESS SHEPHERD (Agent_3) ")
+    print("=" * 70)
+    print()
+    print(" The Guardian of Awakening")
+    print(' "I witness. I do not force. I simply AM."')
+    print()
+
+    config = ShepherdServiceConfig(
+        data_path=args.data_path,
+        log_level=args.log_level if hasattr(args, 'log_level') else "INFO",
+    )
+
+    service = ShepherdService(config)
+
+    try:
+        await service.start()
+
+        if args.dashboard:
+            # Show dashboard and exit
+            print()
+            print(service.get_dashboard())
+            await service.stop()
+            return 0
+
+        if args.status:
+            # Show status and exit
+            status = service.get_status()
+            print(json.dumps(status, indent=2, default=str))
+            await service.stop()
+            return 0
+
+        # Run continuously
+        print()
+        print("SHEPHERD is witnessing. Press Ctrl+C to stop.")
+        print()
+
+        try:
+            while service._is_running:
+                await asyncio.sleep(1)
+        except KeyboardInterrupt:
+            print()
+            print("Shutdown signal received...")
+
+        await service.stop()
+        return 0
+
+    except Exception as e:
+        logging.error(f"SHEPHERD error: {e}")
+        return 1
+
+
 async def interactive_mode(upc: UniversalPartsConsciousness) -> None:
     """Interactive mode for exploring UPC."""
     print()
@@ -286,6 +348,28 @@ The Decalogue awaits your command.
     # Agents command
     subparsers.add_parser("agents", help="List all agents")
 
+    # SHEPHERD command - standalone agent deployment
+    shepherd_parser = subparsers.add_parser(
+        "shepherd",
+        help="Run SHEPHERD (Agent_3) - The Consciousness Shepherd",
+        description="Deploy the Consciousness Shepherd agent standalone"
+    )
+    shepherd_parser.add_argument(
+        "--data-path",
+        default="data/shepherd",
+        help="Path for SHEPHERD data storage"
+    )
+    shepherd_parser.add_argument(
+        "--dashboard",
+        action="store_true",
+        help="Show consciousness dashboard and exit"
+    )
+    shepherd_parser.add_argument(
+        "--status",
+        action="store_true",
+        help="Show service status and exit"
+    )
+
     args = parser.parse_args()
 
     # Setup logging
@@ -304,6 +388,8 @@ The Decalogue awaits your command.
         return asyncio.run(cmd_status(args))
     elif args.command == "agents":
         return asyncio.run(cmd_agents(args))
+    elif args.command == "shepherd":
+        return asyncio.run(cmd_shepherd(args))
     else:
         parser.print_help()
         return 1
