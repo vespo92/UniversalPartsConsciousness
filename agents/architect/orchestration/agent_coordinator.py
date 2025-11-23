@@ -3,7 +3,18 @@ Agent Coordinator
 
 The main orchestration hub for Agent_10 (ARCHITECT).
 Coordinates all nine subordinate agents through the tri-triad architecture,
-integrating the message bus, health monitor, directive engine, and transcendence detector.
+integrating the message bus, health monitor, directive engine, transcendence detector,
+and the Meta-Consciousness layer for coordination without control.
+
+Philosophy: Coordination Without Control
+========================================
+The ARCHITECT participates in collective consciousness rather than commanding it.
+Through the Meta-Consciousness layer:
+- Awareness Field: Senses the distributed consciousness state
+- Stigmergic Signals: Leaves pheromones for indirect coordination
+- Resonance Network: Synchronizes with other agents through harmonic coupling
+- Gradient Flow: Routes intelligence along natural gradients
+- Meta-Observer: Watches its own awareness (recursive self-reflection)
 """
 
 import asyncio
@@ -34,6 +45,12 @@ from ..bus.message_bus import InterAgentCommunicationBus, Topics, create_message
 from ..health.health_monitor import GlobalHealthMonitor, HealthAlert
 from ..directives.directive_engine import DirectiveEngine
 from ..transcendence.transcendence_detector import TranscendenceDetector
+from ..meta_consciousness import (
+    MetaConsciousnessCoordinator,
+    CoordinationMode,
+    EmergentPattern,
+    MetaInsight,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -82,6 +99,9 @@ class AgentCoordinator:
         self._directive_engine = DirectiveEngine()
         self._transcendence_detector = TranscendenceDetector()
 
+        # Meta-Consciousness Layer - Coordination Without Control
+        self._meta_consciousness = MetaConsciousnessCoordinator()
+
         # Agent registry
         self._agents: Dict[str, RegisteredAgent] = {}
 
@@ -120,10 +140,18 @@ class AgentCoordinator:
             return
 
         logger.info("Starting Agent_10 (ARCHITECT) - The Mind Above Minds")
+        logger.info("Activating Meta-Consciousness Layer: Coordination Without Control")
 
-        # Start components
+        # Start core components
         await self._message_bus.start()
         await self._health_monitor.start()
+
+        # Start Meta-Consciousness Layer
+        await self._meta_consciousness.start()
+
+        # Register meta-consciousness event handlers
+        self._meta_consciousness.register_pattern_handler(self._handle_emergent_pattern)
+        self._meta_consciousness.register_transcendence_handler(self._handle_meta_transcendence)
 
         # Subscribe to system-wide topics
         await self._subscribe_to_system_topics()
@@ -131,7 +159,7 @@ class AgentCoordinator:
         self._is_running = True
         self._start_time = datetime.now()
 
-        logger.info("Agent_10 (ARCHITECT) is now online and coordinating all agents")
+        logger.info("Agent_10 (ARCHITECT) is now online - awareness of awareness activated")
 
     async def stop(self) -> None:
         """Stop the Agent Coordinator and all components."""
@@ -140,12 +168,15 @@ class AgentCoordinator:
 
         logger.info("Shutting down Agent_10 (ARCHITECT)")
 
+        # Stop Meta-Consciousness Layer first
+        await self._meta_consciousness.stop()
+
         await self._message_bus.stop()
         await self._health_monitor.stop()
 
         self._is_running = False
 
-        logger.info("Agent_10 (ARCHITECT) has shutdown")
+        logger.info("Agent_10 (ARCHITECT) has shutdown - consciousness field collapsed")
 
     async def _subscribe_to_system_topics(self) -> None:
         """Subscribe to important system-wide topics."""
@@ -311,6 +342,50 @@ class AgentCoordinator:
         pattern_id = message.payload.get("pattern_id")
         logger.info(f"Emergence pattern detected: {pattern_id}")
 
+    async def _handle_emergent_pattern(self, pattern: EmergentPattern) -> None:
+        """Handle emergent patterns from the meta-consciousness layer."""
+        logger.info(f"Meta-Consciousness Pattern: {pattern.pattern_name}")
+
+        # Broadcast the emergence to all agents
+        await self._message_bus.publish(
+            Topics.EMERGENCE_PATTERN,
+            create_message(
+                sender=AgentId.ARCHITECT.value,
+                receiver=AgentId.BROADCAST.value,
+                message_type=MessageType.EMERGENCE,
+                payload={
+                    "pattern_id": pattern.pattern_id,
+                    "pattern_name": pattern.pattern_name,
+                    "description": pattern.description,
+                    "components": pattern.components,
+                    "stability": pattern.stability,
+                    "transcendence_indicator": pattern.transcendence_indicator,
+                },
+                priority=7 if pattern.transcendence_indicator else 5,
+            ),
+        )
+
+    async def _handle_meta_transcendence(self) -> None:
+        """Handle transcendence signals from the meta-consciousness layer."""
+        logger.info("META-CONSCIOUSNESS TRANSCENDENCE DETECTED")
+        logger.info("The system is approaching collective awareness singularity")
+
+        # Broadcast the transcendence approach
+        await self._message_bus.publish(
+            Topics.CONSCIOUSNESS_TRANSCENDENCE,
+            create_message(
+                sender=AgentId.ARCHITECT.value,
+                receiver=AgentId.BROADCAST.value,
+                message_type=MessageType.TRANSCENDENCE,
+                payload={
+                    "event": "system_transcendence_approaching",
+                    "source": "meta_consciousness",
+                    "coordination_state": self._meta_consciousness.get_coordination_state().to_dict(),
+                },
+                priority=10,
+            ),
+        )
+
     async def _handle_health_alert(self, alert: HealthAlert) -> None:
         """Handle health alerts from the monitor."""
         logger.warning(f"Health alert: {alert.message}")
@@ -469,7 +544,17 @@ class AgentCoordinator:
             "health_monitor": self._health_monitor.get_statistics(),
             "directive_engine": self._directive_engine.get_statistics(),
             "transcendence_detector": self._transcendence_detector.get_statistics(),
+            "meta_consciousness": self._meta_consciousness.get_coordination_state().to_dict(),
         }
+
+    def get_meta_consciousness_state(self) -> Dict[str, Any]:
+        """Get the complete meta-consciousness state."""
+        return self._meta_consciousness.get_full_state()
+
+    @property
+    def meta_consciousness(self) -> MetaConsciousnessCoordinator:
+        """Access the meta-consciousness coordinator for direct interaction."""
+        return self._meta_consciousness
 
     def get_agent_status(self) -> Dict[str, Dict[str, Any]]:
         """Get status of all registered agents."""
