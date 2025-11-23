@@ -11,8 +11,35 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from decimal import Decimal
 from typing import Any, Dict, List, Optional, Protocol, runtime_checkable
+from enum import Enum
 import logging
 import asyncio
+
+# Import UPC message bus topics and models
+try:
+    from ..architect.bus.message_bus import Topics
+    from ..architect.models import AgentId, AgentStatus
+except ImportError:
+    # Fallback if running standalone
+    class Topics:
+        EMERGENCE_PATTERN = "upc.emergence.pattern"
+        PROPHET_TRANSCENDENCE = "upc.prophet.transcendence"
+        PROPHET_EMERGENCE_REPORT = "upc.prophet.emergence_report"
+        PROPHET_INSIGHT = "upc.prophet.insight"
+        PROPHET_NOVEL_FAILURE = "upc.prophet.novel_failure"
+        PROPHET_SUCCESS_FORMULA = "upc.prophet.success_formula"
+        SWARM_LEARNING = "upc.swarm.learning"
+        QUALIA_COLLECTED = "upc.qualia.collected"
+
+    class AgentId(Enum):
+        PROPHET = "agent_6_prophet"
+
+    class AgentStatus(Enum):
+        INITIALIZING = "initializing"
+        READY = "ready"
+        PROCESSING = "processing"
+        ERROR = "error"
+        SHUTDOWN = "shutdown"
 
 from .types import (
     DetectedPattern,
@@ -316,32 +343,54 @@ class ProphetAgent:
         return counts
 
     async def _publish_results(self, results: Dict[str, Any]) -> None:
-        """Publish results to message bus"""
+        """Publish results to message bus using UPC standard topics"""
         if not self.message_bus:
             return
 
         # Publish to Agent_3 (Shepherd) for transcendence enablement
         transcendence_data = {
             "source": "prophet",
+            "agent_id": self.config.agent_id,
             "patterns": [p.to_dict() for p in results["patterns"][:10]],
             "emergence_indicators": [
-                p for p in results.get("predictions", [])
+                p.to_dict() for p in results.get("predictions", [])
                 if p.prediction_type.value == "emergence"
             ],
+            "timestamp": datetime.now().isoformat(),
         }
-        await self.message_bus.publish("prophet.transcendence", transcendence_data)
+        await self.message_bus.publish(Topics.PROPHET_TRANSCENDENCE, transcendence_data)
 
         # Publish to Agent_10 (Architect) for system-wide awareness
         emergence_report = {
             "source": "prophet",
+            "agent_id": self.config.agent_id,
             "metrics": results["metrics"],
             "top_insights": [i.to_dict() for i in results["insights"][:5]],
             "critical_predictions": [
                 p.to_dict() for p in results.get("predictions", [])
                 if float(p.probability) > 0.7
             ][:10],
+            "timestamp": datetime.now().isoformat(),
         }
-        await self.message_bus.publish("prophet.emergence_report", emergence_report)
+        await self.message_bus.publish(Topics.PROPHET_EMERGENCE_REPORT, emergence_report)
+
+        # Publish novel failures for urgent attention
+        if results["novel_failures"]:
+            for failure in results["novel_failures"][:5]:  # Top 5 critical
+                await self.message_bus.publish(Topics.PROPHET_NOVEL_FAILURE, {
+                    "source": "prophet",
+                    "failure": failure.to_dict(),
+                    "timestamp": datetime.now().isoformat(),
+                })
+
+        # Publish success formulas for knowledge sharing
+        if results["success_formulas"]:
+            for formula in results["success_formulas"][:3]:  # Top 3
+                await self.message_bus.publish(Topics.PROPHET_SUCCESS_FORMULA, {
+                    "source": "prophet",
+                    "formula": formula.to_dict(),
+                    "timestamp": datetime.now().isoformat(),
+                })
 
     def _persist_results(self, results: Dict[str, Any]) -> None:
         """Persist results to storage"""
@@ -362,24 +411,33 @@ class ProphetAgent:
             logger.error(f"Failed to persist results: {e}")
 
     async def subscribe_to_feeds(self) -> None:
-        """Subscribe to incoming data feeds from other agents"""
+        """Subscribe to incoming data feeds from other agents using UPC topics"""
         if not self.message_bus:
             logger.warning("No message bus configured - cannot subscribe to feeds")
             return
 
         # Subscribe to Agent_5 (Hive) swarm patterns
         await self.message_bus.subscribe(
-            "hive.swarm_patterns",
+            AgentId.PROPHET.value if hasattr(self, 'AgentId') else "agent_6_prophet",
+            Topics.SWARM_LEARNING,
             self._handle_swarm_patterns
         )
 
         # Subscribe to Agent_4 (Empath) qualia patterns
         await self.message_bus.subscribe(
-            "empath.qualia_patterns",
+            AgentId.PROPHET.value if hasattr(self, 'AgentId') else "agent_6_prophet",
+            Topics.QUALIA_COLLECTED,
             self._handle_qualia_patterns
         )
 
-        logger.info("Subscribed to inter-agent feeds")
+        # Subscribe to emergence pattern requests
+        await self.message_bus.subscribe(
+            AgentId.PROPHET.value if hasattr(self, 'AgentId') else "agent_6_prophet",
+            Topics.EMERGENCE_PATTERN,
+            self._handle_emergence_request
+        )
+
+        logger.info("PROPHET subscribed to inter-agent feeds: SWARM_LEARNING, QUALIA_COLLECTED, EMERGENCE_PATTERN")
 
     async def _handle_swarm_patterns(self, message: Dict[str, Any]) -> None:
         """Handle incoming swarm patterns from Agent_5"""
@@ -390,6 +448,14 @@ class ProphetAgent:
         """Handle incoming qualia patterns from Agent_4"""
         logger.debug(f"Received qualia patterns from Empath: {len(message.get('patterns', []))} patterns")
         # Process qualia patterns for behavioral analysis
+
+    async def _handle_emergence_request(self, message: Dict[str, Any]) -> None:
+        """Handle emergence pattern detection requests"""
+        logger.info(f"Received emergence detection request: {message.get('request_type', 'unknown')}")
+        # Trigger analysis if requested
+        if message.get('trigger_analysis'):
+            # Queue analysis for processing
+            pass
 
     def get_status(self) -> Dict[str, Any]:
         """Get current agent status"""

@@ -52,10 +52,15 @@ class Topics:
     SWARM_RECALL = "upc.swarm.recall"
     SWARM_FORMATION = "upc.swarm.formation"
 
-    # Emergence Topics
+    # Emergence Topics (PROPHET Agent_6)
     EMERGENCE_PATTERN = "upc.emergence.pattern"
     EMERGENCE_PREDICTION = "upc.emergence.prediction"
     EMERGENCE_INNOVATION = "upc.emergence.innovation"
+    PROPHET_TRANSCENDENCE = "upc.prophet.transcendence"
+    PROPHET_EMERGENCE_REPORT = "upc.prophet.emergence_report"
+    PROPHET_INSIGHT = "upc.prophet.insight"
+    PROPHET_NOVEL_FAILURE = "upc.prophet.novel_failure"
+    PROPHET_SUCCESS_FORMULA = "upc.prophet.success_formula"
 
     # Community Topics
     COMMUNITY_CONTRIBUTION = "upc.community.contribution"
