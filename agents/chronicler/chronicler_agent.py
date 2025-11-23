@@ -108,6 +108,8 @@ class ChroniclerAgent:
         self._context_engine = None
         self._ecosystem_documenter = None
         self._consciousness_bridge = None
+        self._narrative_generator = None
+        self._heritage_keeper = None
 
         # Documentation registry
         self._documented_engines: Dict[str, DocumentationStatus] = {}
@@ -163,6 +165,22 @@ class ChroniclerAgent:
             from .integration.consciousness_bridge import ConsciousnessBridge
             self._consciousness_bridge = ConsciousnessBridge(self)
         return self._consciousness_bridge
+
+    @property
+    def narrative_generator(self):
+        """Lazy-load narrative generator for story creation."""
+        if self._narrative_generator is None:
+            from .stories.narrative_generator import NarrativeGenerator
+            self._narrative_generator = NarrativeGenerator()
+        return self._narrative_generator
+
+    @property
+    def heritage_keeper(self):
+        """Lazy-load heritage keeper for story preservation."""
+        if self._heritage_keeper is None:
+            from .stories.heritage_keeper import HeritageKeeper
+            self._heritage_keeper = HeritageKeeper()
+        return self._heritage_keeper
 
     def activate(self) -> None:
         """Activate the agent and begin monitoring."""
@@ -453,6 +471,116 @@ class ChroniclerAgent:
         behind mechanical engineering.
         """
         return self.context_engine.explain_significance(engine_code)
+
+    def get_engine_narrative(self, engine_code: str) -> Dict[str, Any]:
+        """
+        Get the complete narrative for an engine.
+
+        Preserves stories, not just specs - this returns the human
+        story behind the mechanical specifications.
+
+        Args:
+            engine_code: Engine code to get narrative for
+
+        Returns:
+            Complete narrative with title and content
+        """
+        return self.narrative_generator.generate_narrative(engine_code)
+
+    def preserve_story(
+        self,
+        subject: str,
+        title: str,
+        narrative: str,
+        story_type: str = "origin_story",
+        significance: str = "documented",
+        era: str = "",
+        community_contributed: bool = False
+    ) -> Dict[str, Any]:
+        """
+        Preserve a heritage story for future generations.
+
+        "Preserves stories, not just specs - heritage keeper"
+
+        Args:
+            subject: What the story is about (engine, part, person)
+            title: Story title
+            narrative: The full narrative
+            story_type: Type of story (origin_story, racing_glory, etc.)
+            significance: Heritage significance level
+            era: Time period
+            community_contributed: Whether from community
+
+        Returns:
+            Preserved story details
+        """
+        from .stories.heritage_keeper import StoryType, HeritageSignificance
+
+        # Map string to enum
+        story_type_enum = StoryType(story_type)
+        significance_enum = HeritageSignificance(significance)
+
+        story = self.heritage_keeper.preserve_story(
+            subject=subject,
+            title=title,
+            narrative=narrative,
+            story_type=story_type_enum,
+            significance=significance_enum,
+            era=era,
+            community_contributed=community_contributed
+        )
+
+        self.metrics.historical_narratives += 1
+        self.metrics.last_updated = datetime.now()
+
+        return {
+            "story_id": story.story_id,
+            "subject": story.subject,
+            "title": story.title,
+            "significance": story.significance.value,
+            "preservation_date": story.preservation_date.isoformat()
+        }
+
+    def get_tribal_wisdom(self, engine_code: str) -> List[Dict[str, Any]]:
+        """
+        Get tribal wisdom for an engine - the unwritten rules every builder knows.
+
+        This knowledge isn't in any manual, but every experienced builder
+        understands it. It's passed down through forums, shop talk, and
+        hard-won experience.
+
+        Args:
+            engine_code: Engine code to get wisdom for
+
+        Returns:
+            List of tribal wisdom entries
+        """
+        wisdom_list = self.heritage_keeper.get_tribal_wisdom(engine_code)
+        return [
+            {
+                "wisdom": w.wisdom,
+                "context": w.context,
+                "source_community": w.source_community,
+                "verification_level": w.verification_level,
+                "failure_stories": w.failure_stories
+            }
+            for w in wisdom_list
+        ]
+
+    def get_heritage_explanation(self, engine_code: str) -> Dict[str, Any]:
+        """
+        Get comprehensive heritage explanation for an engine.
+
+        This is the full story: significance, narratives, tribal wisdom,
+        and cultural impact all in one place.
+
+        Args:
+            engine_code: Engine code to explain
+
+        Returns:
+            Complete heritage explanation
+        """
+        return self.heritage_keeper.explain_heritage(engine_code)
 
     def __repr__(self) -> str:
         return (

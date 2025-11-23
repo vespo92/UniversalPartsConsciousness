@@ -16,6 +16,8 @@ Core Responsibilities:
 - Historical context generation
 - Racing heritage documentation
 - Community culture preservation
+- Story preservation (not just specs - heritage keeper)
+- Tribal wisdom archival
 """
 
 from .chronicler_agent import ChroniclerAgent
@@ -25,18 +27,45 @@ from .cultural.cultural_analyzer import CulturalAnalyzer
 from .historical.context_engine import HistoricalContextEngine
 from .aftermarket.ecosystem_documenter import AftermarketEcosystemDocumenter
 from .integration.consciousness_bridge import ConsciousnessBridge
+from .stories.narrative_generator import NarrativeGenerator
+from .stories.heritage_keeper import (
+    HeritageKeeper,
+    HeritageStory,
+    TribalWisdom,
+    StoryType,
+    HeritageSignificance,
+)
 
 __version__ = "1.0.0"
 __agent_id__ = "Agent_7"
 __codename__ = "CHRONICLER"
 
 __all__ = [
+    # Main Agent
     "ChroniclerAgent",
+
+    # Documentation
     "EngineDocumenter",
+
+    # Cultural Analysis
     "LegendScorer",
     "LegendTier",
     "CulturalAnalyzer",
+
+    # Historical Context
     "HistoricalContextEngine",
+
+    # Aftermarket
     "AftermarketEcosystemDocumenter",
+
+    # Integration
     "ConsciousnessBridge",
+
+    # Stories & Heritage (Preserves stories, not just specs)
+    "NarrativeGenerator",
+    "HeritageKeeper",
+    "HeritageStory",
+    "TribalWisdom",
+    "StoryType",
+    "HeritageSignificance",
 ]
