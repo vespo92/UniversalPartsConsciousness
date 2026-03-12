@@ -40,6 +40,7 @@ from typing import Any, Dict, List, Optional
 
 from .parsers.step_parser import STEPParser, STEPPartData
 from .parsers.csv_parser import CSVPartImporter, ImportResult
+from .parsers.assembly_parser import AssemblyParser, AssemblyIngestResult
 from .connectors.base import ConnectorRegistry, DataSourceConnector, FetchedPart, SourceConfig
 
 logger = logging.getLogger("UPC.Ingestor")
@@ -489,6 +490,126 @@ class UniversalIngestor:
             tier=1,
         ))
 
+    def ingest_assembly(
+        self,
+        dir_path: str | Path,
+        output: Optional[str] = None,
+    ) -> IngestResult:
+        """
+        Ingest an assembly (engine, vehicle, etc.) from a directory
+        of structured JSON files.
+
+        This handles deeply nested data like:
+          - Engine master specs with variants
+          - Parts catalogs with system → component hierarchies
+          - Interchangeability matrices
+          - Aftermarket ecosystems
+          - Tools & service data
+
+        Args:
+            dir_path: Path to assembly directory (e.g., Ford-FE-V8/)
+            output: Optional output filename
+        """
+        start = datetime.utcnow()
+        path = Path(dir_path)
+
+        result = IngestResult(
+            success=True, source=str(path), operation="assembly",
+        )
+
+        try:
+            parser = AssemblyParser()
+            assembly_result = parser.parse_engine_directory(path)
+
+            # Convert assembly parts to universal format
+            for part in assembly_result.parts:
+                part_dict = part.to_dict()
+                part_dict["data_source"] = f"assembly:{assembly_result.assembly_id}"
+                enhanced = self._enhance_part(part_dict)
+                result.parts.append(enhanced)
+                result.parts_accepted += 1
+
+            result.parts_processed = len(assembly_result.parts)
+
+            # Build complete output with all assembly data
+            output_data = assembly_result.to_dict()
+            output_data["enhanced_parts"] = result.parts
+
+            # Save output
+            output_name = output or assembly_result.assembly_id
+            timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+            filename = f"assembly_{output_name}_{timestamp}.json"
+            output_path = self.output_dir / filename
+
+            with open(output_path, "w") as f:
+                json.dump(output_data, f, indent=2, default=str)
+
+            result.output_file = str(output_path)
+
+            logger.info(
+                f"Assembly ingested: {assembly_result.assembly_name} — "
+                f"{assembly_result.total_parts} parts, "
+                f"{assembly_result.total_relationships} relationships, "
+                f"{assembly_result.total_systems} systems, "
+                f"{assembly_result.total_variants} variants"
+            )
+
+        except Exception as e:
+            result.success = False
+            result.errors.append(str(e))
+
+        result.duration_seconds = (datetime.utcnow() - start).total_seconds()
+        return result
+
+    def ingest_all_assemblies(
+        self,
+        manufacturers_dir: str | Path,
+        output: Optional[str] = None,
+    ) -> IngestResult:
+        """
+        Ingest ALL engine assemblies under a manufacturers directory.
+
+        Args:
+            manufacturers_dir: Root path (e.g., Automotive/Engines/Manufacturers/)
+        """
+        start = datetime.utcnow()
+        path = Path(manufacturers_dir)
+
+        result = IngestResult(
+            success=True, source=str(path), operation="all_assemblies",
+        )
+
+        parser = AssemblyParser()
+        all_results = parser.parse_all_engines(path)
+
+        for assembly_result in all_results:
+            for part in assembly_result.parts:
+                part_dict = part.to_dict()
+                part_dict["data_source"] = f"assembly:{assembly_result.assembly_id}"
+                result.parts.append(part_dict)
+                result.parts_accepted += 1
+            result.parts_processed += len(assembly_result.parts)
+
+        # Save combined output
+        output_name = output or "all_engines"
+        timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+        filename = f"all_assemblies_{output_name}_{timestamp}.json"
+        output_path = self.output_dir / filename
+
+        combined = {
+            "ingested_at": datetime.utcnow().isoformat(),
+            "total_assemblies": len(all_results),
+            "total_parts": result.parts_accepted,
+            "assemblies": [r.to_dict() for r in all_results],
+        }
+
+        with open(output_path, "w") as f:
+            json.dump(combined, f, indent=2, default=str)
+
+        result.output_file = str(output_path)
+        result.duration_seconds = (datetime.utcnow() - start).total_seconds()
+        return result
+
     @staticmethod
     def list_sources() -> List[str]:
         """List all available data sources."""
@@ -521,6 +642,10 @@ Examples:
   # Import CAD files
   python -m ingestion.ingest file bracket.step
   python -m ingestion.ingest dir ./cad-models/
+
+  # Ingest engine assemblies (deeply nested BOM data)
+  python -m ingestion.ingest assembly Automotive/Engines/Manufacturers/Ford/Ford-FE-V8/
+  python -m ingestion.ingest assembly-all Automotive/Engines/Manufacturers/
 
   # Search supplier APIs
   python -m ingestion.ingest search --source digikey "10k 0805 resistor"
@@ -574,6 +699,16 @@ Examples:
 
     # List sources
     subparsers.add_parser("sources", help="List available data sources")
+
+    # Assembly import (engine directories with nested BOM data)
+    asm_parser = subparsers.add_parser("assembly", help="Ingest engine/assembly directory")
+    asm_parser.add_argument("path", help="Path to assembly directory")
+    asm_parser.add_argument("-o", "--output", help="Output filename")
+
+    # All assemblies import
+    asm_all_parser = subparsers.add_parser("assembly-all", help="Ingest all engine assemblies")
+    asm_all_parser.add_argument("path", help="Path to manufacturers root directory")
+    asm_all_parser.add_argument("-o", "--output", help="Output filename")
 
     # Taxonomy info
     tax_parser = subparsers.add_parser("taxonomy", help="Show taxonomy info")
@@ -635,6 +770,14 @@ Examples:
         print("Available data sources:")
         for source in sources:
             print(f"  - {source}")
+
+    elif args.command == "assembly":
+        result = ingestor.ingest_assembly(args.path, output=args.output)
+        print(result.summary())
+
+    elif args.command == "assembly-all":
+        result = ingestor.ingest_all_assemblies(args.path, output=args.output)
+        print(result.summary())
 
     elif args.command == "taxonomy":
         taxonomy = _get_taxonomy()
